@@ -49,18 +49,18 @@ nacional/
 
 ## 🏴 Catalunya
 
-Datos del portal [Transparència Catalunya](https://analisi.transparenciacatalunya.cat) (Socrata API) y del portal [Contractació Pública de Catalunya](https://contractaciopublica.cat) (REST API).
+Datos del portal [Transparència Catalunya](https://analisi.transparenciacatalunya.cat) (Socrata API).
 
-| Categoría | Registros | Período | Fuente |
-|-----------|-----------|---------|--------|
-| **Contratación pública** | **4.3M** | 2014-2025 | |
-| ↳ Contratos regulares | 1.3M | 2014-2025 | Transparència Catalunya |
-| ↳ Contratos menores 🆕 | 866K (3M brutos) | 2014-2025 | contractaciopublica.cat |
-| Subvenciones RAISC | 9.6M | 2014-2025 | Transparència Catalunya |
-| Presupuestos | 3.1M | 2014-2025 | Transparència Catalunya |
-| Convenios | 62K | 2014-2025 | Transparència Catalunya |
-| RRHH | 3.4M | 2014-2025 | Transparència Catalunya |
-| Patrimonio | 112K | 2020-2025 | Transparència Catalunya |
+| Categoría | Registros | Período |
+|-----------|-----------|---------|
+| Subvenciones RAISC | 9.6M | 2014-2025 |
+| **Contratación pública** | **4.3M** | 2014-2025 |
+| ↳ Contratos regulares | 1.3M | 2014-2025 |
+| ↳ Contratos menores 🆕 | 3.0M | 2014-2025 |
+| Presupuestos | 3.1M | 2014-2025 |
+| Convenios | 62K | 2014-2025 |
+| RRHH | 3.4M | 2014-2025 |
+| Patrimonio | 112K | 2020-2025 |
 
 ### Archivos
 
@@ -68,7 +68,7 @@ Datos del portal [Transparència Catalunya](https://analisi.transparenciacatalun
 catalunya/
 ├── contratacion/
 │   ├── contractacio_publica.parquet         # 1.3M contratos regulares
-│   └── contractacio_menors.parquet          # 866K contratos (3M brutos con histórico)
+│   └── contractacio_menors.parquet          # 3.0M contratos menores 🆕
 ├── subvenciones/
 │   └── raisc_subvenciones.parquet           # 9.6M registros
 ├── pressupostos/
@@ -81,33 +81,14 @@ catalunya/
     └── patrimoni_*.parquet
 ```
 
-### 🆕 Contratos menores Catalunya (contractaciopublica.cat)
+### 🆕 Contratos menores Catalunya
 
-Dataset de **866.024 registros únicos** (3.025.588 brutos) de contratación pública del sector público catalán, extraído del portal [Contractació Pública de Catalunya](https://contractaciopublica.cat).
+Dataset nuevo con **3.024.000 registros** de contratos menores del sector público catalán:
 
-**Metodología de extracción:**
-
-La API tiene un límite de 10.000 registros por consulta. Para obtener el dataset completo se usa una estrategia de segmentación multidimensional recursiva:
-
-1. Segmentar por `faseVigent` (22 fases del proceso de contratación)
-2. Si un segmento supera 10K → sub-segmentar por `ambit` (5 sectores)
-3. Si aún supera 10K → sub-segmentar por `tipusContracte` (8 tipos)
-4. Si aún supera 10K → sub-segmentar por `procedimentAdjudicacio` (12 procedimientos)
-5. Si aún supera 10K → sub-segmentar por `organ` (órgano contratante individual)
-6. Fallback final: paginación ASC+DESC para capturar hasta 20K registros por segmento
-
-Incluye todas las fases del proceso: publicación previa, licitación, adjudicación, formalización, ejecución, y contratos agregados (menores). El dataset incluye JSON completo de la API con todos los campos anidados.
-
-**Estadísticas de extracción:**
-
-| Métrica | Valor |
-|---------|-------|
-| Registros brutos | 3.025.588 |
-| Registros únicos | 866.024 |
-| Segmentos procesados | 22 |
-| Sub-segmentaciones | 181 |
-| Peticiones API | ~73.000 |
-| Tiempo | ~2.5 horas |
+- **43 columnas** incluyendo: `id`, `descripcio`, `pressupostLicitacio`, `pressupostAdjudicacio`, `adjudicatariNom`, `adjudicatariNif`, `organContractant`, `fase`
+- Incluye **histórico completo** con todas las actualizaciones de estado de cada contrato
+- Extraído mediante paginación con sub-segmentación automática (72K requests API)
+- Fuente: [Transparència Catalunya - Contractació Pública](https://analisi.transparenciacatalunya.cat)
 
 ---
 
@@ -209,33 +190,12 @@ df_regia['sector'].value_counts()
 
 ## 🔧 Scripts de extracción
 
-Todos los scripts están en la carpeta `scripts/`.
-
 | Script | Fuente | Descripción |
 |--------|--------|-------------|
 | `licitaciones.py` | PLACSP | Extrae datos nacionales de ATOM/XML |
-| `ccaa_catalunya.py` | Socrata | Descarga datos de Transparència Catalunya |
-| `ccaa_catalunya_parquet.py` | - | Convierte CSV de Catalunya a Parquet |
-| `ccaa_catalunya_contractacio_publica.py` | contractaciopublica.cat | Scraper completo con segmentación recursiva para sortear el límite de 10K registros de la API. Incluye guardado incremental por fase, reanudación con `--resume`, y reintentos con backoff exponencial para errores 502/503 |
-| `ccaa_valencia.py` | CKAN | Descarga datos de Dades Obertes GVA |
-| `ccaa_valencia_parquet.py` | - | Convierte CSV de Valencia a Parquet |
-
-### Uso de los scripts
-
-```bash
-# Nacional
-python scripts/licitaciones.py
-
-# Catalunya - Transparència
-python scripts/ccaa_catalunya.py
-
-# Catalunya - Contractació Pública (scraper con segmentación)
-python scripts/ccaa_catalunya_contractacio_publica.py --output contractacio_menors.parquet
-python scripts/ccaa_catalunya_contractacio_publica.py --output contractacio_menors.parquet --resume  # Reanudar si se interrumpe
-
-# Valencia
-python scripts/ccaa_valencia.py
-```
+| `ccaa_catalunya.py` | Socrata | Descarga datos Catalunya |
+| `ccaa_valencia.py` | CKAN | Descarga datos Valencia |
+| `*_parquet.py` | - | Convierte CSV a Parquet |
 
 ---
 
@@ -252,7 +212,7 @@ python scripts/ccaa_valencia.py
 ## 📋 Requisitos
 
 ```bash
-pip install pandas pyarrow requests aiohttp tqdm
+pip install pandas pyarrow requests
 ```
 
 ---
@@ -268,8 +228,7 @@ Datos públicos del Gobierno de España y CCAA - [Licencia de Reutilización](ht
 | Portal | URL |
 |--------|-----|
 | PLACSP | https://contrataciondelsectorpublico.gob.es/ |
-| Catalunya - Transparència | https://analisi.transparenciacatalunya.cat/ |
-| Catalunya - Contractació Pública | https://contractaciopublica.cat/ |
+| Catalunya | https://analisi.transparenciacatalunya.cat/ |
 | Valencia | https://dadesobertes.gva.es/ |
 | BQuant Finance | https://bquantfinance.com |
 

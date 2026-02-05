@@ -6,6 +6,11 @@ Changes in v4:
 - Saves FULL JSON (pd.json_normalize) - no field filtering
 - Does NOT auto-delete incremental files
 - Optional cleanup with --cleanup flag
+
+Usage:
+    python contractacio_scraper_v4.py --output data.parquet
+    python contractacio_scraper_v4.py --output data.parquet --resume
+    python contractacio_scraper_v4.py --output data.parquet --cleanup  # Delete incremental files after
 """
 
 import argparse

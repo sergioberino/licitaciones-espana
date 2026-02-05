@@ -99,17 +99,9 @@ ESTADOS = {
 }
 
 PROCEDIMIENTOS = {
-    '1': 'Abierto',
-    '2': 'Restringido',
-    '3': 'Negociado con publicidad',
-    '4': 'Negociado sin publicidad',
-    '5': 'Diálogo competitivo',
-    '6': 'Asociación innovación',
-    '7': 'Contrato menor',
-    '8': 'Concurso de proyectos',
-    '9': 'Basado en sistema dinámico',
-    '10': 'Licitación con negociación',
-    '100': 'Basado en acuerdo marco',
+    '1': 'Abierto', '2': 'Restringido', '3': 'Negociado con publicidad',
+    '4': 'Negociado sin publicidad', '5': 'Diálogo competitivo',
+    '6': 'Asociación innovación', '100': 'Basado en acuerdo marco',
     '999': 'Otros',
 }
 
