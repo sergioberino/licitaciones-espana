@@ -27,8 +27,8 @@ from collections import defaultdict
 # ======================================================================
 
 PLACSP_PATH = Path("nacional/licitaciones_espana.parquet")
-TED_PATH = Path("data/ted/ted_es_can.parquet")
-OUTPUT_DIR = Path("data/ted")
+TED_PATH = Path("ted/ted_es_can.parquet")
+OUTPUT_DIR = Path("ted")
 
 # -- Umbrales SARA por bienio (sin IVA, en euros) --
 SARA_THRESHOLDS = {
@@ -201,12 +201,12 @@ def load_placsp(path):
     df['_nif'] = df['_nif'].str.replace(r'^ES[-\s]*', '', regex=True)
     df.loc[df['_nif'].str.len() < 5, '_nif'] = ''
 
-    df['_imp_adj'] = pd.to_numeric(df['importe_adjudicacion'], errors='coerce')
-    df['_imp_sin_iva'] = pd.to_numeric(df['importe_sin_iva'], errors='coerce')
+    df['_imp_adj'] = pd.to_numeric(df['importe_adjudicacion'].astype(str).replace('nan', ''), errors='coerce')
+    df['_imp_sin_iva'] = pd.to_numeric(df['importe_sin_iva'].astype(str).replace('nan', ''), errors='coerce')
     
     # Para identificar SARA: usar importe_sin_iva (más cercano al VEC)
     # con fallback a importe_adjudicacion cuando sin_iva no existe
-    df['_imp_sara'] = df['_imp_sin_iva'].fillna(df['_imp_adj'])
+    df['_imp_sara'] = np.where(df['_imp_sin_iva'].notna(), df['_imp_sin_iva'], df['_imp_adj'])
     
     n_sin_iva = df['_imp_sin_iva'].notna().sum()
     n_fallback = (df['_imp_sin_iva'].isna() & df['_imp_adj'].notna()).sum()
@@ -215,10 +215,10 @@ def load_placsp(path):
     df['_ano'] = pd.to_numeric(df['ano'], errors='coerce')
     df = df[(df['_ano'] >= 2010) & (df['_ano'] <= 2027)].copy()
 
-    df['_expediente'] = df['expediente'].fillna('').astype(str).str.strip()
+    df['_expediente'] = df['expediente'].astype(str).replace('nan', '').str.strip()
     df['_fecha_adj'] = pd.to_datetime(df['fecha_adjudicacion'], errors='coerce')
-    df['_tipo_contrato'] = df['tipo_contrato'].fillna('').astype(str).str.strip()
-    df['_procedimiento'] = df['procedimiento'].fillna('').astype(str).str.strip()
+    df['_tipo_contrato'] = df['tipo_contrato'].astype(str).replace('nan', '').str.strip()
+    df['_procedimiento'] = df['procedimiento'].astype(str).replace('nan', '').str.strip()
 
     # Clasificar comprador
     buyer_class = df['dependencia'].apply(classify_buyer)
