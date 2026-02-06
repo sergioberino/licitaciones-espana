@@ -167,12 +167,12 @@ def load_placsp(path):
     df = pd.read_parquet(path)
     print(f"  Total registros: {len(df):,}")
 
-    # Solo adjudicaciones reales
+    # Solo adjudicaciones reales (acepta si tiene importe_sin_iva O importe_adjudicacion)
     mask = (
         (df['tipo_registro'] == 'LICITACION') &
         (df['estado'].isin(['Resuelta', 'Adjudicada'])) &
         (df['nif_adjudicatario'].notna()) &
-        (df['importe_adjudicacion'].notna())
+        (df['importe_adjudicacion'].notna() | df['importe_sin_iva'].notna())
     )
     df = df[mask].copy()
     print(f"  Adjudicaciones con NIF + importe: {len(df):,}")
@@ -202,13 +202,23 @@ def load_placsp(path):
     df.loc[df['_nif'].str.len() < 5, '_nif'] = ''
 
     df['_imp_adj'] = pd.to_numeric(df['importe_adjudicacion'], errors='coerce')
+    df['_imp_sin_iva'] = pd.to_numeric(df['importe_sin_iva'], errors='coerce')
+    
+    # Para identificar SARA: usar importe_sin_iva (más cercano al VEC)
+    # con fallback a importe_adjudicacion cuando sin_iva no existe
+    df['_imp_sara'] = df['_imp_sin_iva'].fillna(df['_imp_adj'])
+    
+    n_sin_iva = df['_imp_sin_iva'].notna().sum()
+    n_fallback = (df['_imp_sin_iva'].isna() & df['_imp_adj'].notna()).sum()
+    print(f"  Importe SARA: {n_sin_iva:,} usan importe_sin_iva, {n_fallback:,} fallback a importe_adjudicacion")
+    
     df['_ano'] = pd.to_numeric(df['ano'], errors='coerce')
     df = df[(df['_ano'] >= 2010) & (df['_ano'] <= 2027)].copy()
 
     df['_expediente'] = df['expediente'].fillna('').astype(str).str.strip()
     df['_fecha_adj'] = pd.to_datetime(df['fecha_adjudicacion'], errors='coerce')
-    df['_tipo_contrato'] = df['tipo_contrato'].astype(str).replace('nan', '').str.strip()
-    df['_procedimiento'] = df['procedimiento'].astype(str).replace('nan', '').str.strip()
+    df['_tipo_contrato'] = df['tipo_contrato'].fillna('').astype(str).str.strip()
+    df['_procedimiento'] = df['procedimiento'].fillna('').astype(str).str.strip()
 
     # Clasificar comprador
     buyer_class = df['dependencia'].apply(classify_buyer)
@@ -225,8 +235,8 @@ def load_placsp(path):
         ), axis=1
     )
 
-    # Candidato SARA?
-    df['_es_sara'] = df['_umbral_sara'].notna() & (df['_imp_adj'] >= df['_umbral_sara'])
+    # Candidato SARA? (compara importe_sin_iva / VEC proxy contra umbral)
+    df['_es_sara'] = df['_umbral_sara'].notna() & (df['_imp_sara'] >= df['_umbral_sara'])
 
     # Negociado sin publicidad
     df['_es_neg_sin_pub'] = df['_procedimiento'].str.contains(
@@ -559,7 +569,7 @@ if __name__ == "__main__":
         'nif_adjudicatario', 'adjudicatario', 'importe_adjudicacion',
         'importe_sin_iva', 'ano', 'estado', 'conjunto', 'tipo_contrato',
         'procedimiento', 'cpv_principal', 'fecha_adjudicacion',
-        '_es_sara', '_umbral_sara', '_is_age', '_is_sector',
+        '_es_sara', '_umbral_sara', '_imp_sara', '_is_age', '_is_sector',
         '_es_neg_sin_pub', '_tipo_contrato', '_procedimiento',
         '_ted_validated', '_ted_missing', '_ted_missing_incl_neg',
         '_ted_id', '_ted_n_ofertas', '_ted_cpv', '_ted_win_size',
