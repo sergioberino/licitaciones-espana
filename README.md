@@ -1,6 +1,6 @@
 # 🇪🇸 Datos Abiertos de Contratación Pública - España
 
-Dataset completo de contratación pública española: nacional (PLACSP) + datos autonómicos (Catalunya, Valencia).
+Dataset completo de contratación pública española: nacional (PLACSP) + datos autonómicos (Catalunya, Valencia) + cruce europeo (TED).
 
 ## 📊 Resumen de Datos
 
@@ -9,7 +9,120 @@ Dataset completo de contratación pública española: nacional (PLACSP) + datos 
 | Nacional (PLACSP) | 8.7M | 2012-2026 | 780 MB |
 | Catalunya | 20.6M | 2014-2025 | ~180 MB |
 | Valencia | 8.5M | 2000-2026 | 156 MB |
-| **TOTAL** | **37.8M** | **2000-2026** | **~1.1 GB** |
+| 🆕 TED (España) | 591K | 2010-2025 | 57 MB |
+| **TOTAL** | **38.4M** | **2000-2026** | **~1.2 GB** |
+
+---
+
+## 🇪🇺 TED — Diario Oficial de la UE
+
+Contratos publicados en [Tenders Electronic Daily](https://ted.europa.eu/) correspondientes a España. Los contratos públicos que superan cierto importe (contratos SARA) deben publicarse obligatoriamente en el DOUE.
+
+| Conjunto | Registros | Período | Fuente |
+|----------|-----------|---------|--------|
+| CSV bulk | 339K | 2010-2019 | data.europa.eu |
+| API v3 eForms | 252K | 2020-2025 | ted.europa.eu/api |
+| **Consolidado** | **591K** | **2010-2025** | — |
+
+### Archivos
+
+```
+ted/
+├── ted_can_2010_ES.parquet          # 2010 (CSV bulk)
+├── ted_can_2011_ES.parquet
+├── ...
+├── ted_can_2019_ES.parquet          # 2019 (CSV bulk)
+├── ted_can_2020_ES_api.parquet      # 2020 (API v3 eForms)
+├── ...
+├── ted_can_2025_ES_api.parquet      # 2025 (API v3 eForms)
+└── ted_es_can.parquet               # Consolidado (591K, 31 MB)
+```
+
+### Campos principales (57 columnas)
+
+| Categoría | Campos |
+|-----------|--------|
+| Identificación | ted_notice_id, notice_type, year |
+| Comprador | cae_name, cae_nationalid, buyer_legal_type, buyer_country |
+| Contrato | cpv_code, type_of_contract, procedure_type |
+| Importes | award_value, total_value, estimated_value |
+| Adjudicación | win_name, win_nationalid, win_country, win_size (SME) |
+| Competencia | number_offers, direct_award_justification, award_criterion_type |
+| Duración | duration_lot, contract_start, contract_completion |
+
+---
+
+## 🔍 Cross-Validation PLACSP ↔ TED
+
+Pipeline para validar si los contratos SARA españoles se publican efectivamente en el Diario Oficial de la UE.
+
+### Resultados
+
+| Métrica | Valor |
+|---------|-------|
+| Contratos SARA identificados | 442,835 |
+| Validados en TED | 177,892 (40.2%) |
+| Missing | 257,258 |
+| Missing alta confianza | 202,383 |
+
+### Reglas SARA
+
+Los umbrales de publicación obligatoria en TED no son un importe fijo — varían por **bienio**, **tipo de contrato** y **tipo de comprador**:
+
+| Bienio | Obras | Servicios (AGE) | Servicios (resto) | Sectores especiales |
+|--------|-------|------------------|---------------------|---------------------|
+| 2016-2017 | 5,225,000€ | 135,000€ | 209,000€ | 418,000€ |
+| 2018-2019 | 5,548,000€ | 144,000€ | 221,000€ | 443,000€ |
+| 2020-2021 | 5,350,000€ | 139,000€ | 214,000€ | 428,000€ |
+| 2022-2023 | 5,382,000€ | 140,000€ | 215,000€ | 431,000€ |
+| 2024-2025 | 5,538,000€ | 143,000€ | 221,000€ | 443,000€ |
+
+### Estrategias de matching
+
+El matching se hace de forma secuencial — cada estrategia actúa solo sobre los registros que las anteriores no encontraron:
+
+| # | Estrategia | Matches | % del total |
+|---|-----------|---------|-------------|
+| E1 | NIF adjudicatario + importe ±10% + año ±1 | 43,063 | 9.7% |
+| E2 | Nº expediente + importe ±10% | 7,891 | 1.8% |
+| E3 | NIF del órgano contratante + importe | 77,816 | 17.6% |
+| E4 | Lotes agrupados (suma importes mismo órgano+año) | 31,365 | 7.1% |
+| E5 | Nombre órgano normalizado + importe | 17,757 | 4.0% |
+
+**Hallazgo clave**: E3 (NIF del órgano) es la estrategia más potente. TED registra el NIF del comprador; PLACSP, el del adjudicatario. Sin cruzar ambos se pierde el 17.6% de matches.
+
+### Validación por año
+
+```
+Año     SARA    Match    %
+2016   10,948    2,643  24.1%
+2017   17,360    6,532  37.6%
+2018   32,605   14,720  45.1%
+2019   42,951   14,182  33.0%
+2020   40,693    9,214  22.6%  ← COVID + baja cobertura TED
+2021   47,971    7,472  15.6%
+2022   56,649   22,250  39.3%
+2023   60,518   31,829  52.6%
+2024   59,114   38,216  64.6%  ← máximo
+2025   48,276   26,920  55.8%
+```
+
+### Análisis sectorial: Salud
+
+El sector salud representa el 17% de contratos SARA con una tasa de validación del 42.3%. El 38% del missing se explica por patrones de lotes (un anuncio TED = N adjudicaciones individuales en PLACSP). La cobertura real ajustada por lotes es ~54%.
+
+Top órganos missing: Servicio Andaluz de Salud (4,833), FREMAP (2,410), IB-Salut (1,957), ICS (1,316), SERGAS (1,291).
+
+### Scripts TED
+
+| Script | Descripción |
+|--------|-------------|
+| `ted/ted_module.py` | Descarga TED: CSV bulk (2010-2019) + API v3 eForms (2020-2025) |
+| `ted/run_ted_crossvalidation.py` | Cross-validation con reglas SARA por bienio/tipo/comprador |
+| `ted/matching_avanzado_ted.py` | Matching avanzado: 5 estrategias (E1-E5) |
+| `ted/diagnostico_missing_ted.py` | Diagnóstico de missing: falsos positivos vs gaps reales |
+| `ted/analisis_sector_salud.py` | Deep dive sector salud: lotes, acuerdos marco, CPV, CCAA |
+| `ted/cross-validation_ted_placsp.py` | Script de exploración inicial |
 
 ---
 
@@ -150,6 +263,9 @@ import pandas as pd
 # Nacional - PLACSP
 df_nacional = pd.read_parquet('nacional/licitaciones_espana.parquet')
 
+# TED - España (consolidado)
+df_ted = pd.read_parquet('ted/ted_es_can.parquet')
+
 # Catalunya - Contratos menores
 df_cat_menors = pd.read_parquet('catalunya/contratacion/contractacio_menors.parquet')
 
@@ -161,11 +277,6 @@ df_val = pd.read_parquet('valencia/contratacion/')
 
 # Valencia - Lobbies REGIA
 df_lobbies = pd.read_parquet('valencia/lobbies/')
-
-# Cargar múltiples archivos de una carpeta
-import glob
-files = glob.glob('valencia/subvenciones/*.parquet')
-df_subv = pd.concat([pd.read_parquet(f) for f in files])
 ```
 
 ### Ejemplos de análisis
@@ -173,6 +284,14 @@ df_subv = pd.concat([pd.read_parquet(f) for f in files])
 ```python
 # Top adjudicatarios nacional
 df_nacional.groupby('adjudicatario')['importe_sin_iva'].sum().nlargest(10)
+
+# Contratos España publicados en TED por año
+df_ted.groupby('year').size().plot(kind='bar', title='Contratos TED España')
+
+# Contratos SARA no publicados en TED
+df_sara = pd.read_parquet('ted/crossval_sara_v2.parquet')  # generado por el pipeline
+missing = df_sara[df_sara['_ted_missing']]
+missing.groupby('organo_contratante').size().nlargest(10)
 
 # Contratos menores Catalunya por órgano
 df_cat_menors.groupby('organContractant')['pressupostAdjudicacio'].sum().nlargest(10)
@@ -188,14 +307,19 @@ df_regia['sector'].value_counts()
 
 ---
 
-## 🔧 Scripts de extracción
+## 🔧 Scripts
 
 | Script | Fuente | Descripción |
 |--------|--------|-------------|
-| `licitaciones.py` | PLACSP | Extrae datos nacionales de ATOM/XML |
-| `ccaa_catalunya.py` | Socrata | Descarga datos Catalunya |
-| `ccaa_valencia.py` | CKAN | Descarga datos Valencia |
-| `*_parquet.py` | - | Convierte CSV a Parquet |
+| `nacional/licitaciones.py` | PLACSP | Extrae datos nacionales de ATOM/XML |
+| `scripts/ccaa_cataluna_contratosmenores.py` | Socrata | Descarga contratos menores Catalunya |
+| `scripts/ccaa_catalunya.py` | Socrata | Descarga datos Catalunya |
+| `scripts/ccaa_valencia.py` | CKAN | Descarga datos Valencia |
+| `ted/ted_module.py` | TED | Descarga CSV bulk + API v3 eForms |
+| `ted/run_ted_crossvalidation.py` | — | Cross-validation PLACSP↔TED (reglas SARA) |
+| `ted/matching_avanzado_ted.py` | — | Matching avanzado (5 estrategias) |
+| `ted/diagnostico_missing_ted.py` | — | Diagnóstico de missing |
+| `ted/analisis_sector_salud.py` | — | Deep dive sector salud |
 
 ---
 
@@ -204,6 +328,7 @@ df_regia['sector'].value_counts()
 | Fuente | Frecuencia |
 |--------|------------|
 | PLACSP | Mensual |
+| TED | Trimestral (API) / Anual (CSV bulk) |
 | Catalunya | Variable (depende del dataset) |
 | Valencia | Diaria/Mensual (depende del dataset) |
 
@@ -219,7 +344,10 @@ pip install pandas pyarrow requests
 
 ## 📄 Licencia
 
-Datos públicos del Gobierno de España y CCAA - [Licencia de Reutilización](https://datos.gob.es/es/aviso-legal)
+Datos públicos del Gobierno de España, Unión Europea y CCAA.
+
+- España: [Licencia de Reutilización](https://datos.gob.es/es/aviso-legal)
+- TED: [EU Open Data Licence](https://data.europa.eu/eli/dec_impl/2011/833/oj)
 
 ---
 
@@ -228,6 +356,9 @@ Datos públicos del Gobierno de España y CCAA - [Licencia de Reutilización](ht
 | Portal | URL |
 |--------|-----|
 | PLACSP | https://contrataciondelsectorpublico.gob.es/ |
+| TED | https://ted.europa.eu/ |
+| TED API v3 | https://ted.europa.eu/api/docs/ |
+| TED CSV Bulk | https://data.europa.eu/data/datasets/ted-csv |
 | Catalunya | https://analisi.transparenciacatalunya.cat/ |
 | Valencia | https://dadesobertes.gva.es/ |
 | BQuant Finance | https://bquantfinance.com |
