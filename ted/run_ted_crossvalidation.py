@@ -1,8 +1,8 @@
 """
-Cross-validation PLACSP <-> TED  v3.0 (Unificado)
+Cross-validation PLACSP <-> TED  v4.0 (Unificado)
 ====================================================
 Pipeline completo de validacion: identifica contratos SARA en PLACSP
-y los cruza contra el Diario Oficial de la UE (TED) con 6 estrategias.
+y los cruza contra el Diario Oficial de la UE (TED) con 9 estrategias.
 
 Reglas SARA (Sujeto a Regulacion Armonizada):
   - Umbral varia por BIENIO, TIPO DE CONTRATO y TIPO DE PODER ADJUDICADOR
@@ -11,13 +11,15 @@ Reglas SARA (Sujeto a Regulacion Armonizada):
   - Contratos menores, encargos, privados, patrimoniales: excluidos
 
 Estrategias de matching:
-  E1: NIF adjudicatario + importe ±10% + año ±1
-  E2: Nº expediente + importe ±10%
+  E1:  NIF adjudicatario + importe ±10% + año ±1
+  E2:  Nº expediente + importe ±10%
   E2b: Expediente completo (lotes SARA, sin filtro importe)
-  E3: NIF organo contratante + importe ±10%
-  E4: Suma importes agrupados (lotes/acuerdos marco) vs total_value TED
-  E5: Nombre organo normalizado + importe ±10%
-  E6: Propagacion por expediente (si 1 lote matched -> todos matched)
+  E3:  NIF organo contratante + importe ±10%
+  E4:  Suma importes agrupados (lotes/acuerdos marco) vs total_value TED
+  E5:  Nombre organo normalizado + importe ±10%
+  E3b: Tabla alias organo (PLACSP→TED) + importe ±10%
+  E7:  Fuzzy token overlap (>=60%) + importe ±10%
+  E6:  Propagacion por expediente (si 1 lote matched -> todos matched)
 
 Uso:
     python crossvalidation_ted.py
@@ -130,6 +132,44 @@ MATCH_TOL_PCT_WIDE = 0.15       # Para lotes agrupados (E4)
 MATCH_TOL_ABS_WIDE = 20_000
 MATCH_YEAR_WINDOW = 1
 
+# Tabla de equivalencias nombre PLACSP → nombre(s) TED (normalizados, truncados 40 chars)
+# Construida a partir del diagnostico_missing_hc.py
+ORGAN_ALIASES = {
+    'ADIF PRESIDENCIA':
+        ['ADMINISTRADOR DE INFRAESTRUCTURAS FERROV', 'ADIF'],
+    'ADIF CONSEJO DE ADMINISTRACION':
+        ['ADMINISTRADOR DE INFRAESTRUCTURAS FERROV', 'ADIF'],
+    'ADIF ALTA VELOCIDAD PRESIDENCIA':
+        ['ADIF ALTA VELOCIDAD', 'ADIF AV'],
+    'ADIF ALTA VELOCIDAD CONSEJO DE ADMINISTR':
+        ['ADIF ALTA VELOCIDAD', 'ADIF AV'],
+    'EMPRESA PUBLICA DE METRO DE MADRID S A':
+        ['METRO DE MADRID S A'],
+    'INSTITUT CATALA DE LA SALUT ICS':
+        ['INSTITUT CATALA DE LA SALUT', 'ICS'],
+    'CONSELLERIA DE SANIDADE SERGAS':
+        ['SERVIZO GALEGO DE SAUDE', 'SERGAS'],
+    'HOSPITAL UNIVERSITARIO DOCE DE OCTUBRE':
+        ['HOSPITAL UNIVERSITARIO 12 DE OCTUBRE', 'HOSPITAL 12 DE OCTUBRE'],
+    'HOSPITAL LA PAZ':
+        ['HOSPITAL UNIVERSITARIO LA PAZ'],
+    'PARADORES DE TURISMO DE ESPANA S M E S A':
+        ['PARADORES DE TURISMO DE ESPANA S A'],
+    'AENA DIRECCION DEL AEROPUERTO ADOLFO SUA':
+        ['AENA S M E S A', 'AENA CONSEJO DE ADMINISTRACION'],
+    'AENA DIRECCION DE CONTRATACION':
+        ['AENA S M E S A', 'AENA CONSEJO DE ADMINISTRACION'],
+    'SERVEI CATALA DE LA SALUT CATSALUT':
+        ['SERVEI CATALA DE LA SALUT', 'CATSALUT'],
+    'COMITE CENTRAL DE COMPRAS DE NAVANTIA S':
+        ['NAVANTIA S A S M E', 'NAVANTIA'],
+    'HOSPITAL UNIVERSITARIO DE FUENLABRADA':
+        ['HOSPITAL UNIVERSITARIO DE FUENLABRADA'],
+    'DIRECCION GENERAL DE RACIONALIZACION Y C':
+        ['DIRECCION GENERAL DE RACIONALIZACION Y C',
+         'JUNTA DE CONTRATACION CENTRALIZADA'],
+}
+
 
 # ======================================================================
 #  FUNCIONES AUXILIARES
@@ -197,6 +237,32 @@ def clean_nif(nif):
 def tol(imp, pct=MATCH_TOL_PCT, abs_val=MATCH_TOL_ABS):
     """Tolerancia de matching para un importe."""
     return max(imp * pct, abs_val)
+
+
+# Stopwords para token matching (articulos, preposiciones, formas juridicas)
+_STOPWORDS = frozenset([
+    'DE', 'DEL', 'LA', 'LAS', 'LOS', 'EL', 'EN', 'Y', 'E', 'A', 'AL',
+    'S', 'SA', 'SL', 'SLU', 'SAU', 'SME', 'MP', 'EP',
+    'CONSEJO', 'ADMINISTRACION', 'DIRECCION', 'GENERAL', 'JUNTA',
+    'GOBIERNO', 'LOCAL', 'PROVINCIAL', 'GERENCIA', 'PRESIDENCIA',
+    'DIRECTOR', 'GERENTE', 'PRESIDENTE', 'VICEPRESIDENTE',
+])
+
+
+def token_overlap(name_a, name_b, min_tokens=2):
+    """Calcula solapamiento de tokens significativos entre dos nombres.
+    Returns: (overlap_ratio, n_common) where ratio = common / min(len_a, len_b)."""
+    if not name_a or not name_b:
+        return 0.0, 0
+    toks_a = {t for t in name_a.split() if len(t) > 2 and t not in _STOPWORDS}
+    toks_b = {t for t in name_b.split() if len(t) > 2 and t not in _STOPWORDS}
+    if len(toks_a) < min_tokens or len(toks_b) < min_tokens:
+        return 0.0, 0
+    common = toks_a & toks_b
+    if len(common) < min_tokens:
+        return 0.0, 0
+    ratio = len(common) / min(len(toks_a), len(toks_b))
+    return ratio, len(common)
 
 
 # ======================================================================
@@ -594,7 +660,7 @@ def run_e1_e2(df_placsp, df_ted):
 def run_advanced_matching(df_sara, df_ted, matched_idx_prev, match_data_prev, consumed_ted_ids):
     """E3-E6: NIF organo, lotes agrupados, nombre organo, propagacion."""
     print(f"\n{'='*70}")
-    print(f"  MATCHING AVANZADO (E3 + E4 + E5 + E6)")
+    print(f"  MATCHING AVANZADO (E3 + E3b + E4 + E5 + E7 + E6)")
     print(f"{'='*70}")
 
     t0 = time.time()
@@ -796,10 +862,151 @@ def run_advanced_matching(df_sara, df_ted, matched_idx_prev, match_data_prev, co
     print(f"  E5 matches: {len(e5_matched):,}")
     print(f"  Missing restante: {len(df_missing_after_e5):,}")
 
+    # ── E3b: Alias nombre organo + importe ──
+    # Para organos cuyo nombre en PLACSP difiere del de TED (ej. ADIF)
+    print(f"\n  --- E3b: Alias nombre organo + importe ---")
+
+    # Build alias lookup: para cada alias TED, indexar por (alias_norm[:40], year)
+    # Reutilizamos ted_by_name construido para E5, pero necesitamos reconstruir
+    # para incluir entradas consumed por E5 que podrian tener alias diferentes
+    ted_by_name_full = defaultdict(list)
+    for tidx, row in ted_valid.iterrows():
+        if tidx in ted_consumed:
+            continue
+        name = normalize_name(row.get('cae_name', ''))
+        yr = row.get('year', np.nan)
+        imp = row['importe_ted']
+        if name and len(name) > 5 and pd.notna(yr):
+            # Index full name and first 40 chars
+            ted_by_name_full[(name[:40], int(yr))].append((tidx, imp))
+
+    # Build reverse alias: PLACSP norm name → list of TED norm name keys to try
+    alias_lookup = {}
+    for placsp_name, ted_names in ORGAN_ALIASES.items():
+        alias_lookup[placsp_name[:40]] = [n[:40] for n in ted_names]
+
+    e3b_matched = []
+    for idx, row in df_missing_after_e5.iterrows():
+        organ = normalize_name(row.get('organo_contratante', ''))[:40]
+        imp = row['_imp_match']
+        yr = row[ano_col]
+
+        if not organ or pd.isna(imp) or pd.isna(yr) or imp <= 0:
+            continue
+        if organ not in alias_lookup:
+            continue
+
+        yr = int(yr)
+        t = tol(imp)
+        best = None
+        best_diff = float('inf')
+
+        for alias in alias_lookup[organ]:
+            for yr_try in [yr, yr-1, yr+1]:
+                for tidx, ted_imp in ted_by_name_full.get((alias, yr_try), []):
+                    if tidx in ted_consumed:
+                        continue
+                    diff = abs(ted_imp - imp)
+                    if diff <= t and diff < best_diff:
+                        best = tidx
+                        best_diff = diff
+
+        if best is not None:
+            ted_consumed.add(best)
+            e3b_matched.append((idx, best, best_diff))
+
+    e3b_idx = {m[0] for m in e3b_matched}
+    df_missing_after_e3b = df_missing_after_e5[~df_missing_after_e5.index.isin(e3b_idx)]
+    print(f"  Alias definidos: {len(ORGAN_ALIASES)}")
+    print(f"  E3b matches: {len(e3b_matched):,}")
+    print(f"  Missing restante: {len(df_missing_after_e3b):,}")
+
+    # ── E7: Fuzzy token overlap + importe ──
+    # Para organos con nombres parecidos pero no identicos despues de normalizar
+    print(f"\n  --- E7: Fuzzy token overlap + importe ---")
+
+    # Build TED name index (full normalized names, not truncated)
+    ted_names_full = defaultdict(list)
+    for tidx, row in ted_valid.iterrows():
+        if tidx in ted_consumed:
+            continue
+        name = normalize_name(row.get('cae_name', ''))
+        yr = row.get('year', np.nan)
+        imp = row['importe_ted']
+        if name and len(name) > 10 and pd.notna(yr) and pd.notna(imp) and imp > 0:
+            ted_names_full[int(yr)].append((tidx, name, imp))
+
+    # Extract unique significant tokens from TED names for fast pre-filtering
+    # Build inverted index: token → set of years that have it
+    ted_token_index = defaultdict(lambda: defaultdict(list))
+    for yr, entries in ted_names_full.items():
+        for tidx, name, imp in entries:
+            toks = {t for t in name.split() if len(t) > 3 and t not in _STOPWORDS}
+            for tok in toks:
+                ted_token_index[tok][yr].append((tidx, name, imp))
+
+    print(f"  TED token index: {len(ted_token_index):,} tokens unicos")
+    print(f"  TED entries por año: {sum(len(v) for v in ted_names_full.values()):,}")
+
+    e7_matched = []
+    e7_checked = 0
+    MIN_OVERLAP_RATIO = 0.6
+    MIN_OVERLAP_TOKENS = 3
+
+    for idx, row in df_missing_after_e3b.iterrows():
+        organ_full = normalize_name(row.get('organo_contratante', ''))
+        imp = row['_imp_match']
+        yr = row[ano_col]
+
+        if not organ_full or len(organ_full) < 12 or pd.isna(imp) or pd.isna(yr) or imp <= 0:
+            continue
+
+        yr = int(yr)
+        t = tol(imp)
+        organ_toks = {tok for tok in organ_full.split() if len(tok) > 3 and tok not in _STOPWORDS}
+
+        if len(organ_toks) < MIN_OVERLAP_TOKENS:
+            continue
+
+        e7_checked += 1
+
+        # Use inverted index: find TED entries that share at least one significant token
+        candidate_tids = set()
+        for tok in organ_toks:
+            for yr_try in [yr, yr-1, yr+1]:
+                for entry in ted_token_index[tok].get(yr_try, []):
+                    candidate_tids.add(entry)
+
+        best = None
+        best_diff = float('inf')
+        best_ratio = 0.0
+
+        for tidx, ted_name, ted_imp in candidate_tids:
+            if tidx in ted_consumed:
+                continue
+            diff = abs(ted_imp - imp)
+            if diff > t:
+                continue
+            ratio, n_common = token_overlap(organ_full, ted_name, MIN_OVERLAP_TOKENS)
+            if ratio >= MIN_OVERLAP_RATIO and diff < best_diff:
+                best = tidx
+                best_diff = diff
+                best_ratio = ratio
+
+        if best is not None:
+            ted_consumed.add(best)
+            e7_matched.append((idx, best, best_diff))
+
+    e7_idx = {m[0] for m in e7_matched}
+    df_missing_after_e7 = df_missing_after_e3b[~df_missing_after_e3b.index.isin(e7_idx)]
+    print(f"  Candidatos analizados: {e7_checked:,}")
+    print(f"  E7 matches: {len(e7_matched):,}")
+    print(f"  Missing restante: {len(df_missing_after_e7):,}")
+
     # ── E6: Propagacion por expediente ──
     print(f"\n  --- E6: Propagacion por expediente ---")
 
-    all_matched_idx_pre = matched_set | e3_idx | e4_matched_idx | e5_idx
+    all_matched_idx_pre = matched_set | e3_idx | e4_matched_idx | e5_idx | e3b_idx | e7_idx
     exp_col = '_expediente' if '_expediente' in df_sara.columns else 'expediente'
 
     matched_expedientes = set(
@@ -809,46 +1016,55 @@ def run_advanced_matching(df_sara, df_ted, matched_idx_prev, match_data_prev, co
         ]
     )
 
-    e6_candidates = df_missing_after_e5[
-        df_missing_after_e5[exp_col].isin(matched_expedientes) &
-        (df_missing_after_e5[exp_col].str.len() > 3)
+    e6_candidates = df_missing_after_e7[
+        df_missing_after_e7[exp_col].isin(matched_expedientes) &
+        (df_missing_after_e7[exp_col].str.len() > 3)
     ]
 
     e6_matched_idx = set(e6_candidates.index)
 
     # Copiar ted_id del primer lote matched del mismo expediente
     e6_ted_ids = {}
-    # Build a quick lookup: sara_idx -> ted_id from E3/E4/E5
-    e345_ted_ids = {}
+
+    # Build lookup: sara_idx -> ted_id from ALL prior strategies
+    all_ted_ids = {}
+    # From E1+E2+E2b
+    for sidx, mdata in match_data_prev.items():
+        tid = mdata.get('ted_id', '')
+        if tid and tid != 'nan':
+            all_ted_ids[sidx] = tid
+    # From E3/E4/E5
     for s_idx_e3, t_idx_e3, _ in e3_matched:
-        e345_ted_ids[s_idx_e3] = str(ted_valid.loc[t_idx_e3, 'ted_notice_id'])
+        all_ted_ids[s_idx_e3] = str(ted_valid.loc[t_idx_e3, 'ted_notice_id'])
     for indices_e4, t_idx_e4, _, _ in e4_matched_groups:
         tid_e4 = str(ted_valid.loc[t_idx_e4, 'ted_notice_id'])
         for s_idx_e4 in indices_e4:
-            e345_ted_ids[s_idx_e4] = tid_e4
+            all_ted_ids[s_idx_e4] = tid_e4
     for s_idx_e5, t_idx_e5, _ in e5_matched:
-        e345_ted_ids[s_idx_e5] = str(ted_valid.loc[t_idx_e5, 'ted_notice_id'])
+        all_ted_ids[s_idx_e5] = str(ted_valid.loc[t_idx_e5, 'ted_notice_id'])
+    for s_idx_e3b, t_idx_e3b, _ in e3b_matched:
+        all_ted_ids[s_idx_e3b] = str(ted_valid.loc[t_idx_e3b, 'ted_notice_id'])
+    for s_idx_e7, t_idx_e7, _ in e7_matched:
+        all_ted_ids[s_idx_e7] = str(ted_valid.loc[t_idx_e7, 'ted_notice_id'])
+
+    # Build lookup: expediente -> ted_id (from matched rows)
+    exp_to_tid = {}
+    matched_sara = df_sara.loc[
+        df_sara.index.isin(all_matched_idx_pre) & (df_sara[exp_col].str.len() > 3),
+        [exp_col]
+    ]
+    for sidx, row in matched_sara.iterrows():
+        exp = row[exp_col]
+        if exp not in exp_to_tid and sidx in all_ted_ids:
+            exp_to_tid[exp] = all_ted_ids[sidx]
 
     if len(e6_matched_idx) > 0:
-        for exp in e6_candidates[exp_col].unique():
-            matched_same_exp = df_sara[
-                df_sara.index.isin(all_matched_idx_pre) &
-                (df_sara[exp_col] == exp)
-            ]
-            # Buscar ted_id en match_data_prev (E1+E2+E2b) o en E3/E4/E5
-            tid = None
-            for sidx in matched_same_exp.index:
-                if sidx in match_data_prev and match_data_prev[sidx].get('ted_id', ''):
-                    tid = match_data_prev[sidx]['ted_id']
-                    break
-                if sidx in e345_ted_ids:
-                    tid = e345_ted_ids[sidx]
-                    break
-            if tid:
-                for idx in e6_candidates[e6_candidates[exp_col] == exp].index:
-                    e6_ted_ids[idx] = tid
+        for idx in e6_matched_idx:
+            exp = df_missing_after_e7.loc[idx, exp_col]
+            if exp in exp_to_tid:
+                e6_ted_ids[idx] = exp_to_tid[exp]
 
-    df_missing_final = df_missing_after_e5[~df_missing_after_e5.index.isin(e6_matched_idx)]
+    df_missing_final = df_missing_after_e7[~df_missing_after_e7.index.isin(e6_matched_idx)]
 
     print(f"  Expedientes con match previo: {len(matched_expedientes):,}")
     print(f"  E6 lotes propagados: {len(e6_matched_idx):,}")
@@ -860,16 +1076,22 @@ def run_advanced_matching(df_sara, df_ted, matched_idx_prev, match_data_prev, co
     return {
         'e3_matched': e3_matched,
         'e3_idx': e3_idx,
+        'e3b_matched': e3b_matched,
+        'e3b_idx': e3b_idx,
         'e4_matched_groups': e4_matched_groups,
         'e4_matched_idx': e4_matched_idx,
         'e5_matched': e5_matched,
         'e5_idx': e5_idx,
+        'e7_matched': e7_matched,
+        'e7_idx': e7_idx,
         'e6_matched_idx': e6_matched_idx,
         'e6_ted_ids': e6_ted_ids,
         'df_missing_final': df_missing_final,
         'df_missing_after_e3': df_missing_after_e3,
         'df_missing_after_e4': df_missing_after_e4,
         'df_missing_after_e5': df_missing_after_e5,
+        'df_missing_after_e3b': df_missing_after_e3b,
+        'df_missing_after_e7': df_missing_after_e7,
         'ted_valid': ted_valid,
     }
 
@@ -965,6 +1187,18 @@ def apply_results_and_report(df_placsp, matched_idx, match_data,
         df_placsp.loc[s_idx, '_ted_validated'] = True
         _enrich_from_ted_valid(df_placsp, s_idx, t_idx, ted_valid, ted_enrich_cols)
 
+    # -- Marcar E3b --
+    for s_idx, t_idx, _ in adv['e3b_matched']:
+        df_placsp.loc[s_idx, '_match_strategy'] = 'E3b_alias'
+        df_placsp.loc[s_idx, '_ted_validated'] = True
+        _enrich_from_ted_valid(df_placsp, s_idx, t_idx, ted_valid, ted_enrich_cols)
+
+    # -- Marcar E7 --
+    for s_idx, t_idx, _ in adv['e7_matched']:
+        df_placsp.loc[s_idx, '_match_strategy'] = 'E7_fuzzy'
+        df_placsp.loc[s_idx, '_ted_validated'] = True
+        _enrich_from_ted_valid(df_placsp, s_idx, t_idx, ted_valid, ted_enrich_cols)
+
     # -- Marcar E6 --
     for s_idx in adv['e6_matched_idx']:
         df_placsp.loc[s_idx, '_match_strategy'] = 'E6_propagacion'
@@ -986,10 +1220,12 @@ def apply_results_and_report(df_placsp, matched_idx, match_data,
     # -- Counts --
     n_sara = df_placsp['_es_sara'].sum()
     n_e3 = len(adv['e3_matched'])
+    n_e3b = len(adv['e3b_matched'])
     n_e4 = len(adv['e4_matched_idx'])
     n_e5 = len(adv['e5_matched'])
+    n_e7 = len(adv['e7_matched'])
     n_e6 = len(adv['e6_matched_idx'])
-    n_total = n_e1 + n_e2 + n_e2b + n_e3 + n_e4 + n_e5 + n_e6
+    n_total = n_e1 + n_e2 + n_e2b + n_e3 + n_e3b + n_e4 + n_e5 + n_e7 + n_e6
     n_missing = df_placsp['_ted_missing'].sum()
     n_missing_incl_neg = df_placsp['_ted_missing_incl_neg'].sum()
     n_neg = df_placsp[df_placsp['_es_sara'] & df_placsp['_es_neg_sin_pub'] & ~df_placsp['_ted_validated']].shape[0]
@@ -1000,8 +1236,10 @@ def apply_results_and_report(df_placsp, matched_idx, match_data,
     print(f"  E2 Expediente + importe:    {n_e2:>8,}  ({n_e2/n_sara*100:>5.1f}%)")
     print(f"  E2b Expediente lotes:       {n_e2b:>8,}  ({n_e2b/n_sara*100:>5.1f}%)")
     print(f"  E3 NIF organo + importe:    {n_e3:>8,}  ({n_e3/n_sara*100:>5.1f}%)")
+    print(f"  E3b Alias nombre + imp.:    {n_e3b:>8,}  ({n_e3b/n_sara*100:>5.1f}%)")
     print(f"  E4 Lotes agrupados:         {n_e4:>8,}  ({n_e4/n_sara*100:>5.1f}%)")
     print(f"  E5 Nombre organo + imp.:    {n_e5:>8,}  ({n_e5/n_sara*100:>5.1f}%)")
+    print(f"  E7 Fuzzy token + imp.:      {n_e7:>8,}  ({n_e7/n_sara*100:>5.1f}%)")
     print(f"  E6 Propagacion expediente:  {n_e6:>8,}  ({n_e6/n_sara*100:>5.1f}%)")
     print(f"  {'─'*46}")
     print(f"  Total matched:              {n_total:>8,}  ({n_total/n_sara*100:>5.1f}%)")
