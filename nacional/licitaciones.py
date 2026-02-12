@@ -72,9 +72,18 @@ CONJUNTOS = {
     },
 }
 
-# Directorios - CAMBIAR AQUÍ LA RUTA SI ES NECESARIO
-DATA_DIR = Path('D:/licitaciones_data')
-OUTPUT_DIR = Path('D:/licitaciones_output')
+# Directorios: configurables por env (WSL/Docker). Por defecto repo-relative bajo tmp/
+_repo_root = Path(__file__).resolve().parent.parent
+_tmp_base = Path(os.environ.get('LICITACIONES_TMP_DIR', _repo_root / 'tmp'))
+if os.environ.get('LICITACIONES_TMP_DIR'):
+    DATA_DIR = _tmp_base / 'raw'
+    OUTPUT_DIR = _tmp_base / 'output'
+elif os.environ.get('LICITACIONES_DATA_DIR') or os.environ.get('LICITACIONES_OUTPUT_DIR'):
+    DATA_DIR = Path(os.environ.get('LICITACIONES_DATA_DIR', _tmp_base / 'raw'))
+    OUTPUT_DIR = Path(os.environ.get('LICITACIONES_OUTPUT_DIR', _tmp_base / 'output'))
+else:
+    DATA_DIR = _tmp_base / 'raw'
+    OUTPUT_DIR = _tmp_base / 'output'
 
 # Namespaces XML
 NS = {
@@ -189,30 +198,46 @@ def descargar_archivo(session, url, filepath, max_reintentos=3):
         size_mb = filepath.stat().st_size / 1024 / 1024
         print(f"   ⏭ Ya existe ({size_mb:.1f} MB)")
         return filepath
-    
+    elif filepath.exists():
+        print(f"   ⚠ Archivo existente muy pequeño ({filepath.stat().st_size} B), re-descargando...")
+
     for intento in range(max_reintentos):
         try:
             response = session.get(url, timeout=600, stream=True)
+            # Log diagnóstico antes de raise_for_status
+            content_length = response.headers.get('Content-Length')
+            cl_msg = f", Content-Length: {content_length}" if content_length else ""
+            print(f"   [DEBUG] GET {response.status_code}{cl_msg}")
+
             response.raise_for_status()
-            
+
             with open(filepath, 'wb') as f:
                 for chunk in response.iter_content(chunk_size=65536):
                     if chunk:
                         f.write(chunk)
-            
-            size_mb = filepath.stat().st_size / 1024 / 1024
-            print(f"   ✓ ({size_mb:.1f} MB)")
+
+            size_bytes = filepath.stat().st_size
+            size_mb = size_bytes / 1024 / 1024
+            if size_bytes == 0:
+                print(f"   ✗ Descarga vacía (0 B) - posible bloqueo o respuesta HTML")
+                return None
+            if size_bytes < 500 and content_length and int(content_length) > 1000:
+                print(f"   ✗ Tamaño recibido ({size_bytes} B) mucho menor que Content-Length ({content_length}) - posible corte o error")
+            else:
+                print(f"   ✓ ({size_mb:.1f} MB)")
             return filepath
-        
+
         except requests.exceptions.HTTPError as e:
             if e.response.status_code == 404:
                 print(f"   ⚠ No disponible (404)")
                 return None
             print(f"   ✗ Error HTTP {e.response.status_code}")
+        except requests.exceptions.RequestException as e:
+            print(f"   ✗ Error de red: {e}")
         except Exception as e:
             print(f"   ✗ Intento {intento + 1}/{max_reintentos}: {e}")
             time.sleep(2 ** intento)
-    
+
     return None
 
 def descargar_conjunto(session, conjunto_id, ano_inicio, ano_fin):
@@ -472,62 +497,202 @@ def parsear_entry(entry):
     except Exception as e:
         return None
 
-def procesar_archivo_atom(filepath):
+
+def parsear_entry_cpm(entry):
+    """Parsea una entrada de Consulta Preliminar de Mercado (CPM). Misma estructura de salida que parsear_entry."""
+    try:
+        id_lic = safe_text(entry, 'atom:id')
+        link = entry.find('atom:link', NS)
+        url = link.get('href') if link is not None else None
+
+        status = entry.find('cac-place-ext:PreliminaryMarketConsultationStatus', NS)
+        if status is None:
+            return None
+
+        expediente = safe_text(status, 'cbc:PreliminaryMarketConsultationID')
+        estado_code = safe_text(status, 'cbc-place-ext:PreliminaryMarketConsultationStatusCode')
+
+        located_party = status.find('cac-place-ext:LocatedContractingParty', NS)
+        party = located_party.find('cac:Party', NS) if located_party else None
+
+        nombre_organo = safe_text(party, 'cac:PartyName/cbc:Name')
+        ciudad_organo = safe_text(party, 'cac:PostalAddress/cbc:CityName')
+
+        nif_organo = None
+        dir3_organo = None
+        id_plataforma = None
+        if party is not None:
+            for pid in party.findall('cac:PartyIdentification', NS):
+                id_elem = pid.find('cbc:ID', NS)
+                if id_elem is not None and id_elem.text:
+                    scheme = id_elem.get('schemeName', '')
+                    if scheme == 'NIF':
+                        nif_organo = id_elem.text.strip()
+                    elif scheme == 'DIR3':
+                        dir3_organo = id_elem.text.strip()
+                    elif scheme == 'ID_PLATAFORMA':
+                        id_plataforma = id_elem.text.strip()
+
+        parent_names = []
+        parent = located_party.find('cac-place-ext:ParentLocatedParty', NS) if located_party else None
+        while parent is not None:
+            pname = safe_text(parent, 'cac:PartyName/cbc:Name')
+            if pname:
+                parent_names.append(pname)
+            parent = parent.find('cac-place-ext:ParentLocatedParty', NS)
+        dependencia = ' > '.join(reversed(parent_names)) if parent_names else None
+
+        project = status.find('cac:ProcurementProject', NS)
+        objeto = safe_text(status, 'cbc:ConsultationName') or safe_text(project, 'cbc:Name')
+        tipo_code = safe_text(project, 'cbc:TypeCode') if project is not None else None
+        subtipo_code = safe_text(project, 'cbc:SubTypeCode') if project is not None else None
+
+        cpvs = []
+        if project:
+            for cpv_elem in project.findall('.//cac:RequiredCommodityClassification/cbc:ItemClassificationCode', NS):
+                if cpv_elem.text:
+                    cpvs.append(cpv_elem.text.strip())
+        cpv_principal = cpvs[0] if cpvs else None
+        cpvs_todos = ';'.join(cpvs) if cpvs else None
+
+        process = status.find('cac:TenderingProcess', NS)
+        procedimiento_code = safe_text(process, 'cbc:ProcedureCode') if process is not None else None
+
+        fecha_limite = safe_text(status, 'cbc:LimitDate')
+        valid_notice = status.find('cac-place-ext:ValidNoticeInfo', NS)
+        fecha_publicacion = safe_text(valid_notice, './/cac-place-ext:AdditionalPublicationDocumentReference/cbc:IssueDate') if valid_notice is not None else None
+        if not fecha_publicacion:
+            fecha_publicacion = safe_text(status, 'cbc:PlannedDate')
+        fecha_updated = safe_text(entry, 'atom:updated')
+
+        return {
+            'id': id_lic,
+            'expediente': expediente,
+            'objeto': objeto,
+            'organo_contratante': nombre_organo,
+            'nif_organo': nif_organo,
+            'dir3_organo': dir3_organo,
+            'id_plataforma': id_plataforma,
+            'ciudad_organo': ciudad_organo,
+            'dependencia': dependencia,
+            'tipo_contrato_code': tipo_code,
+            'tipo_contrato': TIPOS_CONTRATO.get(tipo_code, tipo_code) if tipo_code else None,
+            'subtipo_code': subtipo_code,
+            'procedimiento_code': procedimiento_code,
+            'procedimiento': PROCEDIMIENTOS.get(procedimiento_code, procedimiento_code) if procedimiento_code else None,
+            'estado_code': estado_code,
+            'estado': ESTADOS.get(estado_code, estado_code) if estado_code else None,
+            'importe_sin_iva': None,
+            'importe_con_iva': None,
+            'importe_adjudicacion': None,
+            'importe_adj_con_iva': None,
+            'adjudicatario': None,
+            'nif_adjudicatario': None,
+            'num_ofertas': None,
+            'es_pyme': None,
+            'cpv_principal': cpv_principal,
+            'cpvs': cpvs_todos,
+            'ubicacion': None,
+            'nuts': None,
+            'duracion': None,
+            'duracion_unidad': None,
+            'financiacion_ue': None,
+            'urgencia': None,
+            'fecha_limite': fecha_limite,
+            'hora_limite': None,
+            'fecha_adjudicacion': None,
+            'fecha_publicacion': fecha_publicacion,
+            'fecha_updated': fecha_updated,
+            'url': url,
+        }
+    except Exception:
+        return None
+
+
+def _parsear_entry_any(entry):
+    """Intenta parsear como licitación; si no, como CPM (consultas)."""
+    lic = parsear_entry(entry)
+    if lic is not None:
+        return lic
+    return parsear_entry_cpm(entry)
+
+
+def procesar_archivo_atom(filepath, log_diagnostico=True):
     """Procesa un archivo ATOM."""
     licitaciones = []
-    
+    num_entries = 0
+
     try:
         context = ET.iterparse(str(filepath), events=('end',))
-        
+
         for event, elem in context:
             if elem.tag == '{http://www.w3.org/2005/Atom}entry':
-                lic = parsear_entry(elem)
+                num_entries += 1
+                lic = _parsear_entry_any(elem)
                 if lic:
                     licitaciones.append(lic)
                 elem.clear()
-    
+
     except Exception as e:
+        if log_diagnostico:
+            print(f"   [DEBUG] iterparse falló: {e}")
         try:
             tree = ET.parse(filepath)
             root = tree.getroot()
             for entry in root.findall('atom:entry', NS):
-                lic = parsear_entry(entry)
+                num_entries += 1
+                lic = _parsear_entry_any(entry)
                 if lic:
                     licitaciones.append(lic)
         except Exception as e2:
-            pass
-    
+            if log_diagnostico:
+                print(f"   [DEBUG] parse+findall falló: {e2}")
+
+    if log_diagnostico and num_entries > 0 and len(licitaciones) == 0:
+        print(f"   [DEBUG] {filepath.name}: {num_entries} entradas ATOM → 0 registros (todas fallaron al parsear)")
+        print(f"   [DEBUG] Posible causa: el feed CPM/consultas usa otro esquema XML (p. ej. sin ContractFolderStatus)")
+
     return licitaciones
 
 def procesar_zip(zip_path, conjunto_id):
     """Procesa un archivo ZIP."""
     licitaciones = []
-    
+
     try:
         with tempfile.TemporaryDirectory() as temp_dir:
             temp_path = Path(temp_dir)
-            
+
             print(f"   📦 Extrayendo...", end=' ', flush=True)
             with zipfile.ZipFile(zip_path, 'r') as zf:
                 zf.extractall(temp_path)
-            
+            # Log contenido del ZIP para diagnóstico
+            all_files = list(temp_path.rglob('*'))
+            files_info = [(p.relative_to(temp_path), p.stat().st_size) for p in all_files if p.is_file()]
+            print(f"✓ {len(files_info)} archivos extraídos", flush=True)
+            for rel, size in files_info[:15]:
+                print(f"      [DEBUG] {rel} ({size:,} B)")
+            if len(files_info) > 15:
+                print(f"      [DEBUG] ... y {len(files_info) - 15} más")
+
             # Buscar archivos .atom
             atom_files = list(temp_path.rglob('*.atom'))
-            print(f"✓ {len(atom_files)} ATOM", end=' ', flush=True)
-            
+            print(f"   {len(atom_files)} archivos .atom", end=' ', flush=True)
+
             for atom_file in atom_files:
                 lics = procesar_archivo_atom(atom_file)
                 for lic in lics:
                     lic['conjunto'] = conjunto_id
                 licitaciones.extend(lics)
-            
+
             print(f"→ {len(licitaciones):,} registros")
-    
+
     except zipfile.BadZipFile:
-        print(f"   ✗ ZIP corrupto")
+        print(f"   ✗ ZIP corrupto o no es un ZIP válido")
     except Exception as e:
         print(f"   ✗ Error: {e}")
-    
+        import traceback
+        print(f"   [DEBUG] {traceback.format_exc()}")
+
     return licitaciones
 
 # ============================================================================
@@ -675,7 +840,12 @@ def main():
                 todas_licitaciones.extend(lics)
     
     if todas_licitaciones:
-        df = exportar_datos(todas_licitaciones, f'licitaciones_completo_{ano_inicio}_{ano_fin}')
+        # Nombre de salida según conjunto(s): uno solo → licitaciones_consultas_2025_2025; todos → licitaciones_completo_2025_2025
+        if len(conjuntos) == 1:
+            nombre_base = f'licitaciones_{conjuntos[0]}_{ano_inicio}_{ano_fin}'
+        else:
+            nombre_base = f'licitaciones_completo_{ano_inicio}_{ano_fin}'
+        df = exportar_datos(todas_licitaciones, nombre_base)
         print("\n✅ SCRAPING COMPLETADO")
     else:
         print("\n⚠️ No se encontraron registros")

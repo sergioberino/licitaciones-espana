@@ -3,17 +3,19 @@ Conversión de CSVs de Valencia a Parquet
 Ejecutar después de ccaa_valencia.py
 
 Ejecutar: python ccaa_valencia_parquet.py
-Entrada: valencia_datos/
-Salida: valencia_parquet/
+Entrada: tmp/valencia_datos/  (o LICITACIONES_TMP_DIR/valencia_datos)
+Salida: tmp/valencia_parquet/
 """
 
 import pandas as pd
 from pathlib import Path
 import os
 
-# === CONFIGURACIÓN ===
-INPUT_DIR = Path("valencia_datos")
-OUTPUT_DIR = Path("valencia_parquet")
+# === CONFIGURACIÓN (P2: under tmp/; LICITACIONES_TMP_DIR or repo tmp) ===
+_repo_root = Path(__file__).resolve().parent.parent
+_tmp_base = Path(os.environ.get("LICITACIONES_TMP_DIR", _repo_root / "tmp"))
+INPUT_DIR = _tmp_base / "valencia_datos"
+OUTPUT_DIR = _tmp_base / "valencia_parquet"
 
 # Encodings a probar
 ENCODINGS = ['utf-8', 'latin-1', 'cp1252', 'iso-8859-1']

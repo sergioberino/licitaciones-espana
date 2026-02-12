@@ -1,4 +1,4 @@
-﻿# Datos CSV originales (muy grandes, no subir)
+# Datos CSV originales (muy grandes, no subir)
 catalunya_datos_completos/
 *.csv
 
@@ -17,6 +17,15 @@ venv/
 .DS_Store
 Thumbs.db
 
+# Environment (copy .env.example to .env; do not commit secrets)
+.env
+
+# Temp / staging (P1: tmp base for nacional script; disposable after load to DB)
+tmp/
+
 # Temp
 *.tmp
 *.log
+
+# P2: generated Parquet column report (run scripts/validate_schemas_parquet.py)
+schemas/parquet_columns_report.json

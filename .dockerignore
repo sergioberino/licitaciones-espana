@@ -1,0 +1,14 @@
+# P1: keep image size down; data can be mounted if needed
+.venv/
+venv/
+__pycache__/
+*.pyc
+.git/
+.gitignore
+*.md
+.llm/
+*.parquet
+catalunya/
+valencia/
+nacional/*.parquet
+tmp/

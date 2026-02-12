@@ -16,6 +16,7 @@ Incluye: Contratación, Subvenciones, Convenios, Presupuestos, Sector Público,
 import os
 import time
 import json
+import argparse
 import requests
 import pandas as pd
 from pathlib import Path
@@ -24,10 +25,12 @@ import sys
 import logging
 
 # =============================================================================
-# CONFIGURACIÓN
+# CONFIGURACIÓN (P2: output under tmp/; LICITACIONES_TMP_DIR or repo tmp)
 # =============================================================================
 
-OUTPUT_DIR = "catalunya_datos_completos"
+_repo_root = Path(__file__).resolve().parent.parent
+_tmp_base = Path(os.environ.get("LICITACIONES_TMP_DIR", _repo_root / "tmp"))
+OUTPUT_DIR = _tmp_base / "catalunya_datos_completos"
 FORCE_DOWNLOAD = False
 
 # =============================================================================
@@ -215,18 +218,19 @@ def count_csv_records(path):
 # DESCARGAS SOCRATA
 # =============================================================================
 
-def download_socrata_datasets(output_dir):
-    """Descarga todos los datasets de Socrata"""
+def download_socrata_datasets(output_dir, dataset_ids=None):
+    """Descarga todos los datasets de Socrata (o solo los IDs en dataset_ids si se pasa)."""
+    datasets_to_use = {k: v for k, v in SOCRATA_DATASETS.items() if dataset_ids is None or k in dataset_ids}
     log("\n" + "="*70)
     log("📥 PORTAL TRANSPARENCIA CATALUNYA (Socrata)")
-    log(f"   {len(SOCRATA_DATASETS)} datasets a descargar")
+    log(f"   {len(datasets_to_use)} datasets a descargar")
     log("="*70)
     
     socrata_dir = output_dir / "01_transparencia_catalunya"
-    socrata_dir.mkdir(exist_ok=True)
+    socrata_dir.mkdir(parents=True, exist_ok=True)
     
-    for i, (dataset_id, (subpath, descripcion)) in enumerate(SOCRATA_DATASETS.items(), 1):
-        log(f"\n[{i}/{len(SOCRATA_DATASETS)}] 📊 {descripcion}")
+    for i, (dataset_id, (subpath, descripcion)) in enumerate(datasets_to_use.items(), 1):
+        log(f"\n[{i}/{len(datasets_to_use)}] 📊 {descripcion}")
         
         # Crear subdirectorio
         full_path = socrata_dir / subpath
@@ -377,37 +381,38 @@ def download_gencat_adicional(output_dir):
 # =============================================================================
 
 def main():
+    parser = argparse.ArgumentParser(description="Catalunya: descarga datos Socrata + Barcelona + Gencat")
+    parser.add_argument("--output-dir", type=str, default=None, help="Override output directory (default: tmp/catalunya_datos_completos)")
+    parser.add_argument("--limit-datasets", type=str, default=None, help="Comma-separated Socrata dataset IDs (e.g. hb6v-jcbf) for small run")
+    args = parser.parse_args()
+    
+    output_dir = Path(args.output_dir) if args.output_dir else Path(OUTPUT_DIR)
+    output_dir.mkdir(parents=True, exist_ok=True)
+    
+    limit_ids = set(s.strip() for s in args.limit_datasets.split(",")) if args.limit_datasets else None
+    
     start = time.time()
     
     print("\n" + "="*70)
     print("🚀 CATALUÑA - DESCARGA COMPLETA DE DATOS PÚBLICOS v2.0")
     print("="*70)
+    n_socrata = len(limit_ids) if limit_ids else len(SOCRATA_DATASETS)
     print(f"""
-Descargando TODOS los datos disponibles:
-- {len(SOCRATA_DATASETS)} datasets del Portal Transparencia Catalunya
-- {len(BCN_DATASETS)} datasets de Open Data Barcelona
-- Datos adicionales de Gencat
-
-Categorías incluidas:
-✓ Contratación pública
-✓ Subvenciones y ayudas (RAISC)
-✓ Convenios y encargos de gestión
-✓ Presupuestos y finanzas
-✓ Sector público y entidades
-✓ Recursos humanos y retribuciones
-✓ Geografía y territorio
+Descargando datos:
+- {n_socrata} datasets del Portal Transparencia Catalunya
+- {len(BCN_DATASETS)} datasets de Open Data Barcelona (omitidos si --limit-datasets)
+- Datos adicionales de Gencat (omitidos si --limit-datasets)
 """)
     print("="*70)
     
-    output_dir = Path(OUTPUT_DIR)
-    output_dir.mkdir(exist_ok=True)
     log(f"📁 {output_dir.absolute()}")
     
     # === DESCARGAS ===
-    download_socrata_datasets(output_dir)
-    download_socrata_metadata(output_dir)
-    download_barcelona_datasets(output_dir)
-    download_gencat_adicional(output_dir)
+    download_socrata_datasets(output_dir, dataset_ids=limit_ids)
+    if not limit_ids:
+        download_socrata_metadata(output_dir)
+        download_barcelona_datasets(output_dir)
+        download_gencat_adicional(output_dir)
     
     # === RESUMEN ===
     elapsed = time.time() - start
@@ -440,7 +445,7 @@ Categorías incluidas:
 
 ### Estructura de directorios
 ```
-{OUTPUT_DIR}/
+{output_dir}/
 ├── 01_transparencia_catalunya/
 │   ├── 01_contratacion/
 │   │   ├── registro_publico_contratos.csv  ⭐ PRINCIPAL

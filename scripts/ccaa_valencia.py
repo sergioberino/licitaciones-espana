@@ -28,13 +28,16 @@ Categorías incluidas (14):
 import requests
 import os
 import time
+import argparse
 from pathlib import Path
 from datetime import datetime
 
-# Configuración
+# Configuración (P2: output under tmp/; LICITACIONES_TMP_DIR or repo tmp)
 BASE_URL = "https://dadesobertes.gva.es"
 API_URL = f"{BASE_URL}/api/3/action/package_show"
-OUTPUT_DIR = Path("valencia_datos")
+_repo_root = Path(__file__).resolve().parent.parent
+_tmp_base = Path(os.environ.get("LICITACIONES_TMP_DIR", _repo_root / "tmp"))
+OUTPUT_DIR = _tmp_base / "valencia_datos"
 
 # ============================================================================
 # CATÁLOGO COMPLETO DE DATASETS - IDs VERIFICADOS Y CORREGIDOS
@@ -335,6 +338,16 @@ def process_dataset(dataset_id, category_dir):
 
 
 def main():
+    parser = argparse.ArgumentParser(description="Valencia: descarga datos CKAN (Dades Obertes GVA)")
+    parser.add_argument("--categories", type=str, default=None, help="Comma-separated categories (e.g. contratacion) for small run")
+    args = parser.parse_args()
+    
+    categories_filter = [c.strip() for c in args.categories.split(",")] if args.categories else None
+    if categories_filter:
+        datasets_to_use = {k: v for k, v in DATASETS.items() if k in categories_filter}
+    else:
+        datasets_to_use = DATASETS
+    
     start_time = datetime.now()
     
     print("=" * 70)
@@ -342,8 +355,8 @@ def main():
     print("=" * 70)
     print(f"Portal: {BASE_URL}")
     print(f"Destino: {OUTPUT_DIR.absolute()}")
-    print(f"Categorías: {len(DATASETS)}")
-    print(f"Datasets totales: {sum(len(v) for v in DATASETS.values())}")
+    print(f"Categorías: {len(datasets_to_use)}")
+    print(f"Datasets totales: {sum(len(v) for v in datasets_to_use.values())}")
     print(f"Inicio: {start_time.strftime('%Y-%m-%d %H:%M:%S')}")
     
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
@@ -353,7 +366,7 @@ def main():
     stats = {}
     errors = []
     
-    for category, datasets in DATASETS.items():
+    for category, datasets in datasets_to_use.items():
         print(f"\n{'=' * 70}")
         print(f"📁 CATEGORÍA: {category.upper()}")
         print("=" * 70)

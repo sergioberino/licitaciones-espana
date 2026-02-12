@@ -7,6 +7,7 @@ Convierte los CSVs relevantes a Parquet, descartando redundantes.
 ================================================================================
 """
 
+import os
 import pandas as pd
 from pathlib import Path
 from datetime import datetime
@@ -14,11 +15,13 @@ import logging
 import glob
 
 # =============================================================================
-# CONFIGURACIÓN
+# CONFIGURACIÓN (P2: under tmp/; LICITACIONES_TMP_DIR or repo tmp)
 # =============================================================================
 
-INPUT_DIR = "catalunya_datos_completos"
-OUTPUT_DIR = "catalunya_parquet"
+_repo_root = Path(__file__).resolve().parent.parent
+_tmp_base = Path(os.environ.get("LICITACIONES_TMP_DIR", _repo_root / "tmp"))
+INPUT_DIR = _tmp_base / "catalunya_datos_completos"
+OUTPUT_DIR = _tmp_base / "catalunya_parquet"
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s | %(message)s', datefmt='%H:%M:%S')
 log = logging.getLogger(__name__).info
@@ -409,6 +412,7 @@ def main():
     
     input_dir = Path(INPUT_DIR)
     output_dir = Path(OUTPUT_DIR)
+    output_dir.mkdir(parents=True, exist_ok=True)
     
     if not input_dir.exists():
         log(f"❌ No encontrado: {input_dir}")
