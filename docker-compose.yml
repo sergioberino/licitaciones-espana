@@ -1,5 +1,5 @@
 # ETL microservice only. Run standalone: set .env (DB_HOST, DB_NAME, DB_USER, DB_PASSWORD)
-# and ensure Postgres is reachable. See docs/how-to-use-deployment.md.
+# and ensure Postgres is reachable. See docs/quick-guide-deploy.md.
 
 services:
   etl:

@@ -6,6 +6,8 @@ Todos los cambios notables del CLI y del microservicio ETL se documentan aquí.
 
 ### Añadido
 
+- **Guía rápida de despliegue:** Documento `docs/quick-guide-deploy.md` (en español): requisitos, arranque rápido, tabla de comandos del CLI, variables de entorno y enlace a notas operativas. Sustituye a `how-to-use-deployment.md`.
+
 - **Comando `status`:** Comprueba en un solo comando la conexión a la base de datos y al servicio de embedding. Mensajes en español (p. ej. "ETL está operativo. Base de datos y servicio de embedding accesibles."). Sustituye a los comandos públicos `check-connection` y `check-embedding`, que pasan a ser subrutinas internas.
 - **CLI en español:** Descripciones, ayuda de argumentos y mensajes de éxito/error en español.
 - **Ayuda con atribución:** En `licitia-etl --help` se muestra el origen del fork (BquantFinance/licitaciones-espana) y la autoría del CLI (Sergio Berino, Grupo TOP Digital).

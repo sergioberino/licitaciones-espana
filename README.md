@@ -37,7 +37,7 @@ Ejemplo mínimo: copiar `.env.example` a `.env` y definir al menos `DB_*` y `EMB
 - **En Docker (orquestado):** desde la raíz del repo de ingestión, el compose arranca postgres, embedding y este servicio ETL. Ejemplo: `docker compose run --rm etl licitia-etl status`.
 - **Standalone:** Postgres y el servicio de embedding deben estar accesibles; configurar `DB_HOST` y `EMBEDDING_SERVICE_URL` en consecuencia.
 
-Detalle: [docs/how-to-use-deployment.md](docs/how-to-use-deployment.md).
+Detalle: [docs/quick-guide-deploy.md](docs/quick-guide-deploy.md).
 
 ## Roadmap
 
