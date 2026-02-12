@@ -143,8 +143,12 @@ def run_cpv_embed(
                     with open(path, "r", encoding="utf-8") as f:
                         batch_data = json.load(f)
                     # batch_data: list of {"num_code", "embedding", "label"}
+                    # Pass embedding as string "[x,y,...]" so psycopg2 quotes it; template casts to ::vector
+                    def _embedding_str(emb: List[float]) -> str:
+                        return "[" + ",".join(str(x) for x in emb) + "]"
+
                     rows = [
-                        (r["num_code"], _vector_literal(r["embedding"]), r.get("label") or "")
+                        (r["num_code"], _embedding_str(r["embedding"]), r.get("label") or "")
                         for r in batch_data
                     ]
                     with conn.cursor() as insert_cur:
@@ -155,7 +159,7 @@ def run_cpv_embed(
                             VALUES %s
                             """,
                             rows,
-                            template="(%s, %s, %s)",
+                            template="(%s, %s::vector, %s)",
                             page_size=len(rows),
                         )
                     conn.commit()
