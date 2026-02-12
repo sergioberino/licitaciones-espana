@@ -24,6 +24,7 @@ from etl import __version__
 from etl.config import (
     get_database_url,
     get_embed_batch_size,
+    get_embed_max_workers,
     get_embedding_service_url,
     get_ingest_batch_size,
 )
@@ -134,12 +135,14 @@ def cmd_generate_embedding(args: argparse.Namespace) -> int:
     embed_url = getattr(args, "embedding_service_url", None) or get_embedding_service_url()
     embed_batch = get_embed_batch_size()
     ingest_batch = get_ingest_batch_size()
+    embed_workers = get_embed_max_workers()
     try:
         total, failed = run_cpv_embed(
             get_database_url(),
             embed_url,
             embed_batch_size=embed_batch,
             ingest_batch_size=ingest_batch,
+            embed_max_workers=embed_workers,
         )
         print(f"Inserted {total} rows into dim.cpv_router.")
         if failed:

@@ -48,3 +48,13 @@ def get_ingest_batch_size() -> int:
         return max(1, n)
     except ValueError:
         return 10000
+
+
+def get_embed_max_workers() -> int:
+    """Max concurrent embedding requests per batch (EMBED_MAX_WORKERS). Default 1 = sequential; increase for more compute."""
+    raw = os.environ.get("EMBED_MAX_WORKERS", "1")
+    try:
+        n = int(raw)
+        return max(1, n)
+    except ValueError:
+        return 1

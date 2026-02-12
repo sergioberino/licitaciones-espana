@@ -105,3 +105,7 @@ docker compose build
 docker compose up -d
 docker compose run --rm etl licitia-etl check-connection
 ```
+
+## Operational notes
+
+See [operational-notes.md](operational-notes.md) for audit tasks and known issues (e.g. Postgres errors during `generate_embedding` cpv_router ingestion).
