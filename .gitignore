@@ -29,3 +29,6 @@ tmp/
 
 # P2: generated Parquet column report (run scripts/validate_schemas_parquet.py)
 schemas/parquet_columns_report.json
+
+# LLM
+.llm/
