@@ -1,0 +1,408 @@
+{
+  "totalItems": 9042,
+  "totalPages": 905,
+  "currentPage": 480,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "name": "ELECTROMONTAJES ARGI S.L.",
+      "registrationNumber": "05303",
+      "identificationNumber": "B20524138",
+      "address": "DONOSTI IBILBIDEA 44 - LOCAL 3",
+      "location": {
+        "postalCode": "20115",
+        "municipality": "Astigarraga",
+        "county": "Gipuzkoa",
+        "municipalityId": "903",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.504.1",
+          "name": "Instalaciones eléctricas en general",
+          "_links": {
+            "self": {
+              "name": "Instalaciones eléctricas en general",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.504.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2022-10-18",
+      "certificateEndDate": "2023-04-18",
+      "object": "TODO TIPO DE PROYECTOS, OBRAS, TRABAJOS, REPARACIONES, COMPRAVENTAS Y DEMAS CONTRATOS RELACIONADOS CON INSTALACIONES ELECTRICAS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/05303",
+      "_links": {
+        "self": {
+          "name": "ELECTROMONTAJES ARGI S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/05303"
+        }
+      }
+    },
+    {
+      "name": "INALBE ERAIKUNTZA INTEGRALA, S.L.",
+      "registrationNumber": "06991",
+      "identificationNumber": "B75219683",
+      "address": "Egiburuberri Pasealekua 13-OJ",
+      "location": {
+        "postalCode": "20100",
+        "municipality": "Errenteria",
+        "county": "Gipuzkoa",
+        "municipalityId": "067",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.501.1",
+          "name": "Construcción completa, reparación y conservación de edificaciones",
+          "_links": {
+            "self": {
+              "name": "Construcción completa, reparación y conservación de edificaciones",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2022-10-18",
+      "certificateEndDate": "2023-04-18",
+      "object": "LA CONTRATACIÓN, GESTIÓN Y EJECUCIÓN DE OBRAS PÚBLICAS Y PRIVADAS, ASÍ COMO LAS ACTIVIDADES AUXILIARES Y COMPLEMENTARIAS A LAS MISMAS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06991",
+      "_links": {
+        "self": {
+          "name": "INALBE ERAIKUNTZA INTEGRALA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/06991"
+        }
+      }
+    },
+    {
+      "name": "BARAMBIO FORESTALES S.L.",
+      "registrationNumber": "06046",
+      "identificationNumber": "B01432681",
+      "address": "CARRETERA BILBAO VITORIA 24",
+      "location": {
+        "postalCode": "01450",
+        "municipality": "Amurrio",
+        "county": "Araba/Álava",
+        "municipalityId": "002",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.912",
+          "name": "Servicios forestales",
+          "_links": {
+            "self": {
+              "name": "Servicios forestales",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.912"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2022-10-18",
+      "certificateEndDate": "2023-04-18",
+      "object": "LA REALIZACIÓN POR CUENTA PROPIA O AJENA DE TODA CLASE DE SERVICIOS FORESTALES, TALES COMO LA LIMPIEZA Y REFORESTACIÓN DE MONTES O SU TRANSFORMACIÓN EN PASTIZALES",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06046",
+      "_links": {
+        "self": {
+          "name": "BARAMBIO FORESTALES S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/06046"
+        }
+      }
+    },
+    {
+      "name": "PROYECTOS MECANICOS DE INSTALACIONES INDUSTRIALES SA",
+      "registrationNumber": "08641",
+      "identificationNumber": "A78277506",
+      "address": "CALLE MIRADOR DE LA REINA, Nº 107, 1ª",
+      "location": {
+        "postalCode": "28035",
+        "municipality": "Madrid",
+        "county": "Madrid",
+        "municipalityId": "079",
+        "countyId": "28"
+      },
+      "economicActivities": [
+        {
+          "id": "1.843.1",
+          "name": "Servicios técnicos de ingeniería",
+          "_links": {
+            "self": {
+              "name": "Servicios técnicos de ingeniería",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2022-10-17",
+      "certificateEndDate": "2023-04-03",
+      "object": "REALIZACIÓN DE PROYECTOS (INGENIERÍA Y ARQUITECTURA). DIRECCIÓN Y SUPERVISIÓN DE OBRA. ASISTENCIA TÉCNICA. SERVICIOS ENERGÉTICOS. AUDITORÍAS E INFORMES (ENERGÉTICOS, DE INSTALACIONES, DE ACTIVOS O DUE DILIGENCES). SUPERVISIÓN Y GESTIÓN TÉCNICA DE MANTENIMIENTO (FACILITY MANAGEMENT).",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08641",
+      "_links": {
+        "self": {
+          "name": "PROYECTOS MECANICOS DE INSTALACIONES INDUSTRIALES SA",
+          "href": "https://api.euskadi.eus/procurements/companies/08641"
+        }
+      }
+    },
+    {
+      "name": "ALFONSO GARCIA SAT,  S.C.",
+      "registrationNumber": "08638",
+      "identificationNumber": "J01509082",
+      "address": "PEDRO ASUA ",
+      "location": {
+        "postalCode": "01008",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.691.1",
+          "name": "Reparación de artículos eléctricos para el hogar",
+          "_links": {
+            "self": {
+              "name": "Reparación de artículos eléctricos para el hogar",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.691.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2022-10-14",
+      "certificateEndDate": "2023-04-08",
+      "object": "LA PRESTACIÓN DE SERVICIOS DE ASISTENCIA TÉCNICA DE APARATOS ELECTRODOMÉSTICOS, ASÍ COMO CUALQUIER OTRA ACTIVIDAD LÍCITA COMPLEMENTARIA A ESTA.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08638",
+      "_links": {
+        "self": {
+          "name": "ALFONSO GARCIA SAT,  S.C.",
+          "href": "https://api.euskadi.eus/procurements/companies/08638"
+        }
+      }
+    },
+    {
+      "name": "IKOM IRUDI ETA KOMUNIKAZIOA, S.L.",
+      "registrationNumber": "03472",
+      "identificationNumber": "B20928982",
+      "address": "KALE NAGUSIA 8 EZK",
+      "location": {
+        "postalCode": "20248",
+        "municipality": "Arama",
+        "county": "Gipuzkoa",
+        "municipalityId": "012",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.844",
+          "name": "Servicios de publicidad, relaciones públicas y similares",
+          "_links": {
+            "self": {
+              "name": "Servicios de publicidad, relaciones públicas y similares",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.844"
+            }
+          }
+        },
+        {
+          "id": "1.999",
+          "name": "Otros servicios n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros servicios n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.999"
+            }
+          }
+        },
+        {
+          "id": "3.019",
+          "name": "Otras actividades relacionadas con el cine, el teatro y el circo",
+          "_links": {
+            "self": {
+              "name": "Otras actividades relacionadas con el cine, el teatro y el circo",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/3.019"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2022-10-14",
+      "certificateEndDate": "2023-03-25",
+      "object": "LA CREACIÓN, PRODUCCIÓN, ORGANIZACIÓN Y COMUNICACIÓN DE TODO TIPO DE ACTOS DE COMUNICACIÓN, EVENTOS, GALAS, PROGRAMAS DE TELEVISIÓN, RADIO, PUBLICACIONES GRÁFICAS, WEB Y MULTIMEDIA EN GENERAL Y CUANTAS ACTIVIDADES SEAN ANEJAS O COMPLEMENTARIAS DE LAS ANTERIORES",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03472",
+      "_links": {
+        "self": {
+          "name": "IKOM IRUDI ETA KOMUNIKAZIOA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/03472"
+        }
+      }
+    },
+    {
+      "name": "IÑIGO MEZO ALVAREZ",
+      "registrationNumber": "08220",
+      "identificationNumber": "16071035S",
+      "address": "CL/ARMINTZA BIDEA, 4 D",
+      "location": {
+        "postalCode": "48630",
+        "municipality": "Gorliz",
+        "county": "Bizkaia",
+        "municipalityId": "043",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "2.751",
+          "name": "Profesionales de la publicidad, relaciones públicas y similares",
+          "_links": {
+            "self": {
+              "name": "Profesionales de la publicidad, relaciones públicas y similares",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/2.751"
+            }
+          }
+        },
+        {
+          "id": "2.765",
+          "name": "Grabadores informáticos",
+          "_links": {
+            "self": {
+              "name": "Grabadores informáticos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/2.765"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2022-10-14",
+      "certificateEndDate": "2023-04-13",
+      "object": "GRABADORES INFORMÁTICOS.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08220",
+      "_links": {
+        "self": {
+          "name": "IÑIGO MEZO ALVAREZ",
+          "href": "https://api.euskadi.eus/procurements/companies/08220"
+        }
+      }
+    },
+    {
+      "name": "ROSALIA NAHIR RODRIGUEZ HOSSEN",
+      "registrationNumber": "08262",
+      "identificationNumber": "71379927W",
+      "address": "C/CAMINO PORTILLA Nº1",
+      "location": {
+        "postalCode": "01212",
+        "municipality": "Zambrana",
+        "county": "Araba/Álava",
+        "municipalityId": "062",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.673.1",
+          "name": "Bar categoría especial",
+          "_links": {
+            "self": {
+              "name": "Bar categoría especial",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.673.1"
+            }
+          }
+        },
+        {
+          "id": "1.673.2",
+          "name": "Otros cafés y bares",
+          "_links": {
+            "self": {
+              "name": "Otros cafés y bares",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.673.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2022-10-13",
+      "certificateEndDate": "2023-03-08",
+      "object": "OTROS CAFÉS Y BARES",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08262",
+      "_links": {
+        "self": {
+          "name": "ROSALIA NAHIR RODRIGUEZ HOSSEN",
+          "href": "https://api.euskadi.eus/procurements/companies/08262"
+        }
+      }
+    },
+    {
+      "name": "AINTZANE GOFFARD SEVILLANO",
+      "registrationNumber": "08150",
+      "identificationNumber": "78909557F",
+      "address": "Calle Nafarroa beherea N6 3D",
+      "location": {
+        "postalCode": "48950",
+        "municipality": "Erandio",
+        "county": "Bizkaia",
+        "municipalityId": "902",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "2.882",
+          "name": "Guías de turismo",
+          "_links": {
+            "self": {
+              "name": "Guías de turismo",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/2.882"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2022-10-13",
+      "certificateEndDate": "2023-04-11",
+      "object": "DOCTORES Y LICENCIADOS EN CIENCIAS FÍSICAS, GEOFÍSICAS, GEOLÓGICAS. OTROS SERVICIOS N.C.O.P. VENTA AL POR MENOR POR CORREO O CATÁLOGO DE PRODUCTOS DIVERSOS.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08150",
+      "_links": {
+        "self": {
+          "name": "AINTZANE GOFFARD SEVILLANO",
+          "href": "https://api.euskadi.eus/procurements/companies/08150"
+        }
+      }
+    },
+    {
+      "name": "JOKIN OYARZABAL MUNDUATE",
+      "registrationNumber": "08183",
+      "identificationNumber": "44163539C",
+      "address": "Plaza San Cristobal 9 3C",
+      "location": {
+        "postalCode": "48300",
+        "municipality": "Gernika-Lumo",
+        "county": "Bizkaia",
+        "municipalityId": "046",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "2.421",
+          "name": "Arquitectos técnicos y aparejadores",
+          "_links": {
+            "self": {
+              "name": "Arquitectos técnicos y aparejadores",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/2.421"
+            }
+          }
+        },
+        {
+          "id": "2.826",
+          "name": "Personal docente de enseñanzas diversas",
+          "_links": {
+            "self": {
+              "name": "Personal docente de enseñanzas diversas",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/2.826"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2022-10-13",
+      "certificateEndDate": "2023-04-11",
+      "object": "ARQUITECTOS TÉCNICOS Y APAREJADORES.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08183",
+      "_links": {
+        "self": {
+          "name": "JOKIN OYARZABAL MUNDUATE",
+          "href": "https://api.euskadi.eus/procurements/companies/08183"
+        }
+      }
+    }
+  ]
+}

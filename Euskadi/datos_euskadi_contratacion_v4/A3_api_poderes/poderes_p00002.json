@@ -1,0 +1,523 @@
+{
+  "totalItems": 919,
+  "totalPages": 92,
+  "currentPage": 2,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "id": 244,
+      "identificationNumber": "P0104800H",
+      "name": "Ayuntamiento de Oyón-Oion",
+      "scope": "ARABA/ÁLAVA",
+      "address": "Plaza Mayor, 5. 01320 Oyón-Oion (Araba/Álava)",
+      "webPage": "http://www.ayuntamientodeoyon.com",
+      "publicationDate": "2025-12-04",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES211",
+      "entities": [
+        {
+          "id": 692,
+          "name": "Ayuntamiento de Oyón-Oion",
+          "orgs": [
+            {
+              "id": 912099,
+              "name": "Pleno",
+              "_links": {
+                "self": {
+                  "name": "Pleno",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/244/entities/692/orgs/912099"
+                }
+              }
+            },
+            {
+              "id": 912098,
+              "name": "Alcaldía",
+              "_links": {
+                "self": {
+                  "name": "Alcaldía",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/244/entities/692/orgs/912098"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Ayuntamiento de Oyón-Oion",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/244/entities/692"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder244/es_doc/index.html",
+      "_links": {
+        "self": {
+          "name": "Ayuntamiento de Oyón-Oion",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/244"
+        }
+      }
+    },
+    {
+      "id": 199,
+      "identificationNumber": "B01480334",
+      "name": "INDESA 2010 S.L.",
+      "scope": "ARABA/ÁLAVA",
+      "address": "Calle General Álava nº 10 - 5ª planta  Vitoria-Gasteiz (Araba/Álava)",
+      "webPage": "http://www.araba.eus/sociedadespublicas",
+      "publicationDate": "2025-12-02",
+      "mainActivity": "Protección social",
+      "codNUTS": "ES211",
+      "CPV": [
+        {
+          "name": "Servicios de gestión de lavanderías"
+        },
+        {
+          "name": "Servicios de jardinería paisajística"
+        },
+        {
+          "name": "Servicios de limpieza"
+        }
+      ],
+      "entities": [
+        {
+          "id": 629,
+          "name": "INDESA 2010 S.L.",
+          "orgs": [
+            {
+              "id": 911951,
+              "name": "B01480334",
+              "_links": {
+                "self": {
+                  "name": "B01480334",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/199/entities/629/orgs/911951"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "INDESA 2010 S.L.",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/199/entities/629"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder199/es_doc/index.html",
+      "_links": {
+        "self": {
+          "name": "INDESA 2010 S.L.",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/199"
+        },
+        "contractingAuthorities": [
+          {
+            "name": "Alava Agencia de Desarrollo, S.A.",
+            "href": "https://api.euskadi.eus/procurements/contracting-authorities/18665"
+          },
+          {
+            "name": "Ayuntamiento de Elburgo",
+            "href": "https://api.euskadi.eus/procurements/contracting-authorities/17685"
+          },
+          {
+            "name": "Ayuntamiento de Llodio",
+            "href": "https://api.euskadi.eus/procurements/contracting-authorities/17967"
+          },
+          {
+            "name": "Ayuntamiento de Oyón-Oion",
+            "href": "https://api.euskadi.eus/procurements/contracting-authorities/18392"
+          },
+          {
+            "name": "Ayuntamiento de Vitoria-Gasteiz",
+            "href": "https://api.euskadi.eus/procurements/contracting-authorities/18745"
+          },
+          {
+            "name": "Bomberos Forales de Álava",
+            "href": "https://api.euskadi.eus/procurements/contracting-authorities/18109"
+          },
+          {
+            "name": "Diputación Foral de Álava",
+            "href": "https://api.euskadi.eus/procurements/contracting-authorities/17585"
+          },
+          {
+            "name": "Fundación Catedral Santa María",
+            "href": "https://api.euskadi.eus/procurements/contracting-authorities/18797"
+          },
+          {
+            "name": "Gobierno Vasco",
+            "href": "https://api.euskadi.eus/procurements/contracting-authorities/16135"
+          },
+          {
+            "name": "Instituto Foral de Bienestar Social",
+            "href": "https://api.euskadi.eus/procurements/contracting-authorities/17667"
+          },
+          {
+            "name": "Instituto Foral de la Juventud de Alava",
+            "href": "https://api.euskadi.eus/procurements/contracting-authorities/17661"
+          },
+          {
+            "name": "Juntas Generales de Álava",
+            "href": "https://api.euskadi.eus/procurements/contracting-authorities/18564"
+          },
+          {
+            "name": "OSAKIDETZA - Servicio Vasco de Salud ",
+            "href": "https://api.euskadi.eus/procurements/contracting-authorities/16472"
+          }
+        ]
+      }
+    },
+    {
+      "id": 440,
+      "identificationNumber": "G01109792",
+      "name": "Cuadrilla de Rioja Alavesa",
+      "scope": "ARABA/ÁLAVA",
+      "address": "Carretera Vitoria, 2. 01300 Laguardia (Álava-Araba)",
+      "webPage": "http://www.rioja-alavesa.es",
+      "publicationDate": "2025-11-28",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES211",
+      "entities": [
+        {
+          "id": 892,
+          "name": "Cuadrilla de Rioja Alavesa",
+          "orgs": [
+            {
+              "id": 912485,
+              "name": "Presidencia",
+              "_links": {
+                "self": {
+                  "name": "Presidencia",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/440/entities/892/orgs/912485"
+                }
+              }
+            },
+            {
+              "id": 912484,
+              "name": "Pleno",
+              "_links": {
+                "self": {
+                  "name": "Pleno",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/440/entities/892/orgs/912484"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Cuadrilla de Rioja Alavesa",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/440/entities/892"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder440/es_doc/index.html",
+      "_links": {
+        "self": {
+          "name": "Cuadrilla de Rioja Alavesa",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/440"
+        }
+      }
+    },
+    {
+      "id": 255,
+      "identificationNumber": "P0101800A",
+      "name": "Ayuntamiento de Zigoitia",
+      "scope": "ARABA/ÁLAVA",
+      "address": "Bengolarra, 1. 01138 Zigoitia (Araba/Álava)",
+      "webPage": "http://www.zigoitia.eus",
+      "publicationDate": "2025-11-25",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES211",
+      "entities": [
+        {
+          "id": 704,
+          "name": "Ayuntamiento de Zigoitia",
+          "orgs": [
+            {
+              "id": 912118,
+              "name": "Pleno",
+              "_links": {
+                "self": {
+                  "name": "Pleno",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/255/entities/704/orgs/912118"
+                }
+              }
+            },
+            {
+              "id": 912117,
+              "name": "Alcaldía",
+              "_links": {
+                "self": {
+                  "name": "Alcaldía",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/255/entities/704/orgs/912117"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Ayuntamiento de Zigoitia",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/255/entities/704"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder255/es_doc/index.html",
+      "_links": {
+        "self": {
+          "name": "Ayuntamiento de Zigoitia",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/255"
+        }
+      }
+    },
+    {
+      "id": 26699,
+      "identificationNumber": "G16376527",
+      "name": "Fundacion EDA DRINKS AND WINE CAMPUS",
+      "scope": "ARABA/ÁLAVA",
+      "address": "Calle Pedro Asua, nº 69-73, bajo",
+      "webPage": "https://www.bculinary.com",
+      "publicationDate": "2025-11-24",
+      "mainActivity": "Educación",
+      "codNUTS": "ES211",
+      "entities": [
+        {
+          "id": 26700,
+          "name": "FUNDACIÓN EDA DRINKS AND WINE CAMPUS",
+          "orgs": [
+            {
+              "id": 26701,
+              "name": "Director General",
+              "_links": {
+                "self": {
+                  "name": "Director General",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/26699/entities/26700/orgs/26701"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "FUNDACIÓN EDA DRINKS AND WINE CAMPUS",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/26699/entities/26700"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder26699/es_doc/index.html",
+      "_links": {
+        "self": {
+          "name": "Fundacion EDA DRINKS AND WINE CAMPUS",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/26699"
+        }
+      }
+    },
+    {
+      "id": 27147,
+      "identificationNumber": "G44819282",
+      "name": "Fundación Memorial 3 de marzo",
+      "scope": "ARABA/ÁLAVA",
+      "address": "Fermin Lasuen,004",
+      "webPage": "https://www.justizia.eus/inicio/",
+      "publicationDate": "2025-11-17",
+      "mainActivity": "Ocio, cultura y religión",
+      "codNUTS": "ES211",
+      "entities": [
+        {
+          "id": 27148,
+          "name": "Fundación Memorial 3 de marzo",
+          "orgs": [
+            {
+              "id": 27149,
+              "name": "Fundación Memorial 3 de marzo ",
+              "_links": {
+                "self": {
+                  "name": "Fundación Memorial 3 de marzo ",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/27147/entities/27148/orgs/27149"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Fundación Memorial 3 de marzo",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/27147/entities/27148"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder27147/es_doc/index.html",
+      "_links": {
+        "self": {
+          "name": "Fundación Memorial 3 de marzo",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/27147"
+        }
+      }
+    },
+    {
+      "id": 27143,
+      "identificationNumber": "P0100131B",
+      "name": "CONCEJO DE GOPEGI",
+      "scope": "ARABA/ÁLAVA",
+      "address": "CALLE AMAIUR 3 GOPEGI",
+      "webPage": "www.zigoitia.eus",
+      "publicationDate": "2025-11-10",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES211",
+      "entities": [
+        {
+          "id": 27144,
+          "name": "CONCEJO DE GOPEGI",
+          "orgs": [
+            {
+              "id": 27145,
+              "name": "ASAMBLEA VECINAL",
+              "_links": {
+                "self": {
+                  "name": "ASAMBLEA VECINAL",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/27143/entities/27144/orgs/27145"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "CONCEJO DE GOPEGI",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/27143/entities/27144"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder27143/es_doc/index.html",
+      "_links": {
+        "self": {
+          "name": "CONCEJO DE GOPEGI",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/27143"
+        }
+      }
+    },
+    {
+      "id": 27121,
+      "identificationNumber": "G48408405",
+      "name": "DEMA – AGENCIA FORAL DE EMPLEO Y EMPRENDIMIENTO DE BIZKAIA",
+      "scope": "BIZKAIA",
+      "address": "BARAKALDO ELKARTEGIA (Mod 104) C/FANDERIA, 2",
+      "webPage": "www.dema.eus",
+      "publicationDate": "2025-10-29",
+      "mainActivity": "Asuntos económicos y financieros",
+      "codNUTS": "ES213",
+      "entities": [
+        {
+          "id": 27122,
+          "name": "AGENCIA FORAL DE EMPLEO Y EMPRENDIMIENTO",
+          "orgs": [
+            {
+              "id": 27123,
+              "name": "GERENCIA",
+              "_links": {
+                "self": {
+                  "name": "GERENCIA",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/27121/entities/27122/orgs/27123"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "AGENCIA FORAL DE EMPLEO Y EMPRENDIMIENTO",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/27121/entities/27122"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder27121/es_doc/index.html",
+      "_links": {
+        "self": {
+          "name": "DEMA – AGENCIA FORAL DE EMPLEO Y EMPRENDIMIENTO DE BIZKAIA",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/27121"
+        }
+      }
+    },
+    {
+      "id": 27134,
+      "identificationNumber": "PO100246H",
+      "name": "Junta Administrativa de Delika",
+      "scope": "ARABA/ÁLAVA",
+      "address": "Delika 62",
+      "webPage": "https://www.amurrio.eus/eus/",
+      "publicationDate": "2025-10-28",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES211",
+      "entities": [
+        {
+          "id": 27135,
+          "name": "Junta Administrativa de Delika",
+          "orgs": [
+            {
+              "id": 27136,
+              "name": "Presidente de la junta administrativa",
+              "_links": {
+                "self": {
+                  "name": "Presidente de la junta administrativa",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/27134/entities/27135/orgs/27136"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Junta Administrativa de Delika",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/27134/entities/27135"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder27134/es_doc/index.html",
+      "_links": {
+        "self": {
+          "name": "Junta Administrativa de Delika",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/27134"
+        }
+      }
+    },
+    {
+      "id": 27130,
+      "identificationNumber": "P0100145B",
+      "name": "Junta Administrativa de Pinedo",
+      "scope": "ARABA/ÁLAVA",
+      "address": "C/. Real S/N",
+      "webPage": "https://valdegovia.eus/index.php/es/",
+      "publicationDate": "2025-10-27",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES211",
+      "entities": [
+        {
+          "id": 27131,
+          "name": "Junta Administrativa de Pinedo",
+          "orgs": [
+            {
+              "id": 27132,
+              "name": "Concejo de Pinedo",
+              "_links": {
+                "self": {
+                  "name": "Concejo de Pinedo",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/27130/entities/27131/orgs/27132"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Junta Administrativa de Pinedo",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/27130/entities/27131"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder27130/es_doc/index.html",
+      "_links": {
+        "self": {
+          "name": "Junta Administrativa de Pinedo",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/27130"
+        }
+      }
+    }
+  ]
+}

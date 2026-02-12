@@ -1,0 +1,497 @@
+{
+  "totalItems": 9042,
+  "totalPages": 905,
+  "currentPage": 882,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "name": "ANBAR INGENIERIA INSTALACIONES Y MANTENIMIENTO, S.L.U.",
+      "registrationNumber": "05624",
+      "identificationNumber": "B95472759",
+      "address": "POL. IND. AURRERA, 7 BIS - PAB 18",
+      "location": {
+        "postalCode": "48510",
+        "municipality": "Valle de Trápaga-Trapagaran",
+        "county": "Bizkaia",
+        "municipalityId": "080",
+        "countyId": "48"
+      },
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/05624",
+      "_links": {
+        "self": {
+          "name": "ANBAR INGENIERIA INSTALACIONES Y MANTENIMIENTO, S.L.U.",
+          "href": "https://api.euskadi.eus/procurements/companies/05624"
+        }
+      }
+    },
+    {
+      "name": "INSTALACIONES DE CALEFACCIÓN MEDI S.L.U",
+      "registrationNumber": "05626",
+      "identificationNumber": "B95226593",
+      "address": "JON ARROSPIDE Nº17-1º DPTO. 6",
+      "location": {
+        "postalCode": "48014",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/05626",
+      "_links": {
+        "self": {
+          "name": "INSTALACIONES DE CALEFACCIÓN MEDI S.L.U",
+          "href": "https://api.euskadi.eus/procurements/companies/05626"
+        }
+      }
+    },
+    {
+      "name": "EUSKAL BUS, S.L.U.",
+      "registrationNumber": "05628",
+      "identificationNumber": "B48975064",
+      "address": "POL. BIDAURRE UREDER,  PAB. 45C",
+      "location": {
+        "postalCode": "20305",
+        "municipality": "Irun",
+        "county": "Gipuzkoa",
+        "municipalityId": "045",
+        "countyId": "20"
+      },
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/05628",
+      "_links": {
+        "self": {
+          "name": "EUSKAL BUS, S.L.U.",
+          "href": "https://api.euskadi.eus/procurements/companies/05628"
+        }
+      }
+    },
+    {
+      "name": "ELEKTRIKARI LANAK BERISTAIN, S.L.",
+      "registrationNumber": "05642",
+      "identificationNumber": "B75154146",
+      "address": "C/ GURUTZEGI, 13-17 NAVE D2 y B3  POLÍGONO INDUSTRIAL BELARTZA",
+      "location": {
+        "postalCode": "20018",
+        "municipality": "Donostia / San Sebastián",
+        "county": "Gipuzkoa",
+        "municipalityId": "069",
+        "countyId": "20"
+      },
+      "classification": [
+        {
+          "id": "O",
+          "name": "Obras",
+          "groups": [
+            {
+              "id": "I",
+              "name": "INSTALACIONES ELÉCTRICAS",
+              "subgroups": [
+                {
+                  "id": "06",
+                  "name": "Distribución en baja tensión",
+                  "categories": [
+                    {
+                      "id": "4",
+                      "name": "Desde 840.001 Hasta 2.400.000",
+                      "_links": {
+                        "self": {
+                          "name": "Desde 840.001 Hasta 2.400.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/O/categories/4"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "Distribución en baja tensión",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/O/groups/I/subgroups/06"
+                    }
+                  }
+                },
+                {
+                  "id": "09",
+                  "name": "Instalaciones eléctricas sin cualificación específica",
+                  "categories": [
+                    {
+                      "id": "4",
+                      "name": "Desde 840.001 Hasta 2.400.000",
+                      "_links": {
+                        "self": {
+                          "name": "Desde 840.001 Hasta 2.400.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/O/categories/4"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "Instalaciones eléctricas sin cualificación específica",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/O/groups/I/subgroups/09"
+                    }
+                  }
+                }
+              ],
+              "_links": {
+                "self": {
+                  "name": "INSTALACIONES ELÉCTRICAS",
+                  "href": "https://api.euskadi.eus/procurements/companies/types/O/groups/I"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Obras",
+              "href": "https://api.euskadi.eus/procurements/companies/types/O"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/05642",
+      "_links": {
+        "self": {
+          "name": "ELEKTRIKARI LANAK BERISTAIN, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/05642"
+        }
+      }
+    },
+    {
+      "name": "AUTOCARES NATE, S.L.",
+      "registrationNumber": "05664",
+      "identificationNumber": "B95226361",
+      "address": "AZETA, 2",
+      "location": {
+        "postalCode": "48920",
+        "municipality": "Portugalete",
+        "county": "Bizkaia",
+        "municipalityId": "078",
+        "countyId": "48"
+      },
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/05664",
+      "_links": {
+        "self": {
+          "name": "AUTOCARES NATE, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/05664"
+        }
+      }
+    },
+    {
+      "name": "FERNANDO AZNAR YARZA",
+      "registrationNumber": "05706",
+      "identificationNumber": "72498544Z",
+      "address": "AVDA. DE BUENAVISTA Nº 8 BAJO",
+      "location": {
+        "postalCode": "20016",
+        "municipality": "Donostia / San Sebastián",
+        "county": "Gipuzkoa",
+        "municipalityId": "069",
+        "countyId": "20"
+      },
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/05706",
+      "_links": {
+        "self": {
+          "name": "FERNANDO AZNAR YARZA",
+          "href": "https://api.euskadi.eus/procurements/companies/05706"
+        }
+      }
+    },
+    {
+      "name": "GOIKO AUTO XXI, S.L.",
+      "registrationNumber": "05849",
+      "identificationNumber": "B75167908",
+      "address": "AMASORRAIN, Nº 1",
+      "location": {
+        "postalCode": "20018",
+        "municipality": "Donostia / San Sebastián",
+        "county": "Gipuzkoa",
+        "municipalityId": "069",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.691.2",
+          "name": "Reparación de vehículos automóviles, bicicletas y otros vehículos",
+          "_links": {
+            "self": {
+              "name": "Reparación de vehículos automóviles, bicicletas y otros vehículos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.691.2"
+            }
+          }
+        }
+      ],
+      "classification": [
+        {
+          "id": "S",
+          "name": "Servicios",
+          "groups": [
+            {
+              "id": "Q",
+              "subgroups": [
+                {
+                  "id": "02",
+                  "name": "Mantenimiento y reparación de vehículos",
+                  "categories": [
+                    {
+                      "id": "2",
+                      "name": "Desde 150.001 Hasta 300.000",
+                      "_links": {
+                        "self": {
+                          "name": "Desde 150.001 Hasta 300.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/S/categories/2"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "Mantenimiento y reparación de vehículos",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/Q/subgroups/02"
+                    }
+                  }
+                }
+              ],
+              "_links": {
+                "self": {
+                  "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/Q"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Servicios",
+              "href": "https://api.euskadi.eus/procurements/companies/types/S"
+            }
+          }
+        }
+      ],
+      "object": "VENTA Y REPARACIÓN DE VEHICULOS A MOTOR",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/05849",
+      "_links": {
+        "self": {
+          "name": "GOIKO AUTO XXI, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/05849"
+        }
+      }
+    },
+    {
+      "name": "EUSKO JAURLARITZAREN INFORMTIKA ELKARTEA SOCIEDAD INFORMATICA DEL GOBIERNO VASCO",
+      "registrationNumber": "05928",
+      "identificationNumber": "A01022664",
+      "address": "Avenida del Mediterráneo 14",
+      "location": {
+        "postalCode": "01010",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "classification": [
+        {
+          "id": "S",
+          "name": "Servicios",
+          "groups": [
+            {
+              "id": "V",
+              "subgroups": [
+                {
+                  "id": "05",
+                  "name": "Explotación y control de sistemas informáticos e infraestructuras telemáticas.",
+                  "categories": [
+                    {
+                      "id": "5",
+                      "name": "Mas de 1.200.000",
+                      "_links": {
+                        "self": {
+                          "name": "Mas de 1.200.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/S/categories/5"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "Explotación y control de sistemas informáticos e infraestructuras telemáticas.",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/V/subgroups/05"
+                    }
+                  }
+                }
+              ],
+              "_links": {
+                "self": {
+                  "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/V"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Servicios",
+              "href": "https://api.euskadi.eus/procurements/companies/types/S"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/05928",
+      "_links": {
+        "self": {
+          "name": "EUSKO JAURLARITZAREN INFORMTIKA ELKARTEA SOCIEDAD INFORMATICA DEL GOBIERNO VASCO",
+          "href": "https://api.euskadi.eus/procurements/companies/05928"
+        }
+      }
+    },
+    {
+      "name": "ZIURTAPEN ETA ZERBITZU ENPRESA, EMPRESA DE CERTIFICACIÓN Y SERVICIOS, IZENPE, SA",
+      "registrationNumber": "05930",
+      "identificationNumber": "A01337260",
+      "address": "BEATO TOMAS DE ZUMARRAGA 71, 1º",
+      "location": {
+        "postalCode": "01008",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "classification": [
+        {
+          "id": "S",
+          "name": "Servicios",
+          "groups": [
+            {
+              "id": "V",
+              "subgroups": [
+                {
+                  "id": "05",
+                  "name": "Explotación y control de sistemas informáticos e infraestructuras telemáticas.",
+                  "categories": [
+                    {
+                      "id": "5",
+                      "name": "Mas de 1.200.000",
+                      "_links": {
+                        "self": {
+                          "name": "Mas de 1.200.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/S/categories/5"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "Explotación y control de sistemas informáticos e infraestructuras telemáticas.",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/V/subgroups/05"
+                    }
+                  }
+                }
+              ],
+              "_links": {
+                "self": {
+                  "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/V"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Servicios",
+              "href": "https://api.euskadi.eus/procurements/companies/types/S"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/05930",
+      "_links": {
+        "self": {
+          "name": "ZIURTAPEN ETA ZERBITZU ENPRESA, EMPRESA DE CERTIFICACIÓN Y SERVICIOS, IZENPE, SA",
+          "href": "https://api.euskadi.eus/procurements/companies/05930"
+        }
+      }
+    },
+    {
+      "name": "JOSÉ ANTONIO ORDORICA ORBE",
+      "registrationNumber": "05989",
+      "identificationNumber": "30649056S",
+      "address": "BARO GALBARRIATU AUZOA 2 IZ",
+      "location": {
+        "postalCode": "48170",
+        "municipality": "Zamudio",
+        "county": "Bizkaia",
+        "municipalityId": "905",
+        "countyId": "48"
+      },
+      "classification": [
+        {
+          "id": "S",
+          "name": "Servicios",
+          "groups": [
+            {
+              "id": "O",
+              "subgroups": [
+                {
+                  "id": "02",
+                  "name": "Conserv. y Mtto. carreteras,pistas,autopistas,autovías,calzadas y vías férreas",
+                  "categories": [
+                    {
+                      "id": "2",
+                      "name": "Desde 150.001 Hasta 300.000",
+                      "_links": {
+                        "self": {
+                          "name": "Desde 150.001 Hasta 300.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/S/categories/2"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "Conserv. y Mtto. carreteras,pistas,autopistas,autovías,calzadas y vías férreas",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/O/subgroups/02"
+                    }
+                  }
+                },
+                {
+                  "id": "06",
+                  "name": "Conservación y mantenimiento de montes y jardines",
+                  "categories": [
+                    {
+                      "id": "1",
+                      "name": "Desde 0 Hasta 150.000",
+                      "_links": {
+                        "self": {
+                          "name": "Desde 0 Hasta 150.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/S/categories/1"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "Conservación y mantenimiento de montes y jardines",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/O/subgroups/06"
+                    }
+                  }
+                }
+              ],
+              "_links": {
+                "self": {
+                  "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/O"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Servicios",
+              "href": "https://api.euskadi.eus/procurements/companies/types/S"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/05989",
+      "_links": {
+        "self": {
+          "name": "JOSÉ ANTONIO ORDORICA ORBE",
+          "href": "https://api.euskadi.eus/procurements/companies/05989"
+        }
+      }
+    }
+  ]
+}

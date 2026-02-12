@@ -1,0 +1,460 @@
+{
+  "totalItems": 919,
+  "totalPages": 92,
+  "currentPage": 80,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "id": 669,
+      "identificationNumber": "P2001700J",
+      "name": "Ayuntamiento de Aia",
+      "scope": "GIPUZKOA",
+      "address": "Gozategi enparantza, 1. 20809 Aia (Gipuzkoa)",
+      "webPage": "http://www.aia.eus",
+      "publicationDate": "2019-10-02",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES212",
+      "entities": [
+        {
+          "id": 1120,
+          "name": "Ayuntamiento de Aia",
+          "orgs": [
+            {
+              "id": 912859,
+              "name": "Pleno",
+              "_links": {
+                "self": {
+                  "name": "Pleno",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/669/entities/1120/orgs/912859"
+                }
+              }
+            },
+            {
+              "id": 912858,
+              "name": "Alcalde ",
+              "_links": {
+                "self": {
+                  "name": "Alcalde ",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/669/entities/1120/orgs/912858"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Ayuntamiento de Aia",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/669/entities/1120"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder669/es_doc/es_arch_poder669.html",
+      "_links": {
+        "self": {
+          "name": "Ayuntamiento de Aia",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/669"
+        }
+      }
+    },
+    {
+      "id": 691,
+      "identificationNumber": "G75061200",
+      "name": "Fundación Eresbil-Archivo Vasco de la Música",
+      "scope": "CAPV",
+      "address": "Alfonso XI, 2. 20100 Errenteria (Gipuzkoa)",
+      "webPage": "http://www.eresbil.com",
+      "publicationDate": "2019-10-02",
+      "mainActivity": "Ocio, cultura y religión",
+      "codNUTS": "ES21",
+      "entities": [
+        {
+          "id": 1164,
+          "name": "Fundación Eresbil-Archivo Vasco de la Música",
+          "orgs": [
+            {
+              "id": 913539,
+              "name": "Patronato",
+              "_links": {
+                "self": {
+                  "name": "Patronato",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/691/entities/1164/orgs/913539"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Fundación Eresbil-Archivo Vasco de la Música",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/691/entities/1164"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder691/es_doc/es_arch_poder691.html",
+      "_links": {
+        "self": {
+          "name": "Fundación Eresbil-Archivo Vasco de la Música",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/691"
+        }
+      }
+    },
+    {
+      "id": 693,
+      "identificationNumber": "Q9855007B",
+      "name": "Consejo Económico y Social Vasco",
+      "scope": "CAPV",
+      "address": "Gran Vía 81, 7. 48011 Bilbao (Bizkaia)",
+      "webPage": "http://www.cesegab.com",
+      "publicationDate": "2019-09-24",
+      "mainActivity": "Asuntos económicos y financieros",
+      "codNUTS": "ES21",
+      "entities": [
+        {
+          "id": 1166,
+          "name": "Consejo Económico y Social Vasco",
+          "orgs": [
+            {
+              "id": 913541,
+              "name": "Pleno",
+              "_links": {
+                "self": {
+                  "name": "Pleno",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/693/entities/1166/orgs/913541"
+                }
+              }
+            },
+            {
+              "id": 913542,
+              "name": "President",
+              "_links": {
+                "self": {
+                  "name": "President",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/693/entities/1166/orgs/913542"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Consejo Económico y Social Vasco",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/693/entities/1166"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder693/es_doc/es_arch_poder693.html",
+      "_links": {
+        "self": {
+          "name": "Consejo Económico y Social Vasco",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/693"
+        }
+      }
+    },
+    {
+      "id": 694,
+      "identificationNumber": "P0100065B",
+      "name": "Junta Administrativa de Ametzaga Zuia",
+      "scope": "ARABA/ÁLAVA",
+      "address": "Tximiso, 5. Ametzaga. 01139 Zuia (Araba/Álava)",
+      "webPage": "http://www.contratacion.euskadi.eus",
+      "publicationDate": "2019-09-23",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES211",
+      "entities": [
+        {
+          "id": 1167,
+          "name": "Junta Administrativa de Ametzaga Zuia",
+          "orgs": [
+            {
+              "id": 913543,
+              "name": "Concejo de Ametzaga Zuia",
+              "_links": {
+                "self": {
+                  "name": "Concejo de Ametzaga Zuia",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/694/entities/1167/orgs/913543"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Junta Administrativa de Ametzaga Zuia",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/694/entities/1167"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder694/es_doc/es_arch_poder694.html",
+      "_links": {
+        "self": {
+          "name": "Junta Administrativa de Ametzaga Zuia",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/694"
+        }
+      }
+    },
+    {
+      "id": 688,
+      "identificationNumber": "G01573146",
+      "name": "Asociación Instituto de Investigación Sanitaria BIOARABA",
+      "scope": "ARABA/ÁLAVA",
+      "address": "Jose Achotegui, s/n. 01009 Vitoria-Gasteiz (Araba/Álava)",
+      "webPage": "http://www.bioaraba.org",
+      "publicationDate": "2019-09-06",
+      "mainActivity": "Otra actividad",
+      "alternativeActivity": "Investigación",
+      "codNUTS": "ES211",
+      "entities": [
+        {
+          "id": 1151,
+          "name": "BIOARABA",
+          "orgs": [
+            {
+              "id": 913480,
+              "name": "Directora Científica",
+              "_links": {
+                "self": {
+                  "name": "Directora Científica",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/688/entities/1151/orgs/913480"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "BIOARABA",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/688/entities/1151"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder688/es_doc/es_arch_poder688.html",
+      "_links": {
+        "self": {
+          "name": "Asociación Instituto de Investigación Sanitaria BIOARABA",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/688"
+        }
+      }
+    },
+    {
+      "id": 689,
+      "identificationNumber": "P0100033J",
+      "name": "Junta Administrativa de Hermua",
+      "scope": "ARABA/ÁLAVA",
+      "address": "Zarrikizubi, 17. Hermua. 01208 Barrundia (Araba/Álava)",
+      "webPage": "http://www.contratacion.euskadi.eus",
+      "publicationDate": "2019-09-06",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES211",
+      "entities": [
+        {
+          "id": 1152,
+          "name": "Junta Administrativa de Hermua",
+          "orgs": [
+            {
+              "id": 913481,
+              "name": "Concejo de Hermua ",
+              "_links": {
+                "self": {
+                  "name": "Concejo de Hermua ",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/689/entities/1152/orgs/913481"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Junta Administrativa de Hermua",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/689/entities/1152"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder689/es_doc/es_arch_poder689.html",
+      "_links": {
+        "self": {
+          "name": "Junta Administrativa de Hermua",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/689"
+        }
+      }
+    },
+    {
+      "id": 685,
+      "identificationNumber": "G01293513",
+      "name": "Red de Mujeres del Medio Rural de Álava",
+      "scope": "ARABA/ÁLAVA",
+      "address": "Gorbea, 2-1ºC. 01008 Vitoria-Gasteiz (Araba/Álava)",
+      "webPage": "http://www.mujeresruralesalavesas.org",
+      "publicationDate": "2019-09-03",
+      "mainActivity": "Otra actividad",
+      "alternativeActivity": "Promoción de la igualdad",
+      "codNUTS": "ES211",
+      "entities": [
+        {
+          "id": 1148,
+          "name": "Red de Mujeres del Medio Rural de Álava",
+          "orgs": [
+            {
+              "id": 913477,
+              "name": "Presidenta",
+              "_links": {
+                "self": {
+                  "name": "Presidenta",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/685/entities/1148/orgs/913477"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Red de Mujeres del Medio Rural de Álava",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/685/entities/1148"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder685/es_doc/es_arch_poder685.html",
+      "_links": {
+        "self": {
+          "name": "Red de Mujeres del Medio Rural de Álava",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/685"
+        }
+      }
+    },
+    {
+      "id": 681,
+      "identificationNumber": "P0100266F",
+      "name": "Junta Administrativa de Saratxo",
+      "scope": "ARABA/ÁLAVA",
+      "address": "Saratxo, 4. Saratxo. 01468 Amurrio (Araba/Álava) ",
+      "webPage": "http://www.contratacion.euskadi.eus",
+      "publicationDate": "2019-07-19",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES211",
+      "entities": [
+        {
+          "id": 1143,
+          "name": "Junta Administrativa de Saratxo",
+          "orgs": [
+            {
+              "id": 912921,
+              "name": "Junta Administrativa",
+              "_links": {
+                "self": {
+                  "name": "Junta Administrativa",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/681/entities/1143/orgs/912921"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Junta Administrativa de Saratxo",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/681/entities/1143"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder681/es_doc/es_arch_poder681.html",
+      "_links": {
+        "self": {
+          "name": "Junta Administrativa de Saratxo",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/681"
+        }
+      }
+    },
+    {
+      "id": 679,
+      "identificationNumber": "P0100121C",
+      "name": "Junta Administrativa de Berantevilla",
+      "scope": "ARABA/ÁLAVA",
+      "address": "Abajo, 1. 01211 Berantevilla (Araba/Álava)",
+      "webPage": "http://www.contratacion.euskadi.eus",
+      "publicationDate": "2019-07-17",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES211",
+      "entities": [
+        {
+          "id": 1130,
+          "name": "Junta Administrativa de Berantevilla",
+          "orgs": [
+            {
+              "id": 912885,
+              "name": "Concejo Berantevilla",
+              "_links": {
+                "self": {
+                  "name": "Concejo Berantevilla",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/679/entities/1130/orgs/912885"
+                }
+              }
+            },
+            {
+              "id": 912886,
+              "name": "Presidente-Regidor",
+              "_links": {
+                "self": {
+                  "name": "Presidente-Regidor",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/679/entities/1130/orgs/912886"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Junta Administrativa de Berantevilla",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/679/entities/1130"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder679/es_doc/es_arch_poder679.html",
+      "_links": {
+        "self": {
+          "name": "Junta Administrativa de Berantevilla",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/679"
+        }
+      }
+    },
+    {
+      "id": 676,
+      "identificationNumber": "P0100158E",
+      "name": "Junta Administrativa de Quejana",
+      "scope": "ARABA/ÁLAVA",
+      "address": "Barrio Quejana Kexaa. 01477 Ayala/Aiara (Araba/Álava)",
+      "webPage": "http://www.contratacion.euskadi.eus",
+      "publicationDate": "2019-07-11",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES211",
+      "entities": [
+        {
+          "id": 1129,
+          "name": "Junta Administrativa de Quejana",
+          "orgs": [
+            {
+              "id": 912884,
+              "name": "Junta Administrativa",
+              "_links": {
+                "self": {
+                  "name": "Junta Administrativa",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/676/entities/1129/orgs/912884"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Junta Administrativa de Quejana",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/676/entities/1129"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder676/es_doc/es_arch_poder676.html",
+      "_links": {
+        "self": {
+          "name": "Junta Administrativa de Quejana",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/676"
+        }
+      }
+    }
+  ]
+}

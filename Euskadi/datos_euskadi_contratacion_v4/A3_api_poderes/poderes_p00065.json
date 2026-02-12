@@ -1,0 +1,529 @@
+{
+  "totalItems": 919,
+  "totalPages": 92,
+  "currentPage": 65,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "id": 372,
+      "identificationNumber": "P0105400F",
+      "name": "Ayuntamiento de Lantarón",
+      "scope": "ARABA/ÁLAVA",
+      "address": "Ayuntamiento, 2.  01213 Lantarón (Araba/Álava)",
+      "webPage": "http://www.aytolantaron.com",
+      "publicationDate": "2019-10-04",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES211",
+      "entities": [
+        {
+          "id": 828,
+          "name": "Ayuntamiento de Lantarón",
+          "orgs": [
+            {
+              "id": 912363,
+              "name": "Alcaldía",
+              "_links": {
+                "self": {
+                  "name": "Alcaldía",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/372/entities/828/orgs/912363"
+                }
+              }
+            },
+            {
+              "id": 912364,
+              "name": "Pleno",
+              "_links": {
+                "self": {
+                  "name": "Pleno",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/372/entities/828/orgs/912364"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Ayuntamiento de Lantarón",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/372/entities/828"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder372/es_doc/es_arch_poder372.html",
+      "_links": {
+        "self": {
+          "name": "Ayuntamiento de Lantarón",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/372"
+        }
+      }
+    },
+    {
+      "id": 374,
+      "identificationNumber": "Q5150009H",
+      "name": "Centro de Estudios Ambientales",
+      "scope": "ARABA/ÁLAVA",
+      "address": "Pintor Teodoro Dublang, 25 bajo. 01008 Vitoria-Gasteiz (Araba/Álava)",
+      "webPage": "http://cea.vitoria-gasteiz.org",
+      "publicationDate": "2019-10-04",
+      "mainActivity": "Medio ambiente",
+      "codNUTS": "ES211",
+      "entities": [
+        {
+          "id": 824,
+          "name": "Centro de Estudios Ambientales",
+          "orgs": [
+            {
+              "id": 912356,
+              "name": "Consejo Rector",
+              "_links": {
+                "self": {
+                  "name": "Consejo Rector",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/374/entities/824/orgs/912356"
+                }
+              }
+            },
+            {
+              "id": 912357,
+              "name": "Presidente del Consejo Rector",
+              "_links": {
+                "self": {
+                  "name": "Presidente del Consejo Rector",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/374/entities/824/orgs/912357"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Centro de Estudios Ambientales",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/374/entities/824"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder374/es_doc/es_arch_poder374.html",
+      "_links": {
+        "self": {
+          "name": "Centro de Estudios Ambientales",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/374"
+        }
+      }
+    },
+    {
+      "id": 376,
+      "identificationNumber": "P0103400H",
+      "name": "Ayuntamiento de Lanciego",
+      "scope": "ARABA/ÁLAVA",
+      "address": "Plaza de la Iglesia, 1. 01308 Lanciego (Araba/Álava)",
+      "webPage": "http://www.lanciego.org",
+      "publicationDate": "2019-10-04",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES211",
+      "entities": [
+        {
+          "id": 827,
+          "name": "Ayuntamiento de Lanciego",
+          "orgs": [
+            {
+              "id": 912631,
+              "name": "Alcalde ",
+              "_links": {
+                "self": {
+                  "name": "Alcalde ",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/376/entities/827/orgs/912631"
+                }
+              }
+            },
+            {
+              "id": 912362,
+              "name": "Pleno",
+              "_links": {
+                "self": {
+                  "name": "Pleno",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/376/entities/827/orgs/912362"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Ayuntamiento de Lanciego",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/376/entities/827"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder376/es_doc/es_arch_poder376.html",
+      "_links": {
+        "self": {
+          "name": "Ayuntamiento de Lanciego",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/376"
+        }
+      }
+    },
+    {
+      "id": 378,
+      "identificationNumber": "P0102400I",
+      "name": "Ayuntamiento de Elvillar",
+      "scope": "ARABA/ÁLAVA",
+      "address": "Plaza Santa María, 14. 01309 Elvillar/Bilar (Araba/Álava)",
+      "webPage": "http://www.elvillar.es",
+      "publicationDate": "2019-10-04",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES211",
+      "entities": [
+        {
+          "id": 830,
+          "name": "Ayuntamiento de Elvillar",
+          "orgs": [
+            {
+              "id": 912632,
+              "name": "Alcalde",
+              "_links": {
+                "self": {
+                  "name": "Alcalde",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/378/entities/830/orgs/912632"
+                }
+              }
+            },
+            {
+              "id": 912366,
+              "name": "Pleno ",
+              "_links": {
+                "self": {
+                  "name": "Pleno ",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/378/entities/830/orgs/912366"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Ayuntamiento de Elvillar",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/378/entities/830"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder378/es_doc/es_arch_poder378.html",
+      "_links": {
+        "self": {
+          "name": "Ayuntamiento de Elvillar",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/378"
+        }
+      }
+    },
+    {
+      "id": 379,
+      "identificationNumber": "P0102000G",
+      "name": "Ayuntamiento de Kripan",
+      "scope": "ARABA/ÁLAVA",
+      "address": "Plaza de la Barbacana, 1. 01308 Kripan (Araba/Álava)",
+      "webPage": "http://www.kripan.net",
+      "publicationDate": "2019-10-04",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES211",
+      "entities": [
+        {
+          "id": 831,
+          "name": "Ayuntamiento de Kripan",
+          "orgs": [
+            {
+              "id": 912630,
+              "name": "Alcalde",
+              "_links": {
+                "self": {
+                  "name": "Alcalde",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/379/entities/831/orgs/912630"
+                }
+              }
+            },
+            {
+              "id": 912367,
+              "name": "Pleno",
+              "_links": {
+                "self": {
+                  "name": "Pleno",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/379/entities/831/orgs/912367"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Ayuntamiento de Kripan",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/379/entities/831"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder379/es_doc/es_arch_poder379.html",
+      "_links": {
+        "self": {
+          "name": "Ayuntamiento de Kripan",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/379"
+        }
+      }
+    },
+    {
+      "id": 381,
+      "identificationNumber": "P2006600G",
+      "name": "Ayuntamiento de Orio",
+      "scope": "GIPUZKOA",
+      "address": "Herriko Plaza, 1. 20810 Orio (Gipuzkoa)",
+      "webPage": "http://www.orio.eus",
+      "publicationDate": "2019-10-04",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES212",
+      "entities": [
+        {
+          "id": 833,
+          "name": "Ayuntamiento de Orio",
+          "orgs": [
+            {
+              "id": 912370,
+              "name": "Alcaldía",
+              "_links": {
+                "self": {
+                  "name": "Alcaldía",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/381/entities/833/orgs/912370"
+                }
+              }
+            },
+            {
+              "id": 912371,
+              "name": "Pleno",
+              "_links": {
+                "self": {
+                  "name": "Pleno",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/381/entities/833/orgs/912371"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Ayuntamiento de Orio",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/381/entities/833"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder381/es_doc/es_arch_poder381.html",
+      "_links": {
+        "self": {
+          "name": "Ayuntamiento de Orio",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/381"
+        }
+      }
+    },
+    {
+      "id": 385,
+      "identificationNumber": "P0103000F",
+      "name": "Ayuntamiento de Labastida",
+      "scope": "ARABA/ÁLAVA",
+      "address": "Plaza de la Paz, 1., 01330  Labastida (Araba/Álava)",
+      "webPage": "http://www.labastida-bastida.org/",
+      "publicationDate": "2019-10-04",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES211",
+      "entities": [
+        {
+          "id": 839,
+          "name": "Ayuntamiento de Labastida",
+          "orgs": [
+            {
+              "id": 912383,
+              "name": "Pleno",
+              "_links": {
+                "self": {
+                  "name": "Pleno",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/385/entities/839/orgs/912383"
+                }
+              }
+            },
+            {
+              "id": 912382,
+              "name": "Alcaldesa ",
+              "_links": {
+                "self": {
+                  "name": "Alcaldesa ",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/385/entities/839/orgs/912382"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Ayuntamiento de Labastida",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/385/entities/839"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder385/es_doc/es_arch_poder385.html",
+      "_links": {
+        "self": {
+          "name": "Ayuntamiento de Labastida",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/385"
+        }
+      }
+    },
+    {
+      "id": 387,
+      "identificationNumber": "A01005230",
+      "name": "Transportes Urbanos de Vitoria-Gasteiz, S.A.",
+      "scope": "ARABA/ÁLAVA",
+      "address": "Agirrelanda, 2 bajo. 01013 Vitoria-Gasteiz (Araba/Álava)",
+      "webPage": "http://www.vitoria-gasteiz.org\t",
+      "publicationDate": "2019-10-04",
+      "mainActivity": "Otra actividad",
+      "alternativeActivity": "Transportes",
+      "codNUTS": "ES211",
+      "entities": [
+        {
+          "id": 838,
+          "name": "Transportes Urbanos de Vitoria-Gasteiz, S.A.",
+          "orgs": [
+            {
+              "id": 912381,
+              "name": "Consejo de Adminsitración",
+              "_links": {
+                "self": {
+                  "name": "Consejo de Adminsitración",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/387/entities/838/orgs/912381"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Transportes Urbanos de Vitoria-Gasteiz, S.A.",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/387/entities/838"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder387/es_doc/es_arch_poder387.html",
+      "_links": {
+        "self": {
+          "name": "Transportes Urbanos de Vitoria-Gasteiz, S.A.",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/387"
+        }
+      }
+    },
+    {
+      "id": 404,
+      "identificationNumber": "P2002600A",
+      "name": "Ayuntamiento de Zegama",
+      "scope": "GIPUZKOA",
+      "address": "Jose Maiora plaza, z/g. 20215 Zegama (Gipuzkoa)",
+      "webPage": "http://www.zegama.eus",
+      "publicationDate": "2019-10-04",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES212",
+      "entities": [
+        {
+          "id": 855,
+          "name": "Ayuntamiento de Zegama",
+          "orgs": [
+            {
+              "id": 912413,
+              "name": "Alcaldía",
+              "_links": {
+                "self": {
+                  "name": "Alcaldía",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/404/entities/855/orgs/912413"
+                }
+              }
+            },
+            {
+              "id": 912415,
+              "name": "Pleno",
+              "_links": {
+                "self": {
+                  "name": "Pleno",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/404/entities/855/orgs/912415"
+                }
+              }
+            },
+            {
+              "id": 912414,
+              "name": "Junta de Gobierno Local",
+              "_links": {
+                "self": {
+                  "name": "Junta de Gobierno Local",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/404/entities/855/orgs/912414"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Ayuntamiento de Zegama",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/404/entities/855"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder404/es_doc/es_arch_poder404.html",
+      "_links": {
+        "self": {
+          "name": "Ayuntamiento de Zegama",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/404"
+        }
+      }
+    },
+    {
+      "id": 424,
+      "identificationNumber": "P0104200A",
+      "name": "Ayuntamiento de Moreda de Álava",
+      "scope": "ARABA/ÁLAVA",
+      "address": "Calle la Cruz, 1. 01322 Moreda de Álava (Araba/Álava)",
+      "webPage": "http://www.moredadealava.com",
+      "publicationDate": "2019-10-04",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES211",
+      "entities": [
+        {
+          "id": 875,
+          "name": "Ayuntamiento de Moreda de Álava",
+          "orgs": [
+            {
+              "id": 912451,
+              "name": "Alcaldía",
+              "_links": {
+                "self": {
+                  "name": "Alcaldía",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/424/entities/875/orgs/912451"
+                }
+              }
+            },
+            {
+              "id": 912452,
+              "name": "Pleno",
+              "_links": {
+                "self": {
+                  "name": "Pleno",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/424/entities/875/orgs/912452"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Ayuntamiento de Moreda de Álava",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/424/entities/875"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder424/es_doc/es_arch_poder424.html",
+      "_links": {
+        "self": {
+          "name": "Ayuntamiento de Moreda de Álava",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/424"
+        }
+      }
+    }
+  ]
+}

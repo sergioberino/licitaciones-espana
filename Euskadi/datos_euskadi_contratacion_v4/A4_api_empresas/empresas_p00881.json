@@ -1,0 +1,304 @@
+{
+  "totalItems": 9042,
+  "totalPages": 905,
+  "currentPage": 881,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "name": "SERVICIOS INFORMÁTICOS DE AUDITORÍA FISCAL, S.L.U.",
+      "registrationNumber": "05465",
+      "identificationNumber": "B95474979",
+      "address": "Plaza Garellano 17, local d",
+      "location": {
+        "postalCode": "48013",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "classification": [
+        {
+          "id": "S",
+          "name": "Servicios",
+          "groups": [
+            {
+              "id": "V",
+              "subgroups": [
+                {
+                  "id": "05",
+                  "name": "Explotación y control de sistemas informáticos e infraestructuras telemáticas.",
+                  "categories": [
+                    {
+                      "id": "5",
+                      "name": "Mas de 1.200.000",
+                      "_links": {
+                        "self": {
+                          "name": "Mas de 1.200.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/S/categories/5"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "Explotación y control de sistemas informáticos e infraestructuras telemáticas.",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/V/subgroups/05"
+                    }
+                  }
+                }
+              ],
+              "_links": {
+                "self": {
+                  "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/V"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Servicios",
+              "href": "https://api.euskadi.eus/procurements/companies/types/S"
+            }
+          }
+        }
+      ],
+      "object": "La Sociedad tiene por objeto prestación de toda clase de servicios informáticos relacionados con el desarrollo de las actividades propias de la auditoría fiscal y contable asistida con técnicas basadas en el uso de ordenadores; servicios de auditoría informática; servicios de formación en metodologías y técnicas informáticas aplicables a dichas actividades auditoras; asesoramiento en la implantación de soluciones de auditoría fiscal; asistencia técnica y apoyo informático a los agentes, consultores y empresas involucrados en la realización de tales auditorías; desarrollo y distribución de herramientas informáticas utilizables en la realización de las actividades indicadas; realización de servicios auxiliares de recuperación, conversión, procesamiento, análisis e informe sobre datos facilitados por auditores e investigadores públicos o privados, incluidos los de naturaleza forense; informe y evaluación del nivel de cumplimiento de los sistemas informáticos soporte de la gestión comercial, facturación electrónica, contabilidad analítica y financiera y de control fiscal con las disposiciones legales administrativas, mercantiles, fiscales y de protección de datos de carácter personal; realización de toda clase de estudios e informes sobre la viabilidad de soluciones y tecnologías afines. La Sociedad podrá realizar las actividades que constituyen su objeto total o parcialmente de una forma directa, o mediante la participación en otras sociedades o entidades con o sin personalidad jurídica, con idéntico o análogo objeto social.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/05465",
+      "_links": {
+        "self": {
+          "name": "SERVICIOS INFORMÁTICOS DE AUDITORÍA FISCAL, S.L.U.",
+          "href": "https://api.euskadi.eus/procurements/companies/05465"
+        }
+      }
+    },
+    {
+      "name": "TRANSPORTES AMEZAGA, S.L.",
+      "registrationNumber": "05484",
+      "identificationNumber": "B48162366",
+      "address": "CAMINO ARRIAGA SAKONI, 14",
+      "location": {
+        "postalCode": "48950",
+        "municipality": "Erandio",
+        "county": "Bizkaia",
+        "municipalityId": "902",
+        "countyId": "48"
+      },
+      "classification": [
+        {
+          "id": "S",
+          "name": "Servicios",
+          "groups": [
+            {
+              "id": "R",
+              "subgroups": [
+                {
+                  "id": "05",
+                  "name": "Recogida y transporte de residuos",
+                  "categories": [
+                    {
+                      "id": "1",
+                      "name": "Desde 0 Hasta 150.000",
+                      "_links": {
+                        "self": {
+                          "name": "Desde 0 Hasta 150.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/S/categories/1"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "Recogida y transporte de residuos",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/R/subgroups/05"
+                    }
+                  }
+                }
+              ],
+              "_links": {
+                "self": {
+                  "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/R"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Servicios",
+              "href": "https://api.euskadi.eus/procurements/companies/types/S"
+            }
+          }
+        }
+      ],
+      "object": "Transporte por vía aerea, marítima, ferrocarril y carretera con medios propios o ajenos por todo el territorio nacional o el extranjero de toda clase de mercancias y productos industriales, comerciales o de servicios.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/05484",
+      "_links": {
+        "self": {
+          "name": "TRANSPORTES AMEZAGA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/05484"
+        }
+      }
+    },
+    {
+      "name": "ASFALTOS Y HORMIGONES AUBIDE S.L.",
+      "registrationNumber": "05492",
+      "identificationNumber": "B95784989",
+      "address": "TXATXIENA 4-6 BAJO",
+      "location": {
+        "postalCode": "48200",
+        "municipality": "Durango",
+        "county": "Bizkaia",
+        "municipalityId": "027",
+        "countyId": "48"
+      },
+      "object": ".",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/05492",
+      "_links": {
+        "self": {
+          "name": "ASFALTOS Y HORMIGONES AUBIDE S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/05492"
+        }
+      }
+    },
+    {
+      "name": "AUTOKARRAK IZURIETA S.L.",
+      "registrationNumber": "05496",
+      "identificationNumber": "B95812228",
+      "address": "LAUAXETA 8-3º A",
+      "location": {
+        "postalCode": "48111",
+        "municipality": "Laukiz",
+        "county": "Bizkaia",
+        "municipalityId": "053",
+        "countyId": "48"
+      },
+      "object": "TRANSPORTE EN GENERAL",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/05496",
+      "_links": {
+        "self": {
+          "name": "AUTOKARRAK IZURIETA S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/05496"
+        }
+      }
+    },
+    {
+      "name": "INGENIERÍA Y CONSTRUCCIÓN ERAIKIZ, S.L.U.",
+      "registrationNumber": "05565",
+      "identificationNumber": "B95571345",
+      "address": "TROKABIDE, 20 - 2º  A",
+      "location": {
+        "postalCode": "48600",
+        "municipality": "Sopela",
+        "county": "Bizkaia",
+        "municipalityId": "085",
+        "countyId": "48"
+      },
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/05565",
+      "_links": {
+        "self": {
+          "name": "INGENIERÍA Y CONSTRUCCIÓN ERAIKIZ, S.L.U.",
+          "href": "https://api.euskadi.eus/procurements/companies/05565"
+        }
+      }
+    },
+    {
+      "name": "GESTIÓN DE INFRAESTRUCTURAS DE BIZKAIA-BIZKAIKO AZPIEGITUREN KUDEAKETA, S.A.",
+      "registrationNumber": "05588",
+      "identificationNumber": "A95723755",
+      "address": "CAPUCHINOS DE BASURTO, 6 - 4º ",
+      "location": {
+        "postalCode": "48013",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/05588",
+      "_links": {
+        "self": {
+          "name": "GESTIÓN DE INFRAESTRUCTURAS DE BIZKAIA-BIZKAIKO AZPIEGITUREN KUDEAKETA, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/05588"
+        }
+      }
+    },
+    {
+      "name": "KAHLOMEDIA, S.L.",
+      "registrationNumber": "05590",
+      "identificationNumber": "B95842985",
+      "address": "REVERENDO VICENTE GARAMENDI 5 - 9 D",
+      "location": {
+        "postalCode": "48006",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/05590",
+      "_links": {
+        "self": {
+          "name": "KAHLOMEDIA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/05590"
+        }
+      }
+    },
+    {
+      "name": "OUTSOURCING INTEGRAL PARA LA EMPRESA STRATEIA SL",
+      "registrationNumber": "05612",
+      "identificationNumber": "B95581468",
+      "address": "PUENTE DE DEUSTO Nº7, PLANTA 4, DEPARTAMENTO 4",
+      "location": {
+        "postalCode": "48014",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/05612",
+      "_links": {
+        "self": {
+          "name": "OUTSOURCING INTEGRAL PARA LA EMPRESA STRATEIA SL",
+          "href": "https://api.euskadi.eus/procurements/companies/05612"
+        }
+      }
+    },
+    {
+      "name": "AUTOCARES BILBOTOUR, S.L.",
+      "registrationNumber": "05614",
+      "identificationNumber": "B06269963",
+      "address": "ERREMENTARI, 2",
+      "location": {
+        "postalCode": "48180",
+        "municipality": "Loiu",
+        "county": "Bizkaia",
+        "municipalityId": "903",
+        "countyId": "48"
+      },
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/05614",
+      "_links": {
+        "self": {
+          "name": "AUTOCARES BILBOTOUR, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/05614"
+        }
+      }
+    },
+    {
+      "name": "INDENORT PV, S.L.",
+      "registrationNumber": "05616",
+      "identificationNumber": "XB01482587",
+      "address": "Pedro Asúa 65-67 bajo",
+      "location": {
+        "postalCode": "01008",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/05616",
+      "_links": {
+        "self": {
+          "name": "INDENORT PV, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/05616"
+        }
+      }
+    }
+  ]
+}

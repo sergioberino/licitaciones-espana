@@ -1,0 +1,448 @@
+{
+  "totalItems": 9042,
+  "totalPages": 905,
+  "currentPage": 311,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "name": "WEGETIT, S.L.",
+      "registrationNumber": "05434",
+      "identificationNumber": "B20814596",
+      "address": "C/ Zuatzu, nº 3, planta 1, oficina 6. Edificio Urgull",
+      "location": {
+        "postalCode": "20018",
+        "municipality": "Donostia / San Sebastián",
+        "county": "Gipuzkoa",
+        "municipalityId": "069",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.844",
+          "name": "Servicios de publicidad, relaciones públicas y similares",
+          "_links": {
+            "self": {
+              "name": "Servicios de publicidad, relaciones públicas y similares",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.844"
+            }
+          }
+        },
+        {
+          "id": "1.845",
+          "name": "Explotación electrónica por cuenta de terceros",
+          "_links": {
+            "self": {
+              "name": "Explotación electrónica por cuenta de terceros",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.845"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-08-29",
+      "certificateEndDate": "2026-02-27",
+      "object": "SERVICIOS DE PUBLICIDAD",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/05434",
+      "_links": {
+        "self": {
+          "name": "WEGETIT, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/05434"
+        }
+      }
+    },
+    {
+      "name": "URRUTIA ASESORES CONSULTORES, S.L.",
+      "registrationNumber": "06843",
+      "identificationNumber": "B95244596",
+      "address": "BEKO IBARRA KALEA 13, 1º DPTO 5",
+      "location": {
+        "postalCode": "48300",
+        "municipality": "Gernika-Lumo",
+        "county": "Bizkaia",
+        "municipalityId": "046",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.842",
+          "name": "Servicios financieros y contables",
+          "_links": {
+            "self": {
+              "name": "Servicios financieros y contables",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.842"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-08-29",
+      "certificateEndDate": "2026-02-27",
+      "object": "LA PRESTACIÓN DE SERVICIOS  PROFESIONALES DE ASESORÍA Y CONSULTORÍA DE EMPRESAS EN GENERAL, Y EN PARTICULAR, DE ASESORAMIENTO Y GESTIÓN FISCAL, ASESORAMIENTO Y GESTIÓN CONTABLE, ASESORAMIENTO Y GESTIÓN EN MATERIA LABORAL, ASESORÍA JURÍDICA, SERVICIO DE COBRO DE CRÉDITOS MOROSOS, VALORACIÓN DE EMPRESAS, ESTUDIO Y REDACCIÓN DE ESTATUTOS PARA LA CONSTITUCIÓN DE ENTIDADES DE CUALQUIER NATURALEZA, ESTUDIO Y REDACCIÓN DE PLANES DE VIABILIDAD, ESTUDIO DE TRAMITACIÓN Y SUBVENCIONES, CRÉDITOS Y OTRAS AYUDAS FINANCIERAS DE LOS ORGANISMOS DEL ESTADO CENTRAL, DEL GOBIERNO VASCO Y DE LA DIPUTACIONES FORALES, DE TODO TIPO DE ENTIDADES PÚBLICAS Y PRIVADAS PARA TODO TIPO DE EMPRESAS; Y EN CONCRETO, LA PRESTACIÓN DE SERVICIOS DE VERIFICACIONES REGISTRALES, INFORMES COMERCIALES, GRABACIONES DE DATOS Y RECOBROS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06843",
+      "_links": {
+        "self": {
+          "name": "URRUTIA ASESORES CONSULTORES, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/06843"
+        }
+      }
+    },
+    {
+      "name": "ELORBI SOCIEDAD, S.A.",
+      "registrationNumber": "10046",
+      "identificationNumber": "A48162218",
+      "address": "Ramon y Cajal 20",
+      "location": {
+        "postalCode": "48014",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.615.3",
+          "name": "Venta al por mayor de aparatos electrodomésticos y ferretería",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de aparatos electrodomésticos y ferretería",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.615.3"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-08-29",
+      "certificateEndDate": "2026-02-10",
+      "object": "LA COMPRAVENTA, IMPORTACIÓN, EXPORTACIÓN, COMERCIALIZACIÓN EN GENERAL DE OBJETOS DE METAL, Y DE OTRAS MATERIAS , CERRADURAS, CLAVOS, HERRAMIENTAS DE MANO, MAQUINARIA, ENSERES DOMÉSTICOS, CORTES Y ABRASIVOS Y TODOS AQUELLOS PRODUCTOS Y ACTIVIDADES PROPIOS DE UN NEGOCIO DE FERRETERÍA.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/10046",
+      "_links": {
+        "self": {
+          "name": "ELORBI SOCIEDAD, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/10046"
+        }
+      }
+    },
+    {
+      "name": "TELCANT INSTALACIONES SERVICIOS Y MANTENIMIENTO, S.L.",
+      "registrationNumber": "09517",
+      "identificationNumber": "B39781950",
+      "address": "AV. SANTA CRUZ DE  BEZANA 34B NAVE 8",
+      "location": {
+        "postalCode": "39100",
+        "municipality": "Santa Cruz de Bezana",
+        "county": "Cantabria",
+        "municipalityId": "073",
+        "countyId": "39"
+      },
+      "economicActivities": [
+        {
+          "id": "1.504.1",
+          "name": "Instalaciones eléctricas en general",
+          "_links": {
+            "self": {
+              "name": "Instalaciones eléctricas en general",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.504.1"
+            }
+          }
+        },
+        {
+          "id": "1.504.11",
+          "name": "Instalaciones eléctricas en general, redes telegráficas, telefonía, tv, etc",
+          "_links": {
+            "self": {
+              "name": "Instalaciones eléctricas en general, redes telegráficas, telefonía, tv, etc",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.504.11"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-08-29",
+      "certificateEndDate": "2026-02-27",
+      "object": "- INSTALACIONES ELÉCTRICAS, MONTAJES ELÉCTRICOS, VENTA DE MATERIAL ELÉCTRICO Y ELECTRÓNICO, ELABORACIÓN DE PROYECTOS DE INGENIERÍA TÉCNICA, COORDINACIÓN DE GREMIOS, INSTALACIÓN Y VENTA DE EQUIPOS DE AIRE ACONDICIONADO, CLIMATIZACIÓN Y RENOVACIÓN DE AIRE, INSTALACIÓN Y VENTA DE MATERIAL DE TELECOMUNICACIONES, INSTALACIÓN DE CCTV, INSTALACIONES CONTRA INCENDIOS, DETECCIÓN Y EXTINCIÓN, ALQUILAR DE VEHÍCULOS CON Y SIN CONDUCTOR, ELABORACIÓN DE AUDITORÍAS ENERGÉTICAS, GESTORÍA ENERGÉTICA, VENTA DE ELECTRODOMÉSTICOS, ELABORACIÓN DE SERVICIOS DE FONTANERÍA, CALEFACCIÓN, PINTURA, ALBAÑILERÍA, PRESTACIÓN DE TRABAJOS EN ALTA, MEDIA Y BAJA TENSIÓN, GESTIÓN DE RESIDUOS, COMPRAVENTA Y ALQUILER DE INMUEBLES, IMPORTACIÓN Y EXPORTACIÓN DE MERCANCÍAS DE TODO TIPO, ADMINISTRACIÓN DE EMPRESAS, TRABAJOS EN ALTURA, VENTA Y REPARACIÓN DE EQUIPOS INFORMÁTICOS, ASESORAMIENTO TÉCNICO Y PREVENCIÓN DE RIESGOS. ",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/09517",
+      "_links": {
+        "self": {
+          "name": "TELCANT INSTALACIONES SERVICIOS Y MANTENIMIENTO, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/09517"
+        }
+      }
+    },
+    {
+      "name": "LUIS ARTIACH ESCAURIAZA",
+      "registrationNumber": "06094",
+      "identificationNumber": "16044731T",
+      "address": "Autonomía 37, 5C",
+      "location": {
+        "postalCode": "48012",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "2.599",
+          "name": "Otros profesionales relacionados con el comercio y hostelería",
+          "_links": {
+            "self": {
+              "name": "Otros profesionales relacionados con el comercio y hostelería",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/2.599"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-08-29",
+      "certificateEndDate": "2026-02-27",
+      "object": "OTROS PROFESIONALES RELACIONADOS CON EL COMERCIO ",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06094",
+      "_links": {
+        "self": {
+          "name": "LUIS ARTIACH ESCAURIAZA",
+          "href": "https://api.euskadi.eus/procurements/companies/06094"
+        }
+      }
+    },
+    {
+      "name": "SIEMENS, S.A.",
+      "registrationNumber": "00284",
+      "identificationNumber": "A28006377",
+      "address": "Ronda de Europa,5",
+      "location": {
+        "postalCode": "28760",
+        "municipality": "Tres Cantos",
+        "county": "Madrid",
+        "municipalityId": "903",
+        "countyId": "28"
+      },
+      "economicActivities": [
+        {
+          "id": "1.504.1",
+          "name": "Instalaciones eléctricas en general",
+          "_links": {
+            "self": {
+              "name": "Instalaciones eléctricas en general",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.504.1"
+            }
+          }
+        },
+        {
+          "id": "1.615.4",
+          "name": "Venta al por mayor de aparatos y material radioeléctrico y electrónico",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de aparatos y material radioeléctrico y electrónico",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.615.4"
+            }
+          }
+        },
+        {
+          "id": "1.617.9",
+          "name": "Venta al por mayor interindustrial de otros productos n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor interindustrial de otros productos n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.617.9"
+            }
+          }
+        },
+        {
+          "id": "1.853",
+          "name": "Alquiler de maquinaria y equipo contable de oficina y cálculo",
+          "_links": {
+            "self": {
+              "name": "Alquiler de maquinaria y equipo contable de oficina y cálculo",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.853"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-08-29",
+      "certificateEndDate": "2026-02-26",
+      "object": "LA INVESTIGACIÓN, DESARROLLO, FABRICACIÓN, COMERCIALIZACIÓN Y PRESTACIÓN DE CUALQUIER CLASE DE SERVICIOS Y ACTIVIDADES RELACIONADOS CON: LA ELECTRICIDAD, LA ELECTROTÉCNIA, ELECTRÓNICA, TÉCNICAS Y PROCESOS DE INFORMACIÓN Y LAS COMUNICACIONES EN SUS DIVERSOS ÁMBITOS Y APLICACIONES. LA REALIZACIÓN DE DICHOS SEVICIOS ABARCA LA CONSULTORÍA, INGENIERÍA BÁSICA, DISEÑO E INGENIERÍA DE DESTALLE, IMPLANTACIÓN, INSTALACIÓN, MANTENIMIENTO, OPERACIÓN, &quot;OUTSOURCING&quot;, RECICLAJE Y FORMACIÓN. LA FABRICACIÓN, DESARROLLO, COMPRAVENTE, IMPORTACIÓN, EXPORTACIÓN Y DISTRIBUCIÓN DE EQUIPOS, APARATOS E INSTRUMENTAL MÉDICO-QUIRÚRGICO, RADIODIAGNÓSTICO Y DIAGNÓSTICO POR IMAGEN, RESONANCIA MAGNÉTICA, RADIOTERAPIA, RADIOLOGÍA DIGITAL, RADIOLÓGICO DE PRECISIÓN Y ÓPTICO; ASÍ COMO DE REACTIVOS, INSUMOS, CATALIZADORES Y CUALQUIERA OTRA CLASE DE PRODUCTOS Y ESPECIALIDADES PARA DIAGNÓSTICO Y ANÁLISIS CLÍNICO EN CUALQUIERA DE SUS MODALIDADES O APLICACIONES. ASÍ COMO PARTES Y PIEZAS DE LOS MISMOS, INCLUYENDO LA PRESTACIÓN DE SERVICIOS DE INSTALACIÓN, MANTENIMIENTO Y FORMACIÓN EN EL USO DE LOS CITADOS EQUIPOS, APARATOS E INSTRUMENTAL. LA COMERCIALIZACIÓN, DISEÑO, INGENIERÍA Y MANTENIMIENTO DE BIENES Y SERVICIOS PARA LA PRODUCCIÓN, TRANSPORTE, DISTRIBUCIÓN, TRANSFORMACIÓN, ALMACENAJE, GESTIÓN, GENERACIÓN Y CONTROL DE ENERGÍA ELÉCRICA, GAS, PETRÓLEO, Y EN GENERAL, TODA CLASE DE FUENTES DE ENERGÍA YA SEAN FÓSILES, RENOVABLES O DE CUALQUIER OTRA CLASE. REALIZACIÓN DE TRABAJAOS DE INGENIERÍS, CONSTRUCCIÓN DE EDIFICIOS, OBRA CIVIL Y MANTENIMIENTO DE BIENES INMUEBLES, OBRAS PARA FERROCARRILES (SOBRE VÍAS Y ELEVADOS), INSTALACIONES Y SERVICIOS DE MANTENIMIENTO DE EQUIPAMIENTOS ELÉCTRICOS, ELECTRÓNICOS E INFORMÁTICOS (HARDWARE Y SOFTWARE) Y MECÁNICOS. ESTACIONES DE TRATAMIENTO DE AGUS Y CONTRA INCENDIOS Y EL MANTENIMIENTO DE LAS MISMAS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/00284",
+      "_links": {
+        "self": {
+          "name": "SIEMENS, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/00284"
+        }
+      }
+    },
+    {
+      "name": "URBETECMA ESTUDIOS, S.L.",
+      "registrationNumber": "06846",
+      "identificationNumber": "B75198515",
+      "address": "Calle Carquizano 6 , 2º A",
+      "location": {
+        "postalCode": "20001",
+        "municipality": "Donostia / San Sebastián",
+        "county": "Gipuzkoa",
+        "municipalityId": "069",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.843.2",
+          "name": "Servicios técnicos de arquitectura y urbanismo",
+          "_links": {
+            "self": {
+              "name": "Servicios técnicos de arquitectura y urbanismo",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-08-28",
+      "certificateEndDate": "2026-02-28",
+      "object": "LA REALIZACIÓN DE ESTUDIO URBANÍSTICOS Y DE PATRIMONIO TALES COMO: -INVENTARIOS, INFORMES Y ESTUDIOS SOBRE BIENES INMUEBLES, MUEBLES, DERECHOS REALES, VALORES, BIENES DE CARÁCTER HISTÓRICO O INTERÉS ECONÓMICO Y EN GENERAL SOBRE EL PATRIMONIO DE AYUNTAMIENTOS, ENTIDADES LOCALES Y ENTIDADES PÚBLICAS DE NATURALEZA EMPRESARIAL. -LA REALIZACIÓN DE INFORMES, PROYECTOS Y ESTUDIOS EN MATERIA URBANÍSTICA, ADAPTACIÓN DE MODIFICACIONES DEL PLANEAMIENTO A LAS PROPIEDADES PÚBLICAS Y PRIVADAS, ESTUDIOS PARCELARIOS, REPARCELACIONES, RESERVAS DE SUELO, NORMALIZACIÓN DE FINCAS Y ANÁLISIS DEL ORDEN EDIFICATORIO.  EVALUACIÓN ESTADÍSTICA, PLANEAMIENTO Y GESTIÓN: - TRABAJOS DE ARCHIVO, CLASIFICACIÓN, TIPIFICACIÓN DE DOCUMENTACIÓN, ELABORACIÓN DE CATÁLOGOS Y BIBLIOTECA, ANÁLISIS DE BASES DE DATOS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06846",
+      "_links": {
+        "self": {
+          "name": "URBETECMA ESTUDIOS, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/06846"
+        }
+      }
+    },
+    {
+      "name": "SOLUCIONES DEPORTIVAS IBAIZABAL, S.L.",
+      "registrationNumber": "08015",
+      "identificationNumber": "B95606638",
+      "address": "POLIGONO INDUSTRIAL MOIORDIN PABELLON 12",
+      "location": {
+        "postalCode": "48480",
+        "municipality": "Zaratamo",
+        "county": "Bizkaia",
+        "municipalityId": "097",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.505.2",
+          "name": "Solados y pavimentos de todas clases en cualquier tipo de obra",
+          "_links": {
+            "self": {
+              "name": "Solados y pavimentos de todas clases en cualquier tipo de obra",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.505.2"
+            }
+          }
+        },
+        {
+          "id": "1.967.1",
+          "name": "Instalaciones deportivas",
+          "_links": {
+            "self": {
+              "name": "Instalaciones deportivas",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.967.1"
+            }
+          }
+        },
+        {
+          "id": "1.967.3",
+          "name": "Alquiler de artículos para deporte en instalaciones deportivas",
+          "_links": {
+            "self": {
+              "name": "Alquiler de artículos para deporte en instalaciones deportivas",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.967.3"
+            }
+          }
+        },
+        {
+          "id": "1.968.1",
+          "name": "Instalaciones para la celebración de espectáculos deportivos",
+          "_links": {
+            "self": {
+              "name": "Instalaciones para la celebración de espectáculos deportivos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.968.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-08-28",
+      "certificateEndDate": "2026-02-28",
+      "object": "A.\tVENTA, COLOCACION, ALQUILER Y REPARACION DE EQUIPAMIENTO DEPORTIVO, COMO CANASTAS, PORTERIAS, GRADAS, CUBIERTAS, VIDEOMARCADORES, CESPED ARTIFICIAL, PISTAS DE ATLETISMO…, PARQUETS Y PAVIMENTOS EN PISTAS Y PABELLONES DEPORTIVOS, ASI COMO SU MANTENIMIENTO, Y EN GENERAL TODO LO RELACIONADO CON EL EQUIPAMIENTO DEPORTIVO EN INSTALACIONES DEPORTIVAS\n\nB.\tCOLOCACIÓN DE PARQUETS, TARIMAS, ACUCHILLADO Y BARNIZADO, ASÍ COMO LA VENTA TANTO AL POR MENORCOMO AL POR MAYOR DE LOS PRODUCTOS RELACIONADOS CON LA ACTIVIDAD.\n\nC.\tACABADO DE EDIFICIOS Y OBRAS, NEGOCIO DE PINTURA INDUSTRIAL, DECORATIVAS Y ANTIOXIDANTE, ASÍ COMO TODA CLASE DE ESTUDIOS Y PROYECTOS AL RESPECTO, TANTO EN OBRAS PÚBLICAS COMO PRIVADAS YT ODAS LAS ACTIVIDADES PREVIAS, COMPLEMENTARIAS O DERIVADAS DEL FIN PRINCIPAL.\n\nD.\tLA COMPRA, VENTA Y ARRENDAMIENTO DE TODA CLASE DE SOLARES Y TERRENOS, URBANOS Y RÚSTICOS; Y DETODO TIPO DE INMUEBLES, ASI COMO DE PISTA DEPORTIVAS\n\nE.\tLA CONSTRUCCIÓN, PROMOCIÓN, REHABILITACIÓN, REFORMAS Y VENTA DE TODA CLASE DE VIVIENDAS,LOCALES COMERCIALES, GARAJES, EDIFICACIONES Y PABELLONES INDUSTRIALES, ASÍ COMO LA VENTA TANTO ALPOR MAYOR COMO AL POR MENOR DE LOS PRODUCTOS RELACIONADOS CON LA ACTIVIDADES RELACIONADAS CON LA CONSTRUCCION  EL EQUIPAMIENTO DEPORTIVO.\n\nF.\tSERVICIOS DE LIMPIEZA TANTO DE INTERIORES COMO EXTERIORES, EN OFICINAS, EDIFICIOS,ESTABLECIMIENTOS COMERCIALES, RESIDENCIAS, CENTROS SANITARIOS, ESTABLECIMIENTOS INDUSTRIALES,ETC..., Y SERVICIOS ESPECIALIZADOS DE LIMPIEZA (CRISTALES, CHIMENEAS ETC,...).\n\nG.\tLA COMPRA, TENENCIA, ENAJENACION Y EXPLOTACION, INCLUSO EN EXCLUSIVA POR O A FAVOR DE LA SOCIEDAD DE TITULOS, VALORES, ACCIONES, BONOS, OBLIGACIONES, PATENTES, LICENCIAS, MARCAS, MODELOS, ROTULOS, NOMBRES COMERCIALES Y TODA CLASE DE PERTENENCIAS DE PROPIEDAD INDUSTRIAL E INTELECTUAL Y CUALESQUIERA OTRA CLASE DE BIENES MUEBLES; TODO ELLO SIN INCIDIR EN ACTIVIDADES REGULADAS POR LA LEGISLACION DE INSTITUCIONES DE INVERSION COLECTIVA Y  LEY DE MERCADO DE VALORES..\n\n LAS ACTIVIDADES SOCIALES PODRAN SER DESARROLLADAS POR LA ENTIDAD, TOTAL O PARCIALMENTE, DE MODO INDIRECTO, MEDIANTE LA PARTICIPACION EN OTRAS ENTIDADES CON OBJETO IDENTICO O ANALOGO.\nQUEDAN EXCLUIDAS TODAS AQUELLAS ACTIVIDADES PARA CUYO EJERCICIO LA LEY EXIJA REQUISITOS ESPECIALES QUE NO QUEDEN CUMPLIDOS POR ETA MERCANTIL.\n",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08015",
+      "_links": {
+        "self": {
+          "name": "SOLUCIONES DEPORTIVAS IBAIZABAL, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/08015"
+        }
+      }
+    },
+    {
+      "name": "ZERTEK SMART SOLUTIONS, S.L.",
+      "registrationNumber": "06500",
+      "identificationNumber": "B95749230",
+      "address": "Bentazarra 6",
+      "location": {
+        "postalCode": "48002",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.659.2",
+          "name": "Venta al por menor de muebles de oficina y máquinas y equipos de oficina",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de muebles de oficina y máquinas y equipos de oficina",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.659.2"
+            }
+          }
+        },
+        {
+          "id": "1.845",
+          "name": "Explotación electrónica por cuenta de terceros",
+          "_links": {
+            "self": {
+              "name": "Explotación electrónica por cuenta de terceros",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.845"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-08-28",
+      "certificateEndDate": "2026-02-28",
+      "object": "1. LA INFORMÁTICA, TELECOMUNICACIONES Y OFIMÁTICA. 2. PRESTACIÓN DE SERVICIOS. ACTIVIDADES DE GESTIÓN Y ADMINISTRACIÓN. SERVICIOS EDUCATIVOS, DE OCIO Y ENTRETENIMIENTO. 3. COMERCIO AL POR MAYOR Y AL POR MENOR. DISTRIBUCIÓN COMERCIAL. IMPROTACIÓN Y EXPORTACIÓN. 4. ACTIVIDADES INMOBILIARIAS. 5. INDUSTRIAS MANUFACTURERAS Y TEXTILES. 6. TURISMO, HOSTELERÍA Y RESTAURACIÓN. 7. CONSTRUCCIÓN, INSTALACIONES Y MANTENIMIENTO. 8. TRANSPORTE Y ALMACENAMIENTO. 9. INFORMACIÓN Y COMUNICACIONES. 10. AGRICULTURA, GANADERÍA Y PESCA. 11. ENERGÍAS ALTERNATIVAS. 12. COMPRAVENTA Y REPARACIÓN DE VEHÍCULOS. REPARACIÓN Y MANTENIMIENTO DE INSTALACIONES Y MAQUINARIA. 13. INVESTIGACIÓN, DESARROLLO E INNOVACIÓN. 14. ACTIVIDADES CIENTÍFICAS Y TÉCNICAS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06500",
+      "_links": {
+        "self": {
+          "name": "ZERTEK SMART SOLUTIONS, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/06500"
+        }
+      }
+    },
+    {
+      "name": "MARCOR XOVE, S.L.",
+      "registrationNumber": "07548",
+      "identificationNumber": "B27224740",
+      "address": "XUANCES, CAMBA - BEDRIDO s/n",
+      "location": {
+        "postalCode": "27877",
+        "municipality": "Xove",
+        "county": "Lugo",
+        "municipalityId": "025",
+        "countyId": "27"
+      },
+      "economicActivities": [
+        {
+          "id": "1.501.2",
+          "name": "Construcción completa, reparación y conservación obras civiles",
+          "_links": {
+            "self": {
+              "name": "Construcción completa, reparación y conservación obras civiles",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-08-28",
+      "certificateEndDate": "2026-02-28",
+      "object": "1- LA CONSOLIDACIÓN, PREPARACIÓN Y DRAGADO DE TERRENOS PARA OBRAS CIVILES. 2- CONSTRUCCIÓN, REPARACIÓN, CONSERVACIÓN Y MANTENIMIENTO DE TODA CLASE DE EDIFICIOS Y OBRAS CIVILES",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07548",
+      "_links": {
+        "self": {
+          "name": "MARCOR XOVE, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/07548"
+        }
+      }
+    }
+  ]
+}

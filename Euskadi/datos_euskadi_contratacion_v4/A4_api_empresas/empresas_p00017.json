@@ -1,0 +1,622 @@
+{
+  "totalItems": 9042,
+  "totalPages": 905,
+  "currentPage": 17,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "name": "CUVIALDE OBRAS Y SERVICIOS, S.L.",
+      "registrationNumber": "08669",
+      "identificationNumber": "B01518075",
+      "address": "FLORIDA, 18 BAJO",
+      "location": {
+        "postalCode": "01005",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.501.1",
+          "name": "Construcción completa, reparación y conservación de edificaciones",
+          "_links": {
+            "self": {
+              "name": "Construcción completa, reparación y conservación de edificaciones",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-02-05",
+      "certificateEndDate": "2026-08-05",
+      "classification": [
+        {
+          "id": "O",
+          "name": "Obras",
+          "groups": [
+            {
+              "id": "C",
+              "name": "EDIFICACIONES",
+              "subgroups": [
+                {
+                  "id": "01",
+                  "name": "DEMOLICIONES",
+                  "categories": [
+                    {
+                      "id": "4",
+                      "name": "Desde 840.001 Hasta 2.400.000",
+                      "_links": {
+                        "self": {
+                          "name": "Desde 840.001 Hasta 2.400.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/O/categories/4"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "DEMOLICIONES",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/O/groups/C/subgroups/01"
+                    }
+                  }
+                },
+                {
+                  "id": "02",
+                  "name": "ESTRUCTURAS DE FABRICA U HORMIGÓN",
+                  "categories": [
+                    {
+                      "id": "4",
+                      "name": "Desde 840.001 Hasta 2.400.000",
+                      "_links": {
+                        "self": {
+                          "name": "Desde 840.001 Hasta 2.400.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/O/categories/4"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "ESTRUCTURAS DE FABRICA U HORMIGÓN",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/O/groups/C/subgroups/02"
+                    }
+                  }
+                },
+                {
+                  "id": "03",
+                  "name": "ESTRUCTURAS METALICAS",
+                  "categories": [
+                    {
+                      "id": "4",
+                      "name": "Desde 840.001 Hasta 2.400.000",
+                      "_links": {
+                        "self": {
+                          "name": "Desde 840.001 Hasta 2.400.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/O/categories/4"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "ESTRUCTURAS METALICAS",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/O/groups/C/subgroups/03"
+                    }
+                  }
+                },
+                {
+                  "id": "04",
+                  "name": "ALBAÑILERIA, REVOCOS Y REVESTIDOS",
+                  "categories": [
+                    {
+                      "id": "4",
+                      "name": "Desde 840.001 Hasta 2.400.000",
+                      "_links": {
+                        "self": {
+                          "name": "Desde 840.001 Hasta 2.400.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/O/categories/4"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "ALBAÑILERIA, REVOCOS Y REVESTIDOS",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/O/groups/C/subgroups/04"
+                    }
+                  }
+                },
+                {
+                  "id": "05",
+                  "name": "CANTERIA Y MARMOLERIA",
+                  "categories": [
+                    {
+                      "id": "4",
+                      "name": "Desde 840.001 Hasta 2.400.000",
+                      "_links": {
+                        "self": {
+                          "name": "Desde 840.001 Hasta 2.400.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/O/categories/4"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "CANTERIA Y MARMOLERIA",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/O/groups/C/subgroups/05"
+                    }
+                  }
+                },
+                {
+                  "id": "06",
+                  "name": "PAVIMENTOS, SOLADOS Y ALICATADOS",
+                  "categories": [
+                    {
+                      "id": "4",
+                      "name": "Desde 840.001 Hasta 2.400.000",
+                      "_links": {
+                        "self": {
+                          "name": "Desde 840.001 Hasta 2.400.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/O/categories/4"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "PAVIMENTOS, SOLADOS Y ALICATADOS",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/O/groups/C/subgroups/06"
+                    }
+                  }
+                },
+                {
+                  "id": "07",
+                  "name": "AISLAMIENTOS E IMPERMEABILIZACIONES",
+                  "categories": [
+                    {
+                      "id": "4",
+                      "name": "Desde 840.001 Hasta 2.400.000",
+                      "_links": {
+                        "self": {
+                          "name": "Desde 840.001 Hasta 2.400.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/O/categories/4"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "AISLAMIENTOS E IMPERMEABILIZACIONES",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/O/groups/C/subgroups/07"
+                    }
+                  }
+                },
+                {
+                  "id": "08",
+                  "name": "CARPINTERIA DE MADERA",
+                  "categories": [
+                    {
+                      "id": "4",
+                      "name": "Desde 840.001 Hasta 2.400.000",
+                      "_links": {
+                        "self": {
+                          "name": "Desde 840.001 Hasta 2.400.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/O/categories/4"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "CARPINTERIA DE MADERA",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/O/groups/C/subgroups/08"
+                    }
+                  }
+                },
+                {
+                  "id": "09",
+                  "name": "CARPINTERIA METALICA",
+                  "categories": [
+                    {
+                      "id": "4",
+                      "name": "Desde 840.001 Hasta 2.400.000",
+                      "_links": {
+                        "self": {
+                          "name": "Desde 840.001 Hasta 2.400.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/O/categories/4"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "CARPINTERIA METALICA",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/O/groups/C/subgroups/09"
+                    }
+                  }
+                }
+              ],
+              "_links": {
+                "self": {
+                  "name": "EDIFICACIONES",
+                  "href": "https://api.euskadi.eus/procurements/companies/types/O/groups/C"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Obras",
+              "href": "https://api.euskadi.eus/procurements/companies/types/O"
+            }
+          }
+        }
+      ],
+      "object": "LA PROMOCIÓN, CONSTRUCCIÓN, DECORACIÓN, COMPRAVENTA, Y DEMÁS OPERACIONES JURÍDICAS, INCLUIDA LA INTERMEDIACIÓN POR CUENTA DE PERSONAS AJENAS, DE VIVIENDAS, LOCALES Y GARAJES, ASÍ COMO LA ADQUISICIÓN DE TERRENOS, SU PARCELACIÓN Y URBANIZACIÓN, ARRENDAMIENTO Y VENTA DE LOS MISMOS, LA REALIZACIÓN DE TODO TIPO DE OBRAS; LA COMPRAVENTA DE MATERIALES DE CONSTRUCCIÓN, DE ARTÍCULOS Y ELEMENTOS SANITARIOS Y DE MOBILIARIO EN GENERAL.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08669",
+      "_links": {
+        "self": {
+          "name": "CUVIALDE OBRAS Y SERVICIOS, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/08669"
+        }
+      }
+    },
+    {
+      "name": "MUNDO PUA, S.L.",
+      "registrationNumber": "09851",
+      "identificationNumber": "B09995606",
+      "address": "SOLONDOTA 7,1ºIZDA",
+      "location": {
+        "postalCode": "48600",
+        "municipality": "Sopela",
+        "county": "Bizkaia",
+        "municipalityId": "085",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.468.5",
+          "name": "Actividades anexas a la industria del mueble (acabado, barnizado,...)",
+          "_links": {
+            "self": {
+              "name": "Actividades anexas a la industria del mueble (acabado, barnizado,...)",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.468.5"
+            }
+          }
+        },
+        {
+          "id": "1.921.7",
+          "name": "Servicios de protección contra incendios y accidentes",
+          "_links": {
+            "self": {
+              "name": "Servicios de protección contra incendios y accidentes",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.921.7"
+            }
+          }
+        },
+        {
+          "id": "1.936",
+          "name": "Investigación científica y técnica",
+          "_links": {
+            "self": {
+              "name": "Investigación científica y técnica",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.936"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-02-05",
+      "certificateEndDate": "2026-07-30",
+      "object": "1. EL DISEÑO, LA CONSTRUCCIÓN, EL ENSAMBLE DE APARATOS Y, DE TODO TIPO DE DISPOSITIVOS, PARA LA CONFIGURACIÓN DE PRODUCTOS Y SISTEMAS ORIENTADOS A LA PREVENCIÓN, DETECCIÓN LIMITACIÓN Y EXTINCIÓN DE LLAMA-INCENDIO-, ASÍ COMO LA COMUNICACIÓN, CONTROL, ASISTENCIA Y SALVAMENTO EN CASO DE EMERGENCIA. 2. COMERCIALIZACIÓN, VENTA E INSTALACIÓN, SERVICIO TÉCNICO, MANTENIMIENTO, REPARACIÓN Y ENSAMBLE DE TODO TIPO DE SISTEMAS EN EL ÁREA DE SEGURIDAD, YA SEA EN EL ÁMBITO, RESIDENCIAL, COMERCIAL E INDUSTRIAL. 3. INSTALACIÓN Y MANTENIMIENTO DE APARATOS, DISPOSITIVOS Y SISTEMAS DE SEGURIDAD CONECTADOS A CENTRALES DE ALARMA O A CENTROS DE CONTROL O DE VIDEO VIGILANCIA. 4. DESARROLLO DE ACTIVIDADES DE INVESTIGACIÓN, DESARROLLO Y ASESORAMIENTO TÉCNICO ESPECIALIZADO EN EL ÁMBITO DE LA SEGURIDAD, LA PREVENCIÓN, LA EXTINCIÓN DE INCENDIOS Y LA CONSTRUCCIÓN SOSTENIBLE. 5. LA IMPORTACIÓN, EXPORTACIÓN Y COMERCIALIZACIÓN EN GENERAL DE PRODUCTOS TECNOLÓGICOS, Y DE MATERIALES DE LA CONSTRUCCIÓN Y/O DECORATIVOS, SI COMO DE CUALESQUIERA INSTALACIONES, ELEMENTOS O SERVICIOS DE LAS EDIFICACIONES. 6. LA PRESTACIÓN DE TODA CLASE DE SERVICIOS RELACIONADOS CON EL ÁMBITO, ARQUITECTÓNICO, DE TÉCNICA DE LA CONSTRUCCIÓN E INGENIERÍA EN GENERAL, POR MEDIO DE LA FORMULACIÓN, DESARROLLO Y PUESTA EN MARCHA DE ESTUDIOS, ACTUACIONES Y PROYECTOS. 7. LA REALIZACIÓN, POR CUENTA PROPIA O AJENA DE TODA CLASE DE CONSTRUCCIONES, INSTALACIONES, REFORMAS, REHABILITACIONES Y DECORACIONES. ASÍ COMO LA SUPERVISIÓN Y CONTROL DE OBRAS, LA COORDINACIÓN DE GREMIOS, EL ASESORAMIENTO Y LA ASISTENCIA TÉCNICA EN TODO EN CUANTO SE RELACIONE, DIRECTA O INDIRECTAMENTE, CON EL ÁMBITO DE LA CONSTRUCCIÓN DE EDIFICIOS Y DE LAS OBRAS PÚBLICAS Y CIVILES. ",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/09851",
+      "_links": {
+        "self": {
+          "name": "MUNDO PUA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/09851"
+        }
+      }
+    },
+    {
+      "name": "BINARY SOFTWARE, S.L.",
+      "registrationNumber": "05876",
+      "identificationNumber": "B01123447",
+      "address": "PASEO DE LA MUSICA, 3",
+      "location": {
+        "postalCode": "01007",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.845",
+          "name": "Explotación electrónica por cuenta de terceros",
+          "_links": {
+            "self": {
+              "name": "Explotación electrónica por cuenta de terceros",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.845"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-02-05",
+      "certificateEndDate": "2026-08-02",
+      "object": "LA COMPRAVENTA DE TODO TIPO DE SUMINISTROS PARA LA INFORMÁTICA Y SUS APLICACIONES, SÍ COMO EL DESARROLLO, LA PROMOCIÓN, EL ASESORAMIENTO Y LOS SERVICIOS DENTRO DEL CAMPO LA INFORMÁTICA",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/05876",
+      "_links": {
+        "self": {
+          "name": "BINARY SOFTWARE, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/05876"
+        }
+      }
+    },
+    {
+      "name": "BASOINSA, S.L.",
+      "registrationNumber": "03819",
+      "identificationNumber": "B95549101",
+      "address": "LUIS BILBAO LIBANO, 11- ENTR. D",
+      "location": {
+        "postalCode": "48940",
+        "municipality": "Leioa",
+        "county": "Bizkaia",
+        "municipalityId": "054",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.843.1",
+          "name": "Servicios técnicos de ingeniería",
+          "_links": {
+            "self": {
+              "name": "Servicios técnicos de ingeniería",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-02-05",
+      "certificateEndDate": "2026-07-27",
+      "object": "LA PRESTACIÓN DE SERVICIOS Y ELABORACIÓN DE ESTUDIOS Y PROYECTOS RELACIONADOS CON EL MEDIO AMBIENTE. ESTA ACTIVIDAD SE REALIZARÁ TANTO EN EL ÁMBITO DE LA NATURALEZA (ORDENACIÓN DEL TERRITORIO, IMPACTO MEDIAMBIENTAL, PAISAJISMO, INGENIERÍA AGROFORESTAL, MEDIDAS CORRECTORAS DE ALTERACIONES MEDIOAMBIENTALES), COMO EN EL PROCESO INDUSTRIAL (AUDITORÍAS AMBIENTALES, EN RELACIÓN CON RESIDUOS Y CONTAMINACIÓN), ASÍ COMO EN LA GESTIÓN DEL MEDIO FÍSICO, SISTEMAS INFORMÁTICOS DE INFORMACIÓN GEOGRÁFICA, TELEDETECCIÓN Y CUALQUIER OTRA ACTIVIDAD QUE ESTE RELACIONADA, CONECTADA Y/O ACCESORIA DE LA RELACIONADA.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03819",
+      "_links": {
+        "self": {
+          "name": "BASOINSA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/03819"
+        }
+      }
+    },
+    {
+      "name": "CONSTRUCCIONES VIURA XXI, S.L.",
+      "registrationNumber": "09507",
+      "identificationNumber": "B01509421",
+      "address": "POLIGONO EL CARRASCAL CALLE EL CARRASCAL, 16 - BAJO",
+      "location": {
+        "postalCode": "01308",
+        "municipality": "Lanciego/Lantziego",
+        "county": "Araba/Álava",
+        "municipalityId": "032",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.501.1",
+          "name": "Construcción completa, reparación y conservación de edificaciones",
+          "_links": {
+            "self": {
+              "name": "Construcción completa, reparación y conservación de edificaciones",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-02-05",
+      "certificateEndDate": "2026-07-25",
+      "object": "LA REALIZACIÓN DE TRABAJOS DE CONSTRUCCIÓN, INSTALACIONES, MANTENIMIENTO Y OBRA CIVIL EN GENERAL.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/09507",
+      "_links": {
+        "self": {
+          "name": "CONSTRUCCIONES VIURA XXI, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/09507"
+        }
+      }
+    },
+    {
+      "name": "2008 MAKELSAKO GIPUZKOA, S.L.",
+      "registrationNumber": "06681",
+      "identificationNumber": "B20983060",
+      "address": "Oria Etorbidea 8-10, local 2",
+      "location": {
+        "postalCode": "20160",
+        "municipality": "Lasarte-Oria",
+        "county": "Gipuzkoa",
+        "municipalityId": "902",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.659.2",
+          "name": "Venta al por menor de muebles de oficina y máquinas y equipos de oficina",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de muebles de oficina y máquinas y equipos de oficina",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.659.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-02-05",
+      "certificateEndDate": "2026-07-29",
+      "object": "LA ACTIVIDAD  DE COMERCIALIZACIÓN, REPARACIÓN Y SERVICIOS POSTVENTA DE PRODUCTOS DE OFIMÁTICA, INFORMÁTICA Y DEMÁS PRODUCTOS RELACIONADOS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06681",
+      "_links": {
+        "self": {
+          "name": "2008 MAKELSAKO GIPUZKOA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/06681"
+        }
+      }
+    },
+    {
+      "name": "LABOMED-AZ, S.L.",
+      "registrationNumber": "05825",
+      "identificationNumber": "B01135284",
+      "address": "c/ Beato Tomás de Zumarraga, 48-1ºD",
+      "location": {
+        "postalCode": "01009",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.619.2",
+          "name": "Venta al por mayor de aparatos e instrumentos médicos, ortopédicos, ópticos",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de aparatos e instrumentos médicos, ortopédicos, ópticos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.619.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-02-05",
+      "certificateEndDate": "2026-07-23",
+      "object": "DISTRIBUCIÓN DE PRODUCTOS Y SERVICIOS EN EL SECTOR MÉDICO HOSPITALARIO",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/05825",
+      "_links": {
+        "self": {
+          "name": "LABOMED-AZ, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/05825"
+        }
+      }
+    },
+    {
+      "name": "AKTUA REHABILITACION INTEGRAL, S.COOP. PEQUEÑA",
+      "registrationNumber": "05328",
+      "identificationNumber": "F01523182",
+      "address": "C/ADRIANO VI Nº 31 BAJO",
+      "location": {
+        "postalCode": "01008",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.501.1",
+          "name": "Construcción completa, reparación y conservación de edificaciones",
+          "_links": {
+            "self": {
+              "name": "Construcción completa, reparación y conservación de edificaciones",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-02-05",
+      "certificateEndDate": "2026-07-27",
+      "object": "LA REALIZACIÓN DE PROYECTOS DE ARQUITECTURA, PROYECTOS DE REHABILITACIÓN DE EDIFICIOS, URBANISMO, DIRECCIÓN FACULTATIVA DE OBRAS Y SEGURIDAD Y SALUD. TRAMITACIÓN, CONSULTORÍA, ASESORÍA, INFORMES TÉCNICOS, PERITACIONES, TASACIONES Y CERTIFICADOS DE EFICIENCIA ENERGÉTICA. GESTIÓN, CONTRATACIÓN Y EJECUCIÓN DE OBRAS (TANTO PÚBLICAS COMO PRIVADAS), CONSTRUCCIONES Y/O URBANIZACIONES EN GENERAL, SUMINISTRO DE MATERIALES. LA REALIZACIÓN DE CUANTAS OPERACIONES INDUSTRIALES Y COMERCIALES GUARDEN RELACIÓN CON LAS FINALIDADES ANTERIORES.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/05328",
+      "_links": {
+        "self": {
+          "name": "AKTUA REHABILITACION INTEGRAL, S.COOP. PEQUEÑA",
+          "href": "https://api.euskadi.eus/procurements/companies/05328"
+        }
+      }
+    },
+    {
+      "name": "FABER-1900, S.L.",
+      "registrationNumber": "09489",
+      "identificationNumber": "B26292458",
+      "address": "AVDA REPUBLICA ARGENTINA 55 BAJO 4",
+      "location": {
+        "postalCode": "26007",
+        "municipality": "Logroño",
+        "county": "Rioja, La",
+        "municipalityId": "089",
+        "countyId": "26"
+      },
+      "economicActivities": [
+        {
+          "id": "1.843.1",
+          "name": "Servicios técnicos de ingeniería",
+          "_links": {
+            "self": {
+              "name": "Servicios técnicos de ingeniería",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.1"
+            }
+          }
+        },
+        {
+          "id": "1.843.2",
+          "name": "Servicios técnicos de arquitectura y urbanismo",
+          "_links": {
+            "self": {
+              "name": "Servicios técnicos de arquitectura y urbanismo",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-02-05",
+      "certificateEndDate": "2026-07-28",
+      "object": "LA ACTIVIDAD PROPIA DEL EJERCICIO DE LA ARQUITECTURA, INGENIERÍA TÉCNICA AGRÍCOLA E INGENIERÍA AGRÍCOLA.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/09489",
+      "_links": {
+        "self": {
+          "name": "FABER-1900, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/09489"
+        }
+      }
+    },
+    {
+      "name": "FACTOR 4 INGENIEROS CONSULTORES, S.L.",
+      "registrationNumber": "10527",
+      "identificationNumber": "B48983878",
+      "address": "Egaña, 17 - 3º departamento 4",
+      "location": {
+        "postalCode": "48010",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.843.1",
+          "name": "Servicios técnicos de ingeniería",
+          "_links": {
+            "self": {
+              "name": "Servicios técnicos de ingeniería",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.1"
+            }
+          }
+        },
+        {
+          "id": "1.932.2",
+          "name": "Enseñanza de formación y perfeccionamiento profesional superior",
+          "_links": {
+            "self": {
+              "name": "Enseñanza de formación y perfeccionamiento profesional superior",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.932.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-02-05",
+      "certificateEndDate": "2026-08-04",
+      "object": "LA REALIZACIÓN Y EL DISEÑO DE PROYECTOS DE INGENIE­RÍA, ASÍ COMO LA SUPERVISIÓN Y EL ASESORAMIENTO PROFESIONAL SOBRE LOS CITADOS PROYECTOS, EN TODAS Y CADA UNA DE LAS FASES EN QUE SE ENCUENTREN LOS MISMOS.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/10527",
+      "_links": {
+        "self": {
+          "name": "FACTOR 4 INGENIEROS CONSULTORES, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/10527"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,428 @@
+{
+  "totalItems": 9042,
+  "totalPages": 905,
+  "currentPage": 632,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "name": "GOIENER, S.COOP.",
+      "registrationNumber": "05722",
+      "identificationNumber": "F75074872",
+      "address": "Mallutz 18 oficina 3",
+      "location": {
+        "postalCode": "20240",
+        "municipality": "Ordizia",
+        "county": "Gipuzkoa",
+        "municipalityId": "076",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.619.9",
+          "name": "Venta al por mayor de otros productos n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de otros productos n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.619.9"
+            }
+          }
+        },
+        {
+          "id": "1.659.9",
+          "name": "Venta al por menor de otros productos no especificados en esta agrupación",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de otros productos no especificados en esta agrupación",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.659.9"
+            }
+          }
+        },
+        {
+          "id": "1.933.9",
+          "name": "Otras actividades de enseñanza tales como idiomas, mecanografía",
+          "_links": {
+            "self": {
+              "name": "Otras actividades de enseñanza tales como idiomas, mecanografía",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.933.9"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2018-03-19",
+      "certificateEndDate": "2018-08-07",
+      "object": "LA COMERCIALIZACIÓN DE ENERGÍA BAJO CERTIFICADO VERDE A TRAVÉS DE LA TARIFA ELÉCTRICA",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/05722",
+      "_links": {
+        "self": {
+          "name": "GOIENER, S.COOP.",
+          "href": "https://api.euskadi.eus/procurements/companies/05722"
+        }
+      }
+    },
+    {
+      "name": "GRANDE ARMEE CONSEIL ESPAÑA, S.L.",
+      "registrationNumber": "03755",
+      "identificationNumber": "B95238101",
+      "address": "Elcano, nº 9-3ºA",
+      "location": {
+        "postalCode": "48008",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.847",
+          "name": "Servicios de consultoría",
+          "_links": {
+            "self": {
+              "name": "Servicios de consultoría",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.847"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2018-03-08",
+      "certificateEndDate": "2018-08-27",
+      "object": "-ASESORAMIENTO A PERSONAS FÍSICAS, JURÍDICAS E INSTITUTCIONES EN LAS ÁREA SIGUEINTES: TÉCNICAS, ECONÓMICA, FINANCIERA, DE MERCADO, DE GESTIÓN DE RECURSOS HUMANOS, JURÍDICA Y CUALESQUIERA  OTRAS QUE AFECTEN A LA GESTIÓN DE EMPRESAS E INSTITUCIONES. -ASESORAMIENTO, EN LAS ÁREAS SEÑALADAS EN EL PÁRRAFO ANTERIOR, A PERSONAS FÍSICAS O JURÍDICAS SIN ACTGIVIDAD EMPRESARIAL. - ENSEÑANZA, REGLADA Y NO REGLADA",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03755",
+      "_links": {
+        "self": {
+          "name": "GRANDE ARMEE CONSEIL ESPAÑA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/03755"
+        }
+      }
+    },
+    {
+      "name": "ROTULO Y METAL, S.L.",
+      "registrationNumber": "05717",
+      "identificationNumber": "B20894135",
+      "address": "IRIBAR KALEA Nº 6 PAB C2",
+      "location": {
+        "postalCode": "20018",
+        "municipality": "Donostia / San Sebastián",
+        "county": "Gipuzkoa",
+        "municipalityId": "069",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.246.5",
+          "name": "Manipulado de vidrio",
+          "_links": {
+            "self": {
+              "name": "Manipulado de vidrio",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.246.5"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2018-03-05",
+      "certificateEndDate": "2018-08-08",
+      "object": "LA FABRICACIÓN, VENTA E INSTALACIÓN DE LETREROS LUMINOSOS. TRABAJOS DE ROTULACIÓN, SEÑALIZACIÓN, METALISTERÍA, DISEÑO GRÁFICO, PUBLICIDAD E IMAGEN CORPORATIVA, RECICLAJE DE ELEMENTOS DE ROTULACIÓN, PRODUCCIÓN GRÁFICA, DISPLAYS CORPORATIVOS Y PUBLICITARIOS, SOLUCIONES DECORATIVAS INTEGRALES",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/05717",
+      "_links": {
+        "self": {
+          "name": "ROTULO Y METAL, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/05717"
+        }
+      }
+    },
+    {
+      "name": "CONSULTING Y PROYECTOS 2000 UNO S.A.",
+      "registrationNumber": "04402",
+      "identificationNumber": "A95194551",
+      "address": "NICOLÁS ALCORTA 5 LJ",
+      "location": {
+        "postalCode": "48003",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.501.1",
+          "name": "Construcción completa, reparación y conservación de edificaciones",
+          "_links": {
+            "self": {
+              "name": "Construcción completa, reparación y conservación de edificaciones",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2018-03-01",
+      "certificateEndDate": "2018-08-28",
+      "object": "LA REALIZACIÓN Y EJECUCIÓN DE PROYECTOS DE OBRA, ASÍ COMO PRESTACIÓN DE SERVICIOS DE DIRECCIÓN Y CONTROL DE OBRAS, EN AMBOS CASOS, TANTO DE REFORMA COMO DE OBRA NUEVA ",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/04402",
+      "_links": {
+        "self": {
+          "name": "CONSULTING Y PROYECTOS 2000 UNO S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/04402"
+        }
+      }
+    },
+    {
+      "name": "HERMANOS ELORTEGI, S.A.",
+      "registrationNumber": "02441",
+      "identificationNumber": "A48095822",
+      "address": "Plaza el Cristo, 1",
+      "location": {
+        "postalCode": "48920",
+        "municipality": "Portugalete",
+        "county": "Bizkaia",
+        "municipalityId": "078",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.507",
+          "name": "Construcción, reparación y conservación de toda clase obras",
+          "_links": {
+            "self": {
+              "name": "Construcción, reparación y conservación de toda clase obras",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.507"
+            }
+          }
+        },
+        {
+          "id": "1.691.2",
+          "name": "Reparación de vehículos automóviles, bicicletas y otros vehículos",
+          "_links": {
+            "self": {
+              "name": "Reparación de vehículos automóviles, bicicletas y otros vehículos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.691.2"
+            }
+          }
+        },
+        {
+          "id": "1.722",
+          "name": "Transporte de mercancías por carretera",
+          "_links": {
+            "self": {
+              "name": "Transporte de mercancías por carretera",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.722"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2018-02-15",
+      "certificateEndDate": "2018-07-28",
+      "object": "LA CONSTRUCCIÓN Y EJECUCIÓN DE OBRAS EN GENERAL, SIENDO ÉSTAS COMPLETAS O PARCIALES, POR CUENTA PROPIA O DE TERCEROS EN CONTRATAS PRIVADAS O PÚBLICAS, ASÍ COMO SU REPARACIÓN Y CONSERVACIÓN.\r\nCONSTITUYE IGUALMENTE OBJETO SOCIAL, LA PROMOCIÓN Y COMPRA-VENTA DE EDIFICACIONES, DE TERRENOS E INMUEBLES Y EL COMERCIO DE ARTÍCULOS Y MATERIALES DESTINADOS A LA CONSTRUCCIÓN.\r\nSE INCLUYE EN LA ACTIVIDAD SOCIAL LA PRESTACIÓN DE SERVICIOS, SIN APORTACIÓN DE MATERIALES, PARA LA CONSTRUCCIÓN PROPIA O AJENA, REALIZADA CON MAQUINARIA ESPECÍFICA, ASÍ COMO CON ELEMENTOS DE TRANSPORTE, E IGUALMENTE SU ALQUILER.\r\nSE INTEGRAN EN EL OBJETO SOCIAL LAS OPERACIONES DE EXCAVACIÓN, CONSOLIDACIÓN  Y PREPARACIÓN DE TERRENOS.\r\nENTRAN IGUALMENTE EN EL ÁMBITO DEL OBJETO SOCIAL EL TRANSPORTE DE MERCANCÍAS, PROPIEDAD DE LA SOCIEDAD O AJENAS, REALIZADAS POR ELEMENTOS AUTOMATRICES, VINCULADAS O INDEPENDIENTES A LA CONSTRUCCIÓN Y DESARROLLADAS EN CUALQUIER ÁMBITO GEOGRÁFICO, LOCAL, COMARCAL, NACIONAL  O INTERNACIONAL ",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/02441",
+      "_links": {
+        "self": {
+          "name": "HERMANOS ELORTEGI, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/02441"
+        }
+      }
+    },
+    {
+      "name": "FRÍO INDUSTRIAL Y HOSTELERÍA ALAVESA, S.L.",
+      "registrationNumber": "03141",
+      "identificationNumber": "B01346105",
+      "address": "P. LOS OLMOS- PARQUE INBISA 1 - PAB. 4C",
+      "location": {
+        "postalCode": "01013",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.504.3",
+          "name": "Instalaciones de frío, calor y acondicionamiento de aire",
+          "_links": {
+            "self": {
+              "name": "Instalaciones de frío, calor y acondicionamiento de aire",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.504.3"
+            }
+          }
+        },
+        {
+          "id": "1.654.5",
+          "name": "Venta al por menor de toda clase de maquinaría",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de toda clase de maquinaría",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.654.5"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2018-01-31",
+      "certificateEndDate": "2018-07-10",
+      "object": "EL COMERCIO DE MAQUINARIA DE HOSTELERÍA Y REPARACIÓN, INSTALACIÓN Y MANTENIMIENTO DE INSTALACIONES DE FRÍO Y DE CALOR",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03141",
+      "_links": {
+        "self": {
+          "name": "FRÍO INDUSTRIAL Y HOSTELERÍA ALAVESA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/03141"
+        }
+      }
+    },
+    {
+      "name": "ALFASIGMA ESPAÑA, S.L.",
+      "registrationNumber": "04506",
+      "identificationNumber": "B61787057",
+      "address": "AVDA. DIAGONAL 490, 4º",
+      "location": {
+        "postalCode": "08006",
+        "municipality": "Barcelona",
+        "county": "Barcelona",
+        "municipalityId": "019",
+        "countyId": "08"
+      },
+      "economicActivities": [
+        {
+          "id": "1.254.2",
+          "name": "Fabricación de especialidades y otros productos farmacéuticos",
+          "_links": {
+            "self": {
+              "name": "Fabricación de especialidades y otros productos farmacéuticos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.254.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2018-01-30",
+      "certificateEndDate": "2018-07-05",
+      "object": "A) EL DESARROLLO, REGISTRO, PROMOCIÓN, COMERCIALIZACIÓN, IMPORTACIÓN Y EXPORTACIÓN DE MEDICAMENTOS DE USO HUMANO, INCLUYENDO ESPECIALIDADES FARMACÉUTICAS Y PARAFARMACÉUTICAS, Y ESPECIALIDADES FARMACÉUTICAS GENÉRICAS, ACTIVIDADES TODAS ELLAS QUE PODRÁ LLEVAR A CABO POR CUENTA PROPIA, AJENA, O DE TERCEROS, PUDIENDO ASUMIR LAS RESPONSABILIDADES PROPIAS DEL TITULAR DE UNA AUTORIZACIÓN DE COMERCIALIZACIÓN DE MEDICAMENTOS.\r\nB) EL DESARROLLO, REGISTRO, PROMOCIÓN, COMERCIALIZACIÓN, IMPORTACIÓN Y EXPORTACIÓN DE PRODUCTOS FITOFARMACÉUTICOS, VETERINARIOS Y BIOCIDAS.\r\nC) EL DESARROLLO, ADQUISICIÓN, VENTA Y USO DE DOSIERES DE REGISTRO DE MEDICAMENTOS DE USO HUMANO, LA COMERCIALIZACIÓN DE MATERIAS PRIMAS, PRODUCTOS INTERMEDIOS Y PREPARADOS RELACIONADOS CON DICHOS MEDICAMENTOS DE USO HUMANO Y LA PROMOCIÓN Y MONITORIZACIÓN DE ENSAYOS Y ESTUDIOS DE TODO TIPO, INCLUIDOS ENSAYOS CLÍNICOS.\r\nD) EL DESARROLLO DE LA INVESTIGACIÓN, FABRICACIÓN Y DISTRIBUCIÓN POR CUENTA PROPIA A TERCEROS DE PRODUCTOS QUÍMICOS EN GENERAL, MATERIAS PRIMAS PARA LA INDUSTRIA FARMACÉUTICA, DE PRODUCTOS Y PREPARADOS DE FARMACIA, PARAFARMACIA, SANITARIOS, DE DIAGNOSIS BIOLÓGICA E HIGIÉNICA, DE PREPARADOS MÉDICO-QUIRÚRGICOS, DE COSMÉTICOS, PRODUCTOS ALIMENTARIOS Y DIETÉTICOS.\r\n",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/04506",
+      "_links": {
+        "self": {
+          "name": "ALFASIGMA ESPAÑA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/04506"
+        }
+      }
+    },
+    {
+      "name": "CONSTRUCCIONES Y REFORMAS GORLIZ, S.L.",
+      "registrationNumber": "03792",
+      "identificationNumber": "B95349148",
+      "address": "ITSASBIDE (ELEXALDE), 37-2 DR",
+      "location": {
+        "postalCode": "48630",
+        "municipality": "Gorliz",
+        "county": "Bizkaia",
+        "municipalityId": "043",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.501.1",
+          "name": "Construcción completa, reparación y conservación de edificaciones",
+          "_links": {
+            "self": {
+              "name": "Construcción completa, reparación y conservación de edificaciones",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.1"
+            }
+          }
+        },
+        {
+          "id": "1.722",
+          "name": "Transporte de mercancías por carretera",
+          "_links": {
+            "self": {
+              "name": "Transporte de mercancías por carretera",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.722"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2018-01-29",
+      "certificateEndDate": "2018-07-09",
+      "object": "COORDINACION DE GREMIOS, ALBAÑILERIA, CONSTRUCCION Y REFORMAS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03792",
+      "_links": {
+        "self": {
+          "name": "CONSTRUCCIONES Y REFORMAS GORLIZ, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/03792"
+        }
+      }
+    },
+    {
+      "name": "OFFICE DEPOT, S.L.",
+      "registrationNumber": "04512",
+      "identificationNumber": "B80441306",
+      "address": "ROTONDA RENÉ DESCARTES, PARC. 101, NAVE 3 (POLG. RAL )",
+      "location": {
+        "postalCode": "28806",
+        "municipality": "Alcalá de Henares",
+        "county": "Madrid",
+        "municipalityId": "005",
+        "countyId": "28"
+      },
+      "economicActivities": [
+        {
+          "id": "1.615.2",
+          "name": "Venta al por mayor de muebles",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de muebles",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.615.2"
+            }
+          }
+        },
+        {
+          "id": "1.617.8",
+          "name": "Venta al por mayor de máquinas y material de oficina",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de máquinas y material de oficina",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.617.8"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2018-01-23",
+      "certificateEndDate": "2018-07-20",
+      "object": "LA FABRICACIÓN, COMERCIALIZACIÓN, VENTA Y DISTRIBUCIÓN DE MATERIAL DE PAPELERÍA, ENCUADERNACIONES, MUEBLES DE OFICINA, ARTÍCULOS DE EMBALAJE Y DE PUBLICIDAD, ASÍ COMO AQUELLAS OPERACIONES COMERCIALES QUE PUEDAN RELACIONARSE CON LAS ANTERIORES",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/04512",
+      "_links": {
+        "self": {
+          "name": "OFFICE DEPOT, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/04512"
+        }
+      }
+    },
+    {
+      "name": "ASOCIACIÓN HEBER. HEZKUNTZATIK BERDINTASUNERA-EDUCACIÓN PARA LA IGUALDAD",
+      "registrationNumber": "01981",
+      "identificationNumber": "G48557995",
+      "address": "MARÍA DIAZ DE HARO, 45-4ºIZDA.",
+      "location": {
+        "postalCode": "48010",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.932.1",
+          "name": "Enseñanza de formación y perfeccionamiento profesional no superior",
+          "_links": {
+            "self": {
+              "name": "Enseñanza de formación y perfeccionamiento profesional no superior",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.932.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2018-01-15",
+      "certificateEndDate": "2018-07-12",
+      "object": "LOS FINES DE ESTA ASOCIACIÓN, QUE SE CONSTITUYE SIN ÁNIMO DE LUCRO, Y CON CARÁCTER SOCIAL, CULTURAL Y EDUCATIVO, SE CONCRETAN EN:\r\n*FOMENTAR LA INTEGRACIÓN SOCIAL, LABORAL, ESCOLAR Y EDUCATIVA DE TODAS AQUELLAS PERSONAS O COLECTIVOS EN SITUACIÓN DE DESVENTAJA SOCIAL.\r\n\r\nPARA LA CONSECUCIÓN DE DICHOS FINES SE LLEVARÁN A CABO, PREVIO EL CUMPLIMIENTO DE LOS REQUISITOS LEGALES ESTABLECIDOS, LAS SIGUIENTES ACTIVIDADES: \r\n1. PROMOVER PROGRAMAS EDUCATIVOS Y/O REALIZAR TAREAS DE ENSEÑANZA ENTRE PERSONAS QUE PRESENTAN DEFICIENCIAS EN SU APRENDIZAJE.\r\n2. INTEGRAR EN EL SISTEMA EDUCATIVO A NIÑOS, JÓVENES Y ADOLESCENTES DESESCOLARIZADOS.\r\n3. INTEGRAR EDUCATIVAMENTE A COLECTIVOS SOCIALES O MINORÍAS ÉTNICAS CON NECESIDADES CULTURALES BÁSICAS.\r\n4. PROMOVER EL BIENESTAR SOCIAL EN EL ÁREA DE LA JUVENTUD.\r\n5. REALIZAR LABORES DE FORMACIÓN E INVESTIGACIÓN SOBRE INTEGRACIÓN Y FRACASO ESCOLAR.\r\n\r\nSIN PERJUICIO DE LAS ACTIVIDADES DESCRITAS EN EL APARTADO ANTERIOR LA ASOCIACIÓN, PARA EL CUMPLIMIENTO DE SUS FINES, PODRÁ:\r\n- DESARROLLAR ACTIVIDADES ECONÓMICAS DE TODO TIPO, ENCAMINADAS A LA REALIZACIÓN DE SUS FINES O ALLEGAR RECURSOS CON ESTE OBJETIVO.\r\n- ADQUIRIR Y POSEER BIENES DE TODAS CLASES Y POR CUALQUIER TIPO, ASÍ COMO CELEBRAR ACTOS Y CONTRATOS DE TODO GÉNERO.\r\n- EJERCITAR TODA CLASE DE ACCIONES CONFORMES A LAS LEYES O A SUS ESTATUTOS\r\n\r\n",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/01981",
+      "_links": {
+        "self": {
+          "name": "ASOCIACIÓN HEBER. HEZKUNTZATIK BERDINTASUNERA-EDUCACIÓN PARA LA IGUALDAD",
+          "href": "https://api.euskadi.eus/procurements/companies/01981"
+        }
+      }
+    }
+  ]
+}

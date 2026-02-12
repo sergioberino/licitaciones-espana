@@ -1,0 +1,428 @@
+{
+  "totalItems": 9042,
+  "totalPages": 905,
+  "currentPage": 655,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "name": "ELURRI HIGIENE & SEGURIDAD, S.L.",
+      "registrationNumber": "04800",
+      "identificationNumber": "B20881637",
+      "address": "CALLE ERRIBERA 2, P.I. ZUMARTEGI",
+      "location": {
+        "postalCode": "20170",
+        "municipality": "Usurbil",
+        "county": "Gipuzkoa",
+        "municipalityId": "073",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.614.3",
+          "name": "Venta al por mayor de productos para el mantenimiento y funcionamiento del hogar",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de productos para el mantenimiento y funcionamiento del hogar",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.614.3"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2015-10-22",
+      "certificateEndDate": "2016-04-22",
+      "object": "COMERCIALIZACION Y DISTRIBUCION DE PRODUCTOS DE LIMPIEZA Y DROGUERIA",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/04800",
+      "_links": {
+        "self": {
+          "name": "ELURRI HIGIENE & SEGURIDAD, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/04800"
+        }
+      }
+    },
+    {
+      "name": "AZACETA, S.A.",
+      "registrationNumber": "02989",
+      "identificationNumber": "A01377530",
+      "address": "PEDRO ASÚA, 69-73",
+      "location": {
+        "postalCode": "01008",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.501.1",
+          "name": "Construcción completa, reparación y conservación de edificaciones",
+          "_links": {
+            "self": {
+              "name": "Construcción completa, reparación y conservación de edificaciones",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.1"
+            }
+          }
+        },
+        {
+          "id": "1.507",
+          "name": "Construcción, reparación y conservación de toda clase obras",
+          "_links": {
+            "self": {
+              "name": "Construcción, reparación y conservación de toda clase obras",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.507"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2015-10-19",
+      "certificateEndDate": "2016-03-22",
+      "object": "1) LA PROMOCIÓN, CONSTRUCCIÓN, COMPRA, VENTA, ARRENDAMIENTO Y EXPLOTACIÓN EN CUALQUIER OTRA FORMA DE TODA CLASE DE EDIFICACIONES SOLARES E INMUEBLES EN GENERAL, TANTO POR CUENTA PROPIA COMO AJENA, ASÍ COMO LA CONSERVACIÓN, MANTENIMIENTO Y REHABILITACIÓN DE LOS MISMOS.\r\n\r\n2) LA ADMINISTRACIÓN DE FINCAS Y COMUNIDADES, TANTO DE PROPIETARIOS COMO DE AUTOPROMOTORES, ASÍ COMO LA PRESTACIÓN DE TODA CLASE DE SERVICIOS RELACIONADOS CON EL ÁMBITO INMOBILIARIO, ARQUITECTÓNICO, DE TÉCNICA DE LA CONSTRUCCIÓN E INGENIERÍA EN GENERAL, POR MEDIO DE LA FORMULACIÓN, DESARROLLO, Y PUESTA EN MARCHA DE ESTUDIOS, ACTUACIONES Y PROYECTOS.\r\n\r\n3) LA REALIZACIÓN POR CUENTA PROPIA O AJENA DE TODA CLASE DE CONSTRUCCIONES, INSTALACIONES, REFORMAS, REHABILITACIONES, MANTENIMIENTOS Y DECORACIONES. LA SUPERVISIÓN Y CONTROL DE OBRAS, ASÍ COMO LA COORDINACIÓN DE GREMIOS, EL ASESORAMIENTO Y LA ASISTENCIA TÉCNICA EN TODO CUANTO SE RELACIONE, DIRECTA O INDIRECTAMENTE, CON EL CAMPO DE LA CONSTRUCCIÓN DE EDIFICIOS Y DE LAS OBRAS PÚBLICAS O CIVILES. LA EXPLOTACIÓN DE CUALQUIER SERVICIO U OBRA, ENTRO LOS CUALES, A EFECTOS MERAMENTE ENUNCIATIVOS Y NO LIMITATIVOS  EXPLOTACIÓN DE APARCAMIENTOS, DE AUTOPISTAS, SERVICIOS FERROVIARIOS, DE RESIDENCIAS.\r\n\r\n4) LA COMPRA, VENTA, IMPORTACIÓN, EXPORTACIÓN Y COMERCIALIZACIÓN EN GENERAL DE TODA CLASE DE MATERIALES DE LA CONSTRUCCIÓN Y/O COMPLEMENTARIOS Y/O DECORATIVOS, ASÍ COMO CUALESQUIERA INSTALACIONES, ELEMENTOS O SERVICIOS DE LAS EDIFICACIONES.\r\n\r\n5) LA ADQUISICIÓN, CESIÓN, TENENCIA, DISFRUTE, ADMINISTRACIÓN, GESTIÓN Y NEGOCIACIÓN EN GENERAL DE INMUEBLES  ",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/02989",
+      "_links": {
+        "self": {
+          "name": "AZACETA, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/02989"
+        }
+      }
+    },
+    {
+      "name": "OBRAS Y SERVICIOS ARASTEIZ, S.L.",
+      "registrationNumber": "04230",
+      "identificationNumber": "B01430180",
+      "address": "PLAZA PEPE UBIS Nº 3 - 5º C",
+      "location": {
+        "postalCode": "01003",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.501.1",
+          "name": "Construcción completa, reparación y conservación de edificaciones",
+          "_links": {
+            "self": {
+              "name": "Construcción completa, reparación y conservación de edificaciones",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.1"
+            }
+          }
+        },
+        {
+          "id": "1.501.2",
+          "name": "Construcción completa, reparación y conservación obras civiles",
+          "_links": {
+            "self": {
+              "name": "Construcción completa, reparación y conservación obras civiles",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2015-10-08",
+      "certificateEndDate": "2016-04-06",
+      "object": "LA CONSTRUCCIÓN DE OBRAS DE EDIFICACIÓN URBANA, INDUSTRIAL, UBANZACIÓN, SANEAMIENTO, MOVIMIENTO DE TIERRA Y LOS TRABAJOS, FARICAIONES Y NEGOCIOS RELACIONADOS CON DICHA INDUSTRIA, DIRIGIDOS TANTO AL SECTOR PÚBLICO COMO AL PRIVADO; A LOS TRABAJOS DE REPARACIÓN Y CONSERVACIÓN DE OBRAS RELACIONADAS ANTERIORMENTE, A LA  PROMOCIÓN DE TODA CLASE DE EDIFICACIONES, REPARCELACIONES Y URBANIZACIÓN DEL SUELO, COMPRA-VENTA DE PARCELAS Y EDIFICIOS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/04230",
+      "_links": {
+        "self": {
+          "name": "OBRAS Y SERVICIOS ARASTEIZ, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/04230"
+        }
+      }
+    },
+    {
+      "name": "ONDOKI, S.A.",
+      "registrationNumber": "01287",
+      "identificationNumber": "A48494884",
+      "address": "C/ BILBAO, Nº 6",
+      "location": {
+        "postalCode": "48960",
+        "municipality": "Galdakao",
+        "county": "Bizkaia",
+        "municipalityId": "036",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.314.1",
+          "name": "Carpintería metálica",
+          "_links": {
+            "self": {
+              "name": "Carpintería metálica",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.314.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2015-10-06",
+      "certificateEndDate": "2016-04-05",
+      "object": "LA COMERCIALIZACIÓN DE MOBILIARIO DE OFICINAS Y MAMPARAS, ASÍ COMO LA REALIZACIÓN DE OBRAS Y SERVICIOS DE ACONDICIONAMIENTO DE OFICINAS Y LOCALES EN GENERAL",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/01287",
+      "_links": {
+        "self": {
+          "name": "ONDOKI, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/01287"
+        }
+      }
+    },
+    {
+      "name": "BECKMAN COULTER, S.L.",
+      "registrationNumber": "05002",
+      "identificationNumber": "B86459369",
+      "address": "C/HERMOSILLA, 3",
+      "location": {
+        "postalCode": "28001",
+        "municipality": "Madrid",
+        "county": "Madrid",
+        "municipalityId": "079",
+        "countyId": "28"
+      },
+      "economicActivities": [
+        {
+          "id": "1.615.4",
+          "name": "Venta al por mayor de aparatos y material radioeléctrico y electrónico",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de aparatos y material radioeléctrico y electrónico",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.615.4"
+            }
+          }
+        },
+        {
+          "id": "1.616.6",
+          "name": "Venta al por mayor de productos químicos industriales",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de productos químicos industriales",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.616.6"
+            }
+          }
+        },
+        {
+          "id": "1.619.7",
+          "name": "Venta al por mayor de instrumentos de precisión, medida y similares",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de instrumentos de precisión, medida y similares",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.619.7"
+            }
+          }
+        },
+        {
+          "id": "1.699",
+          "name": "Otras reparaciones n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otras reparaciones n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.699"
+            }
+          }
+        },
+        {
+          "id": "1.861.2",
+          "name": "Alquiler de locales industriales y otros alquileres n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Alquiler de locales industriales y otros alquileres n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.861.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2015-09-25",
+      "certificateEndDate": "2016-03-15",
+      "object": "LA IMPORTACIÓN, EXPORTACIÓN, ALQUILER, VENTA, COMERCIALIZACIÓN, MANTENIMIENTO Y REPARACIÓN, BAJO CUALQUIER FORMA JURÍDICA, DE PRODUCTOS, INSTRUMENTOS Y APARATOS FABRICADOS O DISTRIBUIDOS POR EMPRESAS DEL GRUPO BECKMAN, EN PARTICULAR, LOS PRODUCTOS DE DIAGNÓSTICO IN VITRO Y DE BIOLOGÍA (\"VITRO DIAGNOSTIC\" Y \"LIFE SCIENCE PRODUCTS\"), FACILITANDO LOS SERVICIOS DE SOPORTE Y MANTENIMIENTO DE LOS CLIENTES PARA REALIZAR OPERACIONES Y TRANSACCIONES ENTRE COMPAÑÍAS, ASÍ COMO ORGANIZAR E IMPARTIR CURSOS DE FORMACIÓN Y ENSEÑANZA RELACIONADOS CON DICHOS PRODUCTOS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/05002",
+      "_links": {
+        "self": {
+          "name": "BECKMAN COULTER, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/05002"
+        }
+      }
+    },
+    {
+      "name": "CONSTRUCCIONES GALDIANO, S.A.",
+      "registrationNumber": "00966",
+      "identificationNumber": "A20081840",
+      "address": "C/ PASEO DE ERROTABURU, Nº 1 - 3ª.",
+      "location": {
+        "postalCode": "20018",
+        "municipality": "Donostia / San Sebastián",
+        "county": "Gipuzkoa",
+        "municipalityId": "069",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.507",
+          "name": "Construcción, reparación y conservación de toda clase obras",
+          "_links": {
+            "self": {
+              "name": "Construcción, reparación y conservación de toda clase obras",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.507"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2015-09-15",
+      "certificateEndDate": "2016-03-02",
+      "object": "LAS CONSTRUCCIONES DE OBRAS PÚBLICAS, ASÍ COMO EDIFICACIONES, COMPRA, VENTA, ADMINISTRACIÓN, ARRIENDO Y EXPLOTACIÓN ESTUDIOS E INFORMES, PROYECTOS Y DIRECCIÓN DE OBRA, ASÍ COMO SERVICIOS DE CONSERVACIÓN Y MANTENIMIENTO DE BIENES INMUEBLES, EQUIPOS E INSTALACIONES Y OTROS SERVICIOS, BAJO CUALESQUIERA DE LAS FORMAS ADMITIDAS EN DERECHO, DE TODA CLASE DE BIENES INMUEBLES, URBANOS Y RÚSTICOS, EQUIPOS E INSTALACIONES",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/00966",
+      "_links": {
+        "self": {
+          "name": "CONSTRUCCIONES GALDIANO, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/00966"
+        }
+      }
+    },
+    {
+      "name": "ROTIMI ADETUNJI ALUKO",
+      "registrationNumber": "05418",
+      "identificationNumber": "X4092861B",
+      "address": "Galzaur, 40",
+      "location": {
+        "postalCode": "20115",
+        "municipality": "Astigarraga",
+        "county": "Gipuzkoa",
+        "municipalityId": "903",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "2.762",
+          "name": "Doctores y licenciados en informática",
+          "_links": {
+            "self": {
+              "name": "Doctores y licenciados en informática",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/2.762"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2015-09-14",
+      "certificateEndDate": "2016-02-10",
+      "object": "DOCTORES, LICENCIADOS E INGENIEROS EN INFORMATICA",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/05418",
+      "_links": {
+        "self": {
+          "name": "ROTIMI ADETUNJI ALUKO",
+          "href": "https://api.euskadi.eus/procurements/companies/05418"
+        }
+      }
+    },
+    {
+      "name": "PUBLIS NUCLEO DE COMUNICACION Y MARKETING, S.L.",
+      "registrationNumber": "04372",
+      "identificationNumber": "B75016204",
+      "address": "PORTUETXE 23B PLANTA 1ª EDIFICIO CEMEI OFICINA 2",
+      "location": {
+        "postalCode": "20018",
+        "municipality": "Donostia / San Sebastián",
+        "county": "Gipuzkoa",
+        "municipalityId": "069",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.844",
+          "name": "Servicios de publicidad, relaciones públicas y similares",
+          "_links": {
+            "self": {
+              "name": "Servicios de publicidad, relaciones públicas y similares",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.844"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2015-09-13",
+      "certificateEndDate": "2016-03-13",
+      "object": "1.- Por cuenta propia o de terceros; crear, proyectar, ejecutar y distribuir campañas publicitarias o de propaganda a través de todos los medidos de difusión, prestando sus servicios simultáneamente a varios anunciantes; proporcionándoles una asistencia técnica completa en materia de investigación de mercados, promoción de ventas, asesoramiento sobre los medios de difusión, control sobre el desarrollo y resultado de las campañas y las usuales de tipo complementario dentro de la misma especialidad.\r\n2.- Toda la actividad referente a la comunicación en todas sus facetas, así como la explotación de exclusivas publicitarias locales y nacionales, actividades de diseño, creación de nuevos productos, asesoría y ejecución de actividades de marketing o de cualquier otra faceta empresarial, realización de investigaciones y estudios de mercado, publicaciones, toda la actividad relativa a relaciones públicas, cursos y seminarios sobre marketing, comunicación y expresión; selección y adiestramiento de personal y en general todas aquellas actividades creativas investigacionales, de proyectos, ejecutivas y de control en todos los campos o materias citados\r\n",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/04372",
+      "_links": {
+        "self": {
+          "name": "PUBLIS NUCLEO DE COMUNICACION Y MARKETING, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/04372"
+        }
+      }
+    },
+    {
+      "name": "ELENA ORTIZ DE LEJARAZU MONTOYA",
+      "registrationNumber": "04904",
+      "identificationNumber": "18594265F",
+      "address": "SANCHO EL SABIO, 10-3º IZDA.",
+      "location": {
+        "postalCode": "01008",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "2.776",
+          "name": "Doctores y licenciados en ciencias políticas y sociales",
+          "_links": {
+            "self": {
+              "name": "Doctores y licenciados en ciencias políticas y sociales",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/2.776"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2015-09-13",
+      "certificateEndDate": "2016-03-13",
+      "object": "ESTUDIOS SOCIOLÓGICOS Y POLÍTICOS Y GESTIÓN DEL CONOCIMIENTO",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/04904",
+      "_links": {
+        "self": {
+          "name": "ELENA ORTIZ DE LEJARAZU MONTOYA",
+          "href": "https://api.euskadi.eus/procurements/companies/04904"
+        }
+      }
+    },
+    {
+      "name": "MIGUEL ROMAN AGUILAR",
+      "registrationNumber": "05417",
+      "identificationNumber": "16045034G",
+      "address": "ZAMAKOLA 158-3º A",
+      "location": {
+        "postalCode": "48003",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.911",
+          "name": "Servicios agrícolas y ganaderos",
+          "_links": {
+            "self": {
+              "name": "Servicios agrícolas y ganaderos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.911"
+            }
+          }
+        },
+        {
+          "id": "2.811",
+          "name": "Profesionales que prestan servicios de limpieza",
+          "_links": {
+            "self": {
+              "name": "Profesionales que prestan servicios de limpieza",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/2.811"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2015-09-10",
+      "certificateEndDate": "2016-01-02",
+      "object": "PROFESIONAL DE SERVICIOS DE LIMPIEZA Y JARDINERÍA",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/05417",
+      "_links": {
+        "self": {
+          "name": "MIGUEL ROMAN AGUILAR",
+          "href": "https://api.euskadi.eus/procurements/companies/05417"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,408 @@
+{
+  "totalItems": 9042,
+  "totalPages": 905,
+  "currentPage": 428,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "name": "IDOYA AIZCORBE FERNANDEZ",
+      "registrationNumber": "09510",
+      "identificationNumber": "72467812X",
+      "address": "GALARREGI KALEA, 20",
+      "location": {
+        "postalCode": "20212",
+        "municipality": "Olaberria",
+        "county": "Gipuzkoa",
+        "municipalityId": "058",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.922",
+          "name": "Servicios de limpieza",
+          "_links": {
+            "self": {
+              "name": "Servicios de limpieza",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.922"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2024-03-26",
+      "certificateEndDate": "2024-09-25",
+      "object": "SERVICIOS DE LIMPIEZA.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/09510",
+      "_links": {
+        "self": {
+          "name": "IDOYA AIZCORBE FERNANDEZ",
+          "href": "https://api.euskadi.eus/procurements/companies/09510"
+        }
+      }
+    },
+    {
+      "name": "CONSTRUCCIONES NOLABAI 2021, S.L.",
+      "registrationNumber": "09509",
+      "identificationNumber": "B02648756",
+      "address": "AVENIDA MADRID 32 BAJO",
+      "location": {
+        "postalCode": "20011",
+        "municipality": "Donostia / San Sebastián",
+        "county": "Gipuzkoa",
+        "municipalityId": "069",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.833.2",
+          "name": "Promoción de edificaciones",
+          "_links": {
+            "self": {
+              "name": "Promoción de edificaciones",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.833.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2024-03-26",
+      "certificateEndDate": "2024-09-21",
+      "object": "LA PROMOCIÓN INMOBILIARIA, URBANIZACIÓN, CONSTRUCCIÓN Y REFORMA, COMERCIALIZACIÓN, GESTIÓN Y EXPLOTACIÓN, ADQUISICIÓN Y ENAJENACIÓN Y ARRENDAMIENTO DE TODA CLASE DE INMUEBLES.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/09509",
+      "_links": {
+        "self": {
+          "name": "CONSTRUCCIONES NOLABAI 2021, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/09509"
+        }
+      }
+    },
+    {
+      "name": "RAYCOM CONNECT, S.L.",
+      "registrationNumber": "09237",
+      "identificationNumber": "B05447941",
+      "address": "Parque Empresarial Boroa P2A4",
+      "location": {
+        "postalCode": "48340",
+        "municipality": "Amorebieta-Etxano",
+        "county": "Bizkaia",
+        "municipalityId": "003",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.617.9",
+          "name": "Venta al por mayor interindustrial de otros productos n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor interindustrial de otros productos n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.617.9"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2024-03-21",
+      "certificateEndDate": "2024-09-19",
+      "object": "- DISEÑO, INVESTIGACIÓN, DESARROLLO, FABRICACIÓN, PRODUCCIÓN Y COMERCIALIZACIÓN DE MÓDULOS, PIEZAS, PRODUCTOS O UNIDADES DE COMUNICACIÓN HÍBRIDA PARA SOLUCIONES DE CONECTIVIDAD EN VEHÍCULOS.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/09237",
+      "_links": {
+        "self": {
+          "name": "RAYCOM CONNECT, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/09237"
+        }
+      }
+    },
+    {
+      "name": "ELECTRICIDAD N.OSÉS, S.A.",
+      "registrationNumber": "05955",
+      "identificationNumber": "A48117881",
+      "address": "POLIGONO UGALDEGUREN 1, P4-IV-A",
+      "location": {
+        "postalCode": "48160",
+        "municipality": "Derio",
+        "county": "Bizkaia",
+        "municipalityId": "901",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.617.9",
+          "name": "Venta al por mayor interindustrial de otros productos n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor interindustrial de otros productos n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.617.9"
+            }
+          }
+        },
+        {
+          "id": "1.845",
+          "name": "Explotación electrónica por cuenta de terceros",
+          "_links": {
+            "self": {
+              "name": "Explotación electrónica por cuenta de terceros",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.845"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2024-03-20",
+      "certificateEndDate": "2024-09-15",
+      "object": "VENTA AL POR MAYOR DE MATERIAL ELÉCTRICO\r\n",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/05955",
+      "_links": {
+        "self": {
+          "name": "ELECTRICIDAD N.OSÉS, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/05955"
+        }
+      }
+    },
+    {
+      "name": "CONSTRUCCIONES EQUIZA MEDRANO, S.L.",
+      "registrationNumber": "09234",
+      "identificationNumber": "B71087084",
+      "address": "c/Pascual Madoz 7, bajo",
+      "location": {
+        "postalCode": "31004",
+        "municipality": "Pamplona/Iruña",
+        "county": "Navarra",
+        "municipalityId": "201",
+        "countyId": "31"
+      },
+      "economicActivities": [
+        {
+          "id": "1.501.1",
+          "name": "Construcción completa, reparación y conservación de edificaciones",
+          "_links": {
+            "self": {
+              "name": "Construcción completa, reparación y conservación de edificaciones",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.1"
+            }
+          }
+        },
+        {
+          "id": "1.834",
+          "name": "Servicios relativos a la propiedad inmobiliaria e industrial",
+          "_links": {
+            "self": {
+              "name": "Servicios relativos a la propiedad inmobiliaria e industrial",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.834"
+            }
+          }
+        },
+        {
+          "id": "1.843.2",
+          "name": "Servicios técnicos de arquitectura y urbanismo",
+          "_links": {
+            "self": {
+              "name": "Servicios técnicos de arquitectura y urbanismo",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2024-03-20",
+      "certificateEndDate": "2024-09-18",
+      "object": "A) - LA CONSTRUCCIÓN, REFORMA, REHABILITACIÓN, PROMOCIÓN, GESTIÓN, COMPRA Y VENTA DE TODO TIPO DE EDIFICIOS DESTINADOS A VIVIENDAS, LOCALES COMERCIALES, ALMACENES Y NAVES INDUSTRIALES. B) - LA REALIZACIÓN Y CONTRATACIÓN DE TODA CLASE DE OBRAS DE CONSTRUCCIÓN O REFORMA, ABASTECIMIENTO DE AGUAS, SANEAMIENTO, URBANIZACIÓN Y PLANIFICACIÓN, POR CUENTA PROPIA O AJENA. C) - LA COMPRA Y VENTA DE TERRENOS, FINCAS, PARCELAS, SOLARES, MATERIALES, ELEMENTOS Y MAQUINARIA DE CONSTRUCCIÓN, ASÍ COMO VEHÍCULOS DE CARGA Y TRANSPORTE DE TODO TIPO. D) - LA REALIZACIÓN DE PROYECTOS DE EJECUCIÓN DE OBRAS, DE PLANEAMIENTO, REPARCELACIÓN Y COMPENSACIÓN. E) - Y EL TRANSPORTE PÚBLICO POR CARRETERA, EN RÉGIMEN REGULAR O DISCRECIONAL, DE ÍNDOLE NACIONAL O INTERNACIONAL, DE TODA CLASE DE BIENES.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/09234",
+      "_links": {
+        "self": {
+          "name": "CONSTRUCCIONES EQUIZA MEDRANO, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/09234"
+        }
+      }
+    },
+    {
+      "name": "SERVITEC RADYAL, S.L.",
+      "registrationNumber": "08678",
+      "identificationNumber": "B66439746",
+      "address": "Ronda de Santa Eulalia, num 35, nave 14",
+      "location": {
+        "postalCode": "08780",
+        "municipality": "Pallejà",
+        "county": "Barcelona",
+        "municipalityId": "157",
+        "countyId": "08"
+      },
+      "economicActivities": [
+        {
+          "id": "1.504.8",
+          "name": "Montajes metálicos e instalaciones industriales completas",
+          "_links": {
+            "self": {
+              "name": "Montajes metálicos e instalaciones industriales completas",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.504.8"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2024-03-20",
+      "certificateEndDate": "2024-09-18",
+      "object": "1. SERVICIO DE ARREGLO DE COMPONENTES ELÉCTRICOS. 3314.  2. SERVICIOS DE MANTENIMIENTO DE VEHÍCULOS. 3317.  3. SERVICIOS DE ARREGLO DE MÁQUINAS PESADAS. 3319. 4. SERVICIOS DE PUESTA EN MARCHA DE MÁQUINAS. 3320. 5. CONSTRUCCIÓN 4120. 6. CONSTRUCCIÓN DE VÍAS DE TREN, METRO. 4212.  7. CONSTRUCCIÓN DE PUENTES Y TÚNELES. 4213.  8. CONSTRUCCIÓN DE VÍAS DE GAS NATURAL. 4221. 9. CONSTRUCCIÓN DE PANELES DE TELECOMUNICACIÓN. 10. CONSTRUCCIÓN DE CENTRALES HIDRO. 4291. 11. CONSTRUCCIÓN DE CASAS. 4299. 12. SERVICIOS DE ELECTROINSTALACIONES. 4321. 13. SERVICIOS DE INSTALACIÓN DE CANALIZACIONES, CLIMATIZACIONES Y RADIADORES. 4322. 14. CARPINTERÍA. 4329. 15. TRABAJOS DE FIN DE OBRA. 4339. 16. CONSTRUCCIONES DE TECHO Y MANTENIMIENTO DE MISMOS. 4391. 17. OTROS SERVICIOS DE CONSTRUCCIÓN. 4399. 18. ACTIVIDADES DE TELECOMUNICACIÓN POR CABLE. 6110. 19. ACTIVIDAD DE TELECOMUNICACIÓN SIN CABLE. 6120. 20. DIFERENTES ACTIVIDADES DE TELECOMUNICACIÓN. 6190 21. TRABAJOS DE INGENIERÍA Y DE ASESORÍA INGENIERA. 7112. 22. ACTIVIDAD DE LIMPIEZA. 8121. 23.- LA PRESTACIÓN DEL SERVICIO DE SELECCIÓN DE PERSONAL PARA LA REALIZACIÓN DE ACTIVIDADES RELACIONADAS CON EL SECTOR INDUSTRIAL EN GENERAL Y FERROVIARIO EN PARTICULAR. 7820. 24.- LA REPRESENTACIÓN DE TODA CLASE DE PRODUCTOS O FIRMAS COMERCIALES Y/O INDUSTRIALES, NACIONALES Y EXTRANJERAS, ASÍ COMO LA EXPLOTACIÓN DE TODA CLASE DE PATENTES, MARCAS Y MODELOS DE LA INDUSTRIA EN GENERAL. 2812. 25.- LA REALIZACIÓN DE ESTUDIOS, AUDITORÍAS, PROYECTOS Y SERVICIOS DIRIGIDOS AL AHORRO Y EFICIENCIA ENERGÉTICA EN EDIFICACIONES O INSTALACIONES PÚBLICAS Y/O PRIVADAS, QUEDANDO TAMBIÉN CONSTITUIDA COMO EMPRESA DE SERVICIOS ENERGÉTICOS (ESE). 2009.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08678",
+      "_links": {
+        "self": {
+          "name": "SERVITEC RADYAL, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/08678"
+        }
+      }
+    },
+    {
+      "name": "PRODUCCIÓN DE IMAGEN SINCRO, S.A.",
+      "registrationNumber": "01986",
+      "identificationNumber": "A20132403",
+      "address": "PARQUE EMPRESARIAL  ZUATZU, 3- EDIFICIO URGULL, PLANTA 2ª ",
+      "location": {
+        "postalCode": "20018",
+        "municipality": "Donostia / San Sebastián",
+        "county": "Gipuzkoa",
+        "municipalityId": "069",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.653.2",
+          "name": "Venta al por menor de material y aparatos eléctricos, electrodomésticos y cocina",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de material y aparatos eléctricos, electrodomésticos y cocina",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.653.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2024-03-19",
+      "certificateEndDate": "2024-09-18",
+      "object": "LA COMPRAVENTA Y FABRICACIÓN, EN EL ESTADO ESPAÑOL O EN EL EXTRANJERO, DE TODO TIPO DE APARATOS Y MATERIAL VÍDEO (GRABACIÓN MAGNÉTICA DE IMAGEN Y SONIDO), DE SONIDO, DE COMUNICACIONES, CALCULADORAS, ORDENADORES, Y ELECTRODOMÉSTICOS EN GENERAL, DOMÉSTICOS E INDUSTRIALES, ASÍ COMO LA PRODUCCIÓN Y DISTRIBUCIÓN DE PELÍCULAS TANTO EN SOPORTE \"FILM\" COMO EN BANDA MAGNÉTICA, Y LA GRABACIÓN DE NOTICIAS Y REPORTAJES POR CUENTA PROPIA O COMO CORRESPONSAL DE CUALQUIER AGENCIA O MEDIO DE COMUNICACIÓN NACIONAL O EXTRANJERO",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/01986",
+      "_links": {
+        "self": {
+          "name": "PRODUCCIÓN DE IMAGEN SINCRO, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/01986"
+        }
+      }
+    },
+    {
+      "name": "GALDE ANALYTICS, S.L.",
+      "registrationNumber": "08946",
+      "identificationNumber": "B10641728",
+      "address": "Alameda de Mazarredo, 47",
+      "location": {
+        "postalCode": "48009",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.330",
+          "name": "Construcción de máquinas de oficina y ordenadores",
+          "_links": {
+            "self": {
+              "name": "Construcción de máquinas de oficina y ordenadores",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.330"
+            }
+          }
+        },
+        {
+          "id": "1.330.2",
+          "name": "Instalación de máquinas de oficina y ordenadores",
+          "_links": {
+            "self": {
+              "name": "Instalación de máquinas de oficina y ordenadores",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.330.2"
+            }
+          }
+        },
+        {
+          "id": "1.845",
+          "name": "Explotación electrónica por cuenta de terceros",
+          "_links": {
+            "self": {
+              "name": "Explotación electrónica por cuenta de terceros",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.845"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2024-03-18",
+      "certificateEndDate": "2024-09-16",
+      "object": "LA CONSULTORÍA INFORMÁTICA AL QUE CORRESPONDE EL CNAE 6202.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08946",
+      "_links": {
+        "self": {
+          "name": "GALDE ANALYTICS, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/08946"
+        }
+      }
+    },
+    {
+      "name": "MARIA GARCIA ORTIZ",
+      "registrationNumber": "09479",
+      "identificationNumber": "16588076Q",
+      "address": "MAIATZAREN BATA 4",
+      "location": {
+        "postalCode": "48940",
+        "municipality": "Leioa",
+        "county": "Bizkaia",
+        "municipalityId": "054",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.652.1",
+          "name": "Farmacias",
+          "_links": {
+            "self": {
+              "name": "Farmacias",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.652.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2024-03-18",
+      "certificateEndDate": "2024-09-06",
+      "object": "FARMACIAS.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/09479",
+      "_links": {
+        "self": {
+          "name": "MARIA GARCIA ORTIZ",
+          "href": "https://api.euskadi.eus/procurements/companies/09479"
+        }
+      }
+    },
+    {
+      "name": "THE NORTH PIXEL, S.L.",
+      "registrationNumber": "08330",
+      "identificationNumber": "B09720384",
+      "address": "Portuko Markesaren Kalea 1, 2ºD",
+      "location": {
+        "postalCode": "48009",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.961.1",
+          "name": "Producción de películas cinematográficas (incluso vídeos)",
+          "_links": {
+            "self": {
+              "name": "Producción de películas cinematográficas (incluso vídeos)",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.961.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2024-03-18",
+      "certificateEndDate": "2024-09-18",
+      "object": "ACTIVIDADES DE PRODUCCIÓN Y POSPRODUCCIÓN AUDIOVISUAL, CINEMATOGRÁFICA Y DE VÍDEO.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08330",
+      "_links": {
+        "self": {
+          "name": "THE NORTH PIXEL, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/08330"
+        }
+      }
+    }
+  ]
+}

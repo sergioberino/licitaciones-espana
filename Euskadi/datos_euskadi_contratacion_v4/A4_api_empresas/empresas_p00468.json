@@ -1,0 +1,408 @@
+{
+  "totalItems": 9042,
+  "totalPages": 905,
+  "currentPage": 468,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "name": "ALEXANDER GONZALEZ PEREZ",
+      "registrationNumber": "08872",
+      "identificationNumber": "78938122Y",
+      "address": "Calle Iturriza 5 5 Izq",
+      "location": {
+        "postalCode": "48003",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "2.826",
+          "name": "Personal docente de enseñanzas diversas",
+          "_links": {
+            "self": {
+              "name": "Personal docente de enseñanzas diversas",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/2.826"
+            }
+          }
+        },
+        {
+          "id": "3.041",
+          "name": "Jugadores y entrenadores de fútbol",
+          "_links": {
+            "self": {
+              "name": "Jugadores y entrenadores de fútbol",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/3.041"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2023-02-17",
+      "certificateEndDate": "2023-08-16",
+      "object": "JUGADORES Y ENTRENADORES DE FÚTBOL. PERSONAL DOCENTE DE ENSEÑANZAS DIVERSAS.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08872",
+      "_links": {
+        "self": {
+          "name": "ALEXANDER GONZALEZ PEREZ",
+          "href": "https://api.euskadi.eus/procurements/companies/08872"
+        }
+      }
+    },
+    {
+      "name": "GOIKO-LUZ, S.L.",
+      "registrationNumber": "05813",
+      "identificationNumber": "B20431771",
+      "address": "C/ MATSARIA 2, PAB.13",
+      "location": {
+        "postalCode": "20600",
+        "municipality": "Eibar",
+        "county": "Gipuzkoa",
+        "municipalityId": "030",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.617.9",
+          "name": "Venta al por mayor interindustrial de otros productos n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor interindustrial de otros productos n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.617.9"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2023-02-16",
+      "certificateEndDate": "2023-03-25",
+      "object": "EL COMERCIO AL POR MAYOR DE MATERIAL ELÉCTRICO Y APARATOS DE ILUMINACIÓN EN GENERAL",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/05813",
+      "_links": {
+        "self": {
+          "name": "GOIKO-LUZ, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/05813"
+        }
+      }
+    },
+    {
+      "name": "GAIZKA PEROSTERENA ARREGUI",
+      "registrationNumber": "06273",
+      "identificationNumber": "15376175P",
+      "address": "Lezesarri 18",
+      "location": {
+        "postalCode": "20560",
+        "municipality": "Oñati",
+        "county": "Gipuzkoa",
+        "municipalityId": "059",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "2.411",
+          "name": "Arquitectos",
+          "_links": {
+            "self": {
+              "name": "Arquitectos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/2.411"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2023-02-16",
+      "certificateEndDate": "2023-08-11",
+      "object": "ARQUITECTOS\r\n",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06273",
+      "_links": {
+        "self": {
+          "name": "GAIZKA PEROSTERENA ARREGUI",
+          "href": "https://api.euskadi.eus/procurements/companies/06273"
+        }
+      }
+    },
+    {
+      "name": "ETRA NORTE, S.A.",
+      "registrationNumber": "00985",
+      "identificationNumber": "A48472211",
+      "address": "P.INDUSTRIAL ZABALONDO. ERRERUENA, PABELLÓN G.",
+      "location": {
+        "postalCode": "48100",
+        "municipality": "Mungia",
+        "county": "Bizkaia",
+        "municipalityId": "069",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.504.1",
+          "name": "Instalaciones eléctricas en general",
+          "_links": {
+            "self": {
+              "name": "Instalaciones eléctricas en general",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.504.1"
+            }
+          }
+        },
+        {
+          "id": "1.504.12",
+          "name": "Instalaciones eléctricas en toda clase de edificios",
+          "_links": {
+            "self": {
+              "name": "Instalaciones eléctricas en toda clase de edificios",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.504.12"
+            }
+          }
+        },
+        {
+          "id": "1.699",
+          "name": "Otras reparaciones n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otras reparaciones n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.699"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2023-02-16",
+      "certificateEndDate": "2023-08-13",
+      "object": "A) LA FABRICACIÓN, MONTAJE, REPARACIÓN, CONSERVACIÓN Y MANTENIMIENTO Y COMERCIALIZACIÓN DE ELEMENTOS MECÁNICOS, ELÉCTRICOS Y ELECTRÓNICOS DE SISTEMAS PARA LA INDUSTRIA Y EL TRÁFICO. B) LA EXPLOTACIÓN DE LICENCIAS O PATENTES NACIONALES O EXTRANJERAS RELACIONADAS CON LA ACTIVIDAD A QUE SE REFIERE EL APARTADO a), ASÍ COMO LA REPRESENTACIÓN DE LAS EMPRESAS TITULARES EN LOS MISMOS, NACIONALES O EXTRANJERAS. \r\nC) LA REALIZACIÓN DE TRABAJOS DE INVESTIGACIÓN, ESTUDIOS TÉCNICOS Y DESARROLLO DE SISTEMAS Y ELEMENTOS PARA LA ORDENACIÓN DEL TRÁFICO. \r\nD) PRESTACIÓN DE SERVICIOS, REALIZACIÓN DE ESTUDIOS Y PROYECTOS RELATIVO A SISTEMAS DE GESTIÓN DE CALIDAD DEL MEDIO AMBIENTE, EVALUACIÓN Y TRANSFORMACIÓN DE RECURSOS NATURALES Y PLANES DE ORDENACIÓN DEL TERRITORIO Y LA EJECUCIÓN, MONTAJE Y MANTENIMIENTO DE INSTALACIONES PARA EL RECICLAJE Y TRATAMIENTO DE RESIDUOS INDUSTRIALES, SÓLIDOS, LÍQUIDOS O GASEOSOS.\r\nE) LA EJECUCIÓN DE TODO TIPO DE OBRAS CIVILES, TANTO PÚBLICAS, COMO PRIVADAS, ASÍ COMO LA CONSERVACIÓN, MANTENIMIENTO Y REPARACIÓN DE BIENES INMUEBLES.\r\nF) INSTALACIÓN, COMERCIALIZACIÓN, CONSERVACIÓN, REPARACIÓN Y EXPLOTACIÓN DE EQUIPOS INFORMÁTICOS Y DE TELECOMUNICACIONES E INSTALACIONES RADIOELÉCTRICAS.\r\nG) INSTALACIÓN, COMERCIALIZACIÓN, CONSERVACIÓN Y REPARACIÓN DE EQUIPOS DE SEÑALIZACIÓN Y BALIZAMIENTOS VIALES.\r\nH) INSTALACIÓN, CONSERVACIÓN, REPARACIÓN PRESTACIÓN DE SERVICIOS, Y COMERCIALIZACIÓN DE CENTROS DE TRANSFORMACIÓN Y DISTRIBUCIÓN EN ALTA, MEDIA Y BAJA TENSIÓN.\r\nI) INSTALACIÓN, CONSERVACIÓN Y COMERCIALIZACIÓN DE SISTEMAS INTEGRALES DE GESTIÓN, TRÁFICO, ALUMBRADO Y TÚNELES.\r\nJ) INSTALACIÓN, MANTENIMIENTO Y CONSERVACIÓN DE SISTEMAS DE AYUDA A LA EXPLOTACÍON AL TRANSPORTE PÚBLICO (S.A.F.) ASÍ COMO SU COMERCIALIZACIÓN.\r\nK) COMERCIALIZACIÓN, INSTALACIÓN Y MANTENIMIENTO DE SISTEMAS DE GESTIÓN DE APARCAMIENTOS.\r\nL) COMERCIALIZACIÓN, INSTALACIÓN, PUESTA EN MARCHA Y CONSERVACIÓN DE CONTROLES DE ACCESOS DE ESTACIONES FERROVIARIAS Y DE CUALESQUIERA ESTACIÓN DE MEDIO DE TRANSPORTE ",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/00985",
+      "_links": {
+        "self": {
+          "name": "ETRA NORTE, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/00985"
+        }
+      }
+    },
+    {
+      "name": "ALBERTO LUENGO TELLECHEA",
+      "registrationNumber": "08869",
+      "identificationNumber": "35769590J",
+      "address": "KONDEANEKO ALDAPA 16 - 5 A",
+      "location": {
+        "postalCode": "20400",
+        "municipality": "Tolosa",
+        "county": "Gipuzkoa",
+        "municipalityId": "071",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "2.011",
+          "name": "Doctores y licenciados en ciencias biológicas",
+          "_links": {
+            "self": {
+              "name": "Doctores y licenciados en ciencias biológicas",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/2.011"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2023-02-15",
+      "certificateEndDate": "2023-08-14",
+      "object": "DOCTORES Y LICENCIADOS EN CIENCIAS BIOLÓGICAS.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08869",
+      "_links": {
+        "self": {
+          "name": "ALBERTO LUENGO TELLECHEA",
+          "href": "https://api.euskadi.eus/procurements/companies/08869"
+        }
+      }
+    },
+    {
+      "name": "MIGUEL ANGEL PINTADO ARIAS",
+      "registrationNumber": "08184",
+      "identificationNumber": "44155634G",
+      "address": "ATZIETA, 16",
+      "location": {
+        "postalCode": "20120",
+        "municipality": "Hernani",
+        "county": "Gipuzkoa",
+        "municipalityId": "040",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.671.5",
+          "name": "Restaurante un tenedor",
+          "_links": {
+            "self": {
+              "name": "Restaurante un tenedor",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.671.5"
+            }
+          }
+        },
+        {
+          "id": "1.673.2",
+          "name": "Otros cafés y bares",
+          "_links": {
+            "self": {
+              "name": "Otros cafés y bares",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.673.2"
+            }
+          }
+        },
+        {
+          "id": "2.226",
+          "name": "Técnicos en sonido",
+          "_links": {
+            "self": {
+              "name": "Técnicos en sonido",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/2.226"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2023-02-14",
+      "certificateEndDate": "2023-07-29",
+      "object": "RESTAURANTE UN TENEDOR. OTROS CAFÉS Y BARES. TÉCNICOS EN SONIDO.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08184",
+      "_links": {
+        "self": {
+          "name": "MIGUEL ANGEL PINTADO ARIAS",
+          "href": "https://api.euskadi.eus/procurements/companies/08184"
+        }
+      }
+    },
+    {
+      "name": "JORGE TORVISO GONZÁLEZ",
+      "registrationNumber": "08580",
+      "identificationNumber": "28931155F",
+      "address": "Calle Gatzarriñe 5, 3A",
+      "location": {
+        "postalCode": "48600",
+        "municipality": "Sopela",
+        "county": "Bizkaia",
+        "municipalityId": "085",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "2.322",
+          "name": "Técnicos en artes gráficas",
+          "_links": {
+            "self": {
+              "name": "Técnicos en artes gráficas",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/2.322"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2023-02-14",
+      "certificateEndDate": "2023-08-14",
+      "object": "TÉCNICOS EN ARTES GRÁFICAS.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08580",
+      "_links": {
+        "self": {
+          "name": "JORGE TORVISO GONZÁLEZ",
+          "href": "https://api.euskadi.eus/procurements/companies/08580"
+        }
+      }
+    },
+    {
+      "name": "MORIWASE SOCIEDAD LIMITADA",
+      "registrationNumber": "04891",
+      "identificationNumber": "B95193223",
+      "address": "Calle Acebal Idigoras",
+      "location": {
+        "postalCode": "48001",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.844",
+          "name": "Servicios de publicidad, relaciones públicas y similares",
+          "_links": {
+            "self": {
+              "name": "Servicios de publicidad, relaciones públicas y similares",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.844"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2023-02-13",
+      "certificateEndDate": "2023-08-02",
+      "object": "LA REALIZACIÓN DE DISEÑOS GRÁFICOS Y DE PROYECTOS, CÁLCULOS, DIBUJOS, MEMORIAS Y ACTIVIDADES PROPIAS DE UNA OFICINA DE DISEÑO; LA REALIZACIÓN DE PUBLICIDAD, CON MEDIO PROPIO O AJENOS; EL ESTUDIO, CONFECCIÓN, DESARROLLO Y EJECUCIÓN DE CAMPAÑAS DE PUBLICIDAD Y VENTAS; LOS ESTUDIOS DE MERCADO: LA RECOGIDA, TRATAMIENTO Y VERIFICACIÓN DE DATOS; Y EL DESARROLLO DE NUEVAS TECNOLOGÍAS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/04891",
+      "_links": {
+        "self": {
+          "name": "MORIWASE SOCIEDAD LIMITADA",
+          "href": "https://api.euskadi.eus/procurements/companies/04891"
+        }
+      }
+    },
+    {
+      "name": "BAI & BY ARABA, S.L.",
+      "registrationNumber": "07325",
+      "identificationNumber": "B01399492",
+      "address": "ADRIANO VI, 12",
+      "location": {
+        "postalCode": "01008",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.933.9",
+          "name": "Otras actividades de enseñanza tales como idiomas, mecanografía",
+          "_links": {
+            "self": {
+              "name": "Otras actividades de enseñanza tales como idiomas, mecanografía",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.933.9"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2023-02-10",
+      "certificateEndDate": "2023-03-28",
+      "object": "IRAKASKUNTZA ETA HEZIKETA-ZERBITZUAK ESKAINTZEA, BESTEAK BESTE, ARLO HAUETAN; HIZKUNTZAK, INFORMATIKA; KONTABILITATEA; ORDENAGAILU BIDEZKO DISEINU GRAFIKOA; OHIKO IRAKASKUNTZA; ENPRESEI IRAKASLEAK AZPIKONTRATATZEA; MATERIAL DESBERDINAK ARGITARATZEA, HALA NOLA, LIBURUAK, BIDEOAK, ZINTAK, CD ROMAK NAHIZ EDOZEIN EUSKARRI INFORMATIKO; ITZULPENAK ETA INTERPRETAZIOAK; HEZKUNTZAKO BIDAIAK ANTOLATZEA. GAINERA, BESTE JARDUERA HAUEK ERE BURUTUKO DITU: INGURUNE INFORMATIKOAK IKERTU ETA GARATZEA; PAKETE INFORMATIKOAK GARATU ETA PROGRAMATZEA; HORIEN ERABILERARI BURUZKO HEZIKETA ESKAINTZEA; ORDENAGAILUAK ETA MATERIAL DIDAKTIKOA SALDU, EROSI ETA ALOKATZEA; ETA, ERA BEREAN, ZERBITZU HORIEN GUZTIEN MANTENIMENDUARI BURUZKO ZERBITZU TEKNIKOA EMATEN. BIDE BERETIK, LANDA-LURRAK, INDUSTRIA-LURRAK EDO HIRI-LURRAK EROSI, SALDU, TRUKATU, ESKURATU, ERRENTAN HARTU NAHIZ EMAN EDO LAGA AHAL IZANGO DITU, LUR HORIEN SAILKAPENAK EDOZEIN IZANIK ERE. OROBAT, ONDASUN HIGIGARRI NAHIZ HIGIEZINAK ERABILI, LUPERTU ETA USTIATU AHAL IZANGO DITU, ONDASUNON JABETZA, ERRENTAMENDUA, AZPIERRENTAMENDUA ETA PREKARIOA IZENIK",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07325",
+      "_links": {
+        "self": {
+          "name": "BAI & BY ARABA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/07325"
+        }
+      }
+    },
+    {
+      "name": "BAI & BY GIPUZKOA, S.L.",
+      "registrationNumber": "07346",
+      "identificationNumber": "B20911574",
+      "address": "Prim, 14",
+      "location": {
+        "postalCode": "20006",
+        "municipality": "Donostia / San Sebastián",
+        "county": "Gipuzkoa",
+        "municipalityId": "069",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.933.9",
+          "name": "Otras actividades de enseñanza tales como idiomas, mecanografía",
+          "_links": {
+            "self": {
+              "name": "Otras actividades de enseñanza tales como idiomas, mecanografía",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.933.9"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2023-02-10",
+      "certificateEndDate": "2023-03-21",
+      "object": "IRAKASKUNTZA ETA HEZIKETA-ZERBITZUAK ESKAINTZEA, BESTEAK BESTE, ARLO HAUETAN; HIZKUNTZAK, INFORMATIKA; KONTABILITATEA; ORDENAGAILU BIDEZKO DISEINU GRAFIKOA; OHIKO IRAKASKUNTZA; ENPRESEI IRAKASLEAK AZPIKONTRATATZEA; MATERIAL DESBERDINAK ARGITARATZEA, HALA NOLA, LIBURUAK, BIDEOAK, ZINTAK, CD ROMAK NAHIZ EDOZEIN EUSKARRI INFORMATIKO; ITZULPENAK ETA INTERPRETAZIOAK; HEZKUNTZAKO BIDAIAK ANTOLATZEA. GAINERA, BESTE JARDUERA HAUEK ERE BURUTUKO  DITU: INGURUNE INFORMATIKOAK IKERTU ETA GARATZEA; PAKETE INFORMATIKOAK GARATU ETA PROGRAMATZEA; HORIEN ERABILERARI BURUZKO HEZIKETA ESKAINTZEA; ORDENAGAILUAK ETA MATERIAL DIDAKTIKOA SALDU, EROSI ETA ALOKATZEA; ETA, ERA BEREAN, ZERBITZU HORIEN GUZTIEN MANTENIMENDUARI BURUZKO ZERBITZU TEKNIKOA EMATEA. BIDE BERETIK, LANDA-LURRAK, INDUSTRIA-LURRAK EDO HIRI-LURRAK EROSI, SALDU, TRUKATU, ESKURATU, ERRENTAN HARTU NAHIZ  EMAN EDO LAGA AHAL IZANGO DITU, LUR HORIEN SAILKAPENAK EDOZEIN IZANIK ERE. OROBAT, ONDASUN HIGIGARRI NAHIZ HIGIEZINAK ERABILI, LUPERTU ETA USTIATU AHAL IZANGO DITU, ONDASUNON JABETZA, ERRENTAMENDUA, AZPIERRENTAMENDUA ETA PREKARIOA IZANIK",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07346",
+      "_links": {
+        "self": {
+          "name": "BAI & BY GIPUZKOA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/07346"
+        }
+      }
+    }
+  ]
+}

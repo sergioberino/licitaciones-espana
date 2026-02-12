@@ -1,0 +1,457 @@
+{
+  "totalItems": 9042,
+  "totalPages": 905,
+  "currentPage": 726,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "name": "UTEKI, S.A.",
+      "registrationNumber": "02263",
+      "identificationNumber": "A01265586",
+      "address": "C/ VITORIALANDA, Nº 7- PABELLÓN 4",
+      "location": {
+        "postalCode": "01010",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.501.2",
+          "name": "Construcción completa, reparación y conservación obras civiles",
+          "_links": {
+            "self": {
+              "name": "Construcción completa, reparación y conservación obras civiles",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2010-07-21",
+      "certificateEndDate": "2011-01-07",
+      "object": "LA CONSERVACIÓN, EXPLOTACIÓN Y EJECUCIÓN DE OBRAS PÚBLICAS, INFRAESTRUCTURAS Y CONSTRUCCIONES EN GENERAL. EN PARTICULAR EL EMPLEO DE PRODUCTOS ASFÁLTICOS DE TODA CLASE (AGLOMERADOS, RIEGOS E IMPERMEABILIZACIONES DE TODO TIPO), CONSTRUCCIÓN DE CARRETERAS, MOVIMIENTO DE TIERRAS, CIMENTACIONES, SANEAMIENTOS, CONDUCCIONES DE AGUA, CANALIZACIONES, SEÑALIZACIONES, FABRICACIÓN  Y EMPLEO DE HORMIGONES, ESTRUCTURAS DE TODO TIPO (DE HORMIGÓN ARMADO, METÁLICAS O MIXTAS), FABRICACIÓN DE TODO TIPO DE MATERIALES PARA LA CONSTRUCCIÓN EN GENERAL, EXPLOTACIÓN DE CANTERAS, JARDINERÍA, PLANTACIONES, ACTIVIDADES RELACIONADAS CON EL MEDIO AMBIENTE, Y DEMÁS SERVICIOS, TRATAMIENTO DE AGUAS Y RESIDUOS, ASÍ COMO LA CONSTRUCCIÓN Y PROMOCIÓN DE CUALQUIER CLASE DE OBRAS DE CARÁCTER PRIVADO O PÚBLICO",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/02263",
+      "_links": {
+        "self": {
+          "name": "UTEKI, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/02263"
+        }
+      }
+    },
+    {
+      "name": "T&C UNIDIX , S.L.",
+      "registrationNumber": "02554",
+      "identificationNumber": "B82929159",
+      "address": "C/ LUIS I 47  N ave 1 Bis",
+      "location": {
+        "postalCode": "28031",
+        "municipality": "Madrid",
+        "county": "Madrid",
+        "municipalityId": "079",
+        "countyId": "28"
+      },
+      "economicActivities": [
+        {
+          "id": "1.619.2",
+          "name": "Venta al por mayor de aparatos e instrumentos médicos, ortopédicos, ópticos",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de aparatos e instrumentos médicos, ortopédicos, ópticos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.619.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2010-07-20",
+      "certificateEndDate": "2010-11-24",
+      "object": "LA IMPORTACIÓN, COMPRAVENTA, COMERCIALIZACIÓN Y DISTRIBUCIÓN DE TODO TIPO DE MATERIAL MÉDICO Y SANITARIO",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/02554",
+      "_links": {
+        "self": {
+          "name": "T&C UNIDIX , S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/02554"
+        }
+      }
+    },
+    {
+      "name": "ALBERTO MORALES OSAKA",
+      "registrationNumber": "04459",
+      "identificationNumber": "16058312B",
+      "address": "C/ ZALBIDES. PARCELA Nº 57. POLIG. 6",
+      "location": {
+        "postalCode": "48992",
+        "municipality": "Urduliz",
+        "county": "Bizkaia",
+        "municipalityId": "089",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.722",
+          "name": "Transporte de mercancías por carretera",
+          "_links": {
+            "self": {
+              "name": "Transporte de mercancías por carretera",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.722"
+            }
+          }
+        },
+        {
+          "id": "1.979.4",
+          "name": "Adiestramiento de animales y otros servicios de atención de animales",
+          "_links": {
+            "self": {
+              "name": "Adiestramiento de animales y otros servicios de atención de animales",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.979.4"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2010-07-16",
+      "certificateEndDate": "2010-11-17",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/04459",
+      "_links": {
+        "self": {
+          "name": "ALBERTO MORALES OSAKA",
+          "href": "https://api.euskadi.eus/procurements/companies/04459"
+        }
+      }
+    },
+    {
+      "name": "ORVY IMPRESION GRÁFICA, S.L.",
+      "registrationNumber": "04464",
+      "identificationNumber": "B20555728",
+      "address": "POLIG. ZUBIONDO, PARC. A-3",
+      "location": {
+        "postalCode": "20120",
+        "municipality": "Hernani",
+        "county": "Gipuzkoa",
+        "municipalityId": "040",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.474",
+          "name": "Artes gráficas (impresión gráfica)",
+          "_links": {
+            "self": {
+              "name": "Artes gráficas (impresión gráfica)",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.474"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2010-07-13",
+      "certificateEndDate": "2010-12-07",
+      "object": "EL DISEÑO Y LA REALIZACIÓN Y COMERCIALIZACIÓN DE TODA CLASE DE TRABAJOS DE IMPRENTA Y ARTES GRÁFICAS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/04464",
+      "_links": {
+        "self": {
+          "name": "ORVY IMPRESION GRÁFICA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/04464"
+        }
+      }
+    },
+    {
+      "name": "AGUAS DEL NORTE, S.A.",
+      "registrationNumber": "00237",
+      "identificationNumber": "A20032298",
+      "address": "C/ AVENIDA LEHENDAKARI AGUIRRE, Nº 29 - 6º.",
+      "location": {
+        "postalCode": "48014",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.161.1",
+          "name": "Captación, tratamiento y distribución agua, núcleos urbanos",
+          "_links": {
+            "self": {
+              "name": "Captación, tratamiento y distribución agua, núcleos urbanos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.161.1"
+            }
+          }
+        },
+        {
+          "id": "1.161.3",
+          "name": "Tratamiento de agua para su suministro",
+          "_links": {
+            "self": {
+              "name": "Tratamiento de agua para su suministro",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.161.3"
+            }
+          }
+        },
+        {
+          "id": "1.161.4",
+          "name": "Distribución de agua para núcleos urbanos",
+          "_links": {
+            "self": {
+              "name": "Distribución de agua para núcleos urbanos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.161.4"
+            }
+          }
+        },
+        {
+          "id": "1.501.2",
+          "name": "Construcción completa, reparación y conservación obras civiles",
+          "_links": {
+            "self": {
+              "name": "Construcción completa, reparación y conservación obras civiles",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.2"
+            }
+          }
+        },
+        {
+          "id": "1.654.5",
+          "name": "Venta al por menor de toda clase de maquinaría",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de toda clase de maquinaría",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.654.5"
+            }
+          }
+        },
+        {
+          "id": "1.857.9",
+          "name": "Lectura y conservación a tanto alzado de contadores de agua",
+          "_links": {
+            "self": {
+              "name": "Lectura y conservación a tanto alzado de contadores de agua",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.857.9"
+            }
+          }
+        },
+        {
+          "id": "1.921.4",
+          "name": "Servicios de alcantarillado, evacuación y depuración de aguas residuales",
+          "_links": {
+            "self": {
+              "name": "Servicios de alcantarillado, evacuación y depuración de aguas residuales",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.921.4"
+            }
+          }
+        },
+        {
+          "id": "1.921.9",
+          "name": "Otros servicios de saneamiento y similares n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros servicios de saneamiento y similares n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.921.9"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2010-07-01",
+      "certificateEndDate": "2010-12-23",
+      "object": "1.- LA SOCIEDAD DESARROLLARÁ SU ACTIVIDAD MERCANTIL EN EL ÁMBITO DEL DENOMINADO CICLO INTEGRAL DEL AGUA: CAPTACIÓN O PRODUCCIÓN, ADUCCIÓN, TRATAMIENTO, DISTRIBUCIÓN, ALCANTARILLADO, DEPURACIÓN, REUTILIZACIÓN Y VERTIDO, MEDIANTE LAS SIGUIENTES ACTIVIDADES CONCRETAS:\r\n\r\n\tA) LA GERENCIA O LA GESTIÓN INDIRECTA, EN LAS MODALIDADES QUE REGULE EL DERECHO ADMINISTRATIVO Y, EN SU CASO, MEDIANTE CUENTAS EN PARTICIPACIÓN, DE SERVICIOS PÚBLICOS DE ABASTECIMIENTO DE AGUA POTABLE A NÚCLEOS URBANOS, DE CONSERVACIÓN Y LIMPIEZA DE REDES DE ALCANTARILLADO Y DE DEPURACIÓN DE AGUAS RESIDUALES.\r\n\r\n\tB) LA POTABILIZACIÓN DE AGUAS, EL ALUMBRAMIENTO DE AGUAS SUBTERRÁNEAS Y LA CAPTACIÓN DE AGUAS SUPERFICIALES, PREVIAS LAS OPORTUNAS CONCESIONES O LICENCIAS ADMINISTRATIVAS. EN EL CASO DE QUE LA SOCIEDAD LLEVE A CABO LA PRESTACIÓN DE SERVICIOS DE DEPURACIÓN DE AGUAS RESIDUALES, PODRÁ REUTILIZAR DICHAS AGUAS PREVIA LA OBTENCIÓN DE LAS CONCESIONES ADMINISTRATIVAS QUE RESULTEN LEGALMENTE NECESARIAS, PUDIENDO IGUALMENTE TRANSFORMAR LOS LODOS RESULTANTES PARA LA OBTENCIÓN, VENTA Y DISTRIBUCIÓN DE PRODUCTOS ORGÁNICOS.\r\n\r\n\tC) LA REALIZACIÓN DE ESTUDIOS Y PROYECTOS Y LA EJECUCIÓN DE OBRAS DE INFRAESTRUCTURA HIDRÁULICA, ASÍ COMO TODA CLASE DE OBRAS E INSTALACIONES, COMPRENDIÉNDOSE DENTRO DE ELLAS LAS DE CONSTRUCCIÓN, MANTENIMIENTO DE INSTALACIONES DE TODO TIPO, AMPLIACIÓN O MEJORA DE ESTACIONES DE BOMBEO, TRATAMIENTO, PLANTAS DEPURADORAS Y POTABILIZADORAS, TUBERÍAS DE CONDUCCIÓN, REDES DE DISTRIBUCIÓN, ALCANTARILLADO Y BOCAS DE INCENDIO Y RIEGO, ASÍ COMO LA EJECUCIÓN DE ESTUDIOS, PROYECTOS E INFORMES CON ELLOS RELACIONADOS.\r\n\r\n2.- IGUALMENTE, LA SOCIEDAD PODRÁ DEDICARSE A LA GESTIÓN INDIRECTA, EN CUALQUIERA DE LAS MODALIDADES PERMITIDAS POR EL ORDENAMIENTO JURÍDICO, DE LOS SIGUIENTES SERVICIOS PÚBLICOS: RECOGIDA, TRANSPORTE Y TRATAMIENTO DE RESIDUOS SÓLIDOS URBANOS O INDUSTRIALES; MANTENIMIENTO DE SISTEMAS DE ALUMBRADO PÚBLICO: LIMPIEZA VIARIA, LIMPIEZA Y MANTENIMIENTO DE EDIFICIOS PÚBLICOS; MANTENIMIENTO Y GESTIÓN DE TRÁFICO, INCLUIDAS REDES SEMAFÓRICAS Y CONTROL DE ESTACIONAMIENTO DE VEHÍCULOS; MANTENIMIENTO DE SERVICIOS Y MOBILIARIO, JARDINES, Y ÁREAS DE ESPARCIMIENTO; PROTECCIÓN MEDIO AMBIENTAL, ASÍ COMO CUANTO SEA COMPLEMENTARIO O INCIDENTAL EN LA PRESTACIÓN DE LOS MISMOS, REDACCIÓN DE PROYECTOS, EJECUCIÓN DE OBRAS, SUMINISTRO DE EQUIPOS Y MATERIALES O SEAN LABORES AUXILIARES DE AQUELLOS.\r\n\r\n3.- LA SOCIEDAD PODRÁ COLABORAR EN AQUELLAS TAREAS DE GESTIÓN RECAUDATORIA QUE, SIN IMPLICAR EL EJERCICIO DE AUTORIDAD, ESTÉN ENCAMINADAS AL COBRO DE INGRESOS DE DERECHO PÚBLICO, YA SEAN DE CARÁCTER TRIBUTARIO O EXTRATRIBUTARIO, EN PERÍODO VOLUNTARIO O EJECUTIVO, QUE A TAL FIN LE SEAN ENCOMENDADAS POR LAS ADMINISTRACIONES PÚBLICAS\r\n\r\n4.- LA SOCIEDAD PODRÁ REALIZAR INDIRECTAMENTE LAS ANTERIORES ACTIVIDADES COMPRENDIDAS EN SU OBJETO SOCIAL, MEDIANTE LA CONSTITUCIÓN DE OTRAS SOCIEDADES, O LA PARTICIPACIÓN EN SOCIEDADES YA CONSTITUIDAS DE IDÉNTICO O ANÁLOGO OBJETO SOCIAL, PUDIENDO PARA ELLO SUSCRIBIR O POR CUALQUIER OTRO TÍTULO ADQUIRIR Y ENAJENAR ACCIONES Y PARTICIPACIONES SOCIALES",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/00237",
+      "_links": {
+        "self": {
+          "name": "AGUAS DEL NORTE, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/00237"
+        }
+      }
+    },
+    {
+      "name": "MARIO GUISASOLA RON (ANTA)",
+      "registrationNumber": "02761",
+      "identificationNumber": "15379898M",
+      "address": "C/ANTONIO ARZAK, 3 -5º C",
+      "location": {
+        "postalCode": "20009",
+        "municipality": "Donostia / San Sebastián",
+        "county": "Gipuzkoa",
+        "municipalityId": "069",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "2.412",
+          "name": "Ingenieros de caminos, canales y puertos",
+          "_links": {
+            "self": {
+              "name": "Ingenieros de caminos, canales y puertos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/2.412"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2010-07-01",
+      "certificateEndDate": "2010-12-23",
+      "object": "REDACCIÓN DE PROYECTOS; REALIZACIÓN DE INFORMES; DIRECCIÓN DE OBRAS; ASISTENCIAS TÉCNICAS. TODAS ESTAS LABORES SE REALIZARÁN EN EL ÁMBITO DE LA INGENIERÍA CIVIL Y LA EDIFICACIÓN INDUSTRIAL",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/02761",
+      "_links": {
+        "self": {
+          "name": "MARIO GUISASOLA RON (ANTA)",
+          "href": "https://api.euskadi.eus/procurements/companies/02761"
+        }
+      }
+    },
+    {
+      "name": "CRUPSA CONSTRUCTORA REDES URBANAS Y PAVIMENTACIONES, S.A.",
+      "registrationNumber": "00264",
+      "identificationNumber": "A01033323",
+      "address": "AVENIDA DE SANTIAGO, nº 47-BAJO",
+      "location": {
+        "postalCode": "01003",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.501.2",
+          "name": "Construcción completa, reparación y conservación obras civiles",
+          "_links": {
+            "self": {
+              "name": "Construcción completa, reparación y conservación obras civiles",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2010-06-29",
+      "certificateEndDate": "2010-12-24",
+      "object": "LA INDUSTRIA DE LA CONSTRUCCIÓN DE TODA CLASE DE OBRAS PÚBLICAS Y PRIVADAS; LA PROMOCIÓN, CONSTRUCCIÓN, RESTAURACIÓN Y VENTA DE URBANIZACIONES Y TODA CLASE DE EDIFICIOS DESTINADOS A FINES INDUSTRIALES, COMERCIALES O DE VIVIENDAS, BIEN POR CUENTA PROPIA O AJENA; LA REALIZACIÓN DE TODA CLASE DE ESTUDIOS, ASESORAMIENTOS, ASISTENCIA TÉCNICA Y, EN GENERAL, DE TODA CLASE DE SERVICIOS RELACIONADOS CON LA CONSTRUCCIÓN Y EL NEGOCIO INMOBILIARIO; LA CONSERVACIÓN Y MANTENIMIENTO DE OBRAS, INSTALACIONES Y SERVICIOS URBANOS E INDUSTRIALES",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/00264",
+      "_links": {
+        "self": {
+          "name": "CRUPSA CONSTRUCTORA REDES URBANAS Y PAVIMENTACIONES, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/00264"
+        }
+      }
+    },
+    {
+      "name": "EXCAVACIONES FRESNEDA, S.L.",
+      "registrationNumber": "03427",
+      "identificationNumber": "B31387525",
+      "address": "MONASTERIO DE LA OLIVA, 31",
+      "location": {
+        "postalCode": "31011",
+        "municipality": "Pamplona/Iruña",
+        "county": "Navarra",
+        "municipalityId": "201",
+        "countyId": "31"
+      },
+      "economicActivities": [
+        {
+          "id": "1.501.1",
+          "name": "Construcción completa, reparación y conservación de edificaciones",
+          "_links": {
+            "self": {
+              "name": "Construcción completa, reparación y conservación de edificaciones",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.1"
+            }
+          }
+        },
+        {
+          "id": "1.501.2",
+          "name": "Construcción completa, reparación y conservación obras civiles",
+          "_links": {
+            "self": {
+              "name": "Construcción completa, reparación y conservación obras civiles",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2010-06-25",
+      "certificateEndDate": "2010-12-10",
+      "object": "A) LA CONSTRUCCIÓN Y REALIZACIÓN DE TODA CLASE DE EDIFICIOS DE PROMOCIÓN PÚBLICA O PRIVADA, ASÍ COMO TODA CLASE DE OBRAS PÚBLICAS O PRIVADAS EN GENERAL. B) LA PROMOCIÓN, ESTUDIO Y DESARROLLO DE PLANES GENERALES Y PARCIALES DE REPARCELACIÓN Y URBANIZACIÓN. C) LA ADQUISICIÓN DE SOLARES CON DESTINO A LA CONSTRUCCIÓN Y LA VENTA DE EDIFICIOS, VIVIENDAS Y LOCALES",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03427",
+      "_links": {
+        "self": {
+          "name": "EXCAVACIONES FRESNEDA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/03427"
+        }
+      }
+    },
+    {
+      "name": "JUAN MANUEL ALVAREZ JIMÉNEZ",
+      "registrationNumber": "03475",
+      "identificationNumber": "79004872X",
+      "address": "C/ IRAILA, nº 23, 5º DR.",
+      "location": {
+        "postalCode": "48012",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.912",
+          "name": "Servicios forestales",
+          "_links": {
+            "self": {
+              "name": "Servicios forestales",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.912"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2010-06-25",
+      "certificateEndDate": "2010-12-02",
+      "object": "TRABAJOS DE DESBROZADO, LIMPIEZA DE MONTES, PODAS, PLANTACIONES, LIMPIEZA DE CUNETAS, CUIDADO DE JARDINES, TANTO PÚBLICOS COMO PRIVADOS, REGADÍOS, FUMIGACIONES Y TODO TIPO DE VALLADOS Y CERCAS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03475",
+      "_links": {
+        "self": {
+          "name": "JUAN MANUEL ALVAREZ JIMÉNEZ",
+          "href": "https://api.euskadi.eus/procurements/companies/03475"
+        }
+      }
+    },
+    {
+      "name": "TALAIBER, S.A.",
+      "registrationNumber": "04457",
+      "identificationNumber": "B95271102",
+      "address": "Zubiaur tar Kepa nº 32-bajo Izq.",
+      "location": {
+        "postalCode": "48370",
+        "municipality": "Bermeo",
+        "county": "Bizkaia",
+        "municipalityId": "017",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.501.3",
+          "name": "Albañilería y pequeños trabajos de construcción en general",
+          "_links": {
+            "self": {
+              "name": "Albañilería y pequeños trabajos de construcción en general",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.3"
+            }
+          }
+        },
+        {
+          "id": "1.861.1",
+          "name": "Alquiler de viviendas",
+          "_links": {
+            "self": {
+              "name": "Alquiler de viviendas",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.861.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2010-06-21",
+      "certificateEndDate": "2010-11-14",
+      "object": "A) SERVICIOS Y TRABAJOS DE CONSTRUCCIÓN DE EDIFICIOS Y REHABILITACIÓN, ASÍ COMO SUMINISTROS DE MATERIALES. B) EXCAVACIONES Y PROMOCIONES DE VIVIENDAS O CUALQUIER OTRA CONSTRUCCIÓN. C)COMPRAVENTA DE TERRENOS APTOS PARA LA PROMOCIÓN INMOBILIARIA",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/04457",
+      "_links": {
+        "self": {
+          "name": "TALAIBER, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/04457"
+        }
+      }
+    }
+  ]
+}

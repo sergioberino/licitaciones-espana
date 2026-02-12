@@ -1,0 +1,498 @@
+{
+  "totalItems": 9042,
+  "totalPages": 905,
+  "currentPage": 154,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "name": "JAPAN CAR,S.A.",
+      "registrationNumber": "06916",
+      "identificationNumber": "A48244578",
+      "address": "AV IPARRAGUIRRE 104",
+      "location": {
+        "postalCode": "48940",
+        "municipality": "Leioa",
+        "county": "Bizkaia",
+        "municipalityId": "054",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.615.1",
+          "name": "Venta al por mayor de vehículos, motocicletas, bicicletas y sus accesorios",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de vehículos, motocicletas, bicicletas y sus accesorios",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.615.1"
+            }
+          }
+        },
+        {
+          "id": "1.654.1",
+          "name": "Venta al por menor de vehículos terrestres",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de vehículos terrestres",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.654.1"
+            }
+          }
+        },
+        {
+          "id": "1.691.2",
+          "name": "Reparación de vehículos automóviles, bicicletas y otros vehículos",
+          "_links": {
+            "self": {
+              "name": "Reparación de vehículos automóviles, bicicletas y otros vehículos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.691.2"
+            }
+          }
+        },
+        {
+          "id": "1.831.9",
+          "name": "Otros servicios financieros n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros servicios financieros n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.831.9"
+            }
+          }
+        },
+        {
+          "id": "1.832.9",
+          "name": "Otros servicios auxiliares de seguros n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros servicios auxiliares de seguros n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.832.9"
+            }
+          }
+        },
+        {
+          "id": "1.854.1",
+          "name": "Alquiler de automóviles sin conductor",
+          "_links": {
+            "self": {
+              "name": "Alquiler de automóviles sin conductor",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.854.1"
+            }
+          }
+        },
+        {
+          "id": "1.854.2",
+          "name": "Alquiler de automóviles sin conductor en régimen de \"renting\"",
+          "_links": {
+            "self": {
+              "name": "Alquiler de automóviles sin conductor en régimen de \"renting\"",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.854.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-11-19",
+      "certificateEndDate": "2026-05-05",
+      "object": "LA VENTA DE AUTOMÓVILES NUEVOS Y USADOS, LA VENTA DE RECAMBIOS, ACCESORIOS E INTALACIONES DE LOS MISMOS, LA REPARACIÓN DE VEHÍCULOS, LA TRAMITACIÓN DE DOCUMENTACIÓN Y SEGUROS Y EL ALQUILER DE VEHÍCULOS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06916",
+      "_links": {
+        "self": {
+          "name": "JAPAN CAR,S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/06916"
+        }
+      }
+    },
+    {
+      "name": "VERMICAN SOLUCIONES DE COMPOSTAJE, S.L.",
+      "registrationNumber": "08363",
+      "identificationNumber": "B71066153",
+      "address": "Pol. Ind. Mutilva Baja, calle I nave 10",
+      "location": {
+        "postalCode": "31192",
+        "municipality": "Aranguren",
+        "county": "Navarra",
+        "municipalityId": "023",
+        "countyId": "31"
+      },
+      "economicActivities": [
+        {
+          "id": "1.659.7",
+          "name": "Venta al por menor de semillas, abonos, flores, plantas y pequeños animales",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de semillas, abonos, flores, plantas y pequeños animales",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.659.7"
+            }
+          }
+        },
+        {
+          "id": "1.843.9",
+          "name": "Otros servicios técnicos n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros servicios técnicos n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.9"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-11-18",
+      "certificateEndDate": "2026-05-13",
+      "object": "COMPRA VENTA DE SISTEMAS, EQUIPOS Y MAQUINARIA PARA LA GESTIÓN DE RESIDUOS DOMICILIARIOS, DE EMPRESAS E INSTITUCIONES. VENTA E INSTALACIÓN DE SISTEMAS DE GESTIÓN DE RESIDUOS. CONSULTORÍA Y FORMACIÓN. COMERCIO AL MAYOR Y AL POR MENOR DE EQUIPOS DE COMPOSTAJE Y VERMICOMPOSTAJE. VENTA DE FERTILIZANTES ORGÁNICOS. FABRICACIÓN DE FERTILIZANTES ORGÁNICOS.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08363",
+      "_links": {
+        "self": {
+          "name": "VERMICAN SOLUCIONES DE COMPOSTAJE, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/08363"
+        }
+      }
+    },
+    {
+      "name": "NATOURING TURISMO, COMUNICACION Y MEDIO AMBIENTE, S.L.",
+      "registrationNumber": "07594",
+      "identificationNumber": "B01555119",
+      "address": "C/ LA VILLA, 36",
+      "location": {
+        "postalCode": "01110",
+        "municipality": "Campezo/Kanpezu",
+        "county": "Araba/Álava",
+        "municipalityId": "017",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.843.9",
+          "name": "Otros servicios técnicos n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros servicios técnicos n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.9"
+            }
+          }
+        },
+        {
+          "id": "1.849.9",
+          "name": "Otros servicios independientes n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros servicios independientes n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.849.9"
+            }
+          }
+        },
+        {
+          "id": "1.966.9",
+          "name": "Otros servicios culturales n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros servicios culturales n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.966.9"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-11-18",
+      "certificateEndDate": "2026-05-15",
+      "object": "CONSULTORIA AMBIENTAL, TURISTICA Y DE COMUNICACION, GUIAS TURISTICOS Y DE NATURALEZA, FORMACION, DIVULGACION Y EDUCACION AMBIENTAL, SERVICIOS DE INFORMACION, PERIODISMO, PROMOCION, GESTION, DISEÑO GRAFICO, COMUNICACION WEB Y REDES SOCIALES, REALIZACION DE ESTUDIOS Y PROYECTOS DE DESARROLLO RURAL Y EN ESPACIOS NATURALES, ESTUDIO Y CONSERVACION DE FAUNA Y FLORA, ARQUEOLOGIA, ESTUDIOS, PROYECTOS Y TRABAJOS FORESTALES, APICULTURA Y PROMOCION, ELABORACION Y VENTA DE PRODUCTOS LOCALES, REALIZACION DE ACTIVIDADES GUIADAS EN EL MEDIO NATURAL; SENDERISMO, BTT Y OTRAS, ORGANIZACION DE EVENTOS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07594",
+      "_links": {
+        "self": {
+          "name": "NATOURING TURISMO, COMUNICACION Y MEDIO AMBIENTE, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/07594"
+        }
+      }
+    },
+    {
+      "name": "EUROPA LANGUAGE TEACHING & LEARNING SERVICES, S.L.",
+      "registrationNumber": "08867",
+      "identificationNumber": "B95828679",
+      "address": "calle Zaballa, 13 bajo",
+      "location": {
+        "postalCode": "48901",
+        "municipality": "Barakaldo",
+        "county": "Bizkaia",
+        "municipalityId": "013",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.933.9",
+          "name": "Otras actividades de enseñanza tales como idiomas, mecanografía",
+          "_links": {
+            "self": {
+              "name": "Otras actividades de enseñanza tales como idiomas, mecanografía",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.933.9"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-11-18",
+      "certificateEndDate": "2026-05-11",
+      "object": "ACTIVIDAD PRINCIPAL: OTRA EDUCACIÓN N.C.O.P.. CÓDIGO CNAE: 8559. OTRAS ACTIVIDADES: .- ACTIVIDADES DE TRADUCCIÓN E INTERPRETACIÓN, CÓDIGO CNAE: 7430. .- ACTIVIDADES DE LAS AGENCIAS DE VIAJES, CÓDIGO CNAE 7911. .- ACTIVIDADES AUXILIARES A LA EDUCACIÓN, CÓDIGO CNAE 8560.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08867",
+      "_links": {
+        "self": {
+          "name": "EUROPA LANGUAGE TEACHING & LEARNING SERVICES, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/08867"
+        }
+      }
+    },
+    {
+      "name": "FUNCOTEX, S.L.",
+      "registrationNumber": "08266",
+      "identificationNumber": "B96896857",
+      "address": "CRTRA. MASIA DEL JUEZ, 36 ",
+      "location": {
+        "postalCode": "46900",
+        "municipality": "Torrent",
+        "county": "Valencia/València",
+        "municipalityId": "244",
+        "countyId": "46"
+      },
+      "economicActivities": [
+        {
+          "id": "1.455.9",
+          "name": "Confección de otros artículos con materias textiles n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Confección de otros artículos con materias textiles n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.455.9"
+            }
+          }
+        },
+        {
+          "id": "1.654.1",
+          "name": "Venta al por menor de vehículos terrestres",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de vehículos terrestres",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.654.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-11-18",
+      "certificateEndDate": "2026-05-15",
+      "object": "A) LA CONFECCIÓN, EN INSTALACIONES PROPIAS O DE TERCEROS, Y VENTA DE FUNDAS TEXTILES PARA COLCHONES Y ARTÍCULOS DE LÁTEX Y ELEMENTOS COMPLEMENTARIOS A LOS MISMOS. B) ACTIVIDADES DE FABRICACIÓN DE PRODUCTOS SANITARIOS. C) EXPORTACIÓN E IMPORTACIÓN DE PRODUCTOS SANITARIOS, CONFORME A LA LEGISLACIÓN VIGENTE Y REGLAMENTACIÓN ADMINISTRATIVA CORRESPONDIENTE. D) COMPRAVENTA DE VEHÍCULOS AUTOMÓVILES. EN LA CLASIFICACIÓN NACIONAL DE ACTIVIDADES ECONÓMICAS (CNAE) EL CÓDIGO CORRESPONDIENTE A LA PRINCIPAL ACTIVIDAD DE LA SOCIEDAD ES EL 1399.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08266",
+      "_links": {
+        "self": {
+          "name": "FUNCOTEX, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/08266"
+        }
+      }
+    },
+    {
+      "name": "TAMAR LAS ARENAS, S.A.",
+      "registrationNumber": "00731",
+      "identificationNumber": "A48239305",
+      "address": "POL. UGALDEGUREN I, PARCELA 1-3-C",
+      "location": {
+        "postalCode": "48170",
+        "municipality": "Zamudio",
+        "county": "Bizkaia",
+        "municipalityId": "905",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.677.9",
+          "name": "Otros servicios de alimentación propios de la restauración",
+          "_links": {
+            "self": {
+              "name": "Otros servicios de alimentación propios de la restauración",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.677.9"
+            }
+          }
+        },
+        {
+          "id": "1.861.2",
+          "name": "Alquiler de locales industriales y otros alquileres n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Alquiler de locales industriales y otros alquileres n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.861.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-11-18",
+      "certificateEndDate": "2026-04-22",
+      "object": "LA EXPLOTACIÓN DE NEGOCIO DE HOSTELERÍA, COCINA INDUSTRIAL, COMIDAS PRECOCINADAS, SERVICIO DE HOSTELERÍA A COLECTIVIDADES Y COMERCIO AL POR MENOR. LA PRESTACIÓN DE SERVICIOS SOCIALES, SANITARIOS, EDUCATIVOS Y DE OCIO. LA EXPLOTACIÓN Y GESTIÓN, TOTAL O PARCIAL, DE INSTALACIONES DEPORTIVAS, DE OCIO Y RECREO, CULTURALES, EDUCATIVAS, PARQUES TEMÁTICOS, APARCAMIENTOS, TIENDAS Y CENTROS COMERCIALES. LA REALIZACIÓN DE SERVICIOS DE CUIDADO Y CUSTODIA DE NIÑOS EN ESTANCIAS Y LOCALES APROPIADOS. LOS SERVICIOS DE TRANSPORTE ESCOLAR ASÍ COMO LOS SERVICIOS DE APOYO AL MISMO. LA REALIZACIÓN DE TRABAJOS INHERENTES A LA ORGANIZACIÓN Y PROMOCIÓN DE CONGRESOS, FERIAS Y EXPOSICIONES, EVENTOS SOCIALES, EVENTOS PRIVADOS, LOS SERVICIOS DE AZAFATAS, INFORMACIÓN Y PROGRAMACIÓN DE ACTOS. LA REALIZACIÓN Y EJECUCIÓN DE TRABAJOS DE MANTENIMIENTO DE EDIFICIOS, LOCALES, VIALES, PISTAS, MONTES, JARDINES, PLAYAS ALCANTARILLADO, CENTROS DEPORTIVOS, COLEGIOS Y EMPRESAS. LA CONSTRUCCIÓN, PROMOCIÓN, COMPRA, VENTA, TENENCIA, REHABILITACIÓN, ALQUILER, PARCELACIÓN, URBANIZACIÓN Y EXPLOTACIÓN DE BIENES INMUEBLES, RÚSTICOS O URBANOS, PUDIENDO PROCEDER A LA EDIFICACIÓN DE LOS MISMOS Y A SU ENAJENACIÓN, DE FORMA ÍNTEGRA O PARCIAL, O EN RÉGIMEN DE PROPIEDAD HORIZONTAL Y LA ADMINISTRACIÓN, ASESORAMIENTO, GESTIÓN DE ACTUACIONES URBANÍSTICAS, ADMINISTRATIVAS Y PRESTACIÓN DE SERVICIOS CON RELACIÓN A BIENES INMUEBLES, SEGÚN CONVENGA A SU APROVECHAMIENTO AGRÍCOLA, FORESTAL, URBANO, INDUSTRIAL, DEPORTIVO O CULTURAL. LA REALIZACIÓN, PROMOCIÓN, INTERVENCIÓN Y PARTICIPACIÓN EN EMPRESAS O SU CREACIÓN CONSTITUCIÓN O DESARROLLO",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/00731",
+      "_links": {
+        "self": {
+          "name": "TAMAR LAS ARENAS, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/00731"
+        }
+      }
+    },
+    {
+      "name": "EUSKAL CARE, S.L.",
+      "registrationNumber": "10431",
+      "identificationNumber": "B22929525",
+      "address": "C/Rodriguez Arias nº28 10izq",
+      "location": {
+        "postalCode": "48011",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.933.9",
+          "name": "Otras actividades de enseñanza tales como idiomas, mecanografía",
+          "_links": {
+            "self": {
+              "name": "Otras actividades de enseñanza tales como idiomas, mecanografía",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.933.9"
+            }
+          }
+        },
+        {
+          "id": "1.942.9",
+          "name": "Otros servicios sanitarios sin internados, no clasificados",
+          "_links": {
+            "self": {
+              "name": "Otros servicios sanitarios sin internados, no clasificados",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.942.9"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-11-18",
+      "certificateEndDate": "2026-05-14",
+      "object": "ACTIVIDAD PRINCIPAL: 86.99 / OTRAS ACTIVIDADES SANITARIAS N.C.O.P. OTRAS ACTIVIDADES: 86.21 / ACTIVIDADES DE MEDICINA GENERAL Y DE MEDICINA FAMILIAR Y COMUNITARIA, 87.91 / SERVICIOS DE INTERMEDIACIÓN PARA ACTIVIDADES DE ASISTENCIA EN ESTABLECIMIENTOS RESIDENCIALES, 86.92 / TRANSPORTE DE PACIENTES EN AMBULANCIA, 85.59 / OTRA EDUCACIÓN N.C.O.P., 86.97 / ACTIVIDADES DE INTERMEDIACIÓN PARA SERVICIOS MÉDICOS, ODONTOLÓGICOS Y OTROS SERVICIOS SANITARIOS, 93.29 / ACTIVIDADES RECREATIVAS Y DE ENTRETENIMIENTO N.C.O.P., 86.22 / ACTIVIDADES DE OTRAS ESPECIALIDADES MÉDICAS, 87.99 / OTRO TIPO DE ASISTENCIA EN ESTABLECIMIENTOS RESIDENCIALES N.C.O.P., 86.96 / ACTIVIDADES DE MEDICINA TRADICIONAL, COMPLEMENTARIA Y ALTERNATIVA, 88.99 / OTRAS ACTIVIDADES DE SERVICIOS SOCIALES SIN ALOJAMIENTO N.C.O.P., 85.69 / ACTIVIDADES AUXILIARES A LA EDUCACIÓN N.C.O.P., 93.19 / ACTIVIDADES DEPORTIVAS N.C.O.P., 86.94 / ACTIVIDADES DE ENFERMERÍA Y ENFERMERÍA OBSTÉTRICA, 86.95 / ACTIVIDADES DE FISIOTERAPIA, 86.93 / ACTIVIDADES DE PSICÓLOGOS Y PSICOTERAPEUTAS, EXCEPTO MÉDICOS.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/10431",
+      "_links": {
+        "self": {
+          "name": "EUSKAL CARE, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/10431"
+        }
+      }
+    },
+    {
+      "name": "DECOCALLEJAS SOLUCIONES CONSTRUCTIVAS, S.L.",
+      "registrationNumber": "09941",
+      "identificationNumber": "B67868349",
+      "address": "RAMON DE CAMPOAMOR 6-2",
+      "location": {
+        "postalCode": "02400",
+        "municipality": "Hellín",
+        "county": "Albacete",
+        "municipalityId": "037",
+        "countyId": "02"
+      },
+      "economicActivities": [
+        {
+          "id": "1.501.3",
+          "name": "Albañilería y pequeños trabajos de construcción en general",
+          "_links": {
+            "self": {
+              "name": "Albañilería y pequeños trabajos de construcción en general",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.3"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-11-18",
+      "certificateEndDate": "2026-05-18",
+      "object": "LA CONSTRUCCIÓN, PROMOCIÓN Y VENTA DE TODA CLASE DE EDIFICACIONES, VIVIENDAS Y LOCALES, SEAN DE PROTECCIÓN OFICIAL O DE RÉGIMEN LIBRE, COMPRAVENTA DE TERRENOS URBANOS Y RÚSTICOS, LA CONSTRUCCIÓN, CONSERVACIÓN Y REPARACIÓN DE EDIFICIOS, CARRETERAS, PUENTES, EMBALSES, PRESAS Y TÚNELES, TANTO PARTICULARES COMO PARA LA ADMINISTRACIÓN CENTRAL, LOCAL, INSTITUCIONAL Y AUTONÓMICA, E INCLUSO PARA LA PROPIA SOCIEDAD, TRANSPORTE, ALMACENAJE Y VENTA DE MATERIALES, LA CELEBRACIÓN DE TODA CLASE DE CONTRATAS DE OBRAS PARA PARTICULARES O ADMINISTRACIÓN LOCAL, CENTRAL, INSTITUCIONAL Y AUTONÓMICA, COMPRAVENTA DE VEHÍCULOS DE CARGA Y TRANSPORTE, MAQUINARIA Y ELEMENTOS DE CONSTRUCCIÓN, LA REPARACIÓN, COMERCIALIZACIÓN Y REALIZACIÓN DE TODO TIPO DE INSTALACIONES, TANTO ELÉCTRICAS, DE CALEFACCIÓN, DE AIRE ACONDICIONADO, DE FONTANERÍA, CERRAJERÍA, DE ELEMENTOS ELEVADORES O CUALQUIER OTRO TIPO DE INSTALACIÓN QUE PUDIERA REALIZARSE, LA EXTRACCIÓN, VENTA Y TRANSPORTE DE ÁRIDOS, ASÍ COMO TODO TIPO DE EXCAVACIONES, DEMOLICIONES, DERRIBOS, EXPLANACIONES, ACOMETIDAS, Y MOVIMIENTOS DE TIERRAS; LA FABRICACIÓN, COMPRA, COMERCIALIZACIÓN, VENTA E INSTALACIÓN DE TODO TIPO DE MOBILIARIO, CORTINAS, ARTÍCULOS DE DECORACIÓN Y COMPLEMENTOS PARA EL HOGAR.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/09941",
+      "_links": {
+        "self": {
+          "name": "DECOCALLEJAS SOLUCIONES CONSTRUCTIVAS, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/09941"
+        }
+      }
+    },
+    {
+      "name": "MARIA SARA DORREGO CARREIRA",
+      "registrationNumber": "10222",
+      "identificationNumber": "47388500J",
+      "address": "Juan de Garay 23",
+      "location": {
+        "postalCode": "48003",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "2.775",
+          "name": "Doctores y licenciados en filosofía y letras",
+          "_links": {
+            "self": {
+              "name": "Doctores y licenciados en filosofía y letras",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/2.775"
+            }
+          }
+        },
+        {
+          "id": "2.899",
+          "name": "Otros profesionales",
+          "_links": {
+            "self": {
+              "name": "Otros profesionales",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/2.899"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-11-18",
+      "certificateEndDate": "2026-05-18",
+      "object": "DOCTORES Y LICENCIADOS EN FILOSOFÍA Y LETRAS. OTROS PROFESIONALES.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/10222",
+      "_links": {
+        "self": {
+          "name": "MARIA SARA DORREGO CARREIRA",
+          "href": "https://api.euskadi.eus/procurements/companies/10222"
+        }
+      }
+    },
+    {
+      "name": "BELVEDERE MARKETING AGENCY, S.L.",
+      "registrationNumber": "10201",
+      "identificationNumber": "B01715820",
+      "address": "Calle Luis Power",
+      "location": {
+        "postalCode": "48014",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.844",
+          "name": "Servicios de publicidad, relaciones públicas y similares",
+          "_links": {
+            "self": {
+              "name": "Servicios de publicidad, relaciones públicas y similares",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.844"
+            }
+          }
+        },
+        {
+          "id": "1.934",
+          "name": "Enseñanza fuera de establecimiento permanente",
+          "_links": {
+            "self": {
+              "name": "Enseñanza fuera de establecimiento permanente",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.934"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-11-18",
+      "certificateEndDate": "2026-05-11",
+      "object": "-PRESTACIÓN DE SERVICIOS INTEGRALES DE COMUNICACIÓN COMO AGENCIA DE PUBLICIDAD, MARKETING, COMUNICACIÓN Y CONSULTORÍA. -ACTIVIDADES EDITORIALES EN SOPORTES VARIADOS (PUBLICACIONES, REVISTAS, LIBROS, ARCHIVO INTERNET). -PRODUCCIÓN, DISTRIBUCIÓN, COMERCIALIZACIÓN Y EXHIBICIÓN AUDIOVISUAL. -ACTIVIDADES DE ARTES GRÁFICAS; DISEÑO; FOTOGRAFÍA; RELACIONES PÚBLICAS; -ACTIVIDADES DE FORMACIÓN Y CONSULTORÍA. -ACTIVIDADES DE TRADUCCIÓN E INTERPRETACIÓN. ORGANIZACIÓN DE EVENTOS SOCIALES Y CULTURALES. -COMERCIALIZACIÓN DE PRODUCTOS PUBLICITARIOS. -RELACIONES CON LAS TECNOLOGÍAS DE LA INFORMACIÓN, LAS REDES SOCIALES Y LA INFORMÁTICA.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/10201",
+      "_links": {
+        "self": {
+          "name": "BELVEDERE MARKETING AGENCY, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/10201"
+        }
+      }
+    }
+  ]
+}

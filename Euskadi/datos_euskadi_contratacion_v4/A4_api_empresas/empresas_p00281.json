@@ -1,0 +1,464 @@
+{
+  "totalItems": 9042,
+  "totalPages": 905,
+  "currentPage": 281,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "name": "VICTOR ANGEL MARTINEZ GONZALEZ",
+      "registrationNumber": "09311",
+      "identificationNumber": "22731093D",
+      "address": "C/ PORMETXETA, 16",
+      "location": {
+        "postalCode": "48901",
+        "municipality": "Barakaldo",
+        "county": "Bizkaia",
+        "municipalityId": "013",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.651.1",
+          "name": "Venta al por menor de productos textiles, de hogar, alfombras y similares",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de productos textiles, de hogar, alfombras y similares",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.651.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-09-12",
+      "certificateEndDate": "2026-03-12",
+      "object": "VENTA AL POR MENOR DE PRODUCTOS TEXTILES, DE HOGAR, ALFOMBRAS Y SIMILARES.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/09311",
+      "_links": {
+        "self": {
+          "name": "VICTOR ANGEL MARTINEZ GONZALEZ",
+          "href": "https://api.euskadi.eus/procurements/companies/09311"
+        }
+      }
+    },
+    {
+      "name": "ASOCIACIÓN DE REINSERCIÓN SOCIAL SARTU-ÁLAVA",
+      "registrationNumber": "06329",
+      "identificationNumber": "G01126127",
+      "address": "C/PORTAL DEL REY, 20 BAJO",
+      "location": {
+        "postalCode": "01001",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.932.1",
+          "name": "Enseñanza de formación y perfeccionamiento profesional no superior",
+          "_links": {
+            "self": {
+              "name": "Enseñanza de formación y perfeccionamiento profesional no superior",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.932.1"
+            }
+          }
+        },
+        {
+          "id": "1.952",
+          "name": "Asistencia y servicios sociales en centros no residenciales",
+          "_links": {
+            "self": {
+              "name": "Asistencia y servicios sociales en centros no residenciales",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.952"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-09-12",
+      "certificateEndDate": "2026-03-12",
+      "object": "-ACTIVIDADES, SERVICIOS Y ACCIONES PARA LA ACOGIDA, INFORMACIÓN, VALORACIÓN, DIAGNÓSTICO, ORIENTACIÓN, ACOMPAÑAMIENTO Y CAPACITACIÓN PERSONAL Y TÉCNICA DE DICHAS PERSONAS Y GRUPOS. - ACTIVIDADES, SERVICIOS Y ACCIONES PARA LA INTERMEDIACIÓN LABORAL Y LA PROMOCIÓN DEL ACCESO AL EMPLEO, TANTO POR CUENTA PROPIA COMO AJENA, PROMOVIENDO DE MANERA PRIORITARIA ESTRUCTURAS LABORALES SOLIDARIAS QUE FAVOREZCAN LOS PROCESOS DE INCLUSIÓN SOCIAL DE SUS PARTICIPANTES. - ESTUDIOS E INVESTIGACIONES SOBRE DICHAS PERSONAS Y GRUPOS, Y SOBRE LAS ACTIVIDADES Y ACCIONES DESCRITAS. REALIZACIÓN DE DIAGNÓSTICOS Y PLANES, INVESTIGACIÓN APLICADA. -ASESORAMIENTO Y FORMACIÓN A ORGANIZACIONES Y PROFESIONALES, DISEÑO Y PUESTA EN MARCHA DE PROGRAMAS INNOVADORES EN EL ÁMBITO DE LA INCLUSIÓN SOCIAL Y EL DESARROLLO COMUNITARIO. -ACTIVIDADES, SERVICIOS Y ACCIONES DE FORMACIÓN PROFESIONAL, TANTO REGLADA COMO NO REGLADA, DIRIGIDAS A LA ADQUISICIÓN, MEJORA Y ACTUALIZACIÓN PERMANENTE DE LAS COMPETENCIAS Y CUALIFICACIONES TANTO PROFESIONALES, COMO TÉCNICAS, SOCIALES Y PERSONALES. -ACTIVIDADES, SERVICIOS Y ACCIONES ESPECÍFICAS DE INCLUSIÓN SOCIAL Y FORMACIÓN E INFORMACIÓN DE TRABAJADORAS Y TRABAJADORES EN RIESGO DE EXCLUSIÓN, TALES COMO MUJERES, PERSONAS CON DISCAPACIDAD, MAYORES DE 45 AÑOS, JÓVENES Y OTROS COLECTIVOS EN SITUACIÓN DE EXCLUSIÓN O RIESGO DE ESTARLO. -ACTIVIDADES, SERVICIOS Y ACCIONES PARA EL ASESORAMIENTO DE ENTIDADES PARTICULARES Y PÚBLICAS QUE, DIRECTA O INDIRECTAMENTE, PUEDAN APORTAR SUS POSIBILIDADES A LOS FINES DE LA ENTIDAD. -ACTIVIDADES Y SERVICIOS SOCIO-EDUCATIVOS EN MEDIO ABIERTO O CERRADO, DE INCLUSIÓN SOCIAL DE ALTA EXCLUSIÓN (INFANCIA Y JUVENTUD, PERSONAS SIN DOMICILIO). -ACTIVIDADES Y SERVICIOS ENCAMINADOS A APOYAR LA INCLUSIÓN SOCIAL DE LAS PERSONAS GITANAS Y OTRAS MINORÍAS ÉTNICAS. -ACTIVIDADES Y SERVICIOS DE INTERVENCIÓN SOCIO-EDUCATIVA Y PSICOSOCIAL. -ACTIVIDADES Y SERVICIOS DE PROMOCIÓN DE LA PARTICIPACIÓN Y LA INCLUSIÓN SOCIAL EN EL ÁMBITO DE LOS SERVICIOS SOCIALES, A TRAVÉS DE ACCIONES QUE TIENEN QUE VER CON EL VOLUNTARIADO, LAS TECNOLOGÍAS DE INFORMACIÓN Y COMUNICACIÓN, DISEÑO GRÁFICO, TELECOMUNICACIÓN, MEDIO AMBIENTE, ECOINNOVACIÓN, EMPLEO VERDE, BIODIVERSIDAD, ETC. -ACTIVIDADES Y SERVICIOS DE INFORMACIÓN Y ATENCIÓN A MUJERES VÍCTIMAS DE VIOLENCIA DOMÉSTICA O POR RAZÓN DE SEXO. -SERVICIOS DE MEDIACIÓN SOCIAL, INTERCULTURAL, FOMENTO DE LA IGUALDAD ENTRE MUJERES Y HOMBRES, ETC. -ACTIVIDADES Y SERVICIOS DE CENTRO OCUPACIONAL O CENTRO DE DÍA O RESIDENCIALES PARA ATENDER NECESIDADES DE INCLUSIÓN SOCIAL DE LOS GRUPOS Y/O PERSONAS ANTERIORMENTE DESCRITOS. -CUALESQUIERA OTRAS ACTIVIDADES, SERVICIOS Y ACCIONES ENCAMINADAS A AL ATENCIÓN DE LAS NECESIDADES QUE, DE CUALQUIER ÍNDOLE, PRESENTEN LAS PERSONAS DESCRITOS CON ANTERIORIDAD (VIVIENDA, SALUD, CULTURA, FAMILIA, EDUCACIÓN, CONSUMO, ETC. ). -ACTIVIDADES Y SERVICIOS ENCAMINADOS A LA MEDIACIÓN FAMILIAR, TANTO EN LAS RELACIONES PATERNO/MATERNO/FILIALES COMO A LAS RELACIONES DE PAREJA. -ACTIVIDADES Y SERVICIOS ENCAMINADOS A LA INCLUSIÓN SOCIAL DE PERSONAS DISCRIMINADAS POR MOTIVOS SEXUALES (TRANSEXUALES, HOMOSEXUALES, LESBIANAS, BISEXUALES, ETC.)",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06329",
+      "_links": {
+        "self": {
+          "name": "ASOCIACIÓN DE REINSERCIÓN SOCIAL SARTU-ÁLAVA",
+          "href": "https://api.euskadi.eus/procurements/companies/06329"
+        }
+      }
+    },
+    {
+      "name": "C.M.Z. MACHINERY GROUP, S.A.",
+      "registrationNumber": "07494",
+      "identificationNumber": "A48737134",
+      "address": "C/ Azkorra s/n",
+      "location": {
+        "postalCode": "48250",
+        "municipality": "Zaldibar",
+        "county": "Bizkaia",
+        "municipalityId": "095",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.617.5",
+          "name": "Venta al por mayor de maquinaria para la madera y el metal",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de maquinaria para la madera y el metal",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.617.5"
+            }
+          }
+        },
+        {
+          "id": "1.845",
+          "name": "Explotación electrónica por cuenta de terceros",
+          "_links": {
+            "self": {
+              "name": "Explotación electrónica por cuenta de terceros",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.845"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-09-12",
+      "certificateEndDate": "2026-03-12",
+      "object": "LA FABRICACIÓN, VENTA, GESTIÓN, REPRESENTACIÓN Y ALMACENAMIENTO DE MAQUINARIA, ÚTILES Y HERRAMIENTAS, SUS PIEZAS Y ACCESORIOS, ASÍ COMO SUS SUSTITUTOS, DERIVADOS Y COMPLEMENTARIOS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07494",
+      "_links": {
+        "self": {
+          "name": "C.M.Z. MACHINERY GROUP, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/07494"
+        }
+      }
+    },
+    {
+      "name": "IBEAS ADMINISTRACION DE FINCAS, S.L.",
+      "registrationNumber": "08432",
+      "identificationNumber": "B95616595",
+      "address": "Calle Iruña 12 2ºA ",
+      "location": {
+        "postalCode": "48014",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.834",
+          "name": "Servicios relativos a la propiedad inmobiliaria e industrial",
+          "_links": {
+            "self": {
+              "name": "Servicios relativos a la propiedad inmobiliaria e industrial",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.834"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-09-12",
+      "certificateEndDate": "2026-03-12",
+      "object": "A) .- SERVICIOS RELATIVOS A LA ADMINISTRACIÓN DE FINCAS, TANTO RÚSTICAS COMO URBANAS, ESTÉN O NO ADAPTADAS A LA LEY DE PROPIEDAD HORIZONTAL, EN EL SENTIDO DE ADMINISTRACIÓN DE LAS CORRESPONDIENTES COMUNIDADES DE PROPIETARIOS, LLEVAR SUS LIBROS DE ACTAS Y CONTABILIDAD, PRESENTAR PRESUPUESTOS A LAS JUNTAS DE CONDUEÑOS PARA SU APROBACIÓN, REDACTAR LAS ACTAS DE LAS JUNTAS DE CONDUEÑOS E INFORMAR A ÉSTOS DE LOS ASUNTOS QUE CONCIERNEN A LA COMUNIDAD. B) .- SERVICIOS RELATIVOS A LA PROPIEDAD INMOBILIARIA, INTERMEDIARIOS EN LA COMPRA, VENTA O ARRENDAMIENTO DE TERRENOS, ASÍ COMO EN LA COMPRA, VENTA, CONSTRUCCIÓN O ARRENDAMIENTO DE INMUEBLES O PARTE DE ELLOS, INCLUYENDO SU TASACIÓN, NO ASUMIENDO RIESGOS PROPIOS Y OPERANDO POR CUENTA DE TERCEROS. C) .- PRESTACIÓN DE TODO TIPO DE SERVICIOS, INTERMEDIACIÓN Y ASESORAMIENTO A PERSONAS FÍSICAS O JURÍDICAS SOBRE INVERSIONES INMOBILIARIAS, Y EN GENERAL, CUANTAS ACTIVIDADES U OPERACIONES DE PROMOCIÓN, GESTIÓN Y CONTRATACIÓN SEAN ANÁLOGAS, SIMILARES O COMPLEMENTARIAS DE LAS ANTERIORES. D) .- LA REALIZACIÓN DE TODO TIPO DE OPERACIONES INMOBILIARIAS, TALES COMO LA COMPRAVENTA DE INMUEBLES RÚSTICOS Y URBANOS Y SU EXPLOTACIÓN, BIEN DE FORMA DIRECTA, BIEN EN FORMA DE ARRIENDO; LA CONSTRUCCIÓN DE EDIFICIOS Y SU EXPLOTACIÓN EN ARRENDAMIENTO O VENTA DE LOS MISMOS, YA EN BLOQUE, YA POR PISOS O LOCALES, PREVIA SU DIVISIÓN EN PROPIEDAD HORIZONTAL, ASÍ COMO LA URBANIZACIÓN Y PARCELACIÓN DE TERRENOS, PUDIENDO AL EFECTO REALIZAR AGRUPACIONES, SEGREGACIONES, DIVISIONES DE FINCAS U OTRAS OPERACIONES INMOBILIARIAS.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08432",
+      "_links": {
+        "self": {
+          "name": "IBEAS ADMINISTRACION DE FINCAS, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/08432"
+        }
+      }
+    },
+    {
+      "name": "BATERA CONSULTORES, S.L.",
+      "registrationNumber": "06558",
+      "identificationNumber": "B95723086",
+      "address": "Frances Macià 11, 2º D",
+      "location": {
+        "postalCode": "48014",
+        "municipality": "Lezama",
+        "county": "Bizkaia",
+        "municipalityId": "081",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.847",
+          "name": "Servicios de consultoría",
+          "_links": {
+            "self": {
+              "name": "Servicios de consultoría",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.847"
+            }
+          }
+        },
+        {
+          "id": "1.932.2",
+          "name": "Enseñanza de formación y perfeccionamiento profesional superior",
+          "_links": {
+            "self": {
+              "name": "Enseñanza de formación y perfeccionamiento profesional superior",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.932.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-09-12",
+      "certificateEndDate": "2026-03-11",
+      "object": "ACTIVIDADES PROFESIONALES",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06558",
+      "_links": {
+        "self": {
+          "name": "BATERA CONSULTORES, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/06558"
+        }
+      }
+    },
+    {
+      "name": "GRAFO, S.A.",
+      "registrationNumber": "00473",
+      "identificationNumber": "A48203996",
+      "address": "C/ AVENIDA CERVANTES, Nº 59.",
+      "location": {
+        "postalCode": "48970",
+        "municipality": "Basauri",
+        "county": "Bizkaia",
+        "municipalityId": "015",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.474",
+          "name": "Artes gráficas (impresión gráfica)",
+          "_links": {
+            "self": {
+              "name": "Artes gráficas (impresión gráfica)",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.474"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-09-12",
+      "certificateEndDate": "2026-03-11",
+      "object": "LA REALIZACIÓN DE TODA CLASE DE TRABAJOS DE FOTOCOMPOSICIÓN, REPRODUCCIÓN, IMPRESIÓN Y ENCUADERNACIÓN",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/00473",
+      "_links": {
+        "self": {
+          "name": "GRAFO, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/00473"
+        }
+      }
+    },
+    {
+      "name": "LORENZO JESUS GOICOECHEA FUENTES",
+      "registrationNumber": "08187",
+      "identificationNumber": "25077517L",
+      "address": "Paseo de Salamanca nº 11. Entlo Izqda",
+      "location": {
+        "postalCode": "20003",
+        "municipality": "Donostia / San Sebastián",
+        "county": "Gipuzkoa",
+        "municipalityId": "069",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "2.411",
+          "name": "Arquitectos",
+          "_links": {
+            "self": {
+              "name": "Arquitectos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/2.411"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-09-12",
+      "certificateEndDate": "2026-03-11",
+      "object": "ARQUITECTOS.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08187",
+      "_links": {
+        "self": {
+          "name": "LORENZO JESUS GOICOECHEA FUENTES",
+          "href": "https://api.euskadi.eus/procurements/companies/08187"
+        }
+      }
+    },
+    {
+      "name": "EXCAVACIONES Y TRANSPORTES ONDARRIBI, S.L.",
+      "registrationNumber": "04505",
+      "identificationNumber": "B20210266",
+      "address": "BARRIO VENTAS 15",
+      "location": {
+        "postalCode": "20305",
+        "municipality": "Irun",
+        "county": "Gipuzkoa",
+        "municipalityId": "045",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.502.1",
+          "name": "Demoliciones y derribos en general",
+          "_links": {
+            "self": {
+              "name": "Demoliciones y derribos en general",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.502.1"
+            }
+          }
+        },
+        {
+          "id": "1.722",
+          "name": "Transporte de mercancías por carretera",
+          "_links": {
+            "self": {
+              "name": "Transporte de mercancías por carretera",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.722"
+            }
+          }
+        },
+        {
+          "id": "1.852",
+          "name": "Alquiler de maquinaria y equipo para la construcción",
+          "_links": {
+            "self": {
+              "name": "Alquiler de maquinaria y equipo para la construcción",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.852"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-09-12",
+      "certificateEndDate": "2026-03-09",
+      "object": "LA EXCAVACIÓN Y OBRAS PÚBLICAS EN TERRENOS, EDIFICACIONES, ASÍ COMO SERVICIOS DE TRANSPORTES PÚ8BLICOS Y PRIVADOS, DE MERCANCÍAS PROPIAS O AJENAS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/04505",
+      "_links": {
+        "self": {
+          "name": "EXCAVACIONES Y TRANSPORTES ONDARRIBI, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/04505"
+        }
+      }
+    },
+    {
+      "name": "CERRAMIENTOS INDUSTRIALES CUBERTEC, S.L.",
+      "registrationNumber": "07860",
+      "identificationNumber": "B20666467",
+      "address": "AKERREGI 14 A",
+      "location": {
+        "postalCode": "20120",
+        "municipality": "Hernani",
+        "county": "Gipuzkoa",
+        "municipalityId": "040",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.505.1",
+          "name": "Revestimientos exteriores e interiores de todas clases",
+          "_links": {
+            "self": {
+              "name": "Revestimientos exteriores e interiores de todas clases",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.505.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-09-12",
+      "certificateEndDate": "2026-03-11",
+      "object": "LA FABRICACIÓN, CONSTRUCCIÓN, RESTAURACIÓN, MONTAJE, MANTENIMIENTO Y COMERCIALIZACIÓN DE CERRAMIENTOS, FACHADAS, TEJADOS Y CUBIERTAS, CON SUS ACCESORIOS PARA INMUEBLES, PABELLONES Y SOLARES, REALIZADOS POR SÍ Y/O A TRAVÉS DE LA SUBCONTRATACIÓN",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07860",
+      "_links": {
+        "self": {
+          "name": "CERRAMIENTOS INDUSTRIALES CUBERTEC, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/07860"
+        }
+      }
+    },
+    {
+      "name": "GRÁFICAS IRUDI, S.L.",
+      "registrationNumber": "04817",
+      "identificationNumber": "B01339621",
+      "address": "CARRETERA DE CONTRASTA, 20",
+      "location": {
+        "postalCode": "01110",
+        "municipality": "Campezo/Kanpezu",
+        "county": "Araba/Álava",
+        "municipalityId": "017",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.474",
+          "name": "Artes gráficas (impresión gráfica)",
+          "_links": {
+            "self": {
+              "name": "Artes gráficas (impresión gráfica)",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.474"
+            }
+          }
+        },
+        {
+          "id": "1.619.6",
+          "name": "Venta al por mayor de libros , periódicos y revistas",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de libros , periódicos y revistas",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.619.6"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-09-12",
+      "certificateEndDate": "2026-02-19",
+      "classification": [
+        {
+          "id": "S",
+          "name": "Servicios",
+          "groups": [
+            {
+              "id": "M",
+              "subgroups": [
+                {
+                  "id": "04",
+                  "name": "Artes gráficas",
+                  "categories": [
+                    {
+                      "id": "2",
+                      "name": "Desde 150.001 Hasta 300.000",
+                      "_links": {
+                        "self": {
+                          "name": "Desde 150.001 Hasta 300.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/S/categories/2"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "Artes gráficas",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/M/subgroups/04"
+                    }
+                  }
+                }
+              ],
+              "_links": {
+                "self": {
+                  "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/M"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Servicios",
+              "href": "https://api.euskadi.eus/procurements/companies/types/S"
+            }
+          }
+        }
+      ],
+      "object": "LA IMPRESIÓN DE TEXTOS E IMÁGENES POR CUALQUIER PROCEDIMIENTO O SISTEMA",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/04817",
+      "_links": {
+        "self": {
+          "name": "GRÁFICAS IRUDI, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/04817"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,648 @@
+{
+  "totalItems": 919,
+  "totalPages": 92,
+  "currentPage": 1,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "id": 27191,
+      "identificationNumber": "P0100252F",
+      "name": "Junta Administrativa de Mendiola",
+      "scope": "ARABA/ÁLAVA",
+      "address": "Avd. Olaranbe 10",
+      "webPage": "https://www.vitoria-gasteiz.org/wb021/was/we001Action.do?idioma=es&accion=home&accionWe001=ficha",
+      "publicationDate": "2026-02-10",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES211",
+      "entities": [
+        {
+          "id": 27192,
+          "name": "Junta Administrativa de Mendiola",
+          "orgs": [
+            {
+              "id": 27193,
+              "name": "Asamblea Vecinal de Mendiola",
+              "_links": {
+                "self": {
+                  "name": "Asamblea Vecinal de Mendiola",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/27191/entities/27192/orgs/27193"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Junta Administrativa de Mendiola",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/27191/entities/27192"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder27191/es_doc/index.html",
+      "_links": {
+        "self": {
+          "name": "Junta Administrativa de Mendiola",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/27191"
+        }
+      }
+    },
+    {
+      "id": 259,
+      "identificationNumber": "P2004900C",
+      "name": "Ayuntamiento de Irun",
+      "scope": "GIPUZKOA",
+      "address": "San Juan Harria plaza. 20304 Irun (Gipuzkoa)",
+      "webPage": "http://www.irun.org",
+      "publicationDate": "2026-02-02",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES212",
+      "entities": [
+        {
+          "id": 707,
+          "name": "Ayuntamiento de Irun ",
+          "orgs": [
+            {
+              "id": 912123,
+              "name": "Junta de Gobierno Local",
+              "_links": {
+                "self": {
+                  "name": "Junta de Gobierno Local",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/259/entities/707/orgs/912123"
+                }
+              }
+            },
+            {
+              "id": 912124,
+              "name": "Pleno",
+              "_links": {
+                "self": {
+                  "name": "Pleno",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/259/entities/707/orgs/912124"
+                }
+              }
+            },
+            {
+              "id": 912122,
+              "name": "Alcalde",
+              "_links": {
+                "self": {
+                  "name": "Alcalde",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/259/entities/707/orgs/912122"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Ayuntamiento de Irun ",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/259/entities/707"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder259/es_doc/index.html",
+      "_links": {
+        "self": {
+          "name": "Ayuntamiento de Irun",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/259"
+        }
+      }
+    },
+    {
+      "id": 27185,
+      "identificationNumber": "P0100097E",
+      "name": "Junta Administrativa de Subijana de Álava",
+      "scope": "ARABA/ÁLAVA",
+      "address": "Subillana Gasteiz Entitatea / Entidad Subijana de Álava 6",
+      "webPage": "https://www.vitoria-gasteiz.org/wb021/was/we001Action.do?idioma=es&accion=home&accionWe001=ficha",
+      "publicationDate": "2026-02-02",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES211",
+      "entities": [
+        {
+          "id": 27186,
+          "name": "Junta Administrativa de Subijana de Álava",
+          "orgs": [
+            {
+              "id": 27187,
+              "name": "Asamblea Vecinal de Subijana de Álava",
+              "_links": {
+                "self": {
+                  "name": "Asamblea Vecinal de Subijana de Álava",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/27185/entities/27186/orgs/27187"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Junta Administrativa de Subijana de Álava",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/27185/entities/27186"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder27185/es_doc/index.html",
+      "_links": {
+        "self": {
+          "name": "Junta Administrativa de Subijana de Álava",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/27185"
+        }
+      }
+    },
+    {
+      "id": 250,
+      "identificationNumber": "P4809500D",
+      "name": "Ayuntamiento de Santurtzi",
+      "scope": "BIZKAIA",
+      "address": "Avenida Murrieta, 6. 48980 Santurtzi (Bizkaia)",
+      "webPage": "http://www.santurtzi.eus",
+      "publicationDate": "2026-02-02",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES213",
+      "entities": [
+        {
+          "id": 699,
+          "name": "Ayuntamiento de Santurtzi",
+          "orgs": [
+            {
+              "id": 27164,
+              "name": "Concejalía Delegada de Seguridad Ciudadana",
+              "_links": {
+                "self": {
+                  "name": "Concejalía Delegada de Seguridad Ciudadana",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/250/entities/699/orgs/27164"
+                }
+              }
+            },
+            {
+              "id": 26202,
+              "name": "Concejalía Delegada de Acción Social e Igualdad",
+              "_links": {
+                "self": {
+                  "name": "Concejalía Delegada de Acción Social e Igualdad",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/250/entities/699/orgs/26202"
+                }
+              }
+            },
+            {
+              "id": 26203,
+              "name": "Concejalía Delegada de Cultura, Euskera, CIFO y Deportes",
+              "_links": {
+                "self": {
+                  "name": "Concejalía Delegada de Cultura, Euskera, CIFO y Deportes",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/250/entities/699/orgs/26203"
+                }
+              }
+            },
+            {
+              "id": 26204,
+              "name": "Concejalía Delegada de Régimen Interior, Hacienda y Seguridad Ciudadana",
+              "_links": {
+                "self": {
+                  "name": "Concejalía Delegada de Régimen Interior, Hacienda y Seguridad Ciudadana",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/250/entities/699/orgs/26204"
+                }
+              }
+            },
+            {
+              "id": 912108,
+              "name": "Alcaldía",
+              "_links": {
+                "self": {
+                  "name": "Alcaldía",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/250/entities/699/orgs/912108"
+                }
+              }
+            },
+            {
+              "id": 26200,
+              "name": "Concejalía Delegada de Urbanismo, Medio Ambiente, Promoción Económica, Turismo y Empleo",
+              "_links": {
+                "self": {
+                  "name": "Concejalía Delegada de Urbanismo, Medio Ambiente, Promoción Económica, Turismo y Empleo",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/250/entities/699/orgs/26200"
+                }
+              }
+            },
+            {
+              "id": 26201,
+              "name": "Concejalía Delegada de Obras y Servicios",
+              "_links": {
+                "self": {
+                  "name": "Concejalía Delegada de Obras y Servicios",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/250/entities/699/orgs/26201"
+                }
+              }
+            },
+            {
+              "id": 25591,
+              "name": "Concejal Delegado de Deportes",
+              "_links": {
+                "self": {
+                  "name": "Concejal Delegado de Deportes",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/250/entities/699/orgs/25591"
+                }
+              }
+            },
+            {
+              "id": 913582,
+              "name": "Concejal Delegado de Urbanismo y Medio Ambiente",
+              "_links": {
+                "self": {
+                  "name": "Concejal Delegado de Urbanismo y Medio Ambiente",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/250/entities/699/orgs/913582"
+                }
+              }
+            },
+            {
+              "id": 913578,
+              "name": "Concejal Delegado de Hacienda y Turismo ",
+              "_links": {
+                "self": {
+                  "name": "Concejal Delegado de Hacienda y Turismo ",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/250/entities/699/orgs/913578"
+                }
+              }
+            },
+            {
+              "id": 913579,
+              "name": "Concejala delegada de Acción Social e Igualdad",
+              "_links": {
+                "self": {
+                  "name": "Concejala delegada de Acción Social e Igualdad",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/250/entities/699/orgs/913579"
+                }
+              }
+            },
+            {
+              "id": 913603,
+              "name": "Concejala Delegada de Seguridad Ciudadana",
+              "_links": {
+                "self": {
+                  "name": "Concejala Delegada de Seguridad Ciudadana",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/250/entities/699/orgs/913603"
+                }
+              }
+            },
+            {
+              "id": 912108,
+              "name": "Alcaldesa",
+              "_links": {
+                "self": {
+                  "name": "Alcaldesa",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/250/entities/699/orgs/912108"
+                }
+              }
+            },
+            {
+              "id": 912109,
+              "name": "Pleno",
+              "_links": {
+                "self": {
+                  "name": "Pleno",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/250/entities/699/orgs/912109"
+                }
+              }
+            },
+            {
+              "id": 913583,
+              "name": "Concejala delegada de Cultura y Euskera",
+              "_links": {
+                "self": {
+                  "name": "Concejala delegada de Cultura y Euskera",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/250/entities/699/orgs/913583"
+                }
+              }
+            },
+            {
+              "id": 913602,
+              "name": "Concejal Delegado de Impulso Económico",
+              "_links": {
+                "self": {
+                  "name": "Concejal Delegado de Impulso Económico",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/250/entities/699/orgs/913602"
+                }
+              }
+            },
+            {
+              "id": 913580,
+              "name": "Concejal Delegado de Régimen Interior y Recursos Humanos",
+              "_links": {
+                "self": {
+                  "name": "Concejal Delegado de Régimen Interior y Recursos Humanos",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/250/entities/699/orgs/913580"
+                }
+              }
+            },
+            {
+              "id": 913581,
+              "name": "Concejal delegado de Obras y Servicios",
+              "_links": {
+                "self": {
+                  "name": "Concejal delegado de Obras y Servicios",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/250/entities/699/orgs/913581"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Ayuntamiento de Santurtzi",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/250/entities/699"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder250/es_doc/index.html",
+      "_links": {
+        "self": {
+          "name": "Ayuntamiento de Santurtzi",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/250"
+        }
+      }
+    },
+    {
+      "id": 27179,
+      "identificationNumber": "A20716304",
+      "name": "AIA LANTZEN SA",
+      "scope": "GIPUZKOA",
+      "address": "GOZATEGI ENPARANTZA 1 ",
+      "webPage": "www.aia.eus",
+      "publicationDate": "2026-01-27",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES212",
+      "entities": [
+        {
+          "id": 27180,
+          "name": "AIA LANTZEN SA",
+          "orgs": [
+            {
+              "id": 27181,
+              "name": "CONSEJO DE ADMINISTRACION",
+              "_links": {
+                "self": {
+                  "name": "CONSEJO DE ADMINISTRACION",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/27179/entities/27180/orgs/27181"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "AIA LANTZEN SA",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/27179/entities/27180"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder27179/es_doc/index.html",
+      "_links": {
+        "self": {
+          "name": "AIA LANTZEN SA",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/27179"
+        }
+      }
+    },
+    {
+      "id": 72,
+      "identificationNumber": "P0100413D",
+      "name": "Cuadrilla de Aiaraldea",
+      "scope": "ARABA/ÁLAVA",
+      "address": "Bº Elespide, 2. 01476 Arespalditza-Respaldiza (Araba-Álava)",
+      "webPage": "http://www.cuadrilladeayala.eus",
+      "publicationDate": "2026-01-21",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES211",
+      "entities": [
+        {
+          "id": 417,
+          "name": "Cuadrilla de Ayala",
+          "orgs": [
+            {
+              "id": 912678,
+              "name": "Junta de Gobierno Local",
+              "_links": {
+                "self": {
+                  "name": "Junta de Gobierno Local",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/72/entities/417/orgs/912678"
+                }
+              }
+            },
+            {
+              "id": 911399,
+              "name": "Junta de Cuadrilla",
+              "_links": {
+                "self": {
+                  "name": "Junta de Cuadrilla",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/72/entities/417/orgs/911399"
+                }
+              }
+            },
+            {
+              "id": 911398,
+              "name": "Presidente de la Cuadrilla",
+              "_links": {
+                "self": {
+                  "name": "Presidente de la Cuadrilla",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/72/entities/417/orgs/911398"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Cuadrilla de Ayala",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/72/entities/417"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder72/es_doc/index.html",
+      "_links": {
+        "self": {
+          "name": "Cuadrilla de Aiaraldea",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/72"
+        }
+      }
+    },
+    {
+      "id": 27170,
+      "identificationNumber": "V23854946",
+      "name": "Junta de Concertación de la UE Camino Txikito de Sestao",
+      "scope": "BIZKAIA",
+      "address": "PZ El Kasko, s/n",
+      "webPage": "https://www.juntadeconcertacioncaminotxikitosestao.com/",
+      "publicationDate": "2026-01-20",
+      "mainActivity": "Vivienda y servicios comunitarios",
+      "codNUTS": "ES213",
+      "entities": [
+        {
+          "id": 27171,
+          "name": "Junta de Concertación de la UE Camino Txikito de Sestao",
+          "orgs": [
+            {
+              "id": 27172,
+              "name": "Junta de Concertación de la UE Camino Txikito de Sestao",
+              "_links": {
+                "self": {
+                  "name": "Junta de Concertación de la UE Camino Txikito de Sestao",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/27170/entities/27171/orgs/27172"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Junta de Concertación de la UE Camino Txikito de Sestao",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/27170/entities/27171"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder27170/es_doc/index.html",
+      "_links": {
+        "self": {
+          "name": "Junta de Concertación de la UE Camino Txikito de Sestao",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/27170"
+        }
+      }
+    },
+    {
+      "id": 180,
+      "identificationNumber": "A48885669",
+      "name": "Sociedad de Gestión Urbanística Eretza",
+      "scope": "BIZKAIA",
+      "address": "El Castañal 8, lonja Izda. 48901 Barakaldo (Bizkaia)",
+      "webPage": "http://www.eretza.com",
+      "publicationDate": "2026-01-19",
+      "mainActivity": "Vivienda y servicios comunitarios",
+      "codNUTS": "ES213",
+      "entities": [
+        {
+          "id": 609,
+          "name": "Sociedad de Gestión Urbanística Eretza",
+          "orgs": [
+            {
+              "id": 911910,
+              "name": "Presidente Efectivo",
+              "_links": {
+                "self": {
+                  "name": "Presidente Efectivo",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/180/entities/609/orgs/911910"
+                }
+              }
+            },
+            {
+              "id": 911909,
+              "name": "Consejo de Administración",
+              "_links": {
+                "self": {
+                  "name": "Consejo de Administración",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/180/entities/609/orgs/911909"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Sociedad de Gestión Urbanística Eretza",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/180/entities/609"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder180/es_doc/index.html",
+      "_links": {
+        "self": {
+          "name": "Sociedad de Gestión Urbanística Eretza",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/180"
+        }
+      }
+    },
+    {
+      "id": 27165,
+      "identificationNumber": "P0100204G",
+      "name": "Junta Administrativa de Barrio",
+      "scope": "ARABA/ÁLAVA",
+      "address": "C/ Real s/n Barrio",
+      "webPage": "https://valdegovia.com/",
+      "publicationDate": "2026-01-15",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES211",
+      "entities": [
+        {
+          "id": 27166,
+          "name": "Junta Administrativa de Barrio",
+          "orgs": [
+            {
+              "id": 27167,
+              "name": "Asamblea Vecinal de Barrio",
+              "_links": {
+                "self": {
+                  "name": "Asamblea Vecinal de Barrio",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/27165/entities/27166/orgs/27167"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Junta Administrativa de Barrio",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/27165/entities/27166"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder27165/es_doc/index.html",
+      "_links": {
+        "self": {
+          "name": "Junta Administrativa de Barrio",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/27165"
+        }
+      }
+    },
+    {
+      "id": 780,
+      "identificationNumber": "P0100289H",
+      "name": "Junta Administrativa de Okina",
+      "scope": "ARABA/ÁLAVA",
+      "address": "C/Piruleta, 14 - Bernedo-Okina",
+      "webPage": "http://www.contratacion.euskadi.eus",
+      "publicationDate": "2025-12-10",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES211",
+      "entities": [
+        {
+          "id": 1280,
+          "name": "Junta Administrativa de Okina",
+          "orgs": [
+            {
+              "id": 914306,
+              "name": "Asamble Vecinal de Okina",
+              "_links": {
+                "self": {
+                  "name": "Asamble Vecinal de Okina",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/780/entities/1280/orgs/914306"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Junta Administrativa de Okina",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/780/entities/1280"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder780/es_doc/index.html",
+      "_links": {
+        "self": {
+          "name": "Junta Administrativa de Okina",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/780"
+        }
+      }
+    }
+  ]
+}

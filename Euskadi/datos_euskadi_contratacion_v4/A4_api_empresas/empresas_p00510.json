@@ -1,0 +1,418 @@
+{
+  "totalItems": 9042,
+  "totalPages": 905,
+  "currentPage": 510,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "name": "CONTRATAS LANEKO, S.L.",
+      "registrationNumber": "07951",
+      "identificationNumber": "B95727608",
+      "address": "C/ GURUTZETA Nº 3-3ºIZDA",
+      "location": {
+        "postalCode": "48903",
+        "municipality": "Barakaldo",
+        "county": "Bizkaia",
+        "municipalityId": "013",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.501.1",
+          "name": "Construcción completa, reparación y conservación de edificaciones",
+          "_links": {
+            "self": {
+              "name": "Construcción completa, reparación y conservación de edificaciones",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2021-11-02",
+      "certificateEndDate": "2022-03-26",
+      "object": "1.- CONSTRUCCIÓN, INSTALACIONES Y MANTENIMIENTO. PROMOCIÓN, CONSTRUCCIÓN, REHABILITACIÓN, REPARACIÓN, INSTALACIÓN Y CONSERVACIÓN POR CUENTA PROPIA O AJENA, DE TODA CLASE DE OBRAS, URBANIZACIONES, EDIFICIOS Y CONSTRUCCIONES, TANTO PÚBLICOS COMO PRIVADOS. 2.- COMERCIO AL POR MAYOR Y AL POR MENOR. DISTRIBUCIÓN COMERCIAL. IMPORTACIÓN Y EXPORTACIÓN. 3.- ACTIVIDADES INMOBILIARIAS. 4.- ACTIVIDADES PROFESIONALES. 5.- INDUSTRIAS MANUFACTURERAS Y TEXTILES. 6.- TURISMO, HOSTELERÍA Y RESTAURACIÓN. 7.- PRESTACIÓN DE SERVICIOS. ACTIVIDADES DE GESTIÓN Y ADMINISTRACIÓN. SERVICIOS EDUCATIVOS, SANITARIOS, DE OCIO Y ENTRETENIMIENTO. 8.- TRANSPORTE Y ALMACENAMIENTO. 9.- INFORMACIÓN Y COMUNICACIONES. 10.- AGRICULTURA, GANADERÍA Y PESCA. 11.- INFORMÁTICA, TELECOMUNICACIONES Y OFIMÁTICA. 12.- ENERGÍAS ALTERNATIVAS. 13.- COMPRAVENTA Y REPARACIÓN DE VEHÍCULOS. REPARACIÓN Y MANTENIMIENTO DE INSTALACIONES Y MAQUINARIA. 14.- INVESTIGACIÓN, DESARROLLO E INNOVACIÓN. 15.- ACTIVIDADES CIENTÍFICAS Y TÉCNICAS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07951",
+      "_links": {
+        "self": {
+          "name": "CONTRATAS LANEKO, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/07951"
+        }
+      }
+    },
+    {
+      "name": "LIMPIRESOL, S.L.",
+      "registrationNumber": "06497",
+      "identificationNumber": "B01014547",
+      "address": "AV. DE LOS HUETOS 50, PAB.13",
+      "location": {
+        "postalCode": "01010",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.922",
+          "name": "Servicios de limpieza",
+          "_links": {
+            "self": {
+              "name": "Servicios de limpieza",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.922"
+            }
+          }
+        },
+        {
+          "id": "1.989.2",
+          "name": "Servicios de organización de congresos, asambleas y similares",
+          "_links": {
+            "self": {
+              "name": "Servicios de organización de congresos, asambleas y similares",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.989.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2021-10-29",
+      "certificateEndDate": "2022-04-27",
+      "object": "LA PRESTACIÓN DE TODA CLASE DE SERVICIOS DE LIMPIEZA, RECOGIDA DE RESIDUOS, DESCONTAMINACIÓN, CONTROL DE PLAGAS Y OTROS SERVICIOS DE GESTIÓN DE RESIDUOS, ASÍ COMO LA COMERCIALIZACIÓN, DISTRIBUCIÓN Y VENTA DE TODA CLASE DE PRODUCTOS, MAQUINARIA Y ÚTILES DE LIMPIEZA. LA ORGANIZACIÓN DE CONVENCIONES Y FERIAS DE MUESTRAS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06497",
+      "_links": {
+        "self": {
+          "name": "LIMPIRESOL, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/06497"
+        }
+      }
+    },
+    {
+      "name": "CAR SUMINISTROS INDUSTRIALES, S.L.",
+      "registrationNumber": "07666",
+      "identificationNumber": "B20616488",
+      "address": "Pº Madalena Jauregiberri 4, bajo",
+      "location": {
+        "postalCode": "20014",
+        "municipality": "Donostia / San Sebastián",
+        "county": "Gipuzkoa",
+        "municipalityId": "069",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.617.5",
+          "name": "Venta al por mayor de maquinaria para la madera y el metal",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de maquinaria para la madera y el metal",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.617.5"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2021-10-27",
+      "certificateEndDate": "2022-04-27",
+      "object": "LA VENTA AL POR MAYOR DE MAQUINARIA Y HERRAMIENTAS PARA LA MADERA Y EL METAL",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07666",
+      "_links": {
+        "self": {
+          "name": "CAR SUMINISTROS INDUSTRIALES, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/07666"
+        }
+      }
+    },
+    {
+      "name": "TLIET S.L.",
+      "registrationNumber": "06278",
+      "identificationNumber": "B95706719",
+      "address": "C/ Ondarroa, 6 lonja 18",
+      "location": {
+        "postalCode": "48004",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.843.1",
+          "name": "Servicios técnicos de ingeniería",
+          "_links": {
+            "self": {
+              "name": "Servicios técnicos de ingeniería",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2021-10-26",
+      "certificateEndDate": "2022-04-17",
+      "object": "LA REALIZACIÓN, DISEÑO, CREACIÓN, DESARROLLO, EDICIÓN, GESTIÓN, DISTRIBUCIÓN Y COMERCIALIZACIÓN DE ESTUDIOS TÉCNICOS DE INGENIERÍA, FORMACIÓN Y CONSULTORÍA, SIENDO DE APLICACIÓN A CUALQUIER CAMPO O SECTOR, EN PARTICULAR AL DE LA GESTIÓN DE EMPRESAS Y PROFESIONALES",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06278",
+      "_links": {
+        "self": {
+          "name": "TLIET S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/06278"
+        }
+      }
+    },
+    {
+      "name": "URBANIZACIONES Y CONTRATAS GRAMA, S.L.",
+      "registrationNumber": "03194",
+      "identificationNumber": "B20772455",
+      "address": "CAMINO ARTXIPI, CASA ARTXAKA, 42",
+      "location": {
+        "postalCode": "20017",
+        "municipality": "Donostia / San Sebastián",
+        "county": "Gipuzkoa",
+        "municipalityId": "069",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.501.1",
+          "name": "Construcción completa, reparación y conservación de edificaciones",
+          "_links": {
+            "self": {
+              "name": "Construcción completa, reparación y conservación de edificaciones",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.1"
+            }
+          }
+        },
+        {
+          "id": "1.501.2",
+          "name": "Construcción completa, reparación y conservación obras civiles",
+          "_links": {
+            "self": {
+              "name": "Construcción completa, reparación y conservación obras civiles",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2021-10-22",
+      "certificateEndDate": "2022-04-15",
+      "object": "LA REALIZACIÓN POR CUENTA PROPIA O AJENA, DE TODA CLASE DE CONSTRUCCIONES, OBRAS E INSTALACIONES, TANTO PÚBLICAS COMO PRIVADAS. LA COMPRA, VENTA Y EXPLOTACIÓN, PROPIA O POR TERCEROS, DE SOLARES Y TERRENOS DE TODAS CLASES, ASÍ COMO DE EDIFICIOS E INMUEBLES EN GENERAL",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03194",
+      "_links": {
+        "self": {
+          "name": "URBANIZACIONES Y CONTRATAS GRAMA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/03194"
+        }
+      }
+    },
+    {
+      "name": "METRICA CONSULTING, S.L.",
+      "registrationNumber": "06757",
+      "identificationNumber": "B82580317",
+      "address": "CARRETERA FUENCARRAL A ALCOBENDAS, 20, 4B",
+      "location": {
+        "postalCode": "28049",
+        "municipality": "Madrid",
+        "county": "Madrid",
+        "municipalityId": "079",
+        "countyId": "28"
+      },
+      "economicActivities": [
+        {
+          "id": "1.845",
+          "name": "Explotación electrónica por cuenta de terceros",
+          "_links": {
+            "self": {
+              "name": "Explotación electrónica por cuenta de terceros",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.845"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2021-10-21",
+      "certificateEndDate": "2022-04-21",
+      "object": "-SERVICIOS DE MARKETING TELEFÓNICO. -LA PRESTACIÓN DE SERVICIOS DE CONSULTORÍA, ASESORÍA, DIRECCIÓN, ESTUDIOS, ANÁLISIS, ELABORACIÓN DE INFORMES, ELABORACIÓN Y CONTROL DE TODO TIPO DE ACTIVIDADES DE ORGANIZACIÓN, A TRAVÉS DE SISTEMAS, APLICACIONES INFORMÁTICAS Y AUTOPISTAS DE LA INFORMACIÓN. -LA INFORMACIÓN, TRAMITACIÓN ESTUDIOS DE AYUDAS, SUBVENCIONES, PROGRAMAS ANTE ORGANISMOS PÚBLICOS O PRIVADOS, NACIONALES Y EXTRANJEROS. -LA PRESTACIÓN DE SERVICIOS EN RELACIÓN A LA EMISIÓN E INTERCAMBIO DE INFORMACIÓN ENTRE ORGANISMOS OFICIALES, ORGANIZACIONES, FEDERACIONES Y DESPACHOS PROFESIONALES. -LA FABRICACIÓN, VENTA, COMPRA, IMPORTACIÓN, EXPORTACIÓN, Y REPRESENTACIÓN DE INSTRUMENTOS Y MATERIAL ELECTRÓNICO, ELECTROQUÍMICO, ELÉCTRICO, MECÁNICO, HACIÉNDOLO EXTENSIVO INCLUSO A BIENES DE EQUIPO. -OPERACIONES DE COMPENSACIONES Y ARBITRAJES RELACIONADOS AL COMERCIO EXTERIOR. -COMPRA, VENTA, ARRENDAMIENTO, REPRESENTACIÓN, PRODUCCIÓN, ENSAMBLAJE, MODIFICACIÓN, ENTRETENIMIENTO, REPARACIÓN, CONSERVACIÓN, IMPORTACIÓN, EXPORTACIÓN, MONTAJE, RECAMBIOS, ACCESORIOS, DISPOSITIVOS, DISEÑOS, ESTUDIOS, ANÁLISIS, PROGRAMACIÓN, COMERCIALIZACIÓN DE PRODUCTOS INFORMÁTICOS, MANTENIMIENTOS DE EQUIPOS E INSTALACIONES INFORMÁTICAS, OFIMÁTICA Y TELECOMUNICACIONES Y REDES, LA PRESTACIÓN DE ASISTENCIA TÉCNICA Y ASESORAMIENTO EN RELACIÓN CON TALES ACTIVIDADES. -EL ESTUDIO  Y ASESORAMIENTO, LA MEDIACIÓN EN TODA CLASE DE CUESTIONES ECONÓMICAS, Y LA REALIZACIÓN POR CUENTA PROPIA O DE TERCEROS EN ESPAÑA O EN EL EXTRANJERO DE TODA CLASE DE OPERACIONES COMERCIALES EN LA FORMA QUE FUERE, TODO ELLO EN EL MERCADO INMOBILIARIO. -EL ASESORAMIENTO EN OPERACIONES INMOBILIARIAS POR CUENTA DE TERCEROS, Y SU POSTERIOR DESARR4ROLLO, BIEN SEAN EN PREPARACIÓN DEL SUELO RESIDENCIAL O INDUSTRIAL, URBANO Y NO URBANO, INDEPENDIENTEMENTE DE SU DESTINO FINAL, O BIEN EN FASE DE CONSTRUCCIÓN, VENTA Y ALQUILER DE INMUEBLES. -LA GESTIÓN Y PLANEAMIENTO URBANÍSTICO E INFRAESTRUCTURA. -PROMOCIÓN Y CONSTRUCCIÓN DE TODA CLASE DE OBRAS, PÚBLICAS O PRIVADAS, DE LA NATURALEZA QUE FUEREN, BIEN POR SÍ O POR CUENTA DE TERCEROS, INCLUSO EXCAVACIONES DE TIERRA, DERRIBOS, TRANSPORTES Y OBRAS DE SANEAMIENTO, URBANIZACIONES, CARRETERAS Y SIMILARES Y CUALQUIER OTRA OPERACIÓN REALIZADA CON TODO ELLO; LA COMPRA, VENTA, COMERCIALIZACIÓN Y REPRESENTACIÓN DE CUALQUIER CLASE DE MATERIALES Y BIENES DE EQUIPO DESTINADOS A LA CONSTRUCCIÓN EN GENERAL; LA EXPLOTACIÓN EN RÉGIMEN DE ALQUILER DE LAS EDIFICACIONES DE SU PROPIEDAD O VENTA DE LAS MISMAS; LA CONTRATACIÓN DE OBRAS PARTICULARES U OFICINAS DEL ESTADO, PROVINCIA, MUNICIPIOS Y ENTES O COMUNIDADES AUTÓNOMAS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06757",
+      "_links": {
+        "self": {
+          "name": "METRICA CONSULTING, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/06757"
+        }
+      }
+    },
+    {
+      "name": "VALORIZACIÓN Y TRATAMIENTO DE RESIDUOS, S.A.",
+      "registrationNumber": "04764",
+      "identificationNumber": "A81645590",
+      "address": "ALAMEDA MAZARREDO, 15 - 4º A",
+      "location": {
+        "postalCode": "48001",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.501.1",
+          "name": "Construcción completa, reparación y conservación de edificaciones",
+          "_links": {
+            "self": {
+              "name": "Construcción completa, reparación y conservación de edificaciones",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.1"
+            }
+          }
+        },
+        {
+          "id": "1.921.2",
+          "name": "Servicios de recogida de basuras y desechos",
+          "_links": {
+            "self": {
+              "name": "Servicios de recogida de basuras y desechos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.921.2"
+            }
+          }
+        },
+        {
+          "id": "1.921.5",
+          "name": "Servicios de incineración y eliminación de basuras y desechos",
+          "_links": {
+            "self": {
+              "name": "Servicios de incineración y eliminación de basuras y desechos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.921.5"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2021-10-20",
+      "certificateEndDate": "2022-03-24",
+      "object": "LA PRESTACIÓN DE SERVICIOS DE RECOLECCIÓN, TRANSPORTE Y ELIMINACIÓN DE RESIDUOS, LIMPIEZA EN GENERAL Y CUALQUIER OTRA ACTIVIDAD DE SANEAMIENTO. EL DISEÑO, FABRICACIÓN, COMPRA, VENTA, SUMINISTRO, IMPORTACIÓN, EXPORTACIÓN, ALQUILER, MANTENIMIENTO, DISTRIBUCIÓN, REPRESENTACIÓN Y EXPLOTACIÓN, INCLUSO PUBLICITARIA, DE MAQUINARIA; HERRAMIENTAS; VEHÍCULOS; INSTALACIONES; MATERIALES Y EQUIPOS; MOBILIARIO Y EQUIPAMIENTO URBANO ENTENDIDO EN SU MÁS AMPLIA ACEPCIÓN, ASÍ COMO ELEMENTOS DE SEÑALIZACIÓN, TANTO EN POBLACIONES COMO EN VÍAS INTERURBANAS DE COMUNICACIÓN. LA COMPRA, VENTA, EXPLOTACIÓN Y CESIÓN, EN CUALQUIER FORMA, DE PATENTES, MODELOS, MARCAS, LICENCIAS Y DEMÁS MODALIDADES DE LA PROPIEDAD INDUSTRIAL O INTELECTUAL. EL DISEÑO, INVESTIGACIÓN, DESARROLLO, CONSTRUCCIÓN, EXPLOTACIÓN, MANTENIMIENTO Y COMERCIALIZACIÓN DE PLANTAS E INSTALACIONES DE TRATAMIENTO DE RESIDUOS, LA RECUPERACIÓN Y ELIMINACIÓN DE RESIDUOS, ASÍ COMO LA COMPRAVENTA DE LOS SUBPRODUCTOS QUE SE ORIGINEN DE DICHOS TRATAMIENTOS, INVESTIGACIÓN, CAPTACIÓN, APROVECHAMIENTO, TRANSFORMACIÓN Y COMERCIALIZACIÓN DE TODA CLASE DE PRODUCTOS. LA PRESTACIÓN DE SERVICIOS DE INGENIERÍA, ICLUÍDOS PROYECTOS, ESTUDIOS E INFORMES, ASÍ COMO LA REALIZACIÓN DE ESTUDIOS DE PREINVERSIÓN, CONTROLES DE CALIDAD, AUDITORÍAS INTERNAS Y EXPLOTACIÓN ELECTRÓNICA DE DATOS. EL SERVICIO DE INSTALACIÓN Y MONTAJES ELÉCTRICOS, ELECT´RONICOS Y DE TELECOMUNICACIONES, ASÍ COMO EL DISEÑO, INVESTIGACIÓN, DESARROLLO Y COMERCIALIZACIÓN DE PRODUCTOS RELACIONADOS CON DICHOS SERVICIOS. EL DISEÑO, DESARROLLO, CONSTRUCCIÓN, EXPLOTACIÓN, MANTENIMIENTO Y COMERCIALIZACIÓN DE EDIFICIOS, COMERCIOS, INDUSTRIAS, PLANTAS, INSTALACIONES, PARQUES, JARDINES, ZONAS VERDES, REDES DE ALCANTARILLADO Y POZOS NEGROS. LA ADQUISICIÓN, ENAJENACIÓN, GRAVAMEN, ARRENDAMIENTO, ADMINISTRACIÓN, PROMOCIÓN, CONSTRUCCIÓN, URBANIZACIÓN, PARCELACIÓN Y EXPLOTACIÓN, POR CUALQUIER TÍTULO ADMITIDO EN DERECHO, DE TODA CLASE DE BIENES  INMUEBLES, RÚSTICOS O URBANOS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/04764",
+      "_links": {
+        "self": {
+          "name": "VALORIZACIÓN Y TRATAMIENTO DE RESIDUOS, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/04764"
+        }
+      }
+    },
+    {
+      "name": "JOSE ANTONIO CARBAJO CARRETERO",
+      "registrationNumber": "07232",
+      "identificationNumber": "72749784W",
+      "address": "REAL 28",
+      "location": {
+        "postalCode": "01426",
+        "municipality": "Valdegovía/Gaubea",
+        "county": "Araba/Álava",
+        "municipalityId": "055",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.911",
+          "name": "Servicios agrícolas y ganaderos",
+          "_links": {
+            "self": {
+              "name": "Servicios agrícolas y ganaderos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.911"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2021-10-20",
+      "certificateEndDate": "2022-04-20",
+      "object": "SERVICIOS AGRÍCOLAS Y GANADEROS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07232",
+      "_links": {
+        "self": {
+          "name": "JOSE ANTONIO CARBAJO CARRETERO",
+          "href": "https://api.euskadi.eus/procurements/companies/07232"
+        }
+      }
+    },
+    {
+      "name": "TALLERES SOLAF, S.A.",
+      "registrationNumber": "07940",
+      "identificationNumber": "A01018076",
+      "address": "C/ZUBIBARRI 3",
+      "location": {
+        "postalCode": "01013",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.654.5",
+          "name": "Venta al por menor de toda clase de maquinaría",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de toda clase de maquinaría",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.654.5"
+            }
+          }
+        },
+        {
+          "id": "1.692",
+          "name": "Reparación de maquinaria industrial",
+          "_links": {
+            "self": {
+              "name": "Reparación de maquinaria industrial",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.692"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2021-10-19",
+      "certificateEndDate": "2021-12-14",
+      "object": "LA REPARACIÓN DE VEHÍCULOS Y MAQUINARIA DE OBRAS PÚBLICAS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07940",
+      "_links": {
+        "self": {
+          "name": "TALLERES SOLAF, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/07940"
+        }
+      }
+    },
+    {
+      "name": "AERZEN IBÉRICA, S.A.",
+      "registrationNumber": "07939",
+      "identificationNumber": "A28759918",
+      "address": "c/ Adaptación 15-17 Pol. Ind. Los Olivos",
+      "location": {
+        "postalCode": "28906",
+        "municipality": "Getafe",
+        "county": "Madrid",
+        "municipalityId": "065",
+        "countyId": "28"
+      },
+      "economicActivities": [
+        {
+          "id": "1.617.9",
+          "name": "Venta al por mayor interindustrial de otros productos n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor interindustrial de otros productos n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.617.9"
+            }
+          }
+        },
+        {
+          "id": "1.692",
+          "name": "Reparación de maquinaria industrial",
+          "_links": {
+            "self": {
+              "name": "Reparación de maquinaria industrial",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.692"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2021-10-19",
+      "certificateEndDate": "2022-03-23",
+      "object": "LA VENTA, DISTRIBUCIÓN, REPRESENTACIÓN, SERVICIO AL CLIENTE Y EN SU DÍA FABRCACIÓN DE SOPLANTES ROTATIVOS Y TORNILLOS SIN FIN. EL MANTENIMIENTO Y REPARACIÓN DE EQUIPOS E INSTALACIONES ELÉCTRICAS Y ELECTRÓNICAS. EL MANTENIMIENTO Y REPARACIÓN DE MAQUINARIA",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07939",
+      "_links": {
+        "self": {
+          "name": "AERZEN IBÉRICA, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/07939"
+        }
+      }
+    }
+  ]
+}

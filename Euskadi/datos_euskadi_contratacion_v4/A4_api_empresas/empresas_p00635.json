@@ -1,0 +1,418 @@
+{
+  "totalItems": 9042,
+  "totalPages": 905,
+  "currentPage": 635,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "name": "AUTOCARES APOLO S.L.",
+      "registrationNumber": "03929",
+      "identificationNumber": "B01151950",
+      "address": "BARRATXI 6",
+      "location": {
+        "postalCode": "01000",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.721.3",
+          "name": "Transporte de viajeros por carretera",
+          "_links": {
+            "self": {
+              "name": "Transporte de viajeros por carretera",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.721.3"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2017-10-24",
+      "certificateEndDate": "2018-04-24",
+      "object": "EL TRANSPORTE DE PASAJEROS Y MERCANCÍAS CON TODO TIPO DE VEHÍCULOS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03929",
+      "_links": {
+        "self": {
+          "name": "AUTOCARES APOLO S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/03929"
+        }
+      }
+    },
+    {
+      "name": "IKASBILA S.COOP.P.",
+      "registrationNumber": "05679",
+      "identificationNumber": "F95646147",
+      "address": "JUNTAS GENERALES, 34",
+      "location": {
+        "postalCode": "48901",
+        "municipality": "Barakaldo",
+        "county": "Bizkaia",
+        "municipalityId": "013",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.659.2",
+          "name": "Venta al por menor de muebles de oficina y máquinas y equipos de oficina",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de muebles de oficina y máquinas y equipos de oficina",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.659.2"
+            }
+          }
+        },
+        {
+          "id": "1.933.9",
+          "name": "Otras actividades de enseñanza tales como idiomas, mecanografía",
+          "_links": {
+            "self": {
+              "name": "Otras actividades de enseñanza tales como idiomas, mecanografía",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.933.9"
+            }
+          }
+        },
+        {
+          "id": "1.934",
+          "name": "Enseñanza fuera de establecimiento permanente",
+          "_links": {
+            "self": {
+              "name": "Enseñanza fuera de establecimiento permanente",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.934"
+            }
+          }
+        },
+        {
+          "id": "1.942.9",
+          "name": "Otros servicios sanitarios sin internados, no clasificados",
+          "_links": {
+            "self": {
+              "name": "Otros servicios sanitarios sin internados, no clasificados",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.942.9"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2017-10-23",
+      "certificateEndDate": "2018-03-20",
+      "object": "EL DIAGNOSTICO Y TRATAMIENTO EN LAS ÁREAS DE PSICOLOGÍA CLÍNICA, PEDAGOGÍA, PSICOPEDAGOGÍA Y LOGOPEDIA. LA ENSEÑANZA EN ÁREAS DE INTERÉS SOCIAL Y CULTURAL. EL ALQUILER DE LOCALES PARA ACTIVIDADES DE APRENDIZAJE, OCIO, ASOCIACIÓN, PROMOCIÓN DE ACTIVIDADES DE OCIO, APRENDIZAJE, ENSEÑANZA Y ENTRETENIMIENTO. COMERCIO AL POR MENOR DE LIBROS Y MATERIAL Y MUEBLES DE OFICINA",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/05679",
+      "_links": {
+        "self": {
+          "name": "IKASBILA S.COOP.P.",
+          "href": "https://api.euskadi.eus/procurements/companies/05679"
+        }
+      }
+    },
+    {
+      "name": "ZZircon Technologies SL",
+      "registrationNumber": "05678",
+      "identificationNumber": "B39827654",
+      "address": "Isabel Torres 11, oficina 11",
+      "location": {
+        "postalCode": "39011",
+        "municipality": "Santander",
+        "county": "Cantabria",
+        "municipalityId": "075",
+        "countyId": "39"
+      },
+      "economicActivities": [
+        {
+          "id": "1.845",
+          "name": "Explotación electrónica por cuenta de terceros",
+          "_links": {
+            "self": {
+              "name": "Explotación electrónica por cuenta de terceros",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.845"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2017-10-20",
+      "certificateEndDate": "2018-03-18",
+      "object": "LAS ACTIVIDADES RELACIONADAS CON LA INFORMÁTICA, LAS TELECOMUNICACIONES Y LA OFIMÁTICA",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/05678",
+      "_links": {
+        "self": {
+          "name": "ZZircon Technologies SL",
+          "href": "https://api.euskadi.eus/procurements/companies/05678"
+        }
+      }
+    },
+    {
+      "name": "PATANEGRA PUBLICIDAD, S.COOP. PEQUEÑA",
+      "registrationNumber": "05152",
+      "identificationNumber": "F01517101",
+      "address": "Avda. Juan Carlos I, nº 14 Oficina 1º A",
+      "location": {
+        "postalCode": "01002",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.476.1",
+          "name": "Edición de libros",
+          "_links": {
+            "self": {
+              "name": "Edición de libros",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.476.1"
+            }
+          }
+        },
+        {
+          "id": "1.844",
+          "name": "Servicios de publicidad, relaciones públicas y similares",
+          "_links": {
+            "self": {
+              "name": "Servicios de publicidad, relaciones públicas y similares",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.844"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2017-10-19",
+      "certificateEndDate": "2018-04-09",
+      "object": "LA PRESTACIÓN DE SERVICIOS INTEGRALES DE PUBLICIDAD ESPECIALIZADOS EN: - ASESORÍA PUBLICITARIA: ANÁLISIS DE LAS NECESIDADES PUBLICITARIAS, PLANES ESTRATÉGICOS DE PUBLICIDAD; - BRANDING: NAMING, IDENTIDAD DE MARCA, MANUAL CORPORATIVO, DISEÑO GRÁFICO PARRA UN PRODUCTO O UN SERVICIO, DISEÑO EDITORIAL, INTERIORISMO CORPORATIVO, ROTULACIÓN CORPORATIVA, SEÑALÉTICA, PACKAGING, PLV; - CAMPAÑAS PUBLICITARIAS: CONCEPTUALIZACIÓN, PLANIFICACIÓN EJECUCIÓN Y SEGUIMIENTO DE CAMPAÑAS PUBLICITARIAS PARA EMPRESAS (SUS PRODUCTOS Y SERVICIOS) E INSTITUCIONALES, SOCIALES, ELECTORALES, CREATIVIDAD Y PRODUCCIÓN DE TODAS LAS PIEZAS QUE INTEGRAN LA CAMPAÑA SPOTS Y VÍDEOS, CUÑAS DE RADIO, MICROESPACIOS, ANUNCIOS PARA PRENSA, CATÁLOGOS, FOLLETOS, GUÍAS, CARTELERÍA, PRODUCCIONES AUDIOVISUALES, SERVICIOS FOTOGRÁFICOS; - BELOW DE LINE: MARKETING DIRECTO, PROMOCIONES, CREACIÓN DE EVENTOS, FERIAS, DISEÑO DE STANDS, PUBLICIDAD EXTERIOR, OPIS URBANAS, MUTIS, SEÑALÉTICA, PLV, BTI, MERCHANDISING; -ON LINE/INTERNET: PLANES ESTRATÉGICOS DE POSICIONAMIENTO DE PROMOCIÓN Y MARKETING DIGITAL, QUE AUNAN EL MODO OFFLINE Y ON-LINE, PARA GANAR EN VISIBILIDAD Y LLEGAR A LOS CLIENTES EN INTERNET, CREACIÓN Y DESARROLLO DE WEBSITES, PARA INCREMENTAR EL POSICIONAMIENTO OFRECEMOS SERVICIOS ADICIONALES DE: SERVICIOS SEO Y SEM, CON LA CONTRATACIÓN DE PUBLICIDAD EN BUSCADORES Y SERVICIOS DE PUBLICIDAD DE PAGO EN BUSCADORES, MARKETING EN BUSCADORES, SOCIAL MEDIA, CAMPAÑAS EN REDES SOCIALES, CREACIÓN O MEJORA DE REPUTACIÓN CORPORATIVA Y PERCEPCIÓN DEL USUARIO, MARKETING DE PROXIMIDAD, ANIMACIÓN MULTIMEDIA, CREACIÓN DE BANNERS, PUBLICIDAD CONTEXTUAL O BRANDED CONTENT, MARKETING VIRAL, CAMPAÑAS DE E-MAILING, COMUNICACIÓN ON-LINE: NEWS LETTER; - MEDIOS: ESTRATEGIAS EN PRESNA, RADIO, TV, EXTERIOR, PLANIFICACIÓN, COMPRA, SEGUIMIENTO Y EVALUACIÓN; - OTROS MEDIOS: ACCIONES EN MEDIOS NO CONVENCIONALES , APOYADOS EN MEDIOS ON LINE COMO: STREET MARKETING, PRODUCT PLACEMENT, MARKETING PROMOCIONAL",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/05152",
+      "_links": {
+        "self": {
+          "name": "PATANEGRA PUBLICIDAD, S.COOP. PEQUEÑA",
+          "href": "https://api.euskadi.eus/procurements/companies/05152"
+        }
+      }
+    },
+    {
+      "name": "ETXESOFT TECHNOLOGIES & CONSULTING, S.L.",
+      "registrationNumber": "03611",
+      "identificationNumber": "B95240875",
+      "address": "IBAIZABAL AUZUNEA, 3 A - BAJO",
+      "location": {
+        "postalCode": "48200",
+        "municipality": "Durango",
+        "county": "Bizkaia",
+        "municipalityId": "027",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.845",
+          "name": "Explotación electrónica por cuenta de terceros",
+          "_links": {
+            "self": {
+              "name": "Explotación electrónica por cuenta de terceros",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.845"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2017-10-18",
+      "certificateEndDate": "2018-03-18",
+      "object": "A) LA FABRICACIÓN, DISTRIBUCIÓN Y COMERCIALIZACIÓN EN GENERLA DE MIROORDENADORES, PROGRAMAS, PERIFÉRICOS, LIBROS, MONITORES, ACCESORIOS Y DEMÁS PRODUCTOS INFORMÁTICOS, OFIMÁTICOS Y ELECTRÓNICOS, Y EL ASESORAMIENTO Y LA CONSULTORÍA EN ESTOS CAMPOS; LA PRESTACIÓN DE SERVICIOS DE PROGRAMACIÓN, Y DESARROLLO DE HARDWARE Y DE SOFTWARE; LA ASISTENCIA TÉCNICA Y MANTENIMIENTO DE TALES PRODUCTOS Y SERVICIOS; EL MONTAJE Y ENSAMBLAJE DE PIEZAS DE Y PARA MAQUINARIA INFORMÁTICA, ORDENADORES PERSONALES Y PROFESIONALES; LA PRODUCCIÓN DE COPIAS EN FORMATO CD-ROM; Y LA ELABORACIÓN, IMPARTICIÓN Y VENTA DE CUALESQUIERA CURSOS DE FORMACIÓN RELACIONADOS CON LA INFORMÁTICA Y LA OFIMÁTICA. B) Y LA PRESTACIÓN Y COMERCIALIZACIÓN DE SERVICIOS DE TELECOMUNICACIONES; EL COMERCIO ELECTRÓNICO; Y LA PRESTACIÓN DE SERVICIOS DE TELEMARKETING, PUBLICIDAD, CONSULTORÍA INFORMÁTICA Y DE TELECOMUNICACIONES, SERVICIOS DE SEGURIDAD RELACIONADOS CON EL SECTOR DE TELECOMUNICACIONEES Y DEMÁS ACTIVIDADE4S RELACIONADAS AUTORIZADAS DE ACUERDO CON LA LEGISLACIÓN VIGENTE",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03611",
+      "_links": {
+        "self": {
+          "name": "ETXESOFT TECHNOLOGIES & CONSULTING, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/03611"
+        }
+      }
+    },
+    {
+      "name": "LABORATORIO EUSKALDUNA, S.L.",
+      "registrationNumber": "05675",
+      "identificationNumber": "B95347373",
+      "address": "EUSKALDUNA 10",
+      "location": {
+        "postalCode": "48008",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.942.1",
+          "name": "Consultorios médicos, centros de socorro sanitarios y urgencias",
+          "_links": {
+            "self": {
+              "name": "Consultorios médicos, centros de socorro sanitarios y urgencias",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.942.1"
+            }
+          }
+        },
+        {
+          "id": "1.942.9",
+          "name": "Otros servicios sanitarios sin internados, no clasificados",
+          "_links": {
+            "self": {
+              "name": "Otros servicios sanitarios sin internados, no clasificados",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.942.9"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2017-10-18",
+      "certificateEndDate": "2018-02-03",
+      "object": "LOS SERVICIOS PROFESIONALES DE CUALQUIER RAMO DE LA MEDICINA. LA ADQUISICIÓN, SUSCRIPCIÓN, POSESIÓN, ADMINISTRACIÓN, EXPLOTACIÓN Y VENTA DE BIENES MUEBLES E INMUEBLES, LA ADQUISICIÓN, COMERCIALIZACIÓN, VENTA, ARRIENDO Y EXPLOTACIÓN DE TODO TIPO DE FINCAS, INMUEBLES RÚSTICOS Y/O URBANOS, TERRENO, SOLARES, EDIFICIOS, APARTAMENTOS, VIVIENDAS, LOCALES Y OFICINAS; LA REALIZACIÓN DE EDIFICACIÓN Y URBANIZACIÓN Y SU EJECUCIÓN",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/05675",
+      "_links": {
+        "self": {
+          "name": "LABORATORIO EUSKALDUNA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/05675"
+        }
+      }
+    },
+    {
+      "name": "CONSTRUCCIONES BIZKARGI XXI, S.L.",
+      "registrationNumber": "04660",
+      "identificationNumber": "B95618971",
+      "address": "JUAN BAUTISTA ZABALA Nº 3 - 4º",
+      "location": {
+        "postalCode": "48991",
+        "municipality": "Getxo",
+        "county": "Bizkaia",
+        "municipalityId": "044",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.501.1",
+          "name": "Construcción completa, reparación y conservación de edificaciones",
+          "_links": {
+            "self": {
+              "name": "Construcción completa, reparación y conservación de edificaciones",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2017-10-11",
+      "certificateEndDate": "2018-10-10",
+      "object": "LA CONSTRUCCIÓN Y PROMOCIÓN DE TODA CLASE DE OBRAS, TANTO EDIFICIOS EN SUS DIVERSAS MODALIDADES, COMO OBRAS DE CARÁCTER CIVIL PARA LA ADMINISTRACIÓN PÚBLICA Y PARA TODA CLASE DE ENTIDADES. TAMBIÉN LA COMPRAVENTA Y EXPLOTACIÓN DE BIENES INMUEBLES",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/04660",
+      "_links": {
+        "self": {
+          "name": "CONSTRUCCIONES BIZKARGI XXI, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/04660"
+        }
+      }
+    },
+    {
+      "name": "ESDA FOTOCOMPOSICIÓN Y FOTOMECÁNICA S.L.",
+      "registrationNumber": "05502",
+      "identificationNumber": "B95188025",
+      "address": "BEURKO VIEJO, 3 - PABELLON 35",
+      "location": {
+        "postalCode": "48902",
+        "municipality": "Barakaldo",
+        "county": "Bizkaia",
+        "municipalityId": "013",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.474",
+          "name": "Artes gráficas (impresión gráfica)",
+          "_links": {
+            "self": {
+              "name": "Artes gráficas (impresión gráfica)",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.474"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2017-10-10",
+      "certificateEndDate": "2018-04-09",
+      "object": "LAS ARTES GRÁFICAS, FOTOMECÁNICA, IMPRESIÓN Y ACTIVIDAD AFINES",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/05502",
+      "_links": {
+        "self": {
+          "name": "ESDA FOTOCOMPOSICIÓN Y FOTOMECÁNICA S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/05502"
+        }
+      }
+    },
+    {
+      "name": "RUBRICA, DISEÑO Y PUBLICIDAD, S.L.",
+      "registrationNumber": "04357",
+      "identificationNumber": "B95245460",
+      "address": "LUTXANA 4, 6º",
+      "location": {
+        "postalCode": "48008",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.844",
+          "name": "Servicios de publicidad, relaciones públicas y similares",
+          "_links": {
+            "self": {
+              "name": "Servicios de publicidad, relaciones públicas y similares",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.844"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2017-10-07",
+      "certificateEndDate": "2018-04-06",
+      "object": "LAS ACTIVIDADES PUBLICITARIAS EN GENERAL, DISEÑO DE IMÁGENES Y MARCAS, ASESORAMIENTO DE IMAGEL Y COMUNICACIÓN POR CUENTA PROPIA O DE TERCEROS Y CUANTAS ACTIVIDADES SEAN ANEXAS, NECESARIAS, CONSECUENTES O CONVENIENTES PARA LA REALIZACIÓN DE LAS ACTIVIDADES EXPRESADAS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/04357",
+      "_links": {
+        "self": {
+          "name": "RUBRICA, DISEÑO Y PUBLICIDAD, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/04357"
+        }
+      }
+    },
+    {
+      "name": "JOSÉ JAVIER DE LA PEÑA ARANGUREN",
+      "registrationNumber": "05674",
+      "identificationNumber": "11924481Q",
+      "address": "C/ LAUZARRA 3, BAJO B",
+      "location": {
+        "postalCode": "48640",
+        "municipality": "Berango",
+        "county": "Bizkaia",
+        "municipalityId": "016",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "2.798",
+          "name": "Otros profesionales relacionados con actividades financieras y jurídicas",
+          "_links": {
+            "self": {
+              "name": "Otros profesionales relacionados con actividades financieras y jurídicas",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/2.798"
+            }
+          }
+        },
+        {
+          "id": "2.826",
+          "name": "Personal docente de enseñanzas diversas",
+          "_links": {
+            "self": {
+              "name": "Personal docente de enseñanzas diversas",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/2.826"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2017-10-06",
+      "certificateEndDate": "2018-03-19",
+      "object": "SERVICIOS DE CONSULTORÍA Y FORMACIÓN",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/05674",
+      "_links": {
+        "self": {
+          "name": "JOSÉ JAVIER DE LA PEÑA ARANGUREN",
+          "href": "https://api.euskadi.eus/procurements/companies/05674"
+        }
+      }
+    }
+  ]
+}

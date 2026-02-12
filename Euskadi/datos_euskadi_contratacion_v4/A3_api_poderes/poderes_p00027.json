@@ -1,0 +1,448 @@
+{
+  "totalItems": 919,
+  "totalPages": 92,
+  "currentPage": 27,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "id": 24548,
+      "identificationNumber": "P7001801E",
+      "name": "Instituto Zubiaurre-Elkargune",
+      "scope": "GIPUZKOA",
+      "address": "Aita Madinabeitia plaza",
+      "webPage": "https://www.elkarguneazkoitia.eus",
+      "publicationDate": "2021-10-25",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES212",
+      "entities": [
+        {
+          "id": 24549,
+          "name": "Unidad de Contratación del Ayuntamiento de Azkoitia",
+          "orgs": [
+            {
+              "id": 24550,
+              "name": "Presidente",
+              "_links": {
+                "self": {
+                  "name": "Presidente",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/24548/entities/24549/orgs/24550"
+                }
+              }
+            },
+            {
+              "id": 24553,
+              "name": "Consejo rector",
+              "_links": {
+                "self": {
+                  "name": "Consejo rector",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/24548/entities/24549/orgs/24553"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Unidad de Contratación del Ayuntamiento de Azkoitia",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/24548/entities/24549"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder24548/es_doc/index.html",
+      "_links": {
+        "self": {
+          "name": "Instituto Zubiaurre-Elkargune",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/24548"
+        }
+      }
+    },
+    {
+      "id": 24542,
+      "identificationNumber": "G95063459",
+      "name": "ENKARTUR",
+      "scope": "BIZKAIA",
+      "address": "MARTIN MENDIA 2",
+      "webPage": "https://www.visitenkarterri.com/",
+      "publicationDate": "2021-10-06",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES213",
+      "entities": [
+        {
+          "id": 24543,
+          "name": "Turismo Encartaciones ENKARTUR",
+          "orgs": [
+            {
+              "id": 24544,
+              "name": "Turismo Encartaciones ENKARTUR",
+              "_links": {
+                "self": {
+                  "name": "Turismo Encartaciones ENKARTUR",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/24542/entities/24543/orgs/24544"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Turismo Encartaciones ENKARTUR",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/24542/entities/24543"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder24542/es_doc/index.html",
+      "_links": {
+        "self": {
+          "name": "ENKARTUR",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/24542"
+        }
+      }
+    },
+    {
+      "id": 448,
+      "identificationNumber": "P0100412F",
+      "name": "Cuadrilla de Montaña Alavesa",
+      "scope": "ARABA/ÁLAVA",
+      "address": "Carretera Vitoria Estella, 7. 01110 Santa Cruz de Campezo (Álava/Araba)",
+      "webPage": "https://www.arabakomendialdea.eus/",
+      "publicationDate": "2021-09-27",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES211",
+      "entities": [
+        {
+          "id": 898,
+          "name": "Cuadrilla de Campezo-Montaña Alavesa",
+          "orgs": [
+            {
+              "id": 912494,
+              "name": "Junta",
+              "_links": {
+                "self": {
+                  "name": "Junta",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/448/entities/898/orgs/912494"
+                }
+              }
+            },
+            {
+              "id": 912495,
+              "name": "Presidente",
+              "_links": {
+                "self": {
+                  "name": "Presidente",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/448/entities/898/orgs/912495"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Cuadrilla de Campezo-Montaña Alavesa",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/448/entities/898"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder448/es_doc/index.html",
+      "_links": {
+        "self": {
+          "name": "Cuadrilla de Montaña Alavesa",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/448"
+        }
+      }
+    },
+    {
+      "id": 24533,
+      "identificationNumber": "P01000305B",
+      "name": "Junta Administrativa de Berrostegieta",
+      "scope": "ARABA/ÁLAVA",
+      "address": "Calle Juan Pablo Bengoetxea, 10",
+      "webPage": "http://vitoria-gasteiz-vasconia.registro-empresas.es/oficina-de-gobierno-local/junta-administrativa-de-berrosteguieta-vitoria-gasteiz/",
+      "publicationDate": "2021-09-23",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES211",
+      "entities": [
+        {
+          "id": 24534,
+          "name": "Junta Administrativa de Berrostegieta",
+          "orgs": [
+            {
+              "id": 24535,
+              "name": "Junta Administrativa de Berrostegieta",
+              "_links": {
+                "self": {
+                  "name": "Junta Administrativa de Berrostegieta",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/24533/entities/24534/orgs/24535"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Junta Administrativa de Berrostegieta",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/24533/entities/24534"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder24533/es_doc/index.html",
+      "_links": {
+        "self": {
+          "name": "Junta Administrativa de Berrostegieta",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/24533"
+        }
+      }
+    },
+    {
+      "id": 24527,
+      "identificationNumber": "G01410182",
+      "name": "Fundación Kirolaraba Fundazioa",
+      "scope": "ARABA/ÁLAVA",
+      "address": "Plaza de la provincia 5, 3ª",
+      "webPage": "http://www.kirolaraba.eus/",
+      "publicationDate": "2021-09-20",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES211",
+      "entities": [
+        {
+          "id": 24528,
+          "name": "Fundación Kirolaraba Fundazioa",
+          "orgs": [
+            {
+              "id": 24529,
+              "name": "Patronato",
+              "_links": {
+                "self": {
+                  "name": "Patronato",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/24527/entities/24528/orgs/24529"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Fundación Kirolaraba Fundazioa",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/24527/entities/24528"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder24527/es_doc/index.html",
+      "_links": {
+        "self": {
+          "name": "Fundación Kirolaraba Fundazioa",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/24527"
+        }
+      }
+    },
+    {
+      "id": 24523,
+      "identificationNumber": "P2003800H",
+      "name": "Ayuntamiento de Gaintza",
+      "scope": "GIPUZKOA",
+      "address": "HERRIKO PLAZA z/g",
+      "webPage": "http://www.gaintza.eus/eu/",
+      "publicationDate": "2021-09-15",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES212",
+      "entities": [
+        {
+          "id": 24524,
+          "name": "Ayuntamiento de Gaintza",
+          "orgs": [
+            {
+              "id": 24525,
+              "name": "Ayuntamiento de Gaintza",
+              "_links": {
+                "self": {
+                  "name": "Ayuntamiento de Gaintza",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/24523/entities/24524/orgs/24525"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Ayuntamiento de Gaintza",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/24523/entities/24524"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder24523/es_doc/index.html",
+      "_links": {
+        "self": {
+          "name": "Ayuntamiento de Gaintza",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/24523"
+        }
+      }
+    },
+    {
+      "id": 24505,
+      "identificationNumber": " P0100133",
+      "name": "Junta administrativa de Manurga",
+      "scope": "ARABA/ÁLAVA",
+      "address": "C/Gopegibidea nº8",
+      "webPage": "https://www.contratacion.euskadi.eus",
+      "publicationDate": "2021-08-30",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES211",
+      "entities": [
+        {
+          "id": 24506,
+          "name": "Junta Administrativa de Manurga ",
+          "orgs": [
+            {
+              "id": 24507,
+              "name": "Junta de Manurga",
+              "_links": {
+                "self": {
+                  "name": "Junta de Manurga",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/24505/entities/24506/orgs/24507"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Junta Administrativa de Manurga ",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/24505/entities/24506"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder24505/es_doc/index.html",
+      "_links": {
+        "self": {
+          "name": "Junta administrativa de Manurga",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/24505"
+        }
+      }
+    },
+    {
+      "id": 24486,
+      "identificationNumber": "G20177614",
+      "name": "Fundación Patronato José Arana",
+      "scope": "GIPUZKOA",
+      "address": "GASTAÑADUI KALEA, 22",
+      "webPage": "https://opendata.euskadi.eus/catalogo/-/fundacion/fundacion-patronato-jose-arana-jose-arana-patronatuko-fundazioa/",
+      "publicationDate": "2021-07-22",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES212",
+      "entities": [
+        {
+          "id": 24487,
+          "name": "Fundación Patronato José Arana",
+          "orgs": [
+            {
+              "id": 24488,
+              "name": "Fundación Patronato José Arana",
+              "_links": {
+                "self": {
+                  "name": "Fundación Patronato José Arana",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/24486/entities/24487/orgs/24488"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Fundación Patronato José Arana",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/24486/entities/24487"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder24486/es_doc/index.html",
+      "_links": {
+        "self": {
+          "name": "Fundación Patronato José Arana",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/24486"
+        }
+      }
+    },
+    {
+      "id": 24481,
+      "identificationNumber": "P0100292B",
+      "name": "Junta Administrativa de Ullibarri-Arana",
+      "scope": "ARABA/ÁLAVA",
+      "address": "Ullibarri-Arana",
+      "webPage": "https://web.araba.eus/eu/home",
+      "publicationDate": "2021-07-09",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES211",
+      "entities": [
+        {
+          "id": 24482,
+          "name": "Junta Administrativa de Ullibarri-Arana",
+          "orgs": [
+            {
+              "id": 24483,
+              "name": "Junta Administrativa de Ullibarri-Arana",
+              "_links": {
+                "self": {
+                  "name": "Junta Administrativa de Ullibarri-Arana",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/24481/entities/24482/orgs/24483"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Junta Administrativa de Ullibarri-Arana",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/24481/entities/24482"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder24481/es_doc/index.html",
+      "_links": {
+        "self": {
+          "name": "Junta Administrativa de Ullibarri-Arana",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/24481"
+        }
+      }
+    },
+    {
+      "id": 24468,
+      "identificationNumber": "P4800052E",
+      "name": "Busturialdeko Mankomunitatea",
+      "scope": "BIZKAIA",
+      "address": "BARRIO LOIOLA, Nº 2",
+      "webPage": "https://www.euskadi.eus/web01-a2tokiad/es/contenidos/entidad_local/48050016/es_def/index.shtml",
+      "publicationDate": "2021-07-09",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES213",
+      "entities": [
+        {
+          "id": 24469,
+          "name": "Busturialdeko Mankomunitatea",
+          "orgs": [
+            {
+              "id": 24470,
+              "name": "Busturialdeko Mankomunitatea",
+              "_links": {
+                "self": {
+                  "name": "Busturialdeko Mankomunitatea",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/24468/entities/24469/orgs/24470"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Busturialdeko Mankomunitatea",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/24468/entities/24469"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder24468/es_doc/index.html",
+      "_links": {
+        "self": {
+          "name": "Busturialdeko Mankomunitatea",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/24468"
+        }
+      }
+    }
+  ]
+}

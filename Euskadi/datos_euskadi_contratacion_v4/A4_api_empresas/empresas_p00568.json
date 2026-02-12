@@ -1,0 +1,428 @@
+{
+  "totalItems": 9042,
+  "totalPages": 905,
+  "currentPage": 568,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "name": "FERRING, S.A.",
+      "registrationNumber": "03967",
+      "identificationNumber": "A78297140",
+      "address": "calle Orense",
+      "location": {
+        "postalCode": "28020",
+        "municipality": "Madrid",
+        "county": "Madrid",
+        "municipalityId": "079",
+        "countyId": "28"
+      },
+      "economicActivities": [
+        {
+          "id": "1.612.9",
+          "name": "Venta al por mayor de otros productos alimenticios, helados de todas clases",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de otros productos alimenticios, helados de todas clases",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.612.9"
+            }
+          }
+        },
+        {
+          "id": "1.614.1",
+          "name": "Venta al por mayor de productos farmacéuticos y medicamentos",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de productos farmacéuticos y medicamentos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.614.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2020-07-07",
+      "certificateEndDate": "2021-01-07",
+      "object": "LA SOCIEDAD TENDRÁ POR OBJETO LA PRODUCCIÓN, FABRICACIÓN, INVESTIGACIÓN, CONTROL, IMPORTACIÓN, EXPORTACIÓN, ALMACENAJE, COMERCIALIZACIÓN, COMPRA Y VENTA DE PRODUCTOS FARMACEÚTICOS, PARA LA SALUD E HIGIENA. ",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03967",
+      "_links": {
+        "self": {
+          "name": "FERRING, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/03967"
+        }
+      }
+    },
+    {
+      "name": "TEBU-BIO SPAIN, S.L.",
+      "registrationNumber": "06766",
+      "identificationNumber": "B63818629",
+      "address": "C/Maria Cubi n7 2 atico",
+      "location": {
+        "postalCode": "08008",
+        "municipality": "Barcelona",
+        "county": "Barcelona",
+        "municipalityId": "019",
+        "countyId": "08"
+      },
+      "economicActivities": [
+        {
+          "id": "1.616.9",
+          "name": "Otro comercio al por mayor interindustria de la minería n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otro comercio al por mayor interindustria de la minería n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.616.9"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2020-07-07",
+      "certificateEndDate": "2021-01-07",
+      "object": "LA COMERCIALIZACION Y EL MARKETING DE PRODUCTOS Y SERVICIOS UTILIZADOS EN EL CAMPO DE LA BIOTECNOLOGÍA Y LA INVESTIGACIÓN MÉDICA, EN PARTICULAR, REACTIVOS DE DIAGNÓSTICO Y DE LABORATORIO SOBRE CUALQUIER SOPORTE O PREPARADOS, INCLUSO SOBRE SOPORTE, ASÍ COMO TODAS LAS ACTIVIDADES DE INVESTIGACIÓN Y DESARROLLO INCIDENTALES, NECESARIAS PARA PROMOVER, VENDER, ALMACENAR Y DISTRIBUIR DICHOS PRODUCTOS Y SERVICIOS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06766",
+      "_links": {
+        "self": {
+          "name": "TEBU-BIO SPAIN, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/06766"
+        }
+      }
+    },
+    {
+      "name": "JOSE IGNACIO GOZALO ERRO",
+      "registrationNumber": "07141",
+      "identificationNumber": "34087802P",
+      "address": "Aita Larramendi kalea 14, 5C",
+      "location": {
+        "postalCode": "20140",
+        "municipality": "Andoain",
+        "county": "Gipuzkoa",
+        "municipalityId": "009",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "2.399",
+          "name": "Otros profesionales relacionados con otras industrias manufactureras",
+          "_links": {
+            "self": {
+              "name": "Otros profesionales relacionados con otras industrias manufactureras",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/2.399"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2020-07-07",
+      "certificateEndDate": "2020-12-17",
+      "object": "OTROS PROFESIONALES RELACIONADOS CON OTRAS INDUSTRIAS MANUFACTURERAS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07141",
+      "_links": {
+        "self": {
+          "name": "JOSE IGNACIO GOZALO ERRO",
+          "href": "https://api.euskadi.eus/procurements/companies/07141"
+        }
+      }
+    },
+    {
+      "name": "TÉCNICOS ASOCIADOS INFORMÁTICA, S.A.",
+      "registrationNumber": "07138",
+      "identificationNumber": "A79054748",
+      "address": "Vía de las Dos Castillas, 33 Ática Edif. 7 Bajo",
+      "location": {
+        "postalCode": "28224",
+        "municipality": "Pozuelo de Alarcón",
+        "county": "Madrid",
+        "municipalityId": "115",
+        "countyId": "28"
+      },
+      "economicActivities": [
+        {
+          "id": "1.659.2",
+          "name": "Venta al por menor de muebles de oficina y máquinas y equipos de oficina",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de muebles de oficina y máquinas y equipos de oficina",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.659.2"
+            }
+          }
+        },
+        {
+          "id": "1.845",
+          "name": "Explotación electrónica por cuenta de terceros",
+          "_links": {
+            "self": {
+              "name": "Explotación electrónica por cuenta de terceros",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.845"
+            }
+          }
+        },
+        {
+          "id": "1.853",
+          "name": "Alquiler de maquinaria y equipo contable de oficina y cálculo",
+          "_links": {
+            "self": {
+              "name": "Alquiler de maquinaria y equipo contable de oficina y cálculo",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.853"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2020-07-06",
+      "certificateEndDate": "2020-12-01",
+      "object": "1.- LA FABRICACIÓN, DISTRIBUCIÓN, COMERCIALIZACIÓN Y VENTA DE EQUIPOS DE MATERIAL DE INFORMACIÓN Y AFINES, TANTO EN LÍNEA DE EQUIPOS COMO EN LA DE PROGRAMAS. 2.- EL ARRENDAMIENTO, ALQUILER, VENTA, IMPORTACIÓN Y EXPORTACIÓN Y PRESTACIONES DE SERVICIOS Y MANTENIMIENTO DE ORDENADORES Y OTRAS MÁQUINAS DE CÁLCULO. 3.- EL ASESORAMIENTO, ASISTENCIA TÉCNICA Y SUMINISTRO DE TODOS AQUELLOS ELEMENTOS QUE CONSTITUYEN LOS EQUIPOS Y LOS PROGRAMAS EN LAS ÁREAS DE LA INFORMÁTICA Y LA ROBÓTICA. 4.- LA VENTA DE MUEBLES DE TODO TIPO, PRODUCTOS DE TELECOMUNICACIÓN Y EN GENERAL, ELECTRÓNICOS, LA PUBLICACIÓN DE ESTUDIOS TÉCNICOS, ANÁLISIS, PROGRAMACIÓN DE SISTEMAS INFORMÁTICOS Y CUALQUIER OTRA ACTIVIDAD DE SOPORTE Y ASISTENCIA EN LAS ÁREAS DICHAS DE LA INFORMÁTICA Y LA ROBÓTICA. 5.- EL ASESORAMIENTO Y ORGANIZACIÓN DE EMPRESAS RELACIONADAS CON LOS CAMPOS ANTERIORMENTE MENCIONADOS. 6.- LA EXPLOTACIÓN DE TODA CLASE DE FINCAS, PATENTES Y MARCAS. ADMINISTRAR EL PATRIMONIO DE OTRAS SOCIEDADES Y EL DE CUALQUIER PERSONA FÍSICA Y/O JURÍDICA. 7.- LA ELABORACIÓN, REALIZACIÓN, COMPRAVENTA DE TODA CLASE DE ESTUDIOS Y PROYECTOS ECONÓMICOS, INDUSTRIALES, DE INGENIERÍA Y URBANÍSTICOS, ASÍ COMO ASISTENCIA TÉCNICA, INVESTIGACIÓN DE MERCADOS O INVESTIGACIÓN ELECTORAL; LA REALIZACIÓN DE TODA CLASE DE ASESORAMIENTOS Y ASISTENCIAS INDUSTRIALES, COMERCIALES Y FINANCIERAS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07138",
+      "_links": {
+        "self": {
+          "name": "TÉCNICOS ASOCIADOS INFORMÁTICA, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/07138"
+        }
+      }
+    },
+    {
+      "name": "FERRETERÍA UNCETA, S.A.",
+      "registrationNumber": "01855",
+      "identificationNumber": "A20020277",
+      "address": " San Antolín, 7. Apartado 198.",
+      "location": {
+        "postalCode": "20870",
+        "municipality": "Elgoibar",
+        "county": "Gipuzkoa",
+        "municipalityId": "032",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.615.3",
+          "name": "Venta al por mayor de aparatos electrodomésticos y ferretería",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de aparatos electrodomésticos y ferretería",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.615.3"
+            }
+          }
+        },
+        {
+          "id": "1.843.9",
+          "name": "Otros servicios técnicos n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros servicios técnicos n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.9"
+            }
+          }
+        },
+        {
+          "id": "1.861.2",
+          "name": "Alquiler de locales industriales y otros alquileres n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Alquiler de locales industriales y otros alquileres n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.861.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2020-07-03",
+      "certificateEndDate": "2020-12-15",
+      "object": "LA COMPRAVENTA DE ACEROS, METALES, PRODUCTOS DE PULIMENTO Y ARTÍCULOS DE FERRETERÍA INDUSTRIAL Y DE MANERA GENERAL DE LAS OPERACIONES DE MEDIACIÓN Y SUMINISTRO RELACIONADOS CON DICHOS BIENES",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/01855",
+      "_links": {
+        "self": {
+          "name": "FERRETERÍA UNCETA, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/01855"
+        }
+      }
+    },
+    {
+      "name": "ALYSAT, S.L.",
+      "registrationNumber": "01065",
+      "identificationNumber": "B01015643",
+      "address": "OÑATI, 1",
+      "location": {
+        "postalCode": "01013",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.504.3",
+          "name": "Instalaciones de frío, calor y acondicionamiento de aire",
+          "_links": {
+            "self": {
+              "name": "Instalaciones de frío, calor y acondicionamiento de aire",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.504.3"
+            }
+          }
+        },
+        {
+          "id": "1.921.4",
+          "name": "Servicios de alcantarillado, evacuación y depuración de aguas residuales",
+          "_links": {
+            "self": {
+              "name": "Servicios de alcantarillado, evacuación y depuración de aguas residuales",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.921.4"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2020-06-30",
+      "certificateEndDate": "2020-11-18",
+      "object": "EL MANTENIMIENTO E INSTALACIÓN DE CALEFACCIÓN; INSTALACIONES DE VAPOR, AGUA SOBRECALIENTE, AIRE COMPRIMIDO",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/01065",
+      "_links": {
+        "self": {
+          "name": "ALYSAT, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/01065"
+        }
+      }
+    },
+    {
+      "name": "VERSO INGENIERÍA, S.L.",
+      "registrationNumber": "07128",
+      "identificationNumber": "B86689486",
+      "address": "Calle Villaverde Nº 4 Portal 16 Piso 5ºA",
+      "location": {
+        "postalCode": "28981",
+        "municipality": "Parla",
+        "county": "Madrid",
+        "municipalityId": "106",
+        "countyId": "28"
+      },
+      "economicActivities": [
+        {
+          "id": "1.845",
+          "name": "Explotación electrónica por cuenta de terceros",
+          "_links": {
+            "self": {
+              "name": "Explotación electrónica por cuenta de terceros",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.845"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2020-06-30",
+      "certificateEndDate": "2020-12-11",
+      "object": "LA CONSULTORÍA INTEGRAL Y DESARROLLO DE APLICACIONES INFORMÁTICAS; IMPLANTACIÓN DE SOLUCIONES ORIENTADAS A LA MEJORA E INNOVACIÓN DE LAS ORGANIZACIONES, TANTO PÚBLICAS COMO PRIVADAS; INTEGRACIÓN DE SISTEMAS; SERVICIOS DE FORMACIÓN EN NUEVAS TECNOLOGÍAS; SERVICIOS DE CONSULTORÍA PARA EL DIMENSIONAMIENTO DE EQUIPOS DE DESARROLLO",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07128",
+      "_links": {
+        "self": {
+          "name": "VERSO INGENIERÍA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/07128"
+        }
+      }
+    },
+    {
+      "name": "ONDATA INTERNATIONAL, S.L.",
+      "registrationNumber": "07129",
+      "identificationNumber": "B83290551",
+      "address": "Avenida de Brasil, 17 Plta.3",
+      "location": {
+        "postalCode": "28020",
+        "municipality": "Madrid",
+        "county": "Madrid",
+        "municipalityId": "079",
+        "countyId": "28"
+      },
+      "economicActivities": [
+        {
+          "id": "1.699",
+          "name": "Otras reparaciones n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otras reparaciones n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.699"
+            }
+          }
+        },
+        {
+          "id": "1.845",
+          "name": "Explotación electrónica por cuenta de terceros",
+          "_links": {
+            "self": {
+              "name": "Explotación electrónica por cuenta de terceros",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.845"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2020-06-30",
+      "certificateEndDate": "2020-12-01",
+      "object": "A) LA RECUPERACIÓN DE DATOS INFORMÁTICOS EN TODO TIPO DE SOPORTES A TRAVÉS DE TODO TIPO DE TÉCNICAS. B) EL DESARROLLO DE PROGRAMAS INFORMÁTICOS, SU IMPORTACIÓN, EXPORTACIÓN, VENTA Y COMERCIALIZACIÓN. C) LA PRESTACIÓN DE TODO TIPO DE SERVICIOS DE INFORMÁTICA Y TELECOMUNICACIONES. D) LA IMPORTACIÓN, EXPORTACIÓN Y DISTRIBUCIÓN DE PRODUCTOS INFORMÁTICOS Y DE TELECOMUNICACIONES. E) LA PRESTACIÓN DE SERVICIOS DE CONSULTORÍA INFORMÁTICA Y DE PROTECCIÓN INTEGRAL DE DATOS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07129",
+      "_links": {
+        "self": {
+          "name": "ONDATA INTERNATIONAL, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/07129"
+        }
+      }
+    },
+    {
+      "name": "ADPREVEN AUDITORIA & CONSULTORIA EN GESTION DE PREVENCION DE RIESGOS LABORALES, S.L.",
+      "registrationNumber": "07130",
+      "identificationNumber": "B39632948",
+      "address": "ANTONIO LOPEZ 8, BAJO",
+      "location": {
+        "postalCode": "39009",
+        "municipality": "Santander",
+        "county": "Cantabria",
+        "municipalityId": "075",
+        "countyId": "39"
+      },
+      "economicActivities": [
+        {
+          "id": "1.849.7",
+          "name": "Servicios de gestión administrativa",
+          "_links": {
+            "self": {
+              "name": "Servicios de gestión administrativa",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.849.7"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2020-06-30",
+      "certificateEndDate": "2020-11-22",
+      "object": "-AUDITORÍAS DE PREVENCIÓN DE RIESGOS LABORALES. - CONSULTORÍAS DE PREVENCIÓN DE RIESGOS LABORALES. -FORMACIÓN EN PREVENCIÓN DE RIESGOS LABORALES. -IMPLANTACIÓN DE SISTEMAS DE GESTIÓN DE PREVENCIÓN, CALIDAD Y MEDIO AMBIENTE. -PERITAJE DE INGENIERÍA TÉCNICA INDUSTRIAL E INGENIERÍA INDUSTRIAL",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07130",
+      "_links": {
+        "self": {
+          "name": "ADPREVEN AUDITORIA & CONSULTORIA EN GESTION DE PREVENCION DE RIESGOS LABORALES, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/07130"
+        }
+      }
+    },
+    {
+      "name": "ASESORÍA LEAL AZCONA, S.L.",
+      "registrationNumber": "07131",
+      "identificationNumber": "B95532446",
+      "address": "CALLE MUGAKOA Nº21 LONJA IZQUIERDA",
+      "location": {
+        "postalCode": "48920",
+        "municipality": "Portugalete",
+        "county": "Bizkaia",
+        "municipalityId": "078",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.842",
+          "name": "Servicios financieros y contables",
+          "_links": {
+            "self": {
+              "name": "Servicios financieros y contables",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.842"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2020-06-30",
+      "certificateEndDate": "2020-07-20",
+      "object": "A)  EL ASESORAMIENTO FISCAL, LABORAL, CONTABILIDADES, CONSTITUCIONES DE EMPRESAS. B) CUANTAS ACTIVIDADES SEAN ANTECEDENTES, COMPLEMENTO O CONSECUENCIAS DE LAS EXPUESTAS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07131",
+      "_links": {
+        "self": {
+          "name": "ASESORÍA LEAL AZCONA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/07131"
+        }
+      }
+    }
+  ]
+}

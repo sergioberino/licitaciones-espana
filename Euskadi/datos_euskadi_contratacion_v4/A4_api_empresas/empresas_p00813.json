@@ -1,0 +1,368 @@
+{
+  "totalItems": 9042,
+  "totalPages": 905,
+  "currentPage": 813,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "name": "MARATHON DISTRIBUCIONES, S.A.",
+      "registrationNumber": "01142",
+      "identificationNumber": "A01017136",
+      "address": "C/ DOMINGO BELTRÁN, Nº 3 - BAJO.",
+      "location": {
+        "postalCode": "01008",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.849.5",
+          "name": "Servicios de recadería y reparto y manipulación de correspondencia",
+          "_links": {
+            "self": {
+              "name": "Servicios de recadería y reparto y manipulación de correspondencia",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.849.5"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2001-10-16",
+      "certificateEndDate": "2002-03-25",
+      "object": "LA PRESTACIÓN DE TODA CLASE DE SERVICIOS RELACIONADOS CON LA CORRESPONDENCIA, COMO PREPARACIÓN DE CARTAS Y SOBRES, SU DISTRIBUCIÓN Y REPARTO, Y, EN GENERAL CUANTO SEA AUXILIAR, ACCESORIO, CONSECUENCIA, O SE RELACIONE DIRECTA O INDIRECTAMENTE CON LAS FINALIDADES EXPRESADAS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/01142",
+      "_links": {
+        "self": {
+          "name": "MARATHON DISTRIBUCIONES, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/01142"
+        }
+      }
+    },
+    {
+      "name": "GORKA MULTISERVICIOS, S.L.",
+      "registrationNumber": "02450",
+      "identificationNumber": "B20655544",
+      "address": "AVDA. ELIZATXO, 11",
+      "location": {
+        "postalCode": "20303",
+        "municipality": "Irun",
+        "county": "Gipuzkoa",
+        "municipalityId": "045",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.505.1",
+          "name": "Revestimientos exteriores e interiores de todas clases",
+          "_links": {
+            "self": {
+              "name": "Revestimientos exteriores e interiores de todas clases",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.505.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2001-10-15",
+      "certificateEndDate": "2002-03-20",
+      "object": "A) LA CONSTRUCCIÓN, EDIFICACIÓN, PROMOCIÓN, ALQUILER, MANTENIMIENTO, REPARACIÓN Y CONSERVACIÓN DE TODO TIPO DE INMUEBLES TANTO PÚBLICOS COMO PRIVADOS.\r\n\r\nB )LA COMERCIALIZACIÓN Y REPRESENTACIÓN DE CUALQUIER TIPO DE MATERIAL Y MAQUINARIA DE CONSTRUCCIÓN DE EDIFICIOS.\r\n\r\nC) LA PARTICIPACIÓN EN SOCIEDADES MERCANTILES, COMUNIDADES DE BIENES, COOPERATIVAS O SOCIEDADES CIVILES QUE DESARROLLEN CUALQUIERA DE LAS ACTIVIDADES ANTERIORMENTE CITADAS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/02450",
+      "_links": {
+        "self": {
+          "name": "GORKA MULTISERVICIOS, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/02450"
+        }
+      }
+    },
+    {
+      "name": "CONSTRUCCIONES Y EXCAVACIONES ZIZURKIL, S.L.",
+      "registrationNumber": "02178",
+      "identificationNumber": "B20183737",
+      "address": "ÁREA, Nº 5. POLÍGONO INDUSTRIAL.",
+      "location": {
+        "postalCode": "20150",
+        "municipality": "Aduna",
+        "county": "Gipuzkoa",
+        "municipalityId": "002",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.502.1",
+          "name": "Demoliciones y derribos en general",
+          "_links": {
+            "self": {
+              "name": "Demoliciones y derribos en general",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.502.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2001-09-24",
+      "certificateEndDate": "2002-03-06",
+      "object": "LA COMPRA Y VENTA DE TODA CLASE DE BIENES INMUEBLES; LA PLANIFICACIÓN, ORDENACIÓN Y URBANIZACIÓN DE TERRENOS, LA PROMOCIÓN DE OPERACIONES INMOBILIARIAS; LA REDACCIÓN Y DESARROLLO DE PLANES URBANÍSTICOS Y PROYECTOS DE EDIFICACIÓN; LA CONSTRUCCIÓN DE TODA CLASE DE VIVIENDAS Y LOCALES COMERCIALES PARA SU POSTERIOR VENTA O ARRENDAMIENTO, EJECUTANDO, A TAL FÍN, TODA CLASE DE PLANES Y PROYECTOS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/02178",
+      "_links": {
+        "self": {
+          "name": "CONSTRUCCIONES Y EXCAVACIONES ZIZURKIL, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/02178"
+        }
+      }
+    },
+    {
+      "name": "INVESTIGACIÓN, CONTROL Y DISEÑO, S.L.",
+      "registrationNumber": "02322",
+      "identificationNumber": "B01100353",
+      "address": "C/ABENDAÑO, 52 - BAJO",
+      "location": {
+        "postalCode": "01008",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.659.2",
+          "name": "Venta al por menor de muebles de oficina y máquinas y equipos de oficina",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de muebles de oficina y máquinas y equipos de oficina",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.659.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2001-08-30",
+      "certificateEndDate": "2002-02-22",
+      "object": "LA CREACIÓN, MODIFICACIÓN Y MANTENIMIENTO DE SISTEMAS MICROELÉCTRICOS E INFORMÁTICOS.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/02322",
+      "_links": {
+        "self": {
+          "name": "INVESTIGACIÓN, CONTROL Y DISEÑO, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/02322"
+        }
+      }
+    },
+    {
+      "name": "RECUPERACIONES ARGÉNTICAS GAR, S.L.",
+      "registrationNumber": "02118",
+      "identificationNumber": "B20321691",
+      "address": "POLÍGONO TALAIA, Nº 5 BIS.",
+      "location": {
+        "postalCode": "20180",
+        "municipality": "Oiartzun",
+        "county": "Gipuzkoa",
+        "municipalityId": "063",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.621",
+          "name": "Venta al por mayor de chatarra y metales de desecho férreos y no férreos",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de chatarra y metales de desecho férreos y no férreos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.621"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2001-08-17",
+      "certificateEndDate": "2002-01-19",
+      "object": "LA RECUPERACIÓN Y RECICLAJE DE METALES A PARTIR DE CHATARRAS U OTROS RESIDUOS DE DESECHO",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/02118",
+      "_links": {
+        "self": {
+          "name": "RECUPERACIONES ARGÉNTICAS GAR, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/02118"
+        }
+      }
+    },
+    {
+      "name": "CELULOSAS BELAKO, S.L.",
+      "registrationNumber": "02435",
+      "identificationNumber": "B95134763",
+      "address": "ARITZ BIDEA 63-MOD. 101",
+      "location": {
+        "postalCode": "48100",
+        "municipality": "Mungia",
+        "county": "Bizkaia",
+        "municipalityId": "069",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.619.4",
+          "name": "Venta al por mayor de productos de papel y cartón",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de productos de papel y cartón",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.619.4"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2001-08-02",
+      "certificateEndDate": "2002-01-23",
+      "object": "1.-LA COMPRAVENTA, TRANSFORMACIÓN, MANIPULACIÓN Y COMERCIALIZACIÓN EN GENERAL, TANTO AL MAYOR COMO AL MENOR, DE PAPEL, TANTO PARA USO INDUSTRIAL COMO COMERCIAL, HIGIÉNICO O DE ARTES GRÁFICAS, CARTÓN, CELULOSAS Y PLÁSTICOS.\r\n\r\n2.-LA PRESTACIÓN DE SERVICIOS DE LAVANDERÍA EN SUS MÁS AMPLIOS TÉRMINOS, DESDE LA LIMPIEZA Y TRATAMIENTO DE ROPAS, HASTA EL ALQUILER DE LA MISMA, LA REPRESENTACIÓN, COMERCIALIZACIÓN, COMPRAVENTA DE MAQUINARIA CON ELLO RELACIONADA, ROPA Y UTILLAJE EN GENERAL DEL RAMO DE LAVANDERÍA.\r\n\r\n3.-LA PROMOCIÓN, CONSTRUCCIÓN, COMPRA, VENTA, ARRENDAMIENTO Y COMERCIALIZACIÓN EN GENERAL DE TODA CLASE DE EDIFICACIONES, TERRENOS, SOLARES, FINCAS RÚSTICAS Y URBANAS; LA EDIFICACIÓN, URBANIZACIÓN, EXCAVACIÓN, CIMENTACIÓN Y DERRIBO, BIEN POR CUENTA PROPIA COMO AJENA, ASÍ COMO LA ENAJENACIÓN, VENTA O ARRIENDO O EXPLOTACIÓN, EN CUALQUIER FORMA DE TODA CLASE DE INMUEBLES, EDIFICIOS, PISOS, APARTAMENTOS, LOCALES COMERCIALES O INDUSTRIALES, OFICINAS Y HOTELES O ESTABLECIMIENTOS DE HOSTELERÍA EN GENERAL.\r\n\r\n4.-TODA CLASE DE OPERACIONES INMOBILIARIAS SOBRE FINCAS RÚSTICAS Y URBANAS, PROMOCIÓN DE CONTRATOS O REALIZACIÓN DE PARCELACIONES, URBANIZACIONES, CONSTRUCCIONES Y OBRAS PRIVADAS O PÚBLICAS, LA VENTA, HIPOTECA, ARRENDAMIENTO, TRANSFORMACIÓN, MEJORA, ADMINISTRACIÓN, PUESTA EN EXPLOTACIÓN Y LA EXPLOTACIÓN MISMA, DE FINCAS RÚSTICAS Y URBANAS, LA ORGANIZACIÓN, PROMOCIÓN, ASESORAMIENTO  Y GESTIÓN EN SU CASO DE SOCIEDADES, COOPERATIVAS, COMUNIDADES, ENTIDADES, GRUPOS O EMPRESAS PARTICULARES ORIENTADAS A LA CONSTRUCCIÓN O URBANIZACIÓN, LA PLANIFICACIÓN Y ESTUDIO DE MERCADOS EN MATERIA INMOBILIARIA.\r\n\r\n5.-LA ADMINISTRACIÓN DE FINCAS Y COMUNIDADES, TANTO DE PROPIETARIOS COMO DE AUTOPROMOTORES, ASÍ COMO LA PRESTACIÓN DE TODA CLASE DE SERVICIOS RELACIONADOS CON EL ÁMBITO INMOBILIARIO, ARQUITECTÓNICO, DE TÉCNICA DE LA CONSTRUCCIÓN E INGENIERÍA EN GENERAL, POR MEDIO DE LA FORMULACIÓN, DESARROLLO Y PUESTA EN MARCHA DE ESTUDIOS, ACTUACIONES Y PROYECTOS.\r\n\r\n6.-LA GESTIÓN, DIRECCIÓN Y EJECUCIÓN POR CUENTA PROPIA O AJENA DE TODA CLASE DE CONSTRUCCIONES, INSTALACIONES, REFORMASA, REHABILITACIONES, DECORACIONES Y OBRAS DE RESTAURACIÓN EXTERNA E INTERNA DE ESTRUCTURAS Y REVESTIMIENTOS DE EDIFICIOS Y MONUMENTOS; LIMPIEZA, IMPERMEABILIZACIÓN, TRATAMIENTO, PINTURA, RECONSTRUCCIÓN Y LA IMPLANTACIÓN, CUIDADO Y MANTENIMIENTO DE JARDINES  Y EXPLOTACIONES FORESTALES. LA SUPERVISIÓN Y CONTROL DE LAS OBRASA, ASÍ COMO LA COORDINACIÓN DE GREMIOS, EL ASESORAMIENTO Y LA ASISTENCIA TÉCNICA EN TODO CUANTO SE RELACIONES CON EL CAMPO DE LA CONSTRUCCIÓN DE EDIFICIOS Y DE LAS OBRAS PÚBLICAS O CIVILES.\r\n\r\n7.-LA COMPRA, VENTA, DE TODA CLASEDE MATERIALES DE LA CONSTRUCCIÓN Y/O DECORATIVAS, ASÍ COMO CUALESQUIERA INSTALACIONES, ELEMENTOS O SERVICIOS DE LAS EDIFICACIONES; LA IMPORTACIÓN, EXPORTACIÓN, REPRESENTACIÓN, DISTRIBUCIÓN, EXPLOTACIÓN Y COMERCIALIZACIÓN DE PRODUCTOS ELABORADOS Y SEMIELABORADOS, ARTÍCULOS, BIENES, MERCADERÍAS, EQUIPOS INDUSTRIALES, MAQUINARIA, HERRAMIENTAS, UTILLAJE, REPUESTOS Y ACCESORIOS, ALIMENTOS DE CONSUMO HUMANO Y ANIMAL.\r\n\r\n8.-LA ADQUISICIÓN, CESIÓN, TENENCIA, DISFRUTE, ADMINISTRACIÓN, GESTIÓN Y NEGOCIACIÓN EN GENERAL DE VALORES MOBILIARIOS E INMUEBLES; TODO ELLO SIN INCIDIR EN LAS ACTIVIDADES U OPERACIONES REGULADAS POR LA LEGISLACIÓN DE INSTITUCIONES DE INVERSIÓN COLECTIVA Y LEY DE MERCADO DE VALORES.\r\n\r\n9.-LA PRESTACIÓN DE SERVICIOS PROFESIONALES DE ASESORÍA DE EMPRESAS EN GENERAL, Y EN PARTICULAR, DE ASESORAMIENTO Y GESTIÓN FISCAL, ASESORMIENTO Y GESTIÓN CONTABLE, ASESORMIENTO Y GESTIÓN EN MATERIA LABORAL, ASESORÍA JURÍDICA, SERVICIO DE COBRO DE CRÉDITOS MOROSOS, VALORACIÓN DE EMPRESAS, ESTUDIO Y REDACCIÓN DE ESTATUTOS PARA LA CONSTITUCIÓN DE ENTIDADES DE CUALQUIER NATURALEZA, ESTUDIO Y REDACCIÓN DE PLANES DE VIABILIDAD, ESTUDIO DE TRAMITACIÓN DE SUBVENCIONES, CRÉDITOS Y OTRAS AYUDAS FINANCIERAS DE LOS ORGANISMOS DEL ESTADO CENTRAL, DEL GOBIERNO VASCO Y DE LAS DIPUTACIONES FORALES, DE TODO TIPO DE ENTIDADES PÚBLICAS Y PRIVADAS, PARA TODO TIPO DE EMPRESAS; Y, EN CONCRETO, LA PRESTACIÓN DE SERVICIOS DE VERIFICACIONES REGISTRALES, INFORMES COMERCIALES, GRABACIONES DE DATOS Y RECOBROS.\r\n\r\n10.-LA INVESTIGACIÓN Y EL DESARROLLO DE TÉCNICAS ENERGÉTICAS, ACÚSTICAS, ELECTRÓNICAS Y, EN GENERAL, TODA CLASE DE ASISTENCIAS O SERVICIOS RELACIONADOS CON LA INFORMÁTICA. LA REPRESENTACIÓN COMO AGENTE, COMISIONISTA, DELEGADO O CUALQUIER OTRA FORMA DE MEDIACIÓN MERCANTIL DE EMPRESAS NACIONALES O EXTRANJERAS, DE TODA ÍNDOLE, ASÍ COMO LA EXPLOTACIÓN DE PATENTES, Y DEMÁS DERECHOS DE PROPIEDAD INDUSTRIAL, INCLUÍDOS LOS MÉTODOS, PROCEDIMIENTOS Y ORGANIZACIÓN DE TRABAJOS INDUSTRIALES, COMERCIALES O DE OTRA ÍNDOLE.\r\n\r\n11.-LA FORMACIÓN E INFORMACIÓN DE TODO TIPO DE PESONAS MEDIANTE CURSOS, SEMINARIOS, JORNADAS, TANTO DE PRESENCIA COMO A DISTANCIA EN CUALQUIER MATERIA, ASÍ COMO LA EDICIÓN DE LOS TEXTOS Y LIBROS ENCAMINADOS A TAL FIN, REVISTAS Y CUALQUIER OTRO MEDIO DE DIFUSIÓN QUE CONSIDERE IDÓNEO PARA SUS FINES; LA GESTIÓN, CREACIÓN, TOMA DE PARTICIPACIONES Y ASESORAMIENTO DE TODO TIPO EMPRESAS, CONSULTORÍA, GESTIÓN, DISTRIBUCIÓN, IMPORTACIÓN Y EXPORTACIÓN DE TODO TIPO DE PRODUCTOS CONEXOS CON DICHAS ACTIVIDADES DE FORMACIÓN, INFORMACIÓN Y ASESORAMIENTO.\r\n\r\n12.-LA COMPRA, TENENCIA, ENAJENACIÓN Y EXPLOTACIÓN, INCLUSO  EN EXCLUSIVA POR Y A FAVOR DE LA SOCIEDAD DE TÍTULOS, VALORES, ACCIONES, BONOS, OBLIGACIONES, PATENTES, LICENCIA, MARCAS, RÓTULOS, NOMBRES COMERCIALES Y TODA CLASE DE PERTENENCIAS DE PROPIEDAD INDUSTRIAL O INTELECTUAL, Y CUALESQUIERA OTRA CLASE DE BIENES INMUEBLES, TODO ELLO SIN INCIDIR EN LAS ACTIVIDADES U OPERACIONES REGULADAS POR LA LEGISLACIÓN DE INSTITUCIONES DE INVERSIÓN COLECTIVA Y LEY DE MERCADO DE VALORES.    ",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/02435",
+      "_links": {
+        "self": {
+          "name": "CELULOSAS BELAKO, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/02435"
+        }
+      }
+    },
+    {
+      "name": "REPRISS, S.A.",
+      "registrationNumber": "01143",
+      "identificationNumber": "A48095517",
+      "address": "C/ HURTADO DE AMÉZAGA, Nº 27 - 6º.",
+      "location": {
+        "postalCode": "48008",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.849.5",
+          "name": "Servicios de recadería y reparto y manipulación de correspondencia",
+          "_links": {
+            "self": {
+              "name": "Servicios de recadería y reparto y manipulación de correspondencia",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.849.5"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2001-07-23",
+      "certificateEndDate": "2001-12-18",
+      "object": "LA PRESTACIÓN DE SERVICIOS RELACIONADOS CON LA CORRESPONDENCIA, COMO PREPARACIÓN DE CARTAS Y SOBRES, SU DISTRIBUCIÓN Y REPARTO; COMPRAR Y VENDER O EN CUALQUIER OTRA FORMA ADQUIRIR Y ENAJENAR TODA CLASE DE BIENES INMUEBLES, DECLARAR OBRAS NUEVAS, AGRUPAR, SEGREGAR Y DIVIDIR BIENES INMUEBLES Y CONSTITUIR ESTOS EN RÉGIMEN DE PROPIEDAD HORIZONTAL, CONSTITUIR SERVIDUMBRES DE TODAS CLASES",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/01143",
+      "_links": {
+        "self": {
+          "name": "REPRISS, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/01143"
+        }
+      }
+    },
+    {
+      "name": "SORIN BIOMÉDICA ESPAÑA, S.A. SOCIEDAD UNIPERSONAL",
+      "registrationNumber": "01330",
+      "identificationNumber": "A28544161",
+      "address": "C/ CARRETERA CERDANYOLA, Nº 75 - 77.",
+      "location": {
+        "postalCode": "08190",
+        "municipality": "Sant Cugat del Vallès",
+        "county": "Barcelona",
+        "municipalityId": "205",
+        "countyId": "08"
+      },
+      "economicActivities": [
+        {
+          "id": "1.614.1",
+          "name": "Venta al por mayor de productos farmacéuticos y medicamentos",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de productos farmacéuticos y medicamentos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.614.1"
+            }
+          }
+        },
+        {
+          "id": "1.619.2",
+          "name": "Venta al por mayor de aparatos e instrumentos médicos, ortopédicos, ópticos",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de aparatos e instrumentos médicos, ortopédicos, ópticos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.619.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2001-07-10",
+      "certificateEndDate": "2001-12-12",
+      "object": "EL DISEÑO, FABRICACIÓN, IMPORTACIÓN, EXPORTACIÓN, MONTAJE Y COMERCIALIZACIÓN DE TODO TIPO DE APARATOS BIOMÉDICOS, TALES COMO MARCAPASOS IMPLANTABLES, ESTIMULADORES DE UTILIZACIÓN EXTERNA, OXIGENADORES, RIÑONES  ARTIFICIALES Y FILTROS, PRODUCTOS PARA EL ANÁLISIS Y SUS COMPONENTES, INCLUIDOS LOS PRODUCTOS RADIO-FARMACÉUTICOS, ASÍ COMO LOS PRODUCTOS DE NATURALEZA SIMILAR. LA ADQUISICIÓN, OBTENCIÓN Y EXPLOTACIÓN O VENTA DE MARCAS DE FÁBRICA REGISTRADAS, MARCAS COMERCIALES Y DE TODOS LOS PROCESOS DE FABRICACIÓN, ASÍ COMO TODAS LAS PATENTES DE INVENCIÓN, LICENCIA O MODELOS, REFERIDOS A PRODUCTOS INCLUIDOS EN EL APARTADO ANTERIOR",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/01330",
+      "_links": {
+        "self": {
+          "name": "SORIN BIOMÉDICA ESPAÑA, S.A. SOCIEDAD UNIPERSONAL",
+          "href": "https://api.euskadi.eus/procurements/companies/01330"
+        }
+      }
+    },
+    {
+      "name": "GORELEC, S.L.",
+      "registrationNumber": "02160",
+      "identificationNumber": "B48606966",
+      "address": "C/ SABINO ARANA Y GOIRI, Nº 5 BJ",
+      "location": {
+        "postalCode": "48490",
+        "municipality": "Ugao-Miraballes",
+        "county": "Bizkaia",
+        "municipalityId": "065",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.504.1",
+          "name": "Instalaciones eléctricas en general",
+          "_links": {
+            "self": {
+              "name": "Instalaciones eléctricas en general",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.504.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2001-07-10",
+      "certificateEndDate": "2001-12-04",
+      "object": "A) LA REALIZACIÓN DE INSTALACIONES Y MONTAJES ELÉCTRICOS, ASÍ COMO SU ESTUDIO, ASESORAMIENTO Y PLANIFICACIÓN, TANTO DE CARÁCTER DOMÉSTICO COMO PARA LA INDUSTRIA EN GENERAL.\r\nB) LA COMPRA, VENTA, COMERCIALIZACIÓN, ALMACENAJE, IMPORTACIÓN Y EXPORTACIÓN DE TODO TIPO DE MATERIALES Y ELEMENTOS DECORATIVOS O PARA LA INDUSTRIA DE CARÁCTER ELÉCTRICO O ELECTRÓNICO.\r\nC) LA REPRESENTACIÓN COMO AGENTE, DELEGADO, COMISIONISTA O CUALQUIER OTRA FORMA DE MEDIACIÓN MERCANTIL, DE TODA CLASE DE EMPRESAS NACIONALES O EXTRANJERAS, RELACIONADAS CON APARATOS, ELEMENTOS O ÚTILES DE CARÁCTER ELÉCTRICO",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/02160",
+      "_links": {
+        "self": {
+          "name": "GORELEC, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/02160"
+        }
+      }
+    },
+    {
+      "name": "GOIZ ERAIKUNTZAK, S.L.",
+      "registrationNumber": "02418",
+      "identificationNumber": "B20724811",
+      "address": "POLÍGONO ELBARRENA, S/N",
+      "location": {
+        "postalCode": "20247",
+        "municipality": "Zaldibia",
+        "county": "Gipuzkoa",
+        "municipalityId": "078",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.501.1",
+          "name": "Construcción completa, reparación y conservación de edificaciones",
+          "_links": {
+            "self": {
+              "name": "Construcción completa, reparación y conservación de edificaciones",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2001-07-05",
+      "certificateEndDate": "2001-11-15",
+      "object": "CONSTRUCCIÓN, REPARACIÓN Y CONSERVACIÓN DE TODA CLASE DE EDIFICACIONES",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/02418",
+      "_links": {
+        "self": {
+          "name": "GOIZ ERAIKUNTZAK, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/02418"
+        }
+      }
+    }
+  ]
+}

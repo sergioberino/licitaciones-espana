@@ -1,0 +1,438 @@
+{
+  "totalItems": 9042,
+  "totalPages": 905,
+  "currentPage": 84,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "name": "AUTO ELECTRICIDAD ONDO, S.A.",
+      "registrationNumber": "00105",
+      "identificationNumber": "A01015510",
+      "address": "C/ Ctra. N-240, salida n º 7: Gamarra Menor",
+      "location": {
+        "postalCode": "01510",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.654.1",
+          "name": "Venta al por menor de vehículos terrestres",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de vehículos terrestres",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.654.1"
+            }
+          }
+        },
+        {
+          "id": "1.691.2",
+          "name": "Reparación de vehículos automóviles, bicicletas y otros vehículos",
+          "_links": {
+            "self": {
+              "name": "Reparación de vehículos automóviles, bicicletas y otros vehículos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.691.2"
+            }
+          }
+        },
+        {
+          "id": "1.854.1",
+          "name": "Alquiler de automóviles sin conductor",
+          "_links": {
+            "self": {
+              "name": "Alquiler de automóviles sin conductor",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.854.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-01-14",
+      "certificateEndDate": "2026-06-29",
+      "object": "COMPRAVENTA DE VEHÍCULOS (CONCESIONARIO DE MERCEDES BENZ); VENTA AL POR MENOR DE RECAMBIOS Y ACCESORIOS; REPARACIÓN DE VEHÍCULOS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/00105",
+      "_links": {
+        "self": {
+          "name": "AUTO ELECTRICIDAD ONDO, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/00105"
+        }
+      }
+    },
+    {
+      "name": "ECKERT & ZIEGLER IBERIA, S.L.",
+      "registrationNumber": "06379",
+      "identificationNumber": "B85287985",
+      "address": "Calle Lanzarote, 15 Oficina 1 - 2ª Planta",
+      "location": {
+        "postalCode": "28703",
+        "municipality": "San Sebastián de los Reyes",
+        "county": "Madrid",
+        "municipalityId": "134",
+        "countyId": "28"
+      },
+      "economicActivities": [
+        {
+          "id": "1.619.2",
+          "name": "Venta al por mayor de aparatos e instrumentos médicos, ortopédicos, ópticos",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de aparatos e instrumentos médicos, ortopédicos, ópticos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.619.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-01-14",
+      "certificateEndDate": "2026-06-28",
+      "object": "LA PROMOCIÓN, VENTA Y COMERCIALIZACIÓN, AL POR MAYOR Y MENOR, DE PRODUCTOS SANITARIOS, APARATOS E INSTRUMENTALES DE MEDICINA Y CIRUGÍA, ACCESORIOS DE APLICACIÓN EN LA MEDICINA, INDUSTRIA Y FARMACÉUTICA, CONSUMIBLE CLÍNICO HOSPITALARIO, SOFTWARE PARA APARATOS MEDICINALES",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06379",
+      "_links": {
+        "self": {
+          "name": "ECKERT & ZIEGLER IBERIA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/06379"
+        }
+      }
+    },
+    {
+      "name": "EXBASA OBRAS Y SERVICIOS, S.L.",
+      "registrationNumber": "03395",
+      "identificationNumber": "B48161087",
+      "address": "C/ Gurtubay,  nº 1",
+      "location": {
+        "postalCode": "48013",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.507",
+          "name": "Construcción, reparación y conservación de toda clase obras",
+          "_links": {
+            "self": {
+              "name": "Construcción, reparación y conservación de toda clase obras",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.507"
+            }
+          }
+        },
+        {
+          "id": "1.722",
+          "name": "Transporte de mercancías por carretera",
+          "_links": {
+            "self": {
+              "name": "Transporte de mercancías por carretera",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.722"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-01-14",
+      "certificateEndDate": "2026-06-24",
+      "object": "LA  CONSTRUCCIÓN DE OBRAS PÚBLICAS Y PRIVADAS EN SU TOTALIDAD O EN CUALQUIERA DE SUS FASES; LA CONSTRUCCIÓN DE INMUEBLES; LA COMPRA Y VENTA DE MUEBLES Y TERRENOS. LA PROMOCIÓN, CONSTRUCCIÓN Y EJECUCIÓN DE OBRAS PRIVADAS Y PÚBLICAS, TALES COMO OBRAS NUEVAS DE EDIFICACIÓN URBANA, INCLUSO DE PROTECCIÓN OFICIAL, PABELLONES INDUSTRIALES, TRABAJOS DE URBANIZACIÓN, DE CONSERVACIÓN, SANEAMIENTO, DE CONSTRUCCIÓN Y REPARACIÓN DE TODO TIPO DE VÍAS; OBRAS HIDRÁULICAS, ABASTECIMIENTOS DE AGUAS, DRAGADOS, EXCAVACIONES, OBRAS PORTUARIAS, COMPRAVENTA Y ARRIENDO DE TODO TIPO DE BIENES INMUEBLES, MUEBLES Y TERRENOS. CUALQUIER ACTIVIDAD RELACIONADA CON LA LIMPIEZA Y ASEO URBANO EN GENERAL; CONSTRUCCIÓN DE TODO TIPO DE OBRAS; CONSERVACIÓN Y MATENIMIENTO DE INMUEBLES, DE EDIFICIOS, DE PARQUES Y JARDINES; MANTENIMIENTO DE REDES DE AGUA, ALCANTARILLADO Y ESTACIONES DEPURADORAS, MANTENIMIENTO DE CARRETERAS Y VIALES, INCLUYENDO LIMPIEZA DE VÍAS PÚBLICAS Y PLAYAS, SERVICIOS DE LIMPIEZA DE EDIFICIOS, FACHADAS E INTERIORES; SERVICIOS DE LIMPIEZA E HIGIENIZACIÓN, DESRATIZACIÓN, DESINFECCIÓN Y DESINFECCIÓN; MANTENIMIENTO DE EQUIPOS E INSTALACIONES DE GAS, AIRE ACONDICIONADO Y CALEFACCIÓN, INCLUYENDO SERVICIO DE POSTVENTA Y ASISTENCIA TÉCNICA; MANTENIMIENTO DE INSTALACIONES DE SEGURIDAD; MANTENIMIENTO, CONSERVACIÓN Y REPARACIÓN, INCLUYENDO ENGRASES Y SIMILARES, DE BUQUES, AERONAVES Y CUALQUIER OTRO VEHÍCULO, ASÍ COMO DE SUS CORRESPONDIENTES EQUIPOS E INSTALACIONES, PRINCIPALES O SECUNDARIAS; MATENIMIENTO DE EQUIPOS E INSTALACIONES DE INFORMÁTICA, OFIMÁTICA, TELECOMUNICACIÓN, ELECTRICIDAD Y MAQUINARIA EN GENERAL RELACIONADA CON TALES EQUIPOS E INSTALACIONES; TRATAMIENTO DE CUALQUIER TIPO DE RESIDUOS URBANOS E INDUSTRIALES, TRANSPORTE DE LOS MISMOS, Y DE CUALQUIER TIPO DE MERCANCÍA EN GENERAL. REALIZACIÓN DE ACTIVIDADES DE INGENIERÍA EN GENERAL Y PRESTACIÓN DE SERVICIOS DE DICHA ÍNDOLE. LA REALIZACIÓN EN NOMBRE PROPIO DE LAS SIGUIENTES OPERACIONES; ADQUISICIÓN, TENENCIA, DISFRUTE Y ENAJENACIÓN DE VALORES MOBILIARIOS Y OTROS ACTIVOS FINANCIEROS, EXCLUÍDAS LAS ACTIVIDADES DE LAS INSTITUCIONES DE INVERSIÓN COLECTIVA Y DE LAS SOCIEDADES Y AGENCIAS DE VALORES",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03395",
+      "_links": {
+        "self": {
+          "name": "EXBASA OBRAS Y SERVICIOS, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/03395"
+        }
+      }
+    },
+    {
+      "name": "CONSTRUCCIONES GOFRA, S.L.",
+      "registrationNumber": "07420",
+      "identificationNumber": "B20319505",
+      "address": "PASEO UBARBURU, 35 - PABELLON 12 BAJO",
+      "location": {
+        "postalCode": "20014",
+        "municipality": "Donostia / San Sebastián",
+        "county": "Gipuzkoa",
+        "municipalityId": "069",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.501.1",
+          "name": "Construcción completa, reparación y conservación de edificaciones",
+          "_links": {
+            "self": {
+              "name": "Construcción completa, reparación y conservación de edificaciones",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-01-14",
+      "certificateEndDate": "2026-06-27",
+      "object": "LA CONSTRUCCIÓN, REPARACIÓN, RESTAURACIÓN Y CONSERVACIÓN DE TODA CLASE DE OBRAS, EDIFICIOS URBANOS, PABELLONES INDUSTRIALES, URBANIZACIONES, CARRETERAS, VÍAS FÉRREAS, OBRAS HIDRÁULICAS, PUERTOS, AEROPUERTOS Y SIMILARES. COMPRA VENTA, PROMOCIÓN Y DIRECCIÓN, EXPLOTACIÓN EN ARRENDAMIENTOS DE TODO TIPO DE SOLARES, TERRENOS Y EDIFICACIONES. COMPRA VENTA, TANTO AL POR MAYOR COMO AL POR MENOR, EXPORTACIÓN, IMPORTACIÓN, DE TODO TIPO DE ARTÍCULOS Y MATERIALES DE CONSTRUCCIÓN Y ORNAMENTACIÓN DE LA MISMA",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07420",
+      "_links": {
+        "self": {
+          "name": "CONSTRUCCIONES GOFRA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/07420"
+        }
+      }
+    },
+    {
+      "name": "INETUM NORTE, S.L.U.",
+      "registrationNumber": "01654",
+      "identificationNumber": "B48301865",
+      "address": "C/ LICENCIADO POZA, 55 - 2ª PLANTA",
+      "location": {
+        "postalCode": "48013",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.617.8",
+          "name": "Venta al por mayor de máquinas y material de oficina",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de máquinas y material de oficina",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.617.8"
+            }
+          }
+        },
+        {
+          "id": "1.845",
+          "name": "Explotación electrónica por cuenta de terceros",
+          "_links": {
+            "self": {
+              "name": "Explotación electrónica por cuenta de terceros",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.845"
+            }
+          }
+        },
+        {
+          "id": "1.847",
+          "name": "Servicios de consultoría",
+          "_links": {
+            "self": {
+              "name": "Servicios de consultoría",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.847"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-01-14",
+      "certificateEndDate": "2026-06-30",
+      "object": "1.- EL SERVICIO DE ATENCIÓN A BIBLIOTECAS Y ARCHIVOS MEDIANTE PERSONAL PROPIO, ORGANIZANDO DICHOS ESTABLECIMIENTOS, ATENDIENDO A SUS USUARIOS Y EFECTUANDO TODAS LAS TAREAS PARA SU DEBIDO FUNCIONAMIENTO, TALES COMO CONSULTORÍA, SUMINISTRO DE EUIPAMIENTO INFORMÁTICO, SOFTWARE DE ARCHIVO, DISEÑO DE LOCALES DE ARCHIVO, SUMINISTRO DE EQUIPAMIENTO AUXILIAR, TAREAS DE ARCHIVO, ORGANIZACIÓN Y DISTRIBUCIÓN DE DOCUMENTOS, LIBROS, REVISTAS Y SOPORTES AUDIOVISUALES DE INFORMACIÓN, SEAN EN PAPEL, CINTAS MAGNÉTICAS, FOTOGRAFÍAS O CUALQUIER OTRO SOPORTE DOCUMENTAL QUE PERMITA MANTENER INALTERADA UNA INFORMACIÓN. 2.- EL TRANSPORTE EN GENERAL DE CUALQUIER OBJETO POR CUENTA DE TERCEROS, A CUALQUIER LUGAR DEL MUNDO, EMPLEANDO PARA ELLO MEDIOS DE TRANSPORTE PROPIOS O EMPLEANDO MEDIOS DE TRANSPORTE CONTRATADOS CON TERCEROS, INCLUYENDO LA POSIBILIDAD DE SUBCONTRATAR CON TERCEROS EL ENVÍO COMPLETO DE MERCANCÍAS O EL ENVÍO POR CARGAS CONCRETAS, ENCARGANDO A ESTOS TERCEROS LA CONTRATACIÓN DE LOS PROPIOS MEDIOS DE TRANSPORTE A UTILIZAR. 3.- LA CAPTURA DE INFORMACIÓN POR MEDIOS ELECTRÓNICOS, MAGNÉTICOS, INFORMÁTICOS, SIENDO LA INFORMACIÓN A CAPTAR LA QUE LEGALMENTE PUEDA PERTENECER A QUIEN ENCARGUE TAL CAPTURA, ALMACENANDO LOS DATOS EN LA FORMA FÍSICA O MAGNÉTICA DETERMINABLE POR TERCEROS. 4.- LA CREACIÓN, DESARROLLO Y MANTENIMIENTO DE PROGRAMAS DE ORDENADOR EN SU MÁS AMPLIA CONCEPCIÓN, INCLUYENDO PROGRAMAS DE ALMACENAMIENTO DE INFORMACIÓN POR CUENTA DE TERCEROS. 5.- LA CREACIÓN, DESARROLLO Y MANTENIMIENTO DE SERVICIOS DE TELECOMUNICACIONES, EMPLEANDO CUALQUIERA DE LOS SOPORTES TÉCNICOS EXISTENTES PARA ELLO Y PREVIO CUMPLIMIENTO DE LAS DISPOSICIONES LEGALES APLICABLES A TALES SERVICIOS. 6. EL ALMACENAJE Y LA CUSTODIA POR CUENTA DE TERCEROS DE TODO TIPO DE OBJETOS O ELEMENTOS A GUARDAR, INCLUYENDO DATOS MAGNÉTICOS, FOTOGRÁFICOS O INFORMÁTICOS. 7.- EL ASESORAMIENTO EN EL MANENIMIENTO DE BASES DE DATOS SUJETAS A LIMITACIONES LEGALES DE DISPOSICIÓN, COMUNICACIÓN, ARCHIVO Y CUSTODIA, ASÍ COMO SU CREACIÓN, CONSERVACIÓN, ADMINISTRACIÓN, CUSTODIA Y ENCRIPTADO, CUANDO CORRESPONDA. 8.- EL ESTUDIO, LA PROMOCIÓN Y EL DESARRROLLO DE TODA CLASE DE EMPRESAS INDUSTRIALES, COMERCIALES Y DE SERVICIOS. 9.- LA PRESTACIÓN DE SERVICIOS, A ENTIDADES PÚBLICAS O PRIVADAS, CONSISTENTES EN LA INVESTIGACIÓN Y EL ESTUDIO DE LOS PROBLEMAS QUE A LAS MISMAS Y A SUS OPERACIONES AFECTEN, TALES COMO, SEGURIDAD, CONTROL, ANÁLISIS FINANCIERO, ORGANIZACIÓN GENERAL, INVESTIGACIÓN OPERATIVA, CENSURA DE CUENTAS, INGENIERÍA DE INSTALACIONES, SISTEMAS INFORMÁTICOS Y PROCESOS DE DATOS, MECANOGRAFÍA ELECTRÓNICA, CONTRATACIÓN DE PERSONAL EVENTUAL Y FIJO.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/01654",
+      "_links": {
+        "self": {
+          "name": "INETUM NORTE, S.L.U.",
+          "href": "https://api.euskadi.eus/procurements/companies/01654"
+        }
+      }
+    },
+    {
+      "name": "TURYELECTRO GALICIA, S.L.",
+      "registrationNumber": "08930",
+      "identificationNumber": "B36526275",
+      "address": "Ctra. Porriño - Salceda, Km1 (Desv. Pol a Granxa ) ",
+      "location": {
+        "postalCode": "36400",
+        "municipality": "Porriño, O",
+        "county": "Pontevedra",
+        "municipalityId": "039",
+        "countyId": "36"
+      },
+      "economicActivities": [
+        {
+          "id": "1.653.9",
+          "name": "Venta al por menor de otros artículos para el equipamiento del hogar",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de otros artículos para el equipamiento del hogar",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.653.9"
+            }
+          }
+        },
+        {
+          "id": "1.691.9",
+          "name": "Reparación de otros bienes de consumo n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Reparación de otros bienes de consumo n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.691.9"
+            }
+          }
+        },
+        {
+          "id": "1.729",
+          "name": "Otros transportes terrestres n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros transportes terrestres n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.729"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-01-14",
+      "certificateEndDate": "2026-06-27",
+      "object": "1.-.ACTIVIDADES RELACIONADAS CON LA TECNOLOGÍA DE LA INFORMACIÓN Y DE LAS COMUNICACIONES (CNAE 6190). 2.- GESTIÓN Y/O DISTRIBUCIÓN DE CORRESPONDENCIA O PAQUETERÍA. 3.-GESTIÓN LOGÍSTICA, TRANSPORTE, ALMACENAMIENTO, INCLUYENDO LA GESTION Y/O DISTRIBUCIÓN DE CORRESPONDENCIA O PAQUETERÍA. 4.- EL ESTUDIO, EJECUCIÓN Y REALIZACIÓN DE TODA CLASE DE OBRAS CON O SIN APORTACIÓN DE MATERIALES, PÚBLICAS O PRIVADAS, CIVIL, VIVIENDA, PROMOCIÓN, PARA TODA CLASE DE ORGANISMOS PÚBLICOS O PRIVADOS; COMPRAVENTA DE TODA CLASE DE MATERIALES DE CONSTRUCCIÓN, ELÉCTRICOS, ELECTROMECÁNCOS, INCLUSO FABRICACIÓN, REPARACIÓN Y DISTRIBUCIÓN DE LOS MISMOS. GESTIÓN Y SUBCONTRATACIÓN DE TODA CLASE DE OBRAS, PÚBLICAS Y/O PRIVADAS, PARA TODA CLASE DE ENTES U ORGANISMOS Y EMPRESAS. ESTUDIOS Y TRAMITACIÓN DE TODA CLASE DE PROYECTOS RELACIOANDOS CON EL OBJETO SOCIAL DE LA ENTIDAD.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08930",
+      "_links": {
+        "self": {
+          "name": "TURYELECTRO GALICIA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/08930"
+        }
+      }
+    },
+    {
+      "name": "ENRIQUE ARZAMENDI BALERDI",
+      "registrationNumber": "08633",
+      "identificationNumber": "08788755H",
+      "address": "C/ Herrería 5, 4º",
+      "location": {
+        "postalCode": "01001",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.691.9",
+          "name": "Reparación de otros bienes de consumo n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Reparación de otros bienes de consumo n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.691.9"
+            }
+          }
+        },
+        {
+          "id": "1.722",
+          "name": "Transporte de mercancías por carretera",
+          "_links": {
+            "self": {
+              "name": "Transporte de mercancías por carretera",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.722"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-01-13",
+      "certificateEndDate": "2026-06-22",
+      "object": "REPARACIÓN DE OTROS BIENES DE CONSUMO N.C.O.P. TRANSPORTE DE MERCANCÍAS POR CARRETERA.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08633",
+      "_links": {
+        "self": {
+          "name": "ENRIQUE ARZAMENDI BALERDI",
+          "href": "https://api.euskadi.eus/procurements/companies/08633"
+        }
+      }
+    },
+    {
+      "name": "JESÚS GUTIÉRREZ SANTOS",
+      "registrationNumber": "09762",
+      "identificationNumber": "12401224S",
+      "address": "Pago Finca el Pontón, 5190, poligono 22",
+      "location": {
+        "postalCode": "47270",
+        "municipality": "Cigales",
+        "county": "Valladolid",
+        "municipalityId": "050",
+        "countyId": "47"
+      },
+      "economicActivities": [
+        {
+          "id": "1.612.2",
+          "name": "Venta al por mayor de cereales",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de cereales",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.612.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-01-13",
+      "certificateEndDate": "2026-06-26",
+      "object": "VENTA AL POR MAYOR DE CEREALES.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/09762",
+      "_links": {
+        "self": {
+          "name": "JESÚS GUTIÉRREZ SANTOS",
+          "href": "https://api.euskadi.eus/procurements/companies/09762"
+        }
+      }
+    },
+    {
+      "name": "KAIZEN-EUREKA S.L.",
+      "registrationNumber": "06556",
+      "identificationNumber": "B31720816",
+      "address": "Avenida de Pio XII",
+      "location": {
+        "postalCode": "31008",
+        "municipality": "Pamplona/Iruña",
+        "county": "Navarra",
+        "municipalityId": "201",
+        "countyId": "31"
+      },
+      "economicActivities": [
+        {
+          "id": "1.966.9",
+          "name": "Otros servicios culturales n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros servicios culturales n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.966.9"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-01-13",
+      "certificateEndDate": "2026-06-24",
+      "object": "LA PRESTACIÓN Y REALIZACIÓN DE CUALESQUIERA SERVICIOS Y ACTIVIDADES RELACIONADOS CON LA CULTURA, MEDIO AMBIENTE, DESARROLLO REGIONAL Y LOCAL, COOPERACIÓN AL DESARROLLO, PATRIMONIO ARTÍSTICO, HISTÓRICO, NATURALÍSTICO Y CULTURAL, TURISMO, EDUCACIÓN, NUEVAS TECNOLOGÍAS Y FORMACIÓN, INCLUIDOS SU GESTIÓN Y ADMINISTRACIÓN BAJO CUALQUIER MODALIDAD. EL DISEÑO, ARTICULACIÓN, IMPLANTACIÓN, LIDERAZGO, PARTICIPACIÓN, SEGUIMIENTO, CONTROL, EVALUACIÓN, GESTIÓN, SUPERVISIÓN, CONSULTORÍA Y FISCALIZACIÓN DE TODO TIPO DE PROYECTOS RELACIONADOS CON LOS CAMPOS ANTERIORES, TANTO DE ÁMBITO NACIONAL COMO INTERNACIONAL. LA GESTIÓN DE RECURSOS NATURALES Y CULTURALES, LA PRESTACIÓN DE SERVICIOS ADMINISTRATIVOS, PORTERÍA, CONTROL DE ACCESOS, VIGILANCIA, LIMPIEZA, MANTENIMIENTO, INFORMACIÓN AL PÚBLICO, REALIZACIÓN DE ACTIVIDADES CIENTÍFICAS, DIVULGATIVAS Y FORMATIVAS EN EQUIPAMIENTOS DE CARÁCTER CULTURAL, MUSEÍSTICO, ARTÍSTICO, ARCHIVÍSTICO, HISTÓRICO, AMBIENTAL, TURÍSTICO, DEPORTIVO, FORMATIVO, ASOCIATIVO Y OTRAS DOTACIONES SIMILARES, ASÍ COMO EN ESPACIOS NATURALES. LA ORGANIZACIÓN DE CONGRESOS, JORNADAS, EVENTOS, FERIAS, EXPOSICIONES Y SIMILARES EN LOS ÁMBITOS MENCIONADOS. QUEDAN EXCLUIDAS DEL OBJETO SOCIAL TODAS AQUELLAS ACTIVIDADES PARA CUYO EJERCICIO LA LEY EXIJA REQUISITOS ESPECIALES QUE NO QUEDEN CUMPLIDOS POR ESTA SOCIEDAD",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06556",
+      "_links": {
+        "self": {
+          "name": "KAIZEN-EUREKA S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/06556"
+        }
+      }
+    },
+    {
+      "name": "GLOBAL BUREAU AUDITORES, S.L.",
+      "registrationNumber": "06864",
+      "identificationNumber": "B01551373",
+      "address": "Alameda Mazarredo, 15 - 6º D",
+      "location": {
+        "postalCode": "48001",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.842",
+          "name": "Servicios financieros y contables",
+          "_links": {
+            "self": {
+              "name": "Servicios financieros y contables",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.842"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-01-13",
+      "certificateEndDate": "2026-06-21",
+      "object": "PRESTACIÓN DE SERVICIOS COMPRENDIDOS EN EL ÁMBITO DE LA AUDITORÍA DE CUENTAS, REALIZACIÓN DE FUNCIONES RECONOCIDAS POR LAS LEYES A LOS MIEMBROS DEL INSTITUTO DE CENSORES JURADOS DE CUENTAS DE ESPAÑA. ASESORAMIENTO JURÍDICO, LABORAL, FINANCIERO Y TRIBUTARIO DE CUALQUIER TIPO DE EMPRESAS. EL EJERCICIO DEL CARGO DE ADMINISTRADOR CONCURSAL EN LOS PROCEDIMIENTOS DE INSOLVENCIA POR NOMBRAMIENTO JUDICIAL O DESIGNACIÓN DE OTROS ADMINISTRADORES CONCURSALES, ASÍ COMO LAS LABORES DE FORMACIÓN EN EL CAMPO CONCURSAL QUE SON EL COMPROMISO DE DICHO EJERCICIO",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06864",
+      "_links": {
+        "self": {
+          "name": "GLOBAL BUREAU AUDITORES, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/06864"
+        }
+      }
+    }
+  ]
+}

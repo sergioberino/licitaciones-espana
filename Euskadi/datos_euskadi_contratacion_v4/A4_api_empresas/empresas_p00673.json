@@ -1,0 +1,488 @@
+{
+  "totalItems": 9042,
+  "totalPages": 905,
+  "currentPage": 673,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "name": "REDES DE MARKETING, S. COOP.",
+      "registrationNumber": "03547",
+      "identificationNumber": "F95426185",
+      "address": "POL UGALDEGUREN II, 13- NAVE 1",
+      "location": {
+        "postalCode": "48170",
+        "municipality": "Zamudio",
+        "county": "Bizkaia",
+        "municipalityId": "905",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.844",
+          "name": "Servicios de publicidad, relaciones públicas y similares",
+          "_links": {
+            "self": {
+              "name": "Servicios de publicidad, relaciones públicas y similares",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.844"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2014-03-28",
+      "certificateEndDate": "2008-07-18",
+      "object": "COMPLETAR LA ACTIVIDAD Y LOS RESULTADOS DE SUS SOCIOS MENDIATE LA PRODUCCIÓN Y PRESTACIÓN DE SERVICIOS DE MARKETING TALES COMO PUBLICIDAD DIRECTA (PERSONALIZACIÓN DE DOCUMENTOS, MANIPULADOS, ENSOBRADO, FRANQUEO, ENVÍO, ETC.); MARKETING TELEFÓNICO Y CENTRO DE ATENCIÓN TELEFÓNICA; ENVÍO Y RECEPCIÓN DE MENSAJES TELEFÓNICOS; GRABACIÓN, ANÁLISIS Y EXPLOTACIÓN DE BASES DE DATOS; ENVÍO Y RECEPCIÓN DE MENSAJES, FORMULARIOS, ETC., POR INTERNET; DIGITALIZACIÓN Y GESTIÓN DE DOCUMENTOS; Y CUALESQUIERA OTROS PRODUCTOS Y SERVICIOS DE MARKETING O AUXLIARES DE ÉSTOS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03547",
+      "_links": {
+        "self": {
+          "name": "REDES DE MARKETING, S. COOP.",
+          "href": "https://api.euskadi.eus/procurements/companies/03547"
+        }
+      }
+    },
+    {
+      "name": "LABORATORIOS DR. ESTEVE, S.A.",
+      "registrationNumber": "02609",
+      "identificationNumber": "A08037236",
+      "address": "AV. MARE DE DEU DE MONTSERRAT, 221",
+      "location": {
+        "postalCode": "08041",
+        "municipality": "Barcelona",
+        "county": "Barcelona",
+        "municipalityId": "019",
+        "countyId": "08"
+      },
+      "economicActivities": [
+        {
+          "id": "1.254.2",
+          "name": "Fabricación de especialidades y otros productos farmacéuticos",
+          "_links": {
+            "self": {
+              "name": "Fabricación de especialidades y otros productos farmacéuticos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.254.2"
+            }
+          }
+        },
+        {
+          "id": "1.614.1",
+          "name": "Venta al por mayor de productos farmacéuticos y medicamentos",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de productos farmacéuticos y medicamentos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.614.1"
+            }
+          }
+        },
+        {
+          "id": "1.936.2",
+          "name": "Investigación en ciencias médicas",
+          "_links": {
+            "self": {
+              "name": "Investigación en ciencias médicas",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.936.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2014-03-24",
+      "certificateEndDate": "2014-09-10",
+      "object": "LA FABRICACIÓN, ELABORACIÓN Y VENTA DE PRODUCTOS Y ESPECIALIDADES FARMACÉUTICAS. LAS ACTIVIDADES ENUMERADAS EN EL ARTÍCULO ANTERIOR, PODRÁN SER REALIZADAS POR LA SOCIEDAD, YA DIRECTAMENTE, YA INDIRECTAMENTE, INCLUSO MEDIANTE SU PARTICIPACIÓN EN OTRAS SOCIEDADES DE OBJETO IDÉNTICO O ANÁLOGO",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/02609",
+      "_links": {
+        "self": {
+          "name": "LABORATORIOS DR. ESTEVE, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/02609"
+        }
+      }
+    },
+    {
+      "name": "K 2000, S.A.U.",
+      "registrationNumber": "03330",
+      "identificationNumber": "A48175681",
+      "address": "BARRIO ERREKALDE S/N",
+      "location": {
+        "postalCode": "48960",
+        "municipality": "Galdakao",
+        "county": "Bizkaia",
+        "municipalityId": "036",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.355.2",
+          "name": "Edición de soportes grabados de sonido, vídeo y de informática",
+          "_links": {
+            "self": {
+              "name": "Edición de soportes grabados de sonido, vídeo y de informática",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.355.2"
+            }
+          }
+        },
+        {
+          "id": "1.615.4",
+          "name": "Venta al por mayor de aparatos y material radioeléctrico y electrónico",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de aparatos y material radioeléctrico y electrónico",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.615.4"
+            }
+          }
+        },
+        {
+          "id": "1.844",
+          "name": "Servicios de publicidad, relaciones públicas y similares",
+          "_links": {
+            "self": {
+              "name": "Servicios de publicidad, relaciones públicas y similares",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.844"
+            }
+          }
+        },
+        {
+          "id": "1.845",
+          "name": "Explotación electrónica por cuenta de terceros",
+          "_links": {
+            "self": {
+              "name": "Explotación electrónica por cuenta de terceros",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.845"
+            }
+          }
+        },
+        {
+          "id": "1.849.9",
+          "name": "Otros servicios independientes n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros servicios independientes n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.849.9"
+            }
+          }
+        },
+        {
+          "id": "1.861.2",
+          "name": "Alquiler de locales industriales y otros alquileres n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Alquiler de locales industriales y otros alquileres n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.861.2"
+            }
+          }
+        },
+        {
+          "id": "1.961.1",
+          "name": "Producción de películas cinematográficas (incluso vídeos)",
+          "_links": {
+            "self": {
+              "name": "Producción de películas cinematográficas (incluso vídeos)",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.961.1"
+            }
+          }
+        },
+        {
+          "id": "1.961.2",
+          "name": "Doblaje y montaje de películas",
+          "_links": {
+            "self": {
+              "name": "Doblaje y montaje de películas",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.961.2"
+            }
+          }
+        },
+        {
+          "id": "1.989.2",
+          "name": "Servicios de organización de congresos, asambleas y similares",
+          "_links": {
+            "self": {
+              "name": "Servicios de organización de congresos, asambleas y similares",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.989.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2014-03-18",
+      "certificateEndDate": "2014-08-17",
+      "object": "A) GRABACIÓN DE DISCOS Y CINTAS MAGNÉTICAS. Matrices de discos y cintas magnéticas; discos y cintas magnéticas grabadas; discos impresionados a trinta y tres y cuarenta y cinco r.p.m. y otros; cintas magnéticas grabadas de sesenta minutos de duración y otras cintas grabadas; B) LABORATORIOS FOTOGRÁFICOS Y CINEMATOGRÁFICOS. Películas cinematográficas reveladas, tanto para cine aficionado, como profesional; placas, películas fotográficas negativas y diapositivas reveladas; microfilms revelados y otras películas fotográficas megativas, reveladas en blanco y negro y color y diapositivas; copias fotográficas y ampliaciones, tanto en blanco y negro como en color. C) CINEMATOGRAFÍA. La promoción, producción, distribución y compraventa y exhibición de películas o cintas cinematográficas o de vídeo de largo o reducido metraje, íntegramente nacionales o en régimen de coproducción, realizadas por porcedimientos conocidos o por conocer. La reproducción, alquiler y exhibición de las películas producidas, la compraventa y distribución de películas nacionales y extranjera y todos los ngocios relacionados con dicha actividad, como la adaptación a televisión, vidocassettes, disco.cassettes y otros similares. D) TELEVISIÓN. La promoción, producción y venta de películas o cintas cinematográficas o de vídeo de largo o reducido metraje, íntegramente nacionales o en régimen de coproducción. Y asimismo, la producción por encargo de cualquier película o serie producida por el Estado o por otra Entidad pública o privada tanto española como extranjera. La producción y alquiler de películas producidas. La distribución y exhibición de películas nacionales y extranjeras y todos los negocios relacionados con dicha actividad, como son la adaptación a la televisión, representación y exclusivas de artistas y otros similares. E) ESTUDIOS CINEMATOGRÁFICOS. La promoción, explotación por sí o en alquiler de estudios y maquinaria para la producción de cintas cinematográficas o de vídeo, doblaje de películas o cintas cinematográficas o de video, producción, venta, distribución y exhibición de películas y demás actividades complementarias relacionadas con las mismas, como sonorización, montaje, mezclas, repicaje y otros, previo cumplimiento de las formalidades legales. F) EXHIBICION. Promocionar y explotar, mediante su adquisición o arrendamiento  o cesión, locales destinados a cinematográfos y a toda clase de espectáculos. G) VIDEO -CASSETTES, DISCO-CASSETTES Y SIMILARES. La promoción, compra o distribución de cualquier  mateiral en vídeo, rodado en vídeo o reproducido en los procedimientos indicados o en cualquier otro sistema conocido o por conocer. La adquisición de derechos de películas nacionales o extranjeras de cualquier formato o duración, para explotar estos procedimientos. H) LABORATORIOS. La explotación en régimen de propiedad o de subarriendo, de laboratorios, tanto para películas cinematográficas de cualquier formato o procedimiento o películas en vídeo o en disco en cualquier procedimiento inventado o por inventar. I) LA IMPORTACIÓN Y EXPORTACIÓN de toda clase de bienes, elementos y materiales de iluminacón, cámaras y cualquier otro relacionado con las actividades antes indicadas y la financiación de dichas operaciones y alquiler y compra-venta de bienes, elementos y materiales antes indicados",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03330",
+      "_links": {
+        "self": {
+          "name": "K 2000, S.A.U.",
+          "href": "https://api.euskadi.eus/procurements/companies/03330"
+        }
+      }
+    },
+    {
+      "name": "IKAUR, S.L.",
+      "registrationNumber": "02149",
+      "identificationNumber": "B20342002",
+      "address": "C/ LARRAMENDI, Nº 5 - 1º DCHA",
+      "location": {
+        "postalCode": "20006",
+        "municipality": "Donostia / San Sebastián",
+        "county": "Gipuzkoa",
+        "municipalityId": "069",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.843.1",
+          "name": "Servicios técnicos de ingeniería",
+          "_links": {
+            "self": {
+              "name": "Servicios técnicos de ingeniería",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.1"
+            }
+          }
+        },
+        {
+          "id": "1.843.2",
+          "name": "Servicios técnicos de arquitectura y urbanismo",
+          "_links": {
+            "self": {
+              "name": "Servicios técnicos de arquitectura y urbanismo",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2014-03-14",
+      "certificateEndDate": "2014-08-14",
+      "object": "LAS ACTIVIDADES RELATIVAS A BIENES INMUEBLES; LA GESTIÓN, ADQUISICIÓN, EXPLOTACIÓN Y ADMINISTRACIÓN DE TODA CLASE DE BIENES, RECURSOS Y MEDIOS AUXILIARES NECESARIOS PARA EL DESARROLLO Y REALIZACIÓN DE PROYECTOS, ESTUDIOS, INFORMES Y ASESORAMIENTO SOBRE ACTUACIONES URBANÍSTICAS E INMOBILIARIAS; LA PRESTACIÓN DE SERVICIOS PROFESIONALES, TALES COMO EL ASESORAMIENTO, ELABORACIÓN Y SEGUIMIENTO DE PROYECTOS DE ARQUITECTURA E INGENIERÍA Y DEMÁS ACTUACIONES NECESARIAS HASTA LA FINALIZACIÓN DE LOS MISMOS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/02149",
+      "_links": {
+        "self": {
+          "name": "IKAUR, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/02149"
+        }
+      }
+    },
+    {
+      "name": "TECNICAS FOTOSOLARES, S.L.",
+      "registrationNumber": "04261",
+      "identificationNumber": "B95455788",
+      "address": "Avda. Lehendakari Aguirre, nº 11-8º",
+      "location": {
+        "postalCode": "48014",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.504.1",
+          "name": "Instalaciones eléctricas en general",
+          "_links": {
+            "self": {
+              "name": "Instalaciones eléctricas en general",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.504.1"
+            }
+          }
+        },
+        {
+          "id": "1.847",
+          "name": "Servicios de consultoría",
+          "_links": {
+            "self": {
+              "name": "Servicios de consultoría",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.847"
+            }
+          }
+        },
+        {
+          "id": "1.934",
+          "name": "Enseñanza fuera de establecimiento permanente",
+          "_links": {
+            "self": {
+              "name": "Enseñanza fuera de establecimiento permanente",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.934"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2014-03-14",
+      "certificateEndDate": "2014-08-10",
+      "object": "1.- SUMINISTRO, COMERCIALIZACION, INSTALACION Y MANTENIMIENTO DE PRODUCTOS RELACIONADOS CON LA ENERGIA SOLAR, ASI COMO, COMERCIALIZACION, INSTALACION Y MANTENIMIENTO DE EQUIPOS DE CLIMATIZACION. 2.- VENTA DE ENERGÍA Y DE SERVICIOS ENERGÉTICOS PARA TODA CLASE DE INSTALACIONES, EDIFICIOS O LOCALES MEDIANTE LA CONSTRUCCIÓN, INSTALACIÓN O TRANSFORMACIÓN DE OBRAS, EQUIPOS Y SISTEMAS, SU MANTENIMIENTO, ACTUALIZACIÓN O RENOVACIÓN, SU EXPLOTACIÓN O SU GESTIÓN. 3.- LA REALIZACIÓN DE PROYECTOS, CONSTRUCCIÓN, MANTENIMIENTO, PROMOCIÓN, INTERMEDIACIÓN Y EXPLOTACIÓN DE TODO TIPO DE INSTALACIONES DE PRODUCCIÓN DE ENERGÍA. 4.- SERVICIOS TÉCNICOS DE ARQUITECTURA E INGENIERÍA RELACIONADOS CON LA EFICIENCIA ENERGÉTICA, EL DISEÑO DE SOLUCIONES PARA LA INTEGRACIÓN ARQUITECTÓNICA Y ASESORAMIENTO TÉCNICO BIOBLIMÁTICO. 5.- INGENIERÍA, CONSULTORÍA, INVESTIGACIÓN, DESARROLLO E INNOVACIÓN DE SOLUCIONES BASADAS EN TECNOLOGÍAS RELACIONADAS CON EL USO DE LAS ENERGÍAS RENOVABLES Y LA EFICIENCIA ENERGÉTICA",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/04261",
+      "_links": {
+        "self": {
+          "name": "TECNICAS FOTOSOLARES, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/04261"
+        }
+      }
+    },
+    {
+      "name": "COVIDIEN SPAIN, S.L.",
+      "registrationNumber": "02393",
+      "identificationNumber": "B60661089",
+      "address": "WTC ALAMEDA PARK. Plaça de la Pau s/n.Edif.7-3ª pl.",
+      "location": {
+        "postalCode": "08940",
+        "municipality": "Cornellà de Llobregat",
+        "county": "Barcelona",
+        "municipalityId": "073",
+        "countyId": "08"
+      },
+      "economicActivities": [
+        {
+          "id": "1.619.2",
+          "name": "Venta al por mayor de aparatos e instrumentos médicos, ortopédicos, ópticos",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de aparatos e instrumentos médicos, ortopédicos, ópticos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.619.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2014-03-10",
+      "certificateEndDate": "2014-07-20",
+      "object": "LA FABRICACIÓN, ESTERILIZACIÓN, COMERCIALIZACIÓN, IMPORTACIÓN, EXPORTACIÓN Y REPRESENTACIONES NACIONALES Y EXTRANJERAS DE PRODUCTOS MÉDICO-QUIRÚRGICO-SANITARIOS, DESTINADOS A CLÍNICAS, HOSPITALES, CENTROS MÉDICOS PÚBLICOS Y PRIVADOS Y PACIENTES EN GENERAL, ASÍ COMO ESTUDIOS DE MERCADO SANITARIO EN GENERAL, Y LA INVESTIGACIÓN Y DESARROLLO DE NUEVOS PRODUCTOS MÉDICO-QUIRÚRGICOS-SANITARIOS.\r\n\r\nLA FABRICACIÓN Y VENTA DE TODA CLASE DE PRODUCTOS MANUFACTURADOS DEL LÁTEX Y, EN ESPECIAL, LA FABRICACIÓN DE GUANTES DE CIRUGÍA.\r\n\r\nLA FABRICACIÓN, COMERCIALIZACIÓN Y REPRESENTACIÓN DE PRODUCTOS DE HIGIENE (PAÑALES, COMPRESAS, ETC.) COSMÉTICA, TEXTILES CON FINALIDAD MÉDICA, ASÍ COMO LA COMPRAVENTA DE  BIENES INMUEBLES.     ",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/02393",
+      "_links": {
+        "self": {
+          "name": "COVIDIEN SPAIN, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/02393"
+        }
+      }
+    },
+    {
+      "name": "DIDACIENCIA, S.A.",
+      "registrationNumber": "01223",
+      "identificationNumber": "A78614948",
+      "address": "C/ PLAZA VILLAFRANCA DE LOS BARROS, Nº 2.",
+      "location": {
+        "postalCode": "28034",
+        "municipality": "Madrid",
+        "county": "Madrid",
+        "municipalityId": "079",
+        "countyId": "28"
+      },
+      "economicActivities": [
+        {
+          "id": "1.619.7",
+          "name": "Venta al por mayor de instrumentos de precisión, medida y similares",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de instrumentos de precisión, medida y similares",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.619.7"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2014-03-05",
+      "certificateEndDate": "2014-08-11",
+      "object": "EL DISEÑO, FABRICACIÓN, COMERCIALIZACIÓN Y VENTA DE TODA CLASE DE APARATOS Y OBJETOS DIDÁCTICOS Y CIENTÍFICOS, YA SEA DESARROLLADO BIEN DIRECTAMENTE POR LA PROPIA ENTIDAD O BIEN INDIRECTAMENTE, TANTO DE FORMA TOTAL COMO PARCIAL, MEDIANTE LA TITULARIDAD DE ACCIONES O PARTICIPACIONES DE OTRAS SOCIEDADES DE OBJETO IDÉNTICO O ANÁLOGO",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/01223",
+      "_links": {
+        "self": {
+          "name": "DIDACIENCIA, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/01223"
+        }
+      }
+    },
+    {
+      "name": "ALUALNE, S.L.",
+      "registrationNumber": "05134",
+      "identificationNumber": "B95746681",
+      "address": "Dolores Ibarruri, 7 Bajo",
+      "location": {
+        "postalCode": "48012",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.931.1",
+          "name": "Guardería y enseñanza de educación infantil, exclusivamente",
+          "_links": {
+            "self": {
+              "name": "Guardería y enseñanza de educación infantil, exclusivamente",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.931.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2014-03-05",
+      "certificateEndDate": "2014-08-18",
+      "object": "GESTIÓN Y EXPLOTACIÓN DE ESCUELA INFANTILES, HAURRESKOLAS, GUARDERÍAS, LUDOTECAS, CENTROS DE OCIO Y EDUCACIÓN INFANTIL. ACTIVIDADES DE CUIDADO DIURNO DE NIÑOS Y SERVICIOS DE ASISTENCIA A LA INFANCIA. ORGANIZACIÓN DE EVENTOS INFANTILES PARA EMPRESAS, ORGANISMOS PÚBLICOS Y PARTICULARES. DISEÑO, CONFECCIÓN Y VENTA DE UNIFORMES Y COMPLEMENTOS ESCOLARES",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/05134",
+      "_links": {
+        "self": {
+          "name": "ALUALNE, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/05134"
+        }
+      }
+    },
+    {
+      "name": "INGENIERÍA XXI, S.L.",
+      "registrationNumber": "02776",
+      "identificationNumber": "B01049923",
+      "address": "C/ CASTILLO DE QUEJANA, 9",
+      "location": {
+        "postalCode": "01007",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.843.1",
+          "name": "Servicios técnicos de ingeniería",
+          "_links": {
+            "self": {
+              "name": "Servicios técnicos de ingeniería",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2014-02-25",
+      "certificateEndDate": "2014-07-28",
+      "object": "PROYECTAR, DISEÑAR, CALCULAR Y/O COORDINAR TODO TIPO DE INSTALACIONES INDUSTRIALES EN GENERAL, TANTO SEAN DE ORIGEN MECÁNICO COMO ELÉCTRICO, HIDRÁULICO, QUÍMICO, PETROQUÍMICO, NÁUTICO, AERONÁUTICO, TELECOMUNICACIÓN, INFORMÁTICO O DE OBRAS CIVILES DE PUERTOS, CAMINOS, CANALES, EDIFICIOS, JARDINES PÚBLICOS, ALUMBRADOS, REDES DE ALCANTARILLADO, AGUA, GAS, ELECTRICIDAD, TRATAMIENTO DE AGUAS, RESIDUOS INDUSTRIALES U OTROS SIMILARES",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/02776",
+      "_links": {
+        "self": {
+          "name": "INGENIERÍA XXI, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/02776"
+        }
+      }
+    },
+    {
+      "name": "EL BUREAU DE LA COMUNICACION Y LA PUBLICIDAD,S.L.",
+      "registrationNumber": "03543",
+      "identificationNumber": "B95459566",
+      "address": "JOSE MARIA OLABARRI 4, 10º A",
+      "location": {
+        "postalCode": "48001",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.844",
+          "name": "Servicios de publicidad, relaciones públicas y similares",
+          "_links": {
+            "self": {
+              "name": "Servicios de publicidad, relaciones públicas y similares",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.844"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2014-02-25",
+      "certificateEndDate": "2014-08-17",
+      "object": "A- LA PRESTACIÓN DE TODA CLASE DE SERVICIOS PROPIOS DE LA COMUNICACIÓN, LA IMAGEN Y LA ACTIVIDAD PUBLICITARIA. B- LA REALIZACIÓN Y COMERCIALIZACIÓN DE TODA CLASE DE DISEÑOS GRÁFICOS Y LOGOTIPOS. C- EL PROYECTO Y LA ELABORACIÓN DE PROGRAMAS Y CAMPAÑAS PUBLICITARIAS PARA CUALQUIER TIPO DE SERVICIO Y PRODUCTOS, SU EJECUCIÓN, GESTIÓN, IMPLANTACIÓN Y SEGUIMIENTO. D- LA EDICIÓN, PUBLICACIÓN Y DISTRIBUCIÓN DE PRODUCTOS DE DISEÑO Y PUBLICIDAD EN PAPEL O EN CUALQUIER OTRO SOPORTE COMO AUDIO, CINE, VÍDEO O SOPORTES INFORMÁTICOS DE CUALQUIER TIPO, CD-ROM, DVD Y DEMÁS UTILIZABLES EN ORDENADORES Y REDES DE COMUNICACIÓN, EN INTERNET Y OTRAS MODALIDADES. E- LA COMPRA, VENTA, IMPORTACIÓN Y EXPORTACIÓN DE SISTEMAS Y PRODUCTOS DE DISEÑO GRÁFICO, ASÍ COMO LA REPRESENTACIÓN DE FIRMAS COMERCIALES DEL SECTOR. F- LA FORMACIÓN Y CAPACITACIÓN EN MATERIA DE IMAGEN Y COMUNICACIÓN",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03543",
+      "_links": {
+        "self": {
+          "name": "EL BUREAU DE LA COMUNICACION Y LA PUBLICIDAD,S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/03543"
+        }
+      }
+    }
+  ]
+}

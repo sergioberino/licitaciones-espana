@@ -1,0 +1,484 @@
+{
+  "totalItems": 9042,
+  "totalPages": 905,
+  "currentPage": 14,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "name": "NAUTICA PLAYAUNDI SL",
+      "registrationNumber": "08395",
+      "identificationNumber": "B20759809",
+      "address": "Pº RAMON IRIBARREN S-N // PUERTO DEPORTIVO",
+      "location": {
+        "postalCode": "20280",
+        "municipality": "Hondarribia",
+        "county": "Gipuzkoa",
+        "municipalityId": "036",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.372.1",
+          "name": "Servicios de reparación y mantenimiento de buques",
+          "_links": {
+            "self": {
+              "name": "Servicios de reparación y mantenimiento de buques",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.372.1"
+            }
+          }
+        },
+        {
+          "id": "1.654.4",
+          "name": "Venta al por menor de vehículos fluviales y marítimos a vela o motor",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de vehículos fluviales y marítimos a vela o motor",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.654.4"
+            }
+          }
+        },
+        {
+          "id": "1.855.2",
+          "name": "Alquiler de embarcaciones",
+          "_links": {
+            "self": {
+              "name": "Alquiler de embarcaciones",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.855.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-02-06",
+      "certificateEndDate": "2026-08-06",
+      "object": "DISTRIBUCIÓN, ALQUILER, VENTA Y COMPRA AL POR MAYOR Y AL POR MENOR DE EMBARCACIONES NUEVAS O USADAS, MOTORES Y COMPLEMENTOS NÁUTICOS, ASÍ COMO REPARACIÓN DE EMBARCACIONES, MOTORES Y COMPLEMENTOS NÁUTICOS.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08395",
+      "_links": {
+        "self": {
+          "name": "NAUTICA PLAYAUNDI SL",
+          "href": "https://api.euskadi.eus/procurements/companies/08395"
+        }
+      }
+    },
+    {
+      "name": "GESLAGUN, S.L.",
+      "registrationNumber": "06581",
+      "identificationNumber": "B20627196",
+      "address": "URIBARRI ETORBIDEA, 35",
+      "location": {
+        "postalCode": "20500",
+        "municipality": "Arrasate / Mondragón",
+        "county": "Gipuzkoa",
+        "municipalityId": "055",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.922.1",
+          "name": "Servicios de limpieza de interiores",
+          "_links": {
+            "self": {
+              "name": "Servicios de limpieza de interiores",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.922.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-02-06",
+      "certificateEndDate": "2026-07-19",
+      "classification": [
+        {
+          "id": "S",
+          "name": "Servicios",
+          "groups": [
+            {
+              "id": "U",
+              "subgroups": [
+                {
+                  "id": "01",
+                  "name": "Servicios de limpieza ",
+                  "categories": [
+                    {
+                      "id": "5",
+                      "name": "Mas de 1.200.000",
+                      "_links": {
+                        "self": {
+                          "name": "Mas de 1.200.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/S/categories/5"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "Servicios de limpieza ",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/U/subgroups/01"
+                    }
+                  }
+                }
+              ],
+              "_links": {
+                "self": {
+                  "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/U"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Servicios",
+              "href": "https://api.euskadi.eus/procurements/companies/types/S"
+            }
+          }
+        }
+      ],
+      "object": "1.- ELABORACIÓN, CONDIMENTACIÓN, DISTRIBUCIÓN Y SERVICIO DE COMIDAS DESTINADAS A SER CONSUMIDAS DE FORMA COLECTIVA O INDIVIDUAL. ELABORACIÓN DE PRODUCTOS ALIMENTICIOS (COCINADOS Y PRECOCINADOS) PARA SU VENTA EN ESTABLECIMIENTOS COMERCIALES Y ENTIDADES DESDE LAS QUE SE ABASTEZCA DE COMIDA. LIMPIEZA DE EDIFICIOS, LOCALES EN GENERAL, ESPACIOS PÚBLICOS Y PRIVADOS, DESRATIZACIÓN, DESINFECCIÓN Y DESINSECTACIÓN DE LOS ESPACIOS SEÑALADOS ANTERIORMENTE. LIMPIEZA, LAVADO, PLANCHADO, CLASIFICACIÓN Y TRANSPORTE DE ROPA. LA PRESENTACIÓN DE SERVICIOS AUXILIARES Y COMPLEMENTARIOS (ADMINISTRATIVOS, TELEFONISTAS, CONSERJES, MANTENIMIENTO, JARDINEROS, CUIDADORES, MONITORES DE TIEMPO LIBRE, SOCORRISTAS, AZAFATAS Y PROFESIONALES AFINES O QUE COMPLEMENTEN SUS FUNCIONES) DE ATENCIÓN, SERVICIO Y REALIZACIÓN DE TAREAS EN INSTALACIONES INDUSTRIALES, CENTROS COMERCIALES, ORGANISMOS OFICIALES, DEPENDENCIAS ADMINISTRATIVAS, HOSPITALES, RESIDENCIAS ASISTENCIALES Y CENTROS DOCENTES. PRESTACIÓN DE TODO TIPO DE SERVICIOS DE ASISTENCIA SOCIAL Y SANITARIA MEDIANTE PERSONAL CUALIFICADO (MÉDICOS, A.T.S., ASISTENTES SOCIALES, FISIOTERAPEUTAS, AUXILIARES CLÍNICOS, ETC.) A COLECTIVOS DE ANCIANOS, MINUSVÁLIDOS, DISCAPACITADOS FÍSICOS Y PSÍQUICOS O GRUPOS DE POBLACIÓN EN SITUACIÓN DE NECESIDAD. LA CONFECCIÓN DE ESTUDIOS Y PRESTACIÓN DE SERVICIOS SOBRE ORGANIZACIÓN, MÉTODOS, SISTEMAS Y TIEMPOS, EN RELACIÓN CON LA PRESTACIÓN DE TODOS LOS SERVICIOS INCLUIDOS EN EL OBJETO SOCIAL. 2.- LA PRESTACIÓN DE SERVICIOS AUXILIARES Y COMPLEMENTARIOS EN URBANIZACIONES, FINCAS URBANAS, INSTALACIONES INDUSTRIALES, REDES VIALES, CENTROS COMERCIALES, ORGANISMOS OFICIALES Y DEPENDENCIAS ADMINISTRATIVAS, INSTALACIONES DEPORTIVAS, MUSEOS, RECINTOS FERIALES, SALAS DE EXPOSICIONES, CONFERENCIAS Y CONGRESOS, HOSPITALES, CENTROS DOCENTES, PARQUES, INSTALACIONES AGROPECUARIAS (AGRICULTURA, GANADERÍA Y PESCA), BOSQUES, FINCAS RÚSTICAS, COTOS DE CAZA, RECINTOS DE RECREO Y DE ESPECTÁCULOS, Y EN GENERAL, EN TODA CLASE DE INMUEBLES, POR MEDIO DE CONSERJES, ORDENANZAS, BEDELES, UJIERES, COBRADORES, CIUDADES, SOCORRISTAS, AZAFATAS Y PROFESIONALES AFINES O QUE COMPLEMENTEN SUS FUNCIONES, CONSISTENTES EN EL MANTENIMIENTO Y LA CONSERVACIÓN DE LOS LOCALES, ASÍ COMO EN LA ATENCIÓN Y SERVICIO A LOS VECINOS, OCUPANTES, VISITANTES O USUARIOS, MEDIANTE LA REALIZACIÓN DE LAS SIGUIENTES TAREAS, EXCLUIDAS EN TODO CASO, AQUÉLLAS QUE LA LEY RESERVA A LAS EMPRESAS DE SEGURIDAD: A) LA ATENCIÓN DE LOS SERVICIOS DE URGENCIA, PREVENCIÓN, INFORMACIÓN, CENTRALITA DE TELÉFONOS, COCINA Y COMEDORES. B) LA APERTURA, CIERRE Y CUSTODIA DE LLAVES. 3.- LA CARGA, DESCARGA, ESTIBA Y DESESTIBA, EL TRANSPORTE, DISTRIBUCIÓN, COLOCACIÓN, CLASIFICACIÓN Y ALMACENAMIENTO DE TODO TIPO DE MERCANCÍAS, EXCLUIDAS LAS ACTIVIDADES SOMETIDAS A LA LEGISLACIÓN ESPECIAL. 4.- LA RECOGIDA, TRANSPORTE, DISTRIBUCIÓN Y ENTREGA DE TODA CLASE DE PAQUETES, DOCUMENTOS Y MERCANCÍAS, YA SEA POR CUENTA PROPIA O AJENA, EXCLUIDAS LAS ACTIVIDADES SOMETIDAS A LEGISLACIÓN ESPECIAL.\n5.- LA GESTIÓN Y CONTROL, A TRAVÉS DE UN CENTRO INFORMATIZADO Y AMPLIAMENTE COMUNICADO, DE CUALQUIERA DE LOS SERVICIOS MENCIONADOS EN LOS NÚMEROS ANTERIORES, TANTO SI SON PRESTADOS POR LA PROPIA SOCIEDAD O POR TERCEROS. 6.- LA EJECUCIÓN DE ESTUDIOS SOBRE ORGANIZACIÓN, MÉTODOS, SISTEMAS Y TIEMPOS, EN RELACIÓN CON LA PRESTACIÓN DE TODOS LOS SERVICIOS INCLUIDOS EN EL OBJETO SOCIAL. 7.- FORMACIÓN PROFESIONAL Y RECICLAJE DE LAS PERSONAS QUE PRESTEN LOS SERVICIOS EXPRESADOS EN LOS PUNTOS ANTERIORES. 8.- LA PRESTACIÓN DE SERVICIOS DE ASESORAMIENTO, ASISTENCIA Y EJECUCIÓN DE TRABAJOS ADMINISTRATIVOS, TÉCNICOS, JURÍDICOS, ORGANIZATIVOS E INFORMÁTICOS (INCLUIDOS LOS DE DESARROLLO DE PROGRAMAS), A TRAVÉS DE ESPECIALISTAS EN LAS CITADAS MATERIAS, Y DE TRADUCTORES, INTÉRPRETES, PROYECTISTAS, MECANÓGRAFOS, TAQUÍGRAFOS, TELEFONISTAS, ESTENOTIPISTAS, OPERADORES DE ORDENADOR, PROGRAMADORES Y SECRETARIAS\n",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06581",
+      "_links": {
+        "self": {
+          "name": "GESLAGUN, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/06581"
+        }
+      }
+    },
+    {
+      "name": "GAIA INVESTIGACIÓN Y CONSULTORÍA, S.L.",
+      "registrationNumber": "03468",
+      "identificationNumber": "B95257507",
+      "address": "Ribera de Deusto, 69 - planta baja",
+      "location": {
+        "postalCode": "48014",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.846",
+          "name": "Empresas de estudios de mercado",
+          "_links": {
+            "self": {
+              "name": "Empresas de estudios de mercado",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.846"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-02-06",
+      "certificateEndDate": "2026-08-05",
+      "object": "LA PRESTACIÓN DE TODA CLASE DE SERVICIOS, A PERSONAS O EMPRESAS, TANTO NACIONALES COMO EXTRANJERAS, EN LAS ÁREAS DE CONSULTORÍA, TALES COMO INFORMACIÓN, ANÁLISIS, ASESORAMIENTO GENERAL, ESPECIAL Y ESTRATÉGICO, ESTUDIOS Y APLICACIONES DE PRODUCCIÓN Y PRODUCTIVIDAD; Y DE RECURSOS HUMANOS, TALES COMO SELECCIÓN, INSTRUCCIÓN , FORMACIÓN Y PERFECCIONAMIENTO FUNCIONAL O PROFESIONAL DE PERSONAL. TODO ELLO SIEMPRE QUE LO REALICE LA SOCIEDAD POR CUENTA PROPIA, QUEDANDO SIEMPRE EXCLUIDAS LAS ACTIVIDADES OBJETO DE LA LEGISLACIÓN DE INSTITUCIONES DE INVERSIÓN COLECTIVA Y DEL MERCADO DE VALORES",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03468",
+      "_links": {
+        "self": {
+          "name": "GAIA INVESTIGACIÓN Y CONSULTORÍA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/03468"
+        }
+      }
+    },
+    {
+      "name": "CAF TURNKEY & ENGINEERING, S.L.",
+      "registrationNumber": "03814",
+      "identificationNumber": "B95503819",
+      "address": "PARQUE CIENTIFICO Y TECNOLOGICO DE BIZKAIA,S.A. LAIDA BIDEA  EDIF 205",
+      "location": {
+        "postalCode": "48170",
+        "municipality": "Zamudio",
+        "county": "Bizkaia",
+        "municipalityId": "905",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.151.1",
+          "name": "Producción de energía hidroeléctrica",
+          "_links": {
+            "self": {
+              "name": "Producción de energía hidroeléctrica",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.151.1"
+            }
+          }
+        },
+        {
+          "id": "1.381",
+          "name": "Construcción, reparación y mantenimiento de material ferroviario",
+          "_links": {
+            "self": {
+              "name": "Construcción, reparación y mantenimiento de material ferroviario",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.381"
+            }
+          }
+        },
+        {
+          "id": "1.504.11",
+          "name": "Instalaciones eléctricas en general, redes telegráficas, telefonía, tv, etc",
+          "_links": {
+            "self": {
+              "name": "Instalaciones eléctricas en general, redes telegráficas, telefonía, tv, etc",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.504.11"
+            }
+          }
+        },
+        {
+          "id": "1.843.1",
+          "name": "Servicios técnicos de ingeniería",
+          "_links": {
+            "self": {
+              "name": "Servicios técnicos de ingeniería",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-02-06",
+      "certificateEndDate": "2026-07-20",
+      "object": "A). PRESTACIÓN DE SERVICIOS DE ASESORAMIENTO TÉCNICO, ESTUDIO INGENERÍA, CONSULTORÍA,  PLANIFICACIÓN Y PUESTA EN MARCHA DE INSTALACIONES Y EDIFICACIONES, ASISTENCIA TÉCNICA, ACTIVIDADES LOGÍSTICAS, CONCESIONES ADMINISTRATIVAS, GESTIÓN DE INFRAESTUCTURAS, SUPERESTRUCTURAS, MATERIAL Y SERVICIOS EN SU MÁS AMPLIA CONSIDERACIÓN, PARATODA CLASE DE ENTIDADES, EMPRESAS O PERSONAS, NATURALES O JURÍDICAS, NACIONALES O EXTRANJERAS. B). PRESTACIÓN DE SERVICIOS DE INGENIERÍA, DISEÑO, DESARROLLO, EJECUCIÓN, ASISTENCIA TEÓRICA Y LA PRESTACIÓN DE CUALQUIER OTRO TIPO DE SERVICIO O ACTIVIDAD RELACIONADA CON SISTEMAS DE ENERGÍA, TELECOMUNICACIONES, SEÑALIZACIÓN, MEIOAMBIENTALES, GEOTECNIA, EJECUCIÓN DE OBRAS, INGENIERÍA DE SISTEMAS Y SERVICIOS DE LA SOCIEDAD DE LA INFORMACIÓN Y CUANTAS PRÁCTICAS SE PRECISEN PARA LA GESTIÓN INTEGRAL DE PROYECTOS. C). DISEÑO, INVESTIGACIÓN E IMPLEMENTACIÓN, DE SISTEMAS, APLICACIONES, EQUIPOS E INSTALACIONES ELÉCTRICAS Y ELECGRÓNICAS, ASÍ COMO SERVICIOS DE ASISTENCIA TÉCNICA. D). LA CONSTRUCCIÓN PROMOCIÓN, PLANIFICACIÓN, DIRECCIÓN, EJECUCIÓN, DESARROLLO, ASISTENCIA TÉCNICA Y PUESTA EN MARCHA, POR CUENTA PROPIA O AJENA, DIRECTAMENTE O A TRAVÉS DE TERCEROS DE TODA CLASE DE PROYECTOS, OBRAS E INSTALACIONES, EN PARTICIPACIÓN DIRECTA O INDIRECTA EN SUS OPERACIONES Y EN SU CAPITAL O SIMPLEMENTE PARTICIPANDO EN LA DIRECCIÓN O GESTIÓN DE TALES PROYECTOS. E). LA REALIZACIÓN DE CUALESQUIERA TRABAJOS QUE SEAN CONSECUENCIA, COMPLEMENTEN O SE RELACIONEN DIRECTA O INDIRECTAMENTE CON CUALQUIERA DE LAS ACTIVIDADES DESCRITAS EN LOS APARTADOS PRECEDENTES. F). LA REALIZACIÓN DE ACTIVIDADES DE FORMACIÓN RELATIVAS A LAS ACTIVIDADES Y/O SECTORES EN LOS QUE  PARTICIPA LA SOCIEDAD.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03814",
+      "_links": {
+        "self": {
+          "name": "CAF TURNKEY & ENGINEERING, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/03814"
+        }
+      }
+    },
+    {
+      "name": "GÓMEZ-ACEBO & POMBO ABOGADOS, S.L.",
+      "registrationNumber": "03307",
+      "identificationNumber": "B81089328",
+      "address": "PASEO DE LA CASTELLANA Nº 216",
+      "location": {
+        "postalCode": "28046",
+        "municipality": "Madrid",
+        "county": "Madrid",
+        "municipalityId": "079",
+        "countyId": "28"
+      },
+      "economicActivities": [
+        {
+          "id": "1.841",
+          "name": "Servicios jurídicos",
+          "_links": {
+            "self": {
+              "name": "Servicios jurídicos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.841"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-02-06",
+      "certificateEndDate": "2026-08-03",
+      "object": "EL EJERCICIO PROFESIONAL DE LA ABOGACÍA POR MEDIO DE SUS SOCIOS Y COLABORADORES EN LOS TÉRMINOS QUE SE ESTABLECEN EN EL ESTATUTO GENERAL DE LA ABOGACÍA, ASÍ COMO LA GESTIÓN INTERNA DE LOS INTERESES COMUNES DE LOS SOCIOS.\nSON COMPLEMENTO DEL OBJETO PRINCIPAL LAS ACTIVIDADES DE ESTUDIO, INVESTIGACIÓN Y FORMACIÓN (CURSOS, CONFERENCIAS, PUBLICACIONES, CONGRESOS O SIMPOSIOS) RELACIONADAS CON LA PRÁCTICA DE LA ABOGACÍA Y LA CIENCIA DEL DERECHO.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03307",
+      "_links": {
+        "self": {
+          "name": "GÓMEZ-ACEBO & POMBO ABOGADOS, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/03307"
+        }
+      }
+    },
+    {
+      "name": "HIRIGRAMA KOOP. ELK. TXIKIA",
+      "registrationNumber": "08663",
+      "identificationNumber": "F10939148",
+      "address": "Intxaurrondo Kalea (20015) 60- behea",
+      "location": {
+        "postalCode": "20015",
+        "municipality": "Donostia / San Sebastián",
+        "county": "Gipuzkoa",
+        "municipalityId": "069",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.843.2",
+          "name": "Servicios técnicos de arquitectura y urbanismo",
+          "_links": {
+            "self": {
+              "name": "Servicios técnicos de arquitectura y urbanismo",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.2"
+            }
+          }
+        },
+        {
+          "id": "1.843.9",
+          "name": "Otros servicios técnicos n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros servicios técnicos n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.9"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-02-05",
+      "certificateEndDate": "2026-07-28",
+      "object": "ARKITEKTURA ETA HIRIGINTZA PROIEKTUAK GARATZEA, IDAZTEA ETA SUSTATZEA DA. ERA BEREAN, ARKITEKTURAREN ETE HIRIGINTZAREN DIBULGAZIO ETA PRESTAKUNTZA JARDUERAK ERE SARTZEN DIRA, BAI ETA PROIEKTUEN GARAPENAREKIN ETA HIGIEZINEN SUSTAPENAREKIN LOTUTAKO GIZA TALDEEI LAGUNTZEA, ANTOLATZEA ETA KUDEATZEA ERE. HALABER, ADIERAZI BEHAR DA KOOPERATIBAREN BARRUAN LAN EGITEKO BAZKIDE GEHIENEK EZ DUTELA ELKARGOKIDE IZAN BEHAR, EZTA ELKARGO PROFESIONAL BATEKO KIDE ERE.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08663",
+      "_links": {
+        "self": {
+          "name": "HIRIGRAMA KOOP. ELK. TXIKIA",
+          "href": "https://api.euskadi.eus/procurements/companies/08663"
+        }
+      }
+    },
+    {
+      "name": "COMERCIAL TECNO QUÍMICA ENMA, S.L.",
+      "registrationNumber": "00350",
+      "identificationNumber": "B48012835",
+      "address": "C/ NOVIA SALCEDO, Nº 22 - pab. Interior",
+      "location": {
+        "postalCode": "48012",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.619.7",
+          "name": "Venta al por mayor de instrumentos de precisión, medida y similares",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de instrumentos de precisión, medida y similares",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.619.7"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-02-05",
+      "certificateEndDate": "2026-07-29",
+      "object": "LA REALIZACIÓN DE ACTIVIDADES DE ADQUISICIÓN Y COMERCIO DE PRODUCTOS DE LABORATORIO",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/00350",
+      "_links": {
+        "self": {
+          "name": "COMERCIAL TECNO QUÍMICA ENMA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/00350"
+        }
+      }
+    },
+    {
+      "name": "TECTUM PROYECTOS Y OBRAS, S.L.",
+      "registrationNumber": "09406",
+      "identificationNumber": "B01477579",
+      "address": "C/ ABENDAÑO, 42 BIS 1ºA",
+      "location": {
+        "postalCode": "01008",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.501.1",
+          "name": "Construcción completa, reparación y conservación de edificaciones",
+          "_links": {
+            "self": {
+              "name": "Construcción completa, reparación y conservación de edificaciones",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-02-05",
+      "certificateEndDate": "2026-07-30",
+      "object": "CONSTRUCCIÓN COMPLETA, REPARACIÓN Y CONSERVACIÓN DE EDIFICACIONES.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/09406",
+      "_links": {
+        "self": {
+          "name": "TECTUM PROYECTOS Y OBRAS, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/09406"
+        }
+      }
+    },
+    {
+      "name": "AGUIRRE ADMINISTRACIÓN DE FINCAS, S.L.",
+      "registrationNumber": "07515",
+      "identificationNumber": "B75028167",
+      "address": "Alcalde José Elosegui, 201B",
+      "location": {
+        "postalCode": "20017",
+        "municipality": "Donostia / San Sebastián",
+        "county": "Gipuzkoa",
+        "municipalityId": "069",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.834",
+          "name": "Servicios relativos a la propiedad inmobiliaria e industrial",
+          "_links": {
+            "self": {
+              "name": "Servicios relativos a la propiedad inmobiliaria e industrial",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.834"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-02-05",
+      "certificateEndDate": "2026-07-22",
+      "object": "A) LA ADMINISTRACIÓN DE FINCAS. B) LA GESTIÓN Y ADMINISTRACIÓN DE LA PROPIEDAD INMOBILIARIA. C) LA PRESTACIÓN DE SERVICIOS DE ASESORÍA JURÍDICA",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07515",
+      "_links": {
+        "self": {
+          "name": "AGUIRRE ADMINISTRACIÓN DE FINCAS, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/07515"
+        }
+      }
+    },
+    {
+      "name": "CONSTRUCCIONES HERMANOS GARBAYO CHIVITE, S.L.",
+      "registrationNumber": "09795",
+      "identificationNumber": "B31066798",
+      "address": "CALLE AGREDA  7",
+      "location": {
+        "postalCode": "31592",
+        "municipality": "Cintruénigo",
+        "county": "Navarra",
+        "municipalityId": "072",
+        "countyId": "31"
+      },
+      "economicActivities": [
+        {
+          "id": "1.501.1",
+          "name": "Construcción completa, reparación y conservación de edificaciones",
+          "_links": {
+            "self": {
+              "name": "Construcción completa, reparación y conservación de edificaciones",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.1"
+            }
+          }
+        },
+        {
+          "id": "1.507",
+          "name": "Construcción, reparación y conservación de toda clase obras",
+          "_links": {
+            "self": {
+              "name": "Construcción, reparación y conservación de toda clase obras",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.507"
+            }
+          }
+        },
+        {
+          "id": "1.833.2",
+          "name": "Promoción de edificaciones",
+          "_links": {
+            "self": {
+              "name": "Promoción de edificaciones",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.833.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-02-05",
+      "certificateEndDate": "2026-07-27",
+      "object": "LA CONSTRUCCIÓN COMPLETA, REPARACIÓN Y CONSERVACIÓN DE EDIFICACIONES Y DE TODA CLASE DE OBRAS, INCLUYENDO LAS CIVILES.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/09795",
+      "_links": {
+        "self": {
+          "name": "CONSTRUCCIONES HERMANOS GARBAYO CHIVITE, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/09795"
+        }
+      }
+    }
+  ]
+}

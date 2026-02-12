@@ -1,0 +1,622 @@
+{
+  "totalItems": 9042,
+  "totalPages": 905,
+  "currentPage": 8,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "name": "JARDINES Y BOSQUES, S.L.",
+      "registrationNumber": "05017",
+      "identificationNumber": "B48822647",
+      "address": "C/DIPUTACIÓN Nº 8 - 1º DPTOS. Nº 4 Y 5",
+      "location": {
+        "postalCode": "48008",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.501.2",
+          "name": "Construcción completa, reparación y conservación obras civiles",
+          "_links": {
+            "self": {
+              "name": "Construcción completa, reparación y conservación obras civiles",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.2"
+            }
+          }
+        },
+        {
+          "id": "1.912",
+          "name": "Servicios forestales",
+          "_links": {
+            "self": {
+              "name": "Servicios forestales",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.912"
+            }
+          }
+        },
+        {
+          "id": "1.921.1",
+          "name": "Servicios de limpieza en calles, vías públicas y jardines",
+          "_links": {
+            "self": {
+              "name": "Servicios de limpieza en calles, vías públicas y jardines",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.921.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-02-09",
+      "certificateEndDate": "2026-07-30",
+      "classification": [
+        {
+          "id": "O",
+          "name": "Obras",
+          "groups": [
+            {
+              "id": "K",
+              "name": "ESPECIALES",
+              "subgroups": [
+                {
+                  "id": "06",
+                  "name": "Jardinería y plantaciones",
+                  "categories": [
+                    {
+                      "id": "2",
+                      "name": "Desde 150.001 Hasta 360.000",
+                      "_links": {
+                        "self": {
+                          "name": "Desde 150.001 Hasta 360.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/O/categories/2"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "Jardinería y plantaciones",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/O/groups/K/subgroups/06"
+                    }
+                  }
+                }
+              ],
+              "_links": {
+                "self": {
+                  "name": "ESPECIALES",
+                  "href": "https://api.euskadi.eus/procurements/companies/types/O/groups/K"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Obras",
+              "href": "https://api.euskadi.eus/procurements/companies/types/O"
+            }
+          }
+        },
+        {
+          "id": "S",
+          "name": "Servicios",
+          "groups": [
+            {
+              "id": "O",
+              "subgroups": [
+                {
+                  "id": "02",
+                  "name": "Conserv. y Mtto. carreteras,pistas,autopistas,autovías,calzadas y vías férreas",
+                  "categories": [
+                    {
+                      "id": "5",
+                      "name": "Mas de 1.200.000",
+                      "_links": {
+                        "self": {
+                          "name": "Mas de 1.200.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/S/categories/5"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "Conserv. y Mtto. carreteras,pistas,autopistas,autovías,calzadas y vías férreas",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/O/subgroups/02"
+                    }
+                  }
+                },
+                {
+                  "id": "06",
+                  "name": "Conservación y mantenimiento de montes y jardines",
+                  "categories": [
+                    {
+                      "id": "4",
+                      "name": "Desde 600.001 Hasta 1.1200.000",
+                      "_links": {
+                        "self": {
+                          "name": "Desde 600.001 Hasta 1.1200.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/S/categories/4"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "Conservación y mantenimiento de montes y jardines",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/O/subgroups/06"
+                    }
+                  }
+                }
+              ],
+              "_links": {
+                "self": {
+                  "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/O"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Servicios",
+              "href": "https://api.euskadi.eus/procurements/companies/types/S"
+            }
+          }
+        }
+      ],
+      "object": "LAS ACTIVIDADES DE JARDINERÍA. LA PROMOCIÓN Y EJECUCIÓN DE OBRAS DE CUALQUIER CLASE, TANTO PARA PARTICULARES COMO PARA EL ESTADO, COMUNIDADES AUTÓNOMAS, PROVINCIAS, MUNICIPIOS, O CUALQUIER OTRA ENTIDAD U ORGANISMO. LA REALIZACIÓN DE CÁLCULOS Y PROYECTOS DE OBRAS Y CONSTRUCCIONES ASÍ COMO SU DIRECCIÓN Y MANTENIMIENTO. LA DEMOLICIÓN Y DERRIBOS EN GENERAL. LA CONSOLIDACIÓN Y PREPARACIÓN DE TERRENOS, PARA CONSTRUCCIÓN DE OBRAS CIVILES Y EDIFICACIONES DE TODO TIPO. LA CIMENTACIÓN Y PAVIMENTACIÓN PARA CONSTRUCCIÓN DE EDIFICACIONES Y OBRAS CIVILES. LA PREPARACIÓN Y MONTAJE DE ESTRUCTURAS Y CUBIERTAS Y CUBRICIONES EN EDIFICACIONES Y OBRA CIVIL E INSTALACIONES DE ESTRUCTURAS METÁLICAS PARA TRANSPORTES, PUERTOS, OBRAS HIDRÁULICAS, PUENTES, POSTES METÁLICOS, ETC., ASÍ COMO , OBRAS HIDRÁULICAS EN GENERAL DEFENSA DE MÁRGENES Y ENCAUZAMIENTOS, Y ABASTECIMIENTOS Y SANEAMIENTOS EN GENERAL. LA COLOCACIÓN Y MONTAJE DE INSTALACIONES HIDRÁULICAS Y ELÉCTRICAS, MONTAJES METÁLICOS E INSTALACIONES INDUSTRIALES. LA PREPARACIÓN, COLOCACIÓN Y ACABADO DE OBRAS, COMO REVESTIMIENTOS EXTERIORES E INFERIORES, SOLADOS Y PAVIMENTOS DE TODAS CLASES Y EN TODO TIPO DE OBRAS. LA CONSTRUCCIÓN COMPLETA, REPARACIÓN Y CONSERVACIÓN DE TODA CLASE DE OBRAS, INMUEBLES Y OBRA CIVIL. SERVICIOS DE MANTENIMIENTO Y SANEAMIENTO DE VÍAS PÚBLICAS, SERVICIOS AUXILIARES DE LA CONSTRUCCIÓN Y DRAGADOS, ALBAÑILERÍA Y PEQUEÑOS TRABAJOS DE CONSTRUCCIÓN EN GENERAL, TRABAJOS DE DESBROCE, FRESADOS Y REPOSICIÓN DEL FIRME, LIMPIEZA DE CUNETAS Y EN GENERAL, TODAS LAS LABORES DE CONSERVACIÓN ORDINARIA Y EXTRAORDINARIA DE LAS VÍAS.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/05017",
+      "_links": {
+        "self": {
+          "name": "JARDINES Y BOSQUES, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/05017"
+        }
+      }
+    },
+    {
+      "name": "MESSER IBERICA DE GASES, S.A.",
+      "registrationNumber": "06715",
+      "identificationNumber": "A08255317",
+      "address": "Autovía Tarragona Salou, km 3,8",
+      "location": {
+        "postalCode": "43480",
+        "municipality": "Vila-seca",
+        "county": "Tarragona",
+        "municipalityId": "171",
+        "countyId": "43"
+      },
+      "economicActivities": [
+        {
+          "id": "1.251.3",
+          "name": "Fabricación de productos químicos inorgánicos",
+          "_links": {
+            "self": {
+              "name": "Fabricación de productos químicos inorgánicos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.251.3"
+            }
+          }
+        },
+        {
+          "id": "1.253.1",
+          "name": "Fabricación de gases comprimidos",
+          "_links": {
+            "self": {
+              "name": "Fabricación de gases comprimidos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.253.1"
+            }
+          }
+        },
+        {
+          "id": "1.254.2",
+          "name": "Fabricación de especialidades y otros productos farmacéuticos",
+          "_links": {
+            "self": {
+              "name": "Fabricación de especialidades y otros productos farmacéuticos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.254.2"
+            }
+          }
+        },
+        {
+          "id": "1.614.1",
+          "name": "Venta al por mayor de productos farmacéuticos y medicamentos",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de productos farmacéuticos y medicamentos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.614.1"
+            }
+          }
+        },
+        {
+          "id": "1.616.6",
+          "name": "Venta al por mayor de productos químicos industriales",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de productos químicos industriales",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.616.6"
+            }
+          }
+        },
+        {
+          "id": "1.616.9",
+          "name": "Otro comercio al por mayor interindustria de la minería n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otro comercio al por mayor interindustria de la minería n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.616.9"
+            }
+          }
+        },
+        {
+          "id": "1.859",
+          "name": "Alquiler de otros bienes muebles n.c.o.p. (sin personal permanente)",
+          "_links": {
+            "self": {
+              "name": "Alquiler de otros bienes muebles n.c.o.p. (sin personal permanente)",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.859"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-02-09",
+      "certificateEndDate": "2026-07-23",
+      "object": "LA PRODUCCIÓN, ALMACENAJE, TRANSPORTE Y COMERCIALIZACIÓN DE GASES INDUSTRIALES Y TÉCNICOS; LA COMERCIALIZACIÓN DE RECIPIENTES Y TANQUES, MÁQUINAS Y APARATOS PARA LA PRODUCCIÓN, ALMACENAJE, TRANSPORTE Y APLICACIÓN PARA GASES INDUSTRIALES Y TÉCNICOS, ASÍ COMO EL ASESORAMIENTO Y DEMÁS SERVICIOS EN RELACIÓN  CON LA APLICACIÓN DE DICHAS GASES",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06715",
+      "_links": {
+        "self": {
+          "name": "MESSER IBERICA DE GASES, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/06715"
+        }
+      }
+    },
+    {
+      "name": "ADAKI DISEINUA ETA PUBLIZITATEA , S.L.",
+      "registrationNumber": "03932",
+      "identificationNumber": "B20828729",
+      "address": "POL. ANDUAGA, 5-2º-4ª",
+      "location": {
+        "postalCode": "20709",
+        "municipality": "Ezkio-Itsaso",
+        "county": "Gipuzkoa",
+        "municipalityId": "035",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.659.4",
+          "name": "Venta al por menor de libros, periódicos y artículos de papelería y escritorio",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de libros, periódicos y artículos de papelería y escritorio",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.659.4"
+            }
+          }
+        },
+        {
+          "id": "1.844",
+          "name": "Servicios de publicidad, relaciones públicas y similares",
+          "_links": {
+            "self": {
+              "name": "Servicios de publicidad, relaciones públicas y similares",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.844"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-02-09",
+      "certificateEndDate": "2026-07-28",
+      "object": "LA COMUNICACIÓN, PUBLICIDAD, DISEÑO GRÁFICO Y SERVICIO MULTIMEDIA E INTERNET",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03932",
+      "_links": {
+        "self": {
+          "name": "ADAKI DISEINUA ETA PUBLIZITATEA , S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/03932"
+        }
+      }
+    },
+    {
+      "name": "ROLATEC, S.L.",
+      "registrationNumber": "08914",
+      "identificationNumber": "B99208050",
+      "address": "C/BUENOS AIRES 109, PG. CENTROVIA",
+      "location": {
+        "postalCode": "50198",
+        "municipality": "Muela, La",
+        "county": "Zaragoza",
+        "municipalityId": "182",
+        "countyId": "50"
+      },
+      "economicActivities": [
+        {
+          "id": "1.325.1",
+          "name": "Construcción de máquinas y equipo para minería, construcción y obras públicas",
+          "_links": {
+            "self": {
+              "name": "Construcción de máquinas y equipo para minería, construcción y obras públicas",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.325.1"
+            }
+          }
+        },
+        {
+          "id": "1.654.5",
+          "name": "Venta al por menor de toda clase de maquinaría",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de toda clase de maquinaría",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.654.5"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-02-09",
+      "certificateEndDate": "2026-07-27",
+      "object": "-LA FABRICACIÓN Y COMERCIALIZACIÓN DE MAQUINARIA DE OBRAS PÚBLICAS Y MINERÍA. -SERVICIOS DE PERFORACIÓN PARA INVESTIGACIÓN, EXPLORACIÓN Y EXPLOTACIÓN GEOTÉCNICA Y MINERA. -COMERCIO AL POR MAYOR Y AL POR MENOR DE TODO TIPO MAQUINARIA PARA PERFORACIÓN Y SONDEOS, PARA LA CONSTRUCCIÓN, DE OBRAS Y MINAS, INDUSTRIAL, ACCESORIOS DE PERFORACIÓN Y BARRENACIÓN, EQUIPOS DE LABORATORIO, REACTIVOS QUÍMICOS PARA LA INDUSTRIA, EQUIPOS DE TRANSPORTE NUEVOS O USADOS TOTALMENTE REACONDICIONADOS, MATERIAL DE FERRETERÍA, RECAMBIOS DE TODO TIPO Y ARTÍCULOS PARA LA MADERA E INDUSTRIA FORESTAL. -OPERACIONES DE COMPRAVENTA DE MAQUINARIA USADA Y NUEVA, INTRACOMUNITARIAS O EN EL EXTRANJERO. -REPARACIÓN DE MAQUINARIA. -ALQUILER NO FINANCIERO DE TODO TIPO DE MAQUINARIA. -ARRENDADORA Y ARRENDATARIA NO FINANCIERO DE INMUEBLES. -COMPRA, VENTA, CONSTRUCCIÓN, ADMINISTRACIÓN Y TODA CLASE DE OPERACIONES CON BIENES INMUEBLES. -TRANSPORTE NACIONAL E INTERNACIONAL DE PERSONAS. -EXPLOTACIÓN DE MARCAS, PATENTES Y BIENES INCORPORALES ANÁLOGOS. -Y TODAS AQUELLAS ACTIVIDADES ÍNTEGRAMENTE RELACIONADAS CON LAS ANTERIORES, INCLUSO LA CONTRATACIÓN DE TERCEROS PARA REALIZARLAS.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08914",
+      "_links": {
+        "self": {
+          "name": "ROLATEC, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/08914"
+        }
+      }
+    },
+    {
+      "name": "FERROVIAL CONSTRUCCIÓN, S.A.",
+      "registrationNumber": "00227",
+      "identificationNumber": "A28019206",
+      "address": "RIBERA DEL LOIRA, 42 P. E. PUERTA DE LAS NACIONES ",
+      "location": {
+        "postalCode": "28042",
+        "municipality": "Madrid",
+        "county": "Madrid",
+        "municipalityId": "079",
+        "countyId": "28"
+      },
+      "economicActivities": [
+        {
+          "id": "1.507",
+          "name": "Construcción, reparación y conservación de toda clase obras",
+          "_links": {
+            "self": {
+              "name": "Construcción, reparación y conservación de toda clase obras",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.507"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-02-09",
+      "certificateEndDate": "2026-07-21",
+      "object": "A) EL ESTUDIO, CONCESIÓN, CONSTRUCCIÓN Y EXPLOTACIÓN DE TODA CLASE DE OBRAS, SEAN PÚBLICAS O PRIVADAS, PUDIENDO ACUDIR PARA CONTRATARLAS A CONCURSOS, SUBASTAS Y HACER, SIGUIENDO TODOS LOS TRÁMITES, OFERTAS PRIVADAS HASTA OBTENER LAS ADJUDICACIONES. B) LA ADQUISICIÓN, POR COMPRA, DENUNCIA O CONCESIÓN Y SU EXPLOTACIÓN Y VENTA DE TERRENOS, MINAS, CANTERAS, APROVECHAMIENTOS DE AGUAS, TALLERES E INDUSTRIAS AJENAS AL RAMO DE CONSTRUCCIÓN. C) GESTIÓN, ADMINISTRACIÓN, ADQUISICIÓN, PROMOCIÓN, ENAJENACIÓN, REHABILITACIÓN Y EXPLOTACIÓN DE CUALQUIER FORMA DE SOLARES, TERRENOS, CONJUNTOS RESIDENCIALES, URBANIZACIONES O PROMOCIONES INMOBILIARIAS, Y EN GENERAL DE TODA CLASE DE BIENES INMUEBLES. D) FABRICACIÓN, ADQUISICIÓN, SUMINISTRO, IMPORTACIÓN, EXPORTACIÓN, ARRENDAMIENTO, INSTALACIÓN, MANTENIMIENTO, DISTRIBUCIÓN Y EXPLOTACIÓN DE MAQUINARIA, HERRAMIENTAS, VEHÍCULOS, INSTALACIONES, MATERIALES, EQUIPOS Y MOBILIARIO DE TODA CLASE, INCLUIDO EL MOBILIARIO Y EQUIPAMIENTO URBANOS. E) ADQUISICIÓN, EXPLOTACIÓN, VENTA Y CESIÓN DE DERECHOS DE PROPIEDAD INDUSTRIAL E INTELECTUAL. F) PRESTACIÓN DE SERVICIOS RELACIONADOS CON LA CONSERVACIÓN, REPARACIÓN, MANTENIMIENTO, SANEAMIENTO Y LIMPIEZA DE TODA CLASE DE OBRAS, INSTALACIONES Y SERVICIOS, TANTO A ENTIDADES PÚBLICAS COMO PRIVADAS. G) PRESTACIÓN DE SERVICIOS DE APOYO PROPIOS DE LA ACTIVIDAD DE INGENIERÍA, TALES COMO LA REALIZACIÓN DE PROYECTOS, ESTUDIOS, INFORMES, ANÁLISIS Y ENSAYOS. H) PRESTACIÓN DE TODO TIPO DE SERVICIOS RELACIONADOS CON LA EFICIENCIA ENERGÉTICA DE EDIFICIOS, CENTROS DE CONTROL DE ENERGÍA, ALUMBRADO PÚBLICO Y CUALQUIER OTRA INFRAESTRUCTURA O ACTIVO. I) ELABORACIÓN DE PROYECTOS Y ESTUDIOS; CONSTRUCCIÓN, MANTENIMIENTO, EXPLOTACIÓN Y COMERCIALIZACIÓN DE TODO TIPO DE INSTALACIONES Y SERVICIOS DE SUMINISTROS, DEPURACIÓN, TRANSFORMACIÓN Y TRATAMIENTO DE CUALQUIER CLASE DE AGUAS Y RESIDUOS. INVESTIGACIÓN Y DESARROLLO DE ESTOS MISMOS CAMPOS. J) PRESTACIÓN DE SERVICIOS RELACIONADOS CON EL MEDIO AMBIENTE, TALES COMO EL CONTROL DE HUMOS Y RUIDOS, Y LA GESTIÓN INTEGRAL DE BASURAS, TANTO EN LO QUE SE REFIERE A SU RECOGIDA COMO A SU DEPURACIÓN, TRANSFORMACIÓN Y TRATAMIENTO. K) CONSTRUCCIÓN, EJECUCIÓN, EXPLOTACIÓN Y PRESTACIÓN DE TODO TIPO DE SERVICIOS PÚBLICOS O COMUNITARIOS RELACIONADOS CON LA INFRAESTRUCTURA DE TRANSPORTE, URBANO, INTERURBANO, YA SEA POR VÍA TERRESTRE, MARÍTIMA A AÉREA. L) LA TITULARIDAD DE TODA CLASE DE CONCESIONES, SUBCONCESIONES, AUTORIZACIONES Y LICENCIAS ADMINISTRATIVAS DE OBRAS, SERVICIOS, MIXTAS DEL ESTADO, COMUNIDADES AUTÓNOMAS, PROVINCIAS, MUNICIPIOS, ORGANISMOS AUTÓNOMOS, ENTIDADES AUTÓNOMAS, Y, EN GENERAL, DE CUALQUIER ESTADO EXTRANJERO E INSTITUCIONES INTERNACIONALES. M) LA DISTRIBUCIÓN, EXPLOTACIÓN, TRANSPORTE E INTERCAMBIO DE CUALQUIER TIPO DE SEÑALES A TRAVÉS DE TODA CLASE DE REDES DE TELECOMUNICACIONES, ASÍ COMO LA GESTIÓN DE LOS SERVICIOS QUE PUDIERAN DERIVARSE DE LAS ACTIVIDADES ANTERIORES. N) PRESTACIÓN A CUALQUIER CLASE DE SOCIEDADES Y EMPRESAS DE SERVICIOS DE GESTIÓN Y ADMINISTRACIÓN, ASÍ COMO DE CONSULTORÍA Y ASESORAMIENTO EN MATERIA DE CONTABILIDAD, ASISTENCIA LEGAL, TÉCNICA, FINANCIERA, FISCAL Y DE RECURSOS HUMANOS Y LABORAL. O) LA DIRECCIÓN, GESTIÓN DE VALORES REPRESENTATIVOS DE FONDOS PROPIOS DE ENTIDADES NO RESIDENTES EN TERRITORIO ESPAÑOL Y LA COLOCACIÓN DE RECURSOS FINANCIEROS DERIVADOS DE LAS ACTIVIDADES CONSTITUTIVAS DE DICHO OBJETO SOCIAL MEDIANTE LA CORRESPONDIENTE ORGANIZACIÓN DE MEDIOS MATERIALES Y PERSONALES, CON EXCLUSIÓN DE AQUELLAS ACTIVIDADES RESERVADAS POR LA LEGISLACIÓN VIGENTE A LAS ENTIDADES DE VALORES Y/O ENTIDADES FINANCIERAS. P) LA REALIZACIÓN DE TODA CLASE DE ACTIVIDADES, OBRAS Y SERVICIOS RELACIONADOS CON LOS NEGOCIOS DE: PRODUCCIÓN Y COMERCIALIZACIÓN DE ELECTRICIDAD MEDIANTE INSTALACIONES QUE UTILICEN FUENTES DE ENERGÍA RENOVABLES, INCLUYÉNDOSE ENTRE ELLAS, A MODO ENUNCIATIVO Y NO EXHAUSTIVO, LA PRODUCCIÓN HIDRÁULICA, EÓLICA, TERMO SOLAR, FOTOVOLTAICA, O A PARTIR DE BIOMASA. LA REALIZACIÓN DE TODA CLASE DE ACTIVIDADES, OBRAS Y SERVICIOS RELACIONADOS CON LA PROMOCIÓN, CONSTRUCCIÓN, EXPLOTACIÓN, OPERACIÓN, MANTENIMIENTO, ASISTENCIA TÉCNICA Y GESTIÓN DE TODA CLASE DE INSTALACIONES DE PRODUCCIÓN O DISTRIBUCIÓN Y/O ALMACENAMIENTO DE ENERGÍA TÉRMICA O CALORÍFICA. PRODUCCIÓN, TRATAMIENTO Y COMERCIALIZACIÓN DE GASES COMBUSTIBLES O EMPLEADOS COMO VECTOR ENERGÉTICO Y PRODUCTOS DERIVADOS; Y PROYECTO, INGENIERÍA, DESARROLLO Y CONSTRUCCIÓN, OPERACIÓN, MANTENIMIENTO Y ENAJENACIÓN DE LAS INSTALACIONES COMPRENDIDAS EN LOS TRES PÁRRAFOS ANTERIORES DE ESTE APARTADO YA SEAN PROPIAS O DE TERCEROS, LOS SERVICIOS DE ANÁLISIS, ESTUDIOS DE INGENIERÍA O CONSULTORÍA ENERGÉTICA, MEDIOAMBIENTAL, TÉCNICA Y ECONÓMICA, RELACIONADA CON DICHAS OPERACIONES.\n\n",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/00227",
+      "_links": {
+        "self": {
+          "name": "FERROVIAL CONSTRUCCIÓN, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/00227"
+        }
+      }
+    },
+    {
+      "name": "INFYDE GLOBAL CONSULTING, S.L.",
+      "registrationNumber": "07855",
+      "identificationNumber": "B01798644",
+      "address": "Av. Zugazarte 8-3pl",
+      "location": {
+        "postalCode": "48930",
+        "municipality": "Getxo",
+        "county": "Bizkaia",
+        "municipalityId": "044",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.847",
+          "name": "Servicios de consultoría",
+          "_links": {
+            "self": {
+              "name": "Servicios de consultoría",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.847"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-02-09",
+      "certificateEndDate": "2026-07-30",
+      "object": "A) LA REALIZACIÓN DE ESTUDIOS ECONÓMICOS, SOCIALES Y TERRITORIALES ASÍ COMO EL ASESORAMIENTO EN TALES MATERIAS. B) LA EJECUCIÓN DE TODOS LOS ACTOS, CONTRATOS O NEGOCIOS QUE TENGAN RELACIÓN, DIRECTA O INDIRECTAMENTE, CON TODAS LAS ACTIVIDADES MENCIONADAS PRECEDENTEMENTE Y QUE LOS SOCIOS DE COMÚN ACUERDO DETERMINEN SIN LIMITACIÓN DE NINGUNA ESPECIE",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07855",
+      "_links": {
+        "self": {
+          "name": "INFYDE GLOBAL CONSULTING, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/07855"
+        }
+      }
+    },
+    {
+      "name": "INDUSTRIAS MONTAÑESAS ELÉCTRICAS MECÁNICAS, S.L.",
+      "registrationNumber": "01392",
+      "identificationNumber": "B39008404",
+      "address": "BARRIO ADARZO, Nº 155 - B. PEÑACASTILLO.",
+      "location": {
+        "postalCode": "39011",
+        "municipality": "Santander",
+        "county": "Cantabria",
+        "municipalityId": "075",
+        "countyId": "39"
+      },
+      "economicActivities": [
+        {
+          "id": "1.325.4",
+          "name": "Construcción de maquinaria de elevación y manipulación",
+          "_links": {
+            "self": {
+              "name": "Construcción de maquinaria de elevación y manipulación",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.325.4"
+            }
+          }
+        },
+        {
+          "id": "1.504.6",
+          "name": "Montaje e instalación de aparatos elevadores de cualquier clase",
+          "_links": {
+            "self": {
+              "name": "Montaje e instalación de aparatos elevadores de cualquier clase",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.504.6"
+            }
+          }
+        },
+        {
+          "id": "1.692",
+          "name": "Reparación de maquinaria industrial",
+          "_links": {
+            "self": {
+              "name": "Reparación de maquinaria industrial",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.692"
+            }
+          }
+        },
+        {
+          "id": "1.699",
+          "name": "Otras reparaciones n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otras reparaciones n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.699"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-02-09",
+      "certificateEndDate": "2026-08-04",
+      "object": "LAS CONSTRUCCIONES METÁLICAS, ELÉCTRICAS Y MECÁNICAS, ASÍ COMO SU REPARACIÓN Y FABRICACIÓN, ESPECIALMENTE APARATOS ELEVADORES",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/01392",
+      "_links": {
+        "self": {
+          "name": "INDUSTRIAS MONTAÑESAS ELÉCTRICAS MECÁNICAS, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/01392"
+        }
+      }
+    },
+    {
+      "name": "LEYRE BARRERAS VIA",
+      "registrationNumber": "06439",
+      "identificationNumber": "16061781F",
+      "address": "Bº San Esteban 1 Bis",
+      "location": {
+        "postalCode": "48891",
+        "municipality": "Karrantza Harana/Valle de Carranza",
+        "county": "Bizkaia",
+        "municipalityId": "022",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "2.712",
+          "name": "Agentes representantes y corredores de seguros",
+          "_links": {
+            "self": {
+              "name": "Agentes representantes y corredores de seguros",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/2.712"
+            }
+          }
+        },
+        {
+          "id": "2.826",
+          "name": "Personal docente de enseñanzas diversas",
+          "_links": {
+            "self": {
+              "name": "Personal docente de enseñanzas diversas",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/2.826"
+            }
+          }
+        },
+        {
+          "id": "2.882",
+          "name": "Guías de turismo",
+          "_links": {
+            "self": {
+              "name": "Guías de turismo",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/2.882"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-02-09",
+      "certificateEndDate": "2026-08-09",
+      "object": "EMPRESA DE SERVICIOS TURÍSTICOS ",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06439",
+      "_links": {
+        "self": {
+          "name": "LEYRE BARRERAS VIA",
+          "href": "https://api.euskadi.eus/procurements/companies/06439"
+        }
+      }
+    },
+    {
+      "name": "EUREKA SOLUCIONES INTEGRADAS",
+      "registrationNumber": "06108",
+      "identificationNumber": "F95833356",
+      "address": "Carretera Bilbao-Galdakao, 10",
+      "location": {
+        "postalCode": "48004",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.316.9",
+          "name": "Fabricación de otros artículos acabados en metales n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Fabricación de otros artículos acabados en metales n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.316.9"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-02-09",
+      "certificateEndDate": "2026-08-09",
+      "object": "FAVORECER LA INSERCIÓN SOCIAL Y LABORAL DE COLECTIVOS EN SITUACIÓN O RIESGO DE EXCLUSIÓN, A TRAVÉS DE LA EJECUCIÓN DE TRABAJOS Y SERVICIOS EN EL SECTOR DEL METAL, DISEÑO, FABRICACIÓN, MONTAJE DE SOLUCIONES ADAPTADAS, RÓTULOS Y SEÑALÍTICA, COMBINANDO ELEMENTOS METÁLICOS, ELÉCTRICOS, PLÁSTICOS Y OTROS MATERIALES",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06108",
+      "_links": {
+        "self": {
+          "name": "EUREKA SOLUCIONES INTEGRADAS",
+          "href": "https://api.euskadi.eus/procurements/companies/06108"
+        }
+      }
+    },
+    {
+      "name": "KLIKSOUND 2011, S.L.",
+      "registrationNumber": "10533",
+      "identificationNumber": "B21869110",
+      "address": "Avenida Elias Salaberria n°20, 2°A",
+      "location": {
+        "postalCode": "20100",
+        "municipality": "Lezo",
+        "county": "Gipuzkoa",
+        "municipalityId": "053",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.843.9",
+          "name": "Otros servicios técnicos n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros servicios técnicos n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.9"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-02-09",
+      "certificateEndDate": "2026-08-09",
+      "object": "ALQUILER DE EQUIPOS DE SONIDO, ILUMINACIÓN Y AUDIOVISUALES, PLANIFICACIÓN TÉCNICA DE SU INSTALACIÓN, SUMINISTRO DE LOS MISMOS EN LA UBICACIÓN DEL EVENTO, PREPARACIÓN Y FUNCIONAMIENTO DEL EQUIPO AUDIOVISUAL Y EFECTOS ESPECIALES ASOCIADOS CON LA ORGANIZACIÓN DE TODO TIPO DE EVENTOS ARTÍSTICOS Y DE OTRAS CARACTERÍSTICAS, ASÍ COMO SU CONTROL CON PERSONAL TÉCNICO DURANTE EL TRANSCURSO DEL MISMO.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/10533",
+      "_links": {
+        "self": {
+          "name": "KLIKSOUND 2011, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/10533"
+        }
+      }
+    }
+  ]
+}

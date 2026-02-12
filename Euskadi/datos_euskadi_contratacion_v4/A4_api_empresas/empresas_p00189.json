@@ -1,0 +1,678 @@
+{
+  "totalItems": 9042,
+  "totalPages": 905,
+  "currentPage": 189,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "name": "ASOCIACIÓN CULTURAL ZINHEZBA",
+      "registrationNumber": "06890",
+      "identificationNumber": "G01385525",
+      "address": "aldape,1",
+      "location": {
+        "postalCode": "01138",
+        "municipality": "Zigoitia",
+        "county": "Araba/Álava",
+        "municipalityId": "018",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.934",
+          "name": "Enseñanza fuera de establecimiento permanente",
+          "_links": {
+            "self": {
+              "name": "Enseñanza fuera de establecimiento permanente",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.934"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-10-28",
+      "certificateEndDate": "2026-04-26",
+      "object": "1.PROMOCIÓN DE LOS DERECHOS HUMANOS A TRAVÉS DE LOS MEDIOS AUDIOVISUALES Y DE LA EDUCACIÓN EN VALORES, TODO ELLO ENCAMINADO HACIA UNA CULTURA DE LA PAZ. 2. DESARROLLAR EL SENTIDO CRÍTICO HACIA EL MEDIO AUDIOVISUAL, CON EL FIN DE INTEGRAR LA IMAGEN AL UNIVERSO DE LOS CONOCIMIENTOS. 3. DIRIGIR LA ACTIVIDAD PEDAGÓGICA A LA POBLACIÓN EN EDAD ESCOLAR, ASÍ COMO A MAESTROS, EDUCADORES, PERSONAL DOCENTE O CUALQUIER GRUPO DE PERSONAS INTERESADAS EN LA ACTIVIDAD. 4. HACEMOS ECO DE TODAS AQUELLAS REALIDADES EN LAS QUE SE VULNEREN DE UNA U OTRA MANERA LOS DERECHOS FUNDAMENTALES DE LAS PERSONAS Y ACTUAR EN LA MEDIDA DE NUESTRAS POSIBILIDADES. 5. TRABAJAR Y PROMOCIONAR LOS PRODUCTOS AUDIOVISUALES DESTINADOS A LOS MÁS PEQUEÑOS Y A LOS QUE NO SE ACCEDE FÁCILMENTE DE FORMA COMERCIAL. PARA LA CONSECUCIÓN DE DICHOS FINES SE LLEVARÁ A CABO, PREVIO EL CUMPLIMIENTO DE LOS REQUISITOS LEGALES ESTABLECIDOS, LAS SIGUIENTES ACTIVIDADES: 1. SELECCIÓN DE MATERIALES AUDIOVISUALES, GESTIÓN DE DERECHOS DE PROPIEDAD INTELECTUAL DE LOS MISMOS. 2. DESARROLLO DE LA ACTIVIDAD AULAS DE CINE Y DERECHOS HUMANOS TRATANDO DE LLEGAR A LA MÁXIMA POBLACIÓN ESCOLAR. 3 CONFECCIÓN DE LOS MATERIALES DIDÁCTICOS NECESARIOS PARA LA ACTIVIDAD EDUCATIVA TANTO EN EUSKERA COMO EN CASTELLANO. 4. TRADUCCIÓN Y SUBTITULADO DE MATERIALES AUDIOVISUALES. 5. COLABORACIÓN CON ENTIDADES PÚBLICAS Y PRIVADAS, NACIONALES E INTERNACIONALES, QUE AYUDEN A PROMOVER LOS FINES DE LA ASOCIACIÓN. SIN PERJUICIO DE LAS ACTIVIDADES DESCRITAS EN EL APARTADO ANTERIOR, LA ASOCIACIÓN, PARA EL CUMPLIMIENTO DE SUS FINES PODRÁ: -DESARROLLAR ACTIVIDADES ECONÓMICAS DE TODO TIPO, ENCAMINADAS A LA REALIZACIÓN DE SUS FINES O ALLEGAR RECURSOS CON ESE OBJETIVO. -ADQUIRIR Y POSEER BIENES DE TODAS CLASES Y POR CUALQUIER TÍTULO, ASÍ COMO CELEBRAR ACTOS Y CONTRATOS DE TODO GÉNERO. -EJERCITAR TODA CLASE DE ACCIONES CONFORME A LAS LEYES O A SUS ESTATUTOS\r\n\r\n\r\n",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06890",
+      "_links": {
+        "self": {
+          "name": "ASOCIACIÓN CULTURAL ZINHEZBA",
+          "href": "https://api.euskadi.eus/procurements/companies/06890"
+        }
+      }
+    },
+    {
+      "name": "AUTOCARES SIMÓN, S.L.",
+      "registrationNumber": "03157",
+      "identificationNumber": "B48456255",
+      "address": "C/ J.M. BARANDIARAN, 1 DTO.1",
+      "location": {
+        "postalCode": "48980",
+        "municipality": "Santurtzi",
+        "county": "Bizkaia",
+        "municipalityId": "082",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.721.3",
+          "name": "Transporte de viajeros por carretera",
+          "_links": {
+            "self": {
+              "name": "Transporte de viajeros por carretera",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.721.3"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-10-28",
+      "certificateEndDate": "2026-04-26",
+      "classification": [
+        {
+          "id": "S",
+          "name": "Servicios",
+          "groups": [
+            {
+              "id": "R",
+              "subgroups": [
+                {
+                  "id": "01",
+                  "name": "Transporte de viajeros por carretera",
+                  "categories": [
+                    {
+                      "id": "5",
+                      "name": "Mas de 1.200.000",
+                      "_links": {
+                        "self": {
+                          "name": "Mas de 1.200.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/S/categories/5"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "Transporte de viajeros por carretera",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/R/subgroups/01"
+                    }
+                  }
+                }
+              ],
+              "_links": {
+                "self": {
+                  "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/R"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Servicios",
+              "href": "https://api.euskadi.eus/procurements/companies/types/S"
+            }
+          }
+        }
+      ],
+      "object": "LA ACTIVIDAD DE TRANSPORTES EN GENERAL, PUDIENDO EXPLOTAR LÍNEAS REGULARES Y DISCRECIONALES DE AMBITO INTERNACIONAL, NACIONAL, COMARCAL, PROVINCIAL Y LOCAL, ASÍ COMO EL ESTABLECIMIENTO Y EXPLOTACIÓN DE AGENCIAS DE TRANSPORTE, APARCAMIENTOS, GARAJES, CENTROS DE ESTACIONES DE SERVICIOS O DE ASISTENCIA A VEHÍCULOS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03157",
+      "_links": {
+        "self": {
+          "name": "AUTOCARES SIMÓN, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/03157"
+        }
+      }
+    },
+    {
+      "name": "SUL COMERCIALIZADORA SL",
+      "registrationNumber": "05821",
+      "identificationNumber": "B95912283",
+      "address": "Pol Ind. Aurrera Mod 36",
+      "location": {
+        "postalCode": "48510",
+        "municipality": "Valle de Trápaga-Trapagaran",
+        "county": "Bizkaia",
+        "municipalityId": "080",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.616.6",
+          "name": "Venta al por mayor de productos químicos industriales",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de productos químicos industriales",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.616.6"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-10-28",
+      "certificateEndDate": "2026-04-24",
+      "object": "LA COMPRA, VENTA, IMPORTACIÓN, EXPORTACIÓN, COMERCIALIZACIÓN, DISTRIBUCIÓN Y ALMACENAMIENTO DE TODA CLASE DE BIENES Y PRODUCTOS QUÍMICOS Y DE LABORATORIO, ASÍ COMO CUALQUIER OTRA ACTIVIDAD RELACIONADA CON LOS MISMOS, TODO ELLO DENTRO DE LOS LÍMITES MARCADOS POR LA VIGENTE LEGISLACIÓN PARA EL EJERCICIO DE LAS MISMAS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/05821",
+      "_links": {
+        "self": {
+          "name": "SUL COMERCIALIZADORA SL",
+          "href": "https://api.euskadi.eus/procurements/companies/05821"
+        }
+      }
+    },
+    {
+      "name": "B.F. MÉDICA, S.L.",
+      "registrationNumber": "01632",
+      "identificationNumber": "B48703029",
+      "address": "C/ TXORI HERRI, Nº 46. POLÍGONO BERRETEAGA.PAB.8-MÓD.F      ",
+      "location": {
+        "postalCode": "48000",
+        "municipality": "Sondika",
+        "county": "Bizkaia",
+        "municipalityId": "904",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.619.2",
+          "name": "Venta al por mayor de aparatos e instrumentos médicos, ortopédicos, ópticos",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de aparatos e instrumentos médicos, ortopédicos, ópticos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.619.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-10-28",
+      "certificateEndDate": "2026-04-26",
+      "object": "LA FABRICACIÓN, DISTRIBUCIÓN, IMPORTACIÓN, EXPORTACIÓN, REPARACIÓN, COMERCIALIZACIÓN Y VENTA DE APARATOS DE ELECTRO-MEDICINA, RAYOS X, ESTERILIZACIÓN, MATERIAL MÉDICO-QUIRÚRGICO Y DE LABORATORIO Y VETERINARIO, MATERIAL DESECHABLE Y MOBILIARIO CLÍNICO, Y MATERIAL DE ESTÉTICA Y ACUPUNTURA",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/01632",
+      "_links": {
+        "self": {
+          "name": "B.F. MÉDICA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/01632"
+        }
+      }
+    },
+    {
+      "name": "MIGUEL ZABALLA LLANO",
+      "registrationNumber": "09882",
+      "identificationNumber": "30693371D",
+      "address": "CORRERIA 23 2 IZDA",
+      "location": {
+        "postalCode": "39700",
+        "municipality": "Castro-Urdiales",
+        "county": "Cantabria",
+        "municipalityId": "020",
+        "countyId": "39"
+      },
+      "economicActivities": [
+        {
+          "id": "1.861.2",
+          "name": "Alquiler de locales industriales y otros alquileres n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Alquiler de locales industriales y otros alquileres n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.861.2"
+            }
+          }
+        },
+        {
+          "id": "2.411",
+          "name": "Arquitectos",
+          "_links": {
+            "self": {
+              "name": "Arquitectos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/2.411"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-10-28",
+      "certificateEndDate": "2026-04-27",
+      "object": "ALQUILER DE LOCALES INDUSTRIALES Y OTROS ALQUILERES N.C.O.P. ARQUITECTOS.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/09882",
+      "_links": {
+        "self": {
+          "name": "MIGUEL ZABALLA LLANO",
+          "href": "https://api.euskadi.eus/procurements/companies/09882"
+        }
+      }
+    },
+    {
+      "name": "TEKNEI DIGITAL, S.A.",
+      "registrationNumber": "01445",
+      "identificationNumber": "A01038090",
+      "address": "PLAZA DEL RENACIMIENTO, Nº 9 - 4ª PLANTA. OFICINA 20",
+      "location": {
+        "postalCode": "01004",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.845",
+          "name": "Explotación electrónica por cuenta de terceros",
+          "_links": {
+            "self": {
+              "name": "Explotación electrónica por cuenta de terceros",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.845"
+            }
+          }
+        },
+        {
+          "id": "1.966.1",
+          "name": "Bibliotecas y museos",
+          "_links": {
+            "self": {
+              "name": "Bibliotecas y museos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.966.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-10-28",
+      "certificateEndDate": "2026-04-20",
+      "object": "LA PRESTACIÓN DE SERVICIOS DE TECNOLOGÍAS DE LA INFORMACIÓN CON LAS ACTIVIDADES DE: CONSULTORÍA, PRESTACIONES INTELECTUALES, REALIZACIÓN DE PROYECTOS, SUMINISTRO DE RECURSOS HUMANOS Y MATERIALES Y TRATAMIENTO DE LA INFORMACIÓN, EN LAS ÁREAS DE INGENIERÍA DE SISTEMAS DE INFORMACIÓN E INGENIERÍA DE INFORMACIÓN Y DOCUMENTACIÓN. LOS SERVICIOS OBJETO DE SU ACTIVIDAD SE PUEDEN ENUMERAR COMO: LA PLANIFICACIÓN Y REALIZACIÓN DE PROYECTOS DE SISTEMAS DE INFORMACIÓN E INFORMÁTICOS. LA ASISTENCIA TÉCNICA DE PROYECTOS DE SISTEMAS DE INFORMACIÓN E INFORMÁTICOS. LA FORMACIÓN EN: METODOLOGÍAS Y TECNOLOGÍAS DE INFORMACIÓN, GESTIÓN DOCUMENTAL, ARCHIVOS Y BIBLIOTECAS. LA REALIZACIÓN DE PROYECTOS DE ORGANIZACIÓN Y GESTIÓN DOCUMENTAL. LA REALIZACIÓN DE PROYECTOS DE ORGANIZACIÓN Y GESTIÓN DE ARCHIVO. LA REALIZACIÓN DE PROYECTOS DE GESTIÓN BIBLIOTECARIA. LA REALIZACIÓN DE PROYECTOS DE ACCESO Y DIFUSIÓN DE INFORMACIÓN. EL SUMINISTRO DE RECURSOS HUMANOS Y MATERIALES PARA LA REALIZACIÓN DE LOS PROYECTOS DE DISTINTA ÍNDOLE OBJETO DE SU ACTIVIDAD",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/01445",
+      "_links": {
+        "self": {
+          "name": "TEKNEI DIGITAL, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/01445"
+        }
+      }
+    },
+    {
+      "name": "PROYECTOS INGENIERIA ACUSTICA SOCIEDAD LIMITADA",
+      "registrationNumber": "08194",
+      "identificationNumber": "B95855995",
+      "address": "Jesús María Olagüe Txuma, 1. Local",
+      "location": {
+        "postalCode": "48950",
+        "municipality": "Erandio",
+        "county": "Bizkaia",
+        "municipalityId": "902",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.843.1",
+          "name": "Servicios técnicos de ingeniería",
+          "_links": {
+            "self": {
+              "name": "Servicios técnicos de ingeniería",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-10-28",
+      "certificateEndDate": "2026-04-18",
+      "object": "LOS SERVICIOS TÉCICOS DE INGENIERÍA (MEDICIÓN DE SONIDO Y RUIDOS)",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08194",
+      "_links": {
+        "self": {
+          "name": "PROYECTOS INGENIERIA ACUSTICA SOCIEDAD LIMITADA",
+          "href": "https://api.euskadi.eus/procurements/companies/08194"
+        }
+      }
+    },
+    {
+      "name": "BIRKETA REHABILITACIONES, S.L.",
+      "registrationNumber": "06848",
+      "identificationNumber": "B01508522",
+      "address": "Portal de Gamarra 1, Oficina 112 Edificio dEBA",
+      "location": {
+        "postalCode": "01013",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.501.1",
+          "name": "Construcción completa, reparación y conservación de edificaciones",
+          "_links": {
+            "self": {
+              "name": "Construcción completa, reparación y conservación de edificaciones",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-10-28",
+      "certificateEndDate": "2026-04-24",
+      "classification": [
+        {
+          "id": "O",
+          "name": "Obras",
+          "groups": [
+            {
+              "id": "C",
+              "name": "EDIFICACIONES",
+              "subgroups": [
+                {
+                  "id": "01",
+                  "name": "DEMOLICIONES",
+                  "categories": [
+                    {
+                      "id": "2",
+                      "name": "Desde 150.001 Hasta 360.000",
+                      "_links": {
+                        "self": {
+                          "name": "Desde 150.001 Hasta 360.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/O/categories/2"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "DEMOLICIONES",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/O/groups/C/subgroups/01"
+                    }
+                  }
+                },
+                {
+                  "id": "02",
+                  "name": "ESTRUCTURAS DE FABRICA U HORMIGÓN",
+                  "categories": [
+                    {
+                      "id": "2",
+                      "name": "Desde 150.001 Hasta 360.000",
+                      "_links": {
+                        "self": {
+                          "name": "Desde 150.001 Hasta 360.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/O/categories/2"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "ESTRUCTURAS DE FABRICA U HORMIGÓN",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/O/groups/C/subgroups/02"
+                    }
+                  }
+                },
+                {
+                  "id": "03",
+                  "name": "ESTRUCTURAS METALICAS",
+                  "categories": [
+                    {
+                      "id": "3",
+                      "name": "Desde 360.001 Hasta 840.000",
+                      "_links": {
+                        "self": {
+                          "name": "Desde 360.001 Hasta 840.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/O/categories/3"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "ESTRUCTURAS METALICAS",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/O/groups/C/subgroups/03"
+                    }
+                  }
+                },
+                {
+                  "id": "04",
+                  "name": "ALBAÑILERIA, REVOCOS Y REVESTIDOS",
+                  "categories": [
+                    {
+                      "id": "3",
+                      "name": "Desde 360.001 Hasta 840.000",
+                      "_links": {
+                        "self": {
+                          "name": "Desde 360.001 Hasta 840.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/O/categories/3"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "ALBAÑILERIA, REVOCOS Y REVESTIDOS",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/O/groups/C/subgroups/04"
+                    }
+                  }
+                },
+                {
+                  "id": "05",
+                  "name": "CANTERIA Y MARMOLERIA",
+                  "categories": [
+                    {
+                      "id": "1",
+                      "name": "Desde 0 Hasta 150.000",
+                      "_links": {
+                        "self": {
+                          "name": "Desde 0 Hasta 150.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/O/categories/1"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "CANTERIA Y MARMOLERIA",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/O/groups/C/subgroups/05"
+                    }
+                  }
+                },
+                {
+                  "id": "06",
+                  "name": "PAVIMENTOS, SOLADOS Y ALICATADOS",
+                  "categories": [
+                    {
+                      "id": "2",
+                      "name": "Desde 150.001 Hasta 360.000",
+                      "_links": {
+                        "self": {
+                          "name": "Desde 150.001 Hasta 360.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/O/categories/2"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "PAVIMENTOS, SOLADOS Y ALICATADOS",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/O/groups/C/subgroups/06"
+                    }
+                  }
+                },
+                {
+                  "id": "07",
+                  "name": "AISLAMIENTOS E IMPERMEABILIZACIONES",
+                  "categories": [
+                    {
+                      "id": "2",
+                      "name": "Desde 150.001 Hasta 360.000",
+                      "_links": {
+                        "self": {
+                          "name": "Desde 150.001 Hasta 360.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/O/categories/2"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "AISLAMIENTOS E IMPERMEABILIZACIONES",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/O/groups/C/subgroups/07"
+                    }
+                  }
+                },
+                {
+                  "id": "08",
+                  "name": "CARPINTERIA DE MADERA",
+                  "categories": [
+                    {
+                      "id": "2",
+                      "name": "Desde 150.001 Hasta 360.000",
+                      "_links": {
+                        "self": {
+                          "name": "Desde 150.001 Hasta 360.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/O/categories/2"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "CARPINTERIA DE MADERA",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/O/groups/C/subgroups/08"
+                    }
+                  }
+                },
+                {
+                  "id": "09",
+                  "name": "CARPINTERIA METALICA",
+                  "categories": [
+                    {
+                      "id": "2",
+                      "name": "Desde 150.001 Hasta 360.000",
+                      "_links": {
+                        "self": {
+                          "name": "Desde 150.001 Hasta 360.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/O/categories/2"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "CARPINTERIA METALICA",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/O/groups/C/subgroups/09"
+                    }
+                  }
+                }
+              ],
+              "_links": {
+                "self": {
+                  "name": "EDIFICACIONES",
+                  "href": "https://api.euskadi.eus/procurements/companies/types/O/groups/C"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Obras",
+              "href": "https://api.euskadi.eus/procurements/companies/types/O"
+            }
+          }
+        }
+      ],
+      "object": "CONSTRUCCION, REHABILITACIÓN, REPARACIÓN, RECUPERACIÓN, REFORMA Y REFUERZO DE TODA CLASE DE EDIFICIOS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06848",
+      "_links": {
+        "self": {
+          "name": "BIRKETA REHABILITACIONES, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/06848"
+        }
+      }
+    },
+    {
+      "name": "NAHIKARI AYO ACEBO",
+      "registrationNumber": "07907",
+      "identificationNumber": "16072274N",
+      "address": "Calle Ezequiel Aguirre (48930) 30",
+      "location": {
+        "postalCode": "48930",
+        "municipality": "Getxo",
+        "county": "Bizkaia",
+        "municipalityId": "044",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "2.824",
+          "name": "Profesores de formación y perfeccionamiento profesional",
+          "_links": {
+            "self": {
+              "name": "Profesores de formación y perfeccionamiento profesional",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/2.824"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-10-28",
+      "certificateEndDate": "2026-04-26",
+      "object": "PROFESORES DE FORMACIÓN Y PERFECCIONAMIENTO PROFESIONAL",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07907",
+      "_links": {
+        "self": {
+          "name": "NAHIKARI AYO ACEBO",
+          "href": "https://api.euskadi.eus/procurements/companies/07907"
+        }
+      }
+    },
+    {
+      "name": "BRÓCOLI, S.L",
+      "registrationNumber": "06671",
+      "identificationNumber": "B29778651",
+      "address": "C/ Fidias, 36, Parque Emp. Sta. Bárbara",
+      "location": {
+        "postalCode": "29004",
+        "municipality": "Málaga",
+        "county": "Málaga",
+        "municipalityId": "067",
+        "countyId": "29"
+      },
+      "economicActivities": [
+        {
+          "id": "1.849.9",
+          "name": "Otros servicios independientes n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros servicios independientes n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.849.9"
+            }
+          }
+        },
+        {
+          "id": "1.911",
+          "name": "Servicios agrícolas y ganaderos",
+          "_links": {
+            "self": {
+              "name": "Servicios agrícolas y ganaderos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.911"
+            }
+          }
+        },
+        {
+          "id": "1.922",
+          "name": "Servicios de limpieza",
+          "_links": {
+            "self": {
+              "name": "Servicios de limpieza",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.922"
+            }
+          }
+        },
+        {
+          "id": "1.922.1",
+          "name": "Servicios de limpieza de interiores",
+          "_links": {
+            "self": {
+              "name": "Servicios de limpieza de interiores",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.922.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-10-28",
+      "certificateEndDate": "2026-04-21",
+      "object": "PRESTACIÓN DE SERVICIOS DE LIMPIEZA Y CONSERVACIÓN, EXTERIOR E INTERIOR, DE BIENES MUEBLES, EQUIPOS DE CUALQUIER CLASE, INMUEBLES E INSTALACIONES, Y MEDIOS DE TRANSPORTE, LO QUE INCLUYE INSTALACIONES INDUSTRIALES, HOSPITALARIAS, GRANDES SUPERFICIES, RESIDENCIAS, CENTROS DEPORTIVOS, HOTELES, ASÍ COMO VIAS URBANAS, PARQUES Y JARDINES, TRANSPORTE TERRESTRE, AÉREO, MARÍTIMO, ETC.  PRESTACIÓN DE SERVICIOS DE LAVANDERÍA, RECOGIDA SELECTIVA Y RECUPERACIÓN DE RESIDUOS Y DDD. REPARACIÓN Y MANTENIMIENTO DE EDIFICIOS, INSTALACIONES O EQUIPOS.PRESTACIÓN DE SERVICIOS DE LAVANDERÍA, RECOGIDA SELECTIVA Y RECUPERACIÓN DE RESIDUOS Y DDD. REPARACIÓN Y MANTENIMIENTO DE EDIFICIOS, INSTALACIONES O EQUIPOS. PRESTACIÓN DE SERVICIOS DE JARDINERÍA: MANTENIMIENTO DE ZONAS VERDES, PARQUES Y JARDINES, ÁMBITO FORESTAL, ÁMBITO RURAL ASÍ COMO CUALQUIER SERVICIO QUE TENGA POR OBJETO SU CONSERVACIÓN, TRATAMIENTOS FITOSANITARIOS Y CONTROL DE PLAGAS, REPOBLACIONES, REFORESTACIONES Y PODAS. SUMINISTRO Y PLANTACIÓN DE PLANTAS O ELEMENTOS VEGETALES. GESTIÓN DE SERVICIOS Y/O EXTERNALIZACIÓN DE SERVICIOS MEDIOAMBIENTALES. ELABORACIÓN DE AUDITORÍAS RELATIVAS A LA PROPIA GESTIÓN DE SERVICIOS MEDIOAMBIENTALES. GESTIÓN DE CENTROS DE RECOGIDA DE RESIDUOS (ECO PARQUES, PUNTOS LIMPIOS O SIMILAR). GESTIÓN Y TRANSPORTE DE RESIDUOS NO PELIGROSOS. RECICLAJE, APROVECHAMIENTO Y RECUPERACIÓN DE ELEMENTOS COMERCIALIZABLES EN LOS RESIDUOS INDICADOS. LIMPIEZA DE PARQUES, JARDINES, MONTES, VIAS Y ESPACIOS PÚBLICOS O PRIVADOS, URBANOS E INTERURBANOS, Y DESRATIZACIÓN, DESINFECCIÓN Y DESINSECTACIÓN DE LOS ESPACIOS ANTERIORES. ELABORACIÓN DE ESTUDIOS, PROYECTOS Y EJECUCIÓN DE OBRAS DE CONSTRUCCIÓN RELACIONADOS CON MEDIOAMBIENTE, JARDINERÍA EN GENERAL, ÁREAS DEPORTIVAS, ÁREAS FORESTALES Y RURALES, INFRAESTRUCTURA (MOBILIARIO URBANO, JUEGOS INFANTILES, FUENTES, ILUMINACIÓN, RED DE RIEGO) Y MANTENIMIENTO DE LOS MISMOS. MANTENIMIENTO Y CONSERVACIÓN DE MAQUINARIA. ASISTENCIA TÉCNICA, FORMACIÓN, ELABORACIÓN DE ESTUDIOS, INFORMES, TRABAJOS Y PROYECTOS SOBRE AUDITORÍAS MEDIOAMBIENTALES Y EFICIENCIA ENERGÉTICA. ASISTENCIA TÉCNICA, FORMACIÓN, ELABORACIÓN DE ESTUDIOS, INFORMES, TRABAJOS Y PROYECTOS SOBRE EDUCACIÓN SENSIBILIZACIÓN AMBIENTAL, TALLERES FORMATIVOS, HUERTOS URBANOS, Y PROGRAMAS EDUCATIVOS. GESTIÓN DEPORTIVA (SERVICIOS DE SALVAMENTO Y SOCORRISMO EN PLAYAS, SOCORRISMO EN PISCINAS CUBIERTAS Y DESCUBIERTAS, ESCUELAS DEPORTIVAS MUNICIPALES, ACTIVIDADES FÍSICO-DEPORTIVAS PARA ADULTOS, ORGANIZACIÓN DE JUEGOS DEPORTIVOS (COMPETICIONES) Y GESTIÓN INTEGRAL DE INSTALACIONES DEPORTIVAS. MANTENIMIENTO Y CONSERVACIÓN DE INSTALACIONES ACUÁTICAS. PRESTACIÓN DE SERVICIOS DE CONSERJE, PORTERO, ATENCIÓN AL PÚBLICO, RECEPCIONISTA, TELEFONISTA, ORDENANZAS, CONTROL DE ACCESOS, EXPENDEDORES DE GASOLINA, CONTROL Y MANTENIMIENTO DE GARAJES, REVISORES DE ZONA, SERVICIOS AUXILIARES EN INSTALACIONES MUNICIPALES, AUTONÓMICAS Y ESTATALES, Y OTROS SERVICIOS AUXILIARES VINCULADOS. MANTENIMIENTO Y CONSERVACIÓN, ASÍ COMO APERTURA Y CIERRE DE CONTROL DE FINCAS, EMPRESAS, CONJUNTOS RESIDENCIALES, URBANIZACIONES, JARDINES, PARQUES Y DOMICILIOS PARTICULARES. SERVICIOS DE GESTIÓN DE COBRO Y TAQUILLAJE, EN TODO TIPO DE RECINTO Y, EN PARTICULAR, EN PARKINGS, GASOLINERAS, CINES, TEATROS Y MUSEOS. REALIZACIÓN DE CONTROLES DE CALIDAD EN PROCESOS PRODUCTIVOS. CONCRETAMENTE, EN LA FABRICACIÓN Y COMERCIALIZACIÓN DE TORNILLOS, TUERCAS, ARTÍCULOS DE FERRETERÍA, MAQUINARIA Y PRODUCTOS METALÚRGICOS, ASÍ COMO SUS PROCESOS COMPLEMENTARIOS. PRESTACIÓN DE SERVICIOS DE MANIPULADOS, MOZOS DE ALMACÉN Y TRABAJOS ADMINISTRATIVOS, DE CONTABILIDAD, DE GESTIÓN Y CONTROL POR CUENTA AJENA, EN EL PROPIO CENTRO DE TRABAJO O EN EL DOMICILIO DEL CLIENTE. CONTROLES DE CALIDAD, PRE MONTAJES, LOGÍSTICA INTERNA, CROSS DOCKING, INVENTARIOS, GESTIÓN DE STOCKS, RETRACTILADO, PRECINTADOS, SERVICIOS DE PICKING, COPACKING. RE TRABAJOS, ESTAMPACIÓN, ASÍ COMO CUALQUIER ACTIVIDAD DE MANIPULADO INSDUSTRIAL. REPARACIÓN DE AVERÍAS ELÉCTRICAS Y ELECTRÓNICAS EN GENERAL. MANIPULACIÓN Y CONTROL DE CALIDAD DE ARTÍCULOS DIVERSOS POR CUENTA DE TERCEROS. SERVICIO DE BUZONEO, ENSOBRADO, PROMOCIONES Y COLGADA DE CARTELES, RECEPCIÓN DE LLAMADAS, TELEMARKETING Y TELE-VENTA. INTERMEDIACIÓN COMERCIAL DE MERCADERÍAS DE TODO TIPO. DIGITALIZACIÓN MASIVA DE DOCUMENTOS MEDIANTE LA CREACIÓN DE ARCHIVOS ELECTRÓNICOS. PRESTACIÓN DE SERVICIOS DE MENSAJERÍA EN GENERAL, ASÍ COMO CUANTO LE SEA COMPLEMENTARLO, EL REPARTO, RECOGIDA, TRANSPORTE Y ENTREGA DE TODA CLASE DE OBJETOS, MERCADERÍAS Y ENCARGOS; ASÍ COMO EL SERVICIO DE MEDIACIÓN Y ORGANIZACIÓN DE TRANSPORTES. SERVICIOS ASISTENCIALES EN LAS ÁREAS SOCIALES, SANITARIAS, EDUCATIVAS. ATENCIÓN DOMICILIARIA Y RESIDENCIAL, SERVICIOS ESCOLARES, DE ACOMPAÑAMIENTO, CUIDADORES DE COMEDOR, MONITORES, APOYO A LA MOVILIDAD, ATENCIÓN DIURNA. ARRENDAMIENTO Y SUBARRENDAMIENTO DE INMUEBLES. GESTIÓN DE PISOS TUTELADOS Y RESIDENCIAS PARA PERSONAS CON DISCAPACIDAD. EMPAQUETADO, ENFAJADO, ENLISTADO, ENSOBRADO, ASÍ COMO CUALQUIER OTRA FORMA DE ENVOLTURA, EN PLÁSTICO, CARTÓN U OTROS MATERIALES, ASÍ COMO ENCOLADOS, ETIQUETADOS, MARCAJES, DIRECCIONADOS Y CUALQUIER OTRA MANIPULACIÓN DE UN PRODUCTO PROPIEDAD DE TERCEROS. EL ARRENDAMIENTO DE VEHÍCULOS CON CHÓFER, EL ARRENDAMIENTO DE VEHÍCULOS SIN CHÓFER, LA PRESTACIÓN DE SERVICIOS DE TRANSPORTE PARA PASAJEROS (POR CUALQUIER MEDIO DE TRANSPORTE Y MODALIDAD), LA PRESTACIÓN DE SERVICIOS DE INTERMEDIACIÓN PARA EL ARRENDAMIENTO DE CUALQUIER TIPO DE VEHÍCULO Y MEDIO DE TRANSPORTE, LA INTERMEDIACIÓN EN LA PRESTACIÓN DE SERVICIOS Y  SUMINISTRO DE PRODUCTOS A LAS EMPRESAS DE TRANSPORTE DE PASAJEROS, ASÍ COMO LA COMPRAVENTA DE LOS PRODUCTOS NECESARIOS PARA LAS EMPRESAS DE TRANSPORTE.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06671",
+      "_links": {
+        "self": {
+          "name": "BRÓCOLI, S.L",
+          "href": "https://api.euskadi.eus/procurements/companies/06671"
+        }
+      }
+    }
+  ]
+}

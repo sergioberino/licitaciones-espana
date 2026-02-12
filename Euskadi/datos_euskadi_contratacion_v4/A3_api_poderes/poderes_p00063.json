@@ -1,0 +1,509 @@
+{
+  "totalItems": 919,
+  "totalPages": 92,
+  "currentPage": 63,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "id": 245,
+      "identificationNumber": "P0102300A",
+      "name": "Ayuntamiento de Elciego",
+      "scope": "ARABA/ÁLAVA",
+      "address": "Plaza Mayor, 1. 01340 Elciego (Araba/Álava)",
+      "webPage": "http://www.elciego.es",
+      "publicationDate": "2019-10-04",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES211",
+      "entities": [
+        {
+          "id": 693,
+          "name": "Ayuntamiento de Elciego",
+          "orgs": [
+            {
+              "id": 912101,
+              "name": "Pleno",
+              "_links": {
+                "self": {
+                  "name": "Pleno",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/245/entities/693/orgs/912101"
+                }
+              }
+            },
+            {
+              "id": 912100,
+              "name": "Alcalde ",
+              "_links": {
+                "self": {
+                  "name": "Alcalde ",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/245/entities/693/orgs/912100"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Ayuntamiento de Elciego",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/245/entities/693"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder245/es_doc/es_arch_poder245.html",
+      "_links": {
+        "self": {
+          "name": "Ayuntamiento de Elciego",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/245"
+        }
+      }
+    },
+    {
+      "id": 251,
+      "identificationNumber": "G01458454",
+      "name": "Fundación Valle Salado de Añana",
+      "scope": "ARABA/ÁLAVA",
+      "address": "Plaza Miguel Díaz de Tuesta, 1. 01426 Salinas de Añana (Araba/Álava)",
+      "webPage": "http://www.vallesalado.eus",
+      "publicationDate": "2019-10-04",
+      "mainActivity": "Medio ambiente",
+      "codNUTS": "ES211",
+      "entities": [
+        {
+          "id": 700,
+          "name": "Fundación Valle Salado de Añana",
+          "orgs": [
+            {
+              "id": 912110,
+              "name": "Director-Gerente",
+              "_links": {
+                "self": {
+                  "name": "Director-Gerente",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/251/entities/700/orgs/912110"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Fundación Valle Salado de Añana",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/251/entities/700"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder251/es_doc/es_arch_poder251.html",
+      "_links": {
+        "self": {
+          "name": "Fundación Valle Salado de Añana",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/251"
+        }
+      }
+    },
+    {
+      "id": 262,
+      "identificationNumber": "P2006200F",
+      "name": "Ayuntamiento de Olaberria",
+      "scope": "GIPUZKOA",
+      "address": "San Joan Plaza, 1. 20212 Olaberria (Gipuzkoa)",
+      "webPage": "https://www.olaberria.eus/",
+      "publicationDate": "2019-10-04",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES212",
+      "entities": [
+        {
+          "id": 710,
+          "name": "Ayuntamiento de Olaberria",
+          "orgs": [
+            {
+              "id": 912129,
+              "name": "Alcaldía",
+              "_links": {
+                "self": {
+                  "name": "Alcaldía",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/262/entities/710/orgs/912129"
+                }
+              }
+            },
+            {
+              "id": 912130,
+              "name": "Pleno",
+              "_links": {
+                "self": {
+                  "name": "Pleno",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/262/entities/710/orgs/912130"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Ayuntamiento de Olaberria",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/262/entities/710"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder262/es_doc/es_arch_poder262.html",
+      "_links": {
+        "self": {
+          "name": "Ayuntamiento de Olaberria",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/262"
+        }
+      }
+    },
+    {
+      "id": 266,
+      "identificationNumber": "A20636528",
+      "name": "Recinto Ferial del Bidasoa",
+      "scope": "GIPUZKOA",
+      "address": "Iparralde Etorbidea 43. 20302 Irun (Gipuzkoa)",
+      "webPage": "http://www.ficoba.org",
+      "publicationDate": "2019-10-04",
+      "mainActivity": "Asuntos económicos y financieros",
+      "codNUTS": "ES212",
+      "entities": [
+        {
+          "id": 714,
+          "name": "Recinto Ferial del Bidasoa",
+          "orgs": [
+            {
+              "id": 912135,
+              "name": "Consejo de Administración",
+              "_links": {
+                "self": {
+                  "name": "Consejo de Administración",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/266/entities/714/orgs/912135"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Recinto Ferial del Bidasoa",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/266/entities/714"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder266/es_doc/es_arch_poder266.html",
+      "_links": {
+        "self": {
+          "name": "Recinto Ferial del Bidasoa",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/266"
+        }
+      }
+    },
+    {
+      "id": 268,
+      "identificationNumber": "P2008700C",
+      "name": "Ayuntamiento de Zumaia",
+      "scope": "GIPUZKOA",
+      "address": "Foruen Enparantza, 1. 20750 Zumaia (Gipuzkoa)",
+      "webPage": "http://www.zumaia.eus",
+      "publicationDate": "2019-10-04",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES212",
+      "entities": [
+        {
+          "id": 716,
+          "name": "Ayuntamiento de Zumaia ",
+          "orgs": [
+            {
+              "id": 912138,
+              "name": "Alcalde",
+              "_links": {
+                "self": {
+                  "name": "Alcalde",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/268/entities/716/orgs/912138"
+                }
+              }
+            },
+            {
+              "id": 912139,
+              "name": "Pleno",
+              "_links": {
+                "self": {
+                  "name": "Pleno",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/268/entities/716/orgs/912139"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Ayuntamiento de Zumaia ",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/268/entities/716"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder268/es_doc/es_arch_poder268.html",
+      "_links": {
+        "self": {
+          "name": "Ayuntamiento de Zumaia",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/268"
+        }
+      }
+    },
+    {
+      "id": 270,
+      "identificationNumber": "Q2000564A",
+      "name": "Patronato de Deportes de Zumaia",
+      "scope": "GIPUZKOA",
+      "address": "Basadi auzategia, 16. 20750 Zumaia (Gipuzkoa)",
+      "webPage": "http://www.zumaia.eus",
+      "publicationDate": "2019-10-04",
+      "mainActivity": "Ocio, cultura y religión",
+      "codNUTS": "ES212",
+      "entities": [
+        {
+          "id": 718,
+          "name": "Patronato de Deportes de Zumaia",
+          "orgs": [
+            {
+              "id": 912144,
+              "name": "Presidente",
+              "_links": {
+                "self": {
+                  "name": "Presidente",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/270/entities/718/orgs/912144"
+                }
+              }
+            },
+            {
+              "id": 912145,
+              "name": "Junta Rectora del Patronato de Deportes",
+              "_links": {
+                "self": {
+                  "name": "Junta Rectora del Patronato de Deportes",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/270/entities/718/orgs/912145"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Patronato de Deportes de Zumaia",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/270/entities/718"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder270/es_doc/es_arch_poder270.html",
+      "_links": {
+        "self": {
+          "name": "Patronato de Deportes de Zumaia",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/270"
+        }
+      }
+    },
+    {
+      "id": 273,
+      "identificationNumber": "G20998720",
+      "name": "Asociación de Investigación MPC-Materials Physics Center",
+      "scope": "GIPUZKOA",
+      "address": "Paseo Manuel de Lardizábal, 5. 20018 Donostia (Gipzukoa)",
+      "webPage": "http://cfm.ehu.es/about-cfm/mpc-berc/",
+      "publicationDate": "2019-10-04",
+      "mainActivity": "Otra actividad",
+      "alternativeActivity": "Investigación",
+      "codNUTS": "ES212",
+      "entities": [
+        {
+          "id": 721,
+          "name": "Asociación de Investigación MPC-Materials Physics Center",
+          "orgs": [
+            {
+              "id": 912149,
+              "name": "Director",
+              "_links": {
+                "self": {
+                  "name": "Director",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/273/entities/721/orgs/912149"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Asociación de Investigación MPC-Materials Physics Center",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/273/entities/721"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder273/es_doc/es_arch_poder273.html",
+      "_links": {
+        "self": {
+          "name": "Asociación de Investigación MPC-Materials Physics Center",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/273"
+        }
+      }
+    },
+    {
+      "id": 293,
+      "identificationNumber": "P0106700H",
+      "name": "Ayuntamiento de Legutio",
+      "scope": "ARABA/ÁLAVA",
+      "address": "Carmen kalea, 10. 01170 Legutio (Araba/Álava)  ",
+      "webPage": "http://www.legutio.eus",
+      "publicationDate": "2019-10-04",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES211",
+      "entities": [
+        {
+          "id": 741,
+          "name": "Ayuntamiento de Legutio",
+          "orgs": [
+            {
+              "id": 912186,
+              "name": "Pleno",
+              "_links": {
+                "self": {
+                  "name": "Pleno",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/293/entities/741/orgs/912186"
+                }
+              }
+            },
+            {
+              "id": 912185,
+              "name": "Alcaldía",
+              "_links": {
+                "self": {
+                  "name": "Alcaldía",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/293/entities/741/orgs/912185"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Ayuntamiento de Legutio",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/293/entities/741"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder293/es_doc/es_arch_poder293.html",
+      "_links": {
+        "self": {
+          "name": "Ayuntamiento de Legutio",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/293"
+        }
+      }
+    },
+    {
+      "id": 312,
+      "identificationNumber": "A20219283",
+      "name": "Festival Internacional de Cine de Donostia-San Sebastián, S.A.",
+      "scope": "GIPUZKOA",
+      "address": "Plaza de las Cigarreras, 1-2ª planta. 20012 Donostia/San Sebastián (Gipuzkoa)",
+      "webPage": "http://www.sansebastianfestival.com ",
+      "publicationDate": "2019-10-04",
+      "mainActivity": "Ocio, cultura y religión",
+      "codNUTS": "ES212",
+      "entities": [
+        {
+          "id": 761,
+          "name": "Festival Internacional de Cine de Donostia-San Sebastián, S.A.",
+          "orgs": [
+            {
+              "id": 912227,
+              "name": "Consejo de Administración",
+              "_links": {
+                "self": {
+                  "name": "Consejo de Administración",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/312/entities/761/orgs/912227"
+                }
+              }
+            },
+            {
+              "id": 912226,
+              "name": "Comité Ejecutivo",
+              "_links": {
+                "self": {
+                  "name": "Comité Ejecutivo",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/312/entities/761/orgs/912226"
+                }
+              }
+            },
+            {
+              "id": 912225,
+              "name": "Director ",
+              "_links": {
+                "self": {
+                  "name": "Director ",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/312/entities/761/orgs/912225"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Festival Internacional de Cine de Donostia-San Sebastián, S.A.",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/312/entities/761"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder312/es_doc/es_arch_poder312.html",
+      "_links": {
+        "self": {
+          "name": "Festival Internacional de Cine de Donostia-San Sebastián, S.A.",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/312"
+        }
+      }
+    },
+    {
+      "id": 315,
+      "identificationNumber": "P2004800E",
+      "name": "Ayuntamiento de Idiazabal",
+      "scope": "GIPUZKOA",
+      "address": "Plaza Nagusia, 3. 20213 Idiazabal (Gipzukoa)",
+      "webPage": "http://www.idiazabal.eus",
+      "publicationDate": "2019-10-04",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES212",
+      "entities": [
+        {
+          "id": 764,
+          "name": "Ayuntamiento de Idiazabal",
+          "orgs": [
+            {
+              "id": 912231,
+              "name": "Alcalde",
+              "_links": {
+                "self": {
+                  "name": "Alcalde",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/315/entities/764/orgs/912231"
+                }
+              }
+            },
+            {
+              "id": 912232,
+              "name": "Pleno",
+              "_links": {
+                "self": {
+                  "name": "Pleno",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/315/entities/764/orgs/912232"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Ayuntamiento de Idiazabal",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/315/entities/764"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder315/es_doc/es_arch_poder315.html",
+      "_links": {
+        "self": {
+          "name": "Ayuntamiento de Idiazabal",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/315"
+        }
+      }
+    }
+  ]
+}

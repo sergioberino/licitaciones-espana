@@ -1,0 +1,514 @@
+{
+  "totalItems": 9042,
+  "totalPages": 905,
+  "currentPage": 9,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "name": "A4 ARQUITECTOS, ESTUDIO DE ARQUITECTURA Y URBANISMO, S.L.P.",
+      "registrationNumber": "08013",
+      "identificationNumber": "B95009726",
+      "address": "Las Mercedes 31",
+      "location": {
+        "postalCode": "48930",
+        "municipality": "Getxo",
+        "county": "Bizkaia",
+        "municipalityId": "044",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.843.2",
+          "name": "Servicios técnicos de arquitectura y urbanismo",
+          "_links": {
+            "self": {
+              "name": "Servicios técnicos de arquitectura y urbanismo",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-02-09",
+      "certificateEndDate": "2026-08-04",
+      "object": "LA ACTIVIDAD PROPIA DEL EJERCICIO PROFESIONAL DE LA ACTIVIDAD DE ARQUITECTURA Y URBANISMO POR MEDIO DE SUS SOCIOS Y COLABORADORES. SON COMPLEMENTO DEL OBJETO PRINCIPAL LAS ACTIVIDADES DE ESTUDIO, INVESTIGACIÓN Y FORMACIÓN (CURSOS, CONFERENCIAS, PUBLICACIONES, CONGRESOS O SIMPOSIOS) RELACIONADOS CON LA PRACTICA DE LA ARQUITECTURA Y URBANISMO",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08013",
+      "_links": {
+        "self": {
+          "name": "A4 ARQUITECTOS, ESTUDIO DE ARQUITECTURA Y URBANISMO, S.L.P.",
+          "href": "https://api.euskadi.eus/procurements/companies/08013"
+        }
+      }
+    },
+    {
+      "name": "MONDRAGON SISTEMAS DE INFORMACION, S.COOP.",
+      "registrationNumber": "01896",
+      "identificationNumber": "F20585576",
+      "address": "AMA KANDIDA 21 ",
+      "location": {
+        "postalCode": "20140",
+        "municipality": "Andoain",
+        "county": "Gipuzkoa",
+        "municipalityId": "009",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.843.1",
+          "name": "Servicios técnicos de ingeniería",
+          "_links": {
+            "self": {
+              "name": "Servicios técnicos de ingeniería",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-02-09",
+      "certificateEndDate": "2026-08-05",
+      "classification": [
+        {
+          "id": "S",
+          "name": "Servicios",
+          "groups": [
+            {
+              "id": "V",
+              "subgroups": [
+                {
+                  "id": "03",
+                  "name": "Servicios de mtto. y reparación equipos e instalaciones informáticos y telecomun",
+                  "categories": [
+                    {
+                      "id": "2",
+                      "name": "Desde 150.001 Hasta 300.000",
+                      "_links": {
+                        "self": {
+                          "name": "Desde 150.001 Hasta 300.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/S/categories/2"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "Servicios de mtto. y reparación equipos e instalaciones informáticos y telecomun",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/V/subgroups/03"
+                    }
+                  }
+                }
+              ],
+              "_links": {
+                "self": {
+                  "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/V"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Servicios",
+              "href": "https://api.euskadi.eus/procurements/companies/types/S"
+            }
+          }
+        }
+      ],
+      "object": "EL ESTUDIO, CONSEJOS Y FORMACIÓN EN INFORMÁTICA Y ELECTRÓNICA, LA FABRICACIÓN, VENTA Y MANTENIMIENTO DE EQUIPOS INFORMÁTICOS Y ELECTRÓNICOS, MATERIAL Y ORDENADORES; (INSTALACIONES ELECTRÓNICAS, TELECOMUNICACIONES E INSTALACIONES RADIOELÉCTRICAS Y TODA ACTIVIDAD RELACIONADA CON LA INFORMÁTICAY LA ELECTRÓNICA Y CUALQUIER PRESTACIÓN DE SERVICIOS ASOCIADOS A LAS MISMAS.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/01896",
+      "_links": {
+        "self": {
+          "name": "MONDRAGON SISTEMAS DE INFORMACION, S.COOP.",
+          "href": "https://api.euskadi.eus/procurements/companies/01896"
+        }
+      }
+    },
+    {
+      "name": "PIXYBIT, S.L.",
+      "registrationNumber": "08963",
+      "identificationNumber": "B01531755",
+      "address": "Hermanos Lumiere 11, Oficina 11",
+      "location": {
+        "postalCode": "01510",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.845",
+          "name": "Explotación electrónica por cuenta de terceros",
+          "_links": {
+            "self": {
+              "name": "Explotación electrónica por cuenta de terceros",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.845"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-02-09",
+      "certificateEndDate": "2026-07-25",
+      "object": "- COMERCIO AL POR MAYOR Y AL POR MENOR. - DISTRIBUCIÓN COMERCIAL. IMPORTACIÓN Y EXPORTACIÓN. - INTERMEDIACIÓN EN ACTIVIDADES PROFESIONALES. - TURISMO, HOSTELERÍA Y RESTAURACIÓN. - PRESTACIÓN DE SERVICIOS. ACTIVIDADES DE GESTIÓN Y ADMINISTRACIÓN. SERVICIOS EDUCATIVOS, SANTUARIOS, DE OCIO Y ENTRETENIMIENTO. - INFORMACIÓN Y COMUNICACIONES. - INFORMÁTICA, TELECOMUNICACIONES Y OFIMÁTICA. - ENERGÍAS ALTERNATIVAS. - INVESTIGACIÓN, DESARROLLO E INNOVACIÓN. - ACTIVIDADES CIENTÍFICAS Y TÉCNICAS.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08963",
+      "_links": {
+        "self": {
+          "name": "PIXYBIT, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/08963"
+        }
+      }
+    },
+    {
+      "name": "IMPRENTA UNIVERSAL, S.L.",
+      "registrationNumber": "04013",
+      "identificationNumber": "B48145155",
+      "address": "MUNGIALDE ETORBIDEA, 26",
+      "location": {
+        "postalCode": "48160",
+        "municipality": "Derio",
+        "county": "Bizkaia",
+        "municipalityId": "901",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.474",
+          "name": "Artes gráficas (impresión gráfica)",
+          "_links": {
+            "self": {
+              "name": "Artes gráficas (impresión gráfica)",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.474"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-02-09",
+      "certificateEndDate": "2026-08-04",
+      "object": "TODO LO RELACIONADO CON ARTES GRÁFICAS EN PLIEGO Y BOBINA",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/04013",
+      "_links": {
+        "self": {
+          "name": "IMPRENTA UNIVERSAL, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/04013"
+        }
+      }
+    },
+    {
+      "name": "MERIT MEDICAL SPAIN, S.L.U.",
+      "registrationNumber": "05725",
+      "identificationNumber": "B87175253",
+      "address": "C/ Rozabella, 6- 1ª planta. Oficina 6. EDIFICIO PARIS",
+      "location": {
+        "postalCode": "28290",
+        "municipality": "Rozas de Madrid, Las",
+        "county": "Madrid",
+        "municipalityId": "127",
+        "countyId": "28"
+      },
+      "economicActivities": [
+        {
+          "id": "1.659.3",
+          "name": "Venta al por menor de aparatos médicos, ortopédicos, ópticos y fotográficos",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de aparatos médicos, ortopédicos, ópticos y fotográficos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.659.3"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-02-09",
+      "certificateEndDate": "2026-08-04",
+      "object": "EL DESARROLLO, DISTRIBUCIÓN, COMERCIALIZACIÓN Y PROMOCIÓN EN SENTIDO AMPLIO DE DISPOSITIVOS MÉDICOS DESECHABLES Y PRODUCTOS SANITARIOS PARA INTERVENCIONES Y DIAGNÓSTICO, ESPECIALMENTE EN EL CAMPO DE LA CARDIOLOGÍA, RADIOLOGÍA Y ENDOSCOPIA",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/05725",
+      "_links": {
+        "self": {
+          "name": "MERIT MEDICAL SPAIN, S.L.U.",
+          "href": "https://api.euskadi.eus/procurements/companies/05725"
+        }
+      }
+    },
+    {
+      "name": "EUROVERMON,S.L.",
+      "registrationNumber": "04571",
+      "identificationNumber": "B20578860",
+      "address": "POLÍGONO INDUSTRIAL MASTI LOIDI, 18",
+      "location": {
+        "postalCode": "20100",
+        "municipality": "Errenteria",
+        "county": "Gipuzkoa",
+        "municipalityId": "067",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.614.2",
+          "name": "Venta al por mayor de productos de perfumería, droguería, higiene y belleza",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de productos de perfumería, droguería, higiene y belleza",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.614.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-02-09",
+      "certificateEndDate": "2026-08-04",
+      "object": "LA VENTA, DISTRIBUCIÓN Y ALMACENAJE DE TODO TIPO DE PRODUCTOS, UTENSILIOS Y MAQUINARIA, RELACIONADOS CON LA LIMPIEZA E HIGIENE EN GENERAL, ASÍ COMO LA IMPORTACIÓN Y EXPORTACIÓN DE LOS MISMOS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/04571",
+      "_links": {
+        "self": {
+          "name": "EUROVERMON,S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/04571"
+        }
+      }
+    },
+    {
+      "name": "HIRITIK LOGIKA, S.L.",
+      "registrationNumber": "10041",
+      "identificationNumber": "B95947834",
+      "address": "Avda. Cervantes, 51",
+      "location": {
+        "postalCode": "48970",
+        "municipality": "Basauri",
+        "county": "Bizkaia",
+        "municipalityId": "015",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.844",
+          "name": "Servicios de publicidad, relaciones públicas y similares",
+          "_links": {
+            "self": {
+              "name": "Servicios de publicidad, relaciones públicas y similares",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.844"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-02-09",
+      "certificateEndDate": "2026-07-30",
+      "object": "- PRESTACIÓN DE SERVICIOS DE TRADUCCIÓN. - CONSULTORÍA Y PRESTACIÓN DE SERVICIOS DE ADMINISTRACIÓN Y PROCESO DE LAS NECESIDADES DE COMUNICACIÓN DE LAS EMPRESAS A TRAVÉS DE CUALQUIER MEDIO.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/10041",
+      "_links": {
+        "self": {
+          "name": "HIRITIK LOGIKA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/10041"
+        }
+      }
+    },
+    {
+      "name": "UKGK S.L",
+      "registrationNumber": "07201",
+      "identificationNumber": "B95306643",
+      "address": "Udaletxeko bidea,9 bj-d",
+      "location": {
+        "postalCode": "48650",
+        "municipality": "Barrika",
+        "county": "Bizkaia",
+        "municipalityId": "014",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.845",
+          "name": "Explotación electrónica por cuenta de terceros",
+          "_links": {
+            "self": {
+              "name": "Explotación electrónica por cuenta de terceros",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.845"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-02-09",
+      "certificateEndDate": "2026-07-29",
+      "object": "LA CREACIÓN, COMERCIALIZACIÓN, VENTA Y ALQUILER DE PRODUCTOS Y SERVICIOS INFORMÁTICOS; LA REALIZACIÓN E IMPARTICIÓN DE CURSOS DE DIVULGACIÓN Y FORMACIÓN EN INFORMÁTICA; EL MONTAJE DE REDES, SERVICIOS DE INTERNET, DISEÑO DE PÁGINAS WEB, SERVICIOS DE FAX-EMAIL Y LA EXPLOTACIÓN DE JUEGOS E RED; LA REALIZACIÓN DE PROGRAMAS Y DE SERVICIOS INFORMÁTICOS, TANTO A EMPRESAS COMO A PARTICULARES",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07201",
+      "_links": {
+        "self": {
+          "name": "UKGK S.L",
+          "href": "https://api.euskadi.eus/procurements/companies/07201"
+        }
+      }
+    },
+    {
+      "name": "TEKNEI INFORMATION TECHNOLOGY, S.L.",
+      "registrationNumber": "08460",
+      "identificationNumber": "B86275112",
+      "address": "C/ Gran Vía Don Diego López de Haro, Nº 17 - 7ª Planta.",
+      "location": {
+        "postalCode": "48001",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.845",
+          "name": "Explotación electrónica por cuenta de terceros",
+          "_links": {
+            "self": {
+              "name": "Explotación electrónica por cuenta de terceros",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.845"
+            }
+          }
+        },
+        {
+          "id": "1.847",
+          "name": "Servicios de consultoría",
+          "_links": {
+            "self": {
+              "name": "Servicios de consultoría",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.847"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-02-09",
+      "certificateEndDate": "2026-08-04",
+      "object": "1.- CONSULTORÍA TECNOLÓGICA DE PROCESOS DE NEGOCIOS DE TODAS CLASES Y CURSOS DE FORMACIÓN INFORMÁTICA. 2.- LA COMERCIALIZACIÓN Y DISTRIBUCIÓN DE EQUIPOS INFORMÁTICOS, ASÍ COMO SU IMPORTACIÓN, EXPORTACIÓN Y FABRICACIÓN 3.- LA COMERCIALIZACIÓN Y DISTRIBUCIÓN DE PROGRAMAS Y PAQUETES LÓGICOS (SOFTWARE) TANTO DE SISTEMAS COMO DE AQUELLOS QUE CORRESPONDAN AL ÁREA DE APLICACIONES COMERCIALES. 4.- LA COMPRAVENTA, ALQUILER, MANTENIMIENTO, REPARACIÓN, CONSERVACIÓN Y MONTAJE DE EQUIPOS INFORMÁTICOS Y SUS DIVERSOS COMPONENTES. 5.- LA PRESTACIÓN DE TODA CLASE DE SERVICIOS DE CONSULTORÍA ORGANIZACIÓN, MECANIZACIÓN, CÁLCULO, INFORMATIZACIÓN Y SISTEMAS PARA ENTIDADES PÚBLICAS Y PRIVADAS. 6.- LA PRESTACIÓN DE SERVICIOS RELACIONADOS CON EL DESARROLLO, CONSULTORÍA, EXPLOTACIÓN Y MANTENIMIENTO DE SISTEMAS INFORMÁTICOS EN TODAS SUS MODALIDADES, INCLUIDA LA ASISTENCIA TÉCNICA EN CONTRATACIÓN TERRITORIAL. 7.- LA ADQUISICIÓN TENENCIA. PROMOCIÓN Y CONSTRUCCIÓN DE BIENES INMUEBLES Y SU EXPLOTACIÓN EN RÉGIMEN DE VENTA O ALQUILER (EXCLUIDO EL ARRENDAMIENTO FINANCIERO).",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08460",
+      "_links": {
+        "self": {
+          "name": "TEKNEI INFORMATION TECHNOLOGY, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/08460"
+        }
+      }
+    },
+    {
+      "name": "VEHICULOS, EQUIPAMIENTOS Y CARROCERIAS PRIETO-PUGA S.L.",
+      "registrationNumber": "07686",
+      "identificationNumber": "B15134182",
+      "address": "C/ PARROQUIA DE GUISAMO, PARCELA B8",
+      "location": {
+        "postalCode": "15165",
+        "municipality": "Bergondo",
+        "county": "Coruña, A",
+        "municipalityId": "008",
+        "countyId": "15"
+      },
+      "economicActivities": [
+        {
+          "id": "1.504.1",
+          "name": "Instalaciones eléctricas en general",
+          "_links": {
+            "self": {
+              "name": "Instalaciones eléctricas en general",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.504.1"
+            }
+          }
+        },
+        {
+          "id": "1.652.2",
+          "name": "Venta al por menor de productos de droguería y productos para decoración",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de productos de droguería y productos para decoración",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.652.2"
+            }
+          }
+        },
+        {
+          "id": "1.653.2",
+          "name": "Venta al por menor de material y aparatos eléctricos, electrodomésticos y cocina",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de material y aparatos eléctricos, electrodomésticos y cocina",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.653.2"
+            }
+          }
+        },
+        {
+          "id": "1.654.1",
+          "name": "Venta al por menor de vehículos terrestres",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de vehículos terrestres",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.654.1"
+            }
+          }
+        },
+        {
+          "id": "1.654.5",
+          "name": "Venta al por menor de toda clase de maquinaría",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de toda clase de maquinaría",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.654.5"
+            }
+          }
+        },
+        {
+          "id": "1.659.2",
+          "name": "Venta al por menor de muebles de oficina y máquinas y equipos de oficina",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de muebles de oficina y máquinas y equipos de oficina",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.659.2"
+            }
+          }
+        },
+        {
+          "id": "1.659.6",
+          "name": "Venta al por menor de juguetes, artículos de deporte",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de juguetes, artículos de deporte",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.659.6"
+            }
+          }
+        },
+        {
+          "id": "1.691.2",
+          "name": "Reparación de vehículos automóviles, bicicletas y otros vehículos",
+          "_links": {
+            "self": {
+              "name": "Reparación de vehículos automóviles, bicicletas y otros vehículos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.691.2"
+            }
+          }
+        },
+        {
+          "id": "1.855.9",
+          "name": "Alquiler de otros medios de transporte n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Alquiler de otros medios de transporte n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.855.9"
+            }
+          }
+        },
+        {
+          "id": "1.921.1",
+          "name": "Servicios de limpieza en calles, vías públicas y jardines",
+          "_links": {
+            "self": {
+              "name": "Servicios de limpieza en calles, vías públicas y jardines",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.921.1"
+            }
+          }
+        },
+        {
+          "id": "1.921.7",
+          "name": "Servicios de protección contra incendios y accidentes",
+          "_links": {
+            "self": {
+              "name": "Servicios de protección contra incendios y accidentes",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.921.7"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-02-09",
+      "certificateEndDate": "2026-08-04",
+      "object": "A.- LA FABRICACIÓN, COMERCIALIZACIÓN, IMPORTACIÓN Y EXPORTACIÓN DE VEHÍCULOS, MAQUINARIA AGRÍCOLA, FORESTAL E INDUSTRIAL, ASÍ COMO LA REPARACIÓN Y MANTENIMIENTO DE LOS MISMOS.\r\nB.- COMERCIALIZACIÓN DE REDES Y EQUIPOS DE COMUNICACIÓN, AL IGUAL QUE SUS INSTALACIONES, MANTENIMIENTO Y REPARACIÓN.\r\nC.- COMERCIALIZACIÓN DE EQUIPAMIENTOS INDUSTRIALES.\r\nD.- VENTA DE MAQUINARIA Y EQUIPOS VIALES, ASÍ COMO SU INSTALACIÓN, MANTENIMIENTO Y REPARACIÓN.\r\nE.- SERVICIO DE LIMPIEZAS DE CALLES, VÍAS PÚBLICAS Y JARDINES, AL IGUAL QUE LA LIMPIEZA DE LOS INTERIORES (EDIFICIOS, OFICINAS, ESTABLECIMIENTOS COMERCIALES, RESIDENCIA, CENTROS SANITARIOS Y ESTABLECIMIENTOS INDUSTRIALES).\r\nF.- COMERCIALIZACIÓN, ALQUILER Y REPARACIÓN DE VEHÍCULOS FLUVIALES Y MARÍTIMOS DE VELA O MOTOR Y DEPORTIVOS.\r\nG.- GESTIÓN Y ADMINISTRACIÓN DE PARQUES DE BOMBEROS. ASÍ COMO LA PRESTACIÓN DE CUALQUIER TIPO DE SERVICIOS DE PROTECCIÓN CONTRA INCENDIOS Y EMERGENCIAS.\r\nH.- CURSOS DE FORMACIÓN TEÓRICOS Y PRÁCTICOS DE SEGURIDAD, EMERGENCIAS Y CONTRA INCENDIOS, INCLUIDO EL MANEJO DE VEHÍCULOS, MAQUINARIA Y DOTACIÓN DE TODO TIPO.\r\nI.- LAS REPRESENTACIONES COMERCIALES E INDUSTRIALES, BIEN DIRECTAMENTE O EN COMISIÓN O PARTICIPACIÓN.\r\nJ.- INSTALACIÓN, REPARACIÓN Y MANTENIMIENTO DE EQUIPOS CONTRAINCENDIOS.\r\nK.- INSTALACIÓN, REPARACIÓN Y MANTENIMIENTO DE SISTEMAS DE COMUNICACIONES DE EMERGENCIAS.\r\nL.- ALQUILER DE TODO TIPO DE VEHÍCULOS Y MAQUINARIA.\r\nM.- ENGRASE Y LAVADO DE TODO TIPO DE VEHÍCULOS.\r\nN.- TRABAJOS ADMINISTRATIVOS PARA LA ADMINISTRACIÓN PÚBLICA.\r\nÑ.- SERVICIOS DE CAPTURA DE INFORMACIÓN POR MEDIOS ELECTRÓNICOS, INFORMÁTICOS O TELEMÁTICOS.\r\nO.- VENTA Y MANTENIMIENTO DE CONTENEDORES PARA TODO TIPO DE RESIDUOS.\r\nP.- SERVICIO DE RECOGIDA DE RESIDUOS EN TODO TIPO DE VÍAS PÚBLICAS Y PRIVADAS.\r\nQ.- RENTING Y LEASING DE TODO TIPO DE VEHÍCULOS Y MAQUINARIA.\r\nR.- SERVICIO DE TALLER PARA TODO TIPO DE VEHÍCULOS Y MAQUINARIA.\r\nS.- DISEÑO, MANTENIMIENTO Y CARROZADO DE VEHÍCULOS CONTRAINCENDIOS, SALVAMENTO Y RESCATE, VEHÍCULOS DE LIMPIEZA, RECOGIDA DE RESIDUOS Y COMPACTADO DE BASURAS, ASÍ COMO DE CUALQUIER VEHÍCULO DE USO MUNICIPAL O INDUSTRIAL.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07686",
+      "_links": {
+        "self": {
+          "name": "VEHICULOS, EQUIPAMIENTOS Y CARROCERIAS PRIETO-PUGA S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/07686"
+        }
+      }
+    }
+  ]
+}

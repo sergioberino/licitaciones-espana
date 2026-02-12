@@ -1,0 +1,388 @@
+{
+  "totalItems": 9042,
+  "totalPages": 905,
+  "currentPage": 365,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "name": "BEITU BA KULTURA ETA AISIA, S.L.",
+      "registrationNumber": "08199",
+      "identificationNumber": "B05329065",
+      "address": "Calle Errondoko",
+      "location": {
+        "postalCode": "48015",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.933.9",
+          "name": "Otras actividades de enseñanza tales como idiomas, mecanografía",
+          "_links": {
+            "self": {
+              "name": "Otras actividades de enseñanza tales como idiomas, mecanografía",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.933.9"
+            }
+          }
+        },
+        {
+          "id": "1.966.9",
+          "name": "Otros servicios culturales n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros servicios culturales n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.966.9"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-03-19",
+      "certificateEndDate": "2025-09-19",
+      "object": "EL DESARROLLO DE LAS ACTIVIDADES CORRESPONDIENTES A LOS SIGUIENTES CÓDIGOS Y DESCRIPCIONES DE LA CLASIFICACIÓN NACIONAL DE ACTIVIDADES ECONÓMICAS: ACTIVIDAD PRINCIPAL: 9329 - OTRAS ACTIVIDADES RECREATIVAS Y DE ENTRETENIMIENTO.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08199",
+      "_links": {
+        "self": {
+          "name": "BEITU BA KULTURA ETA AISIA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/08199"
+        }
+      }
+    },
+    {
+      "name": "DANENA INSTALACIONES, S.L.",
+      "registrationNumber": "09036",
+      "identificationNumber": "B20674214",
+      "address": "Avda. Sierra de Aralar, 64 bajo",
+      "location": {
+        "postalCode": "20014",
+        "municipality": "Donostia / San Sebastián",
+        "county": "Gipuzkoa",
+        "municipalityId": "069",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.504.2",
+          "name": "Instalaciones de fontanería",
+          "_links": {
+            "self": {
+              "name": "Instalaciones de fontanería",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.504.2"
+            }
+          }
+        },
+        {
+          "id": "1.921.7",
+          "name": "Servicios de protección contra incendios y accidentes",
+          "_links": {
+            "self": {
+              "name": "Servicios de protección contra incendios y accidentes",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.921.7"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-03-19",
+      "certificateEndDate": "2025-09-12",
+      "object": "INSTALACIONES DE FONTANERÍA, GAS, CALEFACCIÓN Y TRABAJO DE CONSTRUCCIÓN.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/09036",
+      "_links": {
+        "self": {
+          "name": "DANENA INSTALACIONES, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/09036"
+        }
+      }
+    },
+    {
+      "name": "GANIX BERAZADI ETXABE",
+      "registrationNumber": "09460",
+      "identificationNumber": "34092730Z",
+      "address": "Gipuzkoa Kalea 15 2ºC",
+      "location": {
+        "postalCode": "20800",
+        "municipality": "Zarautz",
+        "county": "Gipuzkoa",
+        "municipalityId": "079",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "2.311",
+          "name": "Ingenieros industriales y textiles",
+          "_links": {
+            "self": {
+              "name": "Ingenieros industriales y textiles",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/2.311"
+            }
+          }
+        },
+        {
+          "id": "2.884",
+          "name": "Peritos tasadores de seguros, alhajas, géneros y efectos",
+          "_links": {
+            "self": {
+              "name": "Peritos tasadores de seguros, alhajas, géneros y efectos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/2.884"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-03-19",
+      "certificateEndDate": "2025-09-19",
+      "object": "INGENIEROS INDUSTRIALES Y TEXTILES.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/09460",
+      "_links": {
+        "self": {
+          "name": "GANIX BERAZADI ETXABE",
+          "href": "https://api.euskadi.eus/procurements/companies/09460"
+        }
+      }
+    },
+    {
+      "name": "URRAZA, S.L.",
+      "registrationNumber": "09256",
+      "identificationNumber": "B95195509",
+      "address": "BARRIO AMETZA 3 ",
+      "location": {
+        "postalCode": "48499",
+        "municipality": "Zeberio",
+        "county": "Bizkaia",
+        "municipalityId": "025",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.912",
+          "name": "Servicios forestales",
+          "_links": {
+            "self": {
+              "name": "Servicios forestales",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.912"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-03-18",
+      "certificateEndDate": "2025-09-01",
+      "object": "A). SERVICIOS FORESTALES. B). DEDICARSE A EXPLOTACIONES FORESTALES, COMPRA Y VENTA DE MADERAS NACIONALES Y EXTRANJERAS, ELABORACIÓN Y TRANSFORMACIÓN DE TODA CLASE DE MADERA Y SUS DERIVADOS Y TRANSPORTES. C). DESARROLLAR TRABAJOS DE CORTE Y ELABORACIÓN DE MADERA, ASÍ COMO LA COMPRA Y VENTA DE HERRAMIENTAS EMPLEADAS EN LA ELABORACIÓN DE MADERA. D). LA ADQUISICIÓN, URBANIZACIÓN, PARCELACIÓN, CONSTRUCCIÓN, EDIFICACIÓN, CONSTITUCIÓN EN PROPIEDAD HORIZONTAL, REFORMA, CONSERVACIÓN, AMPLIACIÓN, EXPLOTACIÓN DIRECTA O INDIRECTA, ALQUILER, ENAJENACIÓN Y, EN GENERAL, TODA ACTIVIDAD RELATIVA A BIENES INMUEBLES, ASÍ RÚSTICOS COMO URBANOS Y TODA SUERTE DE INVERSIONES Y PROMOCIONES RELACIONADAS CON EL RAMO DE LA CONSTRUCCIÓN.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/09256",
+      "_links": {
+        "self": {
+          "name": "URRAZA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/09256"
+        }
+      }
+    },
+    {
+      "name": "AVANTE COMUNICACIÓN, S.L.",
+      "registrationNumber": "06116",
+      "identificationNumber": "B80518822",
+      "address": "Calle Chile 10. Of 146.",
+      "location": {
+        "postalCode": "28290",
+        "municipality": "Rozas de Madrid, Las",
+        "county": "Madrid",
+        "municipalityId": "127",
+        "countyId": "28"
+      },
+      "economicActivities": [
+        {
+          "id": "1.844",
+          "name": "Servicios de publicidad, relaciones públicas y similares",
+          "_links": {
+            "self": {
+              "name": "Servicios de publicidad, relaciones públicas y similares",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.844"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-03-18",
+      "certificateEndDate": "2025-09-11",
+      "object": "AGENCIA DE PUBLICIDAD, MARKETING Y VENTAS DE MATERIAL PUBLICITARIO, CREACIÓN Y PRODUCCIÓN DE CAMPAÑAS, ANUNCIOS Y ELEMENTOS PUBLICITARIOS, PLANIFICACIÓN DE MEDIOS, INVESTIGACIÓN COMERCIAL, REPRESENTACIÓN DE LOS MEDIOS ANTE ANUNCIANTES Y AGENCIAS DE PUBLICIDAD, PROMOCIÓN COMERCIAL DE MEDIOS, CAMPAÑAS, ANUNCIOS Y ELEMENTOS PUBLICITARIOS, INTERMEDIACIÓN COMERCIAL DE LA COMPRAVENTA DE MEDIOS DE COMUNICACIÓN Y PUBLICITARIOS, ASESORÍAS DE PUBLICIDAD, MARKETING Y VENTAS RELACIONADAS CON LA PUBLICIDAD Y LOS MEDIOS DE COMUNICACIÓN",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06116",
+      "_links": {
+        "self": {
+          "name": "AVANTE COMUNICACIÓN, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/06116"
+        }
+      }
+    },
+    {
+      "name": "IBERIAN CARE 2016 S.L.",
+      "registrationNumber": "07435",
+      "identificationNumber": "B87583019",
+      "address": "CARRIL DE LA SERRERIA 11",
+      "location": {
+        "postalCode": "29004",
+        "municipality": "Málaga",
+        "county": "Málaga",
+        "municipalityId": "067",
+        "countyId": "29"
+      },
+      "economicActivities": [
+        {
+          "id": "1.619.9",
+          "name": "Venta al por mayor de otros productos n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de otros productos n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.619.9"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-03-18",
+      "certificateEndDate": "2025-09-18",
+      "object": "COMERCIO AL POR MAYOR DE PRODUCTOS SANITARIOS EN GENERAL, PRODUCTOS SANITARIOS PARA DIAGNÓSTICO IN VITRO, PRODUCTOS DE HIGIENE Y DE PROTECCIÓN INDIVIDUAL, ASÍ COMO LA INTERMEDIACIÓN DE PRODUCTOS FARMACÉUTICOS. CNAE: 4646 \"COMERCIO AL POR MAYOR DE PRODUCTOS FARMACÉUTICOS\".",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07435",
+      "_links": {
+        "self": {
+          "name": "IBERIAN CARE 2016 S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/07435"
+        }
+      }
+    },
+    {
+      "name": "TALLERES MARTUTENE, S.L.",
+      "registrationNumber": "02797",
+      "identificationNumber": "B20093589",
+      "address": "PASEO SARROETA Nº88",
+      "location": {
+        "postalCode": "20014",
+        "municipality": "Donostia / San Sebastián",
+        "county": "Gipuzkoa",
+        "municipalityId": "069",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.314.1",
+          "name": "Carpintería metálica",
+          "_links": {
+            "self": {
+              "name": "Carpintería metálica",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.314.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-03-17",
+      "certificateEndDate": "2025-09-04",
+      "object": "LA CONSTRUCCIÓN Y MONTAJE DE CARPINTERÍA METÁLICA, CONSTRUCCIONES METÁLICAS Y DE P.V.C Y CUANTAS ACTIVIDADES ESTÉN DIRECTAMENTE RELACIONADAS CON LAS ANTERIORES.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/02797",
+      "_links": {
+        "self": {
+          "name": "TALLERES MARTUTENE, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/02797"
+        }
+      }
+    },
+    {
+      "name": "NETAPHORA ESTUDIO TECNOLÓGICO, S.L.L.",
+      "registrationNumber": "05210",
+      "identificationNumber": "B95720686",
+      "address": "C/Sarriena, 59",
+      "location": {
+        "postalCode": "48940",
+        "municipality": "Leioa",
+        "county": "Bizkaia",
+        "municipalityId": "054",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.845",
+          "name": "Explotación electrónica por cuenta de terceros",
+          "_links": {
+            "self": {
+              "name": "Explotación electrónica por cuenta de terceros",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.845"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-03-17",
+      "certificateEndDate": "2025-09-10",
+      "object": "EL ESTUDIO, CREACIÓN, PRODUCCIÓN, COMERCIALIZACIÓN, GESTIÓN, EXPLOTACIÓN, Y CUALESQUIERA ACTIVIDADES MERCANTILES RESPECTO A TODO TIPO DE PRODUCTOS, DERECHOS Y ACTIVIDADES RELACIONADAS CON EL DESARROLLO DE SOFTWARE Y SISTEMAS INFORMÁTICOS, PARA TODO TIPO DE PLATAFORMAS, INCLUIDO INTERNET, YA SEA POR CUENTA PROPIA O AJENA, ASÍ COMO TODAS LAS DEMÁS QUE LE SEAN COMPLEMENTARIAS Y PERMITAN LA SATISFACTORIA CONSECUCIÓN DEL OBJETO DE LA PRESENTE MERCANTIL. GRABACIÓN, PRODUCCIÓN, COMERCIALIZACIÓN Y EDICIÓN DE DISCOS, CASETES, CDS O CUALESQUIERA OTRO SOPORTE EXISTENTE CON CUALESQUIERA CONTENIDOS. PRESTACIÓN DE CUALESQUIERA SERVICIOS COMPLEMENTARIOS A LOS ANTERIORES EN MATERIA INFORMÁTICA Y ESPECIALMENTE EN LA PRODUCCIÓN, COPRODUCCIÓN Y COMERCIALIZAICÓN DE PRODUCTOS AUDIOVISUALES Y DISEÑOS GRÁFICOS MEDIANTE CUALQUIER TÉCNICA Y PARA CUALQUIER PLATAFORMA. DISEÑO, FABRICAICÓN, MONTAJE, ADQUISICIÓN, DISTRIBUCIÓN, COMERCIALIZACIÓN, CESIÓN, IMPORTACIÓN, EXPORTACIÓN, COMPRA, VENTA, PROMOCIÓN Y EXPLOTACIÓN DE LOS PRODUCTOS Y SERVICIOS ANTERIORES. LA ADQUISICIÓN Y POSESIÓN DE BINES MUEBLES E INMUEBLES, EXPLOTACIÓN Y ENAJENACIÓN DE LICENCIAS, PERMISOS, MARCAS PATENTES Y EXCLUSIVAS NACIONALES O EXTRANJERAS. PRESTACIÓN DE SERVICIOS DE CONSULTORÍA, AUDITORÍA INFORMÁTICA, ACCESIBILIDAD, USABILIDAD, REDES SOCIALES, PROGRAMACIÓN DE DISPOSITIVOS MÓVILES. FORMACIÓN, EVENTOS RELACIONALES, MARKETING. DISEÑO Y DESARROLLO DE SITE CON CMS, IMAGEN CORPORATIVA, MAILING, DESEÑO OFF LINE Y ONLINE, GRÁFICOS MULTIMEDIA. INTEGRACIÓN DE PRODUCTOS DE TERCEROS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/05210",
+      "_links": {
+        "self": {
+          "name": "NETAPHORA ESTUDIO TECNOLÓGICO, S.L.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/05210"
+        }
+      }
+    },
+    {
+      "name": "GAUERO MANAGEMENT ETA PRODUKZIOAK, S.L.",
+      "registrationNumber": "09822",
+      "identificationNumber": "B44969582",
+      "address": "Jauregi Apezpikua, 22",
+      "location": {
+        "postalCode": "48195",
+        "municipality": "Larrabetzu",
+        "county": "Bizkaia",
+        "municipalityId": "052",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.965.2",
+          "name": "Espectáculos al aire libre (excepto los taurinos)",
+          "_links": {
+            "self": {
+              "name": "Espectáculos al aire libre (excepto los taurinos)",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.965.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-03-17",
+      "certificateEndDate": "2025-09-10",
+      "object": "LA PRODUCCIÓN, ORGANIZACIÓN, MONTAJE E INSTALACIÓN DE CONCIERTOS, CONGRESOS, CONVENCIONES, ASAMBLEAS, ESPECTÁCULOS, GABINETES DE PRENSA, FERIAS, VERBENAS, REPRESENTACIONES, ACTOS PÚBLICOS, PARQUES INFANTILES E INFRAESTRUCTURAS TALES COMO CARPAS, ESCENARIOS, TARIMAS Y BAÑOS PORTÁTILES. LA ELABORACIÓN DE CAMPAÑAS DE IMAGEN DE PERSONAS, OBJETOS, BIENES Y DISEÑOS, PARA SU PROMOCIÓN PÚBLICA Y PRIVADA. LA CONTRATACIÓN DE ARTISTAS Y LA PRESTACIÓN DE SERVICIOS A TODA CLASE DE PERSONAS Y EMPRESAS RELACIONADAS CON EL OCIO, LA CULTURA Y EL TIEMPO LIBRE. LA GESTIÓN DE SALAS DE ESPECTÁCULOS.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/09822",
+      "_links": {
+        "self": {
+          "name": "GAUERO MANAGEMENT ETA PRODUKZIOAK, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/09822"
+        }
+      }
+    },
+    {
+      "name": "IBON BERRA ASTABURUAGA",
+      "registrationNumber": "10088",
+      "identificationNumber": "44155621Z",
+      "address": "C/Bittor Idiazabal Nº5 2B",
+      "location": {
+        "postalCode": "20100",
+        "municipality": "Errenteria",
+        "county": "Gipuzkoa",
+        "municipalityId": "067",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "2.751",
+          "name": "Profesionales de la publicidad, relaciones públicas y similares",
+          "_links": {
+            "self": {
+              "name": "Profesionales de la publicidad, relaciones públicas y similares",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/2.751"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-03-14",
+      "certificateEndDate": "2025-09-13",
+      "object": "PROFESIONALES DE LA PUBLICIDAD, RELACIONES PÚBLICAS Y SIMILARES.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/10088",
+      "_links": {
+        "self": {
+          "name": "IBON BERRA ASTABURUAGA",
+          "href": "https://api.euskadi.eus/procurements/companies/10088"
+        }
+      }
+    }
+  ]
+}

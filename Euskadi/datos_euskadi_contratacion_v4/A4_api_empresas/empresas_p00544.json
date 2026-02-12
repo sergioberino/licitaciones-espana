@@ -1,0 +1,618 @@
+{
+  "totalItems": 9042,
+  "totalPages": 905,
+  "currentPage": 544,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "name": "ATARFIL, S.L.",
+      "registrationNumber": "07499",
+      "identificationNumber": "B18382879",
+      "address": "CTRA. DE CÓRDOBA, KM. 429, COMPLEJO EL REY",
+      "location": {
+        "postalCode": "18230",
+        "municipality": "Atarfe",
+        "county": "Granada",
+        "municipalityId": "022",
+        "countyId": "18"
+      },
+      "economicActivities": [
+        {
+          "id": "1.482.2",
+          "name": "Fabricación de artículos acabados de materias plásticas",
+          "_links": {
+            "self": {
+              "name": "Fabricación de artículos acabados de materias plásticas",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.482.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2021-02-15",
+      "certificateEndDate": "2021-05-12",
+      "object": "LA PRODUCCIÓN Y COMERCIALIZACIÓN DE PRODUCTOS PLÁSTICOS DE TODO TIPO",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07499",
+      "_links": {
+        "self": {
+          "name": "ATARFIL, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/07499"
+        }
+      }
+    },
+    {
+      "name": "SOTRATHERM, S.L.L.",
+      "registrationNumber": "07496",
+      "identificationNumber": "B48943104",
+      "address": "Doctor Atxukarro",
+      "location": {
+        "postalCode": "48011",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.504.3",
+          "name": "Instalaciones de frío, calor y acondicionamiento de aire",
+          "_links": {
+            "self": {
+              "name": "Instalaciones de frío, calor y acondicionamiento de aire",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.504.3"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2021-02-11",
+      "certificateEndDate": "2021-05-23",
+      "object": "LA ACTIVIDAD DE INSTALACIONES DE FRÍO, CALOR Y ACONDICIONAMIENTO DE AIRE, ASÍ COMO SU MONTAJE Y MANTENIMIENTO, ASÍ COMO INSTALACIONES DE GAS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07496",
+      "_links": {
+        "self": {
+          "name": "SOTRATHERM, S.L.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/07496"
+        }
+      }
+    },
+    {
+      "name": "DIGITALDOT SERVICIOS INFORMÁTICOS, S.L.",
+      "registrationNumber": "07498",
+      "identificationNumber": "B73821019",
+      "address": "Avenidad Juana Jugan, 26 3ºA",
+      "location": {
+        "postalCode": "30006",
+        "municipality": "Murcia",
+        "county": "Murcia",
+        "municipalityId": "030",
+        "countyId": "30"
+      },
+      "economicActivities": [
+        {
+          "id": "1.355.2",
+          "name": "Edición de soportes grabados de sonido, vídeo y de informática",
+          "_links": {
+            "self": {
+              "name": "Edición de soportes grabados de sonido, vídeo y de informática",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.355.2"
+            }
+          }
+        },
+        {
+          "id": "1.845",
+          "name": "Explotación electrónica por cuenta de terceros",
+          "_links": {
+            "self": {
+              "name": "Explotación electrónica por cuenta de terceros",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.845"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2021-02-11",
+      "certificateEndDate": "2021-06-14",
+      "object": "1. CONSTRUCCIÓN, INSTALACIONES Y MANTENIMIENTO. 2. COMERCIO AL POR MAYOR Y AL POR MENOR. DISTRIBUCIÓN COMERCIAL IMPORTACIÓ Y EXPORTACIÓN. 3. ACTIVIDADES INMOBILIARIAS. 4. ACTIVIDADES PROFESIONALES. 5. INDUSTRIAS MANUFACTURERAS Y TEXTILES. 6. TURISMO, HOSTELERÍA Y RESTAURACIÓN. 7. PRESTACIÓN DE SERVICIOS. ACTIVIDADES DE GESTIÓN Y ADMINISTRACIÓN. SERVICIOS EDUCATIVOS, SANITARIOS, DE OCIO Y ENTRETENIMIENTO. 8. TRANSPORTE YALMACENAMIENTO. 9. INFORMACIÓN Y COMUNICACIONES. 10. AGRICULTURA, GANADERÍA Y PESCA. 11. INFORMÁTICA, TELECOMUNICACIONES Y OFIMÁTICA. 12. ENERGÍAS ALTERNATIVAS. 13. COMPRAVENTA Y REPARACIÓN DE VEHÍCULOS. REPARACIÓN Y MANTENIMIENTO DE INSTALACIONES Y MAQUINARIA. 14. INVESTIGACIÓN, DESARROLLO EINNOVACIÓN. 15. ACTIVIDADES CIENTÍFICAS Y TÉNCIAS. EN ESPECIAL, COMO ACTIVIDAD SINGULAR, GRABADORES Y OTROS PROFESIONALES INFORMÁTICOS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07498",
+      "_links": {
+        "self": {
+          "name": "DIGITALDOT SERVICIOS INFORMÁTICOS, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/07498"
+        }
+      }
+    },
+    {
+      "name": "PASAIPLAS TECNOLÓGICO, S.L.",
+      "registrationNumber": "07486",
+      "identificationNumber": "B20861134",
+      "address": "ZUAZNABAR 109-111",
+      "location": {
+        "postalCode": "20180",
+        "municipality": "Oiartzun",
+        "county": "Gipuzkoa",
+        "municipalityId": "063",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.617.9",
+          "name": "Venta al por mayor interindustrial de otros productos n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor interindustrial de otros productos n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.617.9"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2021-02-08",
+      "certificateEndDate": "2021-07-26",
+      "object": "MANIPULACIÓN DE PRODUCTOS SEMIELABORADOS DE MATERIAS PLÁSTICAS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07486",
+      "_links": {
+        "self": {
+          "name": "PASAIPLAS TECNOLÓGICO, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/07486"
+        }
+      }
+    },
+    {
+      "name": "PME 1910, S.L.",
+      "registrationNumber": "07490",
+      "identificationNumber": "B98629355",
+      "address": "CL. CONSELL, 42",
+      "location": {
+        "postalCode": "46770",
+        "municipality": "Xeraco",
+        "county": "Valencia/València",
+        "municipalityId": "143",
+        "countyId": "46"
+      },
+      "economicActivities": [
+        {
+          "id": "1.615.2",
+          "name": "Venta al por mayor de muebles",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de muebles",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.615.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2021-02-08",
+      "certificateEndDate": "2021-08-03",
+      "object": "EL COMERCIO AL POR MAYOR DE MUEBLES TANTO PARA USO DOMÉSTICO COMO ESCOLAR Y DE OFICINA",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07490",
+      "_links": {
+        "self": {
+          "name": "PME 1910, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/07490"
+        }
+      }
+    },
+    {
+      "name": "ICU MEDICAL PRODUCTOS FARMACÉUTICOS Y HOSPITALARIOS, S.L.",
+      "registrationNumber": "03195",
+      "identificationNumber": "B83959056",
+      "address": "AV. DE LA TRANSICION ESPAÑOLA 24. PLANTA 4",
+      "location": {
+        "postalCode": "28108",
+        "municipality": "Madrid",
+        "county": "Madrid",
+        "municipalityId": "079",
+        "countyId": "28"
+      },
+      "economicActivities": [
+        {
+          "id": "1.619.2",
+          "name": "Venta al por mayor de aparatos e instrumentos médicos, ortopédicos, ópticos",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de aparatos e instrumentos médicos, ortopédicos, ópticos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.619.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2021-02-04",
+      "certificateEndDate": "2021-08-02",
+      "object": "A) LA COMPRA, VENTA, IMPORTACIÓN, EXPORTACIÓN, FABRICACIÓN, TRATAMIENTO, COMERCIALIZACIÓN Y DISTRIBUCIÓN DE PRODUCTOS SANITARIOS EN GENERAL Y PRODUCTOS PARA LA ASISTENCIA SANITARIA A DOMICILIO, ASÍ COMO CUALESQUIERA OTROS RELACIONADOS CON LA SALUD, INCLUYENDO ASIMISMO EL MANTENIMIENTO Y LA REPARACIÓN DE LOS EQUIPOS TÉCNICOS NECESARIOS PARA LA COMPRA, VENTA, IMPORTACIÓN, EXPORTACIÓN, FABRICACIÓN, TRATAMIENTO, COMERCIALIZACIÓN Y DISTRIBUCIÓN DE DICHOS MEDICAMENTOS Y PRODUCTOS.\r\n\r\nB) LA PRESTACIÓN DE SERVICIOS RELACIONADOS CON LOS PRODUCTOS Y EQUIPOS TÉCNICOS INDICADOS EN EL PUNTO A.\r\n\r\nC) LA ADQUISICIÓN, VENTA, EXPORTACIÓN Y LA FACULTAD DE LICENCIAR PATENTES, CESIÓN DE PATENTES, MARCAS, SECRETOS COMERCIALES, TRATAMIENTOS  DE SECRETO INDUSTRIAL Y MÉTODOS DE FABRICACIÓN, ASÍ COMO OTROS TIPOS DE PROPIEDAD INTELECTUAL E INDUSTRIAL.\r\n\r\nD) EL OBJETO SOCIAL DE LA SOCIEDAD PODRÁ REALIZARSE TOTAL O PARCIALMENTE, DE MODO DIRECTO O INDIRECTO, MEDIANTE LA PARTICIPACIÓN EN OTRAS SOCIEDADES, YA EXISTENTES O QUE SE CONSTITUYAN EN UN FUTURO, CON OBJETO SOCIAL IDÉNTICO O ANÁLOGO",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03195",
+      "_links": {
+        "self": {
+          "name": "ICU MEDICAL PRODUCTOS FARMACÉUTICOS Y HOSPITALARIOS, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/03195"
+        }
+      }
+    },
+    {
+      "name": "TRAVIESAS Y PREFABRICADOS DE ARAGÓN, S.L.",
+      "registrationNumber": "07484",
+      "identificationNumber": "B88182472",
+      "address": "C/ Sobrado 2",
+      "location": {
+        "postalCode": "28050",
+        "municipality": "Madrid",
+        "county": "Madrid",
+        "municipalityId": "079",
+        "countyId": "28"
+      },
+      "economicActivities": [
+        {
+          "id": "1.243.3",
+          "name": "Fabricación otros artículos derivados del cemento, excepto pavimentos",
+          "_links": {
+            "self": {
+              "name": "Fabricación otros artículos derivados del cemento, excepto pavimentos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.243.3"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2021-02-04",
+      "certificateEndDate": "2021-05-12",
+      "object": "A) LA CONTRATACIÓN, GESTIÓN Y EJECUCIÓN DIRECTA O INDIRECTAMENTE, CON MEDIOS PROPIOS O AJENOS, EN EL TERRITORIO DEL ESTADO ESPAÑOL Y EN CUALQUIERA DEL EXTRANJERO, DE OBRAS TERRESTRES Y MARÍTIMAS, Y PÚBLICAS Y PRIVADAS, DE MOVIMIENTO DE TIERRAS Y PERFORACIONES, DE PUENTES, VIADUCTOS Y GRANES ESTRUCTURAS, DE CONSTRUCCIÓN, REHABILITACIÓN Y MANTENIMIENTO DE EDIFICIOS, FERROCARRILES, HIDRÁULICAS, MARÍTIMAS, DE VIALES DE CARRETERAS, DE AUTOVÍAS Y AUTOPISTAS, DE PISTAS DE AEROPUERTOS, DE OLEODUCTOS Y GASEODUCTOS, DE INSTALACIONES ELÉCTRICAS, ELECTRÓNICAS Y MECÁNICAS, DE CIMENTACIONES, SONDEOS, INYECCIONES, PILOTAJES, TABLESTACADOS, PINTURAS, METALIZACIONES, ORNAMENTACIONES Y DECORACIONES, DE JARDINERÍA Y PLANTACIONES, DE RESTAURACIONES DE BIENES INMUEBLES HISTÓRICO ARTÍSTICOS, DE ESTACIONES DE TRATAMIENTO DE AGUAS, DE INSTALACIONES CONTRA INCENDIOS, Y AQUELLAS ORDENADAS A LA CONSERVACIÓN Y MEJORA DEL MEDIOAMBIENTE INCLUSO LAS DE CONSERVACIÓN INTEGRAL DE TODAS ELLAS, Y DE TODA CLASE DE OBRAS Y CONSTRUCCIONES. B) LA EXPLOTACIÓN DE MINAS Y CANTERAS, Y LA COMERCIALIZACIÓN DE SUS PRODUCTOS. C) LA FABRICACIÓN, COMPRAVENTA, IMPORTACIÓN, EXPORTACIÓN Y DISTRIBUCIÓN DE EQUIPOS Y MATERIALES DE CONSTRUCCIÓN, ASÍ COMO EL AMUEBLAMIENTO DE INMUEBLES, EL MOBILIARIO URBANO Y LA INSTALACIÓN DE CUALQUIER TIPO DE ELEMENTOS EN LAS OBRAS. D) LA INTERMEDIACIÓN EN ACTIVIDADES DE REDACCIÓN DE PROYECTOS Y DIRECCIÓN DE OBRAS DE INGENIERÍA, ARQUITECTURA, AGRICULTURA, GANADERÍA, PESCA, INDUSTRIA, ENERGÍA, MINERÍA, CIVILES, EDIFICACIÓN, URBANISMO, INSTALACIONES ELECTRÓNICAS Y DE TODA OTRA CLASE DE OBRAS; LA SUPERVISIÓN, ASESORAMIENTO REPRESENTACIÓN EN LA EJECUCIÓN DE TODAS LAS OBRAS ANTES MENCIONADAS; LA REALIZACIÓN DE ESTUDIOS E INFORMES DE OBRAS CIVILES, DE EDIFICACIÓN, URBANIZACIÓN,  CARTOGRAFÍA, CATASTROS, GEOTECNIA, HIDROLOGÍA Y MEDIO AMBIENTE, ECONÓMICOS, FINANCIEROS, COMERCIALES, SOCIALES, LABORALES Y DE ANÁLISIS, ENSAYOS Y CONTROL TÉCNICO, Y AUDITORIAS. E) LA PRESTACIÓN DE SERVICIOS PÚBLICOS Y PRIVADOS SANITARIOS, DE SEGURIDAD Y VIGILANCIA, DE INFORMACIÓN, PUBLICIDAD, ADMINISTRATIVOS Y DE COMUNICACIONES, DE CONSERVACIÓN, Y MANTENIMIENTO DE BIENES E INMUEBLES, DE LIMPIEZA E HIGIENIZACIÓN, Y DE MANTENIMIENTO DE EQUIPOS E INSTALACIÓN DE TRANSPORTES. F) LA PROMOCIÓN, GESTIÓN Y EJECUCIÓN DIRECTA O INDIRECTA Y CON MEDIOS PROPIOS O AJENOS DE TODO TIPO DE NEGOCIOS INMOBILIARIOS, TANTO EN SU VERTIENTE URBANÍSTICA COMO DE LA PROPIA CONSTRUCCIÓN, PARA SU EXPLOTACIÓN, VENTA O ALQUILER. G) LA ADQUISICIÓN, EN PROPIEDAD O USO Y DE SU EXPLOTACIÓN EN VENTA, ARRENDAMIENTO O CUALQUIER OTRA FORMA DE TODA CLASE DE BIENES INMUEBLES, SU ADMINISTRACIÓN Y PROMOCIÓN, ASÍ COMO EL ASESORAMIENTO RESPECTO A DICHAS OPERACIONES. H) LA ADQUISICIÓN, TENENCIA, DISFRUTE ADMINISTRACIÓN Y ENAJENACIÓN DE TODA CLASE DE VALORES MOBILIARIOS POR CUENTA PROPIA, QUEDANDO EXCLUIDAS LAS ACTIVIDADES QUE LA LEGISLACIÓN ESPECIAL Y BÁSICAMENTE LA LEY DE MERCADO DE VALORES ATRIBUYE CON CARÁCTER EXCLUIDO A OTRAS ENTIDADES. I) LA TITULARIDAD DE TODA CLASE DE CONCESIONES, SUBCONCESIONES Y AUTORIZACIONES ADMINISTRATIVAS DE OBRAS, SERVICIOS Y MIXTAS DEL ESTADO, COMUNIDAD AUTÓNOMA, PROVINCIA Y MUNICIPIO. J) LA ADQUISICIÓN, EXPLOTACIÓN EN CUALQUIER FORMA, COMERCIALIZACIÓN, CESIÓN Y ENAJENACIÓN DE TODO TIPO DE PROPIEDAD INTELECTUAL Y DE PATENTES Y DEMÁS MODALIDADES DE PROPIEDAD INDUSTRIAL. K) EL DISEÑO, LA PRODUCCIÓN Y EL TRANSPORTE DE: TRAVIESAS DE HORMIGÓN PRETENSADO PARA FERROCARRIL, TIPO MONOBLOC Y PARA APARATOS DE VÍA. PLACAS DE HORMIGÓN ARMADO Y PRETENSADO PARA VÍA EN PLACA PARA FERROCARRIL. TUBERÍA DE PRESIÓN DE HORMIGÓN ARMADO Y PRETENSADO, CON Y SIN CAMISA DE CHAPA. VIGAS Y OTROS ELEMENTOS ESTRUCTURALES DE HORMIGÓN ARMADO, PRETENSADO Y POSTENSADO PARA GRANDES ESTRUCTURAS, ELEMENTOS PREFABRICADOS DE HORMIGÓN ARQUITECTÓNICO Y CUALESQUIERA OTRAS PIEZAS DE HORMIGÓN ARMADO O PRETENSADO PARA LA INDUSTRIA DE LA CONSTRUCCIÓN",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07484",
+      "_links": {
+        "self": {
+          "name": "TRAVIESAS Y PREFABRICADOS DE ARAGÓN, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/07484"
+        }
+      }
+    },
+    {
+      "name": "EBI TALLERES ELECTROTÉCNICOS, S.A.",
+      "registrationNumber": "04782",
+      "identificationNumber": "A48114664",
+      "address": "JON ARROSPIDE, 17 1ª",
+      "location": {
+        "postalCode": "48014",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.342",
+          "name": "Fabricación de material eléctrico de utilización y equipamiento",
+          "_links": {
+            "self": {
+              "name": "Fabricación de material eléctrico de utilización y equipamiento",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.342"
+            }
+          }
+        },
+        {
+          "id": "1.504.1",
+          "name": "Instalaciones eléctricas en general",
+          "_links": {
+            "self": {
+              "name": "Instalaciones eléctricas en general",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.504.1"
+            }
+          }
+        },
+        {
+          "id": "1.504.12",
+          "name": "Instalaciones eléctricas en toda clase de edificios",
+          "_links": {
+            "self": {
+              "name": "Instalaciones eléctricas en toda clase de edificios",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.504.12"
+            }
+          }
+        },
+        {
+          "id": "1.504.3",
+          "name": "Instalaciones de frío, calor y acondicionamiento de aire",
+          "_links": {
+            "self": {
+              "name": "Instalaciones de frío, calor y acondicionamiento de aire",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.504.3"
+            }
+          }
+        },
+        {
+          "id": "1.861.2",
+          "name": "Alquiler de locales industriales y otros alquileres n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Alquiler de locales industriales y otros alquileres n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.861.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2021-02-03",
+      "certificateEndDate": "2021-07-27",
+      "object": "IMPORTACIÓN, EXPORTACIÓN, FABRICACIÓN, CONFECCIÓN, MONTAJE, REPARACIÓN, INSTALACIÓN, COMPRA Y VENTA AL POR MAYOR Y MENOR DE LOS ARTÍCULOS, OBJETOS Y MERCANCÍAS QUE SE DETALLAN A CONTINUACIÓN, ASÍ COMO LA REPRESENTACIÓN DE EMPRESAS NACIONALES O EXTRANJERAS, PRODUCTORAS O DISTRIBUIDORAS DE LOS MISMOS: a) CARACTERES DE IMPRENTA, MÁQUINAS DE COMPONER Y TODOS LOS PRODUCTOS, ACCESORIOS Y MAQUINARIA RELACIONADOS CON LAS ARTES GRÁFICAS. b) MAQUINARIA NUEVA O USADA, PARA APLICACIONES DE CUALQUIER CLASE DE ACCESORIOS. APARATOS DE CALEFACCIÓN, AIREACIÓN, AIRE ACONDICIONADO Y REFRIGERACIÓN DE TODA CLASE DE CÁMARAS FRIGORÍFICAS E INSTALACIONES DE FRÍO INDUSTRIAL, VENTILACIÓN Y ACONDICIONAMIENTO DE AIRE DE LOCALES Y ESPACIOS DETERMINADOS Y TODOS SUS ACCESORIOS. c) INSTALACIONES ELÉCTRICAS, HIDRÁULICAS, NEUMÁTICAS, BOBINAJE, ELECTROTÉCNICA, ESTUDIOS Y PRESUPUESTOS DE TODA CLASE DE MAQUINARIA. d) VEHÍCULOS INDUSTRIALES, ACCESORIOS, PIEZAS DE RECAMBIO, LUBRICANTES, ÚTILES Y HERRAMIENTAS, MOTORES Y MAQUINARIA PARA DICHOS VEHÍCULOS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/04782",
+      "_links": {
+        "self": {
+          "name": "EBI TALLERES ELECTROTÉCNICOS, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/04782"
+        }
+      }
+    },
+    {
+      "name": "GORCA TEXTIL, S.L.",
+      "registrationNumber": "07482",
+      "identificationNumber": "B90343187",
+      "address": "C/Goles, nº 21",
+      "location": {
+        "postalCode": "41002",
+        "municipality": "Sevilla",
+        "county": "Sevilla",
+        "municipalityId": "091",
+        "countyId": "41"
+      },
+      "economicActivities": [
+        {
+          "id": "1.453",
+          "name": "Confección en serie de toda clase de prendas de vestir",
+          "_links": {
+            "self": {
+              "name": "Confección en serie de toda clase de prendas de vestir",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.453"
+            }
+          }
+        },
+        {
+          "id": "1.454",
+          "name": "Confección a medida de prendas de vestir y sus complementos",
+          "_links": {
+            "self": {
+              "name": "Confección a medida de prendas de vestir y sus complementos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.454"
+            }
+          }
+        },
+        {
+          "id": "1.613.1",
+          "name": "Venta al por mayor de productos textiles, confección calzado y artículos cuero",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de productos textiles, confección calzado y artículos cuero",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.613.1"
+            }
+          }
+        },
+        {
+          "id": "1.615.4",
+          "name": "Venta al por mayor de aparatos y material radioeléctrico y electrónico",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de aparatos y material radioeléctrico y electrónico",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.615.4"
+            }
+          }
+        },
+        {
+          "id": "1.617.8",
+          "name": "Venta al por mayor de máquinas y material de oficina",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de máquinas y material de oficina",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.617.8"
+            }
+          }
+        },
+        {
+          "id": "1.617.9",
+          "name": "Venta al por mayor interindustrial de otros productos n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor interindustrial de otros productos n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.617.9"
+            }
+          }
+        },
+        {
+          "id": "1.619.9",
+          "name": "Venta al por mayor de otros productos n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de otros productos n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.619.9"
+            }
+          }
+        },
+        {
+          "id": "1.631",
+          "name": "Intermediarios del comercio",
+          "_links": {
+            "self": {
+              "name": "Intermediarios del comercio",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.631"
+            }
+          }
+        },
+        {
+          "id": "1.651.2",
+          "name": "Venta al por menor de prendas de ropa para el vestido y tocado",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de prendas de ropa para el vestido y tocado",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.651.2"
+            }
+          }
+        },
+        {
+          "id": "1.651.5",
+          "name": "Venta al por menor de prendas especiales",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de prendas especiales",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.651.5"
+            }
+          }
+        },
+        {
+          "id": "1.653.3",
+          "name": "Venta al por menor de artículos de menaje, ferretería, adorno, regalo",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de artículos de menaje, ferretería, adorno, regalo",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.653.3"
+            }
+          }
+        },
+        {
+          "id": "1.654.5",
+          "name": "Venta al por menor de toda clase de maquinaría",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de toda clase de maquinaría",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.654.5"
+            }
+          }
+        },
+        {
+          "id": "1.664.92",
+          "name": "Venta de artículos diversos mediante aparatos automáticos, propietario",
+          "_links": {
+            "self": {
+              "name": "Venta de artículos diversos mediante aparatos automáticos, propietario",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.664.92"
+            }
+          }
+        },
+        {
+          "id": "1.665",
+          "name": "Venta al por menor por correo o catálogo de productos diversos",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor por correo o catálogo de productos diversos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.665"
+            }
+          }
+        },
+        {
+          "id": "1.844",
+          "name": "Servicios de publicidad, relaciones públicas y similares",
+          "_links": {
+            "self": {
+              "name": "Servicios de publicidad, relaciones públicas y similares",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.844"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2021-02-03",
+      "certificateEndDate": "2021-05-05",
+      "object": "EL DESARROLLO DE LAS ACTIVIDADES CORRESPONDIENTES A LOS SIGUIENTES CÓDIGOS Y DESCRIPCIONES DE CLASIFICACIÓN NACIONAL DE ACTIVIDADES ECONÓMICAS: ACTIVIDAD PRINCIPAL: 14.19 / CONFECCIÓN DE OTRAS PRENDAS DE VESTIR Y ACCESORIOS. OTRAS ACTIVIDADES:  46.16 / INTERMEDIARIOS DEL COMERCIO DE TEXTILES, PRENDAS DE VESTIR, PELETERÍA, CALZADO Y ARTÍCULOS DE CUERO, 47.51 / COMERCIO AL POR MENOR DE TEXTILES EN ESTABLECIMIENTOS ESPECIALIZADOS, 46.42 / COMERCIO AL POR MAYOR DE PRENDAS DE VESTIR Y CALZADO, 46. 41 / COMERCIO AL POR MAYOR DE TEXTILES\r\n\r\n",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07482",
+      "_links": {
+        "self": {
+          "name": "GORCA TEXTIL, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/07482"
+        }
+      }
+    },
+    {
+      "name": "MERCK, S.L.",
+      "registrationNumber": "03533",
+      "identificationNumber": "B08070195",
+      "address": "MARIA DE MOLINA 40",
+      "location": {
+        "postalCode": "28006",
+        "municipality": "Madrid",
+        "county": "Madrid",
+        "municipalityId": "079",
+        "countyId": "28"
+      },
+      "economicActivities": [
+        {
+          "id": "1.251.2",
+          "name": "Fabricación de otros productos químicos orgánicos",
+          "_links": {
+            "self": {
+              "name": "Fabricación de otros productos químicos orgánicos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.251.2"
+            }
+          }
+        },
+        {
+          "id": "1.254.1",
+          "name": "Fabricación de productos farmacéuticos de base",
+          "_links": {
+            "self": {
+              "name": "Fabricación de productos farmacéuticos de base",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.254.1"
+            }
+          }
+        },
+        {
+          "id": "1.254.2",
+          "name": "Fabricación de especialidades y otros productos farmacéuticos",
+          "_links": {
+            "self": {
+              "name": "Fabricación de especialidades y otros productos farmacéuticos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.254.2"
+            }
+          }
+        },
+        {
+          "id": "1.423.3",
+          "name": "Elaboración de productos dietéticos y de régimen",
+          "_links": {
+            "self": {
+              "name": "Elaboración de productos dietéticos y de régimen",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.423.3"
+            }
+          }
+        },
+        {
+          "id": "1.614.1",
+          "name": "Venta al por mayor de productos farmacéuticos y medicamentos",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de productos farmacéuticos y medicamentos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.614.1"
+            }
+          }
+        },
+        {
+          "id": "1.616.6",
+          "name": "Venta al por mayor de productos químicos industriales",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de productos químicos industriales",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.616.6"
+            }
+          }
+        },
+        {
+          "id": "1.659.2",
+          "name": "Venta al por menor de muebles de oficina y máquinas y equipos de oficina",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de muebles de oficina y máquinas y equipos de oficina",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.659.2"
+            }
+          }
+        },
+        {
+          "id": "1.849.7",
+          "name": "Servicios de gestión administrativa",
+          "_links": {
+            "self": {
+              "name": "Servicios de gestión administrativa",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.849.7"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2021-02-02",
+      "certificateEndDate": "2021-07-12",
+      "object": "LA FABRICACIÓN Y COMERCIALIZACIÓN DE ESPECIALIDADES FARMACÉUTICAS, PRODUCTOS QUÍMICOS, REACTIVOS, PLANTAS MEDICINALES, PRODUCTOS DIETÉTICOS, DE PERFUMERÍA Y DE COSMÉTICA Y APARATOS DE MEDICIÓN, ANÁLISIS Y DIAGNÓSTICA CON SUS CORRESPONDIENTES SOPORTES INFORMÁTICOS Y SUS ACCESORIOS, ASÍ COMO LA REALIZACIÓN DE TRABAJOS DE INVESTIGACIÓN PARA TERCEROS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03533",
+      "_links": {
+        "self": {
+          "name": "MERCK, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/03533"
+        }
+      }
+    }
+  ]
+}

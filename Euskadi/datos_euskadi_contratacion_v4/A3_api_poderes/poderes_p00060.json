@@ -1,0 +1,1373 @@
+{
+  "totalItems": 919,
+  "totalPages": 92,
+  "currentPage": 60,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "id": 68,
+      "identificationNumber": "P0101100F",
+      "name": "Ayuntamiento de Ayala",
+      "scope": "ARABA/ÁLAVA",
+      "address": "Barrio de la Iglesia, 3. 01476 Arespalditza",
+      "webPage": "http://www.aiarakoudala.com",
+      "publicationDate": "2019-10-04",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES211",
+      "entities": [
+        {
+          "id": 390,
+          "name": "Ayuntamiento de Ayala",
+          "orgs": [
+            {
+              "id": 911339,
+              "name": "Alcalde",
+              "_links": {
+                "self": {
+                  "name": "Alcalde",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/68/entities/390/orgs/911339"
+                }
+              }
+            },
+            {
+              "id": 911340,
+              "name": "Pleno",
+              "_links": {
+                "self": {
+                  "name": "Pleno",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/68/entities/390/orgs/911340"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Ayuntamiento de Ayala",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/68/entities/390"
+            }
+          }
+        },
+        {
+          "id": 391,
+          "name": "Junta Administrativa de Agiñiga",
+          "orgs": [
+            {
+              "id": 911341,
+              "name": "Alcalde",
+              "_links": {
+                "self": {
+                  "name": "Alcalde",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/68/entities/391/orgs/911341"
+                }
+              }
+            },
+            {
+              "id": 911342,
+              "name": "Pleno",
+              "_links": {
+                "self": {
+                  "name": "Pleno",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/68/entities/391/orgs/911342"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Junta Administrativa de Agiñiga",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/68/entities/391"
+            }
+          }
+        },
+        {
+          "id": 392,
+          "name": "Junta Administrativa de Anes",
+          "orgs": [
+            {
+              "id": 911343,
+              "name": "Alcalde",
+              "_links": {
+                "self": {
+                  "name": "Alcalde",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/68/entities/392/orgs/911343"
+                }
+              }
+            },
+            {
+              "id": 911344,
+              "name": "Pleno",
+              "_links": {
+                "self": {
+                  "name": "Pleno",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/68/entities/392/orgs/911344"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Junta Administrativa de Anes",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/68/entities/392"
+            }
+          }
+        },
+        {
+          "id": 393,
+          "name": "Junta Administrativa de Costera",
+          "orgs": [
+            {
+              "id": 911345,
+              "name": "Alcalde",
+              "_links": {
+                "self": {
+                  "name": "Alcalde",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/68/entities/393/orgs/911345"
+                }
+              }
+            },
+            {
+              "id": 911346,
+              "name": "Pleno",
+              "_links": {
+                "self": {
+                  "name": "Pleno",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/68/entities/393/orgs/911346"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Junta Administrativa de Costera",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/68/entities/393"
+            }
+          }
+        },
+        {
+          "id": 394,
+          "name": "Junta Administrativa de Etxegoien",
+          "orgs": [
+            {
+              "id": 911349,
+              "name": "Alcalde",
+              "_links": {
+                "self": {
+                  "name": "Alcalde",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/68/entities/394/orgs/911349"
+                }
+              }
+            },
+            {
+              "id": 911350,
+              "name": "Pleno",
+              "_links": {
+                "self": {
+                  "name": "Pleno",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/68/entities/394/orgs/911350"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Junta Administrativa de Etxegoien",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/68/entities/394"
+            }
+          }
+        },
+        {
+          "id": 395,
+          "name": "Junta Administrativa de Erbi",
+          "orgs": [
+            {
+              "id": 911348,
+              "name": "Pleno",
+              "_links": {
+                "self": {
+                  "name": "Pleno",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/68/entities/395/orgs/911348"
+                }
+              }
+            },
+            {
+              "id": 911347,
+              "name": "Alcalde",
+              "_links": {
+                "self": {
+                  "name": "Alcalde",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/68/entities/395/orgs/911347"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Junta Administrativa de Erbi",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/68/entities/395"
+            }
+          }
+        },
+        {
+          "id": 396,
+          "name": "Junta Administrativa de Izoria",
+          "orgs": [
+            {
+              "id": 911351,
+              "name": "Alcalde",
+              "_links": {
+                "self": {
+                  "name": "Alcalde",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/68/entities/396/orgs/911351"
+                }
+              }
+            },
+            {
+              "id": 911352,
+              "name": "Pleno",
+              "_links": {
+                "self": {
+                  "name": "Pleno",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/68/entities/396/orgs/911352"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Junta Administrativa de Izoria",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/68/entities/396"
+            }
+          }
+        },
+        {
+          "id": 397,
+          "name": "Junta Administrativa de Lejarzo",
+          "orgs": [
+            {
+              "id": 911354,
+              "name": "Pleno",
+              "_links": {
+                "self": {
+                  "name": "Pleno",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/68/entities/397/orgs/911354"
+                }
+              }
+            },
+            {
+              "id": 911353,
+              "name": "Alcalde",
+              "_links": {
+                "self": {
+                  "name": "Alcalde",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/68/entities/397/orgs/911353"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Junta Administrativa de Lejarzo",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/68/entities/397"
+            }
+          }
+        },
+        {
+          "id": 398,
+          "name": "Junta Administrativa de Lujo",
+          "orgs": [
+            {
+              "id": 911359,
+              "name": "Alcalde",
+              "_links": {
+                "self": {
+                  "name": "Alcalde",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/68/entities/398/orgs/911359"
+                }
+              }
+            },
+            {
+              "id": 911360,
+              "name": "Pleno",
+              "_links": {
+                "self": {
+                  "name": "Pleno",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/68/entities/398/orgs/911360"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Junta Administrativa de Lujo",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/68/entities/398"
+            }
+          }
+        },
+        {
+          "id": 399,
+          "name": "Junta Administrativa de Luiaondo",
+          "orgs": [
+            {
+              "id": 911357,
+              "name": "Alcalde",
+              "_links": {
+                "self": {
+                  "name": "Alcalde",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/68/entities/399/orgs/911357"
+                }
+              }
+            },
+            {
+              "id": 911358,
+              "name": "Pleno",
+              "_links": {
+                "self": {
+                  "name": "Pleno",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/68/entities/399/orgs/911358"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Junta Administrativa de Luiaondo",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/68/entities/399"
+            }
+          }
+        },
+        {
+          "id": 400,
+          "name": "Junta Administrativa de Llanteno",
+          "orgs": [
+            {
+              "id": 911356,
+              "name": "Pleno",
+              "_links": {
+                "self": {
+                  "name": "Pleno",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/68/entities/400/orgs/911356"
+                }
+              }
+            },
+            {
+              "id": 911355,
+              "name": "Alcalde",
+              "_links": {
+                "self": {
+                  "name": "Alcalde",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/68/entities/400/orgs/911355"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Junta Administrativa de Llanteno",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/68/entities/400"
+            }
+          }
+        },
+        {
+          "id": 401,
+          "name": "Junta Administrativa de Madaria",
+          "orgs": [
+            {
+              "id": 911361,
+              "name": "Alcalde",
+              "_links": {
+                "self": {
+                  "name": "Alcalde",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/68/entities/401/orgs/911361"
+                }
+              }
+            },
+            {
+              "id": 911362,
+              "name": "Pleno",
+              "_links": {
+                "self": {
+                  "name": "Pleno",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/68/entities/401/orgs/911362"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Junta Administrativa de Madaria",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/68/entities/401"
+            }
+          }
+        },
+        {
+          "id": 402,
+          "name": "Junta Administrativa de Maroño",
+          "orgs": [
+            {
+              "id": 911364,
+              "name": "Pleno",
+              "_links": {
+                "self": {
+                  "name": "Pleno",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/68/entities/402/orgs/911364"
+                }
+              }
+            },
+            {
+              "id": 911363,
+              "name": "Alcalde",
+              "_links": {
+                "self": {
+                  "name": "Alcalde",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/68/entities/402/orgs/911363"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Junta Administrativa de Maroño",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/68/entities/402"
+            }
+          }
+        },
+        {
+          "id": 403,
+          "name": "Junta Administrativa de Menagarai-Beotegi",
+          "orgs": [
+            {
+              "id": 911366,
+              "name": "Pleno",
+              "_links": {
+                "self": {
+                  "name": "Pleno",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/68/entities/403/orgs/911366"
+                }
+              }
+            },
+            {
+              "id": 911365,
+              "name": "Alcalde",
+              "_links": {
+                "self": {
+                  "name": "Alcalde",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/68/entities/403/orgs/911365"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Junta Administrativa de Menagarai-Beotegi",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/68/entities/403"
+            }
+          }
+        },
+        {
+          "id": 404,
+          "name": "Junta Administrativa de Menoio",
+          "orgs": [
+            {
+              "id": 911368,
+              "name": "Pleno",
+              "_links": {
+                "self": {
+                  "name": "Pleno",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/68/entities/404/orgs/911368"
+                }
+              }
+            },
+            {
+              "id": 911367,
+              "name": "Alcalde",
+              "_links": {
+                "self": {
+                  "name": "Alcalde",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/68/entities/404/orgs/911367"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Junta Administrativa de Menoio",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/68/entities/404"
+            }
+          }
+        },
+        {
+          "id": 405,
+          "name": "Junta Administrativa de Murga",
+          "orgs": [
+            {
+              "id": 911370,
+              "name": "Pleno",
+              "_links": {
+                "self": {
+                  "name": "Pleno",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/68/entities/405/orgs/911370"
+                }
+              }
+            },
+            {
+              "id": 911369,
+              "name": "Alcalde",
+              "_links": {
+                "self": {
+                  "name": "Alcalde",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/68/entities/405/orgs/911369"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Junta Administrativa de Murga",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/68/entities/405"
+            }
+          }
+        },
+        {
+          "id": 406,
+          "name": "Junta Administrativa de Ozeka",
+          "orgs": [
+            {
+              "id": 911374,
+              "name": "Pleno",
+              "_links": {
+                "self": {
+                  "name": "Pleno",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/68/entities/406/orgs/911374"
+                }
+              }
+            },
+            {
+              "id": 911373,
+              "name": "Alcalde",
+              "_links": {
+                "self": {
+                  "name": "Alcalde",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/68/entities/406/orgs/911373"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Junta Administrativa de Ozeka",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/68/entities/406"
+            }
+          }
+        },
+        {
+          "id": 407,
+          "name": "Junta Administrativa de Olabezar",
+          "orgs": [
+            {
+              "id": 911371,
+              "name": "Alcalde",
+              "_links": {
+                "self": {
+                  "name": "Alcalde",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/68/entities/407/orgs/911371"
+                }
+              }
+            },
+            {
+              "id": 911372,
+              "name": "Pleno",
+              "_links": {
+                "self": {
+                  "name": "Pleno",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/68/entities/407/orgs/911372"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Junta Administrativa de Olabezar",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/68/entities/407"
+            }
+          }
+        },
+        {
+          "id": 408,
+          "name": "Junta Administrativa de Quejana",
+          "orgs": [
+            {
+              "id": 911375,
+              "name": "Alcalde",
+              "_links": {
+                "self": {
+                  "name": "Alcalde",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/68/entities/408/orgs/911375"
+                }
+              }
+            },
+            {
+              "id": 911376,
+              "name": "Pleno",
+              "_links": {
+                "self": {
+                  "name": "Pleno",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/68/entities/408/orgs/911376"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Junta Administrativa de Quejana",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/68/entities/408"
+            }
+          }
+        },
+        {
+          "id": 409,
+          "name": "Junta Administrativa de Respaldiza",
+          "orgs": [
+            {
+              "id": 911377,
+              "name": "Alcalde",
+              "_links": {
+                "self": {
+                  "name": "Alcalde",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/68/entities/409/orgs/911377"
+                }
+              }
+            },
+            {
+              "id": 911378,
+              "name": "Pleno",
+              "_links": {
+                "self": {
+                  "name": "Pleno",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/68/entities/409/orgs/911378"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Junta Administrativa de Respaldiza",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/68/entities/409"
+            }
+          }
+        },
+        {
+          "id": 410,
+          "name": "Junta Administrativa de Retes de Llanteno",
+          "orgs": [
+            {
+              "id": 911380,
+              "name": "Pleno",
+              "_links": {
+                "self": {
+                  "name": "Pleno",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/68/entities/410/orgs/911380"
+                }
+              }
+            },
+            {
+              "id": 911379,
+              "name": "Alcalde",
+              "_links": {
+                "self": {
+                  "name": "Alcalde",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/68/entities/410/orgs/911379"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Junta Administrativa de Retes de Llanteno",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/68/entities/410"
+            }
+          }
+        },
+        {
+          "id": 411,
+          "name": "Junta Administrativa de Salmanton",
+          "orgs": [
+            {
+              "id": 911382,
+              "name": "Pleno",
+              "_links": {
+                "self": {
+                  "name": "Pleno",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/68/entities/411/orgs/911382"
+                }
+              }
+            },
+            {
+              "id": 911381,
+              "name": "Alcalde",
+              "_links": {
+                "self": {
+                  "name": "Alcalde",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/68/entities/411/orgs/911381"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Junta Administrativa de Salmanton",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/68/entities/411"
+            }
+          }
+        },
+        {
+          "id": 412,
+          "name": "Junta Administrativa de Sojo ",
+          "orgs": [
+            {
+              "id": 911383,
+              "name": "Alcalde",
+              "_links": {
+                "self": {
+                  "name": "Alcalde",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/68/entities/412/orgs/911383"
+                }
+              }
+            },
+            {
+              "id": 911384,
+              "name": "Pleno",
+              "_links": {
+                "self": {
+                  "name": "Pleno",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/68/entities/412/orgs/911384"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Junta Administrativa de Sojo ",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/68/entities/412"
+            }
+          }
+        },
+        {
+          "id": 413,
+          "name": "Junta Administrativa de Zuaza",
+          "orgs": [
+            {
+              "id": 911385,
+              "name": "Alcalde",
+              "_links": {
+                "self": {
+                  "name": "Alcalde",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/68/entities/413/orgs/911385"
+                }
+              }
+            },
+            {
+              "id": 911386,
+              "name": "Pleno",
+              "_links": {
+                "self": {
+                  "name": "Pleno",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/68/entities/413/orgs/911386"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Junta Administrativa de Zuaza",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/68/entities/413"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder68/es_doc/es_arch_poder68.html",
+      "_links": {
+        "self": {
+          "name": "Ayuntamiento de Ayala",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/68"
+        }
+      }
+    },
+    {
+      "id": 69,
+      "identificationNumber": "P0104500D",
+      "name": "Ayuntamiento de Okondo",
+      "scope": "ARABA/ÁLAVA",
+      "address": "Zudubiarte, 2. 01409 Okondo (Araba)",
+      "webPage": "http://www.okondokoudala.com",
+      "publicationDate": "2019-10-04",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES211",
+      "entities": [
+        {
+          "id": 414,
+          "name": "Ayuntamiento de Okondo",
+          "orgs": [
+            {
+              "id": 911388,
+              "name": "Alcalde",
+              "_links": {
+                "self": {
+                  "name": "Alcalde",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/69/entities/414/orgs/911388"
+                }
+              }
+            },
+            {
+              "id": 911389,
+              "name": "Pleno",
+              "_links": {
+                "self": {
+                  "name": "Pleno",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/69/entities/414/orgs/911389"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Ayuntamiento de Okondo",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/69/entities/414"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder69/es_doc/es_arch_poder69.html",
+      "_links": {
+        "self": {
+          "name": "Ayuntamiento de Okondo",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/69"
+        }
+      }
+    },
+    {
+      "id": 70,
+      "identificationNumber": "G20368502",
+      "name": "Residencia Mizpirualde",
+      "scope": "GIPUZKOA",
+      "address": "Madalena plaza, 1. 20570 Bergara (GIPUZKOA)",
+      "webPage": "http://mizpirualde.com/",
+      "publicationDate": "2019-10-04",
+      "mainActivity": "Protección social",
+      "codNUTS": "ES212",
+      "entities": [
+        {
+          "id": 415,
+          "name": "Residencia Mizpirualde",
+          "orgs": [
+            {
+              "id": 911390,
+              "name": "Junta de Gobierno",
+              "_links": {
+                "self": {
+                  "name": "Junta de Gobierno",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/70/entities/415/orgs/911390"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Residencia Mizpirualde",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/70/entities/415"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder70/es_doc/es_arch_poder70.html",
+      "_links": {
+        "self": {
+          "name": "Residencia Mizpirualde",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/70"
+        }
+      }
+    },
+    {
+      "id": 74,
+      "identificationNumber": "P7003103D",
+      "name": "Patronato Municipal de Deportes de Eibar",
+      "scope": "GIPUZKOA",
+      "address": "Santaines kalea, s/n. 20600 Eibar (Gipuzkoa)",
+      "webPage": "http://www.eibarkirola.com",
+      "publicationDate": "2019-10-04",
+      "mainActivity": "Ocio, cultura y religión",
+      "codNUTS": "ES212",
+      "entities": [
+        {
+          "id": 419,
+          "name": "Patronato Municipal de Deportes de Eibar",
+          "orgs": [
+            {
+              "id": 911403,
+              "name": "Presidente",
+              "_links": {
+                "self": {
+                  "name": "Presidente",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/74/entities/419/orgs/911403"
+                }
+              }
+            },
+            {
+              "id": 911401,
+              "name": "Consejo Ejecutivo Permanente",
+              "_links": {
+                "self": {
+                  "name": "Consejo Ejecutivo Permanente",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/74/entities/419/orgs/911401"
+                }
+              }
+            },
+            {
+              "id": 911402,
+              "name": "Consejo Rector",
+              "_links": {
+                "self": {
+                  "name": "Consejo Rector",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/74/entities/419/orgs/911402"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Patronato Municipal de Deportes de Eibar",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/74/entities/419"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder74/es_doc/es_arch_poder74.html",
+      "_links": {
+        "self": {
+          "name": "Patronato Municipal de Deportes de Eibar",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/74"
+        }
+      }
+    },
+    {
+      "id": 75,
+      "identificationNumber": "P7003102F",
+      "name": "Patronato de la Escuela de Música Juan Bautista Gisasola de Eibar",
+      "scope": "GIPUZKOA",
+      "address": "Bista Eder, 10. 20600 Eibar (Gipuzkoa)",
+      "webPage": "http://www.eibar.net",
+      "publicationDate": "2019-10-04",
+      "mainActivity": "Ocio, cultura y religión",
+      "codNUTS": "ES212",
+      "entities": [
+        {
+          "id": 420,
+          "name": "Patronato de la Escuela de Música Juan Bautista Gisasola de Eibar",
+          "orgs": [
+            {
+              "id": 911404,
+              "name": "Junta de Gobierno",
+              "_links": {
+                "self": {
+                  "name": "Junta de Gobierno",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/75/entities/420/orgs/911404"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Patronato de la Escuela de Música Juan Bautista Gisasola de Eibar",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/75/entities/420"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder75/es_doc/es_arch_poder75.html",
+      "_links": {
+        "self": {
+          "name": "Patronato de la Escuela de Música Juan Bautista Gisasola de Eibar",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/75"
+        }
+      }
+    },
+    {
+      "id": 88,
+      "identificationNumber": "P2006800C",
+      "name": "Ayuntamiento de Oiartzun",
+      "scope": "GIPUZKOA",
+      "address": "Plaza Done Eztebe, 1. 20180 Oiartzun (Gipuzkoa)",
+      "webPage": "http://www.oiartzun.org",
+      "publicationDate": "2019-10-04",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES212",
+      "entities": [
+        {
+          "id": 436,
+          "name": "Ayuntamiento de Oiartzun",
+          "orgs": [
+            {
+              "id": 911444,
+              "name": "Pleno",
+              "_links": {
+                "self": {
+                  "name": "Pleno",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/88/entities/436/orgs/911444"
+                }
+              }
+            },
+            {
+              "id": 911443,
+              "name": "Alcalde",
+              "_links": {
+                "self": {
+                  "name": "Alcalde",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/88/entities/436/orgs/911443"
+                }
+              }
+            },
+            {
+              "id": 911445,
+              "name": "Junta de Gobierno Local",
+              "_links": {
+                "self": {
+                  "name": "Junta de Gobierno Local",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/88/entities/436/orgs/911445"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Ayuntamiento de Oiartzun",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/88/entities/436"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder88/es_doc/es_arch_poder88.html",
+      "_links": {
+        "self": {
+          "name": "Ayuntamiento de Oiartzun",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/88"
+        }
+      }
+    },
+    {
+      "id": 89,
+      "identificationNumber": "P2006900A",
+      "name": "Ayuntamiento de Pasaia",
+      "scope": "GIPUZKOA",
+      "address": "San Juan, 19. 20110 Pasaia (Gipuzkoa)",
+      "webPage": "http://www.pasaia.eus",
+      "publicationDate": "2019-10-04",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES212",
+      "entities": [
+        {
+          "id": 437,
+          "name": "Ayuntamiento de Pasaia",
+          "orgs": [
+            {
+              "id": 911470,
+              "name": "Alcalde",
+              "_links": {
+                "self": {
+                  "name": "Alcalde",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/89/entities/437/orgs/911470"
+                }
+              }
+            },
+            {
+              "id": 911472,
+              "name": "Junta de Gobierno",
+              "_links": {
+                "self": {
+                  "name": "Junta de Gobierno",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/89/entities/437/orgs/911472"
+                }
+              }
+            },
+            {
+              "id": 911471,
+              "name": "Pleno",
+              "_links": {
+                "self": {
+                  "name": "Pleno",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/89/entities/437/orgs/911471"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Ayuntamiento de Pasaia",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/89/entities/437"
+            }
+          }
+        },
+        {
+          "id": 438,
+          "name": "Fundación Pública Residencia Municipal de ancianos de Pasaia",
+          "orgs": [
+            {
+              "id": 911448,
+              "name": "Junta Rectora",
+              "_links": {
+                "self": {
+                  "name": "Junta Rectora",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/89/entities/438/orgs/911448"
+                }
+              }
+            },
+            {
+              "id": 911449,
+              "name": "Presidente de la Junta Rectora",
+              "_links": {
+                "self": {
+                  "name": "Presidente de la Junta Rectora",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/89/entities/438/orgs/911449"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Fundación Pública Residencia Municipal de ancianos de Pasaia",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/89/entities/438"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder89/es_doc/es_arch_poder89.html",
+      "_links": {
+        "self": {
+          "name": "Ayuntamiento de Pasaia",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/89"
+        }
+      }
+    },
+    {
+      "id": 92,
+      "identificationNumber": "P2007000I",
+      "name": "Ayuntamiento de Soraluze",
+      "scope": "GIPUZKOA",
+      "address": "Santa Ana, 1. 20590 Soraluze (Gipuzkoa)",
+      "webPage": "http://www.soraluze.eus",
+      "publicationDate": "2019-10-04",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES212",
+      "entities": [
+        {
+          "id": 442,
+          "name": "Ayuntamiento de Soraluze",
+          "orgs": [
+            {
+              "id": 911459,
+              "name": "Alcalde",
+              "_links": {
+                "self": {
+                  "name": "Alcalde",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/92/entities/442/orgs/911459"
+                }
+              }
+            },
+            {
+              "id": 911461,
+              "name": "Pleno",
+              "_links": {
+                "self": {
+                  "name": "Pleno",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/92/entities/442/orgs/911461"
+                }
+              }
+            },
+            {
+              "id": 911460,
+              "name": "Comisión de Gobierno",
+              "_links": {
+                "self": {
+                  "name": "Comisión de Gobierno",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/92/entities/442/orgs/911460"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Ayuntamiento de Soraluze",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/92/entities/442"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder92/es_doc/es_arch_poder92.html",
+      "_links": {
+        "self": {
+          "name": "Ayuntamiento de Soraluze",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/92"
+        }
+      }
+    },
+    {
+      "id": 100,
+      "identificationNumber": "P2005700F",
+      "name": "Ayuntamiento de Lezo",
+      "scope": "GIPUZKOA",
+      "address": "Gurutze Santuaren plaza, 1. 20100 Lezo (Gipuzkoa)",
+      "webPage": "http://www.lezo.eus",
+      "publicationDate": "2019-10-04",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES212",
+      "entities": [
+        {
+          "id": 451,
+          "name": "Ayuntamiento de Lezo",
+          "orgs": [
+            {
+              "id": 911481,
+              "name": "Junta de gobierno local",
+              "_links": {
+                "self": {
+                  "name": "Junta de gobierno local",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/100/entities/451/orgs/911481"
+                }
+              }
+            },
+            {
+              "id": 911480,
+              "name": "Pleno",
+              "_links": {
+                "self": {
+                  "name": "Pleno",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/100/entities/451/orgs/911480"
+                }
+              }
+            },
+            {
+              "id": 911484,
+              "name": "Concejal delegada de urbanismo, medio ambiente, obras y servicios",
+              "_links": {
+                "self": {
+                  "name": "Concejal delegada de urbanismo, medio ambiente, obras y servicios",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/100/entities/451/orgs/911484"
+                }
+              }
+            },
+            {
+              "id": 911482,
+              "name": "Alcalde",
+              "_links": {
+                "self": {
+                  "name": "Alcalde",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/100/entities/451/orgs/911482"
+                }
+              }
+            },
+            {
+              "id": 911483,
+              "name": "Concejal delegada de servicios sociales",
+              "_links": {
+                "self": {
+                  "name": "Concejal delegada de servicios sociales",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/100/entities/451/orgs/911483"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Ayuntamiento de Lezo",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/100/entities/451"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder100/es_doc/es_arch_poder100.html",
+      "_links": {
+        "self": {
+          "name": "Ayuntamiento de Lezo",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/100"
+        }
+      }
+    },
+    {
+      "id": 106,
+      "identificationNumber": "A20361630",
+      "name": "Badesa, S.A.",
+      "scope": "GIPUZKOA",
+      "address": "Egigurentarren, 2 bajo. 20600 Eibar (Gipuzkoa)",
+      "webPage": "http://www.badesa.eus",
+      "publicationDate": "2019-10-04",
+      "mainActivity": "Medio ambiente",
+      "codNUTS": "ES212",
+      "CPV": [
+        {
+          "name": "Servicios de alcantarillado, basura, limpieza y medio ambiente"
+        },
+        {
+          "name": "Servicios de apoyo a los poderes públicos"
+        },
+        {
+          "name": "Servicios públicos"
+        }
+      ],
+      "entities": [
+        {
+          "id": 457,
+          "name": "Badesa, S.A.",
+          "orgs": [
+            {
+              "id": 911497,
+              "name": "Junta General",
+              "_links": {
+                "self": {
+                  "name": "Junta General",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/106/entities/457/orgs/911497"
+                }
+              }
+            },
+            {
+              "id": 911496,
+              "name": "Consejo de Administración",
+              "_links": {
+                "self": {
+                  "name": "Consejo de Administración",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/106/entities/457/orgs/911496"
+                }
+              }
+            },
+            {
+              "id": 911495,
+              "name": "Presidente",
+              "_links": {
+                "self": {
+                  "name": "Presidente",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/106/entities/457/orgs/911495"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Badesa, S.A.",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/106/entities/457"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder106/es_doc/es_arch_poder106.html",
+      "_links": {
+        "self": {
+          "name": "Badesa, S.A.",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/106"
+        },
+        "contractingAuthorities": [
+          {
+            "name": "Mancomunidad Comarcal de Debabarrena",
+            "href": "https://api.euskadi.eus/procurements/contracting-authorities/17395"
+          }
+        ]
+      }
+    }
+  ]
+}

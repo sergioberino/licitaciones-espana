@@ -1,0 +1,518 @@
+{
+  "totalItems": 919,
+  "totalPages": 92,
+  "currentPage": 78,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "id": 107,
+      "identificationNumber": "Q4800743I",
+      "name": "Autoridad Vasca de la Competencia",
+      "scope": "CAPV",
+      "address": "Ercilla 4 2º. 48009 Bilbao (Bizkaia)",
+      "webPage": "http://www.competencia.euskadi.net",
+      "publicationDate": "2019-10-02",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES21",
+      "entities": [
+        {
+          "id": 458,
+          "name": "Autoridad Vasca de la Competencia ",
+          "orgs": [
+            {
+              "id": 911498,
+              "name": "Presidente",
+              "_links": {
+                "self": {
+                  "name": "Presidente",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/107/entities/458/orgs/911498"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Autoridad Vasca de la Competencia ",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/107/entities/458"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder107/es_doc/es_arch_poder107.html",
+      "_links": {
+        "self": {
+          "name": "Autoridad Vasca de la Competencia",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/107"
+        }
+      }
+    },
+    {
+      "id": 114,
+      "identificationNumber": "P2001400G",
+      "name": "Ayuntamiento de Aretxabaleta",
+      "scope": "GIPUZKOA",
+      "address": "Otalora, 1. 20550 Aretxabaleta (Gipuzkoa)",
+      "webPage": "http://www.aretxabaleta.eus",
+      "publicationDate": "2019-10-02",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES212",
+      "entities": [
+        {
+          "id": 466,
+          "name": "Ayuntamiento de Aretxabaleta",
+          "orgs": [
+            {
+              "id": 912161,
+              "name": "Alcalde",
+              "_links": {
+                "self": {
+                  "name": "Alcalde",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/114/entities/466/orgs/912161"
+                }
+              }
+            },
+            {
+              "id": 911514,
+              "name": "Junta de Gobierno Local",
+              "_links": {
+                "self": {
+                  "name": "Junta de Gobierno Local",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/114/entities/466/orgs/911514"
+                }
+              }
+            },
+            {
+              "id": 911513,
+              "name": "Pleno",
+              "_links": {
+                "self": {
+                  "name": "Pleno",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/114/entities/466/orgs/911513"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Ayuntamiento de Aretxabaleta",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/114/entities/466"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder114/es_doc/es_arch_poder114.html",
+      "_links": {
+        "self": {
+          "name": "Ayuntamiento de Aretxabaleta",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/114"
+        }
+      }
+    },
+    {
+      "id": 122,
+      "identificationNumber": "P0100385D",
+      "name": "Consorcio Haurreskolak",
+      "scope": "BIZKAIA",
+      "address": "Otaola hiribidea 29, Jaizkibel eraikina 1. 20600 Eibar",
+      "webPage": "http://www.haurreskolak.eus",
+      "publicationDate": "2019-10-02",
+      "mainActivity": "Educación",
+      "codNUTS": "ES213",
+      "entities": [
+        {
+          "id": 474,
+          "name": "Consorcio Haurreskolak",
+          "orgs": [
+            {
+              "id": 911545,
+              "name": "Comité Directivo ",
+              "_links": {
+                "self": {
+                  "name": "Comité Directivo ",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/122/entities/474/orgs/911545"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Consorcio Haurreskolak",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/122/entities/474"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder122/es_doc/es_arch_poder122.html",
+      "_links": {
+        "self": {
+          "name": "Consorcio Haurreskolak",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/122"
+        }
+      }
+    },
+    {
+      "id": 123,
+      "identificationNumber": "P2005900B",
+      "name": "Ayuntamiento de Arrasate/Mondragón",
+      "scope": "GIPUZKOA",
+      "address": "Herriko plaza, 1. 20500 Arrasate/Mondragón (Gipuzkoa)",
+      "webPage": "http://www.arrasate.eus",
+      "publicationDate": "2019-10-02",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES212",
+      "entities": [
+        {
+          "id": 475,
+          "name": "Ayuntamiento de Arrasate/Mondragón",
+          "orgs": [
+            {
+              "id": 911547,
+              "name": "Pleno",
+              "_links": {
+                "self": {
+                  "name": "Pleno",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/123/entities/475/orgs/911547"
+                }
+              }
+            },
+            {
+              "id": 911546,
+              "name": "Alcaldesa",
+              "_links": {
+                "self": {
+                  "name": "Alcaldesa",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/123/entities/475/orgs/911546"
+                }
+              }
+            },
+            {
+              "id": 911548,
+              "name": "Junta de Gobierno Local",
+              "_links": {
+                "self": {
+                  "name": "Junta de Gobierno Local",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/123/entities/475/orgs/911548"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Ayuntamiento de Arrasate/Mondragón",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/123/entities/475"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder123/es_doc/es_arch_poder123.html",
+      "_links": {
+        "self": {
+          "name": "Ayuntamiento de Arrasate/Mondragón",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/123"
+        }
+      }
+    },
+    {
+      "id": 130,
+      "identificationNumber": "A95671244",
+      "name": "Biscay marine energy platform, S.A.",
+      "scope": "CAPV",
+      "address": "Alameda Urquijo 36, 1 planta. 48011 Bilbao (Bizkaia)",
+      "webPage": "http://www.eve.eus",
+      "publicationDate": "2019-10-02",
+      "mainActivity": "Asuntos económicos y financieros",
+      "codNUTS": "ES21",
+      "entities": [
+        {
+          "id": 482,
+          "name": "Biscay marine energy platform, S.A.",
+          "orgs": [
+            {
+              "id": 911558,
+              "name": "Presidente (hasta 50.000¿)",
+              "_links": {
+                "self": {
+                  "name": "Presidente (hasta 50.000¿)",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/130/entities/482/orgs/911558"
+                }
+              }
+            },
+            {
+              "id": 911561,
+              "name": "Consejo Administración",
+              "_links": {
+                "self": {
+                  "name": "Consejo Administración",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/130/entities/482/orgs/911561"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Biscay marine energy platform, S.A.",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/130/entities/482"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder130/es_doc/es_arch_poder130.html",
+      "_links": {
+        "self": {
+          "name": "Biscay marine energy platform, S.A.",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/130"
+        }
+      }
+    },
+    {
+      "id": 138,
+      "identificationNumber": "A20210423",
+      "name": "Ciudad Deportiva Anoeta, S.A.",
+      "scope": "GIPUZKOA",
+      "address": "Paseo de Anoeta, 18. 20014 Donostia-San Sebastián (Gipuzkoa)",
+      "webPage": "http://www.donostiakirola.eus",
+      "publicationDate": "2019-10-02",
+      "mainActivity": "Ocio, cultura y religión",
+      "codNUTS": "ES212",
+      "entities": [
+        {
+          "id": 506,
+          "name": "Anoeta Kiroldegia",
+          "orgs": [
+            {
+              "id": 911592,
+              "name": "Consejo de Administración",
+              "_links": {
+                "self": {
+                  "name": "Consejo de Administración",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/138/entities/506/orgs/911592"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Anoeta Kiroldegia",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/138/entities/506"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder138/es_doc/es_arch_poder138.html",
+      "_links": {
+        "self": {
+          "name": "Ciudad Deportiva Anoeta, S.A.",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/138"
+        }
+      }
+    },
+    {
+      "id": 144,
+      "identificationNumber": "A95135984",
+      "name": "Bilbao Exhibition Centre, S.A.",
+      "scope": "CAPV",
+      "address": "Ronda Azkue, 1. 48902 Barakaldo (Bizkaia)",
+      "webPage": "http://bilbaoexhibitioncentre.com/",
+      "publicationDate": "2019-10-02",
+      "mainActivity": "Asuntos económicos y financieros",
+      "codNUTS": "ES21",
+      "entities": [
+        {
+          "id": 531,
+          "name": "Bilbao Exhibition Centre, S.A.",
+          "orgs": [
+            {
+              "id": 911677,
+              "name": "Director General",
+              "_links": {
+                "self": {
+                  "name": "Director General",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/144/entities/531/orgs/911677"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Bilbao Exhibition Centre, S.A.",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/144/entities/531"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder144/es_doc/es_arch_poder144.html",
+      "_links": {
+        "self": {
+          "name": "Bilbao Exhibition Centre, S.A.",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/144"
+        }
+      }
+    },
+    {
+      "id": 174,
+      "identificationNumber": "P2003000C",
+      "name": "Ayuntamiento de Deba",
+      "scope": "GIPUZKOA",
+      "address": "Portu Kalea, 1. 20820 Deba (Gipuzkoa)",
+      "webPage": "http://www.deba.eus",
+      "publicationDate": "2019-10-02",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES212",
+      "entities": [
+        {
+          "id": 603,
+          "name": "Ayuntamiento de Deba",
+          "orgs": [
+            {
+              "id": 911892,
+              "name": "Alcalde",
+              "_links": {
+                "self": {
+                  "name": "Alcalde",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/174/entities/603/orgs/911892"
+                }
+              }
+            },
+            {
+              "id": 911894,
+              "name": "Pleno",
+              "_links": {
+                "self": {
+                  "name": "Pleno",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/174/entities/603/orgs/911894"
+                }
+              }
+            },
+            {
+              "id": 911893,
+              "name": "Junta de Gobierno Local",
+              "_links": {
+                "self": {
+                  "name": "Junta de Gobierno Local",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/174/entities/603/orgs/911893"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Ayuntamiento de Deba",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/174/entities/603"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder174/es_doc/es_arch_poder174.html",
+      "_links": {
+        "self": {
+          "name": "Ayuntamiento de Deba",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/174"
+        }
+      }
+    },
+    {
+      "id": 189,
+      "identificationNumber": "A20839833",
+      "name": "Asteasu Lantzen, S.A.",
+      "scope": "GIPUZKOA",
+      "address": "Lege Zaharren enparantza, z/g. 20159 Asteasu (Gipuzkoa) ",
+      "webPage": "http://www.asteasu.eus",
+      "publicationDate": "2019-10-02",
+      "mainActivity": "Protección social",
+      "codNUTS": "ES212",
+      "entities": [
+        {
+          "id": 619,
+          "name": "Asteasu Lantzen, S.A. ",
+          "orgs": [
+            {
+              "id": 911930,
+              "name": "Consejo de administración",
+              "_links": {
+                "self": {
+                  "name": "Consejo de administración",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/189/entities/619/orgs/911930"
+                }
+              }
+            },
+            {
+              "id": 911931,
+              "name": "Consejera delegada",
+              "_links": {
+                "self": {
+                  "name": "Consejera delegada",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/189/entities/619/orgs/911931"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Asteasu Lantzen, S.A. ",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/189/entities/619"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder189/es_doc/es_arch_poder189.html",
+      "_links": {
+        "self": {
+          "name": "Asteasu Lantzen, S.A.",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/189"
+        }
+      }
+    },
+    {
+      "id": 204,
+      "identificationNumber": "P2001200A",
+      "name": "Ayuntamiento de Antzuola",
+      "scope": "GIPUZKOA",
+      "address": "Plaza de Herriko, 8. 20577 Antzuola (Gipuzkoa) ",
+      "webPage": "http://www.antzuola.com",
+      "publicationDate": "2019-10-02",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES212",
+      "entities": [
+        {
+          "id": 634,
+          "name": "Ayuntamiento de Antzuola",
+          "orgs": [
+            {
+              "id": 911971,
+              "name": "Alcalde",
+              "_links": {
+                "self": {
+                  "name": "Alcalde",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/204/entities/634/orgs/911971"
+                }
+              }
+            },
+            {
+              "id": 911972,
+              "name": "Pleno",
+              "_links": {
+                "self": {
+                  "name": "Pleno",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/204/entities/634/orgs/911972"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Ayuntamiento de Antzuola",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/204/entities/634"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder204/es_doc/es_arch_poder204.html",
+      "_links": {
+        "self": {
+          "name": "Ayuntamiento de Antzuola",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/204"
+        }
+      }
+    }
+  ]
+}

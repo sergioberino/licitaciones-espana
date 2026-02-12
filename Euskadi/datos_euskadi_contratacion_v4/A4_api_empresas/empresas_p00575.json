@@ -1,0 +1,418 @@
+{
+  "totalItems": 9042,
+  "totalPages": 905,
+  "currentPage": 575,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "name": "DOKUZAIN S.L.U.",
+      "registrationNumber": "07008",
+      "identificationNumber": "B71347355",
+      "address": "C/ Encinas de Corella nº4 Bajo A",
+      "location": {
+        "postalCode": "31621",
+        "municipality": "Valle de Egüés/Eguesibar",
+        "county": "Navarra",
+        "municipalityId": "086",
+        "countyId": "31"
+      },
+      "economicActivities": [
+        {
+          "id": "1.691.9",
+          "name": "Reparación de otros bienes de consumo n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Reparación de otros bienes de consumo n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.691.9"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2020-05-15",
+      "certificateEndDate": "2020-10-27",
+      "object": "LA REALIZACIÓN DE TODA CLASE DE SERVICIOS DE RESTAURACIÓN DEL PATRIMONIO HISTÓRICO- ARTÍSTICO Y BIBLIOGRÁFICO: OBRAS DE ARTE, RESTAURACIÓN DE DOCUMENTOS GRÁFICOS (IMPRESOS O MANUSCRITOS), GRABADOS, DIBUJOS, CARTELES, MAPAS, FOTOGRAFÍAS, ABANICOS, DOCUMENTOS EN PERGAMINO, LIBROS, PIEL, CUERO Y TEXTIL. ENCUADERNACIÓN Y RESTAURACIÓN DE ENCUADERNACIONES. SERVICIOS DE CONSERVACIÓN DE FONDOS Y COLECCIONES EN ARCHIVOS, BIBLIOTECAS Y MUSEOS, LIMPIEZA, CONTROL Y MANTENIMIENTO DE COLECCIONES, SERVICIOS DE CATALOGACIÓN Y DESCRIPCIÓN DE FONDOS, GESTIÓN DOCUMENTAL. MONTAJE, DESMONTAJE Y CONTROLES DE CONSERVACIÓN DE EXPOSICIONES, ENMARCADOS, ASÍ COMO LA COMPRA Y VENTA DE BIENES RELACIONADOS CON EL SECTOR Y ASESORAMIENTO A ENTIDADES PARA LA CONSERVACIÓN DE COLECCIONES",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07008",
+      "_links": {
+        "self": {
+          "name": "DOKUZAIN S.L.U.",
+          "href": "https://api.euskadi.eus/procurements/companies/07008"
+        }
+      }
+    },
+    {
+      "name": "LOGHOSPITAL S.L",
+      "registrationNumber": "05534",
+      "identificationNumber": "B95547196",
+      "address": "GASTEIZBIDEA 63 PABELLON 10",
+      "location": {
+        "postalCode": "01240",
+        "municipality": "Alegría-Dulantzi",
+        "county": "Araba/Álava",
+        "municipalityId": "001",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.468.1",
+          "name": "Fabricación de mobiliario de madera para el hogar",
+          "_links": {
+            "self": {
+              "name": "Fabricación de mobiliario de madera para el hogar",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.468.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2020-05-14",
+      "certificateEndDate": "2020-11-11",
+      "object": "LA DISTRIBUCIÓN Y COMERCIALIZACIÓN DE MATERIAL EN CENTROS MÉDICOS. LA FORMACIÓN DEL PERSONAL SANITARIO EN UTILIZACIÓN, MANEJO Y APLICACIÓN DE LOS PRODUCTOS DISTRIBUIDOS Y COMERCIALIZADOS MEDIANTE TÉCNICAS DE DEMOSTRACIÓN, PRESENTACIONES TEÓRICAS Y ESTUDIOS CLÍNICOS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/05534",
+      "_links": {
+        "self": {
+          "name": "LOGHOSPITAL S.L",
+          "href": "https://api.euskadi.eus/procurements/companies/05534"
+        }
+      }
+    },
+    {
+      "name": "ASIER EPELDE SARASOLA",
+      "registrationNumber": "06995",
+      "identificationNumber": "78904800B",
+      "address": "iturribide 103, 4b",
+      "location": {
+        "postalCode": "48006",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.504.11",
+          "name": "Instalaciones eléctricas en general, redes telegráficas, telefonía, tv, etc",
+          "_links": {
+            "self": {
+              "name": "Instalaciones eléctricas en general, redes telegráficas, telefonía, tv, etc",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.504.11"
+            }
+          }
+        },
+        {
+          "id": "2.899",
+          "name": "Otros profesionales",
+          "_links": {
+            "self": {
+              "name": "Otros profesionales",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/2.899"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2020-05-14",
+      "certificateEndDate": "2020-10-17",
+      "object": "INSTALACIONES ELÉCTRICAS EN GENERAL, REDES TELEGRÁFICAS, TELEFONÍA, TV, ETC. OTROS PROFESIONALES",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06995",
+      "_links": {
+        "self": {
+          "name": "ASIER EPELDE SARASOLA",
+          "href": "https://api.euskadi.eus/procurements/companies/06995"
+        }
+      }
+    },
+    {
+      "name": "HILL-ROM IBERIA, S.L.",
+      "registrationNumber": "06996",
+      "identificationNumber": "B62552732",
+      "address": "Pza Europa, 9-11 Torre INBISA planta 17",
+      "location": {
+        "postalCode": "08908",
+        "municipality": "Hospitalet de Llobregat, L'",
+        "county": "Barcelona",
+        "municipalityId": "101",
+        "countyId": "08"
+      },
+      "economicActivities": [
+        {
+          "id": "1.619.2",
+          "name": "Venta al por mayor de aparatos e instrumentos médicos, ortopédicos, ópticos",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de aparatos e instrumentos médicos, ortopédicos, ópticos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.619.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2020-05-14",
+      "certificateEndDate": "2020-11-08",
+      "object": "A) LA PROMOCIÓN COMERCIALIZACIÓN INCLUIDA IMPORTACIÓN Y EXPORTACIÓN, ALQUILER, INSTALACIÓN, MONTAJE, MANTENIMIENTO Y REPARACIÓN DE TODO TIPO DE APARATOS, MÁQUINAS, MOBILIARIO, EQUIPOS, PLANTAS HOSPITALARIAS, INSTRUMENTOS Y ACCESORIOS ELECTROMÉDICOS Y DE ARQUITECTURA HOSPITALARIA, PARA LOS SECTORES DE LA SALUD Y LA GERIATRÍA, INCLUYENDO CLÍNICAS U HOSPITALES PÚBLICOS Y PRIVADOS, PARTICULARES, RESIDENCIAS GERIÁTRICAS, LABORATORIOS E INDUSTRIAS RELACIONADAS CON LOS SECTORES MENCIONADOS. LA PRODUCCIÓN ENSAMBLAJE Y ADAPTACIÓN DE SOFTWARE Y COMPONENTES PARA LA ADAPTACIÓN DE DICHOS PRODUCTOS A REQUISITOS E IDIOMAS LOCALES. LA DISTRIBUCIÓN, PROMOCIÓN, COMERCIALIZACIÓN INCLUIDA IMPORTACIÓN Y EXPORTACIÓN, ALQUILER, INSTALACIÓN, MONTAJE, MANTENIMIENTO Y REPARACIÓN DE PRODUCTOS Y COMPLEMENTOS DE TERCERAS COMPAÑÍAS. B) LA ADQUISICIÓN, TENENCIA, GESTIÓN Y ADMINISTRACIÓN DE VALORES REPRESENTATIVOS DE LOS FONDOS PROPIOS DE ENTIDADES RESIDENTES Y NO RESIDENTES EN TERRITORIO ESPAÑOL. TODO ELLO DE CONFORMIDAD CON LO PREVISTO EN EL ARTÍCULO 129 Y SIGUIENTES DE LA LEY 43/1995 DE 27 DE DICIEMBRE DEL IMPUESTO SOBRE SOCIEDADES Y LAS DISPOSICIONES QUE LA DESARROLLEN. EN CUALQUIER CASO QUEDAN EXPRESAMENTE EXCLUIDAS AQUELLAS ACTIVIDADES QUE SEAN INCOMPATIBLES CON LA CONDICIÓN DE LA COMPAÑÍA DE ENTIDAD DE TENENCIA DE VALORES EXTRANJEROS, DE CONFORMIDAD CON LO ESTABLECIDO EN EL ARTÍCULO 129 DE LA LEY 43/1995 DE 27 DE DICIEMBRE DEL IMPUESTO SOBRE SOCIEDADES Y LAS DISPOSICIONES QUE LA DESARROLLEN O AQUELLAS ACTIVIDADES PARA CUYO EJERCICIO LA LEY EXIJA REQUISITOS ESPECIALES QUE NO QUEDEN CUMPLIDOS POR ESTA SOCIEDAD Y EN ESPECIAL LAS RELATIVAS A LAS INSTITUCIONES DE INVERSIÓN COLECTIVA Y LAS RECOGIDAS EN LA LEY DEL MERCADO DE VALORES",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06996",
+      "_links": {
+        "self": {
+          "name": "HILL-ROM IBERIA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/06996"
+        }
+      }
+    },
+    {
+      "name": "IÑAKI JAUREGUIZAR ESCURZA-ZIORTZA VESGA MARTÍN S.C.",
+      "registrationNumber": "06992",
+      "identificationNumber": "J95812145",
+      "address": "ERRONDOKO KALEA S/N",
+      "location": {
+        "postalCode": "48015",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.934",
+          "name": "Enseñanza fuera de establecimiento permanente",
+          "_links": {
+            "self": {
+              "name": "Enseñanza fuera de establecimiento permanente",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.934"
+            }
+          }
+        },
+        {
+          "id": "1.966.9",
+          "name": "Otros servicios culturales n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros servicios culturales n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.966.9"
+            }
+          }
+        },
+        {
+          "id": "1.989.2",
+          "name": "Servicios de organización de congresos, asambleas y similares",
+          "_links": {
+            "self": {
+              "name": "Servicios de organización de congresos, asambleas y similares",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.989.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2020-05-12",
+      "certificateEndDate": "2020-11-11",
+      "object": "LA ORGANIZACIÓN Y PROMOCIÓN DE ACTIVIDADES DEPORTIVAS, RECREATIVAS Y DE ENTRETENIMIENTO",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06992",
+      "_links": {
+        "self": {
+          "name": "IÑAKI JAUREGUIZAR ESCURZA-ZIORTZA VESGA MARTÍN S.C.",
+          "href": "https://api.euskadi.eus/procurements/companies/06992"
+        }
+      }
+    },
+    {
+      "name": "KOMABERRI BI,S.L.",
+      "registrationNumber": "06993",
+      "identificationNumber": "B20920187",
+      "address": "ITURRIOTZ,35 BAJO",
+      "location": {
+        "postalCode": "20500",
+        "municipality": "Arrasate / Mondragón",
+        "county": "Gipuzkoa",
+        "municipalityId": "055",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.932.2",
+          "name": "Enseñanza de formación y perfeccionamiento profesional superior",
+          "_links": {
+            "self": {
+              "name": "Enseñanza de formación y perfeccionamiento profesional superior",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.932.2"
+            }
+          }
+        },
+        {
+          "id": "1.933.9",
+          "name": "Otras actividades de enseñanza tales como idiomas, mecanografía",
+          "_links": {
+            "self": {
+              "name": "Otras actividades de enseñanza tales como idiomas, mecanografía",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.933.9"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2020-05-12",
+      "certificateEndDate": "2020-10-17",
+      "object": "LA INVESTIGACIÓN, DESARROLLO E INNOVACIÓN EN TECNOLOGÍAS RELACIONADAS CON LA ENSEÑANZA DE IDIOMAS, SERVICIOS DE TRADUCCIÓN, SERVICIO DE INTÉRPRETES, AUDITORÍA LINGÜÍSTICA Y OTROS SERVICIOS LINGUÏSTICOS A INSTITUCIONES, EMPRESAS Y PARTICULARES. LA FORMACIÓN Y ENSEÑANZA DE DIFERENTES MATERIAS COMO INFORMÁTICA, SANIDAD, NUEVAS TECNOLOGÍAS, AUDITORÍAS Y SISTEMAS DE CALIDAD.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06993",
+      "_links": {
+        "self": {
+          "name": "KOMABERRI BI,S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/06993"
+        }
+      }
+    },
+    {
+      "name": "VIVEROS DEL TIRON SL",
+      "registrationNumber": "06987",
+      "identificationNumber": "B26381178",
+      "address": "Barrio Velascon s/n",
+      "location": {
+        "postalCode": "26213",
+        "municipality": "Herramélluri",
+        "county": "Rioja, La",
+        "municipalityId": "073",
+        "countyId": "26"
+      },
+      "economicActivities": [
+        {
+          "id": "1.619.9",
+          "name": "Venta al por mayor de otros productos n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de otros productos n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.619.9"
+            }
+          }
+        },
+        {
+          "id": "1.659.7",
+          "name": "Venta al por menor de semillas, abonos, flores, plantas y pequeños animales",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de semillas, abonos, flores, plantas y pequeños animales",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.659.7"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2020-05-11",
+      "certificateEndDate": "2020-10-27",
+      "object": "-LA PRODUCCIÓN AGRÍCOLA DE PLANTAS, HORTALIZAS Y FRUTALES EN VIVERO.-IMPORTACIÓN Y EXPORTACIÓN DE TODO TIPO DE SEMILLAS, FLORES, PLANTAS, ABONOS, FERTILIZANTES Y PRODUCTOS FITOSANITARIOS.-COMERCIO AL POR MAYOR Y MENOR DE TODO TIPO DE SEMILLAS, FLORES, PLANTAS, ABONOS, FERTILIZANTES Y PRODUCTOS FITOSANITARIOS.-CONTRATACIÓN Y SUBCONTRATACIÓN CON OTRAS EMPRESAS PARA LA REALIZACIÓN DE LOS TRABAJOS A LOS QUE SE REFIEREN LOS PUNTOS ANTERIORES DEL OBJETO SOCIAL. - LA PARTICIPACIÓN O COLABORACIÓN CON OTRAS SOCIEDADES DE IDÉNTICO O ANÁLOGO OBJETO, PARA EL DESARROLLO PROPIO DEL OBJETO SOCIAL DE LA SOCIEDAD, MEDIANTE LA SUSCRIPCIÓN DE ACCIONES O PARTICIPACIONES EN LA FUNDACIÓN O AUMENTO DE CAPITAL DE LAS MISMAS, O SU ADQUISICIÓN POR CUALQUIER TÍTULO. -TODOS LOS SERVICIOS INCLUÍDOS EN EL OBJETO SOCIAL, CUANDO ASÍ FUERA NECESARIO, SERÓN PRESTADOS POR PERSONAS CON LA TITULACIÓN NECESARIA Y SUFICIENTE PARA ELLO",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06987",
+      "_links": {
+        "self": {
+          "name": "VIVEROS DEL TIRON SL",
+          "href": "https://api.euskadi.eus/procurements/companies/06987"
+        }
+      }
+    },
+    {
+      "name": "IGNACIO ZABALETA, S.L.",
+      "registrationNumber": "06989",
+      "identificationNumber": "B20442323",
+      "address": "ETXE ALAI 8 BAJO",
+      "location": {
+        "postalCode": "20730",
+        "municipality": "Azpeitia",
+        "county": "Gipuzkoa",
+        "municipalityId": "018",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.501.1",
+          "name": "Construcción completa, reparación y conservación de edificaciones",
+          "_links": {
+            "self": {
+              "name": "Construcción completa, reparación y conservación de edificaciones",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.1"
+            }
+          }
+        },
+        {
+          "id": "1.501.3",
+          "name": "Albañilería y pequeños trabajos de construcción en general",
+          "_links": {
+            "self": {
+              "name": "Albañilería y pequeños trabajos de construcción en general",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.3"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2020-05-11",
+      "certificateEndDate": "2020-08-21",
+      "object": "LAS ACTIVIDADES QUE SEGUIDAMENTE SE DETALLAN QUE PODRÁN SER REALIZADAS POR LA SOCIEDAD, YA DIRECTAMENTE, YA INDIRECTAMENTE, INCLUSO MEDIANTE SU PARTICIPACIÓN EN OTRAS SOCIEDADES DE OBJETO IDÉNTICO O ANÁLOGO: LA REALIZACIÓN DE TRABAJOS PROPIOS DE LA ALBAÑILERÍA, TRABAJOS DE CONSTRUCCIÓN DE OBRAS PÚBLICAS Y PRIVADAS, INMUEBLES DESTINADOS A VIVIENDAS, O INDUSTRIA",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06989",
+      "_links": {
+        "self": {
+          "name": "IGNACIO ZABALETA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/06989"
+        }
+      }
+    },
+    {
+      "name": "RAQUEL ORTIZ DE ZARATE SARABIA",
+      "registrationNumber": "05793",
+      "identificationNumber": "16292587P",
+      "address": "CL JUNTAS GENERALES 54 BAJO",
+      "location": {
+        "postalCode": "01010",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.671.5",
+          "name": "Restaurante un tenedor",
+          "_links": {
+            "self": {
+              "name": "Restaurante un tenedor",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.671.5"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2020-05-09",
+      "certificateEndDate": "2020-11-06",
+      "object": "ESTABLECIMIENTO DE HOSTELERIA DEDICADA A LA VENTA DE BEBIDAS Y ALIMENTOS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/05793",
+      "_links": {
+        "self": {
+          "name": "RAQUEL ORTIZ DE ZARATE SARABIA",
+          "href": "https://api.euskadi.eus/procurements/companies/05793"
+        }
+      }
+    },
+    {
+      "name": "EUROPEA DISTRIBUCIÓN, COMERCIO Y TRANSPORTE EDICT, S.L.",
+      "registrationNumber": "06985",
+      "identificationNumber": "B80019458",
+      "address": "P.E. Prado del Espino C/ Carpinteros 9",
+      "location": {
+        "postalCode": "28660",
+        "municipality": "Boadilla del Monte",
+        "county": "Madrid",
+        "municipalityId": "022",
+        "countyId": "28"
+      },
+      "economicActivities": [
+        {
+          "id": "1.722",
+          "name": "Transporte de mercancías por carretera",
+          "_links": {
+            "self": {
+              "name": "Transporte de mercancías por carretera",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.722"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2020-05-05",
+      "certificateEndDate": "2020-10-21",
+      "object": "1) EL TRANSPORTE DE TODAS CLASES, NACIONALES E INTERNACIONALES, TIE Y POR CUALQUIER MEDIO POR CARRETERA, FERROCARRIL O AÉREO. 2) LA CUSTODIA Y DEPÓSITO DE TODA CLASE DE BIENES Y LA EXPLOTACIÓN DE ALMACENES GENERALES DE DEPÓSITO POR CUENTA PROPIA O DE TERCEROS. 3) LA AGENCIA DE ADUANAS EN SU MÁS AMPLIO SENTIDO, COMPRENDIÉNDOSE PROPIAS DE LA IMPORTACIÓN O EXPORTACIÓN DE MERCANCÍAS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06985",
+      "_links": {
+        "self": {
+          "name": "EUROPEA DISTRIBUCIÓN, COMERCIO Y TRANSPORTE EDICT, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/06985"
+        }
+      }
+    }
+  ]
+}

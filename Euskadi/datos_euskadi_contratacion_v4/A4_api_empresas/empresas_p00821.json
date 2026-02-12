@@ -1,0 +1,418 @@
+{
+  "totalItems": 9042,
+  "totalPages": 905,
+  "currentPage": 821,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "name": "EUSKO MARITIMA, S.L.",
+      "registrationNumber": "02258",
+      "identificationNumber": "B20686051",
+      "address": "MAURICIO RAVEL, 16 - 3ºA ",
+      "location": {
+        "postalCode": "20000",
+        "municipality": "Errenteria",
+        "county": "Gipuzkoa",
+        "municipalityId": "067",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.752.5",
+          "name": "Servicios de salvamento y recuperación de barcos",
+          "_links": {
+            "self": {
+              "name": "Servicios de salvamento y recuperación de barcos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.752.5"
+            }
+          }
+        },
+        {
+          "id": "1.921.9",
+          "name": "Otros servicios de saneamiento y similares n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros servicios de saneamiento y similares n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.921.9"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2000-05-02",
+      "certificateEndDate": "2000-09-14",
+      "object": "LA TRIPULACION, MANTENIMIENOT Y PRESTACION DE SERVICIOS DE AYUDA Y SALVAMENTO DE TODO TIPO DE EMBARCACIONES, BUQUES Y ARTEFACTOS FLOTANTES; Y LA LIMPIEZA DE PUERTOS Y AGUAS MARINAS  ",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/02258",
+      "_links": {
+        "self": {
+          "name": "EUSKO MARITIMA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/02258"
+        }
+      }
+    },
+    {
+      "name": "NAVIERA PENINSULAR, S.A.",
+      "registrationNumber": "01740",
+      "identificationNumber": "A48058275",
+      "address": "C/ PASEO CAMPO VOLANTÍN, Nº 24.",
+      "location": {
+        "postalCode": "48007",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.502.3",
+          "name": "Consolidación y preparación de terrenos para la realización de obras civiles",
+          "_links": {
+            "self": {
+              "name": "Consolidación y preparación de terrenos para la realización de obras civiles",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.502.3"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2000-04-06",
+      "certificateEndDate": "2000-09-15",
+      "object": "LA EXPLOTACIÓN Y PRESTACIÓN DE SERVICIOS PÚBLICOS Y PRIVADOS DE TRANSPORTE DE CUALQUIER NATURALEZA Y CLASE O DE OTRAS ACTIVIDADES PÚBLICAS Y PRIVADAS O DE CARÁCTER MIXTO EN CUALQUIER FORMA JURÍDICA DE APROVECHAMIENTO, RELACIONADO CON LO ANTERIOR; SERVICIOS PORTUARIOS DE TODAS CLASES; CONSIGNACIÓN Y FLETAMENTO DE BUQUES; EXPLOTACIÓN DE LOS SERVICIOS DE CARGA Y DESCARGA DE BUQUES; CONSTRUCCIÓN Y EJECUCIÓN DE OBRAS PÚBLICAS Y PRIVADAS, DE CUALQUIER NATURALEZA, CON ESPECIAL DEDICACIÓN A DRAGADOS DE RÍAS Y BAHÍAS, DEMOLICIONES, MOVIMIENTOS DE TIERRAS, CONSTRUCCIÓN Y ASENTAMIENTO DE MUELLES; ACTIVIDADES INDUSTRIALES DE MANTENIMIENTO; COMERCIO AL POR MAYOR DE MINERALES",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/01740",
+      "_links": {
+        "self": {
+          "name": "NAVIERA PENINSULAR, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/01740"
+        }
+      }
+    },
+    {
+      "name": "DMBB, S.A.",
+      "registrationNumber": "00167",
+      "identificationNumber": "A08232662",
+      "address": "C/ DIAGONAL, Nº 512",
+      "location": {
+        "postalCode": "08006",
+        "municipality": "Barcelona",
+        "county": "Barcelona",
+        "municipalityId": "019",
+        "countyId": "08"
+      },
+      "economicActivities": [
+        {
+          "id": "1.844",
+          "name": "Servicios de publicidad, relaciones públicas y similares",
+          "_links": {
+            "self": {
+              "name": "Servicios de publicidad, relaciones públicas y similares",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.844"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2000-04-03",
+      "certificateEndDate": "2000-09-03",
+      "object": "AGENCIA DE PUBLICIDAD DE SERVICIOS PLENOS, CREAR, PROYECTAR, EJECUTAR Y DISTRIBUIR CAMPAÑAS PUBLICITARIAS A TRAVÉS DE CUALQUIER MEDIO DE DIFUSIÓN",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/00167",
+      "_links": {
+        "self": {
+          "name": "DMBB, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/00167"
+        }
+      }
+    },
+    {
+      "name": "LIMPIEZAS INDUSTRIALES ALFUS, S.A.",
+      "registrationNumber": "01456",
+      "identificationNumber": "A48152227",
+      "address": "C/ AVENIDA TXOMIN GARAT, Nº 2.",
+      "location": {
+        "postalCode": "48004",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.501.1",
+          "name": "Construcción completa, reparación y conservación de edificaciones",
+          "_links": {
+            "self": {
+              "name": "Construcción completa, reparación y conservación de edificaciones",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.1"
+            }
+          }
+        },
+        {
+          "id": "1.501.3",
+          "name": "Albañilería y pequeños trabajos de construcción en general",
+          "_links": {
+            "self": {
+              "name": "Albañilería y pequeños trabajos de construcción en general",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.3"
+            }
+          }
+        },
+        {
+          "id": "1.921.4",
+          "name": "Servicios de alcantarillado, evacuación y depuración de aguas residuales",
+          "_links": {
+            "self": {
+              "name": "Servicios de alcantarillado, evacuación y depuración de aguas residuales",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.921.4"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2000-04-03",
+      "certificateEndDate": "2000-08-28",
+      "object": "\r\n\r\n1.- LAS LIMPIEZAS INDUSTRIALES.\r\n\r\n2.- CUANTAS OPERACIONES, ACTIVIDADES Y SERVICIOS GUARDEN DIRECTA RELACIÓN CON LA INGENIERÍA DEL MEDIO AMBIENTE Y CON TODO TIPO DE PROCESOS DE RECOGIDA, TRANSPORTE, TRATAMIENTO, ELIMINACIÓN, TRANSFORMACIÓN, RECUPERACIÓN, GESTIÓN Y ALMACENAMIENTO DE TODA CLASE DE RESIDUOS Y SUBPRODUCTOS, ASÍ COMO LA COMERCIALIZACIÓN DE ESTOS ÚLTIMOS.\r\n\r\n3.- REALIZACIÓN DE OBRAS CIVILES RELACIONADAS CON LAS REDES DE SANEAMIENTO Y ALCANTARILLADO.\r\n\r\n4.- INSPECCIÓN, REPARACIÓN Y REHABILITACIÓN DE CANALIZACIONES.\r\n\r\n5.- TRANSPORTE DE MERCANCÍAS.\r\n\r\nLA SOCIEDAD NO DESARROLLARÁ NINGUNA ACTIVIDAD PARA LA QUE LAS LEYES EXIJAN CONDICIONES O LIMITACIONES ESPECÍFICAS, EN TANTO NO SE DE EXACTO CUMPLIMIENTO A LAS MISMAS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/01456",
+      "_links": {
+        "self": {
+          "name": "LIMPIEZAS INDUSTRIALES ALFUS, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/01456"
+        }
+      }
+    },
+    {
+      "name": "COMPAÑÍA ESPAÑOLA DE SERVICIOS PÚBLICOS AUXILIARES, S.A.",
+      "registrationNumber": "02224",
+      "identificationNumber": "A28441079",
+      "address": "C/ HENAO, Nº 20 - ENTREPLANTA",
+      "location": {
+        "postalCode": "48009",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.921.1",
+          "name": "Servicios de limpieza en calles, vías públicas y jardines",
+          "_links": {
+            "self": {
+              "name": "Servicios de limpieza en calles, vías públicas y jardines",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.921.1"
+            }
+          }
+        },
+        {
+          "id": "1.921.2",
+          "name": "Servicios de recogida de basuras y desechos",
+          "_links": {
+            "self": {
+              "name": "Servicios de recogida de basuras y desechos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.921.2"
+            }
+          }
+        },
+        {
+          "id": "1.921.9",
+          "name": "Otros servicios de saneamiento y similares n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros servicios de saneamiento y similares n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.921.9"
+            }
+          }
+        },
+        {
+          "id": "1.922",
+          "name": "Servicios de limpieza",
+          "_links": {
+            "self": {
+              "name": "Servicios de limpieza",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.922"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2000-03-30",
+      "certificateEndDate": "2000-07-31",
+      "object": "LA RECOGIDA, TRANSPORTE, ALMACENAMIENTO, TRATAMIENTO, ELIMINACIÓN, VALORIZACIÓN, RECICLAJE Y COMERCIALIZACIÓN DE TODO TIPO DE RESIDUOS Y SUBPRODUCTOS, ASÍ COMO LA CONSTRUCCIÓN, INSTALACIÓN Y GESTIÓN DE TODA CLASE DE PLANTAS, ESTACIONES DE TRANSFERENCIA Y VERTEDEROS DESTINADOS A FAVORECER EL MEDIO AMBIENTE, EN TODOS LOS ÁMBITOS Y SECTORES Y, EN ESPECIAL, LOS QUE REQUIERAN LA APLICACIÓN DE TECNOLOGÍAS MEDIOAMBIENTALES, QUÍMICAS, TECNOLOGÍAS LIMPIAS, TECNOLOGÍAS DE RECUPERACIÓN, ASÍ COMO TODAS AQUELLAS DESTINADAS A LA REDUCCIÓN, MINIMIZACIÓN Y PREVENCIÓN DE CONTAMINACIÓN. LA EJECUCIÓN DE TODO TIPO DE OBRAS E INSTALACIONES, INCLUSO EN EL DENOMINADO SISTEMA DE \"LLAVE EN MANO\", REFORMAS Y REHABILITACIÓN DE INMUEBLES, ASÍ COMO LA EXPLOTACIÓN Y MANTENIMIENTO SUCESIVO DE LO CONSTRUIDO, EDIFICADO O INSTALADO. LA PRESTACIÓN DE SERVICIOS SANITARIOS Y DE SERVICIOS DE LIMPIEZA E HIGIENIZACIÓN , INCLUSO INDUSTRIAL Y ESPECIALIZADA, PUDIENDO REALIZAR Y EJECUTAR LOS MISMOS POR CUENTA PROPIA O AJENA. EN PARTICULAR, LA PRESTACIÓN DE SERVICIOS DE LIMPIEZA VIARIA, DE COLEGIOS Y EDIFICIOS EN GENERAL, DE ALCANTARILLADO Y POZOS NEGROS, DESRATIZACIÓN, DESINSECTACIÓN Y DESINFECCIÓN EN GENERAL; MANTENIMIENTO Y LIMPIEZA DE REDES Y ESTACIONES DEPURADORAS DE AGUA, TANTO POTABLES COMO RESIDUALES, ASÍ COMO DE PARQUES Y JARDINES. LA CONSERVACIÓN Y MANTENIMIENTO DE TODA CLASE DE BIENES INMUEBLES, EQUIPOS E INSTALACIONES. LA ELABORACIÓN DE INFORMES, ESTUDIOS, PLANES, ANTEPROYECTOS Y PROYECTOS DE CARÁCTER TÉCNICO, ORGANIZATIVO, ECONÓMICO Y SOCIAL, RELATIVOS A CUALQUIERA DE LAS ACTIVIDADES ENUNCIADAS EN LOS APARTADOS ANTERIORES, ASÍ COMO A CUALQUIER TEMA RELACIONADO CON EL MEDIO AMBIENTE. EN PARTICULAR, LA PRESTACIÓN DE SERVICIOS DE ANÁLISIS Y CONSULTORÍA EN RELACIÓN CON EL MEDIO AMBIENTE, TALES COMO ESTUDIOS DE IMPACTO AMBIENTAL, ASEGURAMIENTO DE LA CALIDAD, CONDICIONES DE PRODUCCIÓN, DE ENVASADO Y EMBALAJE, TRANSPORTE, SELECCIÓN DE LABORATORIOS DE ENSAYOS Y CUALESQUIERA OTROS SERVICIOS TÉCNICOS DE ASESORAMIENTO Y CONTROL RELACIONADOS CON TODO LO EXPUESTO ANTERIORMENTE. LA DIRECCIÓN, SUPERVISIÓN Y CONTROL DE LA EJECUCIÓN Y MATENIMIENTO DE TODO TIPO DE OBRAS E INSTALACIONES",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/02224",
+      "_links": {
+        "self": {
+          "name": "COMPAÑÍA ESPAÑOLA DE SERVICIOS PÚBLICOS AUXILIARES, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/02224"
+        }
+      }
+    },
+    {
+      "name": "CIS ESPAÑA, S.A.",
+      "registrationNumber": "00484",
+      "identificationNumber": "A28430817",
+      "address": "C/ MÉNDEZ ÁLVARO, 55",
+      "location": {
+        "postalCode": "28045",
+        "municipality": "Madrid",
+        "county": "Madrid",
+        "municipalityId": "079",
+        "countyId": "28"
+      },
+      "economicActivities": [
+        {
+          "id": "1.652.1",
+          "name": "Farmacias",
+          "_links": {
+            "self": {
+              "name": "Farmacias",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.652.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2000-03-28",
+      "certificateEndDate": "2000-09-06",
+      "object": "LA IMPORTACIÓN, COMERCIALIZACIÓN, DISTRIBUCIÓN DE ISÓTOPOS RADIACTIVOS, PRODUCTOS QUÍMICOS DE CUALQUIER CLASE EN GENERAL E INSTRUMENTACIÓN DE TODO GÉNERO PARA LABORATORIOS, USOS MÉDICOS, CIENTÍFICOS, INDUSTRIALES, INVESTIGACIÓN O ENSEÑANZA",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/00484",
+      "_links": {
+        "self": {
+          "name": "CIS ESPAÑA, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/00484"
+        }
+      }
+    },
+    {
+      "name": "LURKIDE S.T., S.A.L.",
+      "registrationNumber": "02125",
+      "identificationNumber": "A01160738",
+      "address": "C/ FERNÁNDEZ DE LECETA, Nº 8.",
+      "location": {
+        "postalCode": "01008",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.843.4",
+          "name": "Servicios técnicos de topografía",
+          "_links": {
+            "self": {
+              "name": "Servicios técnicos de topografía",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.4"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2000-03-23",
+      "certificateEndDate": "2000-09-13",
+      "object": "LA REALIZACIÓN DE TRABAJOS DE TOPOGRAFÍA, CARTOGRAFÍA, FOTOGRAMETRÍA, ASISTENCIA TÉCNICA EN OBRAS, EXPROPIACIONES Y VALORACIONES Y REALIZACIÓN DE PROYECTOS DE INGENIERÍA",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/02125",
+      "_links": {
+        "self": {
+          "name": "LURKIDE S.T., S.A.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/02125"
+        }
+      }
+    },
+    {
+      "name": "SERVICIOS TÉCNICOS VIALES, S.A.",
+      "registrationNumber": "01135",
+      "identificationNumber": "A48414171",
+      "address": "C/ SAN ROQUE, Nº 5 (ARTXANDA).",
+      "location": {
+        "postalCode": "48150",
+        "municipality": "Sondika",
+        "county": "Bizkaia",
+        "municipalityId": "904",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.502.6",
+          "name": "Perforaciones para alumbramientos de aguas",
+          "_links": {
+            "self": {
+              "name": "Perforaciones para alumbramientos de aguas",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.502.6"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2000-03-20",
+      "certificateEndDate": "2000-09-13",
+      "object": "LA EJECUCIÓN Y CONSTRUCCIÓN DE TODA CLASE DE OBRAS PÚBLICAS Y PRIVADAS, POR CONCURSO, SUBASTA, CONTRATA O EN CUALQUIER OTRA FORMA DE ADJUDICACIÓN, PUDIENDO REALIZAR TODAS LAS OPERACIONES PROPIAS DE DICHO RAMO DE LA CONSTRUCCIÓN. MOVIMIENTO DE TIERRAS, EXCAVACIONES, EXPLANACIONES, VOLADURAS EN ROCA, DERRIBOS, ALQUILER DE MAQUINARIA DE OBRAS PÚBLICAS Y SIMILARES, TRANSPORTE PRIVADO, CONSTRUCCIÓN DE CARRETERAS, URBANIZACIONES Y TODA CLASE DE CONSTRUCCIONES SIMILARES; ASIMISMO INCLUYE, LA REDACCIÓN Y REALIZACIÓN DE PROYECTOS DE OBRAS CIVILES E INDUSTRIALES, ASÍ COMO CUALQUIER OTRA ACTIVIDAD ACCESORIA O COMPLEMENTARIA DEL OBJETO PRINCIPAL O CUALQUIER OTRA LICITACIÓN QUE ACUERDEN LOS SOCIOS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/01135",
+      "_links": {
+        "self": {
+          "name": "SERVICIOS TÉCNICOS VIALES, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/01135"
+        }
+      }
+    },
+    {
+      "name": "B. BRAUN BIOTECH, S.A.",
+      "registrationNumber": "00682",
+      "identificationNumber": "A78617115",
+      "address": "C/ CARRETERA DE TERRASSA, Nº 121.",
+      "location": {
+        "postalCode": "08191",
+        "municipality": "Rubí",
+        "county": "Barcelona",
+        "municipalityId": "184",
+        "countyId": "08"
+      },
+      "economicActivities": [
+        {
+          "id": "1.619.7",
+          "name": "Venta al por mayor de instrumentos de precisión, medida y similares",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de instrumentos de precisión, medida y similares",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.619.7"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2000-03-14",
+      "certificateEndDate": "2000-08-21",
+      "object": "LA IMPORTACIÓN, EXPORTACIÓN, PROMOCIÓN, DISTRIBUCIÓN Y COMERCIALIZACIÓN DE APARATOS, EQUIPOS Y MATERIAL DE USO Y CONTROL BIOLÓGICO, EN HOSPITALES, LABORATORIOS PRIVADOS, A TRAVÉS DEL SECTOR DE ALIMENTACIÓN Y, EN GENERAL, DE CUALQUIER OTRO SECTOR",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/00682",
+      "_links": {
+        "self": {
+          "name": "B. BRAUN BIOTECH, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/00682"
+        }
+      }
+    },
+    {
+      "name": "MARÍA DEL CARMEN ALFARO IRURZUN (LIMPIEZAS LEGARRA)",
+      "registrationNumber": "01627",
+      "identificationNumber": "15530410M",
+      "address": "C/ EUSKALHERRIA, Nº 6 - BAJO 1.",
+      "location": {
+        "postalCode": "20003",
+        "municipality": "Donostia / San Sebastián",
+        "county": "Gipuzkoa",
+        "municipalityId": "069",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.922.1",
+          "name": "Servicios de limpieza de interiores",
+          "_links": {
+            "self": {
+              "name": "Servicios de limpieza de interiores",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.922.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2000-03-13",
+      "certificateEndDate": "2000-09-09",
+      "object": "SERVICIOS LIMPIEZA DE INTERIORES",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/01627",
+      "_links": {
+        "self": {
+          "name": "MARÍA DEL CARMEN ALFARO IRURZUN (LIMPIEZAS LEGARRA)",
+          "href": "https://api.euskadi.eus/procurements/companies/01627"
+        }
+      }
+    }
+  ]
+}

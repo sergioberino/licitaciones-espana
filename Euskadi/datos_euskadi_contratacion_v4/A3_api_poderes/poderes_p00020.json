@@ -1,0 +1,518 @@
+{
+  "totalItems": 919,
+  "totalPages": 92,
+  "currentPage": 20,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "id": 25762,
+      "identificationNumber": "A48448609",
+      "name": "BIOARTIGAS, SA",
+      "scope": "BIZKAIA",
+      "address": "Plaza Ercoreca, nº 7, 48902 - Bilbao",
+      "webPage": "https://www.eve.eus/",
+      "publicationDate": "2022-10-24",
+      "mainActivity": "Medio ambiente",
+      "codNUTS": "ES213",
+      "entities": [
+        {
+          "id": 25763,
+          "name": "BIOARTIGAS, SA",
+          "orgs": [
+            {
+              "id": 25764,
+              "name": "Consejo de Administración",
+              "_links": {
+                "self": {
+                  "name": "Consejo de Administración",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/25762/entities/25763/orgs/25764"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "BIOARTIGAS, SA",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/25762/entities/25763"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder25762/es_doc/index.html",
+      "_links": {
+        "self": {
+          "name": "BIOARTIGAS, SA",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/25762"
+        }
+      }
+    },
+    {
+      "id": 767,
+      "identificationNumber": "G01113141",
+      "name": "Comunidad de la Sierra de Guibijo",
+      "scope": "ARABA/ÁLAVA",
+      "address": "Cuartango 01439 (Araba)",
+      "webPage": "https://www.contratacion.euskadi.eus",
+      "publicationDate": "2022-10-11",
+      "mainActivity": "Medio ambiente",
+      "codNUTS": "ES211",
+      "entities": [
+        {
+          "id": 1266,
+          "name": "Comunidad de la Sierra de Guibijo",
+          "orgs": [
+            {
+              "id": 914290,
+              "name": "Presidencia",
+              "_links": {
+                "self": {
+                  "name": "Presidencia",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/767/entities/1266/orgs/914290"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Comunidad de la Sierra de Guibijo",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/767/entities/1266"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder767/es_doc/index.html",
+      "_links": {
+        "self": {
+          "name": "Comunidad de la Sierra de Guibijo",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/767"
+        }
+      }
+    },
+    {
+      "id": 25539,
+      "identificationNumber": "A48047567",
+      "name": "Mercados Centrales de Abastecimiento de Bilbao S.A.",
+      "scope": "BIZKAIA",
+      "address": "Barrio Ibarreta 1 – 48970 Basauri ",
+      "webPage": "https://www.mercabilbao.eus/",
+      "publicationDate": "2022-10-04",
+      "mainActivity": "Otra actividad",
+      "alternativeActivity": "Centro de distribución de alimentos perecederos del Norte de la Península Ibérica",
+      "codNUTS": "ES213",
+      "entities": [
+        {
+          "id": 25540,
+          "name": "Mercados Centrales de abastecimiento de Bilbao S.A.",
+          "_links": {
+            "self": {
+              "name": "Mercados Centrales de abastecimiento de Bilbao S.A.",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/25539/entities/25540"
+            }
+          }
+        },
+        {
+          "id": 25741,
+          "name": "Mercabilbao – Operaciones e ingeniería",
+          "orgs": [
+            {
+              "id": 25541,
+              "name": "Direccion General, Consejo de Administración",
+              "_links": {
+                "self": {
+                  "name": "Direccion General, Consejo de Administración",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/25539/entities/25741/orgs/25541"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Mercabilbao – Operaciones e ingeniería",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/25539/entities/25741"
+            }
+          }
+        },
+        {
+          "id": 25743,
+          "name": "Mercabilbao – Desarrollo corporativo ",
+          "orgs": [
+            {
+              "id": 25744,
+              "name": "Direccion General, Consejo de Administración",
+              "_links": {
+                "self": {
+                  "name": "Direccion General, Consejo de Administración",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/25539/entities/25743/orgs/25744"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Mercabilbao – Desarrollo corporativo ",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/25539/entities/25743"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder25539/es_doc/index.html",
+      "_links": {
+        "self": {
+          "name": "Mercados Centrales de Abastecimiento de Bilbao S.A.",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/25539"
+        }
+      }
+    },
+    {
+      "id": 25735,
+      "identificationNumber": "A20881348",
+      "name": "Zarautz-Lur SAU",
+      "scope": "GIPUZKOA",
+      "address": "Zigordia, nº 13, 20800 Zarautz",
+      "webPage": "https://www.zarautz.eus/eu/hasiera",
+      "publicationDate": "2022-09-26",
+      "mainActivity": "Vivienda y servicios comunitarios",
+      "codNUTS": "ES212",
+      "entities": [
+        {
+          "id": 25736,
+          "name": "Zarautz-Lur SAU",
+          "orgs": [
+            {
+              "id": 25737,
+              "name": "Consejo de administración",
+              "_links": {
+                "self": {
+                  "name": "Consejo de administración",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/25735/entities/25736/orgs/25737"
+                }
+              }
+            },
+            {
+              "id": 25738,
+              "name": "Alcalde Presidente",
+              "_links": {
+                "self": {
+                  "name": "Alcalde Presidente",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/25735/entities/25736/orgs/25738"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Zarautz-Lur SAU",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/25735/entities/25736"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder25735/es_doc/index.html",
+      "_links": {
+        "self": {
+          "name": "Zarautz-Lur SAU",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/25735"
+        },
+        "contractingAuthorities": [
+          {
+            "name": "Ayuntamiento de Zarautz",
+            "href": "https://api.euskadi.eus/procurements/contracting-authorities/23429"
+          }
+        ]
+      }
+    },
+    {
+      "id": 25731,
+      "identificationNumber": "P0100290B",
+      "name": "Junta Administrativa de San Vicente de Arana",
+      "scope": "ARABA/ÁLAVA",
+      "address": "Plaza Uralde, nº2 01117 San Vicente de Arana",
+      "webPage": "https://www.valledearana.eus/eu/",
+      "publicationDate": "2022-09-23",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES211",
+      "entities": [
+        {
+          "id": 25732,
+          "name": "Junta Administrativa de San Vicente de Arana",
+          "orgs": [
+            {
+              "id": 25733,
+              "name": "Presidente ",
+              "_links": {
+                "self": {
+                  "name": "Presidente ",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/25731/entities/25732/orgs/25733"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Junta Administrativa de San Vicente de Arana",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/25731/entities/25732"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder25731/es_doc/index.html",
+      "_links": {
+        "self": {
+          "name": "Junta Administrativa de San Vicente de Arana",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/25731"
+        }
+      }
+    },
+    {
+      "id": 444,
+      "identificationNumber": "A20501185",
+      "name": "Centro Kursaal S.A.",
+      "scope": "GIPUZKOA",
+      "address": "Zurriola hiribidea, 1. 20002 Donostia/San Sebastián (Gipuzkoa)",
+      "webPage": "http://www.kursaal.eus",
+      "publicationDate": "2022-09-21",
+      "mainActivity": "Ocio, cultura y religión",
+      "codNUTS": "ES212",
+      "entities": [
+        {
+          "id": 894,
+          "name": "Centro Kursaal S.A.",
+          "orgs": [
+            {
+              "id": 912490,
+              "name": "Consejo de Administración ",
+              "_links": {
+                "self": {
+                  "name": "Consejo de Administración ",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/444/entities/894/orgs/912490"
+                }
+              }
+            },
+            {
+              "id": 912489,
+              "name": "Gerencia ",
+              "_links": {
+                "self": {
+                  "name": "Gerencia ",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/444/entities/894/orgs/912489"
+                }
+              }
+            },
+            {
+              "id": 25729,
+              "name": "Servicios generales",
+              "_links": {
+                "self": {
+                  "name": "Servicios generales",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/444/entities/894/orgs/25729"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Centro Kursaal S.A.",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/444/entities/894"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder444/es_doc/index.html",
+      "_links": {
+        "self": {
+          "name": "Centro Kursaal S.A.",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/444"
+        }
+      }
+    },
+    {
+      "id": 279,
+      "identificationNumber": "G48802250",
+      "name": "Residencia de ancianos de Basauri",
+      "scope": "BIZKAIA",
+      "address": "Nagusia, 4. 48970 Basauri (Bizkaia)",
+      "webPage": "http://www.basauri.net",
+      "publicationDate": "2022-09-19",
+      "mainActivity": "Protección social",
+      "codNUTS": "ES213",
+      "entities": [
+        {
+          "id": 727,
+          "name": "Residencia de ancianos de Basauri",
+          "orgs": [
+            {
+              "id": 912160,
+              "name": "Consejo Rector",
+              "_links": {
+                "self": {
+                  "name": "Consejo Rector",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/279/entities/727/orgs/912160"
+                }
+              }
+            },
+            {
+              "id": 912159,
+              "name": "Presidente",
+              "_links": {
+                "self": {
+                  "name": "Presidente",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/279/entities/727/orgs/912159"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Residencia de ancianos de Basauri",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/279/entities/727"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder279/es_doc/index.html",
+      "_links": {
+        "self": {
+          "name": "Residencia de ancianos de Basauri",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/279"
+        }
+      }
+    },
+    {
+      "id": 45,
+      "identificationNumber": "P2005000A",
+      "name": "Ayuntamiento de Irura",
+      "scope": "GIPUZKOA",
+      "address": "Gorka Murua Macuso",
+      "webPage": "https://www.irura.eus/",
+      "publicationDate": "2022-09-12",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES212",
+      "entities": [
+        {
+          "id": 312,
+          "name": "Ayuntamiento de Irura",
+          "orgs": [
+            {
+              "id": 911152,
+              "name": "Alkatea",
+              "_links": {
+                "self": {
+                  "name": "Alkatea",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/45/entities/312/orgs/911152"
+                }
+              }
+            },
+            {
+              "id": 911151,
+              "name": "Pleno Municipal",
+              "_links": {
+                "self": {
+                  "name": "Pleno Municipal",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/45/entities/312/orgs/911151"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Ayuntamiento de Irura",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/45/entities/312"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder45/es_doc/index.html",
+      "_links": {
+        "self": {
+          "name": "Ayuntamiento de Irura",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/45"
+        }
+      }
+    },
+    {
+      "id": 25712,
+      "identificationNumber": "G16763211",
+      "name": "Asociación Centro Vasco de Inteligencia Artificial",
+      "scope": "BIZKAIA",
+      "address": "Al/ Urquijo, 36-4 48011 Bilbao (Bizkaia)",
+      "webPage": "https://www.baic.eus/",
+      "publicationDate": "2022-09-01",
+      "mainActivity": "Otra actividad",
+      "alternativeActivity": "Investigación",
+      "codNUTS": "ES213",
+      "entities": [
+        {
+          "id": 25713,
+          "name": "Asociación Centro Vasco de Inteligencia Artificial",
+          "orgs": [
+            {
+              "id": 25714,
+              "name": "Directora general",
+              "_links": {
+                "self": {
+                  "name": "Directora general",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/25712/entities/25713/orgs/25714"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Asociación Centro Vasco de Inteligencia Artificial",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/25712/entities/25713"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder25712/es_doc/index.html",
+      "_links": {
+        "self": {
+          "name": "Asociación Centro Vasco de Inteligencia Artificial",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/25712"
+        }
+      }
+    },
+    {
+      "id": 25704,
+      "identificationNumber": "G01829738",
+      "name": "Fundación Punta Begoña",
+      "scope": "BIZKAIA",
+      "address": "Foruak 1, 48992, Getxo (Bizkaia)",
+      "webPage": "https://puntabegonagetxo.eus/eu/",
+      "publicationDate": "2022-08-18",
+      "mainActivity": "Ocio, cultura y religión",
+      "codNUTS": "ES213",
+      "entities": [
+        {
+          "id": 25705,
+          "name": "Fundación Punta Begoña",
+          "orgs": [
+            {
+              "id": 25706,
+              "name": "Patronato",
+              "_links": {
+                "self": {
+                  "name": "Patronato",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/25704/entities/25705/orgs/25706"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Fundación Punta Begoña",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/25704/entities/25705"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder25704/es_doc/index.html",
+      "_links": {
+        "self": {
+          "name": "Fundación Punta Begoña",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/25704"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,1070 @@
+{
+  "totalItems": 9042,
+  "totalPages": 905,
+  "currentPage": 104,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "name": "BEINKE PROYECTOS TURISTICOS Y CULTURALES",
+      "registrationNumber": "03122",
+      "identificationNumber": "B01369834",
+      "address": "Pablo Uranga 12 bajo",
+      "location": {
+        "postalCode": "01008",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.999",
+          "name": "Otros servicios n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros servicios n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.999"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-12-30",
+      "certificateEndDate": "2026-06-14",
+      "classification": [
+        {
+          "id": "S",
+          "name": "Servicios",
+          "groups": [
+            {
+              "id": "L",
+              "subgroups": [
+                {
+                  "id": "05",
+                  "name": "Organización y promoción de congresos, ferias y exposiciones",
+                  "categories": [
+                    {
+                      "id": "1",
+                      "name": "Desde 0 Hasta 150.000",
+                      "_links": {
+                        "self": {
+                          "name": "Desde 0 Hasta 150.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/S/categories/1"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "Organización y promoción de congresos, ferias y exposiciones",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/L/subgroups/05"
+                    }
+                  }
+                }
+              ],
+              "_links": {
+                "self": {
+                  "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/L"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Servicios",
+              "href": "https://api.euskadi.eus/procurements/companies/types/S"
+            }
+          }
+        }
+      ],
+      "object": "TODO TIPO DE SERVICIOS PARA REALIZAR Y GESTIONAR PROPUESTAS TURÍSTICAS, CULTURALES Y PROMOCIONALES, TANTO EN EL ÁMBITO PÚBLICO COMO PRIVADO. LA ORGANIZACIÓN Y PROMOCIÓN DE CONGRESOS, FERIAS Y EXPOSICIONES Y SERVICIOS DE PUBLICIDAD",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03122",
+      "_links": {
+        "self": {
+          "name": "BEINKE PROYECTOS TURISTICOS Y CULTURALES",
+          "href": "https://api.euskadi.eus/procurements/companies/03122"
+        }
+      }
+    },
+    {
+      "name": "GRIFOLS MOVACO, S.A.",
+      "registrationNumber": "00588",
+      "identificationNumber": "A58426008",
+      "address": "POL. LEVANTE, C/ CAN GUASCH, Nº 2",
+      "location": {
+        "postalCode": "08150",
+        "municipality": "Parets del Vallès",
+        "county": "Barcelona",
+        "municipalityId": "159",
+        "countyId": "08"
+      },
+      "economicActivities": [
+        {
+          "id": "1.614.1",
+          "name": "Venta al por mayor de productos farmacéuticos y medicamentos",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de productos farmacéuticos y medicamentos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.614.1"
+            }
+          }
+        },
+        {
+          "id": "1.619.2",
+          "name": "Venta al por mayor de aparatos e instrumentos médicos, ortopédicos, ópticos",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de aparatos e instrumentos médicos, ortopédicos, ópticos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.619.2"
+            }
+          }
+        },
+        {
+          "id": "1.699",
+          "name": "Otras reparaciones n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otras reparaciones n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.699"
+            }
+          }
+        },
+        {
+          "id": "1.853",
+          "name": "Alquiler de maquinaria y equipo contable de oficina y cálculo",
+          "_links": {
+            "self": {
+              "name": "Alquiler de maquinaria y equipo contable de oficina y cálculo",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.853"
+            }
+          }
+        },
+        {
+          "id": "1.859",
+          "name": "Alquiler de otros bienes muebles n.c.o.p. (sin personal permanente)",
+          "_links": {
+            "self": {
+              "name": "Alquiler de otros bienes muebles n.c.o.p. (sin personal permanente)",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.859"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-12-30",
+      "certificateEndDate": "2026-06-30",
+      "object": "LA FABRICACIÓN, IMPORTACIÓN, EXPORTACIÓN, PREPARACIÓN, DISTRIBUCIÓN Y VENTA, ASISTENCIA TÉCNICA Y SERVICIO POST-VENTA, DE  REACTIVOS, PRODUCTOS TERAPÉUTICOS, DIETÉTICOS, PARAFARMACEÚTICOS, ESPECIALIDADES FARMACEÚTICAS Y PUBLICITARIAS, MEDICAMENTOS Y PRODUCTOS QUÍMICOS. VENTA, COMERCIALIZACIÓN Y DISTRIBUCIÓN DE CUALESQUIERA MATERIAL, APARATO, INSTRUMENTO MÉDICO-QUIRÚRGICO Y/O PRODUCTO QUE TENGA UNA APLICACIÓN O USO DIRECTA O INDIRECTAMENTE RELACIONADO CON EL ÁMBITO DE LA SANIDAD EN SU SENTIDO MÁS AMPLIO, INCLUYENDO LA VENTA DE LIBROS MÉDICOS Y COMERCIALIZACIÓN DE MOBILIARIO CLÍNICO Y DE OFICINA EN GENERAL. MANTENIMIENTO, REPARACIÓN Y ARRENDAMIENTO DE MATERIAL Y APARATOS MÉDICOS, QUIRÚRGICOS, TERAPÉUTICOS Y ÓPTICOS, DE TIPO ELÉCTRICO Y ELECTRÓNICO; MANTENIMIENTO Y REPARACIÓN DE EQUIPOS E INSTALACIONES DE APARATOS ELEVADORES Y DE TRASLACIÓN HORIZONTAL, Y EN PARTICULAR DE ASCENSORES, MONTACARGAS, ESCALERAS MECÁNICAS, CINTAS Y CADENAS TRANSPORTADORAS,  ELEVADORESS MECÁNICOS Y NEUMÁTICOS, TUBOS NEUMÁTICOS Y MECANISMOS DISTRIBUIDORES. FABRICACIÓN, COMPRAVENTA, COMERCIALIZACIÓN, EXPORTACIÓN Y DISTRIBUCIÓN DE TODA CLASE DE MATERIAL, PRODUCTOS INFORMÁTICOS  Y ACTIVIDADES DE HARDWARE Y SOFTWARE, TANTO PARTICIPANDO EN DETERMINADAS FASES DE SU EJECUCIÓN Y/O PROGRAMACIÓN COMO EN EL PROCESO COMPLETO, DESARROLLANDO, IMPLEMENTANDO E INTEGRANDO SISTEMAS Y/O TECNOLOGÍAS DE LA INFORMACIÓN, Y EN PARTICULAR TRABAJOS DE MECANOGRAFÍA Y GRABACIÓN O CAPTURA DE DATOS POR MEDIOS ELECTRÓNICOS Y DIGITALIZACIÓN O CONVERSIÓN DE FORMATOS DE DOCUMENTOS MEDIANTE EL USO DE LAS TECNOLOGÍAS DE LA INFORMACIÓN, Y LAS TELECOMUNICACIONES; TRABAJOS DE PLANIFICACIÓN, ANÁLISIS, DISEÑO, CONSTRUCCIÓN, PRUEBAS Y MANTENIMIENTO DE SISTEMAS DE INFORMACIÓN, PROGRAMAS Y APLICACIONES INFORMÁTICAS; MANTENIMIENTO PREVENTIVO, CORRECTIVO O PERFECTIVO Y DE REPARACIÓN DE EQUIPOS Y SISTEMAS FÍSICOS Y LÓGICOS PARA EL TRATAMIENTO DE LA INFORMACIÓN, ASÍ COMO DE LOS EQUIPOS EMISORES Y RECEPTORES DE LA MISMA Y SUS CORRESPONDIENTES SISTEMAS Y MEDIOS DE TRANSMISIÓN. SERVICIOS DE COMUNICACIÓN DE VOZ Y/O DATOS, ALQUILER DE CIRCUITOS PARA LA TRANSMISIÓN DE VOZ Y/O DATOS, EN GENERAL AQUELLOS SERVICIOS DE VALOR AÑADIDO SOBRE LAS REDES DE TELECOMUNICACIONES; PUESTA EN FUNCIONAMIENTO, SEGUIMIENTO, GESTIÓN Y CONTROL DE EQUIPOS Y SISTEMAS INFORMÁTICOS Y INFRAESTRUCTURAS TELEMÁTICAS PARA LA EXPLOTACIÓN DE PROGRAMAS Y APLICACIONES INFORMÁTICAS; Y EN GENERAL SERVICIOS DE EVALUACIÓN Y CERTIFICACIÓN TECNOLÓGICA. LA DIRECCIÓN Y EJECUCIÓN DE TODA CLASE DE OBRAS, INSTALACIONES Y MONTAJES Y MANTENIIENTOS RELACIONADOS CON EL ACONDICIONAMIENTO DE SALAS BLANCAS HOSPITALARIAS, LABORATORIOS E INSTALACIONES HOSPITALARIAS DE TODO TIPO, INCLUYENDO EL SUMINISTRO Y MONTAJE DE MOBILIARIO Y EQUIPOS, ASÍ COMO LA SUBCONTRTACIÓN DE DICHOS TRABAJOS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/00588",
+      "_links": {
+        "self": {
+          "name": "GRIFOLS MOVACO, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/00588"
+        }
+      }
+    },
+    {
+      "name": "ASOCIACIÓN ARANSGI",
+      "registrationNumber": "06705",
+      "identificationNumber": "G20040689",
+      "address": "MONS PASEALEKUA 103",
+      "location": {
+        "postalCode": "20015",
+        "municipality": "Donostia / San Sebastián",
+        "county": "Gipuzkoa",
+        "municipalityId": "069",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.934",
+          "name": "Enseñanza fuera de establecimiento permanente",
+          "_links": {
+            "self": {
+              "name": "Enseñanza fuera de establecimiento permanente",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.934"
+            }
+          }
+        },
+        {
+          "id": "1.952",
+          "name": "Asistencia y servicios sociales en centros no residenciales",
+          "_links": {
+            "self": {
+              "name": "Asistencia y servicios sociales en centros no residenciales",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.952"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-12-30",
+      "certificateEndDate": "2026-06-14",
+      "object": "A.- COLABORAR EN LA DETECCIÓN PRECOZ DE LA SORDERA Y DAR ATENCIÓN PSICOLÓGICA, EDUCATIVA Y REHABILITATIVA A LAS/LOS NIÑAS/NIÑOS Y JÓVENES SORDAS/OS, ASÍ COMO A SUS FAMILIAS, ESTIMULANDO LA REVISIÓN Y MODERNIZACIÓN DE LOS ACTUALES SISTEMAS. B.- ORIENTAR Y ACOMPAÑAR A LAS FAMILIAS Y A LAS PERSONAS SORDAS EN TODOS LOS MOMENTOS DE TOMAS DE DECISIONES -EDUCATIVAS, SOCIALES, SANITARIAS, ETC. C.- ORIENTAR LA INICIACIÓN Y FORMACIÓN PROFESIONAL DE LOS/LAS JÓVENES SORDOS/AS, CON EL FIN DE QUE PUEDAN DESEMPEÑAR EN LA SOCIEDAD UNA FUNCIÓN ÚTIL, DIGNA Y HUMANAMENTE INDEPENDIENTE. D.- ASESORAR Y ORIENTAR CON TODOS LOS MEDIOS POSIBLES A AQUELLAS FAMILIAS EN CUYO SENO EXISTA UN/UNA NIÑO/NIÑA SORDO/A. E.- ESTIMULAR Y PROMOVER LA FORMACIÓN DE LOS PROFESIONALES ESPECIALIZADOS. F.- PARTICIPAR EN CUANTOS FOROS INSTITUCIONALES SE PROPONGAN CON EL FIN DE PROPORCIONAR UNA MEJORA EN EL FIN GENERAL PLANTEADO POR LA ASOCIACIÓN. G.- PROMOVER LA DIGNIFICACIÓN SOCIAL DE LAS PERSONAS SORDAS, DESTERRANDO VIEJAS TERMINOLOGÍAS Y DESARRAIGANDO LA EQUIVOCADA CREENCIA DE SU INCAPACIDAD. H.- EN CUANTO SUS MEDIOS ECONÓMICOS LO PERMITAN Y DENTRO DE LOS LÍMITES QUE LA JUNTA DIRECTIVA DETERMINE EN LA PRÁCTICA, LA ASOCIACIÓN DESARROLLARÁ LAS ACTIVIDADES ENUMERADAS, COLABORANDO CON LAS FAMILIAS QUE CAREZCAN DE RECURSOS. I.- RECABAR PARA LA REALIZACIÓN DE ESTOS FINES TODA AYUDA QUE SEA POSIBLE, UTILIZANDO PARA ELLO CUANTOS RECURSOS PROPORCIONA LA LEGISLACIÓN VIGENTE O PUEDAN OBTENERSE DE TODA CLASE DE ORGANISMOS E INSTITUCIONES. J.- ATENDER EN LO POSIBLE EL DIAGNÓSTICO Y REHABILITACIÓN DE LA SORDERA PROFESIONAL\r\n\r\n\t\r\n",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06705",
+      "_links": {
+        "self": {
+          "name": "ASOCIACIÓN ARANSGI",
+          "href": "https://api.euskadi.eus/procurements/companies/06705"
+        }
+      }
+    },
+    {
+      "name": "FUNDACION ASPALDIKO",
+      "registrationNumber": "08648",
+      "identificationNumber": "G48942411",
+      "address": "bº campanzar, 7",
+      "location": {
+        "postalCode": "48920",
+        "municipality": "Portugalete",
+        "county": "Bizkaia",
+        "municipalityId": "078",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.933.9",
+          "name": "Otras actividades de enseñanza tales como idiomas, mecanografía",
+          "_links": {
+            "self": {
+              "name": "Otras actividades de enseñanza tales como idiomas, mecanografía",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.933.9"
+            }
+          }
+        },
+        {
+          "id": "1.951",
+          "name": "Asistencia y servicios sociales en centros residenciales",
+          "_links": {
+            "self": {
+              "name": "Asistencia y servicios sociales en centros residenciales",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.951"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-12-30",
+      "certificateEndDate": "2026-06-26",
+      "object": "A) EL DESARROLLO, TANTO EN EL CENTRO COMO DESDE EL MISMO HACIA EL EXTERIOR, DE TODO TIPO DE SERVICIOS ASISTENCIALES Y DE PROTECCIÓN A LAS PERSONAS BENEFICIARIAS. B) LA CONSTITUCIÓN, PERFECCIONAMIENTO Y DESARROLLO DE CUALESQUIERA RECURSOS E INICIATIVAS QUE, DIRECTA O INDIRECTAMENTE, CONTRIBUYAN A LA CONSECUCIÓN DEL FIN GENERAL. C) LA PROMOCIÓN DE INICIATIVAS Y ACTIVIDADES SUSCEPTIBLES DE CREAR EMPLEOS DE LOS LLAMADOS DE PROXIMIDAD, EN LA ASISTENCIA A LAS PERSONAS BENEFICIARIAS. D) EL APOYO A PROYECTOS E INICIATIVAS PARTICULARES, QUE, CON UN CARÁCTER NETAMENTE SOCIAL, DEN RESPUESTAS A PROBLEMAS SOCIALES RELATIVOS A LAS PERSONAS BENEFICIARIAS. E) LA INVESTIGACIÓN E INNOVACIÓN EN EL ÁMBITO DE LA GERONTOLOGÍA Y LOS SERVICIOS SOCIALES RELACIONADOS CON EL FIN FUNDACIONAL. F) LA FORMACIÓN EN MATERIAS RELATIVAS A LOS FINES FUNDACIONALES, ABIERTA A CUALQUIER SECTOR SOCIAL O A LA SOCIEDAD EN GENERAL. G) LA SENSIBILIZACIÓN DE LA SOCIEDAD SOBRES LOS PROBLEMAS QUE AFECTAN A LOS MAYORES EN NUESTRA SOCIEDAD. H) LA PROMOCIÓN DEL VOLUNTARIADO EN EL SERVICIO Y SOLIDARIDAD CON LAS PERSONAS BENEFICIARIAS. EN EL CUMPLIMIENTO DE ESTOS FINES, LA FUNDACIÓN PODRÁ ADQUIRIR Y ENAJENAR TODA CLASE DE BIENES Y REALIZAR TODA CLASE DE ACTOS CON PLENA CAPACIDAD JURÍDICA, CUMPLIENDO CON LAS EXIGENCIAS ESTABLECIDAS POR LA LEY. EN ORDEN AL CUMPLIMIENTO Y SUBORDINADAS AL FIN FUNDACIONAL, PODRÁ DESARROLLAR ACTIVIDADES ECONÓMICAS TANTO DIRECTA COMO INDIRECTAMENTE, MEDIANTE SU PARTICIPACIÓN EN SOCIEDADES.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08648",
+      "_links": {
+        "self": {
+          "name": "FUNDACION ASPALDIKO",
+          "href": "https://api.euskadi.eus/procurements/companies/08648"
+        }
+      }
+    },
+    {
+      "name": "KONTRON PUBLIC TRANSPORT ARCE, S.A.",
+      "registrationNumber": "08531",
+      "identificationNumber": "A16954893",
+      "address": "Plaza de Euskadi nº 5 - Planta 9 (Edificio Torre Iberdrola)",
+      "location": {
+        "postalCode": "48009",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.504.11",
+          "name": "Instalaciones eléctricas en general, redes telegráficas, telefonía, tv, etc",
+          "_links": {
+            "self": {
+              "name": "Instalaciones eléctricas en general, redes telegráficas, telefonía, tv, etc",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.504.11"
+            }
+          }
+        },
+        {
+          "id": "1.843.1",
+          "name": "Servicios técnicos de ingeniería",
+          "_links": {
+            "self": {
+              "name": "Servicios técnicos de ingeniería",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-12-30",
+      "certificateEndDate": "2026-06-17",
+      "classification": [
+        {
+          "id": "O",
+          "name": "Obras",
+          "groups": [
+            {
+              "id": "I",
+              "name": "INSTALACIONES ELÉCTRICAS",
+              "subgroups": [
+                {
+                  "id": "06",
+                  "name": "Distribución en baja tensión",
+                  "categories": [
+                    {
+                      "id": "4",
+                      "name": "Desde 840.001 Hasta 2.400.000",
+                      "_links": {
+                        "self": {
+                          "name": "Desde 840.001 Hasta 2.400.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/O/categories/4"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "Distribución en baja tensión",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/O/groups/I/subgroups/06"
+                    }
+                  }
+                },
+                {
+                  "id": "07",
+                  "name": "Telecomunicaciones e instalaciones radioeléctricas",
+                  "categories": [
+                    {
+                      "id": "4",
+                      "name": "Desde 840.001 Hasta 2.400.000",
+                      "_links": {
+                        "self": {
+                          "name": "Desde 840.001 Hasta 2.400.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/O/categories/4"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "Telecomunicaciones e instalaciones radioeléctricas",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/O/groups/I/subgroups/07"
+                    }
+                  }
+                },
+                {
+                  "id": "08",
+                  "name": "Instalaciones electrónicas",
+                  "categories": [
+                    {
+                      "id": "4",
+                      "name": "Desde 840.001 Hasta 2.400.000",
+                      "_links": {
+                        "self": {
+                          "name": "Desde 840.001 Hasta 2.400.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/O/categories/4"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "Instalaciones electrónicas",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/O/groups/I/subgroups/08"
+                    }
+                  }
+                },
+                {
+                  "id": "09",
+                  "name": "Instalaciones eléctricas sin cualificación específica",
+                  "categories": [
+                    {
+                      "id": "4",
+                      "name": "Desde 840.001 Hasta 2.400.000",
+                      "_links": {
+                        "self": {
+                          "name": "Desde 840.001 Hasta 2.400.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/O/categories/4"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "Instalaciones eléctricas sin cualificación específica",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/O/groups/I/subgroups/09"
+                    }
+                  }
+                }
+              ],
+              "_links": {
+                "self": {
+                  "name": "INSTALACIONES ELÉCTRICAS",
+                  "href": "https://api.euskadi.eus/procurements/companies/types/O/groups/I"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Obras",
+              "href": "https://api.euskadi.eus/procurements/companies/types/O"
+            }
+          }
+        },
+        {
+          "id": "S",
+          "name": "Servicios",
+          "groups": [
+            {
+              "id": "P",
+              "subgroups": [
+                {
+                  "id": "01",
+                  "name": "Mantenimiento y reparación de equipos e instalaciones eléctricas y electrónicas",
+                  "categories": [
+                    {
+                      "id": "5",
+                      "name": "Mas de 1.200.000",
+                      "_links": {
+                        "self": {
+                          "name": "Mas de 1.200.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/S/categories/5"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "Mantenimiento y reparación de equipos e instalaciones eléctricas y electrónicas",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/P/subgroups/01"
+                    }
+                  }
+                }
+              ],
+              "_links": {
+                "self": {
+                  "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/P"
+                }
+              }
+            },
+            {
+              "id": "V",
+              "subgroups": [
+                {
+                  "id": "03",
+                  "name": "Servicios de mtto. y reparación equipos e instalaciones informáticos y telecomun",
+                  "categories": [
+                    {
+                      "id": "5",
+                      "name": "Mas de 1.200.000",
+                      "_links": {
+                        "self": {
+                          "name": "Mas de 1.200.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/S/categories/5"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "Servicios de mtto. y reparación equipos e instalaciones informáticos y telecomun",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/V/subgroups/03"
+                    }
+                  }
+                }
+              ],
+              "_links": {
+                "self": {
+                  "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/V"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Servicios",
+              "href": "https://api.euskadi.eus/procurements/companies/types/S"
+            }
+          }
+        }
+      ],
+      "object": "I. LA FABRICACIÓN, VENTA Y MONTAJE DE EQUIPOS Y ELEMENTOS ELECTRÓNICOS Y MECÁNICOS, CON USOS DIVERSOS; CONTROL Y REGISTRO DE INGRESOS EN AUTOPISTAS, TÚNELES, PUENTES, OPERADORES DE TRANSPORTES, ETC. DE PEAJE, Y EN GENERAL, CONTROL DE MOVIMIENTOS, PROCESOS INDUSTRIALES Y DEMÁS CAMPOS EN LOS QUE ELEMENTOS ELECTRÓNICOS Y AUTOMÁTICOS PUEDAN SER EMPLEADOS; LA EXPORTACIÓN DE LOS MISMOS A EXTRANJERO Y TODO CUANTO CON ELLO SE RELACIONE DIRECTA O INDIRECTAMENTE. II. LA CREACIÓN INDUSTRIAL, FABRICACIÓN, INTEGRACIÓN O ENSAMBLAJE, VENTA, ARRENDAMIENTO, EXPORTACIÓN E IMPORTACIÓN DE SISTEMAS Y EQUIPOS ELECTRÓNICOS, MECÁNICOS O DE CUALQUIER NATURALEZA, SUS ELEMENTOS O COMPONENTES CUYA FINALIDAD O DESTINO SEA ESTABLECER, CREAR O GARANTIZAR LA SEGURIDAD O INVIOLABILIDAD DE LAS PERSONAS O EN LOS BIENES DE CUALESQUIERA CLASES. COMO COMPLEMENTO DE LA ACTIVIDAD INDICADA EN EL PÁRRAFO PREVIO, LA SOCIEDAD PODRÁ TAMBIÉN LLEVAR A CABO CUANTAS OTRAS ACTIVIDADES SEAN PRECISAS, ÚTILES O CONVENIENTES A TAL FINALIDAD, COMO LA OBTENCIÓN Y DEPÓSITO DE PATENTES Y DEMÁS TÍTULOS DE PROPIEDAD INDUSTRIAL, LA CONCESIÓN DE LICENCIA DE LOS MISMOS O ACTUAR COMO LICENCIATARIOS DE TERCEROS, LA FORMACIÓN DE PERSONAL INSTRUCTOR DEL USO O INSTALACIÓN DE LOS EQUIPOS O SISTEMAS, LA PRESTACIÓN DIRECTA  DE SERVICIOS DE SEGURIDAD, CON MEDIOS PROPIOS Y PERSONAL PROPIO O AJENO, LA ADQUISICIÓN DE PARTICIPACIONES EN OTRAS SOCIEDADES O EMPRESAS, Y EN GENERAL, CUANTAS OTRAS COETÁNEAS, PREVIAS O POSTERIORES, ACUERDE LA JUNTA GENERAL Y SEAN DE LÍCITO COMERCIO. III. OBTENER, COMPRAR, VENDER, TRANSMITIR Y EXPLOTAR CONCESIONES, PRIVILEGIOS Y PATENTES, DESARROLLAR, CONSTRUIR, MONTAR, EXPLORAR, REPARAR, CONSERVAR, CONSERVAR, IMPORTAR, EXPORTAR, VENDER Y ALQUILAR TODA CLASE DE MÁQUINAS, APARATOS E INSTALACIONES; DESARROLLAR, CONSTRUIR, MONTAR, EXPLOTAR, REPARAR, CONSERVAR, IMPORTAR, EXPORTAR, VENDER Y ALQUILAR CONJUNTOS, SUBCONJUNTOS, PIEZAS SUELTAS Y MATERIALES PARA TODAS LAS APLICACIONES ELÉCTRICAS, ELECTROMECÁNICAS, ELECTRÓNICAS E INFORMÁTICAS, ASÍ COMO DE APARATOS CIENTÍFICOS, DE CONTROL, DE MEDIDA, E INSTALACIÓN, REPARACIÓN Y MANTENIMIENTO DE LOS MISMOS; DESARROLLAR SISTEMAS INFORMÁTICOS E INFORMATIZADOS PARA TODO TIPO DE INSTALACIONES Y EDIFICACIONES Y EN TODAS SUS APLICACIONES, ASÍ COMO SU MANTENIMIENTO, REVISIÓN  Y REPARACIÓN; ADQUIRIR ENAJENAR, DISPONER Y GRAVAR TODA  CLASE DE BIENES MUEBLES E INMUEBLES Y DERECHOS INCORPORALES. IV. FABRICAR, DESARROLLAR, COMERCIALIZAR, MANTENER, E INSTALAR TODA CLASE DE APARATOS Y SISTEMAS DE SEGURIDAD, VIGILANCIA, PROTECCIÓN, CONTROL E INFORMACIÓN MEDIANTE APARATOS, Y SISTEMAS FÍSICOS, INFORMÁTICOS, ELECTRÓNICOS, ELECTROMECÁNICOS, ELÉCTRICOS, VISUALES, MAGNÉTICOS, LUMINOSOS, ACÚSTICOS O INSTRUMENTALES DE SEGURIDAD, VIGILANCIA , PROTECCIÓN Y CONTROL ESPECIALMENTE RELACIONADOS CON EQUIPOS, SEÑALIZACIONES Y BALIZAMIENTOS, OBRAS CIVILES, PROTECCIÓN CONTRA INCENDIOS, CONTROL AMBIENTAL, CONTROL DE ACCESOS DE PERSONAS O COSAS, PEAJES BILLETAJE, APARCAMIENTOS, SISTEMAS DE INFORMACIÓN, SISTEMAS DE INGENIERÍA APLICADA PARA LA ORDENACIÓN, REGULACIÓN, CONTROL, VIGILANCIA Y MEDIDA DE LA SEÑALIZACIÓN DE TRÁFICO VIARIO Y FERROVIARIO EN TODA SU EXTENSIÓN. ASIMISMO, ASESORAMIENTO, ESTUDIOS Y PLANIFICACIÓN DE TODO TIPO DE INSTALACIONES ELÉCTRICA, ELECTROMECÁNICAS Y ELECTRÓNICAS. V. CONSERVACIÓN Y MANTENIMIENTO DE OBRAS CIVILES DE CANALIZACIONES, REDES DE ALCANTARILLADO, CARRETERAS Y VIALES, ASÍ COMO EDIFICIOS Y BIENES INMUEBLES. VI. CONSTRUCCIÓN, REPARACIÓN Y CONSERVACIÓN DE TODA CLASE DE OBRAS E INSTALACIONES.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08531",
+      "_links": {
+        "self": {
+          "name": "KONTRON PUBLIC TRANSPORT ARCE, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/08531"
+        }
+      }
+    },
+    {
+      "name": "TRADUCCIONES E INTÉRPRETES, S.A.L.",
+      "registrationNumber": "00039",
+      "identificationNumber": "A48071518",
+      "address": "San Vicente, 8- Edificio Albia II-7º",
+      "location": {
+        "postalCode": "48001",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.849.3",
+          "name": "Servicios de traducción y similares",
+          "_links": {
+            "self": {
+              "name": "Servicios de traducción y similares",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.849.3"
+            }
+          }
+        },
+        {
+          "id": "1.989.2",
+          "name": "Servicios de organización de congresos, asambleas y similares",
+          "_links": {
+            "self": {
+              "name": "Servicios de organización de congresos, asambleas y similares",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.989.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-12-30",
+      "certificateEndDate": "2026-06-11",
+      "classification": [
+        {
+          "id": "S",
+          "name": "Servicios",
+          "groups": [
+            {
+              "id": "L",
+              "subgroups": [
+                {
+                  "id": "05",
+                  "name": "Organización y promoción de congresos, ferias y exposiciones",
+                  "categories": [
+                    {
+                      "id": "4",
+                      "name": "Desde 600.001 Hasta 1.1200.000",
+                      "_links": {
+                        "self": {
+                          "name": "Desde 600.001 Hasta 1.1200.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/S/categories/4"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "Organización y promoción de congresos, ferias y exposiciones",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/L/subgroups/05"
+                    }
+                  }
+                },
+                {
+                  "id": "06",
+                  "name": "Servicios de portería, control de accesos e información al público",
+                  "categories": [
+                    {
+                      "id": "4",
+                      "name": "Desde 600.001 Hasta 1.1200.000",
+                      "_links": {
+                        "self": {
+                          "name": "Desde 600.001 Hasta 1.1200.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/S/categories/4"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "Servicios de portería, control de accesos e información al público",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/L/subgroups/06"
+                    }
+                  }
+                }
+              ],
+              "_links": {
+                "self": {
+                  "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/L"
+                }
+              }
+            },
+            {
+              "id": "T",
+              "subgroups": [
+                {
+                  "id": "05",
+                  "name": "Servicios de traductores e intérpretes",
+                  "categories": [
+                    {
+                      "id": "4",
+                      "name": "Desde 600.001 Hasta 1.1200.000",
+                      "_links": {
+                        "self": {
+                          "name": "Desde 600.001 Hasta 1.1200.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/S/categories/4"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "Servicios de traductores e intérpretes",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/T/subgroups/05"
+                    }
+                  }
+                }
+              ],
+              "_links": {
+                "self": {
+                  "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/T"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Servicios",
+              "href": "https://api.euskadi.eus/procurements/companies/types/S"
+            }
+          }
+        }
+      ],
+      "object": "- LA ORGANIZACIÓN DE CONGRESOS, JORNADAS, EXPOSICIONES Y ACTOS SOCIALES DE TODO TIPO. LA EJECUCIÓN DE LABORES DE TRADUCCIÓN DE TEXTOS ENTRE DISTINTOS IDIOMAS, SEAN TÉCNICOS, COMERCIALES, JURÍDICIOS, PUBLICITARIOS, LITERARIOS, PROFESIONALES, CIENTÍFICOS O ARTÍSTICOS. - LA PRESTACIÓN DE SERVICOS DE PERSONAL AUXILIAR. - EL ALQUILER E INSTALACIÓN DE EQUIPOS DE INTERPRETACIÓN SIMULTÁNEA, EQUIPOS AUDIOVISUALES Y MATERIAL AUXILIAR DE CONFERENCIAS Y CONGRESOS. - LAS LABORES DE DISEÑO, PROYECTO, PRESUPUESTOS Y REALIZACIÓN DE STANDS Y EXPOSICIONES. - SERVICIOS INTEGRALES A EMPRESAS Y ENTIDADES PÚBLICAS. - LA GESTIÓN DE ESPACIOS DESTINADOS A LA REALIZACIÓN DE EVENTOS.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/00039",
+      "_links": {
+        "self": {
+          "name": "TRADUCCIONES E INTÉRPRETES, S.A.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/00039"
+        }
+      }
+    },
+    {
+      "name": "CONSTRUCCIONES MARIEZCURRENA, S.L.",
+      "registrationNumber": "01369",
+      "identificationNumber": "B31083199",
+      "address": "Travesía Calle Mayor, 3-1º",
+      "location": {
+        "postalCode": "31740",
+        "municipality": "Doneztebe/Santesteban",
+        "county": "Navarra",
+        "municipalityId": "221",
+        "countyId": "31"
+      },
+      "economicActivities": [
+        {
+          "id": "1.501.2",
+          "name": "Construcción completa, reparación y conservación obras civiles",
+          "_links": {
+            "self": {
+              "name": "Construcción completa, reparación y conservación obras civiles",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-12-30",
+      "certificateEndDate": "2026-06-14",
+      "object": "EL ESTUDIO, PROMOCIÓN Y REALIZACIÓN DE TODA CLASE DE OBRAS DE CONSTRUCCIÓN, MEJORA Y CONSERVACIÓN, TANTO PÚBLICAS COMO PRIVADAS, POR CUENTA PROPIA O AJENA, INCLUSO POR ENCARGO DE ORGANISMOS OFICIALES, INCLUYENDO TODA CLASE DE CONSTRUCCIONES INDUSTRIALES, OBRAS DE INGENIERÍA CIVIL Y CARRETERAS. EL ESTUDIO, PROMOCIÓN Y COSNTRUCCIÓN DE TODA CLASE DE INMUEBLES SUSCEPTIBLES DE SER HABITADOS, LA ADQUISICIÓN DE TERRENOS Y SOLARES, SU URBANIZACIÓN Y PARCELACIÓN, USO, ARRENDAMIENTO Y COMPRAVENTA DE VIVIENDAS. LA FABRICACIÓN Y COMERCIALIZACIÓN DE HROMIGÓN. EL TRANSPORTE PÚBLICO Y PRIVADO DE MERCANCÍAS POR CARRETERA. LA PRESTACIÓN DE SERVICIOS DE LIMIEZA E HIGIENIZACIÓN DE EDIFICIOS, PARQUES Y JARDINES, ZONAS DE ESPARCIMIENTO Y RECREO, DE CALLES Y CARRETERAS Y DE CUALQUIER ZONA HABITABLE, INCLUYENDO DESRATIZACIÓN, DESINFECCIÓN Y TRATAMIENTO DE RESIDUOS SÓLIDOS. MANTENIMIENTO, CONSERVACIÓN Y REPARACIÓN DE EQUIPOS E INSTALACIONES DE TODA ÍNDOLE, SERVICIOS POSTVENTA Y ASISTENCIA TÉCNICA. MANTENIMIENTO DE EQUIPAMIENTOS E INSTALACIONES DE INFORMÁTICA, OFIMÁTICA, TELECOMUNICACIONES, ELECTRICIDAD Y MAQUINARIA EN GENERAL. EXPLOTACIONES MINERAS Y EXTRACTIVAS, ASÍ COMO LA COORDINACIÓN E INTERMEDIACIÓN EN LA REALIZACIÓN Y ELABORACIÓN DE PROYECTOS DE MINERÍA EN GENERAL",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/01369",
+      "_links": {
+        "self": {
+          "name": "CONSTRUCCIONES MARIEZCURRENA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/01369"
+        }
+      }
+    },
+    {
+      "name": "GUREAK ZERBITZU ANITZAK, S.L.U.",
+      "registrationNumber": "02289",
+      "identificationNumber": "B20629390",
+      "address": "C/ ILLARRA, Nº 4",
+      "location": {
+        "postalCode": "20018",
+        "municipality": "Donostia / San Sebastián",
+        "county": "Gipuzkoa",
+        "municipalityId": "069",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.647.3",
+          "name": "Autoservicio de superficie ventas entre 120 y 399 m.cuadrados",
+          "_links": {
+            "self": {
+              "name": "Autoservicio de superficie ventas entre 120 y 399 m.cuadrados",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.647.3"
+            }
+          }
+        },
+        {
+          "id": "1.647.52",
+          "name": "Venta de productos alimenticios en máquina, propietario máquina",
+          "_links": {
+            "self": {
+              "name": "Venta de productos alimenticios en máquina, propietario máquina",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.647.52"
+            }
+          }
+        },
+        {
+          "id": "1.849.9",
+          "name": "Otros servicios independientes n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros servicios independientes n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.849.9"
+            }
+          }
+        },
+        {
+          "id": "1.922.1",
+          "name": "Servicios de limpieza de interiores",
+          "_links": {
+            "self": {
+              "name": "Servicios de limpieza de interiores",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.922.1"
+            }
+          }
+        },
+        {
+          "id": "1.966.9",
+          "name": "Otros servicios culturales n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros servicios culturales n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.966.9"
+            }
+          }
+        },
+        {
+          "id": "1.971.1",
+          "name": "Tinte, limpieza en seco, lavado y planchado de ropas",
+          "_links": {
+            "self": {
+              "name": "Tinte, limpieza en seco, lavado y planchado de ropas",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.971.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-12-30",
+      "certificateEndDate": "2026-06-15",
+      "classification": [
+        {
+          "id": "S",
+          "name": "Servicios",
+          "groups": [
+            {
+              "id": "L",
+              "subgroups": [
+                {
+                  "id": "06",
+                  "name": "Servicios de portería, control de accesos e información al público",
+                  "categories": [
+                    {
+                      "id": "4",
+                      "name": "Desde 600.001 Hasta 1.1200.000",
+                      "_links": {
+                        "self": {
+                          "name": "Desde 600.001 Hasta 1.1200.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/S/categories/4"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "Servicios de portería, control de accesos e información al público",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/L/subgroups/06"
+                    }
+                  }
+                }
+              ],
+              "_links": {
+                "self": {
+                  "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/L"
+                }
+              }
+            },
+            {
+              "id": "M",
+              "subgroups": [
+                {
+                  "id": "05",
+                  "name": "Servicios de bibliotecas, archivos y museos",
+                  "categories": [
+                    {
+                      "id": "3",
+                      "name": "Desde 300.001 Hasta 600.000",
+                      "_links": {
+                        "self": {
+                          "name": "Desde 300.001 Hasta 600.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/S/categories/3"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "Servicios de bibliotecas, archivos y museos",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/M/subgroups/05"
+                    }
+                  }
+                }
+              ],
+              "_links": {
+                "self": {
+                  "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/M"
+                }
+              }
+            },
+            {
+              "id": "U",
+              "subgroups": [
+                {
+                  "id": "01",
+                  "name": "Servicios de limpieza ",
+                  "categories": [
+                    {
+                      "id": "5",
+                      "name": "Mas de 1.200.000",
+                      "_links": {
+                        "self": {
+                          "name": "Mas de 1.200.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/S/categories/5"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "Servicios de limpieza ",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/U/subgroups/01"
+                    }
+                  }
+                }
+              ],
+              "_links": {
+                "self": {
+                  "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/U"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Servicios",
+              "href": "https://api.euskadi.eus/procurements/companies/types/S"
+            }
+          }
+        }
+      ],
+      "object": "LA LIMPIEZA, LAVANDERÍA, PLANCHADO Y COSIDO DE TODAS CLASES DE PRENDAS TEXTILES; LIMPIEZA Y SANEAMIENTO DE VÍAS PÚBLICAS Y SIMILARES, EDIFICIOS, CENTROS PÚBLICOS Y PRIVADOS, ETC.; MANTENIMIENTO, EXPLOTACIÓN Y CONTROL DE INSTALACIONES DE TODO TIPO DE EDIFICIOS TANTO PÚBLICOS COMO PRIVADOS, RESIDENCIAS, APARCAMIENTOS, POLIDEPORTIVOS, ETC.; PRESTACIÓN DE SERVICIOS DE RECEPCIÓN, RELACIONES PÚBLICAS, ADMINISTRATIVOS, DE CONSERJERÍA Y SECRETARÍA; SERVICIOS DE ATENCIÓN TELEFÓNICA; SERVICIOS DE COSTURA Y LAVANDERÍA; SERVICIOS DE ATENCIÓN Y TRANSPORTE PÚBLICO DE PERSONAS DEPENDIENTES DE CENTROS DE ACOGIDA, CENTROS DE DÍAS, ASISTENCIALES, O EN SUS DOMICILIOS: SERVICIOS DE CONDUCTORES DE VEHÍCULOS DE LIMPIEZA, MANTENIMIENTO, PLANTACIÓN, JARDINERÍA Y CONSERVACIÓN DE PARQUES Y JARDINES, INSTALACIONES DEPORTIVAS E INTERIORES; REDUCCIÓN, REUTILIZACIÓN Y RECICLAJE DE RESIDUOS DE CUALQUIER TIPO, TANTO URBANOS COMO INDUSTRIALES. INSTALACIÓN, MANTENIMIENTO, EXPLOTACIÓN Y CONTROL DE MÁQUINAS EXPENDEDORAS, APARATOS, ELEMENTOS, UTENSILIOS DE Y PARA BEBIDAS FRÍAS Y CALIENTES, HIGIENE, ALIMENTACIÓN Y PRODUCTOS DE HOSTELERÍA. SERVICIOS DE BIBLIOTECAS; ARCHIVOS Y MUSEOS. SERVICIO DE HOSTELERÍA Y SERVICIOS DE COMIDAS. CONSERVACIÓN Y MANTENIMIENTO DE EDIFICIOS. RECOGIDA Y TRANSPORTE DE TODA CLASE DE RESIDUOS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/02289",
+      "_links": {
+        "self": {
+          "name": "GUREAK ZERBITZU ANITZAK, S.L.U.",
+          "href": "https://api.euskadi.eus/procurements/companies/02289"
+        }
+      }
+    },
+    {
+      "name": "GUREAK BERDEA, S.L.U.",
+      "registrationNumber": "01643",
+      "identificationNumber": "B20502613",
+      "address": "C/ CAMINO DE ILLARRA, Nº 4.",
+      "location": {
+        "postalCode": "20018",
+        "municipality": "Donostia / San Sebastián",
+        "county": "Gipuzkoa",
+        "municipalityId": "069",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.911",
+          "name": "Servicios agrícolas y ganaderos",
+          "_links": {
+            "self": {
+              "name": "Servicios agrícolas y ganaderos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.911"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-12-30",
+      "certificateEndDate": "2026-06-13",
+      "classification": [
+        {
+          "id": "S",
+          "name": "Servicios",
+          "groups": [
+            {
+              "id": "O",
+              "subgroups": [
+                {
+                  "id": "06",
+                  "name": "Conservación y mantenimiento de montes y jardines",
+                  "categories": [
+                    {
+                      "id": "5",
+                      "name": "Mas de 1.200.000",
+                      "_links": {
+                        "self": {
+                          "name": "Mas de 1.200.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/S/categories/5"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "Conservación y mantenimiento de montes y jardines",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/O/subgroups/06"
+                    }
+                  }
+                }
+              ],
+              "_links": {
+                "self": {
+                  "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/O"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Servicios",
+              "href": "https://api.euskadi.eus/procurements/companies/types/S"
+            }
+          }
+        }
+      ],
+      "object": "LOS SERVICIOS DE LIMPIEZA, MANTENIMIENTO, PLANTACIÓN, JARDINERÍA Y CONSERVACIÓN DE JARDINES Y PARQUES, INSTALACIONES DEPORTIVAS E INTERIORES. ACTIVIDADES ECONÓMICAS QUE SERVIRÁN DE MEDIO PARA LA INTEGRACIÓN LABORAL Y SOCIAL DE PERSONAS CON DISCAPACIDAD. Y TODAS AQUELLAS ACTIVIDADES RELACIONADAS CON LA DE ESTE OBJETO SOCIAL",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/01643",
+      "_links": {
+        "self": {
+          "name": "GUREAK BERDEA, S.L.U.",
+          "href": "https://api.euskadi.eus/procurements/companies/01643"
+        }
+      }
+    },
+    {
+      "name": "GUREAK LANEAN, S. A.",
+      "registrationNumber": "00399",
+      "identificationNumber": "A20044590",
+      "address": "C/ CAMINO DE ILLARRA, Nº 4.",
+      "location": {
+        "postalCode": "20018",
+        "municipality": "Donostia / San Sebastián",
+        "county": "Gipuzkoa",
+        "municipalityId": "069",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.151.4",
+          "name": "Producción de energía no especificada en otros epígrafes",
+          "_links": {
+            "self": {
+              "name": "Producción de energía no especificada en otros epígrafes",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.151.4"
+            }
+          }
+        },
+        {
+          "id": "1.313.3",
+          "name": "Tratamientos de protección de los metales n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Tratamientos de protección de los metales n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.313.3"
+            }
+          }
+        },
+        {
+          "id": "1.341.9",
+          "name": "Fabricación de otros hilos y cables aislados",
+          "_links": {
+            "self": {
+              "name": "Fabricación de otros hilos y cables aislados",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.341.9"
+            }
+          }
+        },
+        {
+          "id": "1.354.4",
+          "name": "Fabricación de accesorios, componentes electrónicos y circuitos integrados",
+          "_links": {
+            "self": {
+              "name": "Fabricación de accesorios, componentes electrónicos y circuitos integrados",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.354.4"
+            }
+          }
+        },
+        {
+          "id": "1.482.2",
+          "name": "Fabricación de artículos acabados de materias plásticas",
+          "_links": {
+            "self": {
+              "name": "Fabricación de artículos acabados de materias plásticas",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.482.2"
+            }
+          }
+        },
+        {
+          "id": "1.504.1",
+          "name": "Instalaciones eléctricas en general",
+          "_links": {
+            "self": {
+              "name": "Instalaciones eléctricas en general",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.504.1"
+            }
+          }
+        },
+        {
+          "id": "1.861.2",
+          "name": "Alquiler de locales industriales y otros alquileres n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Alquiler de locales industriales y otros alquileres n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.861.2"
+            }
+          }
+        },
+        {
+          "id": "1.932.1",
+          "name": "Enseñanza de formación y perfeccionamiento profesional no superior",
+          "_links": {
+            "self": {
+              "name": "Enseñanza de formación y perfeccionamiento profesional no superior",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.932.1"
+            }
+          }
+        },
+        {
+          "id": "1.952",
+          "name": "Asistencia y servicios sociales en centros no residenciales",
+          "_links": {
+            "self": {
+              "name": "Asistencia y servicios sociales en centros no residenciales",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.952"
+            }
+          }
+        },
+        {
+          "id": "1.999",
+          "name": "Otros servicios n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros servicios n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.999"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-12-30",
+      "certificateEndDate": "2026-06-03",
+      "object": "LA PROMOCIÓN, EDUCACIÓN Y REHABILITACIÓN DE PERSONAS CON DISCAPACIDAD LEGALMENTE RECONOCIDA Y PRIORITARIAMENTE LAS QUE REQUIERAN MAYORES NECESIDADES DE APOYO, A FIN DE LOGRAR SU INTEGRACIÓN LABORAL Y SOCIAL. A ESTOS EFECTOS, PODRÁ (I) PROMOVER Y GESTIONAR PROGRAMAS DE FORMACIÓN PROFESIONAL, CENTROS ESPECIALES DE EMPLEO, CENTROS OCUPACIONALES, O CUALQUIER OTRO TIPO DE FORMA IDÓNEA DE PROMOCIÓN LABORAL DE PERSONAS CON DISCAPACIDAD QUE PUDIERA CREARSE EN EL FUTURO, RESIDENCIAS, INSTITUCIONES, FUNDACIONES, ASÍ COMO (II) DESARROLLAREN GENERAL, TODO LO PRECISO PARA EL MÁS ADECUADO Y EFICAZ CUMPLIMIENTO DE SUS OBJETIVOS Y FINES",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/00399",
+      "_links": {
+        "self": {
+          "name": "GUREAK LANEAN, S. A.",
+          "href": "https://api.euskadi.eus/procurements/companies/00399"
+        }
+      }
+    }
+  ]
+}

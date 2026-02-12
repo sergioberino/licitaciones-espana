@@ -1,0 +1,492 @@
+{
+  "totalItems": 9042,
+  "totalPages": 905,
+  "currentPage": 217,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "name": "PESCADOS BERMEO S.L.U.",
+      "registrationNumber": "06242",
+      "identificationNumber": "B01296417",
+      "address": "ARKATXA 1 PABELLON 85",
+      "location": {
+        "postalCode": "01006",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.643.1",
+          "name": "Venta al por menor de pescados y otros productos de la pesca",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de pescados y otros productos de la pesca",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.643.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-10-14",
+      "certificateEndDate": "2026-04-14",
+      "object": "COMERCIO AL POR MENOR Y AL POR MAYOR DE PESCADOS Y OTROS PRODUCTOS DE PESCA Y DE LA ACUICULTURA. COMERCIO AL POR MENOR Y AL POR MAYOR DE PRODUCTOS ALIMENTICIOS Y BEBIDAS EN GENERAL",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06242",
+      "_links": {
+        "self": {
+          "name": "PESCADOS BERMEO S.L.U.",
+          "href": "https://api.euskadi.eus/procurements/companies/06242"
+        }
+      }
+    },
+    {
+      "name": "BIEME2014 ARQUITECTURA, S.L.P.",
+      "registrationNumber": "07875",
+      "identificationNumber": "B75117358",
+      "address": "Paseo Federico García Lorca 4 Local 4 A",
+      "location": {
+        "postalCode": "20014",
+        "municipality": "Donostia / San Sebastián",
+        "county": "Gipuzkoa",
+        "municipalityId": "069",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.843.2",
+          "name": "Servicios técnicos de arquitectura y urbanismo",
+          "_links": {
+            "self": {
+              "name": "Servicios técnicos de arquitectura y urbanismo",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-10-14",
+      "certificateEndDate": "2026-04-14",
+      "object": "LA PRESTACIÓN DE SERVICIOS PROFESIONALES EN LOS CAMPOS DE LA ARQUITECTURA Y EL URBANISMO",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07875",
+      "_links": {
+        "self": {
+          "name": "BIEME2014 ARQUITECTURA, S.L.P.",
+          "href": "https://api.euskadi.eus/procurements/companies/07875"
+        }
+      }
+    },
+    {
+      "name": "CARNICAS IBARRA, S.L.",
+      "registrationNumber": "07969",
+      "identificationNumber": "B20334975",
+      "address": "Carretera de Leaburu 21",
+      "location": {
+        "postalCode": "20400",
+        "municipality": "Ibarra",
+        "county": "Gipuzkoa",
+        "municipalityId": "042",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.413.2",
+          "name": "Fabricación de productos cárnicos de todas clases",
+          "_links": {
+            "self": {
+              "name": "Fabricación de productos cárnicos de todas clases",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.413.2"
+            }
+          }
+        },
+        {
+          "id": "1.413.3",
+          "name": "Salas de despiece autónomas",
+          "_links": {
+            "self": {
+              "name": "Salas de despiece autónomas",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.413.3"
+            }
+          }
+        },
+        {
+          "id": "1.612.4",
+          "name": "Venta al por mayor de carnes, huevos, aves y caza",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de carnes, huevos, aves y caza",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.612.4"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-10-14",
+      "certificateEndDate": "2026-04-14",
+      "object": "LA COMPRAVENTA DE ARTÍCULOS DE ALIMENTACIÓN Y EL ARRENDAMIENTO DE LOCALES DE NEGOCIO.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07969",
+      "_links": {
+        "self": {
+          "name": "CARNICAS IBARRA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/07969"
+        }
+      }
+    },
+    {
+      "name": "OIHANER BASOLANAK, S.L.",
+      "registrationNumber": "09617",
+      "identificationNumber": "B70930078",
+      "address": "Paseo La Magdalena (48800) 17 bis-4 dcha",
+      "location": {
+        "postalCode": "48800",
+        "municipality": "Balmaseda",
+        "county": "Bizkaia",
+        "municipalityId": "090",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.912",
+          "name": "Servicios forestales",
+          "_links": {
+            "self": {
+              "name": "Servicios forestales",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.912"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-10-14",
+      "certificateEndDate": "2026-04-14",
+      "object": "ACTIVIDAD PRINCIPAL: SILVICULTURA Y OTRAS ACTIVIDADES FORESTALES. OTRAS ACTIVIDADES: SERVICIOS DE APOYO A LA SILVICULTURA. ACTIVIDADES DE APOYO A LA AGRICULTURA. ACTIVIDADES DE APOYO A LA GANADERÍA. ACTIVIDADES DE PREPARACIÓN POSTERIOR A LA COSECHA. EDUCACIÓN SECUNDARIA TÉCNICA Y PROFESIONAL.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/09617",
+      "_links": {
+        "self": {
+          "name": "OIHANER BASOLANAK, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/09617"
+        }
+      }
+    },
+    {
+      "name": "RED2RED CONSULTORES, S.L.",
+      "registrationNumber": "03751",
+      "identificationNumber": "B82719774",
+      "address": "C/Doctor Esquerdo, nº 136, 2º-1",
+      "location": {
+        "postalCode": "28007",
+        "municipality": "Madrid",
+        "county": "Madrid",
+        "municipalityId": "079",
+        "countyId": "28"
+      },
+      "economicActivities": [
+        {
+          "id": "1.846",
+          "name": "Empresas de estudios de mercado",
+          "_links": {
+            "self": {
+              "name": "Empresas de estudios de mercado",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.846"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-10-14",
+      "certificateEndDate": "2026-04-12",
+      "object": "A.- SERVICIOS DE ESTUDIOS, CONSULTORÍA ESTRATÉGICA Y DE GESTIÓN Y ASESORAMIENTO SOBRE EL ESTADO DE MAGNITUDES SOCIALES TALES COMO LA ECONOMÍA, EL MERCADO LABORAL, LA FORMACIÓN DE LOS TRABAJADORES, EL DESARROLLO ECONÓMICO Y URBANÍSTICO DEL TERRITORIO, LA SITUACIÓN Y ORGANIZACIÓN DE LA EMPRESA, LA INTELIGENCIA ECONÓMICA, LA SITUACIÓN Y DESARROLLO DE LOS RECURSOS HUMANOS EN LAS EMPRESAS Y EL ANÁLISIS DE LAS POLÍTICAS DE LUCHA CONTRA LA DISCRIMINACIÓN. B.-  REDACCIÓN DE PROYECTOS O ESTUDIOS QUE APORTEN CONCLUSIONES SOBRE LAS POSIBLES MEDIDAS A APLICAR PARA LA MEJORA Y DESARROLLO DE LAS MENCIONADAS MAGNITUDES SOCIALES DENTRO DE UN DETERMINADO ENTORNO, MUNICIPIO, PROVINCIA, COMUNIDAD AUTÓNOMA, A NIVEL ESTATAL O SERVICIOS DE GESTIÓN Y APLICACIÓN PRÁCTICA DE ESTAS INICIATIVAS DENTRO DEL ENTORNO TERRITORIAL QUE CORRESPONDA.C.- SERVICIOS DE COLABORACIÓN CON OTRAS ENTIDADES DE SEMEJANTE ACTIVIDAD Y DE NACIONALIDAD EXTRANJERA, PARA EL DESARROLLO DE ESTAS FUNCIONES A NIVEL INTERNACIONAL. D.-INVESTIGACIÓN Y OBTENCIÓN DE INFORMACIÓN SOCIOLÓGICA SOBRE MATERIA LABORAL, EMPRESARIAL Y ECONÓMICA. GESTIÓN DE DICHA INFORMACIÓN Y COMERCIALIZACIÓN DE LA MISMA. E.-CREACIÓN, ESTUDIO Y DESARROLLO DE SISTEMAS DE TELECOMUNICACIONES, ENTRE EMPRESAS, ORGANISMOS OFICIALES Y PARTICULARES. UTILIZACIÓN DE LAS MISMAS PARA INTERCAMBIO DE INFORMACIÓN Y COLABORACIÓN. F.-CREACIÓN, ESTUDIO  Y DESARROLLO DE NUEVAS FORMAS DE RELACIONES LABORALES TALES COMO EL TELETRABAJO INFORMÁTICO O LA COMPARTICIÓN DE JORNADA. G.- PROYECTOS DE INVESTIGACIÓN APLICADA SOBRE LAS POLÍTICAS PÚBLICAS CON LA IMPLEMENTACIÓN DE TÉCNICAS CUANTITATIVAS, CUALITATIVAS Y PARTICIPATIVAS DE RECOGIDA Y ANÁLISIS DE LA INFORMACIÓN. SERVICIOS DE INFORMACIÓN E INVESTIGIACIÓN COMERCIAL, ESTUDIO, REDACCIÓN Y REALIZACIÓN DE PROYECTOS PARA MERCADOS NACIONALES E INTERNACIONALES. H.-SERVICIOS DE PROMOCIÓN, ORGANIZACIÓN Y REALIZACIÓN DE CONGRESOS, SEMINARIOS, ASAMBLEAS, PARQUES Y RECINTOS FERIALES SEMEJANTES. I.-REDACCIÓN DE PLANES ESTRATÉGICOS DE DESARROLLO, DEFINICIÓN Y DISEÑO DE POLÍTICAS, PROGRAMAS Y PROYECTOS DENTRO DE UN DETERMINADO ENTORNO, MUNICIPIO, PROVINCIA, COMUNIDAD AUTÓNOMA, A NIVEL ESTATAL E INTERNACIONAL, ASÍ COMO EN SU EJECUCIÓN Y EVALUACIÓN. J.-EVALUACIÓN DE POLÍTICAS PÚBLICAS, DE PLANES, PROGRAMAS Y PROYECTOS. EVALUACIÓN DE SERVICIOS. K.-ANALIZAR LAS NORMAS DE LA UNIÓN EUROPEA, LA FORMA Y EL EFECTO DE SU IMPLANTACIÓN EN EL TERRITORIO NACIONAL, O EN LAS DIVERSAS COMUNIDADES AUTÓNOMAS Y MUNICIPIOS. L.-DISEÑO, ELABORACIÓN E IMPARTICIÓN DE ACCIONES Y CURSOS DE FORMACIÓN REFERIDOS A TODAS LAS ACTIVIDADES CITADAS ANTERIORMENTE, BIEN DIRECTAMENTE, O MEDIANTE LA COLABORACIÓN CON OTRAS EMPRESAS DEDICADAS A LA FORMACIÓN. IGUALMENTE, SE DEDICARÁ A LA ORGANIZACIÓN DE SEMINARIOS, CONGRESOS, ENCUENTROS O JORNADAS CUYO CONTENIDO SE ENCUENTRE DENTRO DE SU OBJETO SOCIAL. M.-FORMACIÓN ESPECIALIZADA EN LAS ÁREAS DE LA ECONOMÍA Y PROCEDIMIENTOS Y FUNCIONAMIENTO DEL SECTOR PÚBLICO. N.- ESTUDIOS Y DISEÑO SOBRE LA MEJORA DE LA EFICACIA , EFICIENCIA Y RACIONALIDAD DE LOS PROCESOS Y PROCEDIMIENTOS DE LA ADMINISTRACIÓN PÚBLICA. APOYO A SUS PROCESOS DE MODERNIZACIÓN Y A LOS DE MEJORA DE SU TRANSPARENCIA. EN ESPECIAL, INTRODUCCIÓN DE SOPORTES TECNOLÓGICOS PARA LA ORGANIZACIÓN O PRESTACIÓN DE SUS SERVICIOS. Ñ.- ASESORAMIENTO Y SERVICIOS DE CONSULTORÍA SOBRE DESARROLLO, INSTALACIÓN Y MANTENIMIENTO DE SISTEMAS Y SOPORTES INFORMÁTICOS AVANZADOS QUE PERMITAN OFRECER SOLUCIONES INFORMÁTICAS COMPLETAS MEDIANTE LA UTILIZACIÓN DE TECNOLOGÍAS AVANZADAS. O.-SERVICIOS RELACIONADOS CON LA ACTIVIDAD EDITORIAL, TANTO A NIVEL NACIONAL COMO INTERNACIONAL, QUE SE DESARROLLA, SOBRE TODO, EN ÁMBITOS DE NORMAS Y FINANCIACIÓN DE LA UNIÓN EUROPEA Y GESTIÓN PÚBLICA",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03751",
+      "_links": {
+        "self": {
+          "name": "RED2RED CONSULTORES, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/03751"
+        }
+      }
+    },
+    {
+      "name": "RADIOLOGIA CLINICA VIZCAYA, S.L.",
+      "registrationNumber": "10388",
+      "identificationNumber": "B48900757",
+      "address": "Calle Ballets Olaeta (48014) 4",
+      "location": {
+        "postalCode": "48014",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.942.1",
+          "name": "Consultorios médicos, centros de socorro sanitarios y urgencias",
+          "_links": {
+            "self": {
+              "name": "Consultorios médicos, centros de socorro sanitarios y urgencias",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.942.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-10-14",
+      "certificateEndDate": "2026-04-09",
+      "object": "LA REALIZACIÓN POR SU CUENTA, EN PARTICIPACIÓN O POR CUENTA DE TERCEROS, LA PRESTACIÓN DE ASISTENCIA MEDICA, DENTRO DEL ÁREA DE RADIOLOGÍA, EN ESPECIAL MEDIANTE LA UTILIZACIÓN DE ISÓTOPOS RADIOACTIVOS, ASÍ COMO OTROS CAMPOS DIAGNÓSTICOS Y TERAPÉUTICOS DENTRO DEL CAMPO DE LA ELECTRORADIOLOGÍA Y MEDICINA FÍSICA.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/10388",
+      "_links": {
+        "self": {
+          "name": "RADIOLOGIA CLINICA VIZCAYA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/10388"
+        }
+      }
+    },
+    {
+      "name": "JUAN CARLOS AIZPURUA CALLEJA",
+      "registrationNumber": "01914",
+      "identificationNumber": "14577665N",
+      "address": "C/ ITURRIBIDE, Nº 117 - LONJA.",
+      "location": {
+        "postalCode": "48006",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.699",
+          "name": "Otras reparaciones n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otras reparaciones n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.699"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-10-14",
+      "certificateEndDate": "2026-04-12",
+      "classification": [
+        {
+          "id": "S",
+          "name": "Servicios",
+          "groups": [
+            {
+              "id": "P",
+              "subgroups": [
+                {
+                  "id": "01",
+                  "name": "Mantenimiento y reparación de equipos e instalaciones eléctricas y electrónicas",
+                  "categories": [
+                    {
+                      "id": "3",
+                      "name": "Desde 300.001 Hasta 600.000",
+                      "_links": {
+                        "self": {
+                          "name": "Desde 300.001 Hasta 600.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/S/categories/3"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "Mantenimiento y reparación de equipos e instalaciones eléctricas y electrónicas",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/P/subgroups/01"
+                    }
+                  }
+                }
+              ],
+              "_links": {
+                "self": {
+                  "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/P"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Servicios",
+              "href": "https://api.euskadi.eus/procurements/companies/types/S"
+            }
+          }
+        }
+      ],
+      "object": "LA REALIZACIÓN DE TRABAJOS DE MANTENIMIENTO Y REPARACIÓN DE APARATOS MEDIDORES DE POLUCIÓN AMBIENTAL, SENSORES METEOROLÓGICOS Y EQUIPOS DE ADQUISICIÓN DE DATOS, REPARTIDOS ENTRE LAS DIFERENTES ESTACIONES PERTENECIENTES A REDES DE CONTROL DE CALIDAD DEL AIRE",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/01914",
+      "_links": {
+        "self": {
+          "name": "JUAN CARLOS AIZPURUA CALLEJA",
+          "href": "https://api.euskadi.eus/procurements/companies/01914"
+        }
+      }
+    },
+    {
+      "name": "ZAPATA BIO S.L.U.",
+      "registrationNumber": "05307",
+      "identificationNumber": "B01483148",
+      "address": "LASKOAGA 6",
+      "location": {
+        "postalCode": "01138",
+        "municipality": "Zigoitia",
+        "county": "Araba/Álava",
+        "municipalityId": "018",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.501.1",
+          "name": "Construcción completa, reparación y conservación de edificaciones",
+          "_links": {
+            "self": {
+              "name": "Construcción completa, reparación y conservación de edificaciones",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-10-14",
+      "certificateEndDate": "2026-04-13",
+      "classification": [
+        {
+          "id": "O",
+          "name": "Obras",
+          "groups": [
+            {
+              "id": "K",
+              "name": "ESPECIALES",
+              "subgroups": [
+                {
+                  "id": "07",
+                  "name": "Restauración de bienes inmuebles histórico-artísticos",
+                  "categories": [
+                    {
+                      "id": "3",
+                      "name": "Desde 360.001 Hasta 840.000",
+                      "_links": {
+                        "self": {
+                          "name": "Desde 360.001 Hasta 840.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/O/categories/3"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "Restauración de bienes inmuebles histórico-artísticos",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/O/groups/K/subgroups/07"
+                    }
+                  }
+                }
+              ],
+              "_links": {
+                "self": {
+                  "name": "ESPECIALES",
+                  "href": "https://api.euskadi.eus/procurements/companies/types/O/groups/K"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Obras",
+              "href": "https://api.euskadi.eus/procurements/companies/types/O"
+            }
+          }
+        }
+      ],
+      "object": "Construccion",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/05307",
+      "_links": {
+        "self": {
+          "name": "ZAPATA BIO S.L.U.",
+          "href": "https://api.euskadi.eus/procurements/companies/05307"
+        }
+      }
+    },
+    {
+      "name": "LURSTUDIO KOOP. ELK. TXIKIA",
+      "registrationNumber": "10387",
+      "identificationNumber": "F95910808",
+      "address": "Calle Viuda de Epalza 2, 5º D-I (48005)",
+      "location": {
+        "postalCode": "48005",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.843.2",
+          "name": "Servicios técnicos de arquitectura y urbanismo",
+          "_links": {
+            "self": {
+              "name": "Servicios técnicos de arquitectura y urbanismo",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.2"
+            }
+          }
+        },
+        {
+          "id": "1.847",
+          "name": "Servicios de consultoría",
+          "_links": {
+            "self": {
+              "name": "Servicios de consultoría",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.847"
+            }
+          }
+        },
+        {
+          "id": "1.934",
+          "name": "Enseñanza fuera de establecimiento permanente",
+          "_links": {
+            "self": {
+              "name": "Enseñanza fuera de establecimiento permanente",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.934"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-10-14",
+      "certificateEndDate": "2026-04-09",
+      "object": "- LA CONSULTORÍA EN MATERIA DE INNOVACIÓN SOCIAL Y MEDIO AMBIENTAL, PARTICIPACIÓN CIUDADANA, ARQUITECTURA, DISEÑO URBANO, URBANISMO, PAISAJISMO, PLANIFICACIÓN ESTRATÉGICA, DESARROLLO LOCAL Y DEL TERRITORIO Y SOSTENIBILIDAD. - EL DISEÑO Y LA EJECUCIÓN DE PROCESOS DE PARTICIPACIÓN CIUDADANA. - EL DISEÑO, LA REDACCIÓN, LA EJECUCIÓN Y LA GESTIÓN DE PROYECTOS ESTRATÉGICOS, URBANÍSTICOS, PAISAJÍSTICOS Y ARQUITECTÓNICOS, ASÍ COMO DE DISEÑO INDUSTRIAL PARA MOBILIARIO URBANO, ENTRE OTROS. - EL DESARROLLO DE SERVICIOS DE INVESTIGACIÓN, EDUCACIÓN Y FORMACIÓN. - EL DESARROLLO DE SERVICIOS DE INFORMACIÓN, COMUNICACIÓN, DISEÑO GRÁFICO, EDITORIAL Y PUBLICACIÓN. - EL DESARROLLO DE SERVICIOS DE NUEVAS TECNOLOGÍAS DE APOYO A LA PARTICIPACIÓN CIUDADANA Y A LA INNOVACIÓN SOCIAL. - LA PROMOCIÓN DE PROYECTOS Y OBRAS DE ARQUITECTURA Y URBANISMO Y LA PROMOCIÓN DE EVENTOS. ",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/10387",
+      "_links": {
+        "self": {
+          "name": "LURSTUDIO KOOP. ELK. TXIKIA",
+          "href": "https://api.euskadi.eus/procurements/companies/10387"
+        }
+      }
+    },
+    {
+      "name": "COOPER ACTIVA ARQUITECTURA, S.C.P.",
+      "registrationNumber": "05970",
+      "identificationNumber": "J95399754",
+      "address": "Kastaños, 32 bis",
+      "location": {
+        "postalCode": "48007",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.843.2",
+          "name": "Servicios técnicos de arquitectura y urbanismo",
+          "_links": {
+            "self": {
+              "name": "Servicios técnicos de arquitectura y urbanismo",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-10-14",
+      "certificateEndDate": "2026-04-13",
+      "object": "EL EJERCICIO EN COMÚN DE LA ACTIVIDAD PROPIA DE LOS PROFESIONALES DE LA ARQUITECTURA Y URBANISMO, BIEN DIRECTAMENTE, BIEN A TRAVÉS DE LA PARTICIPACIÓN EN OTRAS SOCIEDADES PROFESIONALES",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/05970",
+      "_links": {
+        "self": {
+          "name": "COOPER ACTIVA ARQUITECTURA, S.C.P.",
+          "href": "https://api.euskadi.eus/procurements/companies/05970"
+        }
+      }
+    }
+  ]
+}

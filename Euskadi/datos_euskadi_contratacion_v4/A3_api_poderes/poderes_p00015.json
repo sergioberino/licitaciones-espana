@@ -1,0 +1,1754 @@
+{
+  "totalItems": 919,
+  "totalPages": 92,
+  "currentPage": 15,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "id": 102,
+      "identificationNumber": "Q0100603J",
+      "name": "Ente Público Euskadiko Kirol Portuak",
+      "scope": "CAPV",
+      "address": "C/ Donostia-San Sebastian, nº1  01010 VITORIA-GASTEIZ",
+      "webPage": "http://www.ekpsa.eus",
+      "publicationDate": "2023-07-07",
+      "mainActivity": "Ocio, cultura y religión",
+      "codNUTS": "ES21",
+      "entities": [
+        {
+          "id": 453,
+          "name": "Euskadiko Kirol Portuak",
+          "orgs": [
+            {
+              "id": 911487,
+              "name": "Dirección de Euskadiko Kirol Portuak",
+              "_links": {
+                "self": {
+                  "name": "Dirección de Euskadiko Kirol Portuak",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/102/entities/453/orgs/911487"
+                }
+              }
+            },
+            {
+              "id": 911488,
+              "name": "Consejo de administración",
+              "_links": {
+                "self": {
+                  "name": "Consejo de administración",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/102/entities/453/orgs/911488"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Euskadiko Kirol Portuak",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/102/entities/453"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder102/es_doc/index.html",
+      "_links": {
+        "self": {
+          "name": "Ente Público Euskadiko Kirol Portuak",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/102"
+        }
+      }
+    },
+    {
+      "id": 54,
+      "identificationNumber": "A20500229",
+      "name": "Tolosaldea Garatzen, S.A.",
+      "scope": "GIPUZKOA",
+      "address": "Apatta, 1. Lehiberri zentroa. Apattaerreka industrigunea. 20400 Tolosa (Gipuzkoa) ",
+      "webPage": "http://www.tolosaldeagaratzen.eus",
+      "publicationDate": "2023-07-04",
+      "mainActivity": "Asuntos económicos y financieros",
+      "codNUTS": "ES212",
+      "entities": [
+        {
+          "id": 322,
+          "name": "Tolosaldea Garatzen, S.A.",
+          "orgs": [
+            {
+              "id": 911167,
+              "name": "Consejo de Administración de la Sociedad",
+              "_links": {
+                "self": {
+                  "name": "Consejo de Administración de la Sociedad",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/54/entities/322/orgs/911167"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Tolosaldea Garatzen, S.A.",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/54/entities/322"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder54/es_doc/index.html",
+      "_links": {
+        "self": {
+          "name": "Tolosaldea Garatzen, S.A.",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/54"
+        },
+        "contractingAuthorities": [
+          {
+            "name": "AYUNTAMIENTO DE ANOETA",
+            "href": "https://api.euskadi.eus/procurements/contracting-authorities/17906"
+          },
+          {
+            "name": "Ayuntamiento de Abaltzisketa",
+            "href": "https://api.euskadi.eus/procurements/contracting-authorities/23158"
+          },
+          {
+            "name": "Ayuntamiento de Aduna",
+            "href": "https://api.euskadi.eus/procurements/contracting-authorities/23162"
+          },
+          {
+            "name": "Ayuntamiento de Albiztur",
+            "href": "https://api.euskadi.eus/procurements/contracting-authorities/23273"
+          },
+          {
+            "name": "Ayuntamiento de Alegia",
+            "href": "https://api.euskadi.eus/procurements/contracting-authorities/24751"
+          },
+          {
+            "name": "Ayuntamiento de Alkiza",
+            "href": "https://api.euskadi.eus/procurements/contracting-authorities/23164"
+          },
+          {
+            "name": "Ayuntamiento de Altzo",
+            "href": "https://api.euskadi.eus/procurements/contracting-authorities/25573"
+          },
+          {
+            "name": "Ayuntamiento de Amezketa",
+            "href": "https://api.euskadi.eus/procurements/contracting-authorities/22759"
+          },
+          {
+            "name": "Ayuntamiento de Asteasu",
+            "href": "https://api.euskadi.eus/procurements/contracting-authorities/24379"
+          },
+          {
+            "name": "Ayuntamiento de Baliarrain",
+            "href": "https://api.euskadi.eus/procurements/contracting-authorities/24671"
+          },
+          {
+            "name": "Ayuntamiento de Belauntza",
+            "href": "https://api.euskadi.eus/procurements/contracting-authorities/16577"
+          },
+          {
+            "name": "Ayuntamiento de Berastegi",
+            "href": "https://api.euskadi.eus/procurements/contracting-authorities/20368"
+          },
+          {
+            "name": "Ayuntamiento de Berrobi",
+            "href": "https://api.euskadi.eus/procurements/contracting-authorities/23170"
+          },
+          {
+            "name": "Ayuntamiento de Bidania-Goiatz",
+            "href": "https://api.euskadi.eus/procurements/contracting-authorities/23176"
+          },
+          {
+            "name": "Ayuntamiento de Elduain",
+            "href": "https://api.euskadi.eus/procurements/contracting-authorities/24036"
+          },
+          {
+            "name": "Ayuntamiento de Elduain",
+            "href": "https://api.euskadi.eus/procurements/contracting-authorities/24721"
+          },
+          {
+            "name": "Ayuntamiento de Hernialde",
+            "href": "https://api.euskadi.eus/procurements/contracting-authorities/23166"
+          },
+          {
+            "name": "Ayuntamiento de Ibarra",
+            "href": "https://api.euskadi.eus/procurements/contracting-authorities/16681"
+          },
+          {
+            "name": "Ayuntamiento de Ikaztegieta",
+            "href": "https://api.euskadi.eus/procurements/contracting-authorities/16255"
+          },
+          {
+            "name": "Ayuntamiento de Irura",
+            "href": "https://api.euskadi.eus/procurements/contracting-authorities/23279"
+          },
+          {
+            "name": "Ayuntamiento de Larraul",
+            "href": "https://api.euskadi.eus/procurements/contracting-authorities/16307"
+          },
+          {
+            "name": "Ayuntamiento de Leaburu-Txarama",
+            "href": "https://api.euskadi.eus/procurements/contracting-authorities/23168"
+          },
+          {
+            "name": "Ayuntamiento de Lizartza",
+            "href": "https://api.euskadi.eus/procurements/contracting-authorities/24291"
+          },
+          {
+            "name": "Ayuntamiento de Orendain",
+            "href": "https://api.euskadi.eus/procurements/contracting-authorities/16266"
+          },
+          {
+            "name": "Ayuntamiento de Orexa",
+            "href": "https://api.euskadi.eus/procurements/contracting-authorities/24299"
+          },
+          {
+            "name": "Ayuntamiento de Tolosa",
+            "href": "https://api.euskadi.eus/procurements/contracting-authorities/24746"
+          },
+          {
+            "name": "Ayuntamiento de Villabona",
+            "href": "https://api.euskadi.eus/procurements/contracting-authorities/25018"
+          },
+          {
+            "name": "Ayuntamiento de Zizurkil",
+            "href": "https://api.euskadi.eus/procurements/contracting-authorities/22921"
+          }
+        ]
+      }
+    },
+    {
+      "id": 26144,
+      "identificationNumber": "P0100235A",
+      "name": "Junta Administrativa de Lasarte",
+      "scope": "ARABA/ÁLAVA",
+      "address": "C. Mayor, 10, 01194 Lasarte, Álava",
+      "webPage": "https://www.vitoria-gasteiz.org/wb021/was/contenidoAction.do?idioma=es&uid=u_4e9996a6_163d3559d75__7f38",
+      "publicationDate": "2023-07-03",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES211",
+      "entities": [
+        {
+          "id": 26145,
+          "name": "Junta Administrativa de Lasarte",
+          "orgs": [
+            {
+              "id": 26146,
+              "name": "Asamblea vecinal",
+              "_links": {
+                "self": {
+                  "name": "Asamblea vecinal",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/26144/entities/26145/orgs/26146"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Junta Administrativa de Lasarte",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/26144/entities/26145"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder26144/es_doc/index.html",
+      "_links": {
+        "self": {
+          "name": "Junta Administrativa de Lasarte",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/26144"
+        }
+      }
+    },
+    {
+      "id": 26148,
+      "identificationNumber": "G01177153",
+      "name": "Comunidad de Regantes Noryeste de Vitoria-Gasteiz",
+      "scope": "ARABA/ÁLAVA",
+      "address": "Plaza Simón Bolívar 14, bajo – 01003 Vitoria-Gasteiz – Araba/Álava",
+      "webPage": "https://www.chebro.es/",
+      "publicationDate": "2023-06-30",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES211",
+      "entities": [
+        {
+          "id": 26149,
+          "name": "Comunidad de Regantes Noryeste de Vitoria-Gasteiz",
+          "orgs": [
+            {
+              "id": 26150,
+              "name": "Comunidad de Regantes Noryeste de Vitoria-Gasteiz",
+              "_links": {
+                "self": {
+                  "name": "Comunidad de Regantes Noryeste de Vitoria-Gasteiz",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/26148/entities/26149/orgs/26150"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Comunidad de Regantes Noryeste de Vitoria-Gasteiz",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/26148/entities/26149"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder26148/es_doc/index.html",
+      "_links": {
+        "self": {
+          "name": "Comunidad de Regantes Noryeste de Vitoria-Gasteiz",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/26148"
+        }
+      }
+    },
+    {
+      "id": 26140,
+      "identificationNumber": "V72413362",
+      "name": "Junta de Concertación del Sector S.I-4 Bengoetxea de Orozko",
+      "scope": "BIZKAIA",
+      "address": "Polígono Torrezar S/N (Fribasa) 48410 Orozko ",
+      "webPage": "https://www.orozkoudala.com/",
+      "publicationDate": "2023-06-28",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES213",
+      "entities": [
+        {
+          "id": 26141,
+          "name": "Junta de Concertación del Sector S.I-4 Bengoetxea de Orozko ",
+          "orgs": [
+            {
+              "id": 26142,
+              "name": "Junta de Concertación del Sector S.I-4 Bengoetxea de Orozko ",
+              "_links": {
+                "self": {
+                  "name": "Junta de Concertación del Sector S.I-4 Bengoetxea de Orozko ",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/26140/entities/26141/orgs/26142"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Junta de Concertación del Sector S.I-4 Bengoetxea de Orozko ",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/26140/entities/26141"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder26140/es_doc/index.html",
+      "_links": {
+        "self": {
+          "name": "Junta de Concertación del Sector S.I-4 Bengoetxea de Orozko",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/26140"
+        },
+        "contractingAuthorities": [
+          {
+            "name": "Ayuntamiento de Orozko",
+            "href": "https://api.euskadi.eus/procurements/contracting-authorities/18700"
+          }
+        ]
+      }
+    },
+    {
+      "id": 26131,
+      "identificationNumber": "V02981231",
+      "name": "Junta de Concertación de la Unidad de Ejecución 34.1 del Area J, Azbarren, de Basauri",
+      "scope": "BIZKAIA",
+      "address": "Lehendakari Agirre 61, behea, 48970 BASAURI",
+      "webPage": "https://bidebi.basauri.eus",
+      "publicationDate": "2023-06-28",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES213",
+      "entities": [
+        {
+          "id": 26132,
+          "name": "Junta de Concertación de la Unidad de Ejecución 34.1 del Area J, Azbarren, de Basauri",
+          "orgs": [
+            {
+              "id": 26133,
+              "name": "Presidente",
+              "_links": {
+                "self": {
+                  "name": "Presidente",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/26131/entities/26132/orgs/26133"
+                }
+              }
+            },
+            {
+              "id": 26134,
+              "name": "Asamblea",
+              "_links": {
+                "self": {
+                  "name": "Asamblea",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/26131/entities/26132/orgs/26134"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Junta de Concertación de la Unidad de Ejecución 34.1 del Area J, Azbarren, de Basauri",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/26131/entities/26132"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder26131/es_doc/index.html",
+      "_links": {
+        "self": {
+          "name": "Junta de Concertación de la Unidad de Ejecución 34.1 del Area J, Azbarren, de Basauri",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/26131"
+        }
+      }
+    },
+    {
+      "id": 24446,
+      "identificationNumber": "P4802400D",
+      "name": "Ayuntamiento de Bilbao",
+      "scope": "BIZKAIA",
+      "address": "Plaza Ernesto Erkoreka nº1, 48007 Bilbao",
+      "webPage": "https://www.bilbao.eus",
+      "publicationDate": "2023-06-28",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES213",
+      "entities": [
+        {
+          "id": 24447,
+          "name": "Ayuntamiento de Bilbao",
+          "_links": {
+            "self": {
+              "name": "Ayuntamiento de Bilbao",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/24446/entities/24447"
+            }
+          }
+        },
+        {
+          "id": 24448,
+          "name": "Área de Cultura y Gobernanza",
+          "orgs": [
+            {
+              "id": 24449,
+              "name": "Ayuntamiento de Bilbao",
+              "_links": {
+                "self": {
+                  "name": "Ayuntamiento de Bilbao",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/24446/entities/24448/orgs/24449"
+                }
+              }
+            },
+            {
+              "id": 25030,
+              "name": "Concejal Delegado del Área de Cultura y Gobernanza",
+              "_links": {
+                "self": {
+                  "name": "Concejal Delegado del Área de Cultura y Gobernanza",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/24446/entities/24448/orgs/25030"
+                }
+              }
+            },
+            {
+              "id": 24450,
+              "name": "Concejal Delegado de Contratación",
+              "_links": {
+                "self": {
+                  "name": "Concejal Delegado de Contratación",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/24446/entities/24448/orgs/24450"
+                }
+              }
+            },
+            {
+              "id": 25029,
+              "name": "Junta de Gobierno de la Villa de Bilbao",
+              "_links": {
+                "self": {
+                  "name": "Junta de Gobierno de la Villa de Bilbao",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/24446/entities/24448/orgs/25029"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Área de Cultura y Gobernanza",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/24446/entities/24448"
+            }
+          }
+        },
+        {
+          "id": 25073,
+          "name": "Área de Igualdad",
+          "orgs": [
+            {
+              "id": 25074,
+              "name": "Concejal Delegado de Contratación",
+              "_links": {
+                "self": {
+                  "name": "Concejal Delegado de Contratación",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/24446/entities/25073/orgs/25074"
+                }
+              }
+            },
+            {
+              "id": 25075,
+              "name": "Junta de Gobierno de la Villa de Bilbao",
+              "_links": {
+                "self": {
+                  "name": "Junta de Gobierno de la Villa de Bilbao",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/24446/entities/25073/orgs/25075"
+                }
+              }
+            },
+            {
+              "id": 25076,
+              "name": "Concejal Delegado del Área de Igualdad",
+              "_links": {
+                "self": {
+                  "name": "Concejal Delegado del Área de Igualdad",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/24446/entities/25073/orgs/25076"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Área de Igualdad",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/24446/entities/25073"
+            }
+          }
+        },
+        {
+          "id": 25093,
+          "name": "Área de Desarrollo Económico, Comercio y Empleo",
+          "orgs": [
+            {
+              "id": 25094,
+              "name": "Concejal Delegado de Contratación",
+              "_links": {
+                "self": {
+                  "name": "Concejal Delegado de Contratación",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/24446/entities/25093/orgs/25094"
+                }
+              }
+            },
+            {
+              "id": 25095,
+              "name": "Junta de Gobierno de la Villa de Bilbao",
+              "_links": {
+                "self": {
+                  "name": "Junta de Gobierno de la Villa de Bilbao",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/24446/entities/25093/orgs/25095"
+                }
+              }
+            },
+            {
+              "id": 25096,
+              "name": "Concejal Delegado del Área de Desarrollo Económico, Comercio y Empleo",
+              "_links": {
+                "self": {
+                  "name": "Concejal Delegado del Área de Desarrollo Económico, Comercio y Empleo",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/24446/entities/25093/orgs/25096"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Área de Desarrollo Económico, Comercio y Empleo",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/24446/entities/25093"
+            }
+          }
+        },
+        {
+          "id": 25031,
+          "name": "Área de Euskera y Educación",
+          "orgs": [
+            {
+              "id": 25032,
+              "name": "Concejal Delegado de Contratación",
+              "_links": {
+                "self": {
+                  "name": "Concejal Delegado de Contratación",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/24446/entities/25031/orgs/25032"
+                }
+              }
+            },
+            {
+              "id": 25033,
+              "name": "Junta de Gobierno de la Villa de Bilbao",
+              "_links": {
+                "self": {
+                  "name": "Junta de Gobierno de la Villa de Bilbao",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/24446/entities/25031/orgs/25033"
+                }
+              }
+            },
+            {
+              "id": 25034,
+              "name": "Concejal Delegado del Área de Euskera y Educación",
+              "_links": {
+                "self": {
+                  "name": "Concejal Delegado del Área de Euskera y Educación",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/24446/entities/25031/orgs/25034"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Área de Euskera y Educación",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/24446/entities/25031"
+            }
+          }
+        },
+        {
+          "id": 25046,
+          "name": "Área de Salud y Consumo",
+          "orgs": [
+            {
+              "id": 25047,
+              "name": "Concejal Delegado de Contratación",
+              "_links": {
+                "self": {
+                  "name": "Concejal Delegado de Contratación",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/24446/entities/25046/orgs/25047"
+                }
+              }
+            },
+            {
+              "id": 25048,
+              "name": "Junta de Gobierno de la Villa de Bilbao",
+              "_links": {
+                "self": {
+                  "name": "Junta de Gobierno de la Villa de Bilbao",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/24446/entities/25046/orgs/25048"
+                }
+              }
+            },
+            {
+              "id": 25049,
+              "name": "Concejal Delegado del Área de Salud y Consumo",
+              "_links": {
+                "self": {
+                  "name": "Concejal Delegado del Área de Salud y Consumo",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/24446/entities/25046/orgs/25049"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Área de Salud y Consumo",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/24446/entities/25046"
+            }
+          }
+        },
+        {
+          "id": 25051,
+          "name": "Área de Regeneración Urbana",
+          "orgs": [
+            {
+              "id": 25052,
+              "name": "Concejal Delegado de Contratación",
+              "_links": {
+                "self": {
+                  "name": "Concejal Delegado de Contratación",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/24446/entities/25051/orgs/25052"
+                }
+              }
+            },
+            {
+              "id": 25053,
+              "name": "Junta de Gobierno de la Villa de Bilbao",
+              "_links": {
+                "self": {
+                  "name": "Junta de Gobierno de la Villa de Bilbao",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/24446/entities/25051/orgs/25053"
+                }
+              }
+            },
+            {
+              "id": 25054,
+              "name": "Concejal Delegado del Área de Regeneración Urbana",
+              "_links": {
+                "self": {
+                  "name": "Concejal Delegado del Área de Regeneración Urbana",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/24446/entities/25051/orgs/25054"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Área de Regeneración Urbana",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/24446/entities/25051"
+            }
+          }
+        },
+        {
+          "id": 25056,
+          "name": "Área de Vivienda",
+          "orgs": [
+            {
+              "id": 25057,
+              "name": "Concejal Delegado de Contratación",
+              "_links": {
+                "self": {
+                  "name": "Concejal Delegado de Contratación",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/24446/entities/25056/orgs/25057"
+                }
+              }
+            },
+            {
+              "id": 25059,
+              "name": "Concejal Delegado del Área de Cultura y Gobernanza",
+              "_links": {
+                "self": {
+                  "name": "Concejal Delegado del Área de Cultura y Gobernanza",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/24446/entities/25056/orgs/25059"
+                }
+              }
+            },
+            {
+              "id": 25058,
+              "name": "Junta de Gobierno de la Villa de Bilbao",
+              "_links": {
+                "self": {
+                  "name": "Junta de Gobierno de la Villa de Bilbao",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/24446/entities/25056/orgs/25058"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Área de Vivienda",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/24446/entities/25056"
+            }
+          }
+        },
+        {
+          "id": 25084,
+          "name": "Área de Servicios y Calidad de Vida",
+          "orgs": [
+            {
+              "id": 25088,
+              "name": "Concejal Delegado de Contratación",
+              "_links": {
+                "self": {
+                  "name": "Concejal Delegado de Contratación",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/24446/entities/25084/orgs/25088"
+                }
+              }
+            },
+            {
+              "id": 25090,
+              "name": "Junta de Gobierno de la Villa de Bilbao",
+              "_links": {
+                "self": {
+                  "name": "Junta de Gobierno de la Villa de Bilbao",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/24446/entities/25084/orgs/25090"
+                }
+              }
+            },
+            {
+              "id": 25091,
+              "name": "Concejal Delegado del Área de Servicios y Calidad de Vida",
+              "_links": {
+                "self": {
+                  "name": "Concejal Delegado del Área de Servicios y Calidad de Vida",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/24446/entities/25084/orgs/25091"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Área de Servicios y Calidad de Vida",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/24446/entities/25084"
+            }
+          }
+        },
+        {
+          "id": 25098,
+          "name": "Área de Hacienda",
+          "orgs": [
+            {
+              "id": 25099,
+              "name": "Concejal Delegado de Contratación",
+              "_links": {
+                "self": {
+                  "name": "Concejal Delegado de Contratación",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/24446/entities/25098/orgs/25099"
+                }
+              }
+            },
+            {
+              "id": 25100,
+              "name": "Junta de Gobierno de la Villa de Bilbao",
+              "_links": {
+                "self": {
+                  "name": "Junta de Gobierno de la Villa de Bilbao",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/24446/entities/25098/orgs/25100"
+                }
+              }
+            },
+            {
+              "id": 25101,
+              "name": "Concejal Delegado del Área de Hacienda",
+              "_links": {
+                "self": {
+                  "name": "Concejal Delegado del Área de Hacienda",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/24446/entities/25098/orgs/25101"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Área de Hacienda",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/24446/entities/25098"
+            }
+          }
+        },
+        {
+          "id": 25103,
+          "name": "Área de Atención y Participación Ciudadana e Internacional",
+          "orgs": [
+            {
+              "id": 25104,
+              "name": "Concejal Delegado de Contratación",
+              "_links": {
+                "self": {
+                  "name": "Concejal Delegado de Contratación",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/24446/entities/25103/orgs/25104"
+                }
+              }
+            },
+            {
+              "id": 25105,
+              "name": "Junta de Gobierno de la Villa de Bilbao",
+              "_links": {
+                "self": {
+                  "name": "Junta de Gobierno de la Villa de Bilbao",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/24446/entities/25103/orgs/25105"
+                }
+              }
+            },
+            {
+              "id": 25106,
+              "name": "Concejal Delegado del Área de Atención y Participación Ciudadana e Internacional",
+              "_links": {
+                "self": {
+                  "name": "Concejal Delegado del Área de Atención y Participación Ciudadana e Internacional",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/24446/entities/25103/orgs/25106"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Área de Atención y Participación Ciudadana e Internacional",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/24446/entities/25103"
+            }
+          }
+        },
+        {
+          "id": 25108,
+          "name": "Área de Seguridad Ciudadana",
+          "orgs": [
+            {
+              "id": 25109,
+              "name": "Concejal Delegado de Contratación",
+              "_links": {
+                "self": {
+                  "name": "Concejal Delegado de Contratación",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/24446/entities/25108/orgs/25109"
+                }
+              }
+            },
+            {
+              "id": 25110,
+              "name": "Junta de Gobierno de la Villa de Bilbao",
+              "_links": {
+                "self": {
+                  "name": "Junta de Gobierno de la Villa de Bilbao",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/24446/entities/25108/orgs/25110"
+                }
+              }
+            },
+            {
+              "id": 25111,
+              "name": "Concejal Delegado del Área de Seguridad Ciudadana",
+              "_links": {
+                "self": {
+                  "name": "Concejal Delegado del Área de Seguridad Ciudadana",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/24446/entities/25108/orgs/25111"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Área de Seguridad Ciudadana",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/24446/entities/25108"
+            }
+          }
+        },
+        {
+          "id": 25036,
+          "name": "Área de Juventud y Deporte",
+          "orgs": [
+            {
+              "id": 25037,
+              "name": "Concejal Delegado de Contratación",
+              "_links": {
+                "self": {
+                  "name": "Concejal Delegado de Contratación",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/24446/entities/25036/orgs/25037"
+                }
+              }
+            },
+            {
+              "id": 25038,
+              "name": "Junta de Gobierno de la Villa de Bilbao",
+              "_links": {
+                "self": {
+                  "name": "Junta de Gobierno de la Villa de Bilbao",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/24446/entities/25036/orgs/25038"
+                }
+              }
+            },
+            {
+              "id": 25039,
+              "name": "Concejal Delegado del Área de Juventud y Deporte",
+              "_links": {
+                "self": {
+                  "name": "Concejal Delegado del Área de Juventud y Deporte",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/24446/entities/25036/orgs/25039"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Área de Juventud y Deporte",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/24446/entities/25036"
+            }
+          }
+        },
+        {
+          "id": 25041,
+          "name": "Área de Movilidad y Sostenibilidad",
+          "orgs": [
+            {
+              "id": 25042,
+              "name": "Concejal Delegado de Contratación",
+              "_links": {
+                "self": {
+                  "name": "Concejal Delegado de Contratación",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/24446/entities/25041/orgs/25042"
+                }
+              }
+            },
+            {
+              "id": 25043,
+              "name": "Junta de Gobierno de la Villa de Bilbao",
+              "_links": {
+                "self": {
+                  "name": "Junta de Gobierno de la Villa de Bilbao",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/24446/entities/25041/orgs/25043"
+                }
+              }
+            },
+            {
+              "id": 25044,
+              "name": "Concejal Delegado del Área de Movilidad y Sostenibilidad",
+              "_links": {
+                "self": {
+                  "name": "Concejal Delegado del Área de Movilidad y Sostenibilidad",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/24446/entities/25041/orgs/25044"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Área de Movilidad y Sostenibilidad",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/24446/entities/25041"
+            }
+          }
+        },
+        {
+          "id": 25118,
+          "name": "Oficina de Protocolo, Relaciones Públicas e Institucionales",
+          "orgs": [
+            {
+              "id": 25119,
+              "name": "Concejal Delegado de Contratación",
+              "_links": {
+                "self": {
+                  "name": "Concejal Delegado de Contratación",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/24446/entities/25118/orgs/25119"
+                }
+              }
+            },
+            {
+              "id": 25121,
+              "name": "Concejal Delegado del Área de Cultura y Gobernanza",
+              "_links": {
+                "self": {
+                  "name": "Concejal Delegado del Área de Cultura y Gobernanza",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/24446/entities/25118/orgs/25121"
+                }
+              }
+            },
+            {
+              "id": 25120,
+              "name": "Junta de Gobierno de la Villa de Bilbao",
+              "_links": {
+                "self": {
+                  "name": "Junta de Gobierno de la Villa de Bilbao",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/24446/entities/25118/orgs/25120"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Oficina de Protocolo, Relaciones Públicas e Institucionales",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/24446/entities/25118"
+            }
+          }
+        },
+        {
+          "id": 25061,
+          "name": "Área de Acción Social",
+          "orgs": [
+            {
+              "id": 25062,
+              "name": "Concejal Delegado de Contratación",
+              "_links": {
+                "self": {
+                  "name": "Concejal Delegado de Contratación",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/24446/entities/25061/orgs/25062"
+                }
+              }
+            },
+            {
+              "id": 25063,
+              "name": "Junta de Gobierno de la Villa de Bilbao",
+              "_links": {
+                "self": {
+                  "name": "Junta de Gobierno de la Villa de Bilbao",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/24446/entities/25061/orgs/25063"
+                }
+              }
+            },
+            {
+              "id": 25064,
+              "name": "Concejal Delegado del Área de Acción Social",
+              "_links": {
+                "self": {
+                  "name": "Concejal Delegado del Área de Acción Social",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/24446/entities/25061/orgs/25064"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Área de Acción Social",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/24446/entities/25061"
+            }
+          }
+        },
+        {
+          "id": 25067,
+          "name": "Área de Cooperación, Convivencia y Fiestas",
+          "orgs": [
+            {
+              "id": 25071,
+              "name": "Concejal Delegado del Área de Cultura y Gobernanza",
+              "_links": {
+                "self": {
+                  "name": "Concejal Delegado del Área de Cultura y Gobernanza",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/24446/entities/25067/orgs/25071"
+                }
+              }
+            },
+            {
+              "id": 25068,
+              "name": "Concejal Delegado de Contratación",
+              "_links": {
+                "self": {
+                  "name": "Concejal Delegado de Contratación",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/24446/entities/25067/orgs/25068"
+                }
+              }
+            },
+            {
+              "id": 25069,
+              "name": "Junta de Gobierno de la Villa de Bilbao",
+              "_links": {
+                "self": {
+                  "name": "Junta de Gobierno de la Villa de Bilbao",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/24446/entities/25067/orgs/25069"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Área de Cooperación, Convivencia y Fiestas",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/24446/entities/25067"
+            }
+          }
+        },
+        {
+          "id": 25078,
+          "name": "Área de Obras, Planificación Urbana y Proyectos Estratégicos",
+          "orgs": [
+            {
+              "id": 25079,
+              "name": "Concejal Delegado de Contratación",
+              "_links": {
+                "self": {
+                  "name": "Concejal Delegado de Contratación",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/24446/entities/25078/orgs/25079"
+                }
+              }
+            },
+            {
+              "id": 25080,
+              "name": "Junta de Gobierno de la Villa de Bilbao",
+              "_links": {
+                "self": {
+                  "name": "Junta de Gobierno de la Villa de Bilbao",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/24446/entities/25078/orgs/25080"
+                }
+              }
+            },
+            {
+              "id": 25081,
+              "name": "Concejal Delegado del Área de Obras, Planificación Urbana y Proyectos Estratégicos",
+              "_links": {
+                "self": {
+                  "name": "Concejal Delegado del Área de Obras, Planificación Urbana y Proyectos Estratégicos",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/24446/entities/25078/orgs/25081"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Área de Obras, Planificación Urbana y Proyectos Estratégicos",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/24446/entities/25078"
+            }
+          }
+        },
+        {
+          "id": 25113,
+          "name": "Oficina de Comunicación",
+          "orgs": [
+            {
+              "id": 25114,
+              "name": "Concejal Delegado de Contratación",
+              "_links": {
+                "self": {
+                  "name": "Concejal Delegado de Contratación",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/24446/entities/25113/orgs/25114"
+                }
+              }
+            },
+            {
+              "id": 25115,
+              "name": "Junta de Gobierno de la Villa de Bilbao",
+              "_links": {
+                "self": {
+                  "name": "Junta de Gobierno de la Villa de Bilbao",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/24446/entities/25113/orgs/25115"
+                }
+              }
+            },
+            {
+              "id": 25116,
+              "name": "Concejal Delegado del Área de Cultura y Gobernanza",
+              "_links": {
+                "self": {
+                  "name": "Concejal Delegado del Área de Cultura y Gobernanza",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/24446/entities/25113/orgs/25116"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Oficina de Comunicación",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/24446/entities/25113"
+            }
+          }
+        },
+        {
+          "id": 25031,
+          "name": "Área de Educación",
+          "orgs": [
+            {
+              "id": 25032,
+              "name": "Concejal Delegado de Contratación",
+              "_links": {
+                "self": {
+                  "name": "Concejal Delegado de Contratación",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/24446/entities/25031/orgs/25032"
+                }
+              }
+            },
+            {
+              "id": 25033,
+              "name": "Junta de Gobierno de la Villa de Bilbao",
+              "_links": {
+                "self": {
+                  "name": "Junta de Gobierno de la Villa de Bilbao",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/24446/entities/25031/orgs/25033"
+                }
+              }
+            },
+            {
+              "id": 25034,
+              "name": "Concejal Delegado del Área de Euskera y Educación",
+              "_links": {
+                "self": {
+                  "name": "Concejal Delegado del Área de Euskera y Educación",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/24446/entities/25031/orgs/25034"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Área de Educación",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/24446/entities/25031"
+            }
+          }
+        },
+        {
+          "id": 25073,
+          "name": "Área de Igualdad, Convivencia, Cooperación e Inmigración",
+          "orgs": [
+            {
+              "id": 25074,
+              "name": "Concejal Delegado de Contratación",
+              "_links": {
+                "self": {
+                  "name": "Concejal Delegado de Contratación",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/24446/entities/25073/orgs/25074"
+                }
+              }
+            },
+            {
+              "id": 25075,
+              "name": "Junta de Gobierno de la Villa de Bilbao",
+              "_links": {
+                "self": {
+                  "name": "Junta de Gobierno de la Villa de Bilbao",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/24446/entities/25073/orgs/25075"
+                }
+              }
+            },
+            {
+              "id": 25076,
+              "name": "Concejal Delegado del Área de Igualdad",
+              "_links": {
+                "self": {
+                  "name": "Concejal Delegado del Área de Igualdad",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/24446/entities/25073/orgs/25076"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Área de Igualdad, Convivencia, Cooperación e Inmigración",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/24446/entities/25073"
+            }
+          }
+        },
+        {
+          "id": 25078,
+          "name": "Área de Planificación Urbana, Proyectos Estratégicos y Espacio Público",
+          "orgs": [
+            {
+              "id": 25079,
+              "name": "Concejal Delegado de Contratación",
+              "_links": {
+                "self": {
+                  "name": "Concejal Delegado de Contratación",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/24446/entities/25078/orgs/25079"
+                }
+              }
+            },
+            {
+              "id": 25080,
+              "name": "Junta de Gobierno de la Villa de Bilbao",
+              "_links": {
+                "self": {
+                  "name": "Junta de Gobierno de la Villa de Bilbao",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/24446/entities/25078/orgs/25080"
+                }
+              }
+            },
+            {
+              "id": 25081,
+              "name": "Concejal Delegado del Área de Obras, Planificación Urbana y Proyectos Estratégicos",
+              "_links": {
+                "self": {
+                  "name": "Concejal Delegado del Área de Obras, Planificación Urbana y Proyectos Estratégicos",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/24446/entities/25078/orgs/25081"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Área de Planificación Urbana, Proyectos Estratégicos y Espacio Público",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/24446/entities/25078"
+            }
+          }
+        },
+        {
+          "id": 25084,
+          "name": "Área de Obras Públicas y Servicios",
+          "orgs": [
+            {
+              "id": 25088,
+              "name": "Concejal Delegado de Contratación",
+              "_links": {
+                "self": {
+                  "name": "Concejal Delegado de Contratación",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/24446/entities/25084/orgs/25088"
+                }
+              }
+            },
+            {
+              "id": 25090,
+              "name": "Junta de Gobierno de la Villa de Bilbao",
+              "_links": {
+                "self": {
+                  "name": "Junta de Gobierno de la Villa de Bilbao",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/24446/entities/25084/orgs/25090"
+                }
+              }
+            },
+            {
+              "id": 25091,
+              "name": "Concejal Delegado del Área de Servicios y Calidad de Vida",
+              "_links": {
+                "self": {
+                  "name": "Concejal Delegado del Área de Servicios y Calidad de Vida",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/24446/entities/25084/orgs/25091"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Área de Obras Públicas y Servicios",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/24446/entities/25084"
+            }
+          }
+        },
+        {
+          "id": 25108,
+          "name": "Área de Seguridad",
+          "orgs": [
+            {
+              "id": 25109,
+              "name": "Concejal Delegado de Contratación",
+              "_links": {
+                "self": {
+                  "name": "Concejal Delegado de Contratación",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/24446/entities/25108/orgs/25109"
+                }
+              }
+            },
+            {
+              "id": 25110,
+              "name": "Junta de Gobierno de la Villa de Bilbao",
+              "_links": {
+                "self": {
+                  "name": "Junta de Gobierno de la Villa de Bilbao",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/24446/entities/25108/orgs/25110"
+                }
+              }
+            },
+            {
+              "id": 25111,
+              "name": "Concejal Delegado del Área de Seguridad Ciudadana",
+              "_links": {
+                "self": {
+                  "name": "Concejal Delegado del Área de Seguridad Ciudadana",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/24446/entities/25108/orgs/25111"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Área de Seguridad",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/24446/entities/25108"
+            }
+          }
+        },
+        {
+          "id": 25093,
+          "name": "Área de Desarrollo Económico, Comercio, Turismo y Empleo",
+          "orgs": [
+            {
+              "id": 25094,
+              "name": "Concejal Delegado de Contratación",
+              "_links": {
+                "self": {
+                  "name": "Concejal Delegado de Contratación",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/24446/entities/25093/orgs/25094"
+                }
+              }
+            },
+            {
+              "id": 25095,
+              "name": "Junta de Gobierno de la Villa de Bilbao",
+              "_links": {
+                "self": {
+                  "name": "Junta de Gobierno de la Villa de Bilbao",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/24446/entities/25093/orgs/25095"
+                }
+              }
+            },
+            {
+              "id": 25096,
+              "name": "Concejal Delegado del Área de Desarrollo Económico, Comercio y Empleo",
+              "_links": {
+                "self": {
+                  "name": "Concejal Delegado del Área de Desarrollo Económico, Comercio y Empleo",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/24446/entities/25093/orgs/25096"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Área de Desarrollo Económico, Comercio, Turismo y Empleo",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/24446/entities/25093"
+            }
+          }
+        },
+        {
+          "id": 26088,
+          "name": "Área de Fiestas",
+          "orgs": [
+            {
+              "id": 26089,
+              "name": "Concejal Delegado de Contratación",
+              "_links": {
+                "self": {
+                  "name": "Concejal Delegado de Contratación",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/24446/entities/26088/orgs/26089"
+                }
+              }
+            },
+            {
+              "id": 26090,
+              "name": "Junta de Gobierno de la Villa de Bilbao",
+              "_links": {
+                "self": {
+                  "name": "Junta de Gobierno de la Villa de Bilbao",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/24446/entities/26088/orgs/26090"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Área de Fiestas",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/24446/entities/26088"
+            }
+          }
+        },
+        {
+          "id": 26092,
+          "name": "Gabinete de Alcaldía",
+          "orgs": [
+            {
+              "id": 26093,
+              "name": "Concejal Delegado de Contratación",
+              "_links": {
+                "self": {
+                  "name": "Concejal Delegado de Contratación",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/24446/entities/26092/orgs/26093"
+                }
+              }
+            },
+            {
+              "id": 26094,
+              "name": "Junta de Gobierno de la Villa de Bilbao",
+              "_links": {
+                "self": {
+                  "name": "Junta de Gobierno de la Villa de Bilbao",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/24446/entities/26092/orgs/26094"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Gabinete de Alcaldía",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/24446/entities/26092"
+            }
+          }
+        },
+        {
+          "id": 26096,
+          "name": "Intervención General Municipal",
+          "orgs": [
+            {
+              "id": 26097,
+              "name": "Concejal Delegado de Contratación",
+              "_links": {
+                "self": {
+                  "name": "Concejal Delegado de Contratación",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/24446/entities/26096/orgs/26097"
+                }
+              }
+            },
+            {
+              "id": 26098,
+              "name": "Kontratazioko Zinegotzi Ordezkaria",
+              "_links": {
+                "self": {
+                  "name": "Kontratazioko Zinegotzi Ordezkaria",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/24446/entities/26096/orgs/26098"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Intervención General Municipal",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/24446/entities/26096"
+            }
+          }
+        },
+        {
+          "id": 26100,
+          "name": "Asesoría Jurídica",
+          "orgs": [
+            {
+              "id": 26101,
+              "name": "Concejal Delegado de Contratación",
+              "_links": {
+                "self": {
+                  "name": "Concejal Delegado de Contratación",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/24446/entities/26100/orgs/26101"
+                }
+              }
+            },
+            {
+              "id": 26102,
+              "name": "Junta de Gobierno de la Villa de Bilbao",
+              "_links": {
+                "self": {
+                  "name": "Junta de Gobierno de la Villa de Bilbao",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/24446/entities/26100/orgs/26102"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Asesoría Jurídica",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/24446/entities/26100"
+            }
+          }
+        },
+        {
+          "id": 25103,
+          "name": "Área de Euskera, Atención y Participación Ciudadana, Agenda 2030 e Internacional",
+          "orgs": [
+            {
+              "id": 25104,
+              "name": "Concejal Delegado de Contratación",
+              "_links": {
+                "self": {
+                  "name": "Concejal Delegado de Contratación",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/24446/entities/25103/orgs/25104"
+                }
+              }
+            },
+            {
+              "id": 25105,
+              "name": "Junta de Gobierno de la Villa de Bilbao",
+              "_links": {
+                "self": {
+                  "name": "Junta de Gobierno de la Villa de Bilbao",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/24446/entities/25103/orgs/25105"
+                }
+              }
+            },
+            {
+              "id": 25106,
+              "name": "Concejal Delegado del Área de Atención y Participación Ciudadana e Internacional",
+              "_links": {
+                "self": {
+                  "name": "Concejal Delegado del Área de Atención y Participación Ciudadana e Internacional",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/24446/entities/25103/orgs/25106"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Área de Euskera, Atención y Participación Ciudadana, Agenda 2030 e Internacional",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/24446/entities/25103"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder24446/es_doc/index.html",
+      "_links": {
+        "self": {
+          "name": "Ayuntamiento de Bilbao",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/24446"
+        }
+      }
+    },
+    {
+      "id": 26064,
+      "identificationNumber": "H13793260",
+      "name": "Comunidad Irumineta 16, 18, 20, 22",
+      "scope": "BIZKAIA",
+      "address": "Gran Vía nº 53 – 7º C ",
+      "webPage": "http://www.landaida.com",
+      "publicationDate": "2023-06-07",
+      "mainActivity": "Vivienda y servicios comunitarios",
+      "codNUTS": "ES213",
+      "entities": [
+        {
+          "id": 26065,
+          "name": "Comunidad Irumineta 16, 18, 20, 22",
+          "orgs": [
+            {
+              "id": 26066,
+              "name": "Comunidad Irumineta 16, 18, 20, 22",
+              "_links": {
+                "self": {
+                  "name": "Comunidad Irumineta 16, 18, 20, 22",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/26064/entities/26065/orgs/26066"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Comunidad Irumineta 16, 18, 20, 22",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/26064/entities/26065"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder26064/es_doc/index.html",
+      "_links": {
+        "self": {
+          "name": "Comunidad Irumineta 16, 18, 20, 22",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/26064"
+        }
+      }
+    },
+    {
+      "id": 26059,
+      "identificationNumber": "P2004000B",
+      "name": "Ayuntamiento de Gaztelu",
+      "scope": "GIPUZKOA",
+      "address": "Kontzeju 1. 20491 Gaztelu  ",
+      "webPage": "https://www.gaztelu.eus/eu/",
+      "publicationDate": "2023-06-02",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES212",
+      "entities": [
+        {
+          "id": 26060,
+          "name": "Ayuntamiento de Gaztelu",
+          "orgs": [
+            {
+              "id": 26061,
+              "name": "Pleno",
+              "_links": {
+                "self": {
+                  "name": "Pleno",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/26059/entities/26060/orgs/26061"
+                }
+              }
+            },
+            {
+              "id": 26062,
+              "name": "Alcaldía",
+              "_links": {
+                "self": {
+                  "name": "Alcaldía",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/26059/entities/26060/orgs/26062"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Ayuntamiento de Gaztelu",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/26059/entities/26060"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder26059/es_doc/index.html",
+      "_links": {
+        "self": {
+          "name": "Ayuntamiento de Gaztelu",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/26059"
+        }
+      }
+    },
+    {
+      "id": 26052,
+      "identificationNumber": "H16870578",
+      "name": "Comunidad Irumineta 24, 26, 28, 30",
+      "scope": "BIZKAIA",
+      "address": "Irumineta 24, 26, 28, 30",
+      "webPage": "http://www.landaida.com/",
+      "publicationDate": "2023-05-26",
+      "mainActivity": "Vivienda y servicios comunitarios",
+      "codNUTS": "ES213",
+      "entities": [
+        {
+          "id": 26053,
+          "name": "Comunidad Irumineta 24, 26, 28, 30",
+          "orgs": [
+            {
+              "id": 26054,
+              "name": "Junta de Comunidad",
+              "_links": {
+                "self": {
+                  "name": "Junta de Comunidad",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/26052/entities/26053/orgs/26054"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Comunidad Irumineta 24, 26, 28, 30",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/26052/entities/26053"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder26052/es_doc/index.html",
+      "_links": {
+        "self": {
+          "name": "Comunidad Irumineta 24, 26, 28, 30",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/26052"
+        }
+      }
+    }
+  ]
+}

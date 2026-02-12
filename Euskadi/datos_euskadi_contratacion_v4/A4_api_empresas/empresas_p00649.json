@@ -1,0 +1,518 @@
+{
+  "totalItems": 9042,
+  "totalPages": 905,
+  "currentPage": 649,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "name": "ÁNGEL IGLESIAS, S.A.",
+      "registrationNumber": "00069",
+      "identificationNumber": "A20036018",
+      "address": "POLÍGONO INDUSTRIAL 27, Nº 30.",
+      "location": {
+        "postalCode": "20014",
+        "municipality": "Donostia / San Sebastián",
+        "county": "Gipuzkoa",
+        "municipalityId": "069",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.351.2",
+          "name": "Fabricación de aparatos y equipo de radiocomunicación, radiodifusión",
+          "_links": {
+            "self": {
+              "name": "Fabricación de aparatos y equipo de radiocomunicación, radiodifusión",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.351.2"
+            }
+          }
+        },
+        {
+          "id": "1.353",
+          "name": "Fabricación de aparatos y equipo electrónico de señalización, control",
+          "_links": {
+            "self": {
+              "name": "Fabricación de aparatos y equipo electrónico de señalización, control",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.353"
+            }
+          }
+        },
+        {
+          "id": "1.504.1",
+          "name": "Instalaciones eléctricas en general",
+          "_links": {
+            "self": {
+              "name": "Instalaciones eléctricas en general",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.504.1"
+            }
+          }
+        },
+        {
+          "id": "1.921.7",
+          "name": "Servicios de protección contra incendios y accidentes",
+          "_links": {
+            "self": {
+              "name": "Servicios de protección contra incendios y accidentes",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.921.7"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2016-06-09",
+      "certificateEndDate": "2016-12-07",
+      "object": "A) ESTUDIO, INVESTIGACIÓN, DISEÑO, PROMOCIÓN, FABRICACIÓN, DISTRIBUCIÓN, COMERCIALIZACIÓN Y ARRENDAMIENTO DE EQUIPOS Y SISTEMAS DE RECEPCIÓN, TRATAMIENTO Y DISTRIBUCIÓN DE SEÑALES DE DIFUSIÓN AUDIOVISUAL; DE ELECTRÓNICA, DE INFORMÁTICA Y TELECOMUNICACIONES; DE MEDICIÓN, CONTROL Y MANDO A DISTANCIA DE PROCESOS, EQUIPOS Y MAQUINARIA; DE DETECCIÓN Y AUTOEXTINCIÓN DE INCENDIOS, CONTROL DE ACCESOS  Y SEGURIDAD DE BIENES O PERSONS; DE INFORMACIÓN AL PÚBLICO EN INSTALACIONES FIJAS O MÓVILES; DE GESTIÓN Y CONTROL DE INSTALACIONES DE TRÁFICO Y SEÑALIZACIÓN FERROVIARIA Y VIARIA; DE CABLEADO ESTRUCTURADO Y REDES INFORMÁTICAS Y DE TELECOMUNICACIONES. B) REALIZACIÓN DE TODO TIPO DE TRABAJOS DE ASESORÍA, CONSULTORÍA, INGENIERÍA, PROYECTOS, OBRAS, INSTALACIONES, REPARACIONES, ASISTENCIA TÉCNICA, MANTENIMIENTO  Y EXPLOTACIÓN CON ESPECIAL ATENCIÓN A LOS RELACIONADOS CON LAS ACTIVIDADES DESCRITAS EN EL APARTADO A). C) REALIZACIÓN DE TODO TIPO DE SERVICIOS INFORMÁTICOS Y DE TELECOMUNICACIONES, CON ESPECIAL INCLUSIÓN DEL ANÁLISIS, DESARROLLO, IMPLANTACIÓN, MANTENIMIENTO Y EXPLOTACIÓN DE APLICACIONES DE SOFTWARE, TANTO EN LA MODALIDAD DE PAQUETES COMO AD-HOC. COMERCIALIZACIÓN DE LICENCIAS DE SOFTWARE DE DESARROLLO PROPIO O AJENO. D) PRESTACIÓN DE SERVICIOS DE SEGURIDAD, VIGILANCIA Y PROTECCIÓN EN CUALQUIER MODALIDAD, TANTO PORMEDIOS HUMANOS COMO TECNOLÓGICOS; DE LIMPIEZA Y MANTENIMIENTO DE VEHÍCULOS, INSTALACIONES Y EDIFICIOS DE TODO TIPO, MAQUINARIA INDUSTRIAL Y DE OFICINA. TRANSPORTES, RECOGIDA DE CARROS PORTAEQUIPAJES Y LECTURA DE CONTADORES; DE ATENCIÓN TELEFÓNICA, ENCUESTA, RECOGIDA DE DATOS Y TELEMARKETING. E) EXPLOTACIÓN DE CONCESIONES DE BIENES Y SERVICIOS EN CUALQUIERA DE SUS MODALIDADES. F) PROMOCIÓN Y PARTICIPACIÓN EN SOCIEDADES, UNIONES TEMPORALES, CONSORCIOS Y OTRAS FORMAS DE ASOCIACIÓN EMPRESARIAL CUYO OBJETO SEA ANÁLOGO O ESTÉ RELACIONADO CON LAS ACTIVIDADES DESCRITAS EN LOS APARTADOS ANTERIORES",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/00069",
+      "_links": {
+        "self": {
+          "name": "ÁNGEL IGLESIAS, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/00069"
+        }
+      }
+    },
+    {
+      "name": "LIMPIEZAS GALAXIA, S.L.",
+      "registrationNumber": "00413",
+      "identificationNumber": "B20071163",
+      "address": "C/ SAN FRANCISCO, 54 - Bajo",
+      "location": {
+        "postalCode": "20002",
+        "municipality": "Donostia / San Sebastián",
+        "county": "Gipuzkoa",
+        "municipalityId": "069",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.922.1",
+          "name": "Servicios de limpieza de interiores",
+          "_links": {
+            "self": {
+              "name": "Servicios de limpieza de interiores",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.922.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2016-06-07",
+      "certificateEndDate": "2016-01-20",
+      "object": "LIMPIEZA DE EDIFICIOS, PISOS Y LOCALES DE CUALQUIER CLASE INCLUSO ESCAPARATES",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/00413",
+      "_links": {
+        "self": {
+          "name": "LIMPIEZAS GALAXIA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/00413"
+        }
+      }
+    },
+    {
+      "name": "TECCON INGENIEROS, S.L.",
+      "registrationNumber": "03254",
+      "identificationNumber": "B48931299",
+      "address": "RIBERA DE AXPE, 11. EDIF. D1. 209",
+      "location": {
+        "postalCode": "48950",
+        "municipality": "Erandio",
+        "county": "Bizkaia",
+        "municipalityId": "902",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.845",
+          "name": "Explotación electrónica por cuenta de terceros",
+          "_links": {
+            "self": {
+              "name": "Explotación electrónica por cuenta de terceros",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.845"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2016-06-01",
+      "certificateEndDate": "2016-11-30",
+      "object": "SERVICIOS DE INGENIERIA Y TECNOLOGIA",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03254",
+      "_links": {
+        "self": {
+          "name": "TECCON INGENIEROS, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/03254"
+        }
+      }
+    },
+    {
+      "name": "JOSE FRANCISCO ALVAREZ CORREA",
+      "registrationNumber": "05508",
+      "identificationNumber": "11960644T",
+      "address": "Bº SOLAR DE CASUSO 154 A",
+      "location": {
+        "postalCode": "39691",
+        "municipality": "Santiurde de Toranzo",
+        "county": "Cantabria",
+        "municipalityId": "078",
+        "countyId": "39"
+      },
+      "economicActivities": [
+        {
+          "id": "2.412",
+          "name": "Ingenieros de caminos, canales y puertos",
+          "_links": {
+            "self": {
+              "name": "Ingenieros de caminos, canales y puertos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/2.412"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2016-06-01",
+      "certificateEndDate": "2016-11-11",
+      "object": "LOS SERVICIOS RELACIONADOS CON LA INGENIERÍA DE CAMINOS, CANALES Y PUERTOS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/05508",
+      "_links": {
+        "self": {
+          "name": "JOSE FRANCISCO ALVAREZ CORREA",
+          "href": "https://api.euskadi.eus/procurements/companies/05508"
+        }
+      }
+    },
+    {
+      "name": "ALAU JARDINERIA S.L.",
+      "registrationNumber": "04916",
+      "identificationNumber": "B95157269",
+      "address": "Horario Etxebarrieta, 1-6º. dpto. 12",
+      "location": {
+        "postalCode": "48903",
+        "municipality": "Barakaldo",
+        "county": "Bizkaia",
+        "municipalityId": "013",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.911",
+          "name": "Servicios agrícolas y ganaderos",
+          "_links": {
+            "self": {
+              "name": "Servicios agrícolas y ganaderos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.911"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2016-05-25",
+      "certificateEndDate": "2016-11-20",
+      "object": "LA VENTA DE TODA CLASE DE PRODUCTOS DE JARDINERÍA",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/04916",
+      "_links": {
+        "self": {
+          "name": "ALAU JARDINERIA S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/04916"
+        }
+      }
+    },
+    {
+      "name": "ARQUILUR 3, S.L.P.",
+      "registrationNumber": "02930",
+      "identificationNumber": "B95227385",
+      "address": "PLAZA LANDABASO, 5 EXTERIOR. PISO 1º",
+      "location": {
+        "postalCode": "48015",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.843.2",
+          "name": "Servicios técnicos de arquitectura y urbanismo",
+          "_links": {
+            "self": {
+              "name": "Servicios técnicos de arquitectura y urbanismo",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2016-05-19",
+      "certificateEndDate": "2016-11-19",
+      "object": "LA ELABORACIÓN Y  REALIZACIÓN, POR CUENTA PROPIA O AJENA, DE PROYECTOS, PLANES DE EDIFICACIÓN, CONSTRUCCIÓN, DIRECCIÓN DE OBRAS, Y FIGURAS DE PLANEAMIENTO; VALORACIONES E INFORMES DE TERRENOS; ASÍ COMO ASESORAMIENTO EN MATERIA DE ARQUITECTURA Y URBANISMO. DICHAS ACTIVIDADES PODRÁN SER DESARROLLADAS POR LA SOCIEDAD, TOTAL O PARCIALMENTE, DE MODO INDIRECTO, MEDIANTE LA TITULARIDAD DE ACCIONES O PARTICIPACONES EN SOCIEDADES CON OBJETO IDÉNTICO O ANÁLOGO  ",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/02930",
+      "_links": {
+        "self": {
+          "name": "ARQUILUR 3, S.L.P.",
+          "href": "https://api.euskadi.eus/procurements/companies/02930"
+        }
+      }
+    },
+    {
+      "name": "UNISYS ESPAÑA, S.L.",
+      "registrationNumber": "03216",
+      "identificationNumber": "B08154767",
+      "address": "AVDA. DEL PARTENÓN, 4",
+      "location": {
+        "postalCode": "28042",
+        "municipality": "Madrid",
+        "county": "Madrid",
+        "municipalityId": "079",
+        "countyId": "28"
+      },
+      "economicActivities": [
+        {
+          "id": "1.504.7",
+          "name": "Instalaciones telefónicas, telegráficas, televisión, etc",
+          "_links": {
+            "self": {
+              "name": "Instalaciones telefónicas, telegráficas, televisión, etc",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.504.7"
+            }
+          }
+        },
+        {
+          "id": "1.615.4",
+          "name": "Venta al por mayor de aparatos y material radioeléctrico y electrónico",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de aparatos y material radioeléctrico y electrónico",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.615.4"
+            }
+          }
+        },
+        {
+          "id": "1.843.9",
+          "name": "Otros servicios técnicos n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros servicios técnicos n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.9"
+            }
+          }
+        },
+        {
+          "id": "1.845",
+          "name": "Explotación electrónica por cuenta de terceros",
+          "_links": {
+            "self": {
+              "name": "Explotación electrónica por cuenta de terceros",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.845"
+            }
+          }
+        },
+        {
+          "id": "1.853",
+          "name": "Alquiler de maquinaria y equipo contable de oficina y cálculo",
+          "_links": {
+            "self": {
+              "name": "Alquiler de maquinaria y equipo contable de oficina y cálculo",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.853"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2016-05-19",
+      "certificateEndDate": "2007-04-26",
+      "object": "LA FABRICACIÓN, LA COMPRAVENTA, LA IMPORTACIÓN,  LA EXPORTACIÓN, LA INSTALACIÓN, LA EXPLOTACIÓN Y EL MONTAJE:\r\nDE SISTEMAS Y EQUIPOS HIDRÁULICOS DE TODA CLASE PARA USOS INDUSTRIALES, MARINOS Y DE AVIACIÓN; \r\nDE MAQUINARIA, ÚTILES, HERRAMIENTAS, EQUIPOS Y ACCESORIOS ELÉCTRICOS Y MECÁNICOS; \r\nDE MÁQUINAS Y ARTÍCULOS DE OFICINA EN GENERAL, SUMADORAS, CALCULADORAS, COMPUTADORAS, ARCHIVADORES, CAJAS DE CAUDALES Y ARCHIVOS DE SEGURIDAD,\r\nDE APARATOS, INSTRUMENTOS Y DISPOSITIVOS PARA LA REPRODUCCIÓN DE DOCUMENTOS, IMÁGENES Y SONIDOS, FOTOCOPIADORAS, FOTOREPRODUCTORAS, MÁQUINAS DE IMPRIMIR Y ESCRIBIR; \r\nDE EQUIPOS PARA EL TRATAMIENTO DE DATOS Y PARA EL TRATAMIENTO DE INFORMACIÓN DE TODA CLASE DE SISTEMAS DE CONTROL DIGITAL;\r\nDE GIROSCOPIOS Y APARATOS ESTABILIZADORES, \r\nDE COMPASES Y CUALESQUIERA INSTRUMENTOS TÉCNICOS PARA LA INVESTIGACÓN Y EL CONTROL DE MOVIMIENTOS;\r\nEL ESTUDIO, LA OBTENCIÓN, LA ADQUISICIÓN Y EL PERFECCIONAMIENTO DE INVENTOS Y CONOCIMIENTOS TÉCNICOS, PATENTES, LICENCIAS, MODELOS, DIBUJOS Y MARCAS, SU APLICACIÓN, EXPLOTACIÓN, VENTA, ENAJENACIÓN, ARRENDAMIENOT, LICENCIA Y CONCESIÓN;\r\nLA  INVESTIGACIÓN CIENTÍFICA Y TÉCNICA, LA CONSULTA  Y EL ASESORAMIENTO A OTRAS EMPRESAS PARA LA APLICACIÓN Y EL DESARROLLO DE CONOCIMIENTOS CIENTÍFICOS Y TÉCNICOS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03216",
+      "_links": {
+        "self": {
+          "name": "UNISYS ESPAÑA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/03216"
+        }
+      }
+    },
+    {
+      "name": "AKABA, S.A.",
+      "registrationNumber": "03187",
+      "identificationNumber": "A20099537",
+      "address": "KALE NAGUSIA, 56",
+      "location": {
+        "postalCode": "20160",
+        "municipality": "Lasarte-Oria",
+        "county": "Gipuzkoa",
+        "municipalityId": "902",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.316.6",
+          "name": "Fabricación de mobiliario metálico",
+          "_links": {
+            "self": {
+              "name": "Fabricación de mobiliario metálico",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.316.6"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2016-05-18",
+      "certificateEndDate": "2016-11-05",
+      "object": "LA FABRICACIÓN, COMERCIALIZACIÓN Y DISTRIBUCIÓN DE MOBILIARIO DE CUALQUIER TIPO Y CLASE; DE ARTÍCULOS, OBJETOS Y BIENES DEL HOGAR, DOMÉSTICOS Y DE REGALO, ASÍ COMO LOS DESTINADOS A LA INDUSTRIA Y COMERCIO; LA REPRESENTACIÓN COMERCIAL-MERCANTIL EN TODAS SUS MANIFESTACIONES; CUALQUIER TIPO DE MEDIACIÓN, INTERVENCIÓN, PROMOCIÓN Y REALIZACIÓN DE OPERACIONES MERCANTILES DE CUALQUIER CLASE DE PRODUCTO  ",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03187",
+      "_links": {
+        "self": {
+          "name": "AKABA, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/03187"
+        }
+      }
+    },
+    {
+      "name": "AIR LIQUIDE MEDICINAL, S.L. UNIPERSONAL",
+      "registrationNumber": "01771",
+      "identificationNumber": "B81231011",
+      "address": "C/ Orense, nº 34 - 3º",
+      "location": {
+        "postalCode": "28020",
+        "municipality": "Madrid",
+        "county": "Madrid",
+        "municipalityId": "079",
+        "countyId": "28"
+      },
+      "economicActivities": [
+        {
+          "id": "1.504.3",
+          "name": "Instalaciones de frío, calor y acondicionamiento de aire",
+          "_links": {
+            "self": {
+              "name": "Instalaciones de frío, calor y acondicionamiento de aire",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.504.3"
+            }
+          }
+        },
+        {
+          "id": "1.614.1",
+          "name": "Venta al por mayor de productos farmacéuticos y medicamentos",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de productos farmacéuticos y medicamentos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.614.1"
+            }
+          }
+        },
+        {
+          "id": "1.616.6",
+          "name": "Venta al por mayor de productos químicos industriales",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de productos químicos industriales",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.616.6"
+            }
+          }
+        },
+        {
+          "id": "1.617.9",
+          "name": "Venta al por mayor interindustrial de otros productos n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor interindustrial de otros productos n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.617.9"
+            }
+          }
+        },
+        {
+          "id": "1.619.2",
+          "name": "Venta al por mayor de aparatos e instrumentos médicos, ortopédicos, ópticos",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de aparatos e instrumentos médicos, ortopédicos, ópticos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.619.2"
+            }
+          }
+        },
+        {
+          "id": "1.699",
+          "name": "Otras reparaciones n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otras reparaciones n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.699"
+            }
+          }
+        },
+        {
+          "id": "1.849.9",
+          "name": "Otros servicios independientes n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros servicios independientes n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.849.9"
+            }
+          }
+        },
+        {
+          "id": "1.859",
+          "name": "Alquiler de otros bienes muebles n.c.o.p. (sin personal permanente)",
+          "_links": {
+            "self": {
+              "name": "Alquiler de otros bienes muebles n.c.o.p. (sin personal permanente)",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.859"
+            }
+          }
+        },
+        {
+          "id": "1.942.9",
+          "name": "Otros servicios sanitarios sin internados, no clasificados",
+          "_links": {
+            "self": {
+              "name": "Otros servicios sanitarios sin internados, no clasificados",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.942.9"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2016-05-12",
+      "certificateEndDate": "2016-10-19",
+      "object": "LA FABRICACIÓN, COMPRA Y VENTA, BAJO TODAS SUS FORMAS, DEL AIRE LÍQUIDO, DEL OXÍGENO, DEL NITRÓGENO, Y DE CUALESQUIERA OTROS GASES O MEZCLA DE LOS MISMOS ESPECIALMENTE COMPRIMIDOS O LÍQUIDOS, DESTINADOS A LAS APLICACIONES MEDICINALES, ASÍ COMO LA REALIZACIÓN DE SERVICIOS RELACIONADOS CON LOS MISMOS EN LOS ESTABLECIMIENTOS HOSPITALARIOS. LA FABRICACIÓN Y LA COMPRA Y VENTA DE TODOS LOS PRODUCTOS QUE DE AQUELLOS SE DERIVEN O QUE PARA SU FABRICACIÓN HUBIERAN DE EMPLEARSE. LA PRESTACIÓN DE SERVICIOS DE HIGIENIZACIÓN Y DESINFECCIÓN DE SISTEMAS DE AIRE ACONDICIONADO Y TRATAMIENTO DE AGUAS EN HOSPITALES O CENTROS SANITARIOS Y VETERINARIOS. LA PRESTACIÓN DEL SERVICIO DE ESTERILIZACIÓN EN HOSPITALES O CENTROS SANITARIOS Y VETERINARIOS. LA EJECUCIÓN DE INSTALACIONES DE GASES MEDICINALES EN EL ÁMBITO HOSPITALARIO, ASÍ COMO LA PRESTACIÓN DEL SERVICIO DE MANTENIMIENTO DE LAS MISMAS. LA PRESTACIÓN DE SERVICIOS DE OXIGENOTERAPIA Y AEROSOLTERAPIA, ASÍ COMO LOS SERVICIOS DE ASISTENCIA MEDICINAL EN CLÍNICAS, HOSPITALES Y DOMICILIO DE LOS PACIENTES. LA FABRICACIÓN, VENTA E INSTALACIÓN DE MATERIAL MÉDICO-QUIRÚGICO INCLUYENDO QUIRÓFANOS, SALAS DE ESTERILIZACIÓN Y DESINFECCIÓN, REALIZANDO CUANTAS ACTIVIDADES SEAN NECESARIAS PARA ELLO. LA FABRICACIÓN, CONCEPCIÓN, COMPRA, DISTRIBUCIÓN Y VENTA DE TODOS LOS PRODUCTOS, EQUIPOS, MATERIALES Y SERVICIOS ASOCIADOS, UTILIZADOS CON FINES MÉDICOS Y/O SANITARIOS Y PRINCIPALMENTE DE HIGIENE Y DESINFECCIÓN. EL ESTUDIO, COMPRA, VENTA Y EXPLOTACIÓN DE TODA CLASE DE PATENTES, INVENTOS O PROCEDIMIENTOS QUE SE REFIERAN A DICHO GÉNERO DE ACTIVIDAD MEDICINAL. LA FABRICACIÓN, INSTALACIÓN Y LA COMPRA Y VENTA DE TODA CLASE DE APARATOS E INSTRUMENTOS QUE SIRVAN PARA PRODUCIR, PARA UTILIZAR O PARA EXPLOTAR LOS REFERIDOS PRODUCTOS, PATENTES, PROCEDIMIENTOS, INVENCIONES Y SERVICIOS. PARA LA CONSECUCIÓN DE ESTE OBJETO SOCIAL, LA SOCIEDAD PODRÁ EFECTUAR CUANTAS ACTIVIDADES DE TIPO MEDICINAL, INMOBILIARIO Y COMERCIAL SEAN CONSIDERADAS COMO NECESARIAS O ÚTILES AL DESENVOLVIMIENTO DEL OBJETO PRINCIPAL",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/01771",
+      "_links": {
+        "self": {
+          "name": "AIR LIQUIDE MEDICINAL, S.L. UNIPERSONAL",
+          "href": "https://api.euskadi.eus/procurements/companies/01771"
+        }
+      }
+    },
+    {
+      "name": "SERLASA, S.A.",
+      "registrationNumber": "01307",
+      "identificationNumber": "A48141857",
+      "address": "POLÍGONO INDUSTRIAL EL CAMPILLO, NAVES: 4 y 5 D.",
+      "location": {
+        "postalCode": "48509",
+        "municipality": "Abanto y Ciérvana-Abanto Zierbena",
+        "county": "Bizkaia",
+        "municipalityId": "002",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.436",
+          "name": "Acabado de textiles",
+          "_links": {
+            "self": {
+              "name": "Acabado de textiles",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.436"
+            }
+          }
+        },
+        {
+          "id": "1.971.1",
+          "name": "Tinte, limpieza en seco, lavado y planchado de ropas",
+          "_links": {
+            "self": {
+              "name": "Tinte, limpieza en seco, lavado y planchado de ropas",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.971.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2016-05-11",
+      "certificateEndDate": "2016-09-15",
+      "object": "ALQUILER, SERVICIOS DE LIMPIEZA, TINTE, LAVADO, PLANCHADO, ETC., DE ROPAS HECHAS, PRENDAS USADAS, CONFECCIÓN Y ARTÍCULOS TEXTILES EN GENERAL. LA PRESTACIÓN, POR MEDIOS PROPIOS O AJENOS, DE SERVICIOS DE TRANSPORTE DE MERCANCÍAS, DE TALLER MECÁNICO Y CUANTO SE RELACIONE CON EL TRANSPORTE EN GENERAL. LA CONSTITUCIÓN, CON LA CONCURRENCIA DE OTRAS PERSONAS, DE TODA CLASE DE SOCIEDADES MERCANTILES Y LA PARTICIPACIÓN EN OTRAS YA CONSTITUIDAS, PUDIENDO OSTENTAR EN TODAS ELLAS CARGOS DE ADMINISTRACIÓN, DIRECCIÓN O CONTROL MEDIANTE LA OPORTUNA DELEGACIÓN EN PERSONAS FÍSICAS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/01307",
+      "_links": {
+        "self": {
+          "name": "SERLASA, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/01307"
+        }
+      }
+    }
+  ]
+}

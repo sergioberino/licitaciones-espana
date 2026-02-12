@@ -1,0 +1,408 @@
+{
+  "totalItems": 9042,
+  "totalPages": 905,
+  "currentPage": 801,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "name": "CONSTRUCCIONES MURGIL, S.L.",
+      "registrationNumber": "00533",
+      "identificationNumber": "B20174009",
+      "address": "C/ HERRERIETA, Nº 35 - 2º",
+      "location": {
+        "postalCode": "20808",
+        "municipality": "Getaria",
+        "county": "Gipuzkoa",
+        "municipalityId": "039",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.501.2",
+          "name": "Construcción completa, reparación y conservación obras civiles",
+          "_links": {
+            "self": {
+              "name": "Construcción completa, reparación y conservación obras civiles",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2003-08-06",
+      "certificateEndDate": "2004-01-23",
+      "object": "LAS CONSTRUCCIONES HIDRÁULICAS EN GENERAL, TANTO EN MAR COMO EN RÍOS (PUERTOS, DIQUES, MALECONES, OBRAS DE PROTECCIÓN Y DEFENSA, ETC.), CON EMPLEO DE MAQUINARIA Y MEDIOS AUXILIARES; CONSTRUCCIONES ACCESORIAS, INCLUSO TÚNELES Y EL EMPLEO DE EXPLOSIVOS, TRANSPORTES DE MATERIAL DE OBRA Y TRABAJOS AUXILIARES. TRABAJOS DE BUZOS Y HOMBRES RANA EN TODAS SUS ESPECIALIDADES, INCLUSO DESGUACES DE BUQUES, ETC. CONSTRUCCIÓN Y REPARACIÓN DE BUQUES",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/00533",
+      "_links": {
+        "self": {
+          "name": "CONSTRUCCIONES MURGIL, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/00533"
+        }
+      }
+    },
+    {
+      "name": "INFORMÁTICA Y COMUNICACIONES INGECOM, S.L.",
+      "registrationNumber": "02177",
+      "identificationNumber": "B48853915",
+      "address": "C/ MÁXIMO AGUIRRE, Nº 18 BIS - 8º",
+      "location": {
+        "postalCode": "48011",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.845",
+          "name": "Explotación electrónica por cuenta de terceros",
+          "_links": {
+            "self": {
+              "name": "Explotación electrónica por cuenta de terceros",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.845"
+            }
+          }
+        },
+        {
+          "id": "1.932.1",
+          "name": "Enseñanza de formación y perfeccionamiento profesional no superior",
+          "_links": {
+            "self": {
+              "name": "Enseñanza de formación y perfeccionamiento profesional no superior",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.932.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2003-08-06",
+      "certificateEndDate": "2004-01-15",
+      "object": "\r\n\r\nA) LA ENSEÑANZA Y EL DESARROLLO DE PROGRAMAS INFORMÁTICOS, CONSULTORÍA INFORMÁTICA, LA IMPLANTACIÓN DE SISTEMAS INFORMÁTICOS Y LA COMPRAVENTA MAYOR Y MENOR DE APARATOS ELECTRÓNICOS, INFORMÁTICOS Y DE COMUNICACIONES.\r\n\r\nB) LA COMPRA, VENTA, ADMINISTRACIÓN, EXPLOTACIÓN, ARRIENDO, PROMOCIÓN Y CONSTRUCCIÓN DE TERRENOS RÚSTICOS Y URBANOS, DE URBANIZACIONES, DE VIVIENDAS, DE LOCALES COMERCIALES INDUSTRIALES, INSTALACIONES O EXPLOTACIONES AGROPECUARIAS, FORESTALES, GANADERAS Y PISCIFACTORÍAS.\r\n\r\nC) LA COMPRA, VENTA Y ADMINISTRACIÓN DE VALORES MOBILIARIOS, NACIONALES Y EXTRANJEROS. SE EXCLUYEN EXPRESAMENTE TODAS AQUELLAS ACTIVIDADES SUJETAS A LEGISLACIÓN ESPECIAL Y EN CONCRETO LAS RESERVADAS POR LA LEY A LAS INSTITUCIONES DE INVERSIÓN COLECTIVAS, ASÍ COMO LO EXPRESAMENTE RESERVADO POR LA LEY DEL MERCADO DE VALORES A LAS AGENCIAS Y/O SOCIEDADES DE VALORES Y BOLSA.\r\n\r\nD) LA COMPRA, VENTA, DISTRIBUCIÓN Y COMERCIALIZACIÓN, NACIONAL E INTERNACIONAL, DE OBRAS DE ARTE, ANTIGÜEDADES Y OBJETOS DE COLECCIÓN.\r\n\r\nE) LA PRESTACIÓN A PERSONAS FÍSICAS Y JURÍDICAS DE TODA CLASE DE SERVICIOS DE ASESORÍA ECONÓMICA, FINANCIERA, COMERCIAL, TÉCNICA, ADMINISTRATIVA Y CONTABLE.\r\n\r\nF) COMERCIALIZACIÓN, PRODUCCIÓN, FABRICACIÓN Y EXPLOTACIÓN DE PRODUCTOS TEXTILES, CALZADO, COMPLEMENTOS DE MODA, ARTÍCULOS DE REGALO Y MUEBLES.\r\n\r\nG) EXPLOTACIÓN DE NEGOCIOS DE HOSTELERÍA, RESTAURANTE, BARES, ASADORES, CAFETERÍAS, DISCOTECAS, SALAS DE FIESTA, PUBS, CLUS SOCIALES Y CENTROS RECREATIVOS.\r\n\r\nH) PRESTACIÓN DE SERVICIOS DE INTERMEDIACIÓN EN ORGANIZACIÓN DE VIAJES, CONGRESOS, CONFERENCIAS Y ACTIVIDADES DE CARACTERÍSTICAS ANÁLOGAS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/02177",
+      "_links": {
+        "self": {
+          "name": "INFORMÁTICA Y COMUNICACIONES INGECOM, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/02177"
+        }
+      }
+    },
+    {
+      "name": "DELOITTE & TOUCHE, S.A.",
+      "registrationNumber": "00611",
+      "identificationNumber": "A78478492",
+      "address": "C/ PLAZA PABLO RUIZ PICASSO, S/N. TORRE PICASSO, 38ª.",
+      "location": {
+        "postalCode": "28020",
+        "municipality": "Madrid",
+        "county": "Madrid",
+        "municipalityId": "079",
+        "countyId": "28"
+      },
+      "economicActivities": [
+        {
+          "id": "1.842",
+          "name": "Servicios financieros y contables",
+          "_links": {
+            "self": {
+              "name": "Servicios financieros y contables",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.842"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2003-08-01",
+      "certificateEndDate": "2004-01-11",
+      "object": "LA AUDITORÍA, ESTUDIO, CONTROL E INSPECCIÓN DE CONTABILIDAD Y BALANCES; EL ASESORAMIENTO PARA LA PLANIFICACIÓN, GESTIÓN, DESARROLLO Y ORGANIZACIÓN ADMINISTRATIVA DE TODA CLASE DE SOCIEDADES Y EMPRESAS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/00611",
+      "_links": {
+        "self": {
+          "name": "DELOITTE & TOUCHE, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/00611"
+        }
+      }
+    },
+    {
+      "name": "TÉCNICAS MEDIOAMBIENTALES TECMED, S.A.",
+      "registrationNumber": "02348",
+      "identificationNumber": "A79524054",
+      "address": "C/ GÉNOVA, 6",
+      "location": {
+        "postalCode": "28004",
+        "municipality": "Madrid",
+        "county": "Madrid",
+        "municipalityId": "079",
+        "countyId": "28"
+      },
+      "economicActivities": [
+        {
+          "id": "1.507",
+          "name": "Construcción, reparación y conservación de toda clase obras",
+          "_links": {
+            "self": {
+              "name": "Construcción, reparación y conservación de toda clase obras",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.507"
+            }
+          }
+        },
+        {
+          "id": "1.921.1",
+          "name": "Servicios de limpieza en calles, vías públicas y jardines",
+          "_links": {
+            "self": {
+              "name": "Servicios de limpieza en calles, vías públicas y jardines",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.921.1"
+            }
+          }
+        },
+        {
+          "id": "1.921.2",
+          "name": "Servicios de recogida de basuras y desechos",
+          "_links": {
+            "self": {
+              "name": "Servicios de recogida de basuras y desechos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.921.2"
+            }
+          }
+        },
+        {
+          "id": "1.921.5",
+          "name": "Servicios de incineración y eliminación de basuras y desechos",
+          "_links": {
+            "self": {
+              "name": "Servicios de incineración y eliminación de basuras y desechos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.921.5"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2003-08-01",
+      "certificateEndDate": "2004-01-14",
+      "object": "LA ELABORACIÓN DE ESTUDIOS, TRABAJOS, INFORMES O PROYECTOS RELACIONADOS CON EL DISEÑO Y REALIZACIÓN DE OBRAS, CONSTRUCCIONES E INSTALACIONES DE CUALQUIER NATURALEZA.\r\n\r\nLA PREPARACIÓN, DESARROLLO Y EJECUCIÓN DE LAS ACTIVIDADES Y OPERACIONES INTEGRADAS BAJO EL CONCEPTO LEGALMENTE DEFINIDO DE AUDITORÍA MEDIOAMBIENTAL.\r\n\r\nLA PRESTACIÓN DE SERVICIOS TÉCNICOS DE VERIFICACIÓN Y COMPROBAACIÓN DE CALIDAD, TERMINACIÓN Y EJECUCIÓN DE OBRAS Y ACTIVIDADES QUE SON MATERIA  DE SU TRÁFICO.\r\n\r\nLA REALIZACIÓN DE CONSTRUCCIONES, INSTALACIONES, EDIFICACIONES, OBRAS Y SUMINISTROS DE CUALESQUIERA CLASE Y NATURALEZA, ASÍ COMO DE LA REALIZACIÓN DE SERVICIOS VINCULADOS O CONEXOS A LAS EXPRESADAS OBRAS Y SUMINISTROS.\r\n\r\nEL EJERCICIO DE ACTIVIDADES DE GESTIÓN, TRATAMIENTO, TRANSFORMACIÓN O ELIMINACIÓN DE RESIDUOS, SEAN O NO TÓXICOS O PELIGROSOS.\r\n\r\nLA CONTRATACIÓN DE SERVICIOS PÚBLICOS  Y PRIVADOS DE RECOGIDA, TRANSPORTE, APROVECHAMIENTO Y ELIMINACIÓN DE RESIDUOS SÓLIDOS URBANOS, INDUSTRIALES DE CUALQUIER NATURALEZA, SANITARIOS, AGRÍCOLAS, GANADEROS, FORESTALES, MINERALES, ASÍ COMO AQUELLOS OTROS RESIDUOS QUE POR SUS TÉCNICAS DE GESTIÓN SON ASIMILABLES A LOS ANTERIORES.\r\n\r\nEL RECICLAJE, APROVECHAMIENTO Y RECUPERACIÓN DE LOS ELEMENTOS COMERCIALIZABLES CONTENIDOS EN LOS RESIDUOS INDICADOS, O SUSCEPTIBLES DE CUALQUIER FORMA DE VALORACIÓN.\r\n\r\nEL MANTENIMIENTO Y CONSERVACIÓN DE EDIFICIOS, PARQUES  Y JARDINES, REDES DE AGUA Y ALCANTARILLADO, ESTACIONES DEPURADORAS, CARRETERAS, VÍAS PÚBLICAS, ASÍ COMO INSTALACIONES DE GAS, AIRE ACONDICIONADO, CALEFACCIÓN Y ELECTRICIDAD.\r\n\r\nEL DISEÑO, INVESTIGACIÓN Y DESARROLLO, FABRICACIÓN, COMPRA, VENTA, SUMINISTRO, IMPORTACIÓN, EXPORTACIÓN, ALQUILER, MANTENIMIENTO, DISTRIBUCIÓN, REPRESENTACIÓN COMERCIAL Y EXPLOTACIÓN DE MATERIALES, EQUIPOS, MÁQUINAS E INSTALACIONES DESTINADAS AL TRATAMIENTO DE TODA CLASE DE RESIDUOS, EFLUENTES Y AGUAS RESIDUALES DE CUALQUIER CLASE.\r\n\r\nLA COMPRA, VENTA, EXPLOTACIÓN, GESTIÓN EN CUALQUIER FORMA DE PATENTES, MODELOS, MARCAS, LICENCIAS Y DEMÁS MODALIDADES DE LA PROPIEDAD INDUSTRIAL E INTELECTUAL RELACIONADAS CON LA GESTIÓN DEL MEDIO AMBIENTE.\r\n\r\nLIMPIEZA, HIGIENIZACIÓN Y DESINFECCIÓN DE EDIFICIOS PÚBLICOS O PRIVADOS Y VÍAS PÚBLICAS.\r\n\r\nEL TRANSPORTE PÚBLICO DISCRECIONAL DE MERCANCÍAS POR CARRETERA EN EL ÁMBITO LOCAL, NACIONAL E INTERNACIONAL.    \r\n ",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/02348",
+      "_links": {
+        "self": {
+          "name": "TÉCNICAS MEDIOAMBIENTALES TECMED, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/02348"
+        }
+      }
+    },
+    {
+      "name": "BASQUEXPERIENCE, S.L.",
+      "registrationNumber": "02706",
+      "identificationNumber": "B20720082",
+      "address": "POLÍGONO SORAZU, S/N",
+      "location": {
+        "postalCode": "20740",
+        "municipality": "Zestoa",
+        "county": "Gipuzkoa",
+        "municipalityId": "027",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.755.2",
+          "name": "Servicios prestados al público por las agencias de viajes",
+          "_links": {
+            "self": {
+              "name": "Servicios prestados al público por las agencias de viajes",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.755.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2003-07-15",
+      "certificateEndDate": "2004-01-07",
+      "object": "LA EXPLOTACIÓN DE UN NEGOCIO DE AGENCIAS DE VIAJES, CON MEDIACIÓN EN LA VENTA DE BILLETES Y RESERVAS Y DE PLAZAS EN TODA CLASE DE MEDIOS DE TRANSPORTE; LA RESERVA DE HABITACIONES Y SERVICIOS  EN LOS ESTABLECIMIENTOS HOTELEROS Y DEMÁS ALOJAMIENTOS TURÍSTICOS; LA ORGANIZACIÓN, VENTA Y REALIZACIÓN DE SERVICIOS COMBINADOS Y VIAJES \"A FORFAIT\", INCLUYENDO LA RECEPCIÓN, ASISTENCIA, VISITAS GUIADAS Y TRASLADO DE LOS CLIENTES; LA ACTUACIÓN, POR DELEGACIÓN Y CORRESPONSALÍA DE OTRAS AGENCIAS NACIONALES O EXTRANJERAS, PARA LA PRESTACIÓN EN SU NOMBRE Y A LA CLIENTELA DE ÉSTAS DE CUALQUIERA DE LOS SERVICIOS ENUMERADOS; INFORMACIÓN TURÍSTICA GRATUITA Y DIFUSIÓN DEL MATERIAL DE PROPAGANDA, ASÍ COMO LA VENTA DE GUÍAS TURÍSTICAS Y DE TRANSPORTE, HORARIOS Y PUBLICACIONES DEL MISMO GÉNERO; CAMBIO DE DIVISAS Y VENTA DE CHEQUES DE VIAJEROS; EXPEDICIÓN Y TRANSFERENCIA DE EQUIPAJES POR CUALQUIER MEDIO DE TRANSPORTE; FORMALIZACIÓN, A FAVOR DE LOS CLIENTES, DE PÓLIZAS DE SEGURO TURÍSTICO, DE PÉRDIDA O DETERIORO DE EQUPAJES U OTRAS QUE CUBRAN LOS RIESGOS DERIVADOS DE LOS VIAJES; ALQUILER DE VEHÍCULOS CON O SIN CONDUCTOR,  ASÍ COMO EL FLETAMENTO DE AAVIONES, TRENES ESPECIALES U OTROS MEDIOS DE TRANSPORTE; RESERVA Y ADQUISICIÓN PARA SUS PROPIOS CLIENTES DE BILLETES O ENTRADAS DE TEATRO, CINE U OTROS ESPECTÁCULOS; ALQUILER DE ÚTILES Y EQUIPOS DESTINADOS A LA PRÁCTICA DEL TURISMO DEPORTIVO.  ",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/02706",
+      "_links": {
+        "self": {
+          "name": "BASQUEXPERIENCE, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/02706"
+        }
+      }
+    },
+    {
+      "name": "FLEX EQUIPOS DE DESCANSO, S.A.",
+      "registrationNumber": "02707",
+      "identificationNumber": "A82452566",
+      "address": "C/ TORRELAGUNA, nº 77",
+      "location": {
+        "postalCode": "28043",
+        "municipality": "Madrid",
+        "county": "Madrid",
+        "municipalityId": "079",
+        "countyId": "28"
+      },
+      "economicActivities": [
+        {
+          "id": "1.316.6",
+          "name": "Fabricación de mobiliario metálico",
+          "_links": {
+            "self": {
+              "name": "Fabricación de mobiliario metálico",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.316.6"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2003-07-15",
+      "certificateEndDate": "2003-11-29",
+      "object": "A) EL DISEÑO, FABRICACIÓN, ADQUISICIÓN, DISTRIBUCIÓN Y COMERCIO AL POR MAYOR Y AL DETALLE DE MUEBLES DE CUALQUIER CLASE, COMPLEMENTOS DE DECORACIÓN Y BIENES DE EQUIPAMIENTO DEL HOGAR; Y, EN ESPECIAL, DE LOS RELACIONADOS CON EL DESCANSO, COMO CAMAS, SOMIERES, BASES, COLCHONES, ALMOHADAS Y ROPA DE CAMA Y HOGAR; ASÍ COMO DE LAS MATERIAS PRIMAS Y AUXILIARES, SUBPRODUCTOS Y PRODUCTOS SEMITERMINADOS QUE INTERVENGAN O PUEDAN INTERVENIR EN SU FABRICACIÓN; B) LA ADQUISICIÓN, CREACIÓN, DESARROLLO, EXPLOTACIÓN Y CESIÓN O VENTA A TERCEROS DE LA UTILIZACIÓN O PROPIEDAD DE MARCAS, PATENTES, MODELOS DE UTILIDAD Y MODELOS INDUSTRIALES Y, EN GENERAL, DE CUALQUIER INVENTO, MEJORA O ACTUALIZACIÓN QUE VERSE SOBRE LOS PRODUCTOS MENCIONADOS EN EL APARTADO A) O SOBRE LA MAQUINARIA O SISTEMAS DE PRODUCCIÓN O COMERCIALIZACIÓN QUE EMPLEE EN EL DESARROLLO DE LAS ACTIVIDADES COMPRENDIDAS EN EL APARTADO A); C) EL DISEÑO, CREACIÓN, FABRICACIÓN, ADQUISICIÓN, DISTRIBUCIÓN Y CESIÓN A TERCEROS DE LA UTILIZACIÓN O PROPIEDAD DE MAQUINARIA Y DE SISTEMAS DE PRODUCCIÓN O COMERCIALIZACIÓN QUE TENGAN RELACIÓN DIRECTA O INDIRECTA CON LAS ACTIVIDADES COMPRENDIDAS EN EL APARTADO A); D) LA ADQUISICIÓN, CONSTRUCCIÓN, INSTALACIÓN, EXPLOTACIÓN, TENENCIA, ENAJENACIÓN, ARRENDAMIENTO Y, EN GENERAL, ADQUISICIÓN O CESIÓN DE O A TERCEROS DEL USO, DISFRUTE O PROPIEDAD DE FÁBRICAS, ALMACENES, DEPÓSITOS, LOCALES COMERCIALES Y, EN GENERAL, DE INMUEBLES DE CUALQUIER CLASE QUE ESTÉN DIRECTA O INDIRECTAMENTE RELACIONDADOS CON EL DESARROLLO DE LAS ACTIVIDADES COMPRENDIDAS EN LOS APARTADOS ANTERIORES; E) LA REALIZACIÓN DE TODO TIPO DE OPERACIONES INMOBILIARIAS, INCLUYENDO LA ADQUISICIÓN, ARRENDAMIENTO, CONSTRUCCIÓN, TRANSFORMACIÓN, TENENCIA, PROMOCIÓN, EXPLOTACIÓN, GESTIÓN, ADMINISTRACIÓN, COMERCIALIZACIÓN, ENAJENACIÓN Y CESIÓN A TERCEROS DEL USO O PROPIEDAD DE TODA CLASE DE BIENES INMUEBLES O DE DERECHOS SOBRE LOS MISMOS; F) LA ADQUISICIÓN, TENENCIA, DISFRUTE, ADMINISTRACIÓN, GESTIÓN Y ENAJENACIÓN DE TODA CLASE DE VALORES MOBILIARIOS, ACCIONES, PARTICIPACIONES EN SOCIEDADES Y FONDOS DE INVERSIÓN, OBLIGACIONES Y DEUDA PÚBLICA, POR CUENTA PROPIA; G) LA PRESTACIÓN DE SERVICIOS DEGESTIÓN Y ASESORAMIENTO EN MATERIA INDUSTRIAL, COMERCIAL, PUBLICITARIA, ECONÓMICA, ADMINISTRATIVA, FINANCIERA, JURÍDICA, FISCAL, INFORMÁTICA, INMOBILIARIA Y DE INVESTIGACIÓN Y DESARROLLO Y, EN GENERAL, EN CUALQUIER MATERIA EMPRESARIAL RELACIONADA CON LAS ACTIVIDADES COMPRENDIDAS EN LOS APARTADOS ANTERIORES; H) CUALESQUIERA  O TODAS LAS ACTIVIDADES ANTERIORMENTE RELACIONADAS PODRÁN SER DESARROLLADAS POR LA SOCIEDAD TANTO EN TERRITORIO NACIONAL COMO EN EL EXTRANJERO Y TENER SU ORIGEN O DESTINO EN MERCADOS NACIONALES O EXTRANJEROS. AQUELLAS ACTIVIDADES PARA CUYO EJERCICIO SE REQUIERA LEGALMENTE ALGÚN TÍTULO PROFESIONAL, AUTORIZACIÓN ADMINISTRATIVA O INSCRIPCIÓN EN REGISTRO PÚBLICO ESPECIAL, SÓLO PODRÁN SER DESARROLLADAS POR MEDIO DE PERSONA QUE OSTENTE DICHA TITULACIÓN Y, EN SU CASO, NO PODRÁN SER INICIADAS ANTES DE OBTENER LA AUTORIZACIÓN ADMINISTRATIVA O LA INSCRIPCIÓN PERTINENTES",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/02707",
+      "_links": {
+        "self": {
+          "name": "FLEX EQUIPOS DE DESCANSO, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/02707"
+        }
+      }
+    },
+    {
+      "name": "MENDILAN BASOGINTZA ZERBITZUAK, S.L.",
+      "registrationNumber": "02704",
+      "identificationNumber": "B95252003",
+      "address": "POLÍGONO INDUSTRIAL OTOLA, S/N",
+      "location": {
+        "postalCode": "48270",
+        "municipality": "Markina-Xemein",
+        "county": "Bizkaia",
+        "municipalityId": "060",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.501.2",
+          "name": "Construcción completa, reparación y conservación obras civiles",
+          "_links": {
+            "self": {
+              "name": "Construcción completa, reparación y conservación obras civiles",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.2"
+            }
+          }
+        },
+        {
+          "id": "1.912",
+          "name": "Servicios forestales",
+          "_links": {
+            "self": {
+              "name": "Servicios forestales",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.912"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2003-07-08",
+      "certificateEndDate": "2003-12-10",
+      "object": "LA PRESTACIÓN DE TODO TIPO DE SERVICIOS FORESTALES Y DE JARDINERÍA Y LA CONSTRUCCIÓN COMPLETA, REPARACIÓN Y CONSERVACIÓN DE EDIFICACIONES Y OBRAS CIVILES",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/02704",
+      "_links": {
+        "self": {
+          "name": "MENDILAN BASOGINTZA ZERBITZUAK, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/02704"
+        }
+      }
+    },
+    {
+      "name": "INTEGRAL DE MEDIOS, S.L.",
+      "registrationNumber": "02033",
+      "identificationNumber": "B48827240",
+      "address": "C/ GENERAL CASTAÑOS, Nº 13 - 5ª.",
+      "location": {
+        "postalCode": "48920",
+        "municipality": "Portugalete",
+        "county": "Bizkaia",
+        "municipalityId": "078",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.845",
+          "name": "Explotación electrónica por cuenta de terceros",
+          "_links": {
+            "self": {
+              "name": "Explotación electrónica por cuenta de terceros",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.845"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2003-07-04",
+      "certificateEndDate": "2003-12-27",
+      "object": "LA PRODUCCIÓN, DISTRIBUCIÓN, ESTUDIO, ANÁLISIS, FORMACIÓN Y ORGANIZACIÓN DE SISTEMAS INFORMÁTICOS Y AUDIOVISUALES",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/02033",
+      "_links": {
+        "self": {
+          "name": "INTEGRAL DE MEDIOS, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/02033"
+        }
+      }
+    },
+    {
+      "name": "DECORACIÓN DULSA, S.L.",
+      "registrationNumber": "01485",
+      "identificationNumber": "B48308266",
+      "address": "C/ AXULAR, 1 BAJO",
+      "location": {
+        "postalCode": "48510",
+        "municipality": "Valle de Trápaga-Trapagaran",
+        "county": "Bizkaia",
+        "municipalityId": "080",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.501.1",
+          "name": "Construcción completa, reparación y conservación de edificaciones",
+          "_links": {
+            "self": {
+              "name": "Construcción completa, reparación y conservación de edificaciones",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2003-06-20",
+      "certificateEndDate": "2003-11-15",
+      "object": "LA CARPINTERÍA, TERMINACIÓN Y DECORACIÓN DE EDIFICIOS Y LOCALES Y EL  COMERCIO  AL POR MENOR DE PRODUCTOS DE DROGUERÍA, LIMPIEZA, PINTURAS, BARNICES, DISOLVENTES, PAPELES Y OTROS PRODUCTOS PARA LA DECORACIÓN  ",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/01485",
+      "_links": {
+        "self": {
+          "name": "DECORACIÓN DULSA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/01485"
+        }
+      }
+    },
+    {
+      "name": "ARTEX, OBRAS Y REFORMAS, S.L.",
+      "registrationNumber": "02613",
+      "identificationNumber": "B95069787",
+      "address": "C/ IRUÑA, 1º BIS PLANTA 1ª",
+      "location": {
+        "postalCode": "48014",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.501.1",
+          "name": "Construcción completa, reparación y conservación de edificaciones",
+          "_links": {
+            "self": {
+              "name": "Construcción completa, reparación y conservación de edificaciones",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2003-06-06",
+      "certificateEndDate": "2003-11-19",
+      "object": "LA CONSTRUCCIÓN Y REFORMA DE INTERIORES Y EXTERIORES, VIVIENDAS, LOCALES COMERCIALES Y OFICINAS, FACHADAS, TEJADOS Y COMUNIDADES, ASÍ COMO EL MANTENIMIENTO DE INSTITUCIONES PÚBLICAS Y PRIVADAS Y EMPRESAS.\r\n\r\nLA DISTRIBUCIÓN, DEPÓSITO, FABRICACIÓN Y ALMACENAMIENTO  DE MERCANCÍAS, ARTÍCULOS Y MATERIAS DE TODA CLASE Y, EN GENERAL, DE TODO TIPO DE BIENES MUEBLES E INMUEBLES.\r\n\r\nLA ADQUISICIÓN, ENAJENACIÓN O CESIÓN DE BIENES DE EQUIPO, MAQUINARIA Y UTILLAJE, ASÍ COMO SU VENTA, IMPORTACIÓN O EXPORTACIÓN, POR CUALQUIERA DE LAS FORMAS ADMITIDAS EN DERECHO, ASÍ COMO TODA CLASE DE INVENTOS, LICENCIAS, PATENTES, DERECHOS DE PROPIEDAD INDUSTRIAL O INTELECTUAL, TANTO NACIONALES COMO EXTRANJERAS.\r\nEL DESEMPEÑO DE COMISIONES Y REPRESENTACIONES PARA TODO GÉNERO DE OPERACIONES DE LÍCITO COMERCIO.\r\nLA PROMOCIÓN, EJECUCIÓN Y EXPLOTACIÓN DE TODA CLASE DE PRODUCTOS Y ELABORADOS DE MATERIAS PRIMAS Y DE SUS TRANSFORMADOS O DE PRODUCTOS MANUFACTURADOS Y SEMIELABORADOS.\r\nTODAS AQUELLAS ACTIVIDADES DESTINADAS AL ASESORAMIENTO, CONSULTA, ORIENTACIÓN Y PRESTACIÒN DE SERVICIOS DE CUALQUIER CLASE A OTRAS EMPRESAS.\r\nLA PROMOCIÓN DE TODA CLASE DE PROYECTOS O EMPRESAS COMERCIALES O INDUSTRIALES.\r\nLA PARTICIPACIÓN EN CUALESQUIERA OTRAS SOCIEDADES CONSTITUIDAS O POR CONSTITUIR, APORTANDO AL EFECTO, EFECTIVO METÁLICO O CUALQUIERA DE LOS BIENES SOCIALES, MUEBLES O INMUEBLES Y SUSCRIBIENDO EN COMPENSACIÓN LAS OPORTUNAS ACCIONES O PARTICIPACIONES SOCIALES, ASÍ COMO ACEPTAR Y DESEMPEÑAR CARGOS SOCIALES EN ÉSTAS.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/02613",
+      "_links": {
+        "self": {
+          "name": "ARTEX, OBRAS Y REFORMAS, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/02613"
+        }
+      }
+    }
+  ]
+}

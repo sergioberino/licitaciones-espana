@@ -1,0 +1,519 @@
+{
+  "totalItems": 919,
+  "totalPages": 92,
+  "currentPage": 45,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "id": 243,
+      "identificationNumber": "G95555850",
+      "name": "Fundación BiscayTIK",
+      "scope": "BIZKAIA",
+      "address": "Zugazarte, 32. 48930 Getxo (Bizkaia)",
+      "webPage": "http://www.biscaytik.eus",
+      "publicationDate": "2019-10-07",
+      "mainActivity": "Otra actividad",
+      "alternativeActivity": "TICs",
+      "codNUTS": "ES213",
+      "entities": [
+        {
+          "id": 691,
+          "name": "Fundación BiscayTIK",
+          "orgs": [
+            {
+              "id": 912097,
+              "name": "Director/a Gerente",
+              "_links": {
+                "self": {
+                  "name": "Director/a Gerente",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/243/entities/691/orgs/912097"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Fundación BiscayTIK",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/243/entities/691"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder243/es_doc/es_arch_poder243.html",
+      "_links": {
+        "self": {
+          "name": "Fundación BiscayTIK",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/243"
+        }
+      }
+    },
+    {
+      "id": 247,
+      "identificationNumber": "P4808800I",
+      "name": "Ayuntamiento de Orozko",
+      "scope": "BIZKAIA",
+      "address": "Zubiaur Plaza, 3. 48410 Orozko (Bizkaia)",
+      "webPage": "http://www.orozkoudala.com",
+      "publicationDate": "2019-10-07",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES213",
+      "entities": [
+        {
+          "id": 695,
+          "name": "Ayuntamiento de Orozko",
+          "orgs": [
+            {
+              "id": 912105,
+              "name": "Pleno",
+              "_links": {
+                "self": {
+                  "name": "Pleno",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/247/entities/695/orgs/912105"
+                }
+              }
+            },
+            {
+              "id": 912104,
+              "name": "Alcalde ",
+              "_links": {
+                "self": {
+                  "name": "Alcalde ",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/247/entities/695/orgs/912104"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Ayuntamiento de Orozko",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/247/entities/695"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder247/es_doc/es_arch_poder247.html",
+      "_links": {
+        "self": {
+          "name": "Ayuntamiento de Orozko",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/247"
+        }
+      }
+    },
+    {
+      "id": 248,
+      "identificationNumber": "P4809800H",
+      "name": "Ayuntamiento de Sondika",
+      "scope": "BIZKAIA",
+      "address": "Goronda-Gane bidea, 1. 48150 Sondika (Bizkaia)",
+      "webPage": "http://www.sondika.eus",
+      "publicationDate": "2019-10-07",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES213",
+      "entities": [
+        {
+          "id": 696,
+          "name": "Ayuntamiento de Sondika",
+          "orgs": [
+            {
+              "id": 912106,
+              "name": "Alcalde",
+              "_links": {
+                "self": {
+                  "name": "Alcalde",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/248/entities/696/orgs/912106"
+                }
+              }
+            },
+            {
+              "id": 912107,
+              "name": "Pleno",
+              "_links": {
+                "self": {
+                  "name": "Pleno",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/248/entities/696/orgs/912107"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Ayuntamiento de Sondika",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/248/entities/696"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder248/es_doc/es_arch_poder248.html",
+      "_links": {
+        "self": {
+          "name": "Ayuntamiento de Sondika",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/248"
+        }
+      }
+    },
+    {
+      "id": 252,
+      "identificationNumber": "P4810600I",
+      "name": "Ayuntamiento de Areatza",
+      "scope": "BIZKAIA",
+      "address": "Gudarien Plaza, 7. 48143 Areatza (Bizkaia)",
+      "webPage": "http://www.areatza.net",
+      "publicationDate": "2019-10-07",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES213",
+      "entities": [
+        {
+          "id": 701,
+          "name": "Ayuntamiento de Areatza",
+          "orgs": [
+            {
+              "id": 912111,
+              "name": "Alcalde",
+              "_links": {
+                "self": {
+                  "name": "Alcalde",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/252/entities/701/orgs/912111"
+                }
+              }
+            },
+            {
+              "id": 912112,
+              "name": "Pleno",
+              "_links": {
+                "self": {
+                  "name": "Pleno",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/252/entities/701/orgs/912112"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Ayuntamiento de Areatza",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/252/entities/701"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder252/es_doc/es_arch_poder252.html",
+      "_links": {
+        "self": {
+          "name": "Ayuntamiento de Areatza",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/252"
+        }
+      }
+    },
+    {
+      "id": 253,
+      "identificationNumber": "P4807100E",
+      "name": "Ayuntamiento de Markina-Xemein",
+      "scope": "BIZKAIA",
+      "address": "Goikoportala, 3. 48270 Markina-Xemein (Bizkaia)",
+      "webPage": "http://www.markina-xemein.eus",
+      "publicationDate": "2019-10-07",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES213",
+      "entities": [
+        {
+          "id": 702,
+          "name": "Ayuntamiento de Markina-Xemein",
+          "orgs": [
+            {
+              "id": 912114,
+              "name": "Pleno",
+              "_links": {
+                "self": {
+                  "name": "Pleno",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/253/entities/702/orgs/912114"
+                }
+              }
+            },
+            {
+              "id": 912113,
+              "name": "Alcalde",
+              "_links": {
+                "self": {
+                  "name": "Alcalde",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/253/entities/702/orgs/912113"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Ayuntamiento de Markina-Xemein",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/253/entities/702"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder253/es_doc/es_arch_poder253.html",
+      "_links": {
+        "self": {
+          "name": "Ayuntamiento de Markina-Xemein",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/253"
+        }
+      }
+    },
+    {
+      "id": 254,
+      "identificationNumber": "P4806400J",
+      "name": "Ayuntamiento de Leioa",
+      "scope": "BIZKAIA",
+      "address": "Elexalde auzoa, 1. 48940 Leioa (Bizkaia)",
+      "webPage": "http://www.leioa.net",
+      "publicationDate": "2019-10-07",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES213",
+      "entities": [
+        {
+          "id": 703,
+          "name": "Ayuntamiento de Leioa",
+          "orgs": [
+            {
+              "id": 912116,
+              "name": "Pleno Municipal",
+              "_links": {
+                "self": {
+                  "name": "Pleno Municipal",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/254/entities/703/orgs/912116"
+                }
+              }
+            },
+            {
+              "id": 912115,
+              "name": "Alcaldia",
+              "_links": {
+                "self": {
+                  "name": "Alcaldia",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/254/entities/703/orgs/912115"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Ayuntamiento de Leioa",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/254/entities/703"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder254/es_doc/es_arch_poder254.html",
+      "_links": {
+        "self": {
+          "name": "Ayuntamiento de Leioa",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/254"
+        }
+      }
+    },
+    {
+      "id": 256,
+      "identificationNumber": "P4806900I",
+      "name": "Ayuntamiento de Mallabia",
+      "scope": "BIZKAIA",
+      "address": "Arteiz Kalea 4- 48269 Mallabia (Bizkaia)",
+      "webPage": "http://www.mallabia.eus",
+      "publicationDate": "2019-10-07",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES213",
+      "entities": [
+        {
+          "id": 705,
+          "name": "Ayuntamiento de Mallabia",
+          "orgs": [
+            {
+              "id": 912120,
+              "name": "Pleno",
+              "_links": {
+                "self": {
+                  "name": "Pleno",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/256/entities/705/orgs/912120"
+                }
+              }
+            },
+            {
+              "id": 912119,
+              "name": "Alcalde",
+              "_links": {
+                "self": {
+                  "name": "Alcalde",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/256/entities/705/orgs/912119"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Ayuntamiento de Mallabia",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/256/entities/705"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder256/es_doc/es_arch_poder256.html",
+      "_links": {
+        "self": {
+          "name": "Ayuntamiento de Mallabia",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/256"
+        }
+      }
+    },
+    {
+      "id": 258,
+      "identificationNumber": "P4802600I",
+      "name": "Ayuntamiento de Carranza",
+      "scope": "BIZKAIA",
+      "address": "Concha, 1.48891 Karrantza (Bizkaia)",
+      "webPage": "http://www.karrantza.org",
+      "publicationDate": "2019-10-07",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES213",
+      "entities": [
+        {
+          "id": 706,
+          "name": "Ayuntamiento de Carranza",
+          "orgs": [
+            {
+              "id": 912172,
+              "name": "Pleno",
+              "_links": {
+                "self": {
+                  "name": "Pleno",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/258/entities/706/orgs/912172"
+                }
+              }
+            },
+            {
+              "id": 912121,
+              "name": "Alcalde",
+              "_links": {
+                "self": {
+                  "name": "Alcalde",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/258/entities/706/orgs/912121"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Ayuntamiento de Carranza",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/258/entities/706"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder258/es_doc/es_arch_poder258.html",
+      "_links": {
+        "self": {
+          "name": "Ayuntamiento de Carranza",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/258"
+        }
+      }
+    },
+    {
+      "id": 260,
+      "identificationNumber": "P4812600G",
+      "name": "Ayuntamiento de Alonsotegi",
+      "scope": "BIZKAIA",
+      "address": "Plaza Dr. Madanabeitia, 1. 48810 Alonsotegi (Bizkaia)",
+      "webPage": "http://www.alonsotegi.net",
+      "publicationDate": "2019-10-07",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES213",
+      "entities": [
+        {
+          "id": 708,
+          "name": "Ayuntamiento de Alonsotegi",
+          "orgs": [
+            {
+              "id": 912125,
+              "name": "Alcalde",
+              "_links": {
+                "self": {
+                  "name": "Alcalde",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/260/entities/708/orgs/912125"
+                }
+              }
+            },
+            {
+              "id": 912126,
+              "name": "Pleno",
+              "_links": {
+                "self": {
+                  "name": "Pleno",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/260/entities/708/orgs/912126"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Ayuntamiento de Alonsotegi",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/260/entities/708"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder260/es_doc/es_arch_poder260.html",
+      "_links": {
+        "self": {
+          "name": "Ayuntamiento de Alonsotegi",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/260"
+        }
+      }
+    },
+    {
+      "id": 261,
+      "identificationNumber": "P4806200D",
+      "name": "Ayuntamiento de Larrabetzu",
+      "scope": "BIZKAIA",
+      "address": "Askatasuna enparantza, 1. 48195 Larrabetzu (Bizkaia)",
+      "webPage": "http://www.larrabetzu.eus",
+      "publicationDate": "2019-10-07",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES213",
+      "entities": [
+        {
+          "id": 709,
+          "name": "Ayuntamiento de Larrabetzu",
+          "orgs": [
+            {
+              "id": 912128,
+              "name": "Pleno",
+              "_links": {
+                "self": {
+                  "name": "Pleno",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/261/entities/709/orgs/912128"
+                }
+              }
+            },
+            {
+              "id": 912127,
+              "name": "Alcalde",
+              "_links": {
+                "self": {
+                  "name": "Alcalde",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/261/entities/709/orgs/912127"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Ayuntamiento de Larrabetzu",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/261/entities/709"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder261/es_doc/es_arch_poder261.html",
+      "_links": {
+        "self": {
+          "name": "Ayuntamiento de Larrabetzu",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/261"
+        }
+      }
+    }
+  ]
+}

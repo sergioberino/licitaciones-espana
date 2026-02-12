@@ -1,0 +1,438 @@
+{
+  "totalItems": 9042,
+  "totalPages": 905,
+  "currentPage": 467,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "name": "NICANOR ZUBIA MARQUIBAR",
+      "registrationNumber": "08579",
+      "identificationNumber": "16237782N",
+      "address": "CAMINO DE LA IGLESIA Nº 7",
+      "location": {
+        "postalCode": "01206",
+        "municipality": "Barrundia",
+        "county": "Araba/Álava",
+        "municipalityId": "013",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.501.1",
+          "name": "Construcción completa, reparación y conservación de edificaciones",
+          "_links": {
+            "self": {
+              "name": "Construcción completa, reparación y conservación de edificaciones",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2023-02-28",
+      "certificateEndDate": "2023-08-28",
+      "object": "CONSTRUCCIÓN COMPLETA, REPARACIÓN Y CONSERVACIÓN DE EDIFICACIONES.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08579",
+      "_links": {
+        "self": {
+          "name": "NICANOR ZUBIA MARQUIBAR",
+          "href": "https://api.euskadi.eus/procurements/companies/08579"
+        }
+      }
+    },
+    {
+      "name": "AITZOL GUERENABARRENA AMANTEGUI",
+      "registrationNumber": "08566",
+      "identificationNumber": "72581352E",
+      "address": " Calle iturriza 36 2izq",
+      "location": {
+        "postalCode": "48240",
+        "municipality": "Berriz",
+        "county": "Bizkaia",
+        "municipalityId": "019",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.911",
+          "name": "Servicios agrícolas y ganaderos",
+          "_links": {
+            "self": {
+              "name": "Servicios agrícolas y ganaderos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.911"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2023-02-28",
+      "certificateEndDate": "2023-08-28",
+      "object": "SERVICIOS AGRÍCOLAS Y GANADEROS.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08566",
+      "_links": {
+        "self": {
+          "name": "AITZOL GUERENABARRENA AMANTEGUI",
+          "href": "https://api.euskadi.eus/procurements/companies/08566"
+        }
+      }
+    },
+    {
+      "name": "IMAN TEMPORING EMPRESA DE TRABAJO TEMPORAL, S.L.",
+      "registrationNumber": "08888",
+      "identificationNumber": "B60336989",
+      "address": "C/ Alcalá, 59 planta 1ª Puerta A ",
+      "location": {
+        "postalCode": "28014",
+        "municipality": "Madrid",
+        "county": "Madrid",
+        "municipalityId": "079",
+        "countyId": "28"
+      },
+      "economicActivities": [
+        {
+          "id": "1.849.6",
+          "name": "Servicios de colocación y suministro de personal",
+          "_links": {
+            "self": {
+              "name": "Servicios de colocación y suministro de personal",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.849.6"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2023-02-28",
+      "certificateEndDate": "2023-08-27",
+      "object": "PONER A DISPOSICIÓN DE OTRA EMPRESA USUARIA, CON CARÁCTER TEMPORAL, TRABAJADORES POR ELLA CONTRATADOS.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08888",
+      "_links": {
+        "self": {
+          "name": "IMAN TEMPORING EMPRESA DE TRABAJO TEMPORAL, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/08888"
+        }
+      }
+    },
+    {
+      "name": "LARRABETZU GOIKOA, S.L.",
+      "registrationNumber": "08559",
+      "identificationNumber": "B95989109",
+      "address": "Calle Letxezar",
+      "location": {
+        "postalCode": "48901",
+        "municipality": "Barakaldo",
+        "county": "Bizkaia",
+        "municipalityId": "013",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.651.2",
+          "name": "Venta al por menor de prendas de ropa para el vestido y tocado",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de prendas de ropa para el vestido y tocado",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.651.2"
+            }
+          }
+        },
+        {
+          "id": "1.671.4",
+          "name": "Restaurante dos tenedores",
+          "_links": {
+            "self": {
+              "name": "Restaurante dos tenedores",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.671.4"
+            }
+          }
+        },
+        {
+          "id": "1.673.2",
+          "name": "Otros cafés y bares",
+          "_links": {
+            "self": {
+              "name": "Otros cafés y bares",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.673.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2023-02-26",
+      "certificateEndDate": "2023-08-26",
+      "object": "PRINCIPAL: ACTIVIDAD DE HOSTELERÍA Y RESTAURACIÓN MEDIANTE LA EXPLOTACIÓN DE BARES, RESTAURANTES, CAFETERÍAS, HOTELES, HOSTALES, SALAS DE FIESTA, DE JUEGOS Y DE REUNIONES (CNAE: 5610). SECUNDARIOS: ORGANIZACIÓN DE TODO TIPO DE EVENTOS: BODAS, FERIAS, ANIMACIONES, SOCIOCULTURALES, DEPORTIVOS, MUSICALES, CULTURALES PROYECCIONES, CURSOS Y TALLERES, PERFORMANCES Y FIESTA DE TODO TIPO. COMERCIO AL POR MENOR DE TEXTIL, ROPA Y COMPLEMENTOS DE TODO TIPO.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08559",
+      "_links": {
+        "self": {
+          "name": "LARRABETZU GOIKOA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/08559"
+        }
+      }
+    },
+    {
+      "name": "ENRIQUE RODAL MONTERO",
+      "registrationNumber": "08265",
+      "identificationNumber": "30625581T",
+      "address": "Alcalde Felipe Uhagón 3, 2º interior derecha",
+      "location": {
+        "postalCode": "48010",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "2.225",
+          "name": "Técnicos en telecomunicación",
+          "_links": {
+            "self": {
+              "name": "Técnicos en telecomunicación",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/2.225"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2023-02-24",
+      "certificateEndDate": "2023-08-14",
+      "object": "TÉCNICOS EN TELECOMUNICACIÓN.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08265",
+      "_links": {
+        "self": {
+          "name": "ENRIQUE RODAL MONTERO",
+          "href": "https://api.euskadi.eus/procurements/companies/08265"
+        }
+      }
+    },
+    {
+      "name": "CONSTRUCCIONES URRUTIA, S.A.",
+      "registrationNumber": "00006",
+      "identificationNumber": "A01007442",
+      "address": "C/ DERECHOS HUMANOS, Nº 17",
+      "location": {
+        "postalCode": "01015",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.501.1",
+          "name": "Construcción completa, reparación y conservación de edificaciones",
+          "_links": {
+            "self": {
+              "name": "Construcción completa, reparación y conservación de edificaciones",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.1"
+            }
+          }
+        },
+        {
+          "id": "1.507",
+          "name": "Construcción, reparación y conservación de toda clase obras",
+          "_links": {
+            "self": {
+              "name": "Construcción, reparación y conservación de toda clase obras",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.507"
+            }
+          }
+        },
+        {
+          "id": "1.833.2",
+          "name": "Promoción de edificaciones",
+          "_links": {
+            "self": {
+              "name": "Promoción de edificaciones",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.833.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2023-02-24",
+      "certificateEndDate": "2023-08-20",
+      "object": "LA COMPRAVENTA DE FINCAS, CONTRATA Y EJECUCION DE OBRAS PROPIAS O AJENAS, PRIVADAS O PUBLICAS, Y EN GENERAL TODAS LAS ACTIVIDADES CARACTERISTICAS DE LA INDUSTRIA DE LA CONSTRUCCION O QUE SE RELACIONEN CON LA PROPIEDAD INMOBILIARIA",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/00006",
+      "_links": {
+        "self": {
+          "name": "CONSTRUCCIONES URRUTIA, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/00006"
+        }
+      }
+    },
+    {
+      "name": "IRSEARABA INSTITUTO PARA LA INCLUSIÓN SOCIAL",
+      "registrationNumber": "06092",
+      "identificationNumber": "G01040419",
+      "address": "C/Canciller Ayala, 8-bajo",
+      "location": {
+        "postalCode": "01004",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.911",
+          "name": "Servicios agrícolas y ganaderos",
+          "_links": {
+            "self": {
+              "name": "Servicios agrícolas y ganaderos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.911"
+            }
+          }
+        },
+        {
+          "id": "1.932.1",
+          "name": "Enseñanza de formación y perfeccionamiento profesional no superior",
+          "_links": {
+            "self": {
+              "name": "Enseñanza de formación y perfeccionamiento profesional no superior",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.932.1"
+            }
+          }
+        },
+        {
+          "id": "1.951",
+          "name": "Asistencia y servicios sociales en centros residenciales",
+          "_links": {
+            "self": {
+              "name": "Asistencia y servicios sociales en centros residenciales",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.951"
+            }
+          }
+        },
+        {
+          "id": "1.952",
+          "name": "Asistencia y servicios sociales en centros no residenciales",
+          "_links": {
+            "self": {
+              "name": "Asistencia y servicios sociales en centros no residenciales",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.952"
+            }
+          }
+        },
+        {
+          "id": "1.999",
+          "name": "Otros servicios n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros servicios n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.999"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2023-02-23",
+      "certificateEndDate": "2023-03-06",
+      "object": "-SENSIBILIZAR A LA SOCIEDAD SOBRE LAS SITUACIONES DE EXCLUSIÓN SOCIAL, ASÍ COMO SOBRE LAS POSIBLES FORMAS DE PREVENCIÓN, IMPLICACIÓN PERSONAL Y COLECTIVA. -INCIDIR EN SITUACIONES PERSONALES O COLECTIVAS CONCRETAS, RELACIONADAS CON LA EXCLUSIÓN SOCIAL, UTILIZANDO METODOLOGÍAS PSICOSOCIALES, SOCIO-EDUCATIVAS, ETC. -PROMOVER, PERSONAL, EDUCATIVA, SOCIAL, CULTURAL, LABORAL Y/O ECONÓMICAMENTE, A PERSONAS CON DIFICULTADES DE INTEGRACIÓN PERSONAL Y SOCIAL, APOYANDO, ASIMISMO, A SU ENTORNO INMEDIATO: -POSIBILITAR LA FORMACIÓN PARA EL EMPLEO DE LAS PERSONAS ATENDIDAS. -FACILITAR PROCESOS FORMATIVOS EN METODOLOGÍAS DE INTERVENCIÓN A LOS PROFESIONALES QUE DESARROLLAN SU LABOR CON LA POBLACIÓN ATENDIDA EN LOS DIFERENTES RECURSOS. PARA LA CONSECUCIÓN DE DICHOS FINES SE LLEVARÁN A CABO, PREVIO EL CUMPLIMIENTO DE LOS REQUISITOS LEGALES ESTABLECIDOS, LAS SIGUIENTES ACTIVIDADES: -DESARROLLAR ACTIVIDADES ECONÓMICAS DE TODO TIPO, ENCAMINADAS A LA REALIZACIÓN DE SUS FINES O A ALLEGAR RECURSOS CON ESE OBJETIVO. -ADQUIRIR Y POSEER BIENES DE TODAS CLASES Y POR CUALQUIER TÍTULO, ASÍ COMO CELEBRAR ACTOS Y CONTRATOS DE TODO GÉNERO. -EJERCITAR TODA CLASE DE ACCIONES CONFORME A LAS LEYES O A SUS ESTATUTOS. -CREAR LOS SERVICIOS DE INFORMACIÓN, PLANIFICACIÓN, ASISTENCIA TÉCNICA, GESTIÓN Y CUALQUIER OTRO QUE LAS CIRCUNSTANCIAS ACONSEJEN. -COLABORAR CON INSTITUCIONES PÚBLICAS O PRIVADAS, EN EL DESARROLLO DE PROYECTOS ESPECÍFICOS RELACIONADOS CON ESTE ÁMBITO DE INTERVENCIÓN, MEDIANTE CONVENIOS, SUBVENCIONES U OTRAS FÓRMULAS QUE HAGAN VIABLE EL DESARROLLO DE LOS MISMOS. -CREAR EQUIPOS DE TRABAJO COMPUESTOS POR MIEMBROS DEL INSTITUTO, O POR AQUELLOS COLABORADORES QUE SE DESIGNEN DESDE LA PROPIA ASOCIACIÓN PARA DESEMPEÑAR FUNCIONES CONCRETAS QUE FACILITEN LA CONSECUCIÓN DE LOS OBJETIVOS PSICOSOCIALES, SOCIOEDUCATIVOS, SOCIOCOMUNITARIOS, ORGANIZATIVOS. -CONTRATAR PROFESIONALES PARA LA EJECUCIÓN DE PROGRAMAS QUE ASÍ LO REQUIERAN. IGUALMENTE, POSIBILITAR LA PARTICIPACIÓN DE PERSONAS EN PRÁCTICAS Y PERSONAL VOLUNTARIO. -INCORPORARSE A FEDERACIONES, CONFEDERACIONES U ORGANISMOS PÚBLICOS Y PRIVADOS -DE ÁMBITO AUTONÓMICO, ESTATAL, INTERNACIONAL- DEDICADOS TOTAL O PARCIALMENTE A FINES SIMILARES. -COLABORAR Y ESTAR EN COORDINACIÓN CON EL RESTO DE SERVICIOS DE LA COMUNIDAD, PARA GLOBALIZAR Y COMPLEMENTAR LAS ACCIONES A DESARROLLAR. -UTILIZAR DIFERENTES SISTEMAS DE INFORMACIÓN, DIFUSIÓN Y SENSIBILIZACIÓN. -DISPONER DE UN INMUEBLE -CON EL MOBILIARIO CORRESPONDIENTE- COMO SEDE DEL INSTITUTO. -VALERSE DE CUALQUIER OTRO MEDIO LÍCITO QUE FACILITE LA CONSECUCIÓN OBJETIVOS DEL INSTITUTO",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06092",
+      "_links": {
+        "self": {
+          "name": "IRSEARABA INSTITUTO PARA LA INCLUSIÓN SOCIAL",
+          "href": "https://api.euskadi.eus/procurements/companies/06092"
+        }
+      }
+    },
+    {
+      "name": "ANA BELEN ORTUONDO RUIZ",
+      "registrationNumber": "08874",
+      "identificationNumber": "30639428R",
+      "address": "HURTADO DE AMEZAGA, 15-6º D",
+      "location": {
+        "postalCode": "48008",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "2.751",
+          "name": "Profesionales de la publicidad, relaciones públicas y similares",
+          "_links": {
+            "self": {
+              "name": "Profesionales de la publicidad, relaciones públicas y similares",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/2.751"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2023-02-22",
+      "certificateEndDate": "2023-08-16",
+      "object": "PROFESIONALES DE LA PUBLICIDAD, RELACIONES PÚBLICAS Y SIMILARES.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08874",
+      "_links": {
+        "self": {
+          "name": "ANA BELEN ORTUONDO RUIZ",
+          "href": "https://api.euskadi.eus/procurements/companies/08874"
+        }
+      }
+    },
+    {
+      "name": "LOOMIS SPAIN, S.A.",
+      "registrationNumber": "08248",
+      "identificationNumber": "A79493219",
+      "address": "C/ de los ahumaos, 35-37",
+      "location": {
+        "postalCode": "28052",
+        "municipality": "Madrid",
+        "county": "Madrid",
+        "municipalityId": "079",
+        "countyId": "28"
+      },
+      "economicActivities": [
+        {
+          "id": "1.849.4",
+          "name": "Servicios de custodia, seguridad y protección",
+          "_links": {
+            "self": {
+              "name": "Servicios de custodia, seguridad y protección",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.849.4"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2023-02-17",
+      "certificateEndDate": "2023-08-09",
+      "object": "A) VIGILANCIA Y PROTECCIÓN DE BIENES, ESTABLECIMIENTOS, ESPECTÁCULOS, CERTÁMENES O CONVENCIONES. B) PROTECCIÓN DE PERSONAS DETERMINADAS, PREVIA LA AUTORIZACIÓN CORRESPONDIENTE. C) DEPÓSITO, CUSTODIA, RECUENTO Y CLASIFICACIÓN DE MONEDAS Y BILLETES, TÍTULOS-VALORES Y DEMÁS OBJETOS QUE, POR SU VALOR ECONÓMICO Y EXPECTATIVAS QUE GENEREN, O POR SU PELIGROSIDAD, PUEDEN REQUERIR PROTECCIÓN ESPECIAL, SIN PERJUICIO DE LAS ACTIVIDADES PROPIAS DE LAS ENTIDADES FINANCIERAS. D) TRANSPORTE Y DISTRIBUCIÓN DE LOS OBJETOS A QUE SE REFIERE EL APARTADO ANTERIOR A TRAVÉS DE LOS DISTINTOS MEDIOS, REALIZÁNDOLOS, EN SU CASO, MEDIANTE VEHÍCULOS CUYAS CARACTERÍSTICAS SERÁN DETERMINADAS POR EL MINISTERIO DEL INTERIOR, DE FORMA QUE NO PUEDAN CONFUNDIRSE CON LOS DE LAS FUERZAS ARMADAS NI CON LOS DE LAS FUERZAS Y CUERPOS DE SEGURIDAD. E) INSTALACIÓN Y MANTENIMIENTO DE APARATOS, DISPOSITIVOS Y SISTEMAS DE SEGURIDAD. F) EXPLOTACIÓN DE CENTRALES PARA LA RECEPCIÓN, VERIFICACIÓN Y TRANSMISIÓN DE LAS SEÑALES DE ALARMAS Y SU COMUNICACIÓN A LAS FUERZAS Y CUERPOS DE SEGURIDAD, ASÍ COMO LA PRESTACIÓN DE SERVICIOS DE RESPUESTA CUYA REALIZACIÓN NO SEA DE LA COMPETENCIA DE DICHAS FUERZAS Y CUERPOS. G) PLANIFICACIÓN Y ASESORAMIENTO DE LAS ACTIVIDADES DE SEGURIDAD CONTEMPLADAS EN LA LEY 23/1992 DE 30 DE JULIO, DE SEGURIDAD PRIVADA.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08248",
+      "_links": {
+        "self": {
+          "name": "LOOMIS SPAIN, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/08248"
+        }
+      }
+    },
+    {
+      "name": "ANA GAMBOA PARDO",
+      "registrationNumber": "06232",
+      "identificationNumber": "16054977B",
+      "address": "Bº Ibarra, 11",
+      "location": {
+        "postalCode": "48113",
+        "municipality": "Gamiz-Fika",
+        "county": "Bizkaia",
+        "municipalityId": "038",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "2.411",
+          "name": "Arquitectos",
+          "_links": {
+            "self": {
+              "name": "Arquitectos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/2.411"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2023-02-17",
+      "certificateEndDate": "2023-08-12",
+      "object": "ARQUITECTOS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06232",
+      "_links": {
+        "self": {
+          "name": "ANA GAMBOA PARDO",
+          "href": "https://api.euskadi.eus/procurements/companies/06232"
+        }
+      }
+    }
+  ]
+}

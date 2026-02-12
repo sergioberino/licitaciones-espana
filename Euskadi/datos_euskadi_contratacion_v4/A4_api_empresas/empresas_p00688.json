@@ -1,0 +1,418 @@
+{
+  "totalItems": 9042,
+  "totalPages": 905,
+  "currentPage": 688,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "name": "CONSTRUCCIONES Y MINIEXCAVACIONES M. ALFARO, S.L.",
+      "registrationNumber": "02590",
+      "identificationNumber": "B95194866",
+      "address": "AVDA. LEHENDAKARI AGIRRE, 17 Bajo.",
+      "location": {
+        "postalCode": "48140",
+        "municipality": "Igorre",
+        "county": "Bizkaia",
+        "municipalityId": "094",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.501.2",
+          "name": "Construcción completa, reparación y conservación obras civiles",
+          "_links": {
+            "self": {
+              "name": "Construcción completa, reparación y conservación obras civiles",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.2"
+            }
+          }
+        },
+        {
+          "id": "1.501.3",
+          "name": "Albañilería y pequeños trabajos de construcción en general",
+          "_links": {
+            "self": {
+              "name": "Albañilería y pequeños trabajos de construcción en general",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.3"
+            }
+          }
+        },
+        {
+          "id": "1.861.2",
+          "name": "Alquiler de locales industriales y otros alquileres n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Alquiler de locales industriales y otros alquileres n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.861.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2012-12-27",
+      "certificateEndDate": "2013-05-09",
+      "object": "A) LA CONSTRUCCIÓN, REPARACIÓN Y CONSERVACIÓN DE TODA CLASE DE INMUEBLES, EDIFICIOS Y OBRAS CIVILES, ALBAÑILERÍA, DEMOLICIONES, PERFORACIONES Y DERRIBOS EN GENERAL, CIMENTACIONES PAVIMENTACIONES, PREPARACIÓN Y MONTAJE DE ESTRUCTURAS, CUBIERTAS, ELABORACIÓN Y COLOCACIÓN DE MATERIALES NATURALES Y ARTIFICIALES, REVESTIMIENTOS INTERIORES Y EXTERIORES, SOLADOS Y PAVIMENTOS, AISLAMIENTOS FÓNICOS, TÉRMICOS Y ACÚSTICOS, IMPERMEABILIZACIONES; B) LA ADQUISICIÓN, EXPLOTACIÓN Y ENAJENACIÓN DE TODA CLASE DE TERRENOS, ASÍ COMO SU URBANIZACIÓN O PACELACIÓN; C) EL USO, ARRENDAMIENTO, VENTA O TRANSMISIÓN POR CUALQUIER TÍTULO DE LOS EDIFICIOS, O DE LAS VIVIENDAS O LOCALES DE LOS MISMOS. QUEDAN EXCLUÍDAS TODAS AQUELLAS ACTIVIDADES PARA CUYO EJERCICIO LA LEY EXIJA REQUISITOS ESPECIALES QUE NO QUEDEN CUMPLIDOS POR ESTA SOCIEDAD. SI LAS DISPOSICIONES LEGALES EXIGIESEN PARA EL EJERCICIO DE ALGUNA DE LAS ACTIVIDADES COMPRENDIDAS EN EL OBJETO SOCIAL ALGÚN TÍTULO PROFESIONAL, O AUTORIZACIÓN ADMINISTRATIVA, O INSCRIPCIÓN EN REGISTROS PÚBLICOS, DICHAS ACTIVIDADES DEBERÁN REALIZARSE POR MEDIO DE PERSONA QUE OSTENTE DICHA TITULARIDAD PROFESIONAL Y, EN SU CASO, NO PODRÁN INICIARSE ANTES DE QUE SE HAYAN CUMPLIDO LOS REQUISITOS ADMINISTRATIVOS EXIGIDOS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/02590",
+      "_links": {
+        "self": {
+          "name": "CONSTRUCCIONES Y MINIEXCAVACIONES M. ALFARO, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/02590"
+        }
+      }
+    },
+    {
+      "name": "CONSTRUCCIONES Y REHABILITACIONES DE EUSKADI, S.A.",
+      "registrationNumber": "02272",
+      "identificationNumber": "A20112108",
+      "address": "AVDA. AMAIA, Nº 2-1º G. EDIFICIO INBISA",
+      "location": {
+        "postalCode": "48940",
+        "municipality": "Leioa",
+        "county": "Bizkaia",
+        "municipalityId": "054",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.501.1",
+          "name": "Construcción completa, reparación y conservación de edificaciones",
+          "_links": {
+            "self": {
+              "name": "Construcción completa, reparación y conservación de edificaciones",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2012-12-21",
+      "certificateEndDate": "2013-05-05",
+      "object": "LA DISTRIBUCIÓN Y APLICACIÓN DE MATERIALES PARA LA CONSTRUCCIÓN Y LA EJECUCIÓN DE OBRAS DE CONSTRUCCIÓN Y REHABILITACIÓN ",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/02272",
+      "_links": {
+        "self": {
+          "name": "CONSTRUCCIONES Y REHABILITACIONES DE EUSKADI, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/02272"
+        }
+      }
+    },
+    {
+      "name": "SUGAIN, S.A.L.",
+      "registrationNumber": "00853",
+      "identificationNumber": "A01038264",
+      "address": "PORTAL DE ARRIAGA, 50",
+      "location": {
+        "postalCode": "01000",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.504.1",
+          "name": "Instalaciones eléctricas en general",
+          "_links": {
+            "self": {
+              "name": "Instalaciones eléctricas en general",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.504.1"
+            }
+          }
+        },
+        {
+          "id": "1.843.1",
+          "name": "Servicios técnicos de ingeniería",
+          "_links": {
+            "self": {
+              "name": "Servicios técnicos de ingeniería",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2012-12-17",
+      "certificateEndDate": "2013-05-12",
+      "object": "LA VENTA, CARGA Y RETIMBRADO DE EXTINTORES, COMERCIALIZACION, INSTALACION Y EJECUCION DE SISTEMAS DE PROTECCION CONTRA INCENDIOS Y SEGURIDAD EN GENERAL, ASI COMO SUS MANTENIMIENTOS POSTERIORES, INSTALADAS O NO POR LA EMPRESA SUGAIN, S.A.L.. ELABORACION DE PROYECTOS, INFORMES TECNICOS, PERITACIONES, DICTAMENES, VALORACIONES Y TASACIONES, EN GENERAL",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/00853",
+      "_links": {
+        "self": {
+          "name": "SUGAIN, S.A.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/00853"
+        }
+      }
+    },
+    {
+      "name": "INSTITUTO PARA EL DESARROLLO DE LA INFORMACIÓN Y EL CONOCIMIENTO SOBRE LA MOVILIDAD Y LA ACTIVIDAD TURÍSTICA MOVATUR, S.L.",
+      "registrationNumber": "04908",
+      "identificationNumber": "B83355248",
+      "address": "ONCE, 14 (URB. LOS ARROYOS)",
+      "location": {
+        "postalCode": "28280",
+        "municipality": "Escorial, El",
+        "county": "Madrid",
+        "municipalityId": "054",
+        "countyId": "28"
+      },
+      "economicActivities": [
+        {
+          "id": "1.846",
+          "name": "Empresas de estudios de mercado",
+          "_links": {
+            "self": {
+              "name": "Empresas de estudios de mercado",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.846"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2012-12-17",
+      "certificateEndDate": "2013-04-22",
+      "object": "REALIZAR LAS OPERACIONES Y SERVICIOS PROPIOS DE LA EMPRESA DE CONSULTA QUE SE CONCRETAN EN EL DISEÑO, IMPLANTACIÓN Y REALIZACIÓN DE TRABAJOS, INVESTIGACIONES Y ASESORÍA EN LOS ÁMBITOS ESTADÍSTICO, (INCLUYENDO LA REALIZACIÓN DE ENCUESTAS Y TOMAS DE DATOS, POR CUALQUIER MEDIO Y EN CUALQUIER LUGAR, LA GRABACIÓN DE LA INFORMACIÓN EN SOPORTE INFORMÁTICO, SU CODIFICACIÓN, VALIDACIÓN, DEPURACIÓN, INFERENCIA Y EXPLOTACIÓN), INFORMÁTICO, (INCLUYENDO EL ANÁLISIS, DEFINICIÓN Y DESARROLLO DE PROGRAMAS Y APLICACIONES CON CUALQUIER PROPÓSITO, SU INSTALACIÓN Y MANTENIMIENTO), ECONÓMICO, ORGANIZATIVO, (INCLUYENDO A ORGANIZAICÓN Y GESTIÓN DE CUALQUIER TIPO DE ENTIDADES Y EVENTOS), DEMOGRÁFICO-SOCIAL, DE GESTIÓN, CALIDAD, (INCLUYENDO PROCEDIMIENTOS PARA DAR RESPUESTA A CUALQUIER NORMA ESTANDARIZADA TANTO NACIONAL COMO SUPRANACIONAL), Y FORMACIÓN, (INCLUYENDO EQUIPOS DE CAMPO, USUARIOS DE APLICACIONES Y CUALQUIER OTRO ASPECTO QUE ESTÉ DENTRO DEL OBJETO SOCIAL); RELACIONADOS CON LA MOVILIDAD, LA ACTIVIDAD TURÍSTICA Y CUALQUIER OTRA ÁREA DEL CONOCIMIENTO Y LA ACTIVIDAD HUMANA",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/04908",
+      "_links": {
+        "self": {
+          "name": "INSTITUTO PARA EL DESARROLLO DE LA INFORMACIÓN Y EL CONOCIMIENTO SOBRE LA MOVILIDAD Y LA ACTIVIDAD TURÍSTICA MOVATUR, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/04908"
+        }
+      }
+    },
+    {
+      "name": "COLORIURIS AGRUPACIÓN INTERÉS ECONÓMICO",
+      "registrationNumber": "04906",
+      "identificationNumber": "V99091696",
+      "address": "C/ ALFONSO I, nº 23.ENTLO. C",
+      "location": {
+        "postalCode": "50003",
+        "municipality": "Zaragoza",
+        "county": "Zaragoza",
+        "municipalityId": "297",
+        "countyId": "50"
+      },
+      "economicActivities": [
+        {
+          "id": "1.841",
+          "name": "Servicios jurídicos",
+          "_links": {
+            "self": {
+              "name": "Servicios jurídicos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.841"
+            }
+          }
+        },
+        {
+          "id": "1.845",
+          "name": "Explotación electrónica por cuenta de terceros",
+          "_links": {
+            "self": {
+              "name": "Explotación electrónica por cuenta de terceros",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.845"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2012-12-13",
+      "certificateEndDate": "2013-05-10",
+      "object": "EL DESARROLLO Y PUESTA A DISPOSICIÓN -GESTIÓN Y EXPLOTACIÓN- DE PROCESOS INFORMÁTICOS Y LAS HERRAMIENTAS PARA LA CESIÓN DE DERECHOS DE PROPIEDAD INTELECTUAL CONFORME AL SISTEMA DE DERECHO CONTINENTAL, ESPECIALMENTE POR MEDIO DEL DESARROLLO DE SISTEMAS DE CONTRATACIÓN EN LÍNEA; ASÍ COMO EL DEPÓSITO Y CUSTODIA DE DICHOS CONTRATOS Y DE LAS OBRAS EN FORMATO DIGITAL REGULADAS POR ESTOS Y LA PROMOCIÓN DE LA AUTOGESTIÓN DE LOS DERECHOS DE AUTOR EN LA WORLD WIDE WEB. ACTUAR COMO TERCERO DE CONFIANZA, DE CONFORMIDAD CON LO ESTABLECIDOS EN EL ARTÍCULO 25 DE LA LEY34/02, DE SERVICIOS DE LA SOCIEDAD DE LA INFORMACIÓN Y DE COMERCIO ELECTRÓNICO. EL DESARROLLO Y PUESTA A DISPOSICIÓN, -GESTIÓN Y EXPLOTACIÓN- DE LOS PROCESOS Y LAS HERRAMIENTAS JURÍDICAS PARA LA CONTRATACIÓN EN LÍNEA, PÚBLICA Y/O PRIVADA, EN LA WORD WIDE WEB. 2.1. PARA FACILITAR EL DESARROLLO Y MEJORAR LOS RESULTADOS DE LA ACTIVIDAD DE SUS SOCIOS, CONSTITUIRÁN EL OBJETO EXCLUSIVO DE \"COLORIURIS, A.I.E.\" LAS SIGUIENTES ACTIVIDADES AUXILIARES DE LAS DESARROLLADAS POR LOS MISMOS. 2.1.1. GESTIÓN Y EXPLOTACIÓN DE LOS RECURSOS JURÍDICOS, INFORMÁTICOS Y FINANCIEROS PRECISOS PARA LLEVAR A CABO EL OBJETO SOCIAL, INCLUIDA LA ADQUISICIÓN DE MAQUINARIA, CONSTRATACIÓN DE A LOJAMIENTO DE DOMINIOS Y/O NOMBRES DE DOMICILIOS ASOCIADOS AL PROYECTO. 2.1.3. LA CELEBRACIÓN DE CUANTOS ACTOS Y CONTRATOS FUEREN NECESARIOS PARA LA EJECUCIÓN Y CUMPLIMIENTO DE LO ANTERIORMENTE ESTABLECIDO, INCLUÍDO EL REGISTRO Y LA EXPLOTACIÓN DE PATENTES. 2.2. LAS EMPRESAS Y PROFESIONALES MIEMBROS LIMITARÁN SU ACTUACIÓN EN LA AGRUPACIÓN A LAS ACTIVIDADES QUE CONSTITUYEN EL OBJETO DE LA MISMA, CON EXCLUSIÓN DE CUALESQUIERA OTRAS.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/04906",
+      "_links": {
+        "self": {
+          "name": "COLORIURIS AGRUPACIÓN INTERÉS ECONÓMICO",
+          "href": "https://api.euskadi.eus/procurements/companies/04906"
+        }
+      }
+    },
+    {
+      "name": "REFERENCE LABORATORY, S.A.",
+      "registrationNumber": "01090",
+      "identificationNumber": "A08514986",
+      "address": "C/ PABLO IGLESIAS, 57 (POL. GRAN VIA SUR)",
+      "location": {
+        "postalCode": "08024",
+        "municipality": "Hospitalet de Llobregat, L'",
+        "county": "Barcelona",
+        "municipalityId": "101",
+        "countyId": "08"
+      },
+      "economicActivities": [
+        {
+          "id": "1.942.9",
+          "name": "Otros servicios sanitarios sin internados, no clasificados",
+          "_links": {
+            "self": {
+              "name": "Otros servicios sanitarios sin internados, no clasificados",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.942.9"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2012-12-12",
+      "certificateEndDate": "2013-06-07",
+      "object": "LA REALIZACIÓN DE TODA CLASE DE ANÁLISIS QUÍMICOS, FÍSICOS, CLÍNICOS, BIOLÓGICOS Y DEMÁS ENSAYOS Y ANÁLISIS DIVERSOS, ASÍ COMO SERVICIO DE CONSULTA Y ASESORAMIENTO RELACIONADOS DIRECTA O INDIRECTAMENTE CON DICHOS ANÁLISIS Y ENSAYOS, Y DEMÁS ACTOS PREPARATORIOS Y COMPLEMENTARIOS. EL ESPECÍFICO ENUNCIADO DE LAS PRECEDENTES ACTIVIDADES NO SUPONE LA OBLIGATORIEDAD DE SU EJERCICIO SIMULTÁNEO, SINO QUE LA SOCIEDAD, A TRAVÉS DE SUS ORGANOS DE GESTIÓN, DESARROLLARÁ LAS QUE EN CADA MOMENTO Y ATENDIDAS LAS CIRCUNSTANCIAS ESTIME ADECUADAS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/01090",
+      "_links": {
+        "self": {
+          "name": "REFERENCE LABORATORY, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/01090"
+        }
+      }
+    },
+    {
+      "name": "ASMI SERVICIOS DEPORTIVOS, S.L.",
+      "registrationNumber": "04895",
+      "identificationNumber": "B20807442",
+      "address": "URKI 12",
+      "location": {
+        "postalCode": "20600",
+        "municipality": "Eibar",
+        "county": "Gipuzkoa",
+        "municipalityId": "030",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.933.9",
+          "name": "Otras actividades de enseñanza tales como idiomas, mecanografía",
+          "_links": {
+            "self": {
+              "name": "Otras actividades de enseñanza tales como idiomas, mecanografía",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.933.9"
+            }
+          }
+        },
+        {
+          "id": "1.999",
+          "name": "Otros servicios n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros servicios n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.999"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2012-12-04",
+      "certificateEndDate": "2013-04-16",
+      "object": "SOCORRISMO Y ACTIVIDADES DEPORTIVAS EN GENERAL",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/04895",
+      "_links": {
+        "self": {
+          "name": "ASMI SERVICIOS DEPORTIVOS, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/04895"
+        }
+      }
+    },
+    {
+      "name": "MIRUGAIN, S.L.",
+      "registrationNumber": "03049",
+      "identificationNumber": "B95141354",
+      "address": "LEDESMA, 4-5º ",
+      "location": {
+        "postalCode": "48001",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.846",
+          "name": "Empresas de estudios de mercado",
+          "_links": {
+            "self": {
+              "name": "Empresas de estudios de mercado",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.846"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2012-11-29",
+      "certificateEndDate": "2013-05-16",
+      "object": "LA PRESTACIÓN DE TODA CLASE DE SERVICIOS DE ASESORAMIENTO, APOYO, APOYO A PERSONAS O ENTIDADES QUE REALICEN ACTIVIDADES ECONÓMICAS, INCLUÍDAS AUDITORÍAS, ASESORAMIENTO FISCAL, FINANCIEROS, ESTUDIOS ECONÓMICOS, PREPARACIÓN DE CONTABILIDADES, ELABORACIÓN DE PLANES DE GESTIÓN Y VIABILIDAD, LA GESTIÓN, COMERCIALIZACIÓN Y VENTA DE ESTUDIOS DE MARKETING, Y CUANTOS ASESORAMIENTOS PRECISEN LAS ENTIDADES QUE REALICEN ACTIVIDADES ECONÓMICAS.\r\n\r\nLA ADQUISICIÓN, PRODUCCIÓN Y COMERCIALIZACIÓN DE SOLUCIONES PARA EL TRATAMIENTO DE DATOS MEDIANTE PROCEDIMIENTOS INFORMÁTICOS, TANTO EN LO REFERENTE A EQUIPOS ELECTRÓNICOS COMO A LOS PROGRAMAS, SISTEMAS Y SERVICIOS NECESARIOS PARA SU FUNCIONAMIENTO, ASÍ COMO EL DESARROLLO, INVESTIGACIÓN, PRODUCCIÓN Y COMERCIALIZACION DE PRODUCTOS Y SISTEMAS INFORMÁTICOS EN GENERAL.\r\nTALES ACTIVIDADES PODRÁN SER REALIZADAS POR LA SOCIEDAD, TOTAL O PARCIALMENTE, DE MODO INDIRECTO, MEDIANTE LA TITULARIDAD DE ACCIONES O PARTICIPACIONES EN SOCIEDADES DE OBJETO ANÁLOGO O IDÉNTICO",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03049",
+      "_links": {
+        "self": {
+          "name": "MIRUGAIN, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/03049"
+        }
+      }
+    },
+    {
+      "name": "POOL. C.M.E., S.L.",
+      "registrationNumber": "01969",
+      "identificationNumber": "B48902753",
+      "address": "C/ ALAMEDA MAZARREDO, Nº 39 - 2º C.",
+      "location": {
+        "postalCode": "48009",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.844",
+          "name": "Servicios de publicidad, relaciones públicas y similares",
+          "_links": {
+            "self": {
+              "name": "Servicios de publicidad, relaciones públicas y similares",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.844"
+            }
+          }
+        },
+        {
+          "id": "1.989.2",
+          "name": "Servicios de organización de congresos, asambleas y similares",
+          "_links": {
+            "self": {
+              "name": "Servicios de organización de congresos, asambleas y similares",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.989.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2012-11-28",
+      "certificateEndDate": "2013-05-22",
+      "object": "A) LA PRESTACIÓN A EMPRESAS Y PARTICULARES DE TODO TIPO DE SERVICIOS DE PUBLICIDAD, RELACIONES PÚBLICAS Y MARKETING; B) LA ORGANIZACIÓN DE CONGRESOS, EXPOSICIONES, CONVENCIONES, CONFERENCIAS Y EN GENERAL CUALQUIER CLASE DE EVENTOS SOCIALES, PRESTANDO TODA CLASE DE SERVICIOS RELACIONADOS CON LA ORGANIZACIÓN Y DESARROLLO DE LOS MISMOS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/01969",
+      "_links": {
+        "self": {
+          "name": "POOL. C.M.E., S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/01969"
+        }
+      }
+    },
+    {
+      "name": "ALAVESA DE PINTORES DECORADORES, S.L.",
+      "registrationNumber": "03081",
+      "identificationNumber": "B01362342",
+      "address": "AVDA. CANTÁBRICO, 4. PAB. 1",
+      "location": {
+        "postalCode": "01013",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.505.6",
+          "name": "Pintura, revestimientos y terminación y decoración de locales",
+          "_links": {
+            "self": {
+              "name": "Pintura, revestimientos y terminación y decoración de locales",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.505.6"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2012-11-26",
+      "certificateEndDate": "2013-04-01",
+      "object": "TANTO DIRECTAMENTE COMO DE FORMA INDIRECTA, MEDIANTE LA TITULARIDAD DE ACCIONES O PARTICIPACIONES EN SOCIEDADES CON OBJETO IDÉNTICO, EL DE PINTURA DE CUALQUIER TIPO O CLASE Y REVESTIMIENTOS INTERIORES Y EXTERIORES; COMERCIO AL POR MENOR Y MAYOR DE PINTURAS Y BARNICES, ASÍ COMO ARTÍCULOS DE DECORACIÓN, ETC.; INSTALACIONES PARA DECORACIÓN Y CONSTRUCCIÓN",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03081",
+      "_links": {
+        "self": {
+          "name": "ALAVESA DE PINTORES DECORADORES, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/03081"
+        }
+      }
+    }
+  ]
+}

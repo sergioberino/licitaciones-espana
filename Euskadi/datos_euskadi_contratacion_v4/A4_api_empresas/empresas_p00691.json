@@ -1,0 +1,508 @@
+{
+  "totalItems": 9042,
+  "totalPages": 905,
+  "currentPage": 691,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "name": "CONSTRUCCIONES ARMAGUI, S.L.",
+      "registrationNumber": "04834",
+      "identificationNumber": "B20827788",
+      "address": "AVDA. DE LA LIBERTAD, 17 2º",
+      "location": {
+        "postalCode": "20004",
+        "municipality": "Donostia / San Sebastián",
+        "county": "Gipuzkoa",
+        "municipalityId": "069",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.504.1",
+          "name": "Instalaciones eléctricas en general",
+          "_links": {
+            "self": {
+              "name": "Instalaciones eléctricas en general",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.504.1"
+            }
+          }
+        },
+        {
+          "id": "1.504.3",
+          "name": "Instalaciones de frío, calor y acondicionamiento de aire",
+          "_links": {
+            "self": {
+              "name": "Instalaciones de frío, calor y acondicionamiento de aire",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.504.3"
+            }
+          }
+        },
+        {
+          "id": "1.507",
+          "name": "Construcción, reparación y conservación de toda clase obras",
+          "_links": {
+            "self": {
+              "name": "Construcción, reparación y conservación de toda clase obras",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.507"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2012-09-24",
+      "certificateEndDate": "2012-12-11",
+      "object": ".",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/04834",
+      "_links": {
+        "self": {
+          "name": "CONSTRUCCIONES ARMAGUI, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/04834"
+        }
+      }
+    },
+    {
+      "name": "M.S.A. ESPAÑOLA, S.A.",
+      "registrationNumber": "00013",
+      "identificationNumber": "A08201832",
+      "address": "C/ NARCÍS MONTURIOL, Nº 7. POLÍGONO INDUSTRIAL, Nº 1.",
+      "location": {
+        "postalCode": "08960",
+        "municipality": "Sant Just Desvern",
+        "county": "Barcelona",
+        "municipalityId": "221",
+        "countyId": "08"
+      },
+      "economicActivities": [
+        {
+          "id": "1.613.3",
+          "name": "Venta al por mayor de prendas exteriores de vestir",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de prendas exteriores de vestir",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.613.3"
+            }
+          }
+        },
+        {
+          "id": "1.617.9",
+          "name": "Venta al por mayor interindustrial de otros productos n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor interindustrial de otros productos n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.617.9"
+            }
+          }
+        },
+        {
+          "id": "1.692",
+          "name": "Reparación de maquinaria industrial",
+          "_links": {
+            "self": {
+              "name": "Reparación de maquinaria industrial",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.692"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2012-09-18",
+      "certificateEndDate": "2013-03-03",
+      "object": "FABRICACIÓN-IMPORTACIÓN, EXPORTACIÓN, DISTRIBUCIÓN Y VENTA DE EQUIPOS Y MATERIAL DE SEGURIDAD Y PROTECCIÓN PARA TODA CLASE DE USOS, ESPECIALMENTE PARA USOS INDUSTRIALES Y MINEROS, ASÍ COMO LA REALIZACIÓN DE TODAS AQUELLAS ACTIVIDADES DIRECTAMENTE RELACIONADAS CON LAS DESCRITAS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/00013",
+      "_links": {
+        "self": {
+          "name": "M.S.A. ESPAÑOLA, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/00013"
+        }
+      }
+    },
+    {
+      "name": "RESTAURACIONES SIGLO XXI, S.L.",
+      "registrationNumber": "02430",
+      "identificationNumber": "B48852529",
+      "address": "C/ LICENCIADO POZA, 51 - 1º EXT. DERECHA",
+      "location": {
+        "postalCode": "48011",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.849.9",
+          "name": "Otros servicios independientes n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros servicios independientes n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.849.9"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2012-09-17",
+      "certificateEndDate": "2013-02-03",
+      "object": "RESTAURACION EDIFICIOS Y OBRAS DE ARTE",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/02430",
+      "_links": {
+        "self": {
+          "name": "RESTAURACIONES SIGLO XXI, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/02430"
+        }
+      }
+    },
+    {
+      "name": "ELEKTRINDAR LAU LAGUNAK, S.L.",
+      "registrationNumber": "04595",
+      "identificationNumber": "B48279830",
+      "address": "BEREZIKOETXE,  Nº 3 - BAJO 2",
+      "location": {
+        "postalCode": "48960",
+        "municipality": "Galdakao",
+        "county": "Bizkaia",
+        "municipalityId": "036",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.504.1",
+          "name": "Instalaciones eléctricas en general",
+          "_links": {
+            "self": {
+              "name": "Instalaciones eléctricas en general",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.504.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2012-09-13",
+      "certificateEndDate": "2013-03-04",
+      "object": "LA COMPRAVENTA E INSTALACIÓN DE APARATOS ELÉCTRICOS Y ELECTRODOMESTICOS; ASÍ COMO, LA PROYECCIÓN E INSTALACIÓN DE TODO TIPO DE REDES ELÉCTRICAS Y MONTAJES DE LAS MISMAS EN NAVES INDUSTRIALES, VIVIENDAS, LOCALES O EDIFICIOS EN SU TOTALIDAD",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/04595",
+      "_links": {
+        "self": {
+          "name": "ELEKTRINDAR LAU LAGUNAK, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/04595"
+        }
+      }
+    },
+    {
+      "name": "IGUALATORIO MÉDICO QUIRÚRGICO SOCIEDAD ANÓNIMA DE SEGUROS Y REASEGUROS",
+      "registrationNumber": "03647",
+      "identificationNumber": "A95321386",
+      "address": "MÁXIME AGUIRRE Nº 18 BIS",
+      "location": {
+        "postalCode": "48011",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.822",
+          "name": "Entidades aseguradoras de enfermedad y riesgos diversos",
+          "_links": {
+            "self": {
+              "name": "Entidades aseguradoras de enfermedad y riesgos diversos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.822"
+            }
+          }
+        },
+        {
+          "id": "1.822.1",
+          "name": "Entidades aseguradoras de seguros asistencia sanitaria, enfermedad y accidentes",
+          "_links": {
+            "self": {
+              "name": "Entidades aseguradoras de seguros asistencia sanitaria, enfermedad y accidentes",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.822.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2012-09-12",
+      "certificateEndDate": "2013-01-09",
+      "object": "DEDICARSE A TODAS LAS OPERACIONES DE SEGURO, COASEGURO, REASEGURO Y CUALESQUIERA OTROS NEGOCIOS QUE, DIRECTA O INDIRECTAMENTE, TENGAN RELACIÓN CON LA ACTIVIDAD DEL SEGURO, RELATIVOS A TODO TIPO DE SEGUROS DE PERSONAS, ACTUALMENTE PREVISTOS O QUE SE CREEN EN EL FUTURO, PARA LOS QUE HAYA OBTENIDO LA PRECEPTIVA AUTORIZACIÓN ADMINISTRATIVA",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03647",
+      "_links": {
+        "self": {
+          "name": "IGUALATORIO MÉDICO QUIRÚRGICO SOCIEDAD ANÓNIMA DE SEGUROS Y REASEGUROS",
+          "href": "https://api.euskadi.eus/procurements/companies/03647"
+        }
+      }
+    },
+    {
+      "name": "BIDENET, S.L.",
+      "registrationNumber": "04770",
+      "identificationNumber": "B95651089",
+      "address": "POLÍGONO IND. EL PÁRAMO, B-7",
+      "location": {
+        "postalCode": "48800",
+        "municipality": "Balmaseda",
+        "county": "Bizkaia",
+        "municipalityId": "090",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.847",
+          "name": "Servicios de consultoría",
+          "_links": {
+            "self": {
+              "name": "Servicios de consultoría",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.847"
+            }
+          }
+        },
+        {
+          "id": "1.849.9",
+          "name": "Otros servicios independientes n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros servicios independientes n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.849.9"
+            }
+          }
+        },
+        {
+          "id": "1.934",
+          "name": "Enseñanza fuera de establecimiento permanente",
+          "_links": {
+            "self": {
+              "name": "Enseñanza fuera de establecimiento permanente",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.934"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2012-09-06",
+      "certificateEndDate": "2013-02-03",
+      "object": "EL DISEÑO DE LAS ESTRATEGIAS MÁS ADECUADAS PARA APROVECHAMIENTO DE LAS POSIBILIDADES QUE APORTA INTERNET A LAS ORGANIZACIONES PARA LAS QUE BIDENET TRABAJA Y REALIZAR LAS ACCIONES DERIVADAS DE ESAS ESTRATEGIAS TANTO EN CONCEPTOS DE FORMACIÓN COMO DE ASESORAMIENTO DE IMPLANTACIÓN Y DESARROLLO DE HERRAMIENTAS Y PROCEDIMIENTOS ADECUADOS PARA TAL FIN. LA SOCIEDAD TAMBIÉN PODRÁ ASUMIR INTERESES, O TENER PARTICIPACIONES, ACCIONES U OBLIGACIONES EN OTRAS SOCIEDADES O EMPRESAS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/04770",
+      "_links": {
+        "self": {
+          "name": "BIDENET, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/04770"
+        }
+      }
+    },
+    {
+      "name": "KOMUNIKAZIOA ERAGIN S.L.",
+      "registrationNumber": "04736",
+      "identificationNumber": "B31719396",
+      "address": "Donostia Ibilbidea, 11 Behea",
+      "location": {
+        "postalCode": "20115",
+        "municipality": "Astigarraga",
+        "county": "Gipuzkoa",
+        "municipalityId": "903",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.476.1",
+          "name": "Edición de libros",
+          "_links": {
+            "self": {
+              "name": "Edición de libros",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.476.1"
+            }
+          }
+        },
+        {
+          "id": "1.844",
+          "name": "Servicios de publicidad, relaciones públicas y similares",
+          "_links": {
+            "self": {
+              "name": "Servicios de publicidad, relaciones públicas y similares",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.844"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2012-09-03",
+      "certificateEndDate": "2013-02-02",
+      "object": "PRESTACIÓN DE SERVICIOS DE DISEÑO GÁFICO ABARCANDO LA ILUSTRACIÓN, IMAGEN CORPORATIVA, CREACIONES MULTIMEDIA, ANIMACIONES, PACKAGING, MAQUETACIÓN DE TODO TIPO DE PUBLICACIONES, GESTIÓN DE FOTOMECÁNICA E IMPRESIÓN, ASÍ COMO OTROS SOPORTES. PRESTACIÓN DE SERVICIOS DE INTERNET MEDIANTE, ENTRE OTROS, LA CREACIÓN DE PÁGINAS WEB, HOSTING DE PÁGINAS WEB, GESTIÓN DE DOMINIOS DE INTERNET, ORGANIZACIÓN Y GESTIÓN DE FOROS Y LISTAS DE CORREO ELECTRÓNICO. LA REALIZACIÓN DE PRODUCCIONES DISCOGRÁFICAS, MULTIMEDIA, AUDIOVISUALES Y EDITORIALES. PRESTACIÓN DE SERVICIOS DE PUBLICIDAD, MEDIANTE ANUNCIOS, CARTELES, FOLLETOS, PELÍCULAS PUBLICITARIAS, ETC., TANTO EN SOPORTE ANALÓGICO COMO DIGITAL A TRAVÉS DE PRENSA, RADIO, TELEVISIÓN, INTERNET, PUBLICIDAD AÉREA U OTROS MEDIOS. CREACIÓN Y DIFUSIÓN DE ANUNCIOS O CAMPAÑAS DE INFORMACIÓN PUBLICITARIA, PROPAGANDA ELECTORAL, COMUNICACIÓN INSTITUCIONAL O PÚBLICA E IMAGEN CORPORATIVA. PRESTACIÓN DE SERVICIOS DE TODO TIPO DE CONSULTORÍA Y EN ESPECIAL CONSULTORÍA SOBRE INFORMÁTICA, TELEMÁTICA, HARDWARE Y SOFTWARE, INTERNET Y EL COMERCIO ELECTRÓNICO. COMPRAVENTA AL POR MAYOR Y AL POR MENOR DE APARATOS PROGRAMAS Y ELEMENTOS INFORMÁTICOS, ASÍ COMO CONSUMIBLES INFORMÁTICOS, PRENSA Y REVISTAS, MATERIAL DE DIBUJO Y DE PAPELERÍA Y MANUALIDADES, APARATOS TELEFÓNICOS Y DE TRANSMISIÓN DE DATOS. PRESTACIÓN DE SERVICIOS DE PROGRAMACIÓN Y MANTENIMIENTO INFORMÁTICO. LA REALIZACIÓN DE INVESTIGACIONES Y ESTUDIOS DE MERCADO Y DE OPINIÓN SOBRE ACTITUDES, VALORES, Y COMPORTAMIENTOS Y TODOS LOS QUE SEAN NECESARIOS PARA DISEÑAR Y EJECUTAR CAMPAÑAS DE PUBLICIDAD, PROPAGANDA, DIFUSIÓN Y RELACIONES PÚBLICAS, TANTO ANALÓGICAS COMO DIGITALES. Y LA PRESTACIÓN DE SERVICIOS A LAS EMPRESAS Y PARTICULARES, ORGANISMOS, Y A TODO TIPO DE ENTIDADES DE: CONTABILIDAD, TENEDURÍA DE LIBROS, CENSURA DE CUENTAS, MATERIAL FISCAL, ECONÓMICA Y FINANCIERA Y DE OTROS SERVICIOS INDEPENDIENTES DE ASEAORÍA FISCAL Y CONTABLE",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/04736",
+      "_links": {
+        "self": {
+          "name": "KOMUNIKAZIOA ERAGIN S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/04736"
+        }
+      }
+    },
+    {
+      "name": "SONO TECONOLOGÍA AUDIOVISUAL, S.L.",
+      "registrationNumber": "03864",
+      "identificationNumber": "B61906103",
+      "address": "PROGRES, 29",
+      "location": {
+        "postalCode": "08940",
+        "municipality": "Cornellà de Llobregat",
+        "county": "Barcelona",
+        "municipalityId": "073",
+        "countyId": "08"
+      },
+      "economicActivities": [
+        {
+          "id": "1.615.4",
+          "name": "Venta al por mayor de aparatos y material radioeléctrico y electrónico",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de aparatos y material radioeléctrico y electrónico",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.615.4"
+            }
+          }
+        },
+        {
+          "id": "1.843.9",
+          "name": "Otros servicios técnicos n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros servicios técnicos n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.9"
+            }
+          }
+        },
+        {
+          "id": "1.845",
+          "name": "Explotación electrónica por cuenta de terceros",
+          "_links": {
+            "self": {
+              "name": "Explotación electrónica por cuenta de terceros",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.845"
+            }
+          }
+        },
+        {
+          "id": "1.856.1",
+          "name": "Alquiler de bienes de consumo",
+          "_links": {
+            "self": {
+              "name": "Alquiler de bienes de consumo",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.856.1"
+            }
+          }
+        },
+        {
+          "id": "1.961.1",
+          "name": "Producción de películas cinematográficas (incluso vídeos)",
+          "_links": {
+            "self": {
+              "name": "Producción de películas cinematográficas (incluso vídeos)",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.961.1"
+            }
+          }
+        },
+        {
+          "id": "1.989.2",
+          "name": "Servicios de organización de congresos, asambleas y similares",
+          "_links": {
+            "self": {
+              "name": "Servicios de organización de congresos, asambleas y similares",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.989.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2012-08-30",
+      "certificateEndDate": "2013-02-28",
+      "object": "LA DIRECCIÓN Y GESTIÓN DE VALORES REPRESENTATIVOS DE LOS FONDOS PROPIOS DE CUALQUIER TIPO DE ENTIDAD, LA COLOCACIÓN DE LOS RECURSOS FINANCIEROS DERIVADOS DE LAS ACTIVIDADES CONSTITUTIVAS DE DICHO OBJETO SOCIAL, ASÍ COMO LA PRESTACIÓN DE SERVICIOS, INCLUIDOS LOS DE CARÁCTER FINANCIERO, A LAS ENTIDADES PARTICIPADAS, QUEDANDO EXCLUÍDAS, EN TODO CASO, TODAS AQUELLAS ACTIVIDADES PARA CUYO EJERCICIO SE EXIJA CUALQUIER CLASE DE AUTORIZACIÓN ADMINISTRATIVA O EL CUMPLIMIENTO DE CUALQUIER OTRO TIPO DE REQUISITO ESPECIAL, EN TANTO LA SOCIEDAD NO DISPONGA DE DICHA AUTORIZACIÓN O CUMPLA DICHO REQUISITO",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03864",
+      "_links": {
+        "self": {
+          "name": "SONO TECONOLOGÍA AUDIOVISUAL, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/03864"
+        }
+      }
+    },
+    {
+      "name": "BRAINPHARMA, S.L.",
+      "registrationNumber": "04341",
+      "identificationNumber": "B63916167",
+      "address": "AVDA. DIAGONAL 549, 5ª PLANTA",
+      "location": {
+        "postalCode": "08029",
+        "municipality": "Barcelona",
+        "county": "Barcelona",
+        "municipalityId": "019",
+        "countyId": "08"
+      },
+      "economicActivities": [
+        {
+          "id": "1.614.1",
+          "name": "Venta al por mayor de productos farmacéuticos y medicamentos",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de productos farmacéuticos y medicamentos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.614.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2012-08-30",
+      "certificateEndDate": "2013-02-22",
+      "object": "LA INVESTIGACIÓN, DESARROLLO, FABRICACIÓN Y COMERCIALIZACIÓN DE ESPECIALIDADES  Y PRINCIPIOS ACTIVOS FARMACEÚTICOS Y PRODUCTOS SANITARIOS Y DIETÉTICOS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/04341",
+      "_links": {
+        "self": {
+          "name": "BRAINPHARMA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/04341"
+        }
+      }
+    },
+    {
+      "name": "AXIA INGENIERÍA Y SOLUCIONES, S.L.",
+      "registrationNumber": "03111",
+      "identificationNumber": "B95335162",
+      "address": "C/ HURTADO DE AMEZAGA 20-5º IZDA",
+      "location": {
+        "postalCode": "48008",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.845",
+          "name": "Explotación electrónica por cuenta de terceros",
+          "_links": {
+            "self": {
+              "name": "Explotación electrónica por cuenta de terceros",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.845"
+            }
+          }
+        },
+        {
+          "id": "1.859",
+          "name": "Alquiler de otros bienes muebles n.c.o.p. (sin personal permanente)",
+          "_links": {
+            "self": {
+              "name": "Alquiler de otros bienes muebles n.c.o.p. (sin personal permanente)",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.859"
+            }
+          }
+        },
+        {
+          "id": "1.934",
+          "name": "Enseñanza fuera de establecimiento permanente",
+          "_links": {
+            "self": {
+              "name": "Enseñanza fuera de establecimiento permanente",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.934"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2012-08-27",
+      "certificateEndDate": "2013-01-25",
+      "object": "A) LA PRODUCCIÓN, COMPRA, VENTA, COMERCIALIZACIÓN Y DISTRIBUCIÓN DE MATERIALES, APARATOS, COMPONENTES Y PRODUCTOS DE TELECOMUNICACIONES, ELECTRÓNICOS, ANALÓGICOS Y DIGITALES.\r\nB) LA REALIZACIÓN DE ESTUDIOS, CONSULTORÍA E IMPLANTACIÓN DE SISTEMAS DE TELECOMUNICACIONES, INFORMÁTICOS Y ELECTRÓNICOS.\r\nC) LA PRODUCCIÓN, COMPRA, VENTA, COMERCIALIZACIÓN Y DISTRIBUCIÓN DE COMPONENTES Y ELEMENTOS INFORMÁTICOS, ASÍ COMO LA CREACIÓN Y DESARROLLO DE PROGRAMAS DE ORDENADOR.\r\nD) LA PLANIFICACIÓN Y EJECUCIÓN DE INSTALACIONES DE TELECOMUNICACIONES, ELECTRICIDAD, ELECTRÓNICAS, REDES INALÁMBRICAS, POR CABLE O DIGITALES, DE TELEFONÍA DE  VOZ O DATOS. \r\nE) LA ADQUISICIÓN, EXPLOTACIÓN Y ENAJENACIÓN DE TODA CLASE DE BIENES INMUEBLES, PARA SU EDIFICACIÓN, APROVECHAMIENTO O BENEFICIO, DIRECTAMENTE, MEDIANTE LA INSTALACIÓN DE TODA CLASE DE EMPRESAS O NEGOCIOS MERCANTILES, INDUSTRIALES, AGRÍCOLAS, FORESTALES O GANADEROS, O INDIRECTAMENTE POR CESIÓN DE SU DISFRUTE EN ARRENDAMIENTO O CUALQUIER OTRA FORMA.\r\nF) LA ENSEÑANZA FUERA DE ESTABLECIMIENTO PERMANENTE O DESDE SU PROPIO ESTABLECIMIENTO PERMANENTE, CURSOS Y CLASES EN EMPRESAS EN RELACIÓN CON TODO TIPO DE MATERIAS NO REGLADAS. G) LA COMERCIALIZACIÓN, IMPORTACIÓN, EXPORTACIÓN, COMPRAVENTA, ARRENDAMIENTO, CON Y SIN OPCIÓN DE COMPRA Y RENTING DE APARATOS ELECTRÓNICOS Y SANITARIOS, ASÍ COMO SU MANTENIMIENTO, REPARAICÓN, ASISTENCIA TÉCNICA Y FORMACIÓN CORRESPONDIENTE SOBRE LA UTILIZACIÓN DE LA MISMA. LAS ACTIVIDADES ENUMERADAS EN EL PREESENTE ARTÍCULO PODRÁN SER REALIZADAS TOTAL O PARCIALMENTE POR LA SOCIEDAD DE MODO INDIRECTO, MEDIANTE SU PARTICIPACIÓN EN SOCIEDADES CON OBJETO IDÉNTICO O ANÁLOGO",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03111",
+      "_links": {
+        "self": {
+          "name": "AXIA INGENIERÍA Y SOLUCIONES, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/03111"
+        }
+      }
+    }
+  ]
+}

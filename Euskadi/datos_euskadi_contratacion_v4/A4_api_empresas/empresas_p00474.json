@@ -1,0 +1,398 @@
+{
+  "totalItems": 9042,
+  "totalPages": 905,
+  "currentPage": 474,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "name": "YOLANDA SAIZ BARRIO",
+      "registrationNumber": "06607",
+      "identificationNumber": "16300114Z",
+      "address": "C/ Aiurdin 2",
+      "location": {
+        "postalCode": "01130",
+        "municipality": "Zuia",
+        "county": "Araba/Álava",
+        "municipalityId": "063",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "2.862",
+          "name": "Restauradores de obras de arte",
+          "_links": {
+            "self": {
+              "name": "Restauradores de obras de arte",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/2.862"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2022-12-12",
+      "certificateEndDate": "2023-06-09",
+      "object": "RESTAURADORES DE OBRAS DE ARTE",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06607",
+      "_links": {
+        "self": {
+          "name": "YOLANDA SAIZ BARRIO",
+          "href": "https://api.euskadi.eus/procurements/companies/06607"
+        }
+      }
+    },
+    {
+      "name": "VIFOR PHARMA ESPAÑA, S.L.",
+      "registrationNumber": "04409",
+      "identificationNumber": "B65124471",
+      "address": "AVDA. DIAGONAL, Nº 611 PLANTA 10",
+      "location": {
+        "postalCode": "08028",
+        "municipality": "Barcelona",
+        "county": "Barcelona",
+        "municipalityId": "019",
+        "countyId": "08"
+      },
+      "economicActivities": [
+        {
+          "id": "1.614.1",
+          "name": "Venta al por mayor de productos farmacéuticos y medicamentos",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de productos farmacéuticos y medicamentos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.614.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2022-12-05",
+      "certificateEndDate": "2023-06-05",
+      "object": "EL DESARROLLO, REGISTRO, FABRICACIÓN, COMERCIALIZACIÓN Y VENTA EN ESPAÑA Y EN EL RESTO DEL MUNDO DE ESPECIALIDADES FARMACÉUTICAS, OTROS MEDICAMENTOS DE USO HUMANO Y VETERINARIO, PRODUCTOS SANITARIOS Y OTROS ARTÍCULOS DE CUIDADO PERSONAL",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/04409",
+      "_links": {
+        "self": {
+          "name": "VIFOR PHARMA ESPAÑA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/04409"
+        }
+      }
+    },
+    {
+      "name": "RUBEN TUEROS FURONES",
+      "registrationNumber": "08736",
+      "identificationNumber": "30681264T",
+      "address": "CALLE ERETZA 4B",
+      "location": {
+        "postalCode": "48820",
+        "municipality": "Güeñes",
+        "county": "Bizkaia",
+        "municipalityId": "045",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.505.5",
+          "name": "Carpintería y cerrajería",
+          "_links": {
+            "self": {
+              "name": "Carpintería y cerrajería",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.505.5"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2022-12-02",
+      "certificateEndDate": "2023-05-03",
+      "object": "CARPINTERÍA Y CERRAJERÍA.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08736",
+      "_links": {
+        "self": {
+          "name": "RUBEN TUEROS FURONES",
+          "href": "https://api.euskadi.eus/procurements/companies/08736"
+        }
+      }
+    },
+    {
+      "name": "LOURDES GARCIA PERNIA",
+      "registrationNumber": "08735",
+      "identificationNumber": "44970461X",
+      "address": "TRAVESIA SIERVAS DE MARIA 5 -3C",
+      "location": {
+        "postalCode": "48920",
+        "municipality": "Portugalete",
+        "county": "Bizkaia",
+        "municipalityId": "078",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "2.511",
+          "name": "Agentes comerciales",
+          "_links": {
+            "self": {
+              "name": "Agentes comerciales",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/2.511"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2022-12-02",
+      "certificateEndDate": "2023-05-11",
+      "object": "AGENTES COMERCIALES.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08735",
+      "_links": {
+        "self": {
+          "name": "LOURDES GARCIA PERNIA",
+          "href": "https://api.euskadi.eus/procurements/companies/08735"
+        }
+      }
+    },
+    {
+      "name": "LUIS GUILLERMO MARCOS ARTEAGA",
+      "registrationNumber": "08731",
+      "identificationNumber": "30558321S",
+      "address": "Barrio Elexalde",
+      "location": {
+        "postalCode": "48940",
+        "municipality": "Leioa",
+        "county": "Bizkaia",
+        "municipalityId": "054",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.673.2",
+          "name": "Otros cafés y bares",
+          "_links": {
+            "self": {
+              "name": "Otros cafés y bares",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.673.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2022-12-01",
+      "certificateEndDate": "2023-05-06",
+      "object": "OTROS CAFÉS Y BARES.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08731",
+      "_links": {
+        "self": {
+          "name": "LUIS GUILLERMO MARCOS ARTEAGA",
+          "href": "https://api.euskadi.eus/procurements/companies/08731"
+        }
+      }
+    },
+    {
+      "name": "BRANKA SOLUTIONS S.L.",
+      "registrationNumber": "05974",
+      "identificationNumber": "B75191874",
+      "address": "Poligono Ubegun 2",
+      "location": {
+        "postalCode": "20809",
+        "municipality": "Aia",
+        "county": "Gipuzkoa",
+        "municipalityId": "016",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.371.3",
+          "name": "Construcción de buques y embarcaciones de casco plástico y otros materiales",
+          "_links": {
+            "self": {
+              "name": "Construcción de buques y embarcaciones de casco plástico y otros materiales",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.371.3"
+            }
+          }
+        },
+        {
+          "id": "1.843.1",
+          "name": "Servicios técnicos de ingeniería",
+          "_links": {
+            "self": {
+              "name": "Servicios técnicos de ingeniería",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2022-11-30",
+      "certificateEndDate": "2023-05-25",
+      "object": "EL DISEÑO Y FABRICACIÓN DE PIEZAS DE INGENIERÍA EN COMPOSITES.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/05974",
+      "_links": {
+        "self": {
+          "name": "BRANKA SOLUTIONS S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/05974"
+        }
+      }
+    },
+    {
+      "name": "ALTHEA HEALTHCARE ESPAÑA, S.L.U.",
+      "registrationNumber": "06480",
+      "identificationNumber": "B63510101",
+      "address": "Avenida de Europa, nº 24. Parque Empresarial La Moraleja. Edificio Torona ",
+      "location": {
+        "postalCode": "28108",
+        "municipality": "Alcobendas",
+        "county": "Madrid",
+        "municipalityId": "006",
+        "countyId": "28"
+      },
+      "economicActivities": [
+        {
+          "id": "1.504.1",
+          "name": "Instalaciones eléctricas en general",
+          "_links": {
+            "self": {
+              "name": "Instalaciones eléctricas en general",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.504.1"
+            }
+          }
+        },
+        {
+          "id": "1.619.2",
+          "name": "Venta al por mayor de aparatos e instrumentos médicos, ortopédicos, ópticos",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de aparatos e instrumentos médicos, ortopédicos, ópticos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.619.2"
+            }
+          }
+        },
+        {
+          "id": "1.699",
+          "name": "Otras reparaciones n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otras reparaciones n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.699"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2022-11-29",
+      "certificateEndDate": "2023-05-18",
+      "object": "EL DISEÑO Y DESARROLLO DE SERVICIOS DE INGENIERÍA CLÍNICA, EL DISEÑO Y EL MANTENIMIENTO DE APARATOS CIENTÍFICOS; EL DISEÑO Y EL DESARROLLO DE SISTEMAS INFORMATIVOS SANITARIOS; EL DISEÑO, EL MANTENIMIENTO Y LA VENTA DE SISTEMAS INFORMÁTICOS, ASÍ COMO SU ALQUILER; EL DISEÑO Y EL DESARROLLO DE SERVICIOS DE TELEMEDICINA Y TELEASISTENCIA, EL DISEÑO EL DESARROLLO, LA VENTA, EL ALQUILER Y EL MANTENIMIENTO DE SUS RELATIVOS APARATOS; EL MANTENIMIENTO Y LAS VERIFICACIONES FUNCIONALES Y DE SEGURIDAD DE LOS APARATOS DE TIPOLOGÍA BIOMEDICAL E INDUSTRIAL, LA VENTA ASÍ COMO SU ALQUILER; EL ASESORAMIENTO EN LAS COMPRAS, LA EVALUACIÓN DE EFICACIA Y EFICIENCIA EN MATERIA DE TECNOLOGÍAS BIOMÉDICAS E INDUSTRIALES; LA PRESTACIÓN DE SERVICIOS RELATIVOS A LAS ACTIVIDADES ARRIBA MENCIONADAS, INCLUYENDO LA ORGANIZACIÓN Y LA GESTIÓN DE CURSOS DE FORMACIÓN; LOS SERVICIOS PARA LA GESTIÓN TÉCNICA INTEGRADA DE LOS APARATOS BIOMÉDICOS E INFORMATIVOS, ASÍ COMO PARA LA GESTIÓN DE SERVICIOS ADMINISTRATIVOS DE ESTRUCTURAS SANITARIAS PÚBLICAS Y PRIVADAS; LAS VERIFICACIONES PERIÓDICAS EXTRAORDINARIAS DE LAS SIGUIENTES INSTALACIONES:- INSTALACIONES Y DISPOSITIVOS DE PROTECCIÓN CONTRA LAS DESCARGAS ATMOSFÉRICAS;- EQUIPOS DE PUESTA A TIERRA DE INSTALACIONES ALIMENTADAS HASTA 1.000 V Y HASTA MÁS DE 1.000 V;- EQUIPOS ELÉCTRICOS COLOCADOS EN LUGARES DE TRABAJO CON PELIGRO DE EXPLOSIÓN;-EQUIPOS ELÉCTRICOS INSTALADOS EN LUGARES DESTINADOS PARA USO MÉDICO",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06480",
+      "_links": {
+        "self": {
+          "name": "ALTHEA HEALTHCARE ESPAÑA, S.L.U.",
+          "href": "https://api.euskadi.eus/procurements/companies/06480"
+        }
+      }
+    },
+    {
+      "name": "ESTILO INSTALACIONES Y EQUIPAMIENTOS, S.L.",
+      "registrationNumber": "06809",
+      "identificationNumber": "B26306175",
+      "address": "AVDA. COLON, 83 BAJO 4 (ENTRADA POR MIGUEL DELIBES)",
+      "location": {
+        "postalCode": "26003",
+        "municipality": "Logroño",
+        "county": "Rioja, La",
+        "municipalityId": "089",
+        "countyId": "26"
+      },
+      "economicActivities": [
+        {
+          "id": "1.505.5",
+          "name": "Carpintería y cerrajería",
+          "_links": {
+            "self": {
+              "name": "Carpintería y cerrajería",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.505.5"
+            }
+          }
+        },
+        {
+          "id": "1.659.2",
+          "name": "Venta al por menor de muebles de oficina y máquinas y equipos de oficina",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de muebles de oficina y máquinas y equipos de oficina",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.659.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2022-11-29",
+      "certificateEndDate": "2023-05-29",
+      "object": "-LA VENTA Y SUMINISTRO DE TODO TIPO DE MATERIAL DE OFICINA Y PAPELERÍA, ASÍ COMO EL SUMINISTRO DE MATERIALES DE INFORMÁTICA Y VENTA DE EQUIPOS INFORMÁTICOS. - LA COMERCIALIACIÓN Y VENTA DE MOBILIARIO Y MÁQUINAS DE OFICINA Y TODO TIPO DE EQUIPAMIENTOS E INSTALACIONES DE OFICINAS. -LAS ARTES GRÁFICAS, LA IMPRESIÓN DE LIBROS, GUÍAS, CATÁLOGOS, PERIÓDICOS, FOLLETOS, TARJETAS, REVISTAS, CALENDARIOS, ASÍ COMO TODO TIPO DE IMPRESOS. -EL DISEÑO GRÁFICO, Y LOS SERVICIOS RELACIONADOS CON LA PUBLICIDAD Y LA COMUNICACIÓN",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06809",
+      "_links": {
+        "self": {
+          "name": "ESTILO INSTALACIONES Y EQUIPAMIENTOS, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/06809"
+        }
+      }
+    },
+    {
+      "name": "RAUL GARCÍA PIÑEIRO",
+      "registrationNumber": "08468",
+      "identificationNumber": "16051971H",
+      "address": "Calle mayor 28 2. A",
+      "location": {
+        "postalCode": "48930",
+        "municipality": "Getxo",
+        "county": "Bizkaia",
+        "municipalityId": "044",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "2.826",
+          "name": "Personal docente de enseñanzas diversas",
+          "_links": {
+            "self": {
+              "name": "Personal docente de enseñanzas diversas",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/2.826"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2022-11-29",
+      "certificateEndDate": "2023-05-29",
+      "object": "Personal docente de enseñanzas diversas. Expertos en organización de congresos, asambleas y similares.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08468",
+      "_links": {
+        "self": {
+          "name": "RAUL GARCÍA PIÑEIRO",
+          "href": "https://api.euskadi.eus/procurements/companies/08468"
+        }
+      }
+    },
+    {
+      "name": "ANA JOSEFA CORCUERA LOPEZ",
+      "registrationNumber": "08726",
+      "identificationNumber": "16054343K",
+      "address": "ALDA. SAN MAMÉS 37, 5º DPTO1",
+      "location": {
+        "postalCode": "48010",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "2.411",
+          "name": "Arquitectos",
+          "_links": {
+            "self": {
+              "name": "Arquitectos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/2.411"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2022-11-29",
+      "certificateEndDate": "2023-04-28",
+      "object": "ARQUITECTOS.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08726",
+      "_links": {
+        "self": {
+          "name": "ANA JOSEFA CORCUERA LOPEZ",
+          "href": "https://api.euskadi.eus/procurements/companies/08726"
+        }
+      }
+    }
+  ]
+}

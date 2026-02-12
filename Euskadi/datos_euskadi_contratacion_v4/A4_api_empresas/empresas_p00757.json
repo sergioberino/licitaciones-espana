@@ -1,0 +1,388 @@
+{
+  "totalItems": 9042,
+  "totalPages": 905,
+  "currentPage": 757,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "name": "JOSÉ EDILBERTO RINCON MARTINEZ",
+      "registrationNumber": "03677",
+      "identificationNumber": "79009792P",
+      "address": "AVDA. KIRIKIÑO, 64-6º B",
+      "location": {
+        "postalCode": "48012",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.501.3",
+          "name": "Albañilería y pequeños trabajos de construcción en general",
+          "_links": {
+            "self": {
+              "name": "Albañilería y pequeños trabajos de construcción en general",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.3"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2008-10-13",
+      "certificateEndDate": "2009-03-31",
+      "object": "TRABAJOS DE ALBAÑILERÍA",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03677",
+      "_links": {
+        "self": {
+          "name": "JOSÉ EDILBERTO RINCON MARTINEZ",
+          "href": "https://api.euskadi.eus/procurements/companies/03677"
+        }
+      }
+    },
+    {
+      "name": "CONSEJEROS FIDUCIARIOS ASOCIADOS, S.A. (CONFIASA)",
+      "registrationNumber": "01635",
+      "identificationNumber": "A48218762",
+      "address": "C/ DIPUTACIÓN, Nº 1 - 1º.",
+      "location": {
+        "postalCode": "48009",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.842",
+          "name": "Servicios financieros y contables",
+          "_links": {
+            "self": {
+              "name": "Servicios financieros y contables",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.842"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2008-10-07",
+      "certificateEndDate": "2009-03-22",
+      "object": "LOS SERVICIOS DE ASESORAMIENTO FISCAL, CONTABLE Y FINANCIERO DE TODA CLASE DE ENTIDADES JURÍDICAS Y DE PERSONAS FÍSICAS. LOS SERVICIOS DE ORGANIZACIÓN, PLANIFICACIÓN Y ADMINISTRACIÓN DE EMPRESAS Y PARTICULARES. LOS SERVICIOS DE INFORMACIÓN ECONÓMICA, LA REVISIÓN DE CUENTAS Y LOS ESTUDIOS DE CARÁCTER MERCANTIL, TRIBUTARIO Y LABORAL. LA PUBLICACIÓN, EDICIÓN Y VENTA DE REGISTROS O TRATADOS RELACIONADOS CON LA CONTABILIDAD, LA FISCALIDAD O CUALQUIERA DE LOS TEMAS FIGURADOS EN EL OBJETO SOCIAL. LOS SERVICIOS DE REPRESENTACIÓN Y MEDIACIÓN EN OPERACIONES FINANCIERAS Y DE INVERSIÓN",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/01635",
+      "_links": {
+        "self": {
+          "name": "CONSEJEROS FIDUCIARIOS ASOCIADOS, S.A. (CONFIASA)",
+          "href": "https://api.euskadi.eus/procurements/companies/01635"
+        }
+      }
+    },
+    {
+      "name": "BIOGEN IDEC IBERIA, S.L.",
+      "registrationNumber": "03048",
+      "identificationNumber": "B83086736",
+      "address": "PASEO CASTELLANA, 41",
+      "location": {
+        "postalCode": "28046",
+        "municipality": "Madrid",
+        "county": "Madrid",
+        "municipalityId": "079",
+        "countyId": "28"
+      },
+      "economicActivities": [
+        {
+          "id": "1.614.1",
+          "name": "Venta al por mayor de productos farmacéuticos y medicamentos",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de productos farmacéuticos y medicamentos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.614.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2008-10-07",
+      "certificateEndDate": "2009-02-28",
+      "object": "EL REGISTRO Y COMERCIALIZACIÓN DE MEDICAMENTOS DE TODO TIPO Y PRODUCTOS SANITARIOS, MATERIAS PRIMAS, PRODUCTOS INTERMEDIOS Y PREPARADOS RELACIONADOS CON LOS MISMOS, PODRÁ TAMBIÉN PROMOVER ENSAYOS CLÍNICOS DE TODA CLASE Y OTRAS ACTIVIDADES DE INVESTIGACIÓN Y DESARROLLO DE TALES PRODUCTOS, TANTO EN FORMA INDIVIDUAL COMO EN FORMA CONJUNTA CON OTRAS ENTIDADES.\r\nLA SOCIEDAD PODRÁ DESARROLLAR LAS ACTIVIDADES INTEGRANTES DEL OBJETO SOCIAL ESPECIFICADAS EN EL PÁRRAFO ANTERIOR, TOTAL O PARCIALMENTE, Y DE FORMA DIRECTA O INDIRECTA PARTICIPANDO EN COMPAÑÍAS DE IDÉNTICO O ANÁLOGO  OBJETO",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03048",
+      "_links": {
+        "self": {
+          "name": "BIOGEN IDEC IBERIA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/03048"
+        }
+      }
+    },
+    {
+      "name": "BLOM SISTEMAS GEOESPACIALES, S.L.U.",
+      "registrationNumber": "03592",
+      "identificationNumber": "B78492642",
+      "address": "ALCALA, 492 - 3º",
+      "location": {
+        "postalCode": "28027",
+        "municipality": "Madrid",
+        "county": "Madrid",
+        "municipalityId": "079",
+        "countyId": "28"
+      },
+      "economicActivities": [
+        {
+          "id": "1.843.1",
+          "name": "Servicios técnicos de ingeniería",
+          "_links": {
+            "self": {
+              "name": "Servicios técnicos de ingeniería",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2008-10-07",
+      "certificateEndDate": "2009-01-28",
+      "object": "LA REALIZACIÓN, EDICIÓN, PUBLICACIÓN Y COMERCIALIZACIÓN, DE FORMA DIRECTA O INDIRECTA, DE TODA CLASE DE TRABAJOS Y ACTIVIDADES RELACIONADAS CON LA FOTOGRAFÍA AÉREA EN CUALQUIERA DE SUS MODALIDADES, TRANSPORTE DE VIAJEROS Y MERCANCÍAS, REALIZACIÓN DE VUELOS FOTOGRAMÉTRICOS, FOTOGRÁFICOS, DE FOTOGRAFÍA OBLICUA O SIMPLEMENTE PUBLICITARIOS Y CON EL TRATRAMIENTO Y OBTENCIÓN DE IMÁGENES GRÁFICAS, ÓPTICAS Y DIGITALES EN CUALQUIERA DE SUS MODALIDADES, QUEDANDO INCLUIDO EN EL ANTERIOR OBJETO SOCIAL LA EXPLOTACIÓN Y SO DE LABORATORIOS FOTOGRÁFICOS INDUSTRIALES Y LA REALIZACIÓN DE TRABAJOS TALES COMO TOPOGRAFÍA, FOTOGRAFÍA, FOTOGRAMETRÍA, ORTOFOTOGRAFÍA, REPOGRAFÍA, DIGITALIZACIÓN, TRATAMIENTO DE IMÁGENES, EDICIÓN GRÁFICA, PUBLICACIÓN, DISEÑO ARQUITECTÓNICO, DISEÑO GRÁFICO, DISEÑO INDUSTRIAL, GESTIÓN DE BASES DE DATOS, DIFUSIÓN DE PRODUCTOS CARTOGRÁFICOS, ETC., ASÍ COMO LA ELABORACIÓN DE ESTUDIOS, PROYECTOS, ASESORÍAS E INFORMES TÉCNICOS SOBRE CARTOGRAFÍA, ECOLOGÍA, CATASTROS, INVENTARIOS Y CENSOS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03592",
+      "_links": {
+        "self": {
+          "name": "BLOM SISTEMAS GEOESPACIALES, S.L.U.",
+          "href": "https://api.euskadi.eus/procurements/companies/03592"
+        }
+      }
+    },
+    {
+      "name": "ALBERDANIA, S.L.",
+      "registrationNumber": "03672",
+      "identificationNumber": "B20449302",
+      "address": "PLAZA ISTILLAGA, 2- BAJO C",
+      "location": {
+        "postalCode": "20304",
+        "municipality": "Irun",
+        "county": "Gipuzkoa",
+        "municipalityId": "045",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.476.1",
+          "name": "Edición de libros",
+          "_links": {
+            "self": {
+              "name": "Edición de libros",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.476.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2008-10-07",
+      "certificateEndDate": "2009-01-24",
+      "object": "LA EDICIÓN, PRODUCCIÓN, REALIZACIÓN DE TRABAJOS LITERARIOS Y DE TIPO LINGÜISTICO, INCLUIDA LA TRADUCCIÓN, ASÍ COMO EL ASESORAMIENTO EN DICHAS MATERIAS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03672",
+      "_links": {
+        "self": {
+          "name": "ALBERDANIA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/03672"
+        }
+      }
+    },
+    {
+      "name": "COMBINO PHARM, S.L.",
+      "registrationNumber": "03665",
+      "identificationNumber": "B60777281",
+      "address": "FRUCTUOS GELABERT, 6 - 8",
+      "location": {
+        "postalCode": "08970",
+        "municipality": "Sant Joan Despí",
+        "county": "Barcelona",
+        "municipalityId": "217",
+        "countyId": "08"
+      },
+      "economicActivities": [
+        {
+          "id": "1.614.1",
+          "name": "Venta al por mayor de productos farmacéuticos y medicamentos",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de productos farmacéuticos y medicamentos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.614.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2008-10-03",
+      "certificateEndDate": "2009-03-01",
+      "object": "LA EXPLOTACIÓN DE LABORATORIOS QUÍMICOS Y FARMACÉUTICOS Y LA TITULARIDAD, ELABORACIÓN, VENTA, IMPORTACIÓN Y EXPORTACIÓN DE TODA CLASE DE PREPARADOS, PRODUCTOS Y ESPECIALIDADES QUÍMICAS Y FARMACÉUTICAS; PRODUCTOS SANITARIOS, DIETÉTICOS, PRODUCTOS DE ORIGEN VEGETAL, COSMÉTICOS Y OTROS PRODUCTOS DEL CUIDADO PERSONAL; TODO ELLO EN SUS VARIADOS Y DIVERSOS ASPECTOS, ACTIVIDADES Y RAMAS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03665",
+      "_links": {
+        "self": {
+          "name": "COMBINO PHARM, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/03665"
+        }
+      }
+    },
+    {
+      "name": "AQUIA SOLUCIONES DE COMUNICACION, S.A.",
+      "registrationNumber": "03668",
+      "identificationNumber": "A53974531",
+      "address": "C/ PINTOR PINAZO, 61",
+      "location": {
+        "postalCode": "46110",
+        "municipality": "Godella",
+        "county": "Valencia/València",
+        "municipalityId": "135",
+        "countyId": "46"
+      },
+      "economicActivities": [
+        {
+          "id": "1.476.9",
+          "name": "Otras ediciones n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otras ediciones n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.476.9"
+            }
+          }
+        },
+        {
+          "id": "1.845",
+          "name": "Explotación electrónica por cuenta de terceros",
+          "_links": {
+            "self": {
+              "name": "Explotación electrónica por cuenta de terceros",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.845"
+            }
+          }
+        },
+        {
+          "id": "1.861.2",
+          "name": "Alquiler de locales industriales y otros alquileres n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Alquiler de locales industriales y otros alquileres n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.861.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2008-10-03",
+      "certificateEndDate": "2009-01-08",
+      "object": "A) LA COMPRAVENTA E INTERMEDIACIÓN DE TODA CLASE DE FINCAS RÚSTICAS Y URBANAS, LA PROMOCIÓN Y CONSTRUCCIÓN SOBRE LAS MISMAS DE TODA CLASE DE EDIFICACIONES, SU REHABILITACIÓN, VENTA O ARRENDAMIENTO NO FINANCIERO, Y LA CONSTRUCCIÓN DE TODA CLASE DE OBRAS PÚBLICAS O PRIVADAS. INSTALACIONES DE CUALQUIER NATURALEZA, DECORACIÓN Y ACABADO DE TODO TIPO DE INMUEBLES, ASÍ COMO SUS REPARACIONES Y MANTENIMIENTOS POSTERIORES. COMPRAVENTA, COMERCIO AL POR MAYOR Y MENOR, IMPORTACIÓN Y EXPORTACIÓN DE TODO TIPO DE MATERIALES DE CONSTRUCCIÓN Y MAQUINARIA RELACIONADA. SERVICIOS DE CONTROL, CONSERJERÍA Y GUARDERÍA DE INMUEBLES. LA COMPRAVENTA Y COMERCIALIZACIÓN DE DERECHOS DE APROVECHAMIENTO POR TURNOS DE BIENES INMUEBLES. EL ESTUDIO, DESARROLLO, COMERCIALIZACIÓN, PLANIFICACIÓN PUBLICITARIA Y MARKETING DE APROVECHAMIENTO POR TURNOS DE BIENES INMUEBLES, OFERTAS Y ESTANCIAS VACACIONALES Y DE TIEMPO COMPARTIDO. GESTIÓN URBANÍSTICA DEL SUELO, REDACCIÓN DE PROYECTOS DE ARQUITECTURA, INGENIERÍA Y URBANISMO A TRAVÉS DE LOS OPORTUNOS PROFESIONALES.\r\nB) LA REALIZACIÓN DE TODA CLASE DE TRANSPORTE, SERVICIOS DE MERCANCÍAS POR CARRETERA CON CUALQUIER VEHÍCULO Y CARGA, ASÍ COMO LAS ACTIVIDADES Y SERVICIOS DE AGENCIA COMPLEMENTARIAS PARA EL USO Y MANTENIMIENTO DE ÉSTOS Y OTRAS CON EL TRANSPORTE RELACIONADAS, CON SUJECIÓN A LA LEGISLACIÓN ESPECIAL Y GENERAL QUE LE FUERA DE APLICACIÓN.\r\nC) LA IMPORTACIÓN Y EXPORTACIÓN DE PRODUCTOS ALIMENTICIOS, BEBIDAS Y TABACO, ASÍ COMO LA DISTRIBUCIÓN, INTERMEDIACIÓN, EL COMERCIO AL POR MAYOR Y AL POR MENOR, LA ELABORACIÓN Y MANIPULADO DE DICHOS PRODUCTOS, EL ENVASADO DE CONSERVAS, LA INSPECCIÓN, EL CONTROL, LA CERTIFICACIÓN Y LA CALIFICACIÓN DE CALIDAD Y DENOMINACIONES DE ORIGEN CORRESPONDIENTE A TODO TIPO DE PRODUCTOS. LA EXPLOTACIÓN AGRÍCOLA, GANADERA, AVÍCOLA, PECUARIA Y DE ANÁLOGA NATURALEZA. ACTIVIDADES VETERINARIAS.\r\nD) LA FABRICACIÓN, IMPORTACIÓN, EXPORTACIÓN, LA INTERMEDIACIÓN Y EL COMERCIO AL POR MAYOR Y MENOR DE MÁQUINAS Y MATERIAL RELACIONADO CON ORDENADORES Y PROGRAMAS PARA LOS MISMOS, APARATOS ELÉCTRICOS Y ELECTRÓNICOS, TELEFONÍA MÓVIL Y FIJA, MÁQUINAS DE OFICINA, DESARROLLO DE PROGRAMAS, ASESORAMIENTO TÉCNICO E INFORMÁTICO, SERVICIOS DE TELEFONÍA MÓVIL Y FIJA Y SU ACTUACIÓN COMO OPERADOR DE REDES, REPARACIÓN DE MÁQUINAS DE OFICINA, PROGRAMACIÓN DE AUTÓMATAS Y CONTROL INDUSTRIAL. PROCESOS DE DATOS.\r\nE) EL ASESORAMIENTO DE EMPRESAS Y PERSONAS FÍCIAS EN SU MÁS AMPLIA ACEPCIÓN, EN SU CASO, A TRAVÉS DE LOS OPORTUNOS PROFESIONALES TITULADOS. TASACIONES Y PERITACIONES, SERVICIOS DE SECRETARIA Y TRADUCCIONES. CURSILLOS Y SERVICIOS DE ENSEÑANZA DE TODO TIPO. SERVICIOS DE TELEMARKETING Y ATENCIÓN TELEFÓNICA PARA CLIENTES.\r\nF) LA EXPLOTACIÓN DE SERVICIOS HOTELEROS, HOSTELEROS, DISCOTECAS Y OTROS RELACIONADOS CON LA RESTAURACIÓN GASTRONÓMICA Y LOS ESPECTÁCULOS PÚBLICOS.\r\nG) EL DISEÑO, LA FABRICACIÓN, COMERCIO, INTERMEDIACIÓN Y ALQUILER NO FINANCIERO DE MAQUINARIA, EMBARCACIONES, AERONAVES, BICICLETAS, VEHÍCULOS PARA MINUSVÁLIDOS Y VEHÍCULOS AUTOMÓVILES. SU RESTAURACIÓN, REPARACIÓN Y MANTENIMIENTO POSTERIORES, ASÍ COMO DE TODO TIPO DE ACCESORIOS PARA LOS MISMOS. SUMINISTROS INDUSTRIALES. RECONSTRUCCIÓN Y RECAUCHUTADO DE NEUMÁTICOS.\r\nH) RECOGIDA Y TRATAMIENTO DE MATERIALES USADOS, RESIDUOS Y ENSERES DE USO DOMÉSTICO E INDUSTRIAL PARA SU RECICLADO Y OBTENCIÓN, DISTRIBUCIÓN Y COMERCIALIZACIÓN DE ENERGÍAS. DEPURACIÓN Y DISTRIBUCIÓN DE AGUA. REFINO, COMERCIALIZACIÓN, INTERMEDIACIÓN, ALMACENAMIENTO, Y DISTRIBUCIÓN DE PETRÓLEOS Y DERIVADOS Y LA EXPLOTACIÓN DE ESTACIONES DE SERVICIO.\r\nI) LA REALIZACIÓN DE ACTIVIDADES DE INTERNET, ASÍ COMO EL SUMINISTRO DE SERVICIOS DE INFORMACIÓN Y FORMACIÓN. SERVICIOS DE TELEMARKETING.\r\nJ) LA EXPLOTACIÓN DE GUARDERÍAS INFANTILES, CENTROS GERIÁTRICOS DE DÍA Y RESIDENCIAS DE ANCIANOS, CENTROS SANITARIOS Y DE ANÁLISIS Y RECONOCIMIENTOS MÉDICOS. POMPAS FÚNEBRES Y SERVICIOS RELACIONADOS, ASÍ COMO SERVICIOS SOCIALES DE TODO TIPO.\r\nK) COMERCIO DE ANIMALES DOMÉSTICOS Y, EN SU CASO, DE LOS EXÓTICOS DEBIDAMENTE AUTORIZADOS. SERVICIOS COMPLEMENTARIOS DE RESIDENCIA, PELUQUERÍA Y CUIDADOS SANITARIOS. VENTA DE PRODUCTOS DE ALIMENTACIÓN ANIMAL Y COMPLEMENTOS.\r\nL) LA COMPRAVENTA, ELABORACIÓN Y TRANSFORMACIÓN DE PIELES Y CURTIDOS; DISEÑO, FABRICACIÓN, CORTADOS, APARADOS Y ACABADO DE TODO TIPO DE CALZADOS, ARTÍCULOS DE GUARNICIONERÍA, MARROQUINERÍA Y TALABARTERÍA. SU COMERCIO E INTERMEDIACIÓN AL POR MAYOR Y MENOR, ASÍ COMO SU IMPORTACIÓN Y EXPORTACIÓN.\r\nLL) LA FABRICACIÓN, COMPRAVENTA, INTERMEDIACIÓN Y EXPLOTACIÓN, POR CUENTA PROPIA O AJENA DE MÁQUINAS EXPENDEDORAS.\r\nM) LA FABRICACIÓN, COMERCIO E INTERMEDIACIÓN DE PRODUCTOS QUÍMICOS Y SINTÉTICOS, PLÁSTICOS, PASTA PAPELERA, PAPEL, CARTÓN, ENVASES, BOLSAS, RÓTULOS, MATERIAL FOTOGRÁFICO Y SERVICIOS DE REVELADO.\r\nN) LA FABRICACIÓN, IMPORTACIÓN, EXPORTACIÓN, COMPRAVENTA, COMERCIO AL POR MENOR Y MAYOR, ASÍ COMO LA DISTRIBUCIÓN E INTERMEDIACIÓN DE TODO TIPO DE ARTÍCULOS SANITARIOS, HIGIÉNICOS, DE LIMPIEZA, DE BELLEZA, DE HOGAR, DE REGALO, JUGUETES, INSTRUMENTOS MUSICALES, DECORACIÓN, ELECTRODOMÉSTICOS, MOBILIARIO, PORCELANA, CRISTALERÍA, JOYERÍA, BISUTERÍA, ÓPTICA, EQUIPOS FOTOGRÁFICOS, FLORES, PLANTAS Y ARTÍCULOS DE DEPORTE, RECLAMOS PUBLICITARIOS DE TODO TIPO, ASÍ COMO LOS SERVICIOS RELACIONADOS CON LA PUBLICIDAD Y PROMOCIÓN EMPRESARIAL.\r\nÑ) IMPORTACIÓN, EXPORTACIÓN, INTERMEDIACIÓN Y COMERCIO AL POR MENOR Y MAYOR DE MADERAS, CORCHO, CESTERÍA, ESPARTERÍA, METALES DE FUNDICIÓN, ESTIRADO, LAMINACIÓN Y OTROS MANIPULADOS. LA INDUSTRIA DEL MÁRMOL Y PIEDRA NATURAL O ARTIFICIAL. INSTALACIONES Y MONTAJES DE CARPINTERÍA METÁLICA Y TRADICIONAL Y EL ARRIENDO NO FINANCIERO DE LOS MISMOS EN FORMA DE TARIMAS Y SIMILARES. EXPLOTACIÓN FORESTAL.\r\nO) MANTENIMIENTO Y LIMPIEZA DE VIVIENDAS, JARDINES Y ANEXOS, LOCALES COMERCIALES Y OTROS BIENES INMUEBLES. LIMPIEZA DE BIENES MUEBLES. SERVICIOS DE GUARDAMUEBLES Y DEPÓSITO Y ALMACENAMIENTO DE MERCANCÍAS.\r\nP) IMPORTACIÓN, EXPORTACIÓN, DISEÑO, FABRICACIÓN, INTERMEDIACIÓN Y COMERCIALIZACIÓN AL POR MENOR Y MAYOR DE TODO TIPO DE ARTÍCULOS TEXTILES Y COMPLEMENTOS PARA LA MODA DE SEÑORA Y CABALLERO.\r\nQ) LA IMPORTACIÓN, EXPORTACIÓN, COMPRAVENTA, FABRICACIÓN, DISEÑO, INTERMEDIACIÓN Y COMERCIALIZACIÓN DE TODO TIPO DE PRODUCTOS PARA LA INDUSTRIAL CERÁMICA, MOLDES, TROQUELES Y SUS DERIVADOS.\r\nR) GESTIÓN Y ADMINISTRACIÓN DE VALORES REPRESENTATIVOS DE LOS FONDOS PROPIOS DE ENTIDADES NO RESIDENTES EN TERRITORIO ESPAÑOL, MEDIANTE LA CORRESPONDIENTE ORGANIZACIÓN DE MEDIOS MATERIALES Y PERSONALES.\r\nS) EXHIBICIÓN, EDICIÓN, IMPORTACIÓN, EXPORTACIÓN, DISTRIBUCIÓN Y COMPRAVENTA DE TODO TIPO DE PRODUCTOS CINEMATROGRÁFICOS, MUSICALES, AUDIOVISUALES Y LIBROS Y OTRAS PUBLICACIONES EN SOPORTE PAPEL, ELECTRÓNICO, AUDIO O VIDEO, ENCUADERNACIONES, COMPOSICIÓN Y FOTOGRABADO. PARTICIPACIÓN EN TODO TIPO DE MUESTRAS, FESTIVALES, FERIAS, CERTÁMENES Y OTROS RELACIONADOS CON CUALQUIER INDUSTRIA O ACTIVIDAD ARTÍSTICA Y DE COMUNICACIÓN. REPRESENTACIÓN DE PROFESIONALES Y ARTISTAS. AGENCIA DE PUBLICIDAD Y RELACIONES PÚBLICAS. DISEÑO, CONSTRUCCIÓN, MANTENIMIENTO Y EXPLOTACIÓN DE INSTALACIONES DEPORTIVAS. FORMACIÓN EN LOS CAMPOS ARTÍSTICOS Y DEPORTIVOS. IMPORTACIÓN, EXPORTACIÓN, COMPRAVENTA E INTERMEDIACIÓN DE OBRAS DE ARTE ASÍ COMO LA EXPLOTACIÓN DE GALERIAS DE ARTE DE TODO TIPO",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03668",
+      "_links": {
+        "self": {
+          "name": "AQUIA SOLUCIONES DE COMUNICACION, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/03668"
+        }
+      }
+    },
+    {
+      "name": "SERVICIOS Y APLICACIONES, S.L. (OLVISA)",
+      "registrationNumber": "00316",
+      "identificationNumber": "B48104269",
+      "address": "PARQUE EMPRESARIAL  INBISA - POL. AURRERA-MANZANA 8, 55-A",
+      "location": {
+        "postalCode": "48510",
+        "municipality": "Valle de Trápaga-Trapagaran",
+        "county": "Bizkaia",
+        "municipalityId": "080",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.501.1",
+          "name": "Construcción completa, reparación y conservación de edificaciones",
+          "_links": {
+            "self": {
+              "name": "Construcción completa, reparación y conservación de edificaciones",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2008-10-02",
+      "certificateEndDate": "2009-03-15",
+      "object": "LA REALIZACIÓN DE TRABAJOS DE ALBAÑILERÍA, AISLAMIENTOS, PINTURA, ASÍ COMO CUALESQUIERA ANÁLOGA A LOS ANTERIORES; Y EN GENERAL LAS ACTIVIDADES RELACIONADAS CON LA CONSTRUCCIÓN, PROMOCIÓN Y VENTA DE CUALESQUIERA CLASE DE EDIFICACIONES E INMUEBLES",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/00316",
+      "_links": {
+        "self": {
+          "name": "SERVICIOS Y APLICACIONES, S.L. (OLVISA)",
+          "href": "https://api.euskadi.eus/procurements/companies/00316"
+        }
+      }
+    },
+    {
+      "name": "IKASTARIES, S.A.",
+      "registrationNumber": "00315",
+      "identificationNumber": "A20049565",
+      "address": "C/ AZPEITIA, Nº 9 - 1º E",
+      "location": {
+        "postalCode": "20010",
+        "municipality": "Donostia / San Sebastián",
+        "county": "Gipuzkoa",
+        "municipalityId": "069",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.619.9",
+          "name": "Venta al por mayor de otros productos n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de otros productos n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.619.9"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2008-09-30",
+      "certificateEndDate": "2009-03-10",
+      "object": "LA PROMOCIÓN, CREACIÓN, GESTIÓN Y ORGANIZACIÓN DE CENTROS Y ACTIVIDADES A TODOS LOS NIVELES DEL PROCESO EDUCATIVO; EL DESARROLLO  Y LA DIFUSIÓN DE LA CULTURA VASCA, DE SU LENGUA Y DE TODOS SUS VALORES TRADICIONALES; EL SUMINISTRO, ENTREGA E INSTALACIÓN DE MATERIAL DIDÁCTICO Y DE MOBILIARIO ESCOLAR, DEPORTIVO, PROMOCIONAL Y LÚDICO; EL SUMINISTRO, ENTREGA E INSTALACIÓN DE MOBILIARIO Y MATERIAL SANITARIO; ENTREGA E INSTALACIÓN DE MOBILIARIO Y MATERIAL DE OFICINAS Y DE DESPACHOS; Y LA REALIZACIÓN DE TODO TIPO DE SERVICIOS VINCULADOS A LOS SECTORES DE LA EDUCACIÓN, DE LA SANIDAD, DE LA CULTURA, DEL DEPORTE Y DE LA PROMOCIÓN   ",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/00315",
+      "_links": {
+        "self": {
+          "name": "IKASTARIES, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/00315"
+        }
+      }
+    },
+    {
+      "name": "ARDATZ, S.L.",
+      "registrationNumber": "00785",
+      "identificationNumber": "B20177713",
+      "address": "C/ AZPEITIA, Nº 9 - 1º E",
+      "location": {
+        "postalCode": "20010",
+        "municipality": "Donostia / San Sebastián",
+        "county": "Gipuzkoa",
+        "municipalityId": "069",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.619.1",
+          "name": "Venta al por mayor de juguetes y artículos de deporte",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de juguetes y artículos de deporte",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.619.1"
+            }
+          }
+        },
+        {
+          "id": "1.844",
+          "name": "Servicios de publicidad, relaciones públicas y similares",
+          "_links": {
+            "self": {
+              "name": "Servicios de publicidad, relaciones públicas y similares",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.844"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2008-09-30",
+      "certificateEndDate": "2009-03-10",
+      "object": "LA CREACIÓN, DISEÑO, REALIZACIÓN Y COMERCIALIZACIÓN DE TODO TIPO DE ELEMENTOS Y ACTIVIDADES RELACIONADAS CON LA INFANCIA Y LA JUVENTUD; LA PRODUCCIÓN DE MEDIOS ORIENTADOS AL APRENDIZAJE Y POTENCIACIÓN DEL EUSKERA; LA ORGANIZACIÓN Y GESTIÓN DE CAMPAÑAS PROMOCIONALES PARA INSTITUCIONES PÚBLICAS Y PRIVADAS; LA EDICIÓN DE LIBROS, REVISTAS Y EN GENERAL MEDIOS DE COMUNICACIÓN ESCRITA Y AUDIOVISUAL; EL SUMINISTRO, ENTREGA E INSTALACIÓN DE MATERIAL DISÁCTICO Y DE MOBILIARIO ESCOLAR, DEPORTIVO, PROMOCIONAL Y LÚDICO; EL SUMINISTRO, ENTREGA E INSTALACIÓN DE MOBILIARIO Y MATERIAL SANITARIO; EL SUMINISTRO, ENTREGA E INSTALACIÓN DE MOBILIARIO Y MATERIAL DE OFICINAS Y DESPACHOS; Y LA REALIZACIÓN DE TODO TIPO DE SERVICIOS VINCULADOS A LOS SECTORES DE LA EDUCACIÓN, DE LA SANIDAD, DE LA CULTURA Y DEL DEPORTE \r\n",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/00785",
+      "_links": {
+        "self": {
+          "name": "ARDATZ, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/00785"
+        }
+      }
+    }
+  ]
+}

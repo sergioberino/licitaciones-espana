@@ -1,0 +1,498 @@
+{
+  "totalItems": 9042,
+  "totalPages": 905,
+  "currentPage": 373,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "name": "VELVET SCHOOL SOCIEDAD LIMITADA",
+      "registrationNumber": "09200",
+      "identificationNumber": "B48732374",
+      "address": "Simon Bolivar, nº 7 - 1º",
+      "location": {
+        "postalCode": "48010",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.631",
+          "name": "Intermediarios del comercio",
+          "_links": {
+            "self": {
+              "name": "Intermediarios del comercio",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.631"
+            }
+          }
+        },
+        {
+          "id": "1.755",
+          "name": "Agencias de viajes",
+          "_links": {
+            "self": {
+              "name": "Agencias de viajes",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.755"
+            }
+          }
+        },
+        {
+          "id": "1.849.3",
+          "name": "Servicios de traducción y similares",
+          "_links": {
+            "self": {
+              "name": "Servicios de traducción y similares",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.849.3"
+            }
+          }
+        },
+        {
+          "id": "1.933.2",
+          "name": "Promoción de cursos y estudios en el extranjero",
+          "_links": {
+            "self": {
+              "name": "Promoción de cursos y estudios en el extranjero",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.933.2"
+            }
+          }
+        },
+        {
+          "id": "1.933.9",
+          "name": "Otras actividades de enseñanza tales como idiomas, mecanografía",
+          "_links": {
+            "self": {
+              "name": "Otras actividades de enseñanza tales como idiomas, mecanografía",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.933.9"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-01-28",
+      "certificateEndDate": "2025-07-28",
+      "object": "LAS ACTIVIDADES RELACIONADAS CON LA ENSEÑANZA DE IDIOMAS DE CUALQUIER NACIONALIDAD Y POR CUALQUIER MÉTODO, ENSEÑANZA QUE SERÁ IMPARTIDA POR PERSONAS CON TITULO A TAL EFECTO.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/09200",
+      "_links": {
+        "self": {
+          "name": "VELVET SCHOOL SOCIEDAD LIMITADA",
+          "href": "https://api.euskadi.eus/procurements/companies/09200"
+        }
+      }
+    },
+    {
+      "name": "ALUMIR MIRANDA, S.L.",
+      "registrationNumber": "09981",
+      "identificationNumber": "B09579400",
+      "address": "Polígono Industrial de Bayas, c/ Suzana, 75 C.",
+      "location": {
+        "postalCode": "09200",
+        "municipality": "Miranda de Ebro",
+        "county": "Burgos",
+        "municipalityId": "219",
+        "countyId": "09"
+      },
+      "economicActivities": [
+        {
+          "id": "1.314.1",
+          "name": "Carpintería metálica",
+          "_links": {
+            "self": {
+              "name": "Carpintería metálica",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.314.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-01-28",
+      "certificateEndDate": "2025-07-28",
+      "object": "LA FABRICACIÓN Y MONTAJE DE CARPINTERÍA METÁLICA DE ALUMINIO Y CRISTALERÍA.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/09981",
+      "_links": {
+        "self": {
+          "name": "ALUMIR MIRANDA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/09981"
+        }
+      }
+    },
+    {
+      "name": "ENERMETRIK SOLUTIONS, S.L.",
+      "registrationNumber": "08560",
+      "identificationNumber": "B95973145",
+      "address": "POLIGONO INDUSTRIAL EL CAMPILLO, 19",
+      "location": {
+        "postalCode": "48500",
+        "municipality": "Abanto y Ciérvana-Abanto Zierbena",
+        "county": "Bizkaia",
+        "municipalityId": "002",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.504.12",
+          "name": "Instalaciones eléctricas en toda clase de edificios",
+          "_links": {
+            "self": {
+              "name": "Instalaciones eléctricas en toda clase de edificios",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.504.12"
+            }
+          }
+        },
+        {
+          "id": "1.619.7",
+          "name": "Venta al por mayor de instrumentos de precisión, medida y similares",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de instrumentos de precisión, medida y similares",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.619.7"
+            }
+          }
+        },
+        {
+          "id": "1.843.1",
+          "name": "Servicios técnicos de ingeniería",
+          "_links": {
+            "self": {
+              "name": "Servicios técnicos de ingeniería",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-01-27",
+      "certificateEndDate": "2025-06-27",
+      "object": "1.- SERVICIOS TÉCNICOS DE INGENIERÍA Y OTRAS ACTIVIDADES RELACIONADAS CON EL ASESORAMIENTO TÉCNICO COMO AUDITORÍAS, CERTIFICACIONES, ETC. 2.- LABORES DE FORMACIÓN, DIVULGACIÓN EN RELACIÓN CON EL OBJETO DE LA SOCIEDAD. 3.- VENTA E IMPLANTACIÓN DE SISTEMAS DE MONITORIZACIÓN PARA CONTROLAR LOS CONSUMOS ENERGÉTICOS ELÉCTRICOS, DE GAS, AGUA, FLUIDO, Y OTROS SUMINISTROS. 4.- VENTA E INSTALACIÓN DE SISTEMAS DE PRODUCCIÓN DE ENERGÍAS RENOVABLES. 5.- GENERACIÓN DE ENERGÍAS VERDES. 6.- ADQUISICIÓN, TENENCIA Y ADMINISTRACIÓN DE ACCIONES Y PARTICIPACIONES SOCIALES Y LA DIRECCIÓN Y GESTIÓN DE LA PARTICIPACIÓN EN SUS SOCIEDADES FILIALES Y DE LAS PROPIAS ENTIDADES PARTICIPADAS, ASÍ COMO LA PRESTACIÓN DE SERVICIOS DE CONSULTARÍA O ASESORAMIENTO EN CUALQUIER ÁMBITO EMPRESARIAL.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08560",
+      "_links": {
+        "self": {
+          "name": "ENERMETRIK SOLUTIONS, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/08560"
+        }
+      }
+    },
+    {
+      "name": "APECECHEA, S.L.",
+      "registrationNumber": "07797",
+      "identificationNumber": "B31131741",
+      "address": "C/ MAYOR, 25-1",
+      "location": {
+        "postalCode": "31754",
+        "municipality": "Goizueta",
+        "county": "Navarra",
+        "municipalityId": "117",
+        "countyId": "31"
+      },
+      "economicActivities": [
+        {
+          "id": "1.501.3",
+          "name": "Albañilería y pequeños trabajos de construcción en general",
+          "_links": {
+            "self": {
+              "name": "Albañilería y pequeños trabajos de construcción en general",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.3"
+            }
+          }
+        },
+        {
+          "id": "1.617.3",
+          "name": "Venta al por mayor de madera y corcho",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de madera y corcho",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.617.3"
+            }
+          }
+        },
+        {
+          "id": "1.673",
+          "name": "Servicios en cafes y bares",
+          "_links": {
+            "self": {
+              "name": "Servicios en cafes y bares",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.673"
+            }
+          }
+        },
+        {
+          "id": "1.687.4",
+          "name": "Campamentos turísticos de tercera clase",
+          "_links": {
+            "self": {
+              "name": "Campamentos turísticos de tercera clase",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.687.4"
+            }
+          }
+        },
+        {
+          "id": "1.722",
+          "name": "Transporte de mercancías por carretera",
+          "_links": {
+            "self": {
+              "name": "Transporte de mercancías por carretera",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.722"
+            }
+          }
+        },
+        {
+          "id": "1.911",
+          "name": "Servicios agrícolas y ganaderos",
+          "_links": {
+            "self": {
+              "name": "Servicios agrícolas y ganaderos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.911"
+            }
+          }
+        },
+        {
+          "id": "1.912",
+          "name": "Servicios forestales",
+          "_links": {
+            "self": {
+              "name": "Servicios forestales",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.912"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-01-27",
+      "certificateEndDate": "2025-07-27",
+      "object": "LA COMPRA, VENTA, TRANSFORMACIÓN, IMPORTACIÓN Y EXPORTACIÓN DE LA MADERA Y DE LOS ARTÍCULOS CON ELLA FABRICADOS TOTAL O PARCIALMENTE SEA CUAL FUERE SU FASE DE ELABORACIÓN. LA EXTRACCIÓN, EXPLOTACIÓN, TRANSFORMACIÓN Y COMERCIALIZACIÓN DE TODA CLASE DE PRODUCTOS AGROPECUARIOS Y FORESTALES. LA EJECUCIÓN DE TODA CLASE DE OBRAS PÚBLICAS Y PRIVADAS; EL MANTENIMIENTO, REPARACIÓN Y CONSERVACIÓN DE TODO TIPO DE INSTALACIONES Y EQUIPOS INDUSTRIALES, INCLUYENDO ESPECIALMENTE LAS PROPIAS DE LA INDUSTRIA DE SUMINISTRO Y DE TELECOMUNICACIÓN. EL TRANSPORTE MECÁNICO POR CARRETERA, MEDIANTE SERVICIOS PÚBLICOS DISCRECIONALES, DE TODA CLASE DE MERCANCÍAS. LA INTRODUCCIÓN, REGISTRO, EXPLOTACIÓN Y CONCESIÓN DE PATENTES, MARCAS TÉCNICAS, PROCEDIMIENTOS Y CUALESQUIERA DERECHOS DE PROPIEDAD INDUSTRIAL, TANTO NACIONALES COMO EXTRANJEROS Y DEMÁS PRIVILEGIOS COMPRENDIDOS EN LA LEGISLACIÓN SOBRE PROPIEDAD INDUSTRIAL Y MARCAS QUE TENGAN POR OBJETO BIENES O SERVICIOS PROPIOS DE LA ACTIVIDAD AGROFORESTAL, DE LA INDUSTRIA DE LA MADERA, DE LA ACTIVIDAD DEL TRANSPORTE, Y DEL MANTENIMIENTO, CONSERVACIÓN Y REPARACIÓN DE TODO TIPO DE INSTALACIONES INDUSTRIALES. LA PRESTACIÓN DE SERVICIOS DE HOSPEDAJE EN CAMPAMENTOS DE TURISMO (CAMPINGS), Y ALOJAMIENTOS TURÍSTICOS EXTRAHOTELEROS. LA PRESTACIÓN DE SERVICIOS DE CAFÉS, BARES Y RESTAURANTES. EL COMERCIO AL POR MENOR DE ARTÍCULOS DE ALIMENTACIÓN, BEBIDAS, DROGUERÍA, LIMPIEZA, ROPA Y REGALOS. EL ESTACIONAMIENTO DE CARAVANAS Y AUTOCARAVANAS. EL DESARROLLO DE ACTIVIDADES TURÍSTICAS, DEPORTIVAS, ARTÍSTICAS Y CULTURALES RELACIONADAS CON LOS CAMPAMENTOS TURÍSTICOS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07797",
+      "_links": {
+        "self": {
+          "name": "APECECHEA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/07797"
+        }
+      }
+    },
+    {
+      "name": "KARBI SERVICIOS INTEGRALES, S.L.",
+      "registrationNumber": "08236",
+      "identificationNumber": "B95892030",
+      "address": "NOVIA SALCEDO, 23 - BAJO 8",
+      "location": {
+        "postalCode": "48012",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.501.1",
+          "name": "Construcción completa, reparación y conservación de edificaciones",
+          "_links": {
+            "self": {
+              "name": "Construcción completa, reparación y conservación de edificaciones",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.1"
+            }
+          }
+        },
+        {
+          "id": "1.861.1",
+          "name": "Alquiler de viviendas",
+          "_links": {
+            "self": {
+              "name": "Alquiler de viviendas",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.861.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-01-27",
+      "certificateEndDate": "2025-07-01",
+      "object": "ACTIVIDAD PRINCIPAL.- 8121.- LIMPIEZA GENERAL DE EDIFICIOS. OTRAS ACTIVIDADES.- 6832.- GESTIÓN Y ADMINISTRACIÓN DE LA PROPIEDAD INMOBILIARIA; 4399.- OTRAS ACTIVIDADES DE CONSTRUCCIÓN ESPECIALIZADA N.C.O.P.; 5210.- DEPÓSITO Y ALMACENAMIENTO; 4329.- OTRAS INSTALACIONES EN OBRAS DE CONSTRUCCIÓN; 3317.- REPARACIÓN Y MANTENIMIENTO DE OTRO MATERIAL DE TRANSPORTE; 3900.- ACTIVIDADES DE DESCONTAMINACIÓN Y OTROS SERVICIOS DE GESTIÓN DE RESIDUOS.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08236",
+      "_links": {
+        "self": {
+          "name": "KARBI SERVICIOS INTEGRALES, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/08236"
+        }
+      }
+    },
+    {
+      "name": "AUTOBUSES DARIO, S.L.",
+      "registrationNumber": "03926",
+      "identificationNumber": "B20632436",
+      "address": "POLÍGONO INDUSTRIAL IGARTUALDEA, 27",
+      "location": {
+        "postalCode": "20850",
+        "municipality": "Mendaro",
+        "county": "Gipuzkoa",
+        "municipalityId": "901",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.721.3",
+          "name": "Transporte de viajeros por carretera",
+          "_links": {
+            "self": {
+              "name": "Transporte de viajeros por carretera",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.721.3"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-01-27",
+      "certificateEndDate": "2025-07-10",
+      "object": "EL TRANSPORTE PÚBLICO DE VIAJEROS POR CARRETERA",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03926",
+      "_links": {
+        "self": {
+          "name": "AUTOBUSES DARIO, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/03926"
+        }
+      }
+    },
+    {
+      "name": "DAVID GAZTELAKUTO CONTINENTE",
+      "registrationNumber": "09051",
+      "identificationNumber": "52445405T",
+      "address": "Calle Aldeko 15 2A",
+      "location": {
+        "postalCode": "48600",
+        "municipality": "Sopela",
+        "county": "Bizkaia",
+        "municipalityId": "085",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "2.751",
+          "name": "Profesionales de la publicidad, relaciones públicas y similares",
+          "_links": {
+            "self": {
+              "name": "Profesionales de la publicidad, relaciones públicas y similares",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/2.751"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-01-25",
+      "certificateEndDate": "2025-07-25",
+      "object": "PROFESIONALES DE LA PUBLICIDAD, RELACIONES PÚBLICAS Y SIMILARES.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/09051",
+      "_links": {
+        "self": {
+          "name": "DAVID GAZTELAKUTO CONTINENTE",
+          "href": "https://api.euskadi.eus/procurements/companies/09051"
+        }
+      }
+    },
+    {
+      "name": "YPUNTO ENDING, S.L.",
+      "registrationNumber": "06722",
+      "identificationNumber": "B83262725",
+      "address": "AVENIDA DE AMERICA 22 1º ESC IZQº",
+      "location": {
+        "postalCode": "28028",
+        "municipality": "Madrid",
+        "county": "Madrid",
+        "municipalityId": "079",
+        "countyId": "28"
+      },
+      "economicActivities": [
+        {
+          "id": "1.505.5",
+          "name": "Carpintería y cerrajería",
+          "_links": {
+            "self": {
+              "name": "Carpintería y cerrajería",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.505.5"
+            }
+          }
+        },
+        {
+          "id": "1.843.9",
+          "name": "Otros servicios técnicos n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros servicios técnicos n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.9"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-01-24",
+      "certificateEndDate": "2025-07-13",
+      "object": "LA CONSTRUCCIÓN, FABRICACIÓN, PRODUCCIÓN, CONSERVACIÓN,CONSERVACIÓN, REHABILITACIÓN, ADAPTACIÓN, MODIFICACIÓN, REPARACIÓN, MONTAJE DE OBRAS, EXPOSICIONES, MUSEOS, ESPACIOS INTERIORES Y EXTERIORES, E INSTALACIONES, POR CUENTA PROPIA O DE TERCEROS, ASÍ COMO TODO TIPO DE MOBILIARIO. EL ESTUDIO, ELABORACIÓN Y EJECUCIÓN DE TODO TIPO DE INFORMES Y PROYECTOS DE CONSTRUCCIÓN, FABRICACIÓN, PRODUCCIÓN, CONSERVACIÓN, REHABILITACIÓN, ADAPTACIÓN, MODIFICACIÓN Y REPARACIÓN DE OBRAS, ESPACIOS INTERIORES Y EXTERIORES E INSTALACIONES, CON MEDIACIÓN, COORDINACIÓN Y DIRECCIÓN EN TODAS SUS FASES DE REALIZACIÓN. LA REPRODUCCIÓN, TRATAMIENTO INFORMÁTICO E IMPRESIÓN, BAJO CUALQUIER MEDIO O SOPORTE, DE TEXTOS, SONIDOS E IMÁGENES. LAS ACTIVIDADES PROPIAS DE LA COMUNICACIÓN Y LA PUBLICIDAD, YA SEAN DIRECTAMENTE O POR MEDIO DE TERCEROS. EL INTERIORISMO, LA DECORACIÓN, LA ORGANIZACIÓN, DISEÑO, DIRECCIÓN DE OBRA, FABRICACIÓN Y MONTAJE DE EXPOSICIONES, MUSEOS Y CENTROS DE INTERPRETACIÓN, DISEÑO Y CONSTRUCCIÓN DE STANDS; EL DISEÑO INDUSTRIAL, EL DISEÑO GRÁFICO  ASÍ COMO SU FABRICACIÓN Y MONTAJE O INSTALACIÓN; LA ARQUITECTURA, PROYECCIÓN Y CONSTRUCCIÓN DE TODO TIPO DE EDIFICIOS Y OBRAS, CON MEDIACIÓN Y COORDINACIÓN EN SU REALIZACIÓN; LOS PROGRAMAS DE SEÑALIZACIÓN, EL ESCAPARATISMO, EL DISEÑO PUBLICITARIO, LA ESCENOGRAFÍA TEATRAL, TANTO LA REDACCIÓN DE PROYECTOS EN DICHOS CAMPOS COMO LA DIRECCIÓN, SUPERVISIÓN, EL CONTROL DE SUMINISTROS Y LA CONSTRUCCIÓN Y FABRICACIÓN DE LOS DISEÑOS; LA REALIZACIÓN DE MAQUETAS, REPORTAJES FOTOGRÁFICOS, MONTAJES AUDIOVISUALES E INTERACTIVOS, CREACIÓN DE PÁGINAS WEBS; LA DELINEACIÓN Y REALIZACIÓN TOTAL DE PROYECTOS RELACIONADOS CON TODOS LOS OBJETOS ANTERIORES. LA DOCUMENTACIÓN Y CATALOGACIÓN DE OBRAS DE ARTE ASÍ COMO EL ESTUDIO Y ANÁLISIS DE SUS CARACTERÍSTICAS TÉCNICAS Y ESTÉTICAS, NECESIDADES DE CONSERVACIÓN, EXPOSICIÓN, ALMACENAJE, ASÍ COMO SU MOVIMIENTO, COLOCACIÓN E INSTALACIÓN EN MUSEOS, ESPACIOS EXPOSITIVOS, ALMACENES, ARCHIVOS, INCLUYENDO EL DISEÑO Y FABRICACIÓN DE MOBILIARIO, SOPORTES Y MEDIOS AUXLIARES.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06722",
+      "_links": {
+        "self": {
+          "name": "YPUNTO ENDING, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/06722"
+        }
+      }
+    },
+    {
+      "name": "IMPRESIONES Y ACABADOS, S.L.",
+      "registrationNumber": "09721",
+      "identificationNumber": "B23580798",
+      "address": "POLIGONO INDUSTRIAL AVE MARÍA, PARCELA 2-8",
+      "location": {
+        "postalCode": "23740",
+        "municipality": "Andújar",
+        "county": "Jaén",
+        "municipalityId": "005",
+        "countyId": "23"
+      },
+      "economicActivities": [
+        {
+          "id": "1.474",
+          "name": "Artes gráficas (impresión gráfica)",
+          "_links": {
+            "self": {
+              "name": "Artes gráficas (impresión gráfica)",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.474"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-01-23",
+      "certificateEndDate": "2025-07-09",
+      "object": "LA ACTIVIDAD PRINCIPAL SERÁ EL DESARROLLO DE ARTES GRÁFICAS, IMPRESIÓN Y TERMINACIÓN DE CATÁLOGOS Y OTRO TIPO DE MATERIALES PUBLICITARIOS, QUE SE ENCUADRA EN EL EPÍGRAFE DEL CNAE 1811. OTRAS ACTIVIDADES: SERVICIOS PUBLICITARIOS (CNAE7311), PROGRAMACIÓN CONSULTORÍA Y OTRAS ACTIVIDADES RELACIONADAS CON LA INFORMÁTICA (CNAE 62), SERVICIOS DE INFORMACIÓN (CNAE 63).",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/09721",
+      "_links": {
+        "self": {
+          "name": "IMPRESIONES Y ACABADOS, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/09721"
+        }
+      }
+    },
+    {
+      "name": "ESTHER DIAZ GONZALEZ",
+      "registrationNumber": "09694",
+      "identificationNumber": "39380303W",
+      "address": "Fernan González 1 6 Izquierda",
+      "location": {
+        "postalCode": "01002",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "2.322",
+          "name": "Técnicos en artes gráficas",
+          "_links": {
+            "self": {
+              "name": "Técnicos en artes gráficas",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/2.322"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-01-23",
+      "certificateEndDate": "2025-07-20",
+      "object": "TÉCNICOS EN ARTES GRÁFICAS.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/09694",
+      "_links": {
+        "self": {
+          "name": "ESTHER DIAZ GONZALEZ",
+          "href": "https://api.euskadi.eus/procurements/companies/09694"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,408 @@
+{
+  "totalItems": 9042,
+  "totalPages": 905,
+  "currentPage": 493,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "name": "ALBERTO OLABUENAGA GOICOECHEA",
+      "registrationNumber": "05945",
+      "identificationNumber": "16285629L",
+      "address": "BARRIO DE URIA Nº 3",
+      "location": {
+        "postalCode": "01206",
+        "municipality": "Barrundia",
+        "county": "Araba/Álava",
+        "municipalityId": "013",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.505.5",
+          "name": "Carpintería y cerrajería",
+          "_links": {
+            "self": {
+              "name": "Carpintería y cerrajería",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.505.5"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2022-08-03",
+      "certificateEndDate": "2023-01-13",
+      "object": "CARPINTERIA, CERRAJERIA",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/05945",
+      "_links": {
+        "self": {
+          "name": "ALBERTO OLABUENAGA GOICOECHEA",
+          "href": "https://api.euskadi.eus/procurements/companies/05945"
+        }
+      }
+    },
+    {
+      "name": "BINARIO LIBROS, S.L.",
+      "registrationNumber": "05810",
+      "identificationNumber": "B48662654",
+      "address": "Iparraguirre, 9 bis",
+      "location": {
+        "postalCode": "48009",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.653.2",
+          "name": "Venta al por menor de material y aparatos eléctricos, electrodomésticos y cocina",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de material y aparatos eléctricos, electrodomésticos y cocina",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.653.2"
+            }
+          }
+        },
+        {
+          "id": "1.659.4",
+          "name": "Venta al por menor de libros, periódicos y artículos de papelería y escritorio",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de libros, periódicos y artículos de papelería y escritorio",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.659.4"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2022-08-03",
+      "certificateEndDate": "2023-01-04",
+      "object": "A) LA ADQUISICIÓN, TENENCIA, DISFRUTE, EXPLOTACIÓN Y ENAJENACIÓN DE TODA CLASE DE FINCAS RÚSTICAS O URBANAS, CUALQUIERA QUE FUERA SU NATURALEZA. B) LA PROMOCIÓN, CONSTRUCCIÓN REHABILITACIÓN Y REPARACIÓN, POR CUENTA PROPIA O AJENA, DE TODA CLASE DE OBRAS, URBANIZACIONES, EDIFICIOS Y CONSTRUCCIONES, TANTO PÚBLICOS COMO PRIVADOS. C) LA ADMINISTRACIÓN, ASESORAMIENTO, GESTIÓN DE ACTUACIONES URBANÍSTICAS Y PRESTACIÓN DE SERVICIOS DE TODO TIPO CON RELACIÓN A BIENES INMUEBLES, SEGÚN CONVENGA A SU APROVECHAMIENTO AGRÍCOLA, FORESTAL, URBANO, INDUSTRIAL O DE CUALQUIER OTRA NATURALEZA. D) LA ASISTENCIA, GESTIÓN, DIRECCIÓN, ADMINISTRACIÓN, PROMOCIÓN, INTERVENCIÓN Y PARTICIPACIÓN EN EMPRESAS O EN SU CREACIÓN, CONSTITUCIÓN O DESARROLLO. E) LA PROMOCIÓN, ESTUDIO Y DESARROLLO DE PRODUCTOS Y ACTIVIDADES INDUSTRIALES, COMERCIALES Y DE DISTRIBUCIÓN, EN EMPRESAS PROPIAS O PARTICIPADAS, Y EXPLOTACIÓN O CESIÓN DE CÁNONES O ROYALTIES Y DERECHOS DE PROPIEDAD INDUSTRIAL. F) LOS SERVICIOS DE MEDIACIÓN, GESTIÓN, REPRESENTACIÓN Y COMERCIO INTERIOR Y EXTERIOR, ALMACENAMIENTO, ARRENDAMIENTO Y, EN GENERAL, LA COMERCIALIZACIÓN Y DISTRIBUCIÓN DE TODA CLASE DE PRODUCTOS. G) LA ADQUISICIÓN, TENENCIA, DISFRUTE, ADMINISTRACIÓN Y ENAJENACÓN DE TODA CLASE DE TÍTULOS COMO VALORES MOBILIARIOS, ACTIVOS FINANCIEROS, DERECHOS, VALORES, CUOTAS O PARTICIPACIONES EN EMPRESAS INDIVIDUALES O SOCIALES POR CUENTA PROPIA Y CON EXCEPCIÓN DE LA INTERMEDIACIÓN, NO INCLUYÉNDOSE EN NINGÚN CASO LAS ACTIVIDADES OBJETO DE LA LEGISLACIÓN DE INVERSIÓN COLECTIVA Y DE MERCADO DE VALORES. H) EL COMERCIO AL POR MAYOR Y MENOR DE TODA CLASE DE LIBROS, NACIONALES Y EXTRANJEROS, LA GESTIÓN DE SUSCRIPCIONES DE LIBROS Y REVISTAS, ASÍ COMO DE VIDEOS CULTURALES Y DE CUALQUIER OTRA ACTIVIDAD AUXILIAR SECUNDARIA O COMPLEMENTARIA SUSCEPCIBLE DE FACILITAR O FAVORECER SU REALIZACIÓN",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/05810",
+      "_links": {
+        "self": {
+          "name": "BINARIO LIBROS, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/05810"
+        }
+      }
+    },
+    {
+      "name": "MASTALLER, S.L.",
+      "registrationNumber": "04701",
+      "identificationNumber": "B01384007",
+      "address": "KAPELAMENDI 7",
+      "location": {
+        "postalCode": "01013",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.856.1",
+          "name": "Alquiler de bienes de consumo",
+          "_links": {
+            "self": {
+              "name": "Alquiler de bienes de consumo",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.856.1"
+            }
+          }
+        },
+        {
+          "id": "1.933.9",
+          "name": "Otras actividades de enseñanza tales como idiomas, mecanografía",
+          "_links": {
+            "self": {
+              "name": "Otras actividades de enseñanza tales como idiomas, mecanografía",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.933.9"
+            }
+          }
+        },
+        {
+          "id": "1.966.9",
+          "name": "Otros servicios culturales n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros servicios culturales n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.966.9"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2022-08-03",
+      "certificateEndDate": "2023-01-04",
+      "object": "LA ELABORACIÓN, CREACIÓN, Y DISEÑO DE TALLERES Y PROGRAMAS CULTURALES, EDUCATIVOS, DEPORTIVOS Y COMUNICATIVOS. PLANIFICACION, ORGANIZACIÓN DE ACCIONES CULTURALES, LÚDICAS, SOCIALES, DEPORTIVAS, EDUCATIVAS Y COMUNICATIVAS ENTRE LAS QUE CABE DESTACAR, GESTIÓN DE EQUIPAMIENTOS Y SERVICIOS, CAMPAÑAS DE COMUNICACIÓN Y ORGANIZACIÓN TÉCNICA DE ACTOS, REPRESENTACIÓN DE TERCEROS PARA DICHAS ACCIONES. EL MONTAJE, INSTALACIÓN, VENTA Y ALQUILER DE PABELLONES INDUSTRIALES Y DEPORTIVOS MÓVILES PARA EL DESARROLLO DE ACTIVIDADES LÚDICAS, ESPECTACULOS, FERIAS, PRODUCCIÓN Y FABRICACIÓN SUSCEPTIBLES DE REALIZARSE EN ESTOS RECINTOS. LA REALIZACIÓN DEL MONTAJE PODRÁ REALIZARSE PARA TERCEROS EN PABELLONES DE SU ACTIVIDAD O ALQUILADOS. LA ADQUISICIÓN, TENENCIA, DISFRUTE, ADMINISTRACIÓN Y ENAJENACIÓN DE TODA CLASE DE VALORES MOBILIARIOS, CON EXCEPCIÓN DE LA INTERMEDIACIÓN, DEJANDO SIEMPRE FUERA LAS ACTIVIDADES OBJETO DE LA LEGISLACIÓN DE INSTITUCIONES DE INVERSIÓN COLECTIVA Y DE MERCADO DE VALORES. LA ADQUISICIÓN, URBANIZACIÓN, PARCELACIÓN, CONSTRUCCIÓN Y EDIFICACIÓN, CONSTITUCIÓN EN PROPIEDAD HORIZONTAL, REFORMA, REHABILITACIÓN, AMPLIACIÓN, REPARACIÓN, EXPLOTACIÓN DIRECTA E INDIRECTA DE BIENES INMUEBLES RÚSTICOS Y URBANOS Y LA REALIZACIÓN DE OBRAS PÚBLICAS Y PRIVADAS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/04701",
+      "_links": {
+        "self": {
+          "name": "MASTALLER, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/04701"
+        }
+      }
+    },
+    {
+      "name": "ANTONIO ECHEVESTE APEZTEGUIA",
+      "registrationNumber": "08108",
+      "identificationNumber": "72661897K",
+      "address": "koskontako Bidea",
+      "location": {
+        "postalCode": "31770",
+        "municipality": "Lesaka",
+        "county": "Navarra",
+        "municipalityId": "153",
+        "countyId": "31"
+      },
+      "economicActivities": [
+        {
+          "id": "1.617.3",
+          "name": "Venta al por mayor de madera y corcho",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de madera y corcho",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.617.3"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2022-08-03",
+      "certificateEndDate": "2023-01-27",
+      "object": "COMERCIO AL POR MAYOR DE MADERA, MATERIALES DE CONSTRUCCIÓN Y APARATOS SANITARIOS.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08108",
+      "_links": {
+        "self": {
+          "name": "ANTONIO ECHEVESTE APEZTEGUIA",
+          "href": "https://api.euskadi.eus/procurements/companies/08108"
+        }
+      }
+    },
+    {
+      "name": "JOSE RAMON ALONSO GUTIERREZ",
+      "registrationNumber": "08107",
+      "identificationNumber": "13980528R",
+      "address": "C/ Olano, 12 -4º B",
+      "location": {
+        "postalCode": "48003",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "2.021",
+          "name": "Técnicos en biología, agronomía y silvicultura",
+          "_links": {
+            "self": {
+              "name": "Técnicos en biología, agronomía y silvicultura",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/2.021"
+            }
+          }
+        },
+        {
+          "id": "2.826",
+          "name": "Personal docente de enseñanzas diversas",
+          "_links": {
+            "self": {
+              "name": "Personal docente de enseñanzas diversas",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/2.826"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2022-08-03",
+      "certificateEndDate": "2023-01-27",
+      "object": "PERSONAL DOCENTE DE ENSEÑANZAS DIVERSAS. TÉCNICOS EN BIOLOGÍA, AGRONOMÍA Y SILVICULTURA.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08107",
+      "_links": {
+        "self": {
+          "name": "JOSE RAMON ALONSO GUTIERREZ",
+          "href": "https://api.euskadi.eus/procurements/companies/08107"
+        }
+      }
+    },
+    {
+      "name": "CUBRIDECK, S.L.",
+      "registrationNumber": "05649",
+      "identificationNumber": "B95728556",
+      "address": "Avda. Las Encartaciones, 20 - bajo.",
+      "location": {
+        "postalCode": "48800",
+        "municipality": "Balmaseda",
+        "county": "Bizkaia",
+        "municipalityId": "090",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.505.4",
+          "name": "Colocación y aislamiento fónicos, térmicos y acústicos",
+          "_links": {
+            "self": {
+              "name": "Colocación y aislamiento fónicos, térmicos y acústicos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.505.4"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2022-08-03",
+      "certificateEndDate": "2023-01-29",
+      "object": "LA PREPARACIÓN Y MONTAJE DE ESTRUCTURAS Y CUBIERTAS Y CUBRICIONES DE EDIFICACIONES Y EN OBRAS CIVILES. CERRAMIENTOS E IMPERMEABILIZACIONES. LA FABRICACIÓN Y MONTAJE DE FACHADAS SINGULARES, MUROS CORTINA, CARPINTERÍA DE ALUMINIO, METALISTERÍA, ESTRUCTURAS METÁLICAS Y CARPINTERÍA METÁLICA DE PVC Y POLIURETANO. EL DESEMPEÑO DE COMISIONES Y REPRESENTACIONES PARA TODO GÉNERO DE OPERACIONES DE LÍCITO COMERCIO",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/05649",
+      "_links": {
+        "self": {
+          "name": "CUBRIDECK, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/05649"
+        }
+      }
+    },
+    {
+      "name": "ARABA ESPECTACULOS, S.L.",
+      "registrationNumber": "08097",
+      "identificationNumber": "B01552736",
+      "address": "C/ Amboto, 16 - bajo",
+      "location": {
+        "postalCode": "01006",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.965.4",
+          "name": "Empresas de espectáculos",
+          "_links": {
+            "self": {
+              "name": "Empresas de espectáculos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.965.4"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2022-08-03",
+      "certificateEndDate": "2023-01-11",
+      "object": "- ASESORAMIENTO, LA PROMOCIÓN, GESTIÓN, ADMINISTRACIÓN, INTERVENCIÓN E INTERMEDIACIÓN, ORGANIZACIÓN, PATROCINIO, COMUNICACIÓN, DISEÑO, EXPONSORIZACIÓN, CREACIÓN, INSTALACIÓN DE MATERIAL NECESARIOS, Y DESARROLLO DE STAGES, COMPETICIONES, EVENTOS, CONGRESOS Y PRESENTACIÓN DE SERVICIOS, DE CARÁCTER CULTURAL, TANTO A NIVEL NACIONAL COMO EXTRANJERO. - COMERCIALIZACIÓN, INSTALACIÓN, REPARACIÓN Y ALQUILER DE TODO TIPO DE MATERIALES DIRIGIDO A EVENTOS CULTURALES. - GESTIÓN E INTERMEDIACIÓN EN LA CONTRATACIÓN DE ARTISTAS. - LA EXPLOTACIÓN DE TODA CLASE DE SERVICIOS DE HOSTELERÍA Y EN ESPECIAL DE CAFÉS, BARES, CATERING Y RESTAURANTES. - LA COMPRAVENTA, ARRENDAMIENTO Y EXPLOTACIÓN DE TODA CLASE DE BIENES INMUEBLES.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08097",
+      "_links": {
+        "self": {
+          "name": "ARABA ESPECTACULOS, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/08097"
+        }
+      }
+    },
+    {
+      "name": "MANUEL ALEJANDRO BENITO INGELMO",
+      "registrationNumber": "08073",
+      "identificationNumber": "07965615W",
+      "address": "C/ Pedro Asúa, 59",
+      "location": {
+        "postalCode": "01008",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "2.899",
+          "name": "Otros profesionales",
+          "_links": {
+            "self": {
+              "name": "Otros profesionales",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/2.899"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2022-08-03",
+      "certificateEndDate": "2023-01-11",
+      "object": "OTROS PROFESIONALES.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08073",
+      "_links": {
+        "self": {
+          "name": "MANUEL ALEJANDRO BENITO INGELMO",
+          "href": "https://api.euskadi.eus/procurements/companies/08073"
+        }
+      }
+    },
+    {
+      "name": "ARGA OBRAS Y PROYECTOS, S.L.",
+      "registrationNumber": "05202",
+      "identificationNumber": "B01521376",
+      "address": "ALTO DE ARMENTIA, Nº 24",
+      "location": {
+        "postalCode": "01007",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.507",
+          "name": "Construcción, reparación y conservación de toda clase obras",
+          "_links": {
+            "self": {
+              "name": "Construcción, reparación y conservación de toda clase obras",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.507"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2022-08-03",
+      "certificateEndDate": "2023-01-28",
+      "object": "CONSTRUCCION, INSTALACIONES Y MANTENIMIENTO",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/05202",
+      "_links": {
+        "self": {
+          "name": "ARGA OBRAS Y PROYECTOS, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/05202"
+        }
+      }
+    },
+    {
+      "name": "MICROELECTRÓNICA MASER S.L.",
+      "registrationNumber": "06171",
+      "identificationNumber": "B20695821",
+      "address": "Pol. Industrial Kurutz Gain, 6A",
+      "location": {
+        "postalCode": "20850",
+        "municipality": "Mendaro",
+        "county": "Gipuzkoa",
+        "municipalityId": "901",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.151.4",
+          "name": "Producción de energía no especificada en otros epígrafes",
+          "_links": {
+            "self": {
+              "name": "Producción de energía no especificada en otros epígrafes",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.151.4"
+            }
+          }
+        },
+        {
+          "id": "1.936.5",
+          "name": "Investigación técnica industrial",
+          "_links": {
+            "self": {
+              "name": "Investigación técnica industrial",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.936.5"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2022-08-03",
+      "certificateEndDate": "2023-01-27",
+      "object": "LA PROMOCIÓN DE CUANTAS ACTIVIDADES DE INVESTIGACIÓN CIENTÍFICA Y DESARROLLO TECNOLÓGICO SEAN DE INTERÉS PARA LA INDUSTRIA EN GENERAL, LA COOPERACIÓN INDUSTRIAL Y EL DESARROLLO DE NUEVAS TECNOLOGÍAS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06171",
+      "_links": {
+        "self": {
+          "name": "MICROELECTRÓNICA MASER S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/06171"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,541 @@
+{
+  "totalItems": 919,
+  "totalPages": 92,
+  "currentPage": 39,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "id": 717,
+      "identificationNumber": "B95611257",
+      "name": "Talleres Gallarreta Lantegiak, S.L.",
+      "scope": "BIZKAIA",
+      "address": "Barrio Abanto, 12. 48500 Abanto-Zierbena (Bizkaia)",
+      "webPage": "http://www.gallarreta.net",
+      "publicationDate": "2020-01-20",
+      "mainActivity": "Protección social",
+      "codNUTS": "ES213",
+      "CPV": [
+        {
+          "name": "Eliminación y tratamiento de desperdicios"
+        },
+        {
+          "name": "Servicios de saneamiento y limpieza en áreas urbanas o rurales y relacionados con ellos"
+        },
+        {
+          "name": "Servicios medioambientales"
+        }
+      ],
+      "entities": [
+        {
+          "id": 1195,
+          "name": "Talleres Gallarreta Lantegiak, S.L.",
+          "orgs": [
+            {
+              "id": 913590,
+              "name": "Director ",
+              "_links": {
+                "self": {
+                  "name": "Director ",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/717/entities/1195/orgs/913590"
+                }
+              }
+            },
+            {
+              "id": 913589,
+              "name": "Consejo de Administración",
+              "_links": {
+                "self": {
+                  "name": "Consejo de Administración",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/717/entities/1195/orgs/913589"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Talleres Gallarreta Lantegiak, S.L.",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/717/entities/1195"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder717/es_doc/es_arch_poder717.html",
+      "_links": {
+        "self": {
+          "name": "Talleres Gallarreta Lantegiak, S.L.",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/717"
+        },
+        "contractingAuthorities": [
+          {
+            "name": "Ayuntamiento de Abanto Zierbena",
+            "href": "https://api.euskadi.eus/procurements/contracting-authorities/18934"
+          },
+          {
+            "name": "Ayuntamiento de Muskiz",
+            "href": "https://api.euskadi.eus/procurements/contracting-authorities/18772"
+          },
+          {
+            "name": "Ayuntamiento de Ortuella",
+            "href": "https://api.euskadi.eus/procurements/contracting-authorities/18524"
+          },
+          {
+            "name": "Ayuntamiento de Valle de Trápaga-Trapagaran",
+            "href": "https://api.euskadi.eus/procurements/contracting-authorities/18729"
+          }
+        ]
+      }
+    },
+    {
+      "id": 716,
+      "identificationNumber": "V95655742",
+      "name": "Junta de Concertación de la UE V-34 sexta \"Goiko Plaza\" de Llodio",
+      "scope": "ARABA/ÁLAVA",
+      "address": "Bidebarrieta,17-bajo. 20560 Oñati (Gipuzkoa)",
+      "webPage": "https://www.contratacion.euskadi.eus/",
+      "publicationDate": "2020-01-13",
+      "mainActivity": "Vivienda y servicios comunitarios",
+      "codNUTS": "ES211",
+      "entities": [
+        {
+          "id": 1194,
+          "name": "Junta de Concertación de la UE V-34 sexta \"Goiko Plaza\" de Llodio",
+          "orgs": [
+            {
+              "id": 913588,
+              "name": "Presidente de la Junta de Concertación",
+              "_links": {
+                "self": {
+                  "name": "Presidente de la Junta de Concertación",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/716/entities/1194/orgs/913588"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Junta de Concertación de la UE V-34 sexta \"Goiko Plaza\" de Llodio",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/716/entities/1194"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder716/es_doc/es_arch_poder716.html",
+      "_links": {
+        "self": {
+          "name": "Junta de Concertación de la UE V-34 sexta \"Goiko Plaza\" de Llodio",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/716"
+        }
+      }
+    },
+    {
+      "id": 232,
+      "identificationNumber": "P4803200G",
+      "name": "Ayuntamiento de Derio",
+      "scope": "BIZKAIA",
+      "address": "Herriko Plaza, 3. 48160 Derio (Bizkaia)",
+      "webPage": "http://www.deriokoudala.net",
+      "publicationDate": "2019-12-30",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES213",
+      "entities": [
+        {
+          "id": 680,
+          "name": "Derioko Udal Kiroldegia",
+          "orgs": [
+            {
+              "id": 912080,
+              "name": "Junta rectora",
+              "_links": {
+                "self": {
+                  "name": "Junta rectora",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/232/entities/680/orgs/912080"
+                }
+              }
+            },
+            {
+              "id": 913586,
+              "name": "Presidencia del DUK",
+              "_links": {
+                "self": {
+                  "name": "Presidencia del DUK",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/232/entities/680/orgs/913586"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Derioko Udal Kiroldegia",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/232/entities/680"
+            }
+          }
+        },
+        {
+          "id": 679,
+          "name": "Ayuntamiento de Derio",
+          "orgs": [
+            {
+              "id": 912078,
+              "name": "Junta de Gobierno",
+              "_links": {
+                "self": {
+                  "name": "Junta de Gobierno",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/232/entities/679/orgs/912078"
+                }
+              }
+            },
+            {
+              "id": 912079,
+              "name": "Pleno",
+              "_links": {
+                "self": {
+                  "name": "Pleno",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/232/entities/679/orgs/912079"
+                }
+              }
+            },
+            {
+              "id": 912077,
+              "name": "Alcaldesa",
+              "_links": {
+                "self": {
+                  "name": "Alcaldesa",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/232/entities/679/orgs/912077"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Ayuntamiento de Derio",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/232/entities/679"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder232/es_doc/es_arch_poder232.html",
+      "_links": {
+        "self": {
+          "name": "Ayuntamiento de Derio",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/232"
+        }
+      }
+    },
+    {
+      "id": 715,
+      "identificationNumber": "A95210449",
+      "name": "Agencia de desarrollo económico comarcal de la comarca Lea Artibai",
+      "scope": "BIZKAIA",
+      "address": "Xemein etorb, 12 A. 48270 Markina- Xemein (Bizkaia)",
+      "webPage": "http://www.leartibai.com",
+      "publicationDate": "2019-12-30",
+      "mainActivity": "Otra actividad",
+      "alternativeActivity": "Promoción Empresarial",
+      "codNUTS": "ES213",
+      "entities": [
+        {
+          "id": 1193,
+          "name": "Agencia de desarrollo económico comarcal de la comarca Lea Artibai",
+          "orgs": [
+            {
+              "id": 913587,
+              "name": "Consejo de administración",
+              "_links": {
+                "self": {
+                  "name": "Consejo de administración",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/715/entities/1193/orgs/913587"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Agencia de desarrollo económico comarcal de la comarca Lea Artibai",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/715/entities/1193"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder715/es_doc/es_arch_poder715.html",
+      "_links": {
+        "self": {
+          "name": "Agencia de desarrollo económico comarcal de la comarca Lea Artibai",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/715"
+        }
+      }
+    },
+    {
+      "id": 714,
+      "identificationNumber": "P0100199I",
+      "name": "Junta Administrativa de Peñacerrada",
+      "scope": "ARABA/ÁLAVA",
+      "address": "Plaza del Concejo. 01212 Peñacerrada (Araba/Álava)",
+      "webPage": "https://www.contratacion.euskadi.eus/",
+      "publicationDate": "2019-12-27",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES211",
+      "entities": [
+        {
+          "id": 1192,
+          "name": "Junta Administrativa de Peñacerrada",
+          "orgs": [
+            {
+              "id": 913584,
+              "name": "Asamblea vecinal del concejo abierto de Peñacerrada",
+              "_links": {
+                "self": {
+                  "name": "Asamblea vecinal del concejo abierto de Peñacerrada",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/714/entities/1192/orgs/913584"
+                }
+              }
+            },
+            {
+              "id": 913585,
+              "name": "Regidor-Presidente de Peñacerrada",
+              "_links": {
+                "self": {
+                  "name": "Regidor-Presidente de Peñacerrada",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/714/entities/1192/orgs/913585"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Junta Administrativa de Peñacerrada",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/714/entities/1192"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder714/es_doc/es_arch_poder714.html",
+      "_links": {
+        "self": {
+          "name": "Junta Administrativa de Peñacerrada",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/714"
+        }
+      }
+    },
+    {
+      "id": 712,
+      "identificationNumber": "A01147339",
+      "name": "NATURGOLF, S.A.",
+      "scope": "ARABA/ÁLAVA",
+      "address": "Arriba, s/n. Campo de Golf. Urturi 01118 Bernedo (Araba/Álava) ",
+      "webPage": "https://www.izkigolf.eus/",
+      "publicationDate": "2019-12-18",
+      "mainActivity": "Ocio, cultura y religión",
+      "codNUTS": "ES211",
+      "entities": [
+        {
+          "id": 1190,
+          "name": "NATURGOLF, S.A.",
+          "orgs": [
+            {
+              "id": 913575,
+              "name": "Presidente",
+              "_links": {
+                "self": {
+                  "name": "Presidente",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/712/entities/1190/orgs/913575"
+                }
+              }
+            },
+            {
+              "id": 913576,
+              "name": "Consejo de administración",
+              "_links": {
+                "self": {
+                  "name": "Consejo de administración",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/712/entities/1190/orgs/913576"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "NATURGOLF, S.A.",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/712/entities/1190"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder712/es_doc/es_arch_poder712.html",
+      "_links": {
+        "self": {
+          "name": "NATURGOLF, S.A.",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/712"
+        }
+      }
+    },
+    {
+      "id": 713,
+      "identificationNumber": "P0100201C",
+      "name": "Junta Administrativa de Zambrana",
+      "scope": "ARABA/ÁLAVA",
+      "address": "Solana, 15. 01212 Zambrana (Araba/Álava)",
+      "webPage": "https://www.contratacion.euskadi.eus",
+      "publicationDate": "2019-12-16",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES211",
+      "entities": [
+        {
+          "id": 1191,
+          "name": "Junta Administrativa de Zambrana",
+          "orgs": [
+            {
+              "id": 913577,
+              "name": "Concejo",
+              "_links": {
+                "self": {
+                  "name": "Concejo",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/713/entities/1191/orgs/913577"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Junta Administrativa de Zambrana",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/713/entities/1191"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder713/es_doc/es_arch_poder713.html",
+      "_links": {
+        "self": {
+          "name": "Junta Administrativa de Zambrana",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/713"
+        }
+      }
+    },
+    {
+      "id": 711,
+      "identificationNumber": "G20738423",
+      "name": "Centro superior de música del País Vasco",
+      "scope": "CAPV",
+      "address": "Europa plaza, 2. 20018 Donostia-San Sebastián (Gipuzkoa)",
+      "webPage": "https://musikene.eus",
+      "publicationDate": "2019-12-10",
+      "mainActivity": "Educación",
+      "codNUTS": "ES21",
+      "entities": [
+        {
+          "id": 1188,
+          "name": "Centro superior de música del País Vasco",
+          "orgs": [
+            {
+              "id": 913570,
+              "name": "Director Gerente ",
+              "_links": {
+                "self": {
+                  "name": "Director Gerente ",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/711/entities/1188/orgs/913570"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Centro superior de música del País Vasco",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/711/entities/1188"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder711/es_doc/es_arch_poder711.html",
+      "_links": {
+        "self": {
+          "name": "Centro superior de música del País Vasco",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/711"
+        }
+      }
+    },
+    {
+      "id": 710,
+      "identificationNumber": "P0100053H",
+      "name": "Junta Administrativa de Caicedo-Yuso",
+      "scope": "ARABA/ÁLAVA",
+      "address": "La Iglesia, 2. Caicedo-Yuso 01213 Lantaron (Araba/Álava)",
+      "webPage": "https://www.contratacion.euskadi.eus",
+      "publicationDate": "2019-12-09",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES211",
+      "entities": [
+        {
+          "id": 1187,
+          "name": "Junta Administrativa de Caicedo-Yuso ",
+          "orgs": [
+            {
+              "id": 913569,
+              "name": "Concejo",
+              "_links": {
+                "self": {
+                  "name": "Concejo",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/710/entities/1187/orgs/913569"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Junta Administrativa de Caicedo-Yuso ",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/710/entities/1187"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder710/es_doc/es_arch_poder710.html",
+      "_links": {
+        "self": {
+          "name": "Junta Administrativa de Caicedo-Yuso",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/710"
+        }
+      }
+    },
+    {
+      "id": 709,
+      "identificationNumber": "P0100392J",
+      "name": "Comunidad de la Sierra Brava de Badaya",
+      "scope": "ARABA/ÁLAVA",
+      "address": "Zuazo de Kuartango. 01439 Kuartango (Araba/Álava)",
+      "webPage": "https://www.contratacion.euskadi.eus/",
+      "publicationDate": "2019-11-29",
+      "mainActivity": "Otra actividad",
+      "alternativeActivity": "Ganadería",
+      "codNUTS": "ES211",
+      "entities": [
+        {
+          "id": 1186,
+          "name": "Comunidad de la Sierra Brava de Badaya",
+          "orgs": [
+            {
+              "id": 913568,
+              "name": "Comunidad de la Sierra Brava de Badaya",
+              "_links": {
+                "self": {
+                  "name": "Comunidad de la Sierra Brava de Badaya",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/709/entities/1186/orgs/913568"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Comunidad de la Sierra Brava de Badaya",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/709/entities/1186"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder709/es_doc/es_arch_poder709.html",
+      "_links": {
+        "self": {
+          "name": "Comunidad de la Sierra Brava de Badaya",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/709"
+        }
+      }
+    }
+  ]
+}

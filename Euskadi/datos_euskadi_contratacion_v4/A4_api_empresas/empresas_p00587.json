@@ -1,0 +1,468 @@
+{
+  "totalItems": 9042,
+  "totalPages": 905,
+  "currentPage": 587,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "name": "PEDRO DÍAZ NOYA",
+      "registrationNumber": "06752",
+      "identificationNumber": "22737557X",
+      "address": "Avenida Euskadi 40",
+      "location": {
+        "postalCode": "48902",
+        "municipality": "Barakaldo",
+        "county": "Bizkaia",
+        "municipalityId": "013",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.989.2",
+          "name": "Servicios de organización de congresos, asambleas y similares",
+          "_links": {
+            "self": {
+              "name": "Servicios de organización de congresos, asambleas y similares",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.989.2"
+            }
+          }
+        },
+        {
+          "id": "3.039",
+          "name": "Otras actividades relacionadas con la música n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otras actividades relacionadas con la música n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/3.039"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2020-01-07",
+      "certificateEndDate": "2020-06-28",
+      "object": "SERVICIOS DE ORGANIZACIÓN DE CONGRESOS, ASAMBLEAS Y SIMILARES. OTRAS ACTIVIDADES RELACIONADAS CON LA MÚSICA N.C.O.P.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06752",
+      "_links": {
+        "self": {
+          "name": "PEDRO DÍAZ NOYA",
+          "href": "https://api.euskadi.eus/procurements/companies/06752"
+        }
+      }
+    },
+    {
+      "name": "ARANTEC ENGINHERIA, S.L.",
+      "registrationNumber": "06753",
+      "identificationNumber": "B25609413",
+      "address": "AVDA. PAS D`ARRÓ 5 D 1",
+      "location": {
+        "postalCode": "25530",
+        "municipality": "Vielha e Mijaran",
+        "county": "Lleida",
+        "municipalityId": "243",
+        "countyId": "25"
+      },
+      "economicActivities": [
+        {
+          "id": "1.391",
+          "name": "Fabricación de instrumentos de precisión, medida y control",
+          "_links": {
+            "self": {
+              "name": "Fabricación de instrumentos de precisión, medida y control",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.391"
+            }
+          }
+        },
+        {
+          "id": "1.501.1",
+          "name": "Construcción completa, reparación y conservación de edificaciones",
+          "_links": {
+            "self": {
+              "name": "Construcción completa, reparación y conservación de edificaciones",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.1"
+            }
+          }
+        },
+        {
+          "id": "1.849.9",
+          "name": "Otros servicios independientes n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros servicios independientes n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.849.9"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2020-01-07",
+      "certificateEndDate": "2020-06-02",
+      "object": "LA MEDIACIÓN, COORDINACIÓN E INTERMEDIACIÓN EN LA PRESTACIÓN DE SERVICIOS DE INGENIERÍA",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06753",
+      "_links": {
+        "self": {
+          "name": "ARANTEC ENGINHERIA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/06753"
+        }
+      }
+    },
+    {
+      "name": "BASQUELAW ABOGADOS, S.L.P.",
+      "registrationNumber": "06748",
+      "identificationNumber": "B95780607",
+      "address": "Calle Navarra 8, 1F",
+      "location": {
+        "postalCode": "48001",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.841",
+          "name": "Servicios jurídicos",
+          "_links": {
+            "self": {
+              "name": "Servicios jurídicos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.841"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2019-12-30",
+      "certificateEndDate": "2020-02-28",
+      "object": "LA ACTIVIDAD PROPIA DE LOS PROFESIONALES DE LA  ABOGACÍA",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06748",
+      "_links": {
+        "self": {
+          "name": "BASQUELAW ABOGADOS, S.L.P.",
+          "href": "https://api.euskadi.eus/procurements/companies/06748"
+        }
+      }
+    },
+    {
+      "name": "TERESA FERNANDEZ ESCUREDO-EKKA GONZALEZ FERNANDEZ, S.C.",
+      "registrationNumber": "06742",
+      "identificationNumber": "J48703110",
+      "address": "urigoiti 14",
+      "location": {
+        "postalCode": "48410",
+        "municipality": "Orozko",
+        "county": "Bizkaia",
+        "municipalityId": "075",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.967.2",
+          "name": "Escuelas y servicios de perfeccionamiento del deporte",
+          "_links": {
+            "self": {
+              "name": "Escuelas y servicios de perfeccionamiento del deporte",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.967.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2019-12-27",
+      "certificateEndDate": "2020-06-17",
+      "object": "LA EXPLOTACIÓN EN COMÚN DE LA ACTIVIDAD DE MANTENIMIENTO DE INSTALACIONES DEPORTIVAS Y MONITOR DE NATACIÓN, ASÍ COMO OTRAS ACTIVIDADES ANÁLOGAS (JARDINERÍA, LIMPIEZA, ETC.)",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06742",
+      "_links": {
+        "self": {
+          "name": "TERESA FERNANDEZ ESCUREDO-EKKA GONZALEZ FERNANDEZ, S.C.",
+          "href": "https://api.euskadi.eus/procurements/companies/06742"
+        }
+      }
+    },
+    {
+      "name": "ZMWAY IBERICA, S.L.",
+      "registrationNumber": "06745",
+      "identificationNumber": "B65992372",
+      "address": "C/ SEVILLA, 9 2º",
+      "location": {
+        "postalCode": "08940",
+        "municipality": "Barcelona",
+        "county": "Barcelona",
+        "municipalityId": "019",
+        "countyId": "08"
+      },
+      "economicActivities": [
+        {
+          "id": "1.652.1",
+          "name": "Farmacias",
+          "_links": {
+            "self": {
+              "name": "Farmacias",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.652.1"
+            }
+          }
+        },
+        {
+          "id": "1.842",
+          "name": "Servicios financieros y contables",
+          "_links": {
+            "self": {
+              "name": "Servicios financieros y contables",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.842"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2019-12-27",
+      "certificateEndDate": "2020-06-19",
+      "object": "LA IMPORTACION Y DISTRIBUCION TANTO AL POR MAYOR COMO AL DETALLE DE PRODUCTOS Y APARATOS HOSPITALARIOS Y DE LABORATORIO. COMERCIALIZACION DE REACTIVOS Y DEL RESTO DE PRODUCTOS SANITARIOS PARA EL DIAGNOSTICO \"IN VITRO\"",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06745",
+      "_links": {
+        "self": {
+          "name": "ZMWAY IBERICA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/06745"
+        }
+      }
+    },
+    {
+      "name": "VALUARTE CONSERVACIÓN DE PATRIMONIO, S.L.",
+      "registrationNumber": "06746",
+      "identificationNumber": "B34242289",
+      "address": "Paseo Huerta de Guadián, nº 7",
+      "location": {
+        "postalCode": "34002",
+        "municipality": "Palencia",
+        "county": "Palencia",
+        "municipalityId": "120",
+        "countyId": "34"
+      },
+      "economicActivities": [
+        {
+          "id": "1.501.1",
+          "name": "Construcción completa, reparación y conservación de edificaciones",
+          "_links": {
+            "self": {
+              "name": "Construcción completa, reparación y conservación de edificaciones",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.1"
+            }
+          }
+        },
+        {
+          "id": "1.505.5",
+          "name": "Carpintería y cerrajería",
+          "_links": {
+            "self": {
+              "name": "Carpintería y cerrajería",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.505.5"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2019-12-27",
+      "certificateEndDate": "2020-05-25",
+      "object": "LA CONSTRUCCIÓN COMPLETA, CONSERVACIÓN, RESTAURACIÓN Y REPARACIÓN DE TODO TIPO DE OBRAS, INMUEBLES E INSTALACIONES. LA CONSERVACIÓN, RESTAURACIÓN Y REPARACIÓN DE TODO TIPO DE BIENES MUEBLES. EL CÓDIGO CNAE DE LA ACTIVIDAD PRINCIPAL ES 4399",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06746",
+      "_links": {
+        "self": {
+          "name": "VALUARTE CONSERVACIÓN DE PATRIMONIO, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/06746"
+        }
+      }
+    },
+    {
+      "name": "NORBAIT CONSULTING, S.L.",
+      "registrationNumber": "03786",
+      "identificationNumber": "B95476834",
+      "address": "LA FANDERIA, NÚMERO 2, MÓDULO 308.",
+      "location": {
+        "postalCode": "48901",
+        "municipality": "Barakaldo",
+        "county": "Bizkaia",
+        "municipalityId": "013",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.845",
+          "name": "Explotación electrónica por cuenta de terceros",
+          "_links": {
+            "self": {
+              "name": "Explotación electrónica por cuenta de terceros",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.845"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2019-12-26",
+      "certificateEndDate": "2020-06-02",
+      "object": "1.- LA CONSULTORÍA E INGENIERÍA TECNOLÓGICA EN TELECOMUNICACIONES, EN INFORMÁTICA Y EN SISTEMAS DE LA INFORMACIÓN Y EL ASESORAMIENTO, COMERCIALIZACIÓN, IMPLEMENTACIÓN Y MANTENIMIENTO DE PROYECTOS EN LAS MATERIAS ANTERIORMENTE INDICADAS.\r\n2.- LA PRESTACIÓN, CONTRATACIÓN, SUBCONTRATACIÓN, ELABORACIÓN, DESARROLLO, CONTROL Y EJECUCIÓN DE TODO TIPO DE SERVICIOS INFORMÁTICOS, DE TELECOMUNICACIONES Y DE CONSULTORÍA E INTEGRACIÓN DE TECNOLOGÍAS DE LA INFORMACIÓN Y DE LAS COMUNICACIONES Y LA ELABORACIÓN, EDICIÓN, PRODUCCIÓN, PUBLICACIÓN Y COMERCIALIZACIÓN DE PRODUCTOS AUDIOVISUALES.\r\n3.- LA EXPORTACIÓN, IMPORTACIÓN, ASESORAMIENTO, COMERCIALIZACIÓN, INSTALACIÓN, SOPORTE Y MANTENIMIENTO (HELP DESK) DE CUALQUIER CLASE DE EQUIPO DE TELECOMUNICACIONES O INFORMÁTICOS, HARDWARE, SOFTWARE Y DE APLICACIONES INSTALADAS EN LOS EQUIPOS ESPECIFICADOS. EL ANÁLISIS, PROGRAMACIÓN, PREPARACIÓN Y APLICACIÓN DE SISTEMAS INFORMÁTICOS PARA TODA CLASE DE ACTIVIDADES, SU SUMINISTRO, IMPLANTACIÓN E INTEGRACIÓN, ASÍ COMO LA FORMACIÓN Y EL ASEOSRAMIENTO A PERSONAS Y EMPRESAS.\r\n4.- LA PRESTACIÓN DE SERVICIOS DE EXTERNALIZACIÓN DE OPERACIONES DE SISTEMAS, COMUNICACIONES Y RELACIONADOS CON LAS TECNOLOGÍAS DE LA INFORMACIÓN. LA CONSULTORÍA ESTRATÉGICA, TECNOLÓGICA, ORGANIZATIVA, FORMATIVA Y DE PROCESOS TANTO PARA LAS DIFERENTES ADMINISTRACIONES PÚBLICAS COMO PARA ENTIDADES MIXTAS, PRIVADAS Y PERSONAS FÍSICAS.\r\n5.- LA REALIZACIÓN DE CONSULTORÍA ORGANIZATIVA, ADMINISTRATIVA, PLANIFICACIÓN ESTRATÉGICA, REINGENIERÍA DE PROCESOS Y DE ESTUDIOS DE MERCADO EN TODAS LAS CITADAS MATERIAS.\r\n6.- LA PROMOCIÓN, CREACIÓN Y PARTICIPACIÓN EN EMPRESAS Y SOCIEDADES, INDUSTRIALES, COMERCIALES, INMOBILIARIAS, DE SERVICIOS Y DE CUALQUIER OTRO TIPO.\r\n7.- REALIZACIÓN DE TAREAS DE FORMACIÓN EN MATERIAS DENTRO DEL ÁMBITO DE LAS TECONOLOGÍAS DE LA INFORMACIÓN, TANTO PARA LAS DIFERENTES ADMINISTRACIONES PÚBLICAS COMO PARA ENTIDADES MIXTAS, PRIVADAS Y PERSONAS FÍSICAS.\r\n8.- ADQUIRIR, ENAJENAR Y ARRENDAR BIENES INMUEBLES (CONCRETAMENTE LOS DETERMINADOS EN EL ARTÍCULO 334.1 DEL CÓDIGO CIVIL), ACCIONES PARTICIPACIONES SOCIALES, OBLIGACIONES, BONOS DE CAJA, CERTIFICADDOS DE DEPÓSITO Y PAGARÉS DE TODA CLASE DE EMPRESAS O NEGOCIOS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03786",
+      "_links": {
+        "self": {
+          "name": "NORBAIT CONSULTING, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/03786"
+        }
+      }
+    },
+    {
+      "name": "LURGOIEN, S.A.",
+      "registrationNumber": "00491",
+      "identificationNumber": "A31016785",
+      "address": "C/ PASEO DE MIRACONCHA, Nº 7 - ENTLO.",
+      "location": {
+        "postalCode": "20007",
+        "municipality": "Donostia / San Sebastián",
+        "county": "Gipuzkoa",
+        "municipalityId": "069",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.501.1",
+          "name": "Construcción completa, reparación y conservación de edificaciones",
+          "_links": {
+            "self": {
+              "name": "Construcción completa, reparación y conservación de edificaciones",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.1"
+            }
+          }
+        },
+        {
+          "id": "1.507",
+          "name": "Construcción, reparación y conservación de toda clase obras",
+          "_links": {
+            "self": {
+              "name": "Construcción, reparación y conservación de toda clase obras",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.507"
+            }
+          }
+        },
+        {
+          "id": "1.833.2",
+          "name": "Promoción de edificaciones",
+          "_links": {
+            "self": {
+              "name": "Promoción de edificaciones",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.833.2"
+            }
+          }
+        },
+        {
+          "id": "1.833.21",
+          "name": "Promoción de edificaciones - Cuota fija",
+          "_links": {
+            "self": {
+              "name": "Promoción de edificaciones - Cuota fija",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.833.21"
+            }
+          }
+        },
+        {
+          "id": "1.861.1",
+          "name": "Alquiler de viviendas",
+          "_links": {
+            "self": {
+              "name": "Alquiler de viviendas",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.861.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2019-12-23",
+      "certificateEndDate": "2020-06-17",
+      "object": "ADQUISICIÓN, VENTA Y PERMUTA POR CUENTA PROPIA O DE TERCEROS DE SOLARES O TERRENOS, Y DE CUALQUIER CLASE DE BIENES INMUEBLES, TANTO URBANOS COMO RÚSTICOS. LA PROMOCIÓN DE CONSTRUCCIONES DE EDIFICACIONES O INMUEBLES CON TODA CLASE DE DESTINOS ADMITIDOS EN DERECHO, ESTÉN O NO ACOGIDOS A LAS LEYES DE PROTECCIÓN OFICIAL, Y A LA VENTA DE LOS MISMOS. LA CONSTRUCCIÓN POR ADMINISTRACIÓN O POR TERCEROS DE LOS BIENES INMUEBLES INDICADOS EN EL APARTADO ANTERIOR Y SU VENTA. LA CONSTITUCIÓN DE COMUNIDADES Y COOPERATIVAS INMOBILIARIAS, INCLUSO LA INICIATIVA DE SU FUNDACIÓN; LA ADMINISTRACIÓN, ARRIENDO Y EXPLOTACIÓN BAJO CUALESQUIERA DE LAS FORMAS ADMITIDAS EN DERECHO DE TODA CLASE DE BIENES INMUEBLES. EL DISEÑO, CONSTRUCCIÓN, EJECUCIÓN, EXPLOTACIÓN, GESTIÓN, ADMINISTRACIÓN Y CONSERVACIÓN DE INFRAESTRUCTURAS Y DE OBRAS PUBLICAS Y PRIVADAS, YA SEA DIRECTAMENTE O A TRAVÉS DE LA PARTICIPACIÓN EN SOCIEDADES, AGRUPACIONES, CONSORCIOS O CUALQUIERA OTRA ANÁLOGA FIGURA JURÍDICA.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/00491",
+      "_links": {
+        "self": {
+          "name": "LURGOIEN, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/00491"
+        }
+      }
+    },
+    {
+      "name": "MERCK, SHARP & DOHME DE ESPAÑA, S.A.",
+      "registrationNumber": "03324",
+      "identificationNumber": "A28211092",
+      "address": "JOSEFA VALCÁRCEL, 38 ",
+      "location": {
+        "postalCode": "28027",
+        "municipality": "Madrid",
+        "county": "Madrid",
+        "municipalityId": "079",
+        "countyId": "28"
+      },
+      "economicActivities": [
+        {
+          "id": "1.614.1",
+          "name": "Venta al por mayor de productos farmacéuticos y medicamentos",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de productos farmacéuticos y medicamentos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.614.1"
+            }
+          }
+        },
+        {
+          "id": "1.842",
+          "name": "Servicios financieros y contables",
+          "_links": {
+            "self": {
+              "name": "Servicios financieros y contables",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.842"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2019-12-20",
+      "certificateEndDate": "2020-05-06",
+      "object": "NEGOCIO DE PROVEER, DESARROLLAR, ELABORAR, PRODUCIR, ADQUIRIR, PROMOVER, VENDER Y DISTRIBUIR SERVICIOS, ARTÍCULOS, HABERES Y MERCANCÍAS PRIMORDIALMENTE EN LOS CAMPOS FARMACÉUTICOS, AGROPECUARIO, QUÍMICO, MINERAL Y MEDICINAL",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03324",
+      "_links": {
+        "self": {
+          "name": "MERCK, SHARP & DOHME DE ESPAÑA, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/03324"
+        }
+      }
+    },
+    {
+      "name": "BIARRITZ CO2, S.L.",
+      "registrationNumber": "06734",
+      "identificationNumber": "B95705059",
+      "address": "POLIGONO DE BIARRITZ Nº 70",
+      "location": {
+        "postalCode": "48340",
+        "municipality": "Amorebieta-Etxano",
+        "county": "Bizkaia",
+        "municipalityId": "003",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.617.3",
+          "name": "Venta al por mayor de madera y corcho",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de madera y corcho",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.617.3"
+            }
+          }
+        },
+        {
+          "id": "1.912",
+          "name": "Servicios forestales",
+          "_links": {
+            "self": {
+              "name": "Servicios forestales",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.912"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2019-12-19",
+      "certificateEndDate": "2020-06-04",
+      "object": "LA COMPRAVENTA Y ELABORACIÓN DE MADERA, BIOMASA Y CUALQUIER OTRO PRODUCTO PRIMARIO ASÍ COMO EL ALQUILER Y COMPRAVENTA DE TERRENOS FORESTALES PARA SU EXPLOTACIÓN. ALQUILER DE BIENES MUEBLES Y VEHÍCULOS Y MAQUINARIA PROPIA DE LA EMPRESA",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06734",
+      "_links": {
+        "self": {
+          "name": "BIARRITZ CO2, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/06734"
+        }
+      }
+    }
+  ]
+}

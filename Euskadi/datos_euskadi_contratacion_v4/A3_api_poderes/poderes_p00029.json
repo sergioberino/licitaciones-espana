@@ -1,0 +1,479 @@
+{
+  "totalItems": 919,
+  "totalPages": 92,
+  "currentPage": 29,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "id": 77,
+      "identificationNumber": "P0100500H",
+      "name": "Ayuntamiento de Artziniega",
+      "scope": "ARABA/ÁLAVA",
+      "address": "Garai plaza, 1. Artziniega (Araba/Álava) 01474",
+      "webPage": "http://www.artziniegakoudala.eus",
+      "publicationDate": "2021-06-01",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES211",
+      "entities": [
+        {
+          "id": 423,
+          "name": "Ayuntamiento de Artziniega",
+          "orgs": [
+            {
+              "id": 911410,
+              "name": "Pleno",
+              "_links": {
+                "self": {
+                  "name": "Pleno",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/77/entities/423/orgs/911410"
+                }
+              }
+            },
+            {
+              "id": 911411,
+              "name": "Junta de Gobierno Local",
+              "_links": {
+                "self": {
+                  "name": "Junta de Gobierno Local",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/77/entities/423/orgs/911411"
+                }
+              }
+            },
+            {
+              "id": 911409,
+              "name": "Alcalde",
+              "_links": {
+                "self": {
+                  "name": "Alcalde",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/77/entities/423/orgs/911409"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Ayuntamiento de Artziniega",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/77/entities/423"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder77/es_doc/es_arch_poder77.html",
+      "_links": {
+        "self": {
+          "name": "Ayuntamiento de Artziniega",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/77"
+        }
+      }
+    },
+    {
+      "id": 801,
+      "identificationNumber": "V95452553",
+      "name": "JUNTA DE CONCERTACIÓN DE LA UNIDAD DE EJECUCIÓN DEL SECTOR RESIDENCIAL MOREO DE ZIERBENA",
+      "scope": "BIZKAIA",
+      "address": "-",
+      "webPage": "https://www.contratacion.euskadi.eus",
+      "publicationDate": "2021-05-28",
+      "mainActivity": "Vivienda y servicios comunitarios",
+      "codNUTS": "ES213",
+      "entities": [
+        {
+          "id": 1301,
+          "name": "JUNTA DE CONCERTACIÓN DE LA UNIDAD DE EJECUCIÓN DEL SECTOR RESIDENCIAL MOREO DE ZIERBENA",
+          "orgs": [
+            {
+              "id": 914349,
+              "name": "JUNTA DE CONCERTACIÓN DE LA UNIDAD DE EJECUCIÓN DEL SECTOR RESIDENCIAL MOREO DE ZIERBENA",
+              "_links": {
+                "self": {
+                  "name": "JUNTA DE CONCERTACIÓN DE LA UNIDAD DE EJECUCIÓN DEL SECTOR RESIDENCIAL MOREO DE ZIERBENA",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/801/entities/1301/orgs/914349"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "JUNTA DE CONCERTACIÓN DE LA UNIDAD DE EJECUCIÓN DEL SECTOR RESIDENCIAL MOREO DE ZIERBENA",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/801/entities/1301"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder801/es_doc/es_arch_poder801.html",
+      "_links": {
+        "self": {
+          "name": "JUNTA DE CONCERTACIÓN DE LA UNIDAD DE EJECUCIÓN DEL SECTOR RESIDENCIAL MOREO DE ZIERBENA",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/801"
+        }
+      }
+    },
+    {
+      "id": 802,
+      "identificationNumber": "P0100169B",
+      "name": "Junta Administrativa de Añes",
+      "scope": "ARABA/ÁLAVA",
+      "address": "-",
+      "webPage": "https://www.contratacion.euskadi.eus",
+      "publicationDate": "2021-05-28",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES211",
+      "entities": [
+        {
+          "id": 1302,
+          "name": "Junta Administrativa de Añes",
+          "orgs": [
+            {
+              "id": 914350,
+              "name": "Junta Administrativa de Añes",
+              "_links": {
+                "self": {
+                  "name": "Junta Administrativa de Añes",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/802/entities/1302/orgs/914350"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Junta Administrativa de Añes",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/802/entities/1302"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder802/es_doc/es_arch_poder802.html",
+      "_links": {
+        "self": {
+          "name": "Junta Administrativa de Añes",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/802"
+        }
+      }
+    },
+    {
+      "id": 803,
+      "identificationNumber": "P0100167F",
+      "name": "Junta Administrativa de Lejarzo",
+      "scope": "ARABA/ÁLAVA",
+      "address": "-",
+      "webPage": "https://www.contratacion.euskadi.eus",
+      "publicationDate": "2021-05-28",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES211",
+      "entities": [
+        {
+          "id": 1303,
+          "name": "Junta Administrativa de Lejarzo",
+          "orgs": [
+            {
+              "id": 914351,
+              "name": "Junta Administrativa de Lejarzo",
+              "_links": {
+                "self": {
+                  "name": "Junta Administrativa de Lejarzo",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/803/entities/1303/orgs/914351"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Junta Administrativa de Lejarzo",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/803/entities/1303"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder803/es_doc/es_arch_poder803.html",
+      "_links": {
+        "self": {
+          "name": "Junta Administrativa de Lejarzo",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/803"
+        }
+      }
+    },
+    {
+      "id": 804,
+      "identificationNumber": "P0100151J",
+      "name": "Junta Administrativa de Madaria",
+      "scope": "ARABA/ÁLAVA",
+      "address": "Barrio Madaria, Ayala/aiara, 01476 , Araba/Alava",
+      "webPage": "https://www.contratacion.euskadi.eus",
+      "publicationDate": "2021-05-28",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES211",
+      "entities": [
+        {
+          "id": 1304,
+          "name": "Junta Administrativa de Madaria",
+          "orgs": [
+            {
+              "id": 914352,
+              "name": "Junta Administrativa de Madaria",
+              "_links": {
+                "self": {
+                  "name": "Junta Administrativa de Madaria",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/804/entities/1304/orgs/914352"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Junta Administrativa de Madaria",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/804/entities/1304"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder804/es_doc/es_arch_poder804.html",
+      "_links": {
+        "self": {
+          "name": "Junta Administrativa de Madaria",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/804"
+        }
+      }
+    },
+    {
+      "id": 800,
+      "identificationNumber": "G01314269",
+      "name": "Elika Fundación Vasca para la Seguridad Agroalimentaria",
+      "scope": "ARABA/ÁLAVA",
+      "address": "-",
+      "webPage": "https://www.contratacion.euskadi.eus",
+      "publicationDate": "2021-05-20",
+      "mainActivity": "Otra actividad",
+      "alternativeActivity": "Alimentación",
+      "codNUTS": "ES211",
+      "entities": [
+        {
+          "id": 1300,
+          "name": "Elika Fundación Vasca para la Seguridad Agroalimentaria",
+          "orgs": [
+            {
+              "id": 914348,
+              "name": "Directora-Gerente de Elika",
+              "_links": {
+                "self": {
+                  "name": "Directora-Gerente de Elika",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/800/entities/1300/orgs/914348"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Elika Fundación Vasca para la Seguridad Agroalimentaria",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/800/entities/1300"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder800/es_doc/es_arch_poder800.html",
+      "_links": {
+        "self": {
+          "name": "Elika Fundación Vasca para la Seguridad Agroalimentaria",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/800"
+        }
+      }
+    },
+    {
+      "id": 799,
+      "identificationNumber": "P0100094B",
+      "name": "Junta Administrativa de Tuyo",
+      "scope": "ARABA/ÁLAVA",
+      "address": "Calle Tuyo, 63 - Tuyo",
+      "webPage": "https://www.contratacion.euskadi.eus",
+      "publicationDate": "2021-04-29",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES211",
+      "entities": [
+        {
+          "id": 1299,
+          "name": "Junta Administrativa de Tuyo",
+          "orgs": [
+            {
+              "id": 914346,
+              "name": "Concejo de Tuyo",
+              "_links": {
+                "self": {
+                  "name": "Concejo de Tuyo",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/799/entities/1299/orgs/914346"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Junta Administrativa de Tuyo",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/799/entities/1299"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder799/es_doc/es_arch_poder799.html",
+      "_links": {
+        "self": {
+          "name": "Junta Administrativa de Tuyo",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/799"
+        }
+      }
+    },
+    {
+      "id": 798,
+      "identificationNumber": "P0100093D",
+      "name": "Junta Administrativa de Subijana-Morillas",
+      "scope": "ARABA/ÁLAVA",
+      "address": "Subijana-Morillas",
+      "webPage": "http://www.contratacion.euskadi.eus",
+      "publicationDate": "2021-04-23",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES211",
+      "entities": [
+        {
+          "id": 1298,
+          "name": "Junta Administrativa de Subijana-Morillas",
+          "orgs": [
+            {
+              "id": 914345,
+              "name": "Asamblea Vecinal",
+              "_links": {
+                "self": {
+                  "name": "Asamblea Vecinal",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/798/entities/1298/orgs/914345"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Junta Administrativa de Subijana-Morillas",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/798/entities/1298"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder798/es_doc/es_arch_poder798.html",
+      "_links": {
+        "self": {
+          "name": "Junta Administrativa de Subijana-Morillas",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/798"
+        }
+      }
+    },
+    {
+      "id": 439,
+      "identificationNumber": "P4800800G",
+      "name": "Ayuntamiento de Munitibar-Arbatzegi-Gerrikaitz",
+      "scope": "BIZKAIA",
+      "address": "Herriko Plaza, 6. 48381 Munitibar (Bizkaia)  ",
+      "webPage": "http://www.munitibar.org",
+      "publicationDate": "2021-04-21",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES213",
+      "entities": [
+        {
+          "id": 889,
+          "name": "Ayuntamiento de Munitibar",
+          "orgs": [
+            {
+              "id": 912480,
+              "name": "Pleno",
+              "_links": {
+                "self": {
+                  "name": "Pleno",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/439/entities/889/orgs/912480"
+                }
+              }
+            },
+            {
+              "id": 914344,
+              "name": "Alcalde",
+              "_links": {
+                "self": {
+                  "name": "Alcalde",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/439/entities/889/orgs/914344"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Ayuntamiento de Munitibar",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/439/entities/889"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder439/es_doc/es_arch_poder439.html",
+      "_links": {
+        "self": {
+          "name": "Ayuntamiento de Munitibar-Arbatzegi-Gerrikaitz",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/439"
+        }
+      }
+    },
+    {
+      "id": 442,
+      "identificationNumber": "P4805500H",
+      "name": "Ayuntamiento de Gernika-Lumo",
+      "scope": "BIZKAIA",
+      "address": "Foru plaza, 3. 48300 Gernika-Lumo (Bizkaia)",
+      "webPage": "http://www.gernika-lumo.eus",
+      "publicationDate": "2021-04-20",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES213",
+      "entities": [
+        {
+          "id": 890,
+          "name": "Ayuntamiento de Gernika-Lumo",
+          "orgs": [
+            {
+              "id": 914331,
+              "name": "Decreto de Alcaldía",
+              "_links": {
+                "self": {
+                  "name": "Decreto de Alcaldía",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/442/entities/890/orgs/914331"
+                }
+              }
+            },
+            {
+              "id": 912482,
+              "name": "Pleno",
+              "_links": {
+                "self": {
+                  "name": "Pleno",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/442/entities/890/orgs/912482"
+                }
+              }
+            },
+            {
+              "id": 912481,
+              "name": "Junta de Gobierno",
+              "_links": {
+                "self": {
+                  "name": "Junta de Gobierno",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/442/entities/890/orgs/912481"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Ayuntamiento de Gernika-Lumo",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/442/entities/890"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder442/es_doc/es_arch_poder442.html",
+      "_links": {
+        "self": {
+          "name": "Ayuntamiento de Gernika-Lumo",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/442"
+        }
+      }
+    }
+  ]
+}

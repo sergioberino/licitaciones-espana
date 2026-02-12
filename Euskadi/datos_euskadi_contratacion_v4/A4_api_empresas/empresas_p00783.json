@@ -1,0 +1,358 @@
+{
+  "totalItems": 9042,
+  "totalPages": 905,
+  "currentPage": 783,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "name": "CONSTRUCCIONES MOYUA, S.A.",
+      "registrationNumber": "01723",
+      "identificationNumber": "A20030748",
+      "address": "C/ PASEO DE ERROTABURU, Nº 1 - 5º.",
+      "location": {
+        "postalCode": "20018",
+        "municipality": "Donostia / San Sebastián",
+        "county": "Gipuzkoa",
+        "municipalityId": "069",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.507",
+          "name": "Construcción, reparación y conservación de toda clase obras",
+          "_links": {
+            "self": {
+              "name": "Construcción, reparación y conservación de toda clase obras",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.507"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2005-12-12",
+      "certificateEndDate": "2006-04-19",
+      "object": "LA EJECUCIÓN EN TODAS SUS FASES DE OBRAS PÚBLICAS Y PRIVADAS, CONSISTENTES EN, OBRAS NUEVAS, DE REPARACIÓN Y CONSERVACIÓN DE CAMINOS, CARRETERAS, FERROCARRILES, HIDRÁULICAS, RIEGOS, PUERTOS, AEROPUERTOS, DRAGADOS, EDIFICACIONES DE VIVIENDAS, PABELLONES INDUSTRIALES, TRABAJOS DE URBANIZACIÓN, SANEAMIENTOS, ABASTECIMIENTOS DE AGUA, EXCAVACIONES, Y MOVIMIENTOS DE TIERRA",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/01723",
+      "_links": {
+        "self": {
+          "name": "CONSTRUCCIONES MOYUA, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/01723"
+        }
+      }
+    },
+    {
+      "name": "LABORATORIOS STIEFEL (ESPAÑA), S.A.",
+      "registrationNumber": "01806",
+      "identificationNumber": "A28732055",
+      "address": "C/ COTO DE DOÑANA, Nº 11 - 13. ÁREA EMPRES. ANDALUCÍA, Nº 1.",
+      "location": {
+        "postalCode": "28320",
+        "municipality": "Pinto",
+        "county": "Madrid",
+        "municipalityId": "113",
+        "countyId": "28"
+      },
+      "economicActivities": [
+        {
+          "id": "1.614.1",
+          "name": "Venta al por mayor de productos farmacéuticos y medicamentos",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de productos farmacéuticos y medicamentos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.614.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2005-12-02",
+      "certificateEndDate": "2006-05-23",
+      "object": "LA FABRICACIÓN, VENTA, DISTRIBUCIÓN, IMPORTACIÓN Y EXPORTACIÓN DE PRODUCTOS COSMÉTICOS, CAPILARES Y, EN GENERAL, DE TODOS AQUELLOS RELACIONADOS CON LA PROTECCIÓN Y CUIDADO DE LA PIEL",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/01806",
+      "_links": {
+        "self": {
+          "name": "LABORATORIOS STIEFEL (ESPAÑA), S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/01806"
+        }
+      }
+    },
+    {
+      "name": "GREMIOS RAFA, S.L.",
+      "registrationNumber": "02636",
+      "identificationNumber": "B48858369",
+      "address": "PLAZA GERNIKA, 8 BAJO",
+      "location": {
+        "postalCode": "48460",
+        "municipality": "Urduña/Orduña",
+        "county": "Bizkaia",
+        "municipalityId": "074",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.501.1",
+          "name": "Construcción completa, reparación y conservación de edificaciones",
+          "_links": {
+            "self": {
+              "name": "Construcción completa, reparación y conservación de edificaciones",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2005-12-01",
+      "certificateEndDate": "2006-04-11",
+      "object": "LA ADQUISICIÓN, URBANIZACIÓN, PARCELACIÓN, PROMOCIÓN, CONSTRUCCIÓN, EDIFICACIÓN, CONSTITUCIÓN EN PROPIEDAD HORIZONTAL, REFORMA, AMPLIACIÓN, EXPLOTACIÓN DIRECTA O INDIRECTA, ENAJENACIÓN, Y EN GENERAL, TODA ACTIVIDAD RELATIVA A BIENES INMUEBLES, Y TODA SUERTE DE INVERSIONES Y PROMOCIONES RELACIONADAS CON EL RAMO DE LA CONSTRUCCIÓN.\r\nLAS ACTIVIDADES ENUMERADAS PODRÁN TAMBIÉN SER DESARROLLADAS POR LA SOCIEDAD, TOTAL O PARCIALMENTE, DE MODO INDIRECTO, MEDIANTE LA PARTICIPACIÓN EN OTRAS SOCIEDADES  CON OBJETO ANÁLOGO ",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/02636",
+      "_links": {
+        "self": {
+          "name": "GREMIOS RAFA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/02636"
+        }
+      }
+    },
+    {
+      "name": "ADIBE CONSULTORES, S.L.",
+      "registrationNumber": "02721",
+      "identificationNumber": "B95260014",
+      "address": "URIBITARTE, 22 - 1ºD",
+      "location": {
+        "postalCode": "48001",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.847",
+          "name": "Servicios de consultoría",
+          "_links": {
+            "self": {
+              "name": "Servicios de consultoría",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.847"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2005-11-30",
+      "certificateEndDate": "2006-05-21",
+      "object": "A) DESARROLLAR ACTIVIDADES DE CONSULTORÍA DE GESTIÓN\r\nB) DESARROLLAR ACTIVIDADES DE INVESTIGACIÓN DE MERCADOS Y OPINIÓN PÚBLICA ",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/02721",
+      "_links": {
+        "self": {
+          "name": "ADIBE CONSULTORES, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/02721"
+        }
+      }
+    },
+    {
+      "name": "TALLERES AMONDARAIN, S.A.",
+      "registrationNumber": "00586",
+      "identificationNumber": "A20039616",
+      "address": "C/ BARRIO AKEZKOA, S/N.",
+      "location": {
+        "postalCode": "20150",
+        "municipality": "Zizurkil",
+        "county": "Gipuzkoa",
+        "municipalityId": "028",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.314.1",
+          "name": "Carpintería metálica",
+          "_links": {
+            "self": {
+              "name": "Carpintería metálica",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.314.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2005-11-24",
+      "certificateEndDate": "2006-04-17",
+      "object": "LA CONSTRUCCIÓN Y REPARACIÓN DE TODA CLASE DE INSTALACIONES DE CHAPA METÁLICA, CALDERERÍA EN GENERAL, GRUPOS O PARTES DE MAQUINARIA INSTALADA O A INSTALAR",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/00586",
+      "_links": {
+        "self": {
+          "name": "TALLERES AMONDARAIN, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/00586"
+        }
+      }
+    },
+    {
+      "name": "TORRASPAPEL, S.A.",
+      "registrationNumber": "02759",
+      "identificationNumber": "A58781402",
+      "address": "GRAN VIA CORTS CATALANES, 678",
+      "location": {
+        "postalCode": "08010",
+        "municipality": "Barcelona",
+        "county": "Barcelona",
+        "municipalityId": "019",
+        "countyId": "08"
+      },
+      "economicActivities": [
+        {
+          "id": "1.619.4",
+          "name": "Venta al por mayor de productos de papel y cartón",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de productos de papel y cartón",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.619.4"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2005-11-22",
+      "certificateEndDate": "2006-04-13",
+      "object": "A) LA FABRICACIÓN, MANIPULACIÓN, TRANSFORMACIÓN, DISTRIBUCIÓN, VENTA Y COMERCIALIZACIÓN DE PAPEL Y CARTÓN, ENVASES, EMBALAJES Y MATERIAS PLÁSTICAS, ASÍ COMO DE MADERA, PASTA CELULÓSICA Y TODA CLASE DE MATERIAS PRIMERAS, INTERMEDIAS O DERIVADAS.\r\n\r\nB) LA VENTA DE TODA CLASE DE MATERIAL DE OFICINA Y ESCOLAR, DE LIBROS, MAQUINARIA DE OFICINA, Y PRODUCTOS RELACIONADOS CON LA INFÓRMATICA Y CON TODOS LOS SISTEMAS DE TRATAMIENTO DE LA INFORMACIÓN APLICADOS A LOS TRABAJOS ADMINISTRATIVOS.\r\n\r\nC) LA ACTIVIDAD INMOBILIARIA Y LA EXPLOTACIÓN DE FINCAS RÚSTICAS Y FORESTALES.\r\n\r\nD) LA REALIZACIÓN DE INVERSIONES EN VALORES MOBILIARIOS, TÍTULOS VALORES Y ACTIVOS FINANCIEROS EN TODAS CLASES, INCLUSO CONCURRIENDO EN LA FUNDACIÓN  DE SOCIEDADES INDUSTRIALES Y MERCANTILES, CON EXCLUSIÓN DE LAS ACTIVIDADES PROPIAS DE LAS INSTITUCIONES DE INVERSIÓN COLECTIVA.\r\n\r\nESTAS ACTIVIDADES PODRÁN SER REALIZADAS TOTAL O PARCIALMENTE DE MODO INDIRECTO, MEDIANTE LA TITULARIDAD DE ACCCIONES O DE PARTICIPACIONES EN SOCIEDADES CON OBJETO IDÉNTICO Ó ANÁLOGO.       ",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/02759",
+      "_links": {
+        "self": {
+          "name": "TORRASPAPEL, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/02759"
+        }
+      }
+    },
+    {
+      "name": "DPC DIPESA, S.A.",
+      "registrationNumber": "00571",
+      "identificationNumber": "A78109063",
+      "address": "C/ PLAZA NUESTRA SEÑORA DEL PRADO, Nº 2.",
+      "location": {
+        "postalCode": "28034",
+        "municipality": "Madrid",
+        "county": "Madrid",
+        "municipalityId": "079",
+        "countyId": "28"
+      },
+      "economicActivities": [
+        {
+          "id": "1.619.7",
+          "name": "Venta al por mayor de instrumentos de precisión, medida y similares",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de instrumentos de precisión, medida y similares",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.619.7"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2005-11-18",
+      "certificateEndDate": "2006-02-12",
+      "object": "LA FABRICACIÓN, IMPORTACIÓN, MANIPULACIÓN, VALORACIÓN, ALMACENAJE, COMERCIALIZACIÓN, DISTRIBUCIÓN Y EXPORTACIÓN DE EQUIPOS E INSTRUMENTOS PARA MEDICIÓN, DIAGNOSTICO Y ANÁLISIS, ASÍ COMO DE PRODUCTOS NECESARIOS, COMPLEMENTARIOS Y SUPLEMENTARIOS PARA SU FUNCIONAMIENTO, PRUEBA O USO EN LOS CAMPOS HOSPITALARIOS, BIOMÉDICOS, INGENIERÍA, AGRÍCOLA E INDUSTRIAL Y LA PRESTACIÓN DE SERVICIOS DE CONSULTA, ASESORAMIENTO Y VALORACIÓN DE PROBLEMAS RELACIONADOS CON DICHOS CAMPOS DE APLICACIÓN",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/00571",
+      "_links": {
+        "self": {
+          "name": "DPC DIPESA, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/00571"
+        }
+      }
+    },
+    {
+      "name": "FUNDACIONES Y MANTENIMIENTOS, S.A.",
+      "registrationNumber": "02120",
+      "identificationNumber": "A01117795",
+      "address": "C/ CONCEJO, Nº 1 - DCHA.",
+      "location": {
+        "postalCode": "01013",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.507",
+          "name": "Construcción, reparación y conservación de toda clase obras",
+          "_links": {
+            "self": {
+              "name": "Construcción, reparación y conservación de toda clase obras",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.507"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2005-11-17",
+      "certificateEndDate": "2006-04-24",
+      "object": "LA ADQUISICIÓN, URBANIZACIÓN, PARCELACIÓN, CONSTRUCCIÓN, EDIFICACIÓN, CONSTITUCIÓN EN PROPIEDAD HORIZONTAL, REFORMA, AMPLIACIÓN, EXPLOTACIÓN DIRECTA O INDIRECTA, CONSTITUCIÓN Y, EN GENERAL TODA ACTIVIDAD RELATIVA A BIENES INMUEBLES, ASÍ RÚSTICOS COMO URBANOS, Y LA REALIZACIÓN DE OBRAS PÚBLICAS Y DE TODA SUERTE DE INVERSIONES Y PROMOCIONES RELACIONADOS CON EL RAMO DE LA CONSTRUCCIÓN",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/02120",
+      "_links": {
+        "self": {
+          "name": "FUNDACIONES Y MANTENIMIENTOS, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/02120"
+        }
+      }
+    },
+    {
+      "name": "LA UNIÓN ALAVESA, S.L.",
+      "registrationNumber": "03105",
+      "identificationNumber": "B01003847",
+      "address": "GEREZPEA, 17 POL. IND. JUNDIZ",
+      "location": {
+        "postalCode": "01015",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.721.3",
+          "name": "Transporte de viajeros por carretera",
+          "_links": {
+            "self": {
+              "name": "Transporte de viajeros por carretera",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.721.3"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2005-11-11",
+      "certificateEndDate": "2006-04-25",
+      "object": "TANTO DIRECTAMENTE COMO DE FORMA INDIRECTA, MEDIANTE LA TITULARIDAD DE ACCIONES O PARTICIPACIONES EN SOCIEDADES CON OBJETO IDÉNTICO, LA EXPLOTACIÓN DEL TRÁFICO DE VIAJEROS Y MERCANCÍAS, HECHO POR CARRUAJES MOVIDOS POR MOTORES MECÁNICOS, Y EL ESTABLECIMIENTO Y EXPLOTACIÓN DE GARAJES Y TALLERES DE CONSTRUCCIÓN Y REPARACIÓN DE AUTOMÓVILES Y CARROCERÍAS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03105",
+      "_links": {
+        "self": {
+          "name": "LA UNIÓN ALAVESA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/03105"
+        }
+      }
+    },
+    {
+      "name": "SEINTEX SERVICIOS DE INFORMÁTICA, S.A.",
+      "registrationNumber": "01324",
+      "identificationNumber": "A08390809",
+      "address": "C/ POBLA DE LILLET, Nº 14 - 16, BAJOS",
+      "location": {
+        "postalCode": "08028",
+        "municipality": "Barcelona",
+        "county": "Barcelona",
+        "municipalityId": "019",
+        "countyId": "08"
+      },
+      "economicActivities": [
+        {
+          "id": "1.845",
+          "name": "Explotación electrónica por cuenta de terceros",
+          "_links": {
+            "self": {
+              "name": "Explotación electrónica por cuenta de terceros",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.845"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2005-11-09",
+      "certificateEndDate": "2005-10-01",
+      "object": "LA PRESTACIÓN A TODA CLASE DE ENTIDADES Y EMPRESAS PÚBLICAS Y PRIVADAS, DE SERVICIOS DE CONTABILIDAD, ESTADISTICA, ORGANIZACIÓN, ADMINISTRACIÓN EN GENERAL, Y ESTUDIO Y SELECCIÓN DE PERSONAL, INCLUÍDOS LOS DE ASESORAMIENTO MERCANTIL, ECONÓMICO E INDUSTRIAL, CON SUJECIÓN EN CADA CASO A LOS REQUISITOS Y FORMA QUE SE PRECISE, ASÍ COMO CUALQUIER CLASE DE ACTIVIDADES QUE DIRECTAMENTE SE RELACIONEN CON LAS FINALIDADES EXPRESADAS. ASIMISMO, LA SOCIEDAD SE DEDICARÁ A LA PRESTACIÓN DE SERVICIOS INFORMÁTICOS, ENTENDIENDO COMO TALES DESDE LA ASESORÍA Y PLANIFICACIÓN EN ÉSTE CAMPO HASTA EL DESARROLLO DE APLICACIONES Y LA REALIZACIÓN Y EXPLOTACIÓN COMERCIAL DE PROGRAMAS INFORMÁTICOS, EQUIPOS O COMPONENTES FÍSICOS, DISPOSITIVOS Y OTROS ELEMENTOS DEL ENTORNO INFORMÁTICO O DE LAS TELECOMUNICACIONES, DE ORIGEN PROPIOS O DE PROPIEDAD DE TERCEROS. TAMBIÉN SE DEDICARÁ A LA REALIZACIÓN DE REVISIONES CATASTRALES Y ACTUALIZACIÓN O MANTENIMIENTO DE CATASTROS, TANTO RÚSTICOS COMO URBANOS, RESTITUCIÓN FOTOGRAMÉTRICA, DIGITALIZACIÓN Y VECTORIZACIÓN DE CARTOGRAFÍA, TANTO NUEVA COMO PREEXISTENTE, Y DE TODO TIPO DE TRABAJOS TOPOGRÁFICOS. LA ACTIVIDAD SOCIAL EN SU TOTALIDAD, PODRÁ SER REALIZADA EN CUALQUIER PAÍS DE LA UNIÓN EUROPEA, ASÍ COMO EN EL RESTO DE LAS NACIONES",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/01324",
+      "_links": {
+        "self": {
+          "name": "SEINTEX SERVICIOS DE INFORMÁTICA, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/01324"
+        }
+      }
+    }
+  ]
+}

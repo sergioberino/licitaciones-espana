@@ -1,0 +1,434 @@
+{
+  "totalItems": 9042,
+  "totalPages": 905,
+  "currentPage": 530,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "name": "BOSKOTIA, S.L.",
+      "registrationNumber": "04265",
+      "identificationNumber": "B75010983",
+      "address": "AV. ERREKA TXIKI 27-2A",
+      "location": {
+        "postalCode": "20170",
+        "municipality": "Usurbil",
+        "county": "Gipuzkoa",
+        "municipalityId": "073",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.673.2",
+          "name": "Otros cafés y bares",
+          "_links": {
+            "self": {
+              "name": "Otros cafés y bares",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.673.2"
+            }
+          }
+        },
+        {
+          "id": "1.999",
+          "name": "Otros servicios n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros servicios n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.999"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2021-05-27",
+      "certificateEndDate": "2021-11-05",
+      "classification": [
+        {
+          "id": "S",
+          "name": "Servicios",
+          "groups": [
+            {
+              "id": "L",
+              "subgroups": [
+                {
+                  "id": "06",
+                  "name": "Servicios de portería, control de accesos e información al público",
+                  "categories": [
+                    {
+                      "id": "3",
+                      "name": "Desde 300.001 Hasta 600.000",
+                      "_links": {
+                        "self": {
+                          "name": "Desde 300.001 Hasta 600.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/S/categories/3"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "Servicios de portería, control de accesos e información al público",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/L/subgroups/06"
+                    }
+                  }
+                }
+              ],
+              "_links": {
+                "self": {
+                  "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/L"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Servicios",
+              "href": "https://api.euskadi.eus/procurements/companies/types/S"
+            }
+          }
+        }
+      ],
+      "object": "PRESTACIÓN DE SERVICIOS DE CONSERJERÍA Y ATENCIÓN AL PUBLICO DE INSTALACIONES DEPORTIVAS, GESTIÓN DE ABONOS Y EXPLOTACIÓN DE SERVICIO DE CAFETERÍA",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/04265",
+      "_links": {
+        "self": {
+          "name": "BOSKOTIA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/04265"
+        }
+      }
+    },
+    {
+      "name": "LABORATORIOS VIIV HEALTHCARE, S.L.",
+      "registrationNumber": "04653",
+      "identificationNumber": "B80207442",
+      "address": "SEVERO OCHOA Nº 2",
+      "location": {
+        "postalCode": "28760",
+        "municipality": "Tres Cantos",
+        "county": "Madrid",
+        "municipalityId": "903",
+        "countyId": "28"
+      },
+      "economicActivities": [
+        {
+          "id": "1.614.1",
+          "name": "Venta al por mayor de productos farmacéuticos y medicamentos",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de productos farmacéuticos y medicamentos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.614.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2021-05-27",
+      "certificateEndDate": "2021-11-27",
+      "object": "COMERCIO AL POR MAYOR DE PRODUCTOS FARMACEUTICOS Y MEDICAMENTOS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/04653",
+      "_links": {
+        "self": {
+          "name": "LABORATORIOS VIIV HEALTHCARE, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/04653"
+        }
+      }
+    },
+    {
+      "name": "ILUNDAIN SUMINISTROS HOSPITALARIOS, S.L.",
+      "registrationNumber": "03649",
+      "identificationNumber": "B31567639",
+      "address": "TRAVESIA VUELTA DEL CASTILLO Nº 5",
+      "location": {
+        "postalCode": "31007",
+        "municipality": "Pamplona/Iruña",
+        "county": "Navarra",
+        "municipalityId": "201",
+        "countyId": "31"
+      },
+      "economicActivities": [
+        {
+          "id": "1.619.2",
+          "name": "Venta al por mayor de aparatos e instrumentos médicos, ortopédicos, ópticos",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de aparatos e instrumentos médicos, ortopédicos, ópticos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.619.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2021-05-26",
+      "certificateEndDate": "2021-10-06",
+      "object": "LA COMPRA, VENTA, IMPORTACIÓN, EXPORTACIÓN, REPRESENTACIÓN Y COMERCIALIZACIÓN DE MATERIALES, MOBILIARIO, EQUIPOS, INSTRUMENTAL, INSTALACIONES Y PRODUCTOS MÉDICO QUIRÚRGICOS, CLÍNICOS Y ASISTENCIALES DE APLICACIÓN SANITARIA",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03649",
+      "_links": {
+        "self": {
+          "name": "ILUNDAIN SUMINISTROS HOSPITALARIOS, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/03649"
+        }
+      }
+    },
+    {
+      "name": "SISTEMAS INFORMATICOS Y GEOGRAFICOS SL",
+      "registrationNumber": "07185",
+      "identificationNumber": "B95771200",
+      "address": "CL MARTIKOENA 2, 4",
+      "location": {
+        "postalCode": "48992",
+        "municipality": "Getxo",
+        "county": "Bizkaia",
+        "municipalityId": "044",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.847",
+          "name": "Servicios de consultoría",
+          "_links": {
+            "self": {
+              "name": "Servicios de consultoría",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.847"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2021-05-26",
+      "certificateEndDate": "2021-11-24",
+      "object": "1. PRESTACIÓN DE SERVICIOS. ACTIVIDADES DE GESTIÓN Y ADMINISTRACIÓN. SERVICIOS EDUCATIVOS, SANITARIOS, DE OCIO Y ENTRETENIMIENTO. 2. INFORMACIÓN Y COMUNICACIONES. 3. INFORMÁTICA, TELECOMUNICACIONES Y OFIMÁTICA. EL CNAE DE LA ACTIVIDAD PRINCIPAL ES: 6202 -ACTIVIDADES DE CONSULTORÍA INFORMÁTICA",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07185",
+      "_links": {
+        "self": {
+          "name": "SISTEMAS INFORMATICOS Y GEOGRAFICOS SL",
+          "href": "https://api.euskadi.eus/procurements/companies/07185"
+        }
+      }
+    },
+    {
+      "name": "LIDERMED, S.A.",
+      "registrationNumber": "07672",
+      "identificationNumber": "A58252503",
+      "address": "PABLO IGLESIAS 14",
+      "location": {
+        "postalCode": "08302",
+        "municipality": "Mataró",
+        "county": "Barcelona",
+        "municipalityId": "121",
+        "countyId": "08"
+      },
+      "economicActivities": [
+        {
+          "id": "1.619.2",
+          "name": "Venta al por mayor de aparatos e instrumentos médicos, ortopédicos, ópticos",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de aparatos e instrumentos médicos, ortopédicos, ópticos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.619.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2021-05-26",
+      "certificateEndDate": "2021-11-18",
+      "object": "LA FABRICACIÓN, COMERCIALIZACIÓN DE PRODUCTOS MÉDICO-HOSPITALARIOS, SANITARIOS, ORTOPÉDICOS Y SIMILARES, ASÍ COMO LA EXPORTACIÓN, IMPORTACIÓN DE LOS MISMOS. TAMBIÉN SERÁ OBJETO DE LA SOCIEDAD CUALQUIER TIPO DE ACABADOS TEXTILES",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07672",
+      "_links": {
+        "self": {
+          "name": "LIDERMED, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/07672"
+        }
+      }
+    },
+    {
+      "name": "MASS SECURITY SOLUTIONS S.L.",
+      "registrationNumber": "07676",
+      "identificationNumber": "B26423863",
+      "address": "ROSA CHACEL Nº36 PAB 22 ",
+      "location": {
+        "postalCode": "26007",
+        "municipality": "Logroño",
+        "county": "Rioja, La",
+        "municipalityId": "089",
+        "countyId": "26"
+      },
+      "economicActivities": [
+        {
+          "id": "1.849.4",
+          "name": "Servicios de custodia, seguridad y protección",
+          "_links": {
+            "self": {
+              "name": "Servicios de custodia, seguridad y protección",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.849.4"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2021-05-26",
+      "certificateEndDate": "2021-10-29",
+      "object": "A) VIGILANCIA Y PROTECIÓN  DE BIENES, ESTABLECIMIENTOS, ESPECTÁCULOS, CERTÁMENES O CONVENCIONES. B) PROTECCIÓN DE PERSONAS DETERMINADAS, PREVIA LA AUTORIZACIÓN CORRESPONDIENTE. C) DEPÓSITO, CUSTODIA, RECUENTO Y CLASIFICACIÓN DE MONEDAS Y BILLETES, TÍTULOS-VALORES Y DEMÁS OBJETOS QUE, POR SU VALOR ECONÓMICO Y EXPECTATIVAS QUE GENEREN O POR SU PELIGROSIDAD, PUEDAN REQUERIR PROTECCIÓN ESPECIAL, SIN PERJUICIO DE LAS ACTIVIDADES PROPIAS DE LAS ENTIDADES FINANCIERAS. D) TRANSPORTE Y DISTRIBUCIÓN DE LOS OBJETOS A QUE SE REFIERE EL APARTADO ANTERIOR, A TRAVÉS DE LOS DISTINTOS MEDIOS, REALIZÁNDOLOS, EN SU CASO, MEDIANTE VEHÍCULOS CUYAS CARACTERÍSTICAS SERÁN  DETERMINADAS POR EL MINISTERIO DE JUSTICIA E INTERIOR, DE FORMA QUE NO PUEDAN CONFUNDIRSE CON LOS DE LAS FUERZAS ARMADAS NI CON LOS DE LAS FUERZAS Y CUERPOS DE SEGURIDAD. E) INSTALACIÓN Y MANTENIMIENTO DE APARATOS, DISPOSITIVOS Y SISTEMA DE SEGURIDAD. F) EXPLOTACIÓN DE CENTRALES PARA LA RECEPCIÓN, VERIFICACIÓN Y TRANSMISIÓN DE LAS SEÑALES DE ALARMAS YSU COMUNICACIÓN A LAS FUERZAS Y CUERPOS DE SEGURIDAD, ASÍ COMO PRESTACIÓN DE SERVICIOS DE RESPUESTA CUYA REALIZACIÓ NO SEA DE LA COMPETENCIA DE DICHAS FUERZAS Y CUERPOS. G) LA PLANIFICACIÓN, DESARROLLO, EJECUCIÓN, ASESORAMIENTO Y FORMACIÓN EN MATERIA DE VIGILANCIA Y PROTECCIÓN DE BIENES, DATOS Y PERSONAS. H) EL DESARROLLO DE PROYECTOS Y ESTUDIOS DE INVESTIGACIÓN Y DESARROLLO EN EL ÁMBITO DE LA SEGURIDAD Y PROTECCIÓN",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07676",
+      "_links": {
+        "self": {
+          "name": "MASS SECURITY SOLUTIONS S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/07676"
+        }
+      }
+    },
+    {
+      "name": "GMV SOLUCIONES GLOBALES INTERNET, S.A.",
+      "registrationNumber": "07677",
+      "identificationNumber": "A83057034",
+      "address": "C/ ISAAC NEWTON, 11 -PTM",
+      "location": {
+        "postalCode": "28760",
+        "municipality": "Tres Cantos",
+        "county": "Madrid",
+        "municipalityId": "903",
+        "countyId": "28"
+      },
+      "economicActivities": [
+        {
+          "id": "1.845",
+          "name": "Explotación electrónica por cuenta de terceros",
+          "_links": {
+            "self": {
+              "name": "Explotación electrónica por cuenta de terceros",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.845"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2021-05-26",
+      "certificateEndDate": "2021-11-21",
+      "object": "A) REALIZACIÓN DE ESTUDIOS Y EJECUCIÓN DE PROYECTOS PARA APLICACIONES INDUSTRIALES, BASADAS EN SISTEMAS AERONÁUTICOS Y AEROESPACIALES. B) REALIZACIÓN Y EJECUCIÓN DE PROYECTOS GENERALES DE INGENIERÍA Y ACTIVIDADES COMPLEMENTARIAS. C) SERVICIOS DE INFORMÁTICA, PROGRAMACIÓN, BASES DE DATOS, EJECUCIÓN DE APLICACIONES DE INFORMÁTICA, INCLUYENDO SUMINISTRO DE EQUIPOS Y SU INSTALACIÓN, MANTENIMIENTO Y LA IMPARTICIÓN DE CURSOS RELACIONADOS CON LOS MISMOS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07677",
+      "_links": {
+        "self": {
+          "name": "GMV SOLUCIONES GLOBALES INTERNET, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/07677"
+        }
+      }
+    },
+    {
+      "name": "SOCIEDAD DE INGENIERIA Y DIRECCION DE OBRAS, S.L.",
+      "registrationNumber": "06044",
+      "identificationNumber": "B48134498",
+      "address": "Parque Tecnológico - Edificio 805",
+      "location": {
+        "postalCode": "48160",
+        "municipality": "Derio",
+        "county": "Bizkaia",
+        "municipalityId": "901",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.330",
+          "name": "Construcción de máquinas de oficina y ordenadores",
+          "_links": {
+            "self": {
+              "name": "Construcción de máquinas de oficina y ordenadores",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.330"
+            }
+          }
+        },
+        {
+          "id": "1.507",
+          "name": "Construcción, reparación y conservación de toda clase obras",
+          "_links": {
+            "self": {
+              "name": "Construcción, reparación y conservación de toda clase obras",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.507"
+            }
+          }
+        },
+        {
+          "id": "1.843.1",
+          "name": "Servicios técnicos de ingeniería",
+          "_links": {
+            "self": {
+              "name": "Servicios técnicos de ingeniería",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2021-05-25",
+      "certificateEndDate": "2021-11-03",
+      "object": "EL ALMACENAMIENTO, DEPÓSITO Y DISTRIBUCIÓN DE MERCANCÍAS, PRODUCTOS, ARTÍCULOS Y MATERIAS DE TODAS CLASES. LA ADQUISICIÓN Y ENAJENACIÓN POR CUALQUIER TÍTULO, DE FINCAS RÚSTICAS Y URBANAS, YA SEA TIERRAS, SOLARES Y EDIFICIOS; LA CONSTRUCCIÓN DE ÉSTOS Y LA ADMINISTRACIÓN, TENENCIA, EXPLOTACIÓN Y ARRENDAMIENTO, YA SEA ACTIVO O PASIVO, DE TALES BIENES Y SU VENTA TOTAL O PARCIAL, SEGÚN CONVENGA, PARA SU APROVECHAMIENTO AGRÍCOLA, FORESTAL, URBANO, INDUSTRIAL O CUALQUIER OTRO. LA PROMOCIÓN, EJECUCIÓN Y EXPLOTACIÓN DE TODA CLASE DE PRODUCTOS Y ELABORADOS NATURALES, DE MATERIAS PRIMAS Y DE SUS TRANSFORMADOS O  PRODUCTOS MANUFACTURADOS, SEMIELABORADOS, RELACIONADOS CON LA AGRICULTURA, GANADERÍA, TRANSPORTE DE CUALQUIER CLASE Y NATURALEZA, TELECOMUNICACIÓN, INDUSTRIAL FORESTAL, SIDEROMETALÚRGICA, MECÁNICA, NAVAL, ELECTROMECÁNICA, QUÍMICA, ALIMENTARIA, TEXTIL Y BIOQUÍMICA. LOS SERVICIOS DE MEDIACIÓN CON BIENES PROPIOS O AJENOS, ASÍ COMO LOS DE CONSIGNACIÓN, REPRESENTACIÓN Y GESTIÓN, INCLUSO DE TODA CLASE DE SUMINISTROS DE PRODUCTOS EN GENERAL Y PLANTAS INDUSTRIALES, NACIONALES Y EXTRANJERAS, Y LAS ACTIVIDADES DE IMPORTACIÓN Y EXPORTACIÓN. EL ESTUDIO, INVESTIGACIÓN, PROMOCIÓN Y ASESORAMIENTO DE TODA CLASE DE SERVICIOS DE ASISTENCIA Y GESTIÓN TÉCNICA, ADMINISTRATIVA, COMERCIAL, CONTABLE Y FISCAL, ASÍ COMO LA EXPLOTACIÓN Y PARTICIPACIÓN DE NEGOCIOS INCLUSO LA MECÁNICA CONTABLE. LA PROMOCIÓN, EJECUCIÓN Y EXPLOTACIÓN DE LOS NEGOCIOS DE SUMINISTROS PÚBLICOS Y PRIVADOS, INCLUIDA LA PROPIA EXPLOTACIÓN DE LOS SERVICIOS DE AQUÉLLAS, COMO ESPECTÁCULOS, TRANSPORTES, HOTELES Y ALOJAMIENTOS. LOS TRATAMIENTOS TÉRMICOS Y CONTROLES DE CALIDAD. LA CONSTITUCIÓN CON LA CONCURRENCIA DE OTRAS PERSONAS, DE TODA CLASE DE SOCIEDADES MERCANTILES, LA PARTICIPACIÓN EN OTRAS YA CONSTITUIDAS, OSTENTANDO EN TODAS ELLAS CARGOS DE ADMINISTRACIÓN, DIRECCIÓN O CONTROL MEDIANTE LA OPORTUNA DELEGACIÓN EN PERSONA FÍSICA",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06044",
+      "_links": {
+        "self": {
+          "name": "SOCIEDAD DE INGENIERIA Y DIRECCION DE OBRAS, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/06044"
+        }
+      }
+    },
+    {
+      "name": "VÁZQUEZ OFITEP, S.L.",
+      "registrationNumber": "06491",
+      "identificationNumber": "B80536667",
+      "address": "REGORDOÑO, 23",
+      "location": {
+        "postalCode": "28936",
+        "municipality": "Móstoles",
+        "county": "Madrid",
+        "municipalityId": "092",
+        "countyId": "28"
+      },
+      "economicActivities": [
+        {
+          "id": "1.843.1",
+          "name": "Servicios técnicos de ingeniería",
+          "_links": {
+            "self": {
+              "name": "Servicios técnicos de ingeniería",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2021-05-25",
+      "certificateEndDate": "2021-10-16",
+      "object": "LOS ESTUDIOS Y PROYECTOS DE INGENIERÍA CIVIL E INDUSTRIAL. LAS INSTALACIONES ELÉCTRICAS DE BAJA Y ALTA TENSIÓN. LAS INSTALACIONES DE GAS Y RED SANITARIA",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06491",
+      "_links": {
+        "self": {
+          "name": "VÁZQUEZ OFITEP, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/06491"
+        }
+      }
+    },
+    {
+      "name": "LEKU STUDIO, S.L.P.",
+      "registrationNumber": "07668",
+      "identificationNumber": "B67346841",
+      "address": "CALLE PROGRES, NUM. 13  PLANTA 2, PUERTA 2",
+      "location": {
+        "postalCode": "08012",
+        "municipality": "Barcelona",
+        "county": "Barcelona",
+        "municipalityId": "019",
+        "countyId": "08"
+      },
+      "economicActivities": [
+        {
+          "id": "1.843.2",
+          "name": "Servicios técnicos de arquitectura y urbanismo",
+          "_links": {
+            "self": {
+              "name": "Servicios técnicos de arquitectura y urbanismo",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2021-05-25",
+      "certificateEndDate": "2021-09-30",
+      "object": "LA SOCIEDAD TIENE POR OBJETO EXCLUSIVO EL EJERCICIO DE LA ARQUITECTURA",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07668",
+      "_links": {
+        "self": {
+          "name": "LEKU STUDIO, S.L.P.",
+          "href": "https://api.euskadi.eus/procurements/companies/07668"
+        }
+      }
+    }
+  ]
+}

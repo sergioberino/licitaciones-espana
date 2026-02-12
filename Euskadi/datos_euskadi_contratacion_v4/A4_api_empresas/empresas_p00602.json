@@ -1,0 +1,498 @@
+{
+  "totalItems": 9042,
+  "totalPages": 905,
+  "currentPage": 602,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "name": "AIZKORPE ELEKTRIKARIAK, KOOP. ELK.",
+      "registrationNumber": "05378",
+      "identificationNumber": "F75031229",
+      "address": "POLIGONO GOARDIA, 14. 1. TRAS",
+      "location": {
+        "postalCode": "20213",
+        "municipality": "Idiazabal",
+        "county": "Gipuzkoa",
+        "municipalityId": "043",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.342.1",
+          "name": "Máquinas y aparatos para la producción y transformación de energía eléctrica",
+          "_links": {
+            "self": {
+              "name": "Máquinas y aparatos para la producción y transformación de energía eléctrica",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.342.1"
+            }
+          }
+        },
+        {
+          "id": "1.342.2",
+          "name": "Otro material eléctrico de utilización y equipamiento",
+          "_links": {
+            "self": {
+              "name": "Otro material eléctrico de utilización y equipamiento",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.342.2"
+            }
+          }
+        },
+        {
+          "id": "1.504.1",
+          "name": "Instalaciones eléctricas en general",
+          "_links": {
+            "self": {
+              "name": "Instalaciones eléctricas en general",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.504.1"
+            }
+          }
+        },
+        {
+          "id": "1.504.12",
+          "name": "Instalaciones eléctricas en toda clase de edificios",
+          "_links": {
+            "self": {
+              "name": "Instalaciones eléctricas en toda clase de edificios",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.504.12"
+            }
+          }
+        },
+        {
+          "id": "1.504.3",
+          "name": "Instalaciones de frío, calor y acondicionamiento de aire",
+          "_links": {
+            "self": {
+              "name": "Instalaciones de frío, calor y acondicionamiento de aire",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.504.3"
+            }
+          }
+        },
+        {
+          "id": "1.504.7",
+          "name": "Instalaciones telefónicas, telegráficas, televisión, etc",
+          "_links": {
+            "self": {
+              "name": "Instalaciones telefónicas, telegráficas, televisión, etc",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.504.7"
+            }
+          }
+        },
+        {
+          "id": "1.653.2",
+          "name": "Venta al por menor de material y aparatos eléctricos, electrodomésticos y cocina",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de material y aparatos eléctricos, electrodomésticos y cocina",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.653.2"
+            }
+          }
+        },
+        {
+          "id": "1.691.1",
+          "name": "Reparación de artículos eléctricos para el hogar",
+          "_links": {
+            "self": {
+              "name": "Reparación de artículos eléctricos para el hogar",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.691.1"
+            }
+          }
+        },
+        {
+          "id": "1.843.1",
+          "name": "Servicios técnicos de ingeniería",
+          "_links": {
+            "self": {
+              "name": "Servicios técnicos de ingeniería",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.1"
+            }
+          }
+        },
+        {
+          "id": "1.936.5",
+          "name": "Investigación técnica industrial",
+          "_links": {
+            "self": {
+              "name": "Investigación técnica industrial",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.936.5"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2019-08-26",
+      "certificateEndDate": "2020-02-26",
+      "object": "ADEMÁS DEL PROPIO DE TRABAJO ASOCIADO, EL DE PRESTACIÓN DE SERVICIOS RELACIONADOS CON LA ELECTRICIDAD,  TELECOMUNICACIONES, DOMÓTICA, AIRE ACONDICIONADO Y CALEFACCIÓN ELÉCTRICA Y MÁS EN CONCRETO LA INSTALACIÓN ELÉCTRICA, YA SEA INDUSTRIAL, RÚSTICA Y URBANA Y SU PUESTA EN FUNCIONAMIENTO, MANTENIMIENTO DE LAS MISMAS Y SUS REPARACIONES, ELABORACIÓN DE PROYECTOS ELÉCTRICOS, ASÍ COMO LAS ACTIVIDADES AUXILIARES Y COMPLEMENTARIAS NECESARIAS. TAMBIÉN SERÁ OBJETO DE LA SOCIEDAD LA PRODUCCIÓN DE ENERGÍA BIEN PARA SU AUTOCONSUMO O PARA SU VENTA OBTENIDA DEL SOL, AIRE, BIOMASA O DE COGENERACIÓN, ASÍ COMO LA INVESTIGACIÓN Y DESARROLLO\r\n",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/05378",
+      "_links": {
+        "self": {
+          "name": "AIZKORPE ELEKTRIKARIAK, KOOP. ELK.",
+          "href": "https://api.euskadi.eus/procurements/companies/05378"
+        }
+      }
+    },
+    {
+      "name": "ERRETI ERAIKUNTZAK, S.L.",
+      "registrationNumber": "03804",
+      "identificationNumber": "B20740429",
+      "address": "ASTIGARRAGAKO BIDEA, 2.EDIF.OFIC.PL.4.OF.11",
+      "location": {
+        "postalCode": "20180",
+        "municipality": "Oiartzun",
+        "county": "Gipuzkoa",
+        "municipalityId": "063",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.501.1",
+          "name": "Construcción completa, reparación y conservación de edificaciones",
+          "_links": {
+            "self": {
+              "name": "Construcción completa, reparación y conservación de edificaciones",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.1"
+            }
+          }
+        },
+        {
+          "id": "1.833.2",
+          "name": "Promoción de edificaciones",
+          "_links": {
+            "self": {
+              "name": "Promoción de edificaciones",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.833.2"
+            }
+          }
+        },
+        {
+          "id": "1.861.1",
+          "name": "Alquiler de viviendas",
+          "_links": {
+            "self": {
+              "name": "Alquiler de viviendas",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.861.1"
+            }
+          }
+        },
+        {
+          "id": "1.861.2",
+          "name": "Alquiler de locales industriales y otros alquileres n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Alquiler de locales industriales y otros alquileres n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.861.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2019-08-25",
+      "certificateEndDate": "2020-02-25",
+      "object": "LA CONSTRUCCIÓN EN GENERAL Y ESPECIAL DE EDIFICIOS, VIVIENDAS, LOCALES DE CUALQUIER CLASE Y TIPO, INCLUSO DE PROTECCIÓN OFICIAL, Y LA REALIZACIÓN DE OBRAS PÚBLICAS DE CUALQUIER MODALIDAD Y ESPECIALIDAD. LA ADQUISICIÓN POR CUALQUIER TÍTULO DE FINCAS RÚSTICAS Y URBANAS , Y LA ADMINISTRACIÓN, TENENCIA, EXPLOTACIÓN Y ARRENDAMIENTOS DE TALES BIENES Y SU VENTA, TOTAL Y PARCIAL, SEGÚN CONVENGA PARA SU APROVECHAMIENTO AGRÍCOLA, FORESTAL, URBANO, INDUSTRIAL O CUALQUIER OTRO. LA PROMOCIÓN Y EJECUCIÓN COMPLETA O POR RAMOS DE TODA CLASE DE OBRAS DE CONSTRUCCIÓN, REPARACIÓN O CONSERVACIÓN POR CUENTA PROPIA O AJENA",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03804",
+      "_links": {
+        "self": {
+          "name": "ERRETI ERAIKUNTZAK, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/03804"
+        }
+      }
+    },
+    {
+      "name": "RAMÓN ANAYA GUTIÉRREZ",
+      "registrationNumber": "06423",
+      "identificationNumber": "25481931R",
+      "address": "C/ Matía, 6, 5º Centro",
+      "location": {
+        "postalCode": "20008",
+        "municipality": "Donostia / San Sebastián",
+        "county": "Gipuzkoa",
+        "municipalityId": "069",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "2.776",
+          "name": "Doctores y licenciados en ciencias políticas y sociales",
+          "_links": {
+            "self": {
+              "name": "Doctores y licenciados en ciencias políticas y sociales",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/2.776"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2019-08-14",
+      "certificateEndDate": "2019-10-16",
+      "object": "DOCTORES Y LICENCIADOS EN CIENCIAS POLÍTICAS Y SOCIALES",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06423",
+      "_links": {
+        "self": {
+          "name": "RAMÓN ANAYA GUTIÉRREZ",
+          "href": "https://api.euskadi.eus/procurements/companies/06423"
+        }
+      }
+    },
+    {
+      "name": "JOSE FRANCISCO ESCRIBANO VILLAN",
+      "registrationNumber": "06280",
+      "identificationNumber": "14863293A",
+      "address": "c/Rodriguez Arias, 17-2º",
+      "location": {
+        "postalCode": "48011",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "2.411",
+          "name": "Arquitectos",
+          "_links": {
+            "self": {
+              "name": "Arquitectos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/2.411"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2019-08-13",
+      "certificateEndDate": "2020-02-11",
+      "object": "ARQUITECTOS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06280",
+      "_links": {
+        "self": {
+          "name": "JOSE FRANCISCO ESCRIBANO VILLAN",
+          "href": "https://api.euskadi.eus/procurements/companies/06280"
+        }
+      }
+    },
+    {
+      "name": "ASPEN PHARMACARE ESPAÑA, S.L UNIPERSONAL",
+      "registrationNumber": "06422",
+      "identificationNumber": "B67239855",
+      "address": "AVDA. DIAGONAL, N 512 -PLANTA 1 PUERTA 4",
+      "location": {
+        "postalCode": "08006",
+        "municipality": "Barcelona",
+        "county": "Barcelona",
+        "municipalityId": "019",
+        "countyId": "08"
+      },
+      "economicActivities": [
+        {
+          "id": "1.614.1",
+          "name": "Venta al por mayor de productos farmacéuticos y medicamentos",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de productos farmacéuticos y medicamentos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.614.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2019-08-12",
+      "certificateEndDate": "2020-01-08",
+      "object": "LA COMERCIALIZACIÓN, PROMOCIÓN Y DISTRIBUCIÓN DE PRODUCTOS FARMACÉUTICOS\r\n    \r\n",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06422",
+      "_links": {
+        "self": {
+          "name": "ASPEN PHARMACARE ESPAÑA, S.L UNIPERSONAL",
+          "href": "https://api.euskadi.eus/procurements/companies/06422"
+        }
+      }
+    },
+    {
+      "name": "INGENIERÍA DE CUBIERTAS DAFER S.L.",
+      "registrationNumber": "06414",
+      "identificationNumber": "B45695814",
+      "address": "CALLE CERRO DE LA MORA S/N NAVE 6 POLÍGONO INDUSTRIAL VALDOLI",
+      "location": {
+        "postalCode": "45500",
+        "municipality": "Torrijos",
+        "county": "Toledo",
+        "municipalityId": "173",
+        "countyId": "45"
+      },
+      "economicActivities": [
+        {
+          "id": "1.843.1",
+          "name": "Servicios técnicos de ingeniería",
+          "_links": {
+            "self": {
+              "name": "Servicios técnicos de ingeniería",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2019-08-09",
+      "certificateEndDate": "2020-01-12",
+      "object": "EL SUMINISTRO, MONTAJE Y REHABILITACIÓN DE CUBIERTAS. LA CONSTRUCCIÓN, VENTA Y ALQUILER DE INMUEBLES (SE EXCLUYE EL ARRENDAMIENTO FINANCIERO). EL ASESORAMIENTO TÉCNICO EN CONSTRUCCIÓN. LA FORMACIÓN EN INGENIERÍA DE CUBIERTAS Y FACHADAS Y EN TÉCNICAS DE CONSTRUCCIÓN. LA INGENIERÍA DE CUBIERTAS, ASÍ COMO LA ELABORACIÓN DE PROYECTOS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06414",
+      "_links": {
+        "self": {
+          "name": "INGENIERÍA DE CUBIERTAS DAFER S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/06414"
+        }
+      }
+    },
+    {
+      "name": "ELECSI, S.L.",
+      "registrationNumber": "06417",
+      "identificationNumber": "B48514590",
+      "address": "PADULETA 55 OF 205",
+      "location": {
+        "postalCode": "01015",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.504.12",
+          "name": "Instalaciones eléctricas en toda clase de edificios",
+          "_links": {
+            "self": {
+              "name": "Instalaciones eléctricas en toda clase de edificios",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.504.12"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2019-08-09",
+      "certificateEndDate": "2019-08-27",
+      "object": "EL MANTENIMIENTO Y MONTAJE DE INSTALACIONES ELÉCTRICAS DE ALTA Y BAJA TENSIÓN ASÍ COMO EL MANTENIMIENTO, MONTAJE Y REPARACIÓN DE ASCENSORES",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06417",
+      "_links": {
+        "self": {
+          "name": "ELECSI, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/06417"
+        }
+      }
+    },
+    {
+      "name": "TEKNATRANS CONSULTORES, S.L.",
+      "registrationNumber": "04765",
+      "identificationNumber": "B20987897",
+      "address": "Portuetxe, 23 A Planta 3 Local 5",
+      "location": {
+        "postalCode": "20018",
+        "municipality": "Donostia / San Sebastián",
+        "county": "Gipuzkoa",
+        "municipalityId": "069",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.843.1",
+          "name": "Servicios técnicos de ingeniería",
+          "_links": {
+            "self": {
+              "name": "Servicios técnicos de ingeniería",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2019-08-08",
+      "certificateEndDate": "2020-01-12",
+      "object": "LA REALIZACIÓN DE ESTUDIOS E INFORMES DE CARÁCTER TÉCNICO, SOCIOECONÓMICO Y FINANCIERO EN EL ÁMBITO DE LA INGENIERÍA Y LA ARQUITECTURA Y, EN PARTICULAR EN LOS CAMPOS DE LAS OBRAS PÚBLICAS, EDIFICACIÓN, URBANISMO, ORDENACIÓN DEL TERRITORIO, MEDIO AMBIENTE, AGRICULTURA, TURISMO, ENERGÍA Y TELECOMUNICACIONES. LA REALIZACIÓN DE ESTUDIOS INFORMES Y OTROS TRABAJOS TÉCNICOS DE CARTOGRAFÍA, CATASTRO, CENSOS, INVENTARIOS, GEOLOGÍA, GEOTECNIA, HIDROLOGÍA Y MEDIO AMBIENTE. LA REALIZACIÓN DE PROYECTOS, DIRECCIÓN DE OBRAS, EL CONTROL DE OBRAS, EL CONTROL DE CALIDAD, LA PROGRAMACIÓN Y COORDINACIÓN DE ACTIVIDADES EN LOS CAMPOS REFERIDOS EN LOS PUNTOS 1 Y 2 PRECEDENTES. EL ANÁLISIS, LOS ENSAYOS Y EL CONTROL TÉCNICO DE PROYECTOS, MATERIALES, OBRAS E INSTALACIONES. LA REALIZACIÓN DE ESTUDIOS, INFORMES, PROYECTOS Y DIRECCIÓN DE ACTUACIONES EN RELACIÓN CON EL MEDIO AMBIENTE Y LA NATURALEZA, LA REVISIÓN, INSPECCIÓN Y VERIFICACIÓN MEDIOAMBIENTALES, Y, EN PARTICULAR LA REALIZACIÓN DE ESTUDIOS DE IMPACTO AMBIENTAL, Y CUANTAS ACTIVIDADES DE INGENIERÍA SE RELACIONEN CON EL MEDIO AMBIENTE Y LA NATURALEZA. LA REALIZACIÓN DE ESTUDIOS TERRITORIALES, DE DESARROLLO REGIONAL Y LOCAL, Y DE DESARROLLO TURÍSTICO, EN EL MEDIO RURAL Y URBANO. LA CONSULTORÍA DE EMPRESAS, EN PARTICULAR LA CONSULTORÍA DE GESTIÓN Y ORGANIZATIVA, ASI COMO LA ASESORÍA DE CARÁCTER INSTITUCIONAL, APOYO A LA TRAMITACIÓN ADMINISTRATIVA, Y, EN GENERAL LA CONSULTORÍA REGULATORIA RELACIONADA CON LAS CONCESIONES ADMINISTRATIVAS. LA CONSULTORÍA DE CALIDAD EN LO SECTORES DE CONSTRUCCIÓN, DE SERVICIOS Y DE LA INDUSTRIA. LA REALIZACIÓN DE TODO TIPO DE DIAGNÓSTICOS, ANÁLISIS, ESTUDIOS, INFORMES, PROYECTOS, ACCIONES DE FORMACIÓN, IMPLANTACIÓN DE SISTMAS DE CALIDAD, ASÍ COMO LA VALIDACIÓN Y HOMOLOGACIÓN DE PROCESOS Y PRODUCTOS. LA PRESTACIÓN DE SERVICIOS ADMINISTRATIVOS Y AUXILIARES RELACINADOS CON LAS DEMÁS ACTIVIDADES SOCIETARIAS, Y EN PARTICULAR LAS RELACIONADAS CON ENCUESTAS Y TOMA DE DATOS, ASÍ COMO LAS RELATIVAS  A LA ORGANIZACIÓN DE CONGRESOS, FERIAS Y EXPOSICIONES. LA PRESTACIÓN DE SERVICIOS RELATIVOS A LA CONSERVACIÓN Y MANTENIMIENTO, Y EN SU CASO GESTIÓN Y EXPLOTACIÓN DE BIENES INMUEBLES, EN PARTICULAR LOS RELACIONADOS CON EDIFICIOS Y GRANDES EQUIPAMIENTOS, CARRETERAS, PISTAS, AUTOPISTAS, AUTOVÍAS, PRESAS, CANALES, ACEQUIAS, REDES DE AGUA, ALCANTARILLADO, ESTACIONES DEPURADORAS, SEÑALIZACIÓN Y MOBILIARIO URBANO, MONTES Y JARDINES, ASÍ COMO MONUMENTOS Y EDIFICIOS SINGULARES. LA PRESTACIÓN DE SERVICIOS DE MANTENIMIENTO Y REPARACIÓN DE INSTALACIONES Y EQUIPOS ELÉCTRICOS Y ELECTRÓNICOS, OLEODUCTOS, GASODUCTOS Y ACUEDUCTOS, DE TELECOMUNICACIÓN, DE SEÑALIZACIÓ Y ENCLAVAMIENTO, ASÍ COMO LOS SERVICIOS ESPECIALIZADOS ASOCIADOS. LOS SERVICIOS DE TRATAMIENTO DE RESIDUOS Y DESECHOS, EN PARTICULAR LOS DE RECOGIDAD, ALMACENAMIENTO, RECUPERACIÓN Y, EN SU CASO, INCINERACIÓN DE RESIDUOS URBANOS E INDUSTRIALES, ASÍ COMO LOS DE LIMPIEZA E HIGIENE URBANA. LOS SERVICIOS DE TECNOLOGÍAS DE LA INFORMACIÓN Y LAS COMUNICACIONES RELATIVOS A CAPTURA DE LA INFORMACIÓN POR MEDIOS ELECTRÓNICOS, INFORMÁTICOS Y TELEMÁTICOS, LOS SERVICIOS DE DESARROLLO Y MANTENIMIENTO DE PROGRAMAS DE ORDENADOR, LOS SERVICIOS DE MANTENIMIENTO Y REPARACIÓN DE EQUIPOS E INSTALACIONES INFORMÁTICOS Y DE TELECOMUNICACIONES, LOS SERVICIOS DE TELECOMUNICACIONES, LOS SERVICIOS DE EXPLOTACIÓN Y CONTROL DE SISTEMAS INFORMÁTICOS E INFRAESTRUCTURAS TELEMÁTICAS, LOS SERVICIOS DE CERTIFICACIÓN ELECTRÓNICA, LOS SERVICIOS DE EVALUACIÓN Y CERTIFICACIÓN TECNOLÓGICA. LA PROMOCIÓN, GESTIÓN E INTERMEDIACIÓN DE TODA CLASE DE INSTALACIONES, OBRAS, EDIFICIOS, INFRAESTRUCTURAS, Y, EN GENERAL TODO TIPO DE INMUEBLES. LA PRESTACIÓN DE TODO TIPO DE SERVICIOS PROPIOS DE LAS CONCESIONES ADMINISTRATIVAS, TANTO DE OBRA, DE SERVICIO O DE DOMINIO PÚBLICO RELACIONADOS CON LOS APARTADOS ANTERIORES. LA EJECUCIÓN DE CONTRATOS DE SUMINISTRO, DE CONTRATOS DE ADOPCIÓN DE TODO TIPO EN GENERAL, ESPECIALMENTE LOS REFERENTES A SUMINISTRO DE SOFTWARE, EL CONTROL DE PRESENCIA Y ELEMENTOS DE SEGURIDAD, ASÍ COMO LAS APLICACIONES ESPECIALES. LA PRESTACIÓN DE SERVICIOS DE INFORMÁTICA Y ALOJAMIENTO WEB. LA INVESTIGACIÓN, DESARROLLO, INNOVACIÓN Y EXPLOTACIÓN DE NUEVAS TECNOLOGÍAS, PRINCIPALMENTE EN EL ÁMBITO DE LOS SISTEMAS DE INFORMACIÓN, DE LOCALIZACIÓN Y DE TELECOMUNICACIONES, AUTOMATIZACIÓN DE PROCESOS Y TELECONTROL DE DISPOSITIVOS REMOTOS. EL DESARROLLO, IMPLANTACIÓN Y MANTENIMIENTO DE SISTEMAS DE AYUDA A LA EXPLOTACIÓN PARA EL TRANSPORTE DE VIAJEROS, SISTEMAS DE GESTIÓN Y LOCALIZACIÓN DE FLOTAS DE VEHÍCULOS Y DISPOSITIVOS MÓVILES, SISTEMAS DE INFORMACIÓN DINÁMICA A USUARIOS, SISTEMAS INTELIGENTES DE TRANSPORTE (ITS), SISTEMAS DE TELECONTROL DE DISPOSITIVOS MÓVILES Y DE INFRAESTRUCTURAS FIJAS, SISTEMAS DE SEGURIDAD Y CENTROS DE CONTROL ",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/04765",
+      "_links": {
+        "self": {
+          "name": "TEKNATRANS CONSULTORES, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/04765"
+        }
+      }
+    },
+    {
+      "name": "LIMPIEZAS CLEAN SERVICE S.L.",
+      "registrationNumber": "05419",
+      "identificationNumber": "B48969265",
+      "address": "FIKA, 56 - BAJO",
+      "location": {
+        "postalCode": "48004",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.922",
+          "name": "Servicios de limpieza",
+          "_links": {
+            "self": {
+              "name": "Servicios de limpieza",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.922"
+            }
+          }
+        },
+        {
+          "id": "1.922.1",
+          "name": "Servicios de limpieza de interiores",
+          "_links": {
+            "self": {
+              "name": "Servicios de limpieza de interiores",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.922.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2019-08-07",
+      "certificateEndDate": "2020-02-04",
+      "object": "A) EL EJERCICIO DE LOS SERVICIOS DE LIMPIEZA DE LOCALES Y EDIFICIOS EN GENERAL, LIMPIEZA DE FÁBRICAS, INSTITUCIONES PÚBLICAS, POLIDEPORTIVOS Y CAMPOS DE FUTBOL, BANCOS, URBANIZACIONES, CENTROS COMERCIALES, GRANDES ALMACENES, CENTROS DE ASISTENCIA SANITARIA COMO HOSPITALES, RESIDENCIAS, AMBULATORIOS, ETC.,; CINES, TEATROS, AERONAVES, BARCOS, ASTILLEROS, CENTRALES ELÉCTRICAS, NUCLEARES, TÉRMINAS, ETC., PUERTOS, AEROPUERTOS, JARDINES, PARQUES, MONTES, BOSQUES, VIVEROS, CAMINOS, CARRETERAS, VÍAS PÚBLICAS, ALCANTARILLAS, POZOS SÉPTICOS, CONDUCCIONES INDUSTRIALES Y SANITARIAS, Y LA DESRATIZACIÓN Y DESIFECCIÓN DE LOSMEDIOS SEÑALADOS ANTERIORMENTE O DE CUALQUIER OTRO QUE LO PRECISE, ASÍ COMO LA RECOGIDA DOMICILIARIA DE BASURAS Y RESIDUOS INDUSTRIALES Y CUALQUIERA OTROS SERVICIOS QUE TENGAN POR OBJETO EL MANTENIMIENTO DE LOS EDIFICIOS, DE CUALQUIER CLASE Y CONDICIÓN, TANTO EN SU ESTRUCTURA EXTERNA  COMO INTERNA, PINTURA, CARPINTERÍA, ELECTRICIDAD, FONTANERÍA, DECORACIÓN DE EDIFICIOS Y LOCALES, ACUCHILLADO, PULIDO, LIJADO, ENCERADO, ACRISTALADO DE PISOS, ZÓCALOS Y PAREDES, LIMPIEZA, PINTURA Y RESTAURACIÓN DE FACHADAS DE CUALQUIER EDIFICIO O MONUMENTO; PURIFICACIÓN DEL MEDIO AMBIENTE Y AGUAS MARÍTIMAS Y FLUVIALES, ASÍ COMO LA LIMPIEZA DE PLAYAS Y RÍOS. B) LA CONSTRUCCIÓN, EL MANTENIMIENTO Y REPARACIÓN DE CUALQUIER CLASE DE EDIFICACIÓN O MONUMENTO, CON LA INCLUSIÓN DE TODOSLOS TRABAJOS QUE ESTA ACTIVIDAD REQUIERE. C) LOS SERVICIOS DE HOSTELERÍA Y RESTAURANTE Y BAR, EN TODA SU GAMA, COCINEROS, AYUDANTES, PINCHES, CAMAREROS, LAVADO, ARREGLO Y PLANCHA DE ROPA, ETC. D) LOS SERVICIOS DE JARDINERÍA EN GENERAL, PREPARACIÓN DE LOS TERRENOS, SIEMBRA, PODA, PLANTACIÓN, INJERTOS, MANTENIMIENTO, ETC. E) LOS SERVICIOS DE LIMPIEZA INDUSTRIAL, QUÍMICA Y ESPECIAL, EN TANQUES DE PETRÓLEO, EN FÁBRICAS EN ACTIVIDAD O EN PARADAS PERIÓDICAS, EN FACTORÍAS, ETC. F) LOS SERVICIOS DE PORTERÍA, GUARDA, VIGILANCIA DE TODO TIPO DE EDIFICIOS O RECINTOS. G) LOS SERVICIOS DE BAR, CAFETERÍA, RESTAURANTE, CERVECERÍA, ASADOR, SIDRERÍA, PIZZERÍA, PUB, ASÍ COMO TODOS LOS RELACIONADOS CON EL RAMO DE LA HOSTELERÍA",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/05419",
+      "_links": {
+        "self": {
+          "name": "LIMPIEZAS CLEAN SERVICE S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/05419"
+        }
+      }
+    },
+    {
+      "name": "ARGIBIDE S.COOP.",
+      "registrationNumber": "06286",
+      "identificationNumber": "F48158687",
+      "address": "IÑIGO LOPEZ DE HARO 11",
+      "location": {
+        "postalCode": "48300",
+        "municipality": "Gernika-Lumo",
+        "county": "Bizkaia",
+        "municipalityId": "046",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.504.12",
+          "name": "Instalaciones eléctricas en toda clase de edificios",
+          "_links": {
+            "self": {
+              "name": "Instalaciones eléctricas en toda clase de edificios",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.504.12"
+            }
+          }
+        },
+        {
+          "id": "1.653.2",
+          "name": "Venta al por menor de material y aparatos eléctricos, electrodomésticos y cocina",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de material y aparatos eléctricos, electrodomésticos y cocina",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.653.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2019-08-07",
+      "certificateEndDate": "2020-02-04",
+      "object": "LAS INSTALACIONES ELÉCTRICAS DE BAJA TENSIÓN EN GENERAL",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06286",
+      "_links": {
+        "self": {
+          "name": "ARGIBIDE S.COOP.",
+          "href": "https://api.euskadi.eus/procurements/companies/06286"
+        }
+      }
+    }
+  ]
+}

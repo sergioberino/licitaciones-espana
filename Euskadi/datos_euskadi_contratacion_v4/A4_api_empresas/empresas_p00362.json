@@ -1,0 +1,458 @@
+{
+  "totalItems": 9042,
+  "totalPages": 905,
+  "currentPage": 362,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "name": "CIBERSARE KOOP ELK TXIKIA",
+      "registrationNumber": "09136",
+      "identificationNumber": "F44856680",
+      "address": "Grupo Sagarminaga nº19 3B",
+      "location": {
+        "postalCode": "48004",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.845",
+          "name": "Explotación electrónica por cuenta de terceros",
+          "_links": {
+            "self": {
+              "name": "Explotación electrónica por cuenta de terceros",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.845"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-04-06",
+      "certificateEndDate": "2025-10-06",
+      "object": "LA PRESTACIÓN DE SERVICIOS DE CIBERSEGURIDAD.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/09136",
+      "_links": {
+        "self": {
+          "name": "CIBERSARE KOOP ELK TXIKIA",
+          "href": "https://api.euskadi.eus/procurements/companies/09136"
+        }
+      }
+    },
+    {
+      "name": "JUAN JAIME ALQUIZA",
+      "registrationNumber": "07581",
+      "identificationNumber": "72724154V",
+      "address": "VITORIA 4 2º A ",
+      "location": {
+        "postalCode": "20018",
+        "municipality": "Donostia / San Sebastián",
+        "county": "Gipuzkoa",
+        "municipalityId": "069",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.911",
+          "name": "Servicios agrícolas y ganaderos",
+          "_links": {
+            "self": {
+              "name": "Servicios agrícolas y ganaderos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.911"
+            }
+          }
+        },
+        {
+          "id": "1.912",
+          "name": "Servicios forestales",
+          "_links": {
+            "self": {
+              "name": "Servicios forestales",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.912"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-04-04",
+      "certificateEndDate": "2025-09-23",
+      "object": "SERVICIOS AGRÍCOLAS Y GANADEROS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07581",
+      "_links": {
+        "self": {
+          "name": "JUAN JAIME ALQUIZA",
+          "href": "https://api.euskadi.eus/procurements/companies/07581"
+        }
+      }
+    },
+    {
+      "name": "SOLAR360 DE REPSOL Y MOVISTAR, S.L.",
+      "registrationNumber": "09225",
+      "identificationNumber": "B10793719",
+      "address": "PASEO CASTELLANA, 135",
+      "location": {
+        "postalCode": "28046",
+        "municipality": "Madrid",
+        "county": "Madrid",
+        "municipalityId": "079",
+        "countyId": "28"
+      },
+      "economicActivities": [
+        {
+          "id": "1.504.1",
+          "name": "Instalaciones eléctricas en general",
+          "_links": {
+            "self": {
+              "name": "Instalaciones eléctricas en general",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.504.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-04-04",
+      "certificateEndDate": "2025-08-07",
+      "classification": [
+        {
+          "id": "O",
+          "name": "Obras",
+          "groups": [
+            {
+              "id": "I",
+              "name": "INSTALACIONES ELÉCTRICAS",
+              "subgroups": [
+                {
+                  "id": "06",
+                  "name": "Distribución en baja tensión",
+                  "categories": [
+                    {
+                      "id": "4",
+                      "name": "Desde 840.001 Hasta 2.400.000",
+                      "_links": {
+                        "self": {
+                          "name": "Desde 840.001 Hasta 2.400.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/O/categories/4"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "Distribución en baja tensión",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/O/groups/I/subgroups/06"
+                    }
+                  }
+                },
+                {
+                  "id": "09",
+                  "name": "Instalaciones eléctricas sin cualificación específica",
+                  "categories": [
+                    {
+                      "id": "4",
+                      "name": "Desde 840.001 Hasta 2.400.000",
+                      "_links": {
+                        "self": {
+                          "name": "Desde 840.001 Hasta 2.400.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/O/categories/4"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "Instalaciones eléctricas sin cualificación específica",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/O/groups/I/subgroups/09"
+                    }
+                  }
+                }
+              ],
+              "_links": {
+                "self": {
+                  "name": "INSTALACIONES ELÉCTRICAS",
+                  "href": "https://api.euskadi.eus/procurements/companies/types/O/groups/I"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Obras",
+              "href": "https://api.euskadi.eus/procurements/companies/types/O"
+            }
+          }
+        }
+      ],
+      "object": "EL DESARROLLO Y COMERCIALIZACIÓN DE PRODUCTOS Y/O SERVICIOS DE AUTOCONSUMO FOTOVOLTAICO A LOS SEGMENTOS DE RESIDENCIAL, COMUNIDADES DE PRO`PIETARIOS Y EMPRESAS, EXCLUSIVAMENTE EN ESPAÑA. EL CÓDIGO CNAE DE LA ACTIVIDAD PRINCIPAL ES 4799-OTRO COMERCIO AL POR MENOR NO REALIZADO NI EN ESTABLECIMIENTOS, NI EN PUESTOS DE VENTA, NI EN MERCADILLOS.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/09225",
+      "_links": {
+        "self": {
+          "name": "SOLAR360 DE REPSOL Y MOVISTAR, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/09225"
+        }
+      }
+    },
+    {
+      "name": "EMANUEL AQUINO JACKSON",
+      "registrationNumber": "10117",
+      "identificationNumber": "58500224T",
+      "address": "Calle Donostia-San Sebastián",
+      "location": {
+        "postalCode": "01010",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.673.2",
+          "name": "Otros cafés y bares",
+          "_links": {
+            "self": {
+              "name": "Otros cafés y bares",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.673.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-04-04",
+      "certificateEndDate": "2025-09-30",
+      "object": "OTROS CAFÉS Y BARES",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/10117",
+      "_links": {
+        "self": {
+          "name": "EMANUEL AQUINO JACKSON",
+          "href": "https://api.euskadi.eus/procurements/companies/10117"
+        }
+      }
+    },
+    {
+      "name": "VALVULAS Y CONEXIONES IBERICA, S.L.",
+      "registrationNumber": "09853",
+      "identificationNumber": "B87971362",
+      "address": "Calle Xarelo 2, Parque Empresarial Cervelló",
+      "location": {
+        "postalCode": "08758",
+        "municipality": "Cervelló",
+        "county": "Barcelona",
+        "municipalityId": "068",
+        "countyId": "08"
+      },
+      "economicActivities": [
+        {
+          "id": "1.617.9",
+          "name": "Venta al por mayor interindustrial de otros productos n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor interindustrial de otros productos n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.617.9"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-04-03",
+      "certificateEndDate": "2025-09-30",
+      "object": "LA REPRESENTACIÓN, DISTRIBUCIÓN, COMPRAVENTA, TANTO AL MAYOR COMO AL MENOR, IMPORTACIÓN Y EXPORTACIÓN DE TODA CLASE DE MAQUINARIA, ACCESORIOS Y VÁLVULAS EN GENERAL, TANTO POR CUENTA PROPIA, COMO EN COMISIÓN, O POR CUENTA DE TERCEROS.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/09853",
+      "_links": {
+        "self": {
+          "name": "VALVULAS Y CONEXIONES IBERICA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/09853"
+        }
+      }
+    },
+    {
+      "name": "MORAGUES AND SCADE ABOGADOS, S.A.",
+      "registrationNumber": "01809",
+      "identificationNumber": "A01139781",
+      "address": "CAMPO VOLANTÍN, 20-3º ",
+      "location": {
+        "postalCode": "48007",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.847",
+          "name": "Servicios de consultoría",
+          "_links": {
+            "self": {
+              "name": "Servicios de consultoría",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.847"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-04-03",
+      "certificateEndDate": "2025-09-30",
+      "object": "LA ADQUISICIÓN Y COMERCIALIZACIÓN DE CONOCIMIENTOS, TECNOLOGÍAS Y PATENTES EN MATERIA DE MEDIOAMBIENTE. LA PRESTACIÓN MULTIDISCIPLINAR DE SERVICIOS TÉCNICOS CON ESPECIAL ATENCIÓN A LOS NIVELES DE INVESTIGACIÓN, ASESORÍA, IMPLEMENTACIÓN Y GESTIÓN INTEGRAL DE SOLUCIONES CON SU CORRECTA ARTICULACIÓN JURÍDICA DIRIGIDA A CUALQUIER ENTIDAD PÚBLICA O PRIVADA. LA INTERMEDIACIÓN EN CONTRATACIÓN DE SERVICIOS. LA FORMACIÓN DE PERSONAL EN LAS MATERIAS Y LOS NIVELES ARRIBA DESCRITOS. Y LA MEDIACIÓN Y ARBITRAJE EN CONFLICTOS MEDIOAMBIENTALES Y DE CUALQUIER OTRO TIPO",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/01809",
+      "_links": {
+        "self": {
+          "name": "MORAGUES AND SCADE ABOGADOS, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/01809"
+        }
+      }
+    },
+    {
+      "name": "TEXTILES E IMPRESIONES BILBOTEX, S.L.",
+      "registrationNumber": "10115",
+      "identificationNumber": "B95383220",
+      "address": "biarritz 5 lonja",
+      "location": {
+        "postalCode": "48002",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.436.3",
+          "name": "Textiles estampados",
+          "_links": {
+            "self": {
+              "name": "Textiles estampados",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.436.3"
+            }
+          }
+        },
+        {
+          "id": "1.613.1",
+          "name": "Venta al por mayor de productos textiles, confección calzado y artículos cuero",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de productos textiles, confección calzado y artículos cuero",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.613.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-04-02",
+      "certificateEndDate": "2025-09-30",
+      "object": "EL ACABADO DE TEXTILES CONFECCIÓN DE OTROS ARTÍCULOS CON MATERIAS TEXTILES Y ARTES GRAFICAS MEDIANTE LA IMPRESIÓN GRAFICA. EL COMERCIO AL POR MAYOR DE TEXTILES, CONFECCIÓN, CALZADO Y ARTÍCULOS DE CUERO Y LA INTERMEDIACIÓN EN DICHO COMERCIO. COMERCIO AL POR MENOR, DE PRODUCTOS TEXTILES, CONFECCIÓN, CALZADO, PIELES Y ARTÍCULOS DE CUERO, REALIZADO EN ESTABLECIMIENTOS PERMANENTES Y FUERA DE UN ESTABLECIMIENTO COMERCIAL PERMANENTE. COMERCIO EN RÉGIMEN DE EXPOSITORES EN DEPÓSITO Y MEDIANTE APARATOS AUTOMÁTICOS, COMERCIO AL POR MENOR POR CORREO O POR CATÁLOGO DE PRODUCTOS DIVERSOS. LA REALIZACIÓN DEL SERVICIO DE TRANSPORTE DE MERCANCÍAS POR CARRETERA. LA REALIZACIÓN DE SERVICIOS DE PUBLICIDAD, RELACIONES PÚBLICAS Y SIMILARES. EL ALQUILER DE TODO TIPO DE BIENES INMUEBLES DE NATURALEZA URBANA.\n\n",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/10115",
+      "_links": {
+        "self": {
+          "name": "TEXTILES E IMPRESIONES BILBOTEX, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/10115"
+        }
+      }
+    },
+    {
+      "name": "HORBEL KOOPERATIBA DE INICIATIVA SOCIAL",
+      "registrationNumber": "02225",
+      "identificationNumber": "F20471207",
+      "address": "PORTUETXE 23A 4º OF. 14-15",
+      "location": {
+        "postalCode": "20018",
+        "municipality": "Donostia / San Sebastián",
+        "county": "Gipuzkoa",
+        "municipalityId": "069",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.849.9",
+          "name": "Otros servicios independientes n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros servicios independientes n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.849.9"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-04-01",
+      "certificateEndDate": "2025-09-26",
+      "object": "LA ORGANIZACIÓN, PUESTA EN MARCHA Y DESARROLLO DE SERVICIOS DE DOCUMENTACIÓN E INFORMACIÓN EN GENERAL Y RELACIONADO CON EL CAMBIO DE LA ANIMACIÓN SOCIO CULTURAL EN PARTICULAR.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/02225",
+      "_links": {
+        "self": {
+          "name": "HORBEL KOOPERATIBA DE INICIATIVA SOCIAL",
+          "href": "https://api.euskadi.eus/procurements/companies/02225"
+        }
+      }
+    },
+    {
+      "name": "BILBULEC, S.L.",
+      "registrationNumber": "08412",
+      "identificationNumber": "B95126090",
+      "address": "C/Loibe, 16 - Nave 19 - Poligon Industrial Elkartegi",
+      "location": {
+        "postalCode": "48810",
+        "municipality": "Alonsotegi",
+        "county": "Bizkaia",
+        "municipalityId": "912",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.504.12",
+          "name": "Instalaciones eléctricas en toda clase de edificios",
+          "_links": {
+            "self": {
+              "name": "Instalaciones eléctricas en toda clase de edificios",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.504.12"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-04-01",
+      "certificateEndDate": "2025-09-30",
+      "object": "LA REALIZACIÓN DE INSTALACIONES ELÉCTRICAS DE TODO TIPO, TANTO EN EDIFICIOS COMO FUERA DE ELLOS, ASÍ COMO LAS INSTALACIONES DE TELEFONÍA, DE TELEVISIÓN, TELEGRÁFICAS, DE APARATOS ELEVADORES Y DE TODO TIPO DE INSTALACIONES RELACIONADAS.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08412",
+      "_links": {
+        "self": {
+          "name": "BILBULEC, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/08412"
+        }
+      }
+    },
+    {
+      "name": "ANTASIS ASISTENCIA TECNICA, S.L.",
+      "registrationNumber": "10110",
+      "identificationNumber": "B95563417",
+      "address": "P.I. SANGRONIZ, IBERRE KALEA 3 - MOD. 2",
+      "location": {
+        "postalCode": "48150",
+        "municipality": "Sondika",
+        "county": "Bizkaia",
+        "municipalityId": "904",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.392.2",
+          "name": "Fabricación de aparatos de prótesis y ortopedia",
+          "_links": {
+            "self": {
+              "name": "Fabricación de aparatos de prótesis y ortopedia",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.392.2"
+            }
+          }
+        },
+        {
+          "id": "1.619.2",
+          "name": "Venta al por mayor de aparatos e instrumentos médicos, ortopédicos, ópticos",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de aparatos e instrumentos médicos, ortopédicos, ópticos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.619.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-04-01",
+      "certificateEndDate": "2025-09-30",
+      "object": "1º.- EL MANTENIMIENTO, REPARACIÓN, FABRICACIÓN, COMPRAVENTA, DISTRIBUCIÓN, ALMACENAJE Y COMERCIALIZACIÓN EN GENERAL DE MATERIAL SANITARIO ODONTOLÓGICO Y DE SUS COMPLEMENTOS, PRÓTESIS, APARATOS, SISTEMAS Y MÉTODOS DE APLICACIÓN. 2º.- LA PROMOCIÓN, INSTALACIÓN, GESTIÓN Y EXPLOTACIÓN EN GENERAL DE CENTROS DE ASISTENCIA ESTOMATOLÓGICA Y ODONTOLÓGICA. 3º.- LA INVESTIGACIÓN Y DOCENCIA SANITARIAS. 5º.- LA REALIZACIÓN DE TODO TIPO DE ACTIVIDAD ECONÓMICA, RELACIONADA CON LA FRANQUICIA, Y DE FORMA CONCRETA Y NO EXHAUSTIVA: LA CONSTITUCIÓN, PUESTA EN MARCHA, SEGUIMIENTO Y EXPLOTACIÓN DE NEGOCIOS EN RÉGIMEN DE FRANQUICIA, MÁS TODAS LAS ACTIVIDADES ANEXAS A ESTA. 6º.- RECIBIR Y OTORGAR REPRESENTACIONES, LICENCIAS, EXCLUSIVAS Y DERECHOS DE OPCIÓN. 7º.- LA REPRESENTACIÓN COMO AGENTE, COMISIONISTA, DELEGADO O CUALQUIER OTRA FORMA DE MEDIACIÓN MERCANTIL DE EMPRESAS NACIONALES O EXTRANJERAS, DE TODA ÍNDOLE, ASÍ COMO LA EXPLOTACIÓN DE PATENTES, Y DEMÁS DERECHOS DE PROPIEDAD, INDUSTRIA, INCLUIDOS LOS MÉTODOS, PROCEDIMIENTOS Y ORGANIZACIÓN DE TRABAJOS INDUSTRIALES, COMERCIALES O DE OTRA ÍNDOLE. 8º.- LA FORMACIÓN E INFORMACIÓN DE TODO TIPO DE PERSONAS MEDIANTE CURSOS, SEMINARIOS, JORNADAS, TANTO DE PRESENCIA COMO A DISTANCIA EN CUALQUIER MATERIA, ASÍ COMO LA EDICIÓN DE LOS TEXTOS Y LIBROS ENCAMINADOS A TAL FIN, REVISTAS Y CUALQUIER OTRO MEDIO DE DIFUSIÓN QUE CONSIDERE IDÓNEO PARA SUS FINES. 9º.- ASESORÍA, CONSULTORÍA Y FORMACIÓN EN LOCALES PROPIOS O AJENOS SOBRE ASPECTOS RELACIONADOS CON LOS SISTEMAS DE INFORMACIÓN. 10º.- CONTRATAR OBRAS Y SERVICIOS CON CUALQUIER ORGANISMO DE LAS ADMINISTRACIONES PÚBLICAS Y CON ENTIDADES Y PARTICULARES. 11º.- ADQUIRIR POR CUALQUIER TÍTULO, ADMINISTRAR, ENAJENAR, ARRENDAR, CONSTRUIR, MANTENER, REPARAR, PROMOVER, URBANIZAR, ORDENAR URBANÍSTICAMENTE Y, EN GENERAL, EXPLOTAR MERCANTIL E INDUSTRIALMENTE TODA CLASE DE BIENES INMUEBLES, TERRENOS Y FINCAS RÚSTICAS, ASÍ COMO PRESTAR TODA CLASE DE SERVICIOS Y ACTIVIDADES RELACIONADAS CON EL TRÁFICO, PROMOCIÓN Y GESTIÓN INMOBILIARIAS, REALIZANDO TODOS AQUELLOS ASUNTOS PARA LOS QUE NO EXISTIENDO PROHIBICIÓN LEGAL, SE RELACIONEN, DIRECTA O INDIRECTAMENTE CON LOS FINES ENUNCIADOS. 12º.- LA ADQUISICIÓN, CESIÓN, INVERSIÓN, TENENCIA, DISFRUTE, ADMINISTRACIÓN, GESTIÓN Y NEGOCIACIÓN DE TODA CLASE DE TÍTULOS Y VALORES MOBILIARIOS, COTIZADOS EN BOLSA O NO, SIN INCIDIR EN LAS OPERACIONES A QUE SE REFIERE LA LEY 46/84 DE INVERSIONES COLECTIVAS. 13º.- LA PROMOCIÓN Y PARTICIPACIÓN EN TODO TIPO DE CAMPAÑAS RELACIONADAS CON LOS PRODUCTOS, ACTIVIDADES Y ARTÍCULOS SEÑALADOS.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/10110",
+      "_links": {
+        "self": {
+          "name": "ANTASIS ASISTENCIA TECNICA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/10110"
+        }
+      }
+    }
+  ]
+}

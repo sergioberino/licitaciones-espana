@@ -1,0 +1,428 @@
+{
+  "totalItems": 9042,
+  "totalPages": 905,
+  "currentPage": 754,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "name": "ATU 03, S.L.",
+      "registrationNumber": "02948",
+      "identificationNumber": "B95284139",
+      "address": "DR AREILZA 11, 6º DCHA",
+      "location": {
+        "postalCode": "48011",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.847",
+          "name": "Servicios de consultoría",
+          "_links": {
+            "self": {
+              "name": "Servicios de consultoría",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.847"
+            }
+          }
+        },
+        {
+          "id": "1.849.1",
+          "name": "Cobros de deudas y confección de facturas",
+          "_links": {
+            "self": {
+              "name": "Cobros de deudas y confección de facturas",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.849.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2008-11-07",
+      "certificateEndDate": "2009-04-30",
+      "object": "A) LA TENENCIA DE BIENES, TANTO INMUEBLES COMO MUEBLES O VALORES MOBILIARIOS, PUDIENDO OBTENER DE LOS MISMOS LOS RENDIMIENTOS SUSCEPTIBLES DE UNA BUENA ADMINISTRACIÓN; B) LA ADQUISICIÓN, COMERCIALIZACIÓN, VENTA, ARRIENDO, INTERMEDIACIÓN Y EXPLOTACIÓN DE TODO TIPO DE INMUEBLE, TERRENOS, SOLARES, EDIFICIOS, APARTAMENTOS, VIVIENDAS, LOCALES, HOTELES, OFICINAS, CHALETS, CASAS Y EDIFICACIONES EN GENERAL, RÚSTICAS O URBANAS, SEAN PROPIOS DE LA SOCIEDAD O POR CUENTA DE TERCEROS; LA REALIZACIÓN Y PROMOCIÓN DE PROYECTOS DE EDIFICACIÓN, CIMENTACIONES, EXCAVACIONES Y DERRIBOS DE TODA NATURALEZA; C) LA PROMOCIÓN DE NEGOCIOS Y EMPRESAS INDUSTRIALES, COMERCIALES, INMOBILIARIAS O AGRÍCOLAS; D) PRESTACIÓN DE SERVICIOS A EMPRESAS Y PARTICULARES DE CONTABILIDAD, TENEDURÍA DE LIBROS, CENSURA DE CUENTAS, ASESORAMIENTO FINANCIERO Y CONTABLE, ASESORÍA FISCAL; E) REALIZACIÓN DE ESTUDIOS DE MERCADO, DE OPINIÓN, HÁBITOS DE COMPRA, INFORMACIÓN E INVESTIGACIÓN COMERCIAL; ASESORAMIENTO, INFORMACIÓN Y RESOLUCIÓN DE CONSULTAS SOBRE ACTIVIDADES INDUSTRIALES Y ECONÓMICAS Y SOBRE CUESTIONES MEDIOAMBIENTALES; F) LA REALIZACIÓN DE GESTIÓN DE COBROS, NEGOCIACIONES, ACUERDOS Y CUALESQUIERA OTRA CLASE DE TRANSACCIONES, ASÍ COMO LA INTERMEDIACIÓN EN CESIÓN DE CRÉDITO, DE SUBASTAS, DACIONES DE BIENES U OTRAS OPERACIONES SEMEJANTES, DERIVADAS DE CRÉDITOS Y OTROS RIESGOS, DOCUMENTADOS EN CUALQUIER TÍTULO, QUE PUDIERAN ENCOMENDARLE PERSONAS FÍSICAS O JURÍDICAS, ENTIDADES FINANCIERAS, COMERCIALES, INDUSTRIALES, LABORALES, PROFESIONALES O DE CUALQUIER CLASE, RESPECTO DE SUS CARTERAS DE CLIENTES MOROSOS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/02948",
+      "_links": {
+        "self": {
+          "name": "ATU 03, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/02948"
+        }
+      }
+    },
+    {
+      "name": "COMERCIAL ETE, S.A.",
+      "registrationNumber": "00498",
+      "identificationNumber": "A20092631",
+      "address": "C/ BIDEBARRIETA, Nº 66 - BAJO.",
+      "location": {
+        "postalCode": "20600",
+        "municipality": "Eibar",
+        "county": "Gipuzkoa",
+        "municipalityId": "030",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.659.2",
+          "name": "Venta al por menor de muebles de oficina y máquinas y equipos de oficina",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de muebles de oficina y máquinas y equipos de oficina",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.659.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2008-11-05",
+      "certificateEndDate": "2009-04-29",
+      "object": "LA COMPRA VENTA DE MOBILIARIO, VEHÍCULOS, ACCESORIOS, REPUESTOS, ARTÍCULOS DE ALMACENAJE Y REPRESENTACIONES",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/00498",
+      "_links": {
+        "self": {
+          "name": "COMERCIAL ETE, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/00498"
+        }
+      }
+    },
+    {
+      "name": "TÉCNICOS DE MANTENIMIENTO, S.A.",
+      "registrationNumber": "01366",
+      "identificationNumber": "A48199517",
+      "address": "C/ ISLAS CANARIAS, Nº 4.",
+      "location": {
+        "postalCode": "48015",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.501.1",
+          "name": "Construcción completa, reparación y conservación de edificaciones",
+          "_links": {
+            "self": {
+              "name": "Construcción completa, reparación y conservación de edificaciones",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.1"
+            }
+          }
+        },
+        {
+          "id": "1.504.1",
+          "name": "Instalaciones eléctricas en general",
+          "_links": {
+            "self": {
+              "name": "Instalaciones eléctricas en general",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.504.1"
+            }
+          }
+        },
+        {
+          "id": "1.504.3",
+          "name": "Instalaciones de frío, calor y acondicionamiento de aire",
+          "_links": {
+            "self": {
+              "name": "Instalaciones de frío, calor y acondicionamiento de aire",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.504.3"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2008-11-05",
+      "certificateEndDate": "2008-11-26",
+      "object": "a) EJECUCIÓN Y MANTENIMIENTO DE INSTALACIONES ELÉCTRICAS EN GENERAL, EN ALTA, BAJA Y MEDIO TENSIÓN, INSTALACIONES DE TELECOMUNICACIÓN, INSTALACIONES ELECTRÓNICAS E INSTALACIONES DE SISTEMAS DE SEÑALIZACIÓN Y BALIZAMIENTOS DE PUERTOS, AEROPUERTOS Y CARRETERAS, INSTALACIONES DE SEGURIDAD Y CONTRA INCENDIOS.\r\n\r\nb) EJECUCIÓN Y MANTENIMIENTO DE INSTALACIONES MECÁNICAS EN GENERAL, INSTALACIONES DE FONTANERÍA, INSTALACIONES FRIGORÍFICAS, INSTALACIONES DE CALEFACCIÓN, VENTILACIÓN Y CLIMATIZACIÓN, INSTALACIONES ELEVADORAS Y TRANSPORTADORAS, E INSTALACIONES DE TRATAMIENTO DE AGUAS  DE TODO TIPO.\r\n\r\nc) CONSTRUCCIÓN COMPLETA, REPARACIÓN Y CONSERVACIÓN DE EDIFICIOS Y OBRAS CIVILES.\r\n\r\nd) CONTRATAR OBRAS Y SERVICIOS DE CUALQUIER ORGANISMO DE LAS ADMINISTRACIONES PÚBLICAS Y CON TODA CLASE DE ENTIDADES PARTICULARES.\r\n\r\ne) REDACCIÓN Y CONFECCIÓN DE PROYECTOS TÉCNICOS DE TODO TIPO, DIRECCIÓN DE OBRA Y CONTROL DE CALIDAD, REALIZACIÓN DE ESTUDIOS E INFORMES Y ASESORAMIENTO TÉCNICO.\r\n\r\nf) PLANTACIÓN Y MANTENIMIENTO DE PARQUES Y JARDINES, PLANTACIÓN Y MANTENIMIENTO FORESTALES, REPOBLACIÓN FORESTAL, LUCHAS CONTRA PLAGAS Y LUCHA, DEFENSA Y PREVENCIÓN CONTRA INCENDIOS FORESTALES",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/01366",
+      "_links": {
+        "self": {
+          "name": "TÉCNICOS DE MANTENIMIENTO, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/01366"
+        }
+      }
+    },
+    {
+      "name": "FONORTE EMPRESA CONSTRUCTORA, S.A.",
+      "registrationNumber": "02350",
+      "identificationNumber": "A48598460",
+      "address": "C/ BARRIO BAÑALES, S/N",
+      "location": {
+        "postalCode": "48530",
+        "municipality": "Ortuella",
+        "county": "Bizkaia",
+        "municipalityId": "083",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.501.1",
+          "name": "Construcción completa, reparación y conservación de edificaciones",
+          "_links": {
+            "self": {
+              "name": "Construcción completa, reparación y conservación de edificaciones",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.1"
+            }
+          }
+        },
+        {
+          "id": "1.501.2",
+          "name": "Construcción completa, reparación y conservación obras civiles",
+          "_links": {
+            "self": {
+              "name": "Construcción completa, reparación y conservación obras civiles",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2008-11-04",
+      "certificateEndDate": "2009-02-25",
+      "object": "LA ADQUISICIÓN, ENAJENACIÓN, ARRENDAMIENTO, EXPLOTACIÓN, PARCELACIÓN Y URBANIZACIÓN DE TODA CLASE DE FINCAS RÚSTICAS, URBANAS Y SOLARES. LA CONSTRUCCIÓN DE TODA CLASE DE VIVIENDAS, OFIICNAS, LOCALES DE NEGOCIO, NAVES O INSTALACIONES INDUSTRIALES O DEPORTIVAS, ETC., POR CUENTA PROPIA O AJENA, PARA SU USO PROPIO O PARA VENDER O ARRENDAR, CON PROTECCIÓN OFICIAL O SIN ELLAS; ACTIVIDADES TODAS ELLAS CUYO DESARROLLO PODRÁ  EJERCER LA SOCIEDAD, TOTAL O PARCIALMENTE, DE MODO INDIRECTO MEDIANTE LA TITULARIDAD  DE ACCIONES O DE PARTICIPACIONES EN SOCIEDADES CON OBJETO IDÉNTICO O ANÁLOGO AL PRESENTE, O POR MEDIO DE AGRUPACIONES TEMPORALES CON OTRAS EMPRESAS.\r\n",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/02350",
+      "_links": {
+        "self": {
+          "name": "FONORTE EMPRESA CONSTRUCTORA, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/02350"
+        }
+      }
+    },
+    {
+      "name": "ARKAIOS INVESTIGACIONES, S.L.",
+      "registrationNumber": "03209",
+      "identificationNumber": "B20875555",
+      "address": "MENDIGAIN, 30 - 6ºC",
+      "location": {
+        "postalCode": "20014",
+        "municipality": "Donostia / San Sebastián",
+        "county": "Gipuzkoa",
+        "municipalityId": "069",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.936.9",
+          "name": "Otras investigaciones científicas y técnicas n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otras investigaciones científicas y técnicas n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.936.9"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2008-11-03",
+      "certificateEndDate": "2009-04-20",
+      "object": "LA CONSERVACIÓN, INVESTIGACIÓN, DIFUSIÓN Y ASESORAMIENTO EN LO REFERENTE AL PATRIMONIO ARQUEOLÓGICO, ASÍ COMO LOS SERVICIOS CULTURALES",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03209",
+      "_links": {
+        "self": {
+          "name": "ARKAIOS INVESTIGACIONES, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/03209"
+        }
+      }
+    },
+    {
+      "name": "JAVIER CAMPOS BELLOSTA",
+      "registrationNumber": "03596",
+      "identificationNumber": "14600233V",
+      "address": "Parroco Unceta, nº 20-Lonja 2ª (Trasera)",
+      "location": {
+        "postalCode": "48004",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.798",
+          "name": "Otros profesionales relacionados con actividades financieras y jurídicas",
+          "_links": {
+            "self": {
+              "name": "Otros profesionales relacionados con actividades financieras y jurídicas",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.798"
+            }
+          }
+        },
+        {
+          "id": "1.849.7",
+          "name": "Servicios de gestión administrativa",
+          "_links": {
+            "self": {
+              "name": "Servicios de gestión administrativa",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.849.7"
+            }
+          }
+        },
+        {
+          "id": "2.799",
+          "name": "Otros profesionales relacionados con actividades de seguros y de alquileres",
+          "_links": {
+            "self": {
+              "name": "Otros profesionales relacionados con actividades de seguros y de alquileres",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/2.799"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2008-11-03",
+      "certificateEndDate": "2009-04-24",
+      "object": "ASESORÍA DE EMPRESAS EN EL ÁMBITO: LABORAL, FISCAL Y GESTIONES ADMINISTRATIVAS.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03596",
+      "_links": {
+        "self": {
+          "name": "JAVIER CAMPOS BELLOSTA",
+          "href": "https://api.euskadi.eus/procurements/companies/03596"
+        }
+      }
+    },
+    {
+      "name": "SIR, S.A.",
+      "registrationNumber": "03705",
+      "identificationNumber": "A78218526",
+      "address": "AVDA. DE LA INDUSTRIA, 3",
+      "location": {
+        "postalCode": "28760",
+        "municipality": "Tres Cantos",
+        "county": "Madrid",
+        "municipalityId": "903",
+        "countyId": "28"
+      },
+      "economicActivities": [
+        {
+          "id": "1.615.4",
+          "name": "Venta al por mayor de aparatos y material radioeléctrico y electrónico",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de aparatos y material radioeléctrico y electrónico",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.615.4"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2008-11-03",
+      "certificateEndDate": "2009-04-10",
+      "object": "LA FABRICACIÓN, VENTA, IMPORTACIÓN Y COMERCIALIZACIÓN DE TODA CLASE DE APARATOS ELECTRÓNICOS Y, EN ESPECIAL, LOS RELATIVOS AL SECTOR DE CONTROL DE LA POLUCIÓN ATMOSFÉRICA",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03705",
+      "_links": {
+        "self": {
+          "name": "SIR, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/03705"
+        }
+      }
+    },
+    {
+      "name": "ERAILAN, S.A.",
+      "registrationNumber": "00716",
+      "identificationNumber": "A20165296",
+      "address": "C/ ETXAIDE, 10 - BAJO",
+      "location": {
+        "postalCode": "20005",
+        "municipality": "Donostia / San Sebastián",
+        "county": "Gipuzkoa",
+        "municipalityId": "069",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.501.1",
+          "name": "Construcción completa, reparación y conservación de edificaciones",
+          "_links": {
+            "self": {
+              "name": "Construcción completa, reparación y conservación de edificaciones",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2008-10-30",
+      "certificateEndDate": "2009-04-07",
+      "object": "LA PROMOCIÓN, CONSTRUCCIÓN Y REPARACIÓN DE TODA CLASE DE EDIFICIOS URBANOS E INDUSTRIALES, ASÍ COMO LA REALIZACIÓN DE TODA CLASE DE OBRA DE CONSTRUCCIÓN Y LA COMPRA-VENTA DE TODA CLASE DE TERRENOS, EDIFICIOS Y FINCAS. LA COMPAÑÍA PODRÁ DESARROLLAR ESAS ACTIVIDADES DE MODO INDIRECTO MEDIANTE LA TITULARIDAD DE ACCIONES O PARTICIPACIONES EN SOCIEDADES DE IDÉNTICO O ANÁLOGO OBJETO",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/00716",
+      "_links": {
+        "self": {
+          "name": "ERAILAN, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/00716"
+        }
+      }
+    },
+    {
+      "name": "CONSTRUCCIONES FRIXI, S.L.",
+      "registrationNumber": "03217",
+      "identificationNumber": "B20650859",
+      "address": "INTXAURTXUETA, 5, BAJO",
+      "location": {
+        "postalCode": "20540",
+        "municipality": "Eskoriatza",
+        "county": "Gipuzkoa",
+        "municipalityId": "034",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.501.2",
+          "name": "Construcción completa, reparación y conservación obras civiles",
+          "_links": {
+            "self": {
+              "name": "Construcción completa, reparación y conservación obras civiles",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2008-10-30",
+      "certificateEndDate": "2009-03-16",
+      "object": "LA ADQUISICIÓN, TENENCIA EN CUALQUIER FORMA ADMITIDA EN DERECHO, EXPLOTACIÓN, PARCELACIÓN, VENTA, CONSTRUCCIÓN Y URBANIZACIÓN Y PROMOCIÓN DE FINCAS RÚSTICAS Y URBANAS TANTO DE RENTA Y VENTA LIBRE COMO PROTECCIÓN OFICIAL Y SU FINANCIACIÓN, QUEDANDO EXCLUÍDAS AQUELLAS ACTIVIDADES ATRIBUÍDAS POR LA LEY CON CARÁCTER EXCLUSIVO A DETERMINADOS PROFESIONALES",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03217",
+      "_links": {
+        "self": {
+          "name": "CONSTRUCCIONES FRIXI, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/03217"
+        }
+      }
+    },
+    {
+      "name": "THALES RAIL SIGNALLING SOLUTIONS, S.L.U.",
+      "registrationNumber": "03351",
+      "identificationNumber": "B84753953",
+      "address": "C/ Serrano Galvache, 56. Edificio Alamo",
+      "location": {
+        "postalCode": "28033",
+        "municipality": "Madrid",
+        "county": "Madrid",
+        "municipalityId": "079",
+        "countyId": "28"
+      },
+      "economicActivities": [
+        {
+          "id": "1.504.1",
+          "name": "Instalaciones eléctricas en general",
+          "_links": {
+            "self": {
+              "name": "Instalaciones eléctricas en general",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.504.1"
+            }
+          }
+        },
+        {
+          "id": "1.617.9",
+          "name": "Venta al por mayor interindustrial de otros productos n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor interindustrial de otros productos n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.617.9"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2008-10-30",
+      "certificateEndDate": "2009-04-06",
+      "object": "CONSTITUYEN EL OBJETO SOCIAL DE LA SOCIEDAD LAS ACTIVIDADES SIGUIENTES: INGENIERÍA, DISEÑO, FABRICACIÓN, IMPORTACIÓN, COMPRAVENTA, SUMINISTRO, ARRENDAMIENTO, EXPORTACIÓN, INSTALACIÓN, INTEGRACIÓN, PUESTA A PUNTO Y EN SERVICIO, INCLUYENDO EL POSTERIOR MANTENIMIENTO Y REPARACIÓN DE TODO TIPO DE EQUIPOS Y SISTEMAS DE SEÑALIZACIÓN FERROVIARIA, DE TELECOMUNICACIÓN, ELÉCTRICOS, RADIOELÉCTRICOS, ELECTRÓNICOS, MECÁNICOS ELEVADORES  Y TRANSPORTADORES, DE CLIMATIZACIÓN, VENTILACIÓN, CALEFACCIÓN, FONTANERÍA Y SANITARIOS, ASÍ COMO LA CONSTRUCCIÓN EN GENERAL DE TODO TIPO DE OBRAS, TANTO DE EDIFICACIÓN COMO OBRAS PÚLICAS, INCLUYENDO, ASIMISMO, EL MANTENIMIENTO Y LA REPAACIÓN DE ESTAS OBRAS. LAS ACITVIDADES DE INGENIERÍA SERÁN LLEVADAS A CABO POR PERSONAL DEBIDAMENTE CUALIFICADO",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03351",
+      "_links": {
+        "self": {
+          "name": "THALES RAIL SIGNALLING SOLUTIONS, S.L.U.",
+          "href": "https://api.euskadi.eus/procurements/companies/03351"
+        }
+      }
+    }
+  ]
+}

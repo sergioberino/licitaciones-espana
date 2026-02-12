@@ -1,0 +1,428 @@
+{
+  "totalItems": 9042,
+  "totalPages": 905,
+  "currentPage": 823,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "name": "RUIZ Y OTEGUI, S.L.",
+      "registrationNumber": "02221",
+      "identificationNumber": "B20165809",
+      "address": "C/ SAN MARCIAL, Nº 35 - 6º.",
+      "location": {
+        "postalCode": "20005",
+        "municipality": "Donostia / San Sebastián",
+        "county": "Gipuzkoa",
+        "municipalityId": "069",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.844",
+          "name": "Servicios de publicidad, relaciones públicas y similares",
+          "_links": {
+            "self": {
+              "name": "Servicios de publicidad, relaciones públicas y similares",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.844"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2000-01-19",
+      "certificateEndDate": "2000-05-11",
+      "object": "EL EJERCICIO DE TODO TIPO DE ACTIVIDADES PUBLICITARIAS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/02221",
+      "_links": {
+        "self": {
+          "name": "RUIZ Y OTEGUI, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/02221"
+        }
+      }
+    },
+    {
+      "name": "EXCAVACIONES CELAYA, S.L.",
+      "registrationNumber": "02220",
+      "identificationNumber": "B20072518",
+      "address": "C/ KATEA, Nº 2.",
+      "location": {
+        "postalCode": "20200",
+        "municipality": "Beasain",
+        "county": "Gipuzkoa",
+        "municipalityId": "019",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.502.2",
+          "name": "Consolidación y preparación de terrenos para la construcción de edificaciones",
+          "_links": {
+            "self": {
+              "name": "Consolidación y preparación de terrenos para la construcción de edificaciones",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.502.2"
+            }
+          }
+        },
+        {
+          "id": "1.722",
+          "name": "Transporte de mercancías por carretera",
+          "_links": {
+            "self": {
+              "name": "Transporte de mercancías por carretera",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.722"
+            }
+          }
+        },
+        {
+          "id": "1.852",
+          "name": "Alquiler de maquinaria y equipo para la construcción",
+          "_links": {
+            "self": {
+              "name": "Alquiler de maquinaria y equipo para la construcción",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.852"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2000-01-14",
+      "certificateEndDate": "2000-06-14",
+      "object": "LA REALIZACIÓN DE TRABAJOS AFINES A LA CONSTRUCCIÓN, TALES COMO LA EXCAVACIÓN Y PREPARACIÓN DE TERRENOS, DERRIBOS Y APROVECHAMIENTO DE LOS RESIDUOS.\r\nASÍ MISMO, CONSTITUYE EL OBJETO SOCIAL LOS TRANSPORTES PÚBLICOS DE MERCANCÍAS Y SUS DERIVADOS, LA CONSTRUCCIÓN COMPLETA, REPARACIÓN, DEMOLICIÓN Y CONSERVACIÓN DE TODO TIPO DE EDIFICACIONES ASÍ COMO DE OBRAS CIVILES PARA TODO TIPO DE ORGANISMOS Y ENTIDADES PÚBLICAS O PRIVADAS INCLUSO PARA PARTICULARES",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/02220",
+      "_links": {
+        "self": {
+          "name": "EXCAVACIONES CELAYA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/02220"
+        }
+      }
+    },
+    {
+      "name": "TECNOLOGÍA E INVESTIGACIÓN FERROVIARIA, S.A.",
+      "registrationNumber": "01869",
+      "identificationNumber": "A28889483",
+      "address": "C/ CAPITÁN HAYA, Nº 1 - 5ª. EDIFICIO EUROCENTRO.",
+      "location": {
+        "postalCode": "28020",
+        "municipality": "Madrid",
+        "county": "Madrid",
+        "municipalityId": "079",
+        "countyId": "28"
+      },
+      "economicActivities": [
+        {
+          "id": "1.843.1",
+          "name": "Servicios técnicos de ingeniería",
+          "_links": {
+            "self": {
+              "name": "Servicios técnicos de ingeniería",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "1999-12-27",
+      "certificateEndDate": "2000-06-10",
+      "object": "IMPULSAR LA INVESTIGACIÓN Y EL DESARROLLO TECNOLÓGICO, PRESTAR SERVICIOS DE CONSULTORÍA, ASISTENCIA TÉCNICA, SUPERVISIÓN Y CONTROL DE CALIDAD, REDACCIÓN Y DIRECCIÓN DE PROYECTOS, ORGANIZACIÓN Y FORMACIÓN, EN LOS DIFERENTES ASPECTOS DE INGENIERÍA INDUSTRIAL Y CIVIL Y DE GESTIÓN EMPRESARIAL, EN TODAS LAS ACTIVIDADES RELACIONADAS CON EL SECTOR DEL TRANSPORTE FERROVIARIO Y DEMÁS SECTORES AFINES, TANTO A NIVEL NACIONAL COMO INTERNACIONAL",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/01869",
+      "_links": {
+        "self": {
+          "name": "TECNOLOGÍA E INVESTIGACIÓN FERROVIARIA, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/01869"
+        }
+      }
+    },
+    {
+      "name": "CONSTRUCCIONES ZUGA, S.L.",
+      "registrationNumber": "02216",
+      "identificationNumber": "B20166302",
+      "address": "C/ SAN BARTOLOMÉ, Nº 25 - 1º",
+      "location": {
+        "postalCode": "20268",
+        "municipality": "Amezketa",
+        "county": "Gipuzkoa",
+        "municipalityId": "008",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.501.1",
+          "name": "Construcción completa, reparación y conservación de edificaciones",
+          "_links": {
+            "self": {
+              "name": "Construcción completa, reparación y conservación de edificaciones",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.1"
+            }
+          }
+        },
+        {
+          "id": "1.833.2",
+          "name": "Promoción de edificaciones",
+          "_links": {
+            "self": {
+              "name": "Promoción de edificaciones",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.833.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "1999-12-21",
+      "certificateEndDate": "2000-05-16",
+      "object": "LA CONSTRUCCIÓN DE VIVIENDAS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/02216",
+      "_links": {
+        "self": {
+          "name": "CONSTRUCCIONES ZUGA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/02216"
+        }
+      }
+    },
+    {
+      "name": "MASFA, S.L.",
+      "registrationNumber": "00735",
+      "identificationNumber": "B48088413",
+      "address": "C/ SIMÓN BOLÍVAR, Nº 11",
+      "location": {
+        "postalCode": "48010",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.504.1",
+          "name": "Instalaciones eléctricas en general",
+          "_links": {
+            "self": {
+              "name": "Instalaciones eléctricas en general",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.504.1"
+            }
+          }
+        },
+        {
+          "id": "1.504.7",
+          "name": "Instalaciones telefónicas, telegráficas, televisión, etc",
+          "_links": {
+            "self": {
+              "name": "Instalaciones telefónicas, telegráficas, televisión, etc",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.504.7"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "1999-12-17",
+      "certificateEndDate": "2000-06-13",
+      "object": "LA REALIZACIÓN DE TODA CLASE DE INSTALACIONES INDUSTRIALES, ELÉCTRICAS, AIRE ACONDICIONADO, CALEFACCIÓN Y SONIDO; INSTALACIÓN Y MONTAJE DE CUADROS ELÉCTRICOS Y ELECTRÓNICOS; INSTALACIÓN, MONTAJE Y DESMONTAJE DE APARATOS ELECTRÓNICOS, COMPUTADORAS, TELEFONÍA E INTERCOMUNICACIÓN; ASÍ COMO LA COMPRA Y VENTA DE TODA CLASE DE APARELLAJE ELÉCTRICO, ELECTRÓNICO E INDUSTRIAL Y CUANTO CON ELLAS TENGA RELACIÓN DIRECTA O INDIRECTA, SEA ANTECEDENTE, AUXILIAR O ACCESORIO. LA FABRICACIÓN, DESARROLLO, COMERCIALIZACIÓN Y MANTENIMIENTO DE APARATOS Y SISTEMAS DE SEGURIDAD, EN PARTICULAR MEDIANTE LA INSTALACIÓN Y MANTENIMIENTO DE SISTEMAS FÍSICOS, ELECTRÓNICOS, VISUALES, ACÚSTICOS O INSTRUMENTALES DE VIGILANCIA Y PROTECCIÓN Y, ESPECIALMENTE, CON LA CONEXIÓN A CENTROS DE RECEPCIÓN DE ALARMAS. EL ASESORAMIENTO Y PLANIFICACIÓN DE INSTALACIONES DE SEGURIDAD",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/00735",
+      "_links": {
+        "self": {
+          "name": "MASFA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/00735"
+        }
+      }
+    },
+    {
+      "name": "GESTINGRAF, S.A.L.",
+      "registrationNumber": "00497",
+      "identificationNumber": "A48273312",
+      "address": "C/ CAMINO DE IBARSUSI, Nº 3.",
+      "location": {
+        "postalCode": "48004",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.474",
+          "name": "Artes gráficas (impresión gráfica)",
+          "_links": {
+            "self": {
+              "name": "Artes gráficas (impresión gráfica)",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.474"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "1999-12-13",
+      "certificateEndDate": "2000-06-10",
+      "object": "LA REALIZACIÓN POR CUENTA PROPIA O AJENA DE TRABAJOS DE IMPRENTA Y DE ARTES GRÁFICAS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/00497",
+      "_links": {
+        "self": {
+          "name": "GESTINGRAF, S.A.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/00497"
+        }
+      }
+    },
+    {
+      "name": "INDUSTRIAS QUIRÚRGICAS DE LEVANTE, S.A.",
+      "registrationNumber": "00467",
+      "identificationNumber": "A46243119",
+      "address": "ISLAS BALEARES, 50",
+      "location": {
+        "postalCode": "46980",
+        "municipality": "Paterna",
+        "county": "Valencia/València",
+        "municipalityId": "190",
+        "countyId": "46"
+      },
+      "economicActivities": [
+        {
+          "id": "1.352",
+          "name": "Fabricación de aparatos y equipo electromédico y de uso profesional",
+          "_links": {
+            "self": {
+              "name": "Fabricación de aparatos y equipo electromédico y de uso profesional",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.352"
+            }
+          }
+        },
+        {
+          "id": "1.619.2",
+          "name": "Venta al por mayor de aparatos e instrumentos médicos, ortopédicos, ópticos",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de aparatos e instrumentos médicos, ortopédicos, ópticos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.619.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "1999-12-09",
+      "certificateEndDate": "1999-02-18",
+      "object": "LOS TRABAJOS SIDERÚRGICOS, PRINCIPALMENTE CON ACEROS ESPECIALES Y TAMBIÉN CON METALES NO FÉRRICOS, FABRICANDO CON ELLOS HERRAMIENTAS, INSTRUMENTOS Y MATERIALES PARA USOS MÉDICO-QUIRÚRGICOS Y DENTALES. SE DEDICARÁ TAMBIÉN CON PREFERENCIA A LA FABRICACIÓN DE INSTRUMENTAL QUIRÚRGICO E IMPLANTES, ASÍ COMO A TODO AQUELLO QUE CONTRIBUYA A SOLUCIONAR A LOS MÉDICOS CIRUJANOS ESPECIALISTAS DE TRAUMATOLOGÍA Y CIRUGÍA ORTOPÉDICA, LOS PROBLEMAS QUE PUEDAN PRESENTÁRSELES POR LOS ARTRÍTICOS Y LOS ACCIDENTADOS EN GENERAL, Y MUY PARTICULARMENTE LOS DE TRABAJO Y TRÁFICO. LA COMERCIALIZACIÓN Y VENTA DE TODA CLASE DE INSTRUMENTAL Y MATERIAL MÉDICO QUIRÚRGICO Y DENTAL, ASÍ COMO DE TODA CLASE DE APARATOS MÉDICO-QUIRÚRGICOS Y DENTALES Y SUS ACCESORIOS, TANTO DE FABRICACIÓN PROPIA COMO AJENA",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/00467",
+      "_links": {
+        "self": {
+          "name": "INDUSTRIAS QUIRÚRGICAS DE LEVANTE, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/00467"
+        }
+      }
+    },
+    {
+      "name": "ROBERT BOSCH ESPAÑA, S.A.",
+      "registrationNumber": "01784",
+      "identificationNumber": "A28071702",
+      "address": "C/ HERMANOS GARCÍA NOBLEJAS, Nº 19.",
+      "location": {
+        "postalCode": "28037",
+        "municipality": "Madrid",
+        "county": "Madrid",
+        "municipalityId": "079",
+        "countyId": "28"
+      },
+      "economicActivities": [
+        {
+          "id": "1.504.1",
+          "name": "Instalaciones eléctricas en general",
+          "_links": {
+            "self": {
+              "name": "Instalaciones eléctricas en general",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.504.1"
+            }
+          }
+        },
+        {
+          "id": "1.504.7",
+          "name": "Instalaciones telefónicas, telegráficas, televisión, etc",
+          "_links": {
+            "self": {
+              "name": "Instalaciones telefónicas, telegráficas, televisión, etc",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.504.7"
+            }
+          }
+        },
+        {
+          "id": "1.615.4",
+          "name": "Venta al por mayor de aparatos y material radioeléctrico y electrónico",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de aparatos y material radioeléctrico y electrónico",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.615.4"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "1999-12-09",
+      "certificateEndDate": "2000-05-02",
+      "object": "\r\n\r\na) LA IMPORTACIÓN, EXPORTACIÓN, COMPRA, VENTA, INSTALACIÓN, REPARACIÓN DE COMPONENTES DE EQUIPOS ELÉCTRICOS APLICABLES A AUTOMÓVILES, RADIOS, TELEVISIÓN, VIDEOS Y DEMÁS APARATOS DE COMUNICACIÓN Y CALEFACCIÓN, ASÍ COMO DE PRODUCTOS ELÉCTRICOS, ELECTRÓNICOS, DE COMUNICACIÓN Y AUDIOVISUALES DE TODO TIPO.\r\n\r\nb) MONTAJE, FABRICACIÓN, VENTA, INSTALACIÓN, REPARACIÓN Y ARRENDAMIENTO DE LOS PRODUCTOS Y SISTEMAS DETALLADOS A CONTINUACIÓN, ASÍ COMO DE SUS COMPONENTES:\r\n\r\n1) SISTEMAS DE TELECOMUNICACIÓN EN SU MÁS AMPLIA GAMA, TALES COMO:\r\n- SISTEMAS DE TRANMISIÓN MULTIPLEX.\r\n- SISTEMAS DE INTERCONEXIÓN DIGITAL.\r\n- SISTEMAS DE CABLES DE TELECOMUNICACIÓN.\r\n- SISTEMAS DIGITALES DE RADIOENLACES.\r\n- SISTEMAS DE TELEFONÍA MÓVIL.\r\n- SISTEMAS DE TELECOMUNICACIÓN Y ESTACIONES TERRENAS.\r\n- SISTEMAS DE GESTIÓN DE RED.\r\n- REDES DE COMUNICACIÓN POR SATÉLITE VSAT Y SU OPERACIÓN.\r\n- SISTEMAS INTEGRADOS DE TELECOMUNICACIÓN.\r\n\r\n2) SISTEMAS ESPECIALES DE COMUNICACIÓN, ENTENDIENDO POR ELLOS, ENTRE OTROS:\r\n- SISTEMAS DE CONDUCCIÓN.\r\n- SISTEMAS DIGITALES DE COMUNICACIÓN Y CONMUTACIÓN.\r\n- SISTEMAS DE DISTRIBUCIÓN DE SEÑALES DE TELEVISIÓN.\r\n- SISTEMAS DE TRANSMISIÓN DE DATOS PARA TRENES ICE.\r\n\r\n3) EQUIPOS DE TELECOMUNICACIÓN Y COMPONENTES, ENTRE LOS QUE SE INCLUYEN:\r\n- CENTRALES TELEFÓNICAS ANALÓGICAS Y DIGITALES, TERMINALES TELEFÓNICOS, ORDENADORES, IMPRESORAS, FACSIMIL Y TODO TIPO DE PERIFÉRICOS COMPATIBLES CON LAS MISMAS.\r\n- EQUIPOS DE CONEXIÓN PARA ABONADOS DE LA RED DIGITAL DE SERVICIOS INTEGRADOS (RDSI).\r\n- DISPOSITIVOS PARA EL ÁREA DE CONEXIÓN DE ABONADOS.\r\n- CABLES DE COBRE Y ACCESORIOS.\r\n- CABLES DE FIBRA ÓPTICA Y ACCESORIOS.\r\n- COMPONENTES PARA SISTEMAS DE DISTRIBUCIÓN DE SEÑALES DE TELEVISIÓN.\r\n- COMPONENTES PARA SISTEMAS DE RADIOENLACES.\r\n- EQUIPOS PARA SATÉLITES DE TELECOMUNICACIÓN Y ESTACIONES TERRENAS.\r\n- DISPOSITIVOS PARA CIFRADO DE INFORMACIONES.\r\n\r\n4) SISTEMAS DE SEÑALIZACIÓN Y GESTIÓN DE TRÁFICO COLECTIVO E INDIVIDUAL, ASÍ COMO SISTEMAS COBRO AUTOMÁTICO DE PEAJES Y GESTIÓN RDS/TMC.\r\n\r\n5) GESTIÓN DE PROYECTOS LLAVE EN MANO.\r\n\r\n6) RELOJES ELÉCTRICOS Y ELECTRÓNICOS Y CENTRALES HORARIAS.\r\n\r\nc) LA PRESTACIÓN DE SERVICIOS ADMINISTRATIVOS DE TODO TIPO",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/01784",
+      "_links": {
+        "self": {
+          "name": "ROBERT BOSCH ESPAÑA, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/01784"
+        }
+      }
+    },
+    {
+      "name": "LAGEN COMUNICACIÓN, S.L.",
+      "registrationNumber": "00587",
+      "identificationNumber": "B20073235",
+      "address": "C/ PLAZA DEL CEDRO, Nº 2, 4ª. LOCAL: A y B.",
+      "location": {
+        "postalCode": "20016",
+        "municipality": "Donostia / San Sebastián",
+        "county": "Gipuzkoa",
+        "municipalityId": "069",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.844",
+          "name": "Servicios de publicidad, relaciones públicas y similares",
+          "_links": {
+            "self": {
+              "name": "Servicios de publicidad, relaciones públicas y similares",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.844"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "1999-11-30",
+      "certificateEndDate": "2000-05-09",
+      "object": "SERVICIOS DE ASESORAMIENTO COMERCIAL, ESTUDIOS E INVESTIGACIÓN DE MERCADOS, REALIZACIÓN DE CAMPAÑAS PUBLICITARIAS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/00587",
+      "_links": {
+        "self": {
+          "name": "LAGEN COMUNICACIÓN, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/00587"
+        }
+      }
+    },
+    {
+      "name": "TECNOCOM, S.L.",
+      "registrationNumber": "00641",
+      "identificationNumber": "B08775066",
+      "address": "C/ CONCILIO DE TRENTO, Nº 37 - 39.",
+      "location": {
+        "postalCode": "08018",
+        "municipality": "Barcelona",
+        "county": "Barcelona",
+        "municipalityId": "019",
+        "countyId": "08"
+      },
+      "economicActivities": [
+        {
+          "id": "1.619.2",
+          "name": "Venta al por mayor de aparatos e instrumentos médicos, ortopédicos, ópticos",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de aparatos e instrumentos médicos, ortopédicos, ópticos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.619.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "1999-11-30",
+      "certificateEndDate": "2000-05-02",
+      "object": "LA FABRICACIÓN, COMERCIALIZACIÓN, IMPORTACIÓN Y EXPORTACIÓN, DISTRIBUCIÓN Y COMPRAVENTA DE APARATOS, ELEMENTOS Y EQUIPOS DESTINADOS A LA MEDICINA Y CIRUGÍA EN GENERAL Y EN ESPECIAL A LA OFTALMOLOGÍA; ASÍ COMO LA REPRESENTACIÓN DE FIRMAS EXTRANJERAS FABRICANTES DE TALES EQUIPOS, APARATOS Y ELEMENTOS, ASIMISMO SERÁ OBJETO DE LA SOCIEDAD PRESTAR LOS SERVICIOS DE ASISTENCIA TÉCNICA RELATIVOS AL MANTENIMIENTO DE DICHOS EQUIPOS, APARATOS Y ELEMENTOS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/00641",
+      "_links": {
+        "self": {
+          "name": "TECNOCOM, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/00641"
+        }
+      }
+    }
+  ]
+}

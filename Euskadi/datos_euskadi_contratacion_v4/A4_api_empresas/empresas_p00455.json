@@ -1,0 +1,468 @@
+{
+  "totalItems": 9042,
+  "totalPages": 905,
+  "currentPage": 455,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "name": "BYA ASESORIA Y ADMINISTRACION GLOBAL SL",
+      "registrationNumber": "06633",
+      "identificationNumber": "B86829470",
+      "address": "CALLE CALVO SOTELO, 2 LOCAL BYA",
+      "location": {
+        "postalCode": "28130",
+        "municipality": "Valdeolmos-Alalpardo",
+        "county": "Madrid",
+        "municipalityId": "162",
+        "countyId": "28"
+      },
+      "economicActivities": [
+        {
+          "id": "1.834",
+          "name": "Servicios relativos a la propiedad inmobiliaria e industrial",
+          "_links": {
+            "self": {
+              "name": "Servicios relativos a la propiedad inmobiliaria e industrial",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.834"
+            }
+          }
+        },
+        {
+          "id": "1.841",
+          "name": "Servicios jurídicos",
+          "_links": {
+            "self": {
+              "name": "Servicios jurídicos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.841"
+            }
+          }
+        },
+        {
+          "id": "1.842",
+          "name": "Servicios financieros y contables",
+          "_links": {
+            "self": {
+              "name": "Servicios financieros y contables",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.842"
+            }
+          }
+        },
+        {
+          "id": "1.849.7",
+          "name": "Servicios de gestión administrativa",
+          "_links": {
+            "self": {
+              "name": "Servicios de gestión administrativa",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.849.7"
+            }
+          }
+        },
+        {
+          "id": "1.922",
+          "name": "Servicios de limpieza",
+          "_links": {
+            "self": {
+              "name": "Servicios de limpieza",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.922"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2023-07-12",
+      "certificateEndDate": "2024-01-08",
+      "object": "1.- CONSTRUCCIÓN, INSTALACIONES Y MANTENIMIENTO. 2.- COMERCIO AL POR MAYOR Y AL POR MENOR. DISTRIBUCIÓN COMERCIAL. IMPORTACIÓN Y EXPORTACIÓN. 3.- ACTIVIDADES INMOBILIARIAS. 4.- INDUSTRIAS MANUFACTURERAS Y TEXTILES. 5.- TURISMO, HOSTELERÍA Y RESTAURACIÓN. 6.- PRESTACIÓN DE SERVICIOS. ACTIVIDADES DE GESTIÓN Y ADMINISTRACIÓN. SERVICIOS EDUCATIVOS, SANITARIOS, DE OCIO Y ENTRETENIMIENTO. 7.- TRANSPORTE Y ALMACENAMIENTO. 8.- INFORMACIÓN Y COMUNICACIONES. 9.- AGRICULTURA, GANADERÍA Y PESCA. 10.- INFORMÁTICA, TELECOMUNICACIONES Y OFIMÁTICA. 11.- ENERGÍAS ALTERNATIVAS. 12.- COMPRAVENTA Y REPARACIÓN DE VEHÍCULOS. REPARACIÓN Y MANTENIMIENTO DE INSTALACIONES Y MAQUINARIA. 13.- INVESTIGACIÓN, DESARROLLO E INNOVACIÓN. 14.- ACTIVIDADES CIENTÍFICAS Y TÉCNICAS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06633",
+      "_links": {
+        "self": {
+          "name": "BYA ASESORIA Y ADMINISTRACION GLOBAL SL",
+          "href": "https://api.euskadi.eus/procurements/companies/06633"
+        }
+      }
+    },
+    {
+      "name": "AGRICOLA ANTON, S.L.",
+      "registrationNumber": "08841",
+      "identificationNumber": "B37296399",
+      "address": "C RONDA SN",
+      "location": {
+        "postalCode": "37409",
+        "municipality": "Tarazona de Guareña",
+        "county": "Salamanca",
+        "municipalityId": "317",
+        "countyId": "37"
+      },
+      "economicActivities": [
+        {
+          "id": "1.319.9",
+          "name": "Talleres mecánicos n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Talleres mecánicos n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.319.9"
+            }
+          }
+        },
+        {
+          "id": "1.654.5",
+          "name": "Venta al por menor de toda clase de maquinaría",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de toda clase de maquinaría",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.654.5"
+            }
+          }
+        },
+        {
+          "id": "1.851",
+          "name": "Alquiler de maquinaria y equipo agrícola",
+          "_links": {
+            "self": {
+              "name": "Alquiler de maquinaria y equipo agrícola",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.851"
+            }
+          }
+        },
+        {
+          "id": "1.911",
+          "name": "Servicios agrícolas y ganaderos",
+          "_links": {
+            "self": {
+              "name": "Servicios agrícolas y ganaderos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.911"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2023-07-11",
+      "certificateEndDate": "2024-01-11",
+      "object": "LA COMPRA-VENTA, REPARACIÓN Y FABRICACIÓN DE TODA CLASE DE MAQUINARIA AGRÍCOLA E INDUSTRIAL, COMPRA-VENTA AL POR MAYOR Y POR MENOR DE CUALQUIER CLASE DE ARTÍCULO EN GENERAL.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08841",
+      "_links": {
+        "self": {
+          "name": "AGRICOLA ANTON, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/08841"
+        }
+      }
+    },
+    {
+      "name": "YOLANDA GOMARA GOMEZ",
+      "registrationNumber": "08186",
+      "identificationNumber": "15933835X",
+      "address": "PILLOTEGI 12, OF E15",
+      "location": {
+        "postalCode": "20018",
+        "municipality": "Donostia / San Sebastián",
+        "county": "Gipuzkoa",
+        "municipalityId": "069",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "2.723",
+          "name": "Administradores de fincas",
+          "_links": {
+            "self": {
+              "name": "Administradores de fincas",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/2.723"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2023-07-10",
+      "certificateEndDate": "2024-01-10",
+      "object": "ADMINISTRADORES DE FINCAS.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08186",
+      "_links": {
+        "self": {
+          "name": "YOLANDA GOMARA GOMEZ",
+          "href": "https://api.euskadi.eus/procurements/companies/08186"
+        }
+      }
+    },
+    {
+      "name": "AUDEA SEGURIDAD DE LA INFORMACION, S.L.",
+      "registrationNumber": "08840",
+      "identificationNumber": "B83230326",
+      "address": "Calle Ribera del Loira, 38, Planta 5º ",
+      "location": {
+        "postalCode": "28042",
+        "municipality": "Madrid",
+        "county": "Madrid",
+        "municipalityId": "079",
+        "countyId": "28"
+      },
+      "economicActivities": [
+        {
+          "id": "1.841",
+          "name": "Servicios jurídicos",
+          "_links": {
+            "self": {
+              "name": "Servicios jurídicos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.841"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2023-07-10",
+      "certificateEndDate": "2024-01-10",
+      "object": "A) LA PRESTACIÓN DE SERVICIOS PROFESIONALES DE ASESORAMIENTO LEGAL Y CONSULTORÍA A TODO TIPO DE EMPRESAS, ENTIDADES Y ORGANISMOS, YA SEAN DE CARÁCTER PRIVADO O PÚBLICO, EN ESPECIAL ASESORAMIENTO Y CONSULTORÍA EN ASPECTOS JURÍDICOS RELATIVOS A LA PROTECCIÓN DE DATOS DE CARÁCTER PERSONAL. B) LA PRESTACIÓN DE SERVICIOS PROFESIONALES DE ASESORAMIENTO Y CONSULTORÍA EN EL ÁMBITO INFORMÁTICO A TODO TIPO DE EMPRESAS, ENTIDADES Y ORGANISMOS, YA SEAN DE CARÁCTER PRIVADO O PÚBLICO, EN ESPECIAL, ASESORAMIENTO Y CONSULTORÍA EN EL ÁMBITO DE LA SEGURIDAD INFORMÁTICA. C) EL DESARROLLO Y DISTRIBUCIÓN DE SOFTWARE Y APLICACIONES INFORMÁTICAS EN EL ÁMBITO DE LA PROTECCIÓN DE DATOS DE CARÁCTER PERSONAL, ASÍ COMO EL ASESORAMIENTO SOBRE SU IMPLANTACIÓN Y PARAMETRIZACIÓN. D) LA PRESTACIÓN DE SERVICIOS DE INVESTIGACIÓN Y FORMACIÓN EN LOS ÁMBITOS EXPRESADOS ANTERIORMENTE, Y EN ESPECIAL EN EL ÁMBITO DE LA PROTECCIÓN DE DATOS DE CARÁCTER PERSONAL. D) LA PRESTACIÓN DE SERVICIOS DE ASESORAMIENTO EN RELACIÓN CON LOS PROCESOS DE ORGANIZACIÓN Y GESTIÓN DE CALIDAD EN MATERIA DE PROTECCIÓN DE DATOS Y DE LA INFORMACIÓN, INCLUIDA EL OTORGAMIENTO A TERCEROS DE CERTIFICADOS O SELLOS DE SISTEMAS DE CALIDAD, YA SEAN NACIONALES O INTERNACIONALES.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08840",
+      "_links": {
+        "self": {
+          "name": "AUDEA SEGURIDAD DE LA INFORMACION, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/08840"
+        }
+      }
+    },
+    {
+      "name": "AUTO ARMENTIA S.L.",
+      "registrationNumber": "09135",
+      "identificationNumber": "B06995369",
+      "address": "CALLE ALTO DE ARMENTIA, 2",
+      "location": {
+        "postalCode": "01007",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.654.1",
+          "name": "Venta al por menor de vehículos terrestres",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de vehículos terrestres",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.654.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2023-07-10",
+      "certificateEndDate": "2024-01-08",
+      "object": "- COMPRA-VENTA, COMERCIO AL POR MAYOR Y MENOR, IMPORTACIÓN Y EXPORTACIÓN DE TODA CLASE DE VEHÍCULOS A MOTOR NUEVOS Y USADOS. - COMPRAVENTA Y SUMINISTRO DE PIEZAS DE RECAMBIO, ACEIES Y ACCESORIOS PARA VEHÍCULOS A MOTOR. PUDIENDO SER LA COMPRA VENTA DE PIEZAS Y ACCESORIOS DE PRIMERA O SEGUNDA MANO. - MANTENIMIENTO, REPARACIÓN RESTAURACIÓN, REHABILITACIÓN Y ACONDICIONAMIENTO, DE TODA CLASE DE VEHÍCULOS A MOTOR. - ASESORAMIENTO EN MANTENIMIENTO, REACONDICIONAMIENTO, COMPRAVENTA, IMPORTACIÓN Y EXPORTACIÓN TANTO DE VEHÍCULOS COMO PIEZAS Y RECAMBIOS. - EXPLOTACIÓN EN RÉGIMEN DE ARRENDAMIENTO DE TODA CLASE DE VEHÍCULOS A MOTOR.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/09135",
+      "_links": {
+        "self": {
+          "name": "AUTO ARMENTIA S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/09135"
+        }
+      }
+    },
+    {
+      "name": "ATTEST CORPORATE, S.L.",
+      "registrationNumber": "07885",
+      "identificationNumber": "B95567509",
+      "address": "C/ Alameda Recalde 36-8º",
+      "location": {
+        "postalCode": "48009",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.842",
+          "name": "Servicios financieros y contables",
+          "_links": {
+            "self": {
+              "name": "Servicios financieros y contables",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.842"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2023-07-09",
+      "certificateEndDate": "2024-01-09",
+      "object": "LA PRESTACIÓN DE SERVICIOS DE CONSULTORÍA Y ASESORAMIENTO A EMPRESAS Y ORGANIZACIONES PÚBLICAS Y PRIVADAS EN PROCESOS DE ADQUISICIONES DE EMPRESAS Y PROCESOS DE REESTRUCTURACIONES Y REORGANIZACIONES EMPRESARIALES COMO FUSIONES, ESCISIONES, CANJE DE VALORES Y APORTACIONES NO DINERARIAS. LA PRESTACIÓN DE SERVICIOS DE CONSULTORÍA Y ASESORAMIENTO A EMPRESAS Y ORGANIZACIONES PÚBLICAS Y PRIVADAS EN EL ÁMBITO ECONÓMICO-FINANCIERO, ASÍ COMO EN LOS ÁMBITOS INCLUIDOS DENTRO DEL OBJETO SOCIAL. LA PRESTACIÓN DE SERVICIOS DE ASESORAMIENTO PARA LA FORMULACIÓN Y REALIZACIÓN DE ESTUDIOS DE VIABILIDAD EMPRESARIAL",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07885",
+      "_links": {
+        "self": {
+          "name": "ATTEST CORPORATE, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/07885"
+        }
+      }
+    },
+    {
+      "name": "IGONSATEL, S.L.",
+      "registrationNumber": "08833",
+      "identificationNumber": "B95288296",
+      "address": "SARRIKOBASO 33",
+      "location": {
+        "postalCode": "48993",
+        "municipality": "Getxo",
+        "county": "Bizkaia",
+        "municipalityId": "044",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.504.12",
+          "name": "Instalaciones eléctricas en toda clase de edificios",
+          "_links": {
+            "self": {
+              "name": "Instalaciones eléctricas en toda clase de edificios",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.504.12"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2023-07-09",
+      "certificateEndDate": "2024-01-09",
+      "object": "- LA INSTALACIÓN, REPARACIÓN Y MANTENIMIENTO DE TODA CLASE DE SISTEMAS DE TELECOMUNICACIONES, REDES ELÉCTRICAS, ELECTRÓNICAS E INFORMÁTICAS, YA SEAN POR CABLE, INALÁMBRICAS O UTILICEN EL SISTEMA WIFI, ASÍ COMO EL COMERCIO AL POR MAYOR Y AL POR MENOR DE TODOS LOS COMPONENTES NECESARIOS PARA PONER Y MANTENER EN FUNCIONAMIENTO DICHOS SISTEMAS. - LA INSTALACIÓN, REPARACIÓN Y MANTENIMIENTO DE REPETIDORES Y MICRO-REPETIDORES DE SEÑALES ELÉCTRICAS Y ELECTRÓNICAS Y ELECTROMAGNÉTICAS, ASÍ COMO LA VENTA AL POR MAYOR Y MENOR DE LOS ELEMENTOS Y COMPONENTES NECESARIOS PARA SU INSTALACIÓN Y MANTENIMIENTO. - LA COMERCIALIZACIÓN, IMPORTACIÓN, EXPORTACIÓN Y VENTA AL POR MAYOR Y MENOR DE EQUIPOS, SISTEMAS Y APARATAJE ELÉCTRICO Y ELECTRÓNICO DE TODO TIPO. - LA VENTA AL POR MENOR DE TODA CLASE DE ELECTRODOMÉSTICOS Y COMPLEMENTOS PARA EL HOGAR. - LA INSTALACIÓN, REPARACIÓN Y MANTENIMIENTO DE EQUIPOS Y APARATOS DE AIRE ACONDICIONADOS Y LA VENTA AL POR MAYOR A AL MENOR DE DICHOS APARATOS Y LOS PRODUCTOS NECESARIOS PARA SU INSTALACIÓN Y MANTENIMIENTO. - LA COMPRAVENTA Y ARRENDAMIENTOS DE INMUEBLES, FINCAS RÚSTICAS Y URBANAS, LA PROMOCIÓN Y CONSTRUCCIÓN DE CUALQUIER CLASE DE EDIFICIOS, SU REFORMA, MANTENIMIENTO Y CONSERVACIÓN Y LAS ACTIVIDADES INMOBILIARIAS EN GENERAL.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08833",
+      "_links": {
+        "self": {
+          "name": "IGONSATEL, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/08833"
+        }
+      }
+    },
+    {
+      "name": "REFORMAS ASKETA, S.L.",
+      "registrationNumber": "07144",
+      "identificationNumber": "B20731154",
+      "address": "Maxpe kalea 3-5 Bajo",
+      "location": {
+        "postalCode": "20820",
+        "municipality": "Deba",
+        "county": "Gipuzkoa",
+        "municipalityId": "029",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.501.1",
+          "name": "Construcción completa, reparación y conservación de edificaciones",
+          "_links": {
+            "self": {
+              "name": "Construcción completa, reparación y conservación de edificaciones",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.1"
+            }
+          }
+        },
+        {
+          "id": "1.504.1",
+          "name": "Instalaciones eléctricas en general",
+          "_links": {
+            "self": {
+              "name": "Instalaciones eléctricas en general",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.504.1"
+            }
+          }
+        },
+        {
+          "id": "1.653.4",
+          "name": "Venta al por menor de material de construcción y mobiliario de saneamiento",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de material de construcción y mobiliario de saneamiento",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.653.4"
+            }
+          }
+        },
+        {
+          "id": "1.861.2",
+          "name": "Alquiler de locales industriales y otros alquileres n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Alquiler de locales industriales y otros alquileres n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.861.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2023-07-09",
+      "certificateEndDate": "2024-01-09",
+      "object": "LA REALIZACIÓN DE TRABAJOS DE ALBAÑILERÍA EN GENERAL",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07144",
+      "_links": {
+        "self": {
+          "name": "REFORMAS ASKETA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/07144"
+        }
+      }
+    },
+    {
+      "name": "PRIETO SISTEMAS DE ALMACENAJE, S.L.",
+      "registrationNumber": "08831",
+      "identificationNumber": "B01442110",
+      "address": "Plaza Gregorio Altube, 1  Bajo",
+      "location": {
+        "postalCode": "01002",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.505.5",
+          "name": "Carpintería y cerrajería",
+          "_links": {
+            "self": {
+              "name": "Carpintería y cerrajería",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.505.5"
+            }
+          }
+        },
+        {
+          "id": "1.615.3",
+          "name": "Venta al por mayor de aparatos electrodomésticos y ferretería",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de aparatos electrodomésticos y ferretería",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.615.3"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2023-07-08",
+      "certificateEndDate": "2024-01-08",
+      "object": "A) LA VENTA AL POR MAYOR Y MENOR DE ARTÍCULOS DE FERRETERÍA. B) LA VENTA AL POR MAYOR Y MENOR DE MUEBLES METÁLICOS Y ESTANTERÍAS METÁLICAS. C) DISTRIBUCIÓN, COLOCACIÓN Y MANTENIMIENTO DE LOS MUEBLES Y ESTANTERÍAS METÁLICAS. D) ADQUISICIÓN Y TENENCIA DE TÍTULOS VALORES POR CUENTA PROPIA CON EXCEPCIÓN DE LA INTERMEDIACIÓN Y DEJANDO SIEMPRE FUERA LAS ACTIVIDADES OBJETO DE LA LEGISLACIÓN DE INSTITUCIONES DE INVERSIÓN COLECTIVA Y MERCADO DE VALORES.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08831",
+      "_links": {
+        "self": {
+          "name": "PRIETO SISTEMAS DE ALMACENAJE, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/08831"
+        }
+      }
+    },
+    {
+      "name": "UNANUE CONFORT SL",
+      "registrationNumber": "09132",
+      "identificationNumber": "B75107060",
+      "address": "EGIA, 4 - 3ºC",
+      "location": {
+        "postalCode": "20013",
+        "municipality": "Donostia / San Sebastián",
+        "county": "Gipuzkoa",
+        "municipalityId": "069",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.653.1",
+          "name": "Venta al por menor de muebles (excepto los de oficina)",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de muebles (excepto los de oficina)",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.653.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2023-07-07",
+      "certificateEndDate": "2024-01-07",
+      "object": "EL COMERCIO AL POR MENOR DE MUEBLES.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/09132",
+      "_links": {
+        "self": {
+          "name": "UNANUE CONFORT SL",
+          "href": "https://api.euskadi.eus/procurements/companies/09132"
+        }
+      }
+    }
+  ]
+}

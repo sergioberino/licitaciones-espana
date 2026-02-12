@@ -1,0 +1,556 @@
+{
+  "totalItems": 9042,
+  "totalPages": 905,
+  "currentPage": 125,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "name": "EURODIAGNOSTICO, S.L.",
+      "registrationNumber": "09363",
+      "identificationNumber": "B85883114",
+      "address": "C/ Javier del Quinto nº4 Bajo 3, 28043 Madrid, España",
+      "location": {
+        "postalCode": "28043",
+        "municipality": "Madrid",
+        "county": "Madrid",
+        "municipalityId": "079",
+        "countyId": "28"
+      },
+      "economicActivities": [
+        {
+          "id": "1.619.2",
+          "name": "Venta al por mayor de aparatos e instrumentos médicos, ortopédicos, ópticos",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de aparatos e instrumentos médicos, ortopédicos, ópticos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.619.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-12-10",
+      "certificateEndDate": "2026-06-03",
+      "object": "LA IMPORTACIÓN, EXPORTACIÓN, DISTRIBUCIÓN Y COMERCIALIZACIÓN, AL POR MAYOR Y DETALLE, DE TODA CLASE DE PRODUCTOS QUE SE REQUIERAN EN EL ÁMBITO DE LA ACTIVIDAD BIOSANITARIA, COMPRENDIENDO TODA CLASE DE EQUIPAMIENTOS MÉDICOS Y BIO-TECNOLÓGICOS. LA ADQUISICIÓN, EXPLOTACIÓN, ENAJENACIÓN Y ALQUILER (EXCLUIDO EL ARRENDAMIENTO FINANCIERO) DE TODA CLASE DE BIENES INMUEBLES.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/09363",
+      "_links": {
+        "self": {
+          "name": "EURODIAGNOSTICO, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/09363"
+        }
+      }
+    },
+    {
+      "name": "CONSTRUCCIONES IZORIA 2000, S.A.",
+      "registrationNumber": "02397",
+      "identificationNumber": "A01283290",
+      "address": "POLIGONO INDUSTRIAL DE AIALA, 7",
+      "location": {
+        "postalCode": "01479",
+        "municipality": "Ayala/Aiara",
+        "county": "Araba/Álava",
+        "municipalityId": "010",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.501.1",
+          "name": "Construcción completa, reparación y conservación de edificaciones",
+          "_links": {
+            "self": {
+              "name": "Construcción completa, reparación y conservación de edificaciones",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.1"
+            }
+          }
+        },
+        {
+          "id": "1.861.2",
+          "name": "Alquiler de locales industriales y otros alquileres n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Alquiler de locales industriales y otros alquileres n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.861.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-12-10",
+      "certificateEndDate": "2026-06-07",
+      "object": "LA CONSTRUCCIÓN Y PROMOCIÓN INMOBILIARIA, Y LA REALIZACIÓN DE OBRAS PÚBLICAS Y TODA SUERTE DE INVERSIONES Y PROMOCIONES RELACIONADA CON EL RAMO DE LA CONSTRUCCIÓN",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/02397",
+      "_links": {
+        "self": {
+          "name": "CONSTRUCCIONES IZORIA 2000, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/02397"
+        }
+      }
+    },
+    {
+      "name": "JASO KIROL ZERBITZUAK, S.L.",
+      "registrationNumber": "05296",
+      "identificationNumber": "B20743183",
+      "address": "C/ Karlos Elgezua 1, 4ºB",
+      "location": {
+        "postalCode": "20600",
+        "municipality": "Eibar",
+        "county": "Gipuzkoa",
+        "municipalityId": "030",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.932.1",
+          "name": "Enseñanza de formación y perfeccionamiento profesional no superior",
+          "_links": {
+            "self": {
+              "name": "Enseñanza de formación y perfeccionamiento profesional no superior",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.932.1"
+            }
+          }
+        },
+        {
+          "id": "1.932.2",
+          "name": "Enseñanza de formación y perfeccionamiento profesional superior",
+          "_links": {
+            "self": {
+              "name": "Enseñanza de formación y perfeccionamiento profesional superior",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.932.2"
+            }
+          }
+        },
+        {
+          "id": "1.942.2",
+          "name": "Balnearios y baños",
+          "_links": {
+            "self": {
+              "name": "Balnearios y baños",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.942.2"
+            }
+          }
+        },
+        {
+          "id": "1.944",
+          "name": "Servicios de naturopatía, acupuntura y otros servicios parasanitarios",
+          "_links": {
+            "self": {
+              "name": "Servicios de naturopatía, acupuntura y otros servicios parasanitarios",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.944"
+            }
+          }
+        },
+        {
+          "id": "1.967.1",
+          "name": "Instalaciones deportivas",
+          "_links": {
+            "self": {
+              "name": "Instalaciones deportivas",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.967.1"
+            }
+          }
+        },
+        {
+          "id": "1.967.2",
+          "name": "Escuelas y servicios de perfeccionamiento del deporte",
+          "_links": {
+            "self": {
+              "name": "Escuelas y servicios de perfeccionamiento del deporte",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.967.2"
+            }
+          }
+        },
+        {
+          "id": "1.967.3",
+          "name": "Alquiler de artículos para deporte en instalaciones deportivas",
+          "_links": {
+            "self": {
+              "name": "Alquiler de artículos para deporte en instalaciones deportivas",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.967.3"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-12-10",
+      "certificateEndDate": "2026-05-18",
+      "object": "COMPRAVENTA DE MATERIAL DEPORTIVO; ORGANIZACIÓN Y DESARROLLO DE ACTIVIDADES LÚDICO-DEJPORTIVAS Y DE TIEMPO LIBRE Y OCIO, TERAPÉUTICAS, ESCOLARES, EXTRAESCOLARES E INSTITUCIONALES; ACTIVIDADES ADAPTADAS, ASÍ COMO LA FORMACIÓN DE DEPORTISTAS, CONTROL, ADMINISTRACIÓN DE POLIDEPORTIVOS, GIMNASIO Y LOCALES DE ÁMBITO LÚDICO-DEPORTIVO Y EDUCACIONAL",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/05296",
+      "_links": {
+        "self": {
+          "name": "JASO KIROL ZERBITZUAK, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/05296"
+        }
+      }
+    },
+    {
+      "name": "SEURAVA KEY, S.L.",
+      "registrationNumber": "07538",
+      "identificationNumber": "B95905915",
+      "address": "Calle Iparraguirre, 64-1ºID",
+      "location": {
+        "postalCode": "48012",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.845",
+          "name": "Explotación electrónica por cuenta de terceros",
+          "_links": {
+            "self": {
+              "name": "Explotación electrónica por cuenta de terceros",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.845"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-12-10",
+      "certificateEndDate": "2026-05-27",
+      "object": "ACTIVIDAD PRINCIPAL. 6201.- ACTIVIDADES DE PROGRAMACIÓN INFORMÁTICA. OTRAS ACTIVIDADES. 5812.-EDICIÓN DE DIRECTORIOS Y GUÍAS DE DIRECCIONES POSTALES. 4741.- COMERCIO AL POR MENOR DE ORDENADORES, EQUIPOS PERIFÉRICOS Y PROGRAMAS INFORMÁTICOS EN ESTABLECIMIENTOS ESPECIALIZADOS. 6312.-PORTALES WEB. 6311.- PROCESO DE DATOS, HOSTING Y ACTIVIDADES RELACIONADAS. 4619.- INTERMEDIARIOS DEL COMERCIO DE PRODUCTOS DIVERSOS. 5811.- EDICIÓN DE LIBROS. 7022.- OTRAS ACTIVIDADES DE CONSULTORÍA DE GESTIÓN EMPRESARIAL. 6202.- ACTIVIDADES DE CONSULTORÍA INFORMÁTICA. 6203.- GESTIÓN DE RECURSOS INFORMÁTICOS. 6209.- OTROS SERVICIOS RELACIONADOS CON LAS TECNOLOGÍAS DE LA INFORMACIÓN Y LA INFORMÁTICA. 5813.- EDICIÓN DE PERIÓDICOS. 5814.- EDICIÓN DE REVISTAS\r\n\r\n\r\n",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07538",
+      "_links": {
+        "self": {
+          "name": "SEURAVA KEY, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/07538"
+        }
+      }
+    },
+    {
+      "name": "IDEABLE SOLUTIONS, S.L.",
+      "registrationNumber": "08061",
+      "identificationNumber": "B95660338",
+      "address": "Calle Doctor Alberca 7 2ºB",
+      "location": {
+        "postalCode": "48007",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.504.11",
+          "name": "Instalaciones eléctricas en general, redes telegráficas, telefonía, tv, etc",
+          "_links": {
+            "self": {
+              "name": "Instalaciones eléctricas en general, redes telegráficas, telefonía, tv, etc",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.504.11"
+            }
+          }
+        },
+        {
+          "id": "1.615.4",
+          "name": "Venta al por mayor de aparatos y material radioeléctrico y electrónico",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de aparatos y material radioeléctrico y electrónico",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.615.4"
+            }
+          }
+        },
+        {
+          "id": "1.845",
+          "name": "Explotación electrónica por cuenta de terceros",
+          "_links": {
+            "self": {
+              "name": "Explotación electrónica por cuenta de terceros",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.845"
+            }
+          }
+        },
+        {
+          "id": "1.932.1",
+          "name": "Enseñanza de formación y perfeccionamiento profesional no superior",
+          "_links": {
+            "self": {
+              "name": "Enseñanza de formación y perfeccionamiento profesional no superior",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.932.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-12-10",
+      "certificateEndDate": "2026-06-07",
+      "object": "1.- EL DISEÑO, INVESTIGACIÓN, DESARROLLO, PRODUCCIÓN, INNOVACIÓN, FORMACIÓN, INTEGRACIÓN Y MANTENIMIENTO DE SISTEMAS, EQUIPOS, SOLUCIONES Y PRODUCTOS BASADOS EN EL USO DE LAS TECNOLOGÍAS DE LA INFORMACIÓN E INTERNET. 2.- EL ARRENDAMIENTO Y COMPRAVENTA DE BIENES INMUEBLES.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08061",
+      "_links": {
+        "self": {
+          "name": "IDEABLE SOLUTIONS, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/08061"
+        }
+      }
+    },
+    {
+      "name": "THE LEARNING SPACES & WORKS, S.L.",
+      "registrationNumber": "08824",
+      "identificationNumber": "B95960084",
+      "address": "Calle Larrauri 1B",
+      "location": {
+        "postalCode": "48160",
+        "municipality": "Derio",
+        "county": "Bizkaia",
+        "municipalityId": "901",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.501.2",
+          "name": "Construcción completa, reparación y conservación obras civiles",
+          "_links": {
+            "self": {
+              "name": "Construcción completa, reparación y conservación obras civiles",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-12-09",
+      "certificateEndDate": "2026-06-05",
+      "object": "PRINCIPAL: CONSTRUCCIÓN COMPLETA, REPARACIÓN Y CONSERVACIÓN DE OBRAS CIVILES. OTRAS ACTIVIDADES DE CONSTRUCCIÓN ESPECIALIZADA. SECUNDARIOS: - SERVICIOS TÉCNICOS DE ARQUITECTURA. PROYECTOS Y EJECUCIÓN DE OBRAS - OBRAS E INSTALACIONES MOBILIARIAS. - DISEÑO GRÁFICO O INDUSTRIAL. DISEÑO Y CREACIÓN DE MOBILIARIO. - COMPRA, VENTA Y ALQUILER DE TODO TIPO DE INMUEBLES.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08824",
+      "_links": {
+        "self": {
+          "name": "THE LEARNING SPACES & WORKS, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/08824"
+        }
+      }
+    },
+    {
+      "name": "ASOC DE INTERVENCION SOCIOEDUCATIVA KOKUK PROYECTOS COCURRICULARES KOKURRIKULAR PROIEKTUAK",
+      "registrationNumber": "08191",
+      "identificationNumber": "G01524446",
+      "address": "Casa de Asociaciones Itziar, Plaza Zalburu s/n. Sala 1.1",
+      "location": {
+        "postalCode": "01003",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.952",
+          "name": "Asistencia y servicios sociales en centros no residenciales",
+          "_links": {
+            "self": {
+              "name": "Asistencia y servicios sociales en centros no residenciales",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.952"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-12-09",
+      "certificateEndDate": "2026-05-30",
+      "object": "LOS FINES DE ESTA ASOCIACIÓN SON: FOMENTAR DE LA AUTONOMÍA Y LA SOLIDARIDAD DE TODA LA COMUNIDAD EDUCATIVA. ARTICULAR LA INTERVENCIÓN SOCIOEDUCATIVA EN EL MEDIO ESCOLAR. VELAR POR EL TRATAMIENTO DE LA DIVERSIDAD Y EL TRABAJO EN RED – INTERDISCIPLINARIEDAD. DIFUNDIR, PROMOCIONAR E IMPLANTAR PROGRAMAS, PROYECTOS Y ACTIVIDADES COCURRICULARES.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08191",
+      "_links": {
+        "self": {
+          "name": "ASOC DE INTERVENCION SOCIOEDUCATIVA KOKUK PROYECTOS COCURRICULARES KOKURRIKULAR PROIEKTUAK",
+          "href": "https://api.euskadi.eus/procurements/companies/08191"
+        }
+      }
+    },
+    {
+      "name": "AFESA MEDIO AMBIENTE, S.A.",
+      "registrationNumber": "05154",
+      "identificationNumber": "A48169445",
+      "address": "Idorsolo kalea, 15. Edificio S. Isidro II",
+      "location": {
+        "postalCode": "48160",
+        "municipality": "Derio",
+        "county": "Bizkaia",
+        "municipalityId": "901",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.502.1",
+          "name": "Demoliciones y derribos en general",
+          "_links": {
+            "self": {
+              "name": "Demoliciones y derribos en general",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.502.1"
+            }
+          }
+        },
+        {
+          "id": "1.621",
+          "name": "Venta al por mayor de chatarra y metales de desecho férreos y no férreos",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de chatarra y metales de desecho férreos y no férreos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.621"
+            }
+          }
+        },
+        {
+          "id": "1.843.9",
+          "name": "Otros servicios técnicos n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros servicios técnicos n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.9"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-12-09",
+      "certificateEndDate": "2026-05-10",
+      "object": "1. LAS ACTIVIDADES DE IMPORTACIÓN Y EXPORTACIÓN, EL DESEMPEÑO DE COMISIONES Y REPRESENTACIONES NACIONALES O EXTRANJERAS, LA COMPRA, VENTA, ALMACENAMIENTO, DEPÓSITO, DISTRIBUCIÓN, ASISTENCIA Y PRESTACIÓN DE SERVICIOS DE GESTIÓN Y ASESORAMIENTO RELATIVAS A MERCANCÍAS Y PRODUCTOS DE TODA CLASE Y SUS ELEMENTOS O EQUIPOS PARTICULARES Y LOS QUE COMBINEN CON ELLOS. 2. INGENIERÍA DE MANTENIMIENTO, INGENIERÍA, ASESORAMIENTO, CONSULTORÍA Y ESTUDIOS DE MEDIO AMBIENTE, GESTIÓN, MANIPULACIÓN, CONTRATACIÓN Y TRATAMIENTO DE RESIDUOS Y SUELOS CONTAMINADOS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/05154",
+      "_links": {
+        "self": {
+          "name": "AFESA MEDIO AMBIENTE, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/05154"
+        }
+      }
+    },
+    {
+      "name": "ILARKI ASOCIACIÓN DE ASISTENCIA DOMICILIARIA",
+      "registrationNumber": "06430",
+      "identificationNumber": "G20425294",
+      "address": "JARDIN GERNIKAKO ARBOLA 8 BAJO",
+      "location": {
+        "postalCode": "20400",
+        "municipality": "Tolosa",
+        "county": "Gipuzkoa",
+        "municipalityId": "071",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.952",
+          "name": "Asistencia y servicios sociales en centros no residenciales",
+          "_links": {
+            "self": {
+              "name": "Asistencia y servicios sociales en centros no residenciales",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.952"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-12-09",
+      "certificateEndDate": "2026-06-09",
+      "object": "LA ASISTENCIA DOMICILIARIA A PERSONAS DISCAPACITADAS POR EDAD O ENFERMEDAD. PARA LA CONSECUCIÓN DE DICHOS FINES SE LLEVARÁN A CABO, PREVIO EL CUMPLIMIENTO DE LOS REQUISITOS LEGALES ESTABLECIDOS, LAS SIGUIENTES ACTIVIDADES: DENTRO DE LA ASISTENCIA DOMICILIARIA REALIZARÁ LA HIGIENE, LIMPIEZA, ALIMENTACIÓN Y DEMÁS AYUDAS QUE LOS USUARIOS DEL SERVICIO REQUIERAN. SIN PERJUICIO DE LAS ACTIVIDADES DESCRITAS EN EL APARTADO ANTERIOR, LA ASOCIACIÓN, PARA EL CUMPLIMIENTO DE SUS FINES PODRÁ: -DESARROLLAR ACTIVIDADES ECONÓMICAS DE TODO TIPO, ENCAMINADAS A LA REALIZACIÓN DE SUS FINES O A ALLEGAR RECURSOS CON ESE OBJETIVO. -ADQUIRIR Y POSEER BIENES DE TODAS CLASES Y POR CUALQUIER TÍTULO, ASÍ COMO CELEBRAR ACTOS Y CONTRATOS DE TODO GÉNERO.- EJERCITAR TODA CLASE DE ACCIONES CONFORME A LAS LEYES O A SUS ESTATUTOS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06430",
+      "_links": {
+        "self": {
+          "name": "ILARKI ASOCIACIÓN DE ASISTENCIA DOMICILIARIA",
+          "href": "https://api.euskadi.eus/procurements/companies/06430"
+        }
+      }
+    },
+    {
+      "name": "K6 GESTION CULTURAL, S.L.",
+      "registrationNumber": "03530",
+      "identificationNumber": "B20482303",
+      "address": "C/ PORTUETXE, N º83. PISO 2º. PUERTA 18",
+      "location": {
+        "postalCode": "20018",
+        "municipality": "Donostia / San Sebastián",
+        "county": "Gipuzkoa",
+        "municipalityId": "069",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.966.9",
+          "name": "Otros servicios culturales n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros servicios culturales n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.966.9"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-12-09",
+      "certificateEndDate": "2026-06-09",
+      "classification": [
+        {
+          "id": "S",
+          "name": "Servicios",
+          "groups": [
+            {
+              "id": "L",
+              "subgroups": [
+                {
+                  "id": "05",
+                  "name": "Organización y promoción de congresos, ferias y exposiciones",
+                  "categories": [
+                    {
+                      "id": "3",
+                      "name": "Desde 300.001 Hasta 600.000",
+                      "_links": {
+                        "self": {
+                          "name": "Desde 300.001 Hasta 600.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/S/categories/3"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "Organización y promoción de congresos, ferias y exposiciones",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/L/subgroups/05"
+                    }
+                  }
+                }
+              ],
+              "_links": {
+                "self": {
+                  "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/L"
+                }
+              }
+            },
+            {
+              "id": "M",
+              "subgroups": [
+                {
+                  "id": "05",
+                  "name": "Servicios de bibliotecas, archivos y museos",
+                  "categories": [
+                    {
+                      "id": "4",
+                      "name": "Desde 600.001 Hasta 1.1200.000",
+                      "_links": {
+                        "self": {
+                          "name": "Desde 600.001 Hasta 1.1200.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/S/categories/4"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "Servicios de bibliotecas, archivos y museos",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/M/subgroups/05"
+                    }
+                  }
+                }
+              ],
+              "_links": {
+                "self": {
+                  "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/M"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Servicios",
+              "href": "https://api.euskadi.eus/procurements/companies/types/S"
+            }
+          }
+        }
+      ],
+      "object": "LA ORGANIZACIÓN, PLANIFICACIÓN, GESTIÓN Y ASESORÍA DE PROYECTOS CULTURALES DE ÍNDOLE PÚBLICA, PRIVADA O DE PROPIA INICIATIVA; ORGANIZACIÓN DE EXPOSICIONES, DINAMINACIÓN PATRIMONIAL, CATALOGACIÓN DE FONDOS ARTÍSTICOS Y DOCUMENTALES",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03530",
+      "_links": {
+        "self": {
+          "name": "K6 GESTION CULTURAL, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/03530"
+        }
+      }
+    }
+  ]
+}

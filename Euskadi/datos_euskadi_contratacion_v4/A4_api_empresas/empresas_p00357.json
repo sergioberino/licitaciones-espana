@@ -1,0 +1,418 @@
+{
+  "totalItems": 9042,
+  "totalPages": 905,
+  "currentPage": 357,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "name": "ZIENTZIKASI, KOOP. ELK. TXIKIA",
+      "registrationNumber": "07626",
+      "identificationNumber": "F95903357",
+      "address": "Andra Mari 16-1D",
+      "location": {
+        "postalCode": "48200",
+        "municipality": "Durango",
+        "county": "Bizkaia",
+        "municipalityId": "027",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.931.2",
+          "name": "Enseñanza de educación general básica exclusivamente",
+          "_links": {
+            "self": {
+              "name": "Enseñanza de educación general básica exclusivamente",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.931.2"
+            }
+          }
+        },
+        {
+          "id": "1.933.9",
+          "name": "Otras actividades de enseñanza tales como idiomas, mecanografía",
+          "_links": {
+            "self": {
+              "name": "Otras actividades de enseñanza tales como idiomas, mecanografía",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.933.9"
+            }
+          }
+        },
+        {
+          "id": "1.942.9",
+          "name": "Otros servicios sanitarios sin internados, no clasificados",
+          "_links": {
+            "self": {
+              "name": "Otros servicios sanitarios sin internados, no clasificados",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.942.9"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-05-12",
+      "certificateEndDate": "2025-11-10",
+      "object": "LA IMPARTICIÓN DE CLASES EXTRAESCOLARES EN GRUPO E INDIVIDUALES , CAMPAMENTOS, GESTIÓN DE ACTIVIDADES DE OCIO Y TIEMPO LIBRE, SERVICIOS DE TRADUCCIÓN, TALLERES, FORMACIÓN, CLASES DE IDIOMAS. CAMPAMENTOS EN EL EXTRANJERO, TERAPIA, CURSOS DE LECTROESCRITURA, CURSOS Y CLASES ONLINE",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07626",
+      "_links": {
+        "self": {
+          "name": "ZIENTZIKASI, KOOP. ELK. TXIKIA",
+          "href": "https://api.euskadi.eus/procurements/companies/07626"
+        }
+      }
+    },
+    {
+      "name": "DACTILPLUS SERVICIOS INTEGRALES, S.L.",
+      "registrationNumber": "09205",
+      "identificationNumber": "B16869653",
+      "address": "camino uraga numero 4 derecha",
+      "location": {
+        "postalCode": "48903",
+        "municipality": "Barakaldo",
+        "county": "Bizkaia",
+        "municipalityId": "013",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.845",
+          "name": "Explotación electrónica por cuenta de terceros",
+          "_links": {
+            "self": {
+              "name": "Explotación electrónica por cuenta de terceros",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.845"
+            }
+          }
+        },
+        {
+          "id": "1.853",
+          "name": "Alquiler de maquinaria y equipo contable de oficina y cálculo",
+          "_links": {
+            "self": {
+              "name": "Alquiler de maquinaria y equipo contable de oficina y cálculo",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.853"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-05-11",
+      "certificateEndDate": "2025-11-11",
+      "object": "EL DESARROLLO DE LAS ACTIVIDADES CORRESPONDIENTES A LOS SIGUIENTES CÓDIGOS Y DESCRIPCIONES DE CLASIFICACIÓN NACIONAL DE ACTIVIDADES ECONÓMICAS: ACTIVIDAD PRINCIPAL: 62.01 / ACTIVIDADES DE PROGRAMACIÓN INFORMÁTICA. OTRAS ACTIVIDADES: 77.33 / ALQUILER DE MAQUINARIA Y EQUIPO DE OFICINA, INCLUIDOS ORDENADORES.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/09205",
+      "_links": {
+        "self": {
+          "name": "DACTILPLUS SERVICIOS INTEGRALES, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/09205"
+        }
+      }
+    },
+    {
+      "name": "JOSE DAVID FERNANDEZ SAEZ",
+      "registrationNumber": "10169",
+      "identificationNumber": "45580764P",
+      "address": "Pasaje De Las Antillas N10 4 B",
+      "location": {
+        "postalCode": "01012",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "2.826",
+          "name": "Personal docente de enseñanzas diversas",
+          "_links": {
+            "self": {
+              "name": "Personal docente de enseñanzas diversas",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/2.826"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-05-09",
+      "certificateEndDate": "2025-11-08",
+      "object": "PERSONAL DOCENTE DE ENSEÑANZAS DIVERSAS.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/10169",
+      "_links": {
+        "self": {
+          "name": "JOSE DAVID FERNANDEZ SAEZ",
+          "href": "https://api.euskadi.eus/procurements/companies/10169"
+        }
+      }
+    },
+    {
+      "name": "INMASER, S.L.",
+      "registrationNumber": "08351",
+      "identificationNumber": "B75190470",
+      "address": "SAGASTI 19-21",
+      "location": {
+        "postalCode": "20100",
+        "municipality": "Lezo",
+        "county": "Gipuzkoa",
+        "municipalityId": "053",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.324.1",
+          "name": "Construcción de máquinas industriales alimenticias, bebidas y tabaco",
+          "_links": {
+            "self": {
+              "name": "Construcción de máquinas industriales alimenticias, bebidas y tabaco",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.324.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-05-09",
+      "certificateEndDate": "2025-11-08",
+      "object": "A) LA FABRICACIÓN, REPARACIÓN, COMPRAVENTA, COMERCIALIZACIÓN, IMPORTACIÓN, EXPORTACIÓN Y DISTRIBUCIÓN DE MAQUINARIA, INSTALACIONES, EQUIPOS Y SERVICIOS DE ALIMENTACIÓN. B) LA REALIZACIÓN DE TRABAJOS DE TALLER MECÁNICO Y ELÉCTRICO. C) MANUFACTURADO DE TODO TIPO DE ARTÍCULOS, PIEZAS, ÚTILES, ACCESORIOS O HERRAMIENTAS. D) LA REPRESENTACIÓN COMERCIAL-MERCANTIL.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08351",
+      "_links": {
+        "self": {
+          "name": "INMASER, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/08351"
+        }
+      }
+    },
+    {
+      "name": "MEDIANET MULTIMEDIA, S.L.",
+      "registrationNumber": "09327",
+      "identificationNumber": "B95520458",
+      "address": "Calle Estaziño",
+      "location": {
+        "postalCode": "20600",
+        "municipality": "Eibar",
+        "county": "Gipuzkoa",
+        "municipalityId": "030",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.659.2",
+          "name": "Venta al por menor de muebles de oficina y máquinas y equipos de oficina",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de muebles de oficina y máquinas y equipos de oficina",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.659.2"
+            }
+          }
+        },
+        {
+          "id": "1.691.9",
+          "name": "Reparación de otros bienes de consumo n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Reparación de otros bienes de consumo n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.691.9"
+            }
+          }
+        },
+        {
+          "id": "1.849.9",
+          "name": "Otros servicios independientes n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros servicios independientes n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.849.9"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-05-09",
+      "certificateEndDate": "2025-10-30",
+      "object": "A) ARRENDAMIENTO DE LOCALES. B) COMPRAVENTA DE PRODUCTOS INFORMÁTICOS Y ELECTRODOMÉSTICOS.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/09327",
+      "_links": {
+        "self": {
+          "name": "MEDIANET MULTIMEDIA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/09327"
+        }
+      }
+    },
+    {
+      "name": "BASQUE MOTOR SAN SEBASTIAN, S.L.",
+      "registrationNumber": "08515",
+      "identificationNumber": "B20209268",
+      "address": "C/ Portuetxe 23",
+      "location": {
+        "postalCode": "20018",
+        "municipality": "Donostia / San Sebastián",
+        "county": "Gipuzkoa",
+        "municipalityId": "069",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.654.1",
+          "name": "Venta al por menor de vehículos terrestres",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de vehículos terrestres",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.654.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-05-09",
+      "certificateEndDate": "2025-11-06",
+      "object": "LA IMPORTACIÓN Y LA COMPRA Y VENTA DE AUTOMÓVILES Y DE TODA CLASE DE VEHÍCULOS Y EMBARCACIONES Y DE ACCESORIOS PARA ELLOS; LA REALIZACIÓN DE OBRAS Y TRABAJOS DE REPARACIÓN MECÁNICA, ELÉCTRICA Y DE CARROCERÍA DE LOS MISMOS, ASÍ COMO SU PINTURA, ENGRASE Y LAVADO. ALQUILER DE VEHÍCULOS DE TRANSPORTE DE PERSONAS O MERCANCÍAS. TRANSPORTE DE MERCANCÍAS POR CARRETERA. SERVICIOS DE GRÚA PARA EL TRANSPORTE DE VEHÍCULOS.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08515",
+      "_links": {
+        "self": {
+          "name": "BASQUE MOTOR SAN SEBASTIAN, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/08515"
+        }
+      }
+    },
+    {
+      "name": "SU SEGURIDAD URIBE KOSTA, S.L.",
+      "registrationNumber": "08133",
+      "identificationNumber": "B95787883",
+      "address": "C/ Iñaki Deuna, 5",
+      "location": {
+        "postalCode": "48600",
+        "municipality": "Sopela",
+        "county": "Bizkaia",
+        "municipalityId": "085",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.504.11",
+          "name": "Instalaciones eléctricas en general, redes telegráficas, telefonía, tv, etc",
+          "_links": {
+            "self": {
+              "name": "Instalaciones eléctricas en general, redes telegráficas, telefonía, tv, etc",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.504.11"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-05-08",
+      "certificateEndDate": "2025-10-28",
+      "object": "LA INSTALACIÓN Y MANTENIMIENTO DE APARATOS, DISPOSITIVOS Y SISTEMAS DE SEGURIDAD CONECTADOS A CENTRALES DE ALARMA. COMERCIALIZACIÓN, INSTALACIÓN Y MANTENIMIENTO DE SISTEMAS DE PROTECCIÓN CONTRA INCENDIOS. EL CNAE DE LA ACTIVIDAD PRINCIPAL ES: 4321 (INSTALACIONES ELÉCTRICAS).",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08133",
+      "_links": {
+        "self": {
+          "name": "SU SEGURIDAD URIBE KOSTA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/08133"
+        }
+      }
+    },
+    {
+      "name": "DIGIBIS S.L.U.",
+      "registrationNumber": "06328",
+      "identificationNumber": "B81464653",
+      "address": "C/ALENZA, 4 5ªPLANTA",
+      "location": {
+        "postalCode": "28003",
+        "municipality": "Madrid",
+        "county": "Madrid",
+        "municipalityId": "079",
+        "countyId": "28"
+      },
+      "economicActivities": [
+        {
+          "id": "1.659.4",
+          "name": "Venta al por menor de libros, periódicos y artículos de papelería y escritorio",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de libros, periódicos y artículos de papelería y escritorio",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.659.4"
+            }
+          }
+        },
+        {
+          "id": "1.845",
+          "name": "Explotación electrónica por cuenta de terceros",
+          "_links": {
+            "self": {
+              "name": "Explotación electrónica por cuenta de terceros",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.845"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-05-08",
+      "certificateEndDate": "2025-11-07",
+      "object": "LA PRODUCCIÓN, EDICIÓN Y DISTRIBUCIÓN EN TODO TIPO DE SOPORTES INFORMÁTICOS, (INCLUÍDO EL CD-ROM), DE PUBLICACIONES ELECTRÓNICAS, ASÍ COMO SERVICIOS DE ASESORAMIENTO INFORMÁTICO, DESARROLLO DE SOFTWARE PROPIO Y ACTIVIDADES RELACIONADAS CON EL MISMO.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06328",
+      "_links": {
+        "self": {
+          "name": "DIGIBIS S.L.U.",
+          "href": "https://api.euskadi.eus/procurements/companies/06328"
+        }
+      }
+    },
+    {
+      "name": "LUIS RAMÓN SESÉ MADRAZO",
+      "registrationNumber": "06641",
+      "identificationNumber": "15237629Z",
+      "address": "C/ALDAPA 23 BJ",
+      "location": {
+        "postalCode": "20012",
+        "municipality": "Donostia / San Sebastián",
+        "county": "Gipuzkoa",
+        "municipalityId": "069",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "2.411",
+          "name": "Arquitectos",
+          "_links": {
+            "self": {
+              "name": "Arquitectos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/2.411"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-05-08",
+      "certificateEndDate": "2025-11-05",
+      "object": "ARQUITECTOS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06641",
+      "_links": {
+        "self": {
+          "name": "LUIS RAMÓN SESÉ MADRAZO",
+          "href": "https://api.euskadi.eus/procurements/companies/06641"
+        }
+      }
+    },
+    {
+      "name": "EFECTO 3 DISEÑO E INTERIORISMO, S.L.",
+      "registrationNumber": "09255",
+      "identificationNumber": "B95867131",
+      "address": "PLAZA VENEZUELA, 1 LOCAL",
+      "location": {
+        "postalCode": "48001",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.501.1",
+          "name": "Construcción completa, reparación y conservación de edificaciones",
+          "_links": {
+            "self": {
+              "name": "Construcción completa, reparación y conservación de edificaciones",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-05-07",
+      "certificateEndDate": "2025-11-01",
+      "object": "A) LA REALIZACIÓN DE DISEÑOS ESTUDIOS Y PROYECTOS DE DECORACIÓN DE TODO TIPO DE EDIFICACIONES PROYECTOS Y EJECUCIONES MATERIALES DE OBRAS Y DIRECCIÓN DE OBRAS, (CNAE 4399) QUE CORRESPONDE A LA ACTIVIDAD PRINCIPAL DE LA SOCIEDAD. B) LA ADQUISICIÓN, TENENCIA, DISFRUTE, EXPLOTACIÓN Y ENAJENACIÓN DE TODA CLASE DE FINCAS EN RÚSTICAS O URBANAS CUALQUIERA QUE FUERA SU NATURALEZA. C) LA PROMOCIÓN, CONSTRUCCIÓN, REHABILITACIÓN Y REPARACIÓN, POR CUENTA PROPIA O AJENA DE TODA CLASE DE OBRAS, URBANIZACIONES, EDIFICIOS Y CONSTRUCCIONES TANTO PÚBLICOS COMO PRIVADOS. D) LA ADMINISTRACIÓN, ASESORAMIENTO, GESTIÓN DE ACTUACIONES URBANÍSTICAS Y PRESTACIÓN DE SERVICIOS DE TODO TIPO CON RELACIÓN A BIENES INMUEBLES, SEGÚN CONVENGA A SU APROVECHAMIENTO AGRÍCOLA, FORESTAL, URBANO INDUSTRIAL O DE CUALQUIER OTRA NATURALEZA. E) LA ASISTENCIA, GESTIÓN, DIRECCIÓN, ADMINISTRACIÓN, PROMOCIÓN, INTERVENCIÓN Y PARTICIPACIÓN EN EMPRESAS O EN SU CREACIÓN, CONSTITUCIÓN O DESARROLLO. F) LA PROMOCIÓN, ESTUDIO Y DESARROLLO DE PRODUCTOS Y ACTIVIDADES INDUSTRIALES, COMERCIALES Y DE DISTRIBUCIÓN EN EMPRESAS PROPIAS O PARTICIPADAS, Y EXPLOTACIÓN O CESIÓN DE CÁNONES O ROYALTIES Y DERECHOS DE PROPIEDAD INDUSTRIAL. G) LOS SERVICIOS DE MEDIACIÓN, GESTIÓN, REPRESENTACIÓN Y COMERCIO INTERIOR Y EXTERIOR, ALMACENAMIENTO, ARRENDAMIENTO Y, EN GENERAL, LA COMERCIALIZACIÓN Y DISTRIBUCIÓN DE TODA CLASE DE PRODUCTOS. H) LA ADQUISICIÓN, TENENCIA, DISFRUTE, ADMINISTRACIÓN Y ENAJENACIÓN DE TODA CLASE DE TÍTULOS COMO VALORES MOBILIARIOS ACTIVOS FINANCIEROS, DERECHOS VALORES, CUOTAS O PARTICIPACIONES EN EMPRESAS INDIVIDUALES O SOCIALES POR CUENTA PROPIA Y CON EXCEPCIÓN DE LA INTERMEDIACIÓN, NO INCLUYÉNDOSE EN NINGÚN CASO LAS ACTIVIDADES OBJETO DE LA LEGISLACIÓN DE INSTITUCIONES DE INVERSIÓN COLECTIVA Y DE MERCADO DE VALORES. I) EL COMERCIO TANTO AL POR MAYOR COMO AL POR MENOR, EN LAS MÁS VARIADAS FORMAS DE USO, COMPRENDIDAS AQUELLAS POR CORRESPONDENCIA SOBRE CATÁLOGO, Y EL COMERCIO ELECTRÓNICO A TRAVÉS DE INTERNET O DE CUALQUIER OTRA RED QUE PUEDA CREARSE EN EL FUTURO DE MOBILIARIO, OBJETOS DE OFICINA, APARATOS DE ILUMINACIÓN Y OBJETO DE DECORACIÓN. J) LA IMPORTACIÓN Y EXPORTACIÓN DE LOS MENCIONADOS PRODUCTOS, LA UTILIZACIÓN Y APROVECHAMIENTO DE LAS MARCAS COMERCIALES EN GENERAL, EL DESEMPEÑO DE COMISIONES Y REPRESENTACIONES PARA TODO GÉNERO DE OPERACIONES DE LÍCITO COMERCIO, PUDIENDO ACTUAR COMO REPRESENTANTE, AGENTE COMISIONISTA, DELEGADO O BAJO CUALQUIER OTRA FORMA DE MEDIACIÓN MERCANTIL DE TODA CLASE DE EMPRESAS, NACIONALES O EXTRANJERAS. ",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/09255",
+      "_links": {
+        "self": {
+          "name": "EFECTO 3 DISEÑO E INTERIORISMO, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/09255"
+        }
+      }
+    }
+  ]
+}

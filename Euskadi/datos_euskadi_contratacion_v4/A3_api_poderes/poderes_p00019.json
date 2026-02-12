@@ -1,0 +1,581 @@
+{
+  "totalItems": 919,
+  "totalPages": 92,
+  "currentPage": 19,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "id": 480,
+      "identificationNumber": "A20864856",
+      "name": "Urola Erdiko Lapatx Zabortegia S.A.",
+      "scope": "GIPUZKOA",
+      "address": "Enparantza Nagusia, 11. 1º solairua. 20730 Azpeitia (Gipuzkoa)",
+      "webPage": "http://www.urolaerdia.eus",
+      "publicationDate": "2023-02-07",
+      "mainActivity": "Medio ambiente",
+      "codNUTS": "ES212",
+      "entities": [
+        {
+          "id": 928,
+          "name": "Urola Erdiko Lapatx Zabortegia S.A.",
+          "orgs": [
+            {
+              "id": 912546,
+              "name": "Consejo de Administración",
+              "_links": {
+                "self": {
+                  "name": "Consejo de Administración",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/480/entities/928/orgs/912546"
+                }
+              }
+            },
+            {
+              "id": 912545,
+              "name": "Presidente",
+              "_links": {
+                "self": {
+                  "name": "Presidente",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/480/entities/928/orgs/912545"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Urola Erdiko Lapatx Zabortegia S.A.",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/480/entities/928"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder480/es_doc/index.html",
+      "_links": {
+        "self": {
+          "name": "Urola Erdiko Lapatx Zabortegia S.A.",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/480"
+        },
+        "contractingAuthorities": [
+          {
+            "name": "Mancomunidad de Urola Erdia",
+            "href": "https://api.euskadi.eus/procurements/contracting-authorities/24986"
+          }
+        ]
+      }
+    },
+    {
+      "id": 25838,
+      "identificationNumber": "Q200624C",
+      "name": "Mancomunidad Beterri Buruntza",
+      "scope": "GIPUZKOA",
+      "address": "Polígono Akarregi, 10 oficina 203-204 (20120-Hernani)",
+      "webPage": "https://beterriburuntza.eus/",
+      "publicationDate": "2023-02-06",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES212",
+      "entities": [
+        {
+          "id": 25839,
+          "name": "Mancomunidad Beterri Buruntza",
+          "orgs": [
+            {
+              "id": 25840,
+              "name": "Presidente/a ",
+              "_links": {
+                "self": {
+                  "name": "Presidente/a ",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/25838/entities/25839/orgs/25840"
+                }
+              }
+            },
+            {
+              "id": 25841,
+              "name": "Junta de Gobierno",
+              "_links": {
+                "self": {
+                  "name": "Junta de Gobierno",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/25838/entities/25839/orgs/25841"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Mancomunidad Beterri Buruntza",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/25838/entities/25839"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder25838/es_doc/index.html",
+      "_links": {
+        "self": {
+          "name": "Mancomunidad Beterri Buruntza",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/25838"
+        }
+      }
+    },
+    {
+      "id": 25819,
+      "identificationNumber": "P0100135C",
+      "name": "Junta Administrativa de Olano",
+      "scope": "ARABA/ÁLAVA",
+      "address": "Casa de juntas de Elorriaga, 9 - 01192 Elorriaga",
+      "webPage": "https://aialur.com/",
+      "publicationDate": "2022-12-22",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES211",
+      "entities": [
+        {
+          "id": 25820,
+          "name": "Junta Administrativa de Olano",
+          "orgs": [
+            {
+              "id": 25821,
+              "name": "Junta Administrativa de Olano",
+              "_links": {
+                "self": {
+                  "name": "Junta Administrativa de Olano",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/25819/entities/25820/orgs/25821"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Junta Administrativa de Olano",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/25819/entities/25820"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder25819/es_doc/index.html",
+      "_links": {
+        "self": {
+          "name": "Junta Administrativa de Olano",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/25819"
+        }
+      }
+    },
+    {
+      "id": 99,
+      "identificationNumber": "G48986137",
+      "name": "HAZI Desarrollo Rural Litoral y Alimentario",
+      "scope": "CAPV",
+      "address": "Muntsaratz 17 A. 48220 Abadiño (Bizkaia)",
+      "webPage": "http://www.hazi.eus",
+      "publicationDate": "2022-12-16",
+      "mainActivity": "Asuntos económicos y financieros",
+      "codNUTS": "ES21",
+      "CPV": [
+        {
+          "name": "Gestión medioambiental"
+        },
+        {
+          "name": "Servicios a empresas: legislación, mercadotecnia, asesoría, selección de personal, imprenta y seguridad"
+        },
+        {
+          "name": "Servicios agrícolas, forestales, hortícolas, acuícolas y apícolas"
+        },
+        {
+          "name": "Servicios de enseñanza y formación"
+        },
+        {
+          "name": "Servicios informáticos"
+        }
+      ],
+      "entities": [
+        {
+          "id": 450,
+          "name": "HAZI",
+          "orgs": [
+            {
+              "id": 911479,
+              "name": "Director/a de HAZI",
+              "_links": {
+                "self": {
+                  "name": "Director/a de HAZI",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/99/entities/450/orgs/911479"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "HAZI",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/99/entities/450"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder99/es_doc/index.html",
+      "_links": {
+        "self": {
+          "name": "HAZI Desarrollo Rural Litoral y Alimentario",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/99"
+        },
+        "contractingAuthorities": [
+          {
+            "name": "Autoridad Vasca de Protección de Datos",
+            "href": "https://api.euskadi.eus/procurements/contracting-authorities/16235"
+          },
+          {
+            "name": "Biscay marine energy platform, S.A.",
+            "href": "https://api.euskadi.eus/procurements/contracting-authorities/16829"
+          },
+          {
+            "name": "Centro para el ahorro y desarrollo energético y minero, S.A.",
+            "href": "https://api.euskadi.eus/procurements/contracting-authorities/16820"
+          },
+          {
+            "name": "Diputación Foral de Bizkaia",
+            "href": "https://api.euskadi.eus/procurements/contracting-authorities/18269"
+          },
+          {
+            "name": "Diputación Foral de Gipuzkoa",
+            "href": "https://api.euskadi.eus/procurements/contracting-authorities/17263"
+          },
+          {
+            "name": "Diputación Foral de Álava",
+            "href": "https://api.euskadi.eus/procurements/contracting-authorities/17585"
+          },
+          {
+            "name": "Ente Vasco de la Energía",
+            "href": "https://api.euskadi.eus/procurements/contracting-authorities/17259"
+          },
+          {
+            "name": "Gobierno Vasco",
+            "href": "https://api.euskadi.eus/procurements/contracting-authorities/16135"
+          },
+          {
+            "name": "Hidroeléctrica Harana-Kontrasta, S.A.",
+            "href": "https://api.euskadi.eus/procurements/contracting-authorities/17254"
+          },
+          {
+            "name": "LANBIDE, Servicio Vasco de Empleo",
+            "href": "https://api.euskadi.eus/procurements/contracting-authorities/18951"
+          },
+          {
+            "name": "NEIKER, Instituto Vasco de Investigación y Desarrollo Agrario, S.A.",
+            "href": "https://api.euskadi.eus/procurements/contracting-authorities/16615"
+          },
+          {
+            "name": "OSAKIDETZA - Servicio Vasco de Salud ",
+            "href": "https://api.euskadi.eus/procurements/contracting-authorities/16472"
+          },
+          {
+            "name": "SPRI-Agencia Vasca de Desarrollo Empresarial",
+            "href": "https://api.euskadi.eus/procurements/contracting-authorities/17346"
+          },
+          {
+            "name": "Sociedad Pública de Gestión Ambiental, IHOBE, S.A.",
+            "href": "https://api.euskadi.eus/procurements/contracting-authorities/17047"
+          },
+          {
+            "name": "VISESA - Vivienda y Suelo de Euskadi, S.A.",
+            "href": "https://api.euskadi.eus/procurements/contracting-authorities/16581"
+          },
+          {
+            "name": "eLankidetza-Agencia Vasca de Cooperación y Solidaridad",
+            "href": "https://api.euskadi.eus/procurements/contracting-authorities/16662"
+          }
+        ]
+      }
+    },
+    {
+      "id": 172,
+      "identificationNumber": "G20988432",
+      "name": "Fundación Cristina Enea",
+      "scope": "GIPUZKOA",
+      "address": "Paseo Duque de Mandas, 66. 20012 Donostia/San Sebastián (Gipuzkoa)",
+      "webPage": "http://www.cristinaenea.eus",
+      "publicationDate": "2022-12-01",
+      "mainActivity": "Ocio, cultura y religión",
+      "codNUTS": "ES212",
+      "entities": [
+        {
+          "id": 600,
+          "name": "Fundación Cristina Enea",
+          "orgs": [
+            {
+              "id": 911888,
+              "name": "Director gerente con firma mancomunada con el presidente o vicepresidente con firma delegada ",
+              "_links": {
+                "self": {
+                  "name": "Director gerente con firma mancomunada con el presidente o vicepresidente con firma delegada ",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/172/entities/600/orgs/911888"
+                }
+              }
+            },
+            {
+              "id": 911887,
+              "name": "Director gerente",
+              "_links": {
+                "self": {
+                  "name": "Director gerente",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/172/entities/600/orgs/911887"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Fundación Cristina Enea",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/172/entities/600"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder172/es_doc/index.html",
+      "_links": {
+        "self": {
+          "name": "Fundación Cristina Enea",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/172"
+        }
+      }
+    },
+    {
+      "id": 25808,
+      "identificationNumber": "P4800041H",
+      "name": "Organismo Autónomo Soinu Atadia",
+      "scope": "BIZKAIA",
+      "address": "Iparragirre 76 s/n 48940 LEIOA",
+      "webPage": "http://www.conservatorioleioa.com/",
+      "publicationDate": "2022-11-29",
+      "mainActivity": "Ocio, cultura y religión",
+      "codNUTS": "ES213",
+      "entities": [
+        {
+          "id": 25809,
+          "name": "Organismo Autónomo Soinu Atadia",
+          "orgs": [
+            {
+              "id": 25810,
+              "name": "Organismo Autónomo Soinu Atadia",
+              "_links": {
+                "self": {
+                  "name": "Organismo Autónomo Soinu Atadia",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/25808/entities/25809/orgs/25810"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Organismo Autónomo Soinu Atadia",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/25808/entities/25809"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder25808/es_doc/index.html",
+      "_links": {
+        "self": {
+          "name": "Organismo Autónomo Soinu Atadia",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/25808"
+        }
+      }
+    },
+    {
+      "id": 25802,
+      "identificationNumber": "V95491775",
+      "name": "Junta de Concertación de la UE Residencial 2, Birjinoste de Durango",
+      "scope": "BIZKAIA",
+      "address": "Autonomía, 2 - 48292 Atxondo ",
+      "webPage": "https://www.grupoeibar.com/promociones/durangunea-obra-nueva-durango/",
+      "publicationDate": "2022-11-23",
+      "mainActivity": "Vivienda y servicios comunitarios",
+      "codNUTS": "ES213",
+      "entities": [
+        {
+          "id": 25803,
+          "name": "Junta de Concertación de la UE Residencial 2, Birjinoste de Durango",
+          "orgs": [
+            {
+              "id": 25804,
+              "name": "Junta de Concertación de la UE Residencial 2, Birjinoste de Durango ",
+              "_links": {
+                "self": {
+                  "name": "Junta de Concertación de la UE Residencial 2, Birjinoste de Durango ",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/25802/entities/25803/orgs/25804"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Junta de Concertación de la UE Residencial 2, Birjinoste de Durango",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/25802/entities/25803"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder25802/es_doc/index.html",
+      "_links": {
+        "self": {
+          "name": "Junta de Concertación de la UE Residencial 2, Birjinoste de Durango",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/25802"
+        }
+      }
+    },
+    {
+      "id": 25795,
+      "identificationNumber": "A48164339",
+      "name": "Sociedad Urbanística De Rehabilitacion de Bilbao, S.A.",
+      "scope": "BIZKAIA",
+      "address": "Ronda 6.- 48005 Bilbao",
+      "webPage": "http://www.bilbaopedia.info/surbisa",
+      "publicationDate": "2022-11-21",
+      "mainActivity": "Vivienda y servicios comunitarios",
+      "codNUTS": "ES213",
+      "entities": [
+        {
+          "id": 25796,
+          "name": "SURBISA",
+          "orgs": [
+            {
+              "id": 25797,
+              "name": "Director/a",
+              "_links": {
+                "self": {
+                  "name": "Director/a",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/25795/entities/25796/orgs/25797"
+                }
+              }
+            },
+            {
+              "id": 25798,
+              "name": "Presidente/a",
+              "_links": {
+                "self": {
+                  "name": "Presidente/a",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/25795/entities/25796/orgs/25798"
+                }
+              }
+            },
+            {
+              "id": 25799,
+              "name": "Consejo de Administración",
+              "_links": {
+                "self": {
+                  "name": "Consejo de Administración",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/25795/entities/25796/orgs/25799"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "SURBISA",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/25795/entities/25796"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder25795/es_doc/index.html",
+      "_links": {
+        "self": {
+          "name": "Sociedad Urbanística De Rehabilitacion de Bilbao, S.A.",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/25795"
+        }
+      }
+    },
+    {
+      "id": 356,
+      "identificationNumber": "A01302462",
+      "name": "Sociedad Urbanísitca Municipal de Vitoria, Ensanche 21 Zabalgunea, S.A",
+      "scope": "ARABA/ÁLAVA",
+      "address": "Palacio de Zulueta, Paseo de la Senda 2, 01007 Vitoria-Gasteiz",
+      "webPage": "http://www.vitoria-gasteiz.org/ensanche21",
+      "publicationDate": "2022-11-08",
+      "mainActivity": "Vivienda y servicios comunitarios",
+      "codNUTS": "ES211",
+      "entities": [
+        {
+          "id": 808,
+          "name": "Sociedad Urbanísitca Municipal de Vitoria, Ensanche 21 Zabalgunea, S.A.",
+          "orgs": [
+            {
+              "id": 912327,
+              "name": "Consejo de Administración",
+              "_links": {
+                "self": {
+                  "name": "Consejo de Administración",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/356/entities/808/orgs/912327"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Sociedad Urbanísitca Municipal de Vitoria, Ensanche 21 Zabalgunea, S.A.",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/356/entities/808"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder356/es_doc/index.html",
+      "_links": {
+        "self": {
+          "name": "Sociedad Urbanísitca Municipal de Vitoria, Ensanche 21 Zabalgunea, S.A",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/356"
+        },
+        "contractingAuthorities": [
+          {
+            "name": "Ayuntamiento de Vitoria-Gasteiz",
+            "href": "https://api.euskadi.eus/procurements/contracting-authorities/18745"
+          },
+          {
+            "name": "Ayuntamiento de Vitoria-Gasteiz",
+            "href": "https://api.euskadi.eus/procurements/contracting-authorities/22820"
+          },
+          {
+            "name": "Ayuntamiento de Vitoria-Gasteiz",
+            "href": "https://api.euskadi.eus/procurements/contracting-authorities/24991"
+          }
+        ]
+      }
+    },
+    {
+      "id": 25769,
+      "identificationNumber": "G48971956",
+      "name": "Federación de Asociaciones de Desarrollo Rural de Bizkaia",
+      "scope": "BIZKAIA",
+      "address": "Trobika, 5 – 48100 Mungia ",
+      "webPage": "https://www.uribe.eu/inicio",
+      "publicationDate": "2022-11-07",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES213",
+      "entities": [
+        {
+          "id": 25770,
+          "name": "Bizkaimendi",
+          "orgs": [
+            {
+              "id": 25771,
+              "name": "Junta Directiva",
+              "_links": {
+                "self": {
+                  "name": "Junta Directiva",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/25769/entities/25770/orgs/25771"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Bizkaimendi",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/25769/entities/25770"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder25769/es_doc/index.html",
+      "_links": {
+        "self": {
+          "name": "Federación de Asociaciones de Desarrollo Rural de Bizkaia",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/25769"
+        }
+      }
+    }
+  ]
+}

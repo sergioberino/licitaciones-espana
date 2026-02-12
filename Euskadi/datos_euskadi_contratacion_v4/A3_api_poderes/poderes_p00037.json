@@ -1,0 +1,508 @@
+{
+  "totalItems": 919,
+  "totalPages": 92,
+  "currentPage": 37,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "id": 736,
+      "identificationNumber": "B01244136",
+      "name": "BODEGA BADIOLA, S.L.",
+      "scope": "ARABA/ÁLAVA",
+      "address": "Ctra. Samaniego, s/n. 01307 Villabuena de Álava/Eskuernaga (Araba/Alava)",
+      "webPage": "http://www.contratacion.euskadi.eus/",
+      "publicationDate": "2020-05-21",
+      "mainActivity": "Asuntos económicos y financieros",
+      "codNUTS": "ES211",
+      "entities": [
+        {
+          "id": 1214,
+          "name": "BODEGA BADIOLA, S.L. ",
+          "orgs": [
+            {
+              "id": 913626,
+              "name": "Administrador",
+              "_links": {
+                "self": {
+                  "name": "Administrador",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/736/entities/1214/orgs/913626"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "BODEGA BADIOLA, S.L. ",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/736/entities/1214"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder736/es_doc/es_arch_poder736.html",
+      "_links": {
+        "self": {
+          "name": "BODEGA BADIOLA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/736"
+        }
+      }
+    },
+    {
+      "id": 735,
+      "identificationNumber": "P2002400F",
+      "name": "Ayuntamiento de Berastegi",
+      "scope": "GIPUZKOA",
+      "address": "Herriko enparantza, 1. 20492 Berastegi (Gipuzkoa)",
+      "webPage": "http://www.berastegi.eus",
+      "publicationDate": "2020-05-15",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES212",
+      "entities": [
+        {
+          "id": 1213,
+          "name": "Ayuntamiento de Berastegi",
+          "orgs": [
+            {
+              "id": 913624,
+              "name": "Alcaldia ",
+              "_links": {
+                "self": {
+                  "name": "Alcaldia ",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/735/entities/1213/orgs/913624"
+                }
+              }
+            },
+            {
+              "id": 913625,
+              "name": "Pleno del Ayuntamiento",
+              "_links": {
+                "self": {
+                  "name": "Pleno del Ayuntamiento",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/735/entities/1213/orgs/913625"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Ayuntamiento de Berastegi",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/735/entities/1213"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder735/es_doc/es_arch_poder735.html",
+      "_links": {
+        "self": {
+          "name": "Ayuntamiento de Berastegi",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/735"
+        }
+      }
+    },
+    {
+      "id": 603,
+      "identificationNumber": "P9804401I",
+      "name": "Organismo Autónomo Local \"Centro Municipal de Actividades Musicales de Galdakao\"",
+      "scope": "BIZKAIA",
+      "address": "Urreta, 21. 48960 Galdakao (Bizkaia)",
+      "webPage": "http://www.galdakao.eus/musika-eskola",
+      "publicationDate": "2020-05-12",
+      "mainActivity": "Ocio, cultura y religión",
+      "codNUTS": "ES213",
+      "entities": [
+        {
+          "id": 1054,
+          "name": "Centro Municipal de Actividades Musicales de Galdakao",
+          "orgs": [
+            {
+              "id": 912768,
+              "name": "Presidente",
+              "_links": {
+                "self": {
+                  "name": "Presidente",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/603/entities/1054/orgs/912768"
+                }
+              }
+            },
+            {
+              "id": 912767,
+              "name": "Junta Rectora",
+              "_links": {
+                "self": {
+                  "name": "Junta Rectora",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/603/entities/1054/orgs/912767"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Centro Municipal de Actividades Musicales de Galdakao",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/603/entities/1054"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder603/es_doc/es_arch_poder603.html",
+      "_links": {
+        "self": {
+          "name": "Organismo Autónomo Local \"Centro Municipal de Actividades Musicales de Galdakao\"",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/603"
+        }
+      }
+    },
+    {
+      "id": 733,
+      "identificationNumber": "G01428069",
+      "name": "Asociación para la promoción turística \"DESTINOS EUSKADI\"",
+      "scope": "CAPV",
+      "address": "Pintor Pablo Uranga, 10 bajo. 01008 Vitoria Gasteiz (Araba/Álava)",
+      "webPage": "https://www.destinoseuskadi.com/",
+      "publicationDate": "2020-05-11",
+      "mainActivity": "Otra actividad",
+      "alternativeActivity": "Turismo",
+      "codNUTS": "ES21",
+      "entities": [
+        {
+          "id": 1210,
+          "name": "DESTINOS EUSKADI",
+          "orgs": [
+            {
+              "id": 913618,
+              "name": "Junta Directiva",
+              "_links": {
+                "self": {
+                  "name": "Junta Directiva",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/733/entities/1210/orgs/913618"
+                }
+              }
+            },
+            {
+              "id": 913617,
+              "name": "Asamblea General de Socias/os",
+              "_links": {
+                "self": {
+                  "name": "Asamblea General de Socias/os",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/733/entities/1210/orgs/913617"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "DESTINOS EUSKADI",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/733/entities/1210"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder733/es_doc/es_arch_poder733.html",
+      "_links": {
+        "self": {
+          "name": "Asociación para la promoción turística \"DESTINOS EUSKADI\"",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/733"
+        }
+      }
+    },
+    {
+      "id": 734,
+      "identificationNumber": "A20343620",
+      "name": "Quincena Musical de Donostia-San Sebastián S.A.",
+      "scope": "GIPUZKOA",
+      "address": "Centro Kursaal. Avenida de Zurriola,1. 20002 Donostia/San Sebastián (Gipuzkoa)",
+      "webPage": "https://www.quincenamusical.eus/",
+      "publicationDate": "2020-05-11",
+      "mainActivity": "Ocio, cultura y religión",
+      "codNUTS": "ES212",
+      "entities": [
+        {
+          "id": 1211,
+          "name": "Quincena Musical de Donostia-San Sebastián S.A.",
+          "orgs": [
+            {
+              "id": 913619,
+              "name": "Director gerente",
+              "_links": {
+                "self": {
+                  "name": "Director gerente",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/734/entities/1211/orgs/913619"
+                }
+              }
+            },
+            {
+              "id": 913620,
+              "name": "Consejo de Administración",
+              "_links": {
+                "self": {
+                  "name": "Consejo de Administración",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/734/entities/1211/orgs/913620"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Quincena Musical de Donostia-San Sebastián S.A.",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/734/entities/1211"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder734/es_doc/es_arch_poder734.html",
+      "_links": {
+        "self": {
+          "name": "Quincena Musical de Donostia-San Sebastián S.A.",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/734"
+        }
+      }
+    },
+    {
+      "id": 730,
+      "identificationNumber": "G20633897",
+      "name": "Kirolgi Fundazioa",
+      "scope": "GIPUZKOA",
+      "address": "Paseo de Anoeta, 5. 20014 Donostia/San Sebastián (Gipuzkoa)",
+      "webPage": "https://www.gipuzkoa.eus/es/web/kirolak",
+      "publicationDate": "2020-03-06",
+      "mainActivity": "Ocio, cultura y religión",
+      "codNUTS": "ES212",
+      "entities": [
+        {
+          "id": 1207,
+          "name": "Kirolgi Fundazioa ",
+          "orgs": [
+            {
+              "id": 913614,
+              "name": "Comisión Ejecutiva",
+              "_links": {
+                "self": {
+                  "name": "Comisión Ejecutiva",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/730/entities/1207/orgs/913614"
+                }
+              }
+            },
+            {
+              "id": 913613,
+              "name": "Patronato",
+              "_links": {
+                "self": {
+                  "name": "Patronato",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/730/entities/1207/orgs/913613"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Kirolgi Fundazioa ",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/730/entities/1207"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder730/es_doc/es_arch_poder730.html",
+      "_links": {
+        "self": {
+          "name": "Kirolgi Fundazioa",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/730"
+        }
+      }
+    },
+    {
+      "id": 731,
+      "identificationNumber": "G95453775",
+      "name": "Fundación Biofísica Bizkaia",
+      "scope": "BIZKAIA",
+      "address": "Barrio Sarriena, s/n. Edificio Biblioteca 3º A10. 48940 Leioa (Bizkaia)",
+      "webPage": "http://biofisika.org",
+      "publicationDate": "2020-03-06",
+      "mainActivity": "Otra actividad",
+      "alternativeActivity": "Investigación",
+      "codNUTS": "ES213",
+      "entities": [
+        {
+          "id": 1208,
+          "name": "Fundación Biofísica Bizkaia",
+          "orgs": [
+            {
+              "id": 913615,
+              "name": "Director Científico",
+              "_links": {
+                "self": {
+                  "name": "Director Científico",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/731/entities/1208/orgs/913615"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Fundación Biofísica Bizkaia",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/731/entities/1208"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder731/es_doc/es_arch_poder731.html",
+      "_links": {
+        "self": {
+          "name": "Fundación Biofísica Bizkaia",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/731"
+        }
+      }
+    },
+    {
+      "id": 732,
+      "identificationNumber": "P0100309D",
+      "name": "Junta Administrativa de Payueta",
+      "scope": "ARABA/ÁLAVA",
+      "address": "Real, 16. Payueta. 01211 Peñacerrada-Urizaharra (Araba/Álava)",
+      "webPage": "https://www.contratacion.euskadi.eus/",
+      "publicationDate": "2020-03-04",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES211",
+      "entities": [
+        {
+          "id": 1209,
+          "name": "Junta Administrativa de Payueta",
+          "orgs": [
+            {
+              "id": 913616,
+              "name": "Concejo",
+              "_links": {
+                "self": {
+                  "name": "Concejo",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/732/entities/1209/orgs/913616"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Junta Administrativa de Payueta",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/732/entities/1209"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder732/es_doc/es_arch_poder732.html",
+      "_links": {
+        "self": {
+          "name": "Junta Administrativa de Payueta",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/732"
+        }
+      }
+    },
+    {
+      "id": 726,
+      "identificationNumber": "A01323310",
+      "name": "Central Hidroeléctrica San Pedro de Araia S.A.",
+      "scope": "ARABA/ÁLAVA",
+      "address": "Herriko Enparantza, 1. 01250 Araia (Araba/Álava)",
+      "webPage": "https://www.contratacion.euskadi.eus/",
+      "publicationDate": "2020-02-26",
+      "mainActivity": "Otra actividad",
+      "alternativeActivity": "Producción de energía eléctrica",
+      "codNUTS": "ES211",
+      "entities": [
+        {
+          "id": 1203,
+          "name": "Central Hidroeléctrica San Pedro de Araia S.A.",
+          "orgs": [
+            {
+              "id": 913605,
+              "name": "Presidenta del Consejo de Administración",
+              "_links": {
+                "self": {
+                  "name": "Presidenta del Consejo de Administración",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/726/entities/1203/orgs/913605"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Central Hidroeléctrica San Pedro de Araia S.A.",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/726/entities/1203"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder726/es_doc/es_arch_poder726.html",
+      "_links": {
+        "self": {
+          "name": "Central Hidroeléctrica San Pedro de Araia S.A.",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/726"
+        },
+        "contractingAuthorities": [
+          {
+            "name": "Ayuntamiento de Asparrena ",
+            "href": "https://api.euskadi.eus/procurements/contracting-authorities/16845"
+          }
+        ]
+      }
+    },
+    {
+      "id": 727,
+      "identificationNumber": "G20227203",
+      "name": "Asociación Vasca de Agencias de Desarrollo GARAPEN",
+      "scope": "CAPV",
+      "address": "Parque Empresarial Boroa, Parcela 19, 2ª Planta, oficina 16. 48340 Amorebieta-Etxano (Bizkaia)",
+      "webPage": "http://www.garapen.net",
+      "publicationDate": "2020-02-26",
+      "mainActivity": "Otra actividad",
+      "alternativeActivity": "Promoción empresarial",
+      "codNUTS": "ES21",
+      "entities": [
+        {
+          "id": 1204,
+          "name": "Asociación Vasca de Agencias de Desarrollo GARAPEN",
+          "orgs": [
+            {
+              "id": 913606,
+              "name": "Gerencia",
+              "_links": {
+                "self": {
+                  "name": "Gerencia",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/727/entities/1204/orgs/913606"
+                }
+              }
+            },
+            {
+              "id": 913607,
+              "name": "Presidencia",
+              "_links": {
+                "self": {
+                  "name": "Presidencia",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/727/entities/1204/orgs/913607"
+                }
+              }
+            },
+            {
+              "id": 913608,
+              "name": "Junta Directiva ",
+              "_links": {
+                "self": {
+                  "name": "Junta Directiva ",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/727/entities/1204/orgs/913608"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Asociación Vasca de Agencias de Desarrollo GARAPEN",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/727/entities/1204"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder727/es_doc/es_arch_poder727.html",
+      "_links": {
+        "self": {
+          "name": "Asociación Vasca de Agencias de Desarrollo GARAPEN",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/727"
+        }
+      }
+    }
+  ]
+}

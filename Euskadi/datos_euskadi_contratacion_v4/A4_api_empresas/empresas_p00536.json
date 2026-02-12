@@ -1,0 +1,384 @@
+{
+  "totalItems": 9042,
+  "totalPages": 905,
+  "currentPage": 536,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "name": "RAMÓN ENRIQUE SALA SCHIEWE",
+      "registrationNumber": "07607",
+      "identificationNumber": "25451975Z",
+      "address": "Calle Monasterio de Vadoluengo nº 4 planta 7 puerta b",
+      "location": {
+        "postalCode": "31008",
+        "municipality": "Pamplona/Iruña",
+        "county": "Navarra",
+        "municipalityId": "201",
+        "countyId": "31"
+      },
+      "economicActivities": [
+        {
+          "id": "2.411",
+          "name": "Arquitectos",
+          "_links": {
+            "self": {
+              "name": "Arquitectos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/2.411"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2021-04-21",
+      "certificateEndDate": "2021-09-11",
+      "object": "ARQUITECTOS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07607",
+      "_links": {
+        "self": {
+          "name": "RAMÓN ENRIQUE SALA SCHIEWE",
+          "href": "https://api.euskadi.eus/procurements/companies/07607"
+        }
+      }
+    },
+    {
+      "name": "COMERCIAL ANIEVAS, S.L.",
+      "registrationNumber": "07608",
+      "identificationNumber": "B39529151",
+      "address": "Polígono Industrial de Guarnizo Nave 4A",
+      "location": {
+        "postalCode": "39611",
+        "municipality": "Astillero, El",
+        "county": "Cantabria",
+        "municipalityId": "008",
+        "countyId": "39"
+      },
+      "economicActivities": [
+        {
+          "id": "1.255.1",
+          "name": "Fabricación de jabones comunes, detergentes y lejías",
+          "_links": {
+            "self": {
+              "name": "Fabricación de jabones comunes, detergentes y lejías",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.255.1"
+            }
+          }
+        },
+        {
+          "id": "1.614.2",
+          "name": "Venta al por mayor de productos de perfumería, droguería, higiene y belleza",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de productos de perfumería, droguería, higiene y belleza",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.614.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2021-04-21",
+      "certificateEndDate": "2021-08-02",
+      "object": "EL COMERCIO MENOR Y MAYOR DE PRODUCTOS DE LIMPIEZA Y DESINFECCIÓN, ASÍ COMO TODO TIPO DE MAQUINARIA NECESARIA PARA ESTA ACTIVIDAD. EL COMERCIO MAYOR Y MENOR DE PRODUCTOS RELACIONADOS CON LA CONSTRUCCIÓN ASÍ COMO LA MAQUINARIA NECESARIA PARA ESTA ACTIVIDAD",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07608",
+      "_links": {
+        "self": {
+          "name": "COMERCIAL ANIEVAS, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/07608"
+        }
+      }
+    },
+    {
+      "name": "VIAJES EXPORT TRAVEL S.L.",
+      "registrationNumber": "07609",
+      "identificationNumber": "B88241690",
+      "address": "CALLE CERRO DEL CAMPO 5, 6-B",
+      "location": {
+        "postalCode": "28052",
+        "municipality": "Madrid",
+        "county": "Madrid",
+        "municipalityId": "079",
+        "countyId": "28"
+      },
+      "economicActivities": [
+        {
+          "id": "1.755",
+          "name": "Agencias de viajes",
+          "_links": {
+            "self": {
+              "name": "Agencias de viajes",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.755"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2021-04-21",
+      "certificateEndDate": "2021-10-19",
+      "object": "- LAS ACTIVIDADES PROPIAS DE LAS AGENCIAS DE VIAJES. - LA COMPRA, VENTA Y ARRENDAMIENTO NO FINANCIERO DE BIENES INMUEBLES. - LA COMPRA, VENTA Y ARRENDAMIENTO DE VEHÍCULOS A MOTOR",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07609",
+      "_links": {
+        "self": {
+          "name": "VIAJES EXPORT TRAVEL S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/07609"
+        }
+      }
+    },
+    {
+      "name": "CUCHILLO VS MCAWEN, S.L.",
+      "registrationNumber": "07600",
+      "identificationNumber": "B95815023",
+      "address": "C/ Conde Mirasol 11",
+      "location": {
+        "postalCode": "48003",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.844",
+          "name": "Servicios de publicidad, relaciones públicas y similares",
+          "_links": {
+            "self": {
+              "name": "Servicios de publicidad, relaciones públicas y similares",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.844"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2021-04-20",
+      "certificateEndDate": "2021-10-07",
+      "object": "INFORMÁTICA, TELECOMUNICACIONES Y OFIMÁTICA: PRESTACIÓN DE SERVICIOS RELACIONADOS CON LA CREACIÓN, EJECUCIÓN Y DISTRIBUCIÓN DE CAMPAÑAS PUBLICITARIAS Y APLICACIONES INFORMÁTICAS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07600",
+      "_links": {
+        "self": {
+          "name": "CUCHILLO VS MCAWEN, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/07600"
+        }
+      }
+    },
+    {
+      "name": "BIZINTEK INNOVA, S.L.",
+      "registrationNumber": "07601",
+      "identificationNumber": "B95363073",
+      "address": "Nemesio Mogrobejo 9A",
+      "location": {
+        "postalCode": "48015",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.354",
+          "name": "Fabricación de componentes electrónicos y circuitos integrados",
+          "_links": {
+            "self": {
+              "name": "Fabricación de componentes electrónicos y circuitos integrados",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.354"
+            }
+          }
+        },
+        {
+          "id": "1.843.1",
+          "name": "Servicios técnicos de ingeniería",
+          "_links": {
+            "self": {
+              "name": "Servicios técnicos de ingeniería",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2021-04-20",
+      "certificateEndDate": "2021-09-04",
+      "object": "CONCEPCIÓN, DISEÑO, ELABORACIÓN, REPARACIÓN, MANTENIMIENTO Y VENTA DE SISTEMAS DE INGENIERÍA, SERVICIOS DE INVESTIGACIÓN Y DESARROLLO, ASÍ COMO PRODUCTOS DE CARÁCTER INNOVADOR, ADEMÁS DE LA FABRICACIÓN Y MONTAJE DE PRODUCTOS ELECTRÓNICOS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07601",
+      "_links": {
+        "self": {
+          "name": "BIZINTEK INNOVA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/07601"
+        }
+      }
+    },
+    {
+      "name": "VIAJES EL CORTE INGLÉS, S.A.",
+      "registrationNumber": "07602",
+      "identificationNumber": "A28229813",
+      "address": "AVENIDA DE CANTABRIA, 51",
+      "location": {
+        "postalCode": "28042",
+        "municipality": "Madrid",
+        "county": "Madrid",
+        "municipalityId": "079",
+        "countyId": "28"
+      },
+      "economicActivities": [
+        {
+          "id": "1.755.2",
+          "name": "Servicios prestados al público por las agencias de viajes",
+          "_links": {
+            "self": {
+              "name": "Servicios prestados al público por las agencias de viajes",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.755.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2021-04-20",
+      "certificateEndDate": "2021-09-25",
+      "object": "EL OBJETO SOCIAL EXCLUSIVO ES LA EXPLOTACIÓN DE UNA AGENCIA DE VIAJES, EJERCIENDO SU ACTIVIDAD DE FORMA PRESENCIAL O A DISTANCIA UTILIZANDO RECURSOS TELEMÁTICOS O ELECTRÓNICOS, CON SUJECIÓN A LA LEGISLACIÓN AUTONÓMICA, ESTATAL O COMUNITARIA QUE RESULTE VIGENTE. PUDIENDO REALIZAR LAS SIGUIENTES ACTIVIDADES: - MEDIACIÓN EN LA VENTA DE BILLETES O RESERVAS DE PLAZAS EN TODA CLASE DE MEDIOS DE TRANSPORTE. -MEDIACIÓN EN LA RESERVA Y COMERCIALIZACIÓN DE PLAZAS DE ALOJAMIENTO Y SERVICIOS EN LAS EMPRESAS TURÍSTICAS Y ESTABLECIMIENTOS HOSTELEROS, PUDIENDO ESTABLECER UNA CENTRAL DE RESERVAS. -ORGANIZACIÓN Y VENTA DE VIAJES COMBINADOS, EXCURSIONES, PAQUETES DINÁMICOS Y VIAJES DE GRUPO. -ORGANIZACIÓN DE CONGRESOS, CONVENCIONES, SEMINARIOS, FERIAS, EXPOSICIONES, Y CUALQUIER OTRO EVENTO QUE REQUIERA LA MEDIACIÓN EN SERVICIOS DE VIAJES, ALOJAMIENTO Y TURÍSTICOS. - ACTUACIÓN COMO REPRESENTANTE DE OTRAS AGENCIA NACIONALES O EXTRANJERAS PARA LA PRESTACIÓN EN SU NOMBRE Y A LA CLIENTELA DE ÉSTAS, DE LOS SERVICIOS QUE CONSTITUYEN EL OBJETO PROPIO DE SU ACTIVIDAD. -INFORMACIÓN TURÍSTICA, DIFUSIÓN Y VENTA DE MATERIAL PROMOCIONAL, INFORMATIVO O CUALQUIER OTRO RELACIONADO CON EL TURISMO. -CAMBIO DE DIVISAS, VENTA Y CAMBIO DE CHEQUES DE VIAJEROS. -EXPEDICIÓN Y TRANSFERENCIA DE EQUIPAJES POR CUALQUIER MEDIO DE TRANSPORTE. -FORMALIZACIÓN DE PÓLIZAS DE SEGURO TURÍSTICO, DE PÉRDIDA O DETERIORO DE EQUIPAJES Y OTRAS QUE CUBRAN LOS RIESGOS RELACIONADOS CON LOS VIAJES. -ALQUILER DE VEHÍCULOS CON O SIN CONDUCTOR. - RESERVA, ADQUISICIÓN Y VENTA DE BILLETES O ENTRADAS DE TODO TIPO DE ESPECTÁCULOS, MUSEOS Y MONUMENTOS. -ALQUILER DE ÚTILES Y EQUIPOS DESTINADOS A LA PRÁCTICA DEL TURISMO DEPORTIVO Y TURISMO ACTIVO. -FLETE DE AVIONES, BARCOS, AUTOBUSES, TRENES ESPECIALES Y OTROS MEDIOS DE TRANSPORTE PARA LA REALIZACIÓN DE SERVICIOS TURÍSTICOS O DE VIAJE. -COMERCIALIZACIÓN DE DERECHOS DE APROVECHAMIENTO POR TURNO DE BIENES INMUEBLES DE USO TURÍSTICO. -PRESTACIÓN DE CUALESQUIERA OTROS SERVICIOS TURÍSTICOS QUE COMPLEMENTEN LOS ENUMERADOS EN EL PRESENTE ARTÍCULO, O SE RECONOZCAN COMO PROPIOS DE LA ACTIVIDAD DE AGENCIAS DE VIAJE DE CONFORMIDAD CON LA LEGISLACIÓN QUE RESULTE VIGENTE",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07602",
+      "_links": {
+        "self": {
+          "name": "VIAJES EL CORTE INGLÉS, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/07602"
+        }
+      }
+    },
+    {
+      "name": "TOWER CONSULTORES S.L.",
+      "registrationNumber": "07599",
+      "identificationNumber": "B81399735",
+      "address": "AVDA. MANOTERAS Nº22 Oficina 112-113",
+      "location": {
+        "postalCode": "28050",
+        "municipality": "Madrid",
+        "county": "Madrid",
+        "municipalityId": "079",
+        "countyId": "28"
+      },
+      "economicActivities": [
+        {
+          "id": "1.769",
+          "name": "Otros servicios de telecomunicaciones",
+          "_links": {
+            "self": {
+              "name": "Otros servicios de telecomunicaciones",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.769"
+            }
+          }
+        },
+        {
+          "id": "1.843.1",
+          "name": "Servicios técnicos de ingeniería",
+          "_links": {
+            "self": {
+              "name": "Servicios técnicos de ingeniería",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2021-04-19",
+      "certificateEndDate": "2021-10-05",
+      "object": "-LA COMPRAVENTA DE INMUEBLES RÚSTICOS Y URBANOS. -LA PARCELACIÓN Y URBANIZACIÓN DE FINCAS Y SU EDIFICACIÓN. -EL ESTUDIO, PROMOCIÓN, ASESORAMIENTO, ADMINISTRACIÓN, GESTIÓN Y EXPLOTACIÓN EN O DE CUALQUIER FORMA DE BIENES INMUEBLES.-LA REALIZACIÓN DE PROYECTOS, ESTUDIOS E INFORMES TÉCNICOS O JURÍDICOS EN EL ÁMBITO DEL RAMO INMOBILIARIO Y DE LA CONSTRUCCIÓN.- EL ASESORAMIENTO, SUPERVISIÓN, ASISTENCIA TÉCNICA O MERCANTIL A TERCEROS DE LAS ACTIVIDADES RELACIONADAS CON EL RAMO INMOBILIARIO Y DE LA CONSTRUCCIÓN.-ESTOS SERVICIOS SERÁN PRESTADOS A CUALQUIER TERCERO QUE ASÍ LO SOLICITE, YA SEAN PARTICULARES, SOCIEDADES MERCANTILES O ADMINISTRACIONES PÚBLICAS, TANTO ESTATALES, AUTONÓMICAS O MUNICIPALES.-LAS ACTIVIDADES RELACIONADAS CON LOS SECTORES DE LAS NUEVAS TECNOLOGÍAS Y LAS TELECOMUNICACIONES. INTERNET, COMERCIO ELECTRÓNICO, INFORMÁTICA, ELECTRÓNICA, ASÍ COMO ENERGÍA ELÉCTRICA Y TODO TIPO DE ENERGÍAS ALTERNATIVAS, LIMPIAS, Y/O RENOVABLES Y LAS OBRAS CIVILES ANEJAS, CUALQUIERA QUE SEA SU CLASE Y NATURALEZA, YA SEAN REDES DE COMUNICACIÓN, TELEFONÍA, DATOS, TRANSMISIÓN Y CONMUTACIÓN, TELEMÁTICA, RADIOCOMUNICACIÓN, RADIODIFUSIÓN, TELEVISIÓN, TELEDISTRIBUCIÓN, TELECONTROL, VIDEOTRANSMISIÓN Y TODO TIPO DE MEDIO AUDIOVISUAL: GRUPOS ELECTRÓGENOS Y COMBUSTIBLES, CLIMATIZACIÓN, ASÍ COMO CANALIZACIONES, ZANJAS Y CASETAS PARA ALBERGAR LOS EQUIPOS.-LA FABRICACIÓN, DISTRIBUCIÓN, REPRESENTACIÓN Y COMERCIALIZACIÓN DE PRODUCTOS, SUMINISTROS E INSTALACIONES DE TELECOMUNICACIONES E INFORMÁTICA, EQUIPOS ELECTRÓNICOS, EQUIPOS MEDIOAMBIENTALES, ENERGÍAS CONVENCIONALES Y ALTERNATIVAS, Y SUS ACCESORIOS DE TODO TIPO, INCLUYENDO LAS OBRAS CIVILES ANEJAS.-LA PRESTACIÓN DE SERVICIOS PERTENECIENTES AL CAMPO DE LAS TECNOLOGÍAS DE LA INFORMACIÓN, TELECOMUNICACIÓN, E INFORMÁTICA, EQUIPOS ELECTRÓNICOS, ENERGÍAS CONVENCIONALES Y ALTERNATIVAS, ASÍ COMO ESTUDIOS, ANÁLISIS, PROYECTOS, CONSULTORÍAS, INVESTIGACIÓN Y DESARROLLO DE CUALQUIER TIPO, TALES COMO DE INGENIERÍA, ECONÓMICOS, FINANCIEROS, COMERCIALES, TELEMÁTICOS E INFORMÁTICOS, INCLUIDA LA ORGANIZACIÓN DE OBRA Y LA PLANIFICACIÓN DE LOS EQUIPOS Y SISTEMAS PROPIOS DE LAS ACTIVIDADES MENCIONADAS, TODO ELLO, EN SU CASO MEDIANTE LOS TÉCNICOS COMPETENTES",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07599",
+      "_links": {
+        "self": {
+          "name": "TOWER CONSULTORES S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/07599"
+        }
+      }
+    },
+    {
+      "name": "COOK ESPAÑA, S.A.",
+      "registrationNumber": "01471",
+      "identificationNumber": "A08525073",
+      "address": "VÍA AUGUSTA, 2-BIS 5ª P.",
+      "location": {
+        "postalCode": "08006",
+        "municipality": "Barcelona",
+        "county": "Barcelona",
+        "municipalityId": "019",
+        "countyId": "08"
+      },
+      "economicActivities": [
+        {
+          "id": "1.619.2",
+          "name": "Venta al por mayor de aparatos e instrumentos médicos, ortopédicos, ópticos",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de aparatos e instrumentos médicos, ortopédicos, ópticos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.619.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2021-04-19",
+      "certificateEndDate": "2021-02-05",
+      "object": "LA FABRICACIÓN Y COMERCIALIZACIÓN DE MATERIAL MÉDICO-QUIRÚRGICO Y CLÍNICO, Y ELEMENTOS AUXILIARES PARA LA INDUSTRIA MÉDICA",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/01471",
+      "_links": {
+        "self": {
+          "name": "COOK ESPAÑA, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/01471"
+        }
+      }
+    },
+    {
+      "name": "WORLD MEDICA S.L.",
+      "registrationNumber": "05471",
+      "identificationNumber": "B82612599",
+      "address": "C/ CALÉNDULA, 93",
+      "location": {
+        "postalCode": "28109",
+        "municipality": "Alcobendas",
+        "county": "Madrid",
+        "municipalityId": "006",
+        "countyId": "28"
+      },
+      "economicActivities": [
+        {
+          "id": "1.619.2",
+          "name": "Venta al por mayor de aparatos e instrumentos médicos, ortopédicos, ópticos",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de aparatos e instrumentos médicos, ortopédicos, ópticos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.619.2"
+            }
+          }
+        },
+        {
+          "id": "1.652.1",
+          "name": "Farmacias",
+          "_links": {
+            "self": {
+              "name": "Farmacias",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.652.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2021-04-19",
+      "certificateEndDate": "2021-09-17",
+      "object": "LA IMPORTACIÓN Y EXPORTACIÓN, COMPRAVENTA, PROMOCIÓN Y DISTRIBUCIÓN DE TODO TIPO DE MATERIAL MÉDICO QUIRÚRGICO, ESPECIALMENTE EN RELACIÓN CON ENTIDADES Y ESTABLECIMIENTOS SANITARIOS DE CARÁCTER PÚBLICO Ó PRIVADO Y TODO TIPO DE CENTROS DEL ÁMBITO HOSPITALARIO INCLUYENDO CLÍNICAS PRIVADAS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/05471",
+      "_links": {
+        "self": {
+          "name": "WORLD MEDICA S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/05471"
+        }
+      }
+    },
+    {
+      "name": "AMBUBASK, S.A.",
+      "registrationNumber": "06675",
+      "identificationNumber": "A48204648",
+      "address": "CLARA CAMPOAMOR 13",
+      "location": {
+        "postalCode": "48013",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "certificateStartDate": "2021-04-19",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06675",
+      "_links": {
+        "self": {
+          "name": "AMBUBASK, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/06675"
+        }
+      }
+    }
+  ]
+}

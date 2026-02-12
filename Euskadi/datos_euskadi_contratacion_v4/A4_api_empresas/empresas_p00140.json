@@ -1,0 +1,670 @@
+{
+  "totalItems": 9042,
+  "totalPages": 905,
+  "currentPage": 140,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "name": "ANTERO-FERNANDEZ ARQUITECTOS S.L.P.",
+      "registrationNumber": "04554",
+      "identificationNumber": "B20831210",
+      "address": "PASEO DE GALICIA Nº17 BAJO",
+      "location": {
+        "postalCode": "20015",
+        "municipality": "Donostia / San Sebastián",
+        "county": "Gipuzkoa",
+        "municipalityId": "069",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.843.2",
+          "name": "Servicios técnicos de arquitectura y urbanismo",
+          "_links": {
+            "self": {
+              "name": "Servicios técnicos de arquitectura y urbanismo",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-11-25",
+      "certificateEndDate": "2026-05-20",
+      "object": "LA PRESTACIÓN DE SERVICIOS ASIGNADOS EN LA LEGISLACIÓN VIGENTE A LAS TITULACIONES DE ARQUITECTO SUPERIOR Y ARQUITECTO TÉCNICO, QUE LLEVARÁ A CABO EXCLUSIVAMENTE A TRAVÉS DE PERSONAS COLEGIADAS EN EL COLEGIO PROFESIONAL CORRESPONDIENTE PARA EL EJERCICIO DE LAS MISMAS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/04554",
+      "_links": {
+        "self": {
+          "name": "ANTERO-FERNANDEZ ARQUITECTOS S.L.P.",
+          "href": "https://api.euskadi.eus/procurements/companies/04554"
+        }
+      }
+    },
+    {
+      "name": "BIGARRI COMUNICACIONES Y APLICACIONES, S.L.",
+      "registrationNumber": "10215",
+      "identificationNumber": "B95430757",
+      "address": "POLIGONO USILA, 1 EDIF.10 PABELLON, 12",
+      "location": {
+        "postalCode": "48490",
+        "municipality": "Ugao-Miraballes",
+        "county": "Bizkaia",
+        "municipalityId": "065",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.504.1",
+          "name": "Instalaciones eléctricas en general",
+          "_links": {
+            "self": {
+              "name": "Instalaciones eléctricas en general",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.504.1"
+            }
+          }
+        },
+        {
+          "id": "1.504.7",
+          "name": "Instalaciones telefónicas, telegráficas, televisión, etc",
+          "_links": {
+            "self": {
+              "name": "Instalaciones telefónicas, telegráficas, televisión, etc",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.504.7"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-11-25",
+      "certificateEndDate": "2026-05-15",
+      "object": "LAS INSTALACIONES ELÉCTRICAS EN GENERAL, LAS INSTALACIONES DE CABLE DE COMUNICACIONES, TANTO CONVENCIONAL COMO DE FIBRA ÓPTICA Y OTROS, JUNTO CON LA OBRA CIVIL NECESARIA; LA COMERCIALIZACIÓN, INSTALACIÓN Y MANTENIMIENTO DE REDES TELEGRÁFICAS, TELEFÓNICAS, TELEFONÍA SIN HILOS, CENTRALITAS Y TELEVISIÓN, DE EQUIPOS DE TELECOMUNICACIONES Y DE SISTEMAS INFORMÁTICAS Y ELECTRÓNICOS. LAS INSTALACIONES DE FRÍO, CALOR Y AIRE ACONDICIONADO Y SU MANTENIMIENTO, LA INSTALACIÓN DE PARARRAYOS Y SIMILARES Y SU MANTENIMIENTO. LA INSTALACIÓN DE MEDIDAS PROTECTORAS CONTRA INCENDIOS Y ACCIDENTES Y DE BOMBAS DE ACHIQUE Y SU MANTENIMIENTO. EL ASESORAMIENTO Y GESTIÓN EN LA UTILIZACIÓN DE ENERGÍA EN CUALQUIER FORMA; LA INGENIERÍA Y CONSULTORÍA ENERGÉTICA, ELÉCTRICA Y ELECTRÓNICA Y LA FORMACIÓN Y ENSEÑANZA EN LOS CAMPOS ANTERIORMENTE CITADOS. LA COMERCIALIZACIÓN Y VENTA DE EQUIPOS, MATERIALES Y ARTÍCULOS RELACIONADOS DIRECTA O INDIRECTAMENTE CON LAS ACTIVIDADES CITADAS.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/10215",
+      "_links": {
+        "self": {
+          "name": "BIGARRI COMUNICACIONES Y APLICACIONES, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/10215"
+        }
+      }
+    },
+    {
+      "name": "IMPRENTA GARCINUÑO, S.L.",
+      "registrationNumber": "02697",
+      "identificationNumber": "B48452486",
+      "address": "CARRETERA SAN VICENTE, 13CARRETERA SAN VICENTE, 13",
+      "location": {
+        "postalCode": "48510",
+        "municipality": "Valle de Trápaga-Trapagaran",
+        "county": "Bizkaia",
+        "municipalityId": "080",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.474",
+          "name": "Artes gráficas (impresión gráfica)",
+          "_links": {
+            "self": {
+              "name": "Artes gráficas (impresión gráfica)",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.474"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-11-25",
+      "certificateEndDate": "2026-05-24",
+      "classification": [
+        {
+          "id": "S",
+          "name": "Servicios",
+          "groups": [
+            {
+              "id": "M",
+              "subgroups": [
+                {
+                  "id": "04",
+                  "name": "Artes gráficas",
+                  "categories": [
+                    {
+                      "id": "4",
+                      "name": "Desde 600.001 Hasta 1.1200.000",
+                      "_links": {
+                        "self": {
+                          "name": "Desde 600.001 Hasta 1.1200.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/S/categories/4"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "Artes gráficas",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/M/subgroups/04"
+                    }
+                  }
+                }
+              ],
+              "_links": {
+                "self": {
+                  "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/M"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Servicios",
+              "href": "https://api.euskadi.eus/procurements/companies/types/S"
+            }
+          }
+        }
+      ],
+      "object": "A) LA EXPLOTACIÓN DE UN TALLER DE IMPRENTA, LITOGRAFÍA, TIPOGRAFÍA, IMPRESORAS, REPRODUCCIÓN DE TEXTOS, TODO ELLO POR CUENTA PROPIA O AJENA; B) LA ADQUISICIÓN POR CUALQUIER TÍTULO DE FINCAS RÚSTICAS O URBANAS, LA CONSTRUCCIÓN DE ESTAS Y LA ADMINISTRACIÓN, TENENCIA, EXPLOTACIÓN Y ARRENDAMIENTO DE TALES BIENES Y SU VENTA TOTAL O PARCIAL, SEGÚN CONVENGA, PARA SU APROVECHAMIENTO AGRÍCOLA, FORESTAL, URBANO, INDUSTRIAL O CUALQUIER OTRO; C) LA COMPRA-VENTA, ALMACENAMIENTO, DEPÓSITO, DISTRIBUCIÓN, EXPORTACIÓN DE TODA CLASE DE MERCANCÍAS, PRODUCTOS, ARTÍCULOS Y MATERIAS DE TODAS CLASES, RELACIONADOS CON LAS ARTES GRÁFICAS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/02697",
+      "_links": {
+        "self": {
+          "name": "IMPRENTA GARCINUÑO, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/02697"
+        }
+      }
+    },
+    {
+      "name": "FEDERACION ALAVESA DE EMPRESARIOS DEL COMERCIO Y SERVICIOS",
+      "registrationNumber": "10230",
+      "identificationNumber": "G01167576",
+      "address": "Calle Cuchillería",
+      "location": {
+        "postalCode": "01001",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.847",
+          "name": "Servicios de consultoría",
+          "_links": {
+            "self": {
+              "name": "Servicios de consultoría",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.847"
+            }
+          }
+        },
+        {
+          "id": "1.849.7",
+          "name": "Servicios de gestión administrativa",
+          "_links": {
+            "self": {
+              "name": "Servicios de gestión administrativa",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.849.7"
+            }
+          }
+        },
+        {
+          "id": "1.932.1",
+          "name": "Enseñanza de formación y perfeccionamiento profesional no superior",
+          "_links": {
+            "self": {
+              "name": "Enseñanza de formación y perfeccionamiento profesional no superior",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.932.1"
+            }
+          }
+        },
+        {
+          "id": "1.932.2",
+          "name": "Enseñanza de formación y perfeccionamiento profesional superior",
+          "_links": {
+            "self": {
+              "name": "Enseñanza de formación y perfeccionamiento profesional superior",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.932.2"
+            }
+          }
+        },
+        {
+          "id": "1.999",
+          "name": "Otros servicios n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros servicios n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.999"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-11-25",
+      "certificateEndDate": "2026-05-24",
+      "object": "1. FOMENTAR Y DEFENDER EL SISTEMA DE LIBRE INICIATIVA PRIVADA Y ECONOMÍA SOCIAL DE MERCADO. 2. CREAR, MANTENER Y DESARROLLAR EL ESPÍRITU Y LOS LAZOS DE SOLIDARIDAD ENTRE SUS MIEMBROS. 3. FACILITAR A SUS ASOCIACIONES MIEMBRO ASÍ COMO A SUS EMPRESAS ASOCIADAS, LOS SERVICIOS DE CARÁCTER PERMANENTE Y ACCIDENTAL QUE SE DETERMINEN, Y ESPECIALMENTE CREACIÓN DE SERVICIOS DE ASESORAMIENTO EMPRESARIAL CON ESPECIAL ATENCIÓN A LA GESTIÓN, INFORMACIÓN, PROCESO DE DATOS SOBRE CUALQUIER MATERIAL, ASISTENCIA TÉCNICA, ANÁLISIS FINANCIERO Y ASESORAMIENTO JURÍDICOS, ECONÓMICO, FISCALES, LABORALES Y DE CUALQUIER OTRO TIPO. 4. PROMOVER LA PROFESIONALIZACIÓN DEL SECTOR COMERCIAL Y DE SERVICIOS DE ÁLAVA A TRAVÉS DE FACILITAR EL ACCESO A LA FORMACIÓN Y A LOS SERVICIOS DE ASESORAMIENTO A LOS EMPRESARIOS Y AUTÓNOMOS PERTENECIENTES AL SECTOR ASÍ COMO A SU PERSONAL LABORAL. 5. DEFENDER Y PROMOVER LOS INTERESES COMUNES O INDIVIDUALES DE SUS MIEMBROS, PARTICULARMENTE EN LOS TERRENOS ECONÓMICOS Y SOCIAL, INCLUIDO EL TURÍSTICO. 6. DEFENDER Y PROMOVER LOS INTERESES DE LAS EMPRESAS Y AUTÓNOMOS DE COMERCIO Y SERVICIOS EN CUANTOS PROBLEMAS LES AFECTEN, TANTO SECTORIAL COMO TERRITORIALMENTE. 7. ESTUDIAR, ANIMAR Y POTENCIAR TODO CUANTO PUEDA CONTRIBUIR AL DESARROLLO DE LAS EMPRESAS Y AUTÓNOMOS DE COMERCIO Y SERVICIOS, ELABORANDO RECOMENDACIONES EN LAS QUE SE SEÑALEN LAS LÍNEAS DIRECTRICES EN TEMAS DE INTERÉS EMPRESARIAL, ASÍ COMO CONTRIBUIR A LA EXPANSIÓN Y PROSPERIDAD DE LA ECONOMÍA ALAVESA. 8. BUSCAR, EN RELACIÓN CON LOS ORGANISMOS PÚBLICOS Y LAS ORGANIZACIONES SINDICALES, LOS MEDIOS APROPIADOS PARA SALVAGUARDAR LA PAZ SOCIAL Y ASEGURAR EL PROGRESO ECONÓMICO Y SOCIAL. 9. OSTENTAR LA REPRESENTACIÓN Y DEFENSA, DE FORMA INDIVIDUAL, SECTORIAL O EN SU TOTALIDAD, DE LAS EMPRESAS Y AUTÓNOMOS DE COMERCIO Y DE SERVICIOS ANTE CUALQUIER ORGANISMO OFICIAL, JURISDICCIÓN O INSTANCIA. 10. PRESENTAR A LA OPINIÓN PÚBLICA LA IMAGEN CIERTA DEL EMPRESARIO Y/O AUTÓNOMO, SU CONTRIBUCIÓN AL BIENESTAR SOCIAL, HACIENDO DE PORTAVOZ ANTE LOS ÓRGANOS DE COMUNICACIÓN. 11. Y TODOS CUANTOS OTROS OBJETIVOS DE ANÁLOGA NATURALEZA SE CONSIDEREN NECESARIOS O CONVENIENTES PARA EL BUEN CUMPLIMIENTO DE SUS FINES Y PARA LA DEFENSA DE LOS LEGÍTIMOS INTERESES DE SUS MIEMBROS. 12. COMO ASOCIACIÓN EMPRESARIAL QUE ES, TIENE COMO FINES LOS DE INTERVENIR EN LAS RELACIONES LABORALES, CONTRIBUYENDO, A LA DEFENSA Y PROMOCIÓN DE LOS INTERESES ECONÓMICOS Y SOCIALES QUE LE SON PROPIOS A TRAVÉS DE ACCIONES COMO LA NEGOCIACIÓN COLECTIVA LABORAL, EL PLANTEAMIENTO DE CONFLICTOS COLECTIVOS DE TRABAJO, EL DIÁLOGO SOCIAL Y LA PARTICIPACIÓN INSTITUCIONAL EN LOS ORGANISMOS PÚBLICOS DE LAS ADMINISTRACIONES PÚBLICAS. CONSECUENTEMENTE CON LO ANTERIOR, LA ASOCIACIÓN TENDRÁ CARÁCTER DE ORGANIZACIÓN PATRONAL.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/10230",
+      "_links": {
+        "self": {
+          "name": "FEDERACION ALAVESA DE EMPRESARIOS DEL COMERCIO Y SERVICIOS",
+          "href": "https://api.euskadi.eus/procurements/companies/10230"
+        }
+      }
+    },
+    {
+      "name": "GIZADI LAGUNTZA ZERBITZUAK, S.L.",
+      "registrationNumber": "07616",
+      "identificationNumber": "B75197376",
+      "address": "araba 3-2º, oficina nº 3 ",
+      "location": {
+        "postalCode": "20500",
+        "municipality": "Arrasate / Mondragón",
+        "county": "Gipuzkoa",
+        "municipalityId": "055",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.952",
+          "name": "Asistencia y servicios sociales en centros no residenciales",
+          "_links": {
+            "self": {
+              "name": "Asistencia y servicios sociales en centros no residenciales",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.952"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-11-25",
+      "certificateEndDate": "2026-05-24",
+      "object": "ASISTENCIA Y SERVICIOS SOCIALES PARA NIÑOS, JÓVENES, DISMINUIDOS FÍSICOS Y ANCIANOS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07616",
+      "_links": {
+        "self": {
+          "name": "GIZADI LAGUNTZA ZERBITZUAK, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/07616"
+        }
+      }
+    },
+    {
+      "name": "DUMA ENERGY SYSTEMS, S.L.",
+      "registrationNumber": "10233",
+      "identificationNumber": "B95958260",
+      "address": "av.txorierri, 46 pol.Berreteaga pab. 1 Mod D",
+      "location": {
+        "postalCode": "48150",
+        "municipality": "Sondika",
+        "county": "Bizkaia",
+        "municipalityId": "904",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.504.11",
+          "name": "Instalaciones eléctricas en general, redes telegráficas, telefonía, tv, etc",
+          "_links": {
+            "self": {
+              "name": "Instalaciones eléctricas en general, redes telegráficas, telefonía, tv, etc",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.504.11"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-11-25",
+      "certificateEndDate": "2026-05-24",
+      "object": "C.N.A.E. 43.21.- INSTALACIONES ELÉCTRICAS. LA SOCIEDAD TENDRÁ POR OBJETOS SECUNDARIOS: C.N.A.E. 33.12.- REPARACIÓN DE MAQUINARIA C.N.A.E. 33.14.- REPARACIÓN DE EQUIPOS ELÉCTRICOS C.N.A.E. 33.20.- INSTALACIÓN DE MAQUINAS Y EQUIPOS INDUSTRIALES C.N.A.E. 43.22.- FONTANERÍA, INSTALACIONES DE SISTEMAS DE CALEFACCIÓN Y AIRE ACONDICIONADO C.N.A.E. 43.29.-OTRAS INSTALACIONES EN OBRAS DE CONSTRUCCIÓN.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/10233",
+      "_links": {
+        "self": {
+          "name": "DUMA ENERGY SYSTEMS, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/10233"
+        }
+      }
+    },
+    {
+      "name": "GORKA AMADO OLASO",
+      "registrationNumber": "10447",
+      "identificationNumber": "72733835S",
+      "address": "TXISTULARIS, 11 1ºIZDA",
+      "location": {
+        "postalCode": "01006",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.504.1",
+          "name": "Instalaciones eléctricas en general",
+          "_links": {
+            "self": {
+              "name": "Instalaciones eléctricas en general",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.504.1"
+            }
+          }
+        },
+        {
+          "id": "1.856.1",
+          "name": "Alquiler de bienes de consumo",
+          "_links": {
+            "self": {
+              "name": "Alquiler de bienes de consumo",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.856.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-11-25",
+      "certificateEndDate": "2026-05-23",
+      "object": "ALQUILER DE BIENES DE CONSUMO. INSTALACIONES ELÉCTRICAS EN GENERAL.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/10447",
+      "_links": {
+        "self": {
+          "name": "GORKA AMADO OLASO",
+          "href": "https://api.euskadi.eus/procurements/companies/10447"
+        }
+      }
+    },
+    {
+      "name": "ARAZI IKT, S.L.",
+      "registrationNumber": "03347",
+      "identificationNumber": "B20898334",
+      "address": "NAFARROA KALEA 37B",
+      "location": {
+        "postalCode": "20800",
+        "municipality": "Zarautz",
+        "county": "Gipuzkoa",
+        "municipalityId": "079",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.934",
+          "name": "Enseñanza fuera de establecimiento permanente",
+          "_links": {
+            "self": {
+              "name": "Enseñanza fuera de establecimiento permanente",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.934"
+            }
+          }
+        },
+        {
+          "id": "1.966.9",
+          "name": "Otros servicios culturales n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros servicios culturales n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.966.9"
+            }
+          }
+        },
+        {
+          "id": "1.999",
+          "name": "Otros servicios n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros servicios n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.999"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-11-25",
+      "certificateEndDate": "2026-05-21",
+      "classification": [
+        {
+          "id": "S",
+          "name": "Servicios",
+          "groups": [
+            {
+              "id": "L",
+              "subgroups": [
+                {
+                  "id": "05",
+                  "name": "Organización y promoción de congresos, ferias y exposiciones",
+                  "categories": [
+                    {
+                      "id": "1",
+                      "name": "Desde 0 Hasta 150.000",
+                      "_links": {
+                        "self": {
+                          "name": "Desde 0 Hasta 150.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/S/categories/1"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "Organización y promoción de congresos, ferias y exposiciones",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/L/subgroups/05"
+                    }
+                  }
+                }
+              ],
+              "_links": {
+                "self": {
+                  "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/L"
+                }
+              }
+            },
+            {
+              "id": "M",
+              "subgroups": [
+                {
+                  "id": "05",
+                  "name": "Servicios de bibliotecas, archivos y museos",
+                  "categories": [
+                    {
+                      "id": "4",
+                      "name": "Desde 600.001 Hasta 1.1200.000",
+                      "_links": {
+                        "self": {
+                          "name": "Desde 600.001 Hasta 1.1200.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/S/categories/4"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "Servicios de bibliotecas, archivos y museos",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/M/subgroups/05"
+                    }
+                  }
+                }
+              ],
+              "_links": {
+                "self": {
+                  "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/M"
+                }
+              }
+            },
+            {
+              "id": "T",
+              "subgroups": [
+                {
+                  "id": "01",
+                  "name": "Servicios de publicidad",
+                  "categories": [
+                    {
+                      "id": "1",
+                      "name": "Desde 0 Hasta 150.000",
+                      "_links": {
+                        "self": {
+                          "name": "Desde 0 Hasta 150.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/S/categories/1"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "Servicios de publicidad",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/T/subgroups/01"
+                    }
+                  }
+                }
+              ],
+              "_links": {
+                "self": {
+                  "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/T"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Servicios",
+              "href": "https://api.euskadi.eus/procurements/companies/types/S"
+            }
+          }
+        }
+      ],
+      "object": "GESTIÓN Y DINAMIZACIÓN DE MUSEOS, CENTROS CULTURALES, TURÍSTICOS, HOSTELEROS Y MEDIOAMBIENTALES. PROYECTOS DE EDUCACIÓN, DIVULGACIÓN, COMUNICACIÓN E INFORMACIÓN. ORGANIZACIÓN Y EJECUCIÓN DE EVENTOS. PROYECTOS DE INVESTIGACIÓN, CONSERVACIÓN E INTERPRETACIÓN DEL PATRIMONIO. ASISTENCIA TÉCNICA EN TEMAS CULTURALES, TURÍSTICOS, HOSTELEROS Y MEDIOAMBIENTALES. PROYECTOS DE ACONDICIONAMIENTO Y ESTUDIOS DE MODELOS DE GESTIÓN DE MUSEOS, CENTROS CULTURALES, TURÍSTICOS, HOSTELEROS Y MEDIOAMBIENTALES.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03347",
+      "_links": {
+        "self": {
+          "name": "ARAZI IKT, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/03347"
+        }
+      }
+    },
+    {
+      "name": "ORTZADAR, S.L.",
+      "registrationNumber": "01265",
+      "identificationNumber": "B48457808",
+      "address": "PLAZA DE LANDABASO, Nº 12-3º B",
+      "location": {
+        "postalCode": "48015",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.673.2",
+          "name": "Otros cafés y bares",
+          "_links": {
+            "self": {
+              "name": "Otros cafés y bares",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.673.2"
+            }
+          }
+        },
+        {
+          "id": "1.934",
+          "name": "Enseñanza fuera de establecimiento permanente",
+          "_links": {
+            "self": {
+              "name": "Enseñanza fuera de establecimiento permanente",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.934"
+            }
+          }
+        },
+        {
+          "id": "1.966.9",
+          "name": "Otros servicios culturales n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros servicios culturales n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.966.9"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-11-25",
+      "certificateEndDate": "2026-05-13",
+      "classification": [
+        {
+          "id": "S",
+          "name": "Servicios",
+          "groups": [
+            {
+              "id": "M",
+              "subgroups": [
+                {
+                  "id": "05",
+                  "name": "Servicios de bibliotecas, archivos y museos",
+                  "categories": [
+                    {
+                      "id": "5",
+                      "name": "Mas de 1.200.000",
+                      "_links": {
+                        "self": {
+                          "name": "Mas de 1.200.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/S/categories/5"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "Servicios de bibliotecas, archivos y museos",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/M/subgroups/05"
+                    }
+                  }
+                }
+              ],
+              "_links": {
+                "self": {
+                  "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/M"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Servicios",
+              "href": "https://api.euskadi.eus/procurements/companies/types/S"
+            }
+          }
+        }
+      ],
+      "object": "1. EL DISEÑO, GESTIÓN, MEDIACIÓN, REPRESENTACIÓN, CONTROL DE ACCESOS E INFORMACIÓN AL PÚBLICO DE TODO TIPO DE PROGRAMAS, EQUIPAMIENTOS Y ACTIVIDADES DE ANIMACIÓN SOCIOCULTURAL, SERVICIOS SOCIALES Y MEDIO AMBIENTE. 2. ASIMISMO EL DISEÑO, GESTIÓN Y DESARROLLO DE CAMPAÑAS DIVULGATIVAS O DE DIFUSIÓN, INCLUYENDO LA PUBLICIDAD Y LAS ARTES GRÁFICAS EN SU MÁS AMPLIO SENTIDO, ESTUDIOS Y PROYECTOS DE INVESTIGACIÓN Y ACTIVIDADES DE FORMACIÓN EN LAS DISTINTAS ÁREAS DE LOS CAMPOS ANTERIORMENTE CITADOS. 3. EL ASESORAMIENTO Y ASISTENCIA TÉCNICA, EN MATERIA FISCAL, LABORAL Y CONTABLE. 4. LA PROMOCIÓN, CONSTRUCCIÓN, COMPRAVENTA, ADQUISICIÓN, TRANSMISIÓN Y ARRENDAMIENTO O CESIÓN DE USO Y DISFRUTE POR OTROS TÍTULOS, TANTO ACTIVA COMO PASIVAMENTE, DE TODA CLASE DE INMUEBLES URBANOS O RÚSTICOS, INCLUIDOS LOS SOLARES Y EDIFICACIONES DE CUALQUIER CLASE, EXCEPTO EL ARRENDAMIENTO FINANCIERO O LEASING",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/01265",
+      "_links": {
+        "self": {
+          "name": "ORTZADAR, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/01265"
+        }
+      }
+    },
+    {
+      "name": "ERAIN ELKARTEKO OSASUN MENTALA SOCIEDAD COOPERATIVA",
+      "registrationNumber": "10446",
+      "identificationNumber": "F95561650",
+      "address": "Mitxel labegerie 1, 3er piso",
+      "location": {
+        "postalCode": "48005",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.932.2",
+          "name": "Enseñanza de formación y perfeccionamiento profesional superior",
+          "_links": {
+            "self": {
+              "name": "Enseñanza de formación y perfeccionamiento profesional superior",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.932.2"
+            }
+          }
+        },
+        {
+          "id": "1.942.9",
+          "name": "Otros servicios sanitarios sin internados, no clasificados",
+          "_links": {
+            "self": {
+              "name": "Otros servicios sanitarios sin internados, no clasificados",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.942.9"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-11-25",
+      "certificateEndDate": "2026-05-24",
+      "object": "EL DESARROLLO DE LA SALUD MENTAL COMUNITARIA. ENTENDIENDO LA PSICOTERAPIA, LA INTERVENCIÓN PSICOSOCIAL Y LA INTERVENCIÓN PSICOEDUCATIVA COMO BIENES COMUNES, NUESTRO PROPÓSITO ES ACERCAR TODAS ESTAS PRÁCTICAS A LA COMUNIDAD, ESPECIALMENTE A LAS CLASES POPULARES Y A LAS PERSONAS MÁS VULNERABILIZADAS DE NUESTRO ENTORNO. SUS FINES SON LOS SIGUIENTES: A) POTENCIAR EL DESARROLLO DE LA SALUD MENTAL COMUNITARIA. B) DESARROLLAR PROCESOS DE ACOMPAÑAMIENTO PSICOSOCIAL A PERSONAS EN SITUACIÓN O RIESGO DE EXCLUSIÓN SOCIAL. C) OFRECER RECURSOS RELACIONADOS CON LA SALUD MENTAL (PSICOTERAPIA, SUPERVISIÓN Y FORMACIÓN) A DIFERENTES ENTIDADES DEL ENTORNO D) POSIBILITAR ESPACIOS PARA EL FORTALECIMIENTO DE LAS DIFERENTES REDES DE ENTIDADES QUE TRABAJAN CON COLECTIVOS EN SITUACIÓN O RIESGO DE EXCLUSIÓN. E) CREAR, EN COLABORACIÓN CON DIFERENTES ENTIDADES QUE TRABAJAN CON COLECTIVOS EN SITUACIÓN O RIESGO DE EXCLUSIÓN SOCIAL, ESPACIOS QUE POSIBILITEN PROCESOS PERSONALES GRUPALES Y COMUNITARIOS DE CRECIMIENTO. F) DESARROLLAR ACCIONES DE APOYO PSICOSOCIAL PARA CON EL COLECTIVO INMIGRANTE EN SITUACIÓN O RIESGO DE EXCLUSIÓN, DESARROLLANDO A SU VEZ ACTIVIDADES DE PROMOCIÓN DE LA INTERCULTURALIDAD Y LA CIUDADANÍA INCLUSIVA. G) LLEVAR A CABO INTERVENCIONES PSICOSOCIALES DE PROMOCIÓN DE LA MUJER, EN ESPECIAL PARA AQUELLAS MUJERES EN SITUACIÓN DE ESPECIAL VULNERABILIDAD (SITUACIONES DE EXCLUSIÓN O RIESGO DE EXCLUSIÓN, VIOLENCIA DE GÉNERO… H) DESARROLLAR ACCIONES DE PROMOCIÓN DE LOS DERECHOS DE LA MUJER (FORMACIÓN, SENSIBILIZACIÓN…), A FAVOR DE LA IGUALDAD DE GÉNERO Y DE SUPERACIÓN DE MODELOS PATRIARCALES. I) TRABAJAR A FAVOR DE LA SALUD MENTAL DE LA POBLACIÓN ADOLESCENTE Y JOVEN Y DE SUS FAMILIAS, EN ESPECIAL DE AQUELLAS PERSONAS QUE SE ENCUENTREN EN UNA SITUACIÓN DE MAYOR VULNERABILIDAD SOCIAL. J) DESARROLLAR ACCIONES DE COLABORACIÓN CON DIFERENTES ENTIDADES DEL MUNDO DE LA EDUCACIÓN FORMAL, DEL ÁMBITO SANITARIO, DE LOS SERVICIOS SOCIALES… K) LLEVAR A CABO ACCIONES DE DESARROLLO COMUNITARIO DESDE UN ANÁLISIS CRÍTICO DE NUESTRO ENTORNO APORTANDO LA ÓPTICA DE LA SALUD MENTAL. L) DETECTAR POSIBLES NECESIDADES A CUBRIR A PARTIR DEL ANÁLISIS SOCIOCOMUNITARIO PARA APORTAR SOLUCIONES PSICOSOCIALES INNOVADORAS. LL) TRABAJAR PARA ENGROSAR EL CUERPO TEÓRICO DE LA PSICOTERAPIA HUMANISTA, LA PSICOTERAPIA SISTÉMICA, LA PSICOLOGÍA CRÍTICA, LA PSICOLOGÍA COMUNITARIA ASÍ COMO CUALQUIER OTRO MARCO TEÓRICO QUE COINCIDA CON LA VISIÓN INTEGRAL DE LA SALUD Y DE LA PERSONA QUE INSPIRAN LOS VALORES DE ESTA ASOCIACIÓN. M) FOMENTAR LA INVESTIGACIÓN, EL CONOCIMIENTO Y LA FORMACIÓN EN ESTAS RAMAS. N) OFRECER DIFERENTES PROPUESTAS FORMATIVAS EN RELACIÓN CON ESTAS ÁREAS DE INTERÉS. Ñ) PROMOCIONAR LA TRANSFORMACIÓN SOCIAL DESDE EL APORTE DE LA CONCEPCIÓN DE LA FILOSOFÍA HUMANISTA PARA CON LA SALUD MENTAL COMUNITARIA. O) COOPERACIÓN PARA EL DESARROLLO. ES OBJETO DE LA COOPERATIVA SERVIR AL INTERÉS GENERAL MEDIANTE LA COOPERACIÓN AL DESARROLLO ECONÓMICO Y SOCIAL DE LOS PAÍSES EN DESARROLLO Y DE LAS REGIONES DEPRIMIDAS DE OTROS PAÍSES EN COLABORACIÓN, EN SU CASO, CON OTRAS ENTIDADES SIN FIN DE LUCRO, PROCURANDO DAR RESPUESTA A LAS NECESIDADES FUNDAMENTALES EN LOS CAMPOS DE LA SALUD, LA JUVENTUD, LA IGUALDAD DE GÉNERO, LA TRANSFORMACIÓN SOCIAL LOS DERECHOS HUMANOS Y LA JUSTICIA, ETC… PARA LO CONSECUCIÓN DE DICHOS FINES SE LLEVARÁN A CABO, PREVIO EL CUMPLIMIENTO DE LOS REQUISITOS LEGALES ESTABLECIDOS, LAS SIGUIENTES ACTIVIDADES: A) SESIONES DE PSICOTERAPIA GRUPAL B) SESIONES DE PSICOTERAPIA INDIVIDUAL.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/10446",
+      "_links": {
+        "self": {
+          "name": "ERAIN ELKARTEKO OSASUN MENTALA SOCIEDAD COOPERATIVA",
+          "href": "https://api.euskadi.eus/procurements/companies/10446"
+        }
+      }
+    }
+  ]
+}

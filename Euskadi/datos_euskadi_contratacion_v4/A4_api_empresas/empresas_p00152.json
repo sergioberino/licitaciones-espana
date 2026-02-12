@@ -1,0 +1,608 @@
+{
+  "totalItems": 9042,
+  "totalPages": 905,
+  "currentPage": 152,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "name": "KIROLZER, S.L.",
+      "registrationNumber": "08033",
+      "identificationNumber": "B31603996",
+      "address": "C/ ALFONSO EL BATALLADOR Nº 2, ENTREPLANTA, OFICINA 10",
+      "location": {
+        "postalCode": "31007",
+        "municipality": "Pamplona/Iruña",
+        "county": "Navarra",
+        "municipalityId": "201",
+        "countyId": "31"
+      },
+      "economicActivities": [
+        {
+          "id": "1.922.1",
+          "name": "Servicios de limpieza de interiores",
+          "_links": {
+            "self": {
+              "name": "Servicios de limpieza de interiores",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.922.1"
+            }
+          }
+        },
+        {
+          "id": "1.967.1",
+          "name": "Instalaciones deportivas",
+          "_links": {
+            "self": {
+              "name": "Instalaciones deportivas",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.967.1"
+            }
+          }
+        },
+        {
+          "id": "1.967.2",
+          "name": "Escuelas y servicios de perfeccionamiento del deporte",
+          "_links": {
+            "self": {
+              "name": "Escuelas y servicios de perfeccionamiento del deporte",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.967.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-11-19",
+      "certificateEndDate": "2026-05-08",
+      "object": "LA PRESTACIÓN DE SERVICIOS DEPORTIVOS, ASESORAMIENTO DEPORTIVO, TRAMITACIÓN Y ORGANIZACIÓN DE TODO TIPO DE ESPECTÁCULOS Y ACTIVIDADES DEPORTIVAS, REPRESENTACIÓN Y TRAMITACIÓN DE DEPORTISTAS Y LA EXPLOTACIÓN PUBLICITARIA DE ACONTECIMIENTOS DEPORTIVOS.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08033",
+      "_links": {
+        "self": {
+          "name": "KIROLZER, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/08033"
+        }
+      }
+    },
+    {
+      "name": "GALAXIA EMPIRICA, S.L.",
+      "registrationNumber": "09113",
+      "identificationNumber": "B94096880",
+      "address": "Calle Don Donato Bernárdez Sotelo nº3, ent-A",
+      "location": {
+        "postalCode": "36950",
+        "municipality": "Moaña",
+        "county": "Pontevedra",
+        "municipalityId": "029",
+        "countyId": "36"
+      },
+      "economicActivities": [
+        {
+          "id": "1.845",
+          "name": "Explotación electrónica por cuenta de terceros",
+          "_links": {
+            "self": {
+              "name": "Explotación electrónica por cuenta de terceros",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.845"
+            }
+          }
+        },
+        {
+          "id": "1.932.1",
+          "name": "Enseñanza de formación y perfeccionamiento profesional no superior",
+          "_links": {
+            "self": {
+              "name": "Enseñanza de formación y perfeccionamiento profesional no superior",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.932.1"
+            }
+          }
+        },
+        {
+          "id": "1.936",
+          "name": "Investigación científica y técnica",
+          "_links": {
+            "self": {
+              "name": "Investigación científica y técnica",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.936"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-11-19",
+      "certificateEndDate": "2026-05-15",
+      "object": "INFORMÁTICA, TELECOMUNICACIONES Y OFIMÁTICA; PRESTACIÓN DE SERVICIOS DE MEDIACIÓN, INTERMEDIACIÓN, GESTIÓN, COORDINACIÓN, MONITORIZACIÓN Y ADMINISTRACIÓN RELACIONADOS CON LOS ENSAYOS CLÍNICOS Y ESTUDIOS DE INVESTIGACIÓN SANITARIA; REALIZACIÓN DE ANÁLISIS ESTADÍSTICO, INFORMES Y ANÁLISIS TÉCNICOS; DISEÑO DE APLICACIONES INFORMÁTICAS, TELECOMUNICACIONES Y OFIMÁTICA.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/09113",
+      "_links": {
+        "self": {
+          "name": "GALAXIA EMPIRICA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/09113"
+        }
+      }
+    },
+    {
+      "name": "TÉCNICOS DEL CONFORT ELÉCTRICO, S.L.",
+      "registrationNumber": "05089",
+      "identificationNumber": "B95531299",
+      "address": "POLIGONO INDUSTRIAL ARZA, 1 PABELLÓN 10",
+      "location": {
+        "postalCode": "01400",
+        "municipality": "Laudio/Llodio",
+        "county": "Araba/Álava",
+        "municipalityId": "036",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.504.1",
+          "name": "Instalaciones eléctricas en general",
+          "_links": {
+            "self": {
+              "name": "Instalaciones eléctricas en general",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.504.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-11-19",
+      "certificateEndDate": "2026-05-12",
+      "classification": [
+        {
+          "id": "O",
+          "name": "Obras",
+          "groups": [
+            {
+              "id": "I",
+              "name": "INSTALACIONES ELÉCTRICAS",
+              "subgroups": [
+                {
+                  "id": "01",
+                  "name": "Alumbrados, iluminaciones y balizamientos",
+                  "categories": [
+                    {
+                      "id": "3",
+                      "name": "Desde 360.001 Hasta 840.000",
+                      "_links": {
+                        "self": {
+                          "name": "Desde 360.001 Hasta 840.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/O/categories/3"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "Alumbrados, iluminaciones y balizamientos",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/O/groups/I/subgroups/01"
+                    }
+                  }
+                },
+                {
+                  "id": "05",
+                  "name": "Centros de transformación y distribución en alta tensión",
+                  "categories": [
+                    {
+                      "id": "2",
+                      "name": "Desde 150.001 Hasta 360.000",
+                      "_links": {
+                        "self": {
+                          "name": "Desde 150.001 Hasta 360.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/O/categories/2"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "Centros de transformación y distribución en alta tensión",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/O/groups/I/subgroups/05"
+                    }
+                  }
+                },
+                {
+                  "id": "06",
+                  "name": "Distribución en baja tensión",
+                  "categories": [
+                    {
+                      "id": "1",
+                      "name": "Desde 0 Hasta 150.000",
+                      "_links": {
+                        "self": {
+                          "name": "Desde 0 Hasta 150.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/O/categories/1"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "Distribución en baja tensión",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/O/groups/I/subgroups/06"
+                    }
+                  }
+                },
+                {
+                  "id": "09",
+                  "name": "Instalaciones eléctricas sin cualificación específica",
+                  "categories": [
+                    {
+                      "id": "3",
+                      "name": "Desde 360.001 Hasta 840.000",
+                      "_links": {
+                        "self": {
+                          "name": "Desde 360.001 Hasta 840.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/O/categories/3"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "Instalaciones eléctricas sin cualificación específica",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/O/groups/I/subgroups/09"
+                    }
+                  }
+                }
+              ],
+              "_links": {
+                "self": {
+                  "name": "INSTALACIONES ELÉCTRICAS",
+                  "href": "https://api.euskadi.eus/procurements/companies/types/O/groups/I"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Obras",
+              "href": "https://api.euskadi.eus/procurements/companies/types/O"
+            }
+          }
+        }
+      ],
+      "object": "A) TODO TIPO DE INSTALACIONES Y REPARACIONES ELECTRICAS. B) ESTUDIOS Y PROYECTOS DE ELECTRICIDAD. C)DOMÓTICA",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/05089",
+      "_links": {
+        "self": {
+          "name": "TÉCNICOS DEL CONFORT ELÉCTRICO, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/05089"
+        }
+      }
+    },
+    {
+      "name": "AGRUPA LABORATORIO, S.L.",
+      "registrationNumber": "08295",
+      "identificationNumber": "B95843454",
+      "address": "Parque Tecnológico de Bizkaia. Edificio 805",
+      "location": {
+        "postalCode": "48160",
+        "municipality": "Derio",
+        "county": "Bizkaia",
+        "municipalityId": "901",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.849.9",
+          "name": "Otros servicios independientes n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros servicios independientes n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.849.9"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-11-19",
+      "certificateEndDate": "2026-05-15",
+      "object": "-AGUAS DESTINADAS A CONSUMO HUMANO, AGUAS DE PROCESOS INDUSTRIALES, AGUAS CONTINENTALES. -ANALÍTICAS DE SUELOS POTENCIALMENTE CONTAMINADOS PARA ESTABLECER LA CALIDAD AMBIENTAL DE LOS MISMOS, ASÍ COMO DE LAS AGUAS SUBTERRÁNEAS ASOCIADAS Y DE GASES PRESENTES. -ESTUDIOS DE DESCONTAMINACIÓN DE SUELOS. -SERVICIOS MEDIOAMBIENTALES RELACIONADOS CON LA ACTIVIDAD DE ENSAYO Y ANÁLISIS - ACTIVIDADES DE I+D+I VINCULADAS AL ÁMBITO DE EQUIPOS DE ENSAYO, ANÁLISIS, MUESTREO Y CUALESQUIERA OTRAS ACTIVIDADES RELACIONADAS CON LA TECNOLOGÍA E INNOVACIÓN EN EL ÁMBITO DE LOS LABORATORIOS - FORMACIÓN VINCULADA A LAS ACTIVIDADES DE LABORATORIO, MUESTREO, ENSAYOS Y CUALQUIERA OTRAS ACTIVIDADES RELACIONADAS CON EL ANÁLISIS DE MUESTRAS. - DESARROLLO DE ACTIVIDADES DE OUTSOURCING Y PRESTACIÓN DE SERVICIOS EN CASA DEL CLIENTE, VINCULADOS A LA ACTIVIDAD DE LABORATORIO Y ANÁLISIS DE MUESTRAS. -DETERMINACIONES EN RESIDUOS INDUSTRIALES. -SERVICIOS ANALÍTICOS EN MUESTRAS PARA EMISIONES ATMOSFÉRICAS, VALORES DE INMISIÓN, ATMÓSFERAS LABORALES, ESTUDIOS DE DISPERSIÓN DE CONTAMINANTES, MODELIZACIÓN DE EMISIONES. LA COMPRA, VENTA Y COMERCIALIZACIÓN EN GENERAL DE TODA CLASE DE INSTRUMENTOS, ELEMENTOS, ÚTILES Y DEMÁS COMPLEMENTOS RELACIONADOS CON LA ANALÍTICA DE ALTA TECNOLOGÍA.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08295",
+      "_links": {
+        "self": {
+          "name": "AGRUPA LABORATORIO, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/08295"
+        }
+      }
+    },
+    {
+      "name": "ARGO ALQUILERES Y TRANSPORTES, S.L.",
+      "registrationNumber": "10214",
+      "identificationNumber": "B01358183",
+      "address": "Calle Portal de Bergara (01013),Nº4,PAB.1",
+      "location": {
+        "postalCode": "01013",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.722",
+          "name": "Transporte de mercancías por carretera",
+          "_links": {
+            "self": {
+              "name": "Transporte de mercancías por carretera",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.722"
+            }
+          }
+        },
+        {
+          "id": "1.852",
+          "name": "Alquiler de maquinaria y equipo para la construcción",
+          "_links": {
+            "self": {
+              "name": "Alquiler de maquinaria y equipo para la construcción",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.852"
+            }
+          }
+        },
+        {
+          "id": "1.921.1",
+          "name": "Servicios de limpieza en calles, vías públicas y jardines",
+          "_links": {
+            "self": {
+              "name": "Servicios de limpieza en calles, vías públicas y jardines",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.921.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-11-19",
+      "certificateEndDate": "2026-05-15",
+      "object": "AL ALQUILER DE MAQUINARIA AUXILIAR Y PESADA, HERRAMIENTAS, ANDAMIOS, ACCESORIOS Y EQUIPOS PARA LA CONSTRUCCIÓN, OBRA CIVIL Y PÚBLICA, EXCAVACIÓN Y EL ALQUILER DE TRANSPORTES Y DE TODOS SUS ACCESORIOS. ASÍ COMO EL TRANSPORTE PUBLICO Y PRIVADO DE MERCANCÍAS.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/10214",
+      "_links": {
+        "self": {
+          "name": "ARGO ALQUILERES Y TRANSPORTES, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/10214"
+        }
+      }
+    },
+    {
+      "name": "MARIA EUNATE AGUIRRE BIDANIA",
+      "registrationNumber": "10223",
+      "identificationNumber": "14599148J",
+      "address": "MARIA DIAZ DE HARO, 24- 2º DCHA",
+      "location": {
+        "postalCode": "48013",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.475",
+          "name": "Actividades anexas a las artes gráficas",
+          "_links": {
+            "self": {
+              "name": "Actividades anexas a las artes gráficas",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.475"
+            }
+          }
+        },
+        {
+          "id": "2.826",
+          "name": "Personal docente de enseñanzas diversas",
+          "_links": {
+            "self": {
+              "name": "Personal docente de enseñanzas diversas",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/2.826"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-11-19",
+      "certificateEndDate": "2026-05-19",
+      "object": "ACTIVIDADES ANEXAS A LAS ARTES GRÁFICAS. PERSONAL DOCENTE DE ENSEÑANZAS DIVERSAS.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/10223",
+      "_links": {
+        "self": {
+          "name": "MARIA EUNATE AGUIRRE BIDANIA",
+          "href": "https://api.euskadi.eus/procurements/companies/10223"
+        }
+      }
+    },
+    {
+      "name": "MIKEL ARAMBURU LOINAZ",
+      "registrationNumber": "10197",
+      "identificationNumber": "49999005H",
+      "address": "TXATOLA BIDEA 10",
+      "location": {
+        "postalCode": "20180",
+        "municipality": "Oiartzun",
+        "county": "Gipuzkoa",
+        "municipalityId": "063",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.319.9",
+          "name": "Talleres mecánicos n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Talleres mecánicos n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.319.9"
+            }
+          }
+        },
+        {
+          "id": "1.912",
+          "name": "Servicios forestales",
+          "_links": {
+            "self": {
+              "name": "Servicios forestales",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.912"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-11-19",
+      "certificateEndDate": "2026-05-12",
+      "object": "SERVICIOS FORESTALES. TALLERES MECÁNICOS N.C.O.P.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/10197",
+      "_links": {
+        "self": {
+          "name": "MIKEL ARAMBURU LOINAZ",
+          "href": "https://api.euskadi.eus/procurements/companies/10197"
+        }
+      }
+    },
+    {
+      "name": "LOYOLA SIGLO XXI, S.L.",
+      "registrationNumber": "05062",
+      "identificationNumber": "B75002253",
+      "address": "PG. ZUMARTEGI AITZEZARRA, 14",
+      "location": {
+        "postalCode": "20170",
+        "municipality": "Usurbil",
+        "county": "Gipuzkoa",
+        "municipalityId": "073",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.506.0",
+          "name": "Instalaciones de andamios, cimbras, encofrados, etc",
+          "_links": {
+            "self": {
+              "name": "Instalaciones de andamios, cimbras, encofrados, etc",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.506.0"
+            }
+          }
+        },
+        {
+          "id": "1.849.9",
+          "name": "Otros servicios independientes n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros servicios independientes n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.849.9"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-11-19",
+      "certificateEndDate": "2026-05-17",
+      "object": "LA PRODUCCIÓN Y MONTAJE DE ANDAMIOS E INSTALACIONES DE SERVICIOS RECREATIVOS Y CULTURALES; LA FABRICACIÓN DE ESTRUCTURAS METÁLICAS, ANGARES PREFABRICADOS, ASÍ COMO SU INSTALACIÓN ASOCIADA",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/05062",
+      "_links": {
+        "self": {
+          "name": "LOYOLA SIGLO XXI, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/05062"
+        }
+      }
+    },
+    {
+      "name": "ENDARA INGENIEROS ASOCIADOS, S.L.",
+      "registrationNumber": "05933",
+      "identificationNumber": "B20760260",
+      "address": "Calle J.J.Tadeo Murguia (20304) 2, Local 3",
+      "location": {
+        "postalCode": "20304",
+        "municipality": "Irun",
+        "county": "Gipuzkoa",
+        "municipalityId": "045",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.843.1",
+          "name": "Servicios técnicos de ingeniería",
+          "_links": {
+            "self": {
+              "name": "Servicios técnicos de ingeniería",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-11-19",
+      "certificateEndDate": "2026-05-16",
+      "object": "LA CREACIÓN, MANTENIMIENTO Y DESARROLLO DE LA INFRAESTRUCTURA NECESARIA PARA LAS SIGUIENTES ACTIVIDADES: LA PROMOCIÓN, CONSTRUCCIÓN, ADQUISICIÓN Y ENAJENACIÓN DE FINCAS URBANAS, ASÍ COMO LA EXPLOTACIÓN DIRECTA O INDIRECTAMENTE, INCLUSO BAJO LA FORMA DE ARRENDAMIENTO, DE EDIFICIOS, FINCAS Y CONSTRUCCIONES DE TODO TIPO. REDACCIÓN DE PROYECTOS BÁSICOS Y DE CONSTRUCCIÓN, PROYECTO DE REFORMA, REMODELACIÓN Y REPARACIÓN, PROYECTOS DE TRAZADO, ANTEPROYECTOS, ESTUDIOS PREVIOS E INFORMATIVOS, ARBITRAJES, CERTIFICACIONES, INFORMES, DICTÁMENES, PERITACIONES, VALORACIONES, TASACIONES, PROYECTO DE APERTURA O ACTIVIDAD, EXPEDIENTES DE LEGALIZACIÓN DE OBRAS, TRABAJOS ESPECIALES DE TOPOGRAFÍA, GEOLOGÍA Y GEOTÉCNICA, HIDROLOGÍA E HIDRÁULICA, TRÁFICO, EVALUACIÓN AMBIENTAL Y TODO TIPO DE DOCUMENTOS  RELACIONADOS CON LA INGENIERÍA CIVIL, URBANISMO Y ORDENACIÓN DEL TERRITORIO. TRABAJOS DE PLANEAMIENTO EN LOS QUE SE INCLUYEN PLANES TERRITORIALES, PLANES SECTORIALES GENERALES, NORMAS SUBSIDIARIAS DE PLANEAMIENTO, PLANES ESPECIALES, PLANES PARCIALES, ESTUDIO DE DETALLE, PROGRAMAS DE ACTUACIÓN URBANÍSTICO, PROYECTOS DE DELIMITACIÓN DE SUELO URBANO, PROYECTOS DE DELIMITACIÓN DE SUELO URBANO, PROYECTOS DE PARCELACIÓN, PROYECTOS DE DELIMITACIÓN DE POLÍGONOS Y UNIDADES DE ACTUACIÓN Y PROYECTOS DE COMPENSACIÓN Y REPARCELACIÓN. ASESORÍA Y ASISTENCIA TÉCNICA A LA ADMINISTRACIÓN, CONSTRUCTOR, CONSULTOR Y PARTICULARES EN TODOS LOS ASPECTOS CONTENIDOS EN EL APARTADO ANTERIOR, REDACCIÓN DE PLIEGOS Y ANÁLISIS DE OFERTAS DE CONCURSOS. ASISTENCIA A LA REDACCIÓN DE CONTRATOS. ANÁLISIS, VIAVILIDAD, MODIFICACIÓN, REVISIÓN Y DIRECCIÓN DE PROYECTOS Y RESTO DE DOCUMENTOS. DIRECCIÓN DE OBRA, NUEVA, DE  REFORMAS Y DE REPARACIÓN, EN TODOS LOS CAMPOS QUE SE REFIEREN EN LOS APARTADOS ANTERIORES. MEDICIONES, PRECIOS UNITARIOS Y CERTIFICACIONES DE OBRA. ELABORACIÓN DE PLANES DE OBRA Y SEGUIMIENTO DE LOS MISMOS. INFORMES PERIÓDICOS DE LA SITUACIÓN DE LAS OBRAS. ESTUDIOS Y COORDINACIÓN DE SEGURIDAD Y SALUD Y CONTROL DE CALIDAD. EN REPRESENTACIÓN DEL CONSTRUCTOR, CONSULTOR O PROPIEDAD, TRABAJOS DE DELEGADO, GERENTE O JEFE DE OBRA EN LO REFERENTE A LA MISMA, A LA SEGURIDAD Y SALUD Y AL CONTROL DE CALIDAD, DIRECCIÓN DE EXPLOTACIÓN Y CONSERVACIÓN DE OBRAS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/05933",
+      "_links": {
+        "self": {
+          "name": "ENDARA INGENIEROS ASOCIADOS, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/05933"
+        }
+      }
+    },
+    {
+      "name": "ELECTRICIDAD VILAIN, S.L.",
+      "registrationNumber": "02865",
+      "identificationNumber": "B20795357",
+      "address": "TRAVESIA DE RODIL, 54 - 3º",
+      "location": {
+        "postalCode": "20013",
+        "municipality": "Donostia / San Sebastián",
+        "county": "Gipuzkoa",
+        "municipalityId": "069",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.504.1",
+          "name": "Instalaciones eléctricas en general",
+          "_links": {
+            "self": {
+              "name": "Instalaciones eléctricas en general",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.504.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-11-19",
+      "certificateEndDate": "2026-05-04",
+      "classification": [
+        {
+          "id": "S",
+          "name": "Servicios",
+          "groups": [
+            {
+              "id": "P",
+              "subgroups": [
+                {
+                  "id": "01",
+                  "name": "Mantenimiento y reparación de equipos e instalaciones eléctricas y electrónicas",
+                  "categories": [
+                    {
+                      "id": "4",
+                      "name": "Desde 600.001 Hasta 1.1200.000",
+                      "_links": {
+                        "self": {
+                          "name": "Desde 600.001 Hasta 1.1200.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/S/categories/4"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "Mantenimiento y reparación de equipos e instalaciones eléctricas y electrónicas",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/P/subgroups/01"
+                    }
+                  }
+                }
+              ],
+              "_links": {
+                "self": {
+                  "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/P"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Servicios",
+              "href": "https://api.euskadi.eus/procurements/companies/types/S"
+            }
+          }
+        }
+      ],
+      "object": "INSTALACIONES ELÉCTRICAS EN GENERAL. INSTALACIÓN DE REDES TELEGRÁFICAS, TELEFÓNICAS, TELEFONÍA SIN HILOS Y TELEVISIÓN. INSTALACIONES DE SISTEMAS DE BALIZACIÓN DE PUERTOS Y AEROPUERTOS.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/02865",
+      "_links": {
+        "self": {
+          "name": "ELECTRICIDAD VILAIN, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/02865"
+        }
+      }
+    }
+  ]
+}

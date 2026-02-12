@@ -1,0 +1,774 @@
+{
+  "totalItems": 9042,
+  "totalPages": 905,
+  "currentPage": 349,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "name": "ZORROZA INDUSKETAK ETA GARRAIOAK, S.L.",
+      "registrationNumber": "04494",
+      "identificationNumber": "B48540520",
+      "address": "Bº TROBIKA. LARRAGANE BIDEA, Nº 6",
+      "location": {
+        "postalCode": "48100",
+        "municipality": "Mungia",
+        "county": "Bizkaia",
+        "municipalityId": "069",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.501.2",
+          "name": "Construcción completa, reparación y conservación obras civiles",
+          "_links": {
+            "self": {
+              "name": "Construcción completa, reparación y conservación obras civiles",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.2"
+            }
+          }
+        },
+        {
+          "id": "1.502.2",
+          "name": "Consolidación y preparación de terrenos para la construcción de edificaciones",
+          "_links": {
+            "self": {
+              "name": "Consolidación y preparación de terrenos para la construcción de edificaciones",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.502.2"
+            }
+          }
+        },
+        {
+          "id": "1.722",
+          "name": "Transporte de mercancías por carretera",
+          "_links": {
+            "self": {
+              "name": "Transporte de mercancías por carretera",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.722"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-06-13",
+      "certificateEndDate": "2025-12-13",
+      "classification": [
+        {
+          "id": "O",
+          "name": "Obras",
+          "groups": [
+            {
+              "id": "A",
+              "name": "MOVIMIENTO DE TIERRAS Y PERFORACIONES",
+              "subgroups": [
+                {
+                  "id": "01",
+                  "name": "DESMONTES Y VACIADOS",
+                  "categories": [
+                    {
+                      "id": "4",
+                      "name": "Desde 840.001 Hasta 2.400.000",
+                      "_links": {
+                        "self": {
+                          "name": "Desde 840.001 Hasta 2.400.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/O/categories/4"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "DESMONTES Y VACIADOS",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/O/groups/A/subgroups/01"
+                    }
+                  }
+                },
+                {
+                  "id": "02",
+                  "name": "EXPLANACIONES",
+                  "categories": [
+                    {
+                      "id": "2",
+                      "name": "Desde 150.001 Hasta 360.000",
+                      "_links": {
+                        "self": {
+                          "name": "Desde 150.001 Hasta 360.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/O/categories/2"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "EXPLANACIONES",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/O/groups/A/subgroups/02"
+                    }
+                  }
+                },
+                {
+                  "id": "03",
+                  "name": "CANTERAS",
+                  "categories": [
+                    {
+                      "id": "2",
+                      "name": "Desde 150.001 Hasta 360.000",
+                      "_links": {
+                        "self": {
+                          "name": "Desde 150.001 Hasta 360.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/O/categories/2"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "CANTERAS",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/O/groups/A/subgroups/03"
+                    }
+                  }
+                },
+                {
+                  "id": "04",
+                  "name": "POZOS Y GALERIAS",
+                  "categories": [
+                    {
+                      "id": "2",
+                      "name": "Desde 150.001 Hasta 360.000",
+                      "_links": {
+                        "self": {
+                          "name": "Desde 150.001 Hasta 360.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/O/categories/2"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "POZOS Y GALERIAS",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/O/groups/A/subgroups/04"
+                    }
+                  }
+                }
+              ],
+              "_links": {
+                "self": {
+                  "name": "MOVIMIENTO DE TIERRAS Y PERFORACIONES",
+                  "href": "https://api.euskadi.eus/procurements/companies/types/O/groups/A"
+                }
+              }
+            },
+            {
+              "id": "E",
+              "name": "HIDRAULICAS",
+              "subgroups": [
+                {
+                  "id": "01",
+                  "name": "ABASTECIMIENTOS Y SANEAMIENTOS",
+                  "categories": [
+                    {
+                      "id": "2",
+                      "name": "Desde 150.001 Hasta 360.000",
+                      "_links": {
+                        "self": {
+                          "name": "Desde 150.001 Hasta 360.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/O/categories/2"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "ABASTECIMIENTOS Y SANEAMIENTOS",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/O/groups/E/subgroups/01"
+                    }
+                  }
+                },
+                {
+                  "id": "04",
+                  "name": "ACEQUIAS Y DESAGÜES",
+                  "categories": [
+                    {
+                      "id": "2",
+                      "name": "Desde 150.001 Hasta 360.000",
+                      "_links": {
+                        "self": {
+                          "name": "Desde 150.001 Hasta 360.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/O/categories/2"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "ACEQUIAS Y DESAGÜES",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/O/groups/E/subgroups/04"
+                    }
+                  }
+                },
+                {
+                  "id": "05",
+                  "name": "DEFENSAS DE MARGENES Y ENCAUZAMIENTOS",
+                  "categories": [
+                    {
+                      "id": "2",
+                      "name": "Desde 150.001 Hasta 360.000",
+                      "_links": {
+                        "self": {
+                          "name": "Desde 150.001 Hasta 360.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/O/categories/2"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "DEFENSAS DE MARGENES Y ENCAUZAMIENTOS",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/O/groups/E/subgroups/05"
+                    }
+                  }
+                },
+                {
+                  "id": "07",
+                  "name": "OBRAS HIDRAULICAS SIN CUALIFICACION ESPECIFICA",
+                  "categories": [
+                    {
+                      "id": "2",
+                      "name": "Desde 150.001 Hasta 360.000",
+                      "_links": {
+                        "self": {
+                          "name": "Desde 150.001 Hasta 360.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/O/categories/2"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "OBRAS HIDRAULICAS SIN CUALIFICACION ESPECIFICA",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/O/groups/E/subgroups/07"
+                    }
+                  }
+                }
+              ],
+              "_links": {
+                "self": {
+                  "name": "HIDRAULICAS",
+                  "href": "https://api.euskadi.eus/procurements/companies/types/O/groups/E"
+                }
+              }
+            },
+            {
+              "id": "G",
+              "name": "VIALES Y PISTAS",
+              "subgroups": [
+                {
+                  "id": "03",
+                  "name": "Con firmes de hormigón hidraúlico",
+                  "categories": [
+                    {
+                      "id": "2",
+                      "name": "Desde 150.001 Hasta 360.000",
+                      "_links": {
+                        "self": {
+                          "name": "Desde 150.001 Hasta 360.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/O/categories/2"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "Con firmes de hormigón hidraúlico",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/O/groups/G/subgroups/03"
+                    }
+                  }
+                },
+                {
+                  "id": "06",
+                  "name": "Obras viales sin cualificación específica",
+                  "categories": [
+                    {
+                      "id": "3",
+                      "name": "Desde 360.001 Hasta 840.000",
+                      "_links": {
+                        "self": {
+                          "name": "Desde 360.001 Hasta 840.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/O/categories/3"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "Obras viales sin cualificación específica",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/O/groups/G/subgroups/06"
+                    }
+                  }
+                }
+              ],
+              "_links": {
+                "self": {
+                  "name": "VIALES Y PISTAS",
+                  "href": "https://api.euskadi.eus/procurements/companies/types/O/groups/G"
+                }
+              }
+            },
+            {
+              "id": "K",
+              "name": "ESPECIALES",
+              "subgroups": [
+                {
+                  "id": "03",
+                  "name": "Tablestacados",
+                  "categories": [
+                    {
+                      "id": "2",
+                      "name": "Desde 150.001 Hasta 360.000",
+                      "_links": {
+                        "self": {
+                          "name": "Desde 150.001 Hasta 360.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/O/categories/2"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "Tablestacados",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/O/groups/K/subgroups/03"
+                    }
+                  }
+                },
+                {
+                  "id": "06",
+                  "name": "Jardinería y plantaciones",
+                  "categories": [
+                    {
+                      "id": "1",
+                      "name": "Desde 0 Hasta 150.000",
+                      "_links": {
+                        "self": {
+                          "name": "Desde 0 Hasta 150.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/O/categories/1"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "Jardinería y plantaciones",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/O/groups/K/subgroups/06"
+                    }
+                  }
+                }
+              ],
+              "_links": {
+                "self": {
+                  "name": "ESPECIALES",
+                  "href": "https://api.euskadi.eus/procurements/companies/types/O/groups/K"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Obras",
+              "href": "https://api.euskadi.eus/procurements/companies/types/O"
+            }
+          }
+        }
+      ],
+      "object": "A) LA REALIZACIÓN DE EXCAVACIONES, MOVIMIENTOS Y TRANSPORTES DE TIERRAS. B) LA ACTIVIDAD DE TRANSPORTE POR CARRETERA DE MERCANCÍAS, TANTO INTERIOR COMO INTERNACIONAL.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/04494",
+      "_links": {
+        "self": {
+          "name": "ZORROZA INDUSKETAK ETA GARRAIOAK, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/04494"
+        }
+      }
+    },
+    {
+      "name": "KONTUS S.L.",
+      "registrationNumber": "06300",
+      "identificationNumber": "B20681458",
+      "address": "GISASTU BIDE Nº2",
+      "location": {
+        "postalCode": "20600",
+        "municipality": "Eibar",
+        "county": "Gipuzkoa",
+        "municipalityId": "030",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.651.5",
+          "name": "Venta al por menor de prendas especiales",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de prendas especiales",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.651.5"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-06-13",
+      "certificateEndDate": "2025-12-13",
+      "object": "LA COMPRA-VENTA DE ARTÍCULOS DE SEGURIDAD LABORAL Y SUMINISTROS INDUSTRIALES",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06300",
+      "_links": {
+        "self": {
+          "name": "KONTUS S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/06300"
+        }
+      }
+    },
+    {
+      "name": "MICROLAB 2000, S.L.",
+      "registrationNumber": "06528",
+      "identificationNumber": "B95395679",
+      "address": "AVDA. EL MINERO, 62 - D",
+      "location": {
+        "postalCode": "48500",
+        "municipality": "Abanto y Ciérvana-Abanto Zierbena",
+        "county": "Bizkaia",
+        "municipalityId": "002",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.619.2",
+          "name": "Venta al por mayor de aparatos e instrumentos médicos, ortopédicos, ópticos",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de aparatos e instrumentos médicos, ortopédicos, ópticos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.619.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-06-13",
+      "certificateEndDate": "2025-12-13",
+      "object": "EL COMERCIO AL POR MAYOR Y AL POR MENOR DE PRODUCTOS DE LABORATORIO, APARATOS E INSTRUMENTOS MÉDICOS, ORTOPÉDICOS, ÓPTICOS Y FOTOGRÁFICOS. SERVICIO DE ASISTENCIA TÉCNICA Y REPARACIÓN DE LOS BIENES Y PRODUCTOS ANTES MENCIONADOS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06528",
+      "_links": {
+        "self": {
+          "name": "MICROLAB 2000, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/06528"
+        }
+      }
+    },
+    {
+      "name": "SURFING ZUMAIA, S.L.",
+      "registrationNumber": "10239",
+      "identificationNumber": "B75186569",
+      "address": "CL LARRETXO AUZATEGIA 18   BJ ",
+      "location": {
+        "postalCode": "20750",
+        "municipality": "Zumaia",
+        "county": "Gipuzkoa",
+        "municipalityId": "081",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.651.2",
+          "name": "Venta al por menor de prendas de ropa para el vestido y tocado",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de prendas de ropa para el vestido y tocado",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.651.2"
+            }
+          }
+        },
+        {
+          "id": "1.934",
+          "name": "Enseñanza fuera de establecimiento permanente",
+          "_links": {
+            "self": {
+              "name": "Enseñanza fuera de establecimiento permanente",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.934"
+            }
+          }
+        },
+        {
+          "id": "1.967.2",
+          "name": "Escuelas y servicios de perfeccionamiento del deporte",
+          "_links": {
+            "self": {
+              "name": "Escuelas y servicios de perfeccionamiento del deporte",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.967.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-06-13",
+      "certificateEndDate": "2025-12-12",
+      "object": "A) LA FORMACIÓN Y ENSEÑANZA DE DEPORTES, ASÍ COMO LA PRESTACIÓN DE SERVICIOS DE ASESORÍA Y GESTIÓN TÉCNICA DEPORTIVA. B) LA COMPRA, VENTA Y COMERCIALIZACIÓN, AL POR MAYOR Y AL POR MENOR, DE ROPA, COMPLEMENTOS Y MATERIAL DEPORTIVO. C) LA COMPRAVENTA, EL ARRENDAMIENTO Y LA EXPLOTACIÓN DE TODA CLASE DE BIENES INMUEBLES, ASÍ COMO DE MATERIAL DEPORTIVO.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/10239",
+      "_links": {
+        "self": {
+          "name": "SURFING ZUMAIA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/10239"
+        }
+      }
+    },
+    {
+      "name": "AUREA NATURE, S.L.",
+      "registrationNumber": "10238",
+      "identificationNumber": "B67610618",
+      "address": "Carrer Plana del Paraiso 1",
+      "location": {
+        "postalCode": "08350",
+        "municipality": "Arenys de Mar",
+        "county": "Barcelona",
+        "municipalityId": "006",
+        "countyId": "08"
+      },
+      "economicActivities": [
+        {
+          "id": "1.755",
+          "name": "Agencias de viajes",
+          "_links": {
+            "self": {
+              "name": "Agencias de viajes",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.755"
+            }
+          }
+        },
+        {
+          "id": "1.849.9",
+          "name": "Otros servicios independientes n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros servicios independientes n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.849.9"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-06-13",
+      "certificateEndDate": "2025-12-11",
+      "object": "ACTIVIDAD PRINCIPAL: 79.11 / ACTIVIDADES DE LAS AGENCIAS DE VIAJE. OTRAS ACTIVIDADES: 47.78 / OTRO COMERCIO AL POR MENOR DE ARTÍCULOS NUEVOS EN ESTABLECIMIENTOS ESPECIALIZADOS, 79.90 / OTROS SERVICIOS DE RESERVAS Y ACTIVIDADES RELACIONADAS CON LOS MISMOS, 47.75 / COMERCIO AL POR MENOR DE PRODUCTOS COSMÉTICOS E HIGIÉNICOS EN ESTABLECIMIENTOS ESPECIALIZADOS, 73.11 / AGENCIAS DE PUBLICIDAD, 74.20 / ACTIVIDADES DE FOTOGRAFÍA, 70.22 / OTRAS ACTIVIDADES DE CONSULTORÍA DE GESTIÓN EMPRESARIAL, 82.99 / OTRAS ACTIVIDADES DE APOYO A LAS EMPRESAS, 70.21 / RELACIONES PÚBLICAS Y COMUNICACIÓN, 47.71 / COMERCIO AL POR MENOR DE PRENDAS DE VESTIR EN ESTABLECIMIENTOS ESPECIALIZADOS, 47.91 / COMERCIO AL POR MENOR POR CORRESPONDENCIA O INTERNET, 96.09 / OTROS SERVICIOS PERSONALES, 47.64 / COMERCIO AL POR MENOR DE ARTÍCULOS DEPORTIVOS EN ESTABLECIMIENTOS ESPECIALIZADOS, 47.72 / COMERCIO AL POR MENOR DE CALZADO Y ARTÍCULOS DE CUERO EN ESTABLECIMIENTOS ESPECIALIZADOS, 47.61 / COMERCIO AL POR MENOR DE LIBROS EN ESTABLECIMIENTOS ESPECIALIZADOS, 63.12 / PORTALES WEB.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/10238",
+      "_links": {
+        "self": {
+          "name": "AUREA NATURE, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/10238"
+        }
+      }
+    },
+    {
+      "name": "EXCELTIC S.L.",
+      "registrationNumber": "08332",
+      "identificationNumber": "B02813178",
+      "address": "Calle Hermanos García Noblejas, 41-1 PLANTA",
+      "location": {
+        "postalCode": "28037",
+        "municipality": "Madrid",
+        "county": "Madrid",
+        "municipalityId": "079",
+        "countyId": "28"
+      },
+      "economicActivities": [
+        {
+          "id": "1.843.9",
+          "name": "Otros servicios técnicos n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros servicios técnicos n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.9"
+            }
+          }
+        },
+        {
+          "id": "1.845",
+          "name": "Explotación electrónica por cuenta de terceros",
+          "_links": {
+            "self": {
+              "name": "Explotación electrónica por cuenta de terceros",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.845"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-06-13",
+      "certificateEndDate": "2025-12-10",
+      "object": "A) EL ASESORAMIENTO, CONSULTORÍA, ASISTENCIA TÉCNICA Y SUMINISTRO DE TODOS AQUELLOS ELEMENTOS QUE COMPONEN LOS EQUIPOS Y LOS PROGRAMAS EN LAS ÁREAS DE LA INFORMÁTICA, REDES DE DATOS Y TELECOMUNICACIONES, Y LA PRESTACIÓN DE SERVICIOS INFORMÁTICOS. B) LA FABRICACIÓN, DISTRIBUCIÓN, COMERCIALIZACIÓN Y VENTA DE EQUIPOS INFORMÁTICOS Y MATERIAL DE SISTEMAS DE INFORMACIÓN Y AFINE, TANTO EN LA LÍNEA DE HARDWARE COMO DE SOFTWARE. C) LA REALIZACIÓN DE ACTIVIDADES RELACIONADAS CON LA FUNCIÓN DOCENTE, DESARROLLO Y PROMOCIÓN DE ACTIVIDADES CULTURALES, ARTÍSTICAS Y DEPORTIVAS, CREACIÓN DE ESTABLECIMIENTOS, COLEGIOS, ACADEMIAS O CENTROS DE EDUCACIÓN PARA IMPARTIR EN ELLOS CUALQUIER TIPO DE CURSOS Y ENSEÑANZAS TANTO REGLADAS COMO NO REGLADAS. D) EL COMERCIO ELECTRÓNICO A TRAVÉS DE INTERNET. E) LA CREACIÓN DE LIBROS, MANUALES, REVISTAS O CUALQUIER TIPO DE MATERIAL DIDÁCTICO O DE DIVULGACIÓN, TANTO EN SOPORTE IMPRESO COMO EN SOPORTE ELECTRÓNICO. F) EL ASESORAMIENTO, DIRECCIÓN Y EJECUCIÓN DE PROYECTOS Y SERVICIOS DE INGENIERÍA EN LOS SECTORES INDUSTRIAL, ENERGÉTICO, AEROESPACIAL, TRANSPORTE, NAVAL, DEFENSA, SEGURIDAD Y CIENCIAS DE LA SALUD. G) EL ASESORAMIENTO, DIRECCIÓN Y EJECUCIÓN DE PROYECTOS Y SERVICIOS EN LAS ÁREAS DE ELECTRICIDAD, ELECTRÓNICA, MECÁNICA, INGENIERÍA CIVIL, INGENIERÍA QUÍMICA, INGENIERÍA DE PROCESOS, INVESTIGACIÓN Y DESARROLLO, SEGURIDAD Y MEDIOAMBIENTE Y ESTRATEGIA EMPRESARIAL. H) PROCESOS DE PRESELECCIÓN Y SELECCIÓN, FORMACIÓN, CAPTACIÓN, MOTIVACIÓN Y RESTO DE PROCESOS DE GESTIÓN DE PERSONAL. APLICACIÓN DE LOS AVANCES DE LAS TECNOLOGÍAS DE LA INFORMACIÓN Y LA COMUNICACIÓN EN EL ÁMBITO DE LOS RECURSOS HUMANOS. I) LA EXPLOTACIÓN DEL CONJUNTO DE PROCEDIMIENTOS Y MÉTODOS DIRIGIDOS A LA EVALUACIÓN Y SELECCIÓN DE PUESTOS DE TRABAJO, DESARROLLO DE RECURSOS HUMANOS, ESTUDIOS Y ANÁLISIS DE LA ORGANIZACIÓN DE LAS EMPRESAS Y PLANIFICACIÓN DE SU ESTRATEGIA",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08332",
+      "_links": {
+        "self": {
+          "name": "EXCELTIC S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/08332"
+        }
+      }
+    },
+    {
+      "name": "ZENTRIPETA, S.L.",
+      "registrationNumber": "08558",
+      "identificationNumber": "B67990481",
+      "address": "San Juan Kalea 16 bajo 1 izq",
+      "location": {
+        "postalCode": "48230",
+        "municipality": "Elorrio",
+        "county": "Bizkaia",
+        "municipalityId": "032",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.991",
+          "name": "Prestación de servicios por sociedades de desarrollo industrial",
+          "_links": {
+            "self": {
+              "name": "Prestación de servicios por sociedades de desarrollo industrial",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.991"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-06-12",
+      "certificateEndDate": "2025-06-27",
+      "object": "A) DESARROLLO RURAL: - PRESTAR SERVICIOS DE CONSULTORÍA, FORMACIÓN Y SENSIBILIZACIÓN EN EL ÁMBITO DEL DESARROLLO RURAL. ENTRE ELLOS DESTACARÁ: A) ACTIVIDADES DE FORMACIÓN Y SENSIBILIZACIÓN. B) LA GESTIÓN INTEGRAL O PARTE DE ESTA DE EMPRESAS DEL SECTOR PRIMARIO O UBICADAS EN EL ENTORNO RURAL O QUE DESARROLLEN SU ACTIVIDAD EN EL ÁMBITO RURAL.  C) LA CREACIÓN DE PRODUCTO TANGIBLE E INTANGIBLE: C.1) EN CREACIÓN DE PRODUCTO TANGIBLE SE INCLUYE TODO TIPO DE ARTESANÍA CON MATERIA PRIMA RELACIONADA CON EL SECTOR PRIMARIO. LA ACTIVIDAD INCLUYE DESDE EL DISEÑO DE PROTOTIPOS HASTA EL DESARROLLO, LA FABRICACIÓN Y LA VENTA A ESCALA ARTESANAL. C.2) EN CREACIÓN DE PRODUCTO INTANGIBLE SE INCLUYE EL DISEÑO DE TODO TIPO DE ACTIVIDAD TURÍSTICA Y DE OCIO (ECOTURISMO, TURISMO ACTIVO, ENOTURISMO, ESCOLAR, EXPERIENCIAL Y DE OCIO).  B) EN INGENIERÍA QUÍMICA: - ACTIVIDAD DE INGENIERÍA O DE QUÍMICA, CALIDAD Y CONTROL DE CALIDAD RELACIONADAS CON EL MEDIO AMBIENTE. - INVESTIGACIÓN Y DESARROLLO DE NUEVOS PRODUCTOS BASADOS EN UNA FILOSOFÍA DE ECONOMÍA CIRCULAR, ENTRE LOS CUALES DESTACAN LA REUTILIZACIÓN Y REVALORIZACIÓN DE RESIDUOS.  - DISEÑO, DIRECCIÓN TÉCNICA, FABRICACIÓN Y COMERCIALIZACIÓN DE PRODUCTOS COSMÉTICOS Y FARMACÉUTICOS.   - PROYECTOS DE INVESTIGACIÓN, DESARROLLO E INNOVACIÓN RELACIONADOS CON LA FARMACONTAMINACIÓN Y LA DESCONTAMINACIÓN DEL MEDIO AMBIENTE. - ACTIVIDADES DE DIVULGACIÓN CIENTÍFICA ORIENTADAS AL EMPODERAMIENTO DEL SECTOR DE LA SOCIEDAD NO CIENTÍFICA SOBRE LA QUÍMICA DE LOS PRODUCTOS DE CONSUMO, INCLUYENDO LA PERSPECTIVA DE GÉNERO E IGUALDAD. ",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08558",
+      "_links": {
+        "self": {
+          "name": "ZENTRIPETA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/08558"
+        }
+      }
+    },
+    {
+      "name": "CAÑADA SAIZ MERINO ESTUDIO DE ARQUITECTURA, S.L.",
+      "registrationNumber": "09731",
+      "identificationNumber": "B95626073",
+      "address": "Alameda Mazarredo 35 5º C-D,",
+      "location": {
+        "postalCode": "48009",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.843.2",
+          "name": "Servicios técnicos de arquitectura y urbanismo",
+          "_links": {
+            "self": {
+              "name": "Servicios técnicos de arquitectura y urbanismo",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-06-12",
+      "certificateEndDate": "2025-12-12",
+      "object": "LA ACTIVIDAD PROPIA DE LOS PROFESIONALES DE LA ARQUITECTURA.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/09731",
+      "_links": {
+        "self": {
+          "name": "CAÑADA SAIZ MERINO ESTUDIO DE ARQUITECTURA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/09731"
+        }
+      }
+    },
+    {
+      "name": "ALUMBRADOS VIARIOS",
+      "registrationNumber": "05914",
+      "identificationNumber": "A08523094",
+      "address": "Pasaje de la Plásmica s/n Nave 9",
+      "location": {
+        "postalCode": "08940",
+        "municipality": "Cornellà de Llobregat",
+        "county": "Barcelona",
+        "municipalityId": "073",
+        "countyId": "08"
+      },
+      "economicActivities": [
+        {
+          "id": "1.504.1",
+          "name": "Instalaciones eléctricas en general",
+          "_links": {
+            "self": {
+              "name": "Instalaciones eléctricas en general",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.504.1"
+            }
+          }
+        },
+        {
+          "id": "1.504.11",
+          "name": "Instalaciones eléctricas en general, redes telegráficas, telefonía, tv, etc",
+          "_links": {
+            "self": {
+              "name": "Instalaciones eléctricas en general, redes telegráficas, telefonía, tv, etc",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.504.11"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-06-12",
+      "certificateEndDate": "2025-12-04",
+      "hiringProhibitions": [
+        {
+          "orderingParty": "Ayuntamiento de Barakaldo",
+          "resolutionDate": "2025-05-20",
+          "startingDate": "2025-06-30",
+          "endingDate": "2028-06-30",
+          "scope": "Otros - AYUNTAMIENTO DE BARAKALDO",
+          "legalCause": "RESOLUCION CULPOSA DEL CONTRATO SERVICIO DE PUESTA A PUNTO DE LAS INSTALACIONES DE ALUMBRADO PUBLICO DE BARAKALDO(OS202112.007/202100641)"
+        }
+      ],
+      "object": "FABRICACIÓN Y COMERCIALIZACIÓN DE TODO TIPO DE MAQUINARIA Y MATERIALES ELÉCTRICOS Y/O ELECTRÓNICOS, ASÍ COMO LA REPARACIÓN, CONSERVACIÓN, MANTENIMIENTO, DESARROLLO DE PROYECTOS, PLANIFICACIÓN Y ASESORAMIENTO DE ESTOS; LA REALIZACIÓN DE TODO TIPO DE MONTAJES E INSTALACIONES ELÉCTRICAS Y ELECTRÓNICAS, INCLUYENDO INSTALACIONES DE ALUMBRADO PÚBLICO Y SISTEMAS DE CONTROL Y REGULACIÓN DEL TRÁFICO, ASÍ COMO LA REPARACIÓN, CONSERVACIÓN,\nMANTENIMIENTO, DESARROLLO DE PROYECTOS, PLANIFICACIÓN Y ASESORAMIENTO DE ESTOS; EJECUCIONES DE OPERACIONES DE SUMINISTRO, INSTALACIÓN, CONSERVACIÓN, REPOSICIÓN, MODIFICACIÓN DE TODO TIPO DE SEÑALIZACIÓN Y SISTEMAS DE AYUDAS AEROPORTUARIAS; ELABORACIÓN DE PROYECTOS, PLANIFICACIÓN Y ASESORAMIENTO, FABRICACIÓN, SUMINISTRO E INSTALACIÓN, MANTENIMIENTO Y EXPLOTACIÓN DE APARATOS, DISPOSITIVOS Y SISTEMAS DE SEGURIDAD, ANTIINTRUSISMO, CONTRAINCENDIOS Y TELEVISIÓN. ELABORACIÓN DE PROYECTOS, PLANIFICACIÓN Y ASESORAMIENTO, FABRICACIÓN, SUMINISTRO E INSTALACIÓN, MANTENIMIENTO Y EXPLOTACIÓN DE APARATOS, DISPOSITIVOS Y SISTEMAS DE COMUNICACIONES E INFORMÁTICA; DISEÑO, CONSTRUCCIÓN PUESTA EN SERVICIO Y MANTENIMIENTO DE PROYECTOS DE ENERGÍAS RENOVABLES Y EFICIENCIA ENERGÉTICA; EJECUCIÓN DE OPERACIONES DE CONSERVACIÓN, MANTENIMIENTO E INSTALACIONES INTEGRALES; INSTALACIÓN Y COMERCIALIZACIÓN DE CUALQUIER SISTEMA DE CONTROL,  DE ACCESOS, DE PRESENCIA Y DE PRODUCCIÓN, ASÍ COMO LA REPARACIÓN, CONSERVACIÓN, MANTENIMIENTO, DESARROLLO DE PROYECTOS, PLANIFICACIÓN Y ASESORAMIENTO DE ÉSTOS; DESARROLLO E IMPLEMENTACIÓN DE APLICACIONES SOFTWARE DE CONTROL; DISEÑO, EJECUCIÓN Y EXPLOTACIÓN DE PLANES DE AFORO Y ADQUISICIÓN DE DATOS DE TRÁFICO EN GENERAL; FABRICACIÓN, COMERCIALIZACIÓN, INSTALACIÓN Y MANTENIMIENTO DE SISTEMAS DE DETECCIÓN Y SANCIÓN AUTOMÁTICA DE INFRACCIONES DE TRÁFICO; PRESTACIÓN DE SERVICIOS ENERGÉTICOS INCLUYENDO EL DISEÑO, COMERCIALIZACIÓN, INSTALACIÓN Y MANTENIMIENTO DE SISTEMAS ENERGÉTICAMENTE EFICIENTES Y SUS SISTEMAS DE CONTROL. LA EXPLOTACIÓN, GESTIÓN, MANTENIMIENTO Y EQUIPOS DE PRIMERA INTERVENCIÓN EN TÚNELES, EN TODO TIPO DE INFRAESTRUCTURAS VIARIAS Y EN CENTROS DE GESTIÓN DE TRÁFICO\n",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/05914",
+      "_links": {
+        "self": {
+          "name": "ALUMBRADOS VIARIOS",
+          "href": "https://api.euskadi.eus/procurements/companies/05914"
+        }
+      }
+    },
+    {
+      "name": "PEDRO PABLO DE BENITO, S.L.",
+      "registrationNumber": "10234",
+      "identificationNumber": "B48642508",
+      "address": "Calle Gregorio Uzquiano",
+      "location": {
+        "postalCode": "48920",
+        "municipality": "Portugalete",
+        "county": "Bizkaia",
+        "municipalityId": "078",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.314.1",
+          "name": "Carpintería metálica",
+          "_links": {
+            "self": {
+              "name": "Carpintería metálica",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.314.1"
+            }
+          }
+        },
+        {
+          "id": "1.653.5",
+          "name": "Venta al por menor de puertas y ventanas, persianas, molduras, marcos",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de puertas y ventanas, persianas, molduras, marcos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.653.5"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-06-11",
+      "certificateEndDate": "2025-11-27",
+      "object": "LA COMPRA, VENTA, MANUFACTURACIÓN, FABRICACIÓN E INSTALACIÓN DE CERRAMIENTOS.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/10234",
+      "_links": {
+        "self": {
+          "name": "PEDRO PABLO DE BENITO, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/10234"
+        }
+      }
+    }
+  ]
+}

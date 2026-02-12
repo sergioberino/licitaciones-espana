@@ -1,0 +1,591 @@
+{
+  "totalItems": 919,
+  "totalPages": 92,
+  "currentPage": 59,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "id": 699,
+      "identificationNumber": "G48471999",
+      "name": "Asociación de Desarrollo Rural Jata-Ondo",
+      "scope": "BIZKAIA",
+      "address": "Trobika, 5. 48100 Mungia (Bizkaia)",
+      "webPage": "http://www.jataondo.org",
+      "publicationDate": "2019-10-07",
+      "mainActivity": "Otra actividad",
+      "alternativeActivity": "Promoción empresarial",
+      "codNUTS": "ES213",
+      "entities": [
+        {
+          "id": 1172,
+          "name": "Asociación de Desarrollo Rural Jata-Ondo",
+          "orgs": [
+            {
+              "id": 913548,
+              "name": "Junta directiva  ",
+              "_links": {
+                "self": {
+                  "name": "Junta directiva  ",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/699/entities/1172/orgs/913548"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Asociación de Desarrollo Rural Jata-Ondo",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/699/entities/1172"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder699/es_doc/es_arch_poder699.html",
+      "_links": {
+        "self": {
+          "name": "Asociación de Desarrollo Rural Jata-Ondo",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/699"
+        }
+      }
+    },
+    {
+      "id": 19,
+      "identificationNumber": "P0100200E",
+      "name": "Ayuntamiento de Amurrio",
+      "scope": "ARABA/ÁLAVA",
+      "address": "Plaza Juan Urrutia s/n 01470 AMURRIO",
+      "webPage": "http://www.amurrio.eus",
+      "publicationDate": "2019-10-04",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES211",
+      "entities": [
+        {
+          "id": 201,
+          "name": "Ayuntamiento de Amurrio",
+          "orgs": [
+            {
+              "id": 910965,
+              "name": "Pleno del Ayuntamiento",
+              "_links": {
+                "self": {
+                  "name": "Pleno del Ayuntamiento",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/19/entities/201/orgs/910965"
+                }
+              }
+            },
+            {
+              "id": 910964,
+              "name": "Junta de Gobierno Local",
+              "_links": {
+                "self": {
+                  "name": "Junta de Gobierno Local",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/19/entities/201/orgs/910964"
+                }
+              }
+            },
+            {
+              "id": 910963,
+              "name": "Alcalde/sa",
+              "_links": {
+                "self": {
+                  "name": "Alcalde/sa",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/19/entities/201/orgs/910963"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Ayuntamiento de Amurrio",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/19/entities/201"
+            }
+          }
+        },
+        {
+          "id": 202,
+          "name": "Fundación Municipal de Música de Amurrio",
+          "orgs": [
+            {
+              "id": 910967,
+              "name": "Junta Rectora de la Fundación Municipal de Música",
+              "_links": {
+                "self": {
+                  "name": "Junta Rectora de la Fundación Municipal de Música",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/19/entities/202/orgs/910967"
+                }
+              }
+            },
+            {
+              "id": 910966,
+              "name": "Presidente/a de la Fundación Municipal de Música",
+              "_links": {
+                "self": {
+                  "name": "Presidente/a de la Fundación Municipal de Música",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/19/entities/202/orgs/910966"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Fundación Municipal de Música de Amurrio",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/19/entities/202"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder19/es_doc/es_arch_poder19.html",
+      "_links": {
+        "self": {
+          "name": "Ayuntamiento de Amurrio",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/19"
+        }
+      }
+    },
+    {
+      "id": 22,
+      "identificationNumber": "P2009000G",
+      "name": "Ayuntamiento de Ikaztegieta",
+      "scope": "GIPUZKOA",
+      "address": "Herriko plaza 1",
+      "webPage": "http://www.ikaztegieta.net",
+      "publicationDate": "2019-10-04",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES212",
+      "entities": [
+        {
+          "id": 203,
+          "name": "Ayuntamiento de Ikaztegieta",
+          "orgs": [
+            {
+              "id": 910968,
+              "name": "Alcalde",
+              "_links": {
+                "self": {
+                  "name": "Alcalde",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/22/entities/203/orgs/910968"
+                }
+              }
+            },
+            {
+              "id": 910969,
+              "name": "Pleno",
+              "_links": {
+                "self": {
+                  "name": "Pleno",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/22/entities/203/orgs/910969"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Ayuntamiento de Ikaztegieta",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/22/entities/203"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder22/es_doc/es_arch_poder22.html",
+      "_links": {
+        "self": {
+          "name": "Ayuntamiento de Ikaztegieta",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/22"
+        }
+      }
+    },
+    {
+      "id": 24,
+      "identificationNumber": "P2009800J",
+      "name": "Ayuntamiento de Orendain",
+      "scope": "GIPUZKOA",
+      "address": "Alto Kasko, 17. 20269 Orendain (Gipuzkoa)",
+      "webPage": "http://www.orendain.org/",
+      "publicationDate": "2019-10-04",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES212",
+      "entities": [
+        {
+          "id": 205,
+          "name": "Ayuntamiento de Orendain",
+          "orgs": [
+            {
+              "id": 910972,
+              "name": "Alcalde",
+              "_links": {
+                "self": {
+                  "name": "Alcalde",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/24/entities/205/orgs/910972"
+                }
+              }
+            },
+            {
+              "id": 910973,
+              "name": "Pleno Municipal",
+              "_links": {
+                "self": {
+                  "name": "Pleno Municipal",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/24/entities/205/orgs/910973"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Ayuntamiento de Orendain",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/24/entities/205"
+            }
+          }
+        },
+        {
+          "id": 209,
+          "name": "Ayuntamiento de Orendain",
+          "_links": {
+            "self": {
+              "name": "Ayuntamiento de Orendain",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/24/entities/209"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder24/es_doc/es_arch_poder24.html",
+      "_links": {
+        "self": {
+          "name": "Ayuntamiento de Orendain",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/24"
+        }
+      }
+    },
+    {
+      "id": 30,
+      "identificationNumber": "P2005400C",
+      "name": "Ayuntamiento de Leaburu-Txarama",
+      "scope": "GIPUZKOA",
+      "address": "-",
+      "webPage": "http://www.leaburu-txarama.net",
+      "publicationDate": "2019-10-04",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES212",
+      "entities": [
+        {
+          "id": 216,
+          "name": "Ayuntamiento de Leaburu-Txarama",
+          "orgs": [
+            {
+              "id": 910985,
+              "name": "Alcalde",
+              "_links": {
+                "self": {
+                  "name": "Alcalde",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/30/entities/216/orgs/910985"
+                }
+              }
+            },
+            {
+              "id": 910986,
+              "name": "Pleno",
+              "_links": {
+                "self": {
+                  "name": "Pleno",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/30/entities/216/orgs/910986"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Ayuntamiento de Leaburu-Txarama",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/30/entities/216"
+            }
+          }
+        },
+        {
+          "id": 217,
+          "name": "Ayuntamiento de Leaburu-Txarama ",
+          "_links": {
+            "self": {
+              "name": "Ayuntamiento de Leaburu-Txarama ",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/30/entities/217"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder30/es_doc/es_arch_poder30.html",
+      "_links": {
+        "self": {
+          "name": "Ayuntamiento de Leaburu-Txarama",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/30"
+        }
+      }
+    },
+    {
+      "id": 32,
+      "identificationNumber": "P2005200G",
+      "name": "Ayuntamiento de Larraul",
+      "scope": "GIPUZKOA",
+      "address": "XABIER MUJIKA PAGOLA",
+      "webPage": "http://www.larraul.net",
+      "publicationDate": "2019-10-04",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES212",
+      "entities": [
+        {
+          "id": 219,
+          "name": "Ayuntamiento de Larraul",
+          "orgs": [
+            {
+              "id": 910989,
+              "name": "Alcalde",
+              "_links": {
+                "self": {
+                  "name": "Alcalde",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/32/entities/219/orgs/910989"
+                }
+              }
+            },
+            {
+              "id": 910990,
+              "name": "Pleno",
+              "_links": {
+                "self": {
+                  "name": "Pleno",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/32/entities/219/orgs/910990"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Ayuntamiento de Larraul",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/32/entities/219"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder32/es_doc/es_arch_poder32.html",
+      "_links": {
+        "self": {
+          "name": "Ayuntamiento de Larraul",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/32"
+        }
+      }
+    },
+    {
+      "id": 50,
+      "identificationNumber": "P2009200C",
+      "name": "Ayuntamiento de Itsasondo",
+      "scope": "GIPUZKOA",
+      "address": "Ayuntamiento de Itsasondo",
+      "webPage": "http://www.itsasondo.net/",
+      "publicationDate": "2019-10-04",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES212",
+      "entities": [
+        {
+          "id": 317,
+          "name": "Ayuntamiento de Itsasondo",
+          "orgs": [
+            {
+              "id": 911159,
+              "name": "Alcalde",
+              "_links": {
+                "self": {
+                  "name": "Alcalde",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/50/entities/317/orgs/911159"
+                }
+              }
+            },
+            {
+              "id": 911160,
+              "name": "Pleno",
+              "_links": {
+                "self": {
+                  "name": "Pleno",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/50/entities/317/orgs/911160"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Ayuntamiento de Itsasondo",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/50/entities/317"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder50/es_doc/es_arch_poder50.html",
+      "_links": {
+        "self": {
+          "name": "Ayuntamiento de Itsasondo",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/50"
+        }
+      }
+    },
+    {
+      "id": 53,
+      "identificationNumber": "P0100400A",
+      "name": "Ayuntamiento de Aramaio",
+      "scope": "ARABA/ÁLAVA",
+      "address": "Bizente Goikoetxea enparantza, 1",
+      "webPage": "http://www.aramaio.eus",
+      "publicationDate": "2019-10-04",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES211",
+      "entities": [
+        {
+          "id": 321,
+          "name": "Ayuntamiento de Aramaio",
+          "orgs": [
+            {
+              "id": 911166,
+              "name": "Pleno",
+              "_links": {
+                "self": {
+                  "name": "Pleno",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/53/entities/321/orgs/911166"
+                }
+              }
+            },
+            {
+              "id": 911165,
+              "name": "Alcalde",
+              "_links": {
+                "self": {
+                  "name": "Alcalde",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/53/entities/321/orgs/911165"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Ayuntamiento de Aramaio",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/53/entities/321"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder53/es_doc/es_arch_poder53.html",
+      "_links": {
+        "self": {
+          "name": "Ayuntamiento de Aramaio",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/53"
+        }
+      }
+    },
+    {
+      "id": 66,
+      "identificationNumber": "P0101700C",
+      "name": "Ayuntamiento de Bernedo",
+      "scope": "ARABA/ÁLAVA",
+      "address": "Plaza del Castillo, 1. 01118 Bernedo",
+      "webPage": "http://www.bernedo.org",
+      "publicationDate": "2019-10-04",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES211",
+      "entities": [
+        {
+          "id": 388,
+          "name": "Ayuntamiento de Bernedo",
+          "orgs": [
+            {
+              "id": 911334,
+              "name": "Alcaldía",
+              "_links": {
+                "self": {
+                  "name": "Alcaldía",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/66/entities/388/orgs/911334"
+                }
+              }
+            },
+            {
+              "id": 911336,
+              "name": "Juntas Administrativas",
+              "_links": {
+                "self": {
+                  "name": "Juntas Administrativas",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/66/entities/388/orgs/911336"
+                }
+              }
+            },
+            {
+              "id": 911335,
+              "name": "Pleno",
+              "_links": {
+                "self": {
+                  "name": "Pleno",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/66/entities/388/orgs/911335"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Ayuntamiento de Bernedo",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/66/entities/388"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder66/es_doc/es_arch_poder66.html",
+      "_links": {
+        "self": {
+          "name": "Ayuntamiento de Bernedo",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/66"
+        }
+      }
+    },
+    {
+      "id": 67,
+      "identificationNumber": "P0100100G",
+      "name": "Ayuntamiento de Alegria-Dulantzi",
+      "scope": "ARABA/ÁLAVA",
+      "address": "Herriko Plaza, 1. 01240 Alegria-Dulantzi (Araba/Álava)",
+      "webPage": "http://www.alegria-dulantzi.net",
+      "publicationDate": "2019-10-04",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES211",
+      "entities": [
+        {
+          "id": 389,
+          "name": "Ayuntamiento de Alegria-Dulantzi",
+          "orgs": [
+            {
+              "id": 911337,
+              "name": "Pleno",
+              "_links": {
+                "self": {
+                  "name": "Pleno",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/67/entities/389/orgs/911337"
+                }
+              }
+            },
+            {
+              "id": 911338,
+              "name": "Junta de Gobierno",
+              "_links": {
+                "self": {
+                  "name": "Junta de Gobierno",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/67/entities/389/orgs/911338"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Ayuntamiento de Alegria-Dulantzi",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/67/entities/389"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder67/es_doc/es_arch_poder67.html",
+      "_links": {
+        "self": {
+          "name": "Ayuntamiento de Alegria-Dulantzi",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/67"
+        }
+      }
+    }
+  ]
+}

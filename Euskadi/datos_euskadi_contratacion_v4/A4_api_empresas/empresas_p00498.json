@@ -1,0 +1,458 @@
+{
+  "totalItems": 9042,
+  "totalPages": 905,
+  "currentPage": 498,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "name": "DINAMIZA ASESORES, S.L.",
+      "registrationNumber": "08034",
+      "identificationNumber": "B85021350",
+      "address": "C/ Toledo, 128, 4º D",
+      "location": {
+        "postalCode": "28005",
+        "municipality": "Madrid",
+        "county": "Madrid",
+        "municipalityId": "079",
+        "countyId": "28"
+      },
+      "economicActivities": [
+        {
+          "id": "1.476.9",
+          "name": "Otras ediciones n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otras ediciones n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.476.9"
+            }
+          }
+        },
+        {
+          "id": "1.849.9",
+          "name": "Otros servicios independientes n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros servicios independientes n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.849.9"
+            }
+          }
+        },
+        {
+          "id": "1.933.9",
+          "name": "Otras actividades de enseñanza tales como idiomas, mecanografía",
+          "_links": {
+            "self": {
+              "name": "Otras actividades de enseñanza tales como idiomas, mecanografía",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.933.9"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2022-06-27",
+      "certificateEndDate": "2022-12-27",
+      "object": "ACTIVIDAD DE SERVICIOS EN GENERAL.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08034",
+      "_links": {
+        "self": {
+          "name": "DINAMIZA ASESORES, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/08034"
+        }
+      }
+    },
+    {
+      "name": "OLATZ URRESTI ELOSEGUI",
+      "registrationNumber": "08053",
+      "identificationNumber": "30641150K",
+      "address": "ALAMEDA URQUIJO 24 3 IZQDA",
+      "location": {
+        "postalCode": "48008",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "2.732",
+          "name": "Procuradores",
+          "_links": {
+            "self": {
+              "name": "Procuradores",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/2.732"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2022-06-27",
+      "certificateEndDate": "2022-12-27",
+      "object": "PROCURADORES",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08053",
+      "_links": {
+        "self": {
+          "name": "OLATZ URRESTI ELOSEGUI",
+          "href": "https://api.euskadi.eus/procurements/companies/08053"
+        }
+      }
+    },
+    {
+      "name": "KALAKALAB, S.C.",
+      "registrationNumber": "08469",
+      "identificationNumber": "J01555341",
+      "address": "CORRERIA, 70",
+      "location": {
+        "postalCode": "01001",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.961.1",
+          "name": "Producción de películas cinematográficas (incluso vídeos)",
+          "_links": {
+            "self": {
+              "name": "Producción de películas cinematográficas (incluso vídeos)",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.961.1"
+            }
+          }
+        },
+        {
+          "id": "1.979.9",
+          "name": "Otros servicios personales n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros servicios personales n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.979.9"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2022-06-27",
+      "certificateEndDate": "2022-12-21",
+      "object": "LA GESTIÓN CULTURAL Y PRODUCTORA DE CINE",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08469",
+      "_links": {
+        "self": {
+          "name": "KALAKALAB, S.C.",
+          "href": "https://api.euskadi.eus/procurements/companies/08469"
+        }
+      }
+    },
+    {
+      "name": "SOLFIX ENGINEERING, S.L.",
+      "registrationNumber": "07376",
+      "identificationNumber": "B88454624",
+      "address": "c/ La Venta, 2",
+      "location": {
+        "postalCode": "28880",
+        "municipality": "Meco",
+        "county": "Madrid",
+        "municipalityId": "083",
+        "countyId": "28"
+      },
+      "economicActivities": [
+        {
+          "id": "1.345",
+          "name": "Fabricación de aparatos electrodomésticos",
+          "_links": {
+            "self": {
+              "name": "Fabricación de aparatos electrodomésticos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.345"
+            }
+          }
+        },
+        {
+          "id": "1.614.2",
+          "name": "Venta al por mayor de productos de perfumería, droguería, higiene y belleza",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de productos de perfumería, droguería, higiene y belleza",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.614.2"
+            }
+          }
+        },
+        {
+          "id": "1.631",
+          "name": "Intermediarios del comercio",
+          "_links": {
+            "self": {
+              "name": "Intermediarios del comercio",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.631"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2022-06-26",
+      "certificateEndDate": "2022-12-26",
+      "object": "LA IMPORTACIÓN, EXPORTACIÓN Y COMERCIALIZACIÓN DE PRODUCTOS ELECTRÓNICOS, SANITARIOS, COSMÉTICOS, ORTOPÉDICOS, DIETÉTICOS, PRODUCTOS DE PUERICULTURA, EQUIPOS DE PROTECCIÓN INDIVIDUAL, PRODUCTOS SANITARIOS DE DIAGNÓSTICO IN VITRO Y TODO TIPO DE PRODUCTOS FARMACÉUTICOS QUE NO SEAN MEDICAMENTOS. VENTA AL POR MAYOR Y MENOR DE PRODUCTOS ELECTRÓNICOS RELACIONADOS CON LOS EPÍGRAFES ANTERIORES. EL DISEÑO, EJECUCIÓN, FINANCIACIÓN, OPERACIÓN, MANTENIMIENTO Y CONTROL DE INSTALACIONES ELÉCTRICAS Y DE ILUMINACIÓN. ESTUDIOS DE EFICIENCIA ENERGÉTICA, AUDITORAS ENERGÉTICAS, ANÁLISIS DE VIABILIDAD TÉCNICO ECONÓMICA PARA TODAS LAS FUENTES PRODUCTORAS DE ENERGÍA Y PARA TODAS LAS FUENTES CONSUMIDORAS. EJECUCIÓN DE PROYECTOS DE EFICIENCIA ENERGÉTICA, RELACIONADAS CON LA IMPLANTACIÓN DE SISTEMAS DE CONSUMOS DE ENERGÍA. GESTIÓN DE PROYECTOS DE EFICIENCIA ENERGÉTICA, ANÁLISIS DEL DISEÑO Y DE LA IMPLANTACIÓN DE MEDIDAS DE AHORRO Y EFICIENCIA ENERGÉTICA EN SISTEMAS DE CONSUMO DE ENERGÍA Y SU INSTALACIÓN. SERVICIOS DE INGENIERÍA, INSTALACIÓN Y DIRECCIÓN DE OBRA ASÍ COMO LA GESTIÓN INTEGRAL DE LA IMPLANTACIÓN Y OBRAS DE MEJORA DE TODAS LAS MEDIDAS DE AHORRO ENERGÉTICO, CONTROL Y REVISIÓN DE LA FACTURA ELÉCTRICA, GESTIÓN DEL CAMBIO DEL MERCADO LIBRE, ADECUACIÓN DE LAS POTENCIAS, CONTRATADA, AHORRO E ILUMINACIÓN CON TECNOLOGÍA LED. IMPLANTACIÓN DE PROTOCOLOS DE MEDICIÓN, VERIFICACIÓN Y CONTROL, CERTIFICACIÓN DE AHORROS Y SISTEMAS DE MONITORIZACIÓN Y CONTROL DEL CONSUMO DE ENERGÍA. EXTERNALIZACIÓN DE LA GESTIÓN ENERGÉTICA. SOLUCIÓN INTEGRAL DE OUTSOURCING ENERGÉTICO (COMPRA DE ENERGÍA, TRANSFORMACIÓN Y CONSUMO DE LA MISMA, MANTENIMIENTO PREVENTIVO Y CORRECTIVO, REPOSICIONES Y GARANTÍA TOTAL). TRABAJOS DE DISEÑO, INSTALACIÓN, VENTA Y MANTENIMIENTO DE HUERTOS SOLARES Y PLANTAS FOTOVOLTAICAS. DISEÑO, DESARROLLO, VENTA E INSTALACIÓN DE PRODUCTOS DE SEGURIDAD Y VIGILANCIA. DISEÑO, DESARROLLO, VENTA E INSTALACIÓN DE PRODUCTOS DE MOVILIDAD ELÉCTRICA. DESARROLLO DE ACTIVIDADES DE TELECOMUNICACIONES, GESTIÓN, DISTRIBUCIÓN, COMERCIALIZACIÓN, CREACIÓN Y DESARROLLO DE CONTENIDOS, APLICACIONES Y PLATAFORMAS DIGITALES DE BIG DATA PARA DIFERENTES SECTORES TALES COMO LA EDICIÓN DE PROGRAMAS INFORMÁTICOS, INFORMÁTICA, TELECOMUNICACIONES, OFIMÁTICA Y CONSULTORÍA, SERVICIOS DE TELECONTROL Y DOMÓTICA Y DE GESTIÓN DE PLATAFORMAS TECNOLÓGICAS Y SU INTEGRACIÓN Y COMERCIALIZACIÓN, DESARROLLO DE SOFTWARE DE INTELIGENCIA, INTEGRACIÓN DE SISTEMAS Y APLICACIONES. LA EXPLOTACIÓN DEL NEGOCIO DE FABRICACIÓN, COMERCIALIZACIÓN, DISTRIBUCIÓN Y VENTA MAYOR Y MENOR DE APARATOS Y ÚTILES PARA LA ILUMINACIÓN DECORATIVA E INDUSTRIAL, INTERIOR Y EXTERIOR, CON SUS ACCESORIOS, ANEXOS Y DERIVADOS. LA COMERCIALIZACIÓN, VENTA, ALQUILER Y FINANCIACIÓN DE ELEMENTOS DE ILUMINACIÓN E INSTALACIONES ELÉCTRICAS. QUEDAN EXCLUIDAS TODAS AQUELLAS ACTIVIDADES PARA CUYO EJERCICIO LA LEY EXIJA REQUISITOS ESPECIALES QUE NO QUEDEN CUMPLIDOS POR ESTA SOCIEDAD",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07376",
+      "_links": {
+        "self": {
+          "name": "SOLFIX ENGINEERING, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/07376"
+        }
+      }
+    },
+    {
+      "name": "NETWORK OUTSIGHT, S.L.",
+      "registrationNumber": "08086",
+      "identificationNumber": "B95845467",
+      "address": "C/ Uribitarte, 6, bajo",
+      "location": {
+        "postalCode": "48001",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.846",
+          "name": "Empresas de estudios de mercado",
+          "_links": {
+            "self": {
+              "name": "Empresas de estudios de mercado",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.846"
+            }
+          }
+        },
+        {
+          "id": "1.932.1",
+          "name": "Enseñanza de formación y perfeccionamiento profesional no superior",
+          "_links": {
+            "self": {
+              "name": "Enseñanza de formación y perfeccionamiento profesional no superior",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.932.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2022-06-26",
+      "certificateEndDate": "2022-12-26",
+      "object": "1. LA PRESTACIÓN DE SERVICIOS DE ASESORAMIENTO, ASISTENCIA TÉCNICA, CONSULTORÍA ESTRATÉGICA, CONSULTA Y ORIENTACIÓN PRESTADOS A EMPRESAS O PERSONAS FÍSICAS, TANTO NACIONALES COMO EXTRANJERAS, DE CARÁCTER JURÍDICO, FINANCIERO Y CONTABLE, TÉCNICOS, DE PUBLICIDAD, RELACIONES PÚBLICAS Y SIMILARES, ESTUDIOS DE MERCADO Y DE CONSULTORÍA SOBRE ACTIVIDADES INDUSTRIALES Y ECONÓMICAS, EN GENERAL. 2. LA PRESTACIÓN DE SERVICIOS RELACIONADOS CON ACTIVIDADES DE CONSULTORÍA EN MANAGEMENT, GESTIÓN DE ACTIVOS INCLUYENDO ACTIVIDADES DE EFICIENCIA ENERGÉTICA, COACHING Y DEMÁS ACTIVIDADES DE APOYO A LA GESTIÓN. 3. LA PROMOCIÓN O EL FOMENTO DE EMPRESAS DEDICADAS A ACTIVIDADES DE CARÁCTER EMPRESARIAL, MEDIANTE LA PARTICIPACIÓN TEMPORAL EN EL CAPITAL DE ENTIDADES, DIRIGIENDO Y GESTIONANDO DICHAS PARTICIPACIONES, Y, EN SU CASO, LAS ACTIVIDADES DESARROLLADAS, POR ÉSTAS, ASÍ COMO LA PRESTACIÓN DE SERVICIOS DE ASESORAMIENTO Y APOYO A LAS ENTIDADES PARTICIPADAS, TODO POR CUENTA PROPIA. 4.- LA ASESORÍA INFORMÁTICA Y TECNOLÓGICA. 5.- LA CONSULTORÍA, ANÁLISIS Y DESARROLLO DE SOFTWARE. 6.- FORMACIÓN REGLADA Y NO REGLADA EN CIENCIA SOCIAL, TEÓRICA Y APLICADA, ENTENDIDA EN EL SENTIDO MÁS AMPLIO: MÉTODOS Y TÉCNICAS DE INVESTIGACIÓN, DE TRATAMIENTO Y ANÁLISIS DE DATOS Y DE COMUNICACIÓN ONLINE Y OFFLINE. 7.- INTERMEDIACIÓN EN LA COMERCIALIZACIÓN DE PRODUCTOS Y/O SERVICIOS DE EMPRESAS Y/O AUTÓNOMOS, INDEPENDIENTEMENTE DE SU ÁMBITO. 7.- LA PRESTACIÓN, GESTIÓN Y REALIZACIÓN DE TODA CLASE DE ACTIVIDADES Y SERVICIOS RELACIONADOS CON LA ELABORACIÓN DE ESTUDIOS, DICTÁMENES Y PROYECTOS; ASESORAMIENTO INTEGRAL DE CARÁCTER EMPRESARIAL, INDUSTRIAL Y/O COMERCIAL, TANTO A PERSONAS JURÍDICAS COMO A PARTICULARES; LA REALIZACIÓN DE COMISIONES POR GESTIONES, REPRESENTACIONES Y MEDIACIONES MERCANTILES. 8.- EL ESTUDIO PREVIO Y LA MATERIALIZACIÓN PRÁCTICA DE LA PUESTA EN MARCHA DE LA EMPRESA, LLAVE EN MANO. 9.- DIGITALIZACIÓN DE PROCESOS. 10.- COMERCIALIZACIÓN DE SOFTWARE. 11.- SERVICIOS DE ALQUILER, RENTING, LEASING TECNOLÓGICO. VENTA ON-LINE DE PRODUCTOS Y SERVICIOS RELACIONADOS CON EL OBJETO SOCIAL DE LA EMPRESA EN SU CONJUNTO. 12.- PRODUCCIÓN AUDIOVISUAL. 13.- REALIZACIÓN DE AUDITORÍAS INFORMÁTICAS, TECNOLÓGICAS Y ESTRATÉGICAS DE CUALQUIER ÁMBITO. 14.- INVESTIGACIÓN SOCIOLÓGICA DE MERCADOS Y DE TENDENCIAS.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08086",
+      "_links": {
+        "self": {
+          "name": "NETWORK OUTSIGHT, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/08086"
+        }
+      }
+    },
+    {
+      "name": "EGIN-SOFT, S.L.",
+      "registrationNumber": "00698",
+      "identificationNumber": "B48174692",
+      "address": "C/ ALAMEDA URQUIJO, Nº 60 - 1º IZDA.",
+      "location": {
+        "postalCode": "48011",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.659.2",
+          "name": "Venta al por menor de muebles de oficina y máquinas y equipos de oficina",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de muebles de oficina y máquinas y equipos de oficina",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.659.2"
+            }
+          }
+        },
+        {
+          "id": "1.845",
+          "name": "Explotación electrónica por cuenta de terceros",
+          "_links": {
+            "self": {
+              "name": "Explotación electrónica por cuenta de terceros",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.845"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2022-06-26",
+      "certificateEndDate": "2022-12-26",
+      "object": "ASISTENCIA TÉCNICA DE SOFTWARD, EN TODOS SUS TIPOS Y GAMAS, LA PRESTACIÓN DE SERVICIOS RELATIVOS A LA PROGRAMACIÓN, LA FORMACIÓN TÉCNICA Y COMERCIAL DE PERSONAL, LA EXPLOTACIÓN ELECTRÓNICA DE ORDENADORES Y CENTRO DE CÁLCULO, LA COMPRA, VENTA DE ORDENADORES TANTO AL POR MAYOR COMO AL POR MENOR, EN TERRITORIO NACIONAL COMO EXTRANJERO, LOS SERVICIOS DE MEDIACIÓN EN LA COMPRA Y VENTA DE ORDENADORES Y LA INSTALACIÓN DE ORDENADORES",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/00698",
+      "_links": {
+        "self": {
+          "name": "EGIN-SOFT, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/00698"
+        }
+      }
+    },
+    {
+      "name": "FERNANDEZ BARCIA FORESTAL, S.L.",
+      "registrationNumber": "08043",
+      "identificationNumber": "B39545199",
+      "address": "Bº Sorribero Alto nº 20 puerta 14",
+      "location": {
+        "postalCode": "39470",
+        "municipality": "Piélagos",
+        "county": "Cantabria",
+        "municipalityId": "052",
+        "countyId": "39"
+      },
+      "economicActivities": [
+        {
+          "id": "1.617.3",
+          "name": "Venta al por mayor de madera y corcho",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de madera y corcho",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.617.3"
+            }
+          }
+        },
+        {
+          "id": "1.722",
+          "name": "Transporte de mercancías por carretera",
+          "_links": {
+            "self": {
+              "name": "Transporte de mercancías por carretera",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.722"
+            }
+          }
+        },
+        {
+          "id": "1.912",
+          "name": "Servicios forestales",
+          "_links": {
+            "self": {
+              "name": "Servicios forestales",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.912"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2022-06-26",
+      "certificateEndDate": "2022-12-26",
+      "object": "EL COMERCIO AL POR MAYOR DE ARBOLADO Y MADERAS, SERVICIOS FORESTALES Y TRANSPORTES DE MERCANCÍAS POR CARRETERA.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08043",
+      "_links": {
+        "self": {
+          "name": "FERNANDEZ BARCIA FORESTAL, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/08043"
+        }
+      }
+    },
+    {
+      "name": "MAN VEHÍCULOS INDUSTRIALES ESPAÑA, S.A",
+      "registrationNumber": "04345",
+      "identificationNumber": "A78507498",
+      "address": "AVDA. DE LA CAÑADA, 52",
+      "location": {
+        "postalCode": "28823",
+        "municipality": "Coslada",
+        "county": "Madrid",
+        "municipalityId": "049",
+        "countyId": "28"
+      },
+      "economicActivities": [
+        {
+          "id": "1.654.1",
+          "name": "Venta al por menor de vehículos terrestres",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de vehículos terrestres",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.654.1"
+            }
+          }
+        },
+        {
+          "id": "1.691.2",
+          "name": "Reparación de vehículos automóviles, bicicletas y otros vehículos",
+          "_links": {
+            "self": {
+              "name": "Reparación de vehículos automóviles, bicicletas y otros vehículos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.691.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2022-06-23",
+      "certificateEndDate": "2022-12-16",
+      "object": "LA IMPORTACIÓN Y COMERCIALIZACIÓN DE VEHÍCULOS, PIEZAS DE RECAMBIOS PARA VEHÍCULOS, COMPONENTES Y ACCESORIOS DE CUALQUIER CLASE, PREDOMINANTEMENTE EN EL MERCADO ESPAÑOL Y ESPECIALMENTE DE LOS PRODUCTOS DE LA GAMA DE VEHÍCULOS INDUSTRIALES MAN Y MAN-VW, ASI COMO EL CORRESPONDIENTE SERVICIO POST-VENTA.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/04345",
+      "_links": {
+        "self": {
+          "name": "MAN VEHÍCULOS INDUSTRIALES ESPAÑA, S.A",
+          "href": "https://api.euskadi.eus/procurements/companies/04345"
+        }
+      }
+    },
+    {
+      "name": "JOAQUIN LORENTE GALDOS",
+      "registrationNumber": "08024",
+      "identificationNumber": "78884153H",
+      "address": "CALL EBIELSA 39 6ºA",
+      "location": {
+        "postalCode": "50014",
+        "municipality": "Zaragoza",
+        "county": "Zaragoza",
+        "municipalityId": "297",
+        "countyId": "50"
+      },
+      "economicActivities": [
+        {
+          "id": "2.411",
+          "name": "Arquitectos",
+          "_links": {
+            "self": {
+              "name": "Arquitectos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/2.411"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2022-06-22",
+      "certificateEndDate": "2022-12-22",
+      "object": "ARQUITECTOS.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08024",
+      "_links": {
+        "self": {
+          "name": "JOAQUIN LORENTE GALDOS",
+          "href": "https://api.euskadi.eus/procurements/companies/08024"
+        }
+      }
+    },
+    {
+      "name": "EGURPE, KOOP. ELK. TXIKIA",
+      "registrationNumber": "08457",
+      "identificationNumber": "F75201251",
+      "address": "Errota industrialdea 1, bj4 ",
+      "location": {
+        "postalCode": "20749",
+        "municipality": "Zestoa",
+        "county": "Gipuzkoa",
+        "municipalityId": "027",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.505.5",
+          "name": "Carpintería y cerrajería",
+          "_links": {
+            "self": {
+              "name": "Carpintería y cerrajería",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.505.5"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2022-06-21",
+      "certificateEndDate": "2022-12-08",
+      "object": "EL OBJETO DE ESTA SOCIEDAD COOPERATIVA ES LA RESTAURACIÓN, REHABILITACIÓN, FABRICACIÓN, MODULACIÓN Y MONTAJE DE ESTRUCTURAS EN MADERA PARA LA CONSTRUCCIÓN DE EDIFICIOS PARA DIFERENTES USOS CON CRITERIOS DE SOSTENIBILIDAD, ECOLOGÍA Y BIOCONSTRUCCIÓN CON EL FIN DE MEJORAR LA CALIDAD DE VIDA DE LAS PERSONAS DE FORMA INDIVIDUAL O COLECTIVA.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08457",
+      "_links": {
+        "self": {
+          "name": "EGURPE, KOOP. ELK. TXIKIA",
+          "href": "https://api.euskadi.eus/procurements/companies/08457"
+        }
+      }
+    }
+  ]
+}

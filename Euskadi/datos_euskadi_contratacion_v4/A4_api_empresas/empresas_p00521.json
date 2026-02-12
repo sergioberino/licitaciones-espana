@@ -1,0 +1,418 @@
+{
+  "totalItems": 9042,
+  "totalPages": 905,
+  "currentPage": 521,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "name": "EXCAVACIONES URGULL S.L.",
+      "registrationNumber": "04787",
+      "identificationNumber": "B20366019",
+      "address": "AVDA AMETZAGAÑA 17 BAJO",
+      "location": {
+        "postalCode": "20012",
+        "municipality": "Donostia / San Sebastián",
+        "county": "Gipuzkoa",
+        "municipalityId": "069",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.501.2",
+          "name": "Construcción completa, reparación y conservación obras civiles",
+          "_links": {
+            "self": {
+              "name": "Construcción completa, reparación y conservación obras civiles",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.2"
+            }
+          }
+        },
+        {
+          "id": "1.502.1",
+          "name": "Demoliciones y derribos en general",
+          "_links": {
+            "self": {
+              "name": "Demoliciones y derribos en general",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.502.1"
+            }
+          }
+        },
+        {
+          "id": "1.852",
+          "name": "Alquiler de maquinaria y equipo para la construcción",
+          "_links": {
+            "self": {
+              "name": "Alquiler de maquinaria y equipo para la construcción",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.852"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2021-07-22",
+      "certificateEndDate": "2022-01-21",
+      "object": "ACTIVIDADES CONSISTENTES EN EXCAVACIONES, CONSTRUCCIONES, DEMOLICIONES, DERRIBOS,  CONSOLIDACIÓN Y PREPARACIÓN DE TERRENOS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/04787",
+      "_links": {
+        "self": {
+          "name": "EXCAVACIONES URGULL S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/04787"
+        }
+      }
+    },
+    {
+      "name": "JOSE LUIS TORNARIA BENGOETXEA, S.L.",
+      "registrationNumber": "07357",
+      "identificationNumber": "B31472327",
+      "address": "CALLE DISEMINADO 51",
+      "location": {
+        "postalCode": "31797",
+        "municipality": "Ultzama",
+        "county": "Navarra",
+        "municipalityId": "236",
+        "countyId": "31"
+      },
+      "economicActivities": [
+        {
+          "id": "1.501.1",
+          "name": "Construcción completa, reparación y conservación de edificaciones",
+          "_links": {
+            "self": {
+              "name": "Construcción completa, reparación y conservación de edificaciones",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.1"
+            }
+          }
+        },
+        {
+          "id": "1.722",
+          "name": "Transporte de mercancías por carretera",
+          "_links": {
+            "self": {
+              "name": "Transporte de mercancías por carretera",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.722"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2021-07-22",
+      "certificateEndDate": "2021-12-30",
+      "object": "LA PROMOCIÓN Y CONSTRUCCIÓN DE TODA CLASE DE INMUEBLES, VIVIENDAS Y LOCALES COMERCIALES E INDUSTRIALES; LA REALIZACIÓN DE TODA CLASE DE TRABAJOS RELACIONADOS CON LA ALBAÑILERÍA Y LA CONSTRUCCIÓN; Y LA PROMOCIÓN Y DESARROLLO DE PLANES TOTALES Y PARCIALES DE REPARCELACIÓN Y URBANÍSTICOS. LA COMPRA, VENTA, ALMACENAMIENTO, REPRESENTACIÓN, DISTRIBUCIÓN Y COMERCIALIZACIÓN DE TODA CLASE DE MATERIALES, MAQUINARIA Y UTENSILIOS PARA LA INDUSTRIA DE LA CONSTRUCCIÓN. EL SERVICIO PÚBLICO DE TRANSPORTE DE MERCANCÍAS POR CARRETERA, TANTO NACIONAL COMO INTERNACIONAL. LA COMPRA, VENTA, TENENCIA, ADMINISTRACIÓN, ARRENDAMIENTO Y EXPLOTACIÓN DE TODA CLASE DE BIENES INMUEBLES",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07357",
+      "_links": {
+        "self": {
+          "name": "JOSE LUIS TORNARIA BENGOETXEA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/07357"
+        }
+      }
+    },
+    {
+      "name": "ACVIL APARCAMIENTOS S.L",
+      "registrationNumber": "07818",
+      "identificationNumber": "B73454134",
+      "address": "CALLE PRINCESA Nº 29 3º dch",
+      "location": {
+        "postalCode": "28008",
+        "municipality": "Madrid",
+        "county": "Madrid",
+        "municipalityId": "079",
+        "countyId": "28"
+      },
+      "economicActivities": [
+        {
+          "id": "1.751.2",
+          "name": "Guarda y custodia de vehículos en \"parkings\"",
+          "_links": {
+            "self": {
+              "name": "Guarda y custodia de vehículos en \"parkings\"",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.751.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2021-07-21",
+      "certificateEndDate": "2021-11-16",
+      "object": "A) LA CONSTRUCCIÓN Y EXPLOTACIÓN DE TODA CLASE DE APARCAMIENTOS PARA VEHÍCULOS, YA SEA A TÍTULO DE DUEÑA, ARRENDATARIA CONCESIONARIA O POR CUALQUIER OTRO TÍTULO. B) LA PRESTACIÓN DE TODOS LOS SERVICIOS ANEJOS A UN APARCAMIENTO PARA VEHÍCULOS, TALES COMO LAVADO, REVISIONES PERIÓDICAS DE VEHÍCULOS Y VENTA DE LUBRICANTES Y ACCESORIOS PARA VEHÍCULOS. C) LA PRESTACIÓN DE SERVICIOS DE ARQUITECTURA, INGENIERÍA Y CONSULTORÍA SOBRE EL DISEÑO, CONSTRUCCIÓN, EXPLOTACIÓN Y GESTIÓN DE APARCAMIENTOS PARA VEHÍCULOS. D) LA GESTIÓN DE APARCAMIENTOS PARA VEHÍCULOS POR CUENTA DE TERCEROS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07818",
+      "_links": {
+        "self": {
+          "name": "ACVIL APARCAMIENTOS S.L",
+          "href": "https://api.euskadi.eus/procurements/companies/07818"
+        }
+      }
+    },
+    {
+      "name": "BIZKARES BIOSOLUTIONS S.L.",
+      "registrationNumber": "07816",
+      "identificationNumber": "B95970810",
+      "address": "AL/ MAZARREDO, 65-7ºizq",
+      "location": {
+        "postalCode": "48009",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.911",
+          "name": "Servicios agrícolas y ganaderos",
+          "_links": {
+            "self": {
+              "name": "Servicios agrícolas y ganaderos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.911"
+            }
+          }
+        },
+        {
+          "id": "1.936",
+          "name": "Investigación científica y técnica",
+          "_links": {
+            "self": {
+              "name": "Investigación científica y técnica",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.936"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2021-07-20",
+      "certificateEndDate": "2021-12-27",
+      "object": "A) LA PRESTACIÓN DE SERVICIOS DECONSULTORÍA E INGENIERÍA, VINCULADOS A LOS ÁMBITOS DE LA EDIFICACIÓN EN MADERA, EDIFICACIÓN PASIVA, URBANISMO, TERRITORIO, GEOTECNICA, CARTORAFÍA, HIDROLOGÍA, MEDIOAMBIENTE, AGRICULTURA, GANADERÍA, SISTEMAS FORESTALES, BIOCONSTRUCCIÓN, BIOTECNOLOGÍA Y BIOENERGÍA. B) LAS ACTIVIDADES DE INVESTIGACIÓN, EXPERIMENTACIÓN, DESARROLLO E INNOVACIÓN INDUSTRIAL Y CIENTÍFICA DE PRODUCTOS, MATERIALES, TECNOLOGÍA, CONOCIMIENTO, INGENIERÍA, SERVICIOS Y MERCADO, VINCULADOS A LA BIOTECNOLOGÍA, LA BIOCONSTRUCCIÓN, BIOENERGÍA, LA VALORIZACIÓN DE RESIDUOS, CALIDAD AMBIENTAL Y LOS APROVECHAMIENTOS Y GESTIÓN AGROFORESTAL. C) LA PROMOCIÓN, CONSTRUCCIÓN, REHABILITACIÓN, VENTA, CONSERVACIÓN Y EXPLOTACIÓN, INCLUIDO EL ARRENDAMIENTO NO FINANCIERO DE TODO TIPO DE FINCAS Y EDIFICACIONES, TALES COMO VIVIENDAS, URBANIZACIONES, ESTABLECIMIENTOS Y COMPLEJOS INDUSTRIALES, INSTALACIONES AGROFORESTALES Y AGROALIMENTARIAS. D) LA EJECUCIÓN, TOTAL O PARCIAL, DE CUALQUIER TIPO DE OBRA, PÚBLICA O PRIVADA, EL MANTENIMIENTO, CONSERVACIÓN Y REFORMA DE EDIFICIOS E INSTALACIONES, FORESTALES, AGRÍCOLAS, CIVILES Y MEDIOAMBIENTALES, PUDIENDO REALIZAR TODO ELLO POR CUENTA PROPIA O AJENA, MEDIANTE CONTRATA, SUBCONTRATA O ADMINISTRACIÓN DE CUALQUIER GÉNERO, RELATIVAS A LA CONSTRUCCIÓN, MANTENIMIENTO Y CONSERVACIÓN, EN GENERAL, DE TODO TIPO DE OBRAS Y EDIFICACIONES. E) LA REALIZACIÓN DE ACTIVIDADES DE GESTIÓN URBANÍSTICA, INCLUYENDO LA REDACCIÓN, ELABORACIÓN Y PRESENTACIÓN DE TODO TIPO DE PROYECTOS DE GESTIÓN Y PLANEAMIENTO URBANÍSTICO. F) LA ADMINISTRACIÓN Y LA GESTIÓN DE FINCAS, MONTES, CENTROS AGRARIOS, FORESTALES, MEDIOAMBIENTALES O DE CONSERVACIÓN DE LA NATURALEZA, ASÍ COMO DE ESPACIOS Y DE RECURSOS NATURALES. G) LA TRANSFORMACIÓN, PRODUCCIÓN, FABRICACIÓN Y COMERCIALIZACIÓN DE PRODUCTOS DE ORIGEN MINERAL, AGROFORESTAL, HORTÍCOLA, GANADERO O SILVESTRE, PARA DESTINO ALIMENTARIO BIOENERGÉTICO O BIOINDUSTRIAL.  -) LA INVERSIÓN Y EXPLOTACIÓN DE INSTALACIONES INDUSTRIALES, ENERGÉTICAS, AGROFORESTALES, GANADERAS, AGROALIMENTARIAS, TURÍSTICAS Y HOSTELERAS. H) LA ACTIVIDAD AGRÍCOLA, GANADERA, ANIMAL, FORETAL Y DE ACUICULTURA Y LA COMERCIALIZACIÓN DE SUS PRODUCTOS. I) EL EJERCICIO DE ACTIVIDADES DE GESTIÓN, TRATAMIENTO, TRANSOFMRACIÓN O ELIMINACIÓN DE RESIDUOS, SEAN O NO TÓXICOS O PELIGROSOS. J) LA CONTRATACIÓN DE SERVICIOS PÚBLICOS Y PRIVADOS DE RECOGIDA, TRNSPORTE, TRATAMIENTO, APROVECHAMIENTO Y ELIMINACIÓ DE RESIDUOS SÓLIDOS URBANOS, INDUSTRIALES DE CUALQUIER NATURALEZA, AGRÍCOLAS, GANADEROS, FORESTALES, MINERALES, ASÍ COMO OTROS RESIDUOS QUE POR SUS TÉCNICAS DE GESTIÓN SON ASIMILABLES A LOS ANTERIORES. K) EL RECICLAJE, APROVECHAMIENTO Y RECUPERACIÓN DE LOS ELEMENTOS COMERCIABLES CONTENIDOS EN LOS RESIDUOS INDICADOS, O SUSCEPTIBLES DE CUALQUIER FORMA DE VALORACIÓN. L) LA GESTIÓN INTEGRAL DE INSTALACIONES DE TRATAMIENTO Y VALORIZACIÓN DE PURINES Y DE OTROS PRODUCTOS GANADEROS, ASÍ COMO SU MANTENIMIENTO. M) LA GESTIÓN, VALORIZACIÓN Y TRATAMIENTO DE RESIDUOS AGRO-GANADEROS Y AGRO-INDUSTRIALES. N) LA PRESTACIÓN DE TODA CLASE DE SERVICIOS DE CONSULTORÍA Y ASESORÍA MEDIOAMBIENTAL Y ENERGÉTICA PARA PARTICULARES, EMPRESAS, PERSONAS FÍSICAS O JURÍDICAS, PÚBLICAS O PRIVADAS. -) LA INTERVENCIÓN POR MEDIO DE LA INTERMEDIACIÓN EN TAREAS DE ESTUDIO, PREPARACIÓN, DESARROLLO, EJECUCIÓN Y CONSTRUCCIÓN, DE PROYECTOS DE INNOVACIÓN Y DESARROLLO TECNOLÓGICO, ACTIVIDADES DE INGENIERÍA Y CONSTRUCCIÓN Y PROYECTOS ENERGÉTICOS. Ñ) LA RECOGIDA, TRANSPORTE, TRANSFORMACIÓN, VALORIZACIÓN, COMERCIALIZACIÓN, RECICLAJE, IMPORTACIÓN Y EXPORTACIÓN DE CUALQUIER TIPO DE SUBPRODUCTO O RESIDUO, TANTO ORGÁNICO COMO INORGÁNICO, O DE CUALQUIER PRODUCTO, SUBPRODUCTO O RESIDUO OBTENIDO A PARTIR DE LOS MISMOS. O) COMPRA, VENTA, FABRICACIÓN Y MANIPULACIÓN DE PRODUCTOS FERTILIZANTES ORGÁNICOS, INORGÁNICOS, FITOSANITARIOS, ABONOS, SEMILLAS, PIENSOS Y DEMÁS PRODUCTOS AUXILIARES PARA USO EN JARDINERÍA, Y DE PRODUCTOS DESTINADOS A ANIMALES DOMÉSTICOS. P) TRANSFORMACIÓN Y RECICLAJE DE PRODUCTOS Y RESIDUOS URBANOS, INDUSTRIALES, AGROALIMENTARIOS, AGRÍCOLAS Y GANADEROS, Y LA COMERCIALIZACIÓN DE LOS COMPOSTAJES OBTENIDOS. Q) PRODUCCIÓN, EXPLOTACIÓN, CULTIVO, PROCESADO, VALORIZACIÓN, EXPORTACIÓN E IMPORTACIÓN, CONSERVACIÓN, DISTRIBUCIÓN Y VENTA AL POR MAYOR Y MENOR, DE PRODUCTOS Y SUBPRODUCTOS FORESTALES, PARA DESTINO INDUSTRIAL, ENERGÉTICO, QUÍMICO, MEDIOAMBIENTAL O AGROALIMENTARIO. R) PRODUCCIÓN, EXPLOTACIÓN, CULTIVO, PROCESADO, VALORIZACIÓN, EXPORTACIÓN E IMPORTACIÓN, CONSERVACIÓN, DISTRIBUCIÓN Y VENTA AL POR MAYOR Y MENOR, DE PRODUCTOS HORTO-FRUTÍCOLAS Y ENERGÉTICOS, DE CULTIVO EN INVERNADERO. S) EL DISEÑO, LA INVESTIGACIÓN Y DESARROLLO, FABRICACIÓN, COMPRA, VENTA, SUMINISSTRO, EXPORTACIÓN, IMPORTACIÓN, ALQUILER, MANTENIMIENTO, DISTRIBUCIÓN, REPRESENTACIÓN COMERCIAL Y EXPLOTACIÓN DE MATERIALES, EQUIPOS, MÁQUINAS E INSTALACIONES DESTINADAS VINCULADOS A SECTOR FORETAL, AGRARIO, MEDIAMBIENTAL Y BIOENERGÉTICO. T) LA IMPORTACIÓN Y EXPORTACIÓN, EN NOMBRE PROPIO O POR CUENTA DE TERCEROS, DE PRODUCTOS RELACIONADOS CON LAS ACTIVIDADES QUE SE RELACIONAN EN LOS APARTADOS ANTERIORES. U) LA REALIZACIÓN DE TAREAS O ACTIVIDADES COMPLEMENTARIAS O ACCESORIAS A LAS CITADAS ANTERIORMENTE",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07816",
+      "_links": {
+        "self": {
+          "name": "BIZKARES BIOSOLUTIONS S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/07816"
+        }
+      }
+    },
+    {
+      "name": "SALAZAR LÓPEZ CID PROCURADORES ASOCIADOS, S.L.P.",
+      "registrationNumber": "07813",
+      "identificationNumber": "B26490086",
+      "address": "HERMANOS MOROY 1 6º IFC 601",
+      "location": {
+        "postalCode": "26001",
+        "municipality": "Logroño",
+        "county": "Rioja, La",
+        "municipalityId": "089",
+        "countyId": "26"
+      },
+      "economicActivities": [
+        {
+          "id": "1.841",
+          "name": "Servicios jurídicos",
+          "_links": {
+            "self": {
+              "name": "Servicios jurídicos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.841"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2021-07-20",
+      "certificateEndDate": "2021-12-13",
+      "object": "LA ACTIVIDAD PROPIA DE LOS PROFESIONALES DE LOS PROFESIONALES DE LA PROCURADURÍA\r\n",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07813",
+      "_links": {
+        "self": {
+          "name": "SALAZAR LÓPEZ CID PROCURADORES ASOCIADOS, S.L.P.",
+          "href": "https://api.euskadi.eus/procurements/companies/07813"
+        }
+      }
+    },
+    {
+      "name": "LA MACHINE FACTORIA GRAFICA, S.L.",
+      "registrationNumber": "03774",
+      "identificationNumber": "B95378527",
+      "address": "CALZADAS DE MALLONA, 3",
+      "location": {
+        "postalCode": "48006",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.843.9",
+          "name": "Otros servicios técnicos n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros servicios técnicos n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.9"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2021-07-20",
+      "certificateEndDate": "2022-01-01",
+      "object": "LA CREACIÓN Y DESARROLLO DE ACTIVIDADES EN TORNO AL DISEÑO GRÁFICO, DESARROLLO Y GESTIÓN DE ESTRATEGIAS DE COMUNICACIÓN, SERVICIOS INTEGRALES DE DISEÑO Y CREACIÓN DE PRODUCTOS DE DISEÑO. LA ELABORACIÓN DE CAMPAÑAS DE IMAGEN TANTO PARA TODO TIPO DE ENTIDADES E INSTITUCIONES DE DERECHO PUBLICO COMO PRIVADAS, Y PARA TODO TIPO DE OBJETOS, BIENES, DISEÑOS Y PRODUCTOS, MEDIANTE PUBLICIDAD, MÓVIL Y ESTÁTICA O POR MEDIOS AUDIOVISUALES O RADIOFÓNICOS Y CUALESQUIERA OTROS, QUE SIRVAN PARA LA PROMOCIÓN DE LOS MISMOS. SERVICIOS PUBLICITARIOS Y DE PROPAGANDA A TRAVÉS DE ACTIVIDADES DE AGENCIA DE PUBLICIDAD, DISEÑO INDUSTRIAL Y PUBLICITARIO, CREATIVIDAD ARTÍSTICA INDUSTRIAL Y PUBLICITARIA, GESTIÓN PUBLICITARIA CONTRATANDO O SUBCONTRATANDO CUANTO SEA PRECISO, INTERMEDIACIÓN EN EL MERCADO PUBLICITARIO, ORGANIZACIÓN Y COMPRAVENTA DE TODO OBJETO PUBLICITARIO, ACTIVIDADES DE RELACIONES PUBLICAS, DE PATROCINIO, DE MARKETING DIRECTO, DE COMUNICACION INTERNA Y EXTERNA, DE PROMOCIÓN, A TRAVÉS DE CUALESQUIERA CANALES DE COMUNICACIÓN, INCLUÍDOS LOS \"ON LINE\" POR INTERNET O CUALESQUIERA OTRAS TECNOLOGÍAS DE LA INFORMACIÓN Y DE LA COMUNICACIÓN",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03774",
+      "_links": {
+        "self": {
+          "name": "LA MACHINE FACTORIA GRAFICA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/03774"
+        }
+      }
+    },
+    {
+      "name": "AT CAPITAL, S.L.",
+      "registrationNumber": "07807",
+      "identificationNumber": "B42860205",
+      "address": "CERDEÑO, 31",
+      "location": {
+        "postalCode": "33010",
+        "municipality": "Oviedo",
+        "county": "Asturias",
+        "municipalityId": "044",
+        "countyId": "33"
+      },
+      "economicActivities": [
+        {
+          "id": "1.852",
+          "name": "Alquiler de maquinaria y equipo para la construcción",
+          "_links": {
+            "self": {
+              "name": "Alquiler de maquinaria y equipo para la construcción",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.852"
+            }
+          }
+        },
+        {
+          "id": "1.854.2",
+          "name": "Alquiler de automóviles sin conductor en régimen de \"renting\"",
+          "_links": {
+            "self": {
+              "name": "Alquiler de automóviles sin conductor en régimen de \"renting\"",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.854.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2021-07-20",
+      "certificateEndDate": "2022-01-04",
+      "object": "LA REALIZACIÓN DE TODAS LAS ACTIVIDADES RELACIONADAS CON LA COMPRAVENTA, ADMINISTRACIÓN Y CESIÓN DE USO CON O SIN OPCIÓN DE COMPRA, DE VEHÍCULOS PARA EL TRANSPORTE DE PERSONAS Y MERCANCÍAS, ASÍ COMO MAQUINARIA INDUSTRIAL, EXCLUIDO EL ARRENDAMIENTO FINANCIERO. LA REALIZACIÓN DE TODAS LAS ACTIVIDADES RELACIONADAS CON EL MANTENIMIENTO, REPARACIÓN Y CONSERVACIÓN DE DICHOS BIENES",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07807",
+      "_links": {
+        "self": {
+          "name": "AT CAPITAL, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/07807"
+        }
+      }
+    },
+    {
+      "name": "VICTORIO CELAYA, S.L.",
+      "registrationNumber": "06951",
+      "identificationNumber": "B20372462",
+      "address": "BISTA EDER 15-1º",
+      "location": {
+        "postalCode": "20600",
+        "municipality": "Eibar",
+        "county": "Gipuzkoa",
+        "municipalityId": "030",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.501.1",
+          "name": "Construcción completa, reparación y conservación de edificaciones",
+          "_links": {
+            "self": {
+              "name": "Construcción completa, reparación y conservación de edificaciones",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.1"
+            }
+          }
+        },
+        {
+          "id": "1.501.2",
+          "name": "Construcción completa, reparación y conservación obras civiles",
+          "_links": {
+            "self": {
+              "name": "Construcción completa, reparación y conservación obras civiles",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2021-07-19",
+      "certificateEndDate": "2022-01-17",
+      "object": "TODA CLASE DE OBRAS DE ALBAÑILERÍA. LA CONSTRUCCIÓN COMPLETA DE EDIFICACIÓN Y OBRAS CIVILES; OBRAS DE URBANIZACIÓN, PARCELACIÓN, PAVIMENTACIONES, CIMENTACIONES, PERFORACIONES, SANEAMIENTOS, HIDRÁULICAS, PUERTOS,  AEROPUERTOS, DRAGADOS Y TODAS LAS OBRAS PÚBLICAS Y PRIVADAS SIN EXCEPCIÓN, SU REPARACIÓN, CONSERVACIÓN, ESTUDIO Y REDACCIÓN DE PLANOS Y PROYECTOS, REFORMAS Y APROVECHAMIENTOS. LA REALIZACIÓN DE TODO TIPO DE INSTALACIONES ELÉCTRICAS DE ALTA Y BAJA TENSIÓN -INCLUIDAS LAS LÍNEAS ELÉCTRICAS DE B.T. Y A.T.- Y SISTEMAS DE COMUNICACIÓN , EL MONTAJE DE CONJUNTOS Y SUBCONJUNTOS DE PIEZAS MECÁNICAS, ELÉCTRICAS Y ELECTRÓNICAS.  LA REALIZACIÓN DE LA INSTALACIÓN, MANTENIMIENTO Y CONSERVACIÓN DE TODA CLASE DE INSTALACIONES DE FONTANERÍA, AGUA CALIENTE SANITARIA, CLIMATIZACIÓN, CALEFACCIÓN, VENTILACIÓN, EXTRACCIÓN Y DE TODAS LAS MODALIDADES DE LOS SISTEMAS DE DETECCIÓN CONTRA INCENDIOS. LA INSTALACIÓN Y MANTENIMIENTO DE TELECOMUNICACIONES, REDES DE DATOS, INFORMÁTICO, INSTALACIONES DE ENERGÍAS RENOVABLES, CENTRALES SOLARES Y EÓLICAS. LA REALIZACIÓN DE TODO TIPO DE TRABAJOS DE JARDINERÍA Y PLANTACIONES, ASÍ COMO SU CONSERVACIÓN Y MANTENIMIENTO. CONSERVACIÓN Y MANTENIMIENTO DE EDIFICIOS Y MOBILIARIO URBANO; SERVICIOS DE LIMPIEZA GENERAL",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06951",
+      "_links": {
+        "self": {
+          "name": "VICTORIO CELAYA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/06951"
+        }
+      }
+    },
+    {
+      "name": "ZIHURKO SOCIEDAD DE CORREDURÍA DE SEGUROS, S.A.",
+      "registrationNumber": "03687",
+      "identificationNumber": "A20162053",
+      "address": "PILOTEGI BIDEA, 2-1º. OF. 101",
+      "location": {
+        "postalCode": "20018",
+        "municipality": "Donostia / San Sebastián",
+        "county": "Gipuzkoa",
+        "municipalityId": "069",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.832.1",
+          "name": "Agencias de seguros y corredurías de seguros",
+          "_links": {
+            "self": {
+              "name": "Agencias de seguros y corredurías de seguros",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.832.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2021-07-13",
+      "certificateEndDate": "2022-01-01",
+      "object": "LA CORREDURÍA DE SEGUROS MEDIANTE LA PROMOCIÓN, MEDIACIÓN Y ASESORAMIENTO PARA LA FORMALIZACIÓN DE CONTRATOS DE SEGUROS PRIVADOS ENTRE PERSONAS FÍSICAS O JURÍDICAS Y ENTIDADES ASEGURADORAS LEGALMENTE AUTORIZADAS O ÉSTAS ENTRE SI. SERÁN OBJETO DE SU MEDIACIÓN, PROMOCIÓN Y ASESORAMIENTO, CUALQUIER MODALIDAD DE SEGURO PRIVADO Y CUANTAS COMBINACIONES Y CLASES DE SEGUROS SEAN ADMITIDOS POR LA LEGISLACIÓN, TODO ELLO CON SUJECIÓN A LAS DISPOSICIONES OFICIALES QUE REGULAN O PUEDAN REGULAR ESTA ACTIVIDAD Y LAS REGLAS TÉCNICAS Y JURÍDICAS QUE FIJAN EL CONTRATO DE SEGURO.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03687",
+      "_links": {
+        "self": {
+          "name": "ZIHURKO SOCIEDAD DE CORREDURÍA DE SEGUROS, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/03687"
+        }
+      }
+    },
+    {
+      "name": "INGELAN 2000 S.L.",
+      "registrationNumber": "06419",
+      "identificationNumber": "B95496311",
+      "address": "ALAMEDA URQUIJO 84, 6 DPTO A",
+      "location": {
+        "postalCode": "48013",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.843.1",
+          "name": "Servicios técnicos de ingeniería",
+          "_links": {
+            "self": {
+              "name": "Servicios técnicos de ingeniería",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2021-07-12",
+      "certificateEndDate": "2021-12-30",
+      "object": "ESTUDIOS Y PROYECTOS DE INGENIERÍA. LA PRESTACIÓN POR CUENTA PROPIA O AJENA DE SERVICIOS DE ASESORAMIENTO, ESTUDIO Y GESTIÓN A TODO TIPO DE EMPRESAS, BIEN SEAN PERSONAS INDIVIDUALES O JURÍDICAS, PÚBLICAS O PRIVADAS, EN MATERIA DE ORGANIZACIÓN, ESTRUCTURACIÓN, CONTABILIDAD, CONTROL, ESTUDIO FINANCIERO O ECONÓMICO, COMERCIALIZACIÓN, FABRICACIÓN, JURÍDICA, FISCAL, LABORAL, SOCIAL, CONTROL Y ANÁLISIS TÉCNICOS, INVESTIGACIONES OPERATIVAS, INGENIERÍA DE INSTALACIONES, PROCESOS, CONTROL Y ANÁLISIS CONTABLES Y CUALQUIER OTRO TIPO DE ASESORAMIENTO O GESTIÓN EMPRESARIAL QUE SE DEMANDE. LA COMPRAVENTA, ARRENDAMIENTO NO FINANCIERO, ADMINISTRACIÓN Y GESTIÓN DE TODO TIPO DE FINCAS Y TODO TIPO DE SERVICIOS INMOBILIARIOS, Y EN GENERAL, LA INTERMEDIACIÓN EN EL SECTOR INMOBILIARIO. LA PRESTACIÓN DE SERVICIOS A PARTICULARES O SOCIEDADES, CONSISTENTES EN TODOS LOS TRÁMITES NECESARIOS PARA LA OBTENCIÓN DE CRÉDITOS HIPOTECARIOS O DE OTRO TIPO, DE ENTIDADES FINANCIERAS, PARA LA ADQUISICIÓN DE INMUEBLES. LA INVESTIGACIÓN, ESTUDIO Y PLANEAMIENTO DE TODA CLASE DE PROYECTOS DE INVERSIÓN, TANTO EN LO QUE AFECTA A SU VIABILIDAD, COMO A TODAS SUS DIVERSAS FACETAS Y ASPECTOS, ASÍ COMO EL ESTUDIO, PROMOCIÓN Y DESARROLLO DE EMPRESAS INDUSTRIALES, COMERCIALES O DE SERVICIOS. LA ADQUISICIÓN, CESIÓN, TENENCIA, DISFRUTE, ADMINISTRACIÓN, GESTIÓN Y NEGOCIACIÓN EN GENERAL DE VALORES MOBILIARIOS E INMUEBLES, PARTICIPACIONES SOCIALES O EN COPROPIEDAD DE TODA CLASE DE BIENES INMUEBLES. LA CONSTITUCIÓN, CON LA CONCURRENCIA DE OTRAS PERSONAS, DE TODA CLASE DE SOCIEDADES MERCANTILES, Y LA PARTICIPACIÓN DE OTRAS CONSTITUIDAS, PUDIENDO OSTENTAR EN TODAS ELLAS CARGOS DE ADMINISTRACIÓN, DIRECCIÓN O CONTROL MEDIANTE LA OPORTUNA DELEGACIÓN EN PERSONA FÍSICA. LA ADQUISICIÓN, USO, VENTA Y ENAJENACIÓN, POR CUALQUIER TÍTULO, DE FINCAS RÚSTICAS Y URBANAS, YA SEAN TIERRAS O SOLARES, SU PARCELACIÓN Y URBANIZACIÓN, PISOS, LOCALES, PABELLONES INDUSTRIALES O COMERCIALES, EDIFICACIONES DE TODO TIPO, ASÍ COMO LA PROMOCIÓN, CONSTRUCCIÓN O DERRIBO DE CUALQUIER TIPO DE EDIFICACIÓN DE LAS ANTES MENCIONADAS, Y LA TENENCIA, EXPLOTACIÓN Y ARRENDAMIENTO, YA SEA ACTIVO O PASIVO DE TALES BIENES Y SU VENTA TOTAL O PARCIAL, SEGÚN CONVENGA, ASÍ COMO LA PROMOCIÓN Y CONSTITUCIÓN DE COMUNIDADES DE PROPIETARIOS O DE CUALQUIER OTRA FORMA DE ASOCIACIÓN O SOCIEDAD CON FINES DE EDIFICACIÓN Y URBANIZACIÓN. EL ARRENDAMIENTO Y CUALQUIER OTRA FÓRMULA DE CESIÓN, USO O DISFRUTE QUE ABARQUE TODO O PARTE DE LOS EPÍGRAFES ANTERIORES",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06419",
+      "_links": {
+        "self": {
+          "name": "INGELAN 2000 S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/06419"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,470 @@
+{
+  "totalItems": 919,
+  "totalPages": 92,
+  "currentPage": 28,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "id": 24462,
+      "identificationNumber": "G20075305",
+      "name": "Residencia Nuestra Señora de la Merced",
+      "scope": "ARABA/ÁLAVA",
+      "address": "Atxuri, 6",
+      "webPage": "https://b5m.gipuzkoa.eus/web5000/callejero/soraluze-placencia_de_las_armas/atxuri_kalea/006",
+      "publicationDate": "2021-07-08",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES211",
+      "entities": [
+        {
+          "id": 24463,
+          "name": "Residencia Nuestra Señora de la Merced",
+          "orgs": [
+            {
+              "id": 24464,
+              "name": "Patronato de la residencia",
+              "_links": {
+                "self": {
+                  "name": "Patronato de la residencia",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/24462/entities/24463/orgs/24464"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Residencia Nuestra Señora de la Merced",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/24462/entities/24463"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder24462/es_doc/index.html",
+      "_links": {
+        "self": {
+          "name": "Residencia Nuestra Señora de la Merced",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/24462"
+        }
+      }
+    },
+    {
+      "id": 24453,
+      "identificationNumber": "P0100060C",
+      "name": "Junta Administrativa Lukiano",
+      "scope": "ARABA/ÁLAVA",
+      "address": "Lukiano",
+      "webPage": "https://www.zuia.eus/es/Pueblos/Lukiano",
+      "publicationDate": "2021-07-07",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES211",
+      "entities": [
+        {
+          "id": 24454,
+          "name": "Junta Administrativa de Lukiano",
+          "orgs": [
+            {
+              "id": 24455,
+              "name": "Junta Administrativa de Lukiano",
+              "_links": {
+                "self": {
+                  "name": "Junta Administrativa de Lukiano",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/24453/entities/24454/orgs/24455"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Junta Administrativa de Lukiano",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/24453/entities/24454"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder24453/es_doc/index.html",
+      "_links": {
+        "self": {
+          "name": "Junta Administrativa Lukiano",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/24453"
+        }
+      }
+    },
+    {
+      "id": 24410,
+      "identificationNumber": "Q9997133E",
+      "name": "Poder ficticio KPE 2",
+      "scope": "CAPV",
+      "address": "pr",
+      "webPage": "https://www.contratacion.euskadi.eus/KPELicitacion",
+      "publicationDate": "2021-06-28",
+      "mainActivity": "Salud",
+      "codNUTS": "ES230",
+      "entities": [
+        {
+          "id": 24630,
+          "name": "BILBAO EXHIBITION CENTRE SOLAR, AIE",
+          "orgs": [
+            {
+              "id": 99999,
+              "name": "Consejo de Administración",
+              "_links": {
+                "self": {
+                  "name": "Consejo de Administración",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/24410/entities/24630/orgs/99999"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "BILBAO EXHIBITION CENTRE SOLAR, AIE",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/24410/entities/24630"
+            }
+          }
+        },
+        {
+          "id": 24411,
+          "name": "Poder ficticio KPE 2 (ENTIDAD)",
+          "orgs": [
+            {
+              "id": 24412,
+              "name": "Poder ficticio KPE 2 (ORGANO)",
+              "_links": {
+                "self": {
+                  "name": "Poder ficticio KPE 2 (ORGANO)",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/24410/entities/24411/orgs/24412"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Poder ficticio KPE 2 (ENTIDAD)",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/24410/entities/24411"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder24410/es_doc/index.html",
+      "_links": {
+        "self": {
+          "name": "Poder ficticio KPE 2",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/24410"
+        }
+      }
+    },
+    {
+      "id": 24432,
+      "identificationNumber": "V42728386",
+      "name": "Junta de concertación de la UE única del PAU Salburua-Zabalgana",
+      "scope": "ARABA/ÁLAVA",
+      "address": "General Alava, 10",
+      "webPage": "https://www.vitoria-gasteiz.org/wb021/was/contenidoAction.do?idioma=es&uid=app_ib004_7890",
+      "publicationDate": "2021-06-25",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES211",
+      "entities": [
+        {
+          "id": 24433,
+          "name": "Junta de concertación de la UE única del PAU Salburua-Zabalgana",
+          "orgs": [
+            {
+              "id": 24434,
+              "name": "Junta de concertación de la UE única del PAU Salburua-Zabalgana",
+              "_links": {
+                "self": {
+                  "name": "Junta de concertación de la UE única del PAU Salburua-Zabalgana",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/24432/entities/24433/orgs/24434"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Junta de concertación de la UE única del PAU Salburua-Zabalgana",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/24432/entities/24433"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder24432/es_doc/index.html",
+      "_links": {
+        "self": {
+          "name": "Junta de concertación de la UE única del PAU Salburua-Zabalgana",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/24432"
+        }
+      }
+    },
+    {
+      "id": 24428,
+      "identificationNumber": "P0100164C",
+      "name": "Junta Administrativa de Maroño",
+      "scope": "ARABA/ÁLAVA",
+      "address": "B. Urizar, 3 - Maroño",
+      "webPage": "https://www.aiarakoudala.eus/index.php/es/municipio/juntas-administrativas",
+      "publicationDate": "2021-06-25",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES211",
+      "entities": [
+        {
+          "id": 24429,
+          "name": "Junta Administrativa de Maroño",
+          "orgs": [
+            {
+              "id": 24430,
+              "name": "Junta Administrativa de Maroño",
+              "_links": {
+                "self": {
+                  "name": "Junta Administrativa de Maroño",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/24428/entities/24429/orgs/24430"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Junta Administrativa de Maroño",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/24428/entities/24429"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder24428/es_doc/index.html",
+      "_links": {
+        "self": {
+          "name": "Junta Administrativa de Maroño",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/24428"
+        }
+      }
+    },
+    {
+      "id": 24423,
+      "identificationNumber": "P0100154D",
+      "name": "Junta Administrativa de Sojo",
+      "scope": "ARABA/ÁLAVA",
+      "address": "B. La Viña, 2 - Sojo-Ayala",
+      "webPage": "https://www.aiarakoudala.eus/index.php/es/municipio/juntas-administrativas",
+      "publicationDate": "2021-06-25",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES211",
+      "entities": [
+        {
+          "id": 24424,
+          "name": "Junta Administrativa de Sojo",
+          "orgs": [
+            {
+              "id": 24426,
+              "name": "Junta Administrativa de Sojo",
+              "_links": {
+                "self": {
+                  "name": "Junta Administrativa de Sojo",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/24423/entities/24424/orgs/24426"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Junta Administrativa de Sojo",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/24423/entities/24424"
+            }
+          }
+        },
+        {
+          "id": 24425,
+          "name": "Junta Administrativa de Sojo",
+          "_links": {
+            "self": {
+              "name": "Junta Administrativa de Sojo",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/24423/entities/24425"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder24423/es_doc/index.html",
+      "_links": {
+        "self": {
+          "name": "Junta Administrativa de Sojo",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/24423"
+        }
+      }
+    },
+    {
+      "id": 24419,
+      "identificationNumber": "P0100160A",
+      "name": "Junta Administrativa de Ozeka",
+      "scope": "ARABA/ÁLAVA",
+      "address": "B. Ozeta, 2",
+      "webPage": "https://www.aiarakoudala.eus/index.php/es/municipio/juntas-administrativas",
+      "publicationDate": "2021-06-25",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES211",
+      "entities": [
+        {
+          "id": 24420,
+          "name": "Junta Administrativa de Ozeka",
+          "orgs": [
+            {
+              "id": 24421,
+              "name": "Junta Administrativa de Ozeka",
+              "_links": {
+                "self": {
+                  "name": "Junta Administrativa de Ozeka",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/24419/entities/24420/orgs/24421"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Junta Administrativa de Ozeka",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/24419/entities/24420"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder24419/es_doc/index.html",
+      "_links": {
+        "self": {
+          "name": "Junta Administrativa de Ozeka",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/24419"
+        }
+      }
+    },
+    {
+      "id": 502,
+      "identificationNumber": "P4800200J",
+      "name": "Ayuntamiento de Abanto Zierbena",
+      "scope": "BIZKAIA",
+      "address": "Avda el Minero ,2. 48500 Abanto-Zierbena (Bizkaia)",
+      "webPage": "http://www.abanto-zierbena.eus",
+      "publicationDate": "2021-06-22",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES213",
+      "entities": [
+        {
+          "id": 951,
+          "name": "Ayuntamiento de Abanto Zierbena",
+          "orgs": [
+            {
+              "id": 912579,
+              "name": "Alcaldía",
+              "_links": {
+                "self": {
+                  "name": "Alcaldía",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/502/entities/951/orgs/912579"
+                }
+              }
+            },
+            {
+              "id": 912580,
+              "name": "Pleno",
+              "_links": {
+                "self": {
+                  "name": "Pleno",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/502/entities/951/orgs/912580"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Ayuntamiento de Abanto Zierbena",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/502/entities/951"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder502/es_doc/index.html",
+      "_links": {
+        "self": {
+          "name": "Ayuntamiento de Abanto Zierbena",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/502"
+        }
+      }
+    },
+    {
+      "id": 499,
+      "identificationNumber": "G01209550",
+      "name": "Asociación de Concejos del Municipio de Vitoria \"Hijosdalgo de la Junta de Elorriaga\"",
+      "scope": "ARABA/ÁLAVA",
+      "address": "Casa de Juntas de Elorriaga, 9. 01192 Elorriaga. Vitoria-Gasteiz (Araba/Álava)",
+      "webPage": "http://www.acovi-gke.org",
+      "publicationDate": "2021-06-15",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES211",
+      "entities": [
+        {
+          "id": 948,
+          "name": "Asociación de Concejos del municipio de Vitoria \"Hijosdalgo de la Junta de Elorriaga\"",
+          "orgs": [
+            {
+              "id": 912575,
+              "name": "Junta Directiva",
+              "_links": {
+                "self": {
+                  "name": "Junta Directiva",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/499/entities/948/orgs/912575"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Asociación de Concejos del municipio de Vitoria \"Hijosdalgo de la Junta de Elorriaga\"",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/499/entities/948"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder499/es_doc/es_arch_poder499.html",
+      "_links": {
+        "self": {
+          "name": "Asociación de Concejos del Municipio de Vitoria \"Hijosdalgo de la Junta de Elorriaga\"",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/499"
+        }
+      }
+    },
+    {
+      "id": 805,
+      "identificationNumber": "P0100123I",
+      "name": "Junta Administrativa de Acosta",
+      "scope": "ARABA/ÁLAVA",
+      "address": "Barrio Acosta-okoitza 01138 Zigoitia (araba/álava) ",
+      "webPage": "https://contratacion.euskadi.eus",
+      "publicationDate": "2021-06-07",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES211",
+      "entities": [
+        {
+          "id": 1305,
+          "name": "Junta Administrativa de Acosta",
+          "orgs": [
+            {
+              "id": 914354,
+              "name": "Junta Administrativa de Acosta",
+              "_links": {
+                "self": {
+                  "name": "Junta Administrativa de Acosta",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/805/entities/1305/orgs/914354"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Junta Administrativa de Acosta",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/805/entities/1305"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder805/es_doc/es_arch_poder805.html",
+      "_links": {
+        "self": {
+          "name": "Junta Administrativa de Acosta",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/805"
+        }
+      }
+    }
+  ]
+}

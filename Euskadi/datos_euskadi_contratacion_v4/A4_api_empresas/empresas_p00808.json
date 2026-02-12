@@ -1,0 +1,498 @@
+{
+  "totalItems": 9042,
+  "totalPages": 905,
+  "currentPage": 808,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "name": "BILBO TECMI, S.L.",
+      "registrationNumber": "02180",
+      "identificationNumber": "B48411474",
+      "address": "C/ ALAMEDA MAZARREDO, Nº 49 - LONJA.",
+      "location": {
+        "postalCode": "48009",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.653.2",
+          "name": "Venta al por menor de material y aparatos eléctricos, electrodomésticos y cocina",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de material y aparatos eléctricos, electrodomésticos y cocina",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.653.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2002-06-27",
+      "certificateEndDate": "2002-12-04",
+      "object": "EL COMERCIO Y COMPRAVENTA AL POR MAYOR Y MENOR DE TODA CLASE DE ELECTRODOMÉSTICOS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/02180",
+      "_links": {
+        "self": {
+          "name": "BILBO TECMI, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/02180"
+        }
+      }
+    },
+    {
+      "name": "LIUZ, S.L.",
+      "registrationNumber": "02394",
+      "identificationNumber": "B20425096",
+      "address": "C/ ZUMARRALDE, S/N",
+      "location": {
+        "postalCode": "20216",
+        "municipality": "Ormaiztegi",
+        "county": "Gipuzkoa",
+        "municipalityId": "062",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.501.3",
+          "name": "Albañilería y pequeños trabajos de construcción en general",
+          "_links": {
+            "self": {
+              "name": "Albañilería y pequeños trabajos de construcción en general",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.3"
+            }
+          }
+        },
+        {
+          "id": "1.615.2",
+          "name": "Venta al por mayor de muebles",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de muebles",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.615.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2002-06-25",
+      "certificateEndDate": "2002-12-06",
+      "object": "LA FABRICACIÓN Y COMERCIALIZACIÓN DE MOBILIARIO DE OFICINA ",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/02394",
+      "_links": {
+        "self": {
+          "name": "LIUZ, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/02394"
+        }
+      }
+    },
+    {
+      "name": "KEMEN COMERCIAL, S.A.",
+      "registrationNumber": "00918",
+      "identificationNumber": "A01008077",
+      "address": "C/ LARRAGANA, Nº 10.",
+      "location": {
+        "postalCode": "01013",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.316.6",
+          "name": "Fabricación de mobiliario metálico",
+          "_links": {
+            "self": {
+              "name": "Fabricación de mobiliario metálico",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.316.6"
+            }
+          }
+        },
+        {
+          "id": "1.659.2",
+          "name": "Venta al por menor de muebles de oficina y máquinas y equipos de oficina",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de muebles de oficina y máquinas y equipos de oficina",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.659.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2002-06-18",
+      "certificateEndDate": "2002-11-29",
+      "object": "LA REPRESENTACIÓN COMERCIAL DE OTRAS ENTIDADES, NACIONALES O EXTRANJERAS Y LA COMPRAVENTA DE CERRADURAS, AMORTIGUADORES PARA EL CIERRE DE PUERTAS Y VENTANAS, BISAGRAS, CARPINTERÍA METÁLICA, CAJAS FUERTES, PUERTAS BLINDADAS, INSTALACIONES DE SEGURIDAD, ARCHIVOS, MUEBLES, MOSTRADORES, VITRINAS DE REFRIGERACIÓN, ARCONES CONGELADORES, ARMARIOS FRIGORÍFICOS, ENFRIADORES DE BEBIDAS, ARMARIOS CALENTADORES, INSTALACIONES DE AUTO SERVICIO",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/00918",
+      "_links": {
+        "self": {
+          "name": "KEMEN COMERCIAL, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/00918"
+        }
+      }
+    },
+    {
+      "name": "COOPERATIVA ALAVESA DE DEPORTE COALDE, S.COOP. LTDA.",
+      "registrationNumber": "02513",
+      "identificationNumber": "F01042100",
+      "address": "CANCILLER AYALA, Nº 2 - 1º",
+      "location": {
+        "postalCode": "01004",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.967.2",
+          "name": "Escuelas y servicios de perfeccionamiento del deporte",
+          "_links": {
+            "self": {
+              "name": "Escuelas y servicios de perfeccionamiento del deporte",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.967.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2002-06-17",
+      "certificateEndDate": "2002-11-09",
+      "object": "EL RELATIVO A LOS TRABAJOS DE MANTENIMIENTO DE INSTALACIONES DEPORTIVAS, TANTO PÚBLICAS COMO PRIVADAS, Y A LA ORGANIZACIÓN Y DIRECCIÓN DE TODA CLASE DE CURSOS Y ACTIVIDADES RELACIONADAS CON LA EDUCACIÓN FÍSICA DE LAS PERSONAS, ASÍ COMO LA PROMOCIÓN DEL DEPORTE EN GENERAL, CONSTITUYENDO IGUALMENTE EL OBJETO DE LA SOCIEDAD TODO CUANTO SEA ANTECEDENTE, AUXILIAR, CONSECUENCIA, ACCESORIO Y SE RELACIONE DIRECTA O INDIRECTAMENTE CON ETE OBJETO Y FINALIDADES.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/02513",
+      "_links": {
+        "self": {
+          "name": "COOPERATIVA ALAVESA DE DEPORTE COALDE, S.COOP. LTDA.",
+          "href": "https://api.euskadi.eus/procurements/companies/02513"
+        }
+      }
+    },
+    {
+      "name": "KAEFER SERVICIOS INDUSTRIALES, S.A.",
+      "registrationNumber": "00584",
+      "identificationNumber": "A48055560",
+      "address": "RIBERA DE ERANDIO, 6",
+      "location": {
+        "postalCode": "48950",
+        "municipality": "Erandio",
+        "county": "Bizkaia",
+        "municipalityId": "902",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.505.4",
+          "name": "Colocación y aislamiento fónicos, térmicos y acústicos",
+          "_links": {
+            "self": {
+              "name": "Colocación y aislamiento fónicos, térmicos y acústicos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.505.4"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2002-06-12",
+      "certificateEndDate": "2002-11-02",
+      "classification": [
+        {
+          "id": "O",
+          "name": "Obras",
+          "groups": [
+            {
+              "id": "C",
+              "name": "EDIFICACIONES",
+              "subgroups": [
+                {
+                  "id": "01",
+                  "name": "DEMOLICIONES",
+                  "categories": [
+                    {
+                      "id": "5",
+                      "name": "Desde 2.400.001 Hasta 5.000.000",
+                      "_links": {
+                        "self": {
+                          "name": "Desde 2.400.001 Hasta 5.000.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/O/categories/5"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "DEMOLICIONES",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/O/groups/C/subgroups/01"
+                    }
+                  }
+                },
+                {
+                  "id": "07",
+                  "name": "AISLAMIENTOS E IMPERMEABILIZACIONES",
+                  "categories": [
+                    {
+                      "id": "6",
+                      "name": "Mas de 5.000.000",
+                      "_links": {
+                        "self": {
+                          "name": "Mas de 5.000.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/O/categories/6"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "AISLAMIENTOS E IMPERMEABILIZACIONES",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/O/groups/C/subgroups/07"
+                    }
+                  }
+                }
+              ],
+              "_links": {
+                "self": {
+                  "name": "EDIFICACIONES",
+                  "href": "https://api.euskadi.eus/procurements/companies/types/O/groups/C"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Obras",
+              "href": "https://api.euskadi.eus/procurements/companies/types/O"
+            }
+          }
+        }
+      ],
+      "object": "a)\tAdquisición, tenencia, administración y explotación, compra y venta, gravamen y alquiler y disposición de toda clase de bienes muebles e inmuebles.b)\tEjecución de aislamiento de todas clases como, a título enunciativo y no limitativo, aislamientos térmicos, acústicos y protección contra incendios.c)\tDistribución de materiales aislantes y productos de la construcción de madera y plásticos.d)\tContratación general de servicios relacionados con la ingeniería de aislamientos, suministro de materiales y supervisión de trabajos.e)\tSellado de cableado, conductos de tuberías, recubrimientos ignífugos, aislamiento de tanques, encapsulados ignífugos, fachadas ignífugas, ventanas ignífugas, asesoramiento en cuestiones de protección pasiva contra incendios y aislamiento no inflamable de tuberías.f)\tRemodelación de cámaras frigoríficas, almacenes frigoríficos y de refrigeración.g)\tEliminación de sustancias peligrosas, servicios de descontaminación llave en mano, recuperación de madera dañada por hongos, rehabilitación y mejora de los suelos, recuperación de daños por incendios.h)\tServicios de habilitación y aislamiento para buques de carga, buques de pasaje y ferries, buques frigoríficos, buques transporte de gases licuados, buques pesqueros, buques de investigación y buques de guerra.i)\tDiseño de estructuras de andamiaje, suministro, montaje y desmontaje de proyectos de andamiaje, alquiler de material, proyectos llave en mano, logística y trabajos auxiliares.j)\tEjecución de trabajos de limpieza y preparación de superficies para la posterior aplicación de diferentes recubrimientos, incluyendo los trabajos previos de inspección, consultoría y asesoría técnica.k)\tCualquier actividad relacionada con la ejecución de aislamientos, servicios de descontaminación y actividades relacionadas con las estructuras de andamiaje.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/00584",
+      "_links": {
+        "self": {
+          "name": "KAEFER SERVICIOS INDUSTRIALES, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/00584"
+        }
+      }
+    },
+    {
+      "name": "RADIOLINK, S.L.",
+      "registrationNumber": "01877",
+      "identificationNumber": "B20557856",
+      "address": "C/ AVENIDA SAN SEBASTIÁN, Nº 76. POLÍGONO BIDEBITARTE.",
+      "location": {
+        "postalCode": "20115",
+        "municipality": "Astigarraga",
+        "county": "Gipuzkoa",
+        "municipalityId": "903",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.615.4",
+          "name": "Venta al por mayor de aparatos y material radioeléctrico y electrónico",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de aparatos y material radioeléctrico y electrónico",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.615.4"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2002-06-10",
+      "certificateEndDate": "2002-12-05",
+      "object": "LA FABRICACIÓN, COMERCIALIZACIÓN Y MANTENIMIENTO DE PRODUCTOS PARA TRANSMISIÓN DE DATOS POR RADIO Y TELEFONÍA; ADEMÁS LA COMPRA, VENTA, FABRICACIÓN Y DISTRIBUCIÓN DE TODO TIPO DE APARATOS DE TELECOMUNICACIONES. ASIMISMO LA SOCIEDAD PODRÁ REALIZAR LABORES DE ASESORÍA, CONSULTORÍA Y ORGANIZACIÓN DE SEMINARIOS SOBRE SISTEMA DE TELECOMUNICACIONES Y TRANSMISIÓN DE DATOS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/01877",
+      "_links": {
+        "self": {
+          "name": "RADIOLINK, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/01877"
+        }
+      }
+    },
+    {
+      "name": "LUZGORRI, S.A.",
+      "registrationNumber": "02231",
+      "identificationNumber": "A01287705",
+      "address": "C/ ZORROSTEA, 10-B  INTERIOR (ALI-GOBEO)",
+      "location": {
+        "postalCode": "01010",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.501.2",
+          "name": "Construcción completa, reparación y conservación obras civiles",
+          "_links": {
+            "self": {
+              "name": "Construcción completa, reparación y conservación obras civiles",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2002-06-05",
+      "certificateEndDate": "2002-11-07",
+      "object": "LA REALIZACIÓN DE OBRAS PÚBLICAS EN GENERAL Y EN PARTICULAR, MOVIMIENTOS DE TIERRAS, CIMENTACIONES, AFIRMADOS, RIEGOS ASFÁLTICOS, FABRICACIÓN Y EMPLEO DE AGLOMERADOS, SANEAMIENTO, CONDUCCIONES DE AGUA, CANALIZACIONES EN GENERAL Y EN ESPECIAL CANALIZACIONES DE GAS, ESTRUCTURAS DE HORMIGÓN ARMADO Y METÁLICAS, FABRICACIÓN DE MATERIALES PARA LA CONSTRUCCIÓN, IMPERMEABILIZACIONES, CONSTRUCCIÓN DE CARRETERAS, EXPLOTACIÓN DE CANTERAS Y FABRICACIÓN DE HORMIGONES Y PRODUCTOS ASFÁLTICOS, ASÍ COMO LA CONSTRUCCIÓN Y PROMOCIÓN DE VIVIENDAS, PABELLONES INDUSTRIALES Y CUALESQUIERA OTRAS OBRAS DE CARÁCTER PÚBLICO Y PRIVADO Y EL TRANSPORTE PÚBLICO EN GENERAL.\r\n\r\nEJECUCIÓN Y MANTENIMIENTO DE INSTALACIONES ELÉCTRICAS EN GENERAL, EN ALTA, BAJA Y MEDIA TENSIÓN, INSTALACIONES, INSTALACIONES DE TELECOMUNICACIÓN, INSTALACIONES ELECTRÓNICAS E INSTALACIONES DE SISTEMAS DE SEÑALIZACIÓN Y BALIZAMIENTO DE PUERTOS, AEROPUERTOS Y CARRETERAS, INSTALACIONES DE SEGURIDAD Y CONTRA INCENDIOS.\r\n\r\nEJECUCIÓN Y MANTENIMIENTO DE INSTALACIONES MECÁNICAS EN GENERAL, INSTALACIONES DE FONTANERÍA, INSTALACIONES FRIGORÍFICAS, INSTALACIONES DE CALEFACCIÓN, VENTILACIÓN Y CLIMATIZACIÓN, INSTALACIONES ELEVADORAS Y TRANSPORTADORAS E INSTALACIONES DE TRATAMIENTO DE AGUAS DE TODO TIPO.\r\n\r\nCONSTRUCCIÓN COMPLETA, REPARACIÓN Y CONSERVACIÓN DE EDIFICACIONES Y OBRAS CIVILES.\r\n\r\nCONTRATAR OBRAS Y SERVICIOS CON CUALQUIER ORGANISMO DE LAS ADMINISTRACIONES PÚBLICAS Y CON TODA CLASE DE ENTIDADES PARTICULARES.\r\n\r\nREDACCIÓN Y CONFECCIÓN DE PROYECTOS TÉCNICOS DE TODO TIPO, DIRECCIÓN DE OBRA Y CONTROL DE CALIDAD, REALIZACIÓN DE ESTUDIOS E INFORMES Y ASESORAMIENTO TÉCNICO",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/02231",
+      "_links": {
+        "self": {
+          "name": "LUZGORRI, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/02231"
+        }
+      }
+    },
+    {
+      "name": "DESARROLLO INFORMÁTICO, S.A.",
+      "registrationNumber": "01577",
+      "identificationNumber": "A28500916",
+      "address": "C/ CARDENAL MARCELO SPÍNOLA, Nº 2 - D 1.",
+      "location": {
+        "postalCode": "28016",
+        "municipality": "Madrid",
+        "county": "Madrid",
+        "municipalityId": "079",
+        "countyId": "28"
+      },
+      "economicActivities": [
+        {
+          "id": "1.504.1",
+          "name": "Instalaciones eléctricas en general",
+          "_links": {
+            "self": {
+              "name": "Instalaciones eléctricas en general",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.504.1"
+            }
+          }
+        },
+        {
+          "id": "1.617.8",
+          "name": "Venta al por mayor de máquinas y material de oficina",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de máquinas y material de oficina",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.617.8"
+            }
+          }
+        },
+        {
+          "id": "1.659.2",
+          "name": "Venta al por menor de muebles de oficina y máquinas y equipos de oficina",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de muebles de oficina y máquinas y equipos de oficina",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.659.2"
+            }
+          }
+        },
+        {
+          "id": "1.722",
+          "name": "Transporte de mercancías por carretera",
+          "_links": {
+            "self": {
+              "name": "Transporte de mercancías por carretera",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.722"
+            }
+          }
+        },
+        {
+          "id": "1.843.1",
+          "name": "Servicios técnicos de ingeniería",
+          "_links": {
+            "self": {
+              "name": "Servicios técnicos de ingeniería",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2002-05-31",
+      "certificateEndDate": "2002-10-23",
+      "object": "LA VENTA, DISTRIBUCIÓN E INTEGRACIÓN DE PRODUCTOS INFORMÁTICOS Y SISTEMAS DE CONECTIVIDAD. LA PRESTACIÓN DE SERVICIOS EN EL ÁREA INFORMÁTICA COMO CONSULTORÍA, PROYECTOS DE INGENIERÍA, FORMACIÓN, INSTALACIÓN Y MANTENIMIENTO",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/01577",
+      "_links": {
+        "self": {
+          "name": "DESARROLLO INFORMÁTICO, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/01577"
+        }
+      }
+    },
+    {
+      "name": "HISPANOMOCIÓN, S.A.",
+      "registrationNumber": "01851",
+      "identificationNumber": "A28057537",
+      "address": "AVDA. DE LOS TOREROS, Nº 6",
+      "location": {
+        "postalCode": "28080",
+        "municipality": "Madrid",
+        "county": "Madrid",
+        "municipalityId": "079",
+        "countyId": "28"
+      },
+      "economicActivities": [
+        {
+          "id": "1.654.1",
+          "name": "Venta al por menor de vehículos terrestres",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de vehículos terrestres",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.654.1"
+            }
+          }
+        },
+        {
+          "id": "1.691.2",
+          "name": "Reparación de vehículos automóviles, bicicletas y otros vehículos",
+          "_links": {
+            "self": {
+              "name": "Reparación de vehículos automóviles, bicicletas y otros vehículos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.691.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2002-05-28",
+      "certificateEndDate": "2002-10-16",
+      "object": "LA COMPRA VENTA, ALQUILER Y DISTRIBUCIÓN DE AUTOMÓVILES, CAMIONES, TRACTORES Y VEHÍCULOS EN GENERAL DE TRACCIÓN MECÁNICA, MOTORES, PIEZAS DE RECAMBIO Y ACCESORIOS, ASÍ COMO LA REPARACIÓN Y MANTENIMIENTO DE LOS MISMOS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/01851",
+      "_links": {
+        "self": {
+          "name": "HISPANOMOCIÓN, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/01851"
+        }
+      }
+    },
+    {
+      "name": "SERVICIO INTEGRAL HOSPITALARIO, S.L.",
+      "registrationNumber": "02283",
+      "identificationNumber": "B45365640",
+      "address": "AUTOVÍA MADRID-TOLEDO, KM. 63,300 Nº 9",
+      "location": {
+        "postalCode": "45000",
+        "municipality": "Olías del Rey",
+        "county": "Toledo",
+        "municipalityId": "122",
+        "countyId": "45"
+      },
+      "economicActivities": [
+        {
+          "id": "1.619.2",
+          "name": "Venta al por mayor de aparatos e instrumentos médicos, ortopédicos, ópticos",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de aparatos e instrumentos médicos, ortopédicos, ópticos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.619.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2002-05-27",
+      "certificateEndDate": "2002-09-20",
+      "object": "A) LA REALIZACIÓN DE TODO TIPO DE SUMINISTROS HOSPITALARIOS, INSTRUMENTAL QUIRÚRGICO, IMPLANTES QUIRÚRGICOS Y DE CUALQUIER OTRO MATERIAL CLÍNICO, FARMACÉUTICO Y MOBILIARIO, ASÍ COMO DE SISTEMAS DE ELECTROMEDICINA, SISTEMAS DE ESTERILIZACIÓN Y TRANSPLANTE; B) EL SERVICIO DE CAFETERÍA, RESTAURANTE Y VÍVERES; C) LA LIMPIEZA Y MANTENIMIENTO DE EDIFICIOS; D) SISTEMAS DE SEGURIDAD INTERIOR Y EXTERIOR; E) SISTEMAS DE MANTENIMIENTO TÉCNICO; F) ASESORÍA Y GESTIÓN EN CUALQUIER CUESTIÓN COMPRENDIDA EN LOS APARTADOS ANTERIORES; G) EL ARRENDAMIENTO DE BIENES INMUEBLES",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/02283",
+      "_links": {
+        "self": {
+          "name": "SERVICIO INTEGRAL HOSPITALARIO, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/02283"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,408 @@
+{
+  "totalItems": 9042,
+  "totalPages": 905,
+  "currentPage": 367,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "name": "FISIOSBIZKAIA, S.L.",
+      "registrationNumber": "10070",
+      "identificationNumber": "B02919470",
+      "address": "Calle Doctor Pontzi Zabala nº 1 (48960)",
+      "location": {
+        "postalCode": "48960",
+        "municipality": "Galdakao",
+        "county": "Bizkaia",
+        "municipalityId": "036",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.942.9",
+          "name": "Otros servicios sanitarios sin internados, no clasificados",
+          "_links": {
+            "self": {
+              "name": "Otros servicios sanitarios sin internados, no clasificados",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.942.9"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-03-07",
+      "certificateEndDate": "2025-09-06",
+      "object": "EL DESARROLLO DE LA ACTIVIDAD PROPIA DEL EJERCICIO DE LA PROFESIÓN DE FISIOTERAPIA.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/10070",
+      "_links": {
+        "self": {
+          "name": "FISIOSBIZKAIA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/10070"
+        }
+      }
+    },
+    {
+      "name": "GO AHEAD IT SOLUTIONS & ENGINEERING, S.L.",
+      "registrationNumber": "05142",
+      "identificationNumber": "B95744462",
+      "address": "ANDIKOETXE (ALGORTA) 17-1º",
+      "location": {
+        "postalCode": "48993",
+        "municipality": "Getxo",
+        "county": "Bizkaia",
+        "municipalityId": "044",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.659.2",
+          "name": "Venta al por menor de muebles de oficina y máquinas y equipos de oficina",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de muebles de oficina y máquinas y equipos de oficina",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.659.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-03-06",
+      "certificateEndDate": "2025-09-01",
+      "object": "SERVICIOS TÉCNICOS DE INGENIERÍA. SERVICIOS TÉCNICOS DE ARQUITECTURA Y URBANISMO. COMERCIO AL POR MENOR DE MUEBLES DE OFICINA, DE MÁQUINAS Y EQUIPOS DE OFICINA. EXPLOTACIÓN ELECTRÓNICA POR CUENTA DE TERCEROS. REPARACIÓN DE OTROS BIENES DE CONSUMO N.C.O.P. CONSTRUCCIÓN DE MÁQUINAS DE OFICINA Y ORDENADORES (INLCUIDA SU INSTALACIÓN). COMERCIO MAYOR Y MENOR DE BIENES Y PRODUCTOS INDUSTRIALES, INTERINDUSTRIALES Y DE CONSUMO, INCLUYENDO COMERCIO ELECTRÓNICO E INTERMEDIACIÓN COMERCIAL. COMPRA Y VENTA DE MAQUINARIA DE INFORMÁTICA, OFIMÁTICA Y SUS ACCESORIOS CORRESPONDIENTES, ASÍ COMO LA COMPRA DE REPUESTOS PARA LA REPARACIÓN Y MANTENIMIENTO DE LOS MISMOS. INSTALACIÓN DE ORDENADORES, EQUIPOS Y APLICACIONES INFORMÁTICAS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/05142",
+      "_links": {
+        "self": {
+          "name": "GO AHEAD IT SOLUTIONS & ENGINEERING, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/05142"
+        }
+      }
+    },
+    {
+      "name": "CENTRO DE JARDINERIA MANDRAGORA , S.C.",
+      "registrationNumber": "09792",
+      "identificationNumber": "J01115278",
+      "address": "Calle Viena 3 - 13 D",
+      "location": {
+        "postalCode": "01002",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.612.2",
+          "name": "Venta al por mayor de cereales",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de cereales",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.612.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-03-06",
+      "certificateEndDate": "2025-08-25",
+      "object": "EL EXPLOTAR LA ACTIVIDAD DEL COMERCIO DE PLANTAS Y ACCESORIOS DE JARDINERÍA, Y TODAS AQUELLAS ACTIVIDADES DE LÍCITO COMERCIO, QUE DIRECTA O INDIRECTAMENTE SE RELACIONEN CON EL OBJETO SOCIAL MENCIONADO.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/09792",
+      "_links": {
+        "self": {
+          "name": "CENTRO DE JARDINERIA MANDRAGORA , S.C.",
+          "href": "https://api.euskadi.eus/procurements/companies/09792"
+        }
+      }
+    },
+    {
+      "name": "SENDOA LOPEZ VEGA",
+      "registrationNumber": "10065",
+      "identificationNumber": "16063255D",
+      "address": "CL/ SABINO ARANA 25",
+      "location": {
+        "postalCode": "48640",
+        "municipality": "Berango",
+        "county": "Bizkaia",
+        "municipalityId": "016",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.673.2",
+          "name": "Otros cafés y bares",
+          "_links": {
+            "self": {
+              "name": "Otros cafés y bares",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.673.2"
+            }
+          }
+        },
+        {
+          "id": "1.969.421",
+          "name": "Máquinas recreativas tipo \"B\", titular del establecimiento",
+          "_links": {
+            "self": {
+              "name": "Máquinas recreativas tipo \"B\", titular del establecimiento",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.969.421"
+            }
+          }
+        },
+        {
+          "id": "1.969.441",
+          "name": "MAQUINAS DE APUESTAS. CUOTA MUNICIPAL, EL TITULAR DEL ESTABLECIMIENTO",
+          "_links": {
+            "self": {
+              "name": "MAQUINAS DE APUESTAS. CUOTA MUNICIPAL, EL TITULAR DEL ESTABLECIMIENTO",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.969.441"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-03-06",
+      "certificateEndDate": "2025-09-03",
+      "object": "OTROS CAFÉS Y BARES. MÁQUINAS RECREATIVAS TIPO \"B\", TITULAR DEL ESTABLECIMIENTO. MAQUINAS DE APUESTAS. CUOTA MUNICIPAL, EL TITULAR DEL ESTABLECIMIENTO.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/10065",
+      "_links": {
+        "self": {
+          "name": "SENDOA LOPEZ VEGA",
+          "href": "https://api.euskadi.eus/procurements/companies/10065"
+        }
+      }
+    },
+    {
+      "name": "BELÉN LUCAS PÉREZ",
+      "registrationNumber": "09253",
+      "identificationNumber": "16029305F",
+      "address": "c/ Moreaga, nº 6. 3º A",
+      "location": {
+        "postalCode": "48640",
+        "municipality": "Berango",
+        "county": "Bizkaia",
+        "municipalityId": "016",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "2.826",
+          "name": "Personal docente de enseñanzas diversas",
+          "_links": {
+            "self": {
+              "name": "Personal docente de enseñanzas diversas",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/2.826"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-03-05",
+      "certificateEndDate": "2025-08-24",
+      "object": "PINTORES, ESCULTORES, CERAMISTAS, ARTESANOS, ARTISTAS Y  SIMILARES. OTROS PROFESIONALES.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/09253",
+      "_links": {
+        "self": {
+          "name": "BELÉN LUCAS PÉREZ",
+          "href": "https://api.euskadi.eus/procurements/companies/09253"
+        }
+      }
+    },
+    {
+      "name": "CARPINTERIA EBANISTERIA GESTAL, S.L.",
+      "registrationNumber": "10064",
+      "identificationNumber": "B01465269",
+      "address": "Calle Barratxi",
+      "location": {
+        "postalCode": "01013",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.468.1",
+          "name": "Fabricación de mobiliario de madera para el hogar",
+          "_links": {
+            "self": {
+              "name": "Fabricación de mobiliario de madera para el hogar",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.468.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-03-05",
+      "certificateEndDate": "2025-09-05",
+      "object": "LA FABRICACIÓN, REPARACIÓN, REHABILITACIÓN DE TODO TIPO DE TRABAJOS DE CARPINTERÍA Y EBANISTERÍA.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/10064",
+      "_links": {
+        "self": {
+          "name": "CARPINTERIA EBANISTERIA GESTAL, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/10064"
+        }
+      }
+    },
+    {
+      "name": "GASTROBASQUE CASCO VIEJO, S.L.",
+      "registrationNumber": "09520",
+      "identificationNumber": "B95713889",
+      "address": "BARRENCALLE BARRENA, 16",
+      "location": {
+        "postalCode": "48005",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.671.5",
+          "name": "Restaurante un tenedor",
+          "_links": {
+            "self": {
+              "name": "Restaurante un tenedor",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.671.5"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-03-04",
+      "certificateEndDate": "2025-09-04",
+      "object": "LA PRESTACIÓN DE LOS SERVICIOS PROPIOS DE LA ACTIVIDAD DE LA HOSTELERÍA, BARES, RESTAURANTES, CAFETERÍAS, BARES, PUBS, ASADORES, CERVECERAS Y SIMILARES.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/09520",
+      "_links": {
+        "self": {
+          "name": "GASTROBASQUE CASCO VIEJO, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/09520"
+        }
+      }
+    },
+    {
+      "name": "RESITXU, S.L.",
+      "registrationNumber": "06568",
+      "identificationNumber": "B95482196",
+      "address": "CL/Aritz Bidea, 11-4B",
+      "location": {
+        "postalCode": "48100",
+        "municipality": "Mungia",
+        "county": "Bizkaia",
+        "municipalityId": "069",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.671.5",
+          "name": "Restaurante un tenedor",
+          "_links": {
+            "self": {
+              "name": "Restaurante un tenedor",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.671.5"
+            }
+          }
+        },
+        {
+          "id": "1.967.2",
+          "name": "Escuelas y servicios de perfeccionamiento del deporte",
+          "_links": {
+            "self": {
+              "name": "Escuelas y servicios de perfeccionamiento del deporte",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.967.2"
+            }
+          }
+        },
+        {
+          "id": "1.982.4",
+          "name": "Otras atracciones propias de ferias y verbena fuera de establecimiento",
+          "_links": {
+            "self": {
+              "name": "Otras atracciones propias de ferias y verbena fuera de establecimiento",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.982.4"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-03-03",
+      "certificateEndDate": "2025-09-03",
+      "object": "LA EXPLOTACIÓN DE HOSTELERÍA Y ARRENDAMIENTO DE LOCAL. ADQUIRIR, ENAJENAR Y ARRENDAR BIENES MUEBLES EN GENERAL; INMUEBLES (CONCRETAMENTE LOS DETERMINADOS EN EL ARTÍCULO 334.1 DEL CÓDIGO CIVIL), ACCIONES, PARTICIPACIONES SOCIALES, OBLIGACIONES, BONOS DE CAJA, CERTIFICADOS DE DEPÓSITO Y PAGARÉS DE TODA CLASE DE EMPRESAS O NEGOCIOS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06568",
+      "_links": {
+        "self": {
+          "name": "RESITXU, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/06568"
+        }
+      }
+    },
+    {
+      "name": "BABELSTUDIO, S.L.",
+      "registrationNumber": "10055",
+      "identificationNumber": "B16925695",
+      "address": "Marzana 16, entreplanta izquierda",
+      "location": {
+        "postalCode": "48003",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.843.3",
+          "name": "Servicios técnicos de prospecciones y estudios geológicos",
+          "_links": {
+            "self": {
+              "name": "Servicios técnicos de prospecciones y estudios geológicos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.3"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-03-03",
+      "certificateEndDate": "2025-08-28",
+      "object": "LA PRESTACIÓN DE SERVICIOS DE ARQUITECTURA, URBANISMO, DISEÑO INTERIOR, COORDINACIÓN DE SEGURIDAD Y SALUD, COORDINACIÓN DE GREMIOS, CONSTRUCCIÓN Y GESTIÓN DE OBRAS.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/10055",
+      "_links": {
+        "self": {
+          "name": "BABELSTUDIO, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/10055"
+        }
+      }
+    },
+    {
+      "name": "WARP 9, S.L.",
+      "registrationNumber": "09518",
+      "identificationNumber": "B82345364",
+      "address": "CALLE TELLEZ 3, local 4, al lado del portal",
+      "location": {
+        "postalCode": "28007",
+        "municipality": "Madrid",
+        "county": "Madrid",
+        "municipalityId": "079",
+        "countyId": "28"
+      },
+      "economicActivities": [
+        {
+          "id": "1.617.8",
+          "name": "Venta al por mayor de máquinas y material de oficina",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de máquinas y material de oficina",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.617.8"
+            }
+          }
+        },
+        {
+          "id": "1.619.3",
+          "name": "Venta al por mayor de metales preciosos, artículos de joyería, bisutéría",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de metales preciosos, artículos de joyería, bisutéría",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.619.3"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-03-02",
+      "certificateEndDate": "2025-09-02",
+      "object": "1.- LA COMERCIALIZACIÓN, DISTRIBUCIÓN Y PROMOCIÓN, MONTAJE, INSTALACIÓN, ALMACENAMIENTO, TRANSPORTE, EXPORTACIÓN, IMPORTACIÓN, MANTENIMIENTO, ASISTENCIA TÉCNICA, ASESORAMIENTO, INTERMEDIACIÓN, CONTRATACIÓN Y DIFUSIÓN DE CUALQUIER PRODUCTO RELACIONADO CON LA INFORMÁTICA, IMAGEN Y SONIDO, INCLUIDO EL HARDWARE Y SOFTWARE, MOBILIARIO DE OFICINA Y TELECOMUNICACIONES. 2.- LA COMPRAVENTA, PERMUTA, ADMINISTRACIÓN, GESTIÓN Y EXPLOTACIÓN, BIEN DIRECTAMENTE O EN ARRENDAMIENTO, DE TODO TIPO DE BIENES INMUEBLES SEAN RÚSTICOS O URBANOS, Y PATRIMONIOS. 3.- LA PROMOCIÓN, PARCELACIÓN, REPARCELACIÓN, PLANIFICACIÓN, CONSTRUCCIÓN Y EDIFICACIÓN, POR SI MISMA O A TRAVÉS DE TERCEROS, TANTO EN SUELO RÚSTICO COMO URBANO, LLEVANDO A EFECTO URBANIZACIONES, SUS INSTALACIONES, ADECUACIONES AL MEDIO AMBIENTE, ZONAS DEPORTIVAS, COMERCIALES Y DE SERVICIOS. 4.- DEDICARSE EN NOMBRE PROPIO, O POR CUENTA DE TERCEROS A OPERACIONES REFERIDAS AL COMERCIO AL POR MAYOR O COMO DETALLISTA, LA IMPORTACIÓN Y EXPORTACIÓN, COMPRAVENTA, MEDIACIÓN, CORRETAJE, REPRESENTACIÓN, COMISIÓN Y CONSIGNACIONES, TRANSPORTE NACIONAL E INTERNACIONAL POR VÍA TERRESTRE, MARÍTIMA Y AÉREA, EL MANTENIMIENTO DE MERCADERÍAS, LA REPARACIÓN, CONSERVACIÓN Y ASISTENCIA TÉCNICA; ADMINISTRACIÓN Y GESTIÓN; Y TODAS LAS ACTIVIDADES ANTERIORMENTE MENCIONADAS EXCLUSIVAMENTE EN RELACIÓN CON LOS SIGUIENTES PRODUCTOS: DE ALIMENTACIÓN, VINÍCOLAS, BEBIDAS, BEBIDAS ALCOHÓLICAS; GANADOS, ANIMALES SALVAJES; AGRÍCOLAS, ABONOS ORGÁNICOS E INORGÁNICOS, INSECTICIDAS, SEMILLAS Y PLANTAS; EQUIPOS, MATERIALES, MAQUINARIA Y HERRAMIENTAS PARA INSTALACIONES DOMÉSTICAS, COMERCIALES O INDUSTRIALES; MATERIALES DE CONSTRUCCIÓN, FONTANERÍA, ELECTRICIDAD, CARPINTERÍA, PINTURA, CERRAJERÍA, CRISTALERÍA, VIDRIOS Y SANEAMIENTOS; SISTEMAS, EQUIPOS Y MATERIAL DE SEGURIDAD Y PUERTAS BLINDADAS, VEHÍCULOS AUTOMÓVILES, MOTOS, MOTOCICLETAS, CAMIONES, FURGONETAS, REMOLQUES, BICICLETAS, EMBARCACIONES, CARAVANAS, AUTOCARAVANAS, REPUESTOS, UTILLAJE Y APAREJOS DE LOS MISMOS; MOBILIARIO; MAQUINARIA Y MATERIAL DE OFICINA Y ESCOLAR; ELECTRODOMÉSTICOS, EQUIPOS ELECTRÓNICOS DEL HOGAR Y DE OFICINA Y SUS REPUESTOS; APARATOS Y MATERIAL DE INFORMÁTICA, DE TELECOMUNICACIÓN, IMAGEN Y SONIDO, ASÍ COMO SUS REPUESTOS; JUGUETES; TEJIDOS CONFECCIONADOS Y SIN CONFECCIONAR Y SUS COMPLEMENTOS; PIELES Y ARTÍCULOS DE MARROQUINERÍA; CALZADO; JOYAS, BISUTERÍA Y RELOJES; MENAJE DEL HOGAR; PERFUMERÍA, PELUQUERÍA, COSMÉTICA Y DROGUERÍA; TABACO Y ARTÍCULOS PARA FUMADORES; LIBROS, PERIÓDICOS, REVISTAS Y ARTÍCULOS DE PAPELERÍA; EQUIPOS Y MATERIAL MÉDICO; OBJETOS DE ARTE Y MATERIAL DEPORTIVO Y DE CAMPING. 5.- TOMAR PARTE EN LOS NEGOCIOS DE OTRAS SOCIEDADES CUYO OBJETIVO ESTÁ RELACIONADO CON LAS ACTIVIDADES DESCRITAS EN LOS APARTADOS ANTERIORES; Y TODO ELLO MEDIANTE LA COMPRA DE ACCIONES O PARTICIPACIONES, SUSCRIPCIÓN DE OBLIGACIONES Y AMPLIACIÓN DE CAPITAL. 6.- LA EXPLOTACIÓN PURAMENTE ECONÓMICA DE LA PRESTACIÓN DE SERVICIOS PROFESIONALES A TRAVÉS DE OTRAS EMPRESAS COLABORADORAS O MEDIANTE SU PROPIO PERSONAL DE INGENIERÍAS, ARQUITECTURA, AERONÁUTICA, INFORMÁTICA, DELINEACIÓN, ECONOMÍA, DERECHO, PERIODISMO Y GRADUADO SOCIAL. SI LAS DISPOSICIONES LEGALES EXIGIESEN PARA EL EJERCICIO DE ALGUNAS DE LAS ACTIVIDADES COMPRENDIDAS EN EL OBJETO SOCIAL ALGÚN TÍTULO PROFESIONAL O AUTORIZACIÓN ADMINISTRATIVA, O LA INSCRIPCIÓN EN REGISTROS PÚBLICOS, DICHAS ACTIVIDADES DEBERÁN REALIZARSE POR MEDIO DE PERSONA QUE OSTENTE LA DEBIDA TITULACIÓN, Y, EN SU CASO, NO PODRÁN INICIARSE ANTES DE QUE SE HAYAN CUMPLIDO LOS REQUISITOS ADMINISTRATIVOS EXIGIDOS. 7.- LA COMERCIALIZACIÓN DE SERVICIOS DE MARKETING Y VENTAS; RELACIONES PÚBLICAS; COMERCIALIZACIÓN DE PRODUCTOS DE REGALO PARA EMPRESA; CAMPAÑAS DE PROMOCIÓN Y DIFUSIÓN.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/09518",
+      "_links": {
+        "self": {
+          "name": "WARP 9, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/09518"
+        }
+      }
+    }
+  ]
+}

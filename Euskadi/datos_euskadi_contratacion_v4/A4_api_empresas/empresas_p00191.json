@@ -1,0 +1,448 @@
+{
+  "totalItems": 9042,
+  "totalPages": 905,
+  "currentPage": 191,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "name": "APPLUS NORCONTROL, S.L.U.",
+      "registrationNumber": "03165",
+      "identificationNumber": "B15044357",
+      "address": "CR. NACIONAL 6, KM. 582",
+      "location": {
+        "postalCode": "15168",
+        "municipality": "Sada",
+        "county": "Coruña, A",
+        "municipalityId": "075",
+        "countyId": "15"
+      },
+      "economicActivities": [
+        {
+          "id": "1.843.1",
+          "name": "Servicios técnicos de ingeniería",
+          "_links": {
+            "self": {
+              "name": "Servicios técnicos de ingeniería",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.1"
+            }
+          }
+        },
+        {
+          "id": "1.843.9",
+          "name": "Otros servicios técnicos n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros servicios técnicos n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.9"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-10-27",
+      "certificateEndDate": "2026-04-20",
+      "object": "LA PRESTACIÓN DE TODO TIPO DE SERVICIOS DE INSPECCIÓN Y CONTROL DE CALIDAD Y CANTIDAD, INSPECCIÓN REGLAMENTARIA, COLABORACIÓN CON LA ADMINISTRACIÓN, CONSULTORÍA, AUDITORÍA, CERTIFICACIÓN, HOMOLOGACIÓN, FORMACIÓN Y CUALIFICACIÓN DE PERSONAL Y ASISTENCIA TÉCNICA EN GENERAL, CON EL FIN DE MEJORAR LA ORGANIZACIÓN Y LA GESTIÓN DE CALIDAD, LA SEGURIDAD Y EL MEDIO AMBIENTE; LA REALIZACIÓN DE ESTUDIOS, TRABAJOS, MEDIDAS, ENSAYOS, ANÁLISIS Y CONTROLES EN LABORATORIO O EN SITIO Y DEMÁS MÉTODOS Y ACTUACIONES PROFESIONALES QUE SE CONSIDEREN NECESARIOS Y FUNDAMENTALMENTE EN MATERIALES, PRODUCTOS, EQUIPOS E INSTALACIONES INDUSTRIALES Y EN LAS ÁREAS MECÁNICA, ELÉCTRICA, ELECTRÓNICA E INFORMÁTICA, DE TRANSPORTES Y COMUNICACIONES, DE ORGANIZACIÓN ADMINISTRATIVA Y OFIMÁTICA, MINERÍA, ALIMENTACIÓN, MEDIO AMBIENTE, EDIFICACIÓN Y ORA CIVIL, EFECTUADAS EN SUS FASES DE DISEÑO, PROYECTO, DE FABRICACIÓN, DE CONSTRUCCIÓN Y MONTAJE DE PUESTA EN MARCHA, DE MANTENIMIENTO Y DE PRODUCCIÓN, Y PARA TODA CLASE DE EMPRESAS Y ENTIDADES TANTO PRIVADAS COMO PÚBLICAS, ASÍ COMO ANTE LA ADMINISTRACIÓN CENTRAL DEL ESTADOS, LAS ADMINSTRACIONES DE COMUNIDADES AUTÓNOMAS, PROVINCIAS Y MUNICIPIOS Y TODO TIPO DE ORGANISMOS, INSTITUCIONES Y USUARIOS, TANTO EN EL TERRITORIO NACIONAL COMO FUERA DEL MISMO",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03165",
+      "_links": {
+        "self": {
+          "name": "APPLUS NORCONTROL, S.L.U.",
+          "href": "https://api.euskadi.eus/procurements/companies/03165"
+        }
+      }
+    },
+    {
+      "name": "ISURKI, S.L.",
+      "registrationNumber": "05880",
+      "identificationNumber": "B20430427",
+      "address": "GABIRIA 2, 1ªPL. LOCALL",
+      "location": {
+        "postalCode": "20305",
+        "municipality": "Irun",
+        "county": "Gipuzkoa",
+        "municipalityId": "045",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.391.4",
+          "name": "Fabricación de aparatos de medida, control y regulación densidad, temp., humedad",
+          "_links": {
+            "self": {
+              "name": "Fabricación de aparatos de medida, control y regulación densidad, temp., humedad",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.391.4"
+            }
+          }
+        },
+        {
+          "id": "1.843.1",
+          "name": "Servicios técnicos de ingeniería",
+          "_links": {
+            "self": {
+              "name": "Servicios técnicos de ingeniería",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-10-27",
+      "certificateEndDate": "2026-04-27",
+      "object": "LA PRESTACIÓN DE SERVICIOS TÉCNICOS DE INGENIERÍA INDUSTRIAL A EMPRESAS, ENTIDADES Y PARTICULARES",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/05880",
+      "_links": {
+        "self": {
+          "name": "ISURKI, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/05880"
+        }
+      }
+    },
+    {
+      "name": "VADILLO ASESORES SOLUCIONES JURÍDICAS A EMPRESAS, S.L.",
+      "registrationNumber": "02800",
+      "identificationNumber": "B01118421",
+      "address": "PADULETA 55 OF 107",
+      "location": {
+        "postalCode": "01015",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.841",
+          "name": "Servicios jurídicos",
+          "_links": {
+            "self": {
+              "name": "Servicios jurídicos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.841"
+            }
+          }
+        },
+        {
+          "id": "1.933.9",
+          "name": "Otras actividades de enseñanza tales como idiomas, mecanografía",
+          "_links": {
+            "self": {
+              "name": "Otras actividades de enseñanza tales como idiomas, mecanografía",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.933.9"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-10-27",
+      "certificateEndDate": "2026-04-27",
+      "object": "LA INTERMEDIACIÓN EN LA PRESTACIÓN DE SERVICIOS ENTRE EL CLIENTE FINAL Y LOS PROFESIONALES PERSONAS FÍSICAS QUE DESARROLLEN LAS ACTIVIDADES, ASÍ COMO LA COORDINACIÓN DE LAS DIFERENTES PRESTACIONES ESPECÍFICAS Y LOS MEDIOS NECESARIOS PARA QUE LOS PROFESIONALES DESARROLLLEN SERVICIOS Y ACTIVIDADES DE FORMACIÓN Y ASESORAMIENTO EN RECURSOS HUMANOS, MÉTODOS ALTERNATIVOS DE RESOLUCIÓN DE CONFLICTOS, ESPECIALMENTE MEDIACIÓN, NUEVAS TECNOLOGÍAS, PROTECCIÓN DE DATOS DE CARÁCTER PERSONAL Y COMUNICACIÓN, ASESORAMIENTO JURÍDICO EN TODOS LOS ÁMBITOS DEL DERECHO, ACTUAR HABITUALMENTE EN LA NEGOCIACIÓN Y FORMALIZACIÓN DE OPERACIONES TÍPICAS DE LA ACTIVIDAD DE UNA ENTIDAD DE CRÉDITO, EN NOMBRE Y POR CUENTA DE ÉSTA, CON CARÁCTER DE AGENTE DE ENTIDAD DE CRÉDITO, EN LAS CONDICIONES Y CON LOS REQUISITOS ESTABLECIDOS EN EL ART. 22 DEL REAL DECRETO 1245/95 DE 14 DE JULIO Y EN LAS NORMAS QUE LO DESARROLLEN O, EN SU CASO, LO SUSTITUYAN. LA ENUMERACIÓN DE LAS ACTIVIDADES SOCIALES ESPECIFICADAS NO PRESUPONE EL INMEDIATO DESENVOLVIMIENTO DE TODAS ELLAS, NI LA SIMULTANEIDAD DE LAS MISMAS, SI NO LA POSIBILIDAD DE SU EJERCICIO CONDICIONADO A LAS CIRCUNSTANCIAS LIBREMENTE APRECIADAS POR LA ADMINISTRACIÓN SOCIAL, EN SU CASO, QUE PODRÁ INICIAR O NO TALES ACTVIDADES, ASÍ COMO SUSPENDERLAS Y REEMPRENDERLAS CUANDO, A SU JUICIO, LO REQUIERA EL INTERÉS SOCIAL. LAS ACTIVIDADES INTEGRANTES DEL OBJETO SOCIAL PODRÁN SER DESARROLLADAS, TOTAL O PARCIALMENTE, DE MODO INDIRECTO, MEDIANTE LA TITULARIDAD DE ACCIONES O PARTICIPACIONES EN SOCIEDADES CON OBJETO IDÉNTICO O ANÁLOGO. EN TODO CASO: A) QUEDAN EXCLUIDAS DEL OBJETO SOCIAL AQUELLAS ACTIVIDADES QUE POR LEY TIENEN UNA REGULACIÓN ESPECIAL; B) SI LA LEY EXIGE PARA EL EJERCICIO DE LAS ACTIVIDADES INCLUÍDAS EN EL OBJETO SOCIAL ALGÚN TÍTULO PROFESIONAL, ESTAS DEBERÁN REALIZARSE POR MEDIO DE PERSONA QUE OSTENTE LA TITULACIÓN REQUERIDA",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/02800",
+      "_links": {
+        "self": {
+          "name": "VADILLO ASESORES SOLUCIONES JURÍDICAS A EMPRESAS, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/02800"
+        }
+      }
+    },
+    {
+      "name": "IKERSARE AST. ANÁLISIS SOCIOLÓGICOS Y TERRITORIALES, S.L.",
+      "registrationNumber": "07368",
+      "identificationNumber": "B31570997",
+      "address": "CALLE LINDACHIQUIA 10 - 1 ",
+      "location": {
+        "postalCode": "31001",
+        "municipality": "Pamplona/Iruña",
+        "county": "Navarra",
+        "municipalityId": "201",
+        "countyId": "31"
+      },
+      "economicActivities": [
+        {
+          "id": "1.861.2",
+          "name": "Alquiler de locales industriales y otros alquileres n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Alquiler de locales industriales y otros alquileres n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.861.2"
+            }
+          }
+        },
+        {
+          "id": "1.999",
+          "name": "Otros servicios n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros servicios n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.999"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-10-27",
+      "certificateEndDate": "2026-04-27",
+      "object": "LA REALIZACIÓN, POR MEDIO DE PROFESIONALES DEBIDAMENTE TITULADOS, DE ESTUDIOS SOCIO-ECONÓMICOS, SOCIO-SANITARIOS, SOCIO-URBANÍSTICOS, SOCIOPOLÍTICOS, SOCIOLÓGICOS Y SOCIALES DE ORDENACIÓN DEL TERRITORIO, DE PLANIFICACIÓN PARA LA SUPRESIÓN DE BARRERAS ARQUITECTÓNICAS, URBANÍSTICAS, DE TRANSPORTE Y DE COMUNICACIÓN, ASÍ COMO DE OTRO TIPO. LA REALIZACIÓN, BAJO CUALQUIER SOPORTE DE TEXTOS, IMÁGENES Y PROGRAMAS INFORMÁTICOS, RELATIVOS AL PUNTO ANTERIOR. LA ORGANIZACIÓN DE CONGRESOS, CERTÁMENES Y REUNIONES RELATIVAS A LOS DOS PUNTOS ANTERIORES. LA EDICIÓN DE LIBROS Y ESTUDIOS TÉCNICOS EN RELACIÓN CON LO ANTERIOR. LA COMERCIALIZACIÓN, EN LA FORMA MÁS AMPLIA, DE LOS PRODUCTOS RELACIONADOS. LA INSTALACIÓN, IMPLANTACIÓN Y EXPLOTACIÓN DE TODO TIPO DE ESTABLECIMIENTOS DE HOSTELERÍA, TALES COMO RESTAURANTES, HOTELES, BARES, CAFETERÍAS, ETC., YA SEA EN RÉGIMEN DE PROPIEDAD O ARRENDAMIENTO, CON PRESTACIÓN DE SERVICIOS ACCESIBLES",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07368",
+      "_links": {
+        "self": {
+          "name": "IKERSARE AST. ANÁLISIS SOCIOLÓGICOS Y TERRITORIALES, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/07368"
+        }
+      }
+    },
+    {
+      "name": "NUUK TECHNOLOGIES, S.L.",
+      "registrationNumber": "08584",
+      "identificationNumber": "B02949972",
+      "address": "Paseo Mikeletegi 57",
+      "location": {
+        "postalCode": "20009",
+        "municipality": "Donostia / San Sebastián",
+        "county": "Gipuzkoa",
+        "municipalityId": "069",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.845",
+          "name": "Explotación electrónica por cuenta de terceros",
+          "_links": {
+            "self": {
+              "name": "Explotación electrónica por cuenta de terceros",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.845"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-10-27",
+      "certificateEndDate": "2026-04-27",
+      "object": "DISEÑO, DESARROLLO, INGENIERÍA, CONSULTORÍA Y COMERCIALIACIÓN DE PRODUCTOS Y SERVICIOS SOFTWARE EN DISTINTOS MERCADOS VERTICALES. CNAE ACTIVIDAD PRINCIPAL: ACTIVIDADES DE PROGRMACIÓN INFORMÁTICA (6201).",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08584",
+      "_links": {
+        "self": {
+          "name": "NUUK TECHNOLOGIES, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/08584"
+        }
+      }
+    },
+    {
+      "name": "GRUAS IRATXE S L",
+      "registrationNumber": "04684",
+      "identificationNumber": "B48553473",
+      "address": "C/ BERESI PAB C1 POLIG. ASTIKENE",
+      "location": {
+        "postalCode": "48160",
+        "municipality": "Derio",
+        "county": "Bizkaia",
+        "municipalityId": "901",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.722",
+          "name": "Transporte de mercancías por carretera",
+          "_links": {
+            "self": {
+              "name": "Transporte de mercancías por carretera",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.722"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-10-27",
+      "certificateEndDate": "2026-04-22",
+      "object": "LA ACTIVIDAD DERIVADA DEL TRANSPORTE DE PERSONAS, VEHÍCULOS, MERCANCÍAS POR ESPAÑA O POR EL EXTRANJERO, POR CUENTA PROPIA O AJENA Y EN TODO TIPO DE VEHÍCULOS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/04684",
+      "_links": {
+        "self": {
+          "name": "GRUAS IRATXE S L",
+          "href": "https://api.euskadi.eus/procurements/companies/04684"
+        }
+      }
+    },
+    {
+      "name": "LOYOLA NORTE, S.A.",
+      "registrationNumber": "09173",
+      "identificationNumber": "A20074738",
+      "address": "OIALUME BIDEA, 28",
+      "location": {
+        "postalCode": "20115",
+        "municipality": "Astigarraga",
+        "county": "Gipuzkoa",
+        "municipalityId": "903",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.342.2",
+          "name": "Otro material eléctrico de utilización y equipamiento",
+          "_links": {
+            "self": {
+              "name": "Otro material eléctrico de utilización y equipamiento",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.342.2"
+            }
+          }
+        },
+        {
+          "id": "1.504.1",
+          "name": "Instalaciones eléctricas en general",
+          "_links": {
+            "self": {
+              "name": "Instalaciones eléctricas en general",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.504.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-10-27",
+      "certificateEndDate": "2026-04-07",
+      "object": "LA REALIZACIÓN DE TODA CLASE DE ACTIVIDADES DE MONTAJE ELÉCTRICO Y APARELLAJE.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/09173",
+      "_links": {
+        "self": {
+          "name": "LOYOLA NORTE, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/09173"
+        }
+      }
+    },
+    {
+      "name": "SERIKAT CONSULTORÍA E INFORMÁTICA, S.A.",
+      "registrationNumber": "01453",
+      "identificationNumber": "A48476006",
+      "address": "C/ ERCILLA, Nº 19",
+      "location": {
+        "postalCode": "48009",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.845",
+          "name": "Explotación electrónica por cuenta de terceros",
+          "_links": {
+            "self": {
+              "name": "Explotación electrónica por cuenta de terceros",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.845"
+            }
+          }
+        },
+        {
+          "id": "1.932.1",
+          "name": "Enseñanza de formación y perfeccionamiento profesional no superior",
+          "_links": {
+            "self": {
+              "name": "Enseñanza de formación y perfeccionamiento profesional no superior",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.932.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-10-27",
+      "certificateEndDate": "2026-04-22",
+      "object": "EL ANÁLISIS, DISEÑO, DESARROLLO, IMPLANTACIÓN Y MANTENIMIENTO DE SISTEMAS DE INFORMACIÓN. LOS SERVICIOS DE ATENCIÓN DE USUARIOS (CALL CENTERS) Y LOS SERVICIOS DE EXPLOTACIÓN, CONTROL, SOPORTE Y MANTENIMIENTO DE SISTEMAS INFORMÁTICOS E INFRAESTRUCTURAS TELEMÁTICAS. ESTOS SERVICIOS PODRÁN SER PRESTADOS TANTO EN RÉGIMEN DE EXTERNALIZACIÓN (OUTSOURCING) COMO A TRAVÉS DE LAS INFRAESTRUCTURAS E INSTALACIONES DE SERIKAT. LOS SERVICIOS DE CONSULTORÍA EN CUALQUIER ÁMBITO, DE FORMA DESTACADA EN EL DE LAS TECNOLOGÍAS DE LA INFORMACIÓN Y LAS COMUNICACIONES. LOS SERVICIOS DE CAPTURA DE INFORMACIÓN POR MEDIOS ELECTRÓNICOS, INFORMÁTICOS Y TELEMÁTICOS. LA FORMACIÓN EN TODO TIPO DE MATERIAS INFORMÁTICAS Y EMPRESARIALES, INCLUIDO EL PERSONAL ESPECIALISTA. LA PRESTACIÓN DE TODO TIPO DE SERVICIOS AUXILIARES INCLUIDOS AQUELLOS PARA TRABAJOS ADMINISTRATIVOS DE ARCHIVO Y SIMILARES Y PARA LA GESTIÓN Y ADMINISTRACIÓN DE BIBLIOTECAS, ARCHIVOS Y MUSEOS. LA REALIZACIÓN DE ANÁLISIS, PROYECTOS Y ESTUDIOS DE TODO GÉNERO. LA COMPRA, VENTA, IMPORTACIÓN, EXPORTACIÓN, COMERCIALIZACIÓN Y MANTENIMIENTO DE HARDWARE Y SOFTWARE Y ELEMENTOS QUE CON ELLOS SE RELACIONEN. Y LA REPRESENTACIÓN COMO AGENTE, DISTRIBUIDOR, COMISIONISTA, DELEGADO O CUALQUIER OTRA FORMA DE MEDIACIÓN MERCANTIL DE TODA CLASE DE EMPRESAS NACIONALES O EXTRANJERAS, RELACIONADAS CON LA INFORMÁTICA, ASÍ COMO LA EXPLOTACIÓN DE PATENTES, MÉTODOS, PROCEDIMIENTOS O ESTUDIOS Y DERECHOS INCLUIDOS EN EL ÁMBITO DE LA PROPIEDAD INDUSTRIAL RELACIONADOS CON EL FIN PRINCIPAL DE LA INFORMÁTICA. LOS SERVICIOS DE TRANSCRIPCIÓN Y EDICIÓN Y CORRECCIÓN DE TRANSCRIPCIONES, MECANOGRAFÍA, TRATAMIENTO DE CUALQUIER TIPO DE TEXTOS Y AUTOEDICIÓN. LOS SERVICIOS DE EDICIÓN, CORRECCIÓN, CATALOGACIÓN Y MAQUETACIÓN DE PUBLICACIONES ELECTRÓNICAS\n\n",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/01453",
+      "_links": {
+        "self": {
+          "name": "SERIKAT CONSULTORÍA E INFORMÁTICA, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/01453"
+        }
+      }
+    },
+    {
+      "name": "DONOSTYLETOURS, S.L.",
+      "registrationNumber": "08808",
+      "identificationNumber": "B75134254",
+      "address": "Camino Pillotegi, 2. Oficina 304. ",
+      "location": {
+        "postalCode": "20018",
+        "municipality": "Donostia / San Sebastián",
+        "county": "Gipuzkoa",
+        "municipalityId": "069",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.755",
+          "name": "Agencias de viajes",
+          "_links": {
+            "self": {
+              "name": "Agencias de viajes",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.755"
+            }
+          }
+        },
+        {
+          "id": "1.854.1",
+          "name": "Alquiler de automóviles sin conductor",
+          "_links": {
+            "self": {
+              "name": "Alquiler de automóviles sin conductor",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.854.1"
+            }
+          }
+        },
+        {
+          "id": "1.989.2",
+          "name": "Servicios de organización de congresos, asambleas y similares",
+          "_links": {
+            "self": {
+              "name": "Servicios de organización de congresos, asambleas y similares",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.989.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-10-27",
+      "certificateEndDate": "2026-04-21",
+      "object": "1. CONSTRUCCIÓN, INSTALACIONES Y MANTENIMIENTO. 2. COMERCIO AL POR MAYOR Y AL POR MENOR. DISTRIBUCIÓN COMERCIAL, IMPORTACIÓN Y EXPORTACIÓN. 3. ACTIVIDADES INMOBILIARIAS. 4. ACTIVIDADES PROFESIONALES. 5. INDUSTRIAS MANUFACTURAS Y TEXTILES 6. TURISMO, HOSTELERÍA Y RESTAURACIÓN. 7. PRESTACIÓN DE SERVICIOS. ACTIVIDADES DE GESTIÓN Y ADMINISTRACIÓN. SERVICIOS EDUCATIVOS, SANITARIOS, DE OCIO Y ENTRETENIMIENTO. 8. TRANSPORTE Y ALMACENAMIENTO. 9. INFORMACIÓN Y COMUNICACIONES. 10. AGRICULTURA, GANADERÍA Y PESCA. 11. INFORMÁTICA, TELECOMUNICACIONES Y OFIMÁTICA. 12. ENERGÍAS ALTERNATIVAS. 13. COMPRAVENTA Y REPARACIÓN DE VEHÍCULOS. REPARACIÓN Y MANTENIMIENTO DE INSTALACIONES Y MAQUINARIA. 14. INVESTIGACIÓN, DESARROLLO E INNOVACIÓN. 15. ACTIVIDADES CIENTÍFICAS Y TÉCNICAS.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08808",
+      "_links": {
+        "self": {
+          "name": "DONOSTYLETOURS, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/08808"
+        }
+      }
+    },
+    {
+      "name": "CUBIERTAS PEJUAL, S.L.",
+      "registrationNumber": "08830",
+      "identificationNumber": "B01509793",
+      "address": "URITIASOLO Nº 2 PAB. 6",
+      "location": {
+        "postalCode": "01006",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.503.1",
+          "name": "Preparación y montaje de estructuras y cubiertas en edificaciones",
+          "_links": {
+            "self": {
+              "name": "Preparación y montaje de estructuras y cubiertas en edificaciones",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.503.1"
+            }
+          }
+        },
+        {
+          "id": "1.504.2",
+          "name": "Instalaciones de fontanería",
+          "_links": {
+            "self": {
+              "name": "Instalaciones de fontanería",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.504.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-10-26",
+      "certificateEndDate": "2026-04-26",
+      "object": "A).- INSTALACIÓN, REPARACIÓN, MANTENIMIENTO, FABRICACIÓN DE CUBIERTAS Y CANALONES EN TODO TIPO DE EDIFICACIONES. B).- REALIZACIÓN DE TRABAJOS DE FONTANERÍA, SANEAMIENTOS Y CLIMATIZACIÓN. C).- MANTENIMIENTO DE INSTALACIONES DE FONTANERÍA Y CALEFACCIÓN.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08830",
+      "_links": {
+        "self": {
+          "name": "CUBIERTAS PEJUAL, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/08830"
+        }
+      }
+    }
+  ]
+}

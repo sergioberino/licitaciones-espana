@@ -1,0 +1,520 @@
+{
+  "totalItems": 919,
+  "totalPages": 92,
+  "currentPage": 57,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "id": 557,
+      "identificationNumber": "P4800700I",
+      "name": "Ayuntamiento de Arantzazu",
+      "scope": "BIZKAIA",
+      "address": "Zelaia,1. 48140 Arantzazu (Bizkaia)",
+      "webPage": "http://www.arantzazukoudala.com",
+      "publicationDate": "2019-10-07",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES213",
+      "entities": [
+        {
+          "id": 1007,
+          "name": "Ayuntamiento de Arantzazu",
+          "orgs": [
+            {
+              "id": 912671,
+              "name": "Alcaldïa",
+              "_links": {
+                "self": {
+                  "name": "Alcaldïa",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/557/entities/1007/orgs/912671"
+                }
+              }
+            },
+            {
+              "id": 912670,
+              "name": "Pleno",
+              "_links": {
+                "self": {
+                  "name": "Pleno",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/557/entities/1007/orgs/912670"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Ayuntamiento de Arantzazu",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/557/entities/1007"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder557/es_doc/es_arch_poder557.html",
+      "_links": {
+        "self": {
+          "name": "Ayuntamiento de Arantzazu",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/557"
+        }
+      }
+    },
+    {
+      "id": 558,
+      "identificationNumber": "G95094637",
+      "name": "Bizkaialde",
+      "scope": "BIZKAIA",
+      "address": "Rekalde Zumarkalea, 30-1º. 48009 Bilbao (Bizkaia)",
+      "webPage": "http://www.bizkaialde.net",
+      "publicationDate": "2019-10-07",
+      "mainActivity": "Ocio, cultura y religión",
+      "codNUTS": "ES213",
+      "entities": [
+        {
+          "id": 1008,
+          "name": "Fundación Bizkaia Bizkaialde",
+          "orgs": [
+            {
+              "id": 912672,
+              "name": "Presidenta",
+              "_links": {
+                "self": {
+                  "name": "Presidenta",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/558/entities/1008/orgs/912672"
+                }
+              }
+            },
+            {
+              "id": 912673,
+              "name": "Patronato de la Fundación",
+              "_links": {
+                "self": {
+                  "name": "Patronato de la Fundación",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/558/entities/1008/orgs/912673"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Fundación Bizkaia Bizkaialde",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/558/entities/1008"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder558/es_doc/es_arch_poder558.html",
+      "_links": {
+        "self": {
+          "name": "Bizkaialde",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/558"
+        }
+      }
+    },
+    {
+      "id": 561,
+      "identificationNumber": "G95034823",
+      "name": "Fundación Bilbao 700 III Milenium Fundazioa",
+      "scope": "BIZKAIA",
+      "address": "Plaza del Ensanche,11. 48009 Bilbao (Bizkaia)",
+      "webPage": "http://www.bilbao700.eus",
+      "publicationDate": "2019-10-07",
+      "mainActivity": "Ocio, cultura y religión",
+      "codNUTS": "ES213",
+      "entities": [
+        {
+          "id": 1011,
+          "name": "Fundación Bilbao 700 III Milenium Fundazioa",
+          "orgs": [
+            {
+              "id": 912685,
+              "name": "Directora General",
+              "_links": {
+                "self": {
+                  "name": "Directora General",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/561/entities/1011/orgs/912685"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Fundación Bilbao 700 III Milenium Fundazioa",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/561/entities/1011"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder561/es_doc/es_arch_poder561.html",
+      "_links": {
+        "self": {
+          "name": "Fundación Bilbao 700 III Milenium Fundazioa",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/561"
+        }
+      }
+    },
+    {
+      "id": 566,
+      "identificationNumber": "P9805502C",
+      "name": "Centro de Iniciativas Profesionales de Gernika-Lumo",
+      "scope": "BIZKAIA",
+      "address": "Alondegia,6. 48300 Gernika-Lumo (Bizkaia)",
+      "webPage": "http://www.lanbide-ekimenak.eus",
+      "publicationDate": "2019-10-07",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES213",
+      "entities": [
+        {
+          "id": 1016,
+          "name": "Centro de Iniciativas Profesionales de Gernika-Lumo",
+          "orgs": [
+            {
+              "id": 912692,
+              "name": "Presidente",
+              "_links": {
+                "self": {
+                  "name": "Presidente",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/566/entities/1016/orgs/912692"
+                }
+              }
+            },
+            {
+              "id": 912691,
+              "name": "Junta Rectora",
+              "_links": {
+                "self": {
+                  "name": "Junta Rectora",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/566/entities/1016/orgs/912691"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Centro de Iniciativas Profesionales de Gernika-Lumo",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/566/entities/1016"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder566/es_doc/es_arch_poder566.html",
+      "_links": {
+        "self": {
+          "name": "Centro de Iniciativas Profesionales de Gernika-Lumo",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/566"
+        }
+      }
+    },
+    {
+      "id": 576,
+      "identificationNumber": "B95746368",
+      "name": "Bilbao Bizkaia Museoak, SL",
+      "scope": "BIZKAIA",
+      "address": "Conde Mirasol, 2. 48003 Bilbao (Bizkaia)",
+      "webPage": "http://bbmuseoak.eus",
+      "publicationDate": "2019-10-07",
+      "mainActivity": "Ocio, cultura y religión",
+      "codNUTS": "ES213",
+      "entities": [
+        {
+          "id": 1026,
+          "name": "Bilbao Bizkaia Museoak, SL",
+          "orgs": [
+            {
+              "id": 912707,
+              "name": "Consejo de administración",
+              "_links": {
+                "self": {
+                  "name": "Consejo de administración",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/576/entities/1026/orgs/912707"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Bilbao Bizkaia Museoak, SL",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/576/entities/1026"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder576/es_doc/es_arch_poder576.html",
+      "_links": {
+        "self": {
+          "name": "Bilbao Bizkaia Museoak, SL",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/576"
+        }
+      }
+    },
+    {
+      "id": 599,
+      "identificationNumber": "P4805600F",
+      "name": "Ayuntamiento de Gizaburuaga",
+      "scope": "BIZKAIA",
+      "address": "Eleizaldea,2. 48289 Gizaburuaga.(Bizakaia)",
+      "webPage": "http://www.contratacion.euskadi.eus",
+      "publicationDate": "2019-10-07",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES213",
+      "entities": [
+        {
+          "id": 1050,
+          "name": "Ayuntamiento de Gizaburuaga",
+          "orgs": [
+            {
+              "id": 912760,
+              "name": "Alcaldía",
+              "_links": {
+                "self": {
+                  "name": "Alcaldía",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/599/entities/1050/orgs/912760"
+                }
+              }
+            },
+            {
+              "id": 912761,
+              "name": "Pleno",
+              "_links": {
+                "self": {
+                  "name": "Pleno",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/599/entities/1050/orgs/912761"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Ayuntamiento de Gizaburuaga",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/599/entities/1050"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder599/es_doc/es_arch_poder599.html",
+      "_links": {
+        "self": {
+          "name": "Ayuntamiento de Gizaburuaga",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/599"
+        }
+      }
+    },
+    {
+      "id": 602,
+      "identificationNumber": "P4800037F",
+      "name": "Organismo Autónomo Local, \"Euskaltegi Municipal de Galdakao\"",
+      "scope": "BIZKAIA",
+      "address": " Muguru Kalea, 6. 48960 Galdakao (Bizkaia)",
+      "webPage": "http://www.galdakao.eus/euskaltegi",
+      "publicationDate": "2019-10-07",
+      "mainActivity": "Ocio, cultura y religión",
+      "codNUTS": "ES213",
+      "entities": [
+        {
+          "id": 1053,
+          "name": "Euskaltegi Municipal de Galdakao",
+          "orgs": [
+            {
+              "id": 912766,
+              "name": "Presidente",
+              "_links": {
+                "self": {
+                  "name": "Presidente",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/602/entities/1053/orgs/912766"
+                }
+              }
+            },
+            {
+              "id": 912765,
+              "name": "Junta Rectora",
+              "_links": {
+                "self": {
+                  "name": "Junta Rectora",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/602/entities/1053/orgs/912765"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Euskaltegi Municipal de Galdakao",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/602/entities/1053"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder602/es_doc/es_arch_poder602.html",
+      "_links": {
+        "self": {
+          "name": "Organismo Autónomo Local, \"Euskaltegi Municipal de Galdakao\"",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/602"
+        }
+      }
+    },
+    {
+      "id": 606,
+      "identificationNumber": "P4800002J",
+      "name": "Mancomunidad de la Margen Izquierda y Zona Minera",
+      "scope": "BIZKAIA",
+      "address": "Parque Ignacio Ellacuria, 2. 48920 Portugalete (Bizkaia)",
+      "webPage": "http://www.mancomunidadmmi.org",
+      "publicationDate": "2019-10-07",
+      "mainActivity": "Medio ambiente",
+      "codNUTS": "ES213",
+      "entities": [
+        {
+          "id": 1057,
+          "name": "Mancomunidad de la Margen Izquierda y Zona Minera",
+          "orgs": [
+            {
+              "id": 912775,
+              "name": "Presidencia",
+              "_links": {
+                "self": {
+                  "name": "Presidencia",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/606/entities/1057/orgs/912775"
+                }
+              }
+            },
+            {
+              "id": 912776,
+              "name": "Junta de Gobierno",
+              "_links": {
+                "self": {
+                  "name": "Junta de Gobierno",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/606/entities/1057/orgs/912776"
+                }
+              }
+            },
+            {
+              "id": 912777,
+              "name": "Junta Plenaria",
+              "_links": {
+                "self": {
+                  "name": "Junta Plenaria",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/606/entities/1057/orgs/912777"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Mancomunidad de la Margen Izquierda y Zona Minera",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/606/entities/1057"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder606/es_doc/es_arch_poder606.html",
+      "_links": {
+        "self": {
+          "name": "Mancomunidad de la Margen Izquierda y Zona Minera",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/606"
+        }
+      }
+    },
+    {
+      "id": 620,
+      "identificationNumber": "B95170650",
+      "name": "Mungialdeko Behargintza",
+      "scope": "BIZKAIA",
+      "address": "Gamiz bidea, 30-32. 48100 Mungia (Bizkaia)",
+      "webPage": "http://www.mungialdeko-behargintza.com",
+      "publicationDate": "2019-10-07",
+      "mainActivity": "Otra actividad",
+      "alternativeActivity": "Promoción empresarial",
+      "codNUTS": "ES213",
+      "entities": [
+        {
+          "id": 1071,
+          "name": "Mungialdeko Behargintza",
+          "orgs": [
+            {
+              "id": 912793,
+              "name": "Presidente/a",
+              "_links": {
+                "self": {
+                  "name": "Presidente/a",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/620/entities/1071/orgs/912793"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Mungialdeko Behargintza",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/620/entities/1071"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder620/es_doc/es_arch_poder620.html",
+      "_links": {
+        "self": {
+          "name": "Mungialdeko Behargintza",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/620"
+        }
+      }
+    },
+    {
+      "id": 621,
+      "identificationNumber": "B95146692",
+      "name": "Behargintza de Uribe Kosta",
+      "scope": "BIZKAIA",
+      "address": "Karabiazpi auzoa,1. 48640 Berango (Bizkaia)",
+      "webPage": "http://www.urkobe.eus",
+      "publicationDate": "2019-10-07",
+      "mainActivity": "Otra actividad",
+      "alternativeActivity": "Promoción empresarial",
+      "codNUTS": "ES213",
+      "entities": [
+        {
+          "id": 1072,
+          "name": "Behargintza de Uribe Kosta",
+          "orgs": [
+            {
+              "id": 912794,
+              "name": "Coordinador",
+              "_links": {
+                "self": {
+                  "name": "Coordinador",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/621/entities/1072/orgs/912794"
+                }
+              }
+            },
+            {
+              "id": 912796,
+              "name": "Consejo de Administración",
+              "_links": {
+                "self": {
+                  "name": "Consejo de Administración",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/621/entities/1072/orgs/912796"
+                }
+              }
+            },
+            {
+              "id": 912795,
+              "name": "Presidente",
+              "_links": {
+                "self": {
+                  "name": "Presidente",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/621/entities/1072/orgs/912795"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Behargintza de Uribe Kosta",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/621/entities/1072"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder621/es_doc/es_arch_poder621.html",
+      "_links": {
+        "self": {
+          "name": "Behargintza de Uribe Kosta",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/621"
+        }
+      }
+    }
+  ]
+}

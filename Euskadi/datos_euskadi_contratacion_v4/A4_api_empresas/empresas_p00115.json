@@ -1,0 +1,454 @@
+{
+  "totalItems": 9042,
+  "totalPages": 905,
+  "currentPage": 115,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "name": "SOCIEDAD DE INVESTIGACIÓN APLICADA PARA EL DESARROLLO COMUNITARIO, S. COOP.",
+      "registrationNumber": "00487",
+      "identificationNumber": "F20031365",
+      "address": "BERIO PASEALEKUA, 11 - 1º EZK.",
+      "location": {
+        "postalCode": "20018",
+        "municipality": "Donostia / San Sebastián",
+        "county": "Gipuzkoa",
+        "municipalityId": "069",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.936.4",
+          "name": "Investigaciones en ciencias sociales, humanidades y jurídicas",
+          "_links": {
+            "self": {
+              "name": "Investigaciones en ciencias sociales, humanidades y jurídicas",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.936.4"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-12-16",
+      "certificateEndDate": "2026-05-20",
+      "classification": [
+        {
+          "id": "S",
+          "name": "Servicios",
+          "groups": [
+            {
+              "id": "L",
+              "subgroups": [
+                {
+                  "id": "03",
+                  "name": "Encuestas, toma de datos y servicios análogos",
+                  "categories": [
+                    {
+                      "id": "3",
+                      "name": "Desde 300.001 Hasta 600.000",
+                      "_links": {
+                        "self": {
+                          "name": "Desde 300.001 Hasta 600.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/S/categories/3"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "Encuestas, toma de datos y servicios análogos",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/L/subgroups/03"
+                    }
+                  }
+                }
+              ],
+              "_links": {
+                "self": {
+                  "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/L"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Servicios",
+              "href": "https://api.euskadi.eus/procurements/companies/types/S"
+            }
+          }
+        }
+      ],
+      "object": "LA REALIZACIÓN DE ESTUDIOS SOCIO-ECONÓMICOS, SOCIO-URBANÍSTICOS, SOCIO-CULTURALES, SOCIO-LINGÜÍSTICOS Y LA REALIZACIÓN DE ESTUDIOS RELACIONADOS CON LOS ÁMBITOS DE BIENESTAR SOCIAL, JUVENTUD, IGUALDAD DE GÉNERO, COMUNICACIÓN Y MARKETING, DESARROLLO SOSTENIBLE Y OPINIÓN SOCIAL .",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/00487",
+      "_links": {
+        "self": {
+          "name": "SOCIEDAD DE INVESTIGACIÓN APLICADA PARA EL DESARROLLO COMUNITARIO, S. COOP.",
+          "href": "https://api.euskadi.eus/procurements/companies/00487"
+        }
+      }
+    },
+    {
+      "name": "BEHIN BETIKO, S.L.U.",
+      "registrationNumber": "07397",
+      "identificationNumber": "B48969703",
+      "address": "Urquijo Zumardia",
+      "location": {
+        "postalCode": "48008",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.933.9",
+          "name": "Otras actividades de enseñanza tales como idiomas, mecanografía",
+          "_links": {
+            "self": {
+              "name": "Otras actividades de enseñanza tales como idiomas, mecanografía",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.933.9"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-12-16",
+      "certificateEndDate": "2026-05-28",
+      "object": "IRAKASKUNTZA ETA HEZIKETA-ZERBITZUAK ESKAINTZEA, BESTEAK BESTE, ARLO HAUETAN; HIZKUNTZAK, INFORMATIKA; KONTABILITATEA; ORDENAGAILU BIDEZKO DISEINU GRAFIKOA; OHIKO IRAKASKUNTZA; ENPRESEI IRAKASLEAK AZPIKONTRATATZEA; MATERIAL DESBERDINAK ARGITARATZEA, HALA NOLA, LIBURUAK, BIDEOAK, ZINTAK, CD ROMAK NAHIZ EDOZEIN EUSKARRI INFORMATIKO; ITZULPENAK ETA INTERPRETAZIOAK; HEZKUNTZAKO BIDAIAK ANTOLATZEA. GAINERA, BESTE JARDUERA HAUEK ERE BURUTUKO  DITU: INGURUNE INFORMATIKOAK IKERTU ETA GARATZEA; PAKETE INFORMATIKOAK GARATU ETA PROGRAMATZEA; HORIEN ERABILERARI BURUZKO HEZIKETA ESKAINTZEA; ORDENAGAILUAK ETA MATERIAL DIDAKTIKOA SALDU, EROSI ETA ALOKATZEA; ETA, ERA BEREAN, ZERBITZU HORIEN GUZTIEN MANTENIMENDUARI BURUZKO ZERBITZU TEKNIKOA EMATEA. BIDE BERETIK, LANDA-LURRAK, INDUSTRIA-LURRAK EDO HIRI-LURRAK EROSI, SALDU, TRUKATU, ESKURATU, ERRENTAN HARTU NAHIZ  EMAN EDO LAGA AHAL IZANGO DITU, LUR HORIEN SAILKAPENAK EDOZEIN IZANIK ERE. OROBAT, ONDASUN HIGIGARRI NAHIZ HIGIEZINAK ERABILI, LUPERTU ETA USTIATU AHAL IZANGO DITU, ONDASUNON JABETZA, ERRENTAMENDUA, AZPIERRENTAMENDUA ETA PREKARIOA IZANIK",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07397",
+      "_links": {
+        "self": {
+          "name": "BEHIN BETIKO, S.L.U.",
+          "href": "https://api.euskadi.eus/procurements/companies/07397"
+        }
+      }
+    },
+    {
+      "name": "CTRL+I KOOP. ELK. TXIKIA",
+      "registrationNumber": "10480",
+      "identificationNumber": "F24800195",
+      "address": "Calle Portuetxe",
+      "location": {
+        "postalCode": "20018",
+        "municipality": "Donostia / San Sebastián",
+        "county": "Gipuzkoa",
+        "municipalityId": "069",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.849.3",
+          "name": "Servicios de traducción y similares",
+          "_links": {
+            "self": {
+              "name": "Servicios de traducción y similares",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.849.3"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-12-16",
+      "certificateEndDate": "2026-06-16",
+      "object": "LA PRESTACIÓN DE SERVICIOS DE TRADUCCIÓN, INTERPRETACIÓN Y LOCALIZACIÓN DE TEXTOS Y DOCUMENTOS EN CUALQUIER IDIOMA, EN FORMATO FÍSICO O DIGITAL. LA CORRECCIÓN, REVISIÓN, TRANSCRIPCIÓN Y ADAPTACIÓN LINGÜÍSTICA Y CULTURAL DE TODO TIPO DE DOCUMENTOS, PÁGINAS WEB, SOFTWARE, MATERIAL AUDIOVISUAL, OBRAS LITERARIAS, TÉCNICAS, JURÍDICAS, CIENTÍFICAS O DE CUALQUIER OTRA NATURALEZA. LA ENSEÑANZA DE IDIOMAS, ELABORACIÓN DE MATERIALES DIDÁCTICOS, ASÍ COMO LA ORGANIZACIÓN DE CURSOS, SEMINARIOS Y TALLERES RELACIONADOS CON LA TRADUCCIÓN E INTERPRETACIÓN. LA EDICIÓN, MAQUETACIÓN Y PUBLICACIÓN DE TEXTOS TRADUCIDOS Y MATERIAL COMPLEMENTARIO EN CUALQUIER SOPORTE. OTRAS ACTIVIDADES LINGÜÍSTICAS.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/10480",
+      "_links": {
+        "self": {
+          "name": "CTRL+I KOOP. ELK. TXIKIA",
+          "href": "https://api.euskadi.eus/procurements/companies/10480"
+        }
+      }
+    },
+    {
+      "name": "IANIRE GIL RODRIGUEZ",
+      "registrationNumber": "08794",
+      "identificationNumber": "45820736K",
+      "address": "C/ GREGORIO UZCANO 19, 1º",
+      "location": {
+        "postalCode": "48920",
+        "municipality": "Portugalete",
+        "county": "Bizkaia",
+        "municipalityId": "078",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.952",
+          "name": "Asistencia y servicios sociales en centros no residenciales",
+          "_links": {
+            "self": {
+              "name": "Asistencia y servicios sociales en centros no residenciales",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.952"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-12-16",
+      "certificateEndDate": "2026-05-19",
+      "object": "ASISTENCIA Y SERVICIOS SOCIALES EN CENTROS NO RESIDENCIALES.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08794",
+      "_links": {
+        "self": {
+          "name": "IANIRE GIL RODRIGUEZ",
+          "href": "https://api.euskadi.eus/procurements/companies/08794"
+        }
+      }
+    },
+    {
+      "name": "AI LAKET- ASOCIACIÓN DE PERSONAS USUARIAS DE DROGAS PARA LA REDUCCIÓN DE RIESGOS",
+      "registrationNumber": "07341",
+      "identificationNumber": "G01334119",
+      "address": "c/ Fundadora de las Siervas de Jesús 40 bajo",
+      "location": {
+        "postalCode": "01001",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.934",
+          "name": "Enseñanza fuera de establecimiento permanente",
+          "_links": {
+            "self": {
+              "name": "Enseñanza fuera de establecimiento permanente",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.934"
+            }
+          }
+        },
+        {
+          "id": "1.952",
+          "name": "Asistencia y servicios sociales en centros no residenciales",
+          "_links": {
+            "self": {
+              "name": "Asistencia y servicios sociales en centros no residenciales",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.952"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-12-16",
+      "certificateEndDate": "2026-05-28",
+      "object": "1- LA IMPLEMENTACIÓN DE MODELOS DE CONSUMO RESPONSABLE DE DROGAS. 2- LA PROMOCIÓN Y REALIZACIÓN DE TODO TIPO DE MEDIDAS DESDE UNA PERSPECTIVA INTERSECCIONAL DIRIGIDAS A LA REDUCCIÓN DE RIESGOS ASOCIADOS CON LAS DROGAS. 3- EL ESTUDIO Y LA DIVULGACIÓN DE TODO TIPO DE CUESTIONES RELACIONADAS CON LAS DROGAS. 4- LA DEFENSA DE LOS DERECHOS DE LAS PERSONAS USUARIAS DE DROGAS ILÍCITAS Y LA PROMOCIÓN DEL DEBATE SOCIAL EN TORNO A LA LEGALIZACIÓN DE LAS DROGAS ACTUALMENTE ILÍCITAS. 5- NO CONSTITUYE OBJETIVO DE LA ASOCIACIÓN EL FOMENTO NI LA DIFUSIÓN DEL CONSUMO DE SUSTANCIA ALGUNA",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07341",
+      "_links": {
+        "self": {
+          "name": "AI LAKET- ASOCIACIÓN DE PERSONAS USUARIAS DE DROGAS PARA LA REDUCCIÓN DE RIESGOS",
+          "href": "https://api.euskadi.eus/procurements/companies/07341"
+        }
+      }
+    },
+    {
+      "name": "BIHARKO GIPUZKOA, S.L.",
+      "registrationNumber": "03371",
+      "identificationNumber": "B20643045",
+      "address": "POLÍGONO UGARTE, 145",
+      "location": {
+        "postalCode": "20720",
+        "municipality": "Azkoitia",
+        "county": "Gipuzkoa",
+        "municipalityId": "017",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.861.2",
+          "name": "Alquiler de locales industriales y otros alquileres n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Alquiler de locales industriales y otros alquileres n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.861.2"
+            }
+          }
+        },
+        {
+          "id": "1.951",
+          "name": "Asistencia y servicios sociales en centros residenciales",
+          "_links": {
+            "self": {
+              "name": "Asistencia y servicios sociales en centros residenciales",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.951"
+            }
+          }
+        },
+        {
+          "id": "1.999",
+          "name": "Otros servicios n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros servicios n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.999"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-12-16",
+      "certificateEndDate": "2026-05-28",
+      "object": "EL PROYECTO, CONSTRUCCIÓN, LA EXPLOTACIÓN EN CUALQUIER FORMA O MODALIDAD, COMPRA, VENTA Y ARRENDAMIENTO DE TODO TIPO DE CENTROS ASISTENCIALES, RESIDENCIALES A TIMPO PARCIAL O TOTAL, GERIÁTRICOS Y BALNEARIOS, ESPECIALMENTE PARA LA TERCERA EDAD, ASÍ COMO LA PRESTACIÓN, SIN EXCEPCIÓN ALGUNA, DE TODO TIPO DE ASISTENCIA Y SERVICIOS TÉCNICOS Y SOCIALES QUE LOS MISMOS REQUIERAN; LA EXPLOTACIÓN, PREPARACIÓN, CONTROL Y DESARROLLO DE LAS ACTIVIDADES PROPIAS DE UN CENTRO O RESIDENCIA PARA TODO TIPO DE PERSONAS, ASÍ COMO LA PRESTACIÓN DE TODO TIPO DE SERVICIOS SOCIALES, ASISTENCIA SANITARIA, GIMNASIA DE MANTENIMIENTO, HIDROTERAPIA, CENTRO DE MASAJE, SOLARIUM, YOGA, ESTÉTICA Y REHABILITACIÓN; LA PRESTACIÓN DE SERVICIOS DE LAVANDERÍA, PLANCHADO, PELUQUERÍA, ASÍ COMO TODA CLASE DE SERVICIOS DE LIMIPIEZA Y MANTENIMIENTO; LA ASISTENCIA, ASESORAMIENTO CONTROL Y DESARROLLO COMO CENTRO MÉDICO, DIETÉTICO, ESTÉTICO Y DEPORTIVO; DICHAS ACTIVIDADES SERÁN DESARROLLADAS EN TODO CASO BAJO EL CONTROL, SUPERVISIÓN Y SEGUIMIENTO DE PERSONA CON LA CUALIFICACIÓN PROFESIONAL EXIGIDA POR LA NORMATIVA LEGAL VIGENTE; ACTUAR COMO CONCESIONARIA DE EXPLOTACIÓN, CONCESIONES DE OBRA O SERVICIOS, INCLUSO DE DOMINIO PÚBLICO DE TODO TIPO DE BIENES, DIRECTA O INDIRECTAMENTE, SOBRE ADJUDICACIONES PÚBLICAS O PRIVADAS; ACTUAR COMO CONCESIONARIA Y/O ADJUDICATARIA DE EXPLOTACIÓN TÉCNICO-SOCIALES DE VIVIENDAS Y APARTAMENTOS SOCIALES A GESTIONAR EN RÉGIMEN DE CONCERTACIÓN CON ENTIDADES PÚBLICAS Y PRIVADAS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03371",
+      "_links": {
+        "self": {
+          "name": "BIHARKO GIPUZKOA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/03371"
+        }
+      }
+    },
+    {
+      "name": "CUSTOMEYEAR, S.L.",
+      "registrationNumber": "10479",
+      "identificationNumber": "B98667876",
+      "address": "Passeig del Penyal D´Ifach, 17 - 2 ",
+      "location": {
+        "postalCode": "46980",
+        "municipality": "Paterna",
+        "county": "Valencia/València",
+        "municipalityId": "190",
+        "countyId": "46"
+      },
+      "economicActivities": [
+        {
+          "id": "1.659.3",
+          "name": "Venta al por menor de aparatos médicos, ortopédicos, ópticos y fotográficos",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de aparatos médicos, ortopédicos, ópticos y fotográficos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.659.3"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-12-16",
+      "certificateEndDate": "2026-06-16",
+      "object": "EL COMERCIO AL POR MAYOR Y MENOR DE APARATOS E INSTRUMENTOS MÉDICOS, ORTOPÉDICOS, ÓPTICOS, PRÓTESIS AUDITIVA, FOTOGRÁFICOS Y CINEMATOGRÁFICOS, APARATOS E INSTRUMENTOS DE MEDICINA, CIRUGÍA, ODONTOLOGÍA Y VETERINARIA, ASÍ COMO LA FABRICACIÓN DE INSTRUMENTOS ÓPTICOS, LENTES, PRISMAS, ESPEJOS, LENTES DE CONTACTO, GAFAS, INSTRUMENTOS ÓPTICOS DE PRECISIÓN, ASÍ COMO LA FABRICACIÓN DE PIEZAS Y ACCESORIOS PARA ESTOS INSTRUMENTOS Y MATERIAL, MATERIAL FOTOGRÁFICO Y CINEMATOGRÁFICO, FABRICACIÓN Y REPARACIÓN DE MONTURAS PARA GAFAS (CNAE 4719).",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/10479",
+      "_links": {
+        "self": {
+          "name": "CUSTOMEYEAR, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/10479"
+        }
+      }
+    },
+    {
+      "name": "PROTECCION LABORAL ADIPA, S.L.",
+      "registrationNumber": "06339",
+      "identificationNumber": "B48587554",
+      "address": "POLIGONO INDUSTRIAL ZABALONDO - C/ MARTINTXU PABELLON 1",
+      "location": {
+        "postalCode": "48100",
+        "municipality": "Mungia",
+        "county": "Bizkaia",
+        "municipalityId": "069",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.615.3",
+          "name": "Venta al por mayor de aparatos electrodomésticos y ferretería",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de aparatos electrodomésticos y ferretería",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.615.3"
+            }
+          }
+        },
+        {
+          "id": "1.651.5",
+          "name": "Venta al por menor de prendas especiales",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de prendas especiales",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.651.5"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-12-16",
+      "certificateEndDate": "2026-05-30",
+      "object": " LA COMERCIALIZACIÓN Y DISTRIBUCIÓN DE MATERIAL DE PROTECCIÓN LABORAL Y SUMINISTROS INDUSTRIALES EN GENERAL",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06339",
+      "_links": {
+        "self": {
+          "name": "PROTECCION LABORAL ADIPA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/06339"
+        }
+      }
+    },
+    {
+      "name": "QI ENERGY ASSESSMENT, S.L.",
+      "registrationNumber": "09180",
+      "identificationNumber": "B86394749",
+      "address": "Calle Santa Engracia, 120, Escalera 1, 1B",
+      "location": {
+        "postalCode": "28003",
+        "municipality": "Madrid",
+        "county": "Madrid",
+        "municipalityId": "079",
+        "countyId": "28"
+      },
+      "economicActivities": [
+        {
+          "id": "1.849.9",
+          "name": "Otros servicios independientes n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros servicios independientes n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.849.9"
+            }
+          }
+        },
+        {
+          "id": "1.933.9",
+          "name": "Otras actividades de enseñanza tales como idiomas, mecanografía",
+          "_links": {
+            "self": {
+              "name": "Otras actividades de enseñanza tales como idiomas, mecanografía",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.933.9"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-12-16",
+      "certificateEndDate": "2026-06-03",
+      "object": "LA PRESTACIÓN DE SERVICIOS DE INTERNACIONALIZACIÓN Y ASESORAMIENTO A EMPRESAS O PERSONAS FÍSICAS: - PARA LA ESTRATEGIA EN LOS ÁMBITOS TECNOLÓGICO Y FINANCIERO: DESARROLLO DE NEGOCIO Y PLANIFICACIÓN I+D, ANÁLISIS Y VALORACIÓN. - CORPORATE TECNOLÓGICO. - SERVICIOS DE ASESORAMIENTO, MEDIACIÓN Y BÚSQUEDA DE FINANCIACIÓN.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/09180",
+      "_links": {
+        "self": {
+          "name": "QI ENERGY ASSESSMENT, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/09180"
+        }
+      }
+    },
+    {
+      "name": "ONDITZ MENDIZABAL OLABARRIA",
+      "registrationNumber": "08185",
+      "identificationNumber": "30624771H",
+      "address": "Andra Mari 5, 4ºizq",
+      "location": {
+        "postalCode": "48220",
+        "municipality": "Abadiño",
+        "county": "Bizkaia",
+        "municipalityId": "001",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "2.826",
+          "name": "Personal docente de enseñanzas diversas",
+          "_links": {
+            "self": {
+              "name": "Personal docente de enseñanzas diversas",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/2.826"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-12-16",
+      "certificateEndDate": "2026-05-27",
+      "object": "PERSONAL DOCENTE DE ENSEÑANZAS DIVERSAS.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08185",
+      "_links": {
+        "self": {
+          "name": "ONDITZ MENDIZABAL OLABARRIA",
+          "href": "https://api.euskadi.eus/procurements/companies/08185"
+        }
+      }
+    }
+  ]
+}

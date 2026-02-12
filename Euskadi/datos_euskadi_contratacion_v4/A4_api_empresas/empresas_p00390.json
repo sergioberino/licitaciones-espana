@@ -1,0 +1,518 @@
+{
+  "totalItems": 9042,
+  "totalPages": 905,
+  "currentPage": 390,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "name": "CARPINTERÍA ATARI, S.L.",
+      "registrationNumber": "01995",
+      "identificationNumber": "B20098109",
+      "address": "Poligono  Urtaki",
+      "location": {
+        "postalCode": "20270",
+        "municipality": "Aduna",
+        "county": "Gipuzkoa",
+        "municipalityId": "002",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.463.1",
+          "name": "Puertas y ventanas de madera",
+          "_links": {
+            "self": {
+              "name": "Puertas y ventanas de madera",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.463.1"
+            }
+          }
+        },
+        {
+          "id": "1.861.2",
+          "name": "Alquiler de locales industriales y otros alquileres n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Alquiler de locales industriales y otros alquileres n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.861.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2024-09-24",
+      "certificateEndDate": "2024-09-25",
+      "object": "LA EXPLOTACIÓN DE UN NEGOCIO DEDICADO A LA ACTIVIDAD DE TALLER DE CARPINTERÍA PARA LA CONSTRUCCIÓN Y FABRICACIÓN DE TODO TIPO DE MUEBLES",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/01995",
+      "_links": {
+        "self": {
+          "name": "CARPINTERÍA ATARI, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/01995"
+        }
+      }
+    },
+    {
+      "name": "ALKURE GASTEIZ, S.L.",
+      "registrationNumber": "08425",
+      "identificationNumber": "B01520097",
+      "address": "c/ Venta de la Estrella Nº2 Pab.28",
+      "location": {
+        "postalCode": "01006",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.436",
+          "name": "Acabado de textiles",
+          "_links": {
+            "self": {
+              "name": "Acabado de textiles",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.436"
+            }
+          }
+        },
+        {
+          "id": "1.659.6",
+          "name": "Venta al por menor de juguetes, artículos de deporte",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de juguetes, artículos de deporte",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.659.6"
+            }
+          }
+        },
+        {
+          "id": "1.845",
+          "name": "Explotación electrónica por cuenta de terceros",
+          "_links": {
+            "self": {
+              "name": "Explotación electrónica por cuenta de terceros",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.845"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2024-09-23",
+      "certificateEndDate": "2025-03-23",
+      "object": "A).- DISEÑO DE PÁGINAS WEB B).- LA COMERCIALIZAICÓN, IMPORTACIÓN, EXPORTACIÓN, COMPRA Y VENTA INCLUSO DE MANERA ON LINE, YA AL POR MAYOR, YA AL POR MENOR, DE CALZADO, ROPA Y SUS COMPLEMENTOS, YA SEAN CUALQUIERA DE ELLOS TEXTILES, DE PIEL O CUALQUIER OTRO MATERIAL; DE PRODUCTOS Y MATERIALES DEPORTIVOS; DE PRODUCTOS Y MATERIALES INFORMÁTICOS; DE MUEBLES Y PRODUCTOS Y MATERIALES DE DECORACIÓN; EL ASESORAMIENTO PARA LA COMERCIALIZACIÓN, COMPRA Y VENTA DE LOS PRODUCTOS Y MATERIALES ANTEDICHOS VÍA ON LINE.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08425",
+      "_links": {
+        "self": {
+          "name": "ALKURE GASTEIZ, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/08425"
+        }
+      }
+    },
+    {
+      "name": "TAULA PRODUCCIONES CULTURALES SOCIEDAD LIMITADA",
+      "registrationNumber": "09269",
+      "identificationNumber": "B13751011",
+      "address": "gr Juan de Itziarko 2-3A",
+      "location": {
+        "postalCode": "48200",
+        "municipality": "Durango",
+        "county": "Bizkaia",
+        "municipalityId": "027",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.961.1",
+          "name": "Producción de películas cinematográficas (incluso vídeos)",
+          "_links": {
+            "self": {
+              "name": "Producción de películas cinematográficas (incluso vídeos)",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.961.1"
+            }
+          }
+        },
+        {
+          "id": "1.965.4",
+          "name": "Empresas de espectáculos",
+          "_links": {
+            "self": {
+              "name": "Empresas de espectáculos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.965.4"
+            }
+          }
+        },
+        {
+          "id": "3.011",
+          "name": "Directores de cine y teatro",
+          "_links": {
+            "self": {
+              "name": "Directores de cine y teatro",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/3.011"
+            }
+          }
+        },
+        {
+          "id": "3.013",
+          "name": "Actores de cine y teatro",
+          "_links": {
+            "self": {
+              "name": "Actores de cine y teatro",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/3.013"
+            }
+          }
+        },
+        {
+          "id": "3.015",
+          "name": "Operadores de cámaras de cine de televisión y de vídeo",
+          "_links": {
+            "self": {
+              "name": "Operadores de cámaras de cine de televisión y de vídeo",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/3.015"
+            }
+          }
+        },
+        {
+          "id": "3.019",
+          "name": "Otras actividades relacionadas con el cine, el teatro y el circo",
+          "_links": {
+            "self": {
+              "name": "Otras actividades relacionadas con el cine, el teatro y el circo",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/3.019"
+            }
+          }
+        },
+        {
+          "id": "3.032",
+          "name": "Intérpretes de instrumentos musicales",
+          "_links": {
+            "self": {
+              "name": "Intérpretes de instrumentos musicales",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/3.032"
+            }
+          }
+        },
+        {
+          "id": "3.039",
+          "name": "Otras actividades relacionadas con la música n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otras actividades relacionadas con la música n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/3.039"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2024-09-23",
+      "certificateEndDate": "2025-03-23",
+      "object": "ACTIVIDAD PRINCIPAL: 90.01/ARTES ESCÉNICAS. OTRAS ACTIVIDADES:  90.02/ ACTIVIDADES AUXILIARES A LAS ARTES ESCÉNICAS, 74.90/ OTRAS ACTIVIDADES PROFESIONALES, CIENTÍFICAS Y TÉCNICAS, 59.14/ ACTIVIDADES DE PRODUCCIÓN CINEMATOGRÁFICA Y DE VÍDEO, 93.29/ OTRAS ACTIVIDADES RECREATIVAS Y DE ENTRETENIMIENTO.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/09269",
+      "_links": {
+        "self": {
+          "name": "TAULA PRODUCCIONES CULTURALES SOCIEDAD LIMITADA",
+          "href": "https://api.euskadi.eus/procurements/companies/09269"
+        }
+      }
+    },
+    {
+      "name": "PAUSA DIGITAL, S.L.",
+      "registrationNumber": "07051",
+      "identificationNumber": "B95984662",
+      "address": "AV. LUIS URRENGOETXEA",
+      "location": {
+        "postalCode": "48340",
+        "municipality": "Amorebieta-Etxano",
+        "county": "Bizkaia",
+        "municipalityId": "003",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.355.2",
+          "name": "Edición de soportes grabados de sonido, vídeo y de informática",
+          "_links": {
+            "self": {
+              "name": "Edición de soportes grabados de sonido, vídeo y de informática",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.355.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2024-09-23",
+      "certificateEndDate": "2025-03-23",
+      "object": "LA EDICIÓN DE SOPORTES GRABADOS DE AUDIO, VÍDEO E INFORMÁTICA",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07051",
+      "_links": {
+        "self": {
+          "name": "PAUSA DIGITAL, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/07051"
+        }
+      }
+    },
+    {
+      "name": "UNIVERSIDAD DE LA IGLESIA DE DEUSTO",
+      "registrationNumber": "00595",
+      "identificationNumber": "R4868004E",
+      "address": "AVDA. DE LAS UNIVERSIDADES, S/N",
+      "location": {
+        "postalCode": "48007",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.476.1",
+          "name": "Edición de libros",
+          "_links": {
+            "self": {
+              "name": "Edición de libros",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.476.1"
+            }
+          }
+        },
+        {
+          "id": "1.861.2",
+          "name": "Alquiler de locales industriales y otros alquileres n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Alquiler de locales industriales y otros alquileres n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.861.2"
+            }
+          }
+        },
+        {
+          "id": "1.931.5",
+          "name": "Enseñanza de educación superior",
+          "_links": {
+            "self": {
+              "name": "Enseñanza de educación superior",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.931.5"
+            }
+          }
+        },
+        {
+          "id": "1.935.1",
+          "name": "Colegios mayores",
+          "_links": {
+            "self": {
+              "name": "Colegios mayores",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.935.1"
+            }
+          }
+        },
+        {
+          "id": "1.936",
+          "name": "Investigación científica y técnica",
+          "_links": {
+            "self": {
+              "name": "Investigación científica y técnica",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.936"
+            }
+          }
+        },
+        {
+          "id": "1.942.9",
+          "name": "Otros servicios sanitarios sin internados, no clasificados",
+          "_links": {
+            "self": {
+              "name": "Otros servicios sanitarios sin internados, no clasificados",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.942.9"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2024-09-23",
+      "certificateEndDate": "2025-03-17",
+      "object": "LA DOCENCIA, SERVICIOS DE INVESTIGACIÓN HUMANÍSTICA. PRESTACIÓN DE SERVICIOS PROPIOS DE SUS ACTIVIDADES A ENTIDADES PÚBLICAS O PRIVADAS, EMPRESAS O PARTICULARES. PROMOCIÓN DE LA CULTURA PROPIA DEL PAÍS VASCO",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/00595",
+      "_links": {
+        "self": {
+          "name": "UNIVERSIDAD DE LA IGLESIA DE DEUSTO",
+          "href": "https://api.euskadi.eus/procurements/companies/00595"
+        }
+      }
+    },
+    {
+      "name": "ASTIGARRAGA ENERGIA, S.L.",
+      "registrationNumber": "07167",
+      "identificationNumber": "B95251500",
+      "address": "CALLE ARZUBIA N.10B NAVE 9",
+      "location": {
+        "postalCode": "48220",
+        "municipality": "Abadiño",
+        "county": "Bizkaia",
+        "municipalityId": "001",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.617.9",
+          "name": "Venta al por mayor interindustrial de otros productos n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor interindustrial de otros productos n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.617.9"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2024-09-22",
+      "certificateEndDate": "2025-03-22",
+      "object": "A) LA COMERCIALIZACIÓN DE MAQUINARIA Y EQUIPO PARA USO GENERAL, MOTORES, TURBINAS, MOTORES Y GENERADORES ELÉCTRICOS ASÍ COMO SUS COMPONENTES Y PIEZAS DE RECAMBIO. B) LA ADQUISICIÓN, ADMINISTRACIÓN, EXPLOTACIÓN, TENENCIA, ARRENDAMIENTO Y ENAJENACIÓN DE TODA CLASE DE BIENES MUEBLES E INMUEBLES",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07167",
+      "_links": {
+        "self": {
+          "name": "ASTIGARRAGA ENERGIA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/07167"
+        }
+      }
+    },
+    {
+      "name": "APUS GLOBAL, S.L.",
+      "registrationNumber": "08988",
+      "identificationNumber": "B10934016",
+      "address": "Calle de la Infanta Catalina Micaela, 21, 3B",
+      "location": {
+        "postalCode": "28050",
+        "municipality": "Madrid",
+        "county": "Madrid",
+        "municipalityId": "079",
+        "countyId": "28"
+      },
+      "economicActivities": [
+        {
+          "id": "1.615.4",
+          "name": "Venta al por mayor de aparatos y material radioeléctrico y electrónico",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de aparatos y material radioeléctrico y electrónico",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.615.4"
+            }
+          }
+        },
+        {
+          "id": "1.843.1",
+          "name": "Servicios técnicos de ingeniería",
+          "_links": {
+            "self": {
+              "name": "Servicios técnicos de ingeniería",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2024-09-21",
+      "certificateEndDate": "2025-03-21",
+      "object": "EL DESARROLLO DE LAS ACTIVIDADES CORRESPONDIENTES A LOS SIGUIENTES CÓDIGOS Y DESCRIPCIONES DE CLASIFICACIÓN NACIONAL DE ACTIVIDADES ECONÓMICAS: ACTIVIDAD PRINCIPAL: 46.52 / COMERCIO AL POR MAYOR DE EQUIPOS ELECTRÓNICOS Y DE TELECOMUNICACIONES Y SUS COMPONENTES. OTRAS ACTIVIDADES: 71.12 / SERVICIOS TÉCNICOS DE INGENIERÍA Y OTRAS ACTIVIDADES RELACIONADAS CON EL ASESORAMIENTO TÉCNICO.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08988",
+      "_links": {
+        "self": {
+          "name": "APUS GLOBAL, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/08988"
+        }
+      }
+    },
+    {
+      "name": "EDER ANGULO GARAY",
+      "registrationNumber": "09024",
+      "identificationNumber": "79053391E",
+      "address": "BARRIO ALDEACUEVA 8",
+      "location": {
+        "postalCode": "48891",
+        "municipality": "Karrantza Harana/Valle de Carranza",
+        "county": "Bizkaia",
+        "municipalityId": "022",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.504.11",
+          "name": "Instalaciones eléctricas en general, redes telegráficas, telefonía, tv, etc",
+          "_links": {
+            "self": {
+              "name": "Instalaciones eléctricas en general, redes telegráficas, telefonía, tv, etc",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.504.11"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2024-09-20",
+      "certificateEndDate": "2025-03-20",
+      "object": "INSTALACIONES ELÉCTRICAS EN GENERAL, REDES TELEGRÁFICAS, TELEFONÍA, TV, ETC.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/09024",
+      "_links": {
+        "self": {
+          "name": "EDER ANGULO GARAY",
+          "href": "https://api.euskadi.eus/procurements/companies/09024"
+        }
+      }
+    },
+    {
+      "name": "PABLO DEL VALLE DE LERSUNDI ARROYO",
+      "registrationNumber": "05733",
+      "identificationNumber": "15970704X",
+      "address": "ELKANO KALEA, 1",
+      "location": {
+        "postalCode": "20120",
+        "municipality": "Hernani",
+        "county": "Gipuzkoa",
+        "municipalityId": "040",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.504.1",
+          "name": "Instalaciones eléctricas en general",
+          "_links": {
+            "self": {
+              "name": "Instalaciones eléctricas en general",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.504.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2024-09-20",
+      "certificateEndDate": "2025-03-18",
+      "object": "INSTALACIONES ELÉCTRICAS EN GENERAL",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/05733",
+      "_links": {
+        "self": {
+          "name": "PABLO DEL VALLE DE LERSUNDI ARROYO",
+          "href": "https://api.euskadi.eus/procurements/companies/05733"
+        }
+      }
+    },
+    {
+      "name": "JJP HOSPITALARIA S.L.",
+      "registrationNumber": "05921",
+      "identificationNumber": "B41862087",
+      "address": "CALLE CASTILLA Nº 44",
+      "location": {
+        "postalCode": "41010",
+        "municipality": "Sevilla",
+        "county": "Sevilla",
+        "municipalityId": "091",
+        "countyId": "41"
+      },
+      "economicActivities": [
+        {
+          "id": "1.631",
+          "name": "Intermediarios del comercio",
+          "_links": {
+            "self": {
+              "name": "Intermediarios del comercio",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.631"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2024-09-20",
+      "certificateEndDate": "2025-03-16",
+      "object": "INTERMEDIACIÓN DE COMERCIO Y COMPRA VENTA DE SUMINISTROS MÉDICOS, CLÍNICOS, RELACIONADOS EN GENERAL CON LA SANIDAD",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/05921",
+      "_links": {
+        "self": {
+          "name": "JJP HOSPITALARIA S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/05921"
+        }
+      }
+    }
+  ]
+}

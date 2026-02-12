@@ -1,0 +1,408 @@
+{
+  "totalItems": 9042,
+  "totalPages": 905,
+  "currentPage": 355,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "name": "LA MAR DE MOMENTOS, S.C.",
+      "registrationNumber": "10188",
+      "identificationNumber": "J09759887",
+      "address": "C/ NAVARRO VILLOSLADA 10 BAJO",
+      "location": {
+        "postalCode": "01012",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.979.9",
+          "name": "Otros servicios personales n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros servicios personales n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.979.9"
+            }
+          }
+        },
+        {
+          "id": "1.989.2",
+          "name": "Servicios de organización de congresos, asambleas y similares",
+          "_links": {
+            "self": {
+              "name": "Servicios de organización de congresos, asambleas y similares",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.989.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-05-22",
+      "certificateEndDate": "2025-11-21",
+      "object": "ORGANIZACIÓN DE EVENTOS, BODAS, CUMPLEAÑOS, ETC.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/10188",
+      "_links": {
+        "self": {
+          "name": "LA MAR DE MOMENTOS, S.C.",
+          "href": "https://api.euskadi.eus/procurements/companies/10188"
+        }
+      }
+    },
+    {
+      "name": "CONSTRUCCIONES ANGEL AYALA, S.L.",
+      "registrationNumber": "09935",
+      "identificationNumber": "B09590514",
+      "address": "VICENTE ALEIXANDRE 24 5C",
+      "location": {
+        "postalCode": "09200",
+        "municipality": "Miranda de Ebro",
+        "county": "Burgos",
+        "municipalityId": "219",
+        "countyId": "09"
+      },
+      "economicActivities": [
+        {
+          "id": "1.501.1",
+          "name": "Construcción completa, reparación y conservación de edificaciones",
+          "_links": {
+            "self": {
+              "name": "Construcción completa, reparación y conservación de edificaciones",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-05-21",
+      "certificateEndDate": "2025-11-21",
+      "object": "EL ESTUDIO, PROMOCIÓN Y EJECUCIÓN DE TODA CLASE DE OBRAS, TANTO PÚBLICAS COMO PRIVADAS, DE CONSTRUCCIÓN, MEJORA Y CONSERVACIÓN DE BIENES INMUEBLES, INCLUYENDO TODA CLASE DE CONSTRUCCIÓN INDUSTRIALES, OBRAS DE INGENIERÍA CIVIL Y CARRETERAS.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/09935",
+      "_links": {
+        "self": {
+          "name": "CONSTRUCCIONES ANGEL AYALA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/09935"
+        }
+      }
+    },
+    {
+      "name": "TALLERES Y SERVICIOS DE AUTOMOCION GORBEA-BI, S.L.",
+      "registrationNumber": "10185",
+      "identificationNumber": "B01285956",
+      "address": "Becolarra, n.º 4 - Pab. 7 Bis",
+      "location": {
+        "postalCode": "01010",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.362",
+          "name": "Construcción de carrocerías, remolques y volquetes",
+          "_links": {
+            "self": {
+              "name": "Construcción de carrocerías, remolques y volquetes",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.362"
+            }
+          }
+        },
+        {
+          "id": "1.654.1",
+          "name": "Venta al por menor de vehículos terrestres",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de vehículos terrestres",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.654.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-05-21",
+      "certificateEndDate": "2025-11-21",
+      "object": "LA CONSTRUCCIÓN Y MONTAJE DE TODA CLASE DE CARROCERÍAS PARA VEHÍCULOS, REMOLQUES Y SEMIRREMOLQUES.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/10185",
+      "_links": {
+        "self": {
+          "name": "TALLERES Y SERVICIOS DE AUTOMOCION GORBEA-BI, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/10185"
+        }
+      }
+    },
+    {
+      "name": "ANA ORTIZ ARRIETA",
+      "registrationNumber": "06727",
+      "identificationNumber": "45752133G",
+      "address": "Sixta barrenetxea 40, 3A",
+      "location": {
+        "postalCode": "48960",
+        "municipality": "Galdakao",
+        "county": "Bizkaia",
+        "municipalityId": "036",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "2.411",
+          "name": "Arquitectos",
+          "_links": {
+            "self": {
+              "name": "Arquitectos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/2.411"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-05-21",
+      "certificateEndDate": "2025-11-20",
+      "object": "ARQUITECTOS, PROFESORES DE FORMACIÓN Y PERFECCIONAMIENTO PROFESIONAL",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06727",
+      "_links": {
+        "self": {
+          "name": "ANA ORTIZ ARRIETA",
+          "href": "https://api.euskadi.eus/procurements/companies/06727"
+        }
+      }
+    },
+    {
+      "name": "ELKAR INTEGRACION NORTE, S.L.",
+      "registrationNumber": "09931",
+      "identificationNumber": "B19497536",
+      "address": "Calle Ogoño (48930) nº1, planta 2ª, departamento 4",
+      "location": {
+        "postalCode": "48930",
+        "municipality": "Getxo",
+        "county": "Bizkaia",
+        "municipalityId": "044",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.849.9",
+          "name": "Otros servicios independientes n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros servicios independientes n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.849.9"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-05-19",
+      "certificateEndDate": "2025-11-19",
+      "object": "INTERMEDIACIÓN EN EL EJERCICIO DE ACTIVIDADES DE CONTABILIDAD, TENEDURÍA DE LIBROS, AUDITORÍA Y ASESORÍA FISCAL. SERVICIOS DE RESPONSABILIDAD SOCIAL CORPORATIVA. GESTIÓN DE PROYECTOS DE ECONOMÍA SOCIAL. ESTUDIO Y ANÁLISIS DE LA VIABILIDAD DEL PROYECTO DE ECONOMÍA SOCIAL /CENTRO ESPECIAL DE EMPLEO, PARA EMPRESAS, ASOCIACIONES, ADMINISTRACIONES PÚBLICAS. DESARROLLO DEL PROYECTO DEL CENTRO ESPECIAL DE EMPLEO SEGÚN LOS CRITERIOS NORMATIVOS DE LAS COMUNIDADES AUTÓNOMAS DE REFERENCIA, PARA SU CALIFICACIÓN Y REGISTRO, PARA TODO TIPO DE ENTIDADES PÚBLICAS Y PRIVADAS. GESTIÓN Y DIRECCIÓN PERSONALIZADA DE CENTROS ESPECIALES DE EMPLEO Y EMPRESAS DE ECONOMÍA SOCIAL, PARA TODO TIPO DE ENTIDADES PÚBLICAS Y PRIVADAS. DIRECCIÓN DE LOS SERVICIOS INHERENTES A LOS CENTROS ESPECIALES DE EMPLEO Y EMPRESAS DE ECONOMÍA SOCIAL: LOS SERVICIOS DE AJUSTE PERSONAL Y SOCIAL, UNIDADES DE APOYO O CUALES OTROS DE ANÁLOGA NATURALEZA; ASESORAMIENTO INTEGRAL Y TRANSVERSAL PARA LA CALIFICACIÓN Y ACREDITACIÓN DEL CENTRO ESPECIAL DE EMPLEO EN LA COMUNIDAD AUTÓNOMA DE REFERENCIA. ASESORAMIENTO INTEGRAL ANTE REQUERIMIENTOS PETICIONES Y GESTIONES SOLICITADAS POR LAS COMUNIDADES AUTÓNOMAS DE REFERENCIA, TRAS LA CALIFICACIÓN COMO CENTRO ESPECIAL DE EMPLEO O EMPRESA DE ECONOMÍA SOCIAL. DISEÑO, CREACIÓN, REVISIÓN, AUDITORÍA Y MEJORA DE LOS SERVICIOS DE AJUSTE PERSONAL Y SOCIAL, CON EL FIN DE PROFESIONALIZAR ESTOS SERVICIOS. INTERMEDIACIÓN LABORAL, RECOLOCACIÓN Y ORIENTACIÓN LABORAL EN GENERAL; INTERMEDIACIÓN LABORAL Y SOCIAL ESPECIALIZADA EN PERSONAS CON CALIFICACIÓN DE DISCAPACIDAD, FORMACIÓN Y GESTIÓN INTEGRAL DE LA CUALIFICACIÓN DE LOS TRABAJADORES CON DISCAPACIDAD DE LOS CENTRO ESPECIAL DE EMPLEO Y EN EMPRESAS ORDINARIAS. CONSTITUCIÓN DE FUNDACIONES, ANÁLISIS DE LOS FINES FUNDACIONALES LIGADOS A LA FIGURA DEL FUNDADOR/ES Y A LOS VALORES DE LA EMPRESA FAMILIAR. REALIZACIÓN DE ESTATUTOS FUNDACIONALES, VALORACIÓN JURÍDICA. DISEÑO PERSONALIZADO DE LOS ESTATUTOS FUNDACIONALES, VALORACIÓN DE LOS FINES FUNDACIONALES MÁS CONVENIENTES PARA LAS ORGANIZACIONES; PERFILES DE LOS PATRONOS COMO VALOR PARA LA CONSECUCIÓN DE LOS FINES FUNDACIONALES. GESTIÓN Y DIRECCIÓN DE FUNDACIONES EMPRESARIALES, ORIENTADAS HACIA LA INCLUSIÓN SOCIAL Y LABORAL DE PERSONAS CON DISCAPACIDAD. REPUTACIÓN Y MARKETING SOCIAL A TRAVÉS DE LA FUNDACIÓN EMPRESARIAL. CONSULTORÍA EN GENERAL DE RECURSOS HUMANOS, RECOLOCACIÓN, SELECCIÓN Y RECLUTAMIENTO DE TODO TIPO DE PERSONAL, INCLUYENDO PERSONAS CON CALIFICACIÓN DE DISCAPACIDAD, DIRIGIDA HACIA TODO TIPO DE EMPRESAS Y ORGANIZACIONES SOCIALES. ESTRATEGIAS INTERNAS DE AFLORAMIENTO ORIENTADAS HACIA TRABAJADORES DE LA ORGANIZACIÓN; (I) LOS BENEFICIOS LEGALES, FISCALES Y SOCIALES LIGADOS A LA OBTENCIÓN DE LA CALIFICACIÓN DE DISCAPACIDAD, (II) LAS MEDIDAS DE APOYO Y ADAPTACIÓN DE LOS PUESTOS DE TRABAJO DIRIGIDAS HACIA LOS EMPLEADOS CON DISCAPACIDAD, (III) EL TRATAMIENTO Y EL PROTOCOLO DE EMPRESA ORIENTADO HACIA LOS TRABAJADORES CON DISCAPACIDAD, (IV)REVISIÓN DE LAS OPERATIVAS O PROTOCOLOS ASOCIADOS A LA INTEGRACIÓN LABORAL DE LOS TRABAJADORES CON DISCAPACIDAD, (V) LOS PROTOCOLOS DE ASESORAMIENTO Y CONFIDENCIALIDAD, LA COMUNICACIÓN TRANSPARENTE COMO MEDIDA DE APOYO A LA INTEGRACIÓN LABORAL DE TRABAJADORES CON DISCAPACIDAD, ETC. LA GESTIÓN Y EJECUCIÓN DE CENTROS ESPECIALIZADOS DE EMPLEO U OTRAS ENTIDADES QUE PUDIERAN CREARSE EN UN FUTURO COMO FORMA IDÓNEA PARA REALIZAR UNA ACTIVIDAD PRODUCTIVA DE BIENES O DE SERVICIOS, TENIENDO COMO FINALIDAD ASEGURAR UN EMPLEO REMUNERADO PARA LAS PERSONAS CON DISCAPACIDAD Y COMO MEDIO DE INCLUSIÓN DE ESTAS PERSONAS EN EL RÉGIMEN DE EMPLEO ORDINARIO. PRESTAR LOS SERVICIOS DE AJUSTE PERSONAL Y SOCIAL Y LAS FUNCIONES ESTABLECIDAS PARA LAS UNIDADES DE APOYO, QUE REQUIERAN LAS PERSONAS TRABAJADORAS CON DISCAPACIDAD Y FACILITAR SU PLENA INTEGRACIÓN EN SU PUESTO DE TRABAJO, FOMENTANDO SU AUTONOMÍA PERSONAL Y SOCIAL. EL CNAE DE SU ACTIVIDAD PRINCIPAL ES EL NÚMERO 6920 (ACTIVIDADES DE CONTABILIDAD, TENEDURÍA DE LIBROS, AUDITORÍA Y ASESORÍA FISCAL). Y EL CNAE COMO ACTIVIDAD SECUNDARIA 70.22 OTRAS ACTIVIDADES DE CONSULTORÍA DE GESTIÓN EMPRESARIAL).",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/09931",
+      "_links": {
+        "self": {
+          "name": "ELKAR INTEGRACION NORTE, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/09931"
+        }
+      }
+    },
+    {
+      "name": "PESCADOS JULIA RUIZ BEDARONA, S.A.",
+      "registrationNumber": "07906",
+      "identificationNumber": "A01027630",
+      "address": "Calle Arriurdina",
+      "location": {
+        "postalCode": "01015",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.416",
+          "name": "Fabricación de conservas de pescado y otros productos marinos",
+          "_links": {
+            "self": {
+              "name": "Fabricación de conservas de pescado y otros productos marinos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.416"
+            }
+          }
+        },
+        {
+          "id": "1.612.8",
+          "name": "Venta al por mayor de pescados y otros productos de pesca y acuicultura",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de pescados y otros productos de pesca y acuicultura",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.612.8"
+            }
+          }
+        },
+        {
+          "id": "1.643.1",
+          "name": "Venta al por menor de pescados y otros productos de la pesca",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de pescados y otros productos de la pesca",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.643.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-05-19",
+      "certificateEndDate": "2025-11-19",
+      "object": "LA COMPRA-VENTA DE TODO TIPO DE PESCADO Y MARISCO, DE RÍO O DE MAR, EN SU CONDICIÓN DE FRESCO O CONGELADO, NACIONAL O IMPORTADO, ASÍ COMO DE LOS PRODUCTOS DERIVADOS DE LOS MISMOS.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07906",
+      "_links": {
+        "self": {
+          "name": "PESCADOS JULIA RUIZ BEDARONA, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/07906"
+        }
+      }
+    },
+    {
+      "name": "PROSEGUR SERVICIOS DE EFECTIVO ESPAÑA, S.L.",
+      "registrationNumber": "05088",
+      "identificationNumber": "B86657640",
+      "address": "PAJARITOS, 24",
+      "location": {
+        "postalCode": "28007",
+        "municipality": "Madrid",
+        "county": "Madrid",
+        "municipalityId": "079",
+        "countyId": "28"
+      },
+      "economicActivities": [
+        {
+          "id": "1.849.4",
+          "name": "Servicios de custodia, seguridad y protección",
+          "_links": {
+            "self": {
+              "name": "Servicios de custodia, seguridad y protección",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.849.4"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-05-19",
+      "certificateEndDate": "2025-11-13",
+      "object": "VIGILANCIA Y PROTECCIÓN DE BIENES, ESTABLECIMIENTOS, ESPECTÁCULOS, CERTÁMENES O CONVENCIONES. LA PROTECCIÓN DE PERSONAS DETERMINADAS, PREVIA LA AUTORIZACIÓN CORRESPONDIENTE. EL DEPÓSITO, CUSTODIA, RECUENTO Y CLASIFICACIÓN DE MONEDAS Y BILLETES, TÍTULOS, VALORES Y DEMÁS OBJETOS QUE, POR SU VALOR ECONÓMICO Y EXPECTATIVAS QUE GENEREN, O POR SU PELIGROSIDAD, PUEDAN REQUERIR PROTECCIÓN ESPECIAL, SIN PERJUICIO DE LAS ACTIVIDADES PROPIAS DE LAS ENTIDADES FINANCIERAS. EL TRANSPORTE Y DISTRIBUCIÓN DE LOS OBJETOS A QUE SE REFIERE EL APARTADO ANTERIOR A TRAVÉS DE LOS DISTINTOS MEDIOS, REALIZÁNDOLOS, EN SU CASO MEDIANTE VEHÍCULOS CUYAS CARACTERÍSTICAS SEAN DETERMINADAS POR EL MINISTERIO DEL INTERIOR, DE FORMA QUE NO PUEDAN CONFUNDIRSE CON LAS FUERZAS ARMADAS NI CON LAS FUERZAS Y CUERPOS DE SEGURIDAD. INSTALACIÓN Y MANTENIMIENTO DE APARATOS, DISPOSITIVOS Y SISTEMAS DE SEGURIDAD Y DE PROTECCIÓN CONTRA INCENDIOS. EXPLOTACIÓN DE CENTRALES PARA LA RECEPCIÓN, VERIFICACIÓN Y TRANSMISIÓN DE LAS SEÑALES DE ALARMAS Y SU COMUNICACIÓN A LAS FUERZAS Y CUERPOS DE SEGURIDAD, ASÍ COMO PRESTACIÓN DE SERVICIOS DE RESPUESTA CUYA REALIZACIÓN NO SEA DE LA COMPETENCIA DE DICHAS FUERZAS Y CUERPOS. PLANIFICAICÓ Y ASESORAMIENTO DE LAS ACTIVIDADES PROPIAS DE LAS EMPRESAS DE SEGURIDAD. PRESTACIÓN DE SERVICIOS DE VIGILANCIA Y PROTECCIÓN DE LA PROPIEDAD RURAL MEDIANTE GUARDAS PARTICULARES DE CAMPO. EL ESTUDIO Y EJECUCIÓN DE INSTALACIONES INDUSTRIALES O DOMÉSTICAS DEDICADAS A LA PROTECCIÓN CONTRA EL FUEGO Y SEGURIDAD, ASÍ COMO LA FABRICACIÓN Y COMERCIALIZACIÓN DE ELEMENTOS, MÁQUINAS Y PIEZAS A TALES FINES Y LA COMERCIALIZACIÓN DE PRODUCTOS RESULTANTES, QUE SEAN APLICABLES A LAS INSTALACIONES CONTRA INCENDIOS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/05088",
+      "_links": {
+        "self": {
+          "name": "PROSEGUR SERVICIOS DE EFECTIVO ESPAÑA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/05088"
+        }
+      }
+    },
+    {
+      "name": "AVIS PRODUCTIONS NATURE FILMS, S.L.",
+      "registrationNumber": "09929",
+      "identificationNumber": "B95866497",
+      "address": "ASKATASUN ETORBIDEA, 20 bajo 2i",
+      "location": {
+        "postalCode": "48200",
+        "municipality": "Durango",
+        "county": "Bizkaia",
+        "municipalityId": "027",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.961.1",
+          "name": "Producción de películas cinematográficas (incluso vídeos)",
+          "_links": {
+            "self": {
+              "name": "Producción de películas cinematográficas (incluso vídeos)",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.961.1"
+            }
+          }
+        },
+        {
+          "id": "1.973.1",
+          "name": "Servicios fotográficos",
+          "_links": {
+            "self": {
+              "name": "Servicios fotográficos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.973.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-05-18",
+      "certificateEndDate": "2025-06-03",
+      "object": "A).- LA PRESTACIÓN DE SERVICIOS DE PRODUCCIÓN, DOBLAJE, SINCRONIZACIÓN Y MONTAJE DE PELÍCULAS CINEMATOGRÁFICAS Y VIDEOS, INCLUSO DECORACIONES ESCÉNICAS, DISTRIBUCIÓN, VENTA Y EXHIBICIÓN DE LAS MISMAS TANTO EN SALAS COMO AL AIRE LIBRE. B).- LA PRODUCCIÓN DE RETRATOS FOTOGRÁFICOS Y FOTOGRAFÍAS COMERCIALES INCLUSO SERVICIOS DE FOTOGRAFÍA TÉCNICA Y DE REVELADO, IMPRESIÓN Y AMPLIACIÓN, ASÍ COMO SERVICIOS COMBINADOS DE VIDEO Y FOTOGRAFÍA. C).- TENENCIA, EXPLOTACIÓN, PROMOCIÓN, GESTIÓN Y ADMINISTRACIÓN DE TODA CLASE DE BIENES INMUEBLES Y NEGOCIOS DE CARÁCTER INMOBILIARIO. D).- AGENCIA DE NEGOCIOS Y TERRENOS Y EDIFICACIONES DE INMUEBLES.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/09929",
+      "_links": {
+        "self": {
+          "name": "AVIS PRODUCTIONS NATURE FILMS, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/09929"
+        }
+      }
+    },
+    {
+      "name": "GOTXON TALEGON BILBAO",
+      "registrationNumber": "10178",
+      "identificationNumber": "72586206T",
+      "address": "SARRUA 3, 3ºB",
+      "location": {
+        "postalCode": "48360",
+        "municipality": "Mundaka",
+        "county": "Bizkaia",
+        "municipalityId": "068",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.855.2",
+          "name": "Alquiler de embarcaciones",
+          "_links": {
+            "self": {
+              "name": "Alquiler de embarcaciones",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.855.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-05-16",
+      "certificateEndDate": "2025-11-15",
+      "object": "ALQUILER DE EMBARCACIONES.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/10178",
+      "_links": {
+        "self": {
+          "name": "GOTXON TALEGON BILBAO",
+          "href": "https://api.euskadi.eus/procurements/companies/10178"
+        }
+      }
+    },
+    {
+      "name": "EDISON NEXT GOVERNMENT, S.R.L.",
+      "registrationNumber": "09886",
+      "identificationNumber": "W0117310C",
+      "address": "Ronda de la Universidad, 16",
+      "location": {
+        "postalCode": "08007",
+        "municipality": "Barcelona",
+        "county": "Barcelona",
+        "municipalityId": "019",
+        "countyId": "08"
+      },
+      "economicActivities": [
+        {
+          "id": "1.504.1",
+          "name": "Instalaciones eléctricas en general",
+          "_links": {
+            "self": {
+              "name": "Instalaciones eléctricas en general",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.504.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-05-16",
+      "certificateEndDate": "2025-05-07",
+      "object": "- LA EJECUCIÓN DE LICITACIONES Y CONTRATOS DE OBRAS Y SERVICIOS PARA LA GESTIÓN TECNOLÓGICA INTEGRADA, INCLUYENDO LAS INTERVENCIONES DE AHORRO DE ENERGÍA DE CUALQUIER TIPO, LA EVALUACIÓN, EL ESTUDIO, EL PROYECTO, LA CONSTRUCCIÓN, LA GESTIÓN, EL MANTENIMIENTO ORDINARIO Y EXTRAORDINARIO DE TODAS LAS REDES, INSTALACIONES Y/O SISTEMAS DE ALUMBRADO PÚBLICO, ILUMINACIÓN INTERIOR Y EXTERIOR, INCLUIDA LA ILUMINACIÓN DE SEMÁFOROS, SEÑALIZACIONES, VOTIVAS, INDUSTRIAL, COMERCIAL Y/O INTERIOR DE MUNICIPIOS, PROVINCIAS, REGIONES, ORGANISMOS Y/O ADMINISTRACIONES PÚBLICAS Y/O ORGANISMOS Y EMPRESAS CREADAS Y/O PARTICIPADAS POR LOS MISMOS SUJETOS TITULARES DE CONCESIONES DE AUTOPISTAS, AEROPUERTOS O SIMILARES, ASÍ COMO CUALQUIER SISTEMA Y/O INSTALACIÓN - INCLUYENDO LOS DE ILUMINACIÓN - PRIVADA DE GRANDES COMPLEJOS RESIDENCIALES, COMERCIALES O INDUSTRIALES Y/O DEL SECTOR TERCIARIO. - LA GESTIÓN Y/O CONTROL DEL TRÁNSITO URBANO, INTERURBANO Y DE AUTOPISTAS, LA GESTIÓN Y EL MANTENIMIENTO DE LAS INSTALACIONES DE SEMÁFOROS Y DE SEÑALIZACIÓN LUMINOSAS EN GENERAL, ASÍ COMO LAS INSTALACIONES DEL ALUMBRADO Y VENTILACIÓN DE TÚNELES. - LA REALIZACIÓN DE ESTUDIOS, PROYECTOS Y OBRAS RELACIONADAS A LA VALORIZACIÓN MEDIANTE LA ILUMINACIÓN DE ESPACIOS PÚBLICOS, EDIFICIOS, OBRAS CIVILES, JARDINES Y MONUMENTOS, ASÍ COMO LA REALIZACIÓN DE TRABAJOS EN CONFORMIDAD DE ACUERDO CON LAS NORMATIVAS VIGENTES, INCLUSO LOS SUMINISTROS, LA INSTALACIÓN Y CUALQUIER OTRA MEDIDA NECESARIA O APROPIADA PARA LA REALIZACIÓN E IMPLEMENTACIÓN DE TODAS LAS ACTIVIDADES DE GESTIÓN Y/O REALIZACIÓN - A LA PERFECCIÓN SEGÚN LAS NORMAS - DE LAS INSTALACIONES MENCIONADAS. - LA EVALUACIÓN, EL ESTUDIO, EL PLANEAMIENTO, LA REALIZACIÓN, LA INSTALACIÓN, EL MANTENIMIENTO Y LA GESTIÓN INTEGRADA DE: O TODOS LOS SISTEMAS Y/O SOLUCIONES, ESPECIALMENTE EN EL ÁMBITO DE LAS TECNOLOGÍAS DE LA INFORMACIÓN Y LA COMERCIALIZACIÓN (TIC), ASÍ COMO LA REALIZACIÓN Y PRESTACIÓN DE TODOS LOS SERVICIOS CORRESPONDIENTES A LA GESTIÓN DEL ESPACIO PÚBLICO, EL DESARROLLO PERDURABLE Y SOSTENIBLE, ASÍ COMO EL RENDIMIENTO ENERGÉTICO, EN ESPECIAL, EN LOS ÁMBITOS DE LA ILUMINACIÓN, DE LA INFORMACIÓN DE LOS USUARIOS Y DE LA MOVILIDAD URBANA, DE LOS DISPOSITIVOS PARA LA PROTECCIÓN DEL MEDIO AMBIENTE, LAS REDES Y/O INSTALACIONES ELÉCTRICAS, ELECTRÓNICAS, DE TELECOMUNICACIONES E HÍDRICAS. O CUALQUIER OTRA INSTALACIÓN, INCLUIDOS LOS SISTEMAS DE VIDEOVIGILANCIA, PARA LA GESTIÓN DE LAS ZONAS DE TRÁFICO RESTRINGIDO Y/O LOS SISTEMAS DE MENSAJERÍA VARIABLE, INCLUIDA LA GESTIÓN DE LOS CONSUMOS DE ENERGÍA (TANTO DE LAS INSTALACIONES INDUSTRIALES COMO DE LAS DE SERVICIOS), ASÍ COMO LOS EQUIPOS PARA EL CONTROL DEL ESTACIONAMIENTO DE PAGO, LOS PARQUÍMETROS Y LOS SISTEMAS AUTOMÁTICOS, PARA LA GESTIÓN DE APARCAMIENTOS Y GARAJES. - EL PLANEAMIENTO, LA COMPRA Y/O LA VENTA Y, EN GENERAL, LA COMERCIALIZACIÓN DE MAQUINARIAS, EQUIPOS, BIENES MUEBLES, EQUIPOS URBANOS Y/O DE SEÑALIZACIÓN EN MUNICIPIOS Y/O EN LAS CARRETERAS INTERURBANAS, ASÍ COMO DE MATERIAL ELÉCTRICO Y ELECTRÓNICO. - EL PLANEAMIENTO, CONSTRUCCIÓN, MANTENIMIENTO ORDINARIO Y EXTRAORDINARIO DE INSTALACIONES TECNOLÓGICAS Y LA REALIZACIÓN DE LICITACIONES Y CONTRATOS PARA LAS ACTIVIDADES DE GESTIÓN INTEGRADA DE LA ENERGÍA EN EDIFICIOS DE CUALQUIER TIPO Y/O DE USO. LA SUCURSAL PODRÁ, ADEMÁS, EJERCER LA ACTIVIDAD DE CONSTRUCCIÓN Y MANTENIMIENTO DE CUALQUIER SECTOR DE LA CONSTRUCCIÓN Y DE LOS SISTEMAS DE INSTALACIONES, LA CONTRATACIÓN, LA REALIZACIÓN DE OBRAS PÚBLICAS Y PRIVADAS, MEDIANTE LICITACIÓN Y/O EN CONCESIÓN, EN TERRITORIO NACIONAL E INTERNACIONAL, TANTO POR CUENTA DE TERCEROS COMO POR CUENTA PROPIA. EN PARTICULAR, LA SUCURSAL PODRÁ REALIZAR TODAS LAS ACTIVIDADES RELACIONADAS CON LAS CATEGORÍAS DE OBRAS GENERALES Y ESPECIALIZADAS INCLUIDAS EN EL ANEXO \"A\" DEL DECRETO DE LA PRESIDENCIA DE LA REPUBLICA ITALIANA Nº 207, DE 5 DE OCTUBRE DE 2010, Y SUS POSTERIORES MODIFICACIONES Y ADENDAS, QUE LE PERMITE, -ENTRE OTROS - CONSTRUIR Y REALIZAR EL MANTENIMIENTO, LA RESTAURACIÓN Y LA CONSERVACIÓN EDIFICIOS CIVILES Y DE OTRO TIPO, ASÍ COMO REALIZAR OBRAS Y ACABADOS DE CUALQUIER TIPO, INCLUYENDO -A MODO DE EJEMPLO - LA IMPERMEABILIZACIÓN, EL MANTENIMIENTO, LA RESTAURACIÓN DE BIENES SUJETOS A LIMITACIONES PAISAJÍSTICAS, AMBIENTALES E HISTÓRICO-ARTÍSTICAS Y, EN GENERAL, OBJETO DE ALGÚN TIPO DE PROTECCIÓN, LAS CARRETERAS, AUTOPISTAS CON SUS CORRESPONDIENTES SISTEMAS ANTIRRUIDO PARA INFRAESTRUCTURAS DE MOVILIDAD, PUENTES, VIADUCTOS, VÍAS FÉRREAS, LÍNEAS DE TRANVÍA, DE METRO, DE FUNICULARES, PISTAS DE ATERRIZAJE DE AEROPUERTOS, OBRAS CATALOGADAS, INCLUIDAS LAS SUBTERRÁNEAS, ACUEDUCTOS, GASODUCTOS, OLEODUCTOS, SISTEMAS DE RIEGO Y DRENAJE, ESTRUCTURAS FLUVIALES, DE PROTECCIÓN, DE REGULACIÓN HIDRÁULICA Y DE SANEAMIENTO, PLANTAS PARA LA PRODUCCIÓN DE ENERGÍA ELÉCTRICA, SISTEMAS DE TRANSFORMACIÓN DE ALTA/MEDIA TENSIÓN Y DE DISTRIBUCIÓN DE ENERGÍA ELÉCTRICA Y SISTEMAS DE ALUMBRADO PÚBLICO Y SISTEMAS DE TRACCIÓN ELÉCTRICA, SISTEMAS TECNOLÓGICOS EN GENERAL Y ESPECÍFICAMENTE SISTEMAS HIDRÁULICOS Y SANITARIOS, SISTEMAS ELÉCTRICOS INTERIORES, TÉRMICOS Y DE ASILAMIENTO, SISTEMAS ELECTROMECÁNICOS DE TRANSPORTE, SISTEMAS ANTIINTRUSIÓN, SISTEMAS DE SEÑALIZACIÓN LUMINOSA Y NO LUMINOSA, Y LA SEGURIDAD DEL TRÁFICO, LÍNEAS TELEFÓNICAS Y SISTEMAS DE TELEFONÍA, SISTEMAS DE REDES DE TELECOMUNICACIÓN Y TRANSMISIÓN DE DATOS, DE LAS INSTALACIONES INTERNAS, TELEFÓNICAS, RADIOFÓNICAS Y TELEVISIVAS, DE LAS INSTALACIONES DE POTABILIZACIÓN Y DEPURACIÓN, OBRAS EN ÁREAS VERDES Y DECORACIÓN URBANA, INCLUIDA LA CONSTRUCCIÓN, LA REPARACIÓN Y/O MANTENIMIENTO DE JARDINES, PARQUES Y/O CUALQUIER ESPACIO VERDE, ESTUDIOS DE TOPOGRAFÍA Y DE SUPERVISIÓN. LA SUCURSAL TAMBIÉN PODRÁ LLEVAR A CABO, TODAS Y CADA UNA DE LAS ACTIVIDADES, INCLUIDO EL ASESORAMIENTO EN EL ÁMBITO DE LA REALIZACIÓN DE SISTEMAS INFORMÁTICOS DE GESTIÓN DE LA INFORMACIÓN, INCLUYENDO EL DISEÑO E INSTALACIÓN DE SOLUCIONES PRÁCTICAS PARA EL CORRESPONDIENTE FUNCIONAMIENTO Y GESTIÓN DE DICHOS SISTEMAS Y CONTRATOS, Y EN ESPECIAL: ACTIVIDADES DE CONSULTORÍA Y ORGANIZACIÓN. - PLANEAMIENTO, DISEÑO, INSTALACIÓN E IMPLEMENTACIÓN DE LOS PROCESOS OPERATIVOS DE LAS OBRAS; - EL ESTUDIO, LA REALIZACIÓN, LA SELECCIÓN, LA ADQUISICIÓN Y LA INSTALACIÓN DE HARDWARE. LA COMERCIALIZACIÓN E INSTALACIÓN DE SOFTWARE DE GESTIÓN Y MANTENIMIENTO. - LA FORMACIÓN PARA LA UTILIZACIÓN DE INVENTARIOS DE RED. - LA REALIZACIÓN, MODIFICACIÓN Y/O ACTUALIZACIÓN DE INVENTARIOS. -EL MANTENIMIENTO Y LA VERIFICACIÓN DEL USO SOFTWARE PARA LA GESTIÓN DE LAS ACTIVIDADES DE MANTENIMIENTO. LA SUCURSAL TAMBIÉN PODRÁ LLEVAR A CABO LAS SIGUIENTES ACTIVIDADES DE: - PRODUCCIÓN, VENTA Y DISTRIBUCIÓN DE ENERGÍA ELÉCTRICA Y/O SERVICIOS RELACIONADOS, INCLUIDA LA ENERGÍA PROCEDENTE DE FUENTES RENOVABLES, ASÍ COMO LA PRESTACIÓN DE TODOS O ALGUNOS DE LOS SERVICIOS ENERGÉTICOS (GESTIÓN DE LA ENERGÍA). - CONSULTORÍA EN LA PRESTACIÓN DE SERVICIOS INGENIERÍA. LA SUCURSAL TAMBIÉN PODRÁ ENCARGARSE DEL REGISTRO Y/O LA TITULARIDAD EN LA ADQUISICIÓN, LA VENTA, EL USO Y LA CONCESIÓN DE PATENTES, MODELOS, MARCAS, CONOCIMIENTOS TÉCNICOS KNOW-HOW, COMO LICENCIAS Y CUALQUIER OTRO DERECHO, INCLUIDO EL USO DE LA PROPIEDAD INDUSTRIAL O INTELECTUAL, RELACIONADO CON TODAS LAS ACTIVIDADES ANTERIORMENTE DESCRITAS. POR ÚLTIMO, LA SUCURSAL PODRÁ REALIZAR TODAS LAS OPERACIONES COMERCIALES, INDUSTRIALES, FINANCIERAS, MOBILIARIAS E INMOBILIARIAS, INCLUYENDO, A MODO DE EJEMPLO, LA ADQUISICIÓN, CONSTRUCCIÓN, COMERCIALIZACIÓN Y UTILIZACIÓN DE BIENES INMUEBLES DE CUALQUIER TIPO (POR EJEMPLO, COMERCIALES, NAVES INDUSTRIALES Y/O TERRENOS INDUSTRIALES Y AGRÍCOLAS) QUE SEAN NECESARIOS O ÚTILES PARA LA REALIZACIÓN DEL OBJETO SOCIAL DE LA SOCIEDAD; PODRÁ OTORGAR AVALES, FIANZAS Y GARANTÍAS POR LAS OBLIGACIONES Y DEUDAS DE TERCEROS, INCLUSO DE LOS NO SOCIOS, ASÍ COMO ADQUIRIR PARTICIPACIONES Y/O INTERESES DE OTRAS SOCIEDADES, ENTIDADES Y/O ASOCIACIONES CON OBJETO SIMILAR O RELACIONADO CON EL SUYO, CON EXCLUSIÓN DE LAS ACTIVIDADES RESERVADAS A LAS SOCIEDADES DE INTERMEDIACIÓN FINANCIERA Y CON EXCLUSIÓN DE TODA OPERACIÓN FINANCIERA REALIZADA CON RESPECTO AL PÚBLICO.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/09886",
+      "_links": {
+        "self": {
+          "name": "EDISON NEXT GOVERNMENT, S.R.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/09886"
+        }
+      }
+    }
+  ]
+}

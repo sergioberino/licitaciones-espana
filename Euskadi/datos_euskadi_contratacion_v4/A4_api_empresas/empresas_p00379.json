@@ -1,0 +1,448 @@
+{
+  "totalItems": 9042,
+  "totalPages": 905,
+  "currentPage": 379,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "name": "OMENA TECHNOLOGIES, S.L.",
+      "registrationNumber": "08162",
+      "identificationNumber": "B66846619",
+      "address": "Avda. Catalunya, 43 C-6",
+      "location": {
+        "postalCode": "08392",
+        "municipality": "Sant Andreu de Llavaneres",
+        "county": "Barcelona",
+        "municipalityId": "197",
+        "countyId": "08"
+      },
+      "economicActivities": [
+        {
+          "id": "1.631",
+          "name": "Intermediarios del comercio",
+          "_links": {
+            "self": {
+              "name": "Intermediarios del comercio",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.631"
+            }
+          }
+        },
+        {
+          "id": "1.659.6",
+          "name": "Venta al por menor de juguetes, artículos de deporte",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de juguetes, artículos de deporte",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.659.6"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2024-11-25",
+      "certificateEndDate": "2025-05-25",
+      "object": "LA COMPRA, VENTA, IMPORTACIÓN, EXPORTACIÓN, INTERMEDIACIÓN, COMERCIALIZACIÓN Y DISTRIBUCIÓN EN GENERAL TANTO AL MAYOR COMO AL POR MENOR DE PRODUCTOS, SERVICIOS, MÁQUINAS Y EQUIPOS RELACIONADOS CON LA INDUSTRIA ARMAMENTÍSTICA, DE LA SEGURIDAD, DE LA DEFENSA, DE LA TECNOLOGÍA, DE LA COMUNICACIÓN, DE LA INNOVACIÓN Y DE LA INFORMÁTICA, ASÍ COMO TODAS LAS ACTIVIDADES PROPIAS E INHERENTES A DICHA CLASE DE NEGOCIOS.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08162",
+      "_links": {
+        "self": {
+          "name": "OMENA TECHNOLOGIES, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/08162"
+        }
+      }
+    },
+    {
+      "name": "JOSEBA MIREN MARKINEZ MAGAÑA",
+      "registrationNumber": "09913",
+      "identificationNumber": "16282842S",
+      "address": "c/santa marina 2 POBES (ÁLAVA)",
+      "location": {
+        "postalCode": "01420",
+        "municipality": "Erriberagoitia/Ribera Alta",
+        "county": "Araba/Álava",
+        "municipalityId": "046",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.151.4",
+          "name": "Producción de energía no especificada en otros epígrafes",
+          "_links": {
+            "self": {
+              "name": "Producción de energía no especificada en otros epígrafes",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.151.4"
+            }
+          }
+        },
+        {
+          "id": "1.685",
+          "name": "Alojamientos turísticos extrahoteleros",
+          "_links": {
+            "self": {
+              "name": "Alojamientos turísticos extrahoteleros",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.685"
+            }
+          }
+        },
+        {
+          "id": "2.882",
+          "name": "Guías de turismo",
+          "_links": {
+            "self": {
+              "name": "Guías de turismo",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/2.882"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2024-11-25",
+      "certificateEndDate": "2025-05-05",
+      "object": "ALOJAMIENTOS TURÍSTICOS EXTRAHOTELEROS. GUÍAS DE TURISMO. PRODUCCIÓN DE ENERGÍA NO ESPECIFICADA EN OTROS EPÍGRAFES.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/09913",
+      "_links": {
+        "self": {
+          "name": "JOSEBA MIREN MARKINEZ MAGAÑA",
+          "href": "https://api.euskadi.eus/procurements/companies/09913"
+        }
+      }
+    },
+    {
+      "name": "JUAN LAZCANO BUTRON",
+      "registrationNumber": "07579",
+      "identificationNumber": "16066817Y",
+      "address": "Ibergoiko 16 (sin letra)",
+      "location": {
+        "postalCode": "48600",
+        "municipality": "Sopela",
+        "county": "Bizkaia",
+        "municipalityId": "085",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "2.899",
+          "name": "Otros profesionales",
+          "_links": {
+            "self": {
+              "name": "Otros profesionales",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/2.899"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2024-11-22",
+      "certificateEndDate": "2025-05-20",
+      "object": "OTROS PROFESIONALES ",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07579",
+      "_links": {
+        "self": {
+          "name": "JUAN LAZCANO BUTRON",
+          "href": "https://api.euskadi.eus/procurements/companies/07579"
+        }
+      }
+    },
+    {
+      "name": "CERTIOREM, S.A.",
+      "registrationNumber": "03121",
+      "identificationNumber": "A95290409",
+      "address": "Ribera de Axpe, 11. Edif. B, 113",
+      "location": {
+        "postalCode": "48950",
+        "municipality": "Erandio",
+        "county": "Bizkaia",
+        "municipalityId": "902",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.845",
+          "name": "Explotación electrónica por cuenta de terceros",
+          "_links": {
+            "self": {
+              "name": "Explotación electrónica por cuenta de terceros",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.845"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2024-11-21",
+      "certificateEndDate": "2025-05-13",
+      "object": "LA REALIZACIÓN DE ESTUDIOS, TRABAJOS Y APLICACIONES INFORMÁTICAS, LA APROBACIÓN DE TODA LA GAMA DE SERVICIOS RELAICONADOS CON EL PROCESAMIENTO DE LA INFORMACIÓN, TALES COMO ANÁLISIS FUNCIONAL, ANÁLISIS ORGÁNICO, PROGRAMACIÓN, GRABACIÓN, LA SELECCIÓN Y FORMACIÓN DE PERSONAL INFORMÁTICO; EL ASESORAMIENTO INFORMÁTICO A EMPRESAS, ORGANISMOS E INSTITUCIONES, ASÍ COMO LA REALIZACIÓN DE CHEQUEOS, AUDITORÍAS, REVISIONES, Y CUALQUIER OTRA ACTIVIDAD DE CARÁCTER INFORMÁTICO, YA SEA DENTRO DEL ÁREA DEL HARDWARE COMO DENTRO DEL ÁREA DEL SOFTWARE, ASÍ COMO A TODAS LAS TAREAS Y SERVICIOS RELACIONADOS CON LA ORGANIZACIÓN DE EMPRESAS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03121",
+      "_links": {
+        "self": {
+          "name": "CERTIOREM, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/03121"
+        }
+      }
+    },
+    {
+      "name": "DIEGO GOMEZ BURGUILLOS",
+      "registrationNumber": "09590",
+      "identificationNumber": "78953653N",
+      "address": "POLIGONO INDUSTRIAL ATXUKARRO 8",
+      "location": {
+        "postalCode": "48480",
+        "municipality": "Arrigorriaga",
+        "county": "Bizkaia",
+        "municipalityId": "011",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.621",
+          "name": "Venta al por mayor de chatarra y metales de desecho férreos y no férreos",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de chatarra y metales de desecho férreos y no férreos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.621"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2024-11-20",
+      "certificateEndDate": "2025-05-20",
+      "object": "VENTA AL POR MAYOR DE CHATARRA Y METALES DE DESECHO FÉRREOS Y NO FÉRREOS.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/09590",
+      "_links": {
+        "self": {
+          "name": "DIEGO GOMEZ BURGUILLOS",
+          "href": "https://api.euskadi.eus/procurements/companies/09590"
+        }
+      }
+    },
+    {
+      "name": "INNOVILAND SOLUTIONS, S.L.",
+      "registrationNumber": "07718",
+      "identificationNumber": "B66300161",
+      "address": "CAN SOLER SN CRTA BV4404 KM2.8 LA TORRE DE ORISTA",
+      "location": {
+        "postalCode": "08518",
+        "municipality": "Orpí",
+        "county": "Barcelona",
+        "municipalityId": "152",
+        "countyId": "08"
+      },
+      "economicActivities": [
+        {
+          "id": "1.612.2",
+          "name": "Venta al por mayor de cereales",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de cereales",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.612.2"
+            }
+          }
+        },
+        {
+          "id": "1.843.1",
+          "name": "Servicios técnicos de ingeniería",
+          "_links": {
+            "self": {
+              "name": "Servicios técnicos de ingeniería",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2024-11-20",
+      "certificateEndDate": "2025-05-13",
+      "object": "LA PRESTACIÓN DE SERVICIOS PARCIALES O GLOBALES MEDIANTE ENCARGOS PÚBLICOS RECIBIDOS POR CONCURSOS PÚBLICOS, PROCEDIMIENTOS NEGOCIADOS, SUBASTAS O PRIVADOS, POR CONTRATACIÓN VERBAL, CONTRATOS DIRECTOS O INDIRECTOS (SUBCONTRATADOS), PRESTACIÓN DE SERVICIOS, VENTAS DE SUMINISTROS DIVERSOS CON ADMINISTRACIONES PÚBLICAS, EMPRESAS PRIVADAS O PERSONAS NO JURÍDICAS, ASÍ COMO COMPRA-VENTA DE TERRENOS, MATERIAS PRIMAS, ELABORADAS Y DE COMPONENTES TECNOLÓGICOS, ASÍ COMO REPRESENTACIÓN DE TERCEROS Y FRANQUICIAS EN LOS ÁMBITOS QUE SE RELACIONAN A CONTINUACIÓN EN EL SENTIDO MÁS AMPLIO DE SUS POSIBLES INTERPRETACIONES: LA PRESTACIÓN DE SERVICIOS PARCIALES O INTEGRALES DE CONSULTORÍA Y ASISTENCIA TÉCNICA CONSISTENTE EN: INCLUYE ACTIVIDADES TIPO: REALIZAR I+D+I, ACCIÓN COMERCIAL, REPRESENTAR, ASESORAR, ELABORAR INFORMES, MEMORIAS, ESTUDIOS, PLANES, PROYECTOS DE CARÁCTER TÉCNICO, ORGANIZATIVO, ECONÓMICO O SOCIAL, ASÍ COMO SU DIRECCIÓN, SUPERVISIÓN, COORDINACIÓN, CONTROL DE LA EJECUCIÓN, CONTROL DE CALIDAD, LA IMPLANTACIÓN DE SISTEMAS ORGANIZATIVOS, IMPARTIR FORMACIÓN, TODO ELLO MEDIANTE TRABAJOS PRESENCIALES O A DISTANCIA, TANTO A NIVEL NACIONAL, INTERNACIONAL COMO TRANSNACIONAL Y TANTO PARA EL SECTOR PÚBLICO COMO PARA EL SECTOR PRIVADO. INCLUYE SECTORES COMO: INVESTIGACIÓN, DESARROLLO E INNOVACIÓN DE NUEVAS TECNOLOGÍAS O SERVICIOS BASADOS Y LA TRAMITACIÓN DE PATENTES. ACCIÓN COMERCIAL Y DE REPRESENTACIÓN DE TERCEROS. TIC, INTERNET, LA INFORMÁTICA, LA PORTABILIDAD Y LAS SMART CITIES. GEOINFORMACIÓN Y LA TELEDETECCIÓN. INSPECCIÓN REALIDAD TERRENO, INVENTARIOS E INSPECCIONES. RELACIONADOS CON LOS DRONES (RPAS &#8211; UAV). GESTIÓN DOCUMENTAL Y ESCANEADO Y DIGITALIZACIÓN DE INFORMACIÓN. GESTIÓN DE TODO TIPO DE EXPEDIENTES. AGRARIO, GANADERO, AGROALIMENTARIO, AGROINDUSTRIAL Y LA AGRICULTURA DE PRECISIÓN. MEDIO AMBIENTE. RELACIONADOS CON LA DIETÉTICA. RELACIONADOS CON EL FUNCIONAMIENTO DE LAS ADMINISTRACIONES PÚBLICAS. CUALESQUIERA OTRAS PRESTACIONES DIRECTA O INDIRECTAMENTE RELACIONADAS CON LAS ANTERIORES Y EN LAS QUE TAMBIÉN PREDOMINEN LAS DE CARÁCTER INTELECTUAL. INCLUYE LAS DISCIPLINAS: LAS DISTINTAS DISCIPLINAS DE LA INGENIERÍA, LA HIDRÁULICA, LA GEOTÉCNICA, LA GEOLOGÍA, LA BIOLOGÍA, EL MEDIO AMBIENTE, LA EDAFOLOGÍA, EL URBANISMO, LA ORDENACIÓN DEL TERRITORIO, LA MOVILIDAD, LA PROMOCIÓN ECONÓMICA, TURÍSTICA, ECOTURÍSTICA, LA JARDINERÍA, LA AGRICULTURA, LA AGRICULTURA DE PRECISIÓN, LA SILVICULTURA, LA GANADERÍA, LA MINERÍA, LA PRODUCCIÓN DE SAL Y LA GESTIÓN DEL AGUA NATURAL, POTABLE Y RESIDUAL. LA ELABORACIÓN DE CARTOGRAFÍA (DIGITAL O NO), LA TOPOGRAFÍA, LA RESTITUCIÓN, LA TELEDETECCIÓN Y LA FOTOINTERPRETACIÓN. LA ELABORACIÓN DE CARTOGRAFÍA PARA SISTEMAS DE INFORMACIÓN GEOGRÁFICA. EL MEDIO AMBIENTE, LA EDUCACIÓN AMBIENTAL, LAS AUDITORÍAS AMBIENTALES, EL IMPACTO MEDIOAMBIENTAL, LA GESTIÓN DE LA NATURALEZA, LA GESTIÓN DE LOS ESPACIOS NATURALES PROTEGIDOS Y EL DESARROLLO SOSTENIBLE. EL DESARROLLO DE SISTEMAS DE INFORMACIÓN GEOGRÁFICA (SIG), LA REALIZACIÓN Y COMERCIALIZACIÓN DE PROGRAMAS INFORMÁTICOS (SOFTWARE) DE DESARROLLO PROPIO O DE TERCEROS, EL DISEÑO Y LA REALIZACIÓN DE MATERIALES AUDIOVISUALES INCLUIDO EL VÍDEO DIGITAL. LA EDICIÓN Y LA PUBLICACIÓN DE DOCUMENTOS IMPRESOS, MULTIMEDIA Y PARA INTERNET. LA TRAMITACIÓN Y GESTIÓN DE FINANCIACIÓN, AYUDAS, SUBVENCIONES, CONCURSOS PÚBLICOS O PRIVADOS, NACIONALES, INTERNACIONALES Y TRANSNACIONALES. EL DISEÑO Y ELABORACIÓN DE PROYECTOS DE SEÑALIZACIÓN PARA LA PROMOCIÓN ECOTURÍSTICA Y DEPORTIVA. ASESORAMIENTO Y LA IMPLANTACIÓN DE NORMAS ISO, EMAS, SISTEMAS DE CALIDAD Y DE CALIDAD INTEGRAL. LA REDACCIÓN DE PROYECTOS DE REFORESTACIÓN, JARDINERÍA, PAISAJISMO, AFORESTACIÓN, RESTAURACIÓN Y RECUPERACIÓN MEDIOAMBIENTAL. EL DESARROLLO Y LA GESTIÓN DEL TURISMO EN ÁREAS RURALES Y NATURALES. EL DISEÑO, MAQUETACIÓN, EDICIÓN Y DIVULGACIÓN DE FOLLETOS, PANFLETOS, TRÍPTICOS, ESTUDIOS, MEMORIAS. LAS ENCUESTAS Y TOMAS DE DATOS PARA ESTUDIOS DE MERCADO. LA ORGANIZACIÓN Y PROMOCIÓN DE CONGRESOS, FERIAS, EXPOSICIONES, JORNADAS, ACTOS PÚBLICOS, ESTANDS PARA FERIAS DE MUESTRA. LA ORGANIZACIÓN Y REALIZACIÓN DE CURSOS DE FORMACIÓN, CAPACITACIÓN Y RECICLAJE. EL DISEÑO Y LA ELABORACIÓN DE CONTENIDOS PARA CENTROS DE INTERPRETACIÓN, MUSEOS, ECOMUSEOS, A LAS DE AUDIOVISUALES, PROGRAMAS DE TELEVISIÓN, VÍDEOS DOCUMENTALES, ANUNCIOS, CAMPAÑAS DIVULGATIVAS, FORMATIVAS O PROMOCIONALES. LA REALIZACIÓN DE INVENTARIOS (GEOREFERENCIADOS O NO) DE BIENES, SEAN MUEBLES O INMUEBLES. LA REALIZACIÓN DE TRABAJOS CATASTRALES DE CAMPO Y DE GABINETE. LA REALIZACIÓN DE INVENTARIOS E INSPECCIONES DE INFRAESTRUCTURAS PÚBLICAS O PRIVADAS. INCLUYE LOS SERVICIOS: SERVICIO DE GESTIÓN, CONSERVACIÓN Y MANTENIMIENTO DE JARDINERÍA, ARBORICULTURA, PLANTACIONES, ASÍ COMO CONSERVACIÓN Y MANTENIMIENTO DE MONTES PÚBLICOS Y PRIVADOS. SERVICIO DE GESTIÓN, CONSERVACIÓN Y MANTENIMIENTO DE MOBILIARIO URBANO Y DE LAS INFRAESTRUCTURAS PÚBLICAS O PRIVADAS. SERVICIOS DE CONTROL, VIGILANCIA AÉREA Y PREVENCIÓN Y EXTINCIÓN DE INCENDIOS FORESTALES. SERVICIOS DE CONTROL, VIGILANCIA Y PROTECCIÓN DE ESPECIES Y ESPACIOS NATURALES, AGRÍCOLAS, FORESTALES Y PERIURBANOS. SERVICIOS DE DISEÑO, PROYECCIÓN, MANTENIMIENTO Y GESTIÓN INTEGRAL DE ESTACIONES DEPURADORAS VERDES, ECOLÓGICAS O BIOLÓGICAS Y PLANTAS POTABILIZADORAS... SERVICIOS DE CAPTURA DE INFORMACIÓN POR MEDIOS ELECTRÓNICOS, INFORMÁTICOS Y TELEMÁTICOS, Y DE DESARROLLO Y MANTENIMIENTO DE PROGRAMAS DE ORDENADOR. SERVICIOS DE MANTENIMIENTO, CONSERVACIÓN, LIMPIEZA Y REPARACIÓN DE BIENES, EQUIPOS E INSTALACIONES. SERVICIOS DE DESARROLLO DE PROGRAMAS DE ORDENADOR A MEDIDA PARA LA ADMINISTRACIÓN. SERVICIOS DE REALIZACIÓN DE ENCUESTAS, TOMAS DE DATOS Y OTROS SERVICIOS ANÁLOGOS. SERVICIOS DE GESTIÓN DE SISTEMAS DE INFORMACIÓN QUE COMPRENDA EL MANTENIMIENTO, LA CONSERVACIÓN, REPARACIÓN Y ACTUALIZACIÓN DE LOS EQUIPOS FÍSICOS Y LÓGICOS TRATAMIENTO DE LA INFORMACIÓN, ASÍ COMO LA ACTUALIZACIÓN DE LOS PROGRAMAS INFORMÁTICOS Y EL DESARROLLO DE NUEVOS PROGRAMAS. SERVICIOS DE TECNOLOGÍAS DE LA INFORMACIÓN, DE LAS COMUNICACIONES Y DE LAS TELECOMUNICACIONES. SERVICIOS DE TRATAMIENTO DE RESIDUOS Y DESECHOS. SERVICIOS DE PUBLICIDAD, RADIO, TELEVISIÓN, PRENSA, Y DE REALIZACIÓN DE MATERIALES AUDIOVISUALES. SERVICIOS DE EVALUACIÓN Y CERTIFICACIÓN TECNOLÓGICA, MEDIOAMBIENTAL Y DE CALIDAD DE PROCESOS. SERVICIOS DE EXPLOTACIÓN Y CONTROL DE SISTEMAS INFORMÁTICOS E INFRAESTRUCTURAS TELEMÁTICAS. LA REALIZACIÓN DE SERVICIOS DE SUMINISTRO PARCIALES O INTEGRALES EN: EQUIPOS PARA EL TRATAMIENTO DE LA INFORMACIÓN, SUS DISPOSITIVOS Y PROGRAMAS Y LA CESIÓN DEL DERECHO DE USO DE ESTOS ÚLTIMOS, ASÍ COMO DE EQUIPOS Y SISTEMAS DE TELECOMUNICACIONES. LA COMPRA VENTA DE COMPONENTES TECNOLÓGICOS RELACIONADOS DIRECTA O INDIRECTAMENTE CON LOS SECTORES Y ACTIVIDADES DESCRITOS EN LOS APARTADOS ANTERIORES, ASÍ COMO MAQUINARIA, ESPECIALMENTE PARA LA INDUSTRIA DE LA INFORMACIÓN, DE LA TELEDETECCIÓN, DE LA AGRICULTURA DE LA PRECISIÓN, PARA LA AGROINDUSTRIA EN GENERAL Y PARA EL MEDIO AMBIENTE. INCLUYE SISTEMAS DE COMPRA-VENTA POR COMERCIO ELECTRÓNICO, REPRESENTACIÓN, FRANQUICIA, DIRECTA AL PÚBLICO Y LA EXPORTACIÓN E IMPORTACIÓN DE BIENES DE EQUIPOS. LA COMPRAVENTA DE TERRENOS RELACIONADOS DIRECTA O INDIRECTAMENTE CON LA ACTIVIDAD AGRARIA, GANADERA, FORESTAL, INDUSTRIAL, ECOTURÍSTICA O EQUIVALENTES. LA COMPRAVENTA DE MATERIAS PRIMAS Y ELABORADAS RELACIONADAS DIRECTA O INDIRECTAMENTE CON LA ACTIVIDAD MINERA, AGRARIA Y GANADERA Y CUANTAS ACTIVIDADES SEAN NECESARIAS PARA SU CORRECTO DESARROLLO: COMPRA, ALMACENAJE, TRANSPORTE, COMERCIALIZACIÓN, DISTRIBUCIÓN&#8230;",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07718",
+      "_links": {
+        "self": {
+          "name": "INNOVILAND SOLUTIONS, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/07718"
+        }
+      }
+    },
+    {
+      "name": "URTZI ARRIEN ARBE",
+      "registrationNumber": "09905",
+      "identificationNumber": "45625263W",
+      "address": "Barrio Asterria (48144) B LANDATZI 67",
+      "location": {
+        "postalCode": "48144",
+        "municipality": "Zeanuri",
+        "county": "Bizkaia",
+        "municipalityId": "024",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.501.3",
+          "name": "Albañilería y pequeños trabajos de construcción en general",
+          "_links": {
+            "self": {
+              "name": "Albañilería y pequeños trabajos de construcción en general",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.3"
+            }
+          }
+        },
+        {
+          "id": "1.921.1",
+          "name": "Servicios de limpieza en calles, vías públicas y jardines",
+          "_links": {
+            "self": {
+              "name": "Servicios de limpieza en calles, vías públicas y jardines",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.921.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2024-11-20",
+      "certificateEndDate": "2025-05-18",
+      "object": "SERVICIOS DE LIMPIEZA EN CALLES, VÍAS PÚBLICAS Y JARDINES. ALBAÑILERÍA Y PEQUEÑOS TRABAJOS DE CONSTRUCCIÓN EN GENERAL.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/09905",
+      "_links": {
+        "self": {
+          "name": "URTZI ARRIEN ARBE",
+          "href": "https://api.euskadi.eus/procurements/companies/09905"
+        }
+      }
+    },
+    {
+      "name": "DNS LOGISTIC BIZKAIA, S.L.",
+      "registrationNumber": "09900",
+      "identificationNumber": "B56489727",
+      "address": "Gran Via 17 - 5",
+      "location": {
+        "postalCode": "48002",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.722",
+          "name": "Transporte de mercancías por carretera",
+          "_links": {
+            "self": {
+              "name": "Transporte de mercancías por carretera",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.722"
+            }
+          }
+        },
+        {
+          "id": "1.849.5",
+          "name": "Servicios de recadería y reparto y manipulación de correspondencia",
+          "_links": {
+            "self": {
+              "name": "Servicios de recadería y reparto y manipulación de correspondencia",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.849.5"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2024-11-19",
+      "certificateEndDate": "2025-05-18",
+      "object": "EL TRANSPORTE POR CARRETERA, ACTIVIDADES DE MENSAJERÍA Y PAQUETERÍA, SERVICIOS DE INFORMÁTICA, INFORMACIÓN Y COMUNICACIÓN PARA EMPRESAS DE TRANSPORTE Y SERVICIOS DE MENSAJERÍA. CNAE 0494: TRANSPORTE DE MERCANCÍAS POR CARRETERA.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/09900",
+      "_links": {
+        "self": {
+          "name": "DNS LOGISTIC BIZKAIA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/09900"
+        }
+      }
+    },
+    {
+      "name": "JONE VERASTEGUI ZUAZO",
+      "registrationNumber": "09654",
+      "identificationNumber": "30672563Q",
+      "address": "Calle Jesús Guridi (01340), 3, 3º IZQ",
+      "location": {
+        "postalCode": "01340",
+        "municipality": "Elciego",
+        "county": "Araba/Álava",
+        "municipalityId": "022",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.849.7",
+          "name": "Servicios de gestión administrativa",
+          "_links": {
+            "self": {
+              "name": "Servicios de gestión administrativa",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.849.7"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2024-11-18",
+      "certificateEndDate": "2025-05-13",
+      "object": "PROFESORES DE FORMACIÓN Y PERFECCIONAMIENTO PROFESIONAL.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/09654",
+      "_links": {
+        "self": {
+          "name": "JONE VERASTEGUI ZUAZO",
+          "href": "https://api.euskadi.eus/procurements/companies/09654"
+        }
+      }
+    },
+    {
+      "name": "CARNES IBERICAS DEL NORTE, S.L.",
+      "registrationNumber": "09897",
+      "identificationNumber": "B20691994",
+      "address": "TROIA 21",
+      "location": {
+        "postalCode": "20115",
+        "municipality": "Astigarraga",
+        "county": "Gipuzkoa",
+        "municipalityId": "903",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.151.4",
+          "name": "Producción de energía no especificada en otros epígrafes",
+          "_links": {
+            "self": {
+              "name": "Producción de energía no especificada en otros epígrafes",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.151.4"
+            }
+          }
+        },
+        {
+          "id": "1.413.2",
+          "name": "Fabricación de productos cárnicos de todas clases",
+          "_links": {
+            "self": {
+              "name": "Fabricación de productos cárnicos de todas clases",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.413.2"
+            }
+          }
+        },
+        {
+          "id": "1.612.4",
+          "name": "Venta al por mayor de carnes, huevos, aves y caza",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de carnes, huevos, aves y caza",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.612.4"
+            }
+          }
+        },
+        {
+          "id": "1.631",
+          "name": "Intermediarios del comercio",
+          "_links": {
+            "self": {
+              "name": "Intermediarios del comercio",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.631"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2024-11-18",
+      "certificateEndDate": "2025-04-30",
+      "object": "EL COMERCIO DE CARNES FRESCAS Y CONGELADAS, ELABORACIÓN DE TODO TIPO DE DERIVADOS CÁRNICOS FRESCOS, CRUDOS Y EMBUTIDOS, ASÍ COMO LA ELABORACIÓN DE PRODUCTOS DE CHARCUTERÍA, PLATOS PRECOCINADOS Y COCINADOS; EL COMERCIO DE HUEVOS, AVES, CONEJOS, CAZA Y PRODUCTOS DERIVADOS DE LOS MISMOS; COMERCIALIZACIÓN DE BEBIDAS Y PRODUCTOS ALIMENTICIOS.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/09897",
+      "_links": {
+        "self": {
+          "name": "CARNES IBERICAS DEL NORTE, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/09897"
+        }
+      }
+    }
+  ]
+}

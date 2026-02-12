@@ -1,0 +1,508 @@
+{
+  "totalItems": 919,
+  "totalPages": 92,
+  "currentPage": 68,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "id": 555,
+      "identificationNumber": "P0100101E",
+      "name": "Junta Administrativa de Maestu",
+      "scope": "ARABA/ÁLAVA",
+      "address": "Plaza de la Iglesia, 7 bajo. 01120 Maestu. Arraia-Maeztu (Araba/Álava)",
+      "webPage": "http://contratacion.euskadi.eus",
+      "publicationDate": "2019-10-04",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES211",
+      "entities": [
+        {
+          "id": 1005,
+          "name": "Junta Administrativa de Maestu",
+          "orgs": [
+            {
+              "id": 912669,
+              "name": "Regidor-Presidente",
+              "_links": {
+                "self": {
+                  "name": "Regidor-Presidente",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/555/entities/1005/orgs/912669"
+                }
+              }
+            },
+            {
+              "id": 912668,
+              "name": "Asamblea Vecinal",
+              "_links": {
+                "self": {
+                  "name": "Asamblea Vecinal",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/555/entities/1005/orgs/912668"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Junta Administrativa de Maestu",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/555/entities/1005"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder555/es_doc/es_arch_poder555.html",
+      "_links": {
+        "self": {
+          "name": "Junta Administrativa de Maestu",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/555"
+        }
+      }
+    },
+    {
+      "id": 559,
+      "identificationNumber": "P0101500G",
+      "name": "Ayuntamiento de Berantevilla",
+      "scope": "ARABA/ÁLAVA",
+      "address": "Mayor,11. 01211. Berantevilla (Araba/Álava)",
+      "webPage": "http://www.berantevilla.es",
+      "publicationDate": "2019-10-04",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES211",
+      "entities": [
+        {
+          "id": 1009,
+          "name": "Ayuntamiento de Berantevilla",
+          "orgs": [
+            {
+              "id": 912679,
+              "name": "Pleno Municipal",
+              "_links": {
+                "self": {
+                  "name": "Pleno Municipal",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/559/entities/1009/orgs/912679"
+                }
+              }
+            },
+            {
+              "id": 912680,
+              "name": "Alcalde",
+              "_links": {
+                "self": {
+                  "name": "Alcalde",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/559/entities/1009/orgs/912680"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Ayuntamiento de Berantevilla",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/559/entities/1009"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder559/es_doc/es_arch_poder559.html",
+      "_links": {
+        "self": {
+          "name": "Ayuntamiento de Berantevilla",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/559"
+        }
+      }
+    },
+    {
+      "id": 573,
+      "identificationNumber": "P2006400B",
+      "name": "Ayuntamiento de Orexa",
+      "scope": "GIPUZKOA",
+      "address": "Errebote plaza, 4. 20490 Orexa (Gipuzkoa",
+      "webPage": "http://www.orexa.eus",
+      "publicationDate": "2019-10-04",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES212",
+      "entities": [
+        {
+          "id": 1023,
+          "name": "Ayuntamiento de Orexa",
+          "orgs": [
+            {
+              "id": 912701,
+              "name": "Pleno del Ayuntamiento",
+              "_links": {
+                "self": {
+                  "name": "Pleno del Ayuntamiento",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/573/entities/1023/orgs/912701"
+                }
+              }
+            },
+            {
+              "id": 912758,
+              "name": "Alcaldía",
+              "_links": {
+                "self": {
+                  "name": "Alcaldía",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/573/entities/1023/orgs/912758"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Ayuntamiento de Orexa",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/573/entities/1023"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder573/es_doc/es_arch_poder573.html",
+      "_links": {
+        "self": {
+          "name": "Ayuntamiento de Orexa",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/573"
+        }
+      }
+    },
+    {
+      "id": 584,
+      "identificationNumber": "P0100223G",
+      "name": "Junta Administrativa de Villafranca",
+      "scope": "ARABA/ÁLAVA",
+      "address": "Villafranca 1. 01193 Villafranca (Araba/Álava)",
+      "webPage": "http://www.contratacion.euskadi.eus",
+      "publicationDate": "2019-10-04",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES211",
+      "entities": [
+        {
+          "id": 1034,
+          "name": "Junta Administrativa de Villafranca",
+          "orgs": [
+            {
+              "id": 912723,
+              "name": "Concejo de Villafranca",
+              "_links": {
+                "self": {
+                  "name": "Concejo de Villafranca",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/584/entities/1034/orgs/912723"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Junta Administrativa de Villafranca",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/584/entities/1034"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder584/es_doc/es_arch_poder584.html",
+      "_links": {
+        "self": {
+          "name": "Junta Administrativa de Villafranca",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/584"
+        }
+      }
+    },
+    {
+      "id": 585,
+      "identificationNumber": "P0100216A",
+      "name": "Junta Administrativa de Gebara",
+      "scope": "ARABA/ÁLAVA",
+      "address": "Arana,15. 01206 Gebara. Barrundia (Araba/Álava)",
+      "webPage": "http://www.contratacion.euskadi.eus",
+      "publicationDate": "2019-10-04",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES211",
+      "entities": [
+        {
+          "id": 1035,
+          "name": "Junta Administrativa de Gebara",
+          "orgs": [
+            {
+              "id": 912724,
+              "name": "Concejo de Gebara",
+              "_links": {
+                "self": {
+                  "name": "Concejo de Gebara",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/585/entities/1035/orgs/912724"
+                }
+              }
+            },
+            {
+              "id": 912728,
+              "name": "Presidenta",
+              "_links": {
+                "self": {
+                  "name": "Presidenta",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/585/entities/1035/orgs/912728"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Junta Administrativa de Gebara",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/585/entities/1035"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder585/es_doc/es_arch_poder585.html",
+      "_links": {
+        "self": {
+          "name": "Junta Administrativa de Gebara",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/585"
+        }
+      }
+    },
+    {
+      "id": 587,
+      "identificationNumber": "P0103600C",
+      "name": "Ayuntamiento de Leza",
+      "scope": "ARABA/ÁLAVA",
+      "address": "Herriko Plaza, 1. 01309 Leza (Araba/Álava)",
+      "webPage": "http://www.ayuntamientodeleza.com",
+      "publicationDate": "2019-10-04",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES211",
+      "entities": [
+        {
+          "id": 1037,
+          "name": "Ayuntamiento de Leza",
+          "orgs": [
+            {
+              "id": 912727,
+              "name": "Alcaldía",
+              "_links": {
+                "self": {
+                  "name": "Alcaldía",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/587/entities/1037/orgs/912727"
+                }
+              }
+            },
+            {
+              "id": 912726,
+              "name": "Pleno",
+              "_links": {
+                "self": {
+                  "name": "Pleno",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/587/entities/1037/orgs/912726"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Ayuntamiento de Leza",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/587/entities/1037"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder587/es_doc/es_arch_poder587.html",
+      "_links": {
+        "self": {
+          "name": "Ayuntamiento de Leza",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/587"
+        }
+      }
+    },
+    {
+      "id": 589,
+      "identificationNumber": "P0100336G",
+      "name": "Junta Administrativa de Martioda",
+      "scope": "ARABA/ÁLAVA",
+      "address": "Martioda c/única. 01191. Martioda. Vitoria-Gasteiz (Araba/Álava)",
+      "webPage": "http://www.contratacion.euskadi.eus",
+      "publicationDate": "2019-10-04",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES211",
+      "entities": [
+        {
+          "id": 1039,
+          "name": "Junta Administrativa de Martioda",
+          "orgs": [
+            {
+              "id": 912732,
+              "name": "Concejo de Martioda",
+              "_links": {
+                "self": {
+                  "name": "Concejo de Martioda",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/589/entities/1039/orgs/912732"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Junta Administrativa de Martioda",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/589/entities/1039"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder589/es_doc/es_arch_poder589.html",
+      "_links": {
+        "self": {
+          "name": "Junta Administrativa de Martioda",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/589"
+        }
+      }
+    },
+    {
+      "id": 594,
+      "identificationNumber": "P0106300G",
+      "name": "Ayuntamiento de Valdegovia-Gaubea",
+      "scope": "ARABA/ÁLAVA",
+      "address": "Arquitecto Jesús Guinea,46. 01426. Valdegovia (Araba/Álava)",
+      "webPage": "http://www.valdegovia.eus",
+      "publicationDate": "2019-10-04",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES211",
+      "entities": [
+        {
+          "id": 1044,
+          "name": "Ayuntamiento de Valdegovia-Gaubea",
+          "orgs": [
+            {
+              "id": 912745,
+              "name": "Pleno",
+              "_links": {
+                "self": {
+                  "name": "Pleno",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/594/entities/1044/orgs/912745"
+                }
+              }
+            },
+            {
+              "id": 912744,
+              "name": "Alcalde",
+              "_links": {
+                "self": {
+                  "name": "Alcalde",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/594/entities/1044/orgs/912744"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Ayuntamiento de Valdegovia-Gaubea",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/594/entities/1044"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder594/es_doc/es_arch_poder594.html",
+      "_links": {
+        "self": {
+          "name": "Ayuntamiento de Valdegovia-Gaubea",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/594"
+        }
+      }
+    },
+    {
+      "id": 597,
+      "identificationNumber": "P0104400G",
+      "name": "Ayuntamiento de Navaridas",
+      "scope": "ARABA/ÁLAVA",
+      "address": "Fabulista Samaniego s/n. 01309 Navaridas (Araba/Álava)",
+      "webPage": "http://www.ayuntamientodenavaridas.com",
+      "publicationDate": "2019-10-04",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES211",
+      "entities": [
+        {
+          "id": 1048,
+          "name": "Ayuntamiento de Navaridas",
+          "orgs": [
+            {
+              "id": 912752,
+              "name": "Pleno",
+              "_links": {
+                "self": {
+                  "name": "Pleno",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/597/entities/1048/orgs/912752"
+                }
+              }
+            },
+            {
+              "id": 912753,
+              "name": "Alcaldía",
+              "_links": {
+                "self": {
+                  "name": "Alcaldía",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/597/entities/1048/orgs/912753"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Ayuntamiento de Navaridas",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/597/entities/1048"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder597/es_doc/es_arch_poder597.html",
+      "_links": {
+        "self": {
+          "name": "Ayuntamiento de Navaridas",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/597"
+        }
+      }
+    },
+    {
+      "id": 605,
+      "identificationNumber": "P0100323E",
+      "name": "Junta Administrativa de Elgea",
+      "scope": "ARABA/ÁLAVA",
+      "address": "Elejalde s/n. 01206 Elgea (Araba/Álava)",
+      "webPage": "http://www.contratacion.euskadi.eus",
+      "publicationDate": "2019-10-04",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES211",
+      "entities": [
+        {
+          "id": 1056,
+          "name": "Junta Administrativa de Elgea",
+          "orgs": [
+            {
+              "id": 912773,
+              "name": "Presidente",
+              "_links": {
+                "self": {
+                  "name": "Presidente",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/605/entities/1056/orgs/912773"
+                }
+              }
+            },
+            {
+              "id": 912774,
+              "name": "Junta",
+              "_links": {
+                "self": {
+                  "name": "Junta",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/605/entities/1056/orgs/912774"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Junta Administrativa de Elgea",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/605/entities/1056"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder605/es_doc/es_arch_poder605.html",
+      "_links": {
+        "self": {
+          "name": "Junta Administrativa de Elgea",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/605"
+        }
+      }
+    }
+  ]
+}

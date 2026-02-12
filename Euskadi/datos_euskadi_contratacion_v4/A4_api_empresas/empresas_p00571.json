@@ -1,0 +1,418 @@
+{
+  "totalItems": 9042,
+  "totalPages": 905,
+  "currentPage": 571,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "name": "ESTUDIO DE INGENIERÍA NOVO Y ASOCIADOS, S.L.",
+      "registrationNumber": "07087",
+      "identificationNumber": "B87306726",
+      "address": "C/Sanchez Barcaiztegui nº 33 esc.izq 8ºB",
+      "location": {
+        "postalCode": "28007",
+        "municipality": "Madrid",
+        "county": "Madrid",
+        "municipalityId": "079",
+        "countyId": "28"
+      },
+      "economicActivities": [
+        {
+          "id": "1.501.1",
+          "name": "Construcción completa, reparación y conservación de edificaciones",
+          "_links": {
+            "self": {
+              "name": "Construcción completa, reparación y conservación de edificaciones",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.1"
+            }
+          }
+        },
+        {
+          "id": "1.501.2",
+          "name": "Construcción completa, reparación y conservación obras civiles",
+          "_links": {
+            "self": {
+              "name": "Construcción completa, reparación y conservación obras civiles",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.2"
+            }
+          }
+        },
+        {
+          "id": "1.843.1",
+          "name": "Servicios técnicos de ingeniería",
+          "_links": {
+            "self": {
+              "name": "Servicios técnicos de ingeniería",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2020-06-11",
+      "certificateEndDate": "2020-11-15",
+      "object": "SERVICIOS TÉCNICOS DE INGENIERÍA Y OTRAS ACTIVIDADES RELACIONADAS CON EL ASESORAMIENTO TÉCNICO. (CODIGO CNAE 7112). CONSTRUCCIÓN DE EDIFICIOS RESIDENCIALES, DE EDIFICIOS NO RESIDENCIALES Y CONSTRUCCIÓN DE PUENTES Y TÚNELES. CONSTRUCCIÓN, INSTALACIONES Y MANTENIMIENTO. COMERCIO AL POR MAYOR Y MENOR DE PRODUCTOS DESTINADOS O RELACIONADOS CON DOCUMENTACIÓN TÉCNICA, DE INGENIERÍA U OBRA CIVIL. DISTRIBUCIÓN COMERCIAL, IMPORTACIÓN Y EXPORTACIÓN DE DICHOS PRODUCTOS DESTINADOS O RELACIONADOS CON DOCUMENTACIÓN TÉCNICA, DE INGENIERÍA U OBRA CIVIL. ACTIVIDADES INMOBILIARIAS, INTERMEDIACIÓN EN ACTIVIDADES PROFESIONALES. INDUSTRIAS MANUFACTURERAS Y TEXTILES. ACTIVIDADES DE TURISMO, HOSTELERÍA Y RESTAURACIÓN. PRESTACIÓN DE SERVICIOS, ACTIVIDADES DE GESTIÓN Y ADMINISTRACIÓN. SERVICIOS. EDUCATIVOS, DE OCIO Y ENTRETENIMIENTO, TRANSPORTE Y ALMACENAMIENTO, INFORMACIÓN Y COMUNICACIONES AGRICULTURA, GANADERÍA Y PESCA, INFORMÁTICA, TELECOMUNICACIONES Y OFIMÁTICA, ENERGÍAS ALTERNATIVAS. COMPRAVENTA Y REPARACIÓN DE VEHÍCULOS. REPARACIÓN Y MANTENIMIENTO DE INSTALACIONES Y MAQUINARIA. INVESTIGACIÓN, DESARROLLO E INNOVACIÓN. ACTIVIDADES CIENTÍFICAS Y TÉCNICAS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07087",
+      "_links": {
+        "self": {
+          "name": "ESTUDIO DE INGENIERÍA NOVO Y ASOCIADOS, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/07087"
+        }
+      }
+    },
+    {
+      "name": "AITOR ALCAIDE ECHABE",
+      "registrationNumber": "07088",
+      "identificationNumber": "45668678Q",
+      "address": "Otxanduri 3",
+      "location": {
+        "postalCode": "48498",
+        "municipality": "Arrankudiaga-Zollo",
+        "county": "Bizkaia",
+        "municipalityId": "009",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "2.411",
+          "name": "Arquitectos",
+          "_links": {
+            "self": {
+              "name": "Arquitectos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/2.411"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2020-06-11",
+      "certificateEndDate": "2020-12-02",
+      "object": "ARQUITECTOS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07088",
+      "_links": {
+        "self": {
+          "name": "AITOR ALCAIDE ECHABE",
+          "href": "https://api.euskadi.eus/procurements/companies/07088"
+        }
+      }
+    },
+    {
+      "name": "CONSTRUCCIONES VILLANUEVA CAÑIVE, S.L.",
+      "registrationNumber": "07083",
+      "identificationNumber": "B95945242",
+      "address": "Bº Nocedal 13",
+      "location": {
+        "postalCode": "48860",
+        "municipality": "Zalla",
+        "county": "Bizkaia",
+        "municipalityId": "096",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.501.2",
+          "name": "Construcción completa, reparación y conservación obras civiles",
+          "_links": {
+            "self": {
+              "name": "Construcción completa, reparación y conservación obras civiles",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2020-06-10",
+      "certificateEndDate": "2020-11-25",
+      "object": "1.- LA PROMOCIÓN, CONSTRUCCIÓN, COMPRA, VENTA, ARRENDAMIENTO Y COMERCIALIZACIÓN EN GENERAL DE TODA CLASE DE EDIFICACIONES, TERRENOS, SOLARES, FINCAS RÚSTICAS Y URBANAS; LA EDIFICACIÓN, URBANIZACIÓN, EXCAVACIÓN, CIMENTACIÓN Y DERRIBO, BIEN POR CUENTA PROPIA COMO AJENA, ASÍ COMO LA ENAJENACIÓN, VENTA, ARRIENDO O EXPLOTACIÓN, EN CUALQUIER FORMA DE TODA CLASE DE INMUEBLES, EDIFICIOS, PISOS, APARTAMENTOS, LOCALES COMERCIALES O INDUSTRIALES, OFICINAS Y HOTELES O ESTABLECIMIENTOS DE HOSTELERÍA EN GENERAL. 2.- TODA CLASE DE OPERACIONES INMOBILIARIAS SOBRE FINCAS RÚSTICAS Y URBANAS, PROMOCIÓN DE CONTRATOS O REALIZACIONES DE PARCELACIONES, URBANIZACIONES, CONSTRUCCIONES Y OBRAS PRIVADAS O PÚBLICAS, LA VENTA, HIPOTECA, ARRENDAMIENTO, TRANSFORMACIÓN, MEJORA, ADMINISTRACIÓN, PUESTA EN EXPLOTACIÓN Y LA EXPLOTACIÓN MISMA, DE FINCAS RÚSTICAS Y URBANAS, LA ORGANIZACIÓN, PROMOCIÓN, ASESORAMIENTO, Y GESTIÓN EN SU CASO DE SOCIEDADES, COOPERATIVAS, COMUNIDADES, ENTIDADES, GRUPOS O EMPRESAS PARTICULARES ORIENTADAS A LA CONSTRUCCIÓN O URBANIZACIÓN, LA PLANIFICACIÓN Y ESTUDIO DE MERCADOS EN MATERIA INMOBILIARIA. 3.- LA GESTIÓN, DIRECCIÓN Y EJECUCIÓN POR CUENTA PROPIA O AJENA DE TODA CLASE DE CONSTRUCCIONES, INSTALACIONES, REFORMAS, REHABILITACIONES, DECORACIONES Y OBRAS DE RESTAURACIÓN EXTERNA E INTERNA DE ESTRUCTURAS Y REVESTIMIENTOS DE EDIFICIOS Y MONUMENTOS; LIMPIEZA, IMPERMEABILIZACIÓN, TRATAMIENTO, PINTURA, RECONSTRUCCIÓN Y LA IMPLANTACIÓN, CUIDADO Y MANTENIMIENTO DE JARDINES Y EXPLOTACIONES FORESTALES. LA SUPERVISIÓN Y CONTROL DE OBRAS, ASÍ COMO LA COORDINACIÓN DE GREMIOS, EL ASESORAMIENTO Y LA ASISTENCIA TÉCNICA EN TODO CUANTO SE RELACIONE CON EL CAMPO DE LA CONSTRUCCIÓN DE EDIFICIOS Y DE LAS OBRAS PÚBLICAS O CIVILES. 4.- LA COMPRA, VENTA, DE TODA CLASE DE MATERIALES DE LA CONSTRUCCIÓN Y/O DECORATIVOS, ASÍ COMO CUALESQUIERA INSTALACIONES, ELEMENTOS O SERVICIOS DE LAS EDIFICACIONES; LA IMPORTACIÓN, EXPORTACIÓN, REPRESENTACIÓN, DISTRIBUCIÓN, EXPLOTACIÓN Y COMERCIALIZACIÓN DE PRODUCTOS ELABORADOS Y SEMIELABORADOS, ARTÍCULOS, BIENES, MERCADERÍAS, EQUIPOS INDUSTRIALES, MAQUINARIA, HERRAMIENTAS, UTILLAJES, REPUESTOS Y ACCESORIOS, ALIMENTOS DE CONSUMO HUMANO Y ANIMAL. 5.- LA ADQUISICIÓN, CESIÓN, TENENCIA, DISFRUTE, ADMINISTRACIÓN, GESTIÓN Y NEGOCIACIÓN EN GENERAL DE VALORES MOBILIARIOS E INMUEBLES; TODO ELLO SIN INCIDIR EN LAS ACTIVIDADES U OPERACIONES REGULADAS POR LA LEGISLACIÓN DE INSTITUCIONES DE INVERSIÓN COLECTIVA Y LEY DE MERCADO DE VALORES\r\n",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07083",
+      "_links": {
+        "self": {
+          "name": "CONSTRUCCIONES VILLANUEVA CAÑIVE, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/07083"
+        }
+      }
+    },
+    {
+      "name": "PABLO ROMÁN VEGUE SÁNCHEZ",
+      "registrationNumber": "07081",
+      "identificationNumber": "03931831G",
+      "address": "CALLE NELSON MANDELA, 2",
+      "location": {
+        "postalCode": "45400",
+        "municipality": "Mora",
+        "county": "Toledo",
+        "municipalityId": "106",
+        "countyId": "45"
+      },
+      "economicActivities": [
+        {
+          "id": "2.412",
+          "name": "Ingenieros de caminos, canales y puertos",
+          "_links": {
+            "self": {
+              "name": "Ingenieros de caminos, canales y puertos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/2.412"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2020-06-09",
+      "certificateEndDate": "2020-11-06",
+      "object": "SERVICIOS DE INGENIERIA CIVIL",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07081",
+      "_links": {
+        "self": {
+          "name": "PABLO ROMÁN VEGUE SÁNCHEZ",
+          "href": "https://api.euskadi.eus/procurements/companies/07081"
+        }
+      }
+    },
+    {
+      "name": "IVON BASTERRECHEA URIONA",
+      "registrationNumber": "07074",
+      "identificationNumber": "30642077M",
+      "address": "C/ Gipuzkoa 4, Bajo A",
+      "location": {
+        "postalCode": "48300",
+        "municipality": "Gernika-Lumo",
+        "county": "Bizkaia",
+        "municipalityId": "046",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "2.751",
+          "name": "Profesionales de la publicidad, relaciones públicas y similares",
+          "_links": {
+            "self": {
+              "name": "Profesionales de la publicidad, relaciones públicas y similares",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/2.751"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2020-06-08",
+      "certificateEndDate": "2020-11-27",
+      "object": "PROFESIONALES DE LA PUBLICIDAD, RELACIONES PÚBLICAS Y SIMILARES",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07074",
+      "_links": {
+        "self": {
+          "name": "IVON BASTERRECHEA URIONA",
+          "href": "https://api.euskadi.eus/procurements/companies/07074"
+        }
+      }
+    },
+    {
+      "name": "SLAP ARQUITECTURA, S.L.P.",
+      "registrationNumber": "07076",
+      "identificationNumber": "B75052589",
+      "address": "Errondo 3-7c",
+      "location": {
+        "postalCode": "20010",
+        "municipality": "Donostia / San Sebastián",
+        "county": "Gipuzkoa",
+        "municipalityId": "069",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.843.2",
+          "name": "Servicios técnicos de arquitectura y urbanismo",
+          "_links": {
+            "self": {
+              "name": "Servicios técnicos de arquitectura y urbanismo",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2020-06-08",
+      "certificateEndDate": "2020-11-27",
+      "object": "LA ACTIVIDAD PROPIA DEL EJERCICIO DE LA ARQUITECTURA",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07076",
+      "_links": {
+        "self": {
+          "name": "SLAP ARQUITECTURA, S.L.P.",
+          "href": "https://api.euskadi.eus/procurements/companies/07076"
+        }
+      }
+    },
+    {
+      "name": "HTK FILM, S.L.",
+      "registrationNumber": "07077",
+      "identificationNumber": "B75054866",
+      "address": "Aralar bidea, 6",
+      "location": {
+        "postalCode": "20260",
+        "municipality": "Alegia",
+        "county": "Gipuzkoa",
+        "municipalityId": "005",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.647.51",
+          "name": "Venta de productos alimenticios en máquinas, titular establecimiento",
+          "_links": {
+            "self": {
+              "name": "Venta de productos alimenticios en máquinas, titular establecimiento",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.647.51"
+            }
+          }
+        },
+        {
+          "id": "1.647.52",
+          "name": "Venta de productos alimenticios en máquina, propietario máquina",
+          "_links": {
+            "self": {
+              "name": "Venta de productos alimenticios en máquina, propietario máquina",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.647.52"
+            }
+          }
+        },
+        {
+          "id": "1.963.1",
+          "name": "Exhibición de películas cinematográficas y vídeos en cines",
+          "_links": {
+            "self": {
+              "name": "Exhibición de películas cinematográficas y vídeos en cines",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.963.1"
+            }
+          }
+        },
+        {
+          "id": "1.965.4",
+          "name": "Empresas de espectáculos",
+          "_links": {
+            "self": {
+              "name": "Empresas de espectáculos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.965.4"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2020-06-08",
+      "certificateEndDate": "2020-11-26",
+      "object": "LA PRESTACIÓN DE SERVICIOS. ACTIVIDADES DE GESTIÓN Y ADMINISTRACIÓN. SERVICIOS EDUCATIVOS, SANITARIOS, DE OCIO Y ENTRETENIMIENTO. EN ESPECIAL LA EXHIBICIÓN DE PELÍCULAS CINEMATOGRÁFICAS Y ORGANIZACIÓN DE TODO TIPO DE ESPECTÁCULOS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07077",
+      "_links": {
+        "self": {
+          "name": "HTK FILM, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/07077"
+        }
+      }
+    },
+    {
+      "name": "LIMPIEZAS EN UN DOS POR TRES, S.L.",
+      "registrationNumber": "05409",
+      "identificationNumber": "B95806808",
+      "address": "POLIGONO UGALDEGUREN III P-23-5 MODULO 1",
+      "location": {
+        "postalCode": "48170",
+        "municipality": "Zamudio",
+        "county": "Bizkaia",
+        "municipalityId": "905",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.854.1",
+          "name": "Alquiler de automóviles sin conductor",
+          "_links": {
+            "self": {
+              "name": "Alquiler de automóviles sin conductor",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.854.1"
+            }
+          }
+        },
+        {
+          "id": "1.922",
+          "name": "Servicios de limpieza",
+          "_links": {
+            "self": {
+              "name": "Servicios de limpieza",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.922"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2020-06-05",
+      "certificateEndDate": "2020-12-04",
+      "object": "LA LIMPIEZA DE MOBILIARIO URBANO. ADQUIRIR, ENAJENAR Y ARRENDAR BIENES INMUEBLES (CONCRETAMENTE LOS DETERMINADOS EN EL ARTÍCULO 334.1 DEL CÓDIGO CIVIL), ACCIONES, PARTICIPACIONES SOCIALES, OBLIGACIONES, BONO DE CAJA, CERTIFICADOS DE DEPÓSITO Y PAGARÉS DE TODA CLASE DE EMPRESAS O NEGOCIOS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/05409",
+      "_links": {
+        "self": {
+          "name": "LIMPIEZAS EN UN DOS POR TRES, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/05409"
+        }
+      }
+    },
+    {
+      "name": "MARCELA VEGA HIGUERA",
+      "registrationNumber": "07068",
+      "identificationNumber": "73485979J",
+      "address": "Calle Larrabide 21, bajo",
+      "location": {
+        "postalCode": "31005",
+        "municipality": "Pamplona/Iruña",
+        "county": "Navarra",
+        "municipalityId": "201",
+        "countyId": "31"
+      },
+      "economicActivities": [
+        {
+          "id": "2.499",
+          "name": "Otros profesionales relacionados con la construcción n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros profesionales relacionados con la construcción n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/2.499"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2020-06-04",
+      "certificateEndDate": "2020-11-19",
+      "object": "OTROS PROFESIONALES RELACIONADOS CON LA CONSTRUCCIÓN N.C.O.P.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07068",
+      "_links": {
+        "self": {
+          "name": "MARCELA VEGA HIGUERA",
+          "href": "https://api.euskadi.eus/procurements/companies/07068"
+        }
+      }
+    },
+    {
+      "name": "CENTRO ESPAÑOL DE SERVICIOS TELEMATICOS, S.A.",
+      "registrationNumber": "07070",
+      "identificationNumber": "A78632965",
+      "address": "Marie Curie, 5-7 Edificio Beta.- Oficina 2.5-2.6",
+      "location": {
+        "postalCode": "28521",
+        "municipality": "Rivas-Vaciamadrid",
+        "county": "Madrid",
+        "municipalityId": "123",
+        "countyId": "28"
+      },
+      "economicActivities": [
+        {
+          "id": "1.845",
+          "name": "Explotación electrónica por cuenta de terceros",
+          "_links": {
+            "self": {
+              "name": "Explotación electrónica por cuenta de terceros",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.845"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2020-06-04",
+      "certificateEndDate": "2020-10-23",
+      "object": "- LA PRESTACIÓN DE SERVICIOS PROPIOS DE UN OPERADOR DE TELECOMUNICACIONES, BIEN EN CIRCUITOS PROPIOS ALQUILADOS, INCLUYENDO TODAS LAS ACTIVIDADES DE VALOR AÑADIDO CUYO SOPORTE SEAN LAS REDES DE COMUNICACIONES, TANTO TERRENAS COMO POR SATÉLITE. -LA REALIZACIÓN DE ASESORÍAS, DESARROLLOS, INTEGRACIÓN Y COMERCIALIZACIÓN DE SOPORTES FÍSICOS Y PROGRAMAS PARA TELECOMUNICACIONES DE VALOR AÑADIDO, TALES COMO LA INTEGRACIÓN DE TELEFONÍA E INFORMÁTICA, EL ALBERGUE TELEMÁTICO, EL COMERCIO ELECTRÓNICO, LA TELEGESTIÓN O EL TELETRABAJO. -EL DISEÑO, DESARROLLO Y COMERCIALIZACIÓN DE PRODUCTOS Y SISTEMAS DE HARDWARE Y SOFTWARE APLICADO AL CONTROL DE SISTEMAS INDUSTRIALES Y EL CUERPO HUMANO",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07070",
+      "_links": {
+        "self": {
+          "name": "CENTRO ESPAÑOL DE SERVICIOS TELEMATICOS, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/07070"
+        }
+      }
+    }
+  ]
+}

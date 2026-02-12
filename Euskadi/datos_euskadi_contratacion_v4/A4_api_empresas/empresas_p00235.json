@@ -1,0 +1,484 @@
+{
+  "totalItems": 9042,
+  "totalPages": 905,
+  "currentPage": 235,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "name": "FIBRAL S. COOP.",
+      "registrationNumber": "05569",
+      "identificationNumber": "F20496063",
+      "address": "Paseo Ubarburu 76, nave 8",
+      "location": {
+        "postalCode": "20115",
+        "municipality": "Astigarraga",
+        "county": "Gipuzkoa",
+        "municipalityId": "903",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.504.1",
+          "name": "Instalaciones eléctricas en general",
+          "_links": {
+            "self": {
+              "name": "Instalaciones eléctricas en general",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.504.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-10-04",
+      "certificateEndDate": "2026-04-04",
+      "object": "LA ACTIVIDAD DE INSTALACIÓN Y TENDIDO DE FIBRA ÓPTICA.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/05569",
+      "_links": {
+        "self": {
+          "name": "FIBRAL S. COOP.",
+          "href": "https://api.euskadi.eus/procurements/companies/05569"
+        }
+      }
+    },
+    {
+      "name": "CONSTRUCCIONES JOSÉ URRACA, S.A.",
+      "registrationNumber": "00018",
+      "identificationNumber": "A20049466",
+      "address": "C/REKALDE, 1 EDIFICIO IRUBIDE, PTA. 2. Oficina 50.",
+      "location": {
+        "postalCode": "20018",
+        "municipality": "Donostia / San Sebastián",
+        "county": "Gipuzkoa",
+        "municipalityId": "069",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.501.1",
+          "name": "Construcción completa, reparación y conservación de edificaciones",
+          "_links": {
+            "self": {
+              "name": "Construcción completa, reparación y conservación de edificaciones",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.1"
+            }
+          }
+        },
+        {
+          "id": "1.501.2",
+          "name": "Construcción completa, reparación y conservación obras civiles",
+          "_links": {
+            "self": {
+              "name": "Construcción completa, reparación y conservación obras civiles",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.2"
+            }
+          }
+        },
+        {
+          "id": "1.861.1",
+          "name": "Alquiler de viviendas",
+          "_links": {
+            "self": {
+              "name": "Alquiler de viviendas",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.861.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-10-04",
+      "certificateEndDate": "2026-04-04",
+      "object": "LA CONSTRUCCIÓN Y OBRAS PÚBLICAS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/00018",
+      "_links": {
+        "self": {
+          "name": "CONSTRUCCIONES JOSÉ URRACA, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/00018"
+        }
+      }
+    },
+    {
+      "name": "IÑIGO IMAZ MURGUIONDO",
+      "registrationNumber": "09865",
+      "identificationNumber": "72460578K",
+      "address": "Calle Andre Mari 11, 4ºA",
+      "location": {
+        "postalCode": "20200",
+        "municipality": "Beasain",
+        "county": "Gipuzkoa",
+        "municipalityId": "019",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "2.411",
+          "name": "Arquitectos",
+          "_links": {
+            "self": {
+              "name": "Arquitectos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/2.411"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-10-03",
+      "certificateEndDate": "2026-04-03",
+      "object": "ARQUITECTOS.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/09865",
+      "_links": {
+        "self": {
+          "name": "IÑIGO IMAZ MURGUIONDO",
+          "href": "https://api.euskadi.eus/procurements/companies/09865"
+        }
+      }
+    },
+    {
+      "name": "DELOITTE CONSULTING, S.L.",
+      "registrationNumber": "05371",
+      "identificationNumber": "B81690471",
+      "address": "Plz.Pablo Ruiz Picasso, s/n.Torre Picasso",
+      "location": {
+        "postalCode": "28020",
+        "municipality": "Madrid",
+        "county": "Madrid",
+        "municipalityId": "079",
+        "countyId": "28"
+      },
+      "economicActivities": [
+        {
+          "id": "1.842",
+          "name": "Servicios financieros y contables",
+          "_links": {
+            "self": {
+              "name": "Servicios financieros y contables",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.842"
+            }
+          }
+        },
+        {
+          "id": "1.843.1",
+          "name": "Servicios técnicos de ingeniería",
+          "_links": {
+            "self": {
+              "name": "Servicios técnicos de ingeniería",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.1"
+            }
+          }
+        },
+        {
+          "id": "1.845",
+          "name": "Explotación electrónica por cuenta de terceros",
+          "_links": {
+            "self": {
+              "name": "Explotación electrónica por cuenta de terceros",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.845"
+            }
+          }
+        },
+        {
+          "id": "1.847",
+          "name": "Servicios de consultoría",
+          "_links": {
+            "self": {
+              "name": "Servicios de consultoría",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.847"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-10-03",
+      "certificateEndDate": "2026-04-02",
+      "object": "LA PRESTACIÓN DE SERVICIOS DE CONSULTORÍA DE TODA ÍNDOLE A TODO TIPO DE PERSONA FÍSICA, PERSONA JURIDICA O ENTIDADES DE DERECHO PÚBLICO O DERECHO PRIVADO EN MATERIAS DE ORGANIZACIÓN, GESTIÓN, FORMACIÓN, SISTEMAS INFORMÁTICOS Y ESTRATEGIAS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/05371",
+      "_links": {
+        "self": {
+          "name": "DELOITTE CONSULTING, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/05371"
+        }
+      }
+    },
+    {
+      "name": "ANTA GESTIÓN, S.L.P.",
+      "registrationNumber": "07495",
+      "identificationNumber": "B48595961",
+      "address": "C/ SAN JUAN nº 3  BAJO",
+      "location": {
+        "postalCode": "48300",
+        "municipality": "Gernika-Lumo",
+        "county": "Bizkaia",
+        "municipalityId": "046",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.843.2",
+          "name": "Servicios técnicos de arquitectura y urbanismo",
+          "_links": {
+            "self": {
+              "name": "Servicios técnicos de arquitectura y urbanismo",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-10-03",
+      "certificateEndDate": "2026-03-28",
+      "object": "LA PRESTACIÓN DE SERVICIOS, ESTUDIOS, PROYECTOS, TRABAJOS DE PLANEAMIENTO, ASESORAMIENTO Y DIRECCIÓN DE OBRA Y CUALQUIER OTRO TIPO DE TRABAJO FACULTADO POR LA TITULACIÓN DE LOS SOCIOS, A TRAVÉS DE LOS SOCIOS ARQUITECTOS COLEGIADOS, EN TEMAS RELACIONADOS CON LA ARQUITECTURA, EL URBANISMO, LA ORDENACIÓN DEL TERRITORIO, LA CONSTRUCCIÓN Y LA DECORACIÓN, ASÍ COMO LA GESTIÓN Y LA ADMINISTRACIÓN CON LOS ASUNTOS RELACIONADOS CON EL OBJETO SOCIAL",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07495",
+      "_links": {
+        "self": {
+          "name": "ANTA GESTIÓN, S.L.P.",
+          "href": "https://api.euskadi.eus/procurements/companies/07495"
+        }
+      }
+    },
+    {
+      "name": "ELECTROMECANICA HEMEN ELEVADORES S.L.",
+      "registrationNumber": "08970",
+      "identificationNumber": "B01458538",
+      "address": "Calle Venta de la Estrella",
+      "location": {
+        "postalCode": "01006",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.504.6",
+          "name": "Montaje e instalación de aparatos elevadores de cualquier clase",
+          "_links": {
+            "self": {
+              "name": "Montaje e instalación de aparatos elevadores de cualquier clase",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.504.6"
+            }
+          }
+        },
+        {
+          "id": "1.699",
+          "name": "Otras reparaciones n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otras reparaciones n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.699"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-10-03",
+      "certificateEndDate": "2026-03-30",
+      "classification": [
+        {
+          "id": "S",
+          "name": "Servicios",
+          "groups": [
+            {
+              "id": "P",
+              "subgroups": [
+                {
+                  "id": "07",
+                  "name": "Mtto. y reparación equipos e instalac.de aparat.elevadores y de traslación horiz",
+                  "categories": [
+                    {
+                      "id": "1",
+                      "name": "Desde 0 Hasta 150.000",
+                      "_links": {
+                        "self": {
+                          "name": "Desde 0 Hasta 150.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/S/categories/1"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "Mtto. y reparación equipos e instalac.de aparat.elevadores y de traslación horiz",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/P/subgroups/07"
+                    }
+                  }
+                }
+              ],
+              "_links": {
+                "self": {
+                  "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/P"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Servicios",
+              "href": "https://api.euskadi.eus/procurements/companies/types/S"
+            }
+          }
+        }
+      ],
+      "object": "A) LA REPARACIÓN, MONTAJE E INSTALACIÓN DE APARATOS ELEVADORES. SU CONSERVACIÓN Y REPARACIÓN, ASÍ COMO LA DE SUS ACCESORIOS. B) EN CONCRETO, MONTAJE CONSERVACIÓN, REPARACIÓN DE ASCENSORES MONTACARGAS, GRÚAS, ELEVADORES, ESCALERAS MECÁNICAS, PASILLOS MÓVILES, PUERTAS DE GARAJE Y PUERTAS AUTOMÁTICAS PEATONALES. C) DAR RESPUESTA A CUALQUIER OTRA DEMANDA EN EL SECTOR DE LA ELEVACIÓN Y DE LA TECNOLOGÍA, EN SU ÁMBITO MÁS AMPLIO DIRIGIDO A EMPESAS O PARTICULARES. D) CUALQUIERA OTRA ACTIVIDAD RELACIONADA CON LA ELECTRICIDAD Y CON LAS REPARACIONES EN SU SENTIDO MÁS AMPLIO.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08970",
+      "_links": {
+        "self": {
+          "name": "ELECTROMECANICA HEMEN ELEVADORES S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/08970"
+        }
+      }
+    },
+    {
+      "name": "GRUPO DE INGENIERIA RECONSTRUCCION Y RECAMBIOS JPG, S.A.",
+      "registrationNumber": "10112",
+      "identificationNumber": "A80875495",
+      "address": "San Norberto 42",
+      "location": {
+        "postalCode": "28021",
+        "municipality": "Madrid",
+        "county": "Madrid",
+        "municipalityId": "079",
+        "countyId": "28"
+      },
+      "economicActivities": [
+        {
+          "id": "1.329.9",
+          "name": "Construcción de otras máquinas y equipos mecánicos n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Construcción de otras máquinas y equipos mecánicos n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.329.9"
+            }
+          }
+        },
+        {
+          "id": "1.615.1",
+          "name": "Venta al por mayor de vehículos, motocicletas, bicicletas y sus accesorios",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de vehículos, motocicletas, bicicletas y sus accesorios",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.615.1"
+            }
+          }
+        },
+        {
+          "id": "1.849.9",
+          "name": "Otros servicios independientes n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros servicios independientes n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.849.9"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-10-03",
+      "certificateEndDate": "2026-04-01",
+      "object": "LA COMPRA Y VENTA DE TODO TIPO DE VEHÍCULOS DE RUEDAS Y CADENAS, ASÍ COMO SUS RECAMBIOS. RECONSTRUCCIÓN Y REPARACIÓN DE DICHOS VEHÍCULOS Y SUS CONJUNTOS. DISEÑO, DESARROLLO, INSTALACIÓN Y MANTENIMIENTO DE EQUIPAMIENTO COMPLEMENTARIO DE LOS CITADOS VEHÍCULOS, TALES COMO BANCOS DE ENSAYO Y EQUIPOS ELECTRÓNICOS AUXILIARES.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/10112",
+      "_links": {
+        "self": {
+          "name": "GRUPO DE INGENIERIA RECONSTRUCCION Y RECAMBIOS JPG, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/10112"
+        }
+      }
+    },
+    {
+      "name": "JON SORALUZE AYERDI",
+      "registrationNumber": "07117",
+      "identificationNumber": "72451206X",
+      "address": "C/JOSE LASA Nº 11 4º B",
+      "location": {
+        "postalCode": "20210",
+        "municipality": "Lazkao",
+        "county": "Gipuzkoa",
+        "municipalityId": "049",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.504.1",
+          "name": "Instalaciones eléctricas en general",
+          "_links": {
+            "self": {
+              "name": "Instalaciones eléctricas en general",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.504.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-10-03",
+      "certificateEndDate": "2026-03-18",
+      "object": "INSTALACIONES ELÉCTRICAS EN GENERAL",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07117",
+      "_links": {
+        "self": {
+          "name": "JON SORALUZE AYERDI",
+          "href": "https://api.euskadi.eus/procurements/companies/07117"
+        }
+      }
+    },
+    {
+      "name": "PRO VENUE GESTION DE INSTALACIONES Y EVENTOS, S.L.",
+      "registrationNumber": "10366",
+      "identificationNumber": "B02860542",
+      "address": "Avenida Felipe II s/n",
+      "location": {
+        "postalCode": "28009",
+        "municipality": "Madrid",
+        "county": "Madrid",
+        "municipalityId": "079",
+        "countyId": "28"
+      },
+      "economicActivities": [
+        {
+          "id": "1.965.4",
+          "name": "Empresas de espectáculos",
+          "_links": {
+            "self": {
+              "name": "Empresas de espectáculos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.965.4"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-10-03",
+      "certificateEndDate": "2026-04-03",
+      "object": "LA ADMINISTRACIÓN, GESTIÓN, EXPLOTACIÓN COMERCIAL Y MANTENIMIENTO DE INSTALACIONES DEPORTIVAS, ASÍ COMO LA ORGANIZACIÓN Y EXPLOTACIÓN DE EVENTOS Y ESPECTÁCULOS CULTURALES, DEPORTIVOS, LÚDICOS Y DE EMPRESA, SERVICIOS DE HOSTELERÍA Y RESTAURACIÓN EN LAS INSTALACIONES DEPORTIVAS ADMINISTRADAS, LA PRESTACIÓN DE SERVICIOS DE MARKETING, PUBLICIDAD, RELACIONES PÚBLICAS Y SERVICIOS DE COMUNICACIÓN PÚBLICA. LA GESTIÓN E INTERMEDIACIÓN PARA EL ALQUILER DE ESPACIOS PARA LA CELEBRACIÓN DE EVENTOS CORPORATIVOS, ASAMBLEAS Y CONGRESOS Y CUALESQUIERA OTRAS ACTIVIDADES CONEXAS QUE FACILITEN O COMPLEMENTEN LAS ANTERIORES. LA COMPRA Y VENTA DE FINCAS YA SEAN RÚSTICAS O URBANAS, LA PARCELACIÓN Y URBANIZACIÓN DE PARCELAS DE TERRENO, LA COMPRA Y VENTA, CONSTRUCCIÓN, PROMOCIÓN, POR SU CUENTA PROPIA O AJENA, ADMINISTRACIÓN Y EXPLOTACIÓN EN VENTA O EN ARRIENDO, EXCEPTO EL ARRENDAMIENTO FINANCIERO, DE FINCAS URBANAS, TANTO DE RENTA LIBRE CONO DE PROTECCIÓN OFICIAL Y CUANTAS ACTIVIDADES SEAN PRESUPUESTO, COMPLEMENTO Y DESENVOLVIMIENTO DEL NEGOCIO INMOBILIARIO. ",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/10366",
+      "_links": {
+        "self": {
+          "name": "PRO VENUE GESTION DE INSTALACIONES Y EVENTOS, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/10366"
+        }
+      }
+    },
+    {
+      "name": "MAGIONETAS, S.C.",
+      "registrationNumber": "06716",
+      "identificationNumber": "J01399641",
+      "address": "C/Girona 17-2º izda.",
+      "location": {
+        "postalCode": "01010",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.965.4",
+          "name": "Empresas de espectáculos",
+          "_links": {
+            "self": {
+              "name": "Empresas de espectáculos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.965.4"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-10-03",
+      "certificateEndDate": "2026-04-02",
+      "object": "EL DESARROLLO DE ACTIVIDADES PROFESIONALES RELACIONADAS CON EL HUMOR Y EL ILUSIONISMO",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06716",
+      "_links": {
+        "self": {
+          "name": "MAGIONETAS, S.C.",
+          "href": "https://api.euskadi.eus/procurements/companies/06716"
+        }
+      }
+    }
+  ]
+}

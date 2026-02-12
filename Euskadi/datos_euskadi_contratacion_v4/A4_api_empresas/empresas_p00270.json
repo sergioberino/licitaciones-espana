@@ -1,0 +1,490 @@
+{
+  "totalItems": 9042,
+  "totalPages": 905,
+  "currentPage": 270,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "name": "MIGUEL PAGOLA MANTEROLA",
+      "registrationNumber": "02843",
+      "identificationNumber": "44134516T",
+      "address": "ARITZOLA TXIKI 66",
+      "location": {
+        "postalCode": "20130",
+        "municipality": "Urnieta",
+        "county": "Gipuzkoa",
+        "municipalityId": "072",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.912",
+          "name": "Servicios forestales",
+          "_links": {
+            "self": {
+              "name": "Servicios forestales",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.912"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-09-17",
+      "certificateEndDate": "2026-03-15",
+      "classification": [
+        {
+          "id": "S",
+          "name": "Servicios",
+          "groups": [
+            {
+              "id": "O",
+              "subgroups": [
+                {
+                  "id": "06",
+                  "name": "Conservación y mantenimiento de montes y jardines",
+                  "categories": [
+                    {
+                      "id": "5",
+                      "name": "Mas de 1.200.000",
+                      "_links": {
+                        "self": {
+                          "name": "Mas de 1.200.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/S/categories/5"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "Conservación y mantenimiento de montes y jardines",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/O/subgroups/06"
+                    }
+                  }
+                }
+              ],
+              "_links": {
+                "self": {
+                  "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/O"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Servicios",
+              "href": "https://api.euskadi.eus/procurements/companies/types/S"
+            }
+          }
+        }
+      ],
+      "object": "SERVICIOS FORESTALES.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/02843",
+      "_links": {
+        "self": {
+          "name": "MIGUEL PAGOLA MANTEROLA",
+          "href": "https://api.euskadi.eus/procurements/companies/02843"
+        }
+      }
+    },
+    {
+      "name": "JOSE LUIS GONZÁLEZ GÓMEZ",
+      "registrationNumber": "09026",
+      "identificationNumber": "30659915H",
+      "address": "Egaña 7- 3 izq.",
+      "location": {
+        "postalCode": "48010",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "2.836",
+          "name": "Ayudantes técnicos sanitarios y fisioterapeutas",
+          "_links": {
+            "self": {
+              "name": "Ayudantes técnicos sanitarios y fisioterapeutas",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/2.836"
+            }
+          }
+        },
+        {
+          "id": "2.838",
+          "name": "Ópticos-optometristas y podólogos",
+          "_links": {
+            "self": {
+              "name": "Ópticos-optometristas y podólogos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/2.838"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-09-17",
+      "certificateEndDate": "2026-03-15",
+      "object": "AYUDANTES TÉCNICOS SANITARIOS Y FISIOTERAPEUTAS. ÓPTICOS-OPTOMETRISTAS Y PODÓLOGOS.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/09026",
+      "_links": {
+        "self": {
+          "name": "JOSE LUIS GONZÁLEZ GÓMEZ",
+          "href": "https://api.euskadi.eus/procurements/companies/09026"
+        }
+      }
+    },
+    {
+      "name": "TORROSTE, S.C.",
+      "registrationNumber": "10334",
+      "identificationNumber": "J21817424",
+      "address": "nagusia, 8",
+      "location": {
+        "postalCode": "01138",
+        "municipality": "Zigoitia",
+        "county": "Araba/Álava",
+        "municipalityId": "018",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.501.1",
+          "name": "Construcción completa, reparación y conservación de edificaciones",
+          "_links": {
+            "self": {
+              "name": "Construcción completa, reparación y conservación de edificaciones",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-09-17",
+      "certificateEndDate": "2026-03-17",
+      "object": "CONSTRUCCIÓN COMPLETA, REPARACIÓN Y CONSERVACIÓN DE EDIFICACIONES.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/10334",
+      "_links": {
+        "self": {
+          "name": "TORROSTE, S.C.",
+          "href": "https://api.euskadi.eus/procurements/companies/10334"
+        }
+      }
+    },
+    {
+      "name": "BROTTEK MICROGREENS, S.L.",
+      "registrationNumber": "10333",
+      "identificationNumber": "B19985472",
+      "address": "C/ BASAUNDI BAILA, 4 BAJO DERECHA.",
+      "location": {
+        "postalCode": "20160",
+        "municipality": "Lasarte-Oria",
+        "county": "Gipuzkoa",
+        "municipalityId": "902",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.423.9",
+          "name": "Elaboración de otros productos alimenticios n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Elaboración de otros productos alimenticios n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.423.9"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-09-17",
+      "certificateEndDate": "2026-03-17",
+      "object": "LA ACTIVIDAD DE INVESTIGACIÓN, DESARROLLO, INNOVACIÓN, PRODUCCIÓN Y COMERCIALIZACIÓN DE TODO TIPO DE MICROVEGETALES Y BROTES, Y EN GENERAL FRUTAS Y HORTALIZAS.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/10333",
+      "_links": {
+        "self": {
+          "name": "BROTTEK MICROGREENS, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/10333"
+        }
+      }
+    },
+    {
+      "name": "GRUPO KOMUNIKA, S.C.",
+      "registrationNumber": "09668",
+      "identificationNumber": "J01522259",
+      "address": "C/El Calero, nº5-D",
+      "location": {
+        "postalCode": "01230",
+        "municipality": "Iruña Oka/Iruña de Oca",
+        "county": "Araba/Álava",
+        "municipalityId": "901",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.476.2",
+          "name": "Edición de periódicos y revistas",
+          "_links": {
+            "self": {
+              "name": "Edición de periódicos y revistas",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.476.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-09-17",
+      "certificateEndDate": "2026-03-16",
+      "object": "LOS SERVICIOS DE PUBLICIDAD, RELACIONES PÚBLICAS Y SIMILARES.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/09668",
+      "_links": {
+        "self": {
+          "name": "GRUPO KOMUNIKA, S.C.",
+          "href": "https://api.euskadi.eus/procurements/companies/09668"
+        }
+      }
+    },
+    {
+      "name": "ANA MONSERRAT SANZ RUIZ DE ONRAITA",
+      "registrationNumber": "08189",
+      "identificationNumber": "15988486J",
+      "address": "Paseo de salamanca nº11. Entlo. Izqda",
+      "location": {
+        "postalCode": "2003",
+        "municipality": "Donostia / San Sebastián",
+        "county": "Gipuzkoa",
+        "municipalityId": "069",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "2.411",
+          "name": "Arquitectos",
+          "_links": {
+            "self": {
+              "name": "Arquitectos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/2.411"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-09-17",
+      "certificateEndDate": "2026-03-10",
+      "object": "ARQUITECTOS.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08189",
+      "_links": {
+        "self": {
+          "name": "ANA MONSERRAT SANZ RUIZ DE ONRAITA",
+          "href": "https://api.euskadi.eus/procurements/companies/08189"
+        }
+      }
+    },
+    {
+      "name": "CONSTRUCCIONES ALVARO MEDRANO FUERTES, S.L.",
+      "registrationNumber": "10059",
+      "identificationNumber": "B01164623",
+      "address": "Calle Tejerías",
+      "location": {
+        "postalCode": "01306",
+        "municipality": "Lapuebla de Labarca",
+        "county": "Araba/Álava",
+        "municipalityId": "033",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.501.1",
+          "name": "Construcción completa, reparación y conservación de edificaciones",
+          "_links": {
+            "self": {
+              "name": "Construcción completa, reparación y conservación de edificaciones",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-09-17",
+      "certificateEndDate": "2026-03-16",
+      "object": "LA CONSTRUCCIÓN Y PROMOCIÓN INMOBILIARIA, INCLUYENDO LA REALIZACIÓN, POR CUENTA PROPIA O DE TERCEROS, DE TODA CLASE DE OBRAS DE CONSTRUCCIÓN Y URBANIZACIÓN, LA COMPRAVENTA DE TERRENOS, INMUEBLES Y PARTES DE INMUEBLES, LA PARCELACIÓN Y URBANIZACIÓN DE ALOJAMIENTOS; TODO ELLO CON EL FIN DE ENTREGAR LAS OBRAS A SUS MANDANTES, O DE VENDER LOS INMUEBLES, ALQUILARLOS O EXPLOTARLOS EN CUALQUIER OTRA FORMA.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/10059",
+      "_links": {
+        "self": {
+          "name": "CONSTRUCCIONES ALVARO MEDRANO FUERTES, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/10059"
+        }
+      }
+    },
+    {
+      "name": "LUBERRI OBRAK ETA ZERBITZUAK, S.L.",
+      "registrationNumber": "02841",
+      "identificationNumber": "B95032058",
+      "address": "C/ RIBERA DE AXPE 28 A, LOCAL B 1-2",
+      "location": {
+        "postalCode": "48950",
+        "municipality": "Erandio",
+        "county": "Bizkaia",
+        "municipalityId": "902",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.501.3",
+          "name": "Albañilería y pequeños trabajos de construcción en general",
+          "_links": {
+            "self": {
+              "name": "Albañilería y pequeños trabajos de construcción en general",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.3"
+            }
+          }
+        },
+        {
+          "id": "1.911",
+          "name": "Servicios agrícolas y ganaderos",
+          "_links": {
+            "self": {
+              "name": "Servicios agrícolas y ganaderos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.911"
+            }
+          }
+        },
+        {
+          "id": "1.912",
+          "name": "Servicios forestales",
+          "_links": {
+            "self": {
+              "name": "Servicios forestales",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.912"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-09-17",
+      "certificateEndDate": "2026-03-14",
+      "classification": [
+        {
+          "id": "S",
+          "name": "Servicios",
+          "groups": [
+            {
+              "id": "O",
+              "subgroups": [
+                {
+                  "id": "06",
+                  "name": "Conservación y mantenimiento de montes y jardines",
+                  "categories": [
+                    {
+                      "id": "5",
+                      "name": "Mas de 1.200.000",
+                      "_links": {
+                        "self": {
+                          "name": "Mas de 1.200.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/S/categories/5"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "Conservación y mantenimiento de montes y jardines",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/O/subgroups/06"
+                    }
+                  }
+                }
+              ],
+              "_links": {
+                "self": {
+                  "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/O"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Servicios",
+              "href": "https://api.euskadi.eus/procurements/companies/types/S"
+            }
+          }
+        }
+      ],
+      "object": "A) LOS SERVICIOS FORESTALES, TALES COMO LA LUCHA CONTRA PLAGAS, DEFENSA CONTRA INCENDIOS Y LIMPIEZA DE MALEZA. B) HACER DE INTERMEDIARIO DE COMERCIO. C) EL COMERCIO AL POR MAYOR Y POR MENOR DE TODA CLASE DE PRODUCTOS ALIMENTICIOS. D) LOS SERVICIOS DE JARDINERÍA, TALES COMO EL MANTENIMIENTO DE JARDINES PÚBLICOS Y PRIVADOS, ASÍ COMO, EL AJARDINAMIENTO DE NUEVAS ZONAS. E) INSTALACIÓN Y SUMINISTRO DE JUEGOS INFANTILES Y MOBILIARIO URBANO. F) OBRAS DE CONSTRUCCIÓN RELACIONADAS CON FAS OTRAS ACTIVIDADES; EN JARDINERÍA, EJECUCIÓN DE OBRA DE NUEVOS JARDINES EN ZONAS URBANAS O ÁREAS RECREATIVAS; EN FORESTAL, APERTURA, ACONDICIONAMIENTO Y REPASO DE PISTAS FORESTALES; Y EN JUEGOS, EJECUCIÓN COMPLETA DE NUEVAS ZONAS DE JUEGOS INFANTILES, OBRA PREVIA, INSTALACIÓN DE PAVIMENTOS DE CAUCHO, ETC. G) CONSTRUCCIÓN DE PARQUES INFANTILES EXTERIORES E INTERIORES. H) TEMATIZACIÓN DE DIVERSOS ELEMENTOS EN PARQUES INFANTILES Y JARDINES DE INFANCIA. I) LA DIRECCIÓN Y EJECUCIÓN DE REPOBLACIONES FORESTALES, AGRÍCOLAS, PISCÍCOLAS, REFORESTACIONES, ASÍ COMO EL MANTENIMIENTO Y MEJORA DE LAS MISMAS. LOS TRABAJOS DE JARDINERÍA, PLANTACIÓN, REVEGETACIÓN, REFORESTACIÓN, RESTAURACIÓN DE ESPACIOS Y ECOSISTEMAS DEGRADADOS, MANTENIMIENTO Y CONSERVACIÓN DE PARQUES, JARDINES Y ELEMENTOS ANEJOS. J) EL DISEÑO, CONSTRUCCIÓN, FABRICACIÓN, INSTALACIÓN, MANTENIMIENTO, LIMPIEZA Y CONSERVACIÓN DE TODO TIPO DE MOBILIARIO URBANO Y ELEMENTOS SIMILARES. K) LA CONSERVACIÓN Y MANTENIMIENTO DE OBRAS, INSTALACIONES Y SERVICIOS URBANOS E INDUSTRIALES. L) LA INDUSTRIA DE LA CONSTRUCCIÓN DE TODA CLASE DE OBRAS PÚBLICAS Y PRIVADAS, ASÍ COMO LA PRESTACIÓN DE SERVICIOS EN ORDEN A LA CONSERVACIÓN, MANTENIMIENTO DE AUTOPISTAS, AUTOVÍAS , CARRETERAS Y , EN GENERAL,  TODO TIPO DE VÍAS PÚBLICAS Y PRIVADAS. LL) LOS SERVICIOS DE LIMPIEZA DE EDIFICIOS, CONSTRUCCIONES Y OBRAS DE CUALQUIER TIPO, DE OFICINAS, LOCALES COMERCIALES Y LUGARES PÚBLICOS. LA PREPARACIÓN, CONSERVACIÓN, MANTENIMIENTO, HIGIENIZACIÓN, DESINFECCIÓN Y DESRATIZACIÓN. M) LA DIRECCIÓN Y EJECUCIÓN DE TODA CLASE DE OBRAS, MONTAJES E INSTALACIONES, Y MANTENIMIENTO DE OBRAS HIDRÁULICAS PARA APROVECHAR, ALMACENAR, ELEVAR, IMPULSAR O DISTRIBUIR AGUA, SU CANALIZACIÓN, TRANSPORTE Y DISTRIBUCIÓN. N) TODAS AQUELLAS ACTIVIDADES RECOGIDAS EN LOS ARTÍCULOS 25 Y 37 DEL REGLAMENTO DE LA LEY DE CONTRATOS DE LAS ADMINISTRACIONES PÚBLICAS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/02841",
+      "_links": {
+        "self": {
+          "name": "LUBERRI OBRAK ETA ZERBITZUAK, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/02841"
+        }
+      }
+    },
+    {
+      "name": "MIREN KARMELE ZABALA MONTOYA",
+      "registrationNumber": "10332",
+      "identificationNumber": "30628155K",
+      "address": "pelota kalea, 1 - 1º",
+      "location": {
+        "postalCode": "48005",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "2.776",
+          "name": "Doctores y licenciados en ciencias políticas y sociales",
+          "_links": {
+            "self": {
+              "name": "Doctores y licenciados en ciencias políticas y sociales",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/2.776"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-09-17",
+      "certificateEndDate": "2026-03-12",
+      "object": "DOCTORES Y LICENCIADOS EN CIENCIAS POLÍTICAS Y SOCIALES.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/10332",
+      "_links": {
+        "self": {
+          "name": "MIREN KARMELE ZABALA MONTOYA",
+          "href": "https://api.euskadi.eus/procurements/companies/10332"
+        }
+      }
+    },
+    {
+      "name": "INTERGAIAK INICIATIVAS DE DESARROLLO SOSTENIBLE S.L.",
+      "registrationNumber": "06347",
+      "identificationNumber": "B01573799",
+      "address": "C/Prado 11-3 izda.",
+      "location": {
+        "postalCode": "01005",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.659.6",
+          "name": "Venta al por menor de juguetes, artículos de deporte",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de juguetes, artículos de deporte",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.659.6"
+            }
+          }
+        },
+        {
+          "id": "1.843.1",
+          "name": "Servicios técnicos de ingeniería",
+          "_links": {
+            "self": {
+              "name": "Servicios técnicos de ingeniería",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-09-16",
+      "certificateEndDate": "2026-03-16",
+      "object": "LA INTERMEDIACIÓN EN LA PRESTACIÓN DE SERVICIOS DE CONSULTORÍA E INGENIERÍA A TRAVÉS DE COLABORACIÓN EN LOS PROYECTOS RESULTANTES DE SUS ALIANZAS O BIEN DE LOS PROYECTOS QUE LE ENCARGUEN LOS CLIENTES. LA INTERMEDIACIÓN EN LA GENERACIÓN, EJECUCIÓN Y COOPERACIÓN EN PROYECTOS ORIENTADOS AL BIEN COMÚN Y A LA CONSECUCIÓN DE LOS OBJETIVOS DE DESARROLLO SOSTENIBLES, RESPETANDO LA DIGNIDAD HUMANA, LA SOLIDARIDAD Y JUSTICIA SOCIAL. LA SOSTENIBILIDAD MEDIOAMBIENTAL, LA TRANSPARENCIA Y PARTICIPACIÓN DEMOCRÁTICA",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06347",
+      "_links": {
+        "self": {
+          "name": "INTERGAIAK INICIATIVAS DE DESARROLLO SOSTENIBLE S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/06347"
+        }
+      }
+    }
+  ]
+}

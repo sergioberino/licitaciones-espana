@@ -1,0 +1,387 @@
+{
+  "totalItems": 9042,
+  "totalPages": 905,
+  "currentPage": 687,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "name": "JOSE LUIS TELLAETXE PALOMAR",
+      "registrationNumber": "04919",
+      "identificationNumber": "16028817W",
+      "address": "iBAIGANE, 15. PLANTA 6ª. DTO. 5",
+      "location": {
+        "postalCode": "48930",
+        "municipality": "Getxo",
+        "county": "Bizkaia",
+        "municipalityId": "044",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "2.411",
+          "name": "Arquitectos",
+          "_links": {
+            "self": {
+              "name": "Arquitectos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/2.411"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2013-01-22",
+      "certificateEndDate": "2013-05-05",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/04919",
+      "_links": {
+        "self": {
+          "name": "JOSE LUIS TELLAETXE PALOMAR",
+          "href": "https://api.euskadi.eus/procurements/companies/04919"
+        }
+      }
+    },
+    {
+      "name": "GUZTIONTZAT, S.L.",
+      "registrationNumber": "01681",
+      "identificationNumber": "B01122621",
+      "address": "C/ VIÑA VIEJA, Nº 17 - BAJO.",
+      "location": {
+        "postalCode": "01400",
+        "municipality": "Laudio/Llodio",
+        "county": "Araba/Álava",
+        "municipalityId": "036",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.952",
+          "name": "Asistencia y servicios sociales en centros no residenciales",
+          "_links": {
+            "self": {
+              "name": "Asistencia y servicios sociales en centros no residenciales",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.952"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2013-01-17",
+      "certificateEndDate": "2013-06-13",
+      "object": "LA PRESTACIÓN DE SERVICIOS DE CARÁCTER SOCIAL, EN CUALQUIERA DE SUS FORMAS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/01681",
+      "_links": {
+        "self": {
+          "name": "GUZTIONTZAT, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/01681"
+        }
+      }
+    },
+    {
+      "name": "EV3 TECHNOLOGIES IBERICA, S.L.",
+      "registrationNumber": "03890",
+      "identificationNumber": "B83174557",
+      "address": "P. EMP. S. FDO. DE HENARES. EDIF. FRANCIA 1ª PLANTA",
+      "location": {
+        "postalCode": "28830",
+        "municipality": "Madrid",
+        "county": "Madrid",
+        "municipalityId": "079",
+        "countyId": "28"
+      },
+      "economicActivities": [
+        {
+          "id": "1.631",
+          "name": "Intermediarios del comercio",
+          "_links": {
+            "self": {
+              "name": "Intermediarios del comercio",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.631"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2013-01-15",
+      "certificateEndDate": "2013-05-27",
+      "object": "LA IMPORTACIÓN, EXPORTACIÓN, COMPRA, VENTA, Y DISTRIBUCIÓN EN SU PROPIO NOMBRE O COMO REPRESENTANTE DE VENTAS O COMISIONISTA, DE DISPOSITIVOS MÉDICOS Y CUALESQUIERA OTROS PRODUCTOS RELACIONADOS, ASÍ COMO LA PRESTACIÓN DE SERVICIOS RELACIONADOS CON LO ANTERIOR",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03890",
+      "_links": {
+        "self": {
+          "name": "EV3 TECHNOLOGIES IBERICA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/03890"
+        }
+      }
+    },
+    {
+      "name": "ABC LOGISTIC & ECOCARGO, S.L.U.",
+      "registrationNumber": "04915",
+      "identificationNumber": "B28244960",
+      "address": "Moctezuma, 3",
+      "location": {
+        "postalCode": "39003",
+        "municipality": "Santander",
+        "county": "Cantabria",
+        "municipalityId": "075",
+        "countyId": "39"
+      },
+      "economicActivities": [
+        {
+          "id": "1.722",
+          "name": "Transporte de mercancías por carretera",
+          "_links": {
+            "self": {
+              "name": "Transporte de mercancías por carretera",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.722"
+            }
+          }
+        },
+        {
+          "id": "1.756",
+          "name": "Intermediarios del transporte",
+          "_links": {
+            "self": {
+              "name": "Intermediarios del transporte",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.756"
+            }
+          }
+        },
+        {
+          "id": "1.756.1",
+          "name": "Agencias de transporte, transitarios",
+          "_links": {
+            "self": {
+              "name": "Agencias de transporte, transitarios",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.756.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2013-01-14",
+      "certificateEndDate": "2013-05-05",
+      "object": "LA PRESTACIÓN DE TODA CLASE DE SERVICIOS DE TRANSPORTE EN CUALQUIER MODALIDAD Y POR CUALQUIER MEDIO. LA PRESTACIÓN DE ASESORAMIENTO, ASISTENCIA TÉCNICA Y CUANTOS SERVICIOS DE REPRESNTACIÓN, AGENCIA, GESTIÓN Y MEDIACIÓN, RESULTEN NECESARIOS EN LA CONTRATACIÓN, OFERTA, ORGANIZACIÓN O REALIZACIÓN DE TRANSPORTES DE CUALQUIER  TIPO DE MODALIDAD. EL ALQUILER DE TODO TIPO DE VEHÍCULOS Y DEMÁS MEDIOS O ELEMENTOS DE TRANSPORTE CON O SIN CONDUCTOR. LA COMPRAVENTA Y REPRESENTACIÓN DE AUTOMÓVILES, NUEVOS Y USADOS, ACCESORIOS DE AQUELLOS, NEUMÁTICOS, RASAS Y ACEITES LUBRIFICANTES. LA INSTALACIÓN Y EXPLOTACIÓN DE ESTACIONES DE AUTOBUSES, CENTROS DE DISTRIBUCIÓN DE MERCANCÍAS Y AGENCIAS DE TRANSPORTE EN TODAS LAS MODALIDADES, ESTACIONES DE SERVICIO, APARCAMIENTO DE VEHÍCULOS, GARAJES Y TALLERES EN SU FORMA MÁS AMPLIA Y COMPLETA. LA COMPRAVENTA DE VALORES MOBILIARIOS POR CUENTA PROPIA Y SIN EJERCER LA INTERMEDIACIÓN. LA CONSTRUCCIÓN, ADQUISICIÓN, USO, ARRENDAMIENTO Y VENTA DE BIENES MUEBLES, ASÍ COMO LA ADQUISICIÓN DE TERRENOS, SU PARCELACIÓN Y URBANIZACIÓN, USO, ARRENDAMIENTO Y VENTA DE LOS MISMOS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/04915",
+      "_links": {
+        "self": {
+          "name": "ABC LOGISTIC & ECOCARGO, S.L.U.",
+          "href": "https://api.euskadi.eus/procurements/companies/04915"
+        }
+      }
+    },
+    {
+      "name": "ESKURA ITZULPEN ZERBITZUAK, S.L.",
+      "registrationNumber": "04589",
+      "identificationNumber": "B20557286",
+      "address": "JOSÉ ARANA, 15- BEHEGAINA 14. BULEGOA",
+      "location": {
+        "postalCode": "20001",
+        "municipality": "Donostia / San Sebastián",
+        "county": "Gipuzkoa",
+        "municipalityId": "069",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.849.3",
+          "name": "Servicios de traducción y similares",
+          "_links": {
+            "self": {
+              "name": "Servicios de traducción y similares",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.849.3"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2013-01-10",
+      "certificateEndDate": "2013-05-07",
+      "object": ".",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/04589",
+      "_links": {
+        "self": {
+          "name": "ESKURA ITZULPEN ZERBITZUAK, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/04589"
+        }
+      }
+    },
+    {
+      "name": "GENERAL IBÉRICA DE SEGURIDAD, S.A.",
+      "registrationNumber": "01261",
+      "identificationNumber": "A48132096",
+      "address": "C/ ILLETA, Nº 15 - 17.",
+      "location": {
+        "postalCode": "48990",
+        "municipality": "Getxo",
+        "county": "Bizkaia",
+        "municipalityId": "044",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.504.1",
+          "name": "Instalaciones eléctricas en general",
+          "_links": {
+            "self": {
+              "name": "Instalaciones eléctricas en general",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.504.1"
+            }
+          }
+        },
+        {
+          "id": "1.654.5",
+          "name": "Venta al por menor de toda clase de maquinaría",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de toda clase de maquinaría",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.654.5"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2013-01-09",
+      "certificateEndDate": "2013-05-05",
+      "object": "LA COMERCIALIZACIÓN Y MANTENIMIENTO DE APARATOS CONTRA INCENDIOS Y DE SEGURIDAD, EN PARTICULAR MEDIANTE LA INSTALACIÓN Y MANTENIMIENTO DE SISTEMAS FÍSICOS, ELECTRÓNICOS, VISUALES, ACÚSTICOS O INSTRUMENTALES DE VIGILANCIA Y PROTECCIÓN, ASÍ COMO LA IMPORTACIÓN Y EXPORTACIÓN DE TALES PRODUCTOS, LA CREACIÓN DE CENTRALES RECEPTORAS DE ALARMA CON ÁMBITO SUPRAPROVINCIAL Y LA PRESTACIÓN DE SERVICIOS DE VIGILANCIA Y PROTECCIÓN, MEDIANTE GUARDAS Y VIGILANTES JURADOS. LAS ACTIVIDADES ENUMERADAS PODRÁN TAMBIÉN SER DESARROLLADAS POR LA SOCIEDAD, TOTAL O PARCIALMENTE, DE MODO INDIRECTO, MEDIANTE LA PARTICIPACIÓN EN OTRAS SOCIEDADES CON OBJETO ANÁLOGO",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/01261",
+      "_links": {
+        "self": {
+          "name": "GENERAL IBÉRICA DE SEGURIDAD, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/01261"
+        }
+      }
+    },
+    {
+      "name": "EKAI DISEÑO, S.L.",
+      "registrationNumber": "03646",
+      "identificationNumber": "B48724397",
+      "address": "PZA. VENEZUELA, 1 - 1 DCHA.",
+      "location": {
+        "postalCode": "48001",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.844",
+          "name": "Servicios de publicidad, relaciones públicas y similares",
+          "_links": {
+            "self": {
+              "name": "Servicios de publicidad, relaciones públicas y similares",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.844"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2013-01-09",
+      "certificateEndDate": "2013-06-13",
+      "object": "LA IMAGEN CORPORATIVA, EL DISEÑO DE ENVASES, ANUNCIOS EN PRENSA, RADIO, REVISTAS Y TELEVISIÓN, LA ELABORACIÓN DE ARTÍCULOS PUBLICITARIOS, LA PRESTACIÓN DE SERVICIOS DE GABINETE DE COMUNICACIÓN Y, EN GENERAL, TODA CLASE DE ACTIVIDAD DE IMAGEN, COMUNICACIÓN Y PUBLICIDAD",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03646",
+      "_links": {
+        "self": {
+          "name": "EKAI DISEÑO, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/03646"
+        }
+      }
+    },
+    {
+      "name": "SEGURIDAD MARGI S.L",
+      "registrationNumber": "04913",
+      "identificationNumber": "B01482132",
+      "address": "PORTAL DE GAMARRA Nº 1 OFIC 116",
+      "location": {
+        "postalCode": "01013",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.849.4",
+          "name": "Servicios de custodia, seguridad y protección",
+          "_links": {
+            "self": {
+              "name": "Servicios de custodia, seguridad y protección",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.849.4"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2013-01-07",
+      "certificateEndDate": "2013-05-14",
+      "object": "LA SEGURIDAD PRIVADA: VIGILANCIA Y PROTECCIÓN DE BIENES, ESTABLECIMIENTO , CERTÁMENES O CONVENCIONES; PROTECCIÓN DE PERSONAS ; DEPÓSITO, CUSTODIA Y TRATAMIENTO DE OBJETOS VALIOSOS O PELIGROSOS, Y CUSTODIA DE EXPLOSIVOS; TRANSPORTE Y DISTRIBUCIÓN DE OBJETOS VALIOSOS O PELIGROSOS Y DE EXPLOSIVOS; INSTALACION Y MANTENIMIENTO DE DE APARATOS, DISPOSITIVOS Y SISTEMAS DE SEGURIDAD; EXPLOTACION DE CENTRALES DE ALARMAS; PLANIFICACION Y ASESORAMIENTO DE ACTIVIDADES DE SEGURIDAD.\r\nLAS INTEGRANTES DEL OBJETO SOCIAL PODRAN TAMBIEN SER DESARROLLADAS POR LA SOCIEDAD, TOTAL O PARCIALMENTE , DE MODO DIRECTO O INDIRECTO , MEDIANTE LA TITULARIDAD DE PARTICIPACIONES EN SOCIEDADES CON OBJETO ANALOGO IDENTICO O ANALOGO.\r\nQUEDAN EXCLUIDAS TODAS AQUELLAS ACTIVIDADES PARA CUYO EJERCICIO LA LEY EXIJA REQUISITOS ESPECIALES QUE NO PUEDAN SER CUMPLIDOS POR ESTA SOCIEDAD.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/04913",
+      "_links": {
+        "self": {
+          "name": "SEGURIDAD MARGI S.L",
+          "href": "https://api.euskadi.eus/procurements/companies/04913"
+        }
+      }
+    },
+    {
+      "name": "ESKOOP, S. COOP.",
+      "registrationNumber": "01251",
+      "identificationNumber": "F01022698",
+      "address": "POLÍGONO INDUSTRIAL DE ARZA, Nº 2 - PABELLÓN: 1.",
+      "location": {
+        "postalCode": "01400",
+        "municipality": "Laudio/Llodio",
+        "county": "Araba/Álava",
+        "municipalityId": "036",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.504.1",
+          "name": "Instalaciones eléctricas en general",
+          "_links": {
+            "self": {
+              "name": "Instalaciones eléctricas en general",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.504.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2013-01-04",
+      "certificateEndDate": "2013-05-05",
+      "object": "LA INSTALACIÓN, MONTAJE, MANTENIMIENTO Y ATENCIÓN ELÉCTRICOS Y ELECTRÓNICOS Y EN GENERAL TODAS LAS OPERACIONES DE MEDIACIÓN REQUERIDAS PARA LA INDUSTRIA Y EL COMERCIO, EN TODAS AQUELLAS ACTIVIDADES COMERCIALES O DE CUALQUIER CLASE O ÍNDOLE QUE SEAN ANTECEDENTE, CONSECUENCIA O COMPLEMENTO DE LO EXPRESADO",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/01251",
+      "_links": {
+        "self": {
+          "name": "ESKOOP, S. COOP.",
+          "href": "https://api.euskadi.eus/procurements/companies/01251"
+        }
+      }
+    },
+    {
+      "name": "SOCOSEVI, S.L.",
+      "registrationNumber": "01205",
+      "identificationNumber": "B48447247",
+      "address": "CTRA. BILBAO-PLENCIA. P.A.E. ASUARAN. ED. ENEKURI, DPTO.: 8.",
+      "location": {
+        "postalCode": "48950",
+        "municipality": "Erandio",
+        "county": "Bizkaia",
+        "municipalityId": "902",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.849.4",
+          "name": "Servicios de custodia, seguridad y protección",
+          "_links": {
+            "self": {
+              "name": "Servicios de custodia, seguridad y protección",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.849.4"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2012-12-28",
+      "certificateEndDate": "2013-06-19",
+      "object": "LA VIGILANCIA Y PROTECCIÓN DE BIENES, ESTABLECIMIENTOS, ESPECTÁCULOS, CERTÁMENES O CONVENCIONES. EL ÁMBITO TERRITORIAL DE ACTUACIÓN DE LA SOCIEDAD SERÁ EL DE LA COMUNIDAD AUTÓNOMA DEL PAÍS VASCO",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/01205",
+      "_links": {
+        "self": {
+          "name": "SOCOSEVI, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/01205"
+        }
+      }
+    }
+  ]
+}

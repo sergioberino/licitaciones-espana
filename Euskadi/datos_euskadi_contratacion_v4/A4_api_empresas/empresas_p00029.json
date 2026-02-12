@@ -1,0 +1,502 @@
+{
+  "totalItems": 9042,
+  "totalPages": 905,
+  "currentPage": 29,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "name": "ALAIKI ZERBITZU GIZAKULTURALAK S.L.",
+      "registrationNumber": "03279",
+      "identificationNumber": "B48910525",
+      "address": "POLIGONO IGELTZERA .PABELLON D4",
+      "location": {
+        "postalCode": "48610",
+        "municipality": "Urduliz",
+        "county": "Bizkaia",
+        "municipalityId": "089",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.966.9",
+          "name": "Otros servicios culturales n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros servicios culturales n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.966.9"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-02-02",
+      "certificateEndDate": "2026-07-20",
+      "classification": [
+        {
+          "id": "S",
+          "name": "Servicios",
+          "groups": [
+            {
+              "id": "L",
+              "subgroups": [
+                {
+                  "id": "06",
+                  "name": "Servicios de portería, control de accesos e información al público",
+                  "categories": [
+                    {
+                      "id": "4",
+                      "name": "Desde 600.001 Hasta 1.1200.000",
+                      "_links": {
+                        "self": {
+                          "name": "Desde 600.001 Hasta 1.1200.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/S/categories/4"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "Servicios de portería, control de accesos e información al público",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/L/subgroups/06"
+                    }
+                  }
+                }
+              ],
+              "_links": {
+                "self": {
+                  "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/L"
+                }
+              }
+            },
+            {
+              "id": "M",
+              "subgroups": [
+                {
+                  "id": "05",
+                  "name": "Servicios de bibliotecas, archivos y museos",
+                  "categories": [
+                    {
+                      "id": "4",
+                      "name": "Desde 600.001 Hasta 1.1200.000",
+                      "_links": {
+                        "self": {
+                          "name": "Desde 600.001 Hasta 1.1200.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/S/categories/4"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "Servicios de bibliotecas, archivos y museos",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/M/subgroups/05"
+                    }
+                  }
+                }
+              ],
+              "_links": {
+                "self": {
+                  "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/M"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Servicios",
+              "href": "https://api.euskadi.eus/procurements/companies/types/S"
+            }
+          }
+        }
+      ],
+      "object": "LA GESTIÓN DE CASAS DE CULTURA, AULAS DE CULTURA Y CENTROS CÍVICOS. LA GESTIÓN DE CINES, TEATROS, CAFES-TEATROS, SALAS DE ENSAYO, SALAS DE CONCIERTOS Y ESPECTÁCULOS, SALAS DE ACTOS. GESTIÓN DE BIBLIOTECAS, ARCHIVOS, CENTROS DE DOCUMENTACIÓN Y CATALOGACIÓN, OBSERVATORIOS, OFICINAS DE INFORMACIÓN, OFICINAS Y CENTROS DE TURISMO, SERVICIOS DE ATENCIÓN CIUDADANA, SERVICIOS DE VENTANILLA ÚNICA Y OTROS SERVICIOS COMUNITARIOS DE SIMILAR ÍNDOLE. GESTIÓN DE OFICINAS DE INFORMACIÓN JUVENIL, GAZTELEKUS (LOCALES DE OCIO JUVENIL) Y DE OTROS SERVICIOS Y EQUIPAMIENTOS JUVENILES. GESTIÓN DE LUDOTECAS, BEBETECAS, TXIKI PARQUES Y OTROS SERVICIOS Y EQUIPAMIENTOS INFANTILES. PROGRAMACIÓN Y DESARROLLO DE ACTIVIDADES DE EDUCACIÓN Y SENSIBILZACIÓN MEDIOAMBIENTAL. PROGRAMACIÓN Y DESARROLLO DE ACTIVIDADES CULTURALES, DE OCIO Y RECREACIÓN DIRIGIDAS AL COLECTIVO DE LA TERCERA EDAD. ELABORACIÓN DE PLANES ESTRATEGICOS, PLANES DIRECTORES Y ESTUDIOS DE VIABILIDAD PRNCIPALMENTE EN LAS ÁREAS DE CULTURA, JUVENTUD, EUSKARA, MUJER, MEDIOAMBIENTE, PATRIMONIO Y EDUCACIÓN. GESTIÓN Y DISEÑO DE MUSEOS, CENTROS DE INTERPRETACIÓN Y EXPOSICIONES. CREACIÓN Y PREPARACIÓN DE GUÍAS, MALETAS PEDAGÓGICAS Y OTROS MATERIALES DIDÁCTICOS. GESTIÓN DE PROGRAMAS EDUCATIVOS CON NIÑOS Y ESCOLARES. PROGRAMACIÓN Y GESTIÓN DE ACTIVIDADES VARIAS DE EDUCACIÓN, FORMACIÓN  SENSIBILIZACIÓN EN LAS ÁREAS DE CONSUMO, IGUALDAD, DIVERSIDAD, DERECHOS HUMANOS, EDUCACIÓN VIAL, ETC...GESTIÓN, ORGANIZACIÓN Y PROGRAMACIÓN DE ACTIVIDADES MUSICALES, FOLKLÓRICAS, DE ANIMACIÓN Y DE TEATRO. GESTIÓN, ORGANIZACIÓN Y PROGRAMACIÓN DE ACTIVIDADES DE DEPORTES DE AVENTURA Y ACTIVIDADES ALTERNATIVAS. GESTIÓN, ORGANIZACIÓN Y ROGRAMACÓN DE PARQUES, TALLERES ESPECIALIZADOS  DE ACTIVIDADES CULTURALES Y DE OCIO INFANTILES Y JUVENILES, ASÍ COMO DE ELEMENTOS HINCHABLES Y DE OTRAS ACTIVIDADES LÚDICO-DEPORTIVAS. MONTAJE DE EQUIPOS AUDIOVISUALES DE ILUMINACIÓN; CARPAS; ESCENARIOS; TARIMAS Y OTRAS INFRAESTRUCTURAS CULTURALES. ORGANIZACIÓN DE CAMPAMENTOS, COLONIAS ABIERTAS, VIAJES, INTERCAMBIOS DE ÍNDOLE CULTURAL, RECREATIVO Y TURÍSTICO. ORGANIZACIÓN Y GESTION DE ACTIVIDADES PARA LA EXHIBICIÓN DEL PATRIMONIO HISTÓRICO, TURÍSTICO CULTURAL. ORGANIZACIÓN DE FERIAS, CONGRESOS, SEMINARIOS, CHARLAS, CONFERENCIAS, JORNADAS, FIESTAS Y TODO TIPO DE EVENTOS SOCIALES Y DE EMPRESA. ORGANIZACIÓN DE PARQUES INFANTILES DE NAVIDAD Y DE OTRAS CARACTERÍSTICAS. ORGANIZACIÓN DE ACTOS PROTOCOLARIOS, RECEPCIONES E INAUGURACIONES. PREPARACIÓN E IMPARTICIÓN DE CHARLAS, JORNADAS, CURSOS,CURSILLOS Y OTRAS ACCIONES DE FORMACIÓN ESPECIALIZADA DENTRO DEL ÁMBITO SOCIOCULTURAL Y EN RELACIÓN A LOS CAMPOS EN LOS CUALES TRABAJA LA EMPRESA. PREPARACIÓN DE TALLERES Y CURSOS OCUPACIONALES",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03279",
+      "_links": {
+        "self": {
+          "name": "ALAIKI ZERBITZU GIZAKULTURALAK S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/03279"
+        }
+      }
+    },
+    {
+      "name": "JUAN ANTONIO LANDABEREA UNZUETA",
+      "registrationNumber": "05429",
+      "identificationNumber": "15949637B",
+      "address": "Camino Mundáiz, 8-1º",
+      "location": {
+        "postalCode": "20012",
+        "municipality": "Donostia / San Sebastián",
+        "county": "Gipuzkoa",
+        "municipalityId": "069",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "2.731",
+          "name": "Abogados",
+          "_links": {
+            "self": {
+              "name": "Abogados",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/2.731"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-02-02",
+      "certificateEndDate": "2026-08-02",
+      "object": "ABOGACÍA, ASESORAMIENTO JURÍDICO, DEFENSA JUDICIAL Y EXTRAJUDICIAL DE SUS CLIENTES ANTE LAS ADMINISTRACIONES PÚBLICAS, JUZGADOS Y TRIBUNALES",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/05429",
+      "_links": {
+        "self": {
+          "name": "JUAN ANTONIO LANDABEREA UNZUETA",
+          "href": "https://api.euskadi.eus/procurements/companies/05429"
+        }
+      }
+    },
+    {
+      "name": "RIAM INTELEARNING LAB, S.L.",
+      "registrationNumber": "08233",
+      "identificationNumber": "B26332791",
+      "address": "CALLE PIQUERAS Nº 31 4ª PLANTA",
+      "location": {
+        "postalCode": "26006",
+        "municipality": "Logroño",
+        "county": "Rioja, La",
+        "municipalityId": "089",
+        "countyId": "26"
+      },
+      "economicActivities": [
+        {
+          "id": "1.845",
+          "name": "Explotación electrónica por cuenta de terceros",
+          "_links": {
+            "self": {
+              "name": "Explotación electrónica por cuenta de terceros",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.845"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-02-02",
+      "certificateEndDate": "2026-07-26",
+      "object": "LA PRESTACIÓN DE ASESORAMIENTO, ASISTENCIA Y AYUDA EN LA EXPLOTACIÓN O DIRECCIÓN DE EMPRESAS COMERCIALES O INDUSTRIALES; LA CONSULTORÍA DE NEGOCIOS O COLOCACIÓN DE PERSONAL; LA REALIZACIÓN DE ANÁLISIS DE PRECIOS DE COSTE; EL ASESORAMIENTO PARA LA ORGANIZACIÓN Y DIRECCIÓN DE NEGOCIOS Y SOBRE PROBLEMAS DE PERSONAL; LA PRESTACIÓN DE SERVICIOS DE FORMACIÓN Y ADIESTRAMIENTO DE PERSONAL ESPECIALIZADO Y DE EDICIÓN DE MATERIAL MULTIMEDIA Y DIFUSIÓN CULTURAL. LA PRESTACIÓN DE SERVICIOS QUE AYUDEN A LAS ORGANIZACIONES A CONVERTIR LA INTELIGENCIA TECNOLÓGICA EN ESTRATEGIA E INTELIGENCIA HUMANA, CONTRIBUYENDO A LA INTEGRACIÓN FUNCIONAL DE PERSONAS, RELACIONES, OBJETOS Y SISTEMAS Y A SU ALIENAMIENTO CON LOS OBJETIVOS DE LA ORGANIZACIÓN;  EL ASESORAMIENTO A ORGANIZACIONES EN LOS PROCESOS DE CAMBIO CULTURAL Y GESTIÓN DEL CAMBIO NECESARIOS PARA PRODUCIR INTELIGENCIA ORGANIZACIONAL EN PARALELO Y ORGANIZACIONES QUE APRENDEN; EL DESARROLLO DE LAS METODOLOGÍAS Y HERRAMIENTAS PARA PRODUCIR APRENDIZAJE ORGANIZACIONAL ACELERADO Y LA ENSEÑANZA Y APLICACIÓN DE DICHAS METODOLOGÍAS; EL ASESORAMIENTO A LOS AGENTES SOCIALES Y A LAS AUTORIDADES GUBERNAMENTALES SOBRE LAS ESTRATEGIAS PARA ENRIQUECER EL CAPITAL SOCIAL Y SU INTEGRACIÓN Y APROVECHAMIENTO PRODUCTIVO.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08233",
+      "_links": {
+        "self": {
+          "name": "RIAM INTELEARNING LAB, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/08233"
+        }
+      }
+    },
+    {
+      "name": "LAIA FERNANDEZ BOSCH",
+      "registrationNumber": "08149",
+      "identificationNumber": "16077083Z",
+      "address": "GAZTELUZARRA Nº12, 2",
+      "location": {
+        "postalCode": "48993",
+        "municipality": "Getxo",
+        "county": "Bizkaia",
+        "municipalityId": "044",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "2.411",
+          "name": "Arquitectos",
+          "_links": {
+            "self": {
+              "name": "Arquitectos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/2.411"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-02-02",
+      "certificateEndDate": "2026-07-18",
+      "object": "ARQUITECTOS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08149",
+      "_links": {
+        "self": {
+          "name": "LAIA FERNANDEZ BOSCH",
+          "href": "https://api.euskadi.eus/procurements/companies/08149"
+        }
+      }
+    },
+    {
+      "name": "HIRUBE S. COOP.",
+      "registrationNumber": "06406",
+      "identificationNumber": "F75210195",
+      "address": "Ibaiondo 27 4",
+      "location": {
+        "postalCode": "20120",
+        "municipality": "Hernani",
+        "county": "Gipuzkoa",
+        "municipalityId": "040",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.952",
+          "name": "Asistencia y servicios sociales en centros no residenciales",
+          "_links": {
+            "self": {
+              "name": "Asistencia y servicios sociales en centros no residenciales",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.952"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-02-02",
+      "certificateEndDate": "2026-07-02",
+      "object": "PERSIGUE EL BIENESTAR COMUNITARIO A TRAVÉS DE LA DETECCIÓN, PREVENCIÓN Y RESPUESTA A LAS NECESIDADES SOCIALES DE LAS PERSONAS. ASIMISMO, DESARROLLA ACTIVIDADES DE PROMOCIÓN ORIENTADAS A AVANZAR EN LA PERCEPCIÓN E IMPLICACIÓN SOCIAL EN ESTAS SITUACIONES ASÍ COMO DE INVESTIGACIÓN PARA DISPONER DE METODOLOGÍAS DE TRABAJO EFICIENTES QUE MEJOREN LA PROFESIONALIDAD DE SUS INTEGRANTES. SU ÁMBITO PRIORITARIO DE ACTUACIÓN ES LA FAMILIA, INFANCIA Y JUVENTUD, TANTO A TRAVÉS DE ACTIVIDADES PÚBLICAS COMO PRIVADAS. TRABAJA DE UN MODO ACTIVO LA COLABORACIÓN CON OTROS AGENTES COMUNITARIOS, FORMALES E INFORMALES, ASÍ COMO CON OTRAS ENTIDADES QUE PERSIGAN FINALIDADES SEMEJANTES, BUSCANDO IMPLICAR A LA SOCIEDAD EN SU CONJUNTO",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06406",
+      "_links": {
+        "self": {
+          "name": "HIRUBE S. COOP.",
+          "href": "https://api.euskadi.eus/procurements/companies/06406"
+        }
+      }
+    },
+    {
+      "name": "RAIZDE3, S.L.",
+      "registrationNumber": "10512",
+      "identificationNumber": "B98989874",
+      "address": "Calle Daniel Balaciart n6 PTA 4 OFICINAS",
+      "location": {
+        "postalCode": "46020",
+        "municipality": "València",
+        "county": "Valencia/València",
+        "municipalityId": "250",
+        "countyId": "46"
+      },
+      "economicActivities": [
+        {
+          "id": "1.843.9",
+          "name": "Otros servicios técnicos n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros servicios técnicos n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.9"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-02-02",
+      "certificateEndDate": "2026-08-02",
+      "object": "- LA COMPRAVENTA Y EXPLOTACIÓN DE TODA CLASE DE FINCAS RÚSTICAS O URBANAS. - LA URBANIZACIÓN, PARCELACIÓN, CONSTRUCCIÓN, PROMOCIÓN Y REHABILITACIÓN, POR CUENTA PROPIA O AJENA, DE TODO TIPO DE INMUEBLES POR NATURALEZA. - LA ACTUACIÓN COMO COMISIONISTA E INTERMEDIARIO, EN TODOS LOS ÁMBITOS DEL TRÁFICO COMERCIAL. - LA IMPORTACIÓN, EXPORTACIÓN DE TODA CLASE DE PRODUCTOS. - INTERMEDIACIÓN EN LA REDACCIÓN DE PROYECTOS DE ARQUITECTURA INGENIERÍA Y URBANISMO, ASÍ COMO LA INTERMEDIACIÓN EN EL ASESORAMIENTO DE EMPRESAS Y PERSONAS FÍSICAS EN SU MÁS AMPLIA ACEPCIÓN, TASACIONES Y PERITACIONES. - VENTA O ARRENDAMIENTO NO FINANCIERO Y LA CONSTRUCCIÓN DE TODA CLASE DE OBRAS PÚBLICAS O PRIVADAS. INSTALACIONES DE CUALQUIER NATURALEZA, DECORACIÓN Y ACABADO DE TODO TIPO DE INMUEBLES, ASÍ COMO SUS REPARACIONES Y MANTENIMIENTOS POSTERIORES. COMPRAVENTA, COMERCIO AL POR MAYOR Y MENOR, IMPORTACIÓN Y EXPORTACIÓN DE TODO TIPO DE MATERIALES DE CONSTRUCCIÓN Y MAQUINARIA RELACIONADA. SERVICIOS DE CONTROL CONSERJERÍA Y GUARDERÍA DE INMUEBLES. LA COMPRA VENTA Y COMERCIALIZACIÓN DE DERECHOS DE APROVECHAMIENTO POR TURNOS DE BIENES INMUEBLES. GESTIÓN URBANÍSTICA DEL SUELO.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/10512",
+      "_links": {
+        "self": {
+          "name": "RAIZDE3, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/10512"
+        }
+      }
+    },
+    {
+      "name": "ALDURA, S.L.",
+      "registrationNumber": "09335",
+      "identificationNumber": "B06862296",
+      "address": "Oiartzun kalea nº11 3ºB",
+      "location": {
+        "postalCode": "20100",
+        "municipality": "Errenteria",
+        "county": "Gipuzkoa",
+        "municipalityId": "067",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.843.9",
+          "name": "Otros servicios técnicos n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros servicios técnicos n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.9"
+            }
+          }
+        },
+        {
+          "id": "1.849.9",
+          "name": "Otros servicios independientes n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros servicios independientes n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.849.9"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-02-02",
+      "certificateEndDate": "2026-07-21",
+      "object": "LA GESTIÓN DE SALAS DE ESPECTÁCULO Y EVENTOS DIVERSOS Y ATENCIÓN AL PÚBLICO.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/09335",
+      "_links": {
+        "self": {
+          "name": "ALDURA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/09335"
+        }
+      }
+    },
+    {
+      "name": "INTEGRATED DNA TECHNOLOGIES SPAIN, S.L.",
+      "registrationNumber": "09408",
+      "identificationNumber": "B87472387",
+      "address": "C/PRIM,19",
+      "location": {
+        "postalCode": "28004",
+        "municipality": "Madrid",
+        "county": "Madrid",
+        "municipalityId": "079",
+        "countyId": "28"
+      },
+      "economicActivities": [
+        {
+          "id": "1.619.9",
+          "name": "Venta al por mayor de otros productos n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de otros productos n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.619.9"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-02-02",
+      "certificateEndDate": "2026-08-02",
+      "object": "COMERCIALIZAR PEQUEÑAS CADENAS DE ADN DENOMINADAS OLIGONUCLEÓTIDOS Y REALIZAR CUANTAS ACTUACIONES ACCESORIAS SE PRECISEN EN EL MARCO DE LA REFERIDA COMERCIALIZACIÓN.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/09408",
+      "_links": {
+        "self": {
+          "name": "INTEGRATED DNA TECHNOLOGIES SPAIN, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/09408"
+        }
+      }
+    },
+    {
+      "name": "RIVERA LIMPIEZA INTEGRAL Y SERVICIOS AUXILIARES, S.L.",
+      "registrationNumber": "05979",
+      "identificationNumber": "B95740825",
+      "address": "JARDIN TXIKERRA Nº 6",
+      "location": {
+        "postalCode": "48012",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.922",
+          "name": "Servicios de limpieza",
+          "_links": {
+            "self": {
+              "name": "Servicios de limpieza",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.922"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-02-02",
+      "certificateEndDate": "2026-07-14",
+      "classification": [
+        {
+          "id": "S",
+          "name": "Servicios",
+          "groups": [
+            {
+              "id": "U",
+              "subgroups": [
+                {
+                  "id": "01",
+                  "name": "Servicios de limpieza ",
+                  "categories": [
+                    {
+                      "id": "1",
+                      "name": "Desde 0 Hasta 150.000",
+                      "_links": {
+                        "self": {
+                          "name": "Desde 0 Hasta 150.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/S/categories/1"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "Servicios de limpieza ",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/U/subgroups/01"
+                    }
+                  }
+                }
+              ],
+              "_links": {
+                "self": {
+                  "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/U"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Servicios",
+              "href": "https://api.euskadi.eus/procurements/companies/types/S"
+            }
+          }
+        }
+      ],
+      "object": "LA LIMPIEZA DE EDIFICIOS Y LOCALES, CASAS, OFICINAS Y AUXILIARES",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/05979",
+      "_links": {
+        "self": {
+          "name": "RIVERA LIMPIEZA INTEGRAL Y SERVICIOS AUXILIARES, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/05979"
+        }
+      }
+    },
+    {
+      "name": "LUIS ANTONIO CEBRIAN MARTIN",
+      "registrationNumber": "10511",
+      "identificationNumber": "07003906S",
+      "address": "SAN JUAN KALES Nº 61, 2º-B-A",
+      "location": {
+        "postalCode": "20260",
+        "municipality": "Alegia",
+        "county": "Gipuzkoa",
+        "municipalityId": "005",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "2.824",
+          "name": "Profesores de formación y perfeccionamiento profesional",
+          "_links": {
+            "self": {
+              "name": "Profesores de formación y perfeccionamiento profesional",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/2.824"
+            }
+          }
+        },
+        {
+          "id": "2.899",
+          "name": "Otros profesionales",
+          "_links": {
+            "self": {
+              "name": "Otros profesionales",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/2.899"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-02-02",
+      "certificateEndDate": "2026-07-31",
+      "object": "OTROS PROFESIONALES. PROFESORES DE FORMACIÓN Y PERFECCIONAMIENTO PROFESIONAL.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/10511",
+      "_links": {
+        "self": {
+          "name": "LUIS ANTONIO CEBRIAN MARTIN",
+          "href": "https://api.euskadi.eus/procurements/companies/10511"
+        }
+      }
+    }
+  ]
+}

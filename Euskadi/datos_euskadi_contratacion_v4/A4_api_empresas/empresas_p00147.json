@@ -1,0 +1,592 @@
+{
+  "totalItems": 9042,
+  "totalPages": 905,
+  "currentPage": 147,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "name": "INGENIERÍA Y REALIZACIONES TÉCNICAS, S.A.",
+      "registrationNumber": "06064",
+      "identificationNumber": "A28317238",
+      "address": "CALLE BRONCE, 15",
+      "location": {
+        "postalCode": "28500",
+        "municipality": "Arganda del Rey",
+        "county": "Madrid",
+        "municipalityId": "014",
+        "countyId": "28"
+      },
+      "economicActivities": [
+        {
+          "id": "1.505.4",
+          "name": "Colocación y aislamiento fónicos, térmicos y acústicos",
+          "_links": {
+            "self": {
+              "name": "Colocación y aislamiento fónicos, térmicos y acústicos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.505.4"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-11-21",
+      "certificateEndDate": "2026-05-18",
+      "object": "A) LA INVESTIGACIÓN, FABRICACIÓN Y AMPLIACIÓN DE PRODUCTOS Y TÉCNICAS EN EL CAMPO DE LA INGENIERÍA Y ARQUITECTURA. B) LA CONSTRUCCIÓN DE OBRAS PÚBLICAS Y PRIVADAS DE TODA ÍNDOLE, ASÍ COMO SU CONSOLIDACIÓN Y REPARACIÓN DE CUALQUIER CLASE QUE SEAN. C) LA EJECUCIÓN DE TODA CLASE DE OBRAS PÚBLICAS Y PRIVADAS, DE NUEVA PLANTA O CONSOLIDACIÓN, REPARACIÓN, ASÍ COMO A SU REHABILITACIÓN, RESTAURACIÓN O ACONDICIONAMIENTO. D) LA EJECUCIÓN DE LOS PROYECTOS, BIEN DIRECTAMENTE O EN RÉGIMEN DE SUBCONTRATOS DE TODOS LOS SERVICIOS Y OFICIOS QUE GUARDEN RELACIÓN CON LOS ESTUDIOS Y PROYECTOS RELATIVOS A LA CONSTRUCCIÓN DE OBRAS DE NUEVA PLANTA, ASÍ COMO LA REHABILITACIÓN Y CONSOLIDACIÓN DE TODA CLASE DE EDIFICIOS. E) LA REPRESENTACIÓN A LOS MISMOS FINES DE LAS EMPRESAS NACIONALES O EXTRANJERAS. F) LA PARTICIPACIÓN EN OTRAS SOCIEDADES DE IDÉNTICO O ANÁLOGO OBJETO, PARA EL DESARROLLO DEL PROPIO DE ESTA SOCIEDAD, MEDIANTE LA SUSCRIPCIÓN DE ACCIONES O PARTICIPACIONES EN LA FUNDACIÓN O AUMENTO DE CAPITAL DE LAS MISMAS O LA ADQUISICIÓN DE ELLAS POR CUALQUIER TÍTULO",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06064",
+      "_links": {
+        "self": {
+          "name": "INGENIERÍA Y REALIZACIONES TÉCNICAS, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/06064"
+        }
+      }
+    },
+    {
+      "name": "COCINA CENTRAL MAGUI, S.L.",
+      "registrationNumber": "02155",
+      "identificationNumber": "B01277268",
+      "address": "C/ LARRAGANA 12 - PAB 1",
+      "location": {
+        "postalCode": "01013",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.677.9",
+          "name": "Otros servicios de alimentación propios de la restauración",
+          "_links": {
+            "self": {
+              "name": "Otros servicios de alimentación propios de la restauración",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.677.9"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-11-21",
+      "certificateEndDate": "2026-05-18",
+      "classification": [
+        {
+          "id": "S",
+          "name": "Servicios",
+          "groups": [
+            {
+              "id": "M",
+              "subgroups": [
+                {
+                  "id": "06",
+                  "name": "Hostelería y servicios de comida",
+                  "categories": [
+                    {
+                      "id": "5",
+                      "name": "Mas de 1.200.000",
+                      "_links": {
+                        "self": {
+                          "name": "Mas de 1.200.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/S/categories/5"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "Hostelería y servicios de comida",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/M/subgroups/06"
+                    }
+                  }
+                }
+              ],
+              "_links": {
+                "self": {
+                  "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/M"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Servicios",
+              "href": "https://api.euskadi.eus/procurements/companies/types/S"
+            }
+          }
+        }
+      ],
+      "object": "TENDRÁ POR OBJETO, TANTO DIRECTA COMO DE FORMA INDIRECTA, MEDIANTE LA TITULARIDAD DE ACCIONES O PARTICIPACIONES EN SOCIEDADES CON OBJETO IDÉNTICO, SERVICIOS DE RESTAURACIÓN COLECTIVA \"CATERING\", CONSISTENTES EN LA PREPARACIÓN, VENTA E INCLUSO, DISTRIBUCIÓN DE ALIMENTOS PARA SU CONSUMO FUERA DEL LUGAR DE ELABORACIÓN EN CENTROS EDUCATIVOS, COMEDORES DE EMPRESA, ESTABLECIMIENTOS SANITARIOS, RESIDENCIALES DE LA TERCERA EDAD, CONGREGACIONES RELIGIOSAS, CONGRESOS, CONVENCIONES, REUNIONES Y EN TODO TIPO DE CELEBRACIONES.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/02155",
+      "_links": {
+        "self": {
+          "name": "COCINA CENTRAL MAGUI, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/02155"
+        }
+      }
+    },
+    {
+      "name": "FRANCISCO GARCÍA IBARGOITIA, S.L.",
+      "registrationNumber": "05006",
+      "identificationNumber": "B48488126",
+      "address": "GRUPO ZUBIONDO, 11",
+      "location": {
+        "postalCode": "48480",
+        "municipality": "Arrigorriaga",
+        "county": "Bizkaia",
+        "municipalityId": "011",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.504.2",
+          "name": "Instalaciones de fontanería",
+          "_links": {
+            "self": {
+              "name": "Instalaciones de fontanería",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.504.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-11-21",
+      "certificateEndDate": "2026-05-18",
+      "classification": [
+        {
+          "id": "S",
+          "name": "Servicios",
+          "groups": [
+            {
+              "id": "O",
+              "subgroups": [
+                {
+                  "id": "03",
+                  "name": "Conservación y mantenimiento de de redes de agua y alcantarillado",
+                  "categories": [
+                    {
+                      "id": "4",
+                      "name": "Desde 600.001 Hasta 1.1200.000",
+                      "_links": {
+                        "self": {
+                          "name": "Desde 600.001 Hasta 1.1200.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/S/categories/4"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "Conservación y mantenimiento de de redes de agua y alcantarillado",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/O/subgroups/03"
+                    }
+                  }
+                }
+              ],
+              "_links": {
+                "self": {
+                  "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/O"
+                }
+              }
+            },
+            {
+              "id": "P",
+              "subgroups": [
+                {
+                  "id": "02",
+                  "name": "Mtto. y reparación equipos e instalac.de fontanería, conducciones de agua y gas",
+                  "categories": [
+                    {
+                      "id": "5",
+                      "name": "Mas de 1.200.000",
+                      "_links": {
+                        "self": {
+                          "name": "Mas de 1.200.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/S/categories/5"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "Mtto. y reparación equipos e instalac.de fontanería, conducciones de agua y gas",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/P/subgroups/02"
+                    }
+                  }
+                }
+              ],
+              "_links": {
+                "self": {
+                  "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/P"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Servicios",
+              "href": "https://api.euskadi.eus/procurements/companies/types/S"
+            }
+          }
+        }
+      ],
+      "object": "LA COMPRA-VENTA, COMERCIALIZACIÓN E INSTALACIÓN Y MONTAJE DE APARATOS DE FONTANERÍA Y DE CALEFACCIÓN, ASÍ COMO LA REALIZACIÓN DE LAS OBRAS PRECISAS PARA LLEVAR A EFECTO DICHO COMETIDO, OBRAS QUE PODRÁN SER EFECTUADAS DE FORMA DIRECTA O MEDIANTE LAS OPORTUNAS CONTRATACIONES CON EMPRESAS Y GREMIOS ESPECIALIZADOS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/05006",
+      "_links": {
+        "self": {
+          "name": "FRANCISCO GARCÍA IBARGOITIA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/05006"
+        }
+      }
+    },
+    {
+      "name": "LURGIRO S.L.",
+      "registrationNumber": "06134",
+      "identificationNumber": "B75181941",
+      "address": "PARQUE EMPRESARIAL ZUATZU, C/ZUATZU N.º 1, 1ª PLANTA, LOCAL 7",
+      "location": {
+        "postalCode": "20018",
+        "municipality": "Donostia / San Sebastián",
+        "county": "Gipuzkoa",
+        "municipalityId": "069",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.843.9",
+          "name": "Otros servicios técnicos n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros servicios técnicos n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.9"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-11-21",
+      "certificateEndDate": "2026-05-19",
+      "object": "SERVICIOS MEDIOAMBIENTALES, DISEÑO Y EJECUCIÓN DE INVESTIGACIONES EXPLORATORIAS DE LA CALIDAD DEL SUELO, GESTIÓN INTEGRAL DE RESIDUOS PELIGROSOS Y NO PELIGROSOS, RESTAURACIONES Y REHABILITACIONES AMBIENTALES, RECUPERACIÓN DE EMPLAZAMIENTOS CONTAMINADOS, ESTUDIOS DE CALIDAD DEL MEDIOAMBIENTE, ASESORÍA MEDIOAMBIENTAL, GESTIÓN INTEGRAL DE LOS RESIDUOS DE DEMOLICIÓN Y CONSTRUCCIÓN, INVESTIGACIÓN Y TRATAMIENTO DE SUELOS CONTAMINADOS Y ACUÍFEROS, DESAMIANTADO, GEOLOGÍA AMBIENTAL, GESTIÓN DE RUINAS INDUSTRIALES, EVALUACIÓN AMBIENTAL. EJECUCIÓN DE OBRAS DE RECUPERACIÓN MEDIOAMBIENTAL, PRESTACIÓN DE SERVICIOS DE RECUPERACIÓN MEDIOAMBIENTAL, ELABORACIÓN DE TODO TIPO DE PROYECTOS DE INGENIERÍA Y ARQUITECTURA, ASÍ COMO LA SUPERVISIÓN, DIRECCIÓN Y ASESORAMIENTO EN LA EJECUCIÓN DE TODO TIPO DE OBRAS Y SERVICIOS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06134",
+      "_links": {
+        "self": {
+          "name": "LURGIRO S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/06134"
+        }
+      }
+    },
+    {
+      "name": "LEJARZA MAQUINARIA XXI, S.L.",
+      "registrationNumber": "09734",
+      "identificationNumber": "B01914886",
+      "address": "Abra Parque Empresarial, 142-A Barrio Loredo 1G",
+      "location": {
+        "postalCode": "48500",
+        "municipality": "Abanto y Ciérvana-Abanto Zierbena",
+        "county": "Bizkaia",
+        "municipalityId": "002",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.654.5",
+          "name": "Venta al por menor de toda clase de maquinaría",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de toda clase de maquinaría",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.654.5"
+            }
+          }
+        },
+        {
+          "id": "1.692",
+          "name": "Reparación de maquinaria industrial",
+          "_links": {
+            "self": {
+              "name": "Reparación de maquinaria industrial",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.692"
+            }
+          }
+        },
+        {
+          "id": "1.852",
+          "name": "Alquiler de maquinaria y equipo para la construcción",
+          "_links": {
+            "self": {
+              "name": "Alquiler de maquinaria y equipo para la construcción",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.852"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-11-21",
+      "certificateEndDate": "2026-05-19",
+      "object": "A) LA DISTRIBUCIÓN, ARRENDAMIENTO, MANTENIMIENTO, REPARACIÓN Y COMERCIALIZACIÓN DE VEHÍCULOS INDUSTRIALES, CAMIONES, TRACTORES, EXCAVADORAS, PALAS, CARRETILLAS ELEVADORAS, CARRETILLAS TELESCÓPICAS, APILADORES, TRASPALETAS, RETRO-CARGADORAS Y DEMÁS MAQUINARIA INDUSTRIAL PARA OBRAS Y CONSTRUCCIÓN, O AGRÍCOLAS Y ACTIVIDADES COMPLEMENTARIAS DE LAS CITADAS, TALES COMO VENTA Y SUMINISTRO DE REPUESTOS Y ACCESORIOS Y REPRESENTACIÓN DE MARCAS DEDICADAS A LAS ACTIVIDADES CITADAS. B) LA TENENCIA Y GESTIÓN DE ACTIVOS INMOBILIARIOS POR CUENTA PROPIA Y DE TERCEROS. C) LA ADMINISTRACIÓN DE FINCAS URBANAS. ADQUISICIÓN, REHABILITACIÓN, COMPRAVENTA, TENENCIA Y ARRENDAMIENTO DE BIENES INMUEBLES. ADMINISTRACIÓN, COMPRAVENTA Y TENENCIA DE BIENES MUEBLES Y VALORES MERCANTILES. D) LA COMPRA, TENENCIA, ENAJENACIÓN Y EXPLOTACIÓN, INCLUSO EN EXCLUSIVA POR Y A FAVOR DE LA SOCIEDAD, DE TÍTULOS, VALORES, ACCIONES, BONOS, OBLIGACIONES, PATENTES, LICENCIAS, MARCAS, RÓTULOS, NOMBRES COMERCIALES Y TODA CLASE DE PERTENENCIAS DE PROPIEDAD INDUSTRIAL E INBTELECTUAL, Y CUALQUIER OTRA CLASE DE BIENES MUEBLES, TODO ELLO SIN INCIDIR EN LAS ACTIVIDADES U OPERACIONES REGULADAS POR LA LEGISLACIÓN DE INSTITUCIONES DE INVERSIÓN COLECTIVA Y LEY DE MERCADO DE VALORES.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/09734",
+      "_links": {
+        "self": {
+          "name": "LEJARZA MAQUINARIA XXI, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/09734"
+        }
+      }
+    },
+    {
+      "name": "IRRATILAN, S.L.",
+      "registrationNumber": "10438",
+      "identificationNumber": "B75196253",
+      "address": "Lamisingo Iturria,1",
+      "location": {
+        "postalCode": "20305",
+        "municipality": "Irun",
+        "county": "Gipuzkoa",
+        "municipalityId": "045",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.615.9",
+          "name": "Venta al por mayor de otros artículos de consumo duradero n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de otros artículos de consumo duradero n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.615.9"
+            }
+          }
+        },
+        {
+          "id": "1.856.1",
+          "name": "Alquiler de bienes de consumo",
+          "_links": {
+            "self": {
+              "name": "Alquiler de bienes de consumo",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.856.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-11-21",
+      "certificateEndDate": "2026-05-21",
+      "object": "LA COMERCIALIZACIÓN Y ALQUILER DE PRODUCTOS Y SERVICIOS RELACIONADOS CON LA COMUNICACIÓN Y MEDIOS AUDIOVISUALES AL QUE CORRESPONDE EL CNAE 7739.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/10438",
+      "_links": {
+        "self": {
+          "name": "IRRATILAN, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/10438"
+        }
+      }
+    },
+    {
+      "name": "KOOPERA ZAINTZALAN, KOOP. S. DE INICIATIVA SOCIAL",
+      "registrationNumber": "09946",
+      "identificationNumber": "F95604450",
+      "address": "Calle Hernani nº 5 bajo",
+      "location": {
+        "postalCode": "48003",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.501.2",
+          "name": "Construcción completa, reparación y conservación obras civiles",
+          "_links": {
+            "self": {
+              "name": "Construcción completa, reparación y conservación obras civiles",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.2"
+            }
+          }
+        },
+        {
+          "id": "1.922",
+          "name": "Servicios de limpieza",
+          "_links": {
+            "self": {
+              "name": "Servicios de limpieza",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.922"
+            }
+          }
+        },
+        {
+          "id": "1.951",
+          "name": "Asistencia y servicios sociales en centros residenciales",
+          "_links": {
+            "self": {
+              "name": "Asistencia y servicios sociales en centros residenciales",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.951"
+            }
+          }
+        },
+        {
+          "id": "1.952",
+          "name": "Asistencia y servicios sociales en centros no residenciales",
+          "_links": {
+            "self": {
+              "name": "Asistencia y servicios sociales en centros no residenciales",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.952"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-11-21",
+      "certificateEndDate": "2026-05-19",
+      "object": "A) LA INCLUSIÓN SOCIOLABORAL DE PERSONAS QUE SE ENCUENTRAN EN SITUACIÓN O RIESGO DE EXCLUSIÓN SOCIAL, Y QUE COMPRENDE SIN ÁNIMO EXHAUSTIVO LAS SIGUIENTES ACCIONES Y OBJETIVOS: - LA FORMACIÓN DIRIGIDA AL APRENDIZAJE DE UNA DETERMINADA ACTIVIDAD PROFESIONAL Y A LA ADECUACIÓN DEL NIVEL FORMATIVO REGLADO O LAS COMPETENCIAS PROFESIONALES A LAS EXIGENCIAS DEL MERCADO LABORAL. - EL ESTABLECIMIENTO DE UNAS ACTITUDES Y APTITUDES DESTINADAS A LA ADQUISICIÓN DE HÁBITOS SOCIALES Y DE TRABAJO. - SERVICIOS DE ACOMPAÑAMIENTO SOCIAL, ENCAMINADOS A FACILITAR UN NORMAL DESARROLLO DE LOS PROCESOS DE ADAPTACIÓN SOCIAL Y LABORAL. B) LA PRESTACIÓN PROFESIONAL DE LOS SIGUIENTES SERVICIOS DE CARÁCTER SOCIAL: B.1) ACTUACIONES DE CARÁCTER PERSONAL: ACTIVIDADES Y TAREAS COTIDIANAS DESTINADAS A PERSONAS CON DIFICULTADES PARA MANTENER O RESTABLECER SU BIENESTAR FÍSICO, SOCIAL Y AFECTIVO CON OBJETO DE QUE PUEDAN CONTINUAR VIVIENDO EN SU HOGAR Y/O ENTORNO MIENTRAS SEA POSIBLE Y CONVENIENTE. B.2) ACTUACIONES DE CARÁCTER DOMÉSTICO ACTIVIDADES Y TAREAS C COTIDIANAS QUE REALIZAN EN EL HOGAR DESTINADAS AL APOYO DE LA AUTONOMÍA PERSONAL Y FAMILIAR. B.3) ACTUACIONES DE CARÁCTER EDUCATIVO: ACTIVIDADES QUE ESTÁN DIRIGIDAS A FOMENTAR HÁBITOS DE CONDUCTA Y ADQUISICIÓN DE HABILIDADES BÁSICAS. B.4) ACTUACIONES DE CARÁCTER SOCIO-COMUNITARIAS: ACTIVIDADES O TAREAS DIRIGIDAS A FOMENTAR LA PARTICIPACIÓN DE LAS PERSONAS EN SU COMUNIDAD Y EN ACTIVIDADES DE OCIO Y TIEMPO LIBRE. B.5) AYUDAS TÉCNICAS DE MANTENIMIENTO Y ADAPTATIVAS DEL HOGAR: ACTIVIDADES DE MANTENIMIENTO Y ADAPTACIÓN FUNCIONAL DEL HOGAR NECESARIAS PARA SOLVENTAR SITUACIONES CONCRETAS Y ESPECÍFICAS DE DIFICULTAD, QUE COMPLEMENTAN LAS ACTIVIDADES Y TAREAS BÁSICAS DE LA PRESTACIÓN DE ESTE SERVICIO (ELIMINACIÓN DE BARRERAS Y ACONDICIONAMIENTO DE LA VIVIENDA U OTRAS AYUDAS TÉCNICAS QUE APOYEN LA ESTRUCTURACIÓN Y ORGANIZACIÓN DE HOGARES Y NÚCLEOS FAMILIARES). C) REALIZAR ACOMPAÑAMIENTOS A LAS PERSONAS PARA EVITAR SITUACIONES DE SOLEDAD Y AISLAMIENTO, PARA POSIBILITARLA PARTICIPACIÓN DE LA PERSONA USUARIA EN ACTIVIDADES DE CARÁCTER EDUCATIVO, TERAPÉUTICO Y SOCIAL, PARA LA REALIZACIÓN DE TRÁMITES DE ASISTENCIA SANITARIA Y ADMINISTRATIVOS, PARA EL DESARROLLO DE LA AUTOESTIMA, VALORACIÓN DE SÍ MISMO Y LOS HÁBITOS DE CUIDADO PERSONAL, EVITANDO EL AISLAMIENTO, PARA POTENCIAR Y FACILITAR HÁBITOS DE CONVIVENCIA Y RELACIONES FAMILIARES Y SOCIALES, PARA FOMENTAR ESTILOS DE VIDA SALUDABLES Y ACTIVOS, PARA DAR APOYO Y SEGUIMIENTO DE LAS PAUTAS PRESCRITAS ANTE SITUACIONES DE CONFLICTO QUE SE GENEREN EN EL SENO DE LA FAMILIA, PARA EL CUIDADO Y ATENCIÓN DE LOS MENORES TANTO EN EL ENTORNO DEL HOGAR COMO EN ACOMPAÑAMIENTOS A CENTROS ESCOLARES, DE OCIO, SANITARIOS Y OTROS. D) LA PRESTACIÓN DE SERVICIOS DESTINADOS AL CUIDADO DE MENORES, SERVICIOS DE GUARDERÍA, RECOGIDA Y ENTRETENIMIENTO DE NIÑOS (COMO CENTRO INFANTIL, LUDOTECA Y PARQUE DE OCIO INFANTIL), Y LA FORMACIÓN, INSTRUCCIÓN Y EDUCACIÓN DE LOS MISMOS EN TODOS SUS GRADOS Y CON TODA CLASE DE MATERIALES. E) SERVICIOS DE LIMPIEZA DE EDIFICIOS Y LOCALES.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/09946",
+      "_links": {
+        "self": {
+          "name": "KOOPERA ZAINTZALAN, KOOP. S. DE INICIATIVA SOCIAL",
+          "href": "https://api.euskadi.eus/procurements/companies/09946"
+        }
+      }
+    },
+    {
+      "name": "FEJIVE, S.L.",
+      "registrationNumber": "05882",
+      "identificationNumber": "B48182240",
+      "address": "ZUMAIA, 22 (TRASERA)",
+      "location": {
+        "postalCode": "48007",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.504.3",
+          "name": "Instalaciones de frío, calor y acondicionamiento de aire",
+          "_links": {
+            "self": {
+              "name": "Instalaciones de frío, calor y acondicionamiento de aire",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.504.3"
+            }
+          }
+        },
+        {
+          "id": "1.921.9",
+          "name": "Otros servicios de saneamiento y similares n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros servicios de saneamiento y similares n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.921.9"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-11-21",
+      "certificateEndDate": "2026-05-15",
+      "object": "EL MANTENIMIENTO DE INSTALACIONES DE CALEFACCIÓN, AGUA CALIENTE Y CLIMATIZACIÓN, ASÍ COMO INSTALACIONES Y REFORMA DE LAS MISMAS; VENTA DE EQUIPOS Y APARATOS O PIEZAS RELATIVAS A ESTA ACTIVIDAD; SUMINISTROS DEL COMBUSTIBLE PARA ELLO; TODO LO NECESARIO PARA EL MANTENIMIENTO INTEGRAL A INSTALACIONES, INCLUÍDO SU CONTROL CENTRALIZADO Y AUTOMATIZADO",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/05882",
+      "_links": {
+        "self": {
+          "name": "FEJIVE, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/05882"
+        }
+      }
+    },
+    {
+      "name": "CARLOS AZULA PASCUAL",
+      "registrationNumber": "10437",
+      "identificationNumber": "72717022S",
+      "address": "Calle Landaluze, 27-4ºC",
+      "location": {
+        "postalCode": "01400",
+        "municipality": "Laudio/Llodio",
+        "county": "Araba/Álava",
+        "municipalityId": "036",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.651.2",
+          "name": "Venta al por menor de prendas de ropa para el vestido y tocado",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de prendas de ropa para el vestido y tocado",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.651.2"
+            }
+          }
+        },
+        {
+          "id": "1.665",
+          "name": "Venta al por menor por correo o catálogo de productos diversos",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor por correo o catálogo de productos diversos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.665"
+            }
+          }
+        },
+        {
+          "id": "2.899",
+          "name": "Otros profesionales",
+          "_links": {
+            "self": {
+              "name": "Otros profesionales",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/2.899"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-11-21",
+      "certificateEndDate": "2026-05-18",
+      "object": "VENTA AL POR MENOR DE PRENDAS DE ROPA PARA EL VESTIDO Y TOCADO. VENTA AL POR MENOR POR CORREO O CATÁLOGO DE PRODUCTOS DIVERSOS. OTROS PROFESIONALES. ",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/10437",
+      "_links": {
+        "self": {
+          "name": "CARLOS AZULA PASCUAL",
+          "href": "https://api.euskadi.eus/procurements/companies/10437"
+        }
+      }
+    },
+    {
+      "name": "ZUBIZARRETA CONSULTING, S.L.",
+      "registrationNumber": "01146",
+      "identificationNumber": "B01104488",
+      "address": "C/SAN ANTONIO 2 BAJO",
+      "location": {
+        "postalCode": "01005",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.842",
+          "name": "Servicios financieros y contables",
+          "_links": {
+            "self": {
+              "name": "Servicios financieros y contables",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.842"
+            }
+          }
+        },
+        {
+          "id": "1.847",
+          "name": "Servicios de consultoría",
+          "_links": {
+            "self": {
+              "name": "Servicios de consultoría",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.847"
+            }
+          }
+        },
+        {
+          "id": "1.934",
+          "name": "Enseñanza fuera de establecimiento permanente",
+          "_links": {
+            "self": {
+              "name": "Enseñanza fuera de establecimiento permanente",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.934"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-11-20",
+      "certificateEndDate": "2026-05-11",
+      "object": "EL EJERCICIO DE LA AUDITORÍA DE CUENTAS, EN LOS TÉRMINOS, CON EL ALCANCE Y EN EL MARCO PREVISTO POR LA LEY 19/1988 DE 12 DE JULIO Y EL RESTO DEL ORDENAMIENTO, REALIZADA DIRECTA O INDIRECTAMENTE, INCLUSO MEDIANTE SU PARTICIPACIÓN EN OTRAS SOCIEDADES DE IDÉNTICO O ANÁLOGO OBJETIVO.\r\n\r\nADEMÁS LA SOCIEDAD TIENE POR OBJETO SOCIAL LAS ACTIVIDADES QUE SEGUIDAMENTE SE DETALLAN, QUE PODRIAN SER REALIZADAS ASIMISMO, DIRECTA O INDIRECTAMENTE, INCLUSO MEDIANTE SU PARTICIPACIÓN EN OTRAS SOCIEDADES DE IDÉNTICO O ANÁLOGO OBJETO:\r\n\r\na) ASESORAMIENTO Y CONSULTORÍA DE EMPRESAS, EN LAS ÁREAS ECONÓMICO-FINANCIERA, GESTIÓN DE PRODUCCIÓN, INFORMÁTICA, FISCAL, JURÍDICA Y LABORAL, ASÍ COMO LA ELABORACIÓN E IMPLANTACIÓN DE SISTEMAS ORGANIZATIVOS TANTO DE CORTE MANUAL COMO INFORMATIZADOS, Y EN ESTE ÚLTIMO CASO LAS ACTUACIONES DE INTERMEDIACIÓN O COMERCIALIZACIÓN DE PRODUCTOS INFORMÁTICOS, TANTO EN LA VERTIENTE FÍSICA (HARDWARE) COMO INTELECTUAL (SOFTWARE).\r\n\r\nb) ASESORAMIENTO Y COLABORACIÓN EN LAS EMPRESAS, DESARROLLANDO LAS TAREAS QUE SEAN REQUERIDAS DENTRO DEL CAMPO DE ACTUACIÓN DE LA GESTIÓN, DIRECCIÓN Y ADMINISTRACIÓN EMPRESARIAL.\r\n\r\nc) PROMOCIÓN Y PRESTACIÓN DE SERVICIOS DE CURSOS DE FORMACIÓN Y RECICLAJE, SIEMPRE ORIENTADOS A ASPECTOS EMPRESARIALES Y CONECTADOS CON LAS ÁREAS ANTERIORMENTE CITADAS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/01146",
+      "_links": {
+        "self": {
+          "name": "ZUBIZARRETA CONSULTING, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/01146"
+        }
+      }
+    }
+  ]
+}

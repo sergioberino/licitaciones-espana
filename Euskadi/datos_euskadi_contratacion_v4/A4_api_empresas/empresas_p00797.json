@@ -1,0 +1,377 @@
+{
+  "totalItems": 9042,
+  "totalPages": 905,
+  "currentPage": 797,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "name": "MARTÍN LABORDA MURILLO",
+      "registrationNumber": "02790",
+      "identificationNumber": "15247357J",
+      "address": "SOROETA BERRI, 10 - 5º IZDA.",
+      "location": {
+        "postalCode": "20280",
+        "municipality": "Hondarribia",
+        "county": "Gipuzkoa",
+        "municipalityId": "036",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.979.9",
+          "name": "Otros servicios personales n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros servicios personales n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.979.9"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2004-02-16",
+      "certificateEndDate": "2004-07-21",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/02790",
+      "_links": {
+        "self": {
+          "name": "MARTÍN LABORDA MURILLO",
+          "href": "https://api.euskadi.eus/procurements/companies/02790"
+        }
+      }
+    },
+    {
+      "name": "TOMERO Y ROMILLO, SERVICIOS AMBIENTALES, S.L.",
+      "registrationNumber": "02788",
+      "identificationNumber": "B24428351",
+      "address": "AVDA. LA MAGDALENA Nº 9",
+      "location": {
+        "postalCode": "24009",
+        "municipality": "León",
+        "county": "León",
+        "municipalityId": "089",
+        "countyId": "24"
+      },
+      "economicActivities": [
+        {
+          "id": "1.849.9",
+          "name": "Otros servicios independientes n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros servicios independientes n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.849.9"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2004-02-04",
+      "certificateEndDate": "2004-07-09",
+      "object": "ESTUDIOS, PROYECTOS E INVESTIGACIÓN DE RECURSOS NATURALES.\r\nESTUDIOS Y PROYECTOS VINCULADOS CON EL MEDIO RURAL Y URBANO.\r\nPLANIFICACIÓN, ORDENACIÓN Y GESTIÓN DEL USO PÚBLICO.\r\nESTUDIOS, PROYECTOS Y SERVICIOS RELACIONADOS CON EL MEDIO AMBIENTE, ESPECIALMENTE LOS REQUERIDOS EN CENTROS DE INFORMACIÓN, INTERPRETACIÓN Y MUSEOS.\r\nCONTROL, SEGUIMIENTO Y VIGILANCIA DE LOS RECURSOS NATURALES EN EL MEDIO RURAL Y URBANO.\r\nDISEÑO Y EJECUCIÓN DE INICIATIVAS APLICADAS A LA EDUCACIÓN AMBIENTAL, INTERPRETACIÓN Y DIVULGACIÓN Y AL ACERCAMIENTO DEL PÚBLICO AL MEDIO NATURAL Y RURAL.\r\nACTIVIDADES FORMATIVAS.\r\nPROMOCIÓN, PLANIFICACIÓN, ORDENACIÓN Y GESTIÓN DE ACTIVIDADES VINCULADAS CON EL TURISMO.   ",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/02788",
+      "_links": {
+        "self": {
+          "name": "TOMERO Y ROMILLO, SERVICIOS AMBIENTALES, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/02788"
+        }
+      }
+    },
+    {
+      "name": "FERNANDO GABARRI JIMÉNEZ",
+      "registrationNumber": "02042",
+      "identificationNumber": "13285873S",
+      "address": "C/ SAN LLORENTE, Nº 4.",
+      "location": {
+        "postalCode": "09200",
+        "municipality": "Miranda de Ebro",
+        "county": "Burgos",
+        "municipalityId": "219",
+        "countyId": "09"
+      },
+      "economicActivities": [
+        {
+          "id": "1.501.1",
+          "name": "Construcción completa, reparación y conservación de edificaciones",
+          "_links": {
+            "self": {
+              "name": "Construcción completa, reparación y conservación de edificaciones",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2004-01-30",
+      "certificateEndDate": "2004-07-23",
+      "object": "CONSTRUCCIÓN DE OBRAS CIVILES Y CONSERVACIÓN",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/02042",
+      "_links": {
+        "self": {
+          "name": "FERNANDO GABARRI JIMÉNEZ",
+          "href": "https://api.euskadi.eus/procurements/companies/02042"
+        }
+      }
+    },
+    {
+      "name": "RADIACIÓN Y MICROONDAS, S.A.",
+      "registrationNumber": "00648",
+      "identificationNumber": "A28376879",
+      "address": "C/ CARRETERA DE CAMPO REAL, KM. 2,100.",
+      "location": {
+        "postalCode": "28500",
+        "municipality": "Arganda del Rey",
+        "county": "Madrid",
+        "municipalityId": "014",
+        "countyId": "28"
+      },
+      "economicActivities": [
+        {
+          "id": "1.351.2",
+          "name": "Fabricación de aparatos y equipo de radiocomunicación, radiodifusión",
+          "_links": {
+            "self": {
+              "name": "Fabricación de aparatos y equipo de radiocomunicación, radiodifusión",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.351.2"
+            }
+          }
+        },
+        {
+          "id": "1.936",
+          "name": "Investigación científica y técnica",
+          "_links": {
+            "self": {
+              "name": "Investigación científica y técnica",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.936"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2004-01-29",
+      "certificateEndDate": "2004-06-23",
+      "object": "LA CONSTRUCCIÓN, FABRICACIÓN, REPARACIÓN, INSTALACIÓN, IMPORTACIÓN, EXPORTACIÓN, COMERCIO, INVESTIGACIÓN Y DESARROLLO E INGENIERÍA DE ELEMENTOS MECÁNICOS, ELÉCTRICOS, ELECTRÓNICOS Y ÓPTICOS, ESPECIALMENTE LA FABRICACIÓN Y COMERCIALIZACIÓN NACIONAL Y EXTRANJERA DE ANTENAS PROFESIONALES PARA EMISIÓN Y COMUNICACIONES, SUS COMPLEMENTOS Y TODOS LOS PRODUCTOS Y SISTEMAS DE LA ELECTRÓNICA, TELECOMUNICACIÓN E INFORMÁTICA, INCLUSO EL SOFTWARE, TANTO PARA LOS MERCADOS CIVILES, DE DEFENSA, TERRESTRES O ESPACIALES",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/00648",
+      "_links": {
+        "self": {
+          "name": "RADIACIÓN Y MICROONDAS, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/00648"
+        }
+      }
+    },
+    {
+      "name": "LANEN URBANIZACIONES, S.L.",
+      "registrationNumber": "02573",
+      "identificationNumber": "B20729711",
+      "address": "POLÍGONO PAGOALDEA, 2 PABELLÓN 74",
+      "location": {
+        "postalCode": "20180",
+        "municipality": "Oiartzun",
+        "county": "Gipuzkoa",
+        "municipalityId": "063",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.501.1",
+          "name": "Construcción completa, reparación y conservación de edificaciones",
+          "_links": {
+            "self": {
+              "name": "Construcción completa, reparación y conservación de edificaciones",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2004-01-29",
+      "certificateEndDate": "2004-07-08",
+      "object": "LA PROMOCIÓN, CONSTRUCCIÓN Y COMPRAVENTA DE EDIFICACIONES Y SOLARES Y LA REALIZACIÓN Y EJECUCIÓN DE TODA CLASE DE OBRAS, TRABAJOS Y REPARACIONES DE LA CONSTRUCCIÓN",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/02573",
+      "_links": {
+        "self": {
+          "name": "LANEN URBANIZACIONES, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/02573"
+        }
+      }
+    },
+    {
+      "name": "EQUIPOS MÉDICO-BIOLÓGICOS, S.A.",
+      "registrationNumber": "02329",
+      "identificationNumber": "A58572561",
+      "address": "C/ CAN RABIÁ, 13, LOCALES 13 Y 14",
+      "location": {
+        "postalCode": "08009",
+        "municipality": "Barcelona",
+        "county": "Barcelona",
+        "municipalityId": "019",
+        "countyId": "08"
+      },
+      "economicActivities": [
+        {
+          "id": "1.659.3",
+          "name": "Venta al por menor de aparatos médicos, ortopédicos, ópticos y fotográficos",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de aparatos médicos, ortopédicos, ópticos y fotográficos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.659.3"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2004-01-22",
+      "certificateEndDate": "2004-05-13",
+      "object": "LA COMPRAVENTA, COMISIÓN, REPRESENTACIÓN, IMPORTACIÓN Y EXPORTACIÓN  DE EQUIPOS Y MATERIAL MÉDICO Y BIOLÓGICO, Y, EN ESPECIAL, LOS RELACIONADOS CON LOS PROCESOS DE REPRODUCCIÓN DE SERES VIVOS.   ",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/02329",
+      "_links": {
+        "self": {
+          "name": "EQUIPOS MÉDICO-BIOLÓGICOS, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/02329"
+        }
+      }
+    },
+    {
+      "name": "NEW HIGH TECNOLOGICS OF NORWICK, S.L.",
+      "registrationNumber": "02078",
+      "identificationNumber": "B48955488",
+      "address": "C/ ALAMEDA DE RECALDE, 36 - 8º ",
+      "location": {
+        "postalCode": "48009",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.659.2",
+          "name": "Venta al por menor de muebles de oficina y máquinas y equipos de oficina",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de muebles de oficina y máquinas y equipos de oficina",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.659.2"
+            }
+          }
+        },
+        {
+          "id": "1.845",
+          "name": "Explotación electrónica por cuenta de terceros",
+          "_links": {
+            "self": {
+              "name": "Explotación electrónica por cuenta de terceros",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.845"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2004-01-21",
+      "certificateEndDate": "2004-07-13",
+      "object": "COMPRA-VENTA, COMERCIALIZACIÓN, INSTALACIÓN, ASISTENCIA TÉCNICA, REPARACIÓN, ALQUILER Y MANTENIMIENTO DE TODO TIPO DE MATERIAL INFORMÁTICO, YA SE TRATE DE ORDENADORES, IMPRESORAS O CUALESQUIERA OTROS, SEAN DE TIPO QUE FUEREN. LA INTERMEDIACIÓN Y COMPRA-VENTA DE TODA CLASE DE PRODUCTOS A TRAVÉS DE REDES TELEMÁTICAS.\r\n\r\nINSTALACIÓN DE REDES LOCALES, PRESTACIÓN DE SERVICIOS DE INTERNET, CONFECCIÓN Y COMERCIALIZACIÓN DE TODA CLASE DE PROGRAMAS, EDICIÓN Y DISEÑO GRÁFICO POR ORDENADOR, MECANOGRAFIADO DE TEXTOS, REALIZACIÓN DE DIBUJOS, PROYECTOS, MAQUETAS, CAPTURAS DE IMÁGENES Y RETOQUES FOTOGRÁFICOS, TODO ELLO REALIZABLE POR ORDENADOR.\r\n\r\nLA FORMACIÓN A TODA CLASE DE PERSONAS JURÍDICAS O FÍSICAS, EN LOS CAMPOS DE LA INFORMÁTICA, OFIMÁTICA, ARTES GRÁFICAS POR ORDENADOR, CONSULTORÍA EN INFORMÁTICA, ARTES GRÁFICAS Y OFIMÁTICA, ASÍ COMO LA REALIZACIÓN DE DEMOSTRACIONES Y CLASES DE PROGRAMAS Y TODA CLASE DE ACTIVIDADES REALIZABLES POR ORDENADOR EN LOS CITADOS CAMPOS O CUALESQUIERA OTROS.\r\n\r\nBUZÓN TELEFÓNICO, FACTURACIONES, MECANOGRAFIADO DE INFORMES, MANTENIMIENTO DE BASES DE DATOS, SECRETARÍA INTEGRAL, ORDEN DE ARCHIVOS, ADMINISTRACIÓN DE EMPRESAS Y TODA CLASE DE ASESORAMIENTO EN RELACIÓN CON LO ANTERIORMENTE EXPUESTO",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/02078",
+      "_links": {
+        "self": {
+          "name": "NEW HIGH TECNOLOGICS OF NORWICK, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/02078"
+        }
+      }
+    },
+    {
+      "name": "INGENIERÍA XXI, S.A.",
+      "registrationNumber": "00666",
+      "identificationNumber": "A01049923",
+      "address": "C/ CASTILLO DE QUEJANA, Nº 9. OFICINA: 13 - 14.",
+      "location": {
+        "postalCode": "01007",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.843.1",
+          "name": "Servicios técnicos de ingeniería",
+          "_links": {
+            "self": {
+              "name": "Servicios técnicos de ingeniería",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2003-12-18",
+      "certificateEndDate": "2003-10-09",
+      "object": "PROYECTAR, DISEÑAR, CALCULAR Y/O COORDINAR TODO TIPO DE INSTALACIONES INDUSTRIALES EN GENERAL, TANTO SEAN DE ORIGEN MECÁNICO, COMO ELÉCTRICO, HIDRÁULICO, QUÍMICO, PETROQUÍMICO, NÁUTICO, AERONÁUTICO, TELECOMUNICACIÓN, INFORMÁTICO O DE OBRAS CIVILES DE PUERTOS, CAMINOS, CANALES, EDIFICIOS, JARDINES PÚBLICOS, ALUMBRADOS, REDES DE ALCANTARILLADO, AGUA, GAS, ELECTRICIDAD, TRATAMIENTO DE AGUAS, RESIDUOS INDUSTRIALES U OTROS SIMILARES; ASÍ COMO TAMBIÉN LA EXPLOTACIÓN DE MINICENTRALES HIDROELÉCTRICAS Y LA REPRESENTACIÓN Y COMERCIALIZACIÓN DE BIENES Y PRODUCTOS RELACIONADOS CON LO ANTERIOR",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/00666",
+      "_links": {
+        "self": {
+          "name": "INGENIERÍA XXI, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/00666"
+        }
+      }
+    },
+    {
+      "name": "ZÁRATE Y ASOCIADOS AUDITORES, S.L.",
+      "registrationNumber": "01664",
+      "identificationNumber": "B01113653",
+      "address": "C/ MANUEL IRADIER, Nº 7 - 4º.",
+      "location": {
+        "postalCode": "01005",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.842",
+          "name": "Servicios financieros y contables",
+          "_links": {
+            "self": {
+              "name": "Servicios financieros y contables",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.842"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2003-12-16",
+      "certificateEndDate": "2004-06-09",
+      "object": "EL EJERCICIO DE LA AUDITORÍA DE CUENTAS, EN LOS TÉRMINOS, CON EL ALCANCE Y EN EL MARCO PREVISTO Y REGULADO POR LA LEY 19/1988 DE 12 DE JULIO Y, EL RESTO DEL ORDENAMIENTO",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/01664",
+      "_links": {
+        "self": {
+          "name": "ZÁRATE Y ASOCIADOS AUDITORES, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/01664"
+        }
+      }
+    },
+    {
+      "name": "ZÁRATE Y ASOCIADOS CONSULTORES, S.L.",
+      "registrationNumber": "01670",
+      "identificationNumber": "B01104470",
+      "address": "C/ MANUEL IRADIER, Nº 7 - 4º.",
+      "location": {
+        "postalCode": "01005",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.842",
+          "name": "Servicios financieros y contables",
+          "_links": {
+            "self": {
+              "name": "Servicios financieros y contables",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.842"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2003-12-16",
+      "certificateEndDate": "2004-06-09",
+      "object": "LA PRESTACIÓN DE SERVICIOS DE CONSULTORÍA Y ASESORAMIENTO TANTO DE LA GESTIÓN EMPRESARIAL COMO A PARTICULARES",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/01670",
+      "_links": {
+        "self": {
+          "name": "ZÁRATE Y ASOCIADOS CONSULTORES, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/01670"
+        }
+      }
+    }
+  ]
+}

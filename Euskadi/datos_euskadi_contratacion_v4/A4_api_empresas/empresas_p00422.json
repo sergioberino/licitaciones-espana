@@ -1,0 +1,458 @@
+{
+  "totalItems": 9042,
+  "totalPages": 905,
+  "currentPage": 422,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "name": "ALEJANDRO IGNACIO CONDE PEREZ",
+      "registrationNumber": "08795",
+      "identificationNumber": "16241168V",
+      "address": "C/ PINTOR VERA FAJARDO Nº 5-B 4º izda",
+      "location": {
+        "postalCode": "01008",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "2.421",
+          "name": "Arquitectos técnicos y aparejadores",
+          "_links": {
+            "self": {
+              "name": "Arquitectos técnicos y aparejadores",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/2.421"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2024-05-21",
+      "certificateEndDate": "2024-11-21",
+      "object": "ARQUITECTOS TÉCNICOS Y APAREJADORES.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08795",
+      "_links": {
+        "self": {
+          "name": "ALEJANDRO IGNACIO CONDE PEREZ",
+          "href": "https://api.euskadi.eus/procurements/companies/08795"
+        }
+      }
+    },
+    {
+      "name": "IOK CONSULTORÍA SOCIAL SOCIEDAD COOPERATIVA PEQUEÑA",
+      "registrationNumber": "05819",
+      "identificationNumber": "F95846879",
+      "address": "C/ San Pedro, 29 bajo dcha.",
+      "location": {
+        "postalCode": "48340",
+        "municipality": "Amorebieta-Etxano",
+        "county": "Bizkaia",
+        "municipalityId": "003",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.847",
+          "name": "Servicios de consultoría",
+          "_links": {
+            "self": {
+              "name": "Servicios de consultoría",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.847"
+            }
+          }
+        },
+        {
+          "id": "1.952",
+          "name": "Asistencia y servicios sociales en centros no residenciales",
+          "_links": {
+            "self": {
+              "name": "Asistencia y servicios sociales en centros no residenciales",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.952"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2024-05-21",
+      "certificateEndDate": "2024-11-21",
+      "object": "LA PRESTACIÓN DE SERVICIOS DE CONSULTORÍA, INVESTIGACIÓN Y FORMACIÓN EN EL ÁMBITO DE LA ACCIÓN Y SERVICIOS SOCIALES, ASÍ COMO LA ELABORACIÓN E IMPLEMENTACIÓN DE POLÍTICAS SOCIALES A FIN DE DETERMINAR LÍNEAS DE INTERVENCIÓN SOCIAL, ASÍ COMO LA GESTIÓN Y PRESTACIÓN DE SERVICIOS SOCIALES",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/05819",
+      "_links": {
+        "self": {
+          "name": "IOK CONSULTORÍA SOCIAL SOCIEDAD COOPERATIVA PEQUEÑA",
+          "href": "https://api.euskadi.eus/procurements/companies/05819"
+        }
+      }
+    },
+    {
+      "name": "BENITO SAINZ ZORRILLA",
+      "registrationNumber": "09108",
+      "identificationNumber": "30659787M",
+      "address": "IBAIONDO 5-1 IZDA",
+      "location": {
+        "postalCode": "48860",
+        "municipality": "Zalla",
+        "county": "Bizkaia",
+        "municipalityId": "096",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.504.2",
+          "name": "Instalaciones de fontanería",
+          "_links": {
+            "self": {
+              "name": "Instalaciones de fontanería",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.504.2"
+            }
+          }
+        },
+        {
+          "id": "1.861.2",
+          "name": "Alquiler de locales industriales y otros alquileres n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Alquiler de locales industriales y otros alquileres n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.861.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2024-05-21",
+      "certificateEndDate": "2024-11-21",
+      "object": "ALQUILER DE LOCALES INDUSTRIALES Y OTROS ALQUILERES N.C.O.P. INSTALACIONES DE FONTANERÍA.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/09108",
+      "_links": {
+        "self": {
+          "name": "BENITO SAINZ ZORRILLA",
+          "href": "https://api.euskadi.eus/procurements/companies/09108"
+        }
+      }
+    },
+    {
+      "name": "REVESTIMIENTOS DE MOQUETA SANCHEZ, S.L.",
+      "registrationNumber": "04759",
+      "identificationNumber": "B48433023",
+      "address": "AVDA. SAN ADRIAN, Nº 12 - BAJO",
+      "location": {
+        "postalCode": "48003",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.505.1",
+          "name": "Revestimientos exteriores e interiores de todas clases",
+          "_links": {
+            "self": {
+              "name": "Revestimientos exteriores e interiores de todas clases",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.505.1"
+            }
+          }
+        },
+        {
+          "id": "1.651.1",
+          "name": "Venta al por menor de productos textiles, de hogar, alfombras y similares",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de productos textiles, de hogar, alfombras y similares",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.651.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2024-05-21",
+      "certificateEndDate": "2024-11-21",
+      "object": "LA COLOCACIÓN Y VENTA DE MOQUETAS, ALFOMBRAS Y SUELO EN GENERAL, PLÁSTICOS, MADERAS, CORCHO, ETC., TAPIZADO DE MUEBLES, FORRADO DE PISOS O PAREDES, ASÍ COMO VENTA DE PINTURAS, PAPELES PINTADOS Y GÉNEROS DE PLÁSTICO DESTINADO A TAPICERÍA O A CUBRIR PISOS O PAREDES, PERSIANAS Y PRODUCTOS TEXTILES EN GENERAL, ROPA DE CAMA Y MESA, EDREDONES, COLCHAS, CORTINAS, ETC.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/04759",
+      "_links": {
+        "self": {
+          "name": "REVESTIMIENTOS DE MOQUETA SANCHEZ, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/04759"
+        }
+      }
+    },
+    {
+      "name": "CONSTRUCCIONES ARANA, S.A.",
+      "registrationNumber": "01705",
+      "identificationNumber": "A01050020",
+      "address": "C/ PORTAL DE GAMARRA, Nº 7. PABELLÓN: 24 - 25. ",
+      "location": {
+        "postalCode": "01013",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.501.1",
+          "name": "Construcción completa, reparación y conservación de edificaciones",
+          "_links": {
+            "self": {
+              "name": "Construcción completa, reparación y conservación de edificaciones",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.1"
+            }
+          }
+        },
+        {
+          "id": "1.501.2",
+          "name": "Construcción completa, reparación y conservación obras civiles",
+          "_links": {
+            "self": {
+              "name": "Construcción completa, reparación y conservación obras civiles",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2024-05-21",
+      "certificateEndDate": "2024-11-21",
+      "object": "LA ADQUISICIÓN, URBANIZACIÓN, PARCELACIÓN, CONSTRUCCIÓN, EDIFICACIÓN, CONSTITUCIÓN EN PROPIEDAD HORIZONTAL, REFORMA, AMPLIACIÓN, EXPLOTACIÓN, DIRECTA O INDIRECTA, ARRENDAMIENTO Y ENAJENACIÓN Y, EN GENERAL TODA ACTIVIDAD RELATIVA A BIENES INMUEBLES, ASÍ RÚSTICOS COMO URBANOS Y LA REALIZACIÓN DE OBRAS PÚBLICAS Y TODA CLASE DE INVERSIONES Y PROMOCIONES RELACIONADAS CON EL RAMO DE LA CONSTRUCCIÓN",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/01705",
+      "_links": {
+        "self": {
+          "name": "CONSTRUCCIONES ARANA, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/01705"
+        }
+      }
+    },
+    {
+      "name": "PRADA NARGESA, S.L.",
+      "registrationNumber": "09075",
+      "identificationNumber": "B17823527",
+      "address": "Ctra. de Garrigàs a Sant Miquel s/n",
+      "location": {
+        "postalCode": "17476",
+        "municipality": "Palau de Santa Eulàlia",
+        "county": "Girona",
+        "municipalityId": "119",
+        "countyId": "17"
+      },
+      "economicActivities": [
+        {
+          "id": "1.322.1",
+          "name": "Construcción de máquinas para trabajar los metales",
+          "_links": {
+            "self": {
+              "name": "Construcción de máquinas para trabajar los metales",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.322.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2024-05-21",
+      "certificateEndDate": "2024-11-21",
+      "object": "EL DISEÑO, FABRICACIÓN, COMERCIALIZACIÓN, DISTRIBUCIÓN, IMPORTACIÓN, EXPORTACIÓN, ALQUILER Y REPARACIÓN DE MAQUINARIA Y HERRAMIENTAS PARA LA INDUSTRIA Y DE CERRADURAS Y CONTROLES DE ACCESO ELECTRÓNICO, ASÍ COMO DE CUALQUIER CLASE DE ACCESORIOS, CONSUMIBLES, COMPONENTES ELÉCTRICOS Y ELECTRÓNICOS, UTILLAJES, HERRAMIENTAS Y PROGRAMAS INFORMÁTICOS RELACIONADOS CON DICHOS PRODUCTOS. LA REALIZACIÓN DE TRABAJOS PROPIOS DE TALLER INDUSTRIAL MECÁNICO. REPRESENTACIÓN DE MARCAS COMERCIALES Y ASESORAMIENTO TÉCNICO Y COMERCIAL RELACIONADO CON DICHOS PRODUCTOS.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/09075",
+      "_links": {
+        "self": {
+          "name": "PRADA NARGESA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/09075"
+        }
+      }
+    },
+    {
+      "name": "LOTTU STEEL, S.L.",
+      "registrationNumber": "06010",
+      "identificationNumber": "B95796686",
+      "address": "Polígono Industrial Arriandi B - Parc. 4 A - Naves 3,4,5",
+      "location": {
+        "postalCode": "48215",
+        "municipality": "Iurreta",
+        "county": "Bizkaia",
+        "municipalityId": "910",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.319.9",
+          "name": "Talleres mecánicos n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Talleres mecánicos n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.319.9"
+            }
+          }
+        },
+        {
+          "id": "1.855.9",
+          "name": "Alquiler de otros medios de transporte n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Alquiler de otros medios de transporte n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.855.9"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2024-05-21",
+      "certificateEndDate": "2024-11-21",
+      "object": "1. FABRICACIÓN Y VENTA DE TODA CLASE DE ARTÍCULOS DE CALDERERÍA PARA INDUSTRIAS Y ACCESORIOS PARA DICHA INDUSTRIA. LA REALIZACIÓN DE TODO TIPO DE TRABAJOS RELACIONADOS CON LA CALDERERÍA Y SOLDADURA DE METALES EN ESTRUCTURAS E INSTALACIONES PROPIAS Y DE TERCEROS; LA FABRICACIÓN, MONTAJE, COMERCIALIZACIÓN, COMPRA, VENTA, CONSERVACIÓN E INSTALACIÓN DE ESTRUCTURAS Y CONSTRUCCIONES METÁLICAS, LA CARPINTERÍA METÁLICA Y LA CALDERERÍA EN GENERAL Y LA PINTURA DE DICHOS ELEMENTOS EN GENERAL. 2. LA COMPRA, VENTA, COMERCIAL AL POR MAYOR Y MENOR, IMPORTACIÓN, EXPORTACIÓN Y TRANSFORMACIÓN DE METALES FÉRRICOS Y NO FÉRRICOS, LA COMERCIALIZACIÓN DE PIEZAS Y MODELOS PARA FUNDICIÓN E INDUSTRIAL DEL METAL. 3. LA FUNDICIÓN DE METALES Y EL TRATAMIENTO DE TODO TIPO DE MATERIALES PROCEDENTES DE FUNDICIÓN, EL MOLDEO Y DESMOLDEO DE PIEZAS, ASÍ COMO LAS LABORES DE REBABA, ESTABILIZADO, PULIDO Y GRANALLADO, PINTADO, TRATAMIENTO TÉRMICO, Y TODO TIPO DE OPERACIONES COMPLEMENTARIAS DE LA FUNDICIÓN, ASÍ COMO EL MECANIZADO DE PIEZAS, PUDIENDO REALIZAR DICHAS LABORES TANTO EN LOCALES E INSTALACIONES DE LA COMPAÑÍA COMO EN AJENOS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06010",
+      "_links": {
+        "self": {
+          "name": "LOTTU STEEL, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/06010"
+        }
+      }
+    },
+    {
+      "name": "AIR LAMA HELICOPTERS, S.L.",
+      "registrationNumber": "09596",
+      "identificationNumber": "B72785207",
+      "address": "Colom,503",
+      "location": {
+        "postalCode": "08228",
+        "municipality": "Terrassa",
+        "county": "Barcelona",
+        "municipalityId": "279",
+        "countyId": "08"
+      },
+      "economicActivities": [
+        {
+          "id": "1.742.1",
+          "name": "Transporte aéreo nacional de viajeros (servicios no regulares)",
+          "_links": {
+            "self": {
+              "name": "Transporte aéreo nacional de viajeros (servicios no regulares)",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.742.1"
+            }
+          }
+        },
+        {
+          "id": "1.742.2",
+          "name": "Transporte aéreo nacional de mercancías (servicios no regulares)",
+          "_links": {
+            "self": {
+              "name": "Transporte aéreo nacional de mercancías (servicios no regulares)",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.742.2"
+            }
+          }
+        },
+        {
+          "id": "1.855.1",
+          "name": "Alquiler de aeronaves de todas clases",
+          "_links": {
+            "self": {
+              "name": "Alquiler de aeronaves de todas clases",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.855.1"
+            }
+          }
+        },
+        {
+          "id": "1.912",
+          "name": "Servicios forestales",
+          "_links": {
+            "self": {
+              "name": "Servicios forestales",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.912"
+            }
+          }
+        },
+        {
+          "id": "3.015",
+          "name": "Operadores de cámaras de cine de televisión y de vídeo",
+          "_links": {
+            "self": {
+              "name": "Operadores de cámaras de cine de televisión y de vídeo",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/3.015"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2024-05-21",
+      "certificateEndDate": "2024-11-21",
+      "object": "EL DESARROLLO DE LAS ACTIVIDADES CORRESPONDIENTES A LOS SIGUIENTES CÓDIGOS Y DESCRIPCIONES DE CLASIFICACIÓN NACIONAL DE ACTIVIDADES ECONÓMICAS: ACTIVIDAD PRINCIPAL: 51.21 / TRANSPORTE AÉREO DE MERCANCÍAS. OTRAS ACTIVIDADES: 51.10 / TRANSPORTE AÉREO DE PASAJEROS, 02.40 / SERVICIOS DE APOYO A LA SILVICULTURA, 59.15 / ACTIVIDADES DE PRODUCCIÓN CINEMATOGRÁFICA Y DE VÍDEO, 77.35 / ALQUILER DE MEDIOS DE TRANSPORTE AÉREO.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/09596",
+      "_links": {
+        "self": {
+          "name": "AIR LAMA HELICOPTERS, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/09596"
+        }
+      }
+    },
+    {
+      "name": "IDOIA AMAIA EIZMENDI ALDASORO",
+      "registrationNumber": "09103",
+      "identificationNumber": "72430629H",
+      "address": "Santa Luzia, 5",
+      "location": {
+        "postalCode": "48140",
+        "municipality": "Igorre",
+        "county": "Bizkaia",
+        "municipalityId": "094",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "2.826",
+          "name": "Personal docente de enseñanzas diversas",
+          "_links": {
+            "self": {
+              "name": "Personal docente de enseñanzas diversas",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/2.826"
+            }
+          }
+        },
+        {
+          "id": "2.899",
+          "name": "Otros profesionales",
+          "_links": {
+            "self": {
+              "name": "Otros profesionales",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/2.899"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2024-05-21",
+      "certificateEndDate": "2024-11-14",
+      "object": "OTROS PROFESIONALES. PERSONAL DOCENTE DE ENSEÑANZAS DIVERSAS.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/09103",
+      "_links": {
+        "self": {
+          "name": "IDOIA AMAIA EIZMENDI ALDASORO",
+          "href": "https://api.euskadi.eus/procurements/companies/09103"
+        }
+      }
+    },
+    {
+      "name": "IBER STAND, S.L.",
+      "registrationNumber": "09594",
+      "identificationNumber": "B81922932",
+      "address": "RONDA CASTILLA OESTE, 49",
+      "location": {
+        "postalCode": "28991",
+        "municipality": "Torrejón de la Calzada",
+        "county": "Madrid",
+        "municipalityId": "149",
+        "countyId": "28"
+      },
+      "economicActivities": [
+        {
+          "id": "1.989.3",
+          "name": "Parques o recintos feriales",
+          "_links": {
+            "self": {
+              "name": "Parques o recintos feriales",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.989.3"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2024-05-20",
+      "certificateEndDate": "2024-11-20",
+      "object": "LA FABRICACIÓN, DISTRIBUCIÓN, MONTAJE, INSTALACIÓN, EXPORTACIÓN, IMPORTACIÓN, ALQUILER Y COMPRAVENTA DE EXPOSITORES, CAJONES, ESTANTES Y CUALESQUIERA OTRAS INSTALACIONES DESTINADAS A LA EXPOSICIÓN Y VENTA DE PRODUCTOS, CONOCIDAS EN EL COMERCIO COMO \"STANDS\".",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/09594",
+      "_links": {
+        "self": {
+          "name": "IBER STAND, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/09594"
+        }
+      }
+    }
+  ]
+}

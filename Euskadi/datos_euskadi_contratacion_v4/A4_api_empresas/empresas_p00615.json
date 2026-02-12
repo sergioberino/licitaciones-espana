@@ -1,0 +1,448 @@
+{
+  "totalItems": 9042,
+  "totalPages": 905,
+  "currentPage": 615,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "name": "BIOSYSTEMS, S.A.",
+      "registrationNumber": "05476",
+      "identificationNumber": "A08678823",
+      "address": "Costa Brava, 30-6º pl.",
+      "location": {
+        "postalCode": "08030",
+        "municipality": "Barcelona",
+        "county": "Barcelona",
+        "municipalityId": "019",
+        "countyId": "08"
+      },
+      "economicActivities": [
+        {
+          "id": "1.254.2",
+          "name": "Fabricación de especialidades y otros productos farmacéuticos",
+          "_links": {
+            "self": {
+              "name": "Fabricación de especialidades y otros productos farmacéuticos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.254.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2019-03-20",
+      "certificateEndDate": "2019-08-04",
+      "object": "EL NEGOCIO DEDICADO A LA INVESTIGACIÓN, DESARROLLO, FABRICACIÓN Y VENTA DE MATERIAS PRIMAS DE ORIGEN FÍSICO, QUÍMICO Y BIOLÓGICO; REACTIVOS QUÍMICOS Y BIOLÓGICOS; SISTEMAS BIOQUÍMICOS Y MICROBIOLÓGICOS DE APLICACIÓN EN LA INDUSTRIA, HOSPITALES, CLÍNICAS, UNIVERSIDADES, CENTROS DE INVESTIGACIÓN Y DESARROLLO, LABORATORIOS PRIVADOS Y SIMILARES",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/05476",
+      "_links": {
+        "self": {
+          "name": "BIOSYSTEMS, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/05476"
+        }
+      }
+    },
+    {
+      "name": "IGARLEK, SL",
+      "registrationNumber": "06132",
+      "identificationNumber": "B20507562",
+      "address": "CM PORTUETXE, 55 - L4",
+      "location": {
+        "postalCode": "20018",
+        "municipality": "Donostia / San Sebastián",
+        "county": "Gipuzkoa",
+        "municipalityId": "069",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.615.4",
+          "name": "Venta al por mayor de aparatos y material radioeléctrico y electrónico",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de aparatos y material radioeléctrico y electrónico",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.615.4"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2019-03-20",
+      "certificateEndDate": "2019-06-10",
+      "object": "COMERCIO AL POR MAYOR DE MATERIAL ELÉCTRICO, REPUESTOS, ACCESORIOS Y MAQUINARIA DE LA MISMA NATURALEZA. INTERMEDIACIÓN EN EL MISMO COMERCIO A TÍTULO DE AGENTE O COMISIONISTA",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06132",
+      "_links": {
+        "self": {
+          "name": "IGARLEK, SL",
+          "href": "https://api.euskadi.eus/procurements/companies/06132"
+        }
+      }
+    },
+    {
+      "name": "GRUPO OSABA URK SL",
+      "registrationNumber": "06127",
+      "identificationNumber": "B26231092",
+      "address": "C/ GENERAL YAGÚE, 36 PAB 22 PTA.21",
+      "location": {
+        "postalCode": "26007",
+        "municipality": "Logroño",
+        "county": "Rioja, La",
+        "municipalityId": "089",
+        "countyId": "26"
+      },
+      "economicActivities": [
+        {
+          "id": "1.504.1",
+          "name": "Instalaciones eléctricas en general",
+          "_links": {
+            "self": {
+              "name": "Instalaciones eléctricas en general",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.504.1"
+            }
+          }
+        },
+        {
+          "id": "1.631",
+          "name": "Intermediarios del comercio",
+          "_links": {
+            "self": {
+              "name": "Intermediarios del comercio",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.631"
+            }
+          }
+        },
+        {
+          "id": "1.653.2",
+          "name": "Venta al por menor de material y aparatos eléctricos, electrodomésticos y cocina",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de material y aparatos eléctricos, electrodomésticos y cocina",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.653.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2019-03-14",
+      "certificateEndDate": "2019-09-07",
+      "object": "EL COMERCIO AL POR MAYOR Y MENOR DE APARATOS ELÉCTRICOS, ELECTRÓNICOS, TELEFÓNICOS, DE TELECOMUNICACIONES Y DE TRANSMISIÓN DE DATOS, EQUIPOS INFORMÁTICOS, OFIMÁTICOS, FOTOCOPIADORES Y CONSUMIBLES PARA LOS MISMOS, BIEN CONSISTAN EN PAPEL, TONER O CUALQUIER OTRO PRECISO PARA SU FUNCIONAMIENTO, COMPRENDIENDO EL MATERIAL DE OFICINA ASÍ COMO LA PRESTACIÓN DE LOS SERVICIOS PRECISOS PARA SU MANTENIMIENTO Y USO",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06127",
+      "_links": {
+        "self": {
+          "name": "GRUPO OSABA URK SL",
+          "href": "https://api.euskadi.eus/procurements/companies/06127"
+        }
+      }
+    },
+    {
+      "name": "BEATRIZ ACHA GURRUCHAGA",
+      "registrationNumber": "06128",
+      "identificationNumber": "72733963M",
+      "address": "INTUXI, 18",
+      "location": {
+        "postalCode": "01250",
+        "municipality": "Asparrena",
+        "county": "Araba/Álava",
+        "municipalityId": "009",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.612.6",
+          "name": "Venta al por mayor de bebidas y tabaco",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de bebidas y tabaco",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.612.6"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2019-03-14",
+      "certificateEndDate": "2019-06-03",
+      "object": "COMERCIO AL POR MAYOR DE BEBIDAS Y TABACO",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06128",
+      "_links": {
+        "self": {
+          "name": "BEATRIZ ACHA GURRUCHAGA",
+          "href": "https://api.euskadi.eus/procurements/companies/06128"
+        }
+      }
+    },
+    {
+      "name": "GESTION DE SERVICIOS RESIDENCIALES, S.COOP",
+      "registrationNumber": "06130",
+      "identificationNumber": "F20795837",
+      "address": "Parque Tecnológico Garaia, calle goiru edif.B, 2.planta",
+      "location": {
+        "postalCode": "20500",
+        "municipality": "Arrasate / Mondragón",
+        "county": "Gipuzkoa",
+        "municipalityId": "055",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.951",
+          "name": "Asistencia y servicios sociales en centros residenciales",
+          "_links": {
+            "self": {
+              "name": "Asistencia y servicios sociales en centros residenciales",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.951"
+            }
+          }
+        },
+        {
+          "id": "1.952",
+          "name": "Asistencia y servicios sociales en centros no residenciales",
+          "_links": {
+            "self": {
+              "name": "Asistencia y servicios sociales en centros no residenciales",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.952"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2019-03-14",
+      "certificateEndDate": "2019-05-07",
+      "object": "A) PRESTACIÓN DE TODO TIPO DE SERVICIOS DE ASISTENCIA SOCIAL Y SANITARIA, MEDIANTE PERSONAL CUALIFICADO (MÉDICOS, PSICÓLOGOS, PEDAGOGOS, DIPLOMADOS UNIVERSITARIOS EN ENFERMERÍA, ASISTENTES SOCIALES, FISIOTERAPEUTAS, TERAPEUTAS OCUPACIONALES, ETC.) A LOS SIGUIENTES COLECTIVOS: ANCIANOS, MINUSVÁLIDOS, FAMILIAS, INFANCIA, MUJERES SOLITARIAS CON CARGAS FAMILIARES NO COMPARTIDAS, DISCAPACITADOS FÍSICOS Y PSÍQUICOS Y PERSONAS O GRUPOS DE POBLACIÓN EN SITUACIÓN DE NECESIDAD, MEDIANTE LA REALIZACIÓN ENTRE OTRAS DE LAS SIGUIENTES TAREAS: SERVICIO DE AYUDA A DOMICILIO, TELEASISTENCIA DOMICILIARIA Y SOCIO-SANITARIA, EXPLOTACIÓN O GESTIÓN, TOTAL O PARCIAL, DE RESIDENTES, PISOS TUTELADOS, CENTROS DE DÍA, COMUNIDADES TERAPÉUTICAS Y OTROS CENTROS DE ACOGIDA Y REHABILITACIÓN, TRASLADO Y ACOMPAÑAMIENTO DE LOS COLECTIVOS ANTES CITADOS, HOSPITALIZACIÓN A DOMICILIO Y AYUDA MÉDICA Y DE ENFERMERÍA A DOMICILIO. B) EL DESARROLLO DE TODO TIPO DE ACTIVIDAD QUE SEA NECESARIA PARA LA PROMOCIÓN DE NUEVOS CENTROS RESIDENCIALES CUYO DESTINO SEA LA PRESTACIÓN DE LOS SERVICIOS DE ASISTENCIA SOCIAL Y SANITARIA ANTES REFERIDOS. C) LA EXPLOTACIÓN DE SISTEMAS DE COMUNICACIÓN RÁPIDA CON SERVICIOS PÚBLICOS ASISTENCIALES: POLICÍA, BOMBEROS, HOSPITALES Y CENTROS MÉDICOS. D) LA GESTIÓN Y CONTROL, A TRAVÉS DE UN CENTRO INFORMATIZADO Y AMPLIAMENTE COMUNICADO, DE CUALQUIERA DE LOS SERVICIOS MENCIONADOS EN LOS NÚMEROS ANTERIORES, TANTO SI SON PRESTADOS POR LA PROPIA SOCIEDAD O POR TECEROS. E) LA FORMACIÓN PROFESIONAL Y RECICLAJE DE LAS PERSONAS QUE PRESTEN LOS SERVICIOS EXPRESADOS EN LOS PUNTOS ANTERIORES. F) ASÍ COMO TODAS LAS DEMÁS ACTIVIDADES CONEXAS A LAS ANTERIORES Y QUE PUDIERAN SER NECESARIAS PARA SU DESARROLLO",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06130",
+      "_links": {
+        "self": {
+          "name": "GESTION DE SERVICIOS RESIDENCIALES, S.COOP",
+          "href": "https://api.euskadi.eus/procurements/companies/06130"
+        }
+      }
+    },
+    {
+      "name": "MONTAJES IBIO 3 S.L.",
+      "registrationNumber": "06126",
+      "identificationNumber": "B39685110",
+      "address": "POLIGONO LITUTXIPI CALLE ARRIBITARTE NUMERO 2 NAVE 15",
+      "location": {
+        "postalCode": "01051",
+        "municipality": "Agurain/Salvatierra",
+        "county": "Araba/Álava",
+        "municipalityId": "051",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.692",
+          "name": "Reparación de maquinaria industrial",
+          "_links": {
+            "self": {
+              "name": "Reparación de maquinaria industrial",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.692"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2019-03-13",
+      "certificateEndDate": "2019-09-07",
+      "object": "MANTENIMIENTO INDUSTRIAL Y CONSTRUCCIONES METALÚRGICAS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06126",
+      "_links": {
+        "self": {
+          "name": "MONTAJES IBIO 3 S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/06126"
+        }
+      }
+    },
+    {
+      "name": "ARRASATE-G TALDEA, S. COOP.",
+      "registrationNumber": "02840",
+      "identificationNumber": "F20492112",
+      "address": "SAN ANDRÉS, 2 PAB. 4-A",
+      "location": {
+        "postalCode": "20500",
+        "municipality": "Arrasate / Mondragón",
+        "county": "Gipuzkoa",
+        "municipalityId": "055",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.504.1",
+          "name": "Instalaciones eléctricas en general",
+          "_links": {
+            "self": {
+              "name": "Instalaciones eléctricas en general",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.504.1"
+            }
+          }
+        },
+        {
+          "id": "1.504.2",
+          "name": "Instalaciones de fontanería",
+          "_links": {
+            "self": {
+              "name": "Instalaciones de fontanería",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.504.2"
+            }
+          }
+        },
+        {
+          "id": "1.691.2",
+          "name": "Reparación de vehículos automóviles, bicicletas y otros vehículos",
+          "_links": {
+            "self": {
+              "name": "Reparación de vehículos automóviles, bicicletas y otros vehículos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.691.2"
+            }
+          }
+        },
+        {
+          "id": "1.691.9",
+          "name": "Reparación de otros bienes de consumo n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Reparación de otros bienes de consumo n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.691.9"
+            }
+          }
+        },
+        {
+          "id": "1.722",
+          "name": "Transporte de mercancías por carretera",
+          "_links": {
+            "self": {
+              "name": "Transporte de mercancías por carretera",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.722"
+            }
+          }
+        },
+        {
+          "id": "1.757",
+          "name": "Servicio de mudanzas",
+          "_links": {
+            "self": {
+              "name": "Servicio de mudanzas",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.757"
+            }
+          }
+        },
+        {
+          "id": "1.922.1",
+          "name": "Servicios de limpieza de interiores",
+          "_links": {
+            "self": {
+              "name": "Servicios de limpieza de interiores",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.922.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2019-03-11",
+      "certificateEndDate": "2019-08-08",
+      "object": "EL MONTAJE E INSTALACIÓN DE ARTÍCULOS METÁLICOS, LA PRESTACIÓN DE SERVICIOS DE LIMPIEZA Y EL TRANSPORTE DE MERCANCÍAS DE TERCEROS POR CARRETERA.\r\nEN ESTE OBJETO IMPLICARÁN TODOS LOS SOCIOS TRABAJADORES SU PERSONAL TRABAJO",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/02840",
+      "_links": {
+        "self": {
+          "name": "ARRASATE-G TALDEA, S. COOP.",
+          "href": "https://api.euskadi.eus/procurements/companies/02840"
+        }
+      }
+    },
+    {
+      "name": "LEVIRA ESPAÑA, S.A.",
+      "registrationNumber": "03702",
+      "identificationNumber": "A49104367",
+      "address": "POL. IND. EL PINAR - PARCELA C-4",
+      "location": {
+        "postalCode": "49530",
+        "municipality": "Coreses",
+        "county": "Zamora",
+        "municipalityId": "053",
+        "countyId": "49"
+      },
+      "economicActivities": [
+        {
+          "id": "1.615.2",
+          "name": "Venta al por mayor de muebles",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de muebles",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.615.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2019-03-11",
+      "certificateEndDate": "2019-09-11",
+      "object": "LA FABRICACIÓN, PROMOCIÓN, CONSTRUCCIÓN, COMERCIALIZACIÓN, DISTRIBUCIÓN, INSTALACIÓN, MONTAJE Y VENTA AL POR MAYOR Y AL POR MENOR DE: MUEBLES DE LUJO, MUEBLES EN GENERAL, MUEBLES DE OFICINA, LÁMPARAS DE ALUMBRADO, CUADROS Y POSTALES; ELECRODOMÉSTICOS, VIDEO Y TELEVISIÓN, APARATOS DE SONIDO, MÁQUINAS FOTOGRÁFICAS Y APARATOS DE ÓPTICA, GAFAS Y LENTES PARA VER, VENTA Y CAMBIO DE PELÍCULAS DE VIDEO Y CINE, COCHES, SILLAS, PARQUES Y ANDADORES PARA BEBÉ; VAJILLAS, CRISTALERÍAS Y MENAJE DE COCINA; ARTÍCULOS DE FERRETERÍA EN GENERAL; JUGUETES; PEQUEÑOS APARATOS ELECTRODOMÉSTICOS; DISCOS Y CASSETES MUSICALES; ORDENADORES Y TODOS SUS COMPONENTES; MATERIAL ELECTRICO; BOMBILLAS Y FLUORESCENTES; MÁQUINAS DE ESCRIBIR Y CALCULAR; MALETAS, BOLSOS Y ARTÍCULOS DE VIAJE; BICICLETAS Y CICLOMOTORES; COCHES DE TRACCIÓN MECÁNICA; APARATOS SANITARIOS PARA CUARTOS DE BAÑO; ARTÍCULOS DE LIBRERÍA Y PAPELERÍA; CERÁMICA, BRONCES Y TODOS ARTÍCULOS DE REGALO, ESTANTERÍAS METÁLICAS; MOQUETAS DE SUELO Y MURALES; PAVIMENTOS CERÁMICOS Y PLÁSTICOS DE SUELO Y MURALES; CEMENTOS Y PEGAMENTOS; MATERIALES DE CONSTRUCCIÓN; BEBIDAS REFESCANTES Y ALCOHÓLICAS; COMESTIBLES Y ALIMENTACÓN EN GENEAL, CONFECCIONES DE SEÑORA Y CABALLERO; CONFECCIONES DE NIÑO Y JUVENIL; TEJIDOS Y LANAS; JOYERÍA, RELOJERÍA Y BISUTERÍA; MECHEROS Y ARTÍCULOS DE FUMADOR; ARTÍCULOS DEPORTIVOS; ARTÍCULOS DE CAZA Y PESCA; PERFUMERÍA Y DROGUERÍA; ROPA INTERIOR PARA SEÑORA Y CABALLERO; AGENCIA DE VIAJES; ÚTILES Y HERRAMIENTAS PARA JARDÍN Y PISCINAS; CONFITERÍA Y PASTELERÍA; ABONOS Y SEMILLAS; MÁQUINAS Y HERRAMIENTAS PARA LA INDUSTRIA Y LA CONSTRUCCIÓN; APARATOS Y MOBILIARIO MÉDICO Y CLÍNICO",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03702",
+      "_links": {
+        "self": {
+          "name": "LEVIRA ESPAÑA, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/03702"
+        }
+      }
+    },
+    {
+      "name": "SERVICIOS CREATIVOS BOSTNAN S.L",
+      "registrationNumber": "06107",
+      "identificationNumber": "B20735171",
+      "address": "PARQUE EMPRESARIAL ZUATZU, C/ZUATZU Nº 6 EDIF. BIDASOA 1 BAJO",
+      "location": {
+        "postalCode": "20018",
+        "municipality": "Donostia / San Sebastián",
+        "county": "Gipuzkoa",
+        "municipalityId": "069",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.844",
+          "name": "Servicios de publicidad, relaciones públicas y similares",
+          "_links": {
+            "self": {
+              "name": "Servicios de publicidad, relaciones públicas y similares",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.844"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2019-03-07",
+      "certificateEndDate": "2019-08-20",
+      "object": "LA PRODUCCIÓN Y SERVICIOS DE COMUNIDAD INTEGRAL. LA PRESTACIÓN DE SERVICIOS DE PUBLICIDAD. LA ORGANIZACIÓN Y PROMOCIÓN DE CONGRESOS, FERIAS Y EXPOSICIONES",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06107",
+      "_links": {
+        "self": {
+          "name": "SERVICIOS CREATIVOS BOSTNAN S.L",
+          "href": "https://api.euskadi.eus/procurements/companies/06107"
+        }
+      }
+    },
+    {
+      "name": "ARJO IBERIA S.L.",
+      "registrationNumber": "06111",
+      "identificationNumber": "B67064618",
+      "address": "CALLE ALGUER 7 NAVE 4",
+      "location": {
+        "postalCode": "08130",
+        "municipality": "Santa Perpètua de Mogoda",
+        "county": "Barcelona",
+        "municipalityId": "260",
+        "countyId": "08"
+      },
+      "economicActivities": [
+        {
+          "id": "1.619.2",
+          "name": "Venta al por mayor de aparatos e instrumentos médicos, ortopédicos, ópticos",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de aparatos e instrumentos médicos, ortopédicos, ópticos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.619.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2019-03-07",
+      "certificateEndDate": "2019-07-07",
+      "object": "LA COMPRA, VENTA, INSTALACIÓN, ALQUILER Y MANTENIMIENTO DE PRODUCTOS MÉDICOS Y DE PRODUCTOS PARA MEJORAR LA CALIDAD DE VIDA DE PERSONAS MAYORES O DISCAPACITADAS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06111",
+      "_links": {
+        "self": {
+          "name": "ARJO IBERIA S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/06111"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,498 @@
+{
+  "totalItems": 9042,
+  "totalPages": 905,
+  "currentPage": 31,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "name": "HIRUROK ZERBITZUAK, S.L.",
+      "registrationNumber": "08306",
+      "identificationNumber": "B95146486",
+      "address": "GORONDA BEKOA, 2",
+      "location": {
+        "postalCode": "48150",
+        "municipality": "Sondika",
+        "county": "Bizkaia",
+        "municipalityId": "904",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.505.5",
+          "name": "Carpintería y cerrajería",
+          "_links": {
+            "self": {
+              "name": "Carpintería y cerrajería",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.505.5"
+            }
+          }
+        },
+        {
+          "id": "1.849.9",
+          "name": "Otros servicios independientes n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros servicios independientes n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.849.9"
+            }
+          }
+        },
+        {
+          "id": "1.859",
+          "name": "Alquiler de otros bienes muebles n.c.o.p. (sin personal permanente)",
+          "_links": {
+            "self": {
+              "name": "Alquiler de otros bienes muebles n.c.o.p. (sin personal permanente)",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.859"
+            }
+          }
+        },
+        {
+          "id": "1.921.4",
+          "name": "Servicios de alcantarillado, evacuación y depuración de aguas residuales",
+          "_links": {
+            "self": {
+              "name": "Servicios de alcantarillado, evacuación y depuración de aguas residuales",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.921.4"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-01-30",
+      "certificateEndDate": "2026-07-30",
+      "object": "- PRESTACIÓN DE SERVICIOS CULTURALES Y DEPORTIVOS, INCLUIDOS FISIOTERAPÉUTICOS. - COMPRAVENTA, COMERCIALIZACIÓN Y DISTRIBUCIÓN DE ACCESORIOS DE LIMPIEZA, ELEMENTOS INFORMÁTICOS, ORDENADORES, REDES TELEGRÁFICAS, TELÉFONOS, MATERIAL DE OFICINA, SOPORTES DISCOGRÁFICOS Y SOPORTES ELÉCTRICOS.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08306",
+      "_links": {
+        "self": {
+          "name": "HIRUROK ZERBITZUAK, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/08306"
+        }
+      }
+    },
+    {
+      "name": "ASIER MARINA CASTILLO",
+      "registrationNumber": "09977",
+      "identificationNumber": "14606436X",
+      "address": "BESTORRENE 12-1ºD",
+      "location": {
+        "postalCode": "48160",
+        "municipality": "Derio",
+        "county": "Bizkaia",
+        "municipalityId": "901",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.721.2",
+          "name": "Transporte por autotaxis",
+          "_links": {
+            "self": {
+              "name": "Transporte por autotaxis",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.721.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-01-30",
+      "certificateEndDate": "2026-07-30",
+      "object": "TRANSPORTE POR AUTOTAXIS.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/09977",
+      "_links": {
+        "self": {
+          "name": "ASIER MARINA CASTILLO",
+          "href": "https://api.euskadi.eus/procurements/companies/09977"
+        }
+      }
+    },
+    {
+      "name": "CARDIVA 2, S.L.",
+      "registrationNumber": "04955",
+      "identificationNumber": "B80601982",
+      "address": "CALLE ANABEL SEGURA, 11 BLOQUE A PLANTA 1ª",
+      "location": {
+        "postalCode": "28108",
+        "municipality": "Alcobendas",
+        "county": "Madrid",
+        "municipalityId": "006",
+        "countyId": "28"
+      },
+      "economicActivities": [
+        {
+          "id": "1.614.1",
+          "name": "Venta al por mayor de productos farmacéuticos y medicamentos",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de productos farmacéuticos y medicamentos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.614.1"
+            }
+          }
+        },
+        {
+          "id": "1.619.2",
+          "name": "Venta al por mayor de aparatos e instrumentos médicos, ortopédicos, ópticos",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de aparatos e instrumentos médicos, ortopédicos, ópticos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.619.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-01-30",
+      "certificateEndDate": "2026-07-02",
+      "object": " LA VENTA AL POR MAYOR DE PRÓTESIS, PRODUCTOS DE ELECTROMEDICINA, MATERIAL FUNGIBLE HOSPITALARIO Y MEDICAMENTOS, ASÍ COMO LA PRESTACIÓN DE SERVICIOS MÉDICOS O SANITARIOS, ACTIVIDAD ÉSTA ÚLTIMA EN LA QUE ACTUARÁ, EXCLUSIVAMENTE, COMO MEDIADORA EN LA CONTRATACIÓN DE LOS CORRESPONDIENTES PROFESIONALES.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/04955",
+      "_links": {
+        "self": {
+          "name": "CARDIVA 2, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/04955"
+        }
+      }
+    },
+    {
+      "name": "ASOCIACION VASCA DE MEDIACION-EUSKO BITARTEKARITZA ELKARTEA",
+      "registrationNumber": "08635",
+      "identificationNumber": "G95547832",
+      "address": "Paseo Campo Volantin 20, Planta Baja",
+      "location": {
+        "postalCode": "48007",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.849.7",
+          "name": "Servicios de gestión administrativa",
+          "_links": {
+            "self": {
+              "name": "Servicios de gestión administrativa",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.849.7"
+            }
+          }
+        },
+        {
+          "id": "1.934",
+          "name": "Enseñanza fuera de establecimiento permanente",
+          "_links": {
+            "self": {
+              "name": "Enseñanza fuera de establecimiento permanente",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.934"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-01-30",
+      "certificateEndDate": "2026-07-19",
+      "object": "DESARROLLAR PROYECTOS EDUCATIVOS Y DE MEDIACIÓN DE CONFLICTOS DESTINADOS A MEJORAR LA CONVIVENCIA EN LA FAMILIA, LA ESCUELA, EL TRABAJO Y LA COMUNIDAD. DESARROLLAR PROYECTOS SOCIALES QUE AYUDEN EN EL DESARROLLO ECONÓMICO Y SOCIAL DE PERSONAS DESFAVORECIDAS Y/O EN RIESGO DE EXCLUSIÓN SOCIAL, CREANDO A TRAVÉS DE LA MEDIACIÓN ESPACIOS DE COMUNICACIÓN ENTRE DISTINTOS COLECTIVOS SOCIALES. FOMENTAR EL CONOCIMIENTO DE LA MEDIACIÓN COMO INSTRUMENTO DE RESOLUCIÓN DE CONFLICTOS, PROMOVIENDO, ORGANIZANDO Y PARTICIPANDO EN CONFERENCIAS, DEBATES, PUBLICACIONES, ARTÍCULOS, CHARLAS Y TODO TIPO DE SOPORTES, QUE LA ASOCIACIÓN CONSIDERE ADECUADOS A ESTE FIN. MANTENER EL CONTACTO Y LA COLABORACIÓN CON OTRAS ASOCIACIONES, INSTITUCIONES, ORGANISMOS PÚBLICOS Y PRIVADOS CON COMPETENCIA EN ESTA MATERIA COLABORANDO CON ELLOS. LA ASOCIACIÓN VASCA DE MEDIACIÓN/EUSKO BITARTEKARITZA ELKARTEA (BITAR-BASK) VELARÁ ESPECIALMENTE PARA QUE LAS PERSONAS MEDIADORAS, EN EL EJERCICIO DE SU PROFESIÓN, CUMPLAN CON LAS NORMAS ÉTICAS Y DEONTOLÓGICAS QUE SEAN EXIGIDAS POR LOS COLEGIOS PROFESIONALES DE PROCEDENCIA DE LA PERSONA MEDIADORA. LA ASOCIACIÓN VASCA DE MEDIACIÓN/EUSKO BITARTEKARITZA ELKARTEA (BITAR-BASK) TENDRÁ ASIMISMO UN ESPECIAL CUIDADO EN QUE EN EL DESARROLLO DE LA LABOR DE LAS PERSONAS MEDIADORAS SE RESPETEN ESCRUPULOSAMENTE LOS PRINCIPIOS GENERALES DE LA MEDIACIÓN, COMO SON LA VOLUNTARIEDAD DE LAS PARTES QUE ACUDEN AL PROCESO, LA OBJETIVIDAD E IMPARCIALIDAD DE LA PERSONA MEDIADORA Y LA CONFIDENCIALIDAD ABSOLUTA DEL PROCEDIMIENTO. LA EDUCACIÓN EN LA CULTURA DEL DIÁLOGO Y DE LA MEDIACIÓN PARA LA RESOLUCIÓN DE CONFLICTOS Y SU DIFUSIÓN SOCIAL A TRAVÉS DE LA ACTIVIDAD DE LA ASOCIACIÓN. COOPERAR CON LAS INSTITUCIONES PÚBLICAS EN EL DISEÑO, EJECUCIÓN Y EVALUACIÓN DE POLÍTICAS SECTORIALES Y PROGRAMAS DE ACTUACIÓN DENTRO DE SU ÁMBITO, ASÍ COMO CELEBRAR CONVENIOS DE COLABORACIÓN CON ADMINISTRACIONES PÚBLICAS, UNIVERSIDADES, ASOCIACIONES EMPRESARIALES, ASOCIACIONES SIN ÁNIMO DE LUCRO. EJERCITAR TODA CLASE DE ACCIONES CONFORME A LAS LEYES Y A LOS ESTATUTOS. SER UNA ASOCIACIÓN SIN ÁNIMO DE LUCRO.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08635",
+      "_links": {
+        "self": {
+          "name": "ASOCIACION VASCA DE MEDIACION-EUSKO BITARTEKARITZA ELKARTEA",
+          "href": "https://api.euskadi.eus/procurements/companies/08635"
+        }
+      }
+    },
+    {
+      "name": "ELECTRICIDAD CUADRA, S.L.",
+      "registrationNumber": "05422",
+      "identificationNumber": "B20895660",
+      "address": "BARRENA 26 BAJO",
+      "location": {
+        "postalCode": "20600",
+        "municipality": "Eibar",
+        "county": "Gipuzkoa",
+        "municipalityId": "030",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.504.1",
+          "name": "Instalaciones eléctricas en general",
+          "_links": {
+            "self": {
+              "name": "Instalaciones eléctricas en general",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.504.1"
+            }
+          }
+        },
+        {
+          "id": "1.504.11",
+          "name": "Instalaciones eléctricas en general, redes telegráficas, telefonía, tv, etc",
+          "_links": {
+            "self": {
+              "name": "Instalaciones eléctricas en general, redes telegráficas, telefonía, tv, etc",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.504.11"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-01-30",
+      "certificateEndDate": "2026-07-22",
+      "classification": [
+        {
+          "id": "O",
+          "name": "Obras",
+          "groups": [
+            {
+              "id": "I",
+              "name": "INSTALACIONES ELÉCTRICAS",
+              "subgroups": [
+                {
+                  "id": "01",
+                  "name": "Alumbrados, iluminaciones y balizamientos",
+                  "categories": [
+                    {
+                      "id": "3",
+                      "name": "Desde 360.001 Hasta 840.000",
+                      "_links": {
+                        "self": {
+                          "name": "Desde 360.001 Hasta 840.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/O/categories/3"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "Alumbrados, iluminaciones y balizamientos",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/O/groups/I/subgroups/01"
+                    }
+                  }
+                },
+                {
+                  "id": "09",
+                  "name": "Instalaciones eléctricas sin cualificación específica",
+                  "categories": [
+                    {
+                      "id": "3",
+                      "name": "Desde 360.001 Hasta 840.000",
+                      "_links": {
+                        "self": {
+                          "name": "Desde 360.001 Hasta 840.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/O/categories/3"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "Instalaciones eléctricas sin cualificación específica",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/O/groups/I/subgroups/09"
+                    }
+                  }
+                }
+              ],
+              "_links": {
+                "self": {
+                  "name": "INSTALACIONES ELÉCTRICAS",
+                  "href": "https://api.euskadi.eus/procurements/companies/types/O/groups/I"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Obras",
+              "href": "https://api.euskadi.eus/procurements/companies/types/O"
+            }
+          }
+        }
+      ],
+      "object": "LA INSTALACIÓN, REPARACIÓN Y VENTA DE INSTALACIONES ELÉCTRICAS Y ELECTRÓNICAS PARA USOS URBANOS E INDUSTRIALES, EN TODA CLASES DE EDIFICIOS, ASÍ COMO CUALQUIER OTRO TIPO DE INSTALACIONES AFINES A LAS MISMAS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/05422",
+      "_links": {
+        "self": {
+          "name": "ELECTRICIDAD CUADRA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/05422"
+        }
+      }
+    },
+    {
+      "name": "SERVEO SOCIAL, S.L.",
+      "registrationNumber": "07021",
+      "identificationNumber": "B85621159",
+      "address": "Calle Quintanavides, 21-ED5",
+      "location": {
+        "postalCode": "28050",
+        "municipality": "Madrid",
+        "county": "Madrid",
+        "municipalityId": "079",
+        "countyId": "28"
+      },
+      "economicActivities": [
+        {
+          "id": "1.951",
+          "name": "Asistencia y servicios sociales en centros residenciales",
+          "_links": {
+            "self": {
+              "name": "Asistencia y servicios sociales en centros residenciales",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.951"
+            }
+          }
+        },
+        {
+          "id": "1.952",
+          "name": "Asistencia y servicios sociales en centros no residenciales",
+          "_links": {
+            "self": {
+              "name": "Asistencia y servicios sociales en centros no residenciales",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.952"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-01-30",
+      "certificateEndDate": "2026-07-11",
+      "object": "1) LA PRESTACIÓN DE SERVICIOS SOCIALES, SANITARIOS, EDUCATIVOS Y DE OCIO, MEDIANTE PERSONAL CUALIFICADO, EN CENTROS PROPIOS O DE TERCEROS, A LOS SIGUIENTES COLECTIVOS: PERSONAS MAYORES, INFANCIA, ADOLESCENCIA, JUVENTUD, FAMILIA, MUJER, DISCAPACITADOS FÍSICOS E INTELECTUALES, TOXICÓMANOS, RECLUSOS, INMIGRANTES, ENFERMOS MENTALES, ASÍ COMO TODOS AQUELLOS SECTORES DE POBLACIÓN EN SITUACIÓN DE DEPENDENCIA O NECESIDAD. TAREAS DE ACOMPAÑAMIENTO Y TRANSPORTE SANITARIO, SOCIAL O EDUCATIVO, ASÍ COMO ASISTENCIA MÉDICA Y DE ENFERMERÍA A DOMICILIO. HOSPITALIZACIÓN A DOMICILIO. SERVICIOS DE AYUDA A DOMICILIO, ASISTENCIA SOCIO-SANITARIA Y TELEASISTENCIA. CNAE: 8890. 2) EXPLOTACIÓN, GESTIÓN PARCIAL O INTEGRAL, CONSTRUCCIÓN Y EDIFICACIÓN DE: CENTROS RESIDENCIALES, CENTROS DE DÍA Y DE NOCHE, CENTROS DE MAYORES, CENTROS EDUCATIVOS, APARTAMENTOS TUTELADOS, COMUNIDADES TERAPÉUTICAS, CASAS DE ACOGIDA PARA INMIGRANTES Y VÍCTIMAS DE LA VIOLENCIA DE GÉNERO, ASÍ COMO DE CUALQUIER OTRO CENTRO DE CARÁCTER SOCIAL, ASISTENCIAL. REHABILITADOR, EDUCATIVO O DE OCIO. 3) PRESTACIÓN DE SERVICIOS DE LIMPIEZA DE TODO TIPO DE EDIFICIOS, INMUEBLES E INFRAESTRUCTURAS EN GENERAL, CUALQUIERA QUE FUERE SU DESTINO. 4) PRESTACIÓN DE SERVICIOS DE GESTIÓN Y MANTENIMIENTO INTEGRAL DE TODO TIPO DE EDIFICIOS, INMUEBLES E INFRAESTRUCTURAS EN GENERAL CUALQUIERA QUE FUERE SU DESTINO. 5) PRESTACIÓN DE SERVICIOS AUXILIARES EN TODO TIPO DE EDIFICIOS, INMUEBLES E INFRAESTRUCTURAS EN GENERAL, POR MEDIO DE CONSERJES, ORDENANZAS, BEDELES, HUJIERES, CELADORES O CONTROLADORES, OPERADORES DE CONSOLA, PERSONAL DE SALA, PORTEROS, RECEPCIONISTAS, TAQUILLEROS (INCLUYENDO RECOGIDA DE ENTRADAS), TELEFONISTAS, ACOMODADORES, COBRADORES, CUIDADORES, SOCORRISTAS, AZAFATAS Y PROFESIONALES AFINES O QUE COMPLEMENTEN SUS FUNCIONES, CONSISTENTES EN EL MANTENIMIENTO Y LA CONSERVACIÓN DE LOS LOCALES, ASÍ COMO EN LA ATENCIÓN Y SERVICIO A LOS VECINOS, OCUPANTES, VISITANTES Y/O USUARIOS. 6) PRESTACIÓN DE SERVICIOS DE RESTAURACIÓN A COLECTIVIDADES: ELABORACIÓN, CONDIMENTACIÓN Y DISTRIBUCIÓN DE COMIDAS (CATERING) PARA CONSUMO PROPIO O SUMINISTRO ATERCEROS, INCLUÍDA LA MANIPULACIÓN, EMBALAJE Y DISTRIBUCIÓN DE PRODUCTOS ALIMENTICIOS O DE CONSUMO. 7) PRESTACIÓN DE SERVICIOS DE LIMPIEZA, LAVADO, PLANCHADO, CLASIFICACIÓN Y TRANSPORTE DE ROPA. 8) ELABORACIÓN, DESARROLLO Y TRAMITACIÓN DE TODO TIPO DE ESTUDIOS Y PROYECTOS TÉCNICOS RELACIONADOS CON LOS TEMAS YA EXPUESTOS. 9) FORMACIÓN PROFESIONAL Y CONTINUA DE LAS PERSONAS QUE PRESTEN LOS SERVICIOS DESCRITOS ANTERIORMENTE; DESARROLLO DE PLANES DE SELECCIÓN Y FORMACIÓN PARA OTRAS ENTIDADES",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07021",
+      "_links": {
+        "self": {
+          "name": "SERVEO SOCIAL, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/07021"
+        }
+      }
+    },
+    {
+      "name": "INTEGRACIÓN DE CONTROL Y MANTENIMIENTO EN EDIFICIOS, S.L.",
+      "registrationNumber": "08667",
+      "identificationNumber": "B02983773",
+      "address": "CALLE ITALIA, 8 - BAJO 1",
+      "location": {
+        "postalCode": "26007",
+        "municipality": "Logroño",
+        "county": "Rioja, La",
+        "municipalityId": "089",
+        "countyId": "26"
+      },
+      "economicActivities": [
+        {
+          "id": "1.504.1",
+          "name": "Instalaciones eléctricas en general",
+          "_links": {
+            "self": {
+              "name": "Instalaciones eléctricas en general",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.504.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-01-30",
+      "certificateEndDate": "2026-07-30",
+      "object": "1º. SERVICIOS INTEGRALES DE GESTIÓN, CONTROL Y MANTENIMIENTO PARA EDIFICIOS RESIDENCIALES O INDUSTRIALES, Y SUS INSTALACIONES. 2º. INSTALACIÓN, INTEGRACIÓN E INTERMEDIACIÓN EN EL PROCESO CONSTRUCTIVO, DE REHABILITACIÓN O REFORMA DE INMUEBLES DE TODO TIPO DE INSTALACIONES ELÉCTRICAS, DE TELECOMUNICACIÓN, DOMÓTICA Y AUTOMATIZACIÓN, VIGILANCIA Y SEGURIDAD, CONTROL, GENERACIÓN ENERGÉTICA Y CLIMATIZACIÓN. OTRAS INSTALACIONES EN OBRAS DE CONSTRUCCIÓN. 3º. LA VENTA, FABRICACIÓN, DESARROLLO E INVESTIGACIÓN, DISTRIBUCIÓN, COMERCIALIZACIÓN Y MANTENIMIENTO DE TODA CLASE DE PRODUCTOS, APLICACIONES INFORMÁTICAS, DISPOSITIVOS Y SISTEMAS DOMÓTICOS, DE CONTROL, DE GESTIÓN ENERGÉTICA, DE SEGURIDAD Y VIGILANCIA, DE BIENESTAR Y COMUNICACIÓN, Y SISTEMAS AUTOMATIZADOS EN GENERAL PARA VIVIENDAS Y EDIFICIOS. 4º. ASESORAMIENTO Y ACTIVIDADES DE FORMACIÓN EN DOMÓTICA, SISTEMAS AUTOMATIZADOS DE CONTROL E INSTALACIONES PARA LA CONSTRUCCIÓN Y REFORMA DE TODA CLASE DE INMUEBLES Y EDIFICIOS, SEAN RESIDENCIALES, COMERCIALES O INDUSTRIALES. 5º. LA ADQUISICIÓN POR CUALQUIER TÍTULO, ADMINISTRACIÓN, GESTIÓN, DISFRUTE Y ENAJENACIÓN DE ACCIONES Y PARTICIPACIONES REPRESENTATIVAS DEL CAPITAL DE CUALQUIER CLASE DE SOCIEDADES OBLIGACIONES O CUALQUIER OTRO TÍTULO DE RENTA FIJA. 6º. ADMINISTRAR Y GESTIONAR EL CONJUNTO DE INVERSIONES MOBILIARIAS E INMOBILIARIAS PROPIAS O LAS ACTIVIDADES EMPRESARIALES DE SUS SOCIEDADES PARTICIPADAS.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08667",
+      "_links": {
+        "self": {
+          "name": "INTEGRACIÓN DE CONTROL Y MANTENIMIENTO EN EDIFICIOS, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/08667"
+        }
+      }
+    },
+    {
+      "name": "INGENIERÍA CARTOGRÁFICA GAROA, S.L.",
+      "registrationNumber": "02034",
+      "identificationNumber": "B01225192",
+      "address": "PASEO SALVADOR AZPIAZU, 6 - BAJO",
+      "location": {
+        "postalCode": "01008",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.843.4",
+          "name": "Servicios técnicos de topografía",
+          "_links": {
+            "self": {
+              "name": "Servicios técnicos de topografía",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.4"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-01-30",
+      "certificateEndDate": "2026-07-30",
+      "object": "EL ESTUDIO Y REPRESENTACIÓN DE LA FORMA Y DIMENSIONES DE LA TIERRA; LA ELABORACIÓN DE TODO TIPO DE CARTOGRAFÍA, MAPAS Y PLANOS; LA ASISTENCIA EN EJECUCIÓN Y CONTROL GEOMÉTRICO DE OBRAS PÚBLICAS Y PRIVADAS; LOS SERVICIOS DE TRATAMIENTO ANALÍTICO Y DIGITAL DE INFORMACIÓN GEOGRÁFICA; LA ELABORACIÓN Y DIRECCIÓN DE PROYECTOS EN EL ÁMBITO RURAL Y MEDIO AMBIENTE",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/02034",
+      "_links": {
+        "self": {
+          "name": "INGENIERÍA CARTOGRÁFICA GAROA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/02034"
+        }
+      }
+    },
+    {
+      "name": "EUROGAP, S.L.",
+      "registrationNumber": "03086",
+      "identificationNumber": "B20323424",
+      "address": "P. EMPRESARIAL ZUATZU. EDIF.ZURRIOLA 1º-LOCAL 3",
+      "location": {
+        "postalCode": "20018",
+        "municipality": "Donostia / San Sebastián",
+        "county": "Gipuzkoa",
+        "municipalityId": "069",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.847",
+          "name": "Servicios de consultoría",
+          "_links": {
+            "self": {
+              "name": "Servicios de consultoría",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.847"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-01-30",
+      "certificateEndDate": "2026-07-22",
+      "object": "CUALQUIER TIPO DE ANÁLISIS, DIAGNÓSTICO, SEGUIMIENTO, CONTROL Y ASESORAMIENTO EN LAS  ÁREAS DE MARKETING Y COMERCIAL, Y CUANTOS ACTOS ESTÉN RELACIONADOS CON DICHO OBJETO",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03086",
+      "_links": {
+        "self": {
+          "name": "EUROGAP, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/03086"
+        }
+      }
+    },
+    {
+      "name": "BEGUIRI MATERIAL OFICINA, S. L.",
+      "registrationNumber": "07955",
+      "identificationNumber": "B20634010",
+      "address": "Pª Ubarburu, 5",
+      "location": {
+        "postalCode": "20014",
+        "municipality": "Donostia / San Sebastián",
+        "county": "Gipuzkoa",
+        "municipalityId": "069",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.659.4",
+          "name": "Venta al por menor de libros, periódicos y artículos de papelería y escritorio",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de libros, periódicos y artículos de papelería y escritorio",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.659.4"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-01-30",
+      "certificateEndDate": "2026-07-30",
+      "object": "LA COMPRA-VENTA DE MATERIALES, MOBILIARIO Y MAQUINARIA DE OFICINA, CONSUMIBLES Y DERIVADOS.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07955",
+      "_links": {
+        "self": {
+          "name": "BEGUIRI MATERIAL OFICINA, S. L.",
+          "href": "https://api.euskadi.eus/procurements/companies/07955"
+        }
+      }
+    }
+  ]
+}

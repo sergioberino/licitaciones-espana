@@ -1,0 +1,474 @@
+{
+  "totalItems": 9042,
+  "totalPages": 905,
+  "currentPage": 271,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "name": "EUSKALGINTZA BULEGOA ITZULPENAK, S.L.",
+      "registrationNumber": "05426",
+      "identificationNumber": "B95375184",
+      "address": "IBARGUTI 1",
+      "location": {
+        "postalCode": "48192",
+        "municipality": "Gordexola",
+        "county": "Bizkaia",
+        "municipalityId": "042",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.849.3",
+          "name": "Servicios de traducción y similares",
+          "_links": {
+            "self": {
+              "name": "Servicios de traducción y similares",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.849.3"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-09-16",
+      "certificateEndDate": "2026-03-16",
+      "classification": [
+        {
+          "id": "S",
+          "name": "Servicios",
+          "groups": [
+            {
+              "id": "T",
+              "subgroups": [
+                {
+                  "id": "05",
+                  "name": "Servicios de traductores e intérpretes",
+                  "categories": [
+                    {
+                      "id": "2",
+                      "name": "Desde 150.001 Hasta 300.000",
+                      "_links": {
+                        "self": {
+                          "name": "Desde 150.001 Hasta 300.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/S/categories/2"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "Servicios de traductores e intérpretes",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/T/subgroups/05"
+                    }
+                  }
+                }
+              ],
+              "_links": {
+                "self": {
+                  "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/T"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Servicios",
+              "href": "https://api.euskadi.eus/procurements/companies/types/S"
+            }
+          }
+        }
+      ],
+      "object": "A) .- LA ADQUISICIÓN POR CUALQUIER TÍTULO DE FINCAS RÚSTICAS O URBANAS, LA CONSTRUCCIÓN DE ESTAS Y LA ADMINISTRACIÓN, TENENCIA, EXPLOTACIÓN Y ARRENDAMIENTO DE TALES BIENES Y SU VENTA TOTAL O PARCIAL, SEGÚN CONVENGA PARA SU APROVECHAMIENTO FORESTAL, AGRÍCOLA, URBANO, INDUSTRIAL O CUALQUIER OTRO, A REALIZAR TODO ELLO POR CUENTA PROPIA. B) .- LA ADQUISICIÓN, CESIÓN, TENENCIA Y DISFRUTE EN GENERAL DE TODA CLASE DE TÍTULOS Y VALORES MOBILIARIOS, SIN INCIDIR EN LAS OPERACIONES REGULADAS POR LA LEY DEL MERCADO DE VALORES 24/1.988 DE 28 DE JULIO, Y LAS DISPOSICIONES QUE LA DESARROLLAN. C) .- EL ASESORAMIENTO DE PERSONAS FÍSICAS Y JURÍDICAS, TANTO FISCAL COMO JURÍDICO, FINANCIERO O DE CUALQUIER OTRO TIPO; EL ESTUDIO, INVESTIGACIÓN, PROMOCIÓN Y PRESTACIÓN A TODA CLASE DE SERVICIOS DE ASISTENCIA Y GESTIÓN, TÉCNICA, ADMINISTRATIVA, COMERCIAL Y CONTABLE, TODO ELLO A TRAVÉS DE PERSONAS CON TITULACIÓN PARA ELLO. D) .-LA PRESTACIÓN DE SERVICIOS DE SELECCIÓN, CONTRATACIÓN Y FORMACIÓN DE PERSONAL; REALIZACIÓN DE TRADUCCIONES, ASÍ COMO LA PRESTACIÓN DE SERVICIOS PERSONALES A OTRAS EMPRESAS. E) .- TRADUCCIÓN DE TEXTOS, SIMULTANEA O INTERPRETACIÓN",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/05426",
+      "_links": {
+        "self": {
+          "name": "EUSKALGINTZA BULEGOA ITZULPENAK, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/05426"
+        }
+      }
+    },
+    {
+      "name": "DEASTERRA PARTNERS, S.L.",
+      "registrationNumber": "07570",
+      "identificationNumber": "B01729870",
+      "address": "CALLE GOYA, NÚMERO 29, 2 PLANTA",
+      "location": {
+        "postalCode": "28001",
+        "municipality": "Madrid",
+        "county": "Madrid",
+        "municipalityId": "079",
+        "countyId": "28"
+      },
+      "economicActivities": [
+        {
+          "id": "1.832.1",
+          "name": "Agencias de seguros y corredurías de seguros",
+          "_links": {
+            "self": {
+              "name": "Agencias de seguros y corredurías de seguros",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.832.1"
+            }
+          }
+        },
+        {
+          "id": "1.849.9",
+          "name": "Otros servicios independientes n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros servicios independientes n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.849.9"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-09-16",
+      "certificateEndDate": "2026-03-15",
+      "object": "LA REALIZACIÓN DE ACTIVIDADES DE DISTRIBUCIÓN DE SEGUROS COMO CORREDOR DE SEGUROS Y COMO CORREDOR DE REASEGUROS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07570",
+      "_links": {
+        "self": {
+          "name": "DEASTERRA PARTNERS, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/07570"
+        }
+      }
+    },
+    {
+      "name": "KOPIDIN, S.L.",
+      "registrationNumber": "06562",
+      "identificationNumber": "B20485801",
+      "address": "ZUBIBERRI BIDEA, 29",
+      "location": {
+        "postalCode": "20018",
+        "municipality": "Donostia / San Sebastián",
+        "county": "Gipuzkoa",
+        "municipalityId": "069",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.330",
+          "name": "Construcción de máquinas de oficina y ordenadores",
+          "_links": {
+            "self": {
+              "name": "Construcción de máquinas de oficina y ordenadores",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.330"
+            }
+          }
+        },
+        {
+          "id": "1.617.8",
+          "name": "Venta al por mayor de máquinas y material de oficina",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de máquinas y material de oficina",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.617.8"
+            }
+          }
+        },
+        {
+          "id": "1.692",
+          "name": "Reparación de maquinaria industrial",
+          "_links": {
+            "self": {
+              "name": "Reparación de maquinaria industrial",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.692"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-09-16",
+      "certificateEndDate": "2026-03-16",
+      "object": "LA COMPRAVENTA AL POR MAYOR Y REPARACIÓN DE ARTÍCULOS Y MATERIAL DE OFICINA E INFORMÁTICA",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06562",
+      "_links": {
+        "self": {
+          "name": "KOPIDIN, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/06562"
+        }
+      }
+    },
+    {
+      "name": "CONTENOR, S.L.",
+      "registrationNumber": "08041",
+      "identificationNumber": "B48193304",
+      "address": "Polígono Industrial Trapaga -Ugarte s/n",
+      "location": {
+        "postalCode": "48510",
+        "municipality": "Valle de Trápaga-Trapagaran",
+        "county": "Bizkaia",
+        "municipalityId": "080",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.622",
+          "name": "Venta al por mayor de otros productos de recuperación",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de otros productos de recuperación",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.622"
+            }
+          }
+        },
+        {
+          "id": "1.722",
+          "name": "Transporte de mercancías por carretera",
+          "_links": {
+            "self": {
+              "name": "Transporte de mercancías por carretera",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.722"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-09-16",
+      "certificateEndDate": "2026-03-16",
+      "object": "A.- GESTIÓN Y COMERCIO DE DESECHOS NUEVOS DE LA INDUSTRIA, DESPERDICIOS Y DESECHOS DE FUNDICIÓN, RESIDUOS Y DEMÁS MATERIALES DE RECUPERACIÓN CONSTITUIDOS POR METALES FÉRRICOS Y NO FÉRRICOS, SUS ALEACIONES, ESCORIAS, CENIZAS Y RESIDUOS DE LA INDUSTRIA QUE CONTENGAN METALES O SUS ALEACIONES. B.- LAS OPERACIONES DE SELECCIÓN, CORTE, FRAGMENTACIÓN Y PRENSADO QUE SE EFECTÚEN SOBRE LOS PRODUCTOS CITADOS. C.- GESTIÓN Y COMERCIO DE DESPERDICIOS O DESECHOS DE PAPEL, PLÁSTICO, CARTÓN O VIDRIO, Y RESIDUOS DE CONSTRUCCIÓN Y DEMOLICIÓN. D.- GESTIÓN INTEGRAL DE RESIDUOS. E.- LA REALIZACIÓN DE TODA CLASE DE TRANSPORTES DE MERCANCÍAS, POR CUENTA AJENA, CON VEHÍCULOS CONTENEDORES. F.- EL ALMACENAMIENTO, DEPÓSITO Y DISTRIBUCIÓN DE MERCANCÍAS, PRODUCTOS, ARTÍCULOS Y MATERIAS DE TODA CLASE Y EN GENERAL DE BIENES MUEBLES. G.- LA ADQUISICIÓN POR CUALQUIER TÍTULO DE FINCAS RÚSTICAS Y URBANAS, LA CONSTRUCCIÓN DE ÉSTOS Y LA ADMINISTRACIÓN, TENENCIA, EXPLOTACIÓN Y ARRENDAMIENTO DE TALES BIENES Y SU VENTA TOTAL O PARCIAL, SEGÚN CONVENGA.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08041",
+      "_links": {
+        "self": {
+          "name": "CONTENOR, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/08041"
+        }
+      }
+    },
+    {
+      "name": "JOSELU GARBIKETA, S.L.",
+      "registrationNumber": "09859",
+      "identificationNumber": "B16452773",
+      "address": "Barrio Kurtze (48640) 1",
+      "location": {
+        "postalCode": "48640",
+        "municipality": "Berango",
+        "county": "Bizkaia",
+        "municipalityId": "016",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.722",
+          "name": "Transporte de mercancías por carretera",
+          "_links": {
+            "self": {
+              "name": "Transporte de mercancías por carretera",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.722"
+            }
+          }
+        },
+        {
+          "id": "1.921.1",
+          "name": "Servicios de limpieza en calles, vías públicas y jardines",
+          "_links": {
+            "self": {
+              "name": "Servicios de limpieza en calles, vías públicas y jardines",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.921.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-09-16",
+      "certificateEndDate": "2026-03-16",
+      "object": "SERVICIO DE LIMPIEZA DE CALLES, VÍAS PÚBLICAS Y JARDINES. C.N.A.E.: 9211. TRANSPORTE DE MERCANCÍAS POR CARRETERA. C.N.A.E.: 4941.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/09859",
+      "_links": {
+        "self": {
+          "name": "JOSELU GARBIKETA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/09859"
+        }
+      }
+    },
+    {
+      "name": "ANTONIO CANOVAS ARCEREDILLO",
+      "registrationNumber": "09860",
+      "identificationNumber": "72752534S",
+      "address": "c/ Aita Elorriaga 21, 1º izq",
+      "location": {
+        "postalCode": "48100",
+        "municipality": "Mungia",
+        "county": "Bizkaia",
+        "municipalityId": "069",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "2.411",
+          "name": "Arquitectos",
+          "_links": {
+            "self": {
+              "name": "Arquitectos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/2.411"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-09-16",
+      "certificateEndDate": "2026-03-16",
+      "object": "ARQUITECTOS.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/09860",
+      "_links": {
+        "self": {
+          "name": "ANTONIO CANOVAS ARCEREDILLO",
+          "href": "https://api.euskadi.eus/procurements/companies/09860"
+        }
+      }
+    },
+    {
+      "name": "FUNDACIÓN BIZITZEN",
+      "registrationNumber": "02605",
+      "identificationNumber": "G95186896",
+      "address": "MURUETA TORRE, 8E BAJO",
+      "location": {
+        "postalCode": "48200",
+        "municipality": "Durango",
+        "county": "Bizkaia",
+        "municipalityId": "027",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.932.1",
+          "name": "Enseñanza de formación y perfeccionamiento profesional no superior",
+          "_links": {
+            "self": {
+              "name": "Enseñanza de formación y perfeccionamiento profesional no superior",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.932.1"
+            }
+          }
+        },
+        {
+          "id": "1.936",
+          "name": "Investigación científica y técnica",
+          "_links": {
+            "self": {
+              "name": "Investigación científica y técnica",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.936"
+            }
+          }
+        },
+        {
+          "id": "1.952",
+          "name": "Asistencia y servicios sociales en centros no residenciales",
+          "_links": {
+            "self": {
+              "name": "Asistencia y servicios sociales en centros no residenciales",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.952"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-09-16",
+      "certificateEndDate": "2026-03-16",
+      "object": "FUNDACIÓN BIZITZEN DESARROLLARÁ SUS ACCIONES EN EL ÁMBITO DE LOS SERVICIOS SOCIOSANITARIOS, SERVICIOS DE PROXIMIDAD COMUNITARIOS Y SERVICIOS SOCIALES EN GENERAL, CON EL FIN DE MEJORAR LA CALIDAD DE VIDA DE LAS PERSONAS USUARIAS DE ESTOS SERVICIOS Y DE FOMENTAR EL EMPLEO DE PERSONAS, PRIORITARIAMENTE MUJERES, EN SITUACIÓN DE DIFÍCIL INCORPORACIÓN SOCIOLABORAL. GESTIONAR SERVICIOS Y/O CENTROS RELACIONADOS CON LOS ÁMBITOS DE ACTUACIÓN DE LA ENTIDAD (RESIDENCIAS, CENTROS DE DÍA, SERVICIOS PSICO-SOCIALES, SERVICIOS PSICOGERIÁTRICOS Y/O DE ANIMACIÓN SOCIOCULTURAL, SERVICIOS GERONTOLÓGICOS, SERVICIOS DE AYUDA A DOMICILIO, SERVICIOS PSICOLÓGICOS, SERVICIOS PARA LA IGUALDAD ENTRE MUJERES Y HOMBRES, ETC.). PROMOVER LA CREACIÓN DE EMPRESAS DE INSERCIÓN, PREFERENTEMENTE DE ECONOMÍA SOCIAL O SOLIDARIA, EN LAS QUE PARTICIPEN PERSONAS, PRIORITARIAMENTE MUJERES, Y/O EN RIESGO DE EXCLUSIÓN. PROMOVER, DESARROLLAR Y REALIZAR INVESTIGACIONES EN EL CAMPO SOCIAL, PSICOSOCIAL, EDUCATIVO Y CULTURAL TENDENTES A MEJORAR LAS PRÁCTICAS PROFESIONALES Y LA CALIDAD DE LOS SERVICIOS EN LAS PERSONAS MAYORES, MUJERES, PERSONAS EN SITUACIÓN DE DEPENDENCIA Y SUS FAMILIARES. REALIZAR ESTUDIOS DE MERCADO, PARA ENTIDADES PÚBLICAS Y/O PRIVADAS, QUE FACILITEN LA CREACIÓN DE EMPRESAS CUYO OBJETIVO SEA LA INCORPORACIÓN SOCIAL-LABORAL DE LAS PERSONAS MENCIONADAS EN EL APARTADO PRIMERO. IMPARTIR FORMACIÓN CONTINUA Y OCUPACIONAL RELACIONADA CON LOS SERVICIOS SOCIALES, SERVICIOS DE IGUALDAD DE MUJERES Y HOMBRES, SERVICIOS SOCIOSANITARIOS Y DE PROXIMIDAD COMUNITARIOS Y EL ENVEJECIMIENTO. PROMOVER SERVICIOS Y CAMPAÑAS DE SENSIBILIZACIÓN CIUDADANA Y DE INFORMACIÓN QUE EXTIENDA SOCIALMENTE Y PONGA EN VALOR LA CONTRIBUCIÓN HISTÓRICA Y ACTUAL DE LAS MUJERES Y DE LOS SERVICIOS SOCIALES, SOCIOSANITARIOS Y DE PROXIMIDAD COMUNITARIOS Y SU CALIDAD, ASÍ COMO CAMPAÑAS QUE SENSIBILICEN SOBRE LA DISCRIMINACIÓN Y/O ESTEREOTIPIFICACIÓN DE LAS PERSONAS MAYORES, ESPECIALMENTE LA DE LAS MUJERES MAYORES. APOYAR, PROMOVER Y DESARROLLAR PROYECTOS Y SERVICIOS DE INTERVENCIÓN PSICOSOCIAL ASÍ COMO FOMENTAR LA REALIZACIÓN PRÁCTICAS INNOVADORAS EN EL TRABAJO CON PERSONAS MAYORES, PERSONAS EN RIESGO DE DEPENDENCIA Y/O DEPENDIENTES Y SUS FAMILIARES. DESARROLLAR ACCIONES DIRIGIDAS A LA PROMOCIÓN Y EMPODERAMIENTO DE TODAS LAS MUJERES Y LA REMOCIÓN DE LOS OBSTÁCULOS QUE IMPIDAN SU PLENITUD DE HECHO Y DE DERECHO CONTRIBUYENDO ASÍ A LA GENERACIÓN DE COMUNIDADES MÁS INCLUSIVAS Y COHESIONADAS. PROMOVER CAMPAÑAS DE SENSIBILIZACIÓN Y CONCIENCIACIÓN CIUDADANA EN EL ÁMBITO DE LOS CUIDADOS Y DE LA CORRESPONSABILIDAD PARA LA PROMOCIÓN DE LAS CONDICIONES QUE FACILITEN LA IGUALDAD ENTRE LOS SEXOS, PONIENDO EN VALOR LA CONTRIBUCIÓN DE LAS MUJERES AL DESARROLLO ECONÓMICO Y SOCIAL DE NUESTRAS COMUNIDADES",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/02605",
+      "_links": {
+        "self": {
+          "name": "FUNDACIÓN BIZITZEN",
+          "href": "https://api.euskadi.eus/procurements/companies/02605"
+        }
+      }
+    },
+    {
+      "name": "APHYRMA INGENIERIA SL",
+      "registrationNumber": "06145",
+      "identificationNumber": "B88000765",
+      "address": "C/ PINAR DE SOMOSAGUAS 89, EDIFICIO FORO SOMOSAGUAS, PLANTA 1 DESPACHO 16.",
+      "location": {
+        "postalCode": "28223",
+        "municipality": "Pozuelo de Alarcón",
+        "county": "Madrid",
+        "municipalityId": "115",
+        "countyId": "28"
+      },
+      "economicActivities": [
+        {
+          "id": "1.843.1",
+          "name": "Servicios técnicos de ingeniería",
+          "_links": {
+            "self": {
+              "name": "Servicios técnicos de ingeniería",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-09-16",
+      "certificateEndDate": "2026-03-16",
+      "object": "EL EJERCICIO DE LA ACTIVIDAD PROPIA DE LOS INGENIEROS DE CAMINOS, CANALES Y PUERTOS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06145",
+      "_links": {
+        "self": {
+          "name": "APHYRMA INGENIERIA SL",
+          "href": "https://api.euskadi.eus/procurements/companies/06145"
+        }
+      }
+    },
+    {
+      "name": "787 MARKETINGTECH IBERICA, S.L.",
+      "registrationNumber": "10113",
+      "identificationNumber": "B95718458",
+      "address": "C/ Ibaizabal 3E 3ºD",
+      "location": {
+        "postalCode": "48200",
+        "municipality": "Durango",
+        "county": "Bizkaia",
+        "municipalityId": "027",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.844",
+          "name": "Servicios de publicidad, relaciones públicas y similares",
+          "_links": {
+            "self": {
+              "name": "Servicios de publicidad, relaciones públicas y similares",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.844"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-09-16",
+      "certificateEndDate": "2026-03-16",
+      "object": "COMERCIALIZACIÓN, DISEÑO Y PRODUCCIÓN DE SOLUCIONES TECNOLÓGICAS (SOFTWARE Y HARDWARE). IMPORTACIÓN Y EXPORTACIÓN DE BIENES Y SERVICIOS. SERVICIOS DE CONSULTORÍA DE MARKETING Y COMUNICACIÓN. GRUPO CNAE.- KK. CÓDIGO CNAE.- 72220.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/10113",
+      "_links": {
+        "self": {
+          "name": "787 MARKETINGTECH IBERICA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/10113"
+        }
+      }
+    },
+    {
+      "name": "MULTISERVICIOS DEL NORTE SL",
+      "registrationNumber": "09307",
+      "identificationNumber": "B01964188",
+      "address": "C/GABRIEL ARESTI , 4, 1ºB",
+      "location": {
+        "postalCode": "01010",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.922",
+          "name": "Servicios de limpieza",
+          "_links": {
+            "self": {
+              "name": "Servicios de limpieza",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.922"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-09-16",
+      "certificateEndDate": "2026-03-16",
+      "object": "1. INDUSTRIA TEXTIL (CNAE 13). 2. CONFECCIÓN DE PRENDAS DE VESTIR (CNAE 14). 3. ARTES GRÁFICAS Y REPRODUCCIÓN DE SOPORTES GRABADOS (CNAE 18). 4. REPARACIÓN E INSTALACIÓN DE MAQUINARIA Y EQUIPO (CNAE 33). 5. PROMOCIÓN INMOBILIARIA (CNAE 4110). 6. ACTIVIDADE DE CONSTRUCCIÓN ESPECIALIZADA (CNAE 43) 7. COMERCIO AL POR MENOR EXCEPTO DE VEHÍCULOS DE MOTOR Y MOTOCICLETAS (CNAE 47). 8. TRANSPORTE TERRESTRE Y POR TUBERÍA (CNAE 49). 9. SERVICIOS DE ALOJAMIENTO (CNAE 55). 10. SERVICIOS DE COMIDAS Y BEBIDAS (CNAE 56). PROGRAMACIÓN, CONSULTORÍA Y OTRAS ACTIVIDADES RELACIONADAS CON LA INFORMÁTICA (CNAE 52). 12. ACTIVIDADES DE SOCIEDADES HOLDING (CNAE 64.2). 13. ACTIVIDADES INMOBILIARIAS (CNAE 68). 14. ACTIVIDADES DE ALQUILER (CNAE 77). 15. ACTIVIDADES DE AGENCIAS DE VIAJES, OPERADORES TURÍSTICOS, SERVICIOS DE RESERVAS Y ACTIVIDADES RELACIONADAS CON LOS MISMOS (CNAE 79). 16. ACTIVIDADES  ADMINISTRATIVAS DE OFICINA Y OTRAS ACTIVIDADES AUXILIARES A LAS EMPRESAS (CNAE 82). 17. ACTIVIDADES DEPORTIVAS, RECREATIVAS Y DE ENTRETENIMIENTO (CNAE 93). 18. INTERMEDIARIOS DEL COMERCIO DE PRODUCTOS DIVERSOS (CNAE 4619).",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/09307",
+      "_links": {
+        "self": {
+          "name": "MULTISERVICIOS DEL NORTE SL",
+          "href": "https://api.euskadi.eus/procurements/companies/09307"
+        }
+      }
+    }
+  ]
+}

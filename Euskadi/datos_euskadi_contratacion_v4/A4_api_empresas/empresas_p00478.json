@@ -1,0 +1,447 @@
+{
+  "totalItems": 9042,
+  "totalPages": 905,
+  "currentPage": 478,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "name": "DELTAVI, S.A.",
+      "registrationNumber": "08673",
+      "identificationNumber": "A01038421",
+      "address": "Calle Portal de Gamarra (01013) 56",
+      "location": {
+        "postalCode": "01013",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.654.1",
+          "name": "Venta al por menor de vehículos terrestres",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de vehículos terrestres",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.654.1"
+            }
+          }
+        },
+        {
+          "id": "1.691.2",
+          "name": "Reparación de vehículos automóviles, bicicletas y otros vehículos",
+          "_links": {
+            "self": {
+              "name": "Reparación de vehículos automóviles, bicicletas y otros vehículos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.691.2"
+            }
+          }
+        },
+        {
+          "id": "1.751.1",
+          "name": "Guarda y custodia de vehículos en garajes y locales cubiertos",
+          "_links": {
+            "self": {
+              "name": "Guarda y custodia de vehículos en garajes y locales cubiertos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.751.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2022-10-31",
+      "certificateEndDate": "2023-04-28",
+      "object": "LA COMERCIALIZACIÓN DE VEHÍCULOS DE TODAS CLASES, Y DE RECAMBIOS, REPUESTOS Y ACCESORIOS PARA LOS MISMOS, INCLUSO EN RÉGIMEN DE EXCLUSIVA O COMO CONCESIONARIA AUTORIZADA DE MARCAS, PATENTES O NOMBRES COMERCIALES DE TALES PRODUCTOS, ASÍ COMOO SU REPARACIÓN. LAS ACTIVIDADES DE ALBAÑILERÍA, REPARACIÓN Y CONSERVACIÓN DE EDIFICACIONES, PEQUEÑOS TRABAJOS DE CONSTRUCCIÓN, PINTURA, REALIZACIÓN DE INSTALACIONES ELÉCTRICAS Y DE FONTANERÍA, ARRENDAMIENTO Y VENTA DE BIENES INMUEBLES.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08673",
+      "_links": {
+        "self": {
+          "name": "DELTAVI, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/08673"
+        }
+      }
+    },
+    {
+      "name": "STRATEGIC GRAPHIC SYSTEMS, S.L.U.",
+      "registrationNumber": "03675",
+      "identificationNumber": "B20432258",
+      "address": "CAMINO PORTUETXE, 83-2ª PLANTA. OFICINA 5-6",
+      "location": {
+        "postalCode": "20018",
+        "municipality": "Donostia / San Sebastián",
+        "county": "Gipuzkoa",
+        "municipalityId": "069",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.999",
+          "name": "Otros servicios n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros servicios n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.999"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2022-10-30",
+      "certificateEndDate": "2023-04-30",
+      "object": "EL DESARROLLO Y COMERCIALIZACIÓN DE SISTEMAS GRÁFICOS DE INFORMACIÓN; GESTIÓN Y VENTA DE HARDWARE Y SOFTWARE, ASÍ COMO LOS SERVICIOS RELACIONADOS CON LOS MISMOS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03675",
+      "_links": {
+        "self": {
+          "name": "STRATEGIC GRAPHIC SYSTEMS, S.L.U.",
+          "href": "https://api.euskadi.eus/procurements/companies/03675"
+        }
+      }
+    },
+    {
+      "name": "EKOLAN 2000, S.L.",
+      "registrationNumber": "02499",
+      "identificationNumber": "B95129250",
+      "address": "BEKOETXE BIDEA, 12. CASA",
+      "location": {
+        "postalCode": "48950",
+        "municipality": "Erandio",
+        "county": "Bizkaia",
+        "municipalityId": "902",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.911",
+          "name": "Servicios agrícolas y ganaderos",
+          "_links": {
+            "self": {
+              "name": "Servicios agrícolas y ganaderos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.911"
+            }
+          }
+        },
+        {
+          "id": "1.912",
+          "name": "Servicios forestales",
+          "_links": {
+            "self": {
+              "name": "Servicios forestales",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.912"
+            }
+          }
+        },
+        {
+          "id": "1.921.1",
+          "name": "Servicios de limpieza en calles, vías públicas y jardines",
+          "_links": {
+            "self": {
+              "name": "Servicios de limpieza en calles, vías públicas y jardines",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.921.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2022-10-28",
+      "certificateEndDate": "2023-04-13",
+      "object": "LA PRESTACIÓN DE SERVICIOS DE JARDINERÍA Y TRABAJOS FORESTALES EN GENERAL, COMO LOS DESBROCES DE MONTES, JARDINES O REPOBLACIONES FORESTALES, DESLINDES, AMOJONAMIENTOS, CREACIÓN DE PISTAS FORESTALES, DISEÑO Y CREACIÓN DE JARDINES, MEDICIONES TOPOGRÁFICAS, ASESORAMIENTO Y CONFECCIÓN DE PROYECTOS DE JARDINERÍA. VENTA AL POR MAYOR, ASÍ COMO AL POR MENOR, DE FLORES, OBJETOS DE JARDINERÍA, MAQUINARIA AGRÍCOLA Y, EN GENERAL, TODO LO RELACIONADO CON LOS SERVICIOS Y TRABAJOS ANTERIORMENTE RELACIONADOS.\r\nEXPLOTACIÓN DE VIVEROS E INVERNADEROS.\r\nTRANSPORTE PÚBLICO DE MERCANCIAS, REALIZACIÓN DE EXCAVACIONES, OBRAS CIVILES Y OBRAS PÚBLICAS.\r\nALQUILER Y REPARACIÓN DE CUALQUIER TIPO DE MAQUINARIA RELACIONADA CON LA ACTIVIDAD DE LA EMPRESA, INCLUSO MAQUINARIA INDUSTRIAL.\r\nCOMPRA, VENTA Y REPRESENTACIONES TANTO NACIONALES COMO EXTRANJERAS DE MAQUINARIA O CUALQUIER OTRO ELEMENTO COMO CONSUMIBLES QUE SEAN PROPIOS DE LA ACTIVIDAD",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/02499",
+      "_links": {
+        "self": {
+          "name": "EKOLAN 2000, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/02499"
+        }
+      }
+    },
+    {
+      "name": "MONDRAGON LINGUA, S.COOP.",
+      "registrationNumber": "03211",
+      "identificationNumber": "F20072609",
+      "address": "ARABA ETORBIDEA, 4",
+      "location": {
+        "postalCode": "20500",
+        "municipality": "Arrasate / Mondragón",
+        "county": "Gipuzkoa",
+        "municipalityId": "055",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.659.4",
+          "name": "Venta al por menor de libros, periódicos y artículos de papelería y escritorio",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de libros, periódicos y artículos de papelería y escritorio",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.659.4"
+            }
+          }
+        },
+        {
+          "id": "1.845",
+          "name": "Explotación electrónica por cuenta de terceros",
+          "_links": {
+            "self": {
+              "name": "Explotación electrónica por cuenta de terceros",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.845"
+            }
+          }
+        },
+        {
+          "id": "1.849.3",
+          "name": "Servicios de traducción y similares",
+          "_links": {
+            "self": {
+              "name": "Servicios de traducción y similares",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.849.3"
+            }
+          }
+        },
+        {
+          "id": "1.933.9",
+          "name": "Otras actividades de enseñanza tales como idiomas, mecanografía",
+          "_links": {
+            "self": {
+              "name": "Otras actividades de enseñanza tales como idiomas, mecanografía",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.933.9"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2022-10-28",
+      "certificateEndDate": "2023-04-24",
+      "object": "LA ENSEÑANZA DE IDIOMAS, COMO MEDIO QUE POSIBILITE LAS RELACIONES CON GENTES DE OTROS PAÍSES PARA MEJOR CONOCIMIENTO Y ENTENDIMIENTO DE SU CULTURA.\nPARA EL CUMPLIMIENTO DE ESTE OBJETO, AHIZKE ATENDERÁ PREFERENTEMENTE LOS SIGUIENTES ASPECTOS: \nUNO: ENSEÑANZA DE IDIOMAS A: \n-NIÑOS Y JÓVENES EN EDAD ESCOLAR, EN COLABORACIÓN CON LOS CENTROS DOCENTES DE LA COMARCA.\n-EMPRESAS  O PARTICULARES, QUE PRECISEN O DESEEN UTILIZAR IDIOMAS EN SUS DIVERSOS NIVELES, CON  O SIN OBTENCIÓN DE TITULACIÓN OFICIAL.\nDOS:  FORMACIÓN DEL PROFESORADO EN EL DOMINIO Y DIDÁCTICA DE IDIOMAS MODERNOS.\nTRES: SERVICIO DE TRADUCCIÓN E INTERPRETACIÓN PARA LAS EMPRESAS Y PARTICULARES QUE LO PRECISEN.\nCUATRO: ACTIVIDADES COMPLEMENTARIAS PARA UN MEJOR DESARROLLO DE ESTE OBJETO.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03211",
+      "_links": {
+        "self": {
+          "name": "MONDRAGON LINGUA, S.COOP.",
+          "href": "https://api.euskadi.eus/procurements/companies/03211"
+        }
+      }
+    },
+    {
+      "name": "ZELATA S.L.",
+      "registrationNumber": "06804",
+      "identificationNumber": "B20227005",
+      "address": "Baratzategi 16 bajo",
+      "location": {
+        "postalCode": "20015",
+        "municipality": "Donostia / San Sebastián",
+        "county": "Gipuzkoa",
+        "municipalityId": "069",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.501.1",
+          "name": "Construcción completa, reparación y conservación de edificaciones",
+          "_links": {
+            "self": {
+              "name": "Construcción completa, reparación y conservación de edificaciones",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.1"
+            }
+          }
+        },
+        {
+          "id": "1.843.2",
+          "name": "Servicios técnicos de arquitectura y urbanismo",
+          "_links": {
+            "self": {
+              "name": "Servicios técnicos de arquitectura y urbanismo",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2022-10-28",
+      "certificateEndDate": "2023-04-28",
+      "hiringProhibitions": [
+        {
+          "orderingParty": "Gobierno Vasco",
+          "resolutionDate": "2022-11-02",
+          "startingDate": "2023-05-08",
+          "endingDate": "2026-05-08",
+          "scope": "Otros - Departamento de Educación del Gobierno Vasco",
+          "legalCause": "Resolución del contrato (culpable)"
+        }
+      ],
+      "object": "EL PROPIO DE LA ACTIVIDAD PROFESIONAL DE LOS ARQUITECTOS. ADEMÁS SU OBJETO ES LA COMPRA, VENTA, PARCELACIÓN Y URBANIZACIÓN DE TODA CLASE DE FINCAS RÚSTICAS O URBANAS; LA CONSTRUCCIÓN, PROMOCIÓN Y VENTA DE EDIFICACIONES EN GENERAL, YA SEA POR CUENTA PROPIA O AJENA; LA ADMINISTRACIÓN, ARRENDAMIENTO, EXPLOTACIÓN DE FINCAS Y TODA CLASE DE EDIFICACIONES Y VIVIENDAS; EL ESTUDIO, PREPARACIÓN Y EXPLOTACIÓN DE TODA CLASE DE PROYECTOS, LA REDACCIÓN DE TODO TIPO DE INFORME, LA PROMOCIÓN Y GESTIÓN DE PROYECTOS COMERCIALES E INDUSTRIALES, POR CUENTA PROPIA O AJENA. Y LA COMPRAVENTA, DETENTACIÓN Y ENAJENACIÓN DE VALORES MOBILIARIOS (SIN QUE SE CONSIDERE INCLUIDA EN LAS ACTIVIDADES REGULADAS POR LA LEY 46/84 DE 26 DE DICIEMBRE)",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06804",
+      "_links": {
+        "self": {
+          "name": "ZELATA S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/06804"
+        }
+      }
+    },
+    {
+      "name": "JOIZPE SOLUCIONES INTEGRALES DE HIGIENE, S.L.",
+      "registrationNumber": "08671",
+      "identificationNumber": "B75233551",
+      "address": "POLIGONO EZIAGO, 2  NAVE 4",
+      "location": {
+        "postalCode": "20120",
+        "municipality": "Hernani",
+        "county": "Gipuzkoa",
+        "municipalityId": "040",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.922.1",
+          "name": "Servicios de limpieza de interiores",
+          "_links": {
+            "self": {
+              "name": "Servicios de limpieza de interiores",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.922.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2022-10-28",
+      "certificateEndDate": "2023-04-28",
+      "object": "SERVICIOS DE LIMPIEZA DE INTERIORES Y EXTERIORES DE EDIFICIOS Y LOCALES; SERVICIOS DE JARDINERÍA, DISTRIBUCIÓN Y VENTA DE PRODUCTOS DE LIMPIEZA, DROGUERÍA Y PERFUMERÍA.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08671",
+      "_links": {
+        "self": {
+          "name": "JOIZPE SOLUCIONES INTEGRALES DE HIGIENE, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/08671"
+        }
+      }
+    },
+    {
+      "name": "MONI PEREZ TRUEBA",
+      "registrationNumber": "08383",
+      "identificationNumber": "22727883L",
+      "address": "MAULE KALEA Nº 3 3B",
+      "location": {
+        "postalCode": "48100",
+        "municipality": "Mungia",
+        "county": "Bizkaia",
+        "municipalityId": "069",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.933.9",
+          "name": "Otras actividades de enseñanza tales como idiomas, mecanografía",
+          "_links": {
+            "self": {
+              "name": "Otras actividades de enseñanza tales como idiomas, mecanografía",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.933.9"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2022-10-27",
+      "certificateEndDate": "2023-04-27",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08383",
+      "_links": {
+        "self": {
+          "name": "MONI PEREZ TRUEBA",
+          "href": "https://api.euskadi.eus/procurements/companies/08383"
+        }
+      }
+    },
+    {
+      "name": "CONSTRUCCIONES LANDABURU S.L.",
+      "registrationNumber": "04437",
+      "identificationNumber": "B95398137",
+      "address": "ETXATXU, 6, LONJA",
+      "location": {
+        "postalCode": "48901",
+        "municipality": "Barakaldo",
+        "county": "Bizkaia",
+        "municipalityId": "013",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.501.1",
+          "name": "Construcción completa, reparación y conservación de edificaciones",
+          "_links": {
+            "self": {
+              "name": "Construcción completa, reparación y conservación de edificaciones",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2022-10-25",
+      "certificateEndDate": "2023-04-18",
+      "object": "A).-REALIZACIÓN DIRECTA O INDIRECTA, EN SUS MAS AMPLIOS TÉRMINOS, DE OBRAS DE ALBAÑILERÍA Y TRABAJOS DE CONSTRUCCIÓN, REPARACIÓN Y CONSERVACIÓN DE OBRAS EN GENERAL, REFORMAS DE PISOS Y LOCALES, ACABADOS DE OBRAS, REVESTIMIENTOS EXTERIORES E INTERIORES, SOLADOS DE OBRAS Y PAVIMENTOS, AISLAMIENTOS E INPERMEABILIZACIÓN, TERMINACIÓN Y DECORACIÓN DE EDIFICIOS Y LOCALES. B).- INSTALACIONES DE TODO TIPO: ELÉCTRICAS, DE FONTANERÍA, DE GASES Y LÍQUIDOS, FRIO Y CALOR. C).- MONTAJES ELÉCTRICOS E INSTALACIONES INDUSTRIALES. D).- COMPRAVENTA Y ARRENDAMIENTO DE INMUEBLES",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/04437",
+      "_links": {
+        "self": {
+          "name": "CONSTRUCCIONES LANDABURU S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/04437"
+        }
+      }
+    },
+    {
+      "name": "MANUEL SAINZ-AJA MARAÑON",
+      "registrationNumber": "06542",
+      "identificationNumber": "14607376F",
+      "address": "C/ ORIXE 20 1 D",
+      "location": {
+        "postalCode": "48015",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.721.2",
+          "name": "Transporte por autotaxis",
+          "_links": {
+            "self": {
+              "name": "Transporte por autotaxis",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.721.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2022-10-25",
+      "certificateEndDate": "2023-04-25",
+      "object": "TRANSPORTE POR AUTOTAXI",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06542",
+      "_links": {
+        "self": {
+          "name": "MANUEL SAINZ-AJA MARAÑON",
+          "href": "https://api.euskadi.eus/procurements/companies/06542"
+        }
+      }
+    },
+    {
+      "name": "NAGORE GARCIA DE ALBÉNIZ RODRÍGUEZ",
+      "registrationNumber": "08346",
+      "identificationNumber": "35777096K",
+      "address": "Paseo Txingurriaenea (20017) 18A 3C",
+      "location": {
+        "postalCode": "20017",
+        "municipality": "Donostia / San Sebastián",
+        "county": "Gipuzkoa",
+        "municipalityId": "069",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "2.099",
+          "name": "Otros profesionales relacionados con la agricultura y la ganadería",
+          "_links": {
+            "self": {
+              "name": "Otros profesionales relacionados con la agricultura y la ganadería",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/2.099"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2022-10-25",
+      "certificateEndDate": "2023-04-21",
+      "object": "OTROS PROFESIONALES RELACIONADOS CON LA AGRICULTURA Y LA GANADERÍA.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08346",
+      "_links": {
+        "self": {
+          "name": "NAGORE GARCIA DE ALBÉNIZ RODRÍGUEZ",
+          "href": "https://api.euskadi.eus/procurements/companies/08346"
+        }
+      }
+    }
+  ]
+}

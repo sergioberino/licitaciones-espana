@@ -1,0 +1,388 @@
+{
+  "totalItems": 9042,
+  "totalPages": 905,
+  "currentPage": 835,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "name": "CENTRO DE ESTUDIOS INFORMATICOS, S.A.",
+      "registrationNumber": "01647",
+      "identificationNumber": "A48119747",
+      "address": "PLAZA DEL MUSEO, Nº 1 - 3º",
+      "location": {
+        "postalCode": "48009",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.843.9",
+          "name": "Otros servicios técnicos n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros servicios técnicos n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.9"
+            }
+          }
+        },
+        {
+          "id": "1.845",
+          "name": "Explotación electrónica por cuenta de terceros",
+          "_links": {
+            "self": {
+              "name": "Explotación electrónica por cuenta de terceros",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.845"
+            }
+          }
+        },
+        {
+          "id": "1.933.9",
+          "name": "Otras actividades de enseñanza tales como idiomas, mecanografía",
+          "_links": {
+            "self": {
+              "name": "Otras actividades de enseñanza tales como idiomas, mecanografía",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.933.9"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "1998-08-19",
+      "certificateEndDate": "1999-01-23",
+      "object": "LA REALIZACION DE ESTUDIOS, TRABAJOS Y APLICACIONES INFORMATICAS, LA APROBACION DE TODA LA GAMA DE SERVICIOS RELACIONADOS CON EL PROCESAMIENTO DE LA INFORMACION, TALES COMO ANALISIS FUNCIONAL, ANALISIS ORGANICO, PROGRAMACION, GRABACION, ETC.; LA SELECCION Y FORMACION DE PERSONAL INFORMATICO; EL ASESORAMIENTO INFORMATICO A EMPRESAS, ORGANISMOS E INSTITUCIONES, ASI COMO LA REALIZACION DE CHEQUEOS, AUDITORIAS, REVISIONES, ETC.; CUALQUIER OTRA ACTIVIDAD DE CARACTER INFORMATICO, YA SEA DENTRO DEL AREA DEL SOFTWARE, ASI COMO A TODAS LAS TAREAS Y SERVICIOS RELACIONADOS CON LA ORGANIZACION DE EMPRESAS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/01647",
+      "_links": {
+        "self": {
+          "name": "CENTRO DE ESTUDIOS INFORMATICOS, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/01647"
+        }
+      }
+    },
+    {
+      "name": "MONTAJES ELÉCTRICOS SALABERRI, S.A.",
+      "registrationNumber": "01760",
+      "identificationNumber": "A01020981",
+      "address": "ZUBIBARRI, Nº 1",
+      "location": {
+        "postalCode": "01013",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.504.1",
+          "name": "Instalaciones eléctricas en general",
+          "_links": {
+            "self": {
+              "name": "Instalaciones eléctricas en general",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.504.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "1998-08-19",
+      "certificateEndDate": "1999-02-04",
+      "object": "MONTAJES ELECTRICOS DE ALTA Y BAJA TENSION",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/01760",
+      "_links": {
+        "self": {
+          "name": "MONTAJES ELÉCTRICOS SALABERRI, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/01760"
+        }
+      }
+    },
+    {
+      "name": "INDUXTELL EQUIPAMIENTOS, S.L.",
+      "registrationNumber": "01951",
+      "identificationNumber": "B20490959",
+      "address": "AVDA. EZKIAGA, Nº 3",
+      "location": {
+        "postalCode": "20200",
+        "municipality": "Beasain",
+        "county": "Gipuzkoa",
+        "municipalityId": "019",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.501.1",
+          "name": "Construcción completa, reparación y conservación de edificaciones",
+          "_links": {
+            "self": {
+              "name": "Construcción completa, reparación y conservación de edificaciones",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "1998-08-19",
+      "certificateEndDate": "1998-12-25",
+      "object": "OBRAS Y EQUIPOS DE HOSTELERÍA",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/01951",
+      "_links": {
+        "self": {
+          "name": "INDUXTELL EQUIPAMIENTOS, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/01951"
+        }
+      }
+    },
+    {
+      "name": "ALFA COMERCIAL NORTE, S.L.",
+      "registrationNumber": "01718",
+      "identificationNumber": "B48698195",
+      "address": "AVDA. AUTONOMÍA, Nº 15",
+      "location": {
+        "postalCode": "48940",
+        "municipality": "Leioa",
+        "county": "Bizkaia",
+        "municipalityId": "054",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.501.1",
+          "name": "Construcción completa, reparación y conservación de edificaciones",
+          "_links": {
+            "self": {
+              "name": "Construcción completa, reparación y conservación de edificaciones",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.1"
+            }
+          }
+        },
+        {
+          "id": "1.659.2",
+          "name": "Venta al por menor de muebles de oficina y máquinas y equipos de oficina",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de muebles de oficina y máquinas y equipos de oficina",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.659.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "1998-08-18",
+      "certificateEndDate": "1999-01-30",
+      "object": "EL DESARROLLO DE PROYECTOS PROFESIONALES, DIRECCION DE OBRA, Y CONSTRUCCION, INSTALACION O MODIFICACION DE LOCALES COMERCIALES E INDUSTRIALES, ASI COMO DEMAS ELEMENTOS INMUEBLES, Y LA PRESTACION DE TODOS AQUELLOS SERVICIOS, QUE DERIVEN O SE REQUIERAN, EN LA CUMPLIMENTACION DEL MISMO, SIENDO EN CUALQUIER CASO LA VENTA DE MOBILIARIO DE CUALQUIER CLASE Y NATURALEZA",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/01718",
+      "_links": {
+        "self": {
+          "name": "ALFA COMERCIAL NORTE, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/01718"
+        }
+      }
+    },
+    {
+      "name": "COMPONENTES ELECTRÓNICOS GAZTEIZ, S.A.",
+      "registrationNumber": "00040",
+      "identificationNumber": "A01011055",
+      "address": "c/ DOMINGO BELTRÁN, Nº 58 - BAJO",
+      "location": {
+        "postalCode": "01012",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.615.4",
+          "name": "Venta al por mayor de aparatos y material radioeléctrico y electrónico",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de aparatos y material radioeléctrico y electrónico",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.615.4"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "1998-08-13",
+      "certificateEndDate": "1999-01-22",
+      "object": "LA VENTA DE COMPONENTES, INSTRUMENTACION Y EQUIPOS ELECTRICOS Y ELECTRONICOS; OBRAS Y SERVICIOS DE ELECTRICIDAD Y ELECTRONICA",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/00040",
+      "_links": {
+        "self": {
+          "name": "COMPONENTES ELECTRÓNICOS GAZTEIZ, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/00040"
+        }
+      }
+    },
+    {
+      "name": "AMPER SERVICIOS, S.A.",
+      "registrationNumber": "01816",
+      "identificationNumber": "A78627494",
+      "address": "C/ TORRELAGUNA, Nº 75",
+      "location": {
+        "postalCode": "28027",
+        "municipality": "Madrid",
+        "county": "Madrid",
+        "municipalityId": "079",
+        "countyId": "28"
+      },
+      "economicActivities": [
+        {
+          "id": "1.504.7",
+          "name": "Instalaciones telefónicas, telegráficas, televisión, etc",
+          "_links": {
+            "self": {
+              "name": "Instalaciones telefónicas, telegráficas, televisión, etc",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.504.7"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "1998-07-29",
+      "certificateEndDate": "1998-12-29",
+      "object": "LA INSTALACIÓN, MANTENIMIENTO Y SERVICIOS DE ATENCIÓN AL CLIENTE DE EQUIPOS Y SISTEMAS ASÍ COMO PROYECTOS DE INGENIERIA",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/01816",
+      "_links": {
+        "self": {
+          "name": "AMPER SERVICIOS, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/01816"
+        }
+      }
+    },
+    {
+      "name": "ANDRÉS ITURRALDE MARTÍNEZ DE LIZARDUY",
+      "registrationNumber": "01927",
+      "identificationNumber": "16232451V",
+      "address": "C/ HERRERIA, 11 BAJO",
+      "location": {
+        "postalCode": "01001",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "2.012",
+          "name": "Ingenieros agrónomos y de montes",
+          "_links": {
+            "self": {
+              "name": "Ingenieros agrónomos y de montes",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/2.012"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "1998-07-10",
+      "certificateEndDate": "1998-12-30",
+      "object": "INGENIERO DE MONTES",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/01927",
+      "_links": {
+        "self": {
+          "name": "ANDRÉS ITURRALDE MARTÍNEZ DE LIZARDUY",
+          "href": "https://api.euskadi.eus/procurements/companies/01927"
+        }
+      }
+    },
+    {
+      "name": "EDUARDO MONTOYA GARCÍA-BAQUERO",
+      "registrationNumber": "01702",
+      "identificationNumber": "6224784H",
+      "address": "SAN MARTÍN, 55 SOTANO DCHA.",
+      "location": {
+        "postalCode": "20007",
+        "municipality": "Donostia / San Sebastián",
+        "county": "Gipuzkoa",
+        "municipalityId": "069",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "2.411",
+          "name": "Arquitectos",
+          "_links": {
+            "self": {
+              "name": "Arquitectos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/2.411"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "1998-07-07",
+      "certificateEndDate": "1998-12-29",
+      "object": "ARQUITECTO",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/01702",
+      "_links": {
+        "self": {
+          "name": "EDUARDO MONTOYA GARCÍA-BAQUERO",
+          "href": "https://api.euskadi.eus/procurements/companies/01702"
+        }
+      }
+    },
+    {
+      "name": "KONTRON INSTRUMENTS, S.A.",
+      "registrationNumber": "00377",
+      "identificationNumber": "A28308385",
+      "address": "C/ SALVATIERRA, N.º 4",
+      "location": {
+        "postalCode": "28034",
+        "municipality": "Madrid",
+        "county": "Madrid",
+        "municipalityId": "079",
+        "countyId": "28"
+      },
+      "economicActivities": [
+        {
+          "id": "1.619.2",
+          "name": "Venta al por mayor de aparatos e instrumentos médicos, ortopédicos, ópticos",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de aparatos e instrumentos médicos, ortopédicos, ópticos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.619.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "1998-07-02",
+      "certificateEndDate": "1998-12-12",
+      "object": " LA PRODUCCION, LA COMERCIALIZACION Y SUMINISTRO DE INSTRUMENTOS CIENTIFICOS Y TECNICOS EN DIVERSOS SECTORES, COMPRENDIDOS LOS DE MEDICINA Y TRABAJOS DE LABORATORIO. LA PRODUCCION, COMERCIALIZACION Y SUMINISTRO DE TODA CLASE DE APARATOS DE MEDIDA ELECTRONICOS Y MECANICOS, SUS PARTES Y ACCESORIOS. LA PRODUCCION, COMERCIALIZACION Y SUMINISTRO DE TODA CLASE DE PRODUCTOS RELACIONADOS CON LOS INSTRUMENTOS Y APARATOS RESEÑADOS EN LOS DOS APARTADOS ANTERIORES. LA DISTRIBUCION, COMERCIALIZACION Y VENTA DE INSTRUMENTOS CIENTIFICOS Y TECNICOS, APARATOS DE MEDIDA ELECTRONICOS Y MECANICOS, ASI COMO SUS ELEMENTOS Y ACCESORIOS Y PRODUCTOS CON ELLOS RELACIONADOS, FABRICADOS POR TERCEROS. EL MANTENIMIENTO Y REPARACION DE TODOS LOS INSTRUMENTOS, APARATOS Y DEMAS PRODUCTOS RESEÑADOS EN LOS ANTERIORES APARTADOS, YA SEAN DE FABRICACION PROPIA, ASI COMO DE TERCEROS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/00377",
+      "_links": {
+        "self": {
+          "name": "KONTRON INSTRUMENTS, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/00377"
+        }
+      }
+    },
+    {
+      "name": "DISA QUIRÚRGICA, S.A.",
+      "registrationNumber": "01716",
+      "identificationNumber": "A79003489",
+      "address": "AVDA. VALDELAPARRA, Nº 27",
+      "location": {
+        "postalCode": "28108",
+        "municipality": "Alcobendas",
+        "county": "Madrid",
+        "municipalityId": "006",
+        "countyId": "28"
+      },
+      "economicActivities": [
+        {
+          "id": "1.619.2",
+          "name": "Venta al por mayor de aparatos e instrumentos médicos, ortopédicos, ópticos",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de aparatos e instrumentos médicos, ortopédicos, ópticos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.619.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "1998-06-23",
+      "certificateEndDate": "1998-12-04",
+      "object": "LA COMPRAVENTA, FABRICACION, CONSTRUCCION, SUMINISTRO, MONTAJE E INSTALACION, ASI COMO SU ARRENDAMIENTO, DE TODA CLASE DE MATERIAL, ENSERES Y MUEBLES DESTINADOS A SERVICIOS DE MEDICO-QUIRURJICO Y, EN GENERAL CUALQUIER OTRO ACTO DE LEGITIMO COMERCIO, DIRECTA O INDIRECTAMENTE RELACIONADO CON DICHAS ACTIVIDADES",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/01716",
+      "_links": {
+        "self": {
+          "name": "DISA QUIRÚRGICA, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/01716"
+        }
+      }
+    }
+  ]
+}

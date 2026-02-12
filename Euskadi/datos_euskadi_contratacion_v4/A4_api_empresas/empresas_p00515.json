@@ -1,0 +1,448 @@
+{
+  "totalItems": 9042,
+  "totalPages": 905,
+  "currentPage": 515,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "name": "PAPEL BASK, S.L.",
+      "registrationNumber": "02425",
+      "identificationNumber": "B95018628",
+      "address": "ITURRIONDO, 18 - PAB. E-9 (POL. IBARRABARRI)",
+      "location": {
+        "postalCode": "48940",
+        "municipality": "Leioa",
+        "county": "Bizkaia",
+        "municipalityId": "054",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.619.5",
+          "name": "Venta al por mayor de artículos de papelería y escritorios",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de artículos de papelería y escritorios",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.619.5"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2021-09-13",
+      "certificateEndDate": "2022-03-10",
+      "object": " LA COMPRAVENTA, COMERCIALIZACIÓN, DISTRIBUCIÓN, EXPLOTACIÓN, IMPORTACIÓN Y EXPORTACIÓN DE TODA CLASE DE MAQUINARIA, MOBILIARIO, EQUIPOS Y MATERIAL DE OFICINA, ARTÍCULOS DE PAPELERÍA, ESCRITORIO, ARTÍCULOS DE DIBUJO Y BELLAS ARTES, JUGUETES NO MECÁNICOS, ELÉCTRICOS Y ELECTRÓNICOS, ORDENADORES, EQUIPOS INFORMÁTICOS Y, EN GENERAL, CUALQUIER ELEMENTO DE SOFT WARE Y HARD WARE.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/02425",
+      "_links": {
+        "self": {
+          "name": "PAPEL BASK, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/02425"
+        }
+      }
+    },
+    {
+      "name": "BIOTRONIK SPAIN, S. A.",
+      "registrationNumber": "06988",
+      "identificationNumber": "A28985034",
+      "address": "AVDA. EUROPA 19, EDIFICIO III, PLANTA 3ª",
+      "location": {
+        "postalCode": "28224",
+        "municipality": "Pozuelo de Alarcón",
+        "county": "Madrid",
+        "municipalityId": "115",
+        "countyId": "28"
+      },
+      "economicActivities": [
+        {
+          "id": "1.619.2",
+          "name": "Venta al por mayor de aparatos e instrumentos médicos, ortopédicos, ópticos",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de aparatos e instrumentos médicos, ortopédicos, ópticos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.619.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2021-09-10",
+      "certificateEndDate": "2022-03-09",
+      "object": "LA COMPRA, VENTA, DISTRIBUCIÓN, IMPORTACIÓN Y EXPORTACIÓN DE MARCAPASOS Y VÁLVULAS CARDÍACAS, ASÍ COMO ACCESORIOS DE LAS MISMAS Y APARATOS MÉDICOS SIMILARES, Y CUALQUIER CLASE DE ACTIVIDAD LÍCITA DIRECTA O INDIRECTAMENTE RELACIONADA CON LAS ANTERIORES",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06988",
+      "_links": {
+        "self": {
+          "name": "BIOTRONIK SPAIN, S. A.",
+          "href": "https://api.euskadi.eus/procurements/companies/06988"
+        }
+      }
+    },
+    {
+      "name": "ABERING CONTADORES DE AGUA, S.L.",
+      "registrationNumber": "05992",
+      "identificationNumber": "B85901650",
+      "address": "Calle Jerez de los Caballeros, 2.  ",
+      "location": {
+        "postalCode": "28042",
+        "municipality": "Madrid",
+        "county": "Madrid",
+        "municipalityId": "079",
+        "countyId": "28"
+      },
+      "economicActivities": [
+        {
+          "id": "1.619.7",
+          "name": "Venta al por mayor de instrumentos de precisión, medida y similares",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de instrumentos de precisión, medida y similares",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.619.7"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2021-09-10",
+      "certificateEndDate": "2022-03-09",
+      "object": "-LA FABRICACIÓN, VENTA, DISTRIBUCIÓN, IMPORTACIÓN, EXPORTACIÓN, REPARACIÓN, LECTURA, CONSERVACIÓN Y ALQUILER DE SISTEMAS DE TELELECTURA PARA TODO TIPO DE CONTADORES, ASÍ COMO CONTADORES DE AGUA, CALOR Y GAS, PARA TODO TIPO DE USUARIOS, Y CUALQUIER TIPO DE INSTALACIONES DE FONTANERÍA Y CALEFACCIÓN. -Y LA INVESTIGACIÓN, DESARROLLO E INNOVACIÓN TECNOLÓGICA",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/05992",
+      "_links": {
+        "self": {
+          "name": "ABERING CONTADORES DE AGUA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/05992"
+        }
+      }
+    },
+    {
+      "name": "VALDONAIRE SOLUCIONES TECNICAS S.L.",
+      "registrationNumber": "07882",
+      "identificationNumber": "B87577102",
+      "address": "SANGENJO, 6",
+      "location": {
+        "postalCode": "28034",
+        "municipality": "Madrid",
+        "county": "Madrid",
+        "municipalityId": "079",
+        "countyId": "28"
+      },
+      "economicActivities": [
+        {
+          "id": "1.504.1",
+          "name": "Instalaciones eléctricas en general",
+          "_links": {
+            "self": {
+              "name": "Instalaciones eléctricas en general",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.504.1"
+            }
+          }
+        },
+        {
+          "id": "1.615.4",
+          "name": "Venta al por mayor de aparatos y material radioeléctrico y electrónico",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de aparatos y material radioeléctrico y electrónico",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.615.4"
+            }
+          }
+        },
+        {
+          "id": "1.843.1",
+          "name": "Servicios técnicos de ingeniería",
+          "_links": {
+            "self": {
+              "name": "Servicios técnicos de ingeniería",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2021-09-08",
+      "certificateEndDate": "2022-02-28",
+      "object": "LA COMERCIALIZACIÓN, INSTALACIÓN, MONTAJE, COMPRA, VENTA, SUMINISTRO, IMPORTACIÓN, EXPORTACIÓN, ALQUILER, MANTENIMINETO, DISTRIBUCIÓN, REPRESENTACIÓN Y EXPLOTACIÓN DE CUALQUIER CLASE DE COMPONENTES, MATERIALES, EQUIPOS, SERVICIOS Y SISTEMAS ELECTRÓNICOS, ELEÉCTRICOS, INFORMÁTICOS, DE TELECOMUNICACIÓN, DE EFICIENCIA ENERGÉTICA Y DE SEGURIDAD, ASÍ COMO LA COMERCIALIZACIÓN DE PRODUCTOS RELACIONADOS CON DICHOS SERVICIOS. CNAE ACTIVIDAD PRINCIPAL 4652 Y OTROS 4321, 9511. LA REALIZAZCIÓN DE TODA CLASE DE ESTUDIOS Y PROYECTOS TÉCNICOS, CONSTRUCTIVOS, DE MONTAJE, ECONOMICOS O FINANCIEROS, PARA SÍ O PARA TERCEROS Y EXPLOTACIÓN O VENTA. CNAE 7112. EL NEGOCIO ELÉCTRICO Y ENERGÉTICO EN GENERAL, ENT DOAS SUS VERTIENTES Y VARIANTES ASÍ COMO EN SUS DISTINTAS ACTIVIDADES INDUSTRIALES Y COMERCIALES. LA REALIZACIÓN DE TODO TIPO DE ESTUDIOS RELACIONADOS CON EL NEGOCIO ELÉCTRICO Y ENERGÉTICO EN GENERAL, MUY PARTICULARMENTE CON LAS DENOMINADAS ENERGÍAS RENOVABLES. LA PRESTACIÓN DE SERVICIOS Y EJECUCIÓN DE PROYECTOS TENDENTES A LA CONSECUCIÓN DE AHORRO Y LA EFICIENCIA ENERGÉTICOS Y EL DESARROLLO SOSTENIBLE. PLANIFICACIÓN, DISEÑO, INSTALACIÓN, GESTIÓN, AUDITORÍA, CONSULTORÍA Y MANTENIMIENTO DE INSTALACIONES EN MATERIA DE EFICIENCIA ENERGÉTICA. CNAE 3514, 7120 y 7112. LA CONSTRUCCIÓN, EJECUCIÓN Y MANTENIMIENTO DE OBRAS DE CARÁCTER PÚBLICO Y PRIVADO, ASÍ COMO LA EXPLOTACIÓN DE TODO TIPO DE INFRAESTRUCTURAS. INSTALACIONES DE CUALQUIER NATURALEZA, ASÍ COMO SUS REPARACIONES Y MANTENIMIENTOS POSTERIORES. CNAE 4291",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07882",
+      "_links": {
+        "self": {
+          "name": "VALDONAIRE SOLUCIONES TECNICAS S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/07882"
+        }
+      }
+    },
+    {
+      "name": "PAPYRO SERVICIOS Y PROYECTOS, S.L.",
+      "registrationNumber": "07880",
+      "identificationNumber": "B85320448",
+      "address": "C/ Destreza nº 3 nave 4B",
+      "location": {
+        "postalCode": "28906",
+        "municipality": "Getafe",
+        "county": "Madrid",
+        "municipalityId": "065",
+        "countyId": "28"
+      },
+      "economicActivities": [
+        {
+          "id": "1.615.4",
+          "name": "Venta al por mayor de aparatos y material radioeléctrico y electrónico",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de aparatos y material radioeléctrico y electrónico",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.615.4"
+            }
+          }
+        },
+        {
+          "id": "1.843.9",
+          "name": "Otros servicios técnicos n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros servicios técnicos n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.9"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2021-09-08",
+      "certificateEndDate": "2022-02-28",
+      "object": "COMPRAVENTA, DISTRIBUCIÓN, COMERCIALIZACIÓN, ALMACENAJE, INSTALACIÓN, PUESTA EN MARCHA, MANTENIMIENTO, REPARACIÓN Y CONSERVACIÓN DE TODA CLASE DE PRODUCTOS AUDIOVISUALES, MATERIALES Y ACCESORIOS ELÉCTRICOS Y ELECTRÓNICOS, INCLUIDA SU IMPORTACIÓN Y EXPORTACIÓN DE MATERIALES, ASÍ COMO LA PRESTACIÓN DE SERVICIOS DE ASISTENCIA TÉCNICA A LAS EMPRESAS RELACIONADAS CON TRABAJOS AUDIOVISUALES. DESARROLLO DE SOFWARE PARA PRODUCCIONES AUDIOVISUALES. COMERCIO DE CUANTOS MATERIALES, ACCESORIOS, ÚTILES, MAQUINARIA Y HERRAMIENTAS ESTÉN RELACIONADOS CON LA ACTIVIDAD ANTERIOR. ASÍ COMO LA ADQUISICIÓN, EXPLOTACIÓN Y ENAJENACIÓN DE BIENES INMUEBLES",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07880",
+      "_links": {
+        "self": {
+          "name": "PAPYRO SERVICIOS Y PROYECTOS, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/07880"
+        }
+      }
+    },
+    {
+      "name": "FERRETERIA MARAÑON, S.L.",
+      "registrationNumber": "07879",
+      "identificationNumber": "B01163930",
+      "address": "PORTAL DE GAMARRA,9A PAB 16-18-20",
+      "location": {
+        "postalCode": "01013",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.615.3",
+          "name": "Venta al por mayor de aparatos electrodomésticos y ferretería",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de aparatos electrodomésticos y ferretería",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.615.3"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2021-09-08",
+      "certificateEndDate": "2022-01-16",
+      "object": "EL COMERCIO AL POR MAYOR Y MENOR DE ARTÍCULOS DE FERRETERÍA, CUCHILLERÍA, CUBERTERÍA, UTENSILIOS, HERRAMIENTAS DE MANO, FUMISTERÍA Y FONTANERÍA, Y APARATOS DE USO NO ELÉCTRICO",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07879",
+      "_links": {
+        "self": {
+          "name": "FERRETERIA MARAÑON, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/07879"
+        }
+      }
+    },
+    {
+      "name": "LORENA RODRIGUEZ PASCUAL",
+      "registrationNumber": "07877",
+      "identificationNumber": "22751494D",
+      "address": "GRUPO LOIZAGA Nº 5-6ºC",
+      "location": {
+        "postalCode": "48903",
+        "municipality": "Barakaldo",
+        "county": "Bizkaia",
+        "municipalityId": "013",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.617.8",
+          "name": "Venta al por mayor de máquinas y material de oficina",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de máquinas y material de oficina",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.617.8"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2021-09-07",
+      "certificateEndDate": "2022-03-02",
+      "object": "COMERCIO AL POR MAYOR DE MAQUINAS Y MATERIAL DE OFICINA",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07877",
+      "_links": {
+        "self": {
+          "name": "LORENA RODRIGUEZ PASCUAL",
+          "href": "https://api.euskadi.eus/procurements/companies/07877"
+        }
+      }
+    },
+    {
+      "name": "JOSE ANTONIO LOPEZ FERNANDEZ",
+      "registrationNumber": "07876",
+      "identificationNumber": "15372453N",
+      "address": "ARGIÑENA Nº 12 TRASERA",
+      "location": {
+        "postalCode": "48630",
+        "municipality": "Gorliz",
+        "county": "Bizkaia",
+        "municipalityId": "043",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.861.2",
+          "name": "Alquiler de locales industriales y otros alquileres n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Alquiler de locales industriales y otros alquileres n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.861.2"
+            }
+          }
+        },
+        {
+          "id": "1.966.9",
+          "name": "Otros servicios culturales n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros servicios culturales n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.966.9"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2021-09-07",
+      "certificateEndDate": "2021-12-11",
+      "object": "ALQUILER DE LOCALES Y ASESORAMIENTO GESTIÓN CULTURAL",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07876",
+      "_links": {
+        "self": {
+          "name": "JOSE ANTONIO LOPEZ FERNANDEZ",
+          "href": "https://api.euskadi.eus/procurements/companies/07876"
+        }
+      }
+    },
+    {
+      "name": "INNERIA SOLUTIONS, S.L.",
+      "registrationNumber": "07874",
+      "identificationNumber": "B83327460",
+      "address": "C/ PLA DE LESTANY 17",
+      "location": {
+        "postalCode": "17244",
+        "municipality": "Cassà de la Selva",
+        "county": "Girona",
+        "municipalityId": "044",
+        "countyId": "17"
+      },
+      "economicActivities": [
+        {
+          "id": "1.751.6",
+          "name": "Servicios de carga y descarga de mercancías",
+          "_links": {
+            "self": {
+              "name": "Servicios de carga y descarga de mercancías",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.751.6"
+            }
+          }
+        },
+        {
+          "id": "1.834",
+          "name": "Servicios relativos a la propiedad inmobiliaria e industrial",
+          "_links": {
+            "self": {
+              "name": "Servicios relativos a la propiedad inmobiliaria e industrial",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.834"
+            }
+          }
+        },
+        {
+          "id": "1.849.6",
+          "name": "Servicios de colocación y suministro de personal",
+          "_links": {
+            "self": {
+              "name": "Servicios de colocación y suministro de personal",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.849.6"
+            }
+          }
+        },
+        {
+          "id": "1.922",
+          "name": "Servicios de limpieza",
+          "_links": {
+            "self": {
+              "name": "Servicios de limpieza",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.922"
+            }
+          }
+        },
+        {
+          "id": "1.952",
+          "name": "Asistencia y servicios sociales en centros no residenciales",
+          "_links": {
+            "self": {
+              "name": "Asistencia y servicios sociales en centros no residenciales",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.952"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2021-09-07",
+      "certificateEndDate": "2022-01-30",
+      "object": "1.- CONSULTORÍA Y ASESORAMIENTO A EMPRESAS E INSTITUCIONES SOBRE LOS RECURSOS HUMANOS, RECLUTAMIENTO Y SELECCIÓN, PROMOCIÓN, FORMACIÓN, RETRIBUCIÓN, MOTIVACIÓN Y GESTIÓN DIRECTIVA Y DE MANDOS. RECURSOS LOGÍSTICOS Y FINANCIEROS, PREVENCIÓN Y SALUD LABORAL. ELABORACIÓN DE ESTUDIOS DE MERCADO Y LABORALES. 2.- CONSULTORÍA Y FORMACIÓN DIRIGIDA A EMPRESAS FÍSICAS O JURÍDICAS, PRIVADAS O PÚBLICAS Y A LA ADMINISTRACIÓN PÚBLICA SOBRE CUALQUIER ÁREA DE SU INTERÉS. 3.- LA CONSULTORÍA Y ASESORAMIENTO SOBRE EL DISEÑO, DESARROLLO E IMPLANTACIÓN DE TÉCNICAS, MÉTODOS Y SISTEMAS DE ORGANIZACIÓN TALES COMO ORGANIZACIÓN COMERCIAL Y MARKETING, ESTRUCTURA ORGANIZATIVA: ECONÓMICA CONTABLE, DE PRODUCCIÓN, ORGANIZACIÓN DE LOS RECURSOS HUMANOS, ASÍ COMO OTRAS ACTIVIDADES DE ASESORAMIENTO RELACIONADAS CON LA GESTIÓN ORGANIZATIVA. 4.- PROMOVER Y REALIZAR ESTUDIOS DE INVESTIGACIÓN APLICABLE A TEMAS ORGANIZATIVOS Y DE OPTIMACIÓN DE RECURSOS PARA ELEVAR EL NIVEL DE COMPETITIVDAD Y EFICACIA DE LAS EMPRESAS. 5.- LA CONFECCIÓN DE ESTUDIOS, PROYECTOS E IMPLANTACIONES DE SISTEMAS DE GESTIÓN RELACIONADAS CON EL MEDIO AMBIENTE, ASÍ COMO SU EJECUCIÓN, CON SU CORRESPONDIENTE INFRAESTRUCTURA. 6.- LA COMPRAVENTA, CESIÓN POR CUALQUIER TÍTULO, ARRENDAMIENTO, COMERCIALIZACIÓN, FABRICACIÓN, DISEÑO, PROYECTO, MONTAJE, MANEJO Y ASISTENCIA TÉCNICA DE APARATOS, EQUIPOS O PRODUCTOS QUE DIRECTAMENTE TENGAN POR FIN EL CONTROL Y OPTIMACIÓN DE CONSUMOS ENERGÉTICOS Y LA PLANIFICACIÓN DEL MANTENIMIENTO ENERGÉTICO DE EDIFICIOS, INSTALACIONES INDUSTRIALES O DE CUALQUIER OTRA NATURALEZA, ASÍ COMO LA COMPRAVENTA, CESIÓN POR CUALQUIER TÍTULO, ARRENDAMIENTO Y COMERCIALIZACIÓN DE TÉCNICAS, MÉTODOS O SERVICIOS QUE TENGAN POR OBJETO LOS PRECITADOS FINES. 7.- LA PRESTACIÓN DE SERVICIOS Y EL DESARROLLO INTEGRAL O PARCIAL DE ACTIVIDADES DE NATURALEZA AUXILIAR CON ASUNCIÓN DE SU ORGANIZACIÓN, GESTIÓN Y RESULTADO, A EMPRESAS PÚBLICAS O PRIVADAS CUALQUIERA QUE SEA SU SECTOR DE ACTIVIDAD. ORGANISMOS PÚBLICOS O PRIVADOS, ADMINISTRACIONES CUALQUIERA QUE SEA SU ÁMBITO DE ACTUACIÓN Y COMPETENCIA, FUNDACIONES, UNIONES TEMPORALES DE EMPRESAS, AGRUPACIONES DE INTERÉS GENERAL, ASOCIACIONES, SOCIEDADES CIVILES, COMUNIDADES DE BIENES. 8.- LA EJECUCIÓN DE ESTUDIOS SOBRE ORGANIZACIÓN, MÉTODOS, SISTEMAS Y TIEMPOS, EN RELACIÓN CON TODO TIPO DE ACTIVIDADES INDUSTRIALES Y EMPRESARIALES. 9.- LA PUBLICACIÓN DE INFORMES, REVISTAS, LIBROS Y OTROS TRABAJOS LITERARIOS SOBRE LOS SERVICIOS RECOGIDOS EN EL OBJETO SOCIAL. 10.- LA CONSULTORÍA SOBRE EL DISEÑO, DESARROLLO, INSTALACIÓN Y EXPLOTACIÓN DE MÉTODOS, SISTEMAS Y SOPORTES INFORMÁTICOS DESTINADOS A ELEVAR EL NIVEL COMPETITIVO A TRAVÉS DE LA MEJORA DE LA ORGANIZACIÓN DE LA CALIDAD Y EL RENDIMIENTO EN EL TRABAJO. 11.- LA CONSULTORÍA SOBRE PLANIFICACIÓN ESTRATÉGICA Y DE GESTIÓN, LA ADAPTACIÓN AL CAMBIO TECNOLÓGICO Y DE ENTORNO Y LA MEJORA DE LA CALIDAD. INCLUYE EL DISEÑO, INSTALACIÓN, EXPLOTACIÓN Y MANTENIMIENTO DE SISTEMAS DE INFORMACIÓN DESTINADOS A CONTROLAR Y MEJORAR LA GESTIÓN DIRECTIVA Y LA UTILIZACIÓN DE TECNOLOGÍAS AVANZADAS EN EL CAMPO DE LA INFORMÁTICA Y LAS COMUNICACIONES. 12.- PROMOVER, REALIZAR, GESTIONAR Y FINANCIAR PROGRAMAS DE ESTUDIO E INVESTIGACIÓN APLICADA PARA EL CONOCIMIENTO E INNOVACIÓN DE LOS SISTEMAS DE DIRECCIÓN Y DE LA MEJORA DE LA CALIDAD EN LAS EMPRESAS Y ORGANIZACIONES, TANTO PÚBLICAS COMO PRIVADAS. 13.- LA REALIZACIÓN DE SERVICIOS DE ACCIÓN SOCIAL CON LOS SECTORES: CONJUNTO DE POBLACIÓN, TERCERA EDAD, MINUSVÁLIDOS FÍSICOS Y PSÍQUICOS, FAMILIA, INFANCIA, ADOLESCENCIA, PRESOS Y RECLUSOS E INMIGRANTES",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07874",
+      "_links": {
+        "self": {
+          "name": "INNERIA SOLUTIONS, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/07874"
+        }
+      }
+    },
+    {
+      "name": "LEJAUTO MOTOR, S.L.",
+      "registrationNumber": "02533",
+      "identificationNumber": "B48810873",
+      "address": "CTRA. LUTXANA-ASUA, KM. 12,250",
+      "location": {
+        "postalCode": "48950",
+        "municipality": "Erandio",
+        "county": "Bizkaia",
+        "municipalityId": "902",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.654.1",
+          "name": "Venta al por menor de vehículos terrestres",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de vehículos terrestres",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.654.1"
+            }
+          }
+        },
+        {
+          "id": "1.691.2",
+          "name": "Reparación de vehículos automóviles, bicicletas y otros vehículos",
+          "_links": {
+            "self": {
+              "name": "Reparación de vehículos automóviles, bicicletas y otros vehículos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.691.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2021-09-07",
+      "certificateEndDate": "2022-03-03",
+      "object": "LA EXPOSICIÓN, ALMACENAJE, VENTA Y REPARACIÓN DE VEHÍCULOS NUEVOS Y USADOS, ALMACÉN Y COMERCIALIZACIÓN DE RECAMBIOS Y ACCESORIOS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/02533",
+      "_links": {
+        "self": {
+          "name": "LEJAUTO MOTOR, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/02533"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,504 @@
+{
+  "totalItems": 9042,
+  "totalPages": 905,
+  "currentPage": 4,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "name": "AMADOR GRANADOS ALKORTA",
+      "registrationNumber": "06976",
+      "identificationNumber": "15998098B",
+      "address": "Calle Amute nº6-1ºB",
+      "location": {
+        "postalCode": "20280",
+        "municipality": "Hondarribia",
+        "county": "Gipuzkoa",
+        "municipalityId": "036",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "2.431",
+          "name": "Delineantes",
+          "_links": {
+            "self": {
+              "name": "Delineantes",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/2.431"
+            }
+          }
+        },
+        {
+          "id": "3.046",
+          "name": "Corredores, entrenadores y preparadores de ciclismo",
+          "_links": {
+            "self": {
+              "name": "Corredores, entrenadores y preparadores de ciclismo",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/3.046"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-02-10",
+      "certificateEndDate": "2026-08-04",
+      "object": "DELINEANTES. CORREDORES, ENTRENADORES Y PREPARADORES DE CICLISMO.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06976",
+      "_links": {
+        "self": {
+          "name": "AMADOR GRANADOS ALKORTA",
+          "href": "https://api.euskadi.eus/procurements/companies/06976"
+        }
+      }
+    },
+    {
+      "name": "AMBULANCIAS GIPUZKOA SCOOP",
+      "registrationNumber": "01075",
+      "identificationNumber": "F20085742",
+      "address": "C/ ALTO DE IRURAIN. POLÍGONO ERGOIEN, 831",
+      "location": {
+        "postalCode": "20130",
+        "municipality": "Urnieta",
+        "county": "Gipuzkoa",
+        "municipalityId": "072",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.362.1",
+          "name": "Construcción de carrocerías para vehículos automóviles y remolques",
+          "_links": {
+            "self": {
+              "name": "Construcción de carrocerías para vehículos automóviles y remolques",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.362.1"
+            }
+          }
+        },
+        {
+          "id": "1.691.2",
+          "name": "Reparación de vehículos automóviles, bicicletas y otros vehículos",
+          "_links": {
+            "self": {
+              "name": "Reparación de vehículos automóviles, bicicletas y otros vehículos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.691.2"
+            }
+          }
+        },
+        {
+          "id": "1.721.4",
+          "name": "Transporte sanitario en ambulancias",
+          "_links": {
+            "self": {
+              "name": "Transporte sanitario en ambulancias",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.721.4"
+            }
+          }
+        },
+        {
+          "id": "1.854.1",
+          "name": "Alquiler de automóviles sin conductor",
+          "_links": {
+            "self": {
+              "name": "Alquiler de automóviles sin conductor",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.854.1"
+            }
+          }
+        },
+        {
+          "id": "1.861.2",
+          "name": "Alquiler de locales industriales y otros alquileres n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Alquiler de locales industriales y otros alquileres n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.861.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-02-10",
+      "certificateEndDate": "2026-07-21",
+      "classification": [
+        {
+          "id": "S",
+          "name": "Servicios",
+          "groups": [
+            {
+              "id": "R",
+              "subgroups": [
+                {
+                  "id": "02",
+                  "name": "Traslado de enfermos por cualquier medio de transporte",
+                  "categories": [
+                    {
+                      "id": "5",
+                      "name": "Mas de 1.200.000",
+                      "_links": {
+                        "self": {
+                          "name": "Mas de 1.200.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/S/categories/5"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "Traslado de enfermos por cualquier medio de transporte",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/R/subgroups/02"
+                    }
+                  }
+                }
+              ],
+              "_links": {
+                "self": {
+                  "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/R"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Servicios",
+              "href": "https://api.euskadi.eus/procurements/companies/types/S"
+            }
+          }
+        }
+      ],
+      "object": "-TRANSPORTE Y TRASLADO DE ENFERMOS, ACCIDENTADOS Y DE CUALQUIER PERSONA QUE TENGA ALGUNA IIMPOSIBILIDAD FÍSICA QUE LE IMPIDA EL LIBRE DESPLAZAMIENTO. - EL TRANSPORTE DE ÓRGANOS Y ELEMENTOS SANITARIOS. - EL TRANSPORTE DE VIAJEROS Y MERCANCÍAS DE TODA CLASE. - LAS ACTIVIDADES ANEXAS AL TRANSPORTE COMO MANIPULACIÓN, DEPÓSITO Y ALMACÉN DE MERCANCÍAS Y ALQUILER DE TODA CLASE DE MEDIOS DE TRANSPORTE, CON Y SIN CONDUCTOR. - ACTIVIDADES Y ATENCIÓN SANITARIA, HOSPITALARIA, MÉDICA, VETERINARIA, DE ANÁLISIS CLÍNICO, SERVICIO DE AMBULANCIAS Y DISTRIBUCIÓN DE PRODUCTOS FARMACÉUTICOS CON PERSONAL TITULADO Y CUALIFICADO EN SU CASO. - LA  FORMACIÓN, ENSEÑANZA Y PERFECCIONAMIENTO PROFESIONAL, ESPECIALMENTE SANITARIO Y DE SOCORRISMO. - LA FORMACIÓN DE CONDUCTORES DE TODA CLASE DE VEHÍCULOS.- EL MANTENIMIENTO, REPARACIÓN Y CARROZADO DE VEHÍCULOS DE MOTOR, MOTOCICLETAS Y CICLOMOTORES, REMOLQUES Y SEMIREMOLQUES. - EL COMERCIO, DISTRIBUCIÓN, ALMACENAMIENTO  DE REPUESTOS, ACCESORIOS, CARBURANTES, COMBUSTIBLES Y LUBRICANTES PARA LA AUTOMOCIÓN. EL COMERCIO DE PRODUCTOS, ARTÍCULOS MÉDICOS, ORTOPÉDICOS, FARMACÉUTICOS, BELLEZA E HIGIENE. - LAS POMPAS FÚNEBRES Y ACTIVIDADES RELACIONADAS CON LAS MISMAS. LA ADQUISICIÓN, ARENDAMIENTO Y ENAJENACIÓN DE TODA CLASE DE BIENES INMUEBLES.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/01075",
+      "_links": {
+        "self": {
+          "name": "AMBULANCIAS GIPUZKOA SCOOP",
+          "href": "https://api.euskadi.eus/procurements/companies/01075"
+        }
+      }
+    },
+    {
+      "name": "BEÑEKOA, S.L.",
+      "registrationNumber": "08302",
+      "identificationNumber": "B95095535",
+      "address": "BO/ GAZAGA 23",
+      "location": {
+        "postalCode": "48250",
+        "municipality": "Zaldibar",
+        "county": "Bizkaia",
+        "municipalityId": "095",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.501.3",
+          "name": "Albañilería y pequeños trabajos de construcción en general",
+          "_links": {
+            "self": {
+              "name": "Albañilería y pequeños trabajos de construcción en general",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.3"
+            }
+          }
+        },
+        {
+          "id": "1.861.2",
+          "name": "Alquiler de locales industriales y otros alquileres n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Alquiler de locales industriales y otros alquileres n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.861.2"
+            }
+          }
+        },
+        {
+          "id": "1.921.8",
+          "name": "Servicios de administración de cementerios",
+          "_links": {
+            "self": {
+              "name": "Servicios de administración de cementerios",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.921.8"
+            }
+          }
+        },
+        {
+          "id": "1.979.1",
+          "name": "Servicios de pompas fúnebres",
+          "_links": {
+            "self": {
+              "name": "Servicios de pompas fúnebres",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.979.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-02-10",
+      "certificateEndDate": "2026-08-10",
+      "object": "1º.- LA ALBAÑILERÍA, CONSTRUCCIÓN, PROMOCIÓN, COMPRA, VENTA, ARRENDAMIENTO Y EXPLOTACIÓN EN CUALQUIER OTRA FORMA DE TODA CLASE DE EDIFICACIONES, SOLARES E INMUEBLES EN GENERAL, TANTO POR CUENTA PROPIA COMO AJENA. 2º.- LA PRESTACIÓN A CEMENTERIOS DE LAS TAREAS PROPIAS DE: INHUMACIONES, EXHUMACIONES Y OTRAS EN LAS UNIDADES DE ENTERRAMIENTO PREVISTAS AL EFECTO. REALIZACIÓN DE LAS OBRAS Y CONSTRUCCIONES NECESARIAS. LA GESTIÓN, CONSERVACIÓN, MANTENIMIENTO Y LIMPIEZA DE LOS EDIFICIOS, CALLES, PASEOS, JARDINERÍA, INSTALACIONES ELÉCTRICAS Y DEMÁS ELEMENTOS DE LAS INSTALACIONES DE CEMENTERIOS. LA PRESTACIÓN DE SERVICIOS AUXILIARES: LAPIDARIA, FLORISTERÍA, RESTAURANTE Y CUALESQUIERA OTROS SERVICIOS COMPLEMENTARIOS.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08302",
+      "_links": {
+        "self": {
+          "name": "BEÑEKOA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/08302"
+        }
+      }
+    },
+    {
+      "name": "H2B BUSINESS GROUP S. COOP. PEQUEÑA",
+      "registrationNumber": "08429",
+      "identificationNumber": "F05293618",
+      "address": "Zeharkalea 36, 9ª planta",
+      "location": {
+        "postalCode": "48260",
+        "municipality": "Ermua",
+        "county": "Bizkaia",
+        "municipalityId": "034",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.842",
+          "name": "Servicios financieros y contables",
+          "_links": {
+            "self": {
+              "name": "Servicios financieros y contables",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.842"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-02-10",
+      "certificateEndDate": "2026-08-10",
+      "object": "LA PRESTACIÓN DE SERVICIOS DE CONSULTORÍA EMPRESARIAL.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08429",
+      "_links": {
+        "self": {
+          "name": "H2B BUSINESS GROUP S. COOP. PEQUEÑA",
+          "href": "https://api.euskadi.eus/procurements/companies/08429"
+        }
+      }
+    },
+    {
+      "name": "GERIATRICO AITZEA, S.L.",
+      "registrationNumber": "08647",
+      "identificationNumber": "B48929384",
+      "address": "Barrio Ergoien S/N",
+      "location": {
+        "postalCode": "48113",
+        "municipality": "Gamiz-Fika",
+        "county": "Bizkaia",
+        "municipalityId": "038",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.951",
+          "name": "Asistencia y servicios sociales en centros residenciales",
+          "_links": {
+            "self": {
+              "name": "Asistencia y servicios sociales en centros residenciales",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.951"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-02-10",
+      "certificateEndDate": "2026-08-03",
+      "object": "LA PRESTACIÓN DE SERVICIOS, INCLUSO RESIDENCIALES A DISCAPACITADOS Y A LA TERCERA EDAD. LA ADQUISICIÓN, TENENCIA, DISFRUTE, ADMINISTRACIÓN Y EXPLOTACIÓN DE BIENES INMUEBLES.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08647",
+      "_links": {
+        "self": {
+          "name": "GERIATRICO AITZEA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/08647"
+        }
+      }
+    },
+    {
+      "name": "MEDIAPRINT, S.L.",
+      "registrationNumber": "01820",
+      "identificationNumber": "B20503249",
+      "address": "Portuetxe 53 b oficina 316",
+      "location": {
+        "postalCode": "20018",
+        "municipality": "Donostia / San Sebastián",
+        "county": "Gipuzkoa",
+        "municipalityId": "069",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.474",
+          "name": "Artes gráficas (impresión gráfica)",
+          "_links": {
+            "self": {
+              "name": "Artes gráficas (impresión gráfica)",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.474"
+            }
+          }
+        },
+        {
+          "id": "1.631",
+          "name": "Intermediarios del comercio",
+          "_links": {
+            "self": {
+              "name": "Intermediarios del comercio",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.631"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-02-10",
+      "certificateEndDate": "2026-08-10",
+      "object": "LA PLANIFICACIÓN Y EJECUCIÓN DE TRABAJOS DE EDICIÓN E IMPRESIÓN DE TODO TIPO DE FOLLETOS, LIBROS Y CUALQUIER OTRO TIPO DE MATERIALES QUE SE JUZGUEN IDÓNEOS COMO SOPORTES DE COMUNICACIÓN. SE INCLUYE ASIMISMO LAS LABORES PREVIAS NECESARIAS, PARA ACOMETER LOS PROCESOS ANTES DESCRITOS, TALES COMO PREPARACIÓN Y FILMACIÓN DE ORIGINALES. LA PLANIFICACIÓN EJECUCIÓN DE TAREAS DE EDICIÓN Y GRABACIÓN, SOBRE TODO TIPO DE SOPORTES MAGNETO-ÓPTICOS: DISCOS DE ORDENADOR, CINTAS DE AUDIO Y VÍDEO, ETC. LA COMERCIALIZACIÓN Y DISTRIBUCIÓN DE LOS SOPORTES EDITADOS -REVISTAS, FOLLETOS, LIBROS, DISCOS DE ORDENADOR, ETC.- A TRAVÉS DE CANALES PROPIOS O AJENOS.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/01820",
+      "_links": {
+        "self": {
+          "name": "MEDIAPRINT, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/01820"
+        }
+      }
+    },
+    {
+      "name": "RECUBRIMIENTOS ANTICORROSIVOS MENDIETA, S.A.",
+      "registrationNumber": "02987",
+      "identificationNumber": "A48150601",
+      "address": "POLÍGONO MOYORDÍN, 28",
+      "location": {
+        "postalCode": "48480",
+        "municipality": "Zaratamo",
+        "county": "Bizkaia",
+        "municipalityId": "097",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.313",
+          "name": "Tratamiento y recubrimiento de los metales",
+          "_links": {
+            "self": {
+              "name": "Tratamiento y recubrimiento de los metales",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.313"
+            }
+          }
+        },
+        {
+          "id": "1.861.2",
+          "name": "Alquiler de locales industriales y otros alquileres n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Alquiler de locales industriales y otros alquileres n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.861.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-02-10",
+      "certificateEndDate": "2026-08-10",
+      "object": "LA REALIZACIÓN Y EJECUCIÓN DE TRABAJOS DE PINTURA INDUSTRIAL, ASÍ COMO TRABAJOS DE DECORACIÓN Y ACABADO DE PINTURA DE CONSTRUCCIONES EN GENERAL ",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/02987",
+      "_links": {
+        "self": {
+          "name": "RECUBRIMIENTOS ANTICORROSIVOS MENDIETA, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/02987"
+        }
+      }
+    },
+    {
+      "name": "ARANTZAZU SANTILLANA AGUIRRE Y MIRIAM GARCIA IZAGUIRRE, S.C.",
+      "registrationNumber": "08487",
+      "identificationNumber": "J01852201",
+      "address": "C/Iorgi 38, 4º Izda",
+      "location": {
+        "postalCode": "48830",
+        "municipality": "Güeñes",
+        "county": "Bizkaia",
+        "municipalityId": "045",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.846",
+          "name": "Empresas de estudios de mercado",
+          "_links": {
+            "self": {
+              "name": "Empresas de estudios de mercado",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.846"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-02-10",
+      "certificateEndDate": "2026-08-10",
+      "object": "EL OBJETO SOCIAL DE LA EMPRESA SERÁ EL DE REALIZACIÓN DE INVESTIGACIONES ESTADÍSTICAS, OPINIÓN Y DE MERCADO Y ELABORAICIÓN DE ESTUDIOS DE INVESTIGACIÓN SOCIAL Y PRESTACIÓN DE SERVICIOS DE ASESORAMIENTO Y GESTIÓN A INSTITUCIONES PÚBLICAS O PRIVADAS EN MATERIA DE ECONOMÍA APLICADA.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08487",
+      "_links": {
+        "self": {
+          "name": "ARANTZAZU SANTILLANA AGUIRRE Y MIRIAM GARCIA IZAGUIRRE, S.C.",
+          "href": "https://api.euskadi.eus/procurements/companies/08487"
+        }
+      }
+    },
+    {
+      "name": "EGINKA CONSTRUCCIONES Y REFORMAS, S.L.",
+      "registrationNumber": "08993",
+      "identificationNumber": "B95555603",
+      "address": "Calle Mestikabaso",
+      "location": {
+        "postalCode": "48300",
+        "municipality": "Gernika-Lumo",
+        "county": "Bizkaia",
+        "municipalityId": "046",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.501.2",
+          "name": "Construcción completa, reparación y conservación obras civiles",
+          "_links": {
+            "self": {
+              "name": "Construcción completa, reparación y conservación obras civiles",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-02-10",
+      "certificateEndDate": "2026-08-10",
+      "object": "1.- LA REALIZACIÓN, POR CUENTA PROPIA O AJENA DE TODA CLASE DE CONSTRUCCIONES, OBRAS Y REFORMAS EN EDIFICIOS, PISOS, APARTAMENTOS, LOCALES COMERCIALES O INDUSTRIALES, OFICINAS Y HOTELES O ESTABLECIMIENTOS DE HOSTELERÍA, URBANIZACIONES, POLÍGONOS INDUS­TRIALES, ZONAS URBANAS Y RURALES, Y EN GENERAL EN CUALQUIER CLASE DE OBRA Ó INSTALACIÓN. 2.- LA PROMOCIÓN, CONSTRUCCIÓN, COMPRA, VENTA, ARRENDAMIENTO Y COMERCIALIZACIÓN EN GENERAL DE TODA CLASE DE EDIFICACIONES, TERRENOS, SOLARES, FINCAS RÚSTICAS Y URBANAS. 3.-LA PRESTACIÓN DE TODA CLASE DE SERVICIOS RELACIONADOS CON EL ÁMBITO DE LA CONSTRUCCIÓN E INGENIERÍA EN GENERAL, POR MEDIO DE LA FORMULACIÓN, DESARROLLO Y PUESTA EN MARCHA DE ESTUDIOS, ACTUACIONES Y PROYECTOS. 4. - LA GESTIÓN, DIRECCIÓN Y EJECUCIÓN POR CUENTA PROPIA O AJENA DE TODA CLASE DE CONSTRUCCIONES, INSTALACIONES, REFORMAS, REHABILITACIONES, DECORACIONES Y OBRAS DE RESTAURACIÓN EXTERNA E INTERNA DE ESTRUCTURAS Y REVESTIMIENTOS DE EDIFICIOS Y MONUMENTOS; LIMPIEZA, IMPERMEABILIZACIÓN, TRATAMIENTO, PINTURA, RECONSTRUCCIÓN Y LA IMPLANTACIÓN, CUIDADO Y MANTENIMIENTO DE JARDINES Y EXPLOTACIONES FORESTALES. LA SUPERVISIÓN Y CONTROL DE OBRAS, ASÍ COMO LA COORDINACIÓN DE GREMIOS, EL ASESORAMIENTO Y LA ASISTENCIA TÉCNICA EN TODO CUANTO SE RELACIONE CON EL CAMPO DE LA CONSTRUCCIÓN DE EDIFICIOS Y DE LAS OBRAS PÚBLICAS, CIVILES, O INDUSTRIALES.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08993",
+      "_links": {
+        "self": {
+          "name": "EGINKA CONSTRUCCIONES Y REFORMAS, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/08993"
+        }
+      }
+    },
+    {
+      "name": "TRC BAT, S.L.",
+      "registrationNumber": "09316",
+      "identificationNumber": "B56365497",
+      "address": "Calle Gran Vía Don Diego López de Haro 1  (48001)",
+      "location": {
+        "postalCode": "48001",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.845",
+          "name": "Explotación electrónica por cuenta de terceros",
+          "_links": {
+            "self": {
+              "name": "Explotación electrónica por cuenta de terceros",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.845"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-02-10",
+      "certificateEndDate": "2026-08-02",
+      "object": "LA PRESTACIÓN DE TODA CLASE DE SERVICIOS DE PROCESO DE DATOS, TRATAMIENTO DE LA INFORMACIÓN, CONFECCIÓN, DESARROLLO, COMERCIALIZACIÓN Y DISTRIBUCIÓN DE PROGRAMAS BÁSICOS Y DE APLICACIÓN PARA SU IMPLANTACIÓN EN ORDENADORES, Y, EN GENERAL, TODAS AQUELLAS ACTIVIDADES RELACIONADAS CON LA INFORMÁTICA Y LA DOMÓTICA, CUALQUIERA QUE SEA SU MANIFESTACIÓN INCLUYENDO LA COMPRA, VENTA Y ARRIENDO DE ORDENADORES, EQUIPOS Y PRODUCTOS ELECTRÓNICOS, ASÍ COMO PROGRAMAS BÁSICOS Y DE APLICACIÓN. COMO COMPLEMENTO DE DICHAS ACTIVIDADES LA SOCIEDAD PRESTARÁ SERVICIOS DE ASESORÍA, CONSULTORÍA, ORGANIZACIÓN Y FORMACIÓN RELACIONADAS CON LA INFORMÁTICA Y LA DOMÓTICA.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/09316",
+      "_links": {
+        "self": {
+          "name": "TRC BAT, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/09316"
+        }
+      }
+    }
+  ]
+}

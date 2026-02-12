@@ -1,0 +1,612 @@
+{
+  "totalItems": 919,
+  "totalPages": 92,
+  "currentPage": 5,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "id": 728,
+      "identificationNumber": "P4800014E",
+      "name": "Mancomunidad municipal Taller Ranzari Lantegia",
+      "scope": "BIZKAIA",
+      "address": "Barrio Kabiezes, s/n. 48980 Santurtzi (Bizkaia)",
+      "webPage": "https://www.contratacion.euskadi.eus/",
+      "publicationDate": "2025-03-18",
+      "mainActivity": "Protección social",
+      "codNUTS": "ES213",
+      "CPV": [
+        {
+          "name": "Servicios de limpieza"
+        },
+        {
+          "name": "Servicios de mantenimiento de jardines y parques"
+        }
+      ],
+      "entities": [
+        {
+          "id": 1205,
+          "name": "Mancomunidad municipal Taller Ranzari Lantegia",
+          "orgs": [
+            {
+              "id": 913610,
+              "name": "Presidencia ",
+              "_links": {
+                "self": {
+                  "name": "Presidencia ",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/728/entities/1205/orgs/913610"
+                }
+              }
+            },
+            {
+              "id": 913611,
+              "name": "Junta Rectora ",
+              "_links": {
+                "self": {
+                  "name": "Junta Rectora ",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/728/entities/1205/orgs/913611"
+                }
+              }
+            },
+            {
+              "id": 913609,
+              "name": "Gerencia",
+              "_links": {
+                "self": {
+                  "name": "Gerencia",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/728/entities/1205/orgs/913609"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Mancomunidad municipal Taller Ranzari Lantegia",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/728/entities/1205"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder728/es_doc/index.html",
+      "_links": {
+        "self": {
+          "name": "Mancomunidad municipal Taller Ranzari Lantegia",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/728"
+        },
+        "contractingAuthorities": [
+          {
+            "name": "Ayuntamiento de Portugalete ",
+            "href": "https://api.euskadi.eus/procurements/contracting-authorities/17034"
+          },
+          {
+            "name": "Ayuntamiento de Santurtzi",
+            "href": "https://api.euskadi.eus/procurements/contracting-authorities/18068"
+          }
+        ]
+      }
+    },
+    {
+      "id": 26412,
+      "identificationNumber": "Q2826004J",
+      "name": "Fábrica Nacional de Moneda y Timbre",
+      "scope": "CAPV",
+      "address": "Real Casa de la Moneda c/ Jorge Juan, 106, 28009 Madrid",
+      "webPage": "https://www.fnmt.es/",
+      "publicationDate": "2025-03-18",
+      "mainActivity": "Asuntos económicos y financieros",
+      "codNUTS": "ES300",
+      "entities": [
+        {
+          "id": 26413,
+          "name": "Fábrica Nacional de Moneda y Timbre",
+          "orgs": [
+            {
+              "id": 26414,
+              "name": "Fábrica Nacional de Moneda y Timbre",
+              "_links": {
+                "self": {
+                  "name": "Fábrica Nacional de Moneda y Timbre",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/26412/entities/26413/orgs/26414"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Fábrica Nacional de Moneda y Timbre",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/26412/entities/26413"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder26412/es_doc/index.html",
+      "_links": {
+        "self": {
+          "name": "Fábrica Nacional de Moneda y Timbre",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/26412"
+        },
+        "contractingAuthorities": [
+          {
+            "name": "Diputación Foral de Bizkaia",
+            "href": "https://api.euskadi.eus/procurements/contracting-authorities/18269"
+          },
+          {
+            "name": "Diputación Foral de Bizkaia",
+            "href": "https://api.euskadi.eus/procurements/contracting-authorities/22374"
+          },
+          {
+            "name": "Diputación Foral de Bizkaia",
+            "href": "https://api.euskadi.eus/procurements/contracting-authorities/24832"
+          },
+          {
+            "name": "Diputación Foral de Bizkaia",
+            "href": "https://api.euskadi.eus/procurements/contracting-authorities/25794"
+          },
+          {
+            "name": "Diputación Foral de Gipuzkoa",
+            "href": "https://api.euskadi.eus/procurements/contracting-authorities/17263"
+          }
+        ]
+      }
+    },
+    {
+      "id": 26997,
+      "identificationNumber": "P0100274J",
+      "name": "Junta Administrativa de Hueto Abajo",
+      "scope": "ARABA/ÁLAVA",
+      "address": "c/única 15",
+      "webPage": "https://www.vitoria-gasteiz.org/wb021/was/we001Action.do?idioma=es&accion=home&accionWe001=ficha",
+      "publicationDate": "2025-03-17",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES211",
+      "entities": [
+        {
+          "id": 26998,
+          "name": "Junta Administrativa de Hueto Abajo",
+          "orgs": [
+            {
+              "id": 26999,
+              "name": "Concejo",
+              "_links": {
+                "self": {
+                  "name": "Concejo",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/26997/entities/26998/orgs/26999"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Junta Administrativa de Hueto Abajo",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/26997/entities/26998"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder26997/es_doc/index.html",
+      "_links": {
+        "self": {
+          "name": "Junta Administrativa de Hueto Abajo",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/26997"
+        }
+      }
+    },
+    {
+      "id": 367,
+      "identificationNumber": "S5100021D",
+      "name": "Tribunal Vasco de Cuentas Públicas",
+      "scope": "CAPV",
+      "address": "Beato Tomás de Zumárraga, 69. 01008 Vitoria-Gasteiz (Araba/Álava)",
+      "webPage": "http://www.tvcp.eus",
+      "publicationDate": "2025-03-10",
+      "mainActivity": "Otra actividad",
+      "alternativeActivity": "Parlamento",
+      "codNUTS": "ES21",
+      "entities": [
+        {
+          "id": 819,
+          "name": "Tribunal Vasco de Cuentas Públicas",
+          "orgs": [
+            {
+              "id": 912347,
+              "name": "Presidencia TVCP",
+              "_links": {
+                "self": {
+                  "name": "Presidencia TVCP",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/367/entities/819/orgs/912347"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Tribunal Vasco de Cuentas Públicas",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/367/entities/819"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder367/es_doc/index.html",
+      "_links": {
+        "self": {
+          "name": "Tribunal Vasco de Cuentas Públicas",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/367"
+        }
+      }
+    },
+    {
+      "id": 26988,
+      "identificationNumber": "V95700407",
+      "name": "JUNTA DE CONCERTACIÓN DEL SECTOR ALDEKONE GOIKOA DE DERIO",
+      "scope": "BIZKAIA",
+      "address": "C/SAN VICENTE 8, 6 A IZ.",
+      "webPage": "https://www.derio.eus/es-ES/Paginas/default.aspx",
+      "publicationDate": "2025-03-06",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES213",
+      "entities": [
+        {
+          "id": 26989,
+          "name": "JUNTA DE CONCERTACIÓN DEL SECTOR ALDEKONE GOIKOA DE DERIO",
+          "orgs": [
+            {
+              "id": 26990,
+              "name": "JUNTA DE CONCERTACIÓN DEL SECTOR ALDEKONE GOIKOA DE DERIO",
+              "_links": {
+                "self": {
+                  "name": "JUNTA DE CONCERTACIÓN DEL SECTOR ALDEKONE GOIKOA DE DERIO",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/26988/entities/26989/orgs/26990"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "JUNTA DE CONCERTACIÓN DEL SECTOR ALDEKONE GOIKOA DE DERIO",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/26988/entities/26989"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder26988/es_doc/index.html",
+      "_links": {
+        "self": {
+          "name": "JUNTA DE CONCERTACIÓN DEL SECTOR ALDEKONE GOIKOA DE DERIO",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/26988"
+        }
+      }
+    },
+    {
+      "id": 564,
+      "identificationNumber": "F20722930",
+      "name": "Garaia Parque Tecnológico. S.Coop.",
+      "scope": "GIPUZKOA",
+      "address": "Goiru,1. A Eraikina. 20500 Arrasate (Guipuzkoa)",
+      "webPage": "http://www.ptgaraia.eus",
+      "publicationDate": "2025-03-05",
+      "mainActivity": "Asuntos económicos y financieros",
+      "codNUTS": "ES212",
+      "entities": [
+        {
+          "id": 1014,
+          "name": "Garaia Parque Tecnológico S.Coop.",
+          "orgs": [
+            {
+              "id": 26987,
+              "name": "Departamento de Administración y Finanzas",
+              "_links": {
+                "self": {
+                  "name": "Departamento de Administración y Finanzas",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/564/entities/1014/orgs/26987"
+                }
+              }
+            },
+            {
+              "id": 912689,
+              "name": "Consejero Delegado",
+              "_links": {
+                "self": {
+                  "name": "Consejero Delegado",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/564/entities/1014/orgs/912689"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Garaia Parque Tecnológico S.Coop.",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/564/entities/1014"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder564/es_doc/index.html",
+      "_links": {
+        "self": {
+          "name": "Garaia Parque Tecnológico. S.Coop.",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/564"
+        }
+      }
+    },
+    {
+      "id": 26983,
+      "identificationNumber": "V10681260",
+      "name": "Junta de Concertación de la Unidad de Ejecución II.13/IN.01 “ Infernua – El Infierno “ San Sebastián",
+      "scope": "GIPUZKOA",
+      "address": "Parque Empresarial Zuatzu Edificio Europa, 5ª planta, local 1",
+      "webPage": "www.juntadeconcertacioninfierno.com",
+      "publicationDate": "2025-03-04",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES212",
+      "entities": [
+        {
+          "id": 26984,
+          "name": "Junta de Concertación de la Unidad de Ejecución II.13/IN.01 “ Infernua – El Infierno “ de San Sebastián",
+          "orgs": [
+            {
+              "id": 26985,
+              "name": "Junta de Concertación de la Unidad de Ejecución II.13/IN.01 “ Infernua – El Infierno “ de San Sebastián",
+              "_links": {
+                "self": {
+                  "name": "Junta de Concertación de la Unidad de Ejecución II.13/IN.01 “ Infernua – El Infierno “ de San Sebastián",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/26983/entities/26984/orgs/26985"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Junta de Concertación de la Unidad de Ejecución II.13/IN.01 “ Infernua – El Infierno “ de San Sebast",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/26983/entities/26984"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder26983/es_doc/index.html",
+      "_links": {
+        "self": {
+          "name": "Junta de Concertación de la Unidad de Ejecución II.13/IN.01 “ Infernua – El Infierno “ San Sebastián",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/26983"
+        }
+      }
+    },
+    {
+      "id": 26979,
+      "identificationNumber": "B20933362",
+      "name": "ORTZIBIA, S.L.",
+      "scope": "GIPUZKOA",
+      "address": "Avenida Tolosa nº 75",
+      "webPage": "https://www.ortzibia.eus/",
+      "publicationDate": "2025-03-04",
+      "mainActivity": "Asuntos económicos y financieros",
+      "alternativeActivity": "Gestion de Aeropuertos",
+      "codNUTS": "ES212",
+      "entities": [
+        {
+          "id": 26980,
+          "name": "ORTZIBIA, S.L.",
+          "orgs": [
+            {
+              "id": 26981,
+              "name": "ORTZIBIA, S.L.",
+              "_links": {
+                "self": {
+                  "name": "ORTZIBIA, S.L.",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/26979/entities/26980/orgs/26981"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "ORTZIBIA, S.L.",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/26979/entities/26980"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder26979/es_doc/index.html",
+      "_links": {
+        "self": {
+          "name": "ORTZIBIA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/26979"
+        }
+      }
+    },
+    {
+      "id": 26975,
+      "identificationNumber": "P0100257E",
+      "name": "Junta Administrativa de Betolaza",
+      "scope": "ARABA/ÁLAVA",
+      "address": "c/ Lamiturri nº 6, Betolaza",
+      "webPage": "https://betolazaalava.blogspot.com/",
+      "publicationDate": "2025-03-03",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES211",
+      "entities": [
+        {
+          "id": 26976,
+          "name": "Junta Administrativa de Betolaza",
+          "orgs": [
+            {
+              "id": 26977,
+              "name": "Junta Administrativa de Betolaza",
+              "_links": {
+                "self": {
+                  "name": "Junta Administrativa de Betolaza",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/26975/entities/26976/orgs/26977"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Junta Administrativa de Betolaza",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/26975/entities/26976"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder26975/es_doc/index.html",
+      "_links": {
+        "self": {
+          "name": "Junta Administrativa de Betolaza",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/26975"
+        }
+      }
+    },
+    {
+      "id": 8,
+      "identificationNumber": "A01022664",
+      "name": "EJIE, S.A. - Sociedad Informática del Gobierno Vasco",
+      "scope": "CAPV",
+      "address": "Mediterráneo, 14  01010 VITORIA-GASTEIZ",
+      "webPage": "http://www.ejie.eus",
+      "publicationDate": "2025-02-28",
+      "mainActivity": "Otra actividad",
+      "alternativeActivity": "TICs",
+      "codNUTS": "ES21",
+      "CPV": [
+        {
+          "name": "Servicios TI: consultoría, desarrollo de software, Internet y apoyo"
+        }
+      ],
+      "entities": [
+        {
+          "id": 181,
+          "name": "EJIE-Sociedad Informática del Gobierno Vasco",
+          "orgs": [
+            {
+              "id": 910941,
+              "name": "Director General, Presidente, Vicepresidente del Consejo de Administración o Consejo de Administración, según las Instrucciones Internas de Contratación de EJIE, S.A.",
+              "_links": {
+                "self": {
+                  "name": "Director General, Presidente, Vicepresidente del Consejo de Administración o Consejo de Administraci",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/8/entities/181/orgs/910941"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "EJIE-Sociedad Informática del Gobierno Vasco",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/8/entities/181"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder8/es_doc/index.html",
+      "_links": {
+        "self": {
+          "name": "EJIE, S.A. - Sociedad Informática del Gobierno Vasco",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/8"
+        },
+        "contractingAuthorities": [
+          {
+            "name": "ALOKABIDE - Sociedad de Alquiler S.A.",
+            "href": "https://api.euskadi.eus/procurements/contracting-authorities/16597"
+          },
+          {
+            "name": "AUKERAK - Agencia Vasca de Reinserción Social",
+            "href": "https://api.euskadi.eus/procurements/contracting-authorities/24596"
+          },
+          {
+            "name": "Autoridad Vasca de la Competencia",
+            "href": "https://api.euskadi.eus/procurements/contracting-authorities/17012"
+          },
+          {
+            "name": "BASQUETOUR Agencia Vasca de Turismo, S.A.",
+            "href": "https://api.euskadi.eus/procurements/contracting-authorities/16670"
+          },
+          {
+            "name": "Biscay marine energy platform, S.A.",
+            "href": "https://api.euskadi.eus/procurements/contracting-authorities/16829"
+          },
+          {
+            "name": "Consorcio Haurreskolak",
+            "href": "https://api.euskadi.eus/procurements/contracting-authorities/17365"
+          },
+          {
+            "name": "Ente Público Euskadiko Kirol Portuak",
+            "href": "https://api.euskadi.eus/procurements/contracting-authorities/16917"
+          },
+          {
+            "name": "Ente Vasco de la Energía",
+            "href": "https://api.euskadi.eus/procurements/contracting-authorities/17259"
+          },
+          {
+            "name": "Euskal Trenbide Sarea",
+            "href": "https://api.euskadi.eus/procurements/contracting-authorities/16231"
+          },
+          {
+            "name": "Eusko Trenbideak Ferrocarriles Vascos, S.A.",
+            "href": "https://api.euskadi.eus/procurements/contracting-authorities/16468"
+          },
+          {
+            "name": "Fundación Vasca de Innovación e Investigación Sanitarias",
+            "href": "https://api.euskadi.eus/procurements/contracting-authorities/19034"
+          },
+          {
+            "name": "Fundación Vasca de Innovación e Investigación Sanitarias",
+            "href": "https://api.euskadi.eus/procurements/contracting-authorities/22879"
+          },
+          {
+            "name": "Fundación Vasca de Innovación e Investigación Sanitarias",
+            "href": "https://api.euskadi.eus/procurements/contracting-authorities/26704"
+          },
+          {
+            "name": "Gobierno Vasco",
+            "href": "https://api.euskadi.eus/procurements/contracting-authorities/16135"
+          },
+          {
+            "name": "Grupo Euskal Irrati Telebista",
+            "href": "https://api.euskadi.eus/procurements/contracting-authorities/17137"
+          },
+          {
+            "name": "ITELAZPI, S.A.",
+            "href": "https://api.euskadi.eus/procurements/contracting-authorities/16249"
+          },
+          {
+            "name": "LANBIDE, Servicio Vasco de Empleo",
+            "href": "https://api.euskadi.eus/procurements/contracting-authorities/18951"
+          },
+          {
+            "name": "NEIKER, Instituto Vasco de Investigación y Desarrollo Agrario, S.A.",
+            "href": "https://api.euskadi.eus/procurements/contracting-authorities/16615"
+          },
+          {
+            "name": "OSAKIDETZA - Servicio Vasco de Salud ",
+            "href": "https://api.euskadi.eus/procurements/contracting-authorities/16472"
+          },
+          {
+            "name": "Orquesta Sinfónica de Euskadi S.A.",
+            "href": "https://api.euskadi.eus/procurements/contracting-authorities/16607"
+          },
+          {
+            "name": "SPRI-Agencia Vasca de Desarrollo Empresarial",
+            "href": "https://api.euskadi.eus/procurements/contracting-authorities/17346"
+          },
+          {
+            "name": "Sociedad Pública de Gestión Ambiental, IHOBE, S.A.",
+            "href": "https://api.euskadi.eus/procurements/contracting-authorities/17047"
+          },
+          {
+            "name": "Tribunal Vasco de Cuentas Públicas",
+            "href": "https://api.euskadi.eus/procurements/contracting-authorities/26994"
+          },
+          {
+            "name": "VISESA - Vivienda y Suelo de Euskadi, S.A.",
+            "href": "https://api.euskadi.eus/procurements/contracting-authorities/16581"
+          },
+          {
+            "name": "eLankidetza-Agencia Vasca de Cooperación y Solidaridad",
+            "href": "https://api.euskadi.eus/procurements/contracting-authorities/16662"
+          },
+          {
+            "name": "eLankidetza-Agencia Vasca de Cooperación y Solidaridad",
+            "href": "https://api.euskadi.eus/procurements/contracting-authorities/26524"
+          }
+        ]
+      }
+    }
+  ]
+}

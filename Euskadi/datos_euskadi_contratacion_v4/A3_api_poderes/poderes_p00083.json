@@ -1,0 +1,743 @@
+{
+  "totalItems": 919,
+  "totalPages": 92,
+  "currentPage": 83,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "id": 642,
+      "identificationNumber": "P0100031D",
+      "name": "Junta Administrativa de Etxabarri Urtupiña",
+      "scope": "ARABA/ÁLAVA",
+      "address": "De la Venta, 11. Etxabarri Urtupiña. 01206 Barrundia (Araba/Álava)",
+      "webPage": "http://www.contratacion.euskadi.eus",
+      "publicationDate": "2019-03-26",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES211",
+      "entities": [
+        {
+          "id": 1090,
+          "name": "Junta Administrativa de Etxabarri Urtupiña",
+          "orgs": [
+            {
+              "id": 912819,
+              "name": "Concejo ",
+              "_links": {
+                "self": {
+                  "name": "Concejo ",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/642/entities/1090/orgs/912819"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Junta Administrativa de Etxabarri Urtupiña",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/642/entities/1090"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder642/es_doc/es_arch_poder642.html",
+      "_links": {
+        "self": {
+          "name": "Junta Administrativa de Etxabarri Urtupiña",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/642"
+        }
+      }
+    },
+    {
+      "id": 42,
+      "identificationNumber": "A20306775",
+      "name": "VISESA - Vivienda y Suelo de Euskadi, S.A.",
+      "scope": "CAPV",
+      "address": "Portal de Gamarra, 1A 2ºplanta. 01013 Vitoria-Gasteiz (Álava/Araba)",
+      "webPage": "http://www.visesa.eus",
+      "publicationDate": "2019-03-22",
+      "mainActivity": "Vivienda y servicios comunitarios",
+      "codNUTS": "ES21",
+      "entities": [
+        {
+          "id": 309,
+          "name": "VISESA - Vivienda y Suelo de Euskadi, S.A.",
+          "orgs": [
+            {
+              "id": 911134,
+              "name": "Área Jurídica",
+              "_links": {
+                "self": {
+                  "name": "Área Jurídica",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/42/entities/309/orgs/911134"
+                }
+              }
+            },
+            {
+              "id": 911136,
+              "name": "Área Económico-Financiera",
+              "_links": {
+                "self": {
+                  "name": "Área Económico-Financiera",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/42/entities/309/orgs/911136"
+                }
+              }
+            },
+            {
+              "id": 911135,
+              "name": "Área de Personas",
+              "_links": {
+                "self": {
+                  "name": "Área de Personas",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/42/entities/309/orgs/911135"
+                }
+              }
+            },
+            {
+              "id": 911130,
+              "name": "Consejo de Administración de VISESA",
+              "_links": {
+                "self": {
+                  "name": "Consejo de Administración de VISESA",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/42/entities/309/orgs/911130"
+                }
+              }
+            },
+            {
+              "id": 911133,
+              "name": "Área de Procesos y Sistemas",
+              "_links": {
+                "self": {
+                  "name": "Área de Procesos y Sistemas",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/42/entities/309/orgs/911133"
+                }
+              }
+            },
+            {
+              "id": 911131,
+              "name": "Área Técnica",
+              "_links": {
+                "self": {
+                  "name": "Área Técnica",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/42/entities/309/orgs/911131"
+                }
+              }
+            },
+            {
+              "id": 911129,
+              "name": "Director/a General de VISESA",
+              "_links": {
+                "self": {
+                  "name": "Director/a General de VISESA",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/42/entities/309/orgs/911129"
+                }
+              }
+            },
+            {
+              "id": 911132,
+              "name": "Área de Atención al Cliente",
+              "_links": {
+                "self": {
+                  "name": "Área de Atención al Cliente",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/42/entities/309/orgs/911132"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "VISESA - Vivienda y Suelo de Euskadi, S.A.",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/42/entities/309"
+            }
+          }
+        },
+        {
+          "id": 352,
+          "name": "Departamento de Personas y Servicios Generales",
+          "orgs": [
+            {
+              "id": 911224,
+              "name": "Director/a General de VISESA",
+              "_links": {
+                "self": {
+                  "name": "Director/a General de VISESA",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/42/entities/352/orgs/911224"
+                }
+              }
+            },
+            {
+              "id": 911223,
+              "name": "Consejo de Administración de VISESA",
+              "_links": {
+                "self": {
+                  "name": "Consejo de Administración de VISESA",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/42/entities/352/orgs/911223"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Departamento de Personas y Servicios Generales",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/42/entities/352"
+            }
+          }
+        },
+        {
+          "id": 355,
+          "name": "Departamento de Procesos y Sistemas",
+          "orgs": [
+            {
+              "id": 911225,
+              "name": "Consejo de Administración de VISESA",
+              "_links": {
+                "self": {
+                  "name": "Consejo de Administración de VISESA",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/42/entities/355/orgs/911225"
+                }
+              }
+            },
+            {
+              "id": 911226,
+              "name": "Director/a General de VISESA",
+              "_links": {
+                "self": {
+                  "name": "Director/a General de VISESA",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/42/entities/355/orgs/911226"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Departamento de Procesos y Sistemas",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/42/entities/355"
+            }
+          }
+        },
+        {
+          "id": 356,
+          "name": "Dirección General",
+          "orgs": [
+            {
+              "id": 911227,
+              "name": "Consejo de Administración de VISESA",
+              "_links": {
+                "self": {
+                  "name": "Consejo de Administración de VISESA",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/42/entities/356/orgs/911227"
+                }
+              }
+            },
+            {
+              "id": 911228,
+              "name": "Director/a General de VISESA",
+              "_links": {
+                "self": {
+                  "name": "Director/a General de VISESA",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/42/entities/356/orgs/911228"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Dirección General",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/42/entities/356"
+            }
+          }
+        },
+        {
+          "id": 351,
+          "name": "Departamento Jurídico",
+          "orgs": [
+            {
+              "id": 911218,
+              "name": "Director/a General de VISESA",
+              "_links": {
+                "self": {
+                  "name": "Director/a General de VISESA",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/42/entities/351/orgs/911218"
+                }
+              }
+            },
+            {
+              "id": 911217,
+              "name": "Consejo de Administración de VISESA",
+              "_links": {
+                "self": {
+                  "name": "Consejo de Administración de VISESA",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/42/entities/351/orgs/911217"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Departamento Jurídico",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/42/entities/351"
+            }
+          }
+        },
+        {
+          "id": 353,
+          "name": "Departamento de Atención al Cliente",
+          "orgs": [
+            {
+              "id": 911222,
+              "name": "Director/a General de VISESA",
+              "_links": {
+                "self": {
+                  "name": "Director/a General de VISESA",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/42/entities/353/orgs/911222"
+                }
+              }
+            },
+            {
+              "id": 911221,
+              "name": "Consejo de Administración de VISESA",
+              "_links": {
+                "self": {
+                  "name": "Consejo de Administración de VISESA",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/42/entities/353/orgs/911221"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Departamento de Atención al Cliente",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/42/entities/353"
+            }
+          }
+        },
+        {
+          "id": 354,
+          "name": "Departamento Económico-Financiero",
+          "orgs": [
+            {
+              "id": 911215,
+              "name": "Consejo de Administración de VISESA",
+              "_links": {
+                "self": {
+                  "name": "Consejo de Administración de VISESA",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/42/entities/354/orgs/911215"
+                }
+              }
+            },
+            {
+              "id": 911216,
+              "name": "Director/a General de VISESA",
+              "_links": {
+                "self": {
+                  "name": "Director/a General de VISESA",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/42/entities/354/orgs/911216"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Departamento Económico-Financiero",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/42/entities/354"
+            }
+          }
+        },
+        {
+          "id": 350,
+          "name": "Departamento Técnico",
+          "orgs": [
+            {
+              "id": 911220,
+              "name": "Director/a General de VISESA",
+              "_links": {
+                "self": {
+                  "name": "Director/a General de VISESA",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/42/entities/350/orgs/911220"
+                }
+              }
+            },
+            {
+              "id": 911219,
+              "name": "Consejo de Administración de VISESA",
+              "_links": {
+                "self": {
+                  "name": "Consejo de Administración de VISESA",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/42/entities/350/orgs/911219"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Departamento Técnico",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/42/entities/350"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder42/es_doc/es_arch_poder42.html",
+      "_links": {
+        "self": {
+          "name": "VISESA - Vivienda y Suelo de Euskadi, S.A.",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/42"
+        }
+      }
+    },
+    {
+      "id": 625,
+      "identificationNumber": "P0100256G",
+      "name": "Consorcio de Estribaciones del Gorbea",
+      "scope": "ARABA/ÁLAVA",
+      "address": "Plaza del Ayuntamiento, 1-2º izda. 01130 Murgia.Zuia (Álava/Araba)",
+      "webPage": "http://www.gorbeialdekokuadrilla.eus",
+      "publicationDate": "2019-03-20",
+      "mainActivity": "Medio ambiente",
+      "codNUTS": "ES211",
+      "entities": [
+        {
+          "id": 1076,
+          "name": "Consorcio de Estribaciones del Gorbea",
+          "orgs": [
+            {
+              "id": 912814,
+              "name": "Presidente",
+              "_links": {
+                "self": {
+                  "name": "Presidente",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/625/entities/1076/orgs/912814"
+                }
+              }
+            },
+            {
+              "id": 912800,
+              "name": "Junta de Gobierno",
+              "_links": {
+                "self": {
+                  "name": "Junta de Gobierno",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/625/entities/1076/orgs/912800"
+                }
+              }
+            },
+            {
+              "id": 912813,
+              "name": "Asamblea General",
+              "_links": {
+                "self": {
+                  "name": "Asamblea General",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/625/entities/1076/orgs/912813"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Consorcio de Estribaciones del Gorbea",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/625/entities/1076"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder625/es_doc/es_arch_poder625.html",
+      "_links": {
+        "self": {
+          "name": "Consorcio de Estribaciones del Gorbea",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/625"
+        }
+      }
+    },
+    {
+      "id": 634,
+      "identificationNumber": "P0100280G",
+      "name": "Junta Administrativa de Markinez",
+      "scope": "ARABA/ÁLAVA",
+      "address": "San Roke, 4. Markinez. 01216  Bernedo (Araba/Álava)",
+      "webPage": "http://www.contratacion.euskadi.eus",
+      "publicationDate": "2019-03-07",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES211",
+      "entities": [
+        {
+          "id": 1084,
+          "name": "Junta Administrativa de Markinez",
+          "orgs": [
+            {
+              "id": 912810,
+              "name": "Concejo",
+              "_links": {
+                "self": {
+                  "name": "Concejo",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/634/entities/1084/orgs/912810"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Junta Administrativa de Markinez",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/634/entities/1084"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder634/es_doc/es_arch_poder634.html",
+      "_links": {
+        "self": {
+          "name": "Junta Administrativa de Markinez",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/634"
+        }
+      }
+    },
+    {
+      "id": 633,
+      "identificationNumber": "P0100208H",
+      "name": "Junta Administrativa de Ametzaga Asparrena",
+      "scope": "ARABA/ÁLAVA",
+      "address": "Kale Nagusia, 13. Ametzaga. 01208 Asparrena (Araba/Álava)",
+      "webPage": "http://www.contratacion.euskadi.eus",
+      "publicationDate": "2019-03-05",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES211",
+      "entities": [
+        {
+          "id": 1083,
+          "name": "Junta Administrativa de Ametzaga Asparrena",
+          "orgs": [
+            {
+              "id": 912809,
+              "name": "Concejo ",
+              "_links": {
+                "self": {
+                  "name": "Concejo ",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/633/entities/1083/orgs/912809"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Junta Administrativa de Ametzaga Asparrena",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/633/entities/1083"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder633/es_doc/es_arch_poder633.html",
+      "_links": {
+        "self": {
+          "name": "Junta Administrativa de Ametzaga Asparrena",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/633"
+        }
+      }
+    },
+    {
+      "id": 628,
+      "identificationNumber": "P0100040E",
+      "name": "Junta Administrativa de Arbulu",
+      "scope": "ARABA/ÁLAVA",
+      "address": "Plaza Juan Gaztea, 1. Arbulu. 01192 Elburgo. (Araba/Álava)",
+      "webPage": "http://www.contratacion.euskadi.eus",
+      "publicationDate": "2019-02-27",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES211",
+      "entities": [
+        {
+          "id": 1079,
+          "name": "Junta Administrativa de Arbulu",
+          "orgs": [
+            {
+              "id": 912803,
+              "name": "Concejo de Arbulu",
+              "_links": {
+                "self": {
+                  "name": "Concejo de Arbulu",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/628/entities/1079/orgs/912803"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Junta Administrativa de Arbulu",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/628/entities/1079"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder628/es_doc/es_arch_poder628.html",
+      "_links": {
+        "self": {
+          "name": "Junta Administrativa de Arbulu",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/628"
+        }
+      }
+    },
+    {
+      "id": 627,
+      "identificationNumber": "P0100138G",
+      "name": "Junta Administrativa de Abornikano",
+      "scope": "ARABA/ÁLAVA",
+      "address": "La Ermita s/n. Abornikano. 01449 Urkabustaiz (Araba/Álava)",
+      "webPage": "http://www.contratacion.euskadi.eus",
+      "publicationDate": "2019-02-20",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES211",
+      "entities": [
+        {
+          "id": 1078,
+          "name": "Junta Administrativa de Abornikano",
+          "orgs": [
+            {
+              "id": 912802,
+              "name": "Concejo",
+              "_links": {
+                "self": {
+                  "name": "Concejo",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/627/entities/1078/orgs/912802"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Junta Administrativa de Abornikano",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/627/entities/1078"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder627/es_doc/es_arch_poder627.html",
+      "_links": {
+        "self": {
+          "name": "Junta Administrativa de Abornikano",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/627"
+        }
+      }
+    },
+    {
+      "id": 390,
+      "identificationNumber": "A95903027",
+      "name": "Agencia Vasca de Internacionalización-Basque Trade and Investment, S.A.",
+      "scope": "BIZKAIA",
+      "address": "Alameda Urquijo, 36. 48011 Bilbao (Bizkaia)",
+      "webPage": "http://www.basquetrade.eus",
+      "publicationDate": "2019-02-15",
+      "mainActivity": "Otra actividad",
+      "alternativeActivity": "Promoción empresarial",
+      "codNUTS": "ES213",
+      "entities": [
+        {
+          "id": 841,
+          "name": "Basque Trade and Investment",
+          "orgs": [
+            {
+              "id": 912488,
+              "name": "Consejera delegada",
+              "_links": {
+                "self": {
+                  "name": "Consejera delegada",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/390/entities/841/orgs/912488"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Basque Trade and Investment",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/390/entities/841"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder390/es_doc/es_arch_poder390.html",
+      "_links": {
+        "self": {
+          "name": "Agencia Vasca de Internacionalización-Basque Trade and Investment, S.A.",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/390"
+        }
+      }
+    },
+    {
+      "id": 624,
+      "identificationNumber": "P0100066J",
+      "name": "Junta Administrativa de Jauregi",
+      "scope": "ARABA/ÁLAVA",
+      "address": "Jauregi, 7. 01207 Iruraiz-Gauna (Araba/Álava)",
+      "webPage": "http://www.contratacion.euskadi.eus",
+      "publicationDate": "2019-02-14",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES211",
+      "entities": [
+        {
+          "id": 1075,
+          "name": "Junta Administrativa de Jauregi",
+          "orgs": [
+            {
+              "id": 912799,
+              "name": "Junta Administrativa de Jauregi",
+              "_links": {
+                "self": {
+                  "name": "Junta Administrativa de Jauregi",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/624/entities/1075/orgs/912799"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Junta Administrativa de Jauregi",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/624/entities/1075"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder624/es_doc/es_arch_poder624.html",
+      "_links": {
+        "self": {
+          "name": "Junta Administrativa de Jauregi",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/624"
+        }
+      }
+    },
+    {
+      "id": 623,
+      "identificationNumber": "P0100187D",
+      "name": "Junta Administrativa de Oteo",
+      "scope": "ARABA/ÁLAVA",
+      "address": "Barrio medio, s/n. 01117 Oteo. Campezo (Álava/Araba) ",
+      "webPage": "http://www.contratacion.euskadi.eus",
+      "publicationDate": "2019-02-12",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES211",
+      "entities": [
+        {
+          "id": 1074,
+          "name": "Junta Administrativa de Oteo",
+          "orgs": [
+            {
+              "id": 912798,
+              "name": "Presidente",
+              "_links": {
+                "self": {
+                  "name": "Presidente",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/623/entities/1074/orgs/912798"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Junta Administrativa de Oteo",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/623/entities/1074"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder623/es_doc/es_arch_poder623.html",
+      "_links": {
+        "self": {
+          "name": "Junta Administrativa de Oteo",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/623"
+        }
+      }
+    }
+  ]
+}

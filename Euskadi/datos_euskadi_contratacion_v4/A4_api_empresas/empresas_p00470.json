@@ -1,0 +1,428 @@
+{
+  "totalItems": 9042,
+  "totalPages": 905,
+  "currentPage": 470,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "name": "ALEX LARRETXI MARTÍNEZ",
+      "registrationNumber": "05656",
+      "identificationNumber": "16272081H",
+      "address": "DIEGO MTZ. DE ÁLAVA, 3-4º IZQ.",
+      "location": {
+        "postalCode": "01003",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.973.1",
+          "name": "Servicios fotográficos",
+          "_links": {
+            "self": {
+              "name": "Servicios fotográficos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.973.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2023-01-26",
+      "certificateEndDate": "2023-07-12",
+      "object": "OTROS SERVICIOS TÉCNICOS (ASESORÍA, ASISTENCIA, SERVICIOS SOCIALES, CULTURALES)",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/05656",
+      "_links": {
+        "self": {
+          "name": "ALEX LARRETXI MARTÍNEZ",
+          "href": "https://api.euskadi.eus/procurements/companies/05656"
+        }
+      }
+    },
+    {
+      "name": "EFINER SOLUCIONES ENERGETICAS, S.L.",
+      "registrationNumber": "06857",
+      "identificationNumber": "B95890414",
+      "address": "Polígono Industrial Barrondo. C/ Errekaondo, 21",
+      "location": {
+        "postalCode": "48450",
+        "municipality": "Etxebarri",
+        "county": "Bizkaia",
+        "municipalityId": "029",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.504.3",
+          "name": "Instalaciones de frío, calor y acondicionamiento de aire",
+          "_links": {
+            "self": {
+              "name": "Instalaciones de frío, calor y acondicionamiento de aire",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.504.3"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2023-01-26",
+      "certificateEndDate": "2023-07-10",
+      "object": "A-SERVICIOS TÉCNICOS DE INGENIERÍA Y OTRAS ACTIVIDADES RELACIONADAS CON EL ASESORAMIENTO TÉCNICO. B-FONTANERÍA, INSTALACIONES DE SISTEMAS DE CALEFACCIÓN, GAS Y AIRE ACONDICIONADO. C-INSTALACIONES ELÉCTRICAS. D-INSTALACIÓN Y MANTENIMIENTO DE SISTEMAS DE SEGURIDAD Y DE PROTECCIÓN CONTRA INCENDIOS. E- LA REALIZACIÓN DE TRABAJOS DE ALBAÑILERÍA Y CONSTRUCCIÓN EN GENERAL. LA REPARACIÓN, CONSERVACIÓN, MANTENIMIENTO, DECORACIÓN, REFORMA Y REHABILITACIÓN DE TODA CLASE DE EDIFICIOS. F-PORTALES WEB. G-OTROS SERVICIOS RELACIONADOS CON LAS TECNOLOGÍAS DE LA INFORMACIÓN Y LA INFORMÁTICA. H-COMPRAVENTA Y ALQUILER DE BIENES INMOBILIARIOS.\n\n",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06857",
+      "_links": {
+        "self": {
+          "name": "EFINER SOLUCIONES ENERGETICAS, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/06857"
+        }
+      }
+    },
+    {
+      "name": "SOCIEDAD PUBLICA EUSKO TRENBIDEAK FERROCARRILES VASCOS SA",
+      "registrationNumber": "03148",
+      "identificationNumber": "A48136550",
+      "address": "C/ Atxuri 6",
+      "location": {
+        "postalCode": "48006",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.659.9",
+          "name": "Venta al por menor de otros productos no especificados en esta agrupación",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de otros productos no especificados en esta agrupación",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.659.9"
+            }
+          }
+        },
+        {
+          "id": "1.712",
+          "name": "Transporte ferroviario por vía estrecha",
+          "_links": {
+            "self": {
+              "name": "Transporte ferroviario por vía estrecha",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.712"
+            }
+          }
+        },
+        {
+          "id": "1.721.1",
+          "name": "Transporte urbano colectivo",
+          "_links": {
+            "self": {
+              "name": "Transporte urbano colectivo",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.721.1"
+            }
+          }
+        },
+        {
+          "id": "1.721.3",
+          "name": "Transporte de viajeros por carretera",
+          "_links": {
+            "self": {
+              "name": "Transporte de viajeros por carretera",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.721.3"
+            }
+          }
+        },
+        {
+          "id": "1.966.1",
+          "name": "Bibliotecas y museos",
+          "_links": {
+            "self": {
+              "name": "Bibliotecas y museos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.966.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2023-01-24",
+      "certificateEndDate": "2023-07-12",
+      "object": "1.\tLA PRESTACIÓN DE SERVICIOS DE TRANSPORTE FERROVIARIO, TANTO DE VIAJEROS COMO DE MERCANCÍAS, INCLUYENDO EL MANTENIMIENTO DE MATERIAL RODANTE, Y DE OTROS SERVICIOS O ACTIVIDADES COMPLEMENTARIAS O VINCULADAS AL TRANSPORTE FERROVIARIO. EN ESPECIAL, LA SOCIEDAD PODRÁ DESARROLLAR, EN LA MEDIDA EN QUE LE SEA ENCOMENDADO POR CUALQUIER DISPOSICIÓN JURÍDICA O NORMATIVA, LA EXPLOTACIÓN DE LAS LÍNEAS FERROVIARIAS TRANSFERIDAS A LA COMUNIDAD AUTÓNOMA DE EUSKADI POR DECRETO 2488/1978, DE 25 DE AGOSTO Y POR LA LEY ORGÁNICA 3/1979, DE 18 DE DICIEMBRE. ASIMISMO, PODRÁ PRESTAR TODO TIPO DE SERVICIOS DE TRANSPORTE FERROVIARIO SOBRE LAS LÍNEAS QUE SE ENCUENTREN INTEGRADAS EN LA RED FERROVIARIA DE INTERÉS GENERAL. 2.\tDE IGUAL MANERA, CON CARÁCTER COMPLEMENTARIO DE SU ACTIVIDAD PRINCIPAL, ES TAMBIÉN OBJETO DE LA SOCIEDAD “EUSKO TRENBIDEAK/FERROCARRILES VASCOS, S.A.”: A) LA PRESTACIÓN DE SERVICIOS DE TRANSPORTE POR CABLE, TRANVÍA, FUNICULAR O CARRETERA, TANTO DE VIAJEROS COMO DE MERCANCÍAS, QUE INCLUIRÁ EL MANTENIMIENTO DEL MATERIAL RODANTE, Y DE OTROS SERVICIOS O ACTIVIDADES COMPLEMENTARIAS O VINCULADAS A DICHO TRANSPORTE. B) LA PRESTACIÓN DE SERVICIOS DE TRANSPORTE, TANTO DE VIAJEROS COMO DE MERCANTÍAS, MEDIANTE MEDIOS DISTINTOS A LOS MENCIONADOS EN LOS APARTADOS ANTERIORES, INCLUYENDO ASIMISMO OTROS SERVICIOS O ACTIVIDADES COMPLEMENTARIOS O VINCULADOS A LA PRESTACIÓN DE DICHOS SERVICIOS. C) LA REALIZACIÓN DE ESTUDIOS Y ASESORAMIENTO REFERENTES, ENTRE OTROS ÁMBITOS, A LA CONSTRUCCIÓN, CONSERVCACIÓN Y EQUIPAMIENTO, TECNOLOGÍA Y SUS MEDIOS, EXPLOTACIÓN Y ORDENACIÓN DE INFRAESTRUCTURAS FERROVIARIAS, ASÍ COMO LA DIRECCIÓN, INSPECCIÓN Y CONTROL TÉCNICO DE LA PRESTACIÓN DEL SERVICIOS DE TRANSPORTE, TANTO DE VIAJEROS COMO DE MERCANCÍAS. D) LA GESTIÓN DE LOS MUSEOS DE TITULARIDAD PÚBLICA RELACIONADOS CON EL TRANSPORTE QUE SE LE ATRIBUYA POR DECRETO O MEDIANTE LA CONSTITUCIÓN O PARTICIPACIÓN EN OTRAS PERSONAS JUR´DICIAS. E) EL DESEMPEÑO DE AQUELLAS OTRAS TAREAS RELACIONADAS CON EL OBJETO DE LOS APARTADOS ANTERIORES QUE LE FUEREN ENCOMENDADAS DENTRO DEL ÁMBITO DE COMPETENCIAS DE LA COMUNIDAD AUTÓNMA DE EUSKADI POR PARTE DE LA ADMINISTRACIÓ DE LA COMUNIDAD AUTÓNOMA DE EUSKADI O POR OTRAS ADMINISTRACIONES O PERSONAS FÍSICAS O JURÍDICAS, CADA UNA EN USODE SUS FACULTADES",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03148",
+      "_links": {
+        "self": {
+          "name": "SOCIEDAD PUBLICA EUSKO TRENBIDEAK FERROCARRILES VASCOS SA",
+          "href": "https://api.euskadi.eus/procurements/companies/03148"
+        }
+      }
+    },
+    {
+      "name": "RECURSOS Y PROYECTOS METALICOS, S.L.",
+      "registrationNumber": "08834",
+      "identificationNumber": "B01448059",
+      "address": "CALLE ANBOTO",
+      "location": {
+        "postalCode": "01006",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.221",
+          "name": "Siderurgia integral",
+          "_links": {
+            "self": {
+              "name": "Siderurgia integral",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.221"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2023-01-24",
+      "certificateEndDate": "2023-06-26",
+      "object": "LA INDUSTRIA SIDERÚRGICA, EL DISEÑO DE PROYECTOS METAL-MECÁNICOS, CALDERERÍA, MECÁNICA INDUSTRIAL, CORTE POR LÁSER, MECANIZADO DE PIEZAS.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08834",
+      "_links": {
+        "self": {
+          "name": "RECURSOS Y PROYECTOS METALICOS, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/08834"
+        }
+      }
+    },
+    {
+      "name": "3DKALA S.COOP. PEQUEÑA",
+      "registrationNumber": "08157",
+      "identificationNumber": "F02834240",
+      "address": "CANCILLER AYALA, nº 11, 1º D",
+      "location": {
+        "postalCode": "01004",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.623",
+          "name": "Recuperación y comercio de residuos fuera de establecimiento permanente",
+          "_links": {
+            "self": {
+              "name": "Recuperación y comercio de residuos fuera de establecimiento permanente",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.623"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2023-01-23",
+      "certificateEndDate": "2023-07-23",
+      "object": "A) LA FABRICACIÓN DE FILAMENTOS PARA IMPRESORAS 3D, A PARTIR DE PLÁSTICO RECICLADO. B) LA FABRICACIÓN DE PRODUCTOS POR IMPRESIÓN 3D, A PARTIR DE FILAMENTOS DE PLÁSTICO RECICLADO. C) LA COMERCIALIZACIÓN Y DISTRIBUCIÓN DE MAQUINARIA, HERRAMIENTAS Y UTENSILIOS EMPLEADOS EN LA INDUSTRIA DE LA IMPRESIÓN 3D.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08157",
+      "_links": {
+        "self": {
+          "name": "3DKALA S.COOP. PEQUEÑA",
+          "href": "https://api.euskadi.eus/procurements/companies/08157"
+        }
+      }
+    },
+    {
+      "name": "MAITE ORTEGA ZUBICARAY",
+      "registrationNumber": "05732",
+      "identificationNumber": "30609922G",
+      "address": "El Ponton Uriarte, 18",
+      "location": {
+        "postalCode": "48192",
+        "municipality": "Gordexola",
+        "county": "Bizkaia",
+        "municipalityId": "042",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.965.3",
+          "name": "Espectáculos fuera de establecimiento permanente (excepto los taurinos)",
+          "_links": {
+            "self": {
+              "name": "Espectáculos fuera de establecimiento permanente (excepto los taurinos)",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.965.3"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2023-01-23",
+      "certificateEndDate": "2023-07-12",
+      "object": "ESPECTACULOS FUERA DE ESTABLECIMIENTO",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/05732",
+      "_links": {
+        "self": {
+          "name": "MAITE ORTEGA ZUBICARAY",
+          "href": "https://api.euskadi.eus/procurements/companies/05732"
+        }
+      }
+    },
+    {
+      "name": "JON ARRABAL AMAT",
+      "registrationNumber": "08134",
+      "identificationNumber": "16086779G",
+      "address": "CALLE DIPUTACIÓN 2, 4 DERECHA",
+      "location": {
+        "postalCode": "48009",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "2.411",
+          "name": "Arquitectos",
+          "_links": {
+            "self": {
+              "name": "Arquitectos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/2.411"
+            }
+          }
+        },
+        {
+          "id": "2.432",
+          "name": "Decoradores-diseñadores de interiores",
+          "_links": {
+            "self": {
+              "name": "Decoradores-diseñadores de interiores",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/2.432"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2023-01-20",
+      "certificateEndDate": "2023-07-17",
+      "object": "ARQUITECTOS.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08134",
+      "_links": {
+        "self": {
+          "name": "JON ARRABAL AMAT",
+          "href": "https://api.euskadi.eus/procurements/companies/08134"
+        }
+      }
+    },
+    {
+      "name": "PKF ATTEST CONCURSAL SOCIEDAD LIMITADA PROFESIONAL",
+      "registrationNumber": "07988",
+      "identificationNumber": "B95669628",
+      "address": "Alameda Recalde 36 - 8º",
+      "location": {
+        "postalCode": "48009",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.842",
+          "name": "Servicios financieros y contables",
+          "_links": {
+            "self": {
+              "name": "Servicios financieros y contables",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.842"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2023-01-19",
+      "certificateEndDate": "2023-07-14",
+      "object": "LA REALIZACIÓN DE FUNCIONES DE ADMINISTRACIÓN CONCURSAL A LA LUZ DE LO DISPUESTO EN EL ARTÍCULO 27.1 DE LA LEY 22/2003, DE 9 DE JULIO, CONCURSAL, EN SU REDACCIÓN DADA POR LA LEY 38/2011, DE 10 DE OCTUBRE Y/U OTRAS CONCORDANTES Y/O AQUELLAS QUE, EN SU CASO DEROGUEN A ÉSTA.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07988",
+      "_links": {
+        "self": {
+          "name": "PKF ATTEST CONCURSAL SOCIEDAD LIMITADA PROFESIONAL",
+          "href": "https://api.euskadi.eus/procurements/companies/07988"
+        }
+      }
+    },
+    {
+      "name": "ROBERTO SOLOGAISTUA CENDOYA",
+      "registrationNumber": "08114",
+      "identificationNumber": "15359410X",
+      "address": "Calle Fermin Calbetón (20600) 3, 2º",
+      "location": {
+        "postalCode": "20600",
+        "municipality": "Eibar",
+        "county": "Gipuzkoa",
+        "municipalityId": "030",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.861.2",
+          "name": "Alquiler de locales industriales y otros alquileres n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Alquiler de locales industriales y otros alquileres n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.861.2"
+            }
+          }
+        },
+        {
+          "id": "1.921.3",
+          "name": "Exterminio de animales dañinos y desinfección",
+          "_links": {
+            "self": {
+              "name": "Exterminio de animales dañinos y desinfección",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.921.3"
+            }
+          }
+        },
+        {
+          "id": "1.979.4",
+          "name": "Adiestramiento de animales y otros servicios de atención de animales",
+          "_links": {
+            "self": {
+              "name": "Adiestramiento de animales y otros servicios de atención de animales",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.979.4"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2023-01-18",
+      "certificateEndDate": "2023-07-12",
+      "object": "VETERINARIOS. ADIESTRAMIENTO DE ANIMALES Y OTROS SERVICIOS DE ATENCIÓN DE ANIMALES. EXTERMINIO DE ANIMALES DAÑINOS Y DESINFECCIÓN. ALQUILER DE LOCALES INDUSTRIALES Y OTROS ALQUILERES N.C.O.P.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08114",
+      "_links": {
+        "self": {
+          "name": "ROBERTO SOLOGAISTUA CENDOYA",
+          "href": "https://api.euskadi.eus/procurements/companies/08114"
+        }
+      }
+    },
+    {
+      "name": "CRISTINA PINTOR MENCHACA",
+      "registrationNumber": "07290",
+      "identificationNumber": "14610866R",
+      "address": "PELOTA, 4 - 1",
+      "location": {
+        "postalCode": "48005",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "2.751",
+          "name": "Profesionales de la publicidad, relaciones públicas y similares",
+          "_links": {
+            "self": {
+              "name": "Profesionales de la publicidad, relaciones públicas y similares",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/2.751"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2023-01-18",
+      "certificateEndDate": "2023-07-12",
+      "object": "PROFESIONALES DE LA PUBLICIDAD, RELACIONES PÚBLICAS Y SIMILARES",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07290",
+      "_links": {
+        "self": {
+          "name": "CRISTINA PINTOR MENCHACA",
+          "href": "https://api.euskadi.eus/procurements/companies/07290"
+        }
+      }
+    }
+  ]
+}

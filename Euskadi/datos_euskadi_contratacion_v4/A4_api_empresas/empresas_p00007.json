@@ -1,0 +1,530 @@
+{
+  "totalItems": 9042,
+  "totalPages": 905,
+  "currentPage": 7,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "name": "MONTAJES ELECTRICOS LLODIO, S.L.",
+      "registrationNumber": "04956",
+      "identificationNumber": "B01016963",
+      "address": "POLIGONO INDUSTRIALDEA, PAB. 6-1",
+      "location": {
+        "postalCode": "01400",
+        "municipality": "Laudio/Llodio",
+        "county": "Araba/Álava",
+        "municipalityId": "036",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.504.1",
+          "name": "Instalaciones eléctricas en general",
+          "_links": {
+            "self": {
+              "name": "Instalaciones eléctricas en general",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.504.1"
+            }
+          }
+        },
+        {
+          "id": "1.504.11",
+          "name": "Instalaciones eléctricas en general, redes telegráficas, telefonía, tv, etc",
+          "_links": {
+            "self": {
+              "name": "Instalaciones eléctricas en general, redes telegráficas, telefonía, tv, etc",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.504.11"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-02-10",
+      "certificateEndDate": "2026-08-05",
+      "object": "LA EXPLOTACIÓN Y PRESTACIÓN DEL NEGOCIO O SERVICIO DE INSTALACIÓN, REPARACIÓN Y VENTA DE TODA CLASE DE MAQUINARIA Y MATERIAL ELÉCTRICO, INDUSTRIAL Y DOMÉSTICO, ACCESORIOS Y RECAMBIOS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/04956",
+      "_links": {
+        "self": {
+          "name": "MONTAJES ELECTRICOS LLODIO, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/04956"
+        }
+      }
+    },
+    {
+      "name": "MARIA ARANZAZU CASAUL ORTUÑO",
+      "registrationNumber": "10534",
+      "identificationNumber": "49013255W",
+      "address": "Calle Nueva Dentro-Judería (01001)",
+      "location": {
+        "postalCode": "01004",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.973.1",
+          "name": "Servicios fotográficos",
+          "_links": {
+            "self": {
+              "name": "Servicios fotográficos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.973.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-02-10",
+      "certificateEndDate": "2026-08-06",
+      "object": "SERVICIOS FOTOGRÁFICOS.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/10534",
+      "_links": {
+        "self": {
+          "name": "MARIA ARANZAZU CASAUL ORTUÑO",
+          "href": "https://api.euskadi.eus/procurements/companies/10534"
+        }
+      }
+    },
+    {
+      "name": "XABIER BUENECHEA ARAGUES",
+      "registrationNumber": "08367",
+      "identificationNumber": "16045429P",
+      "address": "BOLINTXU BASERRIA ERGOIEN AUZOA 73",
+      "location": {
+        "postalCode": "48113",
+        "municipality": "Gamiz-Fika",
+        "county": "Bizkaia",
+        "municipalityId": "038",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "2.022",
+          "name": "Ingenieros técnicos agrícolas e ingenieros técnicos forestales",
+          "_links": {
+            "self": {
+              "name": "Ingenieros técnicos agrícolas e ingenieros técnicos forestales",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/2.022"
+            }
+          }
+        },
+        {
+          "id": "2.599",
+          "name": "Otros profesionales relacionados con el comercio y hostelería",
+          "_links": {
+            "self": {
+              "name": "Otros profesionales relacionados con el comercio y hostelería",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/2.599"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-02-10",
+      "certificateEndDate": "2026-08-02",
+      "object": "OTROS PROFESIONALES RELACIONADOS CON EL COMERCIO Y HOSTELERÍA. INGENIEROS TÉCNICOS AGRÍCOLAS E INGENIEROS TÉCNICOS FORESTALES.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08367",
+      "_links": {
+        "self": {
+          "name": "XABIER BUENECHEA ARAGUES",
+          "href": "https://api.euskadi.eus/procurements/companies/08367"
+        }
+      }
+    },
+    {
+      "name": "JAVIER PEREZ DE MENDIOLA MARTINEZ",
+      "registrationNumber": "06972",
+      "identificationNumber": "18598824N",
+      "address": "CALLE CAMPOSANTO Nº40, 3ºA",
+      "location": {
+        "postalCode": "01340",
+        "municipality": "Elciego",
+        "county": "Araba/Álava",
+        "municipalityId": "022",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.921.1",
+          "name": "Servicios de limpieza en calles, vías públicas y jardines",
+          "_links": {
+            "self": {
+              "name": "Servicios de limpieza en calles, vías públicas y jardines",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.921.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-02-10",
+      "certificateEndDate": "2026-08-10",
+      "object": "SERVICIOS DE LIMPIEZA DE CALLES, VÍAS PÚBLICAS Y JARDINERÍA",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06972",
+      "_links": {
+        "self": {
+          "name": "JAVIER PEREZ DE MENDIOLA MARTINEZ",
+          "href": "https://api.euskadi.eus/procurements/companies/06972"
+        }
+      }
+    },
+    {
+      "name": "GRÁFICAS INGUGOM, S.L.",
+      "registrationNumber": "05381",
+      "identificationNumber": "B48179568",
+      "address": "POL. UGALDEGUREN I - PAB. 9",
+      "location": {
+        "postalCode": "48170",
+        "municipality": "Zamudio",
+        "county": "Bizkaia",
+        "municipalityId": "905",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.474",
+          "name": "Artes gráficas (impresión gráfica)",
+          "_links": {
+            "self": {
+              "name": "Artes gráficas (impresión gráfica)",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.474"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-02-10",
+      "certificateEndDate": "2026-07-29",
+      "object": "LA IMPRESIÓN DE TEXTOS O IMÁGENES POR CUALQUIER SISTEMA O PROCEDIMIENTO, TALES COMO TIPOGRAFÍA, OFSET, IMPRESIÓN DIGITAL, HUECO-GRAVADO, SERIGRAFÍA, FLEXOGRAFÍA, LOTOGRAFÍA, CALCOGRAFÍA Y ESTAMPACIONES EN RELIEVE, REALIZACIÓN DE LIBROS, FOLLETOS, CATÁLOGOS, IMPRESOS, CALENDARIOS, MATERIAL DE OFICINA, ADHESIVOS, ETIQUETAS, RÓTULOS, CAJAS DE CARTONCILLO Y MICROONDULADO EN TODAS LAS TÉCNICAS GRÁFICAS; REALIZACIÓN DE BOCETOS, DISEÑOS Y ARTES FINALES DE TODO TIPO DE LIBROS, CATÁLOGOS E IMPRESOS, FOTOMECÁNICA, FOTOCOMPOSICIÓN DE TEXTO; ENCUADERNACIÓN Y MANIPULACIÓN DE PAPEL Y CARTÓN EN GENERAL, ASÍ COMO TODOS LOS TRABAJOS RELACIONADOS CON LAS ARTES GRÁFICAS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/05381",
+      "_links": {
+        "self": {
+          "name": "GRÁFICAS INGUGOM, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/05381"
+        }
+      }
+    },
+    {
+      "name": "AMEBIL, S.L.",
+      "registrationNumber": "03453",
+      "identificationNumber": "B95492716",
+      "address": "C/ AZBARREN, 3",
+      "location": {
+        "postalCode": "48970",
+        "municipality": "Basauri",
+        "county": "Bizkaia",
+        "municipalityId": "015",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.619.2",
+          "name": "Venta al por mayor de aparatos e instrumentos médicos, ortopédicos, ópticos",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de aparatos e instrumentos médicos, ortopédicos, ópticos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.619.2"
+            }
+          }
+        },
+        {
+          "id": "1.619.4",
+          "name": "Venta al por mayor de productos de papel y cartón",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de productos de papel y cartón",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.619.4"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-02-10",
+      "certificateEndDate": "2026-08-04",
+      "object": "LA COMPRA Y VENTA DE MOBILIARIO, ÚTILES, MATERIAL DIVERSO Y TODA CLASE DE ACCESORIOS MÉDICOS-QUIRÚRGICOS; LA TRANSFORMACIÓN, MODIFICACIÓN, REPARACIÓN Y MONTAJE RELACIONADOS CON LOS ARTÍCULOS QUE COMERCIALIZA; ASIMISMO, PODRÁ DEDICARSE A LA IMPORTACIÓN Y EXPORTACIÓN DE TODOS LOS ARTÍCULOS PROPIOS DE LA ACTIVIDAD A LA QUE SE DEDIQUE",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03453",
+      "_links": {
+        "self": {
+          "name": "AMEBIL, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/03453"
+        }
+      }
+    },
+    {
+      "name": "KLIMATITAZIO BERMIOTARRA, S.L.",
+      "registrationNumber": "03760",
+      "identificationNumber": "B48991889",
+      "address": "GAZTELUONDO Nº 5,1 PLANTA, MODULO 14",
+      "location": {
+        "postalCode": "48002",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.504.3",
+          "name": "Instalaciones de frío, calor y acondicionamiento de aire",
+          "_links": {
+            "self": {
+              "name": "Instalaciones de frío, calor y acondicionamiento de aire",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.504.3"
+            }
+          }
+        },
+        {
+          "id": "1.922",
+          "name": "Servicios de limpieza",
+          "_links": {
+            "self": {
+              "name": "Servicios de limpieza",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.922"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-02-10",
+      "certificateEndDate": "2026-08-10",
+      "classification": [
+        {
+          "id": "O",
+          "name": "Obras",
+          "groups": [
+            {
+              "id": "J",
+              "name": "INSTALACIONES MECANICAS",
+              "subgroups": [
+                {
+                  "id": "02",
+                  "name": "De ventilación, calefacción y climatización",
+                  "categories": [
+                    {
+                      "id": "3",
+                      "name": "Desde 360.001 Hasta 840.000",
+                      "_links": {
+                        "self": {
+                          "name": "Desde 360.001 Hasta 840.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/O/categories/3"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "De ventilación, calefacción y climatización",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/O/groups/J/subgroups/02"
+                    }
+                  }
+                }
+              ],
+              "_links": {
+                "self": {
+                  "name": "INSTALACIONES MECANICAS",
+                  "href": "https://api.euskadi.eus/procurements/companies/types/O/groups/J"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Obras",
+              "href": "https://api.euskadi.eus/procurements/companies/types/O"
+            }
+          }
+        },
+        {
+          "id": "S",
+          "name": "Servicios",
+          "groups": [
+            {
+              "id": "P",
+              "subgroups": [
+                {
+                  "id": "03",
+                  "name": "Mtto. y reparación equipos e instalaciones de calefacción y aire acondicionado",
+                  "categories": [
+                    {
+                      "id": "1",
+                      "name": "Desde 0 Hasta 150.000",
+                      "_links": {
+                        "self": {
+                          "name": "Desde 0 Hasta 150.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/S/categories/1"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "Mtto. y reparación equipos e instalaciones de calefacción y aire acondicionado",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/P/subgroups/03"
+                    }
+                  }
+                }
+              ],
+              "_links": {
+                "self": {
+                  "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/P"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Servicios",
+              "href": "https://api.euskadi.eus/procurements/companies/types/S"
+            }
+          }
+        }
+      ],
+      "object": "EL MANTENIMIENTO E INSTALACIÓN DE CLIMATIZACIÓN EN GENERAL, ES DECIR, CALEFACCIÓN, GAS, AIRE ACONDICIONADO NIVEL DOMÉSTICO E INDUSTRIAL Y FRIO INDUSTRIAL.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03760",
+      "_links": {
+        "self": {
+          "name": "KLIMATITAZIO BERMIOTARRA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/03760"
+        }
+      }
+    },
+    {
+      "name": "ZABALA INNOVATION CONSULTING, S.A.",
+      "registrationNumber": "05161",
+      "identificationNumber": "A31419773",
+      "address": "PASEO SANTXIKI 3 BIS",
+      "location": {
+        "postalCode": "31192",
+        "municipality": "Aranguren",
+        "county": "Navarra",
+        "municipalityId": "023",
+        "countyId": "31"
+      },
+      "economicActivities": [
+        {
+          "id": "1.842",
+          "name": "Servicios financieros y contables",
+          "_links": {
+            "self": {
+              "name": "Servicios financieros y contables",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.842"
+            }
+          }
+        },
+        {
+          "id": "1.843.1",
+          "name": "Servicios técnicos de ingeniería",
+          "_links": {
+            "self": {
+              "name": "Servicios técnicos de ingeniería",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-02-10",
+      "certificateEndDate": "2026-08-04",
+      "object": "a) LA REALIZACIÓN DE ACTIVIDADES DE ASESORÍA Y CONSULTORÍA PARA PERSONAS JURÍDICAS, COMPAÑÍAS NACIONALES Y EXTRANJERAS, ORGANISMOS PÚBLICOS Y PRIVADOS, ENTIDADES Y PERSONAS NATURALES, EN MATERIA DE GESTIÓN INVESTIGACIÓN, DESARROLLO TECNOLÓGICO E INNOVACIÓN, PUDIENDO, EN ESTE ÁMBITO, 1) LLEVAR A CABO TRABAJOS DE ASESORAMIENTO, DIRECCIÓN, GESTIÓN Y CONSULTORÍA, 2) APOYAR EN LA GESTIÓN DE LA INNOVACIÓN Y EN LA PARTICIPACIÓN EN PROGRAMAS DE AYUDAS FINANCIERAS Y FISCALES A LA INVESTIGACIÓN, EL DESARROLLO TECNOLÓGICO Y LA INNOVACIÓN, 3) ASESORAR EN LA PLANIFICACIÓN ESTRATÉGICA Y ORGANIZACIONAL, 4) APOYAR EN LA COOPERACIÓN TRANSNACIONAL Y EN LA BÚSQUEDA DE OPORTUNIDADES DE NEGOCIO, 5) REALIZAR DIAGNÓSTICOS DE EMPRESAS Y PLANES DE VIABILIDAD, 6) REALIZAR ESTUDIOS ESTRATÉGICOS, DE MERCADO Y SIMILARES, 7) ASESORAMIENTO Y REALIZACIÓN DE GESTIONES EN MATERIA DE PLANIFICACIÓN, ORGANIZACIÓN Y DIRECCIÓN, 8) ASESORAMIENTO Y GESTIÓN EN TEMAS DE PROPIEDAD INDUSTRIAL, 9) CONCURRIR A LICITACIONES DE ORGANISMOS NACIONALES, REGIONALES E INTERNACIONALES EN CUALQUIERA DE LOS TEMAS RELACIONADOS CON LA ESPECIALIZACIÓN DE LA EMPRESA, 10) PROMOVER LA INNOVACIÓN SOCIAL Y ASESORAR A INSTITUCIONES Y EMPRESAS EN EL DESARROLLO DE ACCIONES Y PROGRAMAS QUE FOMENTEN E INTEGREN LA INNOVACIÓN SOCIAL EN SUS ACTIVIDADES. 11) LA GESTIÓN INTEGRAL DE AYUDAS, SUBVENCIONES Y PROYECTOS DE I+D+I (ACTIVIDAD PRINCIPAL CNAE 7022 -OTRAS ACTIVIDADES DE CONSULTORÍA DE GESTIÓN EMPRESARIAL). B) LA PARTICIPACIÓN EN SOCIEDADES POR MEDIO DE LA CONSTITUCIÓN, AMPLIACIÓN DE CAPITAL, ADQUISICIÓN DE ACCIONES, DERECHOS O PARTICIPACIONES, EN COMPAÑÍAS NACIONALES O EXTRANJERAS, YA EXISTENTES O QUE EN EL FUTURO SE CREEN, POR CUENTA PROPIA. C) LA PRESTACIÓN DE SERVICIOS DE ASISTENCIA O APOYO A LAS SOCIEDADES Y EMPRESAS PARTICIPADAS, O CUYO FIN LA SOCIEDAD PODRÁ PRESTAR, A FAVOR DE LAS MISMAS LAS GARANTÍAS Y AFIANZAMIENTOS QUE ESTIME OPORTUNAS. D) LA PRESTACIÓN DE SERVICIOS DE ASESORAMIENTO, CONSULTORÍA, GESTIÓN Y DIRECCIÓN DE TODA CLASE DE EMPRESAS Y SOCIEDADES, EN EL ÁREA ADMINISTRATIVA, LABORAL, CONTABLE, DE MARKETING Y PUBLICIDAD, INFORMÁTICA, DE PRODUCCIÓN Y CALIDAD, ASÍ COMO EL CONTROL, LA GESTIÓN Y LA DIRECCIÓN DE LAS ACTIVIDADES DESARROLLADAS POR LAS SOCIEDADES PARTICIPADAS. E) LA ADQUISICIÓN, TENENCIA, DISFRUTE, PROMOCIÓN, CONSTRUCCIÓN, EXPLOTACIÓN Y VENTA DE TODA CLASE DE BIENES INMUEBLES. F) LA ADQUISICIÓN, TENENCIA, DISFRUTE Y VENTA DE TODA CLASE DE VALORES MOBILIARIOS, POR CUENTA PROPIA",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/05161",
+      "_links": {
+        "self": {
+          "name": "ZABALA INNOVATION CONSULTING, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/05161"
+        }
+      }
+    },
+    {
+      "name": "IRSEARABA S COOP",
+      "registrationNumber": "08952",
+      "identificationNumber": "F72957574",
+      "address": "Calle Canciller Ayala, 8-bajo",
+      "location": {
+        "postalCode": "01004",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.932.1",
+          "name": "Enseñanza de formación y perfeccionamiento profesional no superior",
+          "_links": {
+            "self": {
+              "name": "Enseñanza de formación y perfeccionamiento profesional no superior",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.932.1"
+            }
+          }
+        },
+        {
+          "id": "1.951",
+          "name": "Asistencia y servicios sociales en centros residenciales",
+          "_links": {
+            "self": {
+              "name": "Asistencia y servicios sociales en centros residenciales",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.951"
+            }
+          }
+        },
+        {
+          "id": "1.952",
+          "name": "Asistencia y servicios sociales en centros no residenciales",
+          "_links": {
+            "self": {
+              "name": "Asistencia y servicios sociales en centros no residenciales",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.952"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-02-10",
+      "certificateEndDate": "2026-08-10",
+      "object": "EL INTERÉS GENERAL DE LA COMUNIDAD PARA LA PROMOCIÓN Y PLENA INTEGRACIÓN, A TRAVÉS DE SU TRABAJO ASOCIADO, DE LOS CIUDADANOS EN SITUACIÓN DE DIFICULTAD. DE MANERA MÁS CONCRETA, EL OBJETO DE LA MISMA ES CONSISTE EN LA REALIZACIÓN DE LAS SIGUIENTES ACTIVIDADES: SENSIBILIZAR A LA SOCIEDAD SOBRE LAS SITUACIONES DE EXCLUSIÓN SOCIAL, ASÍ COMO SOBRE LAS POSIBLES FORMAS DE PREVENCIÓN, IMPLICACIÓN PERSONAL Y COLECTIVA. INCIDIR EN SITUACIONES PERSONALES O COLECTIVAS CONCRETAS, RELACIONADAS CON LA EXCLUSIÓN SOCIAL, UTILIZANDO METODOLOGÍAS PSICOSOCIALES, SOCIO-EDUCATIVAS. PROMOVER, PERSONAL, EDUCATIVA, SOCIAL, CULTURAL, LABORAL Y/O ECONÓMICAMENTE, A PERSONAS CON DIFICULTADES DE INTEGRACIÓN PERSONAL Y SOCIAL, APOYANDO, ASIMISMO, A SU ENTORNO INMEDIATO. POSIBILITAR LA FORMACIÓN PARA EL EMPLEO DE LAS PERSONAS ATENDIDAS FACILITAR PROCESOS FORMATIVOS EN METODOLOGÍAS DE INTERVENCIÓN A LOS PROFESIONALES QUE DESARROLLAN SU LABOR CON LA POBLACIÓN ATENDIDA EN LOS DIFERENTES RECURSOS. SIN PERJUICIO DE LAS ACTIVIDADES DESCRITAS EN EL APARTADO ANTERIOR, LA COOPERATIVA, PARA EL CUMPLIMIENTO DE SUS FINES PODRÁ: DESARROLLAR ACTIVIDADES ECONÓMICAS DE TODO TIPO, ENCAMINADAS A LA REALIZACIÓN DE SUS FINES O A ALLEGAR RECURSOS CON ESE OBJETIVO. ADQUIRIR Y POSEER BIENES DE TODAS CLASES Y POR CUALQUIER TÍTULO, ASÍ COMO CELEBRAR ACTOS Y CONTRATOS DE TODO GÉNERO. EJERCITAR TODA CLASE DE ACCIONES CONFORME A LAS LEYES O A SUS ESTATUTOS. CREAR LOS SERVICIOS DE INFORMACIÓN, PLANIFICACIÓN, ASISTENCIA TÉCNICA, GESTIÓN Y CUALQUIER OTRO QUE LAS CIRCUNSTANCIAS ACONSEJEN. COLABORAR CON INSTITUCIONES PÚBLICAS O PRIVADAS, OFERTANDO PROYECTOS ESPECÍFICOS RELACIONADOS CON ESTE ÁMBITO DE INTERVENCIÓN, MEDIANTE CONVENIOS, SUBVENCIONES U OTRAS FÓRMULAS QUE HAGAN VIABLE EL DESARROLLO DE LOS MISMOS. CREAR EQUIPOS DE TRABAJO COMPUESTOS POR MIEMBROS DE LA COOPERATIVA, O POR AQUELLOS COLABORADORES QUE SE DESIGNEN DESDE LA PROPIA COOPERATIVA. DESEMPEÑARAN FUNCIONES CONCRETAS QUE FACILITEN LA CONSECUCIÓN DE LOS OBJETIVOS PSICOSOCIALES, SOCIOEDUCATIVOS, SOCIOCOMUNITARIOS, ORGANIZATIVOS DE LA COOPERATIVA. CONTRATAR PROFESIONALES PARA LA EJECUCIÓN DE PROGRAMAS QUE ASÍ LO REQUIERAN. IGUALMENTE, POSIBILITAR LA PARTICIPACIÓN DE ALUMNOS EN PRÁCTICAS Y PERSONAL VOLUNTARIO. INCORPORARSE A FEDERACIONES, CONFEDERACIONES U ORGANISMOS PÚBLICOS Y PRIVADOS, DE ÁMBITO AUTONÓMICO, ESTATAL, INTERNACIONAL, DEDICADOS TOTAL O PARCIALMENTE A FINES SIMILARES. COLABORAR Y ESTAR EN COORDINACIÓN CON EL RESTO DE SERVICIOS DE LA COMUNIDAD, PARA GLOBALIZAR Y COMPLEMENTAR LAS ACCIONES A DESARROLLAR. UTILIZAR DIFERENTES SISTEMAS DE INFORMACIÓN, DIFUSIÓN Y SENSIBILIZACIÓN. DISPONER DE UN INMUEBLE CON EL MOBILIARIO CORRESPONDIENTE COMO SEDE DE LA COOPERATIVA. VALERSE DE CUALQUIER OTRO MEDIO LÍCITO QUE FACILITE LA CONSECUCIÓN OBJETIVOS DE LA COOPERATIVA.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08952",
+      "_links": {
+        "self": {
+          "name": "IRSEARABA S COOP",
+          "href": "https://api.euskadi.eus/procurements/companies/08952"
+        }
+      }
+    },
+    {
+      "name": "SANEAMIENTOS ARCHANDA, S.A.",
+      "registrationNumber": "07062",
+      "identificationNumber": "A48029409",
+      "address": "C/HUERTAS DE LA VILLA 5",
+      "location": {
+        "postalCode": "48007",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.617.4",
+          "name": "Venta al por mayor de materiales de construcción, vidrio y artículos instalación",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de materiales de construcción, vidrio y artículos instalación",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.617.4"
+            }
+          }
+        },
+        {
+          "id": "1.653.4",
+          "name": "Venta al por menor de material de construcción y mobiliario de saneamiento",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de material de construcción y mobiliario de saneamiento",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.653.4"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-02-10",
+      "certificateEndDate": "2026-08-06",
+      "object": "LA CONSTRUCCIÓN Y COMPRAVENTA DE ARTÍCULOS DE SANEAMIENTO",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07062",
+      "_links": {
+        "self": {
+          "name": "SANEAMIENTOS ARCHANDA, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/07062"
+        }
+      }
+    }
+  ]
+}

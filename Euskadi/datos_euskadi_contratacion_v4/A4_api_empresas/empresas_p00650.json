@@ -1,0 +1,458 @@
+{
+  "totalItems": 9042,
+  "totalPages": 905,
+  "currentPage": 650,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "name": "ENOL PHARMACEUTICAL RESEARCH, S.L.",
+      "registrationNumber": "05347",
+      "identificationNumber": "B74326927",
+      "address": "C/LOS TILOS-TILARES, 12. PARCELA 4",
+      "location": {
+        "postalCode": "33920",
+        "municipality": "Langreo",
+        "county": "Asturias",
+        "municipalityId": "031",
+        "countyId": "33"
+      },
+      "economicActivities": [
+        {
+          "id": "1.652.1",
+          "name": "Farmacias",
+          "_links": {
+            "self": {
+              "name": "Farmacias",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.652.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2016-05-11",
+      "certificateEndDate": "2016-10-27",
+      "object": "LA INVESTIGACIÓN, DESARROLLO, FABRICACIÓN Y COMERCIALIZACIÓN DE ESPECIALIDADES Y PRINCIPIOS ACTIVOS FARMACÉUTICOS, PRODUCTOS SANITARIOS, DIETÉTICOS, COSMÉTICOS Y PRODUCTOS VETERINARIOS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/05347",
+      "_links": {
+        "self": {
+          "name": "ENOL PHARMACEUTICAL RESEARCH, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/05347"
+        }
+      }
+    },
+    {
+      "name": "INSTALACIONES INABENSA, S.A.",
+      "registrationNumber": "01675",
+      "identificationNumber": "A41694266",
+      "address": "C/ MANUEL VELASCO PANDO, Nº 7",
+      "location": {
+        "postalCode": "41007",
+        "municipality": "Sevilla",
+        "county": "Sevilla",
+        "municipalityId": "091",
+        "countyId": "41"
+      },
+      "economicActivities": [
+        {
+          "id": "1.342",
+          "name": "Fabricación de material eléctrico de utilización y equipamiento",
+          "_links": {
+            "self": {
+              "name": "Fabricación de material eléctrico de utilización y equipamiento",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.342"
+            }
+          }
+        },
+        {
+          "id": "1.504.1",
+          "name": "Instalaciones eléctricas en general",
+          "_links": {
+            "self": {
+              "name": "Instalaciones eléctricas en general",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.504.1"
+            }
+          }
+        },
+        {
+          "id": "1.507",
+          "name": "Construcción, reparación y conservación de toda clase obras",
+          "_links": {
+            "self": {
+              "name": "Construcción, reparación y conservación de toda clase obras",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.507"
+            }
+          }
+        },
+        {
+          "id": "1.617.4",
+          "name": "Venta al por mayor de materiales de construcción, vidrio y artículos instalación",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de materiales de construcción, vidrio y artículos instalación",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.617.4"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2016-05-10",
+      "certificateEndDate": "2016-09-11",
+      "object": "LA ORGANIZACIÓN Y EXPLOTACIÓN DE ACTIVIDADES Y NEGOCIOS QUE GUARDEN RELACIÓN CON LA REALIZACIÓN DE ESTUDIOS, INFORMES, PROYECTOS, DIRECCIÓN DE OBRAS, CONSULTORÍA, Y SERVICIOS, MONTAJE, DISEÑO, MANTENIMIENTO, SUMINISTRO, DISTRIBUCIÓN, IMPORTACIÓN, EXPORTACIÓN, COMPRA Y VENTA DE TODA CLASE DE OBRAS E INSTALACIONES, TANTO PÚBLICAS COMO PRIVADAS, CIVILES O DE EDIFICACIÓN, ASÍ COMO LA FABRICACIÓN AUXILIAR RESPECTO A DICHAS ACTIVIDADES",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/01675",
+      "_links": {
+        "self": {
+          "name": "INSTALACIONES INABENSA, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/01675"
+        }
+      }
+    },
+    {
+      "name": "CADFIN I.T. SERVICIOS INFORMATICOS, S.L.",
+      "registrationNumber": "05498",
+      "identificationNumber": "B95611851",
+      "address": "Poligono Igeltzera C/ Aita Gotzon 40 bis 2ª planta",
+      "location": {
+        "postalCode": "48610",
+        "municipality": "Urduliz",
+        "county": "Bizkaia",
+        "municipalityId": "089",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.501.1",
+          "name": "Construcción completa, reparación y conservación de edificaciones",
+          "_links": {
+            "self": {
+              "name": "Construcción completa, reparación y conservación de edificaciones",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.1"
+            }
+          }
+        },
+        {
+          "id": "1.845",
+          "name": "Explotación electrónica por cuenta de terceros",
+          "_links": {
+            "self": {
+              "name": "Explotación electrónica por cuenta de terceros",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.845"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2016-05-10",
+      "certificateEndDate": "2016-09-30",
+      "object": "1. LA COMERCIALIZACIÓN DE SISTEMAS INFORMÁTICOS, SERVICIOS DE MANTENIMIENTO Y REPARACIÓN DE EQUIPOS E INSTALACIONES INFORMÁTICAS, SERVICIOS DE EXPLOTACIÓN Y CONTROL DE SISTEMAS. 2. ADQUIRIR, ENAJENAR Y ARRENDAR BIENES INMUEBLES (CONCRETAMENTE LOS DETERMINADOS EN EL ARTÍCULO 334.1 DEL CÓDIGO CIVIL), ACCIONES PARTICIPACIONES SOCIALES, OBLIGACIONES, BONOS DE CAJA, CERTIFICADOS DE DEPÓSITO Y PAGARÉS DE TODA CLASE DE EMPRESAS O NEGOCIOS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/05498",
+      "_links": {
+        "self": {
+          "name": "CADFIN I.T. SERVICIOS INFORMATICOS, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/05498"
+        }
+      }
+    },
+    {
+      "name": "ISOLUX WAT, S.A.",
+      "registrationNumber": "01682",
+      "identificationNumber": "A28314300",
+      "address": "C/ ALCOCER, Nº 41",
+      "location": {
+        "postalCode": "28021",
+        "municipality": "Madrid",
+        "county": "Madrid",
+        "municipalityId": "079",
+        "countyId": "28"
+      },
+      "economicActivities": [
+        {
+          "id": "1.501.1",
+          "name": "Construcción completa, reparación y conservación de edificaciones",
+          "_links": {
+            "self": {
+              "name": "Construcción completa, reparación y conservación de edificaciones",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.1"
+            }
+          }
+        },
+        {
+          "id": "1.504.1",
+          "name": "Instalaciones eléctricas en general",
+          "_links": {
+            "self": {
+              "name": "Instalaciones eléctricas en general",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.504.1"
+            }
+          }
+        },
+        {
+          "id": "1.504.3",
+          "name": "Instalaciones de frío, calor y acondicionamiento de aire",
+          "_links": {
+            "self": {
+              "name": "Instalaciones de frío, calor y acondicionamiento de aire",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.504.3"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2016-05-09",
+      "certificateEndDate": "2001-07-23",
+      "object": "LOS ESTUDIOS DE INGENIERÍA, MONTAJES INDUSTRIALES Y FABRICACIÓN DE LOS ELEMENTOS NECESARIOS PARA LOS MISMOS, INSTALACIONES INTEGRALES Y EDIFICACIÓN. FABRICACIÓN, COMERCIALIZACIÓN Y REPRESENTACIÓN DE PRODUCTOS ELÉCTRICOS, ELECTRÓNICOS, ELECTROMECÁNICOS, INFORMÁTICOS, INDUSTRIALES, MAQUINARIA Y APARELLAJE. LA PRESTACIÓN DE TODO TIPO DE SERVICIOS DE CONSULTORÍA, AUDITORÍA, INSPECCIÓN, MEDICIÓN, ANÁLISIS, DICTAMEN, INVESTIGACIÓN Y DESARROLLO, DISEÑO, PROYECTO, PLANIFICACIÓN, SUMINISTRO, EJECUCIÓN, INSTALACIÓN Y MONTAJE, DIRECCIÓN Y SUPERVISIÓN DE PROYECTOS Y OBRAS, PRUEBAS, ENSAYOS, PUESTA EN MARCHA, CONTROL Y EVALUACIÓN, MANTENIMIENTO Y REPARACIÓN, EN INSTALACIONES INTEGRALES, INSTALACIONES ELÉCTRICAS Y ELECTRÓNICAS, DE CLIMATIZACIÓN Y AIREACIÓN, FLUIDO SANITARIAS, DE GAS, DE ASCENSORES Y MONTACARGAS, CONTRA INCENDIOS, DE DETECCIÓN, DE HIDRÁULICA, DE AGUAS, DE SISTEMAS DE INFORMACIÓN, DE MECÁNICA E INDUSTRIALES, COMUNICACIONES, ENERGÍA, Y MEDIO AMBIENTE",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/01682",
+      "_links": {
+        "self": {
+          "name": "ISOLUX WAT, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/01682"
+        }
+      }
+    },
+    {
+      "name": "AEXA OBRAS Y SERVICIOS, S.L.",
+      "registrationNumber": "02293",
+      "identificationNumber": "B95060349",
+      "address": "CL P.A.E. IBARRABARRI 11-ED-C",
+      "location": {
+        "postalCode": "48940",
+        "municipality": "Leioa",
+        "county": "Bizkaia",
+        "municipalityId": "054",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.501.1",
+          "name": "Construcción completa, reparación y conservación de edificaciones",
+          "_links": {
+            "self": {
+              "name": "Construcción completa, reparación y conservación de edificaciones",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.1"
+            }
+          }
+        },
+        {
+          "id": "1.501.2",
+          "name": "Construcción completa, reparación y conservación obras civiles",
+          "_links": {
+            "self": {
+              "name": "Construcción completa, reparación y conservación obras civiles",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.2"
+            }
+          }
+        },
+        {
+          "id": "1.922",
+          "name": "Servicios de limpieza",
+          "_links": {
+            "self": {
+              "name": "Servicios de limpieza",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.922"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2016-05-09",
+      "certificateEndDate": "2016-09-22",
+      "object": "LA CONSTRUCCIÓN Y PROMOCIÓN, TANTO POR CUENTA PROPIA O DE TERCEROS, DE TODO TIPO DE OBRAS CIVILES O PÚBLICAS; LA COMPRA, VENTA, REHABILITACIÓN, PROMOCIÓN Y CONSTRUCCIÓN DE TODO TIPO DE VIVIENDAS Y EDIFICIOS DE VIVIENDAS O PABELLONES INDUSTRIALES; LA ACTUACIÓN URBANÍSTICA SOBRE TODO TIPO DE FINCAS RÚSTICAS O URBANAS.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/02293",
+      "_links": {
+        "self": {
+          "name": "AEXA OBRAS Y SERVICIOS, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/02293"
+        }
+      }
+    },
+    {
+      "name": "ARISTA DOCE-62, S.L.",
+      "registrationNumber": "03331",
+      "identificationNumber": "B20536447",
+      "address": "PORTUETXE 83.1º",
+      "location": {
+        "postalCode": "20018",
+        "municipality": "Donostia / San Sebastián",
+        "county": "Gipuzkoa",
+        "municipalityId": "069",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.844",
+          "name": "Servicios de publicidad, relaciones públicas y similares",
+          "_links": {
+            "self": {
+              "name": "Servicios de publicidad, relaciones públicas y similares",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.844"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2016-05-09",
+      "certificateEndDate": "2016-11-04",
+      "object": "- LA PRESTACIÓN DE SERVICIOS DE PUBLICIDAD, MARKETING, COMUNICACIÓN Y RELACIONES PÚBLICAS. - LA CREACIÓN Y EXPLOTACIÓN DE JUEGOS DE CARÁCTER RECREATIVO CON CARÁCTER PROMOCIONAL. - LA ADQUISICIÓN, POR CUALQUIER TÍTULO JURÍDICO, DE DERECHOS PUBLICITARIOS, DE IMAGEN Y DE PATROCINIO, PARA UNA EXPLOTACIÓN DIRECTA O POR MEDIO DE TERCEROS.  - LA CREACIÓN, PROMOCIÓN Y COMERCIALIZACIÓN DE MEDIOS PUBLICITARIOS.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03331",
+      "_links": {
+        "self": {
+          "name": "ARISTA DOCE-62, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/03331"
+        }
+      }
+    },
+    {
+      "name": "TRIANO MEDIA, S.L.",
+      "registrationNumber": "04695",
+      "identificationNumber": "B95620423",
+      "address": "AVDA. MADARIAGA, 1 - 6º / DPTO. 1",
+      "location": {
+        "postalCode": "48014",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.961.1",
+          "name": "Producción de películas cinematográficas (incluso vídeos)",
+          "_links": {
+            "self": {
+              "name": "Producción de películas cinematográficas (incluso vídeos)",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.961.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2016-05-09",
+      "certificateEndDate": "2016-11-08",
+      "object": "A) LA REALIZACIÓN, PRODUCCIÓN, POSTPRODUCCIÓN, FINANCIACIÓN, FOTOGRAFIADO, SONORIZACIÓN, DOBLAJE, EDICIÓN, REPRODUCCIÓN Y COPIA DE CUALQUIER TIPO DE PRODUCTOS AUDIOVISUALES, SIN LIMITACIÓN, YA FUEREN PELÍCULAS O SERIES, DE CINE, VÍDEO, ANIMACIÓN, DIBUJOS ANIMADOS O DE CUALESQUIERA OTRA CLASE Y MATERIA, EN CUALQUIER SOPORTE O FORMA COMERCIAL, BIEN SOLOS O ACOMPAÑADOS DE CUALQUIER MANUAL U OTROS ACCESORIOS QUE LOS COMPLEMENTEN, PARA TELEVISIÓN Y PARA TODOS LOS SISTEMAS Y MEDIOS DE REPRODUCCIÓN, EMISIÓN, EXPOSICIÓN Y DIVULGACIÓN. B) LA COMPRAVENTA, COMERCIALIZACIÓN, DISTRIBUCIÓN, IMPORTACIÓN, EXPORTACIÓN Y ARRENDAMIENTO DE CUALQUIER TIPO DE PRODUCTOS AUDIOVISUALES, SIN LIMITACIÓN, YA FUEREN PELÍCULAS O SERIES, DE CINE, VÍDEO, ANIMACIÓN, DIBUJOS ANIMADOS O DE CUALESQUIERA OTRA CLASE Y MATERIA, EN CUALQUIER SOPORTE O FORMA COMERCIAL, BIEN SOLOS O ACOMPAÑADOS DE CUALQUIER MANUAL U OTROS ACCESORIOS QUE LOS COMPLEMENTEN, PARA TELEVISIÓN Y PARA TODOS LOS SISTEMAS Y MEDIOS DE REPRODUCCIÓN, EMISIÓN, EXPOSICIÓN Y DIVULGACIÓN. C) LA COMPRAVENTA, COMERCIALIZACÓN, DISTRIBUCIÓN, IMPORTACIÓN, EXPORTACIÓN Y ARRENDAMIENTO DE CUALQUIER TIPO DE SISTEMAS DE REPRODUCCIÓN Y GRABACIÓN AUDIOVISUAL, SIN LIMITACIÓN, YA FUEREN TELEVISORES, VIDEOCASETES, REPRODUCTORES DE CD Y DVD, CÁMARAS O CUALESQUIERA OTROS, Y LA PROMOCIÓN DE TODO TIPO DE SISTEMAS DE REPRODUCCIÓN Y GRABACIÓN AUDIOVISUAL EXISTENTES O FUTUROS. D) LA ADQUISICIÓN DE CUALQUIER TIPO DE DERECHOS AUDIOVISUALES, SIN LIMITACIÓN, PARA SU POSTERIOR COMERCIALIZACIÓN Y DISTRIBUCIÓN EN CUALQUIERA DE LAS FORMAS Y MEDIOS POSIBLES. E) LA COMPRAVENTA, COMERCIALIZACÓN Y DISTRIBUCIÓN DE CUALQUIER OTRO TIPO DE PRODUCTO, SISTEMA O DERECHO AUDIOVISUAL DISTINTO A LOS ANTERIORES AL AMPARO DE LAS MARCAS PROPIAS O REPRESENTADAS. F) LA GESTIÓN DE DERECHOS DE AUTOR, PATROCINIOS, LICENSING Y MERCHANDISING. G) LA ASOCIACIÓN Y PARTICIPACIÓN CON OTRAS PERSONAS, EMPRESAS Y SOCIEDADES MERCANTILES PARA LLEVAR A CABO LAS ACTIVIDADES SOCIALES. H) TODAS AQUELLAS OTRAS ACTIVIDADES COMPLEMENTARIAS O DERIVADAS DE LAS ANTERIORES",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/04695",
+      "_links": {
+        "self": {
+          "name": "TRIANO MEDIA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/04695"
+        }
+      }
+    },
+    {
+      "name": "UNIUM SERVICIOS AUXILIARES, SL",
+      "registrationNumber": "05497",
+      "identificationNumber": "B72245798",
+      "address": "C/ ALGEMESÍ, 26-PLANTA 2-PUERTA E",
+      "location": {
+        "postalCode": "28042",
+        "municipality": "Madrid",
+        "county": "Madrid",
+        "municipalityId": "079",
+        "countyId": "28"
+      },
+      "economicActivities": [
+        {
+          "id": "1.999",
+          "name": "Otros servicios n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros servicios n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.999"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2016-05-09",
+      "certificateEndDate": "2016-08-24",
+      "object": "LA CONSTRUCCIÓN, INSTALACIONES Y MANTENIMIENTO; EL COMERCIO AL POR MAYOR Y AL POR MENOR. DISTRIBUCIÓN COMERCIAL. IMPORTACIÓN Y EXPORTACIÓN; LAS ACTIVIDADES INMOBILIARIAS; LAS INDUSTRIAS MANUFACTURERAS Y TEXTILES; EL TURISMO, HOSTELERÍA Y RESTAURACIÓN: LA PRESTACIÓN DE SERVICIOS. ACTIVIDADES DE GESTIÓN Y ADMINISTRACIÓN. SERVICIOS EDUCATIVOS, DE OCIO Y ENTRETENIMIENTO; EL TRANSPORTE Y ALMACENAMIENTO; LA INFORMACIÓN Y COMUNICACIONES; LA AGRICULTURA, GANADERÍA Y PESCA; LA INFORMÁTICA, TELECOMUNICACIONES Y OFIMÁTICA; LAS ENERGÍAS ALTERNATIVAS; LA COMPRAVENTA Y REPARACIÓN DE VEHÍCULOS. REPARACIÓN Y MANTENIMIENTO DE INSTALACIONES Y MAQUINARIA; LA INVESTIGACIÓN, DESARROLLO E INNOVACIÓN; LAS ACTIVIDADES CIENTÍFICAS Y TÉCNICAS; LOS SERVICIOS DE PELUQUERÍA Y OTROS TRATAMIENTOS DE BELLEZA; LOS SERVICIOS DE CAMAREROS DE PISOS, DE RESTAURANTE, BARRA Y CAFETERÍA; LAS ACTIVIDADES DEPORTIVAS, RECREATIVAS, Y DE ENTRETENIMIENTO; LOS SERVICIOS DE SOCORRISMO Y LA GESTIÓN DE SALAS DE ESPECTÁCULOS; SERVICIOS DE LIMPIEZA",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/05497",
+      "_links": {
+        "self": {
+          "name": "UNIUM SERVICIOS AUXILIARES, SL",
+          "href": "https://api.euskadi.eus/procurements/companies/05497"
+        }
+      }
+    },
+    {
+      "name": "AMBULANCIAS EUSKADI, S.L.",
+      "registrationNumber": "04843",
+      "identificationNumber": "B48438782",
+      "address": "BARRIO SAN ANTONIO POLIGONO INBISA 1B",
+      "location": {
+        "postalCode": "48340",
+        "municipality": "Amorebieta-Etxano",
+        "county": "Bizkaia",
+        "municipalityId": "003",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.721.4",
+          "name": "Transporte sanitario en ambulancias",
+          "_links": {
+            "self": {
+              "name": "Transporte sanitario en ambulancias",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.721.4"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2016-05-01",
+      "certificateEndDate": "2016-10-30",
+      "object": "PRESTACIÓN DE SERVICIOS DE AMBULANCIA",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/04843",
+      "_links": {
+        "self": {
+          "name": "AMBULANCIAS EUSKADI, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/04843"
+        }
+      }
+    },
+    {
+      "name": "MULTILAN AYG, S.L.",
+      "registrationNumber": "05493",
+      "identificationNumber": "18590823S",
+      "address": "C/ Pintor Obdulio López de Uralde, nº 22-1º.Izqda",
+      "location": {
+        "postalCode": "01008",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.922",
+          "name": "Servicios de limpieza",
+          "_links": {
+            "self": {
+              "name": "Servicios de limpieza",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.922"
+            }
+          }
+        },
+        {
+          "id": "1.952",
+          "name": "Asistencia y servicios sociales en centros no residenciales",
+          "_links": {
+            "self": {
+              "name": "Asistencia y servicios sociales en centros no residenciales",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.952"
+            }
+          }
+        },
+        {
+          "id": "1.974",
+          "name": "Agencias de prestación de servicios domésticos",
+          "_links": {
+            "self": {
+              "name": "Agencias de prestación de servicios domésticos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.974"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2016-04-29",
+      "certificateEndDate": "2016-10-04",
+      "object": "ASESORAMIENTO Y ASISTENCIA TÉCNICA SOBRE RECURSOS SOCIALES Y EDUCATIVOS. \r\nINTERMEDIACIÓN EN LA GESTIÓN Y PRESTACIÓN DE SERVICIOS DE ATENCIÓN Y CUIDADO PERSONAL, TALES COMO AYUDA A DOMICILIO, TELE ASISTENCIA, CANGUROS, SELECCIÓN DE PERSONAL.\r\nPROGRAMACIÓN Y REALIZACIÓN DE ACTIVIDADES SOCIOCULTURALES Y DE OCIO Y TIEMPO LIBRE.\r\nINTERMEDIACIÓN EN LA GESTIÓN Y PRESTACIÓN DE SERVICIOS SOCIALES Y EDUCATIVOS DIRIGIDOS A CUALQUIER SECTOR DE POBLACIÓN COMO PUEDAN SER CENTROS DE ATENCIÓN A PERSONAS MAYORES Y DISCAPACITADAS, CENTROS SOCIOEDUCATIVOS PARA LA INFANCIA Y JUVENTUD, CENTROS DE ACOGIDA, CENTROS SOCIOCULTURALES.\r\nFORMACIÓN Y SELECCIÓN DE PERSONAL EN LOS ÁMBITOS SOCIOSANITARIOS, DE LIMPIEZA Y SOCIOCULTURALES, TANTO A TRABAJADORES COMO A USUARIOS Y FAMILIARES.\r\nCOMPRA, VENTA Y COMERCIALIZACIÓN DE PRODUCTOS PARAFARMACEÚTICOS, COSMÉTICOS, QUÍMICOS Y ALIMENTARIOS, HERBOLARIOS, APARATOS MÉDICOS Y ORTOPÉDICOS, TANTO EN ESPAÑA COMO EN EL EXTRANJERO.\r\nPRESTACIÓN DE SERVICIOS TURÍSTICOS, HOSTELERÍA Y HOSPEDAJE.\r\nCOMERCIALIZACIÓN DE PRODUCTOS FINANCIEROS, INMOBILIARIOS Y DE SEGUROS EN CALIDAD DE AGENTE COMERCIAL.\r\nSERVICIOS DE LIMPIEZA DOMÉSTICA E INDUSTRIAL.\r\nSERVICIOS DE CONSERJERÍA Y MANTENIMIENTO DE ZONAS RESIDENCIALES, JARDINES Y PISCINAS.\r\nASESORAMIENTO Y ELABORACIÓN DE PROYECTOS DE CARÁCTER SOCIOSANITARIO, LIMPIEZA INDUSTRIAL Y SOCIOCULTURALES.\r\nASESORAMIENTO Y GESTIÓN DE CENTROS Y COMPLEJOS ASISTENCIALES DIRIGIDOS A CUALQUIER SECTOR DE LA POBLACIÓN, COMO PUEDEN SER CENTROS DE DÍA, APARTAMENTOS TUTELADOS, CENTROS DE REHABILITACIÓN PSICOSOCIAL, COMPLEJOS DEPORTIVOS Y CUALESQUIERA OTROS RELACIONADOS.\r\nASISTENCIA Y PRESTACIÓN DE SERVICIOS A PERSONAS DISCAPACITADAS Y DEPENDIENTES.\r\nGESTIÓN DE PARKING PÚBLICOS Y PRIVADOS.\r\nGESTIÓN DE VISITAS GUIADAS Y ATENCIÓN AL PÚBLICO EN PROYECTOS CULTURALES, TALES COMO MUSEOS, OBRAS DE RESTAURACIÓN, TEATROS Y CUALESQUIERA OTROS RELACIONADOS.\r\nGESTIÓN DE SERVICIOS DE ATENCIÓN A LA CIUDADANÍA TANTO EN RECURSOS PÚBLICOS COMO PRIVADOS.\r\nPRESTACIÓN DE SERVICIOS COMO ADMINISTRADORES DE FINCAS, ASESORAMIENTO CONTABLE, LABORAL, FISCAL, FINANCIERO Y JURÍDICO.\r\nGESTIÓN DE REFORMAS Y COORDINACIÓN DE GREMIOS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/05493",
+      "_links": {
+        "self": {
+          "name": "MULTILAN AYG, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/05493"
+        }
+      }
+    }
+  ]
+}

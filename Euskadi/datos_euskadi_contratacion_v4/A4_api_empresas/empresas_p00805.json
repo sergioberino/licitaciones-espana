@@ -1,0 +1,388 @@
+{
+  "totalItems": 9042,
+  "totalPages": 905,
+  "currentPage": 805,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "name": "REPRISS MARGEN DERECHA, S.L.",
+      "registrationNumber": "01498",
+      "identificationNumber": "B48422943",
+      "address": "C/ KASUNE, Nº 18 - BAJO TRASERA.",
+      "location": {
+        "postalCode": "48990",
+        "municipality": "Getxo",
+        "county": "Bizkaia",
+        "municipalityId": "044",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.722",
+          "name": "Transporte de mercancías por carretera",
+          "_links": {
+            "self": {
+              "name": "Transporte de mercancías por carretera",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.722"
+            }
+          }
+        },
+        {
+          "id": "1.849.5",
+          "name": "Servicios de recadería y reparto y manipulación de correspondencia",
+          "_links": {
+            "self": {
+              "name": "Servicios de recadería y reparto y manipulación de correspondencia",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.849.5"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2002-12-10",
+      "certificateEndDate": "2003-05-13",
+      "object": "LA PRESTACIÓN DE TODA CLASE DE SERVICIOS RELACIONADOS CON LA CORRESPONDENCIA, COMO PREPARACIÓN DE CARTAS EN SOBRES, SU DISTRIBUCIÓN Y REPARTO, Y EN GENERAL CUANTO SEA AUXILIAR, ACCESORIO, CONSECUENCIA O SE RELACIONE, DIRECTA O INDIRECTAMENTE CON LAS FINALIDADES EXPRESADAS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/01498",
+      "_links": {
+        "self": {
+          "name": "REPRISS MARGEN DERECHA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/01498"
+        }
+      }
+    },
+    {
+      "name": "ÁNGEL ARROYO HOSTELERÍA ALAVESA, S.L.",
+      "registrationNumber": "01667",
+      "identificationNumber": "B01175975",
+      "address": "C/ VICENTE ALEIXANDRE, 22.",
+      "location": {
+        "postalCode": "01003",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.654.5",
+          "name": "Venta al por menor de toda clase de maquinaría",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de toda clase de maquinaría",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.654.5"
+            }
+          }
+        },
+        {
+          "id": "1.692",
+          "name": "Reparación de maquinaria industrial",
+          "_links": {
+            "self": {
+              "name": "Reparación de maquinaria industrial",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.692"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2002-12-09",
+      "certificateEndDate": "2003-05-22",
+      "object": "LA VENTA Y REPARACIÓN DE MAQUINARIA E INSTALACIONES DE HOSTELERÍA Y ALIMENTACIÓN",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/01667",
+      "_links": {
+        "self": {
+          "name": "ÁNGEL ARROYO HOSTELERÍA ALAVESA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/01667"
+        }
+      }
+    },
+    {
+      "name": "BOG SISTEMAS MÉDICOS, S.L.",
+      "registrationNumber": "02021",
+      "identificationNumber": "B48273460",
+      "address": "C/ JOSÉ MIGUEL BARANDIARÁN Y AYERBE, Nº 5 - LONJA.",
+      "location": {
+        "postalCode": "48006",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.619.2",
+          "name": "Venta al por mayor de aparatos e instrumentos médicos, ortopédicos, ópticos",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de aparatos e instrumentos médicos, ortopédicos, ópticos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.619.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2002-12-09",
+      "certificateEndDate": "2003-06-02",
+      "object": "LA REPARACIÓN, ASISTENCIA TÉCNICA, COMPRAVENTA DE EQUIPOS DE ELECTROMEDICINA Y MATERIAL MÉDICO",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/02021",
+      "_links": {
+        "self": {
+          "name": "BOG SISTEMAS MÉDICOS, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/02021"
+        }
+      }
+    },
+    {
+      "name": "ELECTRICIDAD IDAR, S.COOP.",
+      "registrationNumber": "02598",
+      "identificationNumber": "F48112817",
+      "address": "GENERAL ERASO 1-1ª PLANTA",
+      "location": {
+        "postalCode": "48014",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.504.1",
+          "name": "Instalaciones eléctricas en general",
+          "_links": {
+            "self": {
+              "name": "Instalaciones eléctricas en general",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.504.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2002-11-29",
+      "certificateEndDate": "2003-05-18",
+      "object": "INSTALACIÓN Y MONTAJES INDUSTRIALES, PRINCIPALMENTE DEL RAMO ELÉCTRICO, COMPRAVENTA DE MATERIALES Y CONSTRUCCIÓN DE ELEMENTOS PARA EL MISMO, REPRESENTACIONES Y CUALESQUIERA OTRAS ACTIVIDADES Y NEGOCIOS RELACIONADOS, DIRECTA O INDIRECTAMENTE CON EL OBJETO SOCIAL. FORMACIÓN Y PERFECCIONAMIENTO, EN EL ÁMBITO PROFESIONAL, DE SUS SOCIOS, TODO CUANTO REDUNDE EN UN MEJOR SERVICIO, IMPULSO Y DESARROLLO DEL SECTOR, IDENTIFICÁNDOSE CON LAS DIRECTRICES EMANADAS DE LOS ENTES ESTATALES Y PROVINCIALES, ENCAMINADOS A LA CONSECUCIÓN DEL DESARROLLO ECONÓMICO SOCIAL DE SU ZONA DE INFLUENCIA. EN ESTE OBJETO IMPLICARÁN TODOS LOS SOCIOS TRABAJADORES SU PERSONAL TRABAJO.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/02598",
+      "_links": {
+        "self": {
+          "name": "ELECTRICIDAD IDAR, S.COOP.",
+          "href": "https://api.euskadi.eus/procurements/companies/02598"
+        }
+      }
+    },
+    {
+      "name": "ARKIMAS ARQUITECTURA Y URBANISMO, S.A.",
+      "registrationNumber": "02166",
+      "identificationNumber": "A48161046",
+      "address": "C/ CRISTO, Nº 1 - 3º. DPTO.: 2.",
+      "location": {
+        "postalCode": "48007",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.843.2",
+          "name": "Servicios técnicos de arquitectura y urbanismo",
+          "_links": {
+            "self": {
+              "name": "Servicios técnicos de arquitectura y urbanismo",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2002-11-25",
+      "certificateEndDate": "2003-04-28",
+      "object": "LA PRESTACIÓN DE TODA CLASE DE SERVICIOS RELACIONADOS CON LA ARQUITECTURA Y A TAL EFECTO PODRÁ EJECUTAR TODOS LOS INFORMES, ESTUDIOS Y TRABAJOS DE DELINEACIÓN, URBANISMO, CÁLCULOS, SUPERVISIÓN DE OBRAS, ASESORAMIENTO, ASISTENCIA Y GESTIÓN TÉCNICA QUE SEAN NECESARIOS Y/O CONVENIENTES PARA EL DESARROLLO INTEGRAL DE LOS SERVICIOS INDICADOS PUDIENDO, EN SU CASO, PRESENTARSE A TODA CLASE DE LICITACIONES Y CONCURSOS QUE SE CONVOQUEN SOBRE ARQUITECTURA Y URBANISMO EN GENERAL",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/02166",
+      "_links": {
+        "self": {
+          "name": "ARKIMAS ARQUITECTURA Y URBANISMO, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/02166"
+        }
+      }
+    },
+    {
+      "name": "I.R.T. INDUSTRIA DE RADIO Y TELEVISIÓN, S.L.",
+      "registrationNumber": "01520",
+      "identificationNumber": "B48692917",
+      "address": "POLÍGONO INDUSTRIAL \"EL CAMPILLO\". PABELLÓN: 4 - C.",
+      "location": {
+        "postalCode": "48500",
+        "municipality": "Abanto y Ciérvana-Abanto Zierbena",
+        "county": "Bizkaia",
+        "municipalityId": "002",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.351.2",
+          "name": "Fabricación de aparatos y equipo de radiocomunicación, radiodifusión",
+          "_links": {
+            "self": {
+              "name": "Fabricación de aparatos y equipo de radiocomunicación, radiodifusión",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.351.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2002-11-15",
+      "certificateEndDate": "2003-05-13",
+      "object": "LA REALIZACIÓN DE TODO TIPO DE ESTUDIOS, PROYECTOS, FABRICACIÓN, INSTALACIÓN, VENTA, IMPORTACIÓN, EXPORTACIÓN, DISTRIBUCIÓN, REPRESENTACIÓN Y MANTENIMIENTO DE EQUIPOS RADIOELÉCTRICOS Y ELECTRÓNICOS, ACCESORIOS Y SERVICIOS MECÁNICOS. LA FABRICACIÓN, COMPRA, VENTA, IMPORTACIÓN, EXPORTACIÓN, ALQUILER, ALMACENAMIENTO, REPARACIÓN, DISTRIBUCIÓN, REPRESENTACIÓN Y COMERCIALIZACIÓN DE TODO TIPO DE EQUIPOS RELACIONADOS CON LA ELECTRÓNICA, MICROELECTRÓNICA, INFORMÁTICA Y TELECOMUNICACIONES",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/01520",
+      "_links": {
+        "self": {
+          "name": "I.R.T. INDUSTRIA DE RADIO Y TELEVISIÓN, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/01520"
+        }
+      }
+    },
+    {
+      "name": "ITEON SISTEMAS, S.L.",
+      "registrationNumber": "02585",
+      "identificationNumber": "B95224697",
+      "address": "GRAN VÍA, 17, 3-1",
+      "location": {
+        "postalCode": "48001",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.845",
+          "name": "Explotación electrónica por cuenta de terceros",
+          "_links": {
+            "self": {
+              "name": "Explotación electrónica por cuenta de terceros",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.845"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2002-11-07",
+      "certificateEndDate": "2003-04-07",
+      "object": "A) EL DESARROLLO, REALIZACIÓN Y COMERCIALIZACIÓN DE SISTEMAS INFORMÁTICOS; LA ACTIVIDAD INFORMÁTICA EN GENERAL Y LA PRESTACIÓN DE TODA CLASE DE SERVICIOS CON ELLA RELACIONADOS, INCLUIDOS LA ENSEÑANZA DE MATERIAS RELATIVAS A LA INFORMÁTICA, LA FORMACIÓN DE PERSONAL ESPECIALISTA, LA LLEVANZA DE CONTABILIDADES, LA REALIZACIÓN DE ANÁLISIS, CONSULTORÍA, PROYECTOS Y ESTUDIOS DE TODO GÉNERO, ASÍ COMO LA CONFECCIÓN, APLICACIÓN Y COMERCIALIZACIÓN DE PROGRAMAS.\r\nB) LA COMPRA, VENTA, IMPORTACIÓN, EXPORTACIÓN Y COMERCIALIZACIÓN EN GENERAL DE MICROORDENADORES, ORDENADORES, MÁQUINAS Y ELEMENTOS QUE CON ELLO SE RELACIONEN, ASÍ COMO SU REPARACIÓN Y MANTENIMIENTO; LA PRESTACIÓN DE ASISTENCIA Y DE AQUELLOS SERVICIOS PRECISOS O CONVENIENTES PARA UNA ADECUADA UTILIZACIÓN O RENDIMIENTO DE TODOS LOS EQUIPOS INFORMÁTICOS.\r\nC) Y, LA REPRESENTACIÓN COMO AGENTE, DISTRIBUIDOR, COMISIONISTA, DELEGADO O CUALQUIER OTRA FORMA DE MEDIACIÓN MERCANTIL, DE TODA CLASE DE EMPRESAS NACIONALES Y EXTRANJERAS, RELACIONADAS CON LA INFORMÁTICA, ASÍ COMO LA EXPLOTACIÓN DE PATENTES, MÉTODOS, PROCEDIMIENTOS O ESTUDIOS Y DERECHOS INCLUIDOS EN EL ÁMBITO DE LA PROPIEDAD INDUSTRIAL RELACIONADOS CON EL FIN PRINCIPAL DE LA INFORMÁTICA.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/02585",
+      "_links": {
+        "self": {
+          "name": "ITEON SISTEMAS, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/02585"
+        }
+      }
+    },
+    {
+      "name": "CONSTRUCCIONES IRALGI, S.L.",
+      "registrationNumber": "00968",
+      "identificationNumber": "B48104277",
+      "address": "C/ URKIZUARAN, Nº 15 - BAJO.",
+      "location": {
+        "postalCode": "48230",
+        "municipality": "Elorrio",
+        "county": "Bizkaia",
+        "municipalityId": "032",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.501.1",
+          "name": "Construcción completa, reparación y conservación de edificaciones",
+          "_links": {
+            "self": {
+              "name": "Construcción completa, reparación y conservación de edificaciones",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2002-11-06",
+      "certificateEndDate": "2003-03-26",
+      "object": "\r\n\r\na) LA REALIZACIÓN DE TODA CLASE DE OBRAS, TANTO PÚBLICAS COMO PRIVADAS, DE CONSTRUCCIÓN DE TODA CLASE DE EDIFICIOS Y PABELLONES INDUSTRIALES, ADQUISICIÓN Y PREPARACIÓN DE TERRENOS, EXCAVACIONES, URBANIZACIONES Y PARCELACIONES DE TERRENOS, PROMOCIÓN Y EJECUCIÓN, COMPLETA O POR RAMOS, DE TODA CLASE DE OBRAS DE CONSTRUCCIÓN, REPARACIONES Y CONSERVACIÓN DE VIVIENDAS Y LOCALES COMERCIALES, INCLUSO DE LAS LLAMADAS VIVIENDAS SOCIALES Y DE LAS DE PROTECCIÓN OFICIAL.\r\n\r\nb) LA COMPRA-VENTA Y ALQUILER DE EDIFICACIONES EN SU TOTALIDAD, POR PARTES O POR PISOS BIEN PARA VIVIENDAS O PARA LOCALES DE OFICINAS DE NEGOCIO O INDUSTRIALES, CONSTRUIDOS A TAL FIN, DIRECTAMENTE O POR MEDIO DE CONTRATISTAS, SUBCONTRATISTAS Y DESTAJISTAS, O BIEN ADQUIRIDAS YA CONSTRUIDAS O EN CONSTRUCCIÓN.\r\n\r\nc) LA COMPRA, VENTA, PERMUTA Y ALQUILER DE TERRENOS RÚSTICOS O URBANOS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/00968",
+      "_links": {
+        "self": {
+          "name": "CONSTRUCCIONES IRALGI, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/00968"
+        }
+      }
+    },
+    {
+      "name": "GUAY INTERNET, S.A.",
+      "registrationNumber": "02484",
+      "identificationNumber": "A01288067",
+      "address": "P.TECN.ALAVA. C/Leonardo Da Vinci,14- Edif. P.I.E. 7. MIÑANO",
+      "location": {
+        "postalCode": "01510",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.845",
+          "name": "Explotación electrónica por cuenta de terceros",
+          "_links": {
+            "self": {
+              "name": "Explotación electrónica por cuenta de terceros",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.845"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2002-11-04",
+      "certificateEndDate": "2003-04-10",
+      "object": "EL DESARROLLO Y EXPLOTACIÓN COMERCIAL DE SERVICIOS Y PRODUCTOS A TRAVÉS DE LA RED INTERNET, INCLUYENDO EN LOS MISMOS: COMERCIO ELECTRÓNICO; VENTA DE PUBLICIDAD Y MARKETING; DESARROLLO Y COMERCIALIZACIÓN SOFTWARE; EDICIÓN, PUBLICACIÓN Y DIFUSIÓN DIGITAL DE INFORMES A TRAVÉS DE LA RED; ASÍ COMO LA CREACIÓN Y EXPLOTACIÓN DE BASES DE DATOS. LAS ACTIVIDADES ENUMERADAS PODRÁN TAMBIÉN SER DESARROLLADAS POR LA SOCIEDAD, TOTAL O PARCIALMENTE, DE MODO INDIRECTO, MEDIANTE LA PARTICIPACIÓN EN OTRAS SOCIEDADES CON OBJETO DE ANÁLOGO",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/02484",
+      "_links": {
+        "self": {
+          "name": "GUAY INTERNET, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/02484"
+        }
+      }
+    },
+    {
+      "name": "ARTES GRÁFICAS RONTEGUI, S.A.L.",
+      "registrationNumber": "00221",
+      "identificationNumber": "A48222582",
+      "address": "C/ AVENIDA RIBERA DE ERANDIO, Nº 4.",
+      "location": {
+        "postalCode": "48950",
+        "municipality": "Erandio",
+        "county": "Bizkaia",
+        "municipalityId": "902",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.474",
+          "name": "Artes gráficas (impresión gráfica)",
+          "_links": {
+            "self": {
+              "name": "Artes gráficas (impresión gráfica)",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.474"
+            }
+          }
+        },
+        {
+          "id": "1.475",
+          "name": "Actividades anexas a las artes gráficas",
+          "_links": {
+            "self": {
+              "name": "Actividades anexas a las artes gráficas",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.475"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2002-10-31",
+      "certificateEndDate": "2003-04-24",
+      "object": "ARTES GRÁFICAS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/00221",
+      "_links": {
+        "self": {
+          "name": "ARTES GRÁFICAS RONTEGUI, S.A.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/00221"
+        }
+      }
+    }
+  ]
+}

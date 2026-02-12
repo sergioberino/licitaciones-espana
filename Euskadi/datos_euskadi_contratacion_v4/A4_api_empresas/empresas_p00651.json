@@ -1,0 +1,444 @@
+{
+  "totalItems": 9042,
+  "totalPages": 905,
+  "currentPage": 651,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "name": "HOSTELMAR NORTE, S.L.",
+      "registrationNumber": "01507",
+      "identificationNumber": "B01131697",
+      "address": "C/ BASOA, Nº 12.",
+      "location": {
+        "postalCode": "01012",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.653.1",
+          "name": "Venta al por menor de muebles (excepto los de oficina)",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de muebles (excepto los de oficina)",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.653.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2016-04-26",
+      "certificateEndDate": "2016-10-13",
+      "object": "LA VENTA DE MOBILIARIO, MAQUINARIA, INSTALACIONES, VAJILLAS, CUBERTERÍA Y COMPLEMENTOS PARA HOSTELERÍA Y USO DOMÉSTICO, ASÍ COMO LA PRESTACIÓN DE LOS SERVICIOS DE INSTALACIÓN Y MANTENIMIENTO DE LOS MISMOS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/01507",
+      "_links": {
+        "self": {
+          "name": "HOSTELMAR NORTE, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/01507"
+        }
+      }
+    },
+    {
+      "name": "LOCALIDATA S.L.",
+      "registrationNumber": "05489",
+      "identificationNumber": "B86653482",
+      "address": "Calle Agustín de Betancourt 21 7º",
+      "location": {
+        "postalCode": "28003",
+        "municipality": "Madrid",
+        "county": "Madrid",
+        "municipalityId": "079",
+        "countyId": "28"
+      },
+      "economicActivities": [
+        {
+          "id": "1.845",
+          "name": "Explotación electrónica por cuenta de terceros",
+          "_links": {
+            "self": {
+              "name": "Explotación electrónica por cuenta de terceros",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.845"
+            }
+          }
+        },
+        {
+          "id": "1.932.2",
+          "name": "Enseñanza de formación y perfeccionamiento profesional superior",
+          "_links": {
+            "self": {
+              "name": "Enseñanza de formación y perfeccionamiento profesional superior",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.932.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2016-04-19",
+      "certificateEndDate": "2016-09-30",
+      "object": "CONSTRUCCIÓN, INSTALACIONES Y MANTENIMIENTO. COMERCIO AL POR MAYOR Y AL POR MENOR -ESPECIALMENTE DE PRODUCTOS Y SERVICIOS INFORMÁTICOS-, DISTRIBUCIÓN COMERCIAL, IMPORTACIÓN Y EXPORTACIÓN. ACTIVIDADES INMOBILIARIAS. ACTIVIDADES PROFESIONALES. EN NINGÚN CASO DEBERÁ ENTENDERSE QUE LA SOCIEDAD OSTENTA LA CALIFICACIÓN DE PROFESIONAL SOMETIDA A LA LEY 2/2007, DE 15 DE MARZO, DE SOCIEDADES PROFESIONALES, YA QUE LAS ACTIVIDADES QUE SE REFLEJAN EN EL OBJETO SOCIAL Y QUE PUDIERAN SER PROPIAS DE PROFESIONALES POR SER ACTIVIDADES QUE REQUIEREN TÍTULO OFICIAL UNIVERSITARIO Y SUJETAS A COLEGIACIÓN NO SE DESARROLLARÁN POR LA SOCIEDAD DE FORMA DIRECTA SINO, SIMPLEMENTE, COMO MEDIADORA. INDUSTRIAS MANUFACTURERAS Y TEXTILES. TURISMO, HOSTELERÍA Y RESTAURACIÓN. PRESTACIÓN DE SERVICIOS -ESPECIALMENTE SERVICIOS RELACIONADOS CON LAS TECNOLOGÍAS DE LA INFORMACIÓN Y LA INFORMÁTICA-, ACTIVIDADES DE GESTIÓN Y ADMINISTRACIÓN. SERVICIOS EDUCATIVOS, SANITARIOS, DE OCIO Y ENTRETENIMIENTO. TRANSPORTE Y ALMACENAMIENTO. INFORMACIÓN Y COMUNICACIONES. AGRICULTURA, GANADERÍA Y PESCA. INFORMÁTICA, TELECOMUNICACIONES Y OFIMÁTICA. ENERGÍAS ALTERNATIVAS. COMPRAVENTA Y REPARACIÓN DE VEHÍCULOS. REPARACIÓN Y MANTENIMIENTO DE INSTALACIONES Y MAQUINARIA. INVESTIGACIÓN, DESARROLLO E INNOVACIÓN. ACTIVIDADES CIENTÍFICAS Y TÉCNICAS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/05489",
+      "_links": {
+        "self": {
+          "name": "LOCALIDATA S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/05489"
+        }
+      }
+    },
+    {
+      "name": "ASESORES CREATIVOS Y DE IMAGEN CÓDIGO, S.L.U.",
+      "registrationNumber": "02379",
+      "identificationNumber": "B20214151",
+      "address": "P.E. ZUATZU EDIFICIO EASO P.2 OFICINA 4",
+      "location": {
+        "postalCode": "20018",
+        "municipality": "Donostia / San Sebastián",
+        "county": "Gipuzkoa",
+        "municipalityId": "069",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.844",
+          "name": "Servicios de publicidad, relaciones públicas y similares",
+          "_links": {
+            "self": {
+              "name": "Servicios de publicidad, relaciones públicas y similares",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.844"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2016-04-06",
+      "certificateEndDate": "2016-09-18",
+      "object": "LAS ACTIVIDADES DE PUBLICIDAD, PROPAGANDA, MARKETING, DIFUSIÓN Y COMUNICACIÓN EN TODAS SUS FACETAS, INVESTIGACIÓN Y ESTUDIO DE MERCADOS, RELACIONES PÚBLICAS Y SELECCIÓN Y ADIESTRAMIENTO PERSONAL",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/02379",
+      "_links": {
+        "self": {
+          "name": "ASESORES CREATIVOS Y DE IMAGEN CÓDIGO, S.L.U.",
+          "href": "https://api.euskadi.eus/procurements/companies/02379"
+        }
+      }
+    },
+    {
+      "name": "LA INVASIÓN DE LAS IDEAS, S.L.",
+      "registrationNumber": "05482",
+      "identificationNumber": "B75077461",
+      "address": "CALZADA DE EGIA, 9-BAJO",
+      "location": {
+        "postalCode": "20012",
+        "municipality": "Donostia / San Sebastián",
+        "county": "Gipuzkoa",
+        "municipalityId": "069",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.844",
+          "name": "Servicios de publicidad, relaciones públicas y similares",
+          "_links": {
+            "self": {
+              "name": "Servicios de publicidad, relaciones públicas y similares",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.844"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2016-04-05",
+      "certificateEndDate": "2016-08-17",
+      "classification": [
+        {
+          "id": "S",
+          "name": "Servicios",
+          "groups": [
+            {
+              "id": "T",
+              "subgroups": [
+                {
+                  "id": "01",
+                  "name": "Servicios de publicidad",
+                  "categories": [
+                    {
+                      "id": "1",
+                      "name": "Desde 0 Hasta 150.000",
+                      "_links": {
+                        "self": {
+                          "name": "Desde 0 Hasta 150.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/S/categories/1"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "Servicios de publicidad",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/T/subgroups/01"
+                    }
+                  }
+                }
+              ],
+              "_links": {
+                "self": {
+                  "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/T"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Servicios",
+              "href": "https://api.euskadi.eus/procurements/companies/types/S"
+            }
+          }
+        }
+      ],
+      "object": "CONSULTORÍA DE COMUNICACIÓN MARKETING, DISEÑO GRÁFICO Y RELACIONES PÚBLICAS. FOMENTO DE LA CREATIVIDAD Y EL DESARROLLO DE LAS IDEAS CREATIVAS. PRESTACIÓN DE SERVICIOS DE PUBLICIDAD Y CREATIVIDAD POR MEDIO DE INTERNET, TELEVISIÓN, STREET/AMBIENT MARKETING,  PRENSA, MARKETING DIRECTO. INTERMEDIACIÓN EN EL MERCADO PUBLICITARIO. ORGANIZACIÓN DE EVENTOS.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/05482",
+      "_links": {
+        "self": {
+          "name": "LA INVASIÓN DE LAS IDEAS, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/05482"
+        }
+      }
+    },
+    {
+      "name": "OXOID, S.A.",
+      "registrationNumber": "01158",
+      "identificationNumber": "A28625804",
+      "address": "C/ VÍA DE LOS POBLADOS, Nº 10.  NAVE: 3 - 13.",
+      "location": {
+        "postalCode": "28033",
+        "municipality": "Madrid",
+        "county": "Madrid",
+        "municipalityId": "079",
+        "countyId": "28"
+      },
+      "economicActivities": [
+        {
+          "id": "1.614.1",
+          "name": "Venta al por mayor de productos farmacéuticos y medicamentos",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de productos farmacéuticos y medicamentos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.614.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2016-03-29",
+      "certificateEndDate": "2016-09-01",
+      "object": "LA COMERCIALIZACIÓN Y DISTRIBUCIÓN EN ESPAÑA DE LOS PRODUCTOS MICROBIOLÓGICOS E INMUNOBIOLÓGICOS DEL GRUPO UNIPATH, ASÍ COMO LA POTENCIAL FABRICACIÓN DE ALGUNOS PRODUCTOS INTERMEDIOS Y SU EXPORTACIÓN A MERCADOS EXTRANJEROS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/01158",
+      "_links": {
+        "self": {
+          "name": "OXOID, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/01158"
+        }
+      }
+    },
+    {
+      "name": "OFYDE CONSULTORES, S.L.",
+      "registrationNumber": "01617",
+      "identificationNumber": "B48517650",
+      "address": "AVDA. LEHENDAKARI AGUIRRE, 11-8º IZDA.",
+      "location": {
+        "postalCode": "48011",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.659.2",
+          "name": "Venta al por menor de muebles de oficina y máquinas y equipos de oficina",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de muebles de oficina y máquinas y equipos de oficina",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.659.2"
+            }
+          }
+        },
+        {
+          "id": "1.847",
+          "name": "Servicios de consultoría",
+          "_links": {
+            "self": {
+              "name": "Servicios de consultoría",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.847"
+            }
+          }
+        },
+        {
+          "id": "1.934",
+          "name": "Enseñanza fuera de establecimiento permanente",
+          "_links": {
+            "self": {
+              "name": "Enseñanza fuera de establecimiento permanente",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.934"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2016-03-28",
+      "certificateEndDate": "2016-09-27",
+      "object": "a) LA CONSULTORÍA Y ASESORAMIENTO DE EMPRESAS; EL ESTUDIO, INVESTIGACIÓN, PROMOCIÓN Y PRESTACIÓN DE TODA CLASE DE SERVICIOS DE ASISTENCIA Y GESTIÓN TÉCNICA, ADMINISTRATIVA, COMERCIAL, CONTABLE, FINANCIERA, ECONÓMICA, FISCAL Y JURÍDICA, TODO ELLO POR PERSONAS CON TITULACIÓN ESPECIAL. b) LA COMPRA-VENTA, ARRENDAMIENTO, CESIÓN, DISFRUTE, CONSTRUCCIÓN, TENENCIA Y EXPLOTACIÓN DE BIENES INMUEBLES. c) LA FORMACIÓN E INFORMACIÓN DE TODO TIPO DE PERSONAS MEDIANTE CURSOS, SEMINARIOS, JORNADAS, TANTO DE PRESENCIA COMO A DISTANCIA EN CUALQUIER MATERIA, ASÍ COMO LA EDICIÓN DE LOS TEXTOS Y LIBROS ENCAMINADOS A TAL FIN, REVISTAS, Y CUALQUIER OTRO MEDIO DE DIFUSIÓN, QUE CONSIDERE IDÓNEO PARA SUS FINES, LA GESTIÓN, CREACIÓN, TOMA DE PARTICIPACIONES Y ASESORAMIENTO DE TODO TIPO DE EMPRESAS, CONSULTORÍA, GESTIÓN, DISTRIBUCIÓN, IMPORTACIÓN Y EXPORTACIÓN DE TODO TIPO DE PRODUCTOS CONEXOS CON DICHAS ACTIVIDADES DE FORMACIÓN, INFORMACIÓN Y ASESORAMIENTO. Y EN ESPECIAL, LA ELABORACIÓN, IMPARTICIÓN, ANÁLISIS Y SEGUIMENTO DE CURSOS DE FORMACIÓN PARA DESEMPLEADOS Y EMPLEADOS DEL SECTOR PÚBLICO Y PRIVADO",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/01617",
+      "_links": {
+        "self": {
+          "name": "OFYDE CONSULTORES, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/01617"
+        }
+      }
+    },
+    {
+      "name": "PEÑALVER Y CASTRO, S.L.",
+      "registrationNumber": "05123",
+      "identificationNumber": "B23334964",
+      "address": "C/ SEFARAD, 10 BAJO",
+      "location": {
+        "postalCode": "23007",
+        "municipality": "Jaén",
+        "county": "Jaén",
+        "municipalityId": "050",
+        "countyId": "23"
+      },
+      "economicActivities": [
+        {
+          "id": "1.659.2",
+          "name": "Venta al por menor de muebles de oficina y máquinas y equipos de oficina",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de muebles de oficina y máquinas y equipos de oficina",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.659.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2016-03-24",
+      "certificateEndDate": "2016-09-24",
+      "object": "LA VENTA AL POR MENOR O AL POR MAYOR DE MOBILIARIO EN GENERAL, MOBILIARIO DE OFICINA, ORDENADORES, IMPRESORAS, CONSUMIBLES INFORMÁTICOS, TELEFONÓIA, TELEFONÍA MÓVIL, MÁQUINAS REPRODUCTORAS DE DOCUMENTOS POR CUALQUIER MÉTODO Y FORMATO, MAQUINAS DE ESCRIBIR, SISTEMAS DE SEGURIDAD DE OFICINAS Y TODO LO DEMÁS RELACIONADO CON LA GESTIÓN DE OFICINAS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/05123",
+      "_links": {
+        "self": {
+          "name": "PEÑALVER Y CASTRO, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/05123"
+        }
+      }
+    },
+    {
+      "name": "MEDESCAN NORTE, S.L.",
+      "registrationNumber": "05478",
+      "identificationNumber": "B95671079",
+      "address": "Alameda Rekalde, 13-1º izda.",
+      "location": {
+        "postalCode": "48009",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.659.3",
+          "name": "Venta al por menor de aparatos médicos, ortopédicos, ópticos y fotográficos",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de aparatos médicos, ortopédicos, ópticos y fotográficos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.659.3"
+            }
+          }
+        },
+        {
+          "id": "1.699",
+          "name": "Otras reparaciones n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otras reparaciones n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.699"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2016-03-18",
+      "certificateEndDate": "2016-09-02",
+      "object": "1.- CONSTRUCCIÓN, INSTALACIONES Y MANTENIMIENTO. 2.- COMERCIO AL POR MAYOR Y AL POR MENOR. DISTRIBUCIÓN COMERCIAL. IMPORTACIÓN Y EXPORTACIÓN. LA COMPRA, VENTA, IMPORTACIÓN, EXPORTACIÓN, DISTRIBUCIÓN, ALMACENAMIENTO, FABRICACIÓN Y COMERCIALIZACIÓN DE TODA CLASE DE APARATOS SANITARIOS Y DE REHABILITACIÓN, EN ESPECIAL, DE EQUIPOS DE ULTRASONIDOS Y MESAS DE QUIRÓFANOS. 3.- ACTIVIDADES INMOBILIARIAS. 4.- ACTIVIDADES PROFESIONALES. 5.- INDUSTRIAS MANUFACTURERAS Y TEXTILES. 6.- TURISMO, HOSTELERÍA Y RESTAURACIÓN. 7.- PRESTACIÓN DE SERVICIOS. ACTIVIDADES DE GESTIÓN Y ADMINISTRACIÓN. SERVICIOS EDUCATIVOS, SANITARIOS, DE OCIO Y ENTRETENIMIENTO. 8.- TRANSPORTE Y ALMACENAMIENTO. 9.-INFORMACIÓN Y COMUNICACIONES. 10.- AGRICULTURA, GANADERÍA Y PESCA. 11.- INFORMÁTICA, TELECOMUNICACIONES Y OFIMÁTICA. 12.- ENERGÍAS ALTERNATIVAS. 13.- COMPRAVENTA Y REPARACIÓN DE VEHÍCULOS. REPARACIÓN Y MANTENIMIENTO DE INSTALACIONES Y MAQUINARIA. 14.- INVESTIGACIÓN, DESARROLLO E INNOVACIÓN. 15.- ACTIVIDADES CIENTÍFICAS Y TÉCNICAS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/05478",
+      "_links": {
+        "self": {
+          "name": "MEDESCAN NORTE, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/05478"
+        }
+      }
+    },
+    {
+      "name": "UGAO INSTALACIONES, S.L.",
+      "registrationNumber": "03240",
+      "identificationNumber": "B95135273",
+      "address": "POL. INDUSTRIAL USILA, 1-P. 11-1",
+      "location": {
+        "postalCode": "48490",
+        "municipality": "Ugao-Miraballes",
+        "county": "Bizkaia",
+        "municipalityId": "065",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.504.2",
+          "name": "Instalaciones de fontanería",
+          "_links": {
+            "self": {
+              "name": "Instalaciones de fontanería",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.504.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2016-03-08",
+      "certificateEndDate": "2016-04-04",
+      "object": "EL ESTUDIO Y REALIZACIÓN DE NEGOCIOS INMOBILIARIOS, COMPRAVENTA DE LOCALES, SOLARES Y TERRENOS, CONSTRUCCIÓN DE TODA CLASE DE EDIFICACIONES PARA SU VENTA O ALQUILER.\r\nLA PROMOCIÓN, CONSTRUCCIÓN, Y REHABILITACIÓN POR CUENTA PROPIA O AJENA DE TODA CLASE DE EDIFICIOS Y OBRAS TANTO PÚBLICAS COMO PRIVADAS.\r\nLA EXPLOTACIÓN DE NEGOCIOS DE MONTAJES INDUSTRIALES, FLUIDOS Y DE ELECTRICIDAD, ASÍ COMO CONSTRUCCIÓN Y CALDERERÍA METÁLICA.\r\nLA EXPLOTACIÓN DE SERVICIOS DE LIMIPEZA EN GENERAL DE TODO TIPO DE EDIFICIOS, LOCALES PABELLONES INDUSTRIALES Y VIVIENDAS, ASÍ COMO TAREAS DE MANTENIMIENTO DE LOS MISMOS, ELIMINACIÓN DE TODO TIPO DE PLAGAS Y DESRATIZACIÓN. COMPRAVENTA  DE ARTÍCULO, PRODUCTOS Y MAQUINARIA PARA LA REALIZACIÓN DE LAS TAREAS ANTERIORES.\r\nLA CONSTITUCIÓN CON LA CONCURRENCIA DE OTRAS PERSONAS, DE TODA CLASE DE SOCIEDADES MERCANTILES, ASÍ COMO LA PARTICIPACIÓN EN OTRAS CONSTITUIDAS, PUDIENDO OSTENTAR EN TODAS ELLAS CARGOS DE ADMINISTRACIÓN, DIRECCIÓN O CONTROL MEDIANTE LA OPORTUNA DELEGACIÓN EN PERSONA FÍSICA   ",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03240",
+      "_links": {
+        "self": {
+          "name": "UGAO INSTALACIONES, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/03240"
+        }
+      }
+    },
+    {
+      "name": "FAGUS SEGURIDAD, S.L.",
+      "registrationNumber": "05090",
+      "identificationNumber": "B75038364",
+      "address": "Camino Pillotegi, 12. Oficina F14",
+      "location": {
+        "postalCode": "20018",
+        "municipality": "Donostia / San Sebastián",
+        "county": "Gipuzkoa",
+        "municipalityId": "069",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.849.4",
+          "name": "Servicios de custodia, seguridad y protección",
+          "_links": {
+            "self": {
+              "name": "Servicios de custodia, seguridad y protección",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.849.4"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2016-03-07",
+      "certificateEndDate": "2016-08-04",
+      "object": "A) VIGILANCIA Y PROTECCIÓN DE BIENES, ESTABLECIIENTOS, ESPECTÁCULOS, CERTÁMENES O CONVENCIONES. B) PROTECCIÓN DE PERSONAS DETERMINADAS, PREVIA LA AUTORIZACIÓN CORRESPONDIENTE. C) DEPÓSITO, CUSTODIA, RECUENTO Y CLASIFICACIÓN DE MONEDAS Y BILLETES, TÍTULOS-VALORES Y DEMÁS OBJETOS QUE, POR SU VALOR ECONÓMICO Y EXPECTATIVAS QUE GENEREN, O POR SU PELIGROSIDAD, PUEDAN REQUERIR PROTECCIÓN ESPECIAL, SIN PERJUICIO DE LAS ACTIVIDADES PROPIAS DE LAS ENTIDADES FINANCIERAS. D) TRANSPORTE Y DISTRIBUCIÓN DE LOS OBJETOS A QUE SE REFIERE EL APARTADO ANTERIOR A TRAVÉS DE LOS DISTINTOS MEDIOS, REALIZÁNDOLOS, EN SU CASO, MEDIANTE VEHÍCULOS CUYAS CARACTERÍSTICAS SERÁN DETERMINADAS POR EL MINISTERIO DEL INTERIOR, DE FORMA QUE NO PUEDAN CONFUNDIRSE CON LOS DE LAS FUERZAS ARMADAS NI CON LOS DE LAS FUERZAS Y CUERPOS DE SEGURIDAD. E) INSTALACIÓN Y MANTENIMIENTO DE APARATOS, DISPOSITIVOS Y SISTEMAS DE SEGURIDAD. F) EXPLOTACIÓN DE CENTRALES PARA LA RECEPCIÓN, VERIFICACIÓN Y TRANSMISIÓN DE LAS SEÑALES DE ALARMAS Y SU COMUNICACIÓN A LAS FUERZAS Y CUERPOS DE SEGURIDAD, ASÍ COMO PRESTACIÓN DE SERVICIOS DE RESPUESTA, CUYA REALIZACIÓN NO SEA DE LA COMPETENCIA DE DICHAS FUERZAS Y CUERPOS. G) PLANIFICACIÓN Y ASESORAMIENTO DE LAS ACTIVIDADES DE SEGURIDAD CONTEMPLADAS EN LA LEY 23/1992, DE 30 DE JULIO, DE SEGURIDAD PRIVADA, EN SU REDACCIÓN DADA POR EL REAL DECRETO-LEY 2/1999, DE 29 DE ENERO, Y POR LA LEY 14/2000, DE 29 DE DICIEMBRE. LA SOCIEDAD NO DESARROLLARÁ NINGUNA ACTIVIDAD PARA LAS QUE LAS LEYES EXIJAN CONDICIONES O LIMITACIONES ESPECIALES, EN TANTO NO DÉ EXACTO CUMPLIMIENTO A LAS MISMAS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/05090",
+      "_links": {
+        "self": {
+          "name": "FAGUS SEGURIDAD, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/05090"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,458 @@
+{
+  "totalItems": 9042,
+  "totalPages": 905,
+  "currentPage": 354,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "name": "IZURUN TECHNOLOGY, S.L.",
+      "registrationNumber": "09356",
+      "identificationNumber": "B75238717",
+      "address": "Patxikuene 12 PB B",
+      "location": {
+        "postalCode": "20018",
+        "municipality": "Donostia / San Sebastián",
+        "county": "Gipuzkoa",
+        "municipalityId": "069",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.843.1",
+          "name": "Servicios técnicos de ingeniería",
+          "_links": {
+            "self": {
+              "name": "Servicios técnicos de ingeniería",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-05-26",
+      "certificateEndDate": "2025-11-26",
+      "object": "LA PROVISIÓN DE SERVICIOS TECNOLÓGICOS Y DE INGENIERÍA PARA EL SECTOR INDUSTRIAL, COMPRA-VENTA, DISTRIBUCIÓN, MARKETING Y SUMINISTRO DE INFORMACIÓN DE PRODUCTOS Y SERVICIOS ENTRE EMPRESAS A TRAVÉS DE INTERNET, INGENIERÍA Y CONSULTORÍA PARA PROYECTOS DE INVESTIGACIÓN, DESARROLLO E INNOVACIÓN.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/09356",
+      "_links": {
+        "self": {
+          "name": "IZURUN TECHNOLOGY, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/09356"
+        }
+      }
+    },
+    {
+      "name": "URBEN SERVICIOS INTEGRALES DE ARQUITECTURA, S.L.",
+      "registrationNumber": "08102",
+      "identificationNumber": "B75102004",
+      "address": "Avenida Zarautz (20018) 129 Bajo",
+      "location": {
+        "postalCode": "20018",
+        "municipality": "Donostia / San Sebastián",
+        "county": "Gipuzkoa",
+        "municipalityId": "069",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.501.1",
+          "name": "Construcción completa, reparación y conservación de edificaciones",
+          "_links": {
+            "self": {
+              "name": "Construcción completa, reparación y conservación de edificaciones",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.1"
+            }
+          }
+        },
+        {
+          "id": "1.504.2",
+          "name": "Instalaciones de fontanería",
+          "_links": {
+            "self": {
+              "name": "Instalaciones de fontanería",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.504.2"
+            }
+          }
+        },
+        {
+          "id": "1.843.2",
+          "name": "Servicios técnicos de arquitectura y urbanismo",
+          "_links": {
+            "self": {
+              "name": "Servicios técnicos de arquitectura y urbanismo",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-05-26",
+      "certificateEndDate": "2025-11-26",
+      "object": "*COORDINACIÓN DE GREMIOS Y OBRAS. *PROYECTOS Y DIRECCIÓN DE OBRAS. *TASACIONES Y SERVICIOS. *CERTIFICACIONES Y AUDITORÍAS ENERGÉTICAS. *INSPECCIÓN TÉCNICA DE EDIFICIOS.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08102",
+      "_links": {
+        "self": {
+          "name": "URBEN SERVICIOS INTEGRALES DE ARQUITECTURA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/08102"
+        }
+      }
+    },
+    {
+      "name": "TXITA TXIRRINDAK, S.L.",
+      "registrationNumber": "06954",
+      "identificationNumber": "B20908653",
+      "address": "PASEO DUQUE DE MANDAS, 28 sotano",
+      "location": {
+        "postalCode": "20012",
+        "municipality": "Donostia / San Sebastián",
+        "county": "Gipuzkoa",
+        "municipalityId": "069",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.631",
+          "name": "Intermediarios del comercio",
+          "_links": {
+            "self": {
+              "name": "Intermediarios del comercio",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.631"
+            }
+          }
+        },
+        {
+          "id": "1.654.1",
+          "name": "Venta al por menor de vehículos terrestres",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de vehículos terrestres",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.654.1"
+            }
+          }
+        },
+        {
+          "id": "1.844",
+          "name": "Servicios de publicidad, relaciones públicas y similares",
+          "_links": {
+            "self": {
+              "name": "Servicios de publicidad, relaciones públicas y similares",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.844"
+            }
+          }
+        },
+        {
+          "id": "1.849.5",
+          "name": "Servicios de recadería y reparto y manipulación de correspondencia",
+          "_links": {
+            "self": {
+              "name": "Servicios de recadería y reparto y manipulación de correspondencia",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.849.5"
+            }
+          }
+        },
+        {
+          "id": "1.934",
+          "name": "Enseñanza fuera de establecimiento permanente",
+          "_links": {
+            "self": {
+              "name": "Enseñanza fuera de establecimiento permanente",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.934"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-05-26",
+      "certificateEndDate": "2025-11-26",
+      "object": "-ALQUILER DE BICICLETAS Y TRICICLOS. -COMERCIALIZACIÓN DE ESPACIOS PUBLICITARIOS EN BICICLETAS Y TRICICLOS. -REPARTO DE PUBLICIDAD IMPRESA. -TRANSPORTE Y DISTRIBUCIÓN DE PAQUETERÍA Y MENSAJERÍA. -MENSAJERÍA Y PAQUETERÍA DE ÚLTIMA MILLA EN VEHÍCULOS SOSTENIBLES O ECOLÓGICOS. -SERVICIOS DE DISTRIBUCIÓN Y ENTREGA A DOMICILIO. -REPARACIÓN DE BICICLETAS Y TRICICLOS. -DISTRIBUCIÓN DE BICICLETAS Y TRICICLOS. -VENTA DE ACCESORIOS, ROPA Y PIEZAS PARA LAS BICICLETAS Y TRICICLOS. -TRANSPORTE DE PASAJEROS EN TRICICLO. -UTILIZACIÓN DE BICICLETAS Y TRICICLOS, EN EVENTOS DEPORTIVOS, CULTURALES Y DE OCIO. -CONSULTORÍA Y FORMACIÓN EN EL SECTOR DEL TRANSPORTE SOSTENIBLE.-CONSULTORÍA Y FORMACIÓN EN EL SECTOR DE LA PUBLICIDAD Y MEDIOS PUBLICITARIOS. -INCUBADORA DE NUEVOS PRODUCTOS Y SERVICIOS DE TRANSPORTE Y ESPACIOS PUBLICITARIOS. . -ROTULACIÓN DE BICICLETAS Y TRICICLOS. -VENTA DE TELARES ARTESANALES, MAQUINARIA Y HERRAMIENTA AUXILIAR, MATERIALES PARA TEJER (HILADOS), REPARACION DE TELARES Y MAQUINARIA. - CONSULTORIA Y ESTUDIOS PARA LA IMPLANTACION DE TALLERES DE TEJIDO ARTESANAL..",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06954",
+      "_links": {
+        "self": {
+          "name": "TXITA TXIRRINDAK, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/06954"
+        }
+      }
+    },
+    {
+      "name": "AGENCIA DE PRENSA Y PUBLICIDAD IMAGINE, S.L.",
+      "registrationNumber": "03250",
+      "identificationNumber": "B48979231",
+      "address": "Lehendakari Agirre 11, 3º",
+      "location": {
+        "postalCode": "48014",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.476.2",
+          "name": "Edición de periódicos y revistas",
+          "_links": {
+            "self": {
+              "name": "Edición de periódicos y revistas",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.476.2"
+            }
+          }
+        },
+        {
+          "id": "1.844",
+          "name": "Servicios de publicidad, relaciones públicas y similares",
+          "_links": {
+            "self": {
+              "name": "Servicios de publicidad, relaciones públicas y similares",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.844"
+            }
+          }
+        },
+        {
+          "id": "1.932.2",
+          "name": "Enseñanza de formación y perfeccionamiento profesional superior",
+          "_links": {
+            "self": {
+              "name": "Enseñanza de formación y perfeccionamiento profesional superior",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.932.2"
+            }
+          }
+        },
+        {
+          "id": "1.989.2",
+          "name": "Servicios de organización de congresos, asambleas y similares",
+          "_links": {
+            "self": {
+              "name": "Servicios de organización de congresos, asambleas y similares",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.989.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-05-26",
+      "certificateEndDate": "2025-11-23",
+      "object": "A) LA REALIZACIÓN DE TODO TIPO DE INFORMACIÓN ESCRITA EN SOPORTE DE PAPEL, PRENSA, RADIO, VIDEO, INTERNET O TELEVISIÓN; INFORMES, MEMORIAS, REPORTAJES INFORMATIVOS, REPORTAJES PUBLICITARIOS, CONFIDENCIALES, NOTICIAS ENTREVISTAS Y CRÓNICAS PARA SU VENTA A MEDIOS DE COMUNICACIÓN, O POR PETICIÓN DE EMPRESAS PARTICULARES. ORGANIZACIÓN DE EVENTOS PARA LA PROMOCIÓN DE EMPRESAS Y PRODUCTOS; INAUGURACIONES, RUEDAS DE PRENSA, CONGRESOS, ESPECTÁCULOS, LANZAMIENTO DE PRODUCTOS, REPRESENTACIÓN DE CLIENTES EN FERIAS Y CERTÁMENES DIVERSOS. EDICIÓN, DISEÑÓ, MONTAJE Y COMERCIALIZACIÓN DE TODO TIPO DE PUBLICACIONES: REVISTAS, CATÁLOGOS, FOLLETOS, DÍPTICOS, TRÍPTICOS, PERIÓDICOS. REALIZACIÓN DE TODO TIPO DE CAMPAÑAS DE PROMOCIÓN DE EMPRESAS Y PRODUCTOS EN PRENSA, RADIO, TELEVISIÓN, VIDEOS, VALLAS, CORNISAS Y SOPORTES DIVERSOS. REALIZACIÓN DE ESTUDIOS DE MERCADO Y PLANES DE MARKETING PARA EMPRESAS. COMERCIALIZACIÓN DE TODO TIPO DE PRODUCTOS A PETICIÓN DE EMPRESAS RELACIONADOS CON LA PROMOCIÓN DE LAS MISMAS.\r\nB) REALIZACIÓN DE CURSOS PARA EL RECICLAJE DE EMPRESAS NESITADAS DE MEJORAR A SUS PROFESIONALES EN LOS SIGUIENTES CAMPOS: DISEÑO A MANO ALZADA; DISEÑO ASISTIDO POR ORDENADOR; SISTEMAS MULTIMEDIA Y ANIMACIÓN; EDICIÓN EN VIDEO; FOTOGRAFÍA; IMAGEN VIRTUAL; GESTIÓN DE MEDIOS DE COMUNICACIÓN Y PLANIFICACIÓN DE CAMPAÑAS; CREATIVIDAD PUBLICITARIA Y PROMOCIONAL; PROTOCOLO Y RELACIONES EXTERNAS; REDACCIÓN EMPRESARIAL, INFORMATIVA, GRÁFICA Y PERIODÍSTICA PARA PRENSA, RADIO Y TELEVISIÓN; CREACIÓN DE NUEVAS EMPRESAS; GESTIÓN INFORMATIZADA DE EMPRESAS; CONTABILIDAD GENERAL; DOCUMENTACIÓN, ARCHIVO Y LEGISLACIÓN. REALIZACIÓN DE CURSOS EN LAS MATERIAS ANTES MENCIONADAS PARA PROPORCIONAR UNA FORMACIÓN PRÁCTICA PROFESIONAL A ESTUDIANTES Y LICENCIADOS EN SECTORES RELACIONADOS  CON LA COMUNICACIÓN Y EL DISEÑO: BELLAS ARTES, ARTES GRÁFICAS, EMPRESARIALES, ECONÓMICAS, ADMINISTRACIÓN, SECRETARIADO DE DIRECCIÓN, PERIODISMO, PUBLICIDAD, VIDEO, FOTOGRAFÍA, VENTAS, MARKETING, TOPOGRAFÍA, INGENIERÍA, DELINEACIÓN, INGENIERÍA, DELINEACIÓN, DECORACIÓN, ARQUITECTURA, DISEÑO DE MODA E INDUSTRIAL, DOCUMENTACIÓN Y ARCHIVOS, RELACIONES PÚBLICAS Y EXTERNAS, RADIO Y TELEVISIÓN, AUDIOVISUALES Y SIMILARES.\r\nC) LA PROMOCIÓN, CONSTRUCCIÓN, COMPRAVENTA, ALQUILER, REALQUILER, PARCELACIÓN Y URBANIZACIÓN DE SOLARES, TERRENOS Y FINCAS, DE CUALQUIER NATURALEZA, PUDIENDO PROCEDER A LA EDIFICACIÓN DE LAS MISMAS Y A SU ENAJENACIÓN ÍNTEGRA O PARCIALMENTE EN RÉGIMEN DE PROPIEDAD HORIZONTAL.\r\nD) LA ADQUISICIÓN POR CUALQUIER TÍTULO DE FINCAS RÚSTICAS O URBANAS, LA CONSTRUCCIÓN DE ESTAS Y LA ADMINISTRACIÓN, TENENCIA, EXPLOTACIÓN Y ARRENDAMIENTO DE TALES BIENES Y SU VENTA TOTAL O PARCIAL, SEGÚN CONVENGA PARA SU APROVECHAMIENTO AGRÍCOLA, FORESTAL, URBANO, INDUSTRIAL O CUALQUIER OTRO.\r\nE) LA ADQUISICIÓN, CESIÓN, INVERSIÓN, TENENCIA, DISFRUTE, ADMINISTRACIÓN, GESTIÓN Y NEGOCIACIÓN EN GENERAL DE TODA CLASE TÍTULOS Y VALORES MOBILIARIOS, COTIZADOS EN BOLSA  O NO, SIN INCIDIR EN LAS OPERACIONES A QUE SE REFIERE LA LEY 46/84 DE INVERSIONES COLECTIVAS.\r\nF) LA COMPRAVENTA, ALMACENAMIENTO, DEPÓSITO, DISTRIBUCIÓN, IMPORTACIÓN, EXPORTACIÓN DE TODA CLASE DE MECANCÍAS, PRODUCTOS, ARTICULOS Y MATERIAS DE TODAS CLASES Y EN GENERAL DE BIENES MUEBLES.\r\nG) EL ASESORAMIENTO DE EMPRESAS, TANTO FISCAL COMO JURÍDICO FINANCIERO O DE CUALQUIER OTRO TIPO; EL ESTUDIO, INVESTIGACIÓN, PROMOCIÓN Y PRESTACIÓN DE TODA CLASE DE SERVICIOS DE ASISTENCIA Y GESTIÓN, TÉCNICA, ADMINISTRATIVA, COMERCIAL Y CONTABLE, BAJO PERSONAL TITULADO.\r\nLAS ACTIVIDADES ENUMERADAS PODRÁN TAMBIÉN SER DESARROLLADAS POR LA SOCIEDAD, TOTAL O PARCIALMENTE, DE MODO INDIRECTO, MEDIANTE LA PARTICIPACIÓN DE OTRAS SOCIEDADES CON OBJETO ANÁLOGO.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03250",
+      "_links": {
+        "self": {
+          "name": "AGENCIA DE PRENSA Y PUBLICIDAD IMAGINE, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/03250"
+        }
+      }
+    },
+    {
+      "name": "PINTURAS Y RECUBRIMIENTOS URSAN, S.L.",
+      "registrationNumber": "02439",
+      "identificationNumber": "B48473987",
+      "address": "POLÍGONO AURRERA, 39",
+      "location": {
+        "postalCode": "48510",
+        "municipality": "Valle de Trápaga-Trapagaran",
+        "county": "Bizkaia",
+        "municipalityId": "080",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.253.3",
+          "name": "Fabricación de pinturas, barnices y lacas",
+          "_links": {
+            "self": {
+              "name": "Fabricación de pinturas, barnices y lacas",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.253.3"
+            }
+          }
+        },
+        {
+          "id": "1.652.2",
+          "name": "Venta al por menor de productos de droguería y productos para decoración",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de productos de droguería y productos para decoración",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.652.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-05-26",
+      "certificateEndDate": "2025-10-05",
+      "object": "LA FABRICACIÓN, IMPORTACIÓN, EXPORTACIÓN, COMPRAVENTA, DISTRIBUCIÓN, ALMACENAMIENTO Y CUALQUIER OTRA FORMA DE INDUSTRIALIZACIÓN Y COMERCIALIZACIÓN DE TODA CLASE DE PINTURAS, BARNICES Y DEMÁS PRODUCTOS DEL RAMO",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/02439",
+      "_links": {
+        "self": {
+          "name": "PINTURAS Y RECUBRIMIENTOS URSAN, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/02439"
+        }
+      }
+    },
+    {
+      "name": "PABLO ANTONIO BUSTAMANTE ESPARZA",
+      "registrationNumber": "09938",
+      "identificationNumber": "14592397R",
+      "address": "Lersundi 13   1 Izda",
+      "location": {
+        "postalCode": "48009",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "2.732",
+          "name": "Procuradores",
+          "_links": {
+            "self": {
+              "name": "Procuradores",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/2.732"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-05-26",
+      "certificateEndDate": "2025-11-20",
+      "object": "PROCURADORES.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/09938",
+      "_links": {
+        "self": {
+          "name": "PABLO ANTONIO BUSTAMANTE ESPARZA",
+          "href": "https://api.euskadi.eus/procurements/companies/09938"
+        }
+      }
+    },
+    {
+      "name": "ATE RECURSOS HUMANOS PERSONAS Y EMPRESA, S.L.",
+      "registrationNumber": "09642",
+      "identificationNumber": "B01585207",
+      "address": "Plaza El Renacimiento",
+      "location": {
+        "postalCode": "01004",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.847",
+          "name": "Servicios de consultoría",
+          "_links": {
+            "self": {
+              "name": "Servicios de consultoría",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.847"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-05-23",
+      "certificateEndDate": "2025-11-10",
+      "object": "SERVICIOS DE ORIENTACIÓN LABORAL; SELECCIÓN DE PERSONAL; SELECCIÓN DE PERSONAL EJECUTIVO; CONSULTORÍA SOBRE SELECCIÓN DE PERSONAL; SELECCIÓN DE PERSONAL (PARA TERCEROS); SELECCIÓN DE PERSONAL MEDIANTE TESTS PSICOTÉCNICOS; PRUEBAS PSICOMÉTRICAS PARA LA SELECCIÓN DE PERSONAL; REALIZACIÓN DE PRUEBAS PARA EVALUAR LAS COMPETENCIAS PROFESIONALES; REALIZACIÓN DE PRUEBAS PARA EVALUAR LAS COMPETENCIAS LABORALES; GESTIÓN DE PERSONAL Y CONSULTORÍA EN MATERIA DE EMPLEO; GESTIÓN DE RECURSOS HUMANOS; CONSULTORÍA EN RECURSOS HUMANOS; ADMINISTRACIÓN DE RECURSOS HUMANOS; COLOCACIÓN LABORAL Y DE PERSONAL; CONSULTAS EN MATERIA DE CONTRATACIÓN LABORAL.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/09642",
+      "_links": {
+        "self": {
+          "name": "ATE RECURSOS HUMANOS PERSONAS Y EMPRESA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/09642"
+        }
+      }
+    },
+    {
+      "name": "IZASKUN DIAZ RAMOS",
+      "registrationNumber": "09536",
+      "identificationNumber": "45823508X",
+      "address": "GRUPO AURORA VILDOSOLA",
+      "location": {
+        "postalCode": "48980",
+        "municipality": "Santurtzi",
+        "county": "Bizkaia",
+        "municipalityId": "082",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.673.2",
+          "name": "Otros cafés y bares",
+          "_links": {
+            "self": {
+              "name": "Otros cafés y bares",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.673.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-05-23",
+      "certificateEndDate": "2025-11-23",
+      "object": "OTROS CAFÉS Y BARES.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/09536",
+      "_links": {
+        "self": {
+          "name": "IZASKUN DIAZ RAMOS",
+          "href": "https://api.euskadi.eus/procurements/companies/09536"
+        }
+      }
+    },
+    {
+      "name": "COTA CERO ACCESIBILIDAD, S.L.",
+      "registrationNumber": "08167",
+      "identificationNumber": "B01487586",
+      "address": "RIOJA 29, BAJO 3 (ESQUINA C/ MANUEL IRADIER)",
+      "location": {
+        "postalCode": "01005",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.501.1",
+          "name": "Construcción completa, reparación y conservación de edificaciones",
+          "_links": {
+            "self": {
+              "name": "Construcción completa, reparación y conservación de edificaciones",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-05-22",
+      "certificateEndDate": "2025-11-10",
+      "object": "LA ELIMINACIÓN DE BARRERAS ARQUITECTÓNICAS Y REHABILITACIÓN INTEGRAL DE VIVIENDAS Y PORTALES.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08167",
+      "_links": {
+        "self": {
+          "name": "COTA CERO ACCESIBILIDAD, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/08167"
+        }
+      }
+    },
+    {
+      "name": "ACOMET METALES Y MINERALES, S.L.",
+      "registrationNumber": "08202",
+      "identificationNumber": "B95772901",
+      "address": "Mayor 10, 5ª planta",
+      "location": {
+        "postalCode": "48930",
+        "municipality": "Getxo",
+        "county": "Bizkaia",
+        "municipalityId": "044",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.616.4",
+          "name": "Venta al por mayor de metales no férreos en bruto y productos semielaborados",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de metales no férreos en bruto y productos semielaborados",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.616.4"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-05-22",
+      "certificateEndDate": "2025-11-21",
+      "object": "- EL COMERCIO MAYOR Y MENOR DE MATERIAS PRIMAS Y SEMIELABORADOS, ABRASIVOS Y CONSUMIBLES METALÚRGICOS. - EL DESARROLLO DE COMERCIO INTERNACIONAL.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08202",
+      "_links": {
+        "self": {
+          "name": "ACOMET METALES Y MINERALES, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/08202"
+        }
+      }
+    }
+  ]
+}

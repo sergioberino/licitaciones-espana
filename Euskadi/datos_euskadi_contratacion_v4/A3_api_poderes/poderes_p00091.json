@@ -1,0 +1,490 @@
+{
+  "totalItems": 919,
+  "totalPages": 92,
+  "currentPage": 91,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "id": 78,
+      "identificationNumber": "P0100157G",
+      "name": "Junta Administrativa de Respaldiza",
+      "scope": "ARABA/ÁLAVA",
+      "address": "Barrio La Iglesia s/n.01476 Respaldiza (Álava)",
+      "webPage": "https://www.contratacion.euskadi.eus",
+      "publicationDate": "2018-04-03",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES211",
+      "entities": [
+        {
+          "id": 424,
+          "name": "Junta Administrativa de Respaldiza",
+          "orgs": [
+            {
+              "id": 911412,
+              "name": "Concejo de Respaldiza",
+              "_links": {
+                "self": {
+                  "name": "Concejo de Respaldiza",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/78/entities/424/orgs/911412"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Junta Administrativa de Respaldiza",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/78/entities/424"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder78/es_doc/es_arch_poder78.html",
+      "_links": {
+        "self": {
+          "name": "Junta Administrativa de Respaldiza",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/78"
+        }
+      }
+    },
+    {
+      "id": 81,
+      "identificationNumber": "P0100166H",
+      "name": "Junta Administrativa de Luiaondo",
+      "scope": "ARABA/ÁLAVA",
+      "address": "c\\ La torre, 20",
+      "webPage": "https://www.contratacion.euskadi.eus",
+      "publicationDate": "2018-04-03",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES211",
+      "entities": [
+        {
+          "id": 427,
+          "name": "Junta Administrativa de Luiaondo",
+          "orgs": [
+            {
+              "id": 911418,
+              "name": "Concejo de Luiaondo",
+              "_links": {
+                "self": {
+                  "name": "Concejo de Luiaondo",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/81/entities/427/orgs/911418"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Junta Administrativa de Luiaondo",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/81/entities/427"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder81/es_doc/es_arch_poder81.html",
+      "_links": {
+        "self": {
+          "name": "Junta Administrativa de Luiaondo",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/81"
+        }
+      }
+    },
+    {
+      "id": 214,
+      "identificationNumber": "P5100002D",
+      "name": "Juntas Generales de Álava",
+      "scope": "ARABA/ÁLAVA",
+      "address": "Vicente Goikoetxea, 2. 01008 Vitoria-Gasteiz (Araba/Álava)",
+      "webPage": "http://www.jjggalava.eus",
+      "publicationDate": "2018-04-03",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES211",
+      "entities": [
+        {
+          "id": 661,
+          "name": "Juntas Generales de Álava",
+          "orgs": [
+            {
+              "id": 912042,
+              "name": "Mesa de las Juntas Generales de Álava",
+              "_links": {
+                "self": {
+                  "name": "Mesa de las Juntas Generales de Álava",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/214/entities/661/orgs/912042"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Juntas Generales de Álava",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/214/entities/661"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder214/es_doc/es_arch_poder214.html",
+      "_links": {
+        "self": {
+          "name": "Juntas Generales de Álava",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/214"
+        }
+      }
+    },
+    {
+      "id": 39,
+      "identificationNumber": "A48136550",
+      "name": "Eusko Trenbideak Ferrocarriles Vascos, S.A.",
+      "scope": "CAPV",
+      "address": "Indalecio Fernández Fernández",
+      "webPage": "http://www.euskotren.es",
+      "publicationDate": "2018-03-28",
+      "mainActivity": "Otra actividad",
+      "alternativeActivity": "Transportes",
+      "codNUTS": "ES21",
+      "entities": [
+        {
+          "id": 251,
+          "name": "EuskoTrenbideak FFCC Vascos, S.A.U. ",
+          "orgs": [
+            {
+              "id": 911100,
+              "name": "Órgano de Contratación de EuskoTrenbideak FFCC Vascos, S.A.U.",
+              "_links": {
+                "self": {
+                  "name": "Órgano de Contratación de EuskoTrenbideak FFCC Vascos, S.A.U.",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/39/entities/251/orgs/911100"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "EuskoTrenbideak FFCC Vascos, S.A.U. ",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/39/entities/251"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder39/es_doc/es_arch_poder39.html",
+      "_links": {
+        "self": {
+          "name": "Eusko Trenbideak Ferrocarriles Vascos, S.A.",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/39"
+        }
+      }
+    },
+    {
+      "id": 131,
+      "identificationNumber": "A01405000",
+      "name": "Hidroeléctrica Harana-Kontrasta, S.A.",
+      "scope": "CAPV",
+      "address": "Alameda Urquijo 36, 1 planta. 48011 Bilbao (Bizkaia)",
+      "webPage": "http://www.eve.eus",
+      "publicationDate": "2018-03-28",
+      "mainActivity": "Asuntos económicos y financieros",
+      "codNUTS": "ES21",
+      "entities": [
+        {
+          "id": 483,
+          "name": "Hidroeléctrica Harana-Kontrasta, S.A.",
+          "orgs": [
+            {
+              "id": 911560,
+              "name": "Consejo Administración",
+              "_links": {
+                "self": {
+                  "name": "Consejo Administración",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/131/entities/483/orgs/911560"
+                }
+              }
+            },
+            {
+              "id": 911559,
+              "name": "Apoderado (hasta 50.000¿)",
+              "_links": {
+                "self": {
+                  "name": "Apoderado (hasta 50.000¿)",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/131/entities/483/orgs/911559"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Hidroeléctrica Harana-Kontrasta, S.A.",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/131/entities/483"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder131/es_doc/es_arch_poder131.html",
+      "_links": {
+        "self": {
+          "name": "Hidroeléctrica Harana-Kontrasta, S.A.",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/131"
+        }
+      }
+    },
+    {
+      "id": 132,
+      "identificationNumber": "Q5150001E",
+      "name": "Ente Vasco de la Energía",
+      "scope": "CAPV",
+      "address": "Alameda Urquijo 36, 1 planta. 48011 Bilbao (Bizkaia)",
+      "webPage": "http://www.eve.eus",
+      "publicationDate": "2018-03-28",
+      "mainActivity": "Asuntos económicos y financieros",
+      "codNUTS": "ES21",
+      "entities": [
+        {
+          "id": 484,
+          "name": "Ente Vasco de la Energía ",
+          "orgs": [
+            {
+              "id": 911562,
+              "name": "Dirección General",
+              "_links": {
+                "self": {
+                  "name": "Dirección General",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/132/entities/484/orgs/911562"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Ente Vasco de la Energía ",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/132/entities/484"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder132/es_doc/es_arch_poder132.html",
+      "_links": {
+        "self": {
+          "name": "Ente Vasco de la Energía",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/132"
+        }
+      }
+    },
+    {
+      "id": 160,
+      "identificationNumber": "Q9855002C",
+      "name": "Consejo de Relaciones Laborales",
+      "scope": "CAPV",
+      "address": "Alameda de Urquijo, 2 3º planta. 48008 Bilbao (Bizkaia)",
+      "webPage": "http://www.crl-lhk.org",
+      "publicationDate": "2018-03-28",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES21",
+      "entities": [
+        {
+          "id": 555,
+          "name": "Consejo de Relaciones Laborales",
+          "orgs": [
+            {
+              "id": 911774,
+              "name": "Secretario general",
+              "_links": {
+                "self": {
+                  "name": "Secretario general",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/160/entities/555/orgs/911774"
+                }
+              }
+            },
+            {
+              "id": 911772,
+              "name": "Pleno",
+              "_links": {
+                "self": {
+                  "name": "Pleno",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/160/entities/555/orgs/911772"
+                }
+              }
+            },
+            {
+              "id": 911773,
+              "name": "Presidente",
+              "_links": {
+                "self": {
+                  "name": "Presidente",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/160/entities/555/orgs/911773"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Consejo de Relaciones Laborales",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/160/entities/555"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder160/es_doc/es_arch_poder160.html",
+      "_links": {
+        "self": {
+          "name": "Consejo de Relaciones Laborales",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/160"
+        }
+      }
+    },
+    {
+      "id": 178,
+      "identificationNumber": "Q0100587E",
+      "name": "Bomberos Forales de Álava",
+      "scope": "ARABA/ÁLAVA",
+      "address": "Plaza de la Provincia, s/n. 01001 Vitoria-Gasteiz (Arab/Álava)",
+      "webPage": "http://www.araba.eus",
+      "publicationDate": "2018-03-28",
+      "mainActivity": "Medio ambiente",
+      "codNUTS": "ES211",
+      "entities": [
+        {
+          "id": 606,
+          "name": "Bomberos Forales de Álava",
+          "orgs": [
+            {
+              "id": 911902,
+              "name": "Presidencia del Consejo de Administración",
+              "_links": {
+                "self": {
+                  "name": "Presidencia del Consejo de Administración",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/178/entities/606/orgs/911902"
+                }
+              }
+            },
+            {
+              "id": 911903,
+              "name": "Consejo de Administración ",
+              "_links": {
+                "self": {
+                  "name": "Consejo de Administración ",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/178/entities/606/orgs/911903"
+                }
+              }
+            },
+            {
+              "id": 911901,
+              "name": "Dirección-Gerencia ",
+              "_links": {
+                "self": {
+                  "name": "Dirección-Gerencia ",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/178/entities/606/orgs/911901"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Bomberos Forales de Álava",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/178/entities/606"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder178/es_doc/es_arch_poder178.html",
+      "_links": {
+        "self": {
+          "name": "Bomberos Forales de Álava",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/178"
+        }
+      }
+    },
+    {
+      "id": 186,
+      "identificationNumber": "P0100389F",
+      "name": "Cuadrilla de Gorbeialdea",
+      "scope": "ARABA/ÁLAVA",
+      "address": "Plaza del Ayuntamiento, 1 2º izda. 01130 Murgia (Araba/Álava)",
+      "webPage": "http://www.gorbeialdekokuadrilla.eus",
+      "publicationDate": "2018-03-28",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES211",
+      "entities": [
+        {
+          "id": 616,
+          "name": "Cuadrilla de Gorbeialdea",
+          "orgs": [
+            {
+              "id": 911925,
+              "name": "Junta de Cuadrilla",
+              "_links": {
+                "self": {
+                  "name": "Junta de Cuadrilla",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/186/entities/616/orgs/911925"
+                }
+              }
+            },
+            {
+              "id": 911924,
+              "name": "Presidente",
+              "_links": {
+                "self": {
+                  "name": "Presidente",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/186/entities/616/orgs/911924"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Cuadrilla de Gorbeialdea",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/186/entities/616"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder186/es_doc/es_arch_poder186.html",
+      "_links": {
+        "self": {
+          "name": "Cuadrilla de Gorbeialdea",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/186"
+        }
+      }
+    },
+    {
+      "id": 347,
+      "identificationNumber": "A48541247",
+      "name": "Gasteizko Industria Lurra, S.A.",
+      "scope": "ARABA/ÁLAVA",
+      "address": "Paseo de Fray Francisco, 21C- 3ª planta. 01007 Vitoria-Gasteiz (Araba/Álava)",
+      "webPage": "http://www.gilsa.org",
+      "publicationDate": "2018-03-28",
+      "mainActivity": "Otra actividad",
+      "alternativeActivity": "Promoción empresarial",
+      "codNUTS": "ES211",
+      "entities": [
+        {
+          "id": 799,
+          "name": "Gasteizko Industria Lurra, S.A.",
+          "orgs": [
+            {
+              "id": 912296,
+              "name": "Consejo de Administración",
+              "_links": {
+                "self": {
+                  "name": "Consejo de Administración",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/347/entities/799/orgs/912296"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Gasteizko Industria Lurra, S.A.",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/347/entities/799"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder347/es_doc/es_arch_poder347.html",
+      "_links": {
+        "self": {
+          "name": "Gasteizko Industria Lurra, S.A.",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/347"
+        }
+      }
+    }
+  ]
+}

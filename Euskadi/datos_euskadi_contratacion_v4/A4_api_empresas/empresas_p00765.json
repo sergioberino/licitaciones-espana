@@ -1,0 +1,358 @@
+{
+  "totalItems": 9042,
+  "totalPages": 905,
+  "currentPage": 765,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "name": "SOCIEDAD COOPERATIVA DE R.L. LARRIALDIAK, S. COOP.",
+      "registrationNumber": "02167",
+      "identificationNumber": "F20074399",
+      "address": "C/ URUNE, 35. POLÍGONO INDUSTRIAL  103.",
+      "location": {
+        "postalCode": "20100",
+        "municipality": "Lezo",
+        "county": "Gipuzkoa",
+        "municipalityId": "053",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.721.4",
+          "name": "Transporte sanitario en ambulancias",
+          "_links": {
+            "self": {
+              "name": "Transporte sanitario en ambulancias",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.721.4"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2008-01-28",
+      "certificateEndDate": "2008-05-15",
+      "object": "TRANSPORTE DE ENFERMOS POR AMBULANCIA",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/02167",
+      "_links": {
+        "self": {
+          "name": "SOCIEDAD COOPERATIVA DE R.L. LARRIALDIAK, S. COOP.",
+          "href": "https://api.euskadi.eus/procurements/companies/02167"
+        }
+      }
+    },
+    {
+      "name": "EUSKOLOGIC TELECOMUNICACIONES, S.L.",
+      "registrationNumber": "03356",
+      "identificationNumber": "B95451746",
+      "address": "ASTOLA BIDEA, 11-F, POLIGONO MONTORRETAS",
+      "location": {
+        "postalCode": "48200",
+        "municipality": "Durango",
+        "county": "Bizkaia",
+        "municipalityId": "027",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.504.7",
+          "name": "Instalaciones telefónicas, telegráficas, televisión, etc",
+          "_links": {
+            "self": {
+              "name": "Instalaciones telefónicas, telegráficas, televisión, etc",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.504.7"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2008-01-22",
+      "certificateEndDate": "2008-05-15",
+      "object": "LA IMPORTACIÓN, FABRICACIÓN, DISTRIBUCIÓN, SUMINISTRO MEDIANTE ADQUISICIÓN O ARRENDAMIENTO (CON O SIN OPCIÓN DE COMPRA), COMERCIALIZACIÓN E INSTALACIÓN DE EQUIPOS, SISTEMAS Y REDES DE COMUNICACIONES,  ASÍ COMO LA PROVISIÓN DE SERVICIOS DE TELECOMUNICACIONES, INSTALACIONES ELÉCTRICAS, DE ANTENAS DE TELEVISIÓN Y MEGAFONÍA",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03356",
+      "_links": {
+        "self": {
+          "name": "EUSKOLOGIC TELECOMUNICACIONES, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/03356"
+        }
+      }
+    },
+    {
+      "name": "INNOVA TELECOM NETWORKS, S.L.",
+      "registrationNumber": "03496",
+      "identificationNumber": "B95418778",
+      "address": "ELEJALDE 17",
+      "location": {
+        "postalCode": "48480",
+        "municipality": "Zaratamo",
+        "county": "Bizkaia",
+        "municipalityId": "097",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.504.7",
+          "name": "Instalaciones telefónicas, telegráficas, televisión, etc",
+          "_links": {
+            "self": {
+              "name": "Instalaciones telefónicas, telegráficas, televisión, etc",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.504.7"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2008-01-14",
+      "certificateEndDate": "2008-04-11",
+      "object": "LA REALIZACIÓN DE TODO TIPO DE TRABAJOS DE INSTALACIONES ELÉCTRICAS Y DE CABLE DE COMUNICACIONES Y OBRA CIVIL; LA COMERCIALIZACIÓN, INSTALACIÓN Y MANTENIMIENTO DE MATERIAL Y EQUIPOS DE TELECOMUNIACIONES Y SISTEMAS INFORMÁTIVOS Y ELECTRÓNICOS. EL ASESORAMIENTO Y GESTIÓN EN LA UTILIZACIÓN DE ENERGÍA EN CUALQUIER FORMA; LA INGENIERÍA Y CONSULTORÍA ENERGÉTICA, ELÉCTRICA Y ELECTRÓNICA; LA FORMACIÓN EN LOS CAMPOS ANTERIORMENTE CITADOS; LA COMERCIALIZACIÓN DE TODO TIPO DE ARTÍCULOS MATERIALES E INMATERIALES RELACIONADOS DIRECTA O INDIRECTAMENTE CON LAS ACTIVIDADES CITADAS; LA PRESTACIÓN DE LOS SERVICIOS Y ACTIVIDADES INDICADAS CON ANTERIORIDAD A TRAVÉS DE INTERNET, Y TODAS AQUELLAS ACTIVIDADES RELACIONADAS CON EL SECTRO ENERGÉTICO, ELÉCTRICO, ELECTRÓNICO E INFORMATIVO. LA INSTALACIÓN Y MANTENIMIENTO DE LÍNEAS TELEFÓNICAS, FIBRA ÓPTICA Y CENTRALITAS. LA ELABORACIÓN , FABRICACIÓN Y COMERCIALIZACIÓN DE CUALQUIER OTRO TIPO DE COMUNICACIONES",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03496",
+      "_links": {
+        "self": {
+          "name": "INNOVA TELECOM NETWORKS, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/03496"
+        }
+      }
+    },
+    {
+      "name": "ABIARAZI S.L.",
+      "registrationNumber": "03498",
+      "identificationNumber": "B95334694",
+      "address": "LANDABERRI Nº 2, BAJO",
+      "location": {
+        "postalCode": "48902",
+        "municipality": "Barakaldo",
+        "county": "Bizkaia",
+        "municipalityId": "013",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.505.6",
+          "name": "Pintura, revestimientos y terminación y decoración de locales",
+          "_links": {
+            "self": {
+              "name": "Pintura, revestimientos y terminación y decoración de locales",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.505.6"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2008-01-14",
+      "certificateEndDate": "2008-05-05",
+      "object": "TRABAJO DE ALBAÑILERÍA E INSTALACIONES ELÉCTRICAS EN GENERAL, FONTANERÍA, CARPINTERÍA Y CERRAJERÍA. REVESTIMIENTOS EXTERIORES E INTERIORES DE TODAS CLASES, SOLADOS Y PAVIMENTOS. COLOCACIÓN DE AISLAMIENTOS, FÓNICOS, TÉRMICOS Y ACÚSTICOS DE TODO TIPO DE IMPERMEBEALIZACIONES EN GENERAL. TRABAJOS DE PINTURA, YESO Y ESCAYOLA. DECORACIÓN INTERIOR Y EXTERIOR PARA LOCALES Y EDIFICIOS EN GENERAL, AGENCIA E INTERMEDIACIÓN COMERCIAL, ASÍ COMO LA COMPRAVENTA DE BIENES INMUEBLES. LAS ACTIVIDADES DE TRANSPORTE PÚBLICO DE AGENCIA DE TRANSPORTE Y TRASITARIOS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03498",
+      "_links": {
+        "self": {
+          "name": "ABIARAZI S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/03498"
+        }
+      }
+    },
+    {
+      "name": "URTZI FITNESS CLUB, S.L.",
+      "registrationNumber": "03491",
+      "identificationNumber": "B48476527",
+      "address": "PABLO ALZOLA 2, 5º",
+      "location": {
+        "postalCode": "48012",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.967.2",
+          "name": "Escuelas y servicios de perfeccionamiento del deporte",
+          "_links": {
+            "self": {
+              "name": "Escuelas y servicios de perfeccionamiento del deporte",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.967.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2007-12-14",
+      "certificateEndDate": "2008-05-05",
+      "object": "LA EXPLOTACIÓN DE UN GIMNASIO, CON TODA LA EXTENSIÓN PROPIA DE ESTA CLASE DE ESTABLECIMIENTOS, INCLUIDAS ACTIVIDADES FÍSICAS Y DE RECREO",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03491",
+      "_links": {
+        "self": {
+          "name": "URTZI FITNESS CLUB, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/03491"
+        }
+      }
+    },
+    {
+      "name": "COMUNICACIÓN & MARKETING DEIMOS, S.A.",
+      "registrationNumber": "00630",
+      "identificationNumber": "A48178537",
+      "address": "C/ IBÁÑEZ DE BILBAO, Nº 3 - 7ª.",
+      "location": {
+        "postalCode": "48001",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.844",
+          "name": "Servicios de publicidad, relaciones públicas y similares",
+          "_links": {
+            "self": {
+              "name": "Servicios de publicidad, relaciones públicas y similares",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.844"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2007-12-11",
+      "certificateEndDate": "2007-03-07",
+      "object": "LAS ACTIVIDADES RELACIONADAS CON LA PUBLICIDAD COMERCIAL, INDUSTRIAL O DE SERVICIOS; REALIZACIÓN POR CUENTA PROPIA O DE TERCEROS DE ORGANIZACIÓN Y ESTUDIOS DE MERCADO Y ASESORAMIENTO INMOBILIARIO",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/00630",
+      "_links": {
+        "self": {
+          "name": "COMUNICACIÓN & MARKETING DEIMOS, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/00630"
+        }
+      }
+    },
+    {
+      "name": "LIBRERÍA PAPELERÍA BASCONIA, S.L.",
+      "registrationNumber": "02828",
+      "identificationNumber": "B48093041",
+      "address": "AUTONOMÍA, 51. LONJA",
+      "location": {
+        "postalCode": "48012",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.659.4",
+          "name": "Venta al por menor de libros, periódicos y artículos de papelería y escritorio",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de libros, periódicos y artículos de papelería y escritorio",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.659.4"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2007-12-05",
+      "certificateEndDate": "2008-05-08",
+      "object": "LA COMPRA Y VENTA AL POR MAYOR Y MENOR, IMPORTACIÓN, EXPORTACIÓN, DISTRBUCIÓN Y ALMACENAMIENTO DE ARTÍCULOS DE PAPEL, LIBRERÍA, PAPELERÍA, OBJETO DE ESCRITORIO Y MATERIALES DE OFICINA.\r\nLAS ACTIVIDADES INTEGRANTES DEL OBJETO SOCIAL PODRÁN SER DESARROLLADAS POR LA SOCIEDAD, DE MODO INDIRECTO, MEDIANTE SU PARTICIPACIÓN EN SOCIEDADES O ENTIDADES CON DISTINTA PERSONALIDAD JURÍDICA. LA SOCIEDAD NO DESARROLLARÁ NINGUNA ACTIVIDAD PARA LA QUE LAS LEYES EXIJAN CONDICIONES O LIMITACIONES ESPECÍFICAS EN TANTO NO DÉ EXACTO CUMPLIMIENTO A LAS MISMAS ",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/02828",
+      "_links": {
+        "self": {
+          "name": "LIBRERÍA PAPELERÍA BASCONIA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/02828"
+        }
+      }
+    },
+    {
+      "name": "EXPLOTACIONES Y MANTENIMIENTOS INTEGRALES, S.L.",
+      "registrationNumber": "03490",
+      "identificationNumber": "B95288197",
+      "address": "C/ CERVANTES, Nº 1- BAJO",
+      "location": {
+        "postalCode": "48930",
+        "municipality": "Getxo",
+        "county": "Bizkaia",
+        "municipalityId": "044",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.504.3",
+          "name": "Instalaciones de frío, calor y acondicionamiento de aire",
+          "_links": {
+            "self": {
+              "name": "Instalaciones de frío, calor y acondicionamiento de aire",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.504.3"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2007-12-05",
+      "certificateEndDate": "2008-05-19",
+      "object": "LOS SERVICIOS RELACIONADOS CON EL DISEÑO, LA INSTALACIÓN, LA EXPLOTACIÓN Y MANTENIMIENTO, ASÍ COMO LOS SERVICIOS DE LIMPIEZA Y JARDINERÍA PARA EL SECTOR TANTO INDUSTRIAL COMO TERCIARIO",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03490",
+      "_links": {
+        "self": {
+          "name": "EXPLOTACIONES Y MANTENIMIENTOS INTEGRALES, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/03490"
+        }
+      }
+    },
+    {
+      "name": "RESULTA, SERVICIOS DE MARKETING, S.A.",
+      "registrationNumber": "02381",
+      "identificationNumber": "A95061917",
+      "address": "C/ PABLO ALZOLA, 2 - 2º",
+      "location": {
+        "postalCode": "48012",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.849.9",
+          "name": "Otros servicios independientes n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros servicios independientes n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.849.9"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2007-12-04",
+      "certificateEndDate": "2008-05-23",
+      "object": "LA EJECUCIÓN DE CAMPAÑAS COMERCIALES DE VENTA Y PROMOCIÓN DE TODA CLASE DE PRODUCTOS DEL COMERCIO Y DE LA INDUSTRIA, EMPLEANDO LOS SISTEMAS DE COMUNICACIÓN ESTATAL, TELEFÓNICA, RADIOTELEFONÍA, INTERNET Y CUALESQUIERA OTROS; EL SEGUIMIENTO DE DICHAS CAMPAÑAS COMERCIALES CON REDACCIÓN DE INFORMES Y, EN GENERAL, CUALESQUIERA OTRAS ACTIVIDADES RELACIONADAS CON LA PROMOCIÓN COMERCIAL, INDUSTRIAL Y DE SERVICIOS.\r\nTODAS LAS ACTIVIDADES QUE INTEGRAN EL OBJETO SOCIAL MENCIONADO PODRÁN DESARROLLARSE TANTO EN ESPAÑA COMO EN EL EXTRANJERO, PUDIENDO LLEVARSE A CABO TOTAL O PARCIALMENTE DE MODO INDIRECTO, MEDIANTE LA TITULARIDAD DE ACCIONES O DE PARTICIPACIONES EN SOCIEDADES CON OBJETO IDÉNTICO O ANÁLOGO.\r\nLA SOCIEDAD NO DESARROLLARÁ NINGUNA ACTIVIDAD PARA QUE LA QUE LAS LEYES EXIJAN CONDICIONES O LIMITACIONES ESPECÍFICAS, EN TANTO NO DÉ EXACTO CUMPLIMIENTO DE LAS MISMAS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/02381",
+      "_links": {
+        "self": {
+          "name": "RESULTA, SERVICIOS DE MARKETING, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/02381"
+        }
+      }
+    },
+    {
+      "name": "VALEANT PHARMACEUTICALS IBÉRICA, S.A.",
+      "registrationNumber": "01856",
+      "identificationNumber": "A08078503",
+      "address": "C/ CASANOVA, Nº 27 - 31",
+      "location": {
+        "postalCode": "08757",
+        "municipality": "Corbera de Llobregat",
+        "county": "Barcelona",
+        "municipalityId": "072",
+        "countyId": "08"
+      },
+      "economicActivities": [
+        {
+          "id": "1.614.1",
+          "name": "Venta al por mayor de productos farmacéuticos y medicamentos",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de productos farmacéuticos y medicamentos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.614.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2007-12-03",
+      "certificateEndDate": "2008-03-05",
+      "object": "LA FABRICACIÓN, COMERCIALIZACIÓN Y VENTA DE PRODUCTOS FARMACÉUTICOS, QUÍMICO-FARMACÉUTICOS, PARAFARMACÉUTICOS, COSMÉTICOS Y VETERINARIOS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/01856",
+      "_links": {
+        "self": {
+          "name": "VALEANT PHARMACEUTICALS IBÉRICA, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/01856"
+        }
+      }
+    }
+  ]
+}

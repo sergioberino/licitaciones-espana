@@ -1,0 +1,438 @@
+{
+  "totalItems": 9042,
+  "totalPages": 905,
+  "currentPage": 631,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "name": "SONMEDICA, S.A.",
+      "registrationNumber": "02802",
+      "identificationNumber": "A58491077",
+      "address": "C/CONGOST, 28",
+      "location": {
+        "postalCode": "08024",
+        "municipality": "Barcelona",
+        "county": "Barcelona",
+        "municipalityId": "019",
+        "countyId": "08"
+      },
+      "economicActivities": [
+        {
+          "id": "1.659.3",
+          "name": "Venta al por menor de aparatos médicos, ortopédicos, ópticos y fotográficos",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de aparatos médicos, ortopédicos, ópticos y fotográficos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.659.3"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2018-04-26",
+      "certificateEndDate": "2019-04-09",
+      "object": "LA REPRESENTACIÓN, PROMOCIÓN, VENTA Y REPARACIÓN DE TODA CLASE DE EQUIPOS MÉDICOS, ASÍ COMO SUS ACCESORIOS, PUDIENDO A TAL EFECTO, OBTENER DELEGACIONES O REPRESENTACIONES DE LSO FABRICANTES DE DICHOS MATERIALES",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/02802",
+      "_links": {
+        "self": {
+          "name": "SONMEDICA, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/02802"
+        }
+      }
+    },
+    {
+      "name": "BERTAKO KIROL LANAK, S.L.",
+      "registrationNumber": "05752",
+      "identificationNumber": "B95913448",
+      "address": "Bo. La Arena, 21",
+      "location": {
+        "postalCode": "48508",
+        "municipality": "Zierbena",
+        "county": "Bizkaia",
+        "municipalityId": "913",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.967.1",
+          "name": "Instalaciones deportivas",
+          "_links": {
+            "self": {
+              "name": "Instalaciones deportivas",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.967.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2018-04-26",
+      "certificateEndDate": "2018-09-26",
+      "object": "LA GESTIÓN DE INSTALACIONES DEPORTIVAS. LA GESTIÓN Y EXPLOTACIÓN DE POLIDEPORTIVOS, GIMNASIOS, FRONTONES Y TODO TIPO DE INSTALACIONES DEPORTIVAS. LOS SERVICIOS DE HOSTELERÍA.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/05752",
+      "_links": {
+        "self": {
+          "name": "BERTAKO KIROL LANAK, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/05752"
+        }
+      }
+    },
+    {
+      "name": "BAKUN ITZULPEN ETA ARGITALPEN ZERBITZUAK, S.L.",
+      "registrationNumber": "02741",
+      "identificationNumber": "B20628285",
+      "address": "San Isidro, nº 25. ARROA-BEHEKOA",
+      "location": {
+        "postalCode": "20749",
+        "municipality": "Zestoa",
+        "county": "Gipuzkoa",
+        "municipalityId": "027",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.849.3",
+          "name": "Servicios de traducción y similares",
+          "_links": {
+            "self": {
+              "name": "Servicios de traducción y similares",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.849.3"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2018-04-25",
+      "certificateEndDate": "2018-09-28",
+      "object": "LA REALIZACIÓN DE TRABAJOS DE SERVICIOS LINGÜÍSTICOS Y EDITORIALES, TALES COMO TRADUCCIÓN, DISEÑO Y MAQUETACIÓN, CORRECCIÓN DE TEXTOS, REDACCIÓN, EDICIÓN, ASESORÍA Y CONSULTORÍA LINGÜÍSTICA, ASÍ COMO EL EXAMEN Y VALORACIÓN DE LA CAPACIDAD Y CONOCIMIIENTO LINGÜÍSTICA Y EDITORIAL DE PERSONAS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/02741",
+      "_links": {
+        "self": {
+          "name": "BAKUN ITZULPEN ETA ARGITALPEN ZERBITZUAK, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/02741"
+        }
+      }
+    },
+    {
+      "name": "EUSKAL XXI CONSTRUCCIONES, S.L.",
+      "registrationNumber": "02328",
+      "identificationNumber": "B95056784",
+      "address": "C/ONDARROA, 32-BAJO DCHA.",
+      "location": {
+        "postalCode": "48004",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.507",
+          "name": "Construcción, reparación y conservación de toda clase obras",
+          "_links": {
+            "self": {
+              "name": "Construcción, reparación y conservación de toda clase obras",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.507"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2018-04-24",
+      "certificateEndDate": "2018-10-03",
+      "object": "LA CONSTRUCCIÓN, REFORMA, REHABILITACIÓN Y EJECUCIÓN DE TODA CLASE DE OBRAS Y EDIFICACIONES DE CARÁCTER PÚBLICO Y/O PRIVADO.\r\nLA ADQUISICIÓN, USO, EXPLOTACIÓN, ARRENDAMIENTO Y ENAJENACIÓN DE FINCAS, TERRENOS, VIVIENDAS, LOCALES, PABELLONES, SOLARES Y DE TODA CLASE DE BIENES INMUEBLES EN GENERAL, ASÍ COMO SU PARCELACIÓN Y URBANIZACIÓN; LA PROMOCIÓN Y CONSTITUCIÓN DE COMUNIDADES DE PROPIETARIOS O CUALQUIER OTRA FORMA DE ASOCIACIÓN O SOCIEDAD CON FINES DE EDIFICACIÓN Y URBANIZACIÓN.\r\nASESORAMIENTO, GESTIÓN DE ACTUACIONES URBANÍSTICAS Y PRESTACIÓN DE SERVICIOS DE TODO TIPO CON RELACIÓN A BIENES INMUEBLES, SEGÚN CONVENGA A SU APROVECHAMIENTO AGRÍCOLA, FORESTAL, URBANO, INDUSTRIAL O DE CUALQUIER NATURALEZA.\r\nMANTENIMIENTO DE INSTALACIONES Y EDIFICIOS, SANEAMIENTOS, CANALIZACIONES, URBANIZACIÓN Y OBRAS PÚBLICAS, INGENIERÍA DE LA EDIFICACIÓN, REDACCIÓN DE PROYECTOS, CONTROL Y GESTIÓN DE OBRAS, PROMOCIÓN DE OBRAS Y VENTA    ",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/02328",
+      "_links": {
+        "self": {
+          "name": "EUSKAL XXI CONSTRUCCIONES, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/02328"
+        }
+      }
+    },
+    {
+      "name": "ELECTRA VITORIA, S. COOP.",
+      "registrationNumber": "00878",
+      "identificationNumber": "F01006246",
+      "address": "C/ ZURRUPITIETA, Nº 30.",
+      "location": {
+        "postalCode": "01015",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.325.4",
+          "name": "Construcción de maquinaria de elevación y manipulación",
+          "_links": {
+            "self": {
+              "name": "Construcción de maquinaria de elevación y manipulación",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.325.4"
+            }
+          }
+        },
+        {
+          "id": "1.504.1",
+          "name": "Instalaciones eléctricas en general",
+          "_links": {
+            "self": {
+              "name": "Instalaciones eléctricas en general",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.504.1"
+            }
+          }
+        },
+        {
+          "id": "1.504.6",
+          "name": "Montaje e instalación de aparatos elevadores de cualquier clase",
+          "_links": {
+            "self": {
+              "name": "Montaje e instalación de aparatos elevadores de cualquier clase",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.504.6"
+            }
+          }
+        },
+        {
+          "id": "1.699",
+          "name": "Otras reparaciones n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otras reparaciones n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.699"
+            }
+          }
+        },
+        {
+          "id": "1.833.2",
+          "name": "Promoción de edificaciones",
+          "_links": {
+            "self": {
+              "name": "Promoción de edificaciones",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.833.2"
+            }
+          }
+        },
+        {
+          "id": "1.849.7",
+          "name": "Servicios de gestión administrativa",
+          "_links": {
+            "self": {
+              "name": "Servicios de gestión administrativa",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.849.7"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2018-04-20",
+      "certificateEndDate": "2018-10-03",
+      "object": "LA FABRICACIÓN, INSTALACIÓN, MONTAJE, REPARACIÓN Y VENTA DE APARATOS ELEVADORES Y ARTÍCULOS ELÉCTRICOS; LAS INSTALACIONES ELÉCTRICAS EN GENERAL Y EL COMERCIO AL POR MAYOR DE TODA CLASE DE OBJETOS DE APLICACIÓN A LAS INSTALACIONES ELÉCTRICAS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/00878",
+      "_links": {
+        "self": {
+          "name": "ELECTRA VITORIA, S. COOP.",
+          "href": "https://api.euskadi.eus/procurements/companies/00878"
+        }
+      }
+    },
+    {
+      "name": "ESTUDIO URGARI, S.L.",
+      "registrationNumber": "02452",
+      "identificationNumber": "B20681565",
+      "address": "C/ ZUBIBERRI, 31 - E.  URUMEA, 2º. LOCAL 5 PARQUE ZUATZU ",
+      "location": {
+        "postalCode": "20018",
+        "municipality": "Donostia / San Sebastián",
+        "county": "Gipuzkoa",
+        "municipalityId": "069",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.843.1",
+          "name": "Servicios técnicos de ingeniería",
+          "_links": {
+            "self": {
+              "name": "Servicios técnicos de ingeniería",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.1"
+            }
+          }
+        },
+        {
+          "id": "1.843.2",
+          "name": "Servicios técnicos de arquitectura y urbanismo",
+          "_links": {
+            "self": {
+              "name": "Servicios técnicos de arquitectura y urbanismo",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2018-04-15",
+      "certificateEndDate": "2018-10-15",
+      "object": "LA REALIZACIÓN DE PROYECTOS, ESTUDIOS, VALORACIONES Y TASACIONES, CONSULTORÍA Y ASISTENCIA DE ARQUITECTURA, URBANISMO, INGENIERÍA CIVIL, INDUSTRIAL, AMBIENTAL, MOVILIDAD, RIESGOS, PAISAJISMO...ETC. Y DEMÁS ACTIVIDADES SIMILARES",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/02452",
+      "_links": {
+        "self": {
+          "name": "ESTUDIO URGARI, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/02452"
+        }
+      }
+    },
+    {
+      "name": "SISTEMAS INTEGRALES DE MEDICINA, S.A.",
+      "registrationNumber": "03384",
+      "identificationNumber": "A82865591",
+      "address": "AVDA. DEL SISTEMA SOLAR, 25",
+      "location": {
+        "postalCode": "28830",
+        "municipality": "San Fernando de Henares",
+        "county": "Madrid",
+        "municipalityId": "130",
+        "countyId": "28"
+      },
+      "economicActivities": [
+        {
+          "id": "1.619.2",
+          "name": "Venta al por mayor de aparatos e instrumentos médicos, ortopédicos, ópticos",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de aparatos e instrumentos médicos, ortopédicos, ópticos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.619.2"
+            }
+          }
+        },
+        {
+          "id": "1.691.9",
+          "name": "Reparación de otros bienes de consumo n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Reparación de otros bienes de consumo n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.691.9"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2018-04-12",
+      "certificateEndDate": "2018-09-20",
+      "object": "COMPRA, VENTA DE TODO TIPO DE MATERIAL MÉDICO AL POR MAYOR Y AL DETALLE, LA IMPORTACIÓN DISTRIBUCIÓN DE APARATOS Y UTENSILIOS MÉDICOS, MATERIAL CLÍNICO, CUALQUIER INSTRUMENTAL SUSCEPTIBLE DE SER UTILIZADO POR INSTITUCIONES O PERSONAS DEL ENTORNO SANITARIO, ASÍ COMO EQUIPOS INFORMÁTICOS, AUDIOVISUALES, ÓPTICOS, FOTOGRÁFICOS, SISTEMAS DE TELEVISIÓN, VÍDEO, ETC. ASÍ COMO LA PRESTACIÓN DE ASISTENCIA TÉCNICA, MANTENIMIENTO Y REPARACIÓN DE TODO LO ANTERIOR. LA ADQUISICIÓN, EXPLOTACIÓN Y ENAJENACIÓN DE BIENES INMUEBLES.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03384",
+      "_links": {
+        "self": {
+          "name": "SISTEMAS INTEGRALES DE MEDICINA, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/03384"
+        }
+      }
+    },
+    {
+      "name": "DE LA I. A LAS EQUIS, S.L",
+      "registrationNumber": "05739",
+      "identificationNumber": "B98576721",
+      "address": "CALLE MONCADA 20-3-6",
+      "location": {
+        "postalCode": "46800",
+        "municipality": "Xàtiva",
+        "county": "Valencia/València",
+        "municipalityId": "145",
+        "countyId": "46"
+      },
+      "economicActivities": [
+        {
+          "id": "1.933.9",
+          "name": "Otras actividades de enseñanza tales como idiomas, mecanografía",
+          "_links": {
+            "self": {
+              "name": "Otras actividades de enseñanza tales como idiomas, mecanografía",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.933.9"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2018-04-10",
+      "certificateEndDate": "2018-09-26",
+      "object": "FORMACIÓN, ASESORAMIENTO Y ASISTENCIA TÉCNICA PARA PROGRAMAS, PROYECTOS Y POLÍTICAS DE IGUALDAD, FEMINISMO Y GÉNERO",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/05739",
+      "_links": {
+        "self": {
+          "name": "DE LA I. A LAS EQUIS, S.L",
+          "href": "https://api.euskadi.eus/procurements/companies/05739"
+        }
+      }
+    },
+    {
+      "name": "LANERAKO MAHOIAK S.LU.",
+      "registrationNumber": "05737",
+      "identificationNumber": "B20669867",
+      "address": "BARAKALDO 13 -BAJO",
+      "location": {
+        "postalCode": "20600",
+        "municipality": "Eibar",
+        "county": "Gipuzkoa",
+        "municipalityId": "030",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.651.2",
+          "name": "Venta al por menor de prendas de ropa para el vestido y tocado",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de prendas de ropa para el vestido y tocado",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.651.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2018-04-09",
+      "certificateEndDate": "2018-09-05",
+      "object": "LA VENTA DE ROPA, PRENDAS ESPECIALES, CALZADO Y PROTECCIONES DESTINADAS AL SECTOR LABORAL, Y PERSONALIZACIÓN DE DICHOS ARTÍCULOS MEDIANTE SERIGRAFIADO Y BORDADO",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/05737",
+      "_links": {
+        "self": {
+          "name": "LANERAKO MAHOIAK S.LU.",
+          "href": "https://api.euskadi.eus/procurements/companies/05737"
+        }
+      }
+    },
+    {
+      "name": "MERCK CHEMICALS AND LIFE SCIENCE, S.A.",
+      "registrationNumber": "01204",
+      "identificationNumber": "A28289247",
+      "address": "MARÍA DE MOLINA, 40",
+      "location": {
+        "postalCode": "28006",
+        "municipality": "Madrid",
+        "county": "Madrid",
+        "municipalityId": "079",
+        "countyId": "28"
+      },
+      "economicActivities": [
+        {
+          "id": "1.619.7",
+          "name": "Venta al por mayor de instrumentos de precisión, medida y similares",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de instrumentos de precisión, medida y similares",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.619.7"
+            }
+          }
+        },
+        {
+          "id": "1.699",
+          "name": "Otras reparaciones n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otras reparaciones n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.699"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2018-04-05",
+      "certificateEndDate": "2018-09-05",
+      "object": "LA FABRICACIÓN, COMPRA Y VENTA, IMPORTACIÓN Y EXPORTACIÓN DE CUALQUIER MATERIAL, EQUIPOS E INSTRUMENTOS EN GENERAL PARA LA REALIZACIÓN DE SEPARACIONES POR MEMBRANAS FILTRANTES, CARTUCHOS DE FILTRACIONES, MÓDULOS DE ÓSMOSIS INVERSA Y ULTRAFILTRACIÓN, COLUMNAS Y APARATOS DE CROMATOGRAFÍA O TÉCNICAS BASADAS EN ESTE PRINCIPIO, ASÍ COMO SU INSTALACIÓN, MANTENIMIENTO, ASISTENCIA TÉCNICA, INVESTIGACIÓN Y DESARROLLO",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/01204",
+      "_links": {
+        "self": {
+          "name": "MERCK CHEMICALS AND LIFE SCIENCE, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/01204"
+        }
+      }
+    }
+  ]
+}

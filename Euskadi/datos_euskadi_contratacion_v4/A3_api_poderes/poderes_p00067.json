@@ -1,0 +1,528 @@
+{
+  "totalItems": 919,
+  "totalPages": 92,
+  "currentPage": 67,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "id": 474,
+      "identificationNumber": "P0101200D",
+      "name": "Ayuntamiento de Baños de Ebro",
+      "scope": "ARABA/ÁLAVA",
+      "address": "Plaza del Ayuntamiento, 5. 01307 Baños de Ebro (Araba/Álava)",
+      "webPage": "http://banosdeebro.es",
+      "publicationDate": "2019-10-04",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES211",
+      "entities": [
+        {
+          "id": 923,
+          "name": "Ayuntamiento de Baños de Ebro",
+          "orgs": [
+            {
+              "id": 912537,
+              "name": "Alcaldía",
+              "_links": {
+                "self": {
+                  "name": "Alcaldía",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/474/entities/923/orgs/912537"
+                }
+              }
+            },
+            {
+              "id": 912683,
+              "name": "Pleno",
+              "_links": {
+                "self": {
+                  "name": "Pleno",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/474/entities/923/orgs/912683"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Ayuntamiento de Baños de Ebro",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/474/entities/923"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder474/es_doc/es_arch_poder474.html",
+      "_links": {
+        "self": {
+          "name": "Ayuntamiento de Baños de Ebro",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/474"
+        }
+      }
+    },
+    {
+      "id": 495,
+      "identificationNumber": "P0100180I",
+      "name": "Junta Administrativa de Untza-Apregindana",
+      "scope": "ARABA/ÁLAVA",
+      "address": "Untza s/n 01449. Untza-Apregindana. Urkabustaiz (Araba/Álava)",
+      "webPage": "http://www.contratacion.euskadi.eus",
+      "publicationDate": "2019-10-04",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES211",
+      "entities": [
+        {
+          "id": 944,
+          "name": "Junta Administrativa de Untza-Apregindana",
+          "orgs": [
+            {
+              "id": 912571,
+              "name": "Concejo ",
+              "_links": {
+                "self": {
+                  "name": "Concejo ",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/495/entities/944/orgs/912571"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Junta Administrativa de Untza-Apregindana",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/495/entities/944"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder495/es_doc/es_arch_poder495.html",
+      "_links": {
+        "self": {
+          "name": "Junta Administrativa de Untza-Apregindana",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/495"
+        }
+      }
+    },
+    {
+      "id": 498,
+      "identificationNumber": "P2002800G",
+      "name": "Ayuntamiento de Zestoa",
+      "scope": "GIPUZKOA",
+      "address": "Foru Plaza 1. 20740 Zestoa",
+      "webPage": "http://www.zestoa.eus",
+      "publicationDate": "2019-10-04",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES212",
+      "entities": [
+        {
+          "id": 947,
+          "name": "Ayuntamiento de Zestoa",
+          "orgs": [
+            {
+              "id": 912574,
+              "name": "Pleno",
+              "_links": {
+                "self": {
+                  "name": "Pleno",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/498/entities/947/orgs/912574"
+                }
+              }
+            },
+            {
+              "id": 912674,
+              "name": "Alcaldía",
+              "_links": {
+                "self": {
+                  "name": "Alcaldía",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/498/entities/947/orgs/912674"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Ayuntamiento de Zestoa",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/498/entities/947"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder498/es_doc/es_arch_poder498.html",
+      "_links": {
+        "self": {
+          "name": "Ayuntamiento de Zestoa",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/498"
+        }
+      }
+    },
+    {
+      "id": 507,
+      "identificationNumber": "P0103500E",
+      "name": "Ayuntamiento de Lapuebla de Labarca",
+      "scope": "ARABA/ÁLAVA",
+      "address": "Plaza el Plano,9. 01306. Lapuebla de Labarca. (Araba/Álava)",
+      "webPage": "http://lapuebladelabarca.eus/",
+      "publicationDate": "2019-10-04",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES211",
+      "entities": [
+        {
+          "id": 956,
+          "name": "Ayuntamiento de Lapuebla de Labarca",
+          "orgs": [
+            {
+              "id": 912587,
+              "name": "Pleno",
+              "_links": {
+                "self": {
+                  "name": "Pleno",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/507/entities/956/orgs/912587"
+                }
+              }
+            },
+            {
+              "id": 912588,
+              "name": "Alcalde",
+              "_links": {
+                "self": {
+                  "name": "Alcalde",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/507/entities/956/orgs/912588"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Ayuntamiento de Lapuebla de Labarca",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/507/entities/956"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder507/es_doc/es_arch_poder507.html",
+      "_links": {
+        "self": {
+          "name": "Ayuntamiento de Lapuebla de Labarca",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/507"
+        }
+      }
+    },
+    {
+      "id": 509,
+      "identificationNumber": "P2000031A",
+      "name": "Ayuntamiento de Itsaso",
+      "scope": "GIPUZKOA",
+      "address": "Itsaso Hirigunea,12. 20709 Itsaso (Guipuzkoa)",
+      "webPage": "http://www.itsaso.eus",
+      "publicationDate": "2019-10-04",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES212",
+      "entities": [
+        {
+          "id": 958,
+          "name": "Ayuntamiento de Itsaso",
+          "orgs": [
+            {
+              "id": 912590,
+              "name": "Presidente",
+              "_links": {
+                "self": {
+                  "name": "Presidente",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/509/entities/958/orgs/912590"
+                }
+              }
+            },
+            {
+              "id": 912591,
+              "name": "Pleno",
+              "_links": {
+                "self": {
+                  "name": "Pleno",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/509/entities/958/orgs/912591"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Ayuntamiento de Itsaso",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/509/entities/958"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder509/es_doc/es_arch_poder509.html",
+      "_links": {
+        "self": {
+          "name": "Ayuntamiento de Itsaso",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/509"
+        }
+      }
+    },
+    {
+      "id": 517,
+      "identificationNumber": "G01241629",
+      "name": "Asociación de Concejos de Álava",
+      "scope": "ARABA/ÁLAVA",
+      "address": "Casa de Juntas de Elorriaga, 9. 01192 Elburgo (Álava)",
+      "webPage": "http://www.acoa-ake.org",
+      "publicationDate": "2019-10-04",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES211",
+      "entities": [
+        {
+          "id": 967,
+          "name": "Asociación de Concejos de Álava",
+          "orgs": [
+            {
+              "id": 912601,
+              "name": "Asamblea General",
+              "_links": {
+                "self": {
+                  "name": "Asamblea General",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/517/entities/967/orgs/912601"
+                }
+              }
+            },
+            {
+              "id": 912603,
+              "name": "Presidente",
+              "_links": {
+                "self": {
+                  "name": "Presidente",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/517/entities/967/orgs/912603"
+                }
+              }
+            },
+            {
+              "id": 912602,
+              "name": "Junta Directiva",
+              "_links": {
+                "self": {
+                  "name": "Junta Directiva",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/517/entities/967/orgs/912602"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Asociación de Concejos de Álava",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/517/entities/967"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder517/es_doc/es_arch_poder517.html",
+      "_links": {
+        "self": {
+          "name": "Asociación de Concejos de Álava",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/517"
+        }
+      }
+    },
+    {
+      "id": 522,
+      "identificationNumber": "P0100176G",
+      "name": "Junta Administrativa de Luna",
+      "scope": "ARABA/ÁLAVA",
+      "address": "Artxua 2. 01439 Artxua. Kuartango (Araba/Álava)   ",
+      "webPage": "http://www.contratacion.euskadi.eus",
+      "publicationDate": "2019-10-04",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES211",
+      "entities": [
+        {
+          "id": 972,
+          "name": "Junta Administrativa de Luna",
+          "orgs": [
+            {
+              "id": 912610,
+              "name": "Asamblea vecinal",
+              "_links": {
+                "self": {
+                  "name": "Asamblea vecinal",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/522/entities/972/orgs/912610"
+                }
+              }
+            },
+            {
+              "id": 912609,
+              "name": "Regidor presidente",
+              "_links": {
+                "self": {
+                  "name": "Regidor presidente",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/522/entities/972/orgs/912609"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Junta Administrativa de Luna",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/522/entities/972"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder522/es_doc/es_arch_poder522.html",
+      "_links": {
+        "self": {
+          "name": "Junta Administrativa de Luna",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/522"
+        }
+      }
+    },
+    {
+      "id": 532,
+      "identificationNumber": "P0100161I",
+      "name": "Junta Administrativa de Murga",
+      "scope": "ARABA/ÁLAVA",
+      "address": "Bº La Iglesia. 01479 Murga, Aiara (Álava/Araba)",
+      "webPage": "http://www.contratacion.euskadi.eus",
+      "publicationDate": "2019-10-04",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES211",
+      "entities": [
+        {
+          "id": 982,
+          "name": "Junta Administrativa de Murga",
+          "orgs": [
+            {
+              "id": 912628,
+              "name": "Junta Administrativa de Murga",
+              "_links": {
+                "self": {
+                  "name": "Junta Administrativa de Murga",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/532/entities/982/orgs/912628"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Junta Administrativa de Murga",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/532/entities/982"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder532/es_doc/es_arch_poder532.html",
+      "_links": {
+        "self": {
+          "name": "Junta Administrativa de Murga",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/532"
+        }
+      }
+    },
+    {
+      "id": 544,
+      "identificationNumber": "P0107100J",
+      "name": "Ayuntamiento de Zambrana",
+      "scope": "ARABA/ÁLAVA",
+      "address": "Ayuntamiento,2. 01212. Zambrana (Araba/Álava)",
+      "webPage": "http://www.ayuntamientodezambrana.com",
+      "publicationDate": "2019-10-04",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES211",
+      "entities": [
+        {
+          "id": 994,
+          "name": "Ayuntamiento de Zambrana",
+          "orgs": [
+            {
+              "id": 912650,
+              "name": "Pleno",
+              "_links": {
+                "self": {
+                  "name": "Pleno",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/544/entities/994/orgs/912650"
+                }
+              }
+            },
+            {
+              "id": 912652,
+              "name": "Alcaldía",
+              "_links": {
+                "self": {
+                  "name": "Alcaldía",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/544/entities/994/orgs/912652"
+                }
+              }
+            },
+            {
+              "id": 912651,
+              "name": "Junta Gobierno",
+              "_links": {
+                "self": {
+                  "name": "Junta Gobierno",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/544/entities/994/orgs/912651"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Ayuntamiento de Zambrana",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/544/entities/994"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder544/es_doc/es_arch_poder544.html",
+      "_links": {
+        "self": {
+          "name": "Ayuntamiento de Zambrana",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/544"
+        }
+      }
+    },
+    {
+      "id": 554,
+      "identificationNumber": "P0100078E",
+      "name": "Junta Administrativa de Sabando",
+      "scope": "ARABA/ÁLAVA",
+      "address": "Mayor, 6. 01120 Sabando. Arraia-Maeztu (Araba/Álava)",
+      "webPage": "http://contratacion.euskadi.eus",
+      "publicationDate": "2019-10-04",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES211",
+      "entities": [
+        {
+          "id": 1004,
+          "name": "Junta Administrativa de Sabando",
+          "orgs": [
+            {
+              "id": 912667,
+              "name": "Regidor-Presidente",
+              "_links": {
+                "self": {
+                  "name": "Regidor-Presidente",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/554/entities/1004/orgs/912667"
+                }
+              }
+            },
+            {
+              "id": 912666,
+              "name": "Asamblea Vecinal",
+              "_links": {
+                "self": {
+                  "name": "Asamblea Vecinal",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/554/entities/1004/orgs/912666"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Junta Administrativa de Sabando",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/554/entities/1004"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder554/es_doc/es_arch_poder554.html",
+      "_links": {
+        "self": {
+          "name": "Junta Administrativa de Sabando",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/554"
+        }
+      }
+    }
+  ]
+}

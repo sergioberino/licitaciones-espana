@@ -1,0 +1,398 @@
+{
+  "totalItems": 9042,
+  "totalPages": 905,
+  "currentPage": 796,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "name": "\"GEMMA ARIGITA SORIA\" (LIMPIEZAS BI AHIZPA)",
+      "registrationNumber": "02325",
+      "identificationNumber": "14256673P",
+      "address": "SANTA LUCÍA, 10 - 4º DCHA.",
+      "location": {
+        "postalCode": "48004",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.922.1",
+          "name": "Servicios de limpieza de interiores",
+          "_links": {
+            "self": {
+              "name": "Servicios de limpieza de interiores",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.922.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2004-03-11",
+      "certificateEndDate": "2004-08-24",
+      "object": " LIMPIEZA DE INTERIORES",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/02325",
+      "_links": {
+        "self": {
+          "name": "\"GEMMA ARIGITA SORIA\" (LIMPIEZAS BI AHIZPA)",
+          "href": "https://api.euskadi.eus/procurements/companies/02325"
+        }
+      }
+    },
+    {
+      "name": "SERVICIO DE ASISTENCIA A INSTALACIONES DE CALEFACCIÓN, S.A.",
+      "registrationNumber": "01666",
+      "identificationNumber": "A48081715",
+      "address": "C/ LAS MERCEDES, Nº 31 - 1º, DPTO. 11 - EDIF. ABRA 3",
+      "location": {
+        "postalCode": "48930",
+        "municipality": "Getxo",
+        "county": "Bizkaia",
+        "municipalityId": "044",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.504.3",
+          "name": "Instalaciones de frío, calor y acondicionamiento de aire",
+          "_links": {
+            "self": {
+              "name": "Instalaciones de frío, calor y acondicionamiento de aire",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.504.3"
+            }
+          }
+        },
+        {
+          "id": "1.654.5",
+          "name": "Venta al por menor de toda clase de maquinaría",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de toda clase de maquinaría",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.654.5"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2004-03-10",
+      "certificateEndDate": "2004-08-06",
+      "object": "LA REALIZACIÓN DE ESTUDIOS, ASISTENCIA Y SUMINISTROS PARA INSTALACIONES DE CALEFACCIÓN, REFRIGERACIÓN INDUSTRIAL, AIRE ACONDICIONADO, ELECTRICIDAD Y TRATAMIENTO DE AGUAS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/01666",
+      "_links": {
+        "self": {
+          "name": "SERVICIO DE ASISTENCIA A INSTALACIONES DE CALEFACCIÓN, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/01666"
+        }
+      }
+    },
+    {
+      "name": "MEDILAN, S.L.",
+      "registrationNumber": "02063",
+      "identificationNumber": "B31247299",
+      "address": "C/ CONCEPCIÓN BENÍTEZ, Nº 30 - BAJOS.",
+      "location": {
+        "postalCode": "31009",
+        "municipality": "Pamplona/Iruña",
+        "county": "Navarra",
+        "municipalityId": "201",
+        "countyId": "31"
+      },
+      "economicActivities": [
+        {
+          "id": "1.619.2",
+          "name": "Venta al por mayor de aparatos e instrumentos médicos, ortopédicos, ópticos",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de aparatos e instrumentos médicos, ortopédicos, ópticos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.619.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2004-03-09",
+      "certificateEndDate": "2004-08-19",
+      "object": "LA COMPRA, VENTA, ALMACENAMIENTO, REPRESENTACIÓN, DISTRIBUCIÓN, INSTALACIÓN, MANTENIMIENTO, IMPORTACIÓN Y EXPORTACIÓN DE TODO TIPO DE INSTRUMENTOS, APARATOS, EQUIPOS, PRODUCTOS, SUSTANCIAS Y MATERIALES DE USO MÉDICO, CLÍNICO Y DE LABORATORIO  ",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/02063",
+      "_links": {
+        "self": {
+          "name": "MEDILAN, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/02063"
+        }
+      }
+    },
+    {
+      "name": "EUGAMED, S.L.",
+      "registrationNumber": "02464",
+      "identificationNumber": "B01151505",
+      "address": "C/ MANUEL IRADIER, 82",
+      "location": {
+        "postalCode": "01000",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.942.9",
+          "name": "Otros servicios sanitarios sin internados, no clasificados",
+          "_links": {
+            "self": {
+              "name": "Otros servicios sanitarios sin internados, no clasificados",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.942.9"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2004-03-09",
+      "certificateEndDate": "2004-08-27",
+      "object": "LA PRESTACIÓN DE SERVICIOS, ASESORAMIENTO E INFORMES, DE CARÁCTER TÉCNICO Y JURÍDICO, CUYO OBJETO SEA LA SANIDAD EN TODOS SUS CAMPOS Y DIMENSIONES, EN ESPECIAL DENTRO DEL ÁMBITO LABORAL, CON LA CONTRATACIÓN PARA ELLO, EN SU CASO, DE PROFESIONALES, MÉDICOS Y TERCEROS CON COMPETENCIA EN LA MATERIA.  ",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/02464",
+      "_links": {
+        "self": {
+          "name": "EUGAMED, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/02464"
+        }
+      }
+    },
+    {
+      "name": "DRAGADOS OBRAS Y PROYECTOS, S.A.",
+      "registrationNumber": "02366",
+      "identificationNumber": "A82334715",
+      "address": "AVDA. TENERIFE, 4 Y 6",
+      "location": {
+        "postalCode": "28700",
+        "municipality": "San Sebastián de los Reyes",
+        "county": "Madrid",
+        "municipalityId": "134",
+        "countyId": "28"
+      },
+      "economicActivities": [
+        {
+          "id": "1.501.2",
+          "name": "Construcción completa, reparación y conservación obras civiles",
+          "_links": {
+            "self": {
+              "name": "Construcción completa, reparación y conservación obras civiles",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.2"
+            }
+          }
+        },
+        {
+          "id": "1.507",
+          "name": "Construcción, reparación y conservación de toda clase obras",
+          "_links": {
+            "self": {
+              "name": "Construcción, reparación y conservación de toda clase obras",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.507"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2004-03-02",
+      "certificateEndDate": "2004-08-02",
+      "object": "A) LA CONTRATACIÓN, GESTIÓN Y EJECUCIÓN DE TODA CLASE DE OBRAS Y CONSTRUCCIONES EN SU MÁS AMPLIO SENTIDO, TANTO PÚBLICAS COMO PRIVADAS Y EN PARTICULAR DE LAS OBRAS DE DRAGADO.\r\nB) LA ADQUISICIÓN POR CUALQUIER TÍTULO, ADMINISTRACIÓN, GESTIÓN, PROMOCIÓN, EXPLOTACIÓN EN ARRENDAMIENTO O EN CUALQUIER OTRA FORMA Y CONSTRUCCIÓN DE TODA CLASE DE BIENES INMUEBLES, ASÍ COMO EL ASESORAMIENTO RESPECTO A LAS OPERACIONES ANTERIORES.\r\nC) LA ELABORACIÓN DE TODO TIPIO DE ESTUDIOS, INFORMES Y PROYECTOS MEDIOAMBIENTALES, DE INGENIERÍA Y ARQUITECTURA ASÍ COMO LA SUPERVISIÓN, DIRECCIÓN Y ASESORAMIENTO EN LA EJECUCIÓN DE TODO TIPO DE OBRAS Y CONSTRUCCIONES.\r\n\r\nD) EL MANTENIMIENTO, CONSERVACIÓN, REHABILITACIÓN, ACONDICIONAMIENTO, LIMPIEZ E HIGIENIZACIÓN DE BIENES INMUEBLES, EN ESPECIAL EDIFICIOS, INSTALACIONES, CARRETERAS Y VIALES, PARQUES Y JARDINES, REDES DE AGUA, ALCANTARILLADO Y ESTACIONES DEPURADORAS, INCLUYENDO TODO TIPO DE EQUIPOS E INSTALACIONES.\r\n\r\nE) PROMOCIÓN, GESTIÓN Y EJECUCIÓN DE TODO TIPO DE NEGOCIOS INMOBILIARIOS, TANTO EN SU VERTIENTE URBANÍSTICA, COMO DE LA CONSTRUCCIÓN EN SÍ, PARA SU EXPLOTACIÓN, VENTA O ALQUILER.\r\n\r\nF) LA ADQUISICIÓN, TENENCIA, DISFRUTE, ADMINISTRACIÓN Y ENAJENACIÓN DE TODA CLASE DE VALORES MOBILIARIOS POR CUENTA PROPIA, QUEDANDO EXCLUIDAS LAS ACTIVIDADES QUE LA LEGISLACIÓN ESPECIAL Y BÁSICAMENTE LA LEY DEL MERCADO DE VALORES ATRIBUYE CON CARÁCTER EXCLUSIVO A OTRAS ENTIDADES.\r\n\r\nG) LA TITULARIDAD DE TODA CLASE DE CONCESIONES, SUBCONCESIONES Y AUTORIZACIONES ADMINISTRATIVAS DE OBRAS, SERVICIOS Y MIXTAS DEL ESTADO, COMUNIDAD AUTÓNOMA, PROVINCIA Y MUNICIPIO Y LA PARTICIPACIÓN ACCIONARIAL EN SOCIEDADES CONCESIONARIAS DE AQUÉLLAS.\r\n\r\nH) LA EXPLOTACIÓN DE MINAS  Y CANTERAS Y LA COMERCIALIZACIÓN DE SUS PRODUCTOS.\r\n\r\nI) LA FABRICACIÓN, COMMPRA, VENTA, IMPORTACIÓN, EXPORTACIÓN Y DISTRIBUCIÓN DE EQUIPOS, INSTALACIÓN DE ELEMENTOS Y MATERIALES DE CONSTRUCCIÓN O DESTINADOS A LA MISMA, AL AMUEBLAMIENTO DE INMUEBLES Y MOBILIARIO URBANO.\r\n\r\nJ) LA ADQUISICIÓN, EXPLOTACIÓN, EN CUALQUIER FORMA, COMERCIALIZACIÓN, CSIÓN Y ENAJENACIÓN DE TODO TIPO DE PROPIEDAD INTELECTUAL Y PATENTES Y DEMÁS MODALIDADES DE PROPIEDAD INDUSTRIAL.\r\n\r\nK) LA GESTIÓN, PRESTACIÓN Y EXPLOTACIÓN DE CENTROS, INSTALACIONES Y SERVICIOS SANITARIOS, INCLUYENDO EL SERVICIO DE AMBULANCIAS.\r\n\r\nL) DISEÑO, CONSTRUCCIÓN, FABRICACIÓN, INSTALACIÓN, MANTENIMIENTO, LIMPIEZA, CONSERVACIÓN Y EXPLOTACIÓN PUBLICITARIA DE TODO TIPO DE SOPORTES, MOBILIARIO URBANO, Y ELEMENTOS SIMILARES.\r\nM) SERVICIOS DE TODA CLASE DE TRANSPORTE DE VIAJEROS Y MERCANCÍAS.\r\n\r\n ",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/02366",
+      "_links": {
+        "self": {
+          "name": "DRAGADOS OBRAS Y PROYECTOS, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/02366"
+        }
+      }
+    },
+    {
+      "name": "ASOCIACIÓN PARA EL FOMENTO DE LA MEDIACIÓN FOMED-VIZCAYA",
+      "registrationNumber": "02794",
+      "identificationNumber": "G95207973",
+      "address": "AVDA. GASTEIZ, Nº 82-BAJO",
+      "location": {
+        "postalCode": "01012",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.934",
+          "name": "Enseñanza fuera de establecimiento permanente",
+          "_links": {
+            "self": {
+              "name": "Enseñanza fuera de establecimiento permanente",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.934"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2004-02-25",
+      "certificateEndDate": "2004-06-04",
+      "object": "1) FOMENTAR LA MEDIACIÓN.\r\n2) REALIZAR ACTIVIDADES DE MEDIACIÓN VELANDO PORQUE LOS SOCIOS DE ESTA ASOCIACIÓN CUMPLAN CON UN CÓDIGO ÉTICO EN BENEFICIO DE LA SOCIEDAD EN GENERAL.\r\n3)PROMOCIÓN DE LA FORMACIÓN DE FORMADORES EN MEDIACIÓN.\r\nPARA ALCANZAR ESTOS FINES, LA ASOCIACIÓN PODRÁ DESARROLLAR LAS SIGUIENTES ACTIVIDADES: \r\nORGANIZACIÓN DE CURSOS Y SEMINARIOS DE MEDIACIÓN.\r\nPUBLICACIÓN DE PROGRAMAS, CARPETAS, MONOGRAFÍAS Y CUALQUIER TIPO DE PUBLICACIÓN RELACIONADA CON EL ÁMBITO UNIVERSITARIO  DEDICADAS A LA MEDIACIÓN.\r\nCOLABORAR CON ENTIDADES, INSTITUCIONES, SEMINARIOS, ETC. UNIVERSITARIOS O PARAUNIVERSITARIOS RELACIONADOS CON LA MEDIACIÓN.\r\nORGANIZAR CURSOS DE POSTGRADO DE MEDIACIÓN.\r\nCREACIÓN DE UN  CENTRO DE MEDIACIÓN PARA LA RESOLUCIÓN ALTERNATIVA DE CONFLICTOS. ",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/02794",
+      "_links": {
+        "self": {
+          "name": "ASOCIACIÓN PARA EL FOMENTO DE LA MEDIACIÓN FOMED-VIZCAYA",
+          "href": "https://api.euskadi.eus/procurements/companies/02794"
+        }
+      }
+    },
+    {
+      "name": "DRAGADOS Y CONSTRUCCIONES, S.A.",
+      "registrationNumber": "00134",
+      "identificationNumber": "A28013654",
+      "address": "C/ PASEO DE LA ALAMEDA DE OSUNA, Nº 50.",
+      "location": {
+        "postalCode": "28042",
+        "municipality": "Madrid",
+        "county": "Madrid",
+        "municipalityId": "079",
+        "countyId": "28"
+      },
+      "economicActivities": [
+        {
+          "id": "1.501.2",
+          "name": "Construcción completa, reparación y conservación obras civiles",
+          "_links": {
+            "self": {
+              "name": "Construcción completa, reparación y conservación obras civiles",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.2"
+            }
+          }
+        },
+        {
+          "id": "1.507",
+          "name": "Construcción, reparación y conservación de toda clase obras",
+          "_links": {
+            "self": {
+              "name": "Construcción, reparación y conservación de toda clase obras",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.507"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2004-02-24",
+      "certificateEndDate": "2004-08-02",
+      "object": "CONTRATACIÓN Y EJECUCIÓN DE OBRAS DE CUALQUIER ESPECIALIDAD",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/00134",
+      "_links": {
+        "self": {
+          "name": "DRAGADOS Y CONSTRUCCIONES, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/00134"
+        }
+      }
+    },
+    {
+      "name": "APLICACIONES DE PINTURAS UNIÓN, S.L.",
+      "registrationNumber": "02793",
+      "identificationNumber": "B48148779",
+      "address": "PINTORES ZUBIAURRE, 4 - BAJO ",
+      "location": {
+        "postalCode": "48012",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.505.6",
+          "name": "Pintura, revestimientos y terminación y decoración de locales",
+          "_links": {
+            "self": {
+              "name": "Pintura, revestimientos y terminación y decoración de locales",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.505.6"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2004-02-19",
+      "certificateEndDate": "2004-06-10",
+      "object": "TODA CLASE DE ACTIVIDADES RELACIONADAS CON LA CONSTRUCCIÓN EN EL RAMO DE PINTURA O CUALQUIER OTRO Y PARA TODA CLASE DE OBRAS PÚBLICAS Y PRIVADAS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/02793",
+      "_links": {
+        "self": {
+          "name": "APLICACIONES DE PINTURAS UNIÓN, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/02793"
+        }
+      }
+    },
+    {
+      "name": "NORDISVEN, S.L. UNIPERSONAL",
+      "registrationNumber": "02684",
+      "identificationNumber": "B95152682",
+      "address": "TRAVESÍA DEL MERCADILLO, 30 BAJO",
+      "location": {
+        "postalCode": "48960",
+        "municipality": "Galdakao",
+        "county": "Bizkaia",
+        "municipalityId": "036",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.647.52",
+          "name": "Venta de productos alimenticios en máquina, propietario máquina",
+          "_links": {
+            "self": {
+              "name": "Venta de productos alimenticios en máquina, propietario máquina",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.647.52"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2004-02-17",
+      "certificateEndDate": "2004-08-10",
+      "object": "LA EXPLOTACIÓN DE MÁQUINAS AUTOMÁTICAS DE BEBIDAS Y PRODUCTOS DE ALIMENTACIÓN, Y LA COMPRA Y VENTA DE LOS PRODUCTOS DISPENSADOS POR LAS CITADAS MÁQUINAS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/02684",
+      "_links": {
+        "self": {
+          "name": "NORDISVEN, S.L. UNIPERSONAL",
+          "href": "https://api.euskadi.eus/procurements/companies/02684"
+        }
+      }
+    },
+    {
+      "name": "MARKETING Y DESARROLLO EMPRESARIAL, S.L.",
+      "registrationNumber": "01183",
+      "identificationNumber": "B20375010",
+      "address": "C/ IPARAGIRRE, 11 - 1ºPISO- OFICINA 1 ",
+      "location": {
+        "postalCode": "20001",
+        "municipality": "Donostia / San Sebastián",
+        "county": "Gipuzkoa",
+        "municipalityId": "069",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.619.6",
+          "name": "Venta al por mayor de libros , periódicos y revistas",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de libros , periódicos y revistas",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.619.6"
+            }
+          }
+        },
+        {
+          "id": "1.849.9",
+          "name": "Otros servicios independientes n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros servicios independientes n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.849.9"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2004-02-16",
+      "certificateEndDate": "2004-08-10",
+      "object": "LA COMPRA Y VENTA DE CUALQUIER PRODUDCTO Ó ARTÍCULO",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/01183",
+      "_links": {
+        "self": {
+          "name": "MARKETING Y DESARROLLO EMPRESARIAL, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/01183"
+        }
+      }
+    }
+  ]
+}

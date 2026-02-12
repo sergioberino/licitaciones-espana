@@ -1,0 +1,418 @@
+{
+  "totalItems": 9042,
+  "totalPages": 905,
+  "currentPage": 740,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "name": "SMART MEDICAL, S.L.",
+      "registrationNumber": "03581",
+      "identificationNumber": "B63148621",
+      "address": "POLIG INDUSTR CORDOVILLA, c/ Nº 1. CORDOVILLA",
+      "location": {
+        "postalCode": "31191",
+        "municipality": "Pamplona/Iruña",
+        "county": "Navarra",
+        "municipalityId": "201",
+        "countyId": "31"
+      },
+      "economicActivities": [
+        {
+          "id": "1.619.2",
+          "name": "Venta al por mayor de aparatos e instrumentos médicos, ortopédicos, ópticos",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de aparatos e instrumentos médicos, ortopédicos, ópticos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.619.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2009-10-06",
+      "certificateEndDate": "2010-03-02",
+      "object": "LA COMPRAVENTA, IMPORTACIÓN, EXPORTACIÓN, REPRESENTACIÓN, FABRICACIÓN, DISTRIBUCIÓN, INTERMEDIACIÓN Y COMERCIALIZACIÓN DE PRODUCTOS MÉDICOS Y DE SUBPRODUCTOS Y MATERIAS PRIMAS RELACIONADAS CON LOS SECTORES MÉDICO, QUÍMICO Y FARMACÉUTICO, Y EN RELACIÓN CON DICHOS PRODUCTOS, LA REPRESENTACIÓN DE EMPRESAS NACIONALES O EXTRANJERAS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03581",
+      "_links": {
+        "self": {
+          "name": "SMART MEDICAL, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/03581"
+        }
+      }
+    },
+    {
+      "name": "SERVICIOS MULTIMEDIA ASKAN, S.L.",
+      "registrationNumber": "03796",
+      "identificationNumber": "B95164737",
+      "address": "BATALLA DE PADURA, 2-BIS. ESC. 2-1º D",
+      "location": {
+        "postalCode": "48012",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.844",
+          "name": "Servicios de publicidad, relaciones públicas y similares",
+          "_links": {
+            "self": {
+              "name": "Servicios de publicidad, relaciones públicas y similares",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.844"
+            }
+          }
+        },
+        {
+          "id": "1.845",
+          "name": "Explotación electrónica por cuenta de terceros",
+          "_links": {
+            "self": {
+              "name": "Explotación electrónica por cuenta de terceros",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.845"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2009-10-06",
+      "certificateEndDate": "2010-02-14",
+      "object": "A) ADQUISICIÓN, VENTA, INVERSIÓN, TENENCIA, DISFRUTE, ADMINISTRACIÓN, GESTIÓN, ESTUDIOS Y NEGOCIACIÓN EN GENERAL DE TODA CLASE DE TÍTULOS Y VALORES MOBILIARIOS COTIZADOS EN BOLSA Y OTROS MERCADOS O NO, TANTO NACIONALES COMO EXTRANJEROS, POR CUENTA PROPIA, CON EXCEPCIÓN DE DLA INTERMEDIACIÓN Y DEJANDO SIEMPRE FUERA LAS ACTIVIDADES OBJETO DE LA LEGISLACIÓN DE INSTITUCIONES DE INVERSIÓN COLECTIVA Y DEL MERCADO DE VALORES.\r\nB) COMPRA, VENTA, CESIÓN, DISFRUTE, DONACIÓN, TENENCIA, REMODELACIÓN, CONSTRUCCIÓN, ARRENDAMIENTO Y EXPLOTACIÓN DE BIENES INMUEBLES.\r\nC) COMERCIALIZACIÓN AL POR MAYOR Y POR MENOR DE PRODUCTOS, SERVICIOS Y LA INTERMEDIACIÓN DE COMERCIO O PUESTA EN RELACIÓN ENTRE COMPRADORES Y VENDEDORES.\r\nD) SERVICIOS RELACIONADOS CON EL DISEÑO, DIFUSIÓN, CREACIÓN, PROMOCIÓN, DELINEACIÓN, Y EN GENERAL TODO TIPO DE SERVICIOS PRESTADOS POR MEDIOS INFORMÁTICOS O CANALES SIMILARES DENOMINADOS MULTIMEDIA",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03796",
+      "_links": {
+        "self": {
+          "name": "SERVICIOS MULTIMEDIA ASKAN, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/03796"
+        }
+      }
+    },
+    {
+      "name": "MOLINOS ESTUDIO Y DECORACIÓN, S.L.",
+      "registrationNumber": "03397",
+      "identificationNumber": "B48305213",
+      "address": "POL. BALLONTI PAB 4",
+      "location": {
+        "postalCode": "48920",
+        "municipality": "Portugalete",
+        "county": "Bizkaia",
+        "municipalityId": "078",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.504.1",
+          "name": "Instalaciones eléctricas en general",
+          "_links": {
+            "self": {
+              "name": "Instalaciones eléctricas en general",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.504.1"
+            }
+          }
+        },
+        {
+          "id": "1.505.5",
+          "name": "Carpintería y cerrajería",
+          "_links": {
+            "self": {
+              "name": "Carpintería y cerrajería",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.505.5"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2009-10-05",
+      "certificateEndDate": "2010-03-03",
+      "object": "pte",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03397",
+      "_links": {
+        "self": {
+          "name": "MOLINOS ESTUDIO Y DECORACIÓN, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/03397"
+        }
+      }
+    },
+    {
+      "name": "EXCAVACIONES Y CONSTRUCCIONES SAN MARTÍN, S.L.",
+      "registrationNumber": "02111",
+      "identificationNumber": "B01127208",
+      "address": "C/ AVENIDA DEL CANTÁBRICO, Nº 16.",
+      "location": {
+        "postalCode": "01013",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.501.2",
+          "name": "Construcción completa, reparación y conservación obras civiles",
+          "_links": {
+            "self": {
+              "name": "Construcción completa, reparación y conservación obras civiles",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2009-10-01",
+      "certificateEndDate": "2010-03-09",
+      "object": "LA PROMOCIÓN Y CONSTRUCCIÓN POR CUENTA PROPIA O POR ENCARGO DE TERCEROS, DE TODA CLASE DE EDIFICACIONES Y EN TODA CLASE DE INMUEBLES, INCLUSO LOS DE PROTECCIÓN OFICIAL. SU POSTERIOR COMERCIALIZACIÓN, ENAJENACIÓN, ARRENDAMIENTO, Y EN GENERAL, ADMINISTRACIÓN Y DISPOSICIÓN",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/02111",
+      "_links": {
+        "self": {
+          "name": "EXCAVACIONES Y CONSTRUCCIONES SAN MARTÍN, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/02111"
+        }
+      }
+    },
+    {
+      "name": "VADEMUESTRAS, S.L.",
+      "registrationNumber": "03636",
+      "identificationNumber": "B01424126",
+      "address": "NTRA.SRA. DE AIALA, Nº 14- BAJO",
+      "location": {
+        "postalCode": "01240",
+        "municipality": "Alegría-Dulantzi",
+        "county": "Araba/Álava",
+        "municipalityId": "001",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.989.2",
+          "name": "Servicios de organización de congresos, asambleas y similares",
+          "_links": {
+            "self": {
+              "name": "Servicios de organización de congresos, asambleas y similares",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.989.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2009-10-01",
+      "certificateEndDate": "2010-01-02",
+      "object": "LA PRESTACIÓN DE SERVICIOS, CON O SIN APORTACIÓN DE MATERIAL, PARA EL DISEÑO, MONTAJE, INSTALACIÓN, ORGANIZACIÓN, EXPLOTACIÓN, PROMOCIÓN, GESTIÓN, REALIZACIÓN, COMERCIALIZACIÓN Y CELEBRACIÓN DE TODO TIPO DE EVENTOS FERIALES, ASAMBLEAS, CONFERENCIAS, CONGRESOS, MUESTRAS, SIMPOSIOS, CONVENCIONES, JORNADAS PROFESIONALES Y/O TEMÁTICAS Y ACTOS SIMILARES. LA PRESTACIÓN DE SERVICIOS DE CONSULTORÍA, ASESORÍA INTEGRAL, PUBLICIDAD, CREACIÓN, COMUNICACIÓN, MARKETING Y DIFUSIÓN",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03636",
+      "_links": {
+        "self": {
+          "name": "VADEMUESTRAS, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/03636"
+        }
+      }
+    },
+    {
+      "name": "ESTO.VADEFORMACION, S.L.",
+      "registrationNumber": "03637",
+      "identificationNumber": "B01324250",
+      "address": "NTRA. SRA. DE AIALA, Nº 14- BAJO",
+      "location": {
+        "postalCode": "01240",
+        "municipality": "Alegría-Dulantzi",
+        "county": "Araba/Álava",
+        "municipalityId": "001",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.934",
+          "name": "Enseñanza fuera de establecimiento permanente",
+          "_links": {
+            "self": {
+              "name": "Enseñanza fuera de establecimiento permanente",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.934"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2009-10-01",
+      "certificateEndDate": "2010-01-02",
+      "object": "LA GESTIÓN INTEGRAL DE LOS RECURSOS HUMANOS EN ORGANIZACIONES DE TODO TIPO TANTO PRIVADAS COMO PÚBLICAS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03637",
+      "_links": {
+        "self": {
+          "name": "ESTO.VADEFORMACION, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/03637"
+        }
+      }
+    },
+    {
+      "name": "ADREDE PUBLICIDAD, S.L.",
+      "registrationNumber": "04002",
+      "identificationNumber": "B20856217",
+      "address": "Aitzpea kalea, 14 - 3º C",
+      "location": {
+        "postalCode": "20809",
+        "municipality": "Aia",
+        "county": "Gipuzkoa",
+        "municipalityId": "016",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.844",
+          "name": "Servicios de publicidad, relaciones públicas y similares",
+          "_links": {
+            "self": {
+              "name": "Servicios de publicidad, relaciones públicas y similares",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.844"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2009-09-29",
+      "certificateEndDate": "2010-01-29",
+      "object": ".",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/04002",
+      "_links": {
+        "self": {
+          "name": "ADREDE PUBLICIDAD, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/04002"
+        }
+      }
+    },
+    {
+      "name": "DEKORNNER TOP DIEZ S.L.",
+      "registrationNumber": "03976",
+      "identificationNumber": "B95431128",
+      "address": "LICENCIADO POZA 46, 1º DCHA.",
+      "location": {
+        "postalCode": "48011",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.501.1",
+          "name": "Construcción completa, reparación y conservación de edificaciones",
+          "_links": {
+            "self": {
+              "name": "Construcción completa, reparación y conservación de edificaciones",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.1"
+            }
+          }
+        },
+        {
+          "id": "1.844",
+          "name": "Servicios de publicidad, relaciones públicas y similares",
+          "_links": {
+            "self": {
+              "name": "Servicios de publicidad, relaciones públicas y similares",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.844"
+            }
+          }
+        },
+        {
+          "id": "1.849.9",
+          "name": "Otros servicios independientes n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros servicios independientes n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.849.9"
+            }
+          }
+        },
+        {
+          "id": "1.989.2",
+          "name": "Servicios de organización de congresos, asambleas y similares",
+          "_links": {
+            "self": {
+              "name": "Servicios de organización de congresos, asambleas y similares",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.989.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2009-09-28",
+      "certificateEndDate": "2009-12-16",
+      "object": "-) LA DECORACIÓN DE INTERIORES Y EXTERIORES, EL MONTAJE DE STANDS, LA CONSTRUCCIÓN Y ACABADO DE OBRAS. -) COMERCIALIZACIÓN DE MUEBLES DE OFICINA, ASÍ COMO DE CUALQUIER OTRO TIPO. -) EL DISEÑO GRÁFICO EN TODAS SUS ESPECIALIDADES. -) LA ACTUACIÓN COMO CONTRATISTA O SUBCONTRATISTA PARA LA PRESTACIÓN A TERCEROS DE TODO TIPO DE SERVICIOS AUXILIARES O QUE PUEDAN SER OBJETO DE CONTRATA O SUBCONTRATA EN CUALQUIER MERCADO O SECTOR ECONÓMICO, COMERCIAL O INDUSTRIAL, PARA LA ORGANIZACIÓN, ASISTENCIA TÉCNICA Y AUXILIAR EN CUALQUIER CLASE DE EVENTOS, ACTOS PÚBLICOS Y PRIVADOS, SOCIALES, CULTURALES, DEPORTIVOS, CONGRESOS, EXPOSICIONES, SEMINARIOS, CONVENCIONES, JUNTAS DE SOCIOS O ACCIONISTAS O CUALQUIER OTRA ACTIVIDAD DE APOYO O GESTIÓN Y DESARROLLO QUE IMPLIQUE LA CONGREGACIÓN DE PERSONAS O PATRIMONIOS. -) PRESENTACIÓN, EXPOSICIÓN Y PROMOCIÓN DE PRODUCTOS DE TODA NATURALEZA, ORGANIZACIÓN Y GESTIÓN PARA EL MONTAJE DE ESPECTÁCULOS Y MOBILIARIO, SERVICIOS DE CATERING Y HOSTELERÍA EN GENERAL, MONITORES DE TIEMPO LIBRE. -) ESTUDIO DE DISEÑO GRÁFICO Y COMUNICACIÓN PUBLICITARIA, DISEÑO EDITORIAL, DISEÑO DE IMAGEN CORPORATIVA, IMAGEN DE MARCA Y PRODUCTO, AGENCIA DE PUBLICIDAD. -) INDUSTRIA DE ARTES GRÁFICAS Y AUDIOVISUALES DE SOPORTES PUBLICITARIOS EN TODOS LOS FORMATOS Y MATERIALES, YA SEAN FÍSICOS COMO VIRTUALES. -) TODO ELLO TANTO PARA PERSONAS FÍSICAS COMO JURÍDICAS, PÚBLICAS O PRIVADAS.\r\n",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03976",
+      "_links": {
+        "self": {
+          "name": "DEKORNNER TOP DIEZ S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/03976"
+        }
+      }
+    },
+    {
+      "name": "RESTAURACIONES AZKOITIA S.L.",
+      "registrationNumber": "03923",
+      "identificationNumber": "B20388096",
+      "address": "KALE NAGUSIA 68, 1º a",
+      "location": {
+        "postalCode": "20720",
+        "municipality": "Azkoitia",
+        "county": "Gipuzkoa",
+        "municipalityId": "017",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.501.1",
+          "name": "Construcción completa, reparación y conservación de edificaciones",
+          "_links": {
+            "self": {
+              "name": "Construcción completa, reparación y conservación de edificaciones",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2009-09-18",
+      "certificateEndDate": "2009-12-03",
+      "object": "LA RESTAURACIÓN DE EDIFICACIONES Y MONUMENTOS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03923",
+      "_links": {
+        "self": {
+          "name": "RESTAURACIONES AZKOITIA S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/03923"
+        }
+      }
+    },
+    {
+      "name": "ESTUDIOS Y CONSTRUCCIONES ENCARTACIONES, S.L.",
+      "registrationNumber": "03995",
+      "identificationNumber": "B48116271",
+      "address": "J.F. ESTEFANIA Y PRIETO Nº 1 BAJO",
+      "location": {
+        "postalCode": "48860",
+        "municipality": "Zalla",
+        "county": "Bizkaia",
+        "municipalityId": "096",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.501.1",
+          "name": "Construcción completa, reparación y conservación de edificaciones",
+          "_links": {
+            "self": {
+              "name": "Construcción completa, reparación y conservación de edificaciones",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.1"
+            }
+          }
+        },
+        {
+          "id": "1.833.2",
+          "name": "Promoción de edificaciones",
+          "_links": {
+            "self": {
+              "name": "Promoción de edificaciones",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.833.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2009-09-18",
+      "certificateEndDate": "2009-12-03",
+      "object": "LA EJECUCIÓN Y PROMOCIÓN COMPLETA O POR RAMOS DE TODA CLASE DE OBRAS DE CONSTRUCCIÓN, URBANIZACIÓN, MOVIMIENTO DE TIERRAS, SERVICIOS, REPARACIÓN Y CONSERVACIÓN, POR CUENTA PROPIA O AJENA, EJECUCIÓN DE OBRAS CON EL ESTADO, MUNICIPIO O PARTICULARES Y ENTIDADES OFICIALES, INCLUSO VIVIENDAS Y LOCALES COMERCIALES DE LAS LLAMADAS DE PROTECCIÓN OFICIAL; B) LA URBANIZACIÓN Y PARCELACIÓN DE TERRENOS CONFORME A LOS PLANES DE ORDENACIÓN URBANÍSTICA; C) LA CONSTRUCCIÓN Y VENTA DE INMUEBLES, DE VIVIENDAS, LOCALES COMERCIALES O PABELLONES INDUSTRIALES, OFICINAS, APARTAMENTOS, CHALETS; D) ESTUDIOS TÉCNICOS, ELABORACIÓN DE PROYECTOS, CÁLCULOS, DIBUJOS, MEMORIAS, ETC., ASÍ COMO CONSULTAS, DIRECCIÓN DE TRABAJO, ASESORAMIENTOS Y TODA CLASE DE ESTUDIOS, SERVICIOS Y AYUDAS A LAS CONSTRUCCIONES, AMPLIACIONES Y REFORMAS DE INSTALACIONES DE TODA CLASE DE OBRAS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03995",
+      "_links": {
+        "self": {
+          "name": "ESTUDIOS Y CONSTRUCCIONES ENCARTACIONES, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/03995"
+        }
+      }
+    }
+  ]
+}

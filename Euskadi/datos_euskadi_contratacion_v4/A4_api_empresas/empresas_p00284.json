@@ -1,0 +1,578 @@
+{
+  "totalItems": 9042,
+  "totalPages": 905,
+  "currentPage": 284,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "name": "EUSKA-TOUR, S.L.",
+      "registrationNumber": "04992",
+      "identificationNumber": "B20447892",
+      "address": "POLÍGONO BIDAURRE-UREDER, PABELLÓN 45-C",
+      "location": {
+        "postalCode": "20305",
+        "municipality": "Irun",
+        "county": "Gipuzkoa",
+        "municipalityId": "045",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.721.3",
+          "name": "Transporte de viajeros por carretera",
+          "_links": {
+            "self": {
+              "name": "Transporte de viajeros por carretera",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.721.3"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-09-11",
+      "certificateEndDate": "2026-03-11",
+      "classification": [
+        {
+          "id": "S",
+          "name": "Servicios",
+          "groups": [
+            {
+              "id": "R",
+              "subgroups": [
+                {
+                  "id": "01",
+                  "name": "Transporte de viajeros por carretera",
+                  "categories": [
+                    {
+                      "id": "2",
+                      "name": "Desde 150.001 Hasta 300.000",
+                      "_links": {
+                        "self": {
+                          "name": "Desde 150.001 Hasta 300.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/S/categories/2"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "Transporte de viajeros por carretera",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/R/subgroups/01"
+                    }
+                  }
+                }
+              ],
+              "_links": {
+                "self": {
+                  "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/R"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Servicios",
+              "href": "https://api.euskadi.eus/procurements/companies/types/S"
+            }
+          }
+        }
+      ],
+      "object": "EL TRANSPORTE DE VIAJEROS Y MERCANCÍAS POR CARRETERA",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/04992",
+      "_links": {
+        "self": {
+          "name": "EUSKA-TOUR, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/04992"
+        }
+      }
+    },
+    {
+      "name": "SOLUTIOMA, S.L.",
+      "registrationNumber": "06982",
+      "identificationNumber": "B65858938",
+      "address": "C/ Baró de Maials, 20",
+      "location": {
+        "postalCode": "25005",
+        "municipality": "Lleida",
+        "county": "Lleida",
+        "municipalityId": "120",
+        "countyId": "25"
+      },
+      "economicActivities": [
+        {
+          "id": "1.507",
+          "name": "Construcción, reparación y conservación de toda clase obras",
+          "_links": {
+            "self": {
+              "name": "Construcción, reparación y conservación de toda clase obras",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.507"
+            }
+          }
+        },
+        {
+          "id": "1.912",
+          "name": "Servicios forestales",
+          "_links": {
+            "self": {
+              "name": "Servicios forestales",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.912"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-09-11",
+      "certificateEndDate": "2026-03-11",
+      "object": "1. LA EJECUCIÓN DE OBRAS Y MANTENIMIENTOS DE JARDINERÍA, CONTROL DE LA EROSIÓN, PAISAJISMO, REDUCCIÓN Y RESTAURACIÓN DEL IMPACTO AMBIENTAL, TRABAJOS CON MADERA, PROTECCIÓN CONTRA DESPRENDIMIENTOS Y DE TÚNELES, ESTABILIZACIÓN DE TALUDES, PERFORACIONES, CIMENTACIONES ESPECIALES, TRABAJOS AUXILIARES EN LÍNEAS DE FERROCARRIL, TRABAJOS EN INSTALACIONES DEDICADAS A LAS ENERGÍAS RENOVABLES Y SERVICIOS FORESTALES. ASÍ COMO TODO TIPO DE OBRAS Y MANTENIMIENTOS DE INGENIERÍA RURAL, FORESTAL, CIVIL Y MEDIOAMBIENTAL. EN GENERAL TODO TIPO DE OBRAS Y MANTENIMIENTOS RELACIONADOS CON EL URBANISMO, INFRAESTRUCTURAS VIARIAS Y DE COMUNICACIÓN, HIDRÁULICAS, ELÉCTRICAS, DE ENERGÍAS RENOVABLES Y DEL MEDIO NATURAL. 2. LA REALIZACIÓN DE ESTUDIOS DE PLANES, PRESUPUESTOS, MEMORIAS TÉCNICAS, PROYECTOS, PROGRMAS DE INVESTIGACIÓN DE INGENIERÍA EN LOS CAMPOS DE JARDINERÍA, CONTROL DE LA EROSIÓN, PAISAJISMO, REDUCCIÓN Y RESTAURACIÓN DEL IMPACTO AMBIENTAL, TRABAJOS CON MADERA, PROTECCIÓN CONTRA DESPRENDIMIENTOS Y DE TÚNELES, ESTABILIZACIÓN DE TALUDES, PERFORACIONES, CIMENTACIONES ESPECIALES, TRABAJOS AUXILIARES EN LÍNEAS DE FERROCARRIL, TRABAJOS EN INSTALACIONES DEDICADAS A LAS ENERGÍAS RENOVABLES Y SERVICIOS FORESTALES; ASÍ COMO DE GEOLOGÍA E INGENIERÍA RURAL, FORESTAL, CIVIL Y MEDIOAMBIENTAL. TODOS ELLOS CONFECCIONADOS POR TÉCNICOS COMPETENTES. 3. LA COMPRA, VENTA, FABRICACIÓN, ELIMINACIÓN Y RECICLAJE, DE CUALQUIER MATERIAL, PRODUCTO Y SUBPRODUCTO PROPIOS DE LOS CAMPOS DE LA JARDINERÍA, EL PAISAJISMO, LA REDUCCIÓN Y RESTAURACIÓN DEL IMPACTO AMBIENTAL, LOS TRABAJOS CON MADERA PARA EXTERIORES, LA PROTECCIÓN CONTRA DESPRENDIMIENTOS Y DE TÚNELES, LA ESTABILIZACIÓN DE TALUDES, LAS PERFORACIONES, LAS CIMENTACIONES ESPECIALES, LOS TRABAJOS AUXILIARES EN LÍNEAS DE FERROCARRIL, LOS TRABAJOS EN INSTALACIONES DEDICADAS A LAS ENERGÍAS RENOVABLES Y LOS SERVICIOS FORESTALES; ASÍ COMO DE TODO TIPO DE MATERIALES, PRODUCTOS Y SUBPRODUCTOS DE INGENIERÍA RURAL, FORETAL, CIVIL Y MEDIOAMBIENTAL. 4. LA ADQUISICIÓN, VENTA, CESIÓN, TRASPASO, PERMUTA, PROMOCIÓN, ARRENDAMIENTO Y SUBARRENDAMIENTO DE MAQUINARIA, VEHÍCULOS, MEDIOS DE TRANSPORTE, INSFRAESTRUCTURAS, ÚTILES, ASÍ COMO LA DE FINCAS E INMUEBLES",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06982",
+      "_links": {
+        "self": {
+          "name": "SOLUTIOMA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/06982"
+        }
+      }
+    },
+    {
+      "name": "MERKATU INTERACTIVA, S.L.",
+      "registrationNumber": "07437",
+      "identificationNumber": "B01393339",
+      "address": "Plaza del Renacimiento nº 9 - planta 4, oficina 20",
+      "location": {
+        "postalCode": "01004",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.843.9",
+          "name": "Otros servicios técnicos n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros servicios técnicos n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.9"
+            }
+          }
+        },
+        {
+          "id": "1.844",
+          "name": "Servicios de publicidad, relaciones públicas y similares",
+          "_links": {
+            "self": {
+              "name": "Servicios de publicidad, relaciones públicas y similares",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.844"
+            }
+          }
+        },
+        {
+          "id": "1.847",
+          "name": "Servicios de consultoría",
+          "_links": {
+            "self": {
+              "name": "Servicios de consultoría",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.847"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-09-11",
+      "certificateEndDate": "2026-03-09",
+      "object": "REALIZAR CONSULTORÍA Y EJECUTAR PROYECTOS EN EL ÁMBITO DE LA SOCIEDAD DE LA INFORMACIÓN, ASÍ COMO DISEÑAR, DESARROLLAR, IMPLANTAR, MANTENER, COMERCIALIZAR Y VENDER SISTEMAS, PRODUCTOS Y SERVICIOS RELACIONADOS CON E-BUSINESS, ESPECIALMENTE EL COMERCIO ELECTRÓNICO B2B Y B2C Y E-MARKETPLACES, ASÍ COMO HACER COMERCIO ELECTRÓNICO. LA SOCIEDAD PODRÁ LLEVAR A CABO LA CONSULTORÍA, EL DISEÑO, DESARROLLO, IMPLANTACIÓN, MANTENIMIENTO, LA COMERCIALIZACIÓN Y VENTA DE SISTEMAS, PRODUCTOS Y SERVICIOS RELACIONADOS CON TODO TIPO DE INTERACCIONES Y TRANSACCIONES PARA LA MEJORA EN LOS PROCESOS DE GESTIÓN. ASÍ MISMO LA SOCIEDAD PODRÁ LLEVAR A ACABO CONSULTORÍA Y EJECUCIÓN DE PROYECTOS RELACIONADOS CON LA ATRACCIÓN Y MEDICIÓN DE AUDIENCIAS, ASÍ COMO REALIZAR CONSULTORÍA Y TRABAJOS EN EL ÁMBITO DEL MARKETING, EL COMERCIO INTERIOR Y EXTERIOR, LA ESTADÍSTICA, LA FORMACIÓN Y LA GESTIÓN EMPRESARIAL",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07437",
+      "_links": {
+        "self": {
+          "name": "MERKATU INTERACTIVA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/07437"
+        }
+      }
+    },
+    {
+      "name": "AYPRO, S.A.",
+      "registrationNumber": "01735",
+      "identificationNumber": "A48191894",
+      "address": "POLÍGONO BARRONDO, C/ ERREKAONDO,  27",
+      "location": {
+        "postalCode": "48450",
+        "municipality": "Etxebarri",
+        "county": "Bizkaia",
+        "municipalityId": "029",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.505.6",
+          "name": "Pintura, revestimientos y terminación y decoración de locales",
+          "_links": {
+            "self": {
+              "name": "Pintura, revestimientos y terminación y decoración de locales",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.505.6"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-09-11",
+      "certificateEndDate": "2026-08-03",
+      "object": "A) LA REALIZACIÓN DE TODO TIPO DE TRABAJOS DE PINTURA Y DECORACIÓN EN GENERAL, TANTO PARA EL HOGAR, EL COMERCIO Y COMO PARA LA INDUSTRIA. B) LA REPRESENTACIÓN, COMERCIALIZACIÓN Y VENTA, AL MAYOR Y MENOR DE TODA CLASE DE MATERIALES DE USO O UTILIZACIÓN HABITUAL EN LOS TRABAJOS Y PARA LA DECORACIÓN QUE SE ESPECIFICAN EN EL APARTADO A) PRECEDENTE, ASÍ COMO CUALESQUIERA OTROS MATERIALES U OBJETOS RELACIONADOS DIRECTA O INDIRECTAMENTE CON LOS ANTERIORES Y DE UNA MANERA GENERAL, TODA CLASE DE REPRESENTACIONES Y ACTIVIDADES DE MEDIACIÓN, TANTO PARA EL HOGAR, LA INDUSTRIA, COMO PARA EL COMERCIO Y DE TODO TIPO DE SERVICIOS ALMACENISTA, MAYORISTA, EXCLUSIVISTA, CON SU IMPORTACIÓN Y EXPORTACIÓN. C) EL ESTUDIO Y RESOLUCIÓN DE TODAS CUANTAS CUESTIONES TÉCNICAS Y DE CUALQUIER ORDEN, RELACIONADAS CON EL OBJETO Y OBJETOS PRINCIPALES, PUEDAN PLANTEARSE.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/01735",
+      "_links": {
+        "self": {
+          "name": "AYPRO, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/01735"
+        }
+      }
+    },
+    {
+      "name": "VAUMM ARQUITECTURA Y URBANISMO, S.L.",
+      "registrationNumber": "08082",
+      "identificationNumber": "B20934386",
+      "address": "Paseo Los Fueros, número 1, 7º E",
+      "location": {
+        "postalCode": "20005",
+        "municipality": "Donostia / San Sebastián",
+        "county": "Gipuzkoa",
+        "municipalityId": "069",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.843.2",
+          "name": "Servicios técnicos de arquitectura y urbanismo",
+          "_links": {
+            "self": {
+              "name": "Servicios técnicos de arquitectura y urbanismo",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-09-11",
+      "certificateEndDate": "2026-03-09",
+      "object": "LA ACTIVIDAD PROPIA DEL EJERCICIO DE LOS ARQUITECTOS Y EL URBANISMO.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08082",
+      "_links": {
+        "self": {
+          "name": "VAUMM ARQUITECTURA Y URBANISMO, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/08082"
+        }
+      }
+    },
+    {
+      "name": "LABOLISER, S.A.",
+      "registrationNumber": "07365",
+      "identificationNumber": "A08432247",
+      "address": "Carrer de Lepant, 328 - planta baja",
+      "location": {
+        "postalCode": "08025",
+        "municipality": "Barcelona",
+        "county": "Barcelona",
+        "municipalityId": "019",
+        "countyId": "08"
+      },
+      "economicActivities": [
+        {
+          "id": "1.619.2",
+          "name": "Venta al por mayor de aparatos e instrumentos médicos, ortopédicos, ópticos",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de aparatos e instrumentos médicos, ortopédicos, ópticos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.619.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-09-11",
+      "certificateEndDate": "2026-03-09",
+      "object": "COMPRA, VENTA, IMPORTACIÓN Y EXPORTACIÓN DE MATERIAL MÉDICO-QUIRÚRGICO Y PRODUCTOS PARA DIAGNÓSTICO, TODO ELLO RELACIONADO CON LA MEDICINA EN GENERAL, ETC.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07365",
+      "_links": {
+        "self": {
+          "name": "LABOLISER, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/07365"
+        }
+      }
+    },
+    {
+      "name": "MEDIASAL 2000, S.L.",
+      "registrationNumber": "06536",
+      "identificationNumber": "B48944268",
+      "address": "Alda. de Urquijo 4, 4º .Oficina 4",
+      "location": {
+        "postalCode": "48008",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.844",
+          "name": "Servicios de publicidad, relaciones públicas y similares",
+          "_links": {
+            "self": {
+              "name": "Servicios de publicidad, relaciones públicas y similares",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.844"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-09-11",
+      "certificateEndDate": "2026-03-08",
+      "classification": [
+        {
+          "id": "S",
+          "name": "Servicios",
+          "groups": [
+            {
+              "id": "T",
+              "subgroups": [
+                {
+                  "id": "01",
+                  "name": "Servicios de publicidad",
+                  "categories": [
+                    {
+                      "id": "5",
+                      "name": "Mas de 1.200.000",
+                      "_links": {
+                        "self": {
+                          "name": "Mas de 1.200.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/S/categories/5"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "Servicios de publicidad",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/T/subgroups/01"
+                    }
+                  }
+                }
+              ],
+              "_links": {
+                "self": {
+                  "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/T"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Servicios",
+              "href": "https://api.euskadi.eus/procurements/companies/types/S"
+            }
+          }
+        }
+      ],
+      "object": "EL DE UNA AGENCIA DE PUBLICIDAD GENERAL, CUYA DEDICACIÓN ES LA DE CONTRATAR MEDIOS, CREAR, PROYECTAR, EJECUTAR, O DISTRIBUIR CAMPAÑAS DE PUBLICIDAD A TRAVÉS DE CUALQUIER MEDIO DE DIFUSIÓN",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06536",
+      "_links": {
+        "self": {
+          "name": "MEDIASAL 2000, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/06536"
+        }
+      }
+    },
+    {
+      "name": "SERVICIOS SOCIALES AITA MENNI, S.L.",
+      "registrationNumber": "05188",
+      "identificationNumber": "B95370011",
+      "address": "Calle Egaña",
+      "location": {
+        "postalCode": "48010",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.951",
+          "name": "Asistencia y servicios sociales en centros residenciales",
+          "_links": {
+            "self": {
+              "name": "Asistencia y servicios sociales en centros residenciales",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.951"
+            }
+          }
+        },
+        {
+          "id": "1.952",
+          "name": "Asistencia y servicios sociales en centros no residenciales",
+          "_links": {
+            "self": {
+              "name": "Asistencia y servicios sociales en centros no residenciales",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.952"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-09-11",
+      "certificateEndDate": "2026-03-10",
+      "object": "GESTIÓN DE SERVICIOS SOCIALES, GERONTOLÓGICOS Y SOCIOSANITARIOS INDISTINTAMENTE EN TODO EL ÁMBITO TERRITORIAL DE LA COMUNIDAD AUTÓNOMA DEL PAÍS VASCO",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/05188",
+      "_links": {
+        "self": {
+          "name": "SERVICIOS SOCIALES AITA MENNI, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/05188"
+        }
+      }
+    },
+    {
+      "name": "M.J. OÑATE, S.L.",
+      "registrationNumber": "04307",
+      "identificationNumber": "B48438972",
+      "address": "IPARRAGUIRRE 64",
+      "location": {
+        "postalCode": "48012",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.651.5",
+          "name": "Venta al por menor de prendas especiales",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de prendas especiales",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.651.5"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-09-11",
+      "certificateEndDate": "2026-03-08",
+      "object": "COMPRA-VENTA, ALMACENAJE, IMPORTACIÓN Y EXPORTACIÓN DE PRENDAS CONFECCIONADAS PARA TRABAJO DE HOSTELERÍA, SANATORIOS, ETC.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/04307",
+      "_links": {
+        "self": {
+          "name": "M.J. OÑATE, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/04307"
+        }
+      }
+    },
+    {
+      "name": "EPS COMUNICACIÓN E IMPRESIÓN, S.L.",
+      "registrationNumber": "01889",
+      "identificationNumber": "B01141738",
+      "address": "C/ HERMINIO MADINABEITIA, 18 - PABELLÓN 3 ",
+      "location": {
+        "postalCode": "01006",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.474",
+          "name": "Artes gráficas (impresión gráfica)",
+          "_links": {
+            "self": {
+              "name": "Artes gráficas (impresión gráfica)",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.474"
+            }
+          }
+        },
+        {
+          "id": "1.844",
+          "name": "Servicios de publicidad, relaciones públicas y similares",
+          "_links": {
+            "self": {
+              "name": "Servicios de publicidad, relaciones públicas y similares",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.844"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-09-11",
+      "certificateEndDate": "2026-03-08",
+      "classification": [
+        {
+          "id": "S",
+          "name": "Servicios",
+          "groups": [
+            {
+              "id": "M",
+              "subgroups": [
+                {
+                  "id": "04",
+                  "name": "Artes gráficas",
+                  "categories": [
+                    {
+                      "id": "3",
+                      "name": "Desde 300.001 Hasta 600.000",
+                      "_links": {
+                        "self": {
+                          "name": "Desde 300.001 Hasta 600.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/S/categories/3"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "Artes gráficas",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/M/subgroups/04"
+                    }
+                  }
+                }
+              ],
+              "_links": {
+                "self": {
+                  "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/M"
+                }
+              }
+            },
+            {
+              "id": "T",
+              "subgroups": [
+                {
+                  "id": "01",
+                  "name": "Servicios de publicidad",
+                  "categories": [
+                    {
+                      "id": "2",
+                      "name": "Desde 150.001 Hasta 300.000",
+                      "_links": {
+                        "self": {
+                          "name": "Desde 150.001 Hasta 300.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/S/categories/2"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "Servicios de publicidad",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/T/subgroups/01"
+                    }
+                  }
+                }
+              ],
+              "_links": {
+                "self": {
+                  "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/T"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Servicios",
+              "href": "https://api.euskadi.eus/procurements/companies/types/S"
+            }
+          }
+        }
+      ],
+      "object": "- LA REALIZACIÓN DE TODA CLASE DE ACTOS, NEGOCIOS Y OPERACIONES RELACIONADOS CON EL SECTOR DE LAS ARTES GRÁFICAS Y DE EDICIÓN, FABRICACIÓN, COMPRAVENTA, REPRESENTACIÓN, IMPORTACIÓN, EXPORTACIÓN, COMERCIALIZACIÓN, ALMACENAMIENTO Y EXPLOTACIÓN DE TODA CLASE DE MATERIALES, OBJETOS, PRODUCTOS, TÉCNICAS Y PATENTES RELACIONADOS CON DICHO SECTOR. - ASIMISMO ES OBJETO DE LA SOCIEDAD LA ORDENACIÓN, URBANIZACIÓN, PARCELACIÓN, PROMOCIÓN, CONSTRUCCIÓN, ADQUISICIÓN, VENTA, CESIÓN, PERMUTA Y EXPLOTACIÓN POR CUALQUIER TÍTULO DE TODA CLASE DE TERRENOS, SOLARES, OBRAS, VIVIENDAS, LOCALES, PABELLONES E INMUEBLES. - LA COMPRAVENTA, REPRESENTACIÓN, FABRICACIÓN, TRANSFORMACIÓN, COMERCIALIZACIÓN, DISEÑO, DISTRIBUCIÓN, IMPORTACIÓN Y EXPORTACIÓN, TANTO AL POR MAYOR COMO AL POR MENOR, BIEN DE FABRICACIÓN NACIONAL O EXTRANJERA DE TODA CLASE DE MÁQUINAS Y HERRAMIENTAS, ASÍ COMO DE ARTÍCULOS COMERCIALES, INDUSTRIALES, AGRÍCOLAS Y GANADEROS, CUYO DESTINO SEA SU USO Y CONSUMO EN LA ALIMENTACIÓN, VESTIDO, VIVIENDA Y HOGAR, DECORACIÓN, OCIO, ESPARCIMIENTO, RECREO, CULTURA Y ENSEÑANZA. - SERVICIOS DE MEDIACIÓN, GESTIÓN, ALMACENAMIENTO Y EN GENERAL COMERCIALIZACIÓN Y DISTRIBUCIÓN DE TODA CLASE DE PRODUCTOS, RELACIONADOS CON ARTES GRÁFICAS O EDICIÓN. - ENSEÑANZA DE FORMACIÓN Y PERFECCIONAMIENTO PROFESIONAL, RELACIONADOS CON ARTES GRÁFICAS O EDICIÓN. - ASESORAMIENTO TÉCNICO EN TEMAS RELACIONADOS CON ARTES GRÁFICAS. - LA ADQUISICIÓN, TENENCIA, ADMINISTRACIÓN, ENAJENACIÓN DE TODA CLASE DE TÍTULOS, VALORES MOBILIARIOS, ACTIVOS FINANCIEROS, DERECHOS, CUOTA O PARTICIPACIONES EN EMPRESAS INDIVIDUALES O SOCIALES, TODO ELLO POR CUENTA PROPIA, EXCLUYENDO LA INTERMEDIACIÓN Y DEJANDO A SALVO LA LEGISLACIÓN PROPIA DEL MERCADO DE VALORES Y DE LAS INSTITUCIONES DE INVERSIÓN COLECTIVA.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/01889",
+      "_links": {
+        "self": {
+          "name": "EPS COMUNICACIÓN E IMPRESIÓN, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/01889"
+        }
+      }
+    }
+  ]
+}

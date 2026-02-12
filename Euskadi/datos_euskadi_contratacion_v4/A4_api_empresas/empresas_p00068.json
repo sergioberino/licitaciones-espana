@@ -1,0 +1,580 @@
+{
+  "totalItems": 9042,
+  "totalPages": 905,
+  "currentPage": 68,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "name": "ESTUDIOS E INGENIERIA APLICADA XXI, S.A.",
+      "registrationNumber": "04011",
+      "identificationNumber": "A48116420",
+      "address": "Ribera de Axpe 11- Edificio C1-M101",
+      "location": {
+        "postalCode": "48950",
+        "municipality": "Erandio",
+        "county": "Bizkaia",
+        "municipalityId": "902",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.504.3",
+          "name": "Instalaciones de frío, calor y acondicionamiento de aire",
+          "_links": {
+            "self": {
+              "name": "Instalaciones de frío, calor y acondicionamiento de aire",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.504.3"
+            }
+          }
+        },
+        {
+          "id": "1.843.1",
+          "name": "Servicios técnicos de ingeniería",
+          "_links": {
+            "self": {
+              "name": "Servicios técnicos de ingeniería",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-01-21",
+      "certificateEndDate": "2026-07-07",
+      "object": "EL DISEÑO, PROYECTO, DIRECCIÓN, SUPERVISIÓN Y PUESTA EN MARCHA DE CUALQUIER OBRA, FABRICACIÓN Y COMERCIALIZACIÓN",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/04011",
+      "_links": {
+        "self": {
+          "name": "ESTUDIOS E INGENIERIA APLICADA XXI, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/04011"
+        }
+      }
+    },
+    {
+      "name": "CONVATEC, S.L.",
+      "registrationNumber": "04826",
+      "identificationNumber": "B08380602",
+      "address": "CONSTITUCIÓN, 1 -4ª PLANTA 4ª PUERTA",
+      "location": {
+        "postalCode": "08960",
+        "municipality": "Sant Just Desvern",
+        "county": "Barcelona",
+        "municipalityId": "221",
+        "countyId": "08"
+      },
+      "economicActivities": [
+        {
+          "id": "1.614.1",
+          "name": "Venta al por mayor de productos farmacéuticos y medicamentos",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de productos farmacéuticos y medicamentos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.614.1"
+            }
+          }
+        },
+        {
+          "id": "1.619.2",
+          "name": "Venta al por mayor de aparatos e instrumentos médicos, ortopédicos, ópticos",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de aparatos e instrumentos médicos, ortopédicos, ópticos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.619.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-01-21",
+      "certificateEndDate": "2026-06-30",
+      "object": "FABRICACIÓN, IMPORTACIÓN, EXPORTACIÓN Y/O COMERCIALIZACIÓN DE PRODUCTOS SANITARIOS Y FARMACÉUTICOS. LA REPRESENTACIÓN, CON O SIN EXCLUSIVA, DE EMPRESAS Y SOCIEDADES , ESPAÑOLAS O EXTRANJERAS, RELACIONADAS CON LAS ANTERIORES ACTIVIDADES",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/04826",
+      "_links": {
+        "self": {
+          "name": "CONVATEC, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/04826"
+        }
+      }
+    },
+    {
+      "name": "ANEL ARQUITECTOS ASOCIADOS, S.C.P.",
+      "registrationNumber": "05151",
+      "identificationNumber": "J95004339",
+      "address": "AVENIDA SANTA ANA, 7 - 2º",
+      "location": {
+        "postalCode": "48940",
+        "municipality": "Leioa",
+        "county": "Bizkaia",
+        "municipalityId": "054",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.843.2",
+          "name": "Servicios técnicos de arquitectura y urbanismo",
+          "_links": {
+            "self": {
+              "name": "Servicios técnicos de arquitectura y urbanismo",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-01-21",
+      "certificateEndDate": "2026-07-05",
+      "object": "EL EJERCICIO EN COMÚN DE LA ACTIVIDAD PROPIA DE LOS PROFESIONALES DE LA ARQUITECTURA Y URBANISMO, BIEN DIRECTAMENTE, BIEN A TRAVÉS DE LA PARTICIPACIÓN EN OTRAS SOCIEDADES PROFESIONALES",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/05151",
+      "_links": {
+        "self": {
+          "name": "ANEL ARQUITECTOS ASOCIADOS, S.C.P.",
+          "href": "https://api.euskadi.eus/procurements/companies/05151"
+        }
+      }
+    },
+    {
+      "name": "CSL BEHRING, S.A.",
+      "registrationNumber": "03573",
+      "identificationNumber": "A60805785",
+      "address": "Calle Tarragona 157, Planta 18",
+      "location": {
+        "postalCode": "08014",
+        "municipality": "Barcelona",
+        "county": "Barcelona",
+        "municipalityId": "019",
+        "countyId": "08"
+      },
+      "economicActivities": [
+        {
+          "id": "1.614.1",
+          "name": "Venta al por mayor de productos farmacéuticos y medicamentos",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de productos farmacéuticos y medicamentos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.614.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-01-21",
+      "certificateEndDate": "2026-06-27",
+      "object": "LA FABRICACIÓN, PRODUCCIÓN, TRANSPORTE, VENTA Y COMERCIALIZACIÓN DE PRODUCTOS QUÍMICOS Y ESPECIALIDADES FARMACÉUTICAS, EN ESPECIAL LOS SUEROS, VACUNAS Y DERIVADOS DEL PLASMA",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03573",
+      "_links": {
+        "self": {
+          "name": "CSL BEHRING, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/03573"
+        }
+      }
+    },
+    {
+      "name": "ICRAITAS, S.L.",
+      "registrationNumber": "09739",
+      "identificationNumber": "B86902368",
+      "address": "Paseo de la Castellana 40, planta 8",
+      "location": {
+        "postalCode": "28046",
+        "municipality": "Madrid",
+        "county": "Madrid",
+        "municipalityId": "079",
+        "countyId": "28"
+      },
+      "economicActivities": [
+        {
+          "id": "1.849.9",
+          "name": "Otros servicios independientes n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros servicios independientes n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.849.9"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-01-21",
+      "certificateEndDate": "2026-06-07",
+      "object": "LA ASESORÍA Y CONSULTORÍA ESTRATÉGICA, TECNOLÓGICA, DE NEGOCIO, DE INVERSIÓN Y DE INTERMEDIACIÓN, DE COMUNICACIÓN, DE FORMACIÓN, DE RECURSOS HUMANOS, COMERCIAL, FINANCIERA, FISCAL Y CONTABLE. LA AUDITORIA, DEFINICIÓN, CERTIFICACIÓN Y GESTIÓN DE LA CALIDAD, DEL MEDIO AMBIENTE Y DE PREVENCIÓN DE RIESGOS LABORALES Y LA PRESTACIÓN DE SERVICIOS Y PERSONAL ESPECIALIZADO EN PROYECTOS A EMPRESAS.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/09739",
+      "_links": {
+        "self": {
+          "name": "ICRAITAS, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/09739"
+        }
+      }
+    },
+    {
+      "name": "MATIA GOXARA, S.L.",
+      "registrationNumber": "05629",
+      "identificationNumber": "B20737300",
+      "address": "Camino de los Pinos, nº 35",
+      "location": {
+        "postalCode": "20009",
+        "municipality": "Donostia / San Sebastián",
+        "county": "Gipuzkoa",
+        "municipalityId": "069",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.952",
+          "name": "Asistencia y servicios sociales en centros no residenciales",
+          "_links": {
+            "self": {
+              "name": "Asistencia y servicios sociales en centros no residenciales",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.952"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-01-21",
+      "certificateEndDate": "2026-07-21",
+      "object": "LA ASISTENCIA Y SERVICIOS SOCIALES PARA NIÑOS, JÓVENES, DISMINUIDOS FÍSICOS Y ANCIANOS.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/05629",
+      "_links": {
+        "self": {
+          "name": "MATIA GOXARA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/05629"
+        }
+      }
+    },
+    {
+      "name": "LAURA MARTIN LOJO",
+      "registrationNumber": "10506",
+      "identificationNumber": "78876687G",
+      "address": "celestino maria del arenal 8-12d",
+      "location": {
+        "postalCode": "48015",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "2.732",
+          "name": "Procuradores",
+          "_links": {
+            "self": {
+              "name": "Procuradores",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/2.732"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-01-21",
+      "certificateEndDate": "2026-07-18",
+      "object": "PROCURADORES.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/10506",
+      "_links": {
+        "self": {
+          "name": "LAURA MARTIN LOJO",
+          "href": "https://api.euskadi.eus/procurements/companies/10506"
+        }
+      }
+    },
+    {
+      "name": "ENEKURI MOTOR, S.L.",
+      "registrationNumber": "09990",
+      "identificationNumber": "B95703849",
+      "address": "CARRETERA BILBAO-ASUA",
+      "location": {
+        "postalCode": "48950",
+        "municipality": "Erandio",
+        "county": "Bizkaia",
+        "municipalityId": "902",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.654.1",
+          "name": "Venta al por menor de vehículos terrestres",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de vehículos terrestres",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.654.1"
+            }
+          }
+        },
+        {
+          "id": "1.654.2",
+          "name": "Venta al por menor de accesorios, piezas de recambio de vehículos terrestres",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de accesorios, piezas de recambio de vehículos terrestres",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.654.2"
+            }
+          }
+        },
+        {
+          "id": "1.691.2",
+          "name": "Reparación de vehículos automóviles, bicicletas y otros vehículos",
+          "_links": {
+            "self": {
+              "name": "Reparación de vehículos automóviles, bicicletas y otros vehículos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.691.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-01-21",
+      "certificateEndDate": "2026-06-30",
+      "object": "LA COMPRA, VENTA, ALMACENAMIENTO, DEPOSITO, DISTRIBUCIÓN Y REPARACIÓN DE TODA CLASE DE VEHÍCULOS AUTOMÓVILES O DE TRANSPORTE.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/09990",
+      "_links": {
+        "self": {
+          "name": "ENEKURI MOTOR, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/09990"
+        }
+      }
+    },
+    {
+      "name": "OARSO CAR S.L.",
+      "registrationNumber": "06297",
+      "identificationNumber": "B75059857",
+      "address": "CTRA N-1 KM 419",
+      "location": {
+        "postalCode": "20200",
+        "municipality": "Beasain",
+        "county": "Gipuzkoa",
+        "municipalityId": "019",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.654.1",
+          "name": "Venta al por menor de vehículos terrestres",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de vehículos terrestres",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.654.1"
+            }
+          }
+        },
+        {
+          "id": "1.691.2",
+          "name": "Reparación de vehículos automóviles, bicicletas y otros vehículos",
+          "_links": {
+            "self": {
+              "name": "Reparación de vehículos automóviles, bicicletas y otros vehículos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.691.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-01-20",
+      "certificateEndDate": "2026-07-07",
+      "object": "LA CONCESIÓN DE AUTOMÓVILES, REPARACIÓN Y COMERCIALIZACIÓN DE VEHÍCULOS Y ACCESORIOS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06297",
+      "_links": {
+        "self": {
+          "name": "OARSO CAR S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/06297"
+        }
+      }
+    },
+    {
+      "name": "OBRAS PÚBLICAS ONAINDIA, S.A.",
+      "registrationNumber": "01309",
+      "identificationNumber": "A01036920",
+      "address": "ARRIURDINA, 19 B. POL INDUSTRIAL DE JUNDIZ",
+      "location": {
+        "postalCode": "01015",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.501.1",
+          "name": "Construcción completa, reparación y conservación de edificaciones",
+          "_links": {
+            "self": {
+              "name": "Construcción completa, reparación y conservación de edificaciones",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.1"
+            }
+          }
+        },
+        {
+          "id": "1.501.2",
+          "name": "Construcción completa, reparación y conservación obras civiles",
+          "_links": {
+            "self": {
+              "name": "Construcción completa, reparación y conservación obras civiles",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.2"
+            }
+          }
+        },
+        {
+          "id": "1.722",
+          "name": "Transporte de mercancías por carretera",
+          "_links": {
+            "self": {
+              "name": "Transporte de mercancías por carretera",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.722"
+            }
+          }
+        },
+        {
+          "id": "1.852",
+          "name": "Alquiler de maquinaria y equipo para la construcción",
+          "_links": {
+            "self": {
+              "name": "Alquiler de maquinaria y equipo para la construcción",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.852"
+            }
+          }
+        },
+        {
+          "id": "1.921.2",
+          "name": "Servicios de recogida de basuras y desechos",
+          "_links": {
+            "self": {
+              "name": "Servicios de recogida de basuras y desechos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.921.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-01-20",
+      "certificateEndDate": "2026-07-07",
+      "classification": [
+        {
+          "id": "S",
+          "name": "Servicios",
+          "groups": [
+            {
+              "id": "O",
+              "subgroups": [
+                {
+                  "id": "02",
+                  "name": "Conserv. y Mtto. carreteras,pistas,autopistas,autovías,calzadas y vías férreas",
+                  "categories": [
+                    {
+                      "id": "3",
+                      "name": "Desde 300.001 Hasta 600.000",
+                      "_links": {
+                        "self": {
+                          "name": "Desde 300.001 Hasta 600.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/S/categories/3"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "Conserv. y Mtto. carreteras,pistas,autopistas,autovías,calzadas y vías férreas",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/O/subgroups/02"
+                    }
+                  }
+                },
+                {
+                  "id": "03",
+                  "name": "Conservación y mantenimiento de de redes de agua y alcantarillado",
+                  "categories": [
+                    {
+                      "id": "2",
+                      "name": "Desde 150.001 Hasta 300.000",
+                      "_links": {
+                        "self": {
+                          "name": "Desde 150.001 Hasta 300.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/S/categories/2"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "Conservación y mantenimiento de de redes de agua y alcantarillado",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/O/subgroups/03"
+                    }
+                  }
+                }
+              ],
+              "_links": {
+                "self": {
+                  "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/O"
+                }
+              }
+            },
+            {
+              "id": "R",
+              "subgroups": [
+                {
+                  "id": "05",
+                  "name": "Recogida y transporte de residuos",
+                  "categories": [
+                    {
+                      "id": "4",
+                      "name": "Desde 600.001 Hasta 1.1200.000",
+                      "_links": {
+                        "self": {
+                          "name": "Desde 600.001 Hasta 1.1200.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/S/categories/4"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "Recogida y transporte de residuos",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/R/subgroups/05"
+                    }
+                  }
+                }
+              ],
+              "_links": {
+                "self": {
+                  "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/R"
+                }
+              }
+            },
+            {
+              "id": "U",
+              "subgroups": [
+                {
+                  "id": "01",
+                  "name": "Servicios de limpieza ",
+                  "categories": [
+                    {
+                      "id": "1",
+                      "name": "Desde 0 Hasta 150.000",
+                      "_links": {
+                        "self": {
+                          "name": "Desde 0 Hasta 150.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/S/categories/1"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "Servicios de limpieza ",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/U/subgroups/01"
+                    }
+                  }
+                }
+              ],
+              "_links": {
+                "self": {
+                  "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/U"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Servicios",
+              "href": "https://api.euskadi.eus/procurements/companies/types/S"
+            }
+          }
+        }
+      ],
+      "object": "LA REALIZACIÓN DE TODO TIPO DE OBRAS DE CONSTRUCCIÓN Y OBRAS PÚBLICAS EN GENERAL",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/01309",
+      "_links": {
+        "self": {
+          "name": "OBRAS PÚBLICAS ONAINDIA, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/01309"
+        }
+      }
+    }
+  ]
+}

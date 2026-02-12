@@ -1,0 +1,438 @@
+{
+  "totalItems": 9042,
+  "totalPages": 905,
+  "currentPage": 520,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "name": "CONSULTING INFORMÁTICO DE CANTABRIA, S.L.",
+      "registrationNumber": "05864",
+      "identificationNumber": "B39361019",
+      "address": "c/ Isabel Torres, nº 3",
+      "location": {
+        "postalCode": "39011",
+        "municipality": "Santander",
+        "county": "Cantabria",
+        "municipalityId": "075",
+        "countyId": "39"
+      },
+      "economicActivities": [
+        {
+          "id": "1.659.2",
+          "name": "Venta al por menor de muebles de oficina y máquinas y equipos de oficina",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de muebles de oficina y máquinas y equipos de oficina",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.659.2"
+            }
+          }
+        },
+        {
+          "id": "1.843.9",
+          "name": "Otros servicios técnicos n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros servicios técnicos n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.9"
+            }
+          }
+        },
+        {
+          "id": "1.845",
+          "name": "Explotación electrónica por cuenta de terceros",
+          "_links": {
+            "self": {
+              "name": "Explotación electrónica por cuenta de terceros",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.845"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2021-07-28",
+      "certificateEndDate": "2022-01-26",
+      "object": "EL ESTUDIO, DESARROLLO Y PUESTA EN SERVICIO DE PROYECTOS Y PRODUCTOS DE INFORMÁTICA Y TELECOMUNICACIONES, ASÍ COMO EL MANTENIMIENTO DE EQUIPOS E INSTALACIONES DE INFORMÁTICA, OFIMÁTICA, TELECOMUNICACIÓN, ELECTRICIDAD Y MAQUINARIA EN GENERAL Y SU COMERCIALIZACIÓN",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/05864",
+      "_links": {
+        "self": {
+          "name": "CONSULTING INFORMÁTICO DE CANTABRIA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/05864"
+        }
+      }
+    },
+    {
+      "name": "REPRESENTACIONES LASAN, S.L.",
+      "registrationNumber": "01273",
+      "identificationNumber": "B01046192",
+      "address": "C/ URITIASOLO, Nº 2. PABELLÓN: 7.",
+      "location": {
+        "postalCode": "01006",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.612.4",
+          "name": "Venta al por mayor de carnes, huevos, aves y caza",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de carnes, huevos, aves y caza",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.612.4"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2021-07-28",
+      "certificateEndDate": "2022-01-02",
+      "object": "EL COMERCIO AL POR MAYOR DE CARNES, FIAMBRES, EMBUTIDOS, JAMONES, AVES, CAZA, HUEVOS, ASÍ COMO LA REALIZACIÓN DE LAS OPERACIONES QUE SEAN ANTECEDENTE, COMPLEMENTO O CONSECUENCIA DE LO ANTES EXPUESTO Y EXPRESADO. LA COMPRA, VENTA, IMPORTACIÓN O EXPORTACIÓN, EN FIRME, DEPÓSITO, O A COMISIÓN DE LOS PRODUCTOS COMERCIALIZADOS PARA EL DESARROLLO DE LA ACTIVIDAD",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/01273",
+      "_links": {
+        "self": {
+          "name": "REPRESENTACIONES LASAN, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/01273"
+        }
+      }
+    },
+    {
+      "name": "IRULEZO, S.L.",
+      "registrationNumber": "01842",
+      "identificationNumber": "B20579447",
+      "address": "POLÍGONO SAGASTI, PABELLÓN: 37 - 60.",
+      "location": {
+        "postalCode": "20100",
+        "municipality": "Lezo",
+        "county": "Gipuzkoa",
+        "municipalityId": "053",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.504.1",
+          "name": "Instalaciones eléctricas en general",
+          "_links": {
+            "self": {
+              "name": "Instalaciones eléctricas en general",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.504.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2021-07-28",
+      "certificateEndDate": "2022-01-27",
+      "object": "INSTALACIONES ELÉCTRICAS EN GENERAL",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/01842",
+      "_links": {
+        "self": {
+          "name": "IRULEZO, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/01842"
+        }
+      }
+    },
+    {
+      "name": "CENTRO ASISTENCIAL SAN JUAN DE DIOS",
+      "registrationNumber": "07823",
+      "identificationNumber": "R3400087G",
+      "address": "PASEO PADRE FAUSTINO CALVO 46",
+      "location": {
+        "postalCode": "34005",
+        "municipality": "Palencia",
+        "county": "Palencia",
+        "municipalityId": "120",
+        "countyId": "34"
+      },
+      "economicActivities": [
+        {
+          "id": "1.942.1",
+          "name": "Consultorios médicos, centros de socorro sanitarios y urgencias",
+          "_links": {
+            "self": {
+              "name": "Consultorios médicos, centros de socorro sanitarios y urgencias",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.942.1"
+            }
+          }
+        },
+        {
+          "id": "1.951",
+          "name": "Asistencia y servicios sociales en centros residenciales",
+          "_links": {
+            "self": {
+              "name": "Asistencia y servicios sociales en centros residenciales",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.951"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2021-07-27",
+      "certificateEndDate": "2021-11-01",
+      "object": "LA ASISTENCIA CORPORAL Y ESPIRITUAL DE LOS ENFERMOS Y DE LOS NECESITADOS, EN LAS CASAS DE LA ORDEN Y EN SUS OBRAS CARITATIVO-HOSPITALARIAS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07823",
+      "_links": {
+        "self": {
+          "name": "CENTRO ASISTENCIAL SAN JUAN DE DIOS",
+          "href": "https://api.euskadi.eus/procurements/companies/07823"
+        }
+      }
+    },
+    {
+      "name": "KELONIK DIGITAL, S.L.",
+      "registrationNumber": "06319",
+      "identificationNumber": "B64377997",
+      "address": "Bolivia, 52-54 bajos",
+      "location": {
+        "postalCode": "08018",
+        "municipality": "Barcelona",
+        "county": "Barcelona",
+        "municipalityId": "019",
+        "countyId": "08"
+      },
+      "economicActivities": [
+        {
+          "id": "1.393.1",
+          "name": "Instrumentos ópticos, material fotográfico y cinematográfico",
+          "_links": {
+            "self": {
+              "name": "Instrumentos ópticos, material fotográfico y cinematográfico",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.393.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2021-07-27",
+      "certificateEndDate": "2022-01-26",
+      "object": "LA INVESTIGACIÓN, PRODUCCIÓN, FABRICACIÓN, IMPORTACIÓN, EXPORTACIÓN Y COMERCIALIZACIÓN DE MATERIALES Y CONTENIDOS AUDIOVISUALES EN GENERAL, INCLUYENDO LA DISTRIBUCIÓN Y VENTA DE PELÍCULAS CINEMATOGRÁFICAS. EL ALQUILER DE EQUIPAMIENTOS CON EXCLUSIÓN DEL ARRENDAMIENTO FINANCIERO",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06319",
+      "_links": {
+        "self": {
+          "name": "KELONIK DIGITAL, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/06319"
+        }
+      }
+    },
+    {
+      "name": "HACH LANGE SPAIN, S.L.",
+      "registrationNumber": "07822",
+      "identificationNumber": "B08557761",
+      "address": "Plaza de Europa, 41-43",
+      "location": {
+        "postalCode": "08908",
+        "municipality": "Hospitalet de Llobregat, L'",
+        "county": "Barcelona",
+        "municipalityId": "101",
+        "countyId": "08"
+      },
+      "economicActivities": [
+        {
+          "id": "1.619.7",
+          "name": "Venta al por mayor de instrumentos de precisión, medida y similares",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de instrumentos de precisión, medida y similares",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.619.7"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2021-07-26",
+      "certificateEndDate": "2021-11-28",
+      "object": "LA INVESTIGACIÓN, DESARROLLO, FABRICACIÓN, VENTA, IMPORTACIÓN Y EXPORTACIÓN DE APARATOS E INSTRUMENTOS ELECTRÓNICOS Y SUS ACCESORIOS PARA APLICACIONES CIENTÍFICAS, TÉCNICAS E INDUSTRIALES DE TODAS CLASES",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07822",
+      "_links": {
+        "self": {
+          "name": "HACH LANGE SPAIN, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/07822"
+        }
+      }
+    },
+    {
+      "name": "ESTUDIO JURIDICO SUNION, S.L.",
+      "registrationNumber": "03421",
+      "identificationNumber": "B20326344",
+      "address": "PZA DEL TXOFRE 18, BAJO",
+      "location": {
+        "postalCode": "20001",
+        "municipality": "Donostia / San Sebastián",
+        "county": "Gipuzkoa",
+        "municipalityId": "069",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.841",
+          "name": "Servicios jurídicos",
+          "_links": {
+            "self": {
+              "name": "Servicios jurídicos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.841"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2021-07-26",
+      "certificateEndDate": "2022-01-24",
+      "object": "EL EJERCICIO COMÚN DE LA ABOGACÍA, BIEN DIRECTAMENTE O A TRAVÉS DE LA PARTICIPACIÓN EN OTRAS SOCIEDADES PROFESIONALES",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03421",
+      "_links": {
+        "self": {
+          "name": "ESTUDIO JURIDICO SUNION, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/03421"
+        }
+      }
+    },
+    {
+      "name": "RECICLADO DESCONTAMINACION NAVAL DE BUQUES, SL",
+      "registrationNumber": "07097",
+      "identificationNumber": "B71029714",
+      "address": "Calle Vega de Tapia S/N",
+      "location": {
+        "postalCode": "48903",
+        "municipality": "Barakaldo",
+        "county": "Bizkaia",
+        "municipalityId": "013",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.243.1",
+          "name": "Fabricación de hormigones preparados",
+          "_links": {
+            "self": {
+              "name": "Fabricación de hormigones preparados",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.243.1"
+            }
+          }
+        },
+        {
+          "id": "1.502.1",
+          "name": "Demoliciones y derribos en general",
+          "_links": {
+            "self": {
+              "name": "Demoliciones y derribos en general",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.502.1"
+            }
+          }
+        },
+        {
+          "id": "1.621",
+          "name": "Venta al por mayor de chatarra y metales de desecho férreos y no férreos",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de chatarra y metales de desecho férreos y no férreos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.621"
+            }
+          }
+        },
+        {
+          "id": "1.623",
+          "name": "Recuperación y comercio de residuos fuera de establecimiento permanente",
+          "_links": {
+            "self": {
+              "name": "Recuperación y comercio de residuos fuera de establecimiento permanente",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.623"
+            }
+          }
+        },
+        {
+          "id": "1.849.9",
+          "name": "Otros servicios independientes n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros servicios independientes n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.849.9"
+            }
+          }
+        },
+        {
+          "id": "1.856.1",
+          "name": "Alquiler de bienes de consumo",
+          "_links": {
+            "self": {
+              "name": "Alquiler de bienes de consumo",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.856.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2021-07-23",
+      "certificateEndDate": "2021-11-17",
+      "object": "1) LA EXPLOTACIÓN DE UN NEGOCIO DE IMPORTACIÓN, EXPORTACIÓN, ALQUILER DE MAQUINARIA, ALMACENAMIENTO, DISTRIBUCIÓN, COMERCIALIZACIÓN, MANIPULACIÓN Y COMPRAVENTA AL POR MAYOR Y AL DETALLE DE HIERROS Y METALES. 2) DESGUACE DE BUQUES, ASÍ COMO LA GESTIÓN DE RESIDUOS. 3) LA MANIPULACIÓN DE CHATARRA Y RECOGIDA DE ESCORIA EN PLANTA PARA SU TRATAMIENTO. 4) EL RECICLAJE, RECUPERACIÓN, COMERCIALIZACIÓN, PRODUCCIÓN Y TRANSPORTE DE ÁRIDOS, HORMIGONES, CHATARRA Y METALES DE DESECHO FÉRREOS Y NO FÉRREOS, Y EN GENERAL TODO LO RELACIONADO CON EL RECICLAJE DE PRODUCTOS. 5) EL DERRIBO Y DESMANTELAMIENTO DE TODA CLASE DE EDIFICIOS, TANTO RESIDENCIALES COMO INDUSTRIALES. 6) EL TRANSPORTE POR CARRETERA DE TODA CLASE DE MERCANCÍAS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07097",
+      "_links": {
+        "self": {
+          "name": "RECICLADO DESCONTAMINACION NAVAL DE BUQUES, SL",
+          "href": "https://api.euskadi.eus/procurements/companies/07097"
+        }
+      }
+    },
+    {
+      "name": "JAIME ANDRADA VALVERDE",
+      "registrationNumber": "07820",
+      "identificationNumber": "16064167R",
+      "address": "CALLE SAN MARTIN 33 1B",
+      "location": {
+        "postalCode": "48993",
+        "municipality": "Getxo",
+        "county": "Bizkaia",
+        "municipalityId": "044",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "2.599",
+          "name": "Otros profesionales relacionados con el comercio y hostelería",
+          "_links": {
+            "self": {
+              "name": "Otros profesionales relacionados con el comercio y hostelería",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/2.599"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2021-07-23",
+      "certificateEndDate": "2022-01-17",
+      "object": "OTROS PROFESIONALES RELACIONADOS CON EL COMERCIO Y HOSTELERÍA",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07820",
+      "_links": {
+        "self": {
+          "name": "JAIME ANDRADA VALVERDE",
+          "href": "https://api.euskadi.eus/procurements/companies/07820"
+        }
+      }
+    },
+    {
+      "name": "CONSTRUCCIONES Y PROYECTOS LURRA, S.L.",
+      "registrationNumber": "06683",
+      "identificationNumber": "B95106514",
+      "address": "MADRID, 60 BAJO",
+      "location": {
+        "postalCode": "01002",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.501.1",
+          "name": "Construcción completa, reparación y conservación de edificaciones",
+          "_links": {
+            "self": {
+              "name": "Construcción completa, reparación y conservación de edificaciones",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2021-07-23",
+      "certificateEndDate": "2022-01-22",
+      "object": "LA ORDENACIÓN, URBANIZACIÓN Y PARCELACIÓN DE SOLARES Y LA CONSTRUCCIÓN Y PROMOCIÓN EN ELLOS, EN OTROS Y EN CUALQUIER TERRENO EDIFICABLE, DE VIVIENDAS Y PABELLONES INDUSTRIALES Y , EN GENERAL, DE CUALQUIER TIPO DE EDIFICACIÓN, DE CARÁCTER PÚBLICO O PRIVADO, PROPIA O CONTRATADA, INCLUSO DE CONCENTRACIÓN PARCELARIA Y OTROS ORGANISMOS AUTÓNOMOS; Y LA VENTA DE TALES OBRAS Y EDIFICACIONES, EN BLOQUE O POR UNIDADES, PREVIA CONSTITUCIÓN DEL RÉGIMEN DE COMUNIDAD HORIZONTAL APLICABLE; LA COMPRA-VENTA, ARRENDAMIENTO, EXPLOTACIÓN O APROVECHAMIENTO, EN CUALQUIER FORMA, DE TERRENOS DE NATURALEZA RUSTICA O URBANA; ASIMISMO, LA EJECUCIÓN DE OBRAS PÚBLICAS EN GENERAL, Y EN PARTICULAR, MOVIMIENTOS DE TIERRAS, CIMENTACIONES, AFIRMADOS, RIESGOS ASFALTICOS, AGLOMERADOS, SANEAMIENTOS, CONDUCCIONES DE AGUAS, CANALIZACIONES, ESTRUCTURAS DE HORMIGÓN ARMADO Y METÁLICO; IMPERMEABILIZACIONES; CONSTRUCCIÓN DE CARRETERAS Y CAMINOS Y EXPLOTACIÓN DE CANTERAS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06683",
+      "_links": {
+        "self": {
+          "name": "CONSTRUCCIONES Y PROYECTOS LURRA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/06683"
+        }
+      }
+    }
+  ]
+}

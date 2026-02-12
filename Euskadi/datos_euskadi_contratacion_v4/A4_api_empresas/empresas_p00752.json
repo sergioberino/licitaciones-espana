@@ -1,0 +1,418 @@
+{
+  "totalItems": 9042,
+  "totalPages": 905,
+  "currentPage": 752,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "name": "OFIMATICA MAVI",
+      "registrationNumber": "03757",
+      "identificationNumber": "B95336731",
+      "address": "DR. LUIS BILBAO LIBANO, 23-4º B",
+      "location": {
+        "postalCode": "48940",
+        "municipality": "Leioa",
+        "county": "Bizkaia",
+        "municipalityId": "054",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.659.2",
+          "name": "Venta al por menor de muebles de oficina y máquinas y equipos de oficina",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de muebles de oficina y máquinas y equipos de oficina",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.659.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2008-12-12",
+      "certificateEndDate": "2009-05-12",
+      "object": "LA VENTA, IMPORTACIÓN Y EXPORTACIÓN DE TODA CLASE DE ORDENADORES, MUEBLES DE OFICINA, TELEFONÍA, ASÍ COMO SU INSTALACIÓN Y MANTENIMIENTO.\r\nLA PRESTACIÓN DE SERVICIOS RELACIONADOS CON LA INFORMÁTICA MATEMÁTICA FINANCIERA Y LA ELECTRÓNICA, TALES COMO LA PROGRAMACIÓN, ASESORAMIENTO, AUTOMATIZACIÓN DE SISTEMAS, MONITORIZACIÓN, PRESTACIÓN DE SERVICIOS DE CENTRO DE CÁLCULO, ENSEÑANZA Y PUBLICACIÓN DE OBRAS DE INFORMÁTICA, ELECTRÓNICA Y TELEFONÍA. PODRÁ TAMBIEN DEDICARSE A LA FABRICACIÓN, COMERCIALIZACIÓN, VENTA Y MANTENIMIENTO DE EQUIPOS Y SISTEMAS INFORMÁTICOS Y ELECTRÓNICOS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03757",
+      "_links": {
+        "self": {
+          "name": "OFIMATICA MAVI",
+          "href": "https://api.euskadi.eus/procurements/companies/03757"
+        }
+      }
+    },
+    {
+      "name": "AGILENT TECHNOLOGIES SPAIN, S.L.",
+      "registrationNumber": "02257",
+      "identificationNumber": "B82381682",
+      "address": "LAS ROZAS CTRA. N-VI, KM. 18.200 ",
+      "location": {
+        "postalCode": "28230",
+        "municipality": "Madrid",
+        "county": "Madrid",
+        "municipalityId": "079",
+        "countyId": "28"
+      },
+      "economicActivities": [
+        {
+          "id": "1.504.1",
+          "name": "Instalaciones eléctricas en general",
+          "_links": {
+            "self": {
+              "name": "Instalaciones eléctricas en general",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.504.1"
+            }
+          }
+        },
+        {
+          "id": "1.615.4",
+          "name": "Venta al por mayor de aparatos y material radioeléctrico y electrónico",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de aparatos y material radioeléctrico y electrónico",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.615.4"
+            }
+          }
+        },
+        {
+          "id": "1.619.7",
+          "name": "Venta al por mayor de instrumentos de precisión, medida y similares",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de instrumentos de precisión, medida y similares",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.619.7"
+            }
+          }
+        },
+        {
+          "id": "1.843.1",
+          "name": "Servicios técnicos de ingeniería",
+          "_links": {
+            "self": {
+              "name": "Servicios técnicos de ingeniería",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.1"
+            }
+          }
+        },
+        {
+          "id": "1.845",
+          "name": "Explotación electrónica por cuenta de terceros",
+          "_links": {
+            "self": {
+              "name": "Explotación electrónica por cuenta de terceros",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.845"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2008-12-11",
+      "certificateEndDate": "2009-04-10",
+      "object": "LA FABRICACION, MONTAJE, IMPORTACION, EXPORTACION, DISTRIBUCION, ARRENDAMIENTO Y VENTA DE BIENES DE EQUIPO Y COMPONENTES ELECTRONICOS, ESPECIALMENTE ORDENADORES, SUS ACCESORIOS Y PERIFERICOS,COMPUTADORAS, INSTRUMENTOS Y SISTEMAS DENTRO DEL CAMPO DE LA ELECTRONICA, INFORMATICA, ELECTROQUIMICA, ELECTROMEDICINA Y MEDIDA, ASÍ COMO LA REPARACION, ASISTENCIA TECNICA, CALIBRACION, MANTENIMIENTO E INSTALACION DE LOS MISMOS; EL DISEÑO, DIRECCION Y EJECUCION DE OBRAS DE IMPLANTACION DE ENTORNOS INFORMATICOS, INSTALACIONES ELECTRICAS, RADIOELECTRICAS, ELECTRONICAS, DE TELECOMUNICACIONES, TELEMATICA Y CLIMATIZACION; LA GESTION Y OPERACION DE REDES Y SISTEMAS DE TRATAMIENTO DE INFORMACION Y LA EXPLOTACION ELECTRONICA DE DATOS POR CUENTA DE TERCEROS; EL DESARROLLO, ADQUISICION, ASISTENCIA TECNICA, CONSULTORIA, EXPLOTACION Y CESION DE PROGRAMAS DE ORDENADOR, INVENCIONES INDUSTRIALES Y CIRCUITOS INTEGRADOS, ASI COMO LOS DERECHOS DERIVADOS DE LOS MISMOS  ",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/02257",
+      "_links": {
+        "self": {
+          "name": "AGILENT TECHNOLOGIES SPAIN, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/02257"
+        }
+      }
+    },
+    {
+      "name": "VILAU MEDIA, S.L.",
+      "registrationNumber": "03294",
+      "identificationNumber": "B20867727",
+      "address": "PASEO MIKELETEGI, 57 ",
+      "location": {
+        "postalCode": "20009",
+        "municipality": "Donostia / San Sebastián",
+        "county": "Gipuzkoa",
+        "municipalityId": "069",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.847",
+          "name": "Servicios de consultoría",
+          "_links": {
+            "self": {
+              "name": "Servicios de consultoría",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.847"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2008-12-11",
+      "certificateEndDate": "2009-05-13",
+      "object": "EL DESARROLLO Y LA COMERCIALIZACIÓN DE PRODUCTOS Y LA PRESTACIÓN DE SERVICIOS DE CONSULTORÍA, IMPLEMENTACIÓN Y MANTENIMIENTO, TODO ELLO EN EL ÁMBITO DE LAS TECNOLOGÍAS MULTIMEDIA.\r\nESTAS ACTIVIDADES PODRÁN SER DESARROLLADAS POR LA SOCIEDAD TOTAL O PARCIALMENTE DE MODO DIRECTO O INDIRECTO, MEDIANTE LA PARTICIPACIÓN EN SOCIEDADES U OTRO TIPO DE PERSONAS JURÍDICAS DE ANÁLOGO O IDÉNTICO OBJETO.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03294",
+      "_links": {
+        "self": {
+          "name": "VILAU MEDIA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/03294"
+        }
+      }
+    },
+    {
+      "name": "INDUSTRIAS ALCOM, S.A.",
+      "registrationNumber": "02200",
+      "identificationNumber": "A48172944",
+      "address": "ALDA. URQUIJO, Nº 44",
+      "location": {
+        "postalCode": "48011",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.615.2",
+          "name": "Venta al por mayor de muebles",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de muebles",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.615.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2008-12-10",
+      "certificateEndDate": "2009-05-19",
+      "object": "LA EXPLOTACIÓN DEL NEGOCIO DE FABRICACIÓN, MANUFACTURAS, ALMACENAJE, IMPORTACIÓN, EXPORTACIÓN, REPRESENTACIÓN, COMERCIALIZACIÓN, COMPRA-VENTA, Y DISTRIBUCIÓN DE MOBILIARIO Y SISTEMAS GENERALES DE ARCHIVOS, CLASIFICACIÓN, MANUTENCIÓN, ALMACENAJE Y LA ORGANIZACIÓN DE ALMACENES, ARCHIVOS, OFICINAS, SEGURIDAD, HOGAR E INDUSTRIA",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/02200",
+      "_links": {
+        "self": {
+          "name": "INDUSTRIAS ALCOM, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/02200"
+        }
+      }
+    },
+    {
+      "name": "FREYSA SISTEMAS DE GASES A PRESIÓN, S.L.",
+      "registrationNumber": "03754",
+      "identificationNumber": "B95027678",
+      "address": "CRTRA. BASURTO CASTREJANA, Nº 19-BAJO.",
+      "location": {
+        "postalCode": "48006",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.619.2",
+          "name": "Venta al por mayor de aparatos e instrumentos médicos, ortopédicos, ópticos",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de aparatos e instrumentos médicos, ortopédicos, ópticos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.619.2"
+            }
+          }
+        },
+        {
+          "id": "1.699",
+          "name": "Otras reparaciones n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otras reparaciones n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.699"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2008-12-05",
+      "certificateEndDate": "2009-05-24",
+      "object": "A) LA FABRICACIÓN, INSTALACIÓN, MANTENIMIENTO, REPARACIÓN, MANIPULADO Y ALMACENAJE DE TODO TIPO DE GASES LÍQUIDOS A PRESIÓN, Y CUANTOS PRODUCTOS, MATERIALES Y UTENSILIOS SE UTILICEN DIRECTA O INDIRECTAMENTE EN ESTAS ACTIVIDADES.\r\nB) DISEÑO, FABRICACIÓN, REPARACIÓN, COMPRAVENTA, ALMACENAJE Y TRANSPORTE DE: MATERIALES Y APARATOS ELÉCTRICOS, ELECTROMECÁNICOS, Y ELECTRÓNICOS EN GENERAL, MATERIAL E INSTRUMENTAL HOSPITALARIO, INCLUYENDO EL DE QUIRÓFANO; SISTEMAS INFORMÁTICOS, SUS ACCESORIOS, COMPLEMENTOS, PERIFÉRICOS Y SOFTWARE",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03754",
+      "_links": {
+        "self": {
+          "name": "FREYSA SISTEMAS DE GASES A PRESIÓN, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/03754"
+        }
+      }
+    },
+    {
+      "name": "DIGITAL 5, S.L.",
+      "registrationNumber": "03714",
+      "identificationNumber": "B95420428",
+      "address": "Lehendakari Aguirre, 129 Bajo Izda.",
+      "location": {
+        "postalCode": "48015",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.845",
+          "name": "Explotación electrónica por cuenta de terceros",
+          "_links": {
+            "self": {
+              "name": "Explotación electrónica por cuenta de terceros",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.845"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2008-12-04",
+      "certificateEndDate": "2009-05-10",
+      "object": "DIGITALIZACIÓN DE PYMES, ASESORÍA INFORMÁTICA Y TECNOLÓGICA DE PYMES, Y CONSULTORÍA, ANÁLISIS Y DESARROLLO DE SOCIEDADES MERCANTILES",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03714",
+      "_links": {
+        "self": {
+          "name": "DIGITAL 5, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/03714"
+        }
+      }
+    },
+    {
+      "name": "NEKAZAL IKERKETA ETA TEKNOLOGIA, S.A.",
+      "registrationNumber": "02678",
+      "identificationNumber": "A01051507",
+      "address": "GRANJA MODELO, S/N - ARKAUTE",
+      "location": {
+        "postalCode": "01192",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.843.9",
+          "name": "Otros servicios técnicos n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros servicios técnicos n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.9"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2008-12-03",
+      "certificateEndDate": "2009-04-10",
+      "object": "1) LA PLANIFICACIÓN, ESTABLECIMIENTO Y PRESTACIÓN DE TODA CLASE DE SERVICIOS EN RELACIÓN  CON EL SECTOR AGROALIMENTARIO, TANTO A EMPRESAS Y PARTICULARES COMO A INSTITUCIONES Y ENTIDADES PÚBLICAS, Y ESPECIALMENTE EN MATERIA DE CONTABILIDAD, GESTIÓN TÉCNICO-ECONÓMICA, COMERCIAL Y FINANCIERA Y ADMINISTRATIVA-ESTADÍSTICA.\r\n\r\n2) EL ASESORAMIENTO, ESTUDIO, INFORME, INVESTIGACIÓN, FORMACIÓN Y COORDINACIÓN EN RELACIÓN CON LAS ACTIVIDADES Y SERVICIOS SEÑALADOS EN EL NÚMERO ANTERIOR\r\n\r\n3) EN GENERAL, TODAS LAS ACTIVIDADES COMPLEMENTARIAS QUE SE DERIVEN O SEAN CONVENIENTES PARA EL DESARROLLO DEL OBJETO SOCIAL, DE CARÁCTER  TANTO INDUSTRIAL, COMERCIAL Y FINANCIERO, TANTO MOBILIARIAS  COMO INMOBILIARIAS, CON INCLUSIÓN DE LA PARTICIPACIÓN EN EMPRESAS Y ENTIDADES RELACIONADAS CON EL SECTOR AGROALIMENTARIO, TANTO EN ESPAÑA COMO EN EL EXTRANJERO",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/02678",
+      "_links": {
+        "self": {
+          "name": "NEKAZAL IKERKETA ETA TEKNOLOGIA, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/02678"
+        }
+      }
+    },
+    {
+      "name": "LIMPIEZAS ETXEGAR, S.L.",
+      "registrationNumber": "03700",
+      "identificationNumber": "0B20518890",
+      "address": "ALTAMIRA BIDEA, 5",
+      "location": {
+        "postalCode": "20180",
+        "municipality": "Oiartzun",
+        "county": "Gipuzkoa",
+        "municipalityId": "063",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.922.1",
+          "name": "Servicios de limpieza de interiores",
+          "_links": {
+            "self": {
+              "name": "Servicios de limpieza de interiores",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.922.1"
+            }
+          }
+        },
+        {
+          "id": "1.971.1",
+          "name": "Tinte, limpieza en seco, lavado y planchado de ropas",
+          "_links": {
+            "self": {
+              "name": "Tinte, limpieza en seco, lavado y planchado de ropas",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.971.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2008-12-02",
+      "certificateEndDate": "2009-05-27",
+      "object": "EN GENERAL EL NEGOCIO DE PRESTACIÓN DE SERVICIO DE LIMPIEZAS INDUSTRIALES DE BIENES INMUEBLES (FÁBRICAS, PABELLONES, EDIFICIOS Y CONSTRUCCIONES DE TODA ÍNDOLE, SOLARES, ETC ...) , TANTO DE PROPIEDAD PRIVADA COMO PÚBLICA",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03700",
+      "_links": {
+        "self": {
+          "name": "LIMPIEZAS ETXEGAR, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/03700"
+        }
+      }
+    },
+    {
+      "name": "INDARLANAK, S.L.",
+      "registrationNumber": "03747",
+      "identificationNumber": "B95517249",
+      "address": "CAMINO ZUBILETA, 25 - PAB. 20",
+      "location": {
+        "postalCode": "48903",
+        "municipality": "Barakaldo",
+        "county": "Bizkaia",
+        "municipalityId": "013",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.501.1",
+          "name": "Construcción completa, reparación y conservación de edificaciones",
+          "_links": {
+            "self": {
+              "name": "Construcción completa, reparación y conservación de edificaciones",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2008-12-02",
+      "certificateEndDate": "2009-03-16",
+      "object": "LA REALIZACIÓN DE TRABAJOS DE ALBAÑILERÍA, CONSTRUCCIÓN, PROMOCIÓN, REHABILITACIÓN Y REPARACIÓN, POR CUENTA PROPIA O AJENA, DE TODA CLASE DE OBRAS, URBANIZACIONES, EDIFICIOS Y CONSTRUCCIONES TATNO PÚBLICOS COMO PRIVADOS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03747",
+      "_links": {
+        "self": {
+          "name": "INDARLANAK, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/03747"
+        }
+      }
+    },
+    {
+      "name": "REISSWOLF BILBAO, S.L.",
+      "registrationNumber": "03752",
+      "identificationNumber": "B95540340",
+      "address": "POLÍGONO UGALDEGUREN ii. PARCELA 15. NAVE 8",
+      "location": {
+        "postalCode": "48170",
+        "municipality": "Zamudio",
+        "county": "Bizkaia",
+        "municipalityId": "905",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.849.9",
+          "name": "Otros servicios independientes n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros servicios independientes n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.849.9"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2008-12-02",
+      "certificateEndDate": "2009-05-11",
+      "object": "DESTRUCCIÓN CONFIDENCIAL DE DOCUMENTOS, ARCHIVOS Y DATOS TANTO EN SOPORTE AUTOMATIZADO COMO NO AUTOMATIZADO",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03752",
+      "_links": {
+        "self": {
+          "name": "REISSWOLF BILBAO, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/03752"
+        }
+      }
+    }
+  ]
+}

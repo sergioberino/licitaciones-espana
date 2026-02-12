@@ -1,0 +1,298 @@
+{
+  "totalItems": 9042,
+  "totalPages": 905,
+  "currentPage": 868,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "name": "IPAR ACISA, S.L.",
+      "registrationNumber": "04522",
+      "identificationNumber": "B20845236",
+      "address": "POLIG. IND. MARTIARTU, C/2P, NAVE 13",
+      "location": {
+        "postalCode": "48480",
+        "municipality": "Arrigorriaga",
+        "county": "Bizkaia",
+        "municipalityId": "011",
+        "countyId": "48"
+      },
+      "object": ".",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/04522",
+      "_links": {
+        "self": {
+          "name": "IPAR ACISA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/04522"
+        }
+      }
+    },
+    {
+      "name": "SOPEMEDIA, S.L.",
+      "registrationNumber": "04523",
+      "identificationNumber": "B95550216",
+      "address": "IBERROTA, 1-2º G",
+      "location": {
+        "postalCode": "48600",
+        "municipality": "Sopela",
+        "county": "Bizkaia",
+        "municipalityId": "085",
+        "countyId": "48"
+      },
+      "object": ".",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/04523",
+      "_links": {
+        "self": {
+          "name": "SOPEMEDIA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/04523"
+        }
+      }
+    },
+    {
+      "name": "SOUTHVISIONS SOLUTIONS, S.L.",
+      "registrationNumber": "04528",
+      "identificationNumber": "B20816732",
+      "address": "Foru Kalea, 11 - 3º D",
+      "location": {
+        "postalCode": "20280",
+        "municipality": "Hondarribia",
+        "county": "Gipuzkoa",
+        "municipalityId": "036",
+        "countyId": "20"
+      },
+      "object": ".",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/04528",
+      "_links": {
+        "self": {
+          "name": "SOUTHVISIONS SOLUTIONS, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/04528"
+        }
+      }
+    },
+    {
+      "name": "CONSTRUCCIONES FERNANDEZ DE NOGRARO, S.A.",
+      "registrationNumber": "04530",
+      "identificationNumber": "A01015379",
+      "address": "PRADO, 6-BAJO",
+      "location": {
+        "postalCode": "01005",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "object": ".",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/04530",
+      "_links": {
+        "self": {
+          "name": "CONSTRUCCIONES FERNANDEZ DE NOGRARO, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/04530"
+        }
+      }
+    },
+    {
+      "name": "PROMUEVE-HIRU SL",
+      "registrationNumber": "04536",
+      "identificationNumber": "B20942181",
+      "address": "P.E. ZUATZU, EDIF BIDASOA LOC 5 PB",
+      "location": {
+        "postalCode": "20018",
+        "municipality": "Donostia / San Sebastián",
+        "county": "Gipuzkoa",
+        "municipalityId": "069",
+        "countyId": "20"
+      },
+      "object": "Comunicación y publicidad, promoción y organización de eventos, y cuantas operaciones estén relacionadas",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/04536",
+      "_links": {
+        "self": {
+          "name": "PROMUEVE-HIRU SL",
+          "href": "https://api.euskadi.eus/procurements/companies/04536"
+        }
+      }
+    },
+    {
+      "name": "FIDENET COMUNICACIÓN, S.L.",
+      "registrationNumber": "04558",
+      "identificationNumber": "B20774188",
+      "address": "PORTUETXE, 61 2ºD",
+      "location": {
+        "postalCode": "20010",
+        "municipality": "Donostia / San Sebastián",
+        "county": "Gipuzkoa",
+        "municipalityId": "069",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.845",
+          "name": "Explotación electrónica por cuenta de terceros",
+          "_links": {
+            "self": {
+              "name": "Explotación electrónica por cuenta de terceros",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.845"
+            }
+          }
+        },
+        {
+          "id": "1.961.1",
+          "name": "Producción de películas cinematográficas (incluso vídeos)",
+          "_links": {
+            "self": {
+              "name": "Producción de películas cinematográficas (incluso vídeos)",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.961.1"
+            }
+          }
+        },
+        {
+          "id": "1.973.1",
+          "name": "Servicios fotográficos",
+          "_links": {
+            "self": {
+              "name": "Servicios fotográficos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.973.1"
+            }
+          }
+        }
+      ],
+      "object": "COMUNICACION Y MARKETING DIGITAL",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/04558",
+      "_links": {
+        "self": {
+          "name": "FIDENET COMUNICACIÓN, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/04558"
+        }
+      }
+    },
+    {
+      "name": "2ABERE ALBAITARIAK, S.L.P.",
+      "registrationNumber": "04560",
+      "identificationNumber": "B75012757",
+      "address": "C/ OLAKUA, Nº 15-B-5º IZDA",
+      "location": {
+        "postalCode": "20560",
+        "municipality": "Oñati",
+        "county": "Gipuzkoa",
+        "municipalityId": "059",
+        "countyId": "20"
+      },
+      "object": ".",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/04560",
+      "_links": {
+        "self": {
+          "name": "2ABERE ALBAITARIAK, S.L.P.",
+          "href": "https://api.euskadi.eus/procurements/companies/04560"
+        }
+      }
+    },
+    {
+      "name": "TELEDATA SPORT, S.L.",
+      "registrationNumber": "04564",
+      "identificationNumber": "B48829725",
+      "address": "POL.IND. COMPLEJO DE LA GENERAL, PAB. E-3",
+      "location": {
+        "postalCode": "48510",
+        "municipality": "Valle de Trápaga-Trapagaran",
+        "county": "Bizkaia",
+        "municipalityId": "080",
+        "countyId": "48"
+      },
+      "object": ".",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/04564",
+      "_links": {
+        "self": {
+          "name": "TELEDATA SPORT, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/04564"
+        }
+      }
+    },
+    {
+      "name": "ATERKI ISOLA, S.L.",
+      "registrationNumber": "04565",
+      "identificationNumber": "B20503579",
+      "address": "DISEMINADOS, 16. PAB. 4, 5 Y 6",
+      "location": {
+        "postalCode": "20230",
+        "municipality": "Legazpi",
+        "county": "Gipuzkoa",
+        "municipalityId": "051",
+        "countyId": "20"
+      },
+      "classification": [
+        {
+          "id": "O",
+          "name": "Obras",
+          "groups": [
+            {
+              "id": "C",
+              "name": "EDIFICACIONES",
+              "subgroups": [
+                {
+                  "id": "07",
+                  "name": "AISLAMIENTOS E IMPERMEABILIZACIONES",
+                  "categories": [
+                    {
+                      "id": "3",
+                      "name": "Desde 360.001 Hasta 840.000",
+                      "_links": {
+                        "self": {
+                          "name": "Desde 360.001 Hasta 840.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/O/categories/3"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "AISLAMIENTOS E IMPERMEABILIZACIONES",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/O/groups/C/subgroups/07"
+                    }
+                  }
+                }
+              ],
+              "_links": {
+                "self": {
+                  "name": "EDIFICACIONES",
+                  "href": "https://api.euskadi.eus/procurements/companies/types/O/groups/C"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Obras",
+              "href": "https://api.euskadi.eus/procurements/companies/types/O"
+            }
+          }
+        }
+      ],
+      "object": ".",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/04565",
+      "_links": {
+        "self": {
+          "name": "ATERKI ISOLA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/04565"
+        }
+      }
+    },
+    {
+      "name": "BINOVO IT HUMAN PROJETC, S.L.",
+      "registrationNumber": "04577",
+      "identificationNumber": "B20990602",
+      "address": "ASTIGARRAGA BIDEA, 2PLANTA 2 DERECHA",
+      "location": {
+        "postalCode": "20180",
+        "municipality": "Oiartzun",
+        "county": "Gipuzkoa",
+        "municipalityId": "063",
+        "countyId": "20"
+      },
+      "object": ".",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/04577",
+      "_links": {
+        "self": {
+          "name": "BINOVO IT HUMAN PROJETC, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/04577"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,458 @@
+{
+  "totalItems": 9042,
+  "totalPages": 905,
+  "currentPage": 702,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "name": "JOSE QUERALTO ROSAL, S.A.",
+      "registrationNumber": "03517",
+      "identificationNumber": "A41088493",
+      "address": "P.I.C.A. AVDA. DE LA INDUSTRIA, 49",
+      "location": {
+        "postalCode": "41007",
+        "municipality": "Sevilla",
+        "county": "Sevilla",
+        "municipalityId": "091",
+        "countyId": "41"
+      },
+      "economicActivities": [
+        {
+          "id": "1.619.2",
+          "name": "Venta al por mayor de aparatos e instrumentos médicos, ortopédicos, ópticos",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de aparatos e instrumentos médicos, ortopédicos, ópticos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.619.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2012-02-13",
+      "certificateEndDate": "2012-07-18",
+      "object": "LA VENTA AL POR MAYOR Y MENOR, ASÍ COMO ASISTIR A TODA CLASE DE CONCURSOS, DE MATERIAL MÉDICO EN GENERAL, MOBILIARIO CLÍNICO, INSTRUMENTAL QUIRÚRGICO, ARTÍCULOS DE ORTOPEDIA, ÓPTICA, CONTACTOLOGÍA, PERFUMERÍA, PRÓTESIS, ARTÍCULOS DE ESTETICIEN Y TODO CUANTO TENGA RELACIÓN CON ESTAS ACTIVIDADES, ASÍ COMO IMPORTACIONES Y EXPORTACIONES DE ESTE MATERIAL, ASÍ COMO LA INSTALACIÓN DE COCINAS, LAVANDERÍA INDUSTRIALES Y CÁMARAS FRIGORÍFICAS, ASÍ COMO TODO TIPO DE MOBILIARIO EN GENERAL Y DECORACIÓN DE INTERIORES",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03517",
+      "_links": {
+        "self": {
+          "name": "JOSE QUERALTO ROSAL, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/03517"
+        }
+      }
+    },
+    {
+      "name": "KAKUETA, S.L.",
+      "registrationNumber": "03759",
+      "identificationNumber": "B20967576",
+      "address": "C/ FERNANDO MÚGICA 11, 1º, OFC. C-D POLIG. BELARTZA",
+      "location": {
+        "postalCode": "20018",
+        "municipality": "Donostia / San Sebastián",
+        "county": "Gipuzkoa",
+        "municipalityId": "069",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.501.1",
+          "name": "Construcción completa, reparación y conservación de edificaciones",
+          "_links": {
+            "self": {
+              "name": "Construcción completa, reparación y conservación de edificaciones",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.1"
+            }
+          }
+        },
+        {
+          "id": "1.507",
+          "name": "Construcción, reparación y conservación de toda clase obras",
+          "_links": {
+            "self": {
+              "name": "Construcción, reparación y conservación de toda clase obras",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.507"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2012-02-13",
+      "certificateEndDate": "2012-08-03",
+      "object": "A) LA PROMOCIÓN, ELABORACIÓN Y DESARROLLO DE PROYECTOS DE URBANIZACIÓN Y EDIFICACIÓN; B) LA CONSTRUCCIÓN Y REHABILITACIÓN DE INMUEBLES O EDIFICIOS, BIEN PARA USOS RESIDENCIALES O PARA USOS COMERCIALES O INDUSTRIALES, EN MODALIDAD DE LIBRE, DE PROTECCIÓN OFICIAL O SOCIAL, O EN CUALQUIER OTRA FORMA ADMITIDA POR LAS LEYES EN VIGOR; C) LA PROMOCIÓN, VENTA, GRAVÁMEN O EXPLOTACIÓN EN RÉGIMEN DE ARRENDAMIENTO (NO FINANCIERO), DE EDIFICIOS, BIEN COMPLETA O POR PISOS O LOCALES, PROPIOS DE LA SOCIEDAD  O DE TERCEROS; D) LA COMPRAVENTA DE BIENES INMUEBLES",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03759",
+      "_links": {
+        "self": {
+          "name": "KAKUETA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/03759"
+        }
+      }
+    },
+    {
+      "name": "INVERSIONES GORRIKO, S.L.",
+      "registrationNumber": "03847",
+      "identificationNumber": "B48967152",
+      "address": "POL. IND. GARDOTZA",
+      "location": {
+        "postalCode": "48710",
+        "municipality": "Berriatua",
+        "county": "Bizkaia",
+        "municipalityId": "018",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.501.1",
+          "name": "Construcción completa, reparación y conservación de edificaciones",
+          "_links": {
+            "self": {
+              "name": "Construcción completa, reparación y conservación de edificaciones",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.1"
+            }
+          }
+        },
+        {
+          "id": "1.501.2",
+          "name": "Construcción completa, reparación y conservación obras civiles",
+          "_links": {
+            "self": {
+              "name": "Construcción completa, reparación y conservación obras civiles",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.2"
+            }
+          }
+        },
+        {
+          "id": "1.833.2",
+          "name": "Promoción de edificaciones",
+          "_links": {
+            "self": {
+              "name": "Promoción de edificaciones",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.833.2"
+            }
+          }
+        },
+        {
+          "id": "1.861.2",
+          "name": "Alquiler de locales industriales y otros alquileres n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Alquiler de locales industriales y otros alquileres n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.861.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2012-02-13",
+      "certificateEndDate": "2012-07-10",
+      "object": "A) LA ADQUISICIÓN, TENENCIA Y ENAJENACIÓN POR CUALQUIER TÍTULO, DE SOLARES, EDIFICIOS Y FINCAS RÚSTICAS  Y URBANAS EN GENERAL; LA CONSTRUCCIÓN, ALQUILER, ARRENDAMIENTO O CESIÓN DE INMUEBLES; LA ADMINISTRACIÓN DE FINCAS URBANAS PERTENECIENTES A TERCERAS PERSONAS O ENTIDADES; Y LA TENENCIA Y POSESIÓN DE TODA CLASE DE PATRIMONIOS, BIENES, DERECHOS, ACCIONES O PARTICIPACIONES EN NEGOCIOS. B) LA ELABORACIÓN DE TODO TIPO DE PROYECTOS DE INGENIERÍA Y ARQUITECTURA, ASÍ COMO LA SUPERVISIÓN, DIRECCIÓN Y ASESORAMIENTO EN LA EJECUCIÓN DE TODO TIPO DE OBRAS Y CONSTRUCCIONES, TANTO PÚBLICAS COMO PRIVADAS. C) ALQUILER DE EQUIPOS DE CONSTRUCCIÓN, DEMOLICIÓN, PERFORACIONES, SONDEOS O OMOVIMIENTO DE TIERRAS, DOTADOS DE OPERARIO. D) LA CONSTITUCIÓN, GESTIÓN, SUBCONTRATACIÓN, EJECUCIÓN Y PROMOCIÓN DE TODA CLASE DE OBRAS Y CONSTRUCCIONES PÚBLICAS O PRIVADAS DESTINADAS A LA INDUSTRIA, SERVICIOS O VIVIENDA; E) MANTENIMIENTO, REHABILITACIÓN Y ACONDICIONAMIENTO DE EDIFICIOS. F) PROMOCIÓN, GESTIÓN Y EJECUCIÓN DE TODO TIPO DE NEGOCIOS INMOBILIARIOS, TANTO EN SU VERTIENTE URBANÍSTICA COMO CONSTRUCTORA, PARA SU EXPLOTACIÓN, VENTA, ALQUILER, CESIÓN O INTERMEDIACIÓN, INCLUYENDO TODO TIPO DE INMUEBLES, YA SEAN FINCAS RÚSTICAS O URBANAS EDIFICADAS O SIN EDIFICAR, PISOS, GARAJES O LOCALES; G) TRANSPORTE DE MERCANCÍAS POR MEDIOS PROPIOS O SUBCONTRATADOS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03847",
+      "_links": {
+        "self": {
+          "name": "INVERSIONES GORRIKO, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/03847"
+        }
+      }
+    },
+    {
+      "name": "LABORATORIOS SALVAT, S.A.",
+      "registrationNumber": "03682",
+      "identificationNumber": "A08095762",
+      "address": "C/ GALLO, 30-36",
+      "location": {
+        "postalCode": "08950",
+        "municipality": "Barcelona",
+        "county": "Barcelona",
+        "municipalityId": "019",
+        "countyId": "08"
+      },
+      "economicActivities": [
+        {
+          "id": "1.254.2",
+          "name": "Fabricación de especialidades y otros productos farmacéuticos",
+          "_links": {
+            "self": {
+              "name": "Fabricación de especialidades y otros productos farmacéuticos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.254.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2012-02-10",
+      "certificateEndDate": "2012-07-23",
+      "object": "LA EXPLOTACIÓN DE LA INDUSTRIA DE LABORATORIO QUÍMICO FARMACEÚTICO",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03682",
+      "_links": {
+        "self": {
+          "name": "LABORATORIOS SALVAT, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/03682"
+        }
+      }
+    },
+    {
+      "name": "NEWCORT FINANCIAL ESPAÑA, S.A.",
+      "registrationNumber": "03933",
+      "identificationNumber": "A83086991",
+      "address": "AVDA EUROPA Nº 19-EDIF. III-PL 2ª-OF. A",
+      "location": {
+        "postalCode": "28224",
+        "municipality": "Pozuelo de Alarcón",
+        "county": "Madrid",
+        "municipalityId": "115",
+        "countyId": "28"
+      },
+      "economicActivities": [
+        {
+          "id": "1.853",
+          "name": "Alquiler de maquinaria y equipo contable de oficina y cálculo",
+          "_links": {
+            "self": {
+              "name": "Alquiler de maquinaria y equipo contable de oficina y cálculo",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.853"
+            }
+          }
+        },
+        {
+          "id": "1.859",
+          "name": "Alquiler de otros bienes muebles n.c.o.p. (sin personal permanente)",
+          "_links": {
+            "self": {
+              "name": "Alquiler de otros bienes muebles n.c.o.p. (sin personal permanente)",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.859"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2012-02-08",
+      "certificateEndDate": "2012-07-10",
+      "object": "LA COMPRA, VENTA Y ARRENDAMIENTO DE BIENES DE EQUIPO, INFORMÁTICOS, APARATOS DE TELECOMUNICACIONES, EQUIPOS MÉDICOS Y APARATOS DE ALTA TECNOLOGÍA INDUSTRIAL",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03933",
+      "_links": {
+        "self": {
+          "name": "NEWCORT FINANCIAL ESPAÑA, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/03933"
+        }
+      }
+    },
+    {
+      "name": "EGUNBIDE, S.L.",
+      "registrationNumber": "01480",
+      "identificationNumber": "B01135508",
+      "address": "C/ VICENTE GOIKOETXEA, Nº 1 - 1º OFIC. 4",
+      "location": {
+        "postalCode": "01008",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.849.9",
+          "name": "Otros servicios independientes n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros servicios independientes n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.849.9"
+            }
+          }
+        },
+        {
+          "id": "1.922",
+          "name": "Servicios de limpieza",
+          "_links": {
+            "self": {
+              "name": "Servicios de limpieza",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.922"
+            }
+          }
+        },
+        {
+          "id": "1.989.2",
+          "name": "Servicios de organización de congresos, asambleas y similares",
+          "_links": {
+            "self": {
+              "name": "Servicios de organización de congresos, asambleas y similares",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.989.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2012-02-07",
+      "certificateEndDate": "2012-07-11",
+      "object": "LA ORGANIZACIÓN, CONTRATACIÓN Y COMERCIALIZACIÓN DE TODA CLASE DE ASAMBLEAS, CONGRESOS, EXPOSICIONES, Y EVENTOS A ENTIDADES PÚBLICAS Y PRIVADAS. LA  GESTIÓN INTEGRAL Y PRESTACIÓN DE SERVICIOS CULTURALES, DEPORTIVOS, SOCIOCULTURALES, DE OCIO, TIEMPO LIBRE, LIMPIEZA E HIGIENIZACIÓN, JARDINERÍA, INFORMÁTICA, ADMINISTRACIÓN Y ADMINISTRATIVOS, HOSTELERÍA Y TURÍSTICO, CONTROL DE ACCESOS, MANTENIMIENTO PREVENTIVO DE: MAQUINARIA Y EQUIPOS E INMUEBLES Y EDIFICIOS, SISTEMAS DE IMPRESIÓN, SONIDO IMAGEN, AUDIOVISUAL Y DE COMUNICACIÓN, DE DISTRIBUCIÓN DE CORRESPONDENCIA, PAQUETERÍA, MENSAJERÍA Y DISTRIBUCIÓN DE MERCANCÍAS Y PRODUCTOS EN GENERAL. REALIZACIÓN DE TRADUCCIONES TÉCNICAS: SIMULTÁNEAS, CONSECUTIVAS Y ESCRITAS. DISEÑO, PUBLICACIÓN Y DISTRIBUCIÓN DE MATERIALES PUBLICITARIOS, IDENTIDAD CORPORATIVA, EDICIÓN, PJBLICACIÓN Y DISTRIBUCIÓN DE PUBLICACIONES TÉCNICAS (INFORMES, LIBROS Y REVISTAS), FOLLETOS DIVULGATIVOS  EN DIVERSOS MATERIALES Y SOPORTES INCLUSO ELECTRÓNICOS E INTERNET...\r\nREALIZACIÓN DE ACCIONES FORMATIVAS. SELECCIÓN, COORDINACIÓN Y CONTRATACIÓN  DE RECURSOS HUMANOS PARA LA REALIZACIÓN DE LOS SERVICIOS ANTES MENCIONADOS.\r\nELABORACIÓN DE ESTUDIOS DE DIAGNÓSTICO. APLICACIÓN DE SISTEMAS DE CALIDAD Y LOS DERIVADOS DE LOS ESTUDIOS DE DIAGNÓSTICO.\r\nLA ADQUISICIÓN, COMERCIALIZACIÓN E INSTALACIÓN, IMPORTACIÓN, EXPORTACIÓN E INSTALACIÓN DE EQUIPOS, SISTEMAS, PROCESOS Y MATERIALES EN LAS ÁREAS INDICADAS, INCLUIDAS LA PUBLICACIÓN Y COMPRA VENTA EN INTERNET.\r\nY EL DESARROLLO DE ACTIVIDADES QUE INCIDAN EN EL ÁMBITO DEL FOMENTO, DESARROLLO Y PERFECCIONAMIENTO DE ACCIONES EMPRESARIALES, MEDIANTE LA PRESTACIÓN DIRECTA, LA CONTRATACIÓN DIRECTA, INDIRECTA, O FRANQUICIA DE OTROS SERVICIOS, PRODUCTOS, PROFESIONES Y EMPRESAS, Y MEDIANTE LA PARTICIPACIÓN EN OTRAS SOCIEDADES CON OBJETO ANÁLOGO, QUE COMPLEMENTEN LA GESTIÓN EN LAS MENCIONADAS ÁREAS DE LA ACTIVIDAD EMPRESARIAL.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/01480",
+      "_links": {
+        "self": {
+          "name": "EGUNBIDE, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/01480"
+        }
+      }
+    },
+    {
+      "name": "PAGOA CONSULTORES AMBIENTALES, S.L.",
+      "registrationNumber": "02890",
+      "identificationNumber": "B01334325",
+      "address": "DUBLIN, Nº 2 - OFICINA 23",
+      "location": {
+        "postalCode": "01002",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.849.9",
+          "name": "Otros servicios independientes n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros servicios independientes n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.849.9"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2012-02-06",
+      "certificateEndDate": "2012-07-13",
+      "object": "A) DAR SERVICIOS DE CONSULTORÍA MEDIOAMBIENTAL, DE MEDIO FÍSICO Y DE MEDIO SOCIAL.\r\n\r\nB) EJECUCIÓN DE PROYECTOS MEDIOAMBIENTALES, DE MEDIO FÍSICO Y DE MEDIO SOCIAL.\r\n\r\nC) SEGUIMIENTO Y VIGILANCIA DE PROYECTOS MEDIOAMBIENTALES, DE MEDIO FÍSICO Y DE MEDIO SOCIAL.\r\n\r\nD) ENSEÑANZA EN ESTABLECIMIENTO NO PERMANENTE  ",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/02890",
+      "_links": {
+        "self": {
+          "name": "PAGOA CONSULTORES AMBIENTALES, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/02890"
+        }
+      }
+    },
+    {
+      "name": "LABORATORIOS LETI, S.L.",
+      "registrationNumber": "04677",
+      "identificationNumber": "B78152725",
+      "address": "C/ DEL SOL, Nº 5",
+      "location": {
+        "postalCode": "28760",
+        "municipality": "Tres Cantos",
+        "county": "Madrid",
+        "municipalityId": "903",
+        "countyId": "28"
+      },
+      "economicActivities": [
+        {
+          "id": "1.254.2",
+          "name": "Fabricación de especialidades y otros productos farmacéuticos",
+          "_links": {
+            "self": {
+              "name": "Fabricación de especialidades y otros productos farmacéuticos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.254.2"
+            }
+          }
+        },
+        {
+          "id": "1.614.1",
+          "name": "Venta al por mayor de productos farmacéuticos y medicamentos",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de productos farmacéuticos y medicamentos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.614.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2012-02-06",
+      "certificateEndDate": "2012-06-20",
+      "object": "EL DESARROLLO, PRODUCCIÓN, ENVASADO, IMPORTACIÓN, EXPORTACIÓN Y VENTA DE TODA CLASE DE PRODUCTOS BIOLÓGICOS Y QUÍMICOS PARA DIAGNÓSTICO Y TRATAMIENTO EN LOS CAMPOS FARMACÉUTICO, DIETÉTICO, COSMÉTICO Y VETERINARIO",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/04677",
+      "_links": {
+        "self": {
+          "name": "LABORATORIOS LETI, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/04677"
+        }
+      }
+    },
+    {
+      "name": "ARALDI, S.L.",
+      "registrationNumber": "00126",
+      "identificationNumber": "B20063061",
+      "address": "Pº DONOSTIA, Nº 90- 1º ",
+      "location": {
+        "postalCode": "20115",
+        "municipality": "Astigarraga",
+        "county": "Gipuzkoa",
+        "municipalityId": "903",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.845",
+          "name": "Explotación electrónica por cuenta de terceros",
+          "_links": {
+            "self": {
+              "name": "Explotación electrónica por cuenta de terceros",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.845"
+            }
+          }
+        },
+        {
+          "id": "1.846",
+          "name": "Empresas de estudios de mercado",
+          "_links": {
+            "self": {
+              "name": "Empresas de estudios de mercado",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.846"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2012-02-01",
+      "certificateEndDate": "2012-07-02",
+      "object": "REALIZAR LAS OPERACIONES Y SERVICIOS PROPIOS DE LA EMPRESA DE CONSULTA QUE SE CONCRETAN EN EL DISEÑO, IMPLANTACIÓN Y REALIZACIÓN DE TRABAJOS E INVESTIGACIÓN EN LOS ÁMBITOS ESTADÍSTICO, INFORMÁTICO, ECONÓMICO, ORGANIZATIVO, DEMOGRÁFICO-SOCIAL, DE GESTIÓN Y FORMACIÓN.\r\nEN EL ÁMBITO ESTADÍSTICO REALIZAR UN COMPENDIO DE TAREAS: DISEÑO Y OBTENCIÓN DE LA MUESTRA; DISEÑO, TRATAMIENTO DE TEXTOS Y EDICIÓN DE LOS CUESTIONARIOS, HOJAS DE RUTA Y RESTO DE DOCUMENTOS DEL TRABAJO DE CAMPO; DEFINICIÓN DE PROGRAMAS INFORMÁTICOS DE GESTIÓN Y EJECUCIÓN DE LAS TAREAS; SELECCIÓN, FORMACIÓN Y ADIESTRAMIENTO DEL EQUIPO; RECOGIDA DE LA INFORMACIÓN: REALIZACIÓN DE ENCUESTAS, TOMAS DE DATOS Y OTROS SERVICIOS ANÁLOGOS, TANTO POR ENTREVISTA PERSONAL, TELEFÓNICA O POR CUALQUIER OTRO SISTEMA DE COMUNICACIÓN EN DOMICILIOS PARTICULARES, EMPRESAS O EN ESTABLECIMIENTOS PRODUCTIVOS, MEDIOS DE TRANSPORTE Y VÍAS PÚBLICAS; TRATAMIENTO INFORMÁTICO DE LA INFORMACIÓN: GRABACIÓN: INTRODUCCIÓN DE DATOS Y PUESTA EN SOPORTE INFORMÁTICO, CODIFICACIÓN, VALIDACIÓN Y DEPURACIÓN E IMPUTACIÓN ESTADÍSTICA; EXPLOTACIÓN DE LA INFORMACIÓN: TABULACIÓN, GENERACIÓN DE VARIABLES E INFERENCIA ESTADÍSTICA, Y POR ÚLTIMO, EL ANÁLISIS DE LOS DATOS CON CUALQUIER MÉTODO ESTÍSTICO-MATEMÁTICO Y LA GENERACIÓN DE INFORMES EN TODAS SUS FASES.\r\nEN EL ÁMBITO INFORMÁTICO REALIZAR LA DEFINICIÓN Y DESARROLLO DE PROGRAMAS Y APLICACIONES, SU IMPLANTACIÓN, FORMACIÓN DE USUARIOS, ASÍ COMO SU POSTERIOR MANTENIMIENTO",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/00126",
+      "_links": {
+        "self": {
+          "name": "ARALDI, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/00126"
+        }
+      }
+    },
+    {
+      "name": "ALAVESA DE MAQUINARIA Y OBRAS, S.L.",
+      "registrationNumber": "02421",
+      "identificationNumber": "B01031145",
+      "address": "C/ URRUNDI Nº14",
+      "location": {
+        "postalCode": "01013",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.501.2",
+          "name": "Construcción completa, reparación y conservación obras civiles",
+          "_links": {
+            "self": {
+              "name": "Construcción completa, reparación y conservación obras civiles",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.2"
+            }
+          }
+        },
+        {
+          "id": "1.507",
+          "name": "Construcción, reparación y conservación de toda clase obras",
+          "_links": {
+            "self": {
+              "name": "Construcción, reparación y conservación de toda clase obras",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.507"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2012-02-01",
+      "certificateEndDate": "2012-07-23",
+      "object": "EL ALQUILER DE MAQUINARIA DE CONSTRUCCIÓN Y OBRAS PÚBLICAS, LA CONTRATACIÓN, REALIZACIÓN Y EJECUCIÓN DE TODA CLASE DE OBRAS DE URBANIZACIÓN, SANEAMIENTO, ABASTECIMIENTO DE AGUAS, EXCAVACIONES, MOVIMIENTO DE TIERRAS Y EXPLOTACIÓN DE CANTERAS, BIEN POR CUENTA PROPIA O DE TERCEROS, SEAN PERSONAS PRIVADAS U ORGANISMOS PÚBLICO, PUDIENDO ACTUAR COMO PROPIETARIOA, CONTRATISTA O SUBCONTRATISTA. LA COMPRA-VENTA DE TERRENOS E INMUEBLES DE TODO TIPO. LA PROMOCIÓN, CONSTRUCCIÓN Y VENTA DE VIVIENDAS, LOCALES Y EDIFICACIONES DE TODAS CLASES  ",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/02421",
+      "_links": {
+        "self": {
+          "name": "ALAVESA DE MAQUINARIA Y OBRAS, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/02421"
+        }
+      }
+    }
+  ]
+}

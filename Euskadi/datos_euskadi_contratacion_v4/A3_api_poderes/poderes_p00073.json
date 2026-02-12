@@ -1,0 +1,522 @@
+{
+  "totalItems": 919,
+  "totalPages": 92,
+  "currentPage": 73,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "id": 265,
+      "identificationNumber": "G20816765",
+      "name": "Fundación Ficoba",
+      "scope": "GIPUZKOA",
+      "address": "Iparralde Etorbidea 43. 20302 Irun (Gipuzkoa)",
+      "webPage": "http://www.ficoba.org",
+      "publicationDate": "2019-10-03",
+      "mainActivity": "Asuntos económicos y financieros",
+      "codNUTS": "ES212",
+      "entities": [
+        {
+          "id": 713,
+          "name": "Fundación Ficoba ",
+          "orgs": [
+            {
+              "id": 912134,
+              "name": "Patronato de la Fundación Ficoba",
+              "_links": {
+                "self": {
+                  "name": "Patronato de la Fundación Ficoba",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/265/entities/713/orgs/912134"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Fundación Ficoba ",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/265/entities/713"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder265/es_doc/es_arch_poder265.html",
+      "_links": {
+        "self": {
+          "name": "Fundación Ficoba",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/265"
+        }
+      }
+    },
+    {
+      "id": 267,
+      "identificationNumber": "G20047494",
+      "name": "Fundación Zorroaga",
+      "scope": "GIPUZKOA",
+      "address": "Zorroaga gaina, 1. 20014 Donostia-San Sebastián (Gipuzkoa)",
+      "webPage": "http://www.zorroaga.com",
+      "publicationDate": "2019-10-03",
+      "mainActivity": "Protección social",
+      "codNUTS": "ES212",
+      "entities": [
+        {
+          "id": 715,
+          "name": "Fundación Zorroaga",
+          "orgs": [
+            {
+              "id": 912137,
+              "name": "Junta del Patronato",
+              "_links": {
+                "self": {
+                  "name": "Junta del Patronato",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/267/entities/715/orgs/912137"
+                }
+              }
+            },
+            {
+              "id": 912136,
+              "name": "Director",
+              "_links": {
+                "self": {
+                  "name": "Director",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/267/entities/715/orgs/912136"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Fundación Zorroaga",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/267/entities/715"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder267/es_doc/es_arch_poder267.html",
+      "_links": {
+        "self": {
+          "name": "Fundación Zorroaga",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/267"
+        }
+      }
+    },
+    {
+      "id": 272,
+      "identificationNumber": "A20783023",
+      "name": "BIDEGI Agencia Guipuzcoana de Infraestructuras",
+      "scope": "GIPUZKOA",
+      "address": "Asti auzoa, nº 631-A. 20800 Zarautz (Gipuzkoa)",
+      "webPage": "http://www.bidegi.eus",
+      "publicationDate": "2019-10-03",
+      "mainActivity": "Otra actividad",
+      "alternativeActivity": "Transportes",
+      "codNUTS": "ES212",
+      "entities": [
+        {
+          "id": 720,
+          "name": "BIDEGI, S.A.",
+          "orgs": [
+            {
+              "id": 912147,
+              "name": "Consejo de Administración ",
+              "_links": {
+                "self": {
+                  "name": "Consejo de Administración ",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/272/entities/720/orgs/912147"
+                }
+              }
+            },
+            {
+              "id": 912148,
+              "name": "Director General",
+              "_links": {
+                "self": {
+                  "name": "Director General",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/272/entities/720/orgs/912148"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "BIDEGI, S.A.",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/272/entities/720"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder272/es_doc/es_arch_poder272.html",
+      "_links": {
+        "self": {
+          "name": "BIDEGI Agencia Guipuzcoana de Infraestructuras",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/272"
+        }
+      }
+    },
+    {
+      "id": 280,
+      "identificationNumber": "P2008900I",
+      "name": "Ayuntamiento de Ezkio",
+      "scope": "GIPUZKOA",
+      "address": "Anduaga etxea. 20709 Ezkio (Gipuzkoa)",
+      "webPage": "http://www.ezkio.eus ",
+      "publicationDate": "2019-10-03",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES212",
+      "entities": [
+        {
+          "id": 728,
+          "name": "Ayuntamiento de Ezkio",
+          "orgs": [
+            {
+              "id": 912162,
+              "name": "Alcalde",
+              "_links": {
+                "self": {
+                  "name": "Alcalde",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/280/entities/728/orgs/912162"
+                }
+              }
+            },
+            {
+              "id": 912163,
+              "name": "Pleno",
+              "_links": {
+                "self": {
+                  "name": "Pleno",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/280/entities/728/orgs/912163"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Ayuntamiento de Ezkio",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/280/entities/728"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder280/es_doc/es_arch_poder280.html",
+      "_links": {
+        "self": {
+          "name": "Ayuntamiento de Ezkio",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/280"
+        }
+      }
+    },
+    {
+      "id": 314,
+      "identificationNumber": "A20003737",
+      "name": "Compañía del Tranvía de San Sebastián, S.A.U.",
+      "scope": "GIPUZKOA",
+      "address": "Fernando Sasiain 7, 20015 Donostia/San Sebastián (Gipuzkoa)",
+      "webPage": "http://www.dbus.eus",
+      "publicationDate": "2019-10-03",
+      "mainActivity": "Otra actividad",
+      "alternativeActivity": "Transportes",
+      "codNUTS": "ES212",
+      "CPV": [
+        {
+          "name": "Servicios de transporte por carretera"
+        }
+      ],
+      "entities": [
+        {
+          "id": 763,
+          "name": "Compañía del Tranvía de San Sebastián, S.A.U.",
+          "orgs": [
+            {
+              "id": 912230,
+              "name": "Director",
+              "_links": {
+                "self": {
+                  "name": "Director",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/314/entities/763/orgs/912230"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Compañía del Tranvía de San Sebastián, S.A.U.",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/314/entities/763"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder314/es_doc/es_arch_poder314.html",
+      "_links": {
+        "self": {
+          "name": "Compañía del Tranvía de San Sebastián, S.A.U.",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/314"
+        },
+        "contractingAuthorities": [
+          {
+            "name": "Ayuntamiento de Donostia/San Sebastián",
+            "href": "https://api.euskadi.eus/procurements/contracting-authorities/16941"
+          }
+        ]
+      }
+    },
+    {
+      "id": 316,
+      "identificationNumber": "Q2000539C",
+      "name": "Mancomunidad de Sasieta",
+      "scope": "GIPUZKOA",
+      "address": "Iturralde-txikiko industrialdea, 3-2º piso. Barrio Salbatore, s/n. 20200 Beasain (Gipuzkoa)",
+      "webPage": "http://www.sasieta.eus",
+      "publicationDate": "2019-10-03",
+      "mainActivity": "Medio ambiente",
+      "codNUTS": "ES212",
+      "entities": [
+        {
+          "id": 765,
+          "name": "Mancomunidad Sasieta",
+          "orgs": [
+            {
+              "id": 912233,
+              "name": "Presidente",
+              "_links": {
+                "self": {
+                  "name": "Presidente",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/316/entities/765/orgs/912233"
+                }
+              }
+            },
+            {
+              "id": 912234,
+              "name": "Junta Rectora",
+              "_links": {
+                "self": {
+                  "name": "Junta Rectora",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/316/entities/765/orgs/912234"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Mancomunidad Sasieta",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/316/entities/765"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder316/es_doc/es_arch_poder316.html",
+      "_links": {
+        "self": {
+          "name": "Mancomunidad de Sasieta",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/316"
+        }
+      }
+    },
+    {
+      "id": 317,
+      "identificationNumber": "P2003400E",
+      "name": "Ayuntamiento de Elgeta",
+      "scope": "GIPUZKOA",
+      "address": "Mendizaleen plaza, 1. 20690.- Elgeta (Gipuzkoa)",
+      "webPage": "http://www.elgeta.eus",
+      "publicationDate": "2019-10-03",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES212",
+      "entities": [
+        {
+          "id": 766,
+          "name": "Ayuntamiento de Elgeta",
+          "orgs": [
+            {
+              "id": 912235,
+              "name": "Alcaldía",
+              "_links": {
+                "self": {
+                  "name": "Alcaldía",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/317/entities/766/orgs/912235"
+                }
+              }
+            },
+            {
+              "id": 912236,
+              "name": "Pleno",
+              "_links": {
+                "self": {
+                  "name": "Pleno",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/317/entities/766/orgs/912236"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Ayuntamiento de Elgeta",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/317/entities/766"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder317/es_doc/es_arch_poder317.html",
+      "_links": {
+        "self": {
+          "name": "Ayuntamiento de Elgeta",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/317"
+        }
+      }
+    },
+    {
+      "id": 328,
+      "identificationNumber": "A20321931",
+      "name": "Etorlur Gipuzkoako Lurra S.A.",
+      "scope": "GIPUZKOA",
+      "address": "Polígono Ibaiondo, 27 1ªplanta. 20120 Hernani (Gipuzkoa)",
+      "webPage": "http://www.etorlur.eus",
+      "publicationDate": "2019-10-03",
+      "mainActivity": "Otra actividad",
+      "alternativeActivity": "Promoción empresarial",
+      "codNUTS": "ES212",
+      "entities": [
+        {
+          "id": 779,
+          "name": "Etorlur Gipuzkoako Lurra S.A.",
+          "orgs": [
+            {
+              "id": 912737,
+              "name": "Director General-Gerente y Presidente del Consejo de Administración",
+              "_links": {
+                "self": {
+                  "name": "Director General-Gerente y Presidente del Consejo de Administración",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/328/entities/779/orgs/912737"
+                }
+              }
+            },
+            {
+              "id": 912257,
+              "name": "Director General-Gerente y Consejo de Administración",
+              "_links": {
+                "self": {
+                  "name": "Director General-Gerente y Consejo de Administración",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/328/entities/779/orgs/912257"
+                }
+              }
+            },
+            {
+              "id": 912256,
+              "name": "Director General-Gerente",
+              "_links": {
+                "self": {
+                  "name": "Director General-Gerente",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/328/entities/779/orgs/912256"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Etorlur Gipuzkoako Lurra S.A.",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/328/entities/779"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder328/es_doc/es_arch_poder328.html",
+      "_links": {
+        "self": {
+          "name": "Etorlur Gipuzkoako Lurra S.A.",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/328"
+        }
+      }
+    },
+    {
+      "id": 336,
+      "identificationNumber": "P2000016B",
+      "name": "Mancomunidad de Urola Erdia",
+      "scope": "GIPUZKOA",
+      "address": "Enparantza Nagusia, 5. 20730 Azpeitia (Gipuzkoa)",
+      "webPage": "http://www.urolaerdia.eus",
+      "publicationDate": "2019-10-03",
+      "mainActivity": "Medio ambiente",
+      "codNUTS": "ES212",
+      "entities": [
+        {
+          "id": 787,
+          "name": "Mancomunidad Urola Erdia",
+          "orgs": [
+            {
+              "id": 912270,
+              "name": "Presidente",
+              "_links": {
+                "self": {
+                  "name": "Presidente",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/336/entities/787/orgs/912270"
+                }
+              }
+            },
+            {
+              "id": 912271,
+              "name": "Asamblea general",
+              "_links": {
+                "self": {
+                  "name": "Asamblea general",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/336/entities/787/orgs/912271"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Mancomunidad Urola Erdia",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/336/entities/787"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder336/es_doc/es_arch_poder336.html",
+      "_links": {
+        "self": {
+          "name": "Mancomunidad de Urola Erdia",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/336"
+        }
+      }
+    },
+    {
+      "id": 351,
+      "identificationNumber": "G20607156",
+      "name": "Fundación Zerain Dezagun",
+      "scope": "GIPUZKOA",
+      "address": "Zerain gunea, 1 (Ostatu plaza). 20214 Zerain (Gipuzkoa)",
+      "webPage": "http://www.zerain.eus",
+      "publicationDate": "2019-10-03",
+      "mainActivity": "Ocio, cultura y religión",
+      "codNUTS": "ES212",
+      "entities": [
+        {
+          "id": 803,
+          "name": "Fundación Zerain Dezagun",
+          "orgs": [
+            {
+              "id": 912300,
+              "name": "Patronato",
+              "_links": {
+                "self": {
+                  "name": "Patronato",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/351/entities/803/orgs/912300"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Fundación Zerain Dezagun",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/351/entities/803"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder351/es_doc/es_arch_poder351.html",
+      "_links": {
+        "self": {
+          "name": "Fundación Zerain Dezagun",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/351"
+        }
+      }
+    }
+  ]
+}

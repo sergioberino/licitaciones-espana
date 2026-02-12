@@ -1,0 +1,398 @@
+{
+  "totalItems": 9042,
+  "totalPages": 905,
+  "currentPage": 599,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "name": "TRANSPORTES MIJANGOS SL",
+      "registrationNumber": "06471",
+      "identificationNumber": "B48303697",
+      "address": "POL. TORRELARRAGOITI, PAR 8 A, NAV 12",
+      "location": {
+        "postalCode": "48170",
+        "municipality": "Zamudio",
+        "county": "Bizkaia",
+        "municipalityId": "905",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.722",
+          "name": "Transporte de mercancías por carretera",
+          "_links": {
+            "self": {
+              "name": "Transporte de mercancías por carretera",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.722"
+            }
+          }
+        },
+        {
+          "id": "1.756",
+          "name": "Intermediarios del transporte",
+          "_links": {
+            "self": {
+              "name": "Intermediarios del transporte",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.756"
+            }
+          }
+        },
+        {
+          "id": "1.849.5",
+          "name": "Servicios de recadería y reparto y manipulación de correspondencia",
+          "_links": {
+            "self": {
+              "name": "Servicios de recadería y reparto y manipulación de correspondencia",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.849.5"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2019-09-18",
+      "certificateEndDate": "2020-01-23",
+      "object": "LOS SERVICIOS DE MENSAJERÍA, RECADERÍA Y REPARTO. ASÍ COMO ACTIVIDADES LOGÍSTICAS, AUXILIARES Y COMPLEMENTARIAS DEL TRANSPORTE Y, EL TRANSPORTE DE MERCANCÍAS DE TODO TIPO, PAQUETERÍA Y CARTAS, TRANSPORTE URGENTE",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06471",
+      "_links": {
+        "self": {
+          "name": "TRANSPORTES MIJANGOS SL",
+          "href": "https://api.euskadi.eus/procurements/companies/06471"
+        }
+      }
+    },
+    {
+      "name": "LOTU SERVICIOS INTEGRALES DE MANTENIMIENTO, S.L.",
+      "registrationNumber": "04973",
+      "identificationNumber": "B95650800",
+      "address": "Edificio INBISA, Avda. Amaia, 2 - Ofic. 2I2",
+      "location": {
+        "postalCode": "48940",
+        "municipality": "Leioa",
+        "county": "Bizkaia",
+        "municipalityId": "054",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.501.1",
+          "name": "Construcción completa, reparación y conservación de edificaciones",
+          "_links": {
+            "self": {
+              "name": "Construcción completa, reparación y conservación de edificaciones",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.1"
+            }
+          }
+        },
+        {
+          "id": "1.922",
+          "name": "Servicios de limpieza",
+          "_links": {
+            "self": {
+              "name": "Servicios de limpieza",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.922"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2019-09-17",
+      "certificateEndDate": "2020-03-02",
+      "object": "LA PRESTACIÓN DE SERVICIOS DE LIMPIEZA Y MANTENIMIENTO INTEGRAL DE EDIFICIOS, LOCALES COMERCIALES, OFICINAS Y DESPACHOS, RESIDENCIAS, ESTABLECIMIENTOS INDUSTRIALES, HOSPITALES, ESTABLECIMIENTOS SANITARIOS Y CUALESQUIERA OTROS CENTROS PÚBLICOS O PRIVADOS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/04973",
+      "_links": {
+        "self": {
+          "name": "LOTU SERVICIOS INTEGRALES DE MANTENIMIENTO, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/04973"
+        }
+      }
+    },
+    {
+      "name": "MOROTE TRADUCCIONES,S.L.",
+      "registrationNumber": "05947",
+      "identificationNumber": "B41981549",
+      "address": "AVDA REINO UNIDO Nº7  1ºE",
+      "location": {
+        "postalCode": "41012",
+        "municipality": "Sevilla",
+        "county": "Sevilla",
+        "municipalityId": "091",
+        "countyId": "41"
+      },
+      "economicActivities": [
+        {
+          "id": "1.849.3",
+          "name": "Servicios de traducción y similares",
+          "_links": {
+            "self": {
+              "name": "Servicios de traducción y similares",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.849.3"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2019-09-17",
+      "certificateEndDate": "2020-03-17",
+      "object": "CUALQUIER SERVICIO PROFESIONAL PRINCIPALMENTE LOS SERVICIOS DE TRADUCCIÓN E INTERPRETACIÓN DE IDIOMAS. TAMBIÉN FORMACIÓN PROFESIONAL NO REGLADA.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/05947",
+      "_links": {
+        "self": {
+          "name": "MOROTE TRADUCCIONES,S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/05947"
+        }
+      }
+    },
+    {
+      "name": "ESTUDIOS URIARTE, S.L.",
+      "registrationNumber": "06459",
+      "identificationNumber": "B01239722",
+      "address": "Portal de Gamarra 7, pabellón 21",
+      "location": {
+        "postalCode": "01013",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.475",
+          "name": "Actividades anexas a las artes gráficas",
+          "_links": {
+            "self": {
+              "name": "Actividades anexas a las artes gráficas",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.475"
+            }
+          }
+        },
+        {
+          "id": "1.659.9",
+          "name": "Venta al por menor de otros productos no especificados en esta agrupación",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de otros productos no especificados en esta agrupación",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.659.9"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2019-09-17",
+      "certificateEndDate": "2020-03-04",
+      "object": "LA IMPRESIÓN, REPRODUCCIÓN DE TEXTOS E IMÁGENES POR CUALQUIER PROCEDIMIENTO, FOTOCOPIAS POR PROCEDIMIENTOS FOTOGRÁFICOS Y ELECTROESTÁTICOS, SISTEMA DE REPRODUCCIÓN DE PLANOS. ESTEREOTIPIA, GALVANOTIPIA Y GALVANOPLASTIA, FABRICADOS DE GOMA Y CAUCHO, FABRICACIÓN DE RODILLOS Y DE OTROS ELEMENTOS DEDICADOS A LOS PROCESOS DE IMPRESIÓN. ENCUADERNACIÓN, EDICIÓN DE LIBROS, PERIÓDICOS Y REVISTAS. EDICIÓN DE IMÁGENES, GRABADOS, TARJETAS POSTALES, FOLLETOS, EDICIÓN MUSICAL IMPRESA O MANUSCRITA, CALENDARIOS O ALMANAQUES. LAS ACTIVIDADES ENUMERADAS PODRÁN TAMBIÉN SER DESARROLLADAS POR LA SOCIEDAD, TOTAL O PARCIALMENTE, DE MODO INDIRECTO, MEDIANTE LA PARTICIPACIÓN EN OTRAS SOCIEDADES CON OBJETO ANÁLOGO",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06459",
+      "_links": {
+        "self": {
+          "name": "ESTUDIOS URIARTE, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/06459"
+        }
+      }
+    },
+    {
+      "name": "EVELIO NOGALES DEL POZO",
+      "registrationNumber": "06460",
+      "identificationNumber": "13023920D",
+      "address": "Paraguay 9",
+      "location": {
+        "postalCode": "01012",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.653.1",
+          "name": "Venta al por menor de muebles (excepto los de oficina)",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de muebles (excepto los de oficina)",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.653.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2019-09-17",
+      "certificateEndDate": "2020-03-10",
+      "object": "VENTA AL POR MENOR DE MUEBLES (EXCEPTO LOS DE OFICINA)",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06460",
+      "_links": {
+        "self": {
+          "name": "EVELIO NOGALES DEL POZO",
+          "href": "https://api.euskadi.eus/procurements/companies/06460"
+        }
+      }
+    },
+    {
+      "name": "MARIA TERESA GASTELU OLAZABALAGA",
+      "registrationNumber": "06461",
+      "identificationNumber": "11904178E",
+      "address": "JUAN BAUTISTA URIARTE, NUM.31-2A",
+      "location": {
+        "postalCode": "48960",
+        "municipality": "Galdakao",
+        "county": "Bizkaia",
+        "municipalityId": "036",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "2.731",
+          "name": "Abogados",
+          "_links": {
+            "self": {
+              "name": "Abogados",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/2.731"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2019-09-17",
+      "certificateEndDate": "2020-03-06",
+      "object": "ABOGADOS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06461",
+      "_links": {
+        "self": {
+          "name": "MARIA TERESA GASTELU OLAZABALAGA",
+          "href": "https://api.euskadi.eus/procurements/companies/06461"
+        }
+      }
+    },
+    {
+      "name": "AGORA GESTION DE EVENTOS, S.L.",
+      "registrationNumber": "06462",
+      "identificationNumber": "B64674187",
+      "address": "Calle Muntaner 69, Entresuelo 1ª",
+      "location": {
+        "postalCode": "08011",
+        "municipality": "Barcelona",
+        "county": "Barcelona",
+        "municipalityId": "019",
+        "countyId": "08"
+      },
+      "economicActivities": [
+        {
+          "id": "1.844",
+          "name": "Servicios de publicidad, relaciones públicas y similares",
+          "_links": {
+            "self": {
+              "name": "Servicios de publicidad, relaciones públicas y similares",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.844"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2019-09-17",
+      "certificateEndDate": "2019-11-14",
+      "object": "LA ORGANIZACIÓN DE CONGRESOS, FERIAS, REUNIONES, CONVENCIONES Y TODO TIPO DE ACTOS Y EVENTOS SOCIALES, EMPRESARIALES Y POLÍTICOS; Y EL ASESORAMIENTO DE SOCIEDADES, ASOCIACIONES, FUNDACIONES Y TODO TIPO DE AGRUPACIONES SOBRE LA CELEBRACIÓN DE CONGRESOS, FERIAS, REUNIONES, CONVENCIONES Y TODO TIPO DE ACTOS Y EVENTOS SOCIALES EMPRESARIALES Y POLÍTICOS; LA FORMACIÓN DE PERSONAL SANITARIO",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06462",
+      "_links": {
+        "self": {
+          "name": "AGORA GESTION DE EVENTOS, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/06462"
+        }
+      }
+    },
+    {
+      "name": "CELER PAWLOWSKY, S.L.",
+      "registrationNumber": "06463",
+      "identificationNumber": "B60266798",
+      "address": "Avda. Diagonal, 188 - 2º F",
+      "location": {
+        "postalCode": "08018",
+        "municipality": "Barcelona",
+        "county": "Barcelona",
+        "municipalityId": "019",
+        "countyId": "08"
+      },
+      "economicActivities": [
+        {
+          "id": "1.849.3",
+          "name": "Servicios de traducción y similares",
+          "_links": {
+            "self": {
+              "name": "Servicios de traducción y similares",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.849.3"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2019-09-17",
+      "certificateEndDate": "2020-01-23",
+      "object": "PRESTAR SERVICIOS DE TRADUCCIÓN, INTERPRETACIÓN Y DEMÁS RELACIONADOS CON LA EXPRESIÓN ORAL O ESCRITA EN UNA O MÁS LENGUAS DE TEXTOS ORALES, ESCRITOS, AUDIOVISUALES, INFORMÁTICOS, FORMULADOS INICIALMENTE EN UNA LENGUA DISTINTA Y REALIZAR, ASIMISMO, TAREAS DE ASESORAMIENTO, TERMINOLOGÍA EN MATERIA LINGÜÍSTICA. PRESTAR SERVICIOS DE EDUCACIÓN, ENSEÑANZA Y FORMACIÓN EN CUALQUIER CAMPO DE CONOCIMIENTOS, BIEN A DISTANCIA, BIEN EN LOCALES HABILITADOS AL EFECTO, BIEN EN EL DOMICILIO O LA OFICINA DE LOS CLIENTES.  PRESTAR SERVICIOS EDITORIALES, DE REDACCIÓN, ACTUALIZACIÓN O ADAPTACIÓN DE TEXTOS, FOTOCOMPOSICIÓN, FOTOMECÁNICA E IMPRESIÓN A TERCEROS O ACTUAR DIRECTAMENTE COMO EDITORIAL EN RELACIÓN A TODO TIPO DE DOCUMENTOS IMPRESOS Y AUDIOVISUALES. LA PRESTACIÓN DE SERVICIOS DE ORGANIZACIÓN DE CONGRESOS Y CONVENCIONES. LA PRESTACIÓN DE SERVICIOS DE MENSAJERÍA, RECEPCIÓN Y REMISIÓN DE TEXTOS POR MEDIOS PROPIOS, POR CORREO, TELÉFONO, TÉLEX, TELEFAX, INFORMÁTICOS Y CUALESQUIERA OTROS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06463",
+      "_links": {
+        "self": {
+          "name": "CELER PAWLOWSKY, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/06463"
+        }
+      }
+    },
+    {
+      "name": "GARMOL INVERGESTION, S.L.",
+      "registrationNumber": "06449",
+      "identificationNumber": "B83495267",
+      "address": "Avenida Machupichu, 27 2º-33",
+      "location": {
+        "postalCode": "28043",
+        "municipality": "Madrid",
+        "county": "Madrid",
+        "municipalityId": "079",
+        "countyId": "28"
+      },
+      "economicActivities": [
+        {
+          "id": "1.843.9",
+          "name": "Otros servicios técnicos n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros servicios técnicos n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.9"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2019-09-16",
+      "certificateEndDate": "2020-01-22",
+      "object": "- LA CONSTRUCCIÓN Y PROMOCIÓN INMOBILIARIA, COMPRA-VENTA DE TERRENOS Y BIENES INMUEBLES, URBANIZACIÓN DE TERRENOS Y LA REALIZACIÓN DE TODO TIPO DE ACTIVIDADES INMOBILIARIAS. - LA REALIZACIÓN DE ESTUDIOS TÉCNICOS, CONSTRUCCIÓN Y ADQUISICIÓN DE FINCAS RÚSTICAS Y URBANAS, PARA SU EXPLOTACIÓN EN FORMA DE ARRIENDO, Y LA COMERCIALIZACIÓN DE PRODUCTOS PARA EL CAMPO. QUEDA EXCLUIDO EL DERECHO DE ARRENDAMIENTO FINANCIERO INMOBILIARIO Y LEASING, RESERVADO POR LA LEY A SOCIEDADES ESPECIALES. - LA ASESORÍA Y CONSULTORÍA, EN TODOS SUS CAMPOS, SOBRE INGENIERÍA CIVIL, ARQUITECTURA Y MEDIO AMBIENTE. - LA EJECUCIÓN DE OBRAS DE INGENIERÍA CIVIL, ARQUITECTURA Y MEDIO AMBIENTE. -LA PRODUCCIÓN, DISTRIBUCIÓN, VENTA Y COMERCIALIZACIÓN DE ELEMENTOS O EQUIPOS FÍSICOS RELACIONADOS CON EL CAMPO DE LA CONSULTORÍA, INGENIERÍA CIVIL, ARQUITECTURA Y MEDIO AMBIENTE. - LA COMERCIALIZACIÓN Y PRESTACIÓN DE SERVICIOS EN GENERAL DE INGENIERÍA CIVIL, ARQUITECTURA Y MEDIO AMBIENTE. -ADQUIRIR, ADMINISTRAR Y ENAJENAR VALORES MOBILIARIOS DE RENTA FIJA O VARIABLE EMITIDOS POR EMPRESAS INDIVIDUALES O SOCIEDADES PÚBLICAS O PRIVADAS, CUALESQUIERA QUE SEA LA FORMA QUE ADOPTEN DICHAS EMPRESAS, EJERCIENDO CON LA MAYOR AMPLITUD LOS DERECHOS QUE LE ATRIBUYA SU PARTICIPACIÓN EN LAS MISMAS\r\n\r\n",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06449",
+      "_links": {
+        "self": {
+          "name": "GARMOL INVERGESTION, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/06449"
+        }
+      }
+    },
+    {
+      "name": "BAITIC SOLUCIONES, S.L.",
+      "registrationNumber": "06450",
+      "identificationNumber": "B95717518",
+      "address": "C/ LEÓN, 18 BAJO 1",
+      "location": {
+        "postalCode": "48970",
+        "municipality": "Basauri",
+        "county": "Bizkaia",
+        "municipalityId": "015",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.845",
+          "name": "Explotación electrónica por cuenta de terceros",
+          "_links": {
+            "self": {
+              "name": "Explotación electrónica por cuenta de terceros",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.845"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2019-09-16",
+      "certificateEndDate": "2020-02-12",
+      "object": "EL COMERCIO AL POR MAYOR Y AL POR MENOR. DISTRIBUCIÓN COMERCIAL. IMPORTACIÓN Y\r\nEXPORTACIÓN. ACTIVIDADES PROFESIONALES. PRESTACIÓN DE SERVICIOS. ACTIVIDADES DE GESTIÓN Y ADMINISTRACIÓN. SERVICIOS\r\nEDUCATIVOS, SANITARIOS, DE OCIO Y ENTRETENIMIENTO. INFORMÁTICA, TELECOMUNICACIONES Y OFIMÁTICA. INVESTIGACIÓN, DESARROLLO E INNOVACIÓN. ACTIVIDADES CIENTÍFICAS Y TÉCNICAS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06450",
+      "_links": {
+        "self": {
+          "name": "BAITIC SOLUCIONES, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/06450"
+        }
+      }
+    }
+  ]
+}

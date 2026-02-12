@@ -1,0 +1,498 @@
+{
+  "totalItems": 9042,
+  "totalPages": 905,
+  "currentPage": 333,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "name": "JOSU CHAVARRI ERRALDE",
+      "registrationNumber": "05652",
+      "identificationNumber": "16284954B",
+      "address": "AVDA. DE SANTIAGO, Nº 38-6º C",
+      "location": {
+        "postalCode": "01003",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "2.861",
+          "name": "Pintores, escultores, ceramistas, artesanos, artistas y similares",
+          "_links": {
+            "self": {
+              "name": "Pintores, escultores, ceramistas, artesanos, artistas y similares",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/2.861"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-07-31",
+      "certificateEndDate": "2026-01-29",
+      "object": "PINTORES, ESCULTOES, CERAMISTAS, ARTESANOS, ARTISTAS Y SIMILARES",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/05652",
+      "_links": {
+        "self": {
+          "name": "JOSU CHAVARRI ERRALDE",
+          "href": "https://api.euskadi.eus/procurements/companies/05652"
+        }
+      }
+    },
+    {
+      "name": "CONSULTORES Y AUDITORES ALTER 1990, S.L.P.",
+      "registrationNumber": "00861",
+      "identificationNumber": "B20394722",
+      "address": "Plaza Pinares 1, 1º",
+      "location": {
+        "postalCode": "20001",
+        "municipality": "Donostia / San Sebastián",
+        "county": "Gipuzkoa",
+        "municipalityId": "069",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.842",
+          "name": "Servicios financieros y contables",
+          "_links": {
+            "self": {
+              "name": "Servicios financieros y contables",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.842"
+            }
+          }
+        },
+        {
+          "id": "1.847",
+          "name": "Servicios de consultoría",
+          "_links": {
+            "self": {
+              "name": "Servicios de consultoría",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.847"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-07-31",
+      "certificateEndDate": "2026-01-27",
+      "object": "LAS ACTIVIDADES PROPIAS DEL EJERCICIO DE LOS AUDITORES Y ECONOMISTAS COLEGIADOS, SEGÚN APARECEN TIPIFICADAS EN SUS ESTATUTOS PROFESIONALES RESPECTIVOS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/00861",
+      "_links": {
+        "self": {
+          "name": "CONSULTORES Y AUDITORES ALTER 1990, S.L.P.",
+          "href": "https://api.euskadi.eus/procurements/companies/00861"
+        }
+      }
+    },
+    {
+      "name": "BOEHRINGER INGELHEIM ESPAÑA, S.A.",
+      "registrationNumber": "03201",
+      "identificationNumber": "A08006470",
+      "address": "PRAT DE LA RIBA, 50. SECTOR TURÓ DE CAN MATAS",
+      "location": {
+        "postalCode": "08174",
+        "municipality": "Sant Cugat del Vallès",
+        "county": "Barcelona",
+        "municipalityId": "205",
+        "countyId": "08"
+      },
+      "economicActivities": [
+        {
+          "id": "1.254.2",
+          "name": "Fabricación de especialidades y otros productos farmacéuticos",
+          "_links": {
+            "self": {
+              "name": "Fabricación de especialidades y otros productos farmacéuticos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.254.2"
+            }
+          }
+        },
+        {
+          "id": "1.614.1",
+          "name": "Venta al por mayor de productos farmacéuticos y medicamentos",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de productos farmacéuticos y medicamentos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.614.1"
+            }
+          }
+        },
+        {
+          "id": "1.845",
+          "name": "Explotación electrónica por cuenta de terceros",
+          "_links": {
+            "self": {
+              "name": "Explotación electrónica por cuenta de terceros",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.845"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-07-31",
+      "certificateEndDate": "2026-01-26",
+      "object": "LA FABRICACIÓN DE SUSTANCIAS, PRODUCTOS BÁSICOS Y MATERIAS PRIMAS, QUÍMICAS Y FARMACÉUTICAS; LA PREPARACIÓN, ELABORACIÓN, VENTA y COMERCIALIZACIÓN DE TODA CLASE DE ESPECIALIDADES QUÍMICAS Y MEDICAMENTOS; Y LA PREPARACIÓN, ELABORACIÓN, VENTA Y COMERCIALIZACIÓN DE COSMÉTICOS, COMPLEMENTOS ALIMENTICIOS Y ALIMENTOS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03201",
+      "_links": {
+        "self": {
+          "name": "BOEHRINGER INGELHEIM ESPAÑA, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/03201"
+        }
+      }
+    },
+    {
+      "name": "CEDATEC 2000, S.L.",
+      "registrationNumber": "08677",
+      "identificationNumber": "B95050977",
+      "address": "Calle Hurtado de Amézaga 27, P14-3º",
+      "location": {
+        "postalCode": "48008",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.842",
+          "name": "Servicios financieros y contables",
+          "_links": {
+            "self": {
+              "name": "Servicios financieros y contables",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.842"
+            }
+          }
+        },
+        {
+          "id": "1.845",
+          "name": "Explotación electrónica por cuenta de terceros",
+          "_links": {
+            "self": {
+              "name": "Explotación electrónica por cuenta de terceros",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.845"
+            }
+          }
+        },
+        {
+          "id": "1.849.7",
+          "name": "Servicios de gestión administrativa",
+          "_links": {
+            "self": {
+              "name": "Servicios de gestión administrativa",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.849.7"
+            }
+          }
+        },
+        {
+          "id": "1.849.9",
+          "name": "Otros servicios independientes n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros servicios independientes n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.849.9"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-07-30",
+      "certificateEndDate": "2026-01-28",
+      "object": "PRINCIPAL: A) DESARROLLO DE SOFTWARE, COMPRA Y VENTA DEL MISMO (EPÍGRAFE 6201 CNAE-2009). SECUNDARIOS: B) EQUIPAMIENTO INFORMÁTICO (EPÍGRAFE 6209 CNAE-2009). C) CONSULTORÍA Y ASESORÍA INFORMÁTICA (EPÍGRAFE 6202 CNAE-2009) D) PRESTACIÓN DE SERVICIOS DE ASESORAMIENTO Y GESTIÓN EN MATERIA ECONÓMICA, FINANCIERA, CONTABLE, FISCAL Y LABORAL (EPÍGRAFES 6920 Y 6399 CNAE-2009), SIN BIEN RESPECTO EN ACTIVIDADES RESERVADAS A PROFESIONALES COLEGIADOS, LA SOCIEDAD ACTUARÁ COMO INTERMEDIARIA.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08677",
+      "_links": {
+        "self": {
+          "name": "CEDATEC 2000, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/08677"
+        }
+      }
+    },
+    {
+      "name": "INFOTECH BCN, S.L.",
+      "registrationNumber": "09221",
+      "identificationNumber": "B65406621",
+      "address": "CALLE ARIBAU 37, 5-2",
+      "location": {
+        "postalCode": "08011",
+        "municipality": "Barcelona",
+        "county": "Barcelona",
+        "municipalityId": "019",
+        "countyId": "08"
+      },
+      "economicActivities": [
+        {
+          "id": "1.330",
+          "name": "Construcción de máquinas de oficina y ordenadores",
+          "_links": {
+            "self": {
+              "name": "Construcción de máquinas de oficina y ordenadores",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.330"
+            }
+          }
+        },
+        {
+          "id": "1.691.9",
+          "name": "Reparación de otros bienes de consumo n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Reparación de otros bienes de consumo n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.691.9"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-07-30",
+      "certificateEndDate": "2026-01-30",
+      "object": "LA FABRICACIÓN, EL COMERCIO, MANTENIMIENTO, SERVICIO Y CUALESQUIERA OTRAS OPERACIONES COMERCIALES O INDUSTRIALES RELACIONADAS CON PRODUCTOS INFORMÁTICOS, PERIFÉRICOS, ACCESORIOS Y PRODUCTOS DE REDES.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/09221",
+      "_links": {
+        "self": {
+          "name": "INFOTECH BCN, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/09221"
+        }
+      }
+    },
+    {
+      "name": "NAFARKOOP ENERGIA S. COOP.",
+      "registrationNumber": "09480",
+      "identificationNumber": "F71267728",
+      "address": "NUEVA,111",
+      "location": {
+        "postalCode": "31001",
+        "municipality": "Pamplona/Iruña",
+        "county": "Navarra",
+        "municipalityId": "201",
+        "countyId": "31"
+      },
+      "economicActivities": [
+        {
+          "id": "1.843.1",
+          "name": "Servicios técnicos de ingeniería",
+          "_links": {
+            "self": {
+              "name": "Servicios técnicos de ingeniería",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.1"
+            }
+          }
+        },
+        {
+          "id": "1.849.7",
+          "name": "Servicios de gestión administrativa",
+          "_links": {
+            "self": {
+              "name": "Servicios de gestión administrativa",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.849.7"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-07-30",
+      "certificateEndDate": "2026-01-28",
+      "object": "LA PROMOCIÓN, VIABILIZACIÓN Y GESTIÓN DE UNIDADES DE PRODUCCIÓN DE ENERGÍA DE CUALQUIER CLASE, PROCEDENTE DE FUENTES DE ENERGÍAS RENOVABLES, PARA SU COMERCIALIZACIÓN Y CONSUMO POR LAS PERSONAS SOCIAS.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/09480",
+      "_links": {
+        "self": {
+          "name": "NAFARKOOP ENERGIA S. COOP.",
+          "href": "https://api.euskadi.eus/procurements/companies/09480"
+        }
+      }
+    },
+    {
+      "name": "ALIMENTACIÓN BARROSO, S.A.",
+      "registrationNumber": "00429",
+      "identificationNumber": "A48287536",
+      "address": "C/ AVENIDA IBAIZABAL, Nº 37.",
+      "location": {
+        "postalCode": "48960",
+        "municipality": "Galdakao",
+        "county": "Bizkaia",
+        "municipalityId": "036",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.612.1",
+          "name": "Venta al por mayor de toda clase de productos alimenticios, bebidas, tabaco",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de toda clase de productos alimenticios, bebidas, tabaco",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.612.1"
+            }
+          }
+        },
+        {
+          "id": "1.722",
+          "name": "Transporte de mercancías por carretera",
+          "_links": {
+            "self": {
+              "name": "Transporte de mercancías por carretera",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.722"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-07-30",
+      "certificateEndDate": "2026-01-13",
+      "object": "LA EXPLOTACIÓN DE UNA EMPRESA DEDICADA A LA VENTA AL MAYOR Y MENOR DE TODA CLASE DE PRODUCTOS ALIMENTICIOS, SUMINISTRO DE LOS MISMOS A EMPRESAS E INSTITUCIONES, VENTA AL MAYOR Y MENOR DE ARTÍCULOS PARA USO DOMÉSTICO O PERSONAL, FABRICACIÓN Y ELABORACIÓN DE PRODUCTOS ALIMENTICIOS, Y AL TRANSPORTE DE MERCANCÍAS POR CARRETERA",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/00429",
+      "_links": {
+        "self": {
+          "name": "ALIMENTACIÓN BARROSO, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/00429"
+        }
+      }
+    },
+    {
+      "name": "KIROL ETA KULTURA AISIAN, S.L.",
+      "registrationNumber": "10301",
+      "identificationNumber": "B75126383",
+      "address": "Avd. Tolosa num. 89 bajo trasera",
+      "location": {
+        "postalCode": "20018",
+        "municipality": "Donostia / San Sebastián",
+        "county": "Gipuzkoa",
+        "municipalityId": "069",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.934",
+          "name": "Enseñanza fuera de establecimiento permanente",
+          "_links": {
+            "self": {
+              "name": "Enseñanza fuera de establecimiento permanente",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.934"
+            }
+          }
+        },
+        {
+          "id": "1.999",
+          "name": "Otros servicios n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros servicios n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.999"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-07-30",
+      "certificateEndDate": "2026-01-30",
+      "object": "PRESTACIÓN DE SERVICIOS. ACTIVIDADES DE GESTIÓN Y ADMINISTRACIÓN. SERVICIOS EDUCATIVOS, SANITARIOS, DE OCIO Y ENTRETENIMIENTO.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/10301",
+      "_links": {
+        "self": {
+          "name": "KIROL ETA KULTURA AISIAN, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/10301"
+        }
+      }
+    },
+    {
+      "name": "ROBERTO GARCIA PEREZ",
+      "registrationNumber": "10004",
+      "identificationNumber": "78878260J",
+      "address": "Avenida Txorierriko etorbidea 3C 2M",
+      "location": {
+        "postalCode": "48170",
+        "municipality": "Zamudio",
+        "county": "Bizkaia",
+        "municipalityId": "905",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.973.1",
+          "name": "Servicios fotográficos",
+          "_links": {
+            "self": {
+              "name": "Servicios fotográficos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.973.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-07-30",
+      "certificateEndDate": "2026-01-13",
+      "object": "SERVICIOS FOTOGRÁFICOS.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/10004",
+      "_links": {
+        "self": {
+          "name": "ROBERTO GARCIA PEREZ",
+          "href": "https://api.euskadi.eus/procurements/companies/10004"
+        }
+      }
+    },
+    {
+      "name": "DANATEK SERVICIOS AUDIOVISUALES, S.L.",
+      "registrationNumber": "08355",
+      "identificationNumber": "B20866687",
+      "address": "Zarugalde 20 bajo",
+      "location": {
+        "postalCode": "20500",
+        "municipality": "Arrasate / Mondragón",
+        "county": "Gipuzkoa",
+        "municipalityId": "055",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.436.3",
+          "name": "Textiles estampados",
+          "_links": {
+            "self": {
+              "name": "Textiles estampados",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.436.3"
+            }
+          }
+        },
+        {
+          "id": "1.653.2",
+          "name": "Venta al por menor de material y aparatos eléctricos, electrodomésticos y cocina",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de material y aparatos eléctricos, electrodomésticos y cocina",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.653.2"
+            }
+          }
+        },
+        {
+          "id": "1.657",
+          "name": "Venta al por menor de instrumentos musicales y sus accesorios",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de instrumentos musicales y sus accesorios",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.657"
+            }
+          }
+        },
+        {
+          "id": "1.859",
+          "name": "Alquiler de otros bienes muebles n.c.o.p. (sin personal permanente)",
+          "_links": {
+            "self": {
+              "name": "Alquiler de otros bienes muebles n.c.o.p. (sin personal permanente)",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.859"
+            }
+          }
+        },
+        {
+          "id": "1.933.9",
+          "name": "Otras actividades de enseñanza tales como idiomas, mecanografía",
+          "_links": {
+            "self": {
+              "name": "Otras actividades de enseñanza tales como idiomas, mecanografía",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.933.9"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-07-30",
+      "certificateEndDate": "2026-01-28",
+      "object": "VENTA DE EQUIPOS DE SONIDO, MICROFONÍA, ILUMINACIÓN, MEGAFONÍA, AUDIO, EQUIPOS VISUALES, INSTALACIÓN DE EQUIPOS DE ILUMINACIÓN, INSTALACIÓN DE EQUIPOS AUDIOVISUALES, INSTALACIÓN DE EQUIPOS DE MEGAFONÍA, ALQUILER DE EQUIPOS DE SONIDO, ALQUILER DE EQUIPOS AUDIOVISUALES, ALQUILER DE EQUIPOS DE SONORIZACIÓN, ALQUILER DE ESCENARIOS PARA TODO TIPO DE ACTOS.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08355",
+      "_links": {
+        "self": {
+          "name": "DANATEK SERVICIOS AUDIOVISUALES, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/08355"
+        }
+      }
+    }
+  ]
+}

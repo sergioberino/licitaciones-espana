@@ -1,0 +1,458 @@
+{
+  "totalItems": 9042,
+  "totalPages": 905,
+  "currentPage": 543,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "name": "INSTRUMENTACIÓN Y COMPONENTES, S.A.",
+      "registrationNumber": "02979",
+      "identificationNumber": "A50086412",
+      "address": "C/ ALAÚN 8, PLANTA BAJA. PLATAFORMA LOGÍSTICA ZARAGOZA",
+      "location": {
+        "postalCode": "50197",
+        "municipality": "Zaragoza",
+        "county": "Zaragoza",
+        "municipalityId": "297",
+        "countyId": "50"
+      },
+      "economicActivities": [
+        {
+          "id": "1.330.2",
+          "name": "Instalación de máquinas de oficina y ordenadores",
+          "_links": {
+            "self": {
+              "name": "Instalación de máquinas de oficina y ordenadores",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.330.2"
+            }
+          }
+        },
+        {
+          "id": "1.617.9",
+          "name": "Venta al por mayor interindustrial de otros productos n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor interindustrial de otros productos n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.617.9"
+            }
+          }
+        },
+        {
+          "id": "1.659.2",
+          "name": "Venta al por menor de muebles de oficina y máquinas y equipos de oficina",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de muebles de oficina y máquinas y equipos de oficina",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.659.2"
+            }
+          }
+        },
+        {
+          "id": "1.659.3",
+          "name": "Venta al por menor de aparatos médicos, ortopédicos, ópticos y fotográficos",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de aparatos médicos, ortopédicos, ópticos y fotográficos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.659.3"
+            }
+          }
+        },
+        {
+          "id": "1.691.9",
+          "name": "Reparación de otros bienes de consumo n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Reparación de otros bienes de consumo n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.691.9"
+            }
+          }
+        },
+        {
+          "id": "1.699",
+          "name": "Otras reparaciones n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otras reparaciones n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.699"
+            }
+          }
+        },
+        {
+          "id": "1.999",
+          "name": "Otros servicios n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros servicios n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.999"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2021-02-18",
+      "certificateEndDate": "2021-08-04",
+      "object": "1) LA VENTA DE APARATOS DE ELECTRÓNICA, MEDIDA, CIENTÍFICOS, MAQUINARIA  Y ORDENADORES, \r\n\r\n2) SERVICIOS DE MANTENIMIENTO, REPARACIÓN E INSTALACIONES DE EQUIPOS DE SOFTWARE DE INFORMÁTICA, ELECTRÓNICA, ELECTROMEDICINA Y DE  TELECOMUNICACIONES, \r\n\r\n3) CONSULTORÍA DE INFORMÁTICA, ELECTRÓNICA, ELECTROMEDICINA Y  ANALÍTICA, \r\n\r\n4) COMUNICACIONES, ATENCIÓN DE CENTRALITAS TELEFÓNICAS, SERVICIOS HELP DESK, DESARROLLO DE APLICACIONES Y FORMACIÓN EN LOS CAMPOS MENCIONADOS\r\n\r\n",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/02979",
+      "_links": {
+        "self": {
+          "name": "INSTRUMENTACIÓN Y COMPONENTES, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/02979"
+        }
+      }
+    },
+    {
+      "name": "ETXANIZ BARDAJÍ, S.L.",
+      "registrationNumber": "07504",
+      "identificationNumber": "B75079558",
+      "address": "Reyes Católicos 9 - Bajo",
+      "location": {
+        "postalCode": "20006",
+        "municipality": "Donostia / San Sebastián",
+        "county": "Gipuzkoa",
+        "municipalityId": "069",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.834",
+          "name": "Servicios relativos a la propiedad inmobiliaria e industrial",
+          "_links": {
+            "self": {
+              "name": "Servicios relativos a la propiedad inmobiliaria e industrial",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.834"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2021-02-17",
+      "certificateEndDate": "2021-06-16",
+      "object": "LA ADMINISTRACIÓN DE FINCAS, AGENCIA INMOBILIARIA, ESTUDIO Y DESPACHO TÉCNICO DE INGENIERÍA Y ARQUITECTURA Y PROMOCIONES INMOBILIARIAS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07504",
+      "_links": {
+        "self": {
+          "name": "ETXANIZ BARDAJÍ, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/07504"
+        }
+      }
+    },
+    {
+      "name": "TECHNO SPEC, S.L.",
+      "registrationNumber": "07505",
+      "identificationNumber": "B60666104",
+      "address": "Calle Pau Alsina 112. Entlo 1ª",
+      "location": {
+        "postalCode": "08024",
+        "municipality": "Barcelona",
+        "county": "Barcelona",
+        "municipalityId": "019",
+        "countyId": "08"
+      },
+      "economicActivities": [
+        {
+          "id": "1.619.7",
+          "name": "Venta al por mayor de instrumentos de precisión, medida y similares",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de instrumentos de precisión, medida y similares",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.619.7"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2021-02-17",
+      "certificateEndDate": "2021-06-24",
+      "object": "EL COMERCIO AL POR MAYOR DE INSTRUMENTOS DE PRECISIÓN, MEDIDA Y SIMILARES, ASÍ MISMO SU MANTENIMIENTO Y REPARACIÓN, ASÍ COMO LA ASESORÍA E INFORMES PERTINENTES A DICHA ACTIVIDAD",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07505",
+      "_links": {
+        "self": {
+          "name": "TECHNO SPEC, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/07505"
+        }
+      }
+    },
+    {
+      "name": "INGNOVA ENTERPRISE, S.L.",
+      "registrationNumber": "07506",
+      "identificationNumber": "B56006984",
+      "address": "Calle Abrojo 53",
+      "location": {
+        "postalCode": "14012",
+        "municipality": "Córdoba",
+        "county": "Córdoba",
+        "municipalityId": "021",
+        "countyId": "14"
+      },
+      "economicActivities": [
+        {
+          "id": "1.665",
+          "name": "Venta al por menor por correo o catálogo de productos diversos",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor por correo o catálogo de productos diversos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.665"
+            }
+          }
+        },
+        {
+          "id": "1.843.1",
+          "name": "Servicios técnicos de ingeniería",
+          "_links": {
+            "self": {
+              "name": "Servicios técnicos de ingeniería",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.1"
+            }
+          }
+        },
+        {
+          "id": "1.933.9",
+          "name": "Otras actividades de enseñanza tales como idiomas, mecanografía",
+          "_links": {
+            "self": {
+              "name": "Otras actividades de enseñanza tales como idiomas, mecanografía",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.933.9"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2021-02-17",
+      "certificateEndDate": "2021-08-15",
+      "object": "CONSTRUCCIÓN, INSTALACIONES Y MANTENIMIENTO. COMERCIO AL POR MAYOR Y AL POR MENOR, EN PARTICULAR LA VENTA DE CURSOS. DISTRIBUCIÓN COMERCIAL. IMPORTACIÓN Y EXPORTACIÓN. ACTIVIDADES INMOBILIARIAS. ACTIVIDADES PROFESIONALES, YA SEA POR INTERMEDIACIÓN O MEDIACIÓN. INDUSTRIAS MANUFACTURERAS Y TEXTILES. TURISMO, HOSTELERÍA Y RESTAURACIÓN. PRESTACIÓN DE SERVICIOS, EN PARTICULAR LA PRESTACIÓN DE SERVICIOS DE INGENIERÍA, CONSULTORÍA E INFORMÁTICOS Y TODOS LOS SERVICIOS ACCESORIOS A LOS MISMOS. ACTIVIDADES DE GESTIÓN Y ADMINISTRACIÓN. SERVICIOS EDUCATIVOS, EN PARTICULAR LA ENSEÑANZA Y FORMACIÓN EN GENERAL, YA SEA EN MODO PRESENCIAL, A DISTANCIA Y ONLINE; SERVICIOS SANITARIOS, YA SEA POR MEDIACIÓN O INTERMEDIACIÓN; DE OCIO Y ENTRETENIMIENTO. TRANSPORTE Y ALMACENAMIENTO. INFORMACIÓN Y COMUNICACIONES. AGRICULTURA, GANADERÍA Y PESCA. INFORMÁTICA, TELECOMUNICACIONES Y OFIMÁTICA, EN PARTICULAR LA CONFECCIÓN Y COMERCIALIZACIÓN DE SOFTWARE Y PROGRAMAS INFORMÁTICOS. ENERGÍAS ALTERNATIVAS. COMPRAVENTA Y REPARACIÓN DE VEHÍCULOS. REPARACIÓN Y MANTENIMIENTO DE INSTALACIONES Y MAQUINARIA. INVESTIGACIÓN, DESARROLLO E INNOVACIÓN. ACTIVIDADES CIENTÍFICAS Y TÉCNICAS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07506",
+      "_links": {
+        "self": {
+          "name": "INGNOVA ENTERPRISE, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/07506"
+        }
+      }
+    },
+    {
+      "name": "BERZIKLATU, S.L.",
+      "registrationNumber": "07507",
+      "identificationNumber": "B95398202",
+      "address": "barrio orkonera s/n",
+      "location": {
+        "postalCode": "48530",
+        "municipality": "Ortuella",
+        "county": "Bizkaia",
+        "municipalityId": "083",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.999",
+          "name": "Otros servicios n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros servicios n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.999"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2021-02-17",
+      "certificateEndDate": "2020-08-10",
+      "object": "A) LA PRESTACIÓN CON CARÁCTER PROFESIONAL DE TODOS AQUELLOS SERVICIOS DE GESTIÓN DE RESIDUOS URBANOS QUE DE MANERA CONSENSUADA SE ESTIMEN ÚTILES Y DE INTERÉS Y ESPECIALMENTE, EN LO CONCERNIENTE A LA FRACCIÓN DE RESIDUOS VOLUMINOSOS, COMO SON PRINCIPALMENTE SU ALMACENAMIENTO, CLASIFICACIÓN Y SELECCIÓN, BIEN SEA ESTA PARA SU REALIZACIÓN O PARA SU RECICLAJE. B) LA INSERCIÓN SOCIOLABORAL DE PERSONAS QUE SE ENCUENTRAN EN SITUACIÓN O RIESGO DE EXCLUSIÓN SOCIAL, DE ACUERDO AL MARCO NORMATIVO VIGENTE, ESTABLECIDO POR LAS ADMINISTRACIONES COMPETENTES Y CONCRETAMENTE, AL DECRETO 305/2000 DE 26 DE DICIEMBRE POR EL QUE SE REGULAN LAS EMPRESAS DE INSERCIÓN Y AL CAPÍTULO II DE LA LEY 12/1988, CONTRA LA EXCLUSIÓN SOCIAL QUE PROMUEVE LA INTEGRACIÓN SOCIAL DE PERSONAS Y COLECTIVOS QUE SUFRAN CUALQUIER CLASE DE EXCLUSIÓN SOCIAL A TRAVÉS DE LOS CONVENIOS DE INSERCIÓN U OTRAS QUE LAS SUSTITUYAN, AMPLÍEN O MODIFIQUEN Y QUE COMPRENDEN SIN ÁNIMO EXHAUSTIVO LAS SIGUIENTES ACCIONES Y OBJETIVOS: LA FORMACIÓN DIRIGIDA AL APRENDIZAJE DE UNA DETERMINADA ACTIVIDAD PROFESIONAL Y A LA ADECUACIÓN DEL NIVEL FORMATIVO REGLADO O LAS COMPETENCIAS PROFESIONALES A LAS EXIGENCIAS DEL MERCADO LABORAL. EL ESTABLECIMIENTO DE UNAS ACTITUDES Y APTITUDES DESTINADAS A LA ADQUISICIÓN DE HÁBITOS SOCIALES Y DE TRABAJO. UN SERVICIO DE ACOMPAÑAMIENTO SOCIAL, ENCAMINADO A SATISFACER O RESOLVER PROBLEMÁTICAS Y DE CONVIVENCIA QUE IMPIDEN O DIFICULTAN EL NORMAL DESARROLLO DEL PROCESO DE ADAPTACIÓN SOCIAL Y LABORAL. C)LA PRESTACIÓN DE TODOS SUS SERVICIOS CON EL MAYOR COMPROMISO MEDIOAMBIENTAL POSIBLE ESTABLECIDA COMO NORMA BÁSICA DE REFERENCIA LA PIRÁMIDE JERÁRQUICA ESTABLECIDA POR LA UNIÓN EUROPEA; REDACCIÓN, REUTILIZACIÓN, RECICLAJE, VALORIZACIÓN Y ELIMINACIÓN CONTROLADA. D) A PRESTACIÓN DE TODOS SUS SERVICIOS CON EL MAYOR COMPROMISO SOCIAL POSIBLE ESTABLECIENDO COMO NORMA DE REFERENCIA LA COLABORACIÓN EN SU DESARROLLO CON LAS ADMINISTRACIONES PÚBLICAS RESPONSABLES DE LA ACCIÓN SOCIAL Y LA DISCRIMINACIÓN POSITIVA EN IGUAL DE CONDICIONES HACIA LAS PERSONAS EN PEOR SITUACIÓN SOCIAL Y LABORAL, DESTINANDO A ESTE FIN EL CUARENTA POR CIENTO, EN EL COMPUTO ANUAL, DE LOS PUESTOS CREADOS A PERSONAS SUSCRITAS A CONVENIOS DE INSERCIÓN. E) LA CONTRATACIÓN PÚBLICA O PRIVADA, CON ENTIDADES PÚBLICAS MUNICIPALES, PROVINCIALES, AUTONÓMICAS O ESTATALES, O CON ENTIDADES PRIVADAS PARA LA PRESTACIÓN DE LOS SERVICIOS DESCRITOS EN EL APARTADO A) DEL PRESENTE ARTÍCULO DE GESTIÓN DE RESIDUOS URBANOS, ESPECIALMENTE VOLUMINOSOS, SIN EXCLUSIÓN DE OTROS. F) APOYAR EL DESARROLLO DE OTRAS INICIATIVAS DE FIN ANÁLOGO, PARA PROVOCAR EFECTOS REFLEJOS EN OTROS TERRITORIOS, QUE APOYEN MODELOS DE DESARROLLO SOSTENIBLE, SIEMPRE DE MANERA CONSENSUADA PREVIAMENTE POR LAS ENTIDADES SOCIAS. G) EJERCER LA PROMOTORA, CONSULTORA Y/O GESTORA DE ACTIVIDADES Y PROGRAMAS SOCIALES Y DE CARÁCTER MEDIOAMBIENTAL QUE PUDIERAN RESULTAR DE INTERÉS. H) DESARROLLAR CUALQUIER OTRA ACTIVIDAD AFÍN QUE EN EL MARCO DE UN DESARROLLO SOSTENIBLE SE ESTIME OPORTUNO ABORDAR LOS SOCIOS DE FORMA CONSENSUADA",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07507",
+      "_links": {
+        "self": {
+          "name": "BERZIKLATU, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/07507"
+        }
+      }
+    },
+    {
+      "name": "HOSPITAL HISPANIA S.L.",
+      "registrationNumber": "05978",
+      "identificationNumber": "B59078071",
+      "address": "Avenida del Camino de lo Cortao, nº 6, nave 3",
+      "location": {
+        "postalCode": "28703",
+        "municipality": "San Sebastián de los Reyes",
+        "county": "Madrid",
+        "municipalityId": "134",
+        "countyId": "28"
+      },
+      "economicActivities": [
+        {
+          "id": "1.619.2",
+          "name": "Venta al por mayor de aparatos e instrumentos médicos, ortopédicos, ópticos",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de aparatos e instrumentos médicos, ortopédicos, ópticos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.619.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2021-02-16",
+      "certificateEndDate": "2021-08-03",
+      "object": "LA COMPRA, VENTA, COMERCIALIZACIÓN, EXPORTACIÓN, IMPORTACIÓN Y DISTRIBUCIÓN DE TODO TIPO  DE MATERIAL Y EQUIPAMIENTO MÉDICO PARA HOSPITALES, CLÍNICAS, CONSULTAS PRIVADAS Y OTRAS EMPRESAS SANITARIAS, DE PROYECTOS Y EQUIPOS DE PROTECCIÓN NUCLEAR, BIOLÓGICA Y QUÍMICA, ASÍ COMO TODA CLASE DE MATERIAL TÉCNICO DE APLICACIÓN INDUSTRIAL. EL MANTENIMIENTO Y REPARACIÓN DE EQUIPOS E INSTALACIONES DE ELECTROMEDICINA",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/05978",
+      "_links": {
+        "self": {
+          "name": "HOSPITAL HISPANIA S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/05978"
+        }
+      }
+    },
+    {
+      "name": "ALONSO HERNANDEZ ASOCIADOS ARQUITECTURA SL",
+      "registrationNumber": "06945",
+      "identificationNumber": "B31528573",
+      "address": "Calle Carlos Sanz Biurrun 4 local",
+      "location": {
+        "postalCode": "31006",
+        "municipality": "Pamplona/Iruña",
+        "county": "Navarra",
+        "municipalityId": "201",
+        "countyId": "31"
+      },
+      "economicActivities": [
+        {
+          "id": "1.843.2",
+          "name": "Servicios técnicos de arquitectura y urbanismo",
+          "_links": {
+            "self": {
+              "name": "Servicios técnicos de arquitectura y urbanismo",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2021-02-16",
+      "certificateEndDate": "2021-08-15",
+      "object": "LAS ACTIVIDADES DE GESTIÓN, MEDIACIÓN, ASESORAMIENTO, COORDINACIÓN Y ADMINISTRACIÓN DE LAS ACTIVIDADES RELACIONADAS CON EL CAMPO DE LA ARQUITECTURA, EL URBANISMO Y EL DISEÑO GRÁFICO E INDUSTRIAL, TANTO EN NOMBRE PROPIO COMO MEDIADOR O INTERMEDIARIO DE SUS SOCIOS, PROFESIONALES CONTRATADOS Y CONTRATADOS LABORALES. COMO ACTIVIDADES SECUNDARIAS: A.- LA PRESTACIÓN DE SERVICIOS Y ASESORAMIENTO EN MATERIA DE DISEÑO: DISEÑO DE INTERIORES; DISEÑO INDUSTRIAL, DE PRODUCTOS Y DE SERVICIOS; DISEÑO GRÁFICO; DISEÑO DE ESCENOGRAFÍA, EXPOSICIONES TANTO ITINERANTES COMO PERMANENTES; MUSEOLOGÍA, MUSEOGRAFÍA Y ACTUACIONES ASIMILABLES EN CUALQUIER TIPO DE INMUEBLES, CON INDEPENDENCIA DEL USO Y DESTINO DE LOS MISMOS. B. - LA CREACIÓN, REALIZACIÓN, EJECUCIÓN, EXPLOTACIÓN, REPRESENTACIÓN, DISTRIBUCIÓN Y GESTIÓN DE TODO TIPO DE PRODUCCIONES, EVENTOS Y ESPECTÁCULOS. ARTÍSTICOS, CULTURALES Y LITERARIOS, PROPIOS Y DE TERCEROS, YA SEAN CINEMATOGRÁFICOS, TEATRALES, AUDIOVISUALES Y DISCOGRÁFICOS, REALIZADOS EN CUALQUIER SOPORTE, FORMATO O SISTEMA, INVENTADO O POR INVENTAR, ASÍ COMO SU CESIÓN A TERCEROS POR CUALQUIER MEDIO ADMITIDO EN DERECHO, TODO ELLO EN LOS ÁMBITOS NACIONAL E INTERNACIONAL. C.- EL DISEÑO, LA EXPLOTACIÓN, ASESORAMIENTO, COMERCIALIZACIÓN Y GESTIÓN, BAJO CUALQUIER FORMA DE CONTRATACIÓN QUE SE ESTABLEZCA, INCLUIDO EL \"MANAGEMENT\" DE CUALQUIER INDUSTRIA O EMPRESA, EN LOS SECTORES DE LA CONSTRUCCIÓN, INGENIERÍA Y ARQUITECTURA. D. - LA PRESTACIÓN DE TODO TIPO DE SERVICIOS DE ASESORAMIENTO, CONSULTORÍA Y ESTUDIOS EMPRESARIALES, EN SU MÁS AMPLIO SENTIDO, LO QUE INCLUYE ENTRE OTROS,LOS DE NATURALEZA FISCAL, JURÍDICA, CONTABLE, COMERCIAL, TÉCNICO, DE NATURALEZA EMPRESARIAL, DE INVESTIGACIÓN Y ASESORAMIENTO INDUSTRIAL, LOGÍSTICA, INVESTIGACIÓN DE MERCADOS, SELECCIÓN DE PERSONAL, IMPULSO DE VENTAS, CREACIÓN DE IMAGEN Y ORGANIZACIÓN EN GENERAL; ASÍ COMO LA PROMOCIÓN DE ACTUACIONES Y GESTIONES, EN EL ÁMBITO NACIONAL E INTERNACIONAL RELACIONADAS CON LOS MISMOS. E.- LA TENENCIA, PARTICIPACIÓN Y COMPRA-VENTA DE PARTICIPACIONES Y DE ACCIONES DE EMPRESAS, ASÍ COMO DE ACCIONES EN EL MERCADO DE CAPITALES MEDIANTE LA INVERSIÓN DE SUS PROPIOS RECURSOS Y DE LOS QUE OBTENGA EN EL MERCADO DE CAPITALES",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06945",
+      "_links": {
+        "self": {
+          "name": "ALONSO HERNANDEZ ASOCIADOS ARQUITECTURA SL",
+          "href": "https://api.euskadi.eus/procurements/companies/06945"
+        }
+      }
+    },
+    {
+      "name": "BITXORI LEON SANCHEZ",
+      "registrationNumber": "07501",
+      "identificationNumber": "34092989C",
+      "address": "C/ BIZKAIA, 4 - 1º B",
+      "location": {
+        "postalCode": "20400",
+        "municipality": "Tolosa",
+        "county": "Gipuzkoa",
+        "municipalityId": "071",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "2.751",
+          "name": "Profesionales de la publicidad, relaciones públicas y similares",
+          "_links": {
+            "self": {
+              "name": "Profesionales de la publicidad, relaciones públicas y similares",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/2.751"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2021-02-16",
+      "certificateEndDate": "2021-06-21",
+      "object": "PROFESIONALES DE LA PUBLICIDAD, RELACIONES PÚBLICAS Y SIMILARES",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07501",
+      "_links": {
+        "self": {
+          "name": "BITXORI LEON SANCHEZ",
+          "href": "https://api.euskadi.eus/procurements/companies/07501"
+        }
+      }
+    },
+    {
+      "name": "DRINATALEX, S.L.",
+      "registrationNumber": "07502",
+      "identificationNumber": "B85542058",
+      "address": "Calle Quintana, 17 5º D",
+      "location": {
+        "postalCode": "28008",
+        "municipality": "Madrid",
+        "county": "Madrid",
+        "municipalityId": "079",
+        "countyId": "28"
+      },
+      "economicActivities": [
+        {
+          "id": "1.612.1",
+          "name": "Venta al por mayor de toda clase de productos alimenticios, bebidas, tabaco",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de toda clase de productos alimenticios, bebidas, tabaco",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.612.1"
+            }
+          }
+        },
+        {
+          "id": "1.614.2",
+          "name": "Venta al por mayor de productos de perfumería, droguería, higiene y belleza",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de productos de perfumería, droguería, higiene y belleza",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.614.2"
+            }
+          }
+        },
+        {
+          "id": "1.652.2",
+          "name": "Venta al por menor de productos de droguería y productos para decoración",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de productos de droguería y productos para decoración",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.652.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2021-02-16",
+      "certificateEndDate": "2021-06-21",
+      "object": "INTERMEDIACIÓN DE COMERCIO. COMPRA, VENTA, IMPORTACIÓN Y EXPORTACIÓN DE TODA CLASE DE PRODUCTOS RELACIONADOS CON DROGUERÍA",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07502",
+      "_links": {
+        "self": {
+          "name": "DRINATALEX, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/07502"
+        }
+      }
+    },
+    {
+      "name": "SERVICIOS INFORMÁTICOS ANCADA, S.L.",
+      "registrationNumber": "07295",
+      "identificationNumber": "B47548243",
+      "address": "C/Villacarralón 10A",
+      "location": {
+        "postalCode": "47008",
+        "municipality": "Valladolid",
+        "county": "Valladolid",
+        "municipalityId": "186",
+        "countyId": "47"
+      },
+      "economicActivities": [
+        {
+          "id": "1.659.2",
+          "name": "Venta al por menor de muebles de oficina y máquinas y equipos de oficina",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de muebles de oficina y máquinas y equipos de oficina",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.659.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2021-02-15",
+      "certificateEndDate": "2021-08-12",
+      "object": "A) LA IMPORTACIÓN Y EXPORTACIÓN, LA VENTA AL MAYOR Y DETALLE, ALQUILER Y COMERCIALIZACIÓN EN GENERAL DE EQUIPOS INFORMÁTICOS, ELECTRÓNICOS Y SOFWARE, INCLUYENDO TODO TIPO DE MATERIAL ACCESORIO RELACIONADO CON ESTOS EQUIPOS, ASÍ COMO TAMBIÉN SERVICIOS DE PUBLICIDAD, COMUNICACIÓN, GRÁFICA Y AUDIOVISUAL; LA PROMOCIÓN, RELACIONES PÚBLICAS, DECORACIÓN, MARKETING DIRECTO, ASESORAMIENTO Y CAPACITACIÓN INFORMÁTICA. LA FABRICACIÓN DE CIRCUITOS DIGITALES Y ELECTRÓNICOS. LA FABRICACIÓN Y MONTAJE DE ORDENADORES Y PERIFÉRICOS. LA INVESTIGACIÓN Y DISEÑO DE CIRCUITOS DIGITALES. LA FABRICACIÓN Y DISEÑO DE CIRCUITOS GRÁFICOS. LA FABRICACIÓN Y DISEÑO DE EQUIPOS Y REDES DE COMUNICACIÓN, SISTEMAS OPERATIVOS DE RED, HARDWARE DE COMUNICACIÓN, CENTRALITAS Y SISTEMAS DE RADIOCOMUNICACIÓN. LA FABRICACIÓN Y ANÁLISIS DE SOFTWARE DE SISTEMAS DE GESTIÓN. EL ANÁLISIS DE HERRAMIENTAS DE PRODUCTIVIDAD PERSONAL, SOFTWARE CAD/CAM/CAE. EL DISEÑO DE PROYECTOS DE INSTALACIONES DE SISTEMAS OPERATIVOS DE LANS Y WANS, GATEWATYS, EMULADORES, CORREO ELECTRÓNICO Y ANÁLIZADORES DE RED. LA REALIZACIÓN DE PLANES INFORMÁTICOS, AUDITORÍA, INFORMÁTICA, ESTUDIOS DE MERCADO Y OPORTUNIDAD. LA SELECCIÓN DE EQUIPOS Y SOFTWARE; ORGANIZACIÓN DE DEPARTAMENTOS. LA INFORMACIÓN, IMPLANTACIÓN DE METODOLOGÍA DE DESARROLLO Y EXPLOTACIÓN, SEGURIDAD DE SOPORTES, COMUNICACIONES, INTEGRACIÓN DE SISTEMAS, EDIFICIOS INTELIGENTES, FORMACIÓN Y SELECCIÓN DE PERSONAL. EL DESARROLLO DE PLANES GLOBALES DE FORMACIÓN, FORMACIÓN DE USUARIOS FINALES, DE INFORMÁTICOS Y PERSONAL TÉCNICO. MASTER EN TECNOLOGÍAS DE LA INFORMACIÓN Y CURSOS ESPECÍFICOS DE SISTEMAS OPERATIVOS, BASES DE DATOS RELACIONADAS Y CUALESQUIERA APLICACIONES CONCRETAS Y ENSEÑANZAS EN GENERAL. EL SERVICIO TÉCNICO Y DE MANTENIMIENTO DE ORDENADORES Y CUALESQUIERA APARATOS ELECTRÓNICOS E INDUSTRIALES. TRABAJOS DE SOFTWARE PARA EMPRESAS, DISTRIBUCIÓN Y VENTA DE ORDENADORES, PERIFÉRICOS Y COMPONENTES. LA REALIZACIÓN DE TRABAJOS DE TIPO ADMINISTRATIVO PARA EMPRESAS. LA PRESTACIÓN DE SERVICIOS DE INFORMÁTICA Y TELECOMUNICACIONES; LA FABRICACIÓN DE EQUIPAMIENTOS DE INFORMÁTICA Y TELECOMUNICACIONES; EL DESARROLLO DE SOFTWARE DE TELECOMUNICACIONES; SISTEMAS DE CONTROL E INFORMACIÓN E INFORMACIÓN; LA PRESTACIÓN DE SERVICIOS DE VALOR AÑADIDOS EN NUEVAS TECNOLOGÍAS, INCLUYENDO LA COMERCIALIZACIÓN Y DISTRIBUCIÓN DE LOS PRODUCTOS RESULTANTES, AFINES Y COMPLEMENTARIOS, YA SEAN DE FABRICACIÓN PROPIA O DE TERCEROS\r\n",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07295",
+      "_links": {
+        "self": {
+          "name": "SERVICIOS INFORMÁTICOS ANCADA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/07295"
+        }
+      }
+    }
+  ]
+}

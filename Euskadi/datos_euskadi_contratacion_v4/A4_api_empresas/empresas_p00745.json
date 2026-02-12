@@ -1,0 +1,388 @@
+{
+  "totalItems": 9042,
+  "totalPages": 905,
+  "currentPage": 745,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "name": "EREIN COMERCIAL, S.A.",
+      "registrationNumber": "00770",
+      "identificationNumber": "A48410682",
+      "address": "C/ EUSKAL HERRIA, S/N . PAB. SOLOZABAL. APTDO. 8",
+      "location": {
+        "postalCode": "48250",
+        "municipality": "Zaldibar",
+        "county": "Bizkaia",
+        "municipalityId": "095",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.612.1",
+          "name": "Venta al por mayor de toda clase de productos alimenticios, bebidas, tabaco",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de toda clase de productos alimenticios, bebidas, tabaco",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.612.1"
+            }
+          }
+        },
+        {
+          "id": "1.612.4",
+          "name": "Venta al por mayor de carnes, huevos, aves y caza",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de carnes, huevos, aves y caza",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.612.4"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2009-06-08",
+      "certificateEndDate": "2009-10-01",
+      "object": "LA COMPRA VENTA, COMERCIALIZACIÓN Y DISTRIBUCIÓN DE SERVICIOS Y BIENES DE CONSUMO EN EL CAMPO DE LA ALIMENTACIÓN",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/00770",
+      "_links": {
+        "self": {
+          "name": "EREIN COMERCIAL, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/00770"
+        }
+      }
+    },
+    {
+      "name": "SOCEBRO, S.L.",
+      "registrationNumber": "03333",
+      "identificationNumber": "B26372490",
+      "address": "REPUBLICA ARGENTINA, 6. ENTREPLANTA",
+      "location": {
+        "postalCode": "26002",
+        "municipality": "Logroño",
+        "county": "Rioja, La",
+        "municipalityId": "089",
+        "countyId": "26"
+      },
+      "economicActivities": [
+        {
+          "id": "1.507",
+          "name": "Construcción, reparación y conservación de toda clase obras",
+          "_links": {
+            "self": {
+              "name": "Construcción, reparación y conservación de toda clase obras",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.507"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2009-06-08",
+      "certificateEndDate": "2009-11-13",
+      "object": "1- LA PROMOCIÓN, CONSTRUCCIÓN, COMPRA, VENTA, ARRENDAMIENTO Y EXPLOTACIÓN EN CUALQUIER OTRA FORMA DE TODA CLASE DE EDIFICACIONES SOLARES E INMUEBLES EN GENERAL, TANTO POR CUENTA PROPIA COMO AJENA. 2- LA ADMINISTRACIÓN DE FINCAS Y COMUNIDADES, TANTO DE PROPIETARIOS COMO DE AUTOPROMOTORES, ASÍ COMO LA PRESTACIÓN DE TODA CLASE DE SERVICIOS RELACIONADOS CON EL ÁMBITO INMOBILIARIO ARQUITECTÓNICO DE TÉCNICA DE LA CONSTRUCCIÓN E INGENIERÍA EN GENERAL, POR MEDIO DE LA FORMULACIÓN, DESARROLLO, Y PUESTA EN MARCHA DE ESTUDIOS ACTUACIONES Y PROYECTOS. 3- LA REALIZACIÓN POR CUENTA PROPIA O AJENA DE TODA CLASE DE CONSTRUCCIONES, INSTALACIONES , REFORMAS, REHABILITACIONES Y DECORACIONES. LA SUPERVISIÓN Y CONTROL DE OBRAS, ASÍ COMO LA COORDINACIÓN DE GREMIOS, EL ASESORAMIENTO Y LA ASISTENCIA TÉCNICA EN TODO CUANTO SE RELACIONE DIRECTA O INDIRECTAMENTE, CON EL CAMPO DE LA CONSTRUCCIÓN DE EDIFICIOS Y DE LAS OBRAS PÚBLICAS O CIVILES. 4- LA COMPRA, VENTA, IMPORTACIÓN, EXPORTACIÓN Y COMERCIALIZACIÓN, EN GENERAL DE TODA CLASE DE MATERIALES DE LA CONSTRUCCIÓN Y/O COMPLEMENTARIOS Y/O DECORATIVOS, ASÍ COMO CUALESQUIERA INSTALACIONES, ELEMENTOS O SERVICIOS DE LAS EDIFICACIONES. 5- LA ADQUISICIÓN, CESIÓN, TENENCIA, DISFRUTE, ADMINISTRACIÓN, GESTIÓN Y NEGOCIACIÓN EN GENERAL DE INMUEBLES.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03333",
+      "_links": {
+        "self": {
+          "name": "SOCEBRO, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/03333"
+        }
+      }
+    },
+    {
+      "name": "CENTIUM EMPRESA CONSTRUCTORA, S.A.",
+      "registrationNumber": "03761",
+      "identificationNumber": "A95543591",
+      "address": "PO. LANDABARRI, 1 - 2 º DPTO. 207 EDIF. ARTAZA ETXEA",
+      "location": {
+        "postalCode": "48940",
+        "municipality": "Leioa",
+        "county": "Bizkaia",
+        "municipalityId": "054",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.501.1",
+          "name": "Construcción completa, reparación y conservación de edificaciones",
+          "_links": {
+            "self": {
+              "name": "Construcción completa, reparación y conservación de edificaciones",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2009-06-03",
+      "certificateEndDate": "2009-11-07",
+      "object": "LA EJECUCIÓN COMPLETA DE OBRAS CIVILES Y DE EDIFICACIÓN, TANTO PÚBLICAS COMO PRIVADAS, MOVIMIENTO DE TIERRAS, OBRAS HIDRÁULICAS, VIALES, MARÍTIMAS, ELÉCTRICAS Y TODA CLASE DE INSTALACIONES, CONSERVACIÓN, REPARACIÓN Y MANTENIMIENTO DE OBRAS, DISTRIBUCIÓN Y VENTA DE MATERIALES, COMPRAVENTA DE FINCAS TANTO RÚSTICAS COMO URBANAS, RELAIZACIÓN DE ESTUDIOS, PROYECTOS Y TRABAJOS DE ARQUITECTURA E INGENIERÍA. ASÍ COMO LA ADQUISICIÓN, EXPLOTACIÓN Y ENAJENACIÓN DE BIENES INMUEBLES. ",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03761",
+      "_links": {
+        "self": {
+          "name": "CENTIUM EMPRESA CONSTRUCTORA, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/03761"
+        }
+      }
+    },
+    {
+      "name": "PROGRAMA FORMACIÓN Y CONSULTORÍA, S.L.L.",
+      "registrationNumber": "03912",
+      "identificationNumber": "B95429494",
+      "address": "C/ COLÓN DE LARREÁTEGUI, 26-7º A",
+      "location": {
+        "postalCode": "48009",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.847",
+          "name": "Servicios de consultoría",
+          "_links": {
+            "self": {
+              "name": "Servicios de consultoría",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.847"
+            }
+          }
+        },
+        {
+          "id": "1.933.9",
+          "name": "Otras actividades de enseñanza tales como idiomas, mecanografía",
+          "_links": {
+            "self": {
+              "name": "Otras actividades de enseñanza tales como idiomas, mecanografía",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.933.9"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2009-06-03",
+      "certificateEndDate": "2009-11-05",
+      "object": "1. LA ENSEÑANZA Y FORMACIÓN DE NUEVAS TENCOLOGÍAS, TANTO REGLADA COMO NO REGLADA, SÍ COMO EL PERFECCIONAMIENTO PROFESIONAL Y EN TODOS LOS NIVELES, DESDE EL BÁSICO AL SUPERIOR; 2. LA CONSULTORÍA Y TRATAMIENTO EN LA SEGURIDAD DE LA INFORMACIÓN",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03912",
+      "_links": {
+        "self": {
+          "name": "PROGRAMA FORMACIÓN Y CONSULTORÍA, S.L.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/03912"
+        }
+      }
+    },
+    {
+      "name": "TCK TECHNICAL DOCUMENTATION, S.L.",
+      "registrationNumber": "03913",
+      "identificationNumber": "B84968312",
+      "address": "AVDA. DE LA INDUSTRIA, 37 - 2 ª PL. OF. 2",
+      "location": {
+        "postalCode": "28760",
+        "municipality": "Tres Cantos",
+        "county": "Madrid",
+        "municipalityId": "903",
+        "countyId": "28"
+      },
+      "economicActivities": [
+        {
+          "id": "1.849.3",
+          "name": "Servicios de traducción y similares",
+          "_links": {
+            "self": {
+              "name": "Servicios de traducción y similares",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.849.3"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2009-06-03",
+      "certificateEndDate": "2009-10-14",
+      "object": "SERVICIOS DE TRADUCCIÓN, INTERPRETACIÓN Y OTROS SERVICIOS LINGÜÍSTICOS. ELABORACIÓN DE DOCUMENTACIONES TÉCNICAS, TALES COMO INSTRUCCIONES DE REPARACIÓN, MANUALES DE USUARIO Y DIAGNOSIS, CATÁLOGOS DE PIEZAS, ETC. DISEÑO, DESARROLLO E INTEGRACIÓN DE SISTEMAS TECNOLÓGICOS/INFORMÁTICOS APLICADOS A LA TRADUCCIÓN Y A LA GESTIÓN DE CONOCIMIENTOS. CONSULTORÍA INTEGRAL DE SOLUCIONES AVANZADAS EN TRADUCCIÓN, GESTIÓN DE CONOCIMIENTOS, FORMACIÓN Y ENTRENAMIENTO CON SOPORTE INFORMÁTICO. VENTA, COMERCIALIZACIÓN, ARRIENDO O CUALQUIER OTRO PROCEDIMIENTO DE TRÁFICO DE LAS SOLUCIONES Y SISTEMAS REFERIDOS. ADQUISICIÓN, ARRENDAMIENTO Y GESTIÓN DE ELEMENTOS O RECURSOS, MUEBLES O INMUEBLES, CONVENIENTES PARA LAS ACTIVIDADES YA RELACIONADAS. COMERCIALIZAR, REPRESENTAR, DISTRIBUIR Y EXPORTAR/IMPORTAR PRODCUCTOS, SOLUCIONES Y SISTEMAS, INCLUSO LLAVE EN MANO, RELACIONADOS DIRECTA O INDIRECTAMENTE CON LAS ACTIVIDADES CITADAS.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03913",
+      "_links": {
+        "self": {
+          "name": "TCK TECHNICAL DOCUMENTATION, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/03913"
+        }
+      }
+    },
+    {
+      "name": "IRENTSI, S.L.",
+      "registrationNumber": "03906",
+      "identificationNumber": "B20767372",
+      "address": "MARINO TABUYO, 11-LOC. 5",
+      "location": {
+        "postalCode": "20013",
+        "municipality": "Donostia / San Sebastián",
+        "county": "Gipuzkoa",
+        "municipalityId": "069",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.504.1",
+          "name": "Instalaciones eléctricas en general",
+          "_links": {
+            "self": {
+              "name": "Instalaciones eléctricas en general",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.504.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2009-06-02",
+      "certificateEndDate": "2009-08-24",
+      "object": "LA INSTALACIÓN, ALQUILER O REPARACIÓN DE TODO TIPO DE SISTEMAS DE ASPIRACIÓN, CENTRALIZADA O NO, PARA TODO TIPO DE VIVIENDAS, LOCALES O NAVES INDUSTRIALES, ASÍ COMO EL COMERCIO DE TODA CLASE DE MAQUINARIA, ACCESORIOS, RECAMBIOS Y HERRAMIENTAS PARA ESTE TIPO DE INSTALACIONES. TAMBIÉN COMPRENDERÁ LAS INSTALACIONES Y REPARACIONES ELÉCTRICAS, TELEFÓNICAS, TELEGRÁFICAS, TELEFONÍA SIN HILOS, TELEVISIÓN EN GENERAL, INSTALACIONES DE FONTANERÍA, DE FRÍO, CALOR Y ACONDICIONAMIENTO DE AIRE. DICHO OBJETO TAMBIÉN COMPRENDERÁ LA GESTIÓN, PROMOCIÓN, DIRECCIÓN Y COORDINACIÓN DE TODA CLASE DE OBRAS, ASÍ COMO LA ADQUISICIÓN, EXPLOTACIÓN, CESIÓN, ENAJENACIÓN, PARCELACIÓN, URBANIZACIÓN Y ADMINISTRACIÓN DE TODA CLASE DE FINCAS RÚSTICAS Y URBANAS, ASÍ COMO LA CONSTRUCCIÓN, VENTA Y EXPLOTACIÓN EN ALQUILER DE EDIFICACIONES Y EDIFICIOS, EN SU TOTALIDAD O EN PARTES, ACOGIDOS O NO A REGÍMENES ESPECIALES DE PROTECCIÓN. EL OBJETO SOCIAL TAMBIÉN COMPRENDERÁ LAS ACTIVIDADES DE IMPORTACIÓN Y EXPORTACIÓN DE TODO TIPO DE BIENES, SERVICIOS Y EQUIPOS. TAMBIÉN COMPRENDERÁ EL ALQUILER DE TODO TIPO DE BIENES, YA SEAN MUEBLES O INMUEBLES.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03906",
+      "_links": {
+        "self": {
+          "name": "IRENTSI, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/03906"
+        }
+      }
+    },
+    {
+      "name": "WHAT BA PUBLICIDAD ESTRATEGICA, S.L.",
+      "registrationNumber": "03908",
+      "identificationNumber": "B20976379",
+      "address": "GARIBAI, 34 - 1º C",
+      "location": {
+        "postalCode": "20004",
+        "municipality": "Donostia / San Sebastián",
+        "county": "Gipuzkoa",
+        "municipalityId": "069",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.844",
+          "name": "Servicios de publicidad, relaciones públicas y similares",
+          "_links": {
+            "self": {
+              "name": "Servicios de publicidad, relaciones públicas y similares",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.844"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2009-06-02",
+      "certificateEndDate": "2009-10-21",
+      "object": "LA PRESTACIÓN DE TODOS LOS SERVICIOS DE COMUNICACIÓN PROPIOS DE UNA AGENCIA DE PUBLICIDAD, ESTRATEGIA PUBLICITARIA Y MARKETING",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03908",
+      "_links": {
+        "self": {
+          "name": "WHAT BA PUBLICIDAD ESTRATEGICA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/03908"
+        }
+      }
+    },
+    {
+      "name": "IMPRENTA UNIVERSAL, S.A.",
+      "registrationNumber": "00880",
+      "identificationNumber": "A48145155",
+      "address": "MUNGIALDE ETORBIDEA, Nº 26.",
+      "location": {
+        "postalCode": "48160",
+        "municipality": "Derio",
+        "county": "Bizkaia",
+        "municipalityId": "901",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.474",
+          "name": "Artes gráficas (impresión gráfica)",
+          "_links": {
+            "self": {
+              "name": "Artes gráficas (impresión gráfica)",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.474"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2009-05-28",
+      "certificateEndDate": "2009-11-18",
+      "object": "TODO LO RELACIONADO CON ARTES GRÁFICAS EN PLIEGO Y BOBINA",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/00880",
+      "_links": {
+        "self": {
+          "name": "IMPRENTA UNIVERSAL, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/00880"
+        }
+      }
+    },
+    {
+      "name": "AUTOCARES DÍEZ, S.A.",
+      "registrationNumber": "03229",
+      "identificationNumber": "A201094611",
+      "address": "CAMINO MUNDAIZ, 24",
+      "location": {
+        "postalCode": "20012",
+        "municipality": "Donostia / San Sebastián",
+        "county": "Gipuzkoa",
+        "municipalityId": "069",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.721.3",
+          "name": "Transporte de viajeros por carretera",
+          "_links": {
+            "self": {
+              "name": "Transporte de viajeros por carretera",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.721.3"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2009-05-20",
+      "certificateEndDate": "2009-01-16",
+      "object": "EL TRANSPORTE POR CARRETERA EN TODAS SUS MODALIDADES",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03229",
+      "_links": {
+        "self": {
+          "name": "AUTOCARES DÍEZ, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/03229"
+        }
+      }
+    },
+    {
+      "name": "MIGUEL DEL POZO, S.A.",
+      "registrationNumber": "02691",
+      "identificationNumber": "A48070957",
+      "address": "C/ NOVIA SALCEDO, 9",
+      "location": {
+        "postalCode": "48012",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.501.1",
+          "name": "Construcción completa, reparación y conservación de edificaciones",
+          "_links": {
+            "self": {
+              "name": "Construcción completa, reparación y conservación de edificaciones",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.1"
+            }
+          }
+        },
+        {
+          "id": "1.501.2",
+          "name": "Construcción completa, reparación y conservación obras civiles",
+          "_links": {
+            "self": {
+              "name": "Construcción completa, reparación y conservación obras civiles",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2009-05-18",
+      "certificateEndDate": "2009-10-28",
+      "object": "LA ADQUISICIÓN POR CUALQUIER TÍTULO Y LA COMERCIALIZACIÓN EN GENERAL, DE TODA CLASE DE TERRENOS, SOLARES, EDIFICIOS, FINCAS RÚSTICAS Y URBANAS; LA CONSTRUCCIÓN, URBANIZACIÓN, BIEN POR CUENTA PROPIA O POR LA DE UN TERCERO, LA ENAJENACIÓN, VENTA, ARRIENDO O EXPLOTACIÓN EN CUALQUIER FORMA DE TODA CLASE DE INMUEBLES, EDIFICIOS, PISOS, APARTAMENTOS, LOCALES COMECIALES O INDUSTRIALES, OFICINAS, CHALETS, HOTELES Y LA FINANCIACIÓN DE TODAS LAS OPERACIONES ANTERIORES U OTRAS SIMILARES Y CUALQUIERA OTRA QUE SEA PRESUPUESTO, COMPLEMENTO O CONSECUENCIA DE LAS ACTIVIDADES INDICADAS ",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/02691",
+      "_links": {
+        "self": {
+          "name": "MIGUEL DEL POZO, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/02691"
+        }
+      }
+    }
+  ]
+}

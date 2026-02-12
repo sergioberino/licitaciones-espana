@@ -1,0 +1,386 @@
+{
+  "totalItems": 9042,
+  "totalPages": 905,
+  "currentPage": 798,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "name": "JARA IMPRESORES, S.L.",
+      "registrationNumber": "01300",
+      "identificationNumber": "B01127265",
+      "address": "C/ CARRETERA DE ZURBANO, Nº 7.",
+      "location": {
+        "postalCode": "01013",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.474",
+          "name": "Artes gráficas (impresión gráfica)",
+          "_links": {
+            "self": {
+              "name": "Artes gráficas (impresión gráfica)",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.474"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2003-12-11",
+      "certificateEndDate": "2004-05-24",
+      "object": "LA IMPRESIÓN Y REPRODUCCIÓN DE TEXTOS O IMÁGENES POR CUALQUIER PROCEDIMIENTO O SISTEMA",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/01300",
+      "_links": {
+        "self": {
+          "name": "JARA IMPRESORES, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/01300"
+        }
+      }
+    },
+    {
+      "name": "BAU ALAVA, S.L.",
+      "registrationNumber": "02184",
+      "identificationNumber": "B01188309",
+      "address": "C/ MENDOZA, 8-BAJO",
+      "location": {
+        "postalCode": "01013",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.507",
+          "name": "Construcción, reparación y conservación de toda clase obras",
+          "_links": {
+            "self": {
+              "name": "Construcción, reparación y conservación de toda clase obras",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.507"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2003-12-09",
+      "certificateEndDate": "2004-06-01",
+      "object": "LA ADQUISICIÓN, URBANIZACIÓN, PARCELACIÓN, CONSTRUCCIÓN EDIFICACIÓN, CONSTITUCIÓN EN PROPIEDAD HORIZONTAL, REFORMA, REHABILITACIÓN, AMPLIACIÓN, EXPLOTACIÓN DIRECTA O INDIRECTA, ENAJENACIÓN Y, EN GENERAL, TODA ACTIVIDAD RELACIONADA CON BIENES INMUEBLES, ASÍ RÚSTICOS COMO URBANOS Y LA REALIZACIÓN DE OBRAS PÚBLICAS Y TODA SUERTE DE INVERSIONES Y PROMOCIONES RELACIONADAS CON EL RAMO DE LA CONSTRUCCIÓN",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/02184",
+      "_links": {
+        "self": {
+          "name": "BAU ALAVA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/02184"
+        }
+      }
+    },
+    {
+      "name": "SERVICIO DE AYUDA A DOMICILIO DE IRÚN, S. COOP.",
+      "registrationNumber": "02080",
+      "identificationNumber": "F20510665",
+      "address": "C/ LUIS MARIANO 18-1º IZDA.",
+      "location": {
+        "postalCode": "20303",
+        "municipality": "Irun",
+        "county": "Gipuzkoa",
+        "municipalityId": "045",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.952",
+          "name": "Asistencia y servicios sociales en centros no residenciales",
+          "_links": {
+            "self": {
+              "name": "Asistencia y servicios sociales en centros no residenciales",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.952"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2003-12-05",
+      "certificateEndDate": "2004-05-07",
+      "object": "EL SERVICIO DE AYUDA DOMICILIARIA, LA LIMPIEZA DE RESIDENCIAS DE ANCIANOS, ATENCIÓN DE PISOS RESIDENCIA, LA ATENCIÓN DE ANCIANOS, MINUSVÁLIDOS Y TODAS AQUELLAS PERSONAS QUE LO  NECESITEN",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/02080",
+      "_links": {
+        "self": {
+          "name": "SERVICIO DE AYUDA A DOMICILIO DE IRÚN, S. COOP.",
+          "href": "https://api.euskadi.eus/procurements/companies/02080"
+        }
+      }
+    },
+    {
+      "name": "SERVIGRAF VIZCAYA, S.L.",
+      "registrationNumber": "01200",
+      "identificationNumber": "B48434484",
+      "address": "POLÍG.INDUSTRIAL ERLETXE.PLATAF.137.PAB.24",
+      "location": {
+        "postalCode": "48960",
+        "municipality": "Galdakao",
+        "county": "Bizkaia",
+        "municipalityId": "036",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.474",
+          "name": "Artes gráficas (impresión gráfica)",
+          "_links": {
+            "self": {
+              "name": "Artes gráficas (impresión gráfica)",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.474"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2003-12-04",
+      "certificateEndDate": "2004-05-28",
+      "object": "LA FABRICACIÓN, VENTA Y DISEÑO DE TODO TIPO DE ADHESIVOS Y SISTEMAS MODULARES DE SEÑALETICA",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/01200",
+      "_links": {
+        "self": {
+          "name": "SERVIGRAF VIZCAYA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/01200"
+        }
+      }
+    },
+    {
+      "name": "COMPAQ COMPUTER ESPAÑA, S.L. (Sociedad Unipersonal)",
+      "registrationNumber": "01606",
+      "identificationNumber": "A28066827",
+      "address": "C/ VICENTE ALEIXANDRE, Nº 1 - PARQUE LAS ROZAS",
+      "location": {
+        "postalCode": "28230",
+        "municipality": "Rozas de Madrid, Las",
+        "county": "Madrid",
+        "municipalityId": "127",
+        "countyId": "28"
+      },
+      "economicActivities": [
+        {
+          "id": "1.615.4",
+          "name": "Venta al por mayor de aparatos y material radioeléctrico y electrónico",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de aparatos y material radioeléctrico y electrónico",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.615.4"
+            }
+          }
+        },
+        {
+          "id": "1.617.8",
+          "name": "Venta al por mayor de máquinas y material de oficina",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de máquinas y material de oficina",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.617.8"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2003-12-04",
+      "certificateEndDate": "2002-12-05",
+      "object": "LA FABRICACIÓN, TRANSFORMACIÓN, DISEÑO, MONTAJE, COMPRA, VENTA, ARRENDAMIENTO, EXPORTACIÓN, IMPORTACIÓN, DISTRIBUCIÓN Y COMERCIALIZACIÓN ASÍ COMO LA PRESTACIÓN DE SERVICIOS, EN GENERAL Y DE INSTALACIÓN, MANTENIMIENTO, REPARACIÓN Y ASISTENCIA TÉCNICA, EN PARTICULAR, DE PRODUCTOS, EQUIPOS, INSTRUMENTOS, APARATOS, UTENSILIOS, ARTÍCULOS, PARTES, PIEZAS Y LOS SUMINISTROS NECESARIOS O AUXILIARES PARA SU CORRECTO FUNCIONAMIENTO, USO O PRUEBA, TODO ELLO REFERIDO AL CAMPO DE LA INFORMÁTICA, TANTO HARDWARE COMO SOFTWARE, Y EN ESPECIAL SU APLICACIÓN AL TRATAMIENTO DE LA INFORMACIÓN, A LAS TELECOMUNICACIONES, A LA FORMACIÓN O EDUCACIÓN Y CUALQUIER OTRO CAMPO EN QUE LA INFORMÁTICA PUEDA SER APLICADA EN LA ACTUALIDAD O EN EL FUTURO. LA SOCIEDAD TAMBIÉN PODRÁ GESTIONAR SUS ACTIVOS Y EJECUTAR ESTUDIOS, INFORMES Y PROYECTOS ASÍ COMO REALIZAR ACTIVIDADES DE MONTAJE Y/O DE CONSTRUCCIÓN DE EDIFICIOS Y OBRAS CIVILES E INSTALACIONES DE CUALQUIER TIPO, INCLUSO LAS DE CLIMATIZACIÓN, ELÉCTRICAS, DE SEGURIDAD Y VIGILANCIA, DE AGUA, GAS U OTRAS CONDUCCIONES Y ACONDICIONAMIENTO DE INTERIORES",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/01606",
+      "_links": {
+        "self": {
+          "name": "COMPAQ COMPUTER ESPAÑA, S.L. (Sociedad Unipersonal)",
+          "href": "https://api.euskadi.eus/procurements/companies/01606"
+        }
+      }
+    },
+    {
+      "name": "SYNSTAR COMPUTER SERVICES, S.A. SOCIEDAD UNIPERSONAL",
+      "registrationNumber": "01888",
+      "identificationNumber": "A50158054",
+      "address": "C/ SAN SEVERO, S/N - BARAJAS PARK.",
+      "location": {
+        "postalCode": "28042",
+        "municipality": "Madrid",
+        "county": "Madrid",
+        "municipalityId": "079",
+        "countyId": "28"
+      },
+      "economicActivities": [
+        {
+          "id": "1.504.1",
+          "name": "Instalaciones eléctricas en general",
+          "_links": {
+            "self": {
+              "name": "Instalaciones eléctricas en general",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.504.1"
+            }
+          }
+        },
+        {
+          "id": "1.699",
+          "name": "Otras reparaciones n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otras reparaciones n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.699"
+            }
+          }
+        },
+        {
+          "id": "1.845",
+          "name": "Explotación electrónica por cuenta de terceros",
+          "_links": {
+            "self": {
+              "name": "Explotación electrónica por cuenta de terceros",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.845"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2003-12-03",
+      "certificateEndDate": "2004-04-21",
+      "object": "\r\n\r\na) LA INSTALACIÓN, MANTENIMIENTO Y REPARACIÓN DE APARATOS ORDENADORES Y SUS PERIFÉRICOS.\r\n\r\nb) REPRESENTACIÓN, AGENCIA Y DISTRIBUCIÓN DE PRODUCTOS Y DE MARCAS RELACIONADAS CON LA INFORMÁTICA Y CIBERNÉTICA, Y LA VENTA Y ALQUILER DE MATERIALES Y EQUIPOS INFORMÁTICOS.\r\n\r\nc) CONSULTORÍA Y ASESORAMIENTO TÉCNICO EN LA CONSTRUCCIÓN, INSTALACIÓN, FUNCIONAMIENTO Y MANTENIMIENTO DE EQUIPOS ELECTRÓNICOS E INFORMÁTICOS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/01888",
+      "_links": {
+        "self": {
+          "name": "SYNSTAR COMPUTER SERVICES, S.A. SOCIEDAD UNIPERSONAL",
+          "href": "https://api.euskadi.eus/procurements/companies/01888"
+        }
+      }
+    },
+    {
+      "name": "CENTRAL DE PROCESOS INFORMATICOS",
+      "registrationNumber": "02304",
+      "identificationNumber": "A47011739",
+      "address": "C/ GARCÍA VALLADOLID, Nº 1",
+      "location": {
+        "postalCode": "47004",
+        "municipality": "Valladolid",
+        "county": "Valladolid",
+        "municipalityId": "186",
+        "countyId": "47"
+      },
+      "economicActivities": [
+        {
+          "id": "1.617.9",
+          "name": "Venta al por mayor interindustrial de otros productos n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor interindustrial de otros productos n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.617.9"
+            }
+          }
+        },
+        {
+          "id": "1.845",
+          "name": "Explotación electrónica por cuenta de terceros",
+          "_links": {
+            "self": {
+              "name": "Explotación electrónica por cuenta de terceros",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.845"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2003-12-01",
+      "certificateEndDate": "2001-02-03",
+      "object": "LA ACTIVIDAD DE INVESTIGACIÓN, ANÁLISIS, CREACIÓN, CONSULTORÍA, DESARROLLO, APLICACIÓN, MANTENIMIENTO, SUPERVISIÓN, COMPRA, VENTA, ALQUILER, DISTRIBUCIÓN, CONTRATACIÓN, CESIÓN INSTALACIÓN Y PRESTACIÓN DE SERVICIOS Y DESARROLLO DE TECNOLOGÍA DE LA INFORMACIÓN, PROCESAMIENTO DE DATOS INFORMATIZADOS, HARDWARE, SOFTWARE, SERVICIOS DE COMUNICACIONES Y TELECOMUNICACIONES Y DESARROLLO DE SOLUCIONES INFORMÁTICAS EN LAS ÁREAS INDUSTRIALES, COMERCIALES O DE SERVICIOS. LA SOCIEDAD REGISTRARÁ LAS PATENTES, MARCAS Y NOMBRES DE SUS PRODUCTOS, LOGOTIPOS Y SERVICIOS, PUDIENDO CONCEDER U OBTENER LICENCIAS DE EXPLOTACIÓN DE LAS MISMAS.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/02304",
+      "_links": {
+        "self": {
+          "name": "CENTRAL DE PROCESOS INFORMATICOS",
+          "href": "https://api.euskadi.eus/procurements/companies/02304"
+        }
+      }
+    },
+    {
+      "name": "GRÚAS USABIAGA, S.A.",
+      "registrationNumber": "02389",
+      "identificationNumber": "A20154191",
+      "address": "CARRETARA ZALDIBIA, 5 - BAJO 2",
+      "location": {
+        "postalCode": "20000",
+        "municipality": "Ordizia",
+        "county": "Gipuzkoa",
+        "municipalityId": "076",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.852",
+          "name": "Alquiler de maquinaria y equipo para la construcción",
+          "_links": {
+            "self": {
+              "name": "Alquiler de maquinaria y equipo para la construcción",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.852"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2003-11-17",
+      "certificateEndDate": "2004-04-23",
+      "object": "LA CONTRATACIÓN Y PRESTACIÓN  DE TODO TIPO DE PORTES, TRANSPORTES Y TRASLADOS MEDIANTE TODA CLASE DE VEHÍCULOS, ASÍ COMO LA COMPRA-VENTA DE ÉSTOS  Y SU CESIÓN Y ARRENDAMIENTO; SUMINISTRO DE MATERIALES PARA OBRAS Y CONSTRUCCIONES DE TODA ÍNDOLE",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/02389",
+      "_links": {
+        "self": {
+          "name": "GRÚAS USABIAGA, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/02389"
+        }
+      }
+    },
+    {
+      "name": "IÑIGO SANCHO MANZANO",
+      "registrationNumber": "02756",
+      "identificationNumber": "30674953Z",
+      "address": "BIARRITZ 15-4º-I",
+      "location": {
+        "postalCode": "48004",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "certificateStartDate": "2003-11-17",
+      "certificateEndDate": "2004-03-10",
+      "object": "SUMINISTROS GRÁFICOS, PAPELERÍA: TARJETAS, SOBRES, INVITACIONES, ENCUADERNACIONES",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/02756",
+      "_links": {
+        "self": {
+          "name": "IÑIGO SANCHO MANZANO",
+          "href": "https://api.euskadi.eus/procurements/companies/02756"
+        }
+      }
+    },
+    {
+      "name": "TRILOGÍA, CREATIVIDAD Y DISEÑO GRÁFICO, S.L.",
+      "registrationNumber": "02757",
+      "identificationNumber": "B01115229",
+      "address": "CARACAS, 4 BAJO",
+      "location": {
+        "postalCode": "01012",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.844",
+          "name": "Servicios de publicidad, relaciones públicas y similares",
+          "_links": {
+            "self": {
+              "name": "Servicios de publicidad, relaciones públicas y similares",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.844"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2003-11-17",
+      "certificateEndDate": "2004-04-09",
+      "object": "LA PRESTACIÓN DE SERVICIOS DE PUBLICIDAD, MEDIANTE ANUNCIOS, CARTELES, FOLLETOS, PELÍCULAS PUBLICITARIAS, ETC.  A TRAVÉS DE PRENSA, RADIO, TELEVISIÓN O CUALQUIER OTRO MEDIO; LA CREACIÓN Y DIFUSIÓN DE ANUNCIOS O CAMPAÑASS DE INFORMACIÓN PUBLICITARIA, PROPAGANDA ELECTORAL, COMUNICACIÓN INSTITUCIONAL O PÚBLICA E IMAGEN CORPORATIVA, LA REALIZACIÓN DE PUBLICIDAD EXTERIOR, DIRECTA Y MARKETING DIRECTO;  LAS RELACIONES PÚBLICAS, PROMOCIÓN DE VENTAS PUBLICITARIAS, REGALOS Y RECLAMOS PUBLICITARIOS Y, EN GENERAL CUALQUIER SERVICIO INDEPENDIENTE DE PUBLICIDAD.\r\nLA ADQUISICIÓN, VENTA Y EXPLOTACIÓN, MEDIANTE ARRENDAMIENTO O CUALQUIER OTRA FORMA JURÍDICA, DE BIENES INMUEBLES, PROPIOS O AJENOS A LA SOCIEDAD. EL OBJETO SOCIAL PODRÁ REALIZARSE TANTO DIRECTAMENTE COMO DE FORMA INDIRECTA, MEDIANTE LA TITULARIDAD  DE ACCIONES  O PARTICIPACIONES EN SOCIEDADES CON OBJETO IDÉNTICO.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/02757",
+      "_links": {
+        "self": {
+          "name": "TRILOGÍA, CREATIVIDAD Y DISEÑO GRÁFICO, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/02757"
+        }
+      }
+    }
+  ]
+}

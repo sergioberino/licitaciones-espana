@@ -1,0 +1,664 @@
+{
+  "totalItems": 9042,
+  "totalPages": 905,
+  "currentPage": 60,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "name": "NUAVIS TECHNOLOGY, S.L.",
+      "registrationNumber": "09458",
+      "identificationNumber": "B75178475",
+      "address": "Paseo Miramón 170",
+      "location": {
+        "postalCode": "20014",
+        "municipality": "Donostia / San Sebastián",
+        "county": "Gipuzkoa",
+        "municipalityId": "069",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.845",
+          "name": "Explotación electrónica por cuenta de terceros",
+          "_links": {
+            "self": {
+              "name": "Explotación electrónica por cuenta de terceros",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.845"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-01-22",
+      "certificateEndDate": "2026-07-07",
+      "object": "ACTIVIDAD PRINCIPAL: - ACTIVIDADES DE PROGRAMACIÓN INFORMÁTICA. OTRAS ACTIVIDADES: - ACTIVIDADES DE CONSULTORÍA INFORMÁTICA. - OTROS SERVICIOS RELACIONADOS CON LAS TECNOLOGÍAS DE LA INFORMACIÓN Y LA INFORMÁTICA.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/09458",
+      "_links": {
+        "self": {
+          "name": "NUAVIS TECHNOLOGY, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/09458"
+        }
+      }
+    },
+    {
+      "name": "ELSA MARIA IMATZ BASARRATE",
+      "registrationNumber": "07959",
+      "identificationNumber": "20170517T",
+      "address": "Alameda Urquijo / Urkixo Zumarkalea, 74",
+      "location": {
+        "postalCode": "48013",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "2.731",
+          "name": "Abogados",
+          "_links": {
+            "self": {
+              "name": "Abogados",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/2.731"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-01-22",
+      "certificateEndDate": "2026-07-07",
+      "object": "ABOGADOS.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07959",
+      "_links": {
+        "self": {
+          "name": "ELSA MARIA IMATZ BASARRATE",
+          "href": "https://api.euskadi.eus/procurements/companies/07959"
+        }
+      }
+    },
+    {
+      "name": "IPARNATURE S.L.",
+      "registrationNumber": "06114",
+      "identificationNumber": "B01374750",
+      "address": "José Madinabeitia 10, 1 dcha",
+      "location": {
+        "postalCode": "01470",
+        "municipality": "Amurrio",
+        "county": "Araba/Álava",
+        "municipalityId": "002",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.989.2",
+          "name": "Servicios de organización de congresos, asambleas y similares",
+          "_links": {
+            "self": {
+              "name": "Servicios de organización de congresos, asambleas y similares",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.989.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-01-22",
+      "certificateEndDate": "2026-07-08",
+      "object": "LA GESTIÓN DE ACTIVIDADES RELACIONADAS CON LA MULTIAVENTURA, EL OCIO Y EL DEPORTE; ASÍ COMO LA PROMOCIÓN DEL TURISMO RURAL Y LA VENTA AL POR MENOR DE PRODUCTOS ARTESANOS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06114",
+      "_links": {
+        "self": {
+          "name": "IPARNATURE S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/06114"
+        }
+      }
+    },
+    {
+      "name": "JAAM SOCIEDAD DE ARQUITECTURA, S.L.",
+      "registrationNumber": "03631",
+      "identificationNumber": "B95366183",
+      "address": "FRANCISCO MACIA, 4 - 6 DCHA.",
+      "location": {
+        "postalCode": "48014",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.843.2",
+          "name": "Servicios técnicos de arquitectura y urbanismo",
+          "_links": {
+            "self": {
+              "name": "Servicios técnicos de arquitectura y urbanismo",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-01-22",
+      "certificateEndDate": "2026-07-11",
+      "object": "LA ACTIVIDAD PROPIA DEL EJERCICIO DE LAS ACTIVIDADES PROPIAS DE LOS TITULADOS UNIVERSITARIOS HABILITADOS PARA EL EJERCICIO DE LA PROFESIÓN REGULADA DE ARQUITECTO Y ARQUITECTO TÉCNICO",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03631",
+      "_links": {
+        "self": {
+          "name": "JAAM SOCIEDAD DE ARQUITECTURA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/03631"
+        }
+      }
+    },
+    {
+      "name": "ESTUDIO TAZUECO, S.L.",
+      "registrationNumber": "08347",
+      "identificationNumber": "B95563607",
+      "address": "GENERAL ERASO, 1 - 1º dptos 3-4",
+      "location": {
+        "postalCode": "48014",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.474.1",
+          "name": "Impresión de textos o imágenes por cualquier procedimiento",
+          "_links": {
+            "self": {
+              "name": "Impresión de textos o imágenes por cualquier procedimiento",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.474.1"
+            }
+          }
+        },
+        {
+          "id": "1.612.9",
+          "name": "Venta al por mayor de otros productos alimenticios, helados de todas clases",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de otros productos alimenticios, helados de todas clases",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.612.9"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-01-22",
+      "certificateEndDate": "2026-07-07",
+      "object": "A).- DISEÑO GRÁFICO, DIGITAL, MULTIMEDIA Y OTROS. B).- DISEÑÓ PUBLICITARIO, GESTIÓN DE PUBLICIDAD Y ASESORAMIENTO. MARKETING Y E-MARKETING, DISEÑO DE CAMPAÑAS DE MARKETING ESTRATÉGICO Y ESTUDIOS RELACIONADOS CON DICHAS CAMPAÑAS. C).- VENTA AL POR MAYOR Y AL POR MENOR DE TODO TIPO DE ARTÍCULOS Y ACCESORIOS OBJETO DE EMPLEAR EN CAMPAÑAS PUBLICITARIAS. D).- FORMACIÓN EN MATERIA DE PUBLICIDAD, MARKETING Y DISEÑO EN TODOS SUS FORMATOS. E).- IMPRESIÓN DIGITAL, IMPRESIÓN EN GRAN FORMATO,  IMPRESIÓN OFFSET, IMPRESIÓN LASER Y OTRAS SOLUCIONES DE IMPRESIÓN, ASÍ COMO TRABAJOS DE GRABADO Y CORTE. F).- ORGANIZACIÓN Y GESTIÓN DE EVENTOS, CONGRESOS Y OTROS ACTOS PUBLICITARIOS. G).- TRABAJOS DE FOTOGRAFÍA ARTÍSTICA, PUBLICITARIA Y PERSONAL.\n",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08347",
+      "_links": {
+        "self": {
+          "name": "ESTUDIO TAZUECO, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/08347"
+        }
+      }
+    },
+    {
+      "name": "HOSTELCO, S.L.",
+      "registrationNumber": "00613",
+      "identificationNumber": "B48086698",
+      "address": "Larrondo Beheko Etorbidea, nº 1. Pabellón 12",
+      "location": {
+        "postalCode": "48180",
+        "municipality": "Loiu",
+        "county": "Bizkaia",
+        "municipalityId": "903",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.617.9",
+          "name": "Venta al por mayor interindustrial de otros productos n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor interindustrial de otros productos n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.617.9"
+            }
+          }
+        },
+        {
+          "id": "1.692",
+          "name": "Reparación de maquinaria industrial",
+          "_links": {
+            "self": {
+              "name": "Reparación de maquinaria industrial",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.692"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-01-22",
+      "certificateEndDate": "2026-07-01",
+      "object": "LA EXPLOTACIÓN DE MAQUINARIA COMPLEMENTARIA DEDICADA A LA FABRICACIÓN Y VENTA AL POR MAYOR Y MENOR DE TODA CLASE DE MAQUINARIA INDUSTRIAL, ARTÍCULOS DE USO DOMÉSTICO Y PARTICULAR, MATERIAL ELÉCTRICO Y ELECTRODOMÉSTICO, MUEBLES DE TODAS CLASES, ELABORADOS CON CUALQUIER CLASE DE MATERIALES, INSTALACIONES HOTELERAS Y CUANTOS ARTÍCULOS SEAN UTILIZABLES EN EL SERVICIO DEL HOGAR; REPARACIÓN Y MANTENIMIENTO DE ARTÍCULOS INDUSTRIALES Y PRODUCTOS DE LA NATURALEZA DE LOS ANTERIORES",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/00613",
+      "_links": {
+        "self": {
+          "name": "HOSTELCO, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/00613"
+        }
+      }
+    },
+    {
+      "name": "OKA INFORMATIKA 2014 S.L.",
+      "registrationNumber": "06150",
+      "identificationNumber": "B95773008",
+      "address": "CL.BEKOIBARRA, 13-2ºPTA.6",
+      "location": {
+        "postalCode": "48300",
+        "municipality": "Gernika-Lumo",
+        "county": "Bizkaia",
+        "municipalityId": "046",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.659.2",
+          "name": "Venta al por menor de muebles de oficina y máquinas y equipos de oficina",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de muebles de oficina y máquinas y equipos de oficina",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.659.2"
+            }
+          }
+        },
+        {
+          "id": "1.699",
+          "name": "Otras reparaciones n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otras reparaciones n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.699"
+            }
+          }
+        },
+        {
+          "id": "1.845",
+          "name": "Explotación electrónica por cuenta de terceros",
+          "_links": {
+            "self": {
+              "name": "Explotación electrónica por cuenta de terceros",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.845"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-01-22",
+      "certificateEndDate": "2026-07-22",
+      "object": "A) LA PRESENTACIÓN Y COMERCIALIZACIÓN DE SERVICIOS DE TELECOMUNICACIONES: EL COMERCIO ELECTRÓNICO; Y LA PRESTACIÓN DE SERVICIOS DE TELEMARKETING, PUBLICIDAD, CONSULTORÍA INFORMÁTICA Y DE TELECOMUNICACIONES, SERVICIOS DE SEGURIDAD RELACIONADOS CON EL SECTOR DE TELECOMUNICACIONES Y DEMÁS ACTIVIDADES RELACIONADAS AUTORIZADAS DE ACUERDO CON LA NORMATIVA VIGENTE. B) LA FABRICACIÓN, DISTRIBUCIÓN Y COMERCIALIZACIÓN EN GENERAL DE MICROORDENADORES, PROGRAMAS, PERIFÉRICOS, LIBROS, MONITORES, ACCESORIOS Y DEMÁS PRODUCTOS INFORMÁTICOS, OFIMÁTICAS Y ELECTRÓNICOS, Y EL ASESORAMIENTO Y LA CONSULTORÍA EN ESTOS CAMPOS; LA PRESTACIÓN DE SERVICIOS DE PROGRAMACIÓN, Y DESARROLLO DE HARDWARE Y SOFTWARE; LA ASISTENCIA TÉCNICA Y MANTENIMIENTO DE TALES PRODUCTOS Y SERVICIOS; Y LA ELABORACIÓN, IMPARTICIÓN Y VENTA DE CUALESQUIERA CURSOS DE FORMACIÓN RELACIONADOS CON LA INFORMÁTICA Y LA OFIMÁTICA",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06150",
+      "_links": {
+        "self": {
+          "name": "OKA INFORMATIKA 2014 S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/06150"
+        }
+      }
+    },
+    {
+      "name": "RAEP, S.L.",
+      "registrationNumber": "04823",
+      "identificationNumber": "B01123124",
+      "address": "Portal de Gamarra, 36 Pab.20",
+      "location": {
+        "postalCode": "01013",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.316.3",
+          "name": "Tornillería y fabricación de artículos derivados del alambre",
+          "_links": {
+            "self": {
+              "name": "Tornillería y fabricación de artículos derivados del alambre",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.316.3"
+            }
+          }
+        },
+        {
+          "id": "1.341",
+          "name": "Fabricación de hilos y cables eléctricos",
+          "_links": {
+            "self": {
+              "name": "Fabricación de hilos y cables eléctricos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.341"
+            }
+          }
+        },
+        {
+          "id": "1.472",
+          "name": "Fabricación de papel y cartón",
+          "_links": {
+            "self": {
+              "name": "Fabricación de papel y cartón",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.472"
+            }
+          }
+        },
+        {
+          "id": "1.849.9",
+          "name": "Otros servicios independientes n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros servicios independientes n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.849.9"
+            }
+          }
+        },
+        {
+          "id": "1.911",
+          "name": "Servicios agrícolas y ganaderos",
+          "_links": {
+            "self": {
+              "name": "Servicios agrícolas y ganaderos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.911"
+            }
+          }
+        },
+        {
+          "id": "1.922",
+          "name": "Servicios de limpieza",
+          "_links": {
+            "self": {
+              "name": "Servicios de limpieza",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.922"
+            }
+          }
+        },
+        {
+          "id": "1.932.1",
+          "name": "Enseñanza de formación y perfeccionamiento profesional no superior",
+          "_links": {
+            "self": {
+              "name": "Enseñanza de formación y perfeccionamiento profesional no superior",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.932.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-01-22",
+      "certificateEndDate": "2026-07-22",
+      "classification": [
+        {
+          "id": "S",
+          "name": "Servicios",
+          "groups": [
+            {
+              "id": "O",
+              "subgroups": [
+                {
+                  "id": "06",
+                  "name": "Conservación y mantenimiento de montes y jardines",
+                  "categories": [
+                    {
+                      "id": "2",
+                      "name": "Desde 150.001 Hasta 300.000",
+                      "_links": {
+                        "self": {
+                          "name": "Desde 150.001 Hasta 300.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/S/categories/2"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "Conservación y mantenimiento de montes y jardines",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/O/subgroups/06"
+                    }
+                  }
+                }
+              ],
+              "_links": {
+                "self": {
+                  "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/O"
+                }
+              }
+            },
+            {
+              "id": "U",
+              "subgroups": [
+                {
+                  "id": "01",
+                  "name": "Servicios de limpieza ",
+                  "categories": [
+                    {
+                      "id": "2",
+                      "name": "Desde 150.001 Hasta 300.000",
+                      "_links": {
+                        "self": {
+                          "name": "Desde 150.001 Hasta 300.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/S/categories/2"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "Servicios de limpieza ",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/U/subgroups/01"
+                    }
+                  }
+                }
+              ],
+              "_links": {
+                "self": {
+                  "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/U"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Servicios",
+              "href": "https://api.euskadi.eus/procurements/companies/types/S"
+            }
+          }
+        }
+      ],
+      "object": "LA LIMPIEZA, JARDINERÍA, REPOBLACIÓN FORESTAL, ARTESANÍA, PRODUCCIÓN AGRÍCOLA Y MONTAJES MECÁNICOS Y ELECTRÓNICOS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/04823",
+      "_links": {
+        "self": {
+          "name": "RAEP, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/04823"
+        }
+      }
+    },
+    {
+      "name": "IGNACIO NUÑEZ REFORMAS, S.L.",
+      "registrationNumber": "08628",
+      "identificationNumber": "B95529889",
+      "address": "ITSASALDE 43 1º IZDA",
+      "location": {
+        "postalCode": "48980",
+        "municipality": "Santurtzi",
+        "county": "Bizkaia",
+        "municipalityId": "082",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.501.3",
+          "name": "Albañilería y pequeños trabajos de construcción en general",
+          "_links": {
+            "self": {
+              "name": "Albañilería y pequeños trabajos de construcción en general",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.3"
+            }
+          }
+        },
+        {
+          "id": "1.861.1",
+          "name": "Alquiler de viviendas",
+          "_links": {
+            "self": {
+              "name": "Alquiler de viviendas",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.861.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-01-22",
+      "certificateEndDate": "2026-07-22",
+      "object": "1.- LAS ACTIVIDADES PROPIAS DE ALBAÑILERÍA Y PEQUEÑAS OBRAS DE CONSTRUCCIÓN; LA ADQUISICIÓN, EXPLOTACIÓN, TENENCIA, ARRENDAMIENTO Y ENAJENACIÓN DE TODA CLASE DE INMUEBLES, INCLUIDA LA URBANIZACIÓN Y PARCELACIÓN DE TERRENOS; LA PROMOCIÓN, GESTIÓN Y EJECUCIÓN, POR CUALQUIER TÍTULO, DE TODA CLASE DE CONSTRUCCIONES Y OBRAS, POR CUENTA PROPIA AJENA; LA REALIZACIÓN DE EXCAVACIONES, ALLANAMIENTOS, DESMONTES, CIMENTACIÓN Y ENCOFRADOS DE ACERAS Y VÍAS; EL MANTENIMIENTO, REHABILITACIÓN Y ACONDICIONAMIENTO DE EDIFICIOS Y LAS DEMÁS ACTIVIDADES INMOBILIARIAS; LA REALIZACIÓN DE MONTAJES E INSTALACIÓN DE ESTRUCTURAS METÁLICAS, TABULACIÓN Y COMERCIALIZACIÓN DE PRODUCTOS, MAQUINARIA Y MATERIALES DE CONSTRUCCIÓN. 2.- LA ELABORACIÓN DE TODO TIPO DE PROYECTOS DE INGENIERÍA Y ARQUITECTURA; LA SUPERVISIÓN, DIRECCIÓN Y ASESORAMIENTO EN LA EJECUCIÓN DE TODO TIPO DE OBRAS Y CONSTRUCCIONES; LA DIRECCIÓN Y COORDINACIÓN DE GREMIOS; Y LA DECORACIÓN DE INTERIORES. 3.- LAS ACTIVIDADES PROPIAS DE LA INDUSTRIA DE LA MADERA; EL ASERRADO Y PREPARACIÓN INDUSTRIAL DE LA MADERA; LA FABRICACIÓN DE PRODUCTOS SEMIELABORADOS DE MADERA, DE PIEZAS DE CARPINTERÍA, DE ESTRUCTURAS DE MADERA EN GENERAL Y DE OBJETOS DIVERSOS DE MADERA; LA FABRICACIÓN, MONTAJE, COMPRA-VENTA, IMPORTACIÓN, EXPORTACIÓN Y COMERCIALIZACIÓN DE MADERA, YA SEA COMO MATERIA PRIMA O ELABORADA, DE MUEBLES Y DE OBRAS DE CARPINTERÍA Y EBANISTERÍA, Y DE COCINAS, ELECTRODOMÉSTICOS, BAÑOS Y APARATOS Y ACCESORIOS PARA EL HOGAR; EL TRATAMIENTO DE LA MADERA; LA COMERCIALIZACIÓN DE MATERIAL ELÉCTRICO; Y LA REALIZACIÓN DE INSTALACIONES ELÉCTRICAS. 4.- LA REALIZACIÓN DE LAS ACTIVIDADES RELACIONADAS CON EL RAMO DE FONTANERÍA; LA EVACUACIÓN DE GASES Y ELEMENTOS DE SANEAMIENTO; LA PRODUCCIÓN APROVECHAMIENTO Y CONTROL DE LA ENERGÍA TÉRMICA, COMO CALEFACCIÓN, AIRE ACONDICIONADO, VENTILACIÓN, REFRIGERACIÓN Y CONGELACIÓN, Y PARA TODA CLASE DE USOS, INCLUSO INDUSTRIALES; LA COMPRAVENTA, SUMINISTRO, FABRICACIÓN, TRANSFORMACIÓN, ALMACENAJE, DISTRIBUCIÓN, IMPORTACIÓN, EXPORTACIÓN, Y COMERCIALIZACIÓN DE CALDERAS, ACUMULADORES, APARATADOS TÉRMICOS, COMPONENTES, MATERIALES Y DEMÁS PRODUCTOS RELACIONADOS CON LAS INDICADAS ACTIVIDADES; LA REDACCIÓN DE LOS MISMOS; LA PRESTACIÓN DE SERVICIOS DE MANTENIMIENTO REPARACIÓN Y CONSERVACIÓN DE TODA CLASE DE TUBERÍAS E HIDRÁULICAS; Y LA FABRICACIÓN E INSTALACIÓN DE CONSTRUCCIONES METÁLICAS Y MONTAJES DE INSTALACIONES INDUSTRIALES EN GENERAL. 5.- LA EJECUCIÓN Y MANTENIMIENTO DE INSTALACIONES ELÉCTRICAS EN GENERAL, EN ALTA, BAJA Y MEDIA TENSIÓN; LA INSTALACIÓN DE TELECOMUNICACIONES, Y LAS INSTALACIONES ELÉCTRICAS E INSTALACIONES DE SISTEMAS DE SEÑALIZACIÓN DE SEGURIDAD Y CONTRA INCENDIOS. 6.- LA COLOCACIÓN, COMERCIALIZACIÓN Y REPARACIÓN DE AIRE ACONDICIONADO Y DE PANELES SOLARES; Y LAS INSTALACIONES ELÉCTRICAS DE BAJA TENSIÓN, MEDIANTE LA UTILIZACIÓN DE ENERGÍAS RENOVABLES. 7.- Y LA EXPLOTACIÓN, GESTIÓN, CONSULTORÍA Y DESARROLLO DE ACTIVIDADES RELACIONADAS CON LA HOSTELERÍA, HOSPEDAJE, ALOJAMIENTO, ESPARCIMIENTO Y RECREO, INCLUIDAS EN ELLAS ESPECIAL Y EXPRESAMENTE LOS NEGOCIOS DE BAR, CAFETERÍAS, RESTAURANTES, HOTELES, RESIDENCIAS, ASADORES, SALAS DE FIESTAS, DE JUEGOS Y DE REUNIONES.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08628",
+      "_links": {
+        "self": {
+          "name": "IGNACIO NUÑEZ REFORMAS, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/08628"
+        }
+      }
+    },
+    {
+      "name": "TRAECO MEDIOAMBIENTAL, S.L.",
+      "registrationNumber": "04607",
+      "identificationNumber": "B20951810",
+      "address": "PORTUETXE, 83, 3º OFICINA 5",
+      "location": {
+        "postalCode": "20018",
+        "municipality": "Donostia / San Sebastián",
+        "county": "Gipuzkoa",
+        "municipalityId": "069",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.505.1",
+          "name": "Revestimientos exteriores e interiores de todas clases",
+          "_links": {
+            "self": {
+              "name": "Revestimientos exteriores e interiores de todas clases",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.505.1"
+            }
+          }
+        },
+        {
+          "id": "1.722",
+          "name": "Transporte de mercancías por carretera",
+          "_links": {
+            "self": {
+              "name": "Transporte de mercancías por carretera",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.722"
+            }
+          }
+        },
+        {
+          "id": "1.756.1",
+          "name": "Agencias de transporte, transitarios",
+          "_links": {
+            "self": {
+              "name": "Agencias de transporte, transitarios",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.756.1"
+            }
+          }
+        },
+        {
+          "id": "1.921.2",
+          "name": "Servicios de recogida de basuras y desechos",
+          "_links": {
+            "self": {
+              "name": "Servicios de recogida de basuras y desechos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.921.2"
+            }
+          }
+        },
+        {
+          "id": "1.922",
+          "name": "Servicios de limpieza",
+          "_links": {
+            "self": {
+              "name": "Servicios de limpieza",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.922"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-01-22",
+      "certificateEndDate": "2026-07-09",
+      "classification": [
+        {
+          "id": "S",
+          "name": "Servicios",
+          "groups": [
+            {
+              "id": "R",
+              "subgroups": [
+                {
+                  "id": "05",
+                  "name": "Recogida y transporte de residuos",
+                  "categories": [
+                    {
+                      "id": "4",
+                      "name": "Desde 600.001 Hasta 1.1200.000",
+                      "_links": {
+                        "self": {
+                          "name": "Desde 600.001 Hasta 1.1200.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/S/categories/4"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "Recogida y transporte de residuos",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/R/subgroups/05"
+                    }
+                  }
+                }
+              ],
+              "_links": {
+                "self": {
+                  "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/R"
+                }
+              }
+            },
+            {
+              "id": "U",
+              "subgroups": [
+                {
+                  "id": "01",
+                  "name": "Servicios de limpieza ",
+                  "categories": [
+                    {
+                      "id": "5",
+                      "name": "Mas de 1.200.000",
+                      "_links": {
+                        "self": {
+                          "name": "Mas de 1.200.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/S/categories/5"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "Servicios de limpieza ",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/U/subgroups/01"
+                    }
+                  }
+                }
+              ],
+              "_links": {
+                "self": {
+                  "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/U"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Servicios",
+              "href": "https://api.euskadi.eus/procurements/companies/types/S"
+            }
+          }
+        }
+      ],
+      "object": "PRESTACIÓN DE SERVICIOS DE RECOGIDA DE BASURAS Y DESHECHOS, SU TRATAMIENTO Y ELIMINACIÓN. ASÍ COMO LA PRESTACIÓN DE SERVICIOS DE PROTECCIÓN AMBIENTAL, LIMPIEZA DE CALLES, VÍAS PÚBLICAS Y JARDINES. TRANSPORTE PÚBLICO DE MERCANCIAS NACIONAL E INTERNACIONAL. LA PRESTACIÓN DE SERVICIOS DE CONSERVACIÓN Y MANTENIMIENTO DE BIENES INMUEBLES TALES COMO EDIFICIOS, VÍAS PÚBLICAS, REDES DE AGUA Y ALCANTARILLADO, MOBILIARIO URBANO MONTES Y JARDINES. LA PRESTACIÓN DE SERVICIOS DE MANTENIMIENTO Y REPARACIÓN DE EQUIPOS E INSTALACIONES ELÉCTRICAS Y ELECTRÓNICAS. LA PRESTACIÓN DE SERVICIOS DE LIMPIEZA EN GENERAL. LA GESTIÓN DE RESIDUOS Y SUELOS CONTAMINADOS ASÍ COMO CUALQUIER ACTIVIDAD DE ASESORAMIENTO , INVESTIGACIÓN O CONSULTORIA VINCULADO A LOS MISMOS. EL DISEÑO, INVESTIGACIÓN, DESARROLLO, EXPLOTACIÓN, MANTENMIENTO  Y COMERCIALIZACIÓN DE PLANTAS E INSTALACIONES DE REUTILIZACIÓN, RECICLADO, RECUPERACIÓN, VALORIZACIÓN, ELIMINACIÓN, ALMACENAMIENTO O ESTACIÓN DE TRANSFERENCIA DE RESIDUOS  O SUELOS CONTAMINADOS ASÍ COMO LA COMPRAVENTA TANTO DE LOS SUBPRODUCTOS QUE SE ORIGINEN EN DICHOS TRATAMIENTOS COMO DE TODO TIPO DE RESIDUOS. EL DISEÑO, FABRICACIÓN, CONTROL DE CALIDAD, COMPRA, VENTA, SUMINISTRO, IMPORTACIÓN, EXPORTACIÓN, ALQUILER, MANTENIMIENTO, REPARACIÓN, DISTRIBUCIÓN, REPRESENTACIÓN Y EXPLOTACIÓN, INCLUSO PUBLICITARIA, DE MOBILIARIO Y EQUIPAMIENTO URBANO, ENTENDIDO EN SU MÁS AMPLIA ACEPCIÓN, ASÍ COMO ELEMENTOS DE SEÑALIZACIÓN, TANTO EN POBLACIONES COMO EN VÍAS INTERURBANAS DE COMUNICACIÓN, ASÍ COMO DE MAQUINARIA Y SUS COMPONENTES, HERRAMIENTAS, VEHÍCULOS, INSTALACIONES, MATERIALES Y EQUIPOS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/04607",
+      "_links": {
+        "self": {
+          "name": "TRAECO MEDIOAMBIENTAL, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/04607"
+        }
+      }
+    }
+  ]
+}

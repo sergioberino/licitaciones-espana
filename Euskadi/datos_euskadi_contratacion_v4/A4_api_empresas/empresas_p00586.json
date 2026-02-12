@@ -1,0 +1,458 @@
+{
+  "totalItems": 9042,
+  "totalPages": 905,
+  "currentPage": 586,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "name": "CONSTRUCCIONES ZARATE Y ELEXPE S.L.",
+      "registrationNumber": "06771",
+      "identificationNumber": "B48155501",
+      "address": "BIXENTE KAPANAGA 19",
+      "location": {
+        "postalCode": "48215",
+        "municipality": "Iurreta",
+        "county": "Bizkaia",
+        "municipalityId": "910",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.501.1",
+          "name": "Construcción completa, reparación y conservación de edificaciones",
+          "_links": {
+            "self": {
+              "name": "Construcción completa, reparación y conservación de edificaciones",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2020-01-13",
+      "certificateEndDate": "2020-07-09",
+      "object": "LA CONSTRUCCIÓN DE TODA CLASE DE OBRAS EN GENERAL Y COMPRA-VENTA DE TODA CLASE DE INMUEBLES",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06771",
+      "_links": {
+        "self": {
+          "name": "CONSTRUCCIONES ZARATE Y ELEXPE S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/06771"
+        }
+      }
+    },
+    {
+      "name": "PINTURAS DAMI SANTA POLA, S.L.",
+      "registrationNumber": "06774",
+      "identificationNumber": "B54899117",
+      "address": "C/ARGEL 3",
+      "location": {
+        "postalCode": "03130",
+        "municipality": "Santa Pola",
+        "county": "Alicante/Alacant",
+        "municipalityId": "121",
+        "countyId": "03"
+      },
+      "economicActivities": [
+        {
+          "id": "1.652.2",
+          "name": "Venta al por menor de productos de droguería y productos para decoración",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de productos de droguería y productos para decoración",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.652.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2020-01-13",
+      "certificateEndDate": "2020-05-28",
+      "object": "El COMERCIO AL POR MENOR, DISTRIBUCION, EXPORTACION, IMPORTACION DE PINTURA Y ACCESORIOS PARA LA MISMA, TALLER DE LACADO Y REALIZACION DE TRABAJOS DE PINTURA",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06774",
+      "_links": {
+        "self": {
+          "name": "PINTURAS DAMI SANTA POLA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/06774"
+        }
+      }
+    },
+    {
+      "name": "ESCÁRATE AUDITORES, S.L.",
+      "registrationNumber": "06740",
+      "identificationNumber": "B85967412",
+      "address": "Avenida del General Perón, 38, Edificio",
+      "location": {
+        "postalCode": "38003",
+        "municipality": "Madrid",
+        "county": "Madrid",
+        "municipalityId": "079",
+        "countyId": "28"
+      },
+      "economicActivities": [
+        {
+          "id": "1.842",
+          "name": "Servicios financieros y contables",
+          "_links": {
+            "self": {
+              "name": "Servicios financieros y contables",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.842"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2020-01-10",
+      "certificateEndDate": "2020-07-09",
+      "object": "AUDITORIA DE CUENTAS Y TODAS AQUELLAS ACTIVIDADES ACCESORIAS A LA MISMA ",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06740",
+      "_links": {
+        "self": {
+          "name": "ESCÁRATE AUDITORES, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/06740"
+        }
+      }
+    },
+    {
+      "name": "GARATEX SERIGRAFICOS, S.L.",
+      "registrationNumber": "06756",
+      "identificationNumber": "B95934162",
+      "address": "POLIGONO INDUSTRIAL EL ARBOL, NAVE 47",
+      "location": {
+        "postalCode": "48980",
+        "municipality": "Santurtzi",
+        "county": "Bizkaia",
+        "municipalityId": "082",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.474.1",
+          "name": "Impresión de textos o imágenes por cualquier procedimiento",
+          "_links": {
+            "self": {
+              "name": "Impresión de textos o imágenes por cualquier procedimiento",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.474.1"
+            }
+          }
+        },
+        {
+          "id": "1.613.1",
+          "name": "Venta al por mayor de productos textiles, confección calzado y artículos cuero",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de productos textiles, confección calzado y artículos cuero",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.613.1"
+            }
+          }
+        },
+        {
+          "id": "1.617.8",
+          "name": "Venta al por mayor de máquinas y material de oficina",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de máquinas y material de oficina",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.617.8"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2020-01-09",
+      "certificateEndDate": "2020-05-29",
+      "object": "LA COMERCIALIZACIÓN Y VENTA AL POR MAYOR Y AL POR MENOR, DE MÁQUINAS Y MATERIAL DE OFICINA Y ESCRITORIO; PRODUCTOS DE PAPELERÍA Y CARTONAJES; Y LAS DERIVADAS DE ARTES GRÁFICAS; IMPRESIÓN DE TEXTOS O IMÁGENES, PUBLICIDAD IMPRESA Y SU ENCUADERNACIÓN",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06756",
+      "_links": {
+        "self": {
+          "name": "GARATEX SERIGRAFICOS, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/06756"
+        }
+      }
+    },
+    {
+      "name": "UROLAKO KOMUNIKAZIO TALDEA, KOOP. ELK",
+      "registrationNumber": "06763",
+      "identificationNumber": "F75221226",
+      "address": "Soreasu, z/g",
+      "location": {
+        "postalCode": "20730",
+        "municipality": "Azpeitia",
+        "county": "Gipuzkoa",
+        "municipalityId": "018",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.476.2",
+          "name": "Edición de periódicos y revistas",
+          "_links": {
+            "self": {
+              "name": "Edición de periódicos y revistas",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.476.2"
+            }
+          }
+        },
+        {
+          "id": "1.476.9",
+          "name": "Otras ediciones n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otras ediciones n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.476.9"
+            }
+          }
+        },
+        {
+          "id": "1.844",
+          "name": "Servicios de publicidad, relaciones públicas y similares",
+          "_links": {
+            "self": {
+              "name": "Servicios de publicidad, relaciones públicas y similares",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.844"
+            }
+          }
+        },
+        {
+          "id": "1.849.3",
+          "name": "Servicios de traducción y similares",
+          "_links": {
+            "self": {
+              "name": "Servicios de traducción y similares",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.849.3"
+            }
+          }
+        },
+        {
+          "id": "1.961.1",
+          "name": "Producción de películas cinematográficas (incluso vídeos)",
+          "_links": {
+            "self": {
+              "name": "Producción de películas cinematográficas (incluso vídeos)",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.961.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2020-01-09",
+      "certificateEndDate": "2020-06-19",
+      "object": "UROLA KOSTAKO HERRITARREN ETA ENTITATEEN INFORMAZIOA ETA KOMUNIKAZIO BEHARRAK ASETZEA, HAINBAT EUSKARRI ETA ZERBITZUREN BITARTEZ, EUSKARA ARDATZ\r\n\r\n",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06763",
+      "_links": {
+        "self": {
+          "name": "UROLAKO KOMUNIKAZIO TALDEA, KOOP. ELK",
+          "href": "https://api.euskadi.eus/procurements/companies/06763"
+        }
+      }
+    },
+    {
+      "name": "MARIA TERESA BAJO AUZ",
+      "registrationNumber": "06764",
+      "identificationNumber": "15898713D",
+      "address": "C/EUSKALDUNA, 11 - 6º DCHA",
+      "location": {
+        "postalCode": "48008",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "2.732",
+          "name": "Procuradores",
+          "_links": {
+            "self": {
+              "name": "Procuradores",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/2.732"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2020-01-09",
+      "certificateEndDate": "2020-06-09",
+      "object": "PROCURADORA ",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06764",
+      "_links": {
+        "self": {
+          "name": "MARIA TERESA BAJO AUZ",
+          "href": "https://api.euskadi.eus/procurements/companies/06764"
+        }
+      }
+    },
+    {
+      "name": "ENEKO ARIZ LOPEZ DE CASTRO",
+      "registrationNumber": "06765",
+      "identificationNumber": "30668137Y",
+      "address": "C/Asturias 30 - 4º dcha",
+      "location": {
+        "postalCode": "33004",
+        "municipality": "Oviedo",
+        "county": "Asturias",
+        "municipalityId": "044",
+        "countyId": "33"
+      },
+      "economicActivities": [
+        {
+          "id": "2.731",
+          "name": "Abogados",
+          "_links": {
+            "self": {
+              "name": "Abogados",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/2.731"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2020-01-09",
+      "certificateEndDate": "2020-04-08",
+      "object": "ABOGACIA",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06765",
+      "_links": {
+        "self": {
+          "name": "ENEKO ARIZ LOPEZ DE CASTRO",
+          "href": "https://api.euskadi.eus/procurements/companies/06765"
+        }
+      }
+    },
+    {
+      "name": "AUSARTA PRIMA, S.L.",
+      "registrationNumber": "06755",
+      "identificationNumber": "B95868188",
+      "address": "CRTA. BILBAO-PLENTZIA, 17 - EDIFICIO ASUA PLANTA 2.",
+      "location": {
+        "postalCode": "48990",
+        "municipality": "Erandio",
+        "county": "Bizkaia",
+        "municipalityId": "902",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "2.199",
+          "name": "Otros profesionales relacionados con las actividades propias de energía",
+          "_links": {
+            "self": {
+              "name": "Otros profesionales relacionados con las actividades propias de energía",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/2.199"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2020-01-08",
+      "certificateEndDate": "2020-06-30",
+      "object": "-COMERCIO DE ENERGÍA ELÉCTRICA, GAS Y OTROS COMBUSTIBLES TANTO LÍQUIDOS COMO GASEOSOS, ASÍ COMO CUALQUIER PRESTACIÓN O SERVICIO RELACIONADA DIRECTA O INDIRECTAMENTE CON DICHA ACTIVIDAD.- REALIZACIÓN DE ESTUDIOS TÉCNICOS, SERVICIOS DE GESTIÓN Y ASESORAMIENTO EN MATERIAS RELACIONADAS CON LA ACTIVIDAD PRINCIPAL. -COMERCIO DE EQUIPOS Y ELEMENTOS DE GESTIÓN, ALMACENAJE Y OPTIMIZACIÓN DE LAS ENERGÍAS OBJETO DE LA ACTIVIDAD PRINCIPAL. -COMERCIO DE TODO TIPO DE EQUIPOS DE ALUMBRADO E INSTALACIONES DE GENERACIÓN DE CALOR Y FRÍO",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06755",
+      "_links": {
+        "self": {
+          "name": "AUSARTA PRIMA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/06755"
+        }
+      }
+    },
+    {
+      "name": "RUBÉN DE MIGUEL FERNÁNDEZ",
+      "registrationNumber": "06750",
+      "identificationNumber": "30612269M",
+      "address": "MUELLE DE OLABEAGA, 7 - BAJO",
+      "location": {
+        "postalCode": "48013",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.843.2",
+          "name": "Servicios técnicos de arquitectura y urbanismo",
+          "_links": {
+            "self": {
+              "name": "Servicios técnicos de arquitectura y urbanismo",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.2"
+            }
+          }
+        },
+        {
+          "id": "2.411",
+          "name": "Arquitectos",
+          "_links": {
+            "self": {
+              "name": "Arquitectos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/2.411"
+            }
+          }
+        },
+        {
+          "id": "2.511",
+          "name": "Agentes comerciales",
+          "_links": {
+            "self": {
+              "name": "Agentes comerciales",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/2.511"
+            }
+          }
+        },
+        {
+          "id": "2.722",
+          "name": "Gestores administrativos",
+          "_links": {
+            "self": {
+              "name": "Gestores administrativos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/2.722"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2020-01-07",
+      "certificateEndDate": "2020-07-02",
+      "object": "ARQUITECTURA Y URBANISMO",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06750",
+      "_links": {
+        "self": {
+          "name": "RUBÉN DE MIGUEL FERNÁNDEZ",
+          "href": "https://api.euskadi.eus/procurements/companies/06750"
+        }
+      }
+    },
+    {
+      "name": "BOLD TECHNOLOGIES LEADING ESPAÑA, S.L.",
+      "registrationNumber": "06751",
+      "identificationNumber": "B86801495",
+      "address": "Calle Radio Peninsular nº2 bajo",
+      "location": {
+        "postalCode": "28660",
+        "municipality": "Boadilla del Monte",
+        "county": "Madrid",
+        "municipalityId": "022",
+        "countyId": "28"
+      },
+      "economicActivities": [
+        {
+          "id": "1.654.5",
+          "name": "Venta al por menor de toda clase de maquinaría",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de toda clase de maquinaría",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.654.5"
+            }
+          }
+        },
+        {
+          "id": "1.659.3",
+          "name": "Venta al por menor de aparatos médicos, ortopédicos, ópticos y fotográficos",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de aparatos médicos, ortopédicos, ópticos y fotográficos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.659.3"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2020-01-07",
+      "certificateEndDate": "2020-06-20",
+      "object": "1. EL DESARROLLO, VENTA, DISTRIBUCIÓN, IMPORTACIÓN Y EXPORTACIÓN Y MANTENIMIENTO DE EQUIPOS MÉDICOS Y RELACIONADOS CON LA ESTÉTICA (MAQUINARIA TECNOLÓGICA, SOFTWARE, HARDWARE, CONSUMIBLES). 2. PRESTACIÓN DE TODA CLASE DE SERVICIOS DE ASESORAMIENTO EN MATERIA MÉDICA Y ESTÉTICA A NIVEL NACIONAL E INTERNACIONAL. 3. LA PRESTACIÓN DE SERVICIOS EN MATERIA DE FORMACIÓN, TANTO AL PERSONAL DE LA EMPRESA COMO A TERCEROS YA SEAN PERSONAS FÍSICAS O JURÍDICAS RELACIONADA CON LA UTILIZACIÓN O MANTENIMIENTO DE TODA CLASE DE EQUIPOS MÉDICOS Y ESTÉTICOS. 4. COMPRA, VENTA, ALQUILER DE INMUEBLES, TANTO RÚSTICOS COMO URBANOS. INCLUIDO EL ASESORAMIENTO EN ESTAS MATERIAS. 5. LA PRESTACIÓN DE SERVICIOS  DE ASESORÍA EN MATERIA DE GESTIÓN, VENTAS, MARKETING, CADENA DE PROVEEDORES, CADENAS DE DISTRIBUCIÓN, ORGANIZACIÓN EMPRESARIAL. 6. LA PRESTACIÓN DE SERVICIOS PUBLICITARIOS, DE MARKETING Y ASESORÍA EN MATERIA DE IMAGEN. 7. LA PARTICIPACIÓN EN EL CAPITAL SOCIAL DE OTRAS ENTIDADES MERCANTILES, ASÍ COMO LA COLABORACIÓN EN LA GESTIÓN DE LAS MISMAS. 8. LA PRESTACIÓN DE SERVICIOS DE TRANSPORTE, ALMACENAJE Y LOGÍSTICA",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06751",
+      "_links": {
+        "self": {
+          "name": "BOLD TECHNOLOGIES LEADING ESPAÑA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/06751"
+        }
+      }
+    }
+  ]
+}

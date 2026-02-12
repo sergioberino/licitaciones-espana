@@ -1,0 +1,458 @@
+{
+  "totalItems": 919,
+  "totalPages": 92,
+  "currentPage": 89,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "id": 510,
+      "identificationNumber": "P0100230B",
+      "name": "Junta Administrativa de Urbina",
+      "scope": "ARABA/ÁLAVA",
+      "address": "Urbina, 22 . 01510. Urbina (Araba - Álava)",
+      "webPage": "http://www.legutio.eus",
+      "publicationDate": "2018-07-13",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES211",
+      "entities": [
+        {
+          "id": 959,
+          "name": "Junta Administrativa de Urbina",
+          "orgs": [
+            {
+              "id": 912592,
+              "name": "Presidente",
+              "_links": {
+                "self": {
+                  "name": "Presidente",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/510/entities/959/orgs/912592"
+                }
+              }
+            },
+            {
+              "id": 912593,
+              "name": "Concejo",
+              "_links": {
+                "self": {
+                  "name": "Concejo",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/510/entities/959/orgs/912593"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Junta Administrativa de Urbina",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/510/entities/959"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder510/es_doc/es_arch_poder510.html",
+      "_links": {
+        "self": {
+          "name": "Junta Administrativa de Urbina",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/510"
+        }
+      }
+    },
+    {
+      "id": 512,
+      "identificationNumber": "P0100129F",
+      "name": "Junta Administrativa de Etxabarri Ibiña",
+      "scope": "ARABA/ÁLAVA",
+      "address": "C/ Bikorta 12, 01196 Etxabarri Ibiña, Zigoitia (Araba/Álava)",
+      "webPage": "http://www.contratacion.euskadi.eus",
+      "publicationDate": "2018-07-13",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES211",
+      "entities": [
+        {
+          "id": 961,
+          "name": "Junta Administrativa de Etxabarri Ibiña",
+          "orgs": [
+            {
+              "id": 912596,
+              "name": "Junta Administrativa de Etxabarri Ibiña",
+              "_links": {
+                "self": {
+                  "name": "Junta Administrativa de Etxabarri Ibiña",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/512/entities/961/orgs/912596"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Junta Administrativa de Etxabarri Ibiña",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/512/entities/961"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder512/es_doc/es_arch_poder512.html",
+      "_links": {
+        "self": {
+          "name": "Junta Administrativa de Etxabarri Ibiña",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/512"
+        }
+      }
+    },
+    {
+      "id": 503,
+      "identificationNumber": "P0100312H",
+      "name": "Junta Administrativa de Zurbano",
+      "scope": "ARABA/ÁLAVA",
+      "address": "Bº Arriba,3. 01520 Zurbano. Arrazua-Ubarrundia (Áraba-Álava)",
+      "webPage": "http://www.contratacion.eus",
+      "publicationDate": "2018-06-28",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES211",
+      "entities": [
+        {
+          "id": 952,
+          "name": "Junta Administrativa de Zurbano",
+          "orgs": [
+            {
+              "id": 912581,
+              "name": "Junta Administrativa de Zurbano",
+              "_links": {
+                "self": {
+                  "name": "Junta Administrativa de Zurbano",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/503/entities/952/orgs/912581"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Junta Administrativa de Zurbano",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/503/entities/952"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder503/es_doc/es_arch_poder503.html",
+      "_links": {
+        "self": {
+          "name": "Junta Administrativa de Zurbano",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/503"
+        }
+      }
+    },
+    {
+      "id": 504,
+      "identificationNumber": "P0100024I",
+      "name": "Junta Administrativa de Kontrasta",
+      "scope": "ARABA/ÁLAVA",
+      "address": "Mayor,4. 01117 Kontrasta. Harana/Valle de Arana (Araba/Álava)",
+      "webPage": "http://www.contratacion.eus",
+      "publicationDate": "2018-06-28",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES211",
+      "entities": [
+        {
+          "id": 953,
+          "name": "Junta Administrativa de Kontrasta",
+          "orgs": [
+            {
+              "id": 912582,
+              "name": "Asamblea Vecinal del Concejo Abierto de Kontrasta",
+              "_links": {
+                "self": {
+                  "name": "Asamblea Vecinal del Concejo Abierto de Kontrasta",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/504/entities/953/orgs/912582"
+                }
+              }
+            },
+            {
+              "id": 912583,
+              "name": "Regidor-Presidente de Kontrasta",
+              "_links": {
+                "self": {
+                  "name": "Regidor-Presidente de Kontrasta",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/504/entities/953/orgs/912583"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Junta Administrativa de Kontrasta",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/504/entities/953"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder504/es_doc/es_arch_poder504.html",
+      "_links": {
+        "self": {
+          "name": "Junta Administrativa de Kontrasta",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/504"
+        }
+      }
+    },
+    {
+      "id": 496,
+      "identificationNumber": "P0100214F",
+      "name": "Junta Administrativa de Ilarduia",
+      "scope": "ARABA/ÁLAVA",
+      "address": "Elizako plaza,5. 01260. Ilarduia. Asparrena (Araba/Álava)",
+      "webPage": "http://www.contratacion.euskadi.eus",
+      "publicationDate": "2018-06-21",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES211",
+      "entities": [
+        {
+          "id": 945,
+          "name": "Junta Administrativa de Ilarduia",
+          "orgs": [
+            {
+              "id": 912572,
+              "name": "Junta Administrativa",
+              "_links": {
+                "self": {
+                  "name": "Junta Administrativa",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/496/entities/945/orgs/912572"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Junta Administrativa de Ilarduia",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/496/entities/945"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder496/es_doc/es_arch_poder496.html",
+      "_links": {
+        "self": {
+          "name": "Junta Administrativa de Ilarduia",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/496"
+        }
+      }
+    },
+    {
+      "id": 467,
+      "identificationNumber": "P0100153F",
+      "name": "Junta Administrativa de Zuaza",
+      "scope": "ARABA/ÁLAVA",
+      "address": "Barrio La Llana, 12. 01477 Zuaza. Ayala (Araba-Álava)",
+      "webPage": "http://www.contratacion.euskadi.eus",
+      "publicationDate": "2018-06-20",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES211",
+      "entities": [
+        {
+          "id": 916,
+          "name": "Junta Administrativa de Zuaza",
+          "orgs": [
+            {
+              "id": 912527,
+              "name": "Concejo de Zuaza",
+              "_links": {
+                "self": {
+                  "name": "Concejo de Zuaza",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/467/entities/916/orgs/912527"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Junta Administrativa de Zuaza",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/467/entities/916"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder467/es_doc/es_arch_poder467.html",
+      "_links": {
+        "self": {
+          "name": "Junta Administrativa de Zuaza",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/467"
+        }
+      }
+    },
+    {
+      "id": 491,
+      "identificationNumber": "P0100075A",
+      "name": "Junta Administrativa de Trokoniz",
+      "scope": "ARABA/ÁLAVA",
+      "address": "Trokoniz, 42. 01193 Trokoniz. Iruraiz-Gauna (Araba/Alava)",
+      "webPage": "http://www.contratacion.euskadi.eus",
+      "publicationDate": "2018-06-20",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES211",
+      "entities": [
+        {
+          "id": 940,
+          "name": "Junta Administrativa de Trokoniz",
+          "orgs": [
+            {
+              "id": 912566,
+              "name": "Asamblea Vecinal ",
+              "_links": {
+                "self": {
+                  "name": "Asamblea Vecinal ",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/491/entities/940/orgs/912566"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Junta Administrativa de Trokoniz",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/491/entities/940"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder491/es_doc/es_arch_poder491.html",
+      "_links": {
+        "self": {
+          "name": "Junta Administrativa de Trokoniz",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/491"
+        }
+      }
+    },
+    {
+      "id": 484,
+      "identificationNumber": "P0100239C",
+      "name": "Junta Administrativa de Manzanos",
+      "scope": "ARABA/ÁLAVA",
+      "address": "Sobre la Rueda, 16. 01220 Erriberabeitia (Araba/Alava)",
+      "webPage": "http://www.manzanos.eus",
+      "publicationDate": "2018-06-18",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES211",
+      "entities": [
+        {
+          "id": 937,
+          "name": "Junta Administrativa de Manzanos",
+          "orgs": [
+            {
+              "id": 912561,
+              "name": "Concejo",
+              "_links": {
+                "self": {
+                  "name": "Concejo",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/484/entities/937/orgs/912561"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Junta Administrativa de Manzanos",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/484/entities/937"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder484/es_doc/es_arch_poder484.html",
+      "_links": {
+        "self": {
+          "name": "Junta Administrativa de Manzanos",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/484"
+        }
+      }
+    },
+    {
+      "id": 490,
+      "identificationNumber": "P0100162G",
+      "name": "Junta Administrativa de Menagarai-Beotegi",
+      "scope": "ARABA/ÁLAVA",
+      "address": "Barrio San Pedro s/n. Menagarai. Ayala (Araba/Álava)",
+      "webPage": "http://www.contratacion.euskadi.eus",
+      "publicationDate": "2018-06-18",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES211",
+      "entities": [
+        {
+          "id": 939,
+          "name": "Junta Administrativa de Menagarai-Beotegi",
+          "orgs": [
+            {
+              "id": 912565,
+              "name": "Junta Administrativa",
+              "_links": {
+                "self": {
+                  "name": "Junta Administrativa",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/490/entities/939/orgs/912565"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Junta Administrativa de Menagarai-Beotegi",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/490/entities/939"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder490/es_doc/es_arch_poder490.html",
+      "_links": {
+        "self": {
+          "name": "Junta Administrativa de Menagarai-Beotegi",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/490"
+        }
+      }
+    },
+    {
+      "id": 487,
+      "identificationNumber": "P0100398G",
+      "name": "Parzoneria de Iturrieta",
+      "scope": "ARABA/ÁLAVA",
+      "address": "Zapatari, 15. 01200 Agurain (Araba/Alava)",
+      "webPage": "http://www.agurain.eus",
+      "publicationDate": "2018-06-15",
+      "mainActivity": "Medio ambiente",
+      "codNUTS": "ES211",
+      "entities": [
+        {
+          "id": 935,
+          "name": "Parzoneria de Iturrieta ",
+          "orgs": [
+            {
+              "id": 912559,
+              "name": "Presidencia",
+              "_links": {
+                "self": {
+                  "name": "Presidencia",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/487/entities/935/orgs/912559"
+                }
+              }
+            },
+            {
+              "id": 912564,
+              "name": "Asamblea General",
+              "_links": {
+                "self": {
+                  "name": "Asamblea General",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/487/entities/935/orgs/912564"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Parzoneria de Iturrieta ",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/487/entities/935"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder487/es_doc/es_arch_poder487.html",
+      "_links": {
+        "self": {
+          "name": "Parzoneria de Iturrieta",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/487"
+        }
+      }
+    }
+  ]
+}

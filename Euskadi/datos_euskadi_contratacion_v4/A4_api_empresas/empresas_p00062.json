@@ -1,0 +1,714 @@
+{
+  "totalItems": 9042,
+  "totalPages": 905,
+  "currentPage": 62,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "name": "IRUSOIN, S.A.",
+      "registrationNumber": "04928",
+      "identificationNumber": "A20146536",
+      "address": "ZUATZU 3, EDIF. URGULL, LOCAL 6-7",
+      "location": {
+        "postalCode": "20018",
+        "municipality": "Donostia / San Sebastián",
+        "county": "Gipuzkoa",
+        "municipalityId": "069",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.844",
+          "name": "Servicios de publicidad, relaciones públicas y similares",
+          "_links": {
+            "self": {
+              "name": "Servicios de publicidad, relaciones públicas y similares",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.844"
+            }
+          }
+        },
+        {
+          "id": "1.961.1",
+          "name": "Producción de películas cinematográficas (incluso vídeos)",
+          "_links": {
+            "self": {
+              "name": "Producción de películas cinematográficas (incluso vídeos)",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.961.1"
+            }
+          }
+        },
+        {
+          "id": "1.961.2",
+          "name": "Doblaje y montaje de películas",
+          "_links": {
+            "self": {
+              "name": "Doblaje y montaje de películas",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.961.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-01-22",
+      "certificateEndDate": "2026-06-25",
+      "classification": [
+        {
+          "id": "S",
+          "name": "Servicios",
+          "groups": [
+            {
+              "id": "T",
+              "subgroups": [
+                {
+                  "id": "01",
+                  "name": "Servicios de publicidad",
+                  "categories": [
+                    {
+                      "id": "5",
+                      "name": "Mas de 1.200.000",
+                      "_links": {
+                        "self": {
+                          "name": "Mas de 1.200.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/S/categories/5"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "Servicios de publicidad",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/T/subgroups/01"
+                    }
+                  }
+                }
+              ],
+              "_links": {
+                "self": {
+                  "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/T"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Servicios",
+              "href": "https://api.euskadi.eus/procurements/companies/types/S"
+            }
+          }
+        }
+      ],
+      "object": "EL DESARROLLO DE TODAS AQUELLAS ACTIVIDADES RELACIONADAS CON EL CINE, EL VÍDEO, LA TELEVISIÓN Y LA RADIO, Y EN GENERAL, CON TODOS AQUELLOS MEDIOS QUE, ACTUALMENTE O EN EL FUTURO TENGAN POR OBJETO LA REPRODUCCIÓN Y DOBLAJE DE IMÁGENES Y/O SONIDO, CUALQUIERA QUE SEA LA FINALIDAD DE LAS MISMAS; LA PRODUCCIÓN, COMPRA, VENTA, IMPORTACIÓN, EXPORTACIÓN Y COMERCIALIZACIÓN EN GENERAL DE TODA CLASE DE APARATOS, ACCESORIOS, COMPLEMENTOS O BIENES QUE CON AQUELLAS ACTIVIDADES SE RELACIONEN, INCLUÍDA SU REPARACIÓN, MANTENIMIENTO, \" LEASING\" O ARRENDAMIENTO; LA PRESTACIÓN DE ASISTENCIA TÉCNICA O DE CUALQUIER OTRA NATURALEZA EN RELACIÓN CON LAS ACTIVIDADES PROPIAS DE ESTE OBJETO; LA EXPLOTACIÓN DE PATENTES Y DEMÁS DERECHOS O PRIVILEGIOS COMPRENDIDOS EN EL ESTATUTO DE PROPIEDAD INDUSTRIAL, ASÍ COMO LA EXPLOTACIÓN DE MÉTODOS O PROCEDIMIENTOS DE TRABAJOS INDUSTRIALES O COMERCIALES",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/04928",
+      "_links": {
+        "self": {
+          "name": "IRUSOIN, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/04928"
+        }
+      }
+    },
+    {
+      "name": "LIMPIEZAS INDUSTRIALES MORGA, S.L.",
+      "registrationNumber": "03147",
+      "identificationNumber": "B48997100",
+      "address": "POLÍGONO LA FLECHA, NAVE 1",
+      "location": {
+        "postalCode": "48330",
+        "municipality": "Lemoa",
+        "county": "Bizkaia",
+        "municipalityId": "055",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.722",
+          "name": "Transporte de mercancías por carretera",
+          "_links": {
+            "self": {
+              "name": "Transporte de mercancías por carretera",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.722"
+            }
+          }
+        },
+        {
+          "id": "1.921.4",
+          "name": "Servicios de alcantarillado, evacuación y depuración de aguas residuales",
+          "_links": {
+            "self": {
+              "name": "Servicios de alcantarillado, evacuación y depuración de aguas residuales",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.921.4"
+            }
+          }
+        },
+        {
+          "id": "1.922",
+          "name": "Servicios de limpieza",
+          "_links": {
+            "self": {
+              "name": "Servicios de limpieza",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.922"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-01-22",
+      "certificateEndDate": "2026-07-07",
+      "classification": [
+        {
+          "id": "S",
+          "name": "Servicios",
+          "groups": [
+            {
+              "id": "O",
+              "subgroups": [
+                {
+                  "id": "03",
+                  "name": "Conservación y mantenimiento de de redes de agua y alcantarillado",
+                  "categories": [
+                    {
+                      "id": "3",
+                      "name": "Desde 300.001 Hasta 600.000",
+                      "_links": {
+                        "self": {
+                          "name": "Desde 300.001 Hasta 600.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/S/categories/3"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "Conservación y mantenimiento de de redes de agua y alcantarillado",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/O/subgroups/03"
+                    }
+                  }
+                },
+                {
+                  "id": "04",
+                  "name": "Conservación y mantenimiento integral de estaciones depuradoras",
+                  "categories": [
+                    {
+                      "id": "4",
+                      "name": "Desde 600.001 Hasta 1.1200.000",
+                      "_links": {
+                        "self": {
+                          "name": "Desde 600.001 Hasta 1.1200.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/S/categories/4"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "Conservación y mantenimiento integral de estaciones depuradoras",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/O/subgroups/04"
+                    }
+                  }
+                }
+              ],
+              "_links": {
+                "self": {
+                  "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/O"
+                }
+              }
+            },
+            {
+              "id": "R",
+              "subgroups": [
+                {
+                  "id": "05",
+                  "name": "Recogida y transporte de residuos",
+                  "categories": [
+                    {
+                      "id": "4",
+                      "name": "Desde 600.001 Hasta 1.1200.000",
+                      "_links": {
+                        "self": {
+                          "name": "Desde 600.001 Hasta 1.1200.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/S/categories/4"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "Recogida y transporte de residuos",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/R/subgroups/05"
+                    }
+                  }
+                }
+              ],
+              "_links": {
+                "self": {
+                  "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/R"
+                }
+              }
+            },
+            {
+              "id": "U",
+              "subgroups": [
+                {
+                  "id": "01",
+                  "name": "Servicios de limpieza ",
+                  "categories": [
+                    {
+                      "id": "2",
+                      "name": "Desde 150.001 Hasta 300.000",
+                      "_links": {
+                        "self": {
+                          "name": "Desde 150.001 Hasta 300.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/S/categories/2"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "Servicios de limpieza ",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/U/subgroups/01"
+                    }
+                  }
+                }
+              ],
+              "_links": {
+                "self": {
+                  "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/U"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Servicios",
+              "href": "https://api.euskadi.eus/procurements/companies/types/S"
+            }
+          }
+        }
+      ],
+      "object": "LA LIMPIEZA, ANULACIÓN, CONSERVACIÓN Y MANTENIMIENTO DE POZOS SÉPTICOS EN TODA CLASE DE EDIFICIOS, ASÍ COMO EL SERVICIO DE ALCANTARILLADO, EVACUACIÓN Y DEPURACIÓN DE AGUAS RESIDUALES, TRANSPORTE EN GENERAL, RECOGIDA Y TRANSPORTE DE TODA CLASE DE RESIDUOS, TRATAMIENTO E INCINERACIÓN DE RESIDUOS Y DESECHOS URBANOS, TRATAMIENTOS DE LODOS, TRATAMIENTO DE RESIDUOS OLEOSOS Y SERVICIOS DE LIMPIEZA EN GENERAL",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03147",
+      "_links": {
+        "self": {
+          "name": "LIMPIEZAS INDUSTRIALES MORGA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/03147"
+        }
+      }
+    },
+    {
+      "name": "ZAPARDIEL EXPRESS, S.L.",
+      "registrationNumber": "03161",
+      "identificationNumber": "B01298371",
+      "address": "C/ RONZAPIL,1",
+      "location": {
+        "postalCode": "01240",
+        "municipality": "Alegría-Dulantzi",
+        "county": "Araba/Álava",
+        "municipalityId": "001",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.722",
+          "name": "Transporte de mercancías por carretera",
+          "_links": {
+            "self": {
+              "name": "Transporte de mercancías por carretera",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.722"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-01-22",
+      "certificateEndDate": "2026-07-12",
+      "object": "EL TRANSPORTE DE MERCANCÍAS POR CARRETERA. LA SOCIEDAD PODRÁ DESARROLLAR SU OBJETO SOCIAL, TOTAL O PARCIALMENTE DE MODO INDIRECTO, MEDIANTE LA TITULARIDAD DE ACCIONES O PARTICIPACIONES EN SOCIEDADES DE OBJETO IDÉNTICO O ANÁLOGO",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03161",
+      "_links": {
+        "self": {
+          "name": "ZAPARDIEL EXPRESS, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/03161"
+        }
+      }
+    },
+    {
+      "name": "GMSM MEDIOAMBIENTE, S.A.",
+      "registrationNumber": "02027",
+      "identificationNumber": "A20633079",
+      "address": "GREGORIO DE LA REVILLA, 27-2º",
+      "location": {
+        "postalCode": "48010",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.861.2",
+          "name": "Alquiler de locales industriales y otros alquileres n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Alquiler de locales industriales y otros alquileres n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.861.2"
+            }
+          }
+        },
+        {
+          "id": "1.911",
+          "name": "Servicios agrícolas y ganaderos",
+          "_links": {
+            "self": {
+              "name": "Servicios agrícolas y ganaderos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.911"
+            }
+          }
+        },
+        {
+          "id": "1.921.1",
+          "name": "Servicios de limpieza en calles, vías públicas y jardines",
+          "_links": {
+            "self": {
+              "name": "Servicios de limpieza en calles, vías públicas y jardines",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.921.1"
+            }
+          }
+        },
+        {
+          "id": "1.921.2",
+          "name": "Servicios de recogida de basuras y desechos",
+          "_links": {
+            "self": {
+              "name": "Servicios de recogida de basuras y desechos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.921.2"
+            }
+          }
+        },
+        {
+          "id": "1.921.5",
+          "name": "Servicios de incineración y eliminación de basuras y desechos",
+          "_links": {
+            "self": {
+              "name": "Servicios de incineración y eliminación de basuras y desechos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.921.5"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-01-22",
+      "certificateEndDate": "2026-06-13",
+      "classification": [
+        {
+          "id": "S",
+          "name": "Servicios",
+          "groups": [
+            {
+              "id": "R",
+              "subgroups": [
+                {
+                  "id": "05",
+                  "name": "Recogida y transporte de residuos",
+                  "categories": [
+                    {
+                      "id": "5",
+                      "name": "Mas de 1.200.000",
+                      "_links": {
+                        "self": {
+                          "name": "Mas de 1.200.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/S/categories/5"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "Recogida y transporte de residuos",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/R/subgroups/05"
+                    }
+                  }
+                }
+              ],
+              "_links": {
+                "self": {
+                  "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/R"
+                }
+              }
+            },
+            {
+              "id": "U",
+              "subgroups": [
+                {
+                  "id": "01",
+                  "name": "Servicios de limpieza ",
+                  "categories": [
+                    {
+                      "id": "5",
+                      "name": "Mas de 1.200.000",
+                      "_links": {
+                        "self": {
+                          "name": "Mas de 1.200.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/S/categories/5"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "Servicios de limpieza ",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/U/subgroups/01"
+                    }
+                  }
+                }
+              ],
+              "_links": {
+                "self": {
+                  "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/U"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Servicios",
+              "href": "https://api.euskadi.eus/procurements/companies/types/S"
+            }
+          }
+        }
+      ],
+      "object": "A) LA PRESTACIÓN, GESTIÓN, EXPLOTACIÓN Y COMERCIALIZACIÓN DE SERVICIOS DE CUALQUIER TIPO A ENTES PÚBLICOS Y PRIVADOS DE HIGIENE, LIMPIEZA, SANEAMIENTO Y MANTENIMIENTO, ENTENDIÉNDOSE COMO TALES LA REALIZACIÓN DE TODO TIPO DE TAREAS DE GESTIÓN, EXPLOTACIÓN, LIMPIEZA, DESRATIZACIÓN, DESINSECCIÓN, DESINFECCIÓN, MANTENIMIENTO Y CONSERVACIÓN DE EDIFICIOS, JARDINES, PARQUES, CALLES, RÍOS, PLAYAS, EMBALSES, MONTES, CAMINOS, VIAS CICLABLES, CARRILES BICI, CARRETERAS, AUTOVÍAS, ESCOMBRERAS, VERTEDEROS, REDES DE AGUA, ALCANTARILLADO, ESTACIONES DEPURADORAS Y TRANSFORMADORAS, INCINERADORAS, PLANTAS DE VALORIZACIÓN, COMPOSTAJE, TRIAJE, TRATAMIENTOS MECÁNICOS Y BIOLÓGICOS (RECICLADO, ELIMINACIÓN, VALORIZACIÓN Y TRATAMIENTO) DE RESIDUOS SÓLIDOS Y LÍQUIDOS URBANOS E INDUSTRIALES; RECOGIDA INDISCRIMINADA O SELECTIVA DE RESIDUOS PELIGROSOS, NO PELIGROSOS E INERTES, TRANSPORTE, VERTIDO E INCLUSO POSTERIOR TRATAMIENTO Y RECICLADO DE LOS MISMOS; LIMPIEZA DE CONTENEDORES, PAPELERAS, ALCANTARILLAS, POZOS NEGROS, COLECTORES, ETC. B) LA RECUPERACIÓN, TRATAMIENTO Y COMERCIALIZACIÓN DE CHATARRA, METALES, RESIDUOS Y OTROS ELEMENTOS FÉRRICOS O NO FÉRRICOS, EL DISEÑO, CONSTRUCCIÓN COMERCIALIZACÓN Y EXPLOTACIÓN DE PLANTAS Y EQUIPOS PARA EL TRATAMIENTO DE RESIDUOS. EL MANTENIMIENTO DE INSTALACIONES DEL  SECTOR SIDERÚRGICO, PETROQUÍMICO, CEMENTERO Y SIMILAR. C) LA PRESTACIÓN DE SERVICIOS DE CUALQUIER TIPO A ENTES PÚBLICOS Y PRIVADOS DE EXTERMINIO DE ANIMALES DAÑINOS Y DESINFECCIÓN DE CUALQUIER CLASE, SERVICIOS DE INCINERACIÓN Y ELIMINACIÓN DE BASURAS Y DESECHOS Y SERVICIOS DE PROTECCIÓN Y ACONDICIONAMIENTO MEDIO AMBIENTALES, CONTRA RUIDOS, VIBRACIONES, CONTAMINACIONES. D) EL DISEÑO, INVESTIGACIÓN, DESARROLLO, CONSTRUCCIÓN, EXPLOTACIÓN, MANTENIMIENTO Y COMERCIALIZACIÓN DE PLANTAS E INSTALACIONES DE TRATAMIENTO Y DEPURACIÓN DE AGUAS Y RESIDUOS, LA RECUPERACIÓN Y ELIMINACIÓN DE RESIDUOS, ASÍ COMO LA COMPRAVENTA DE SUBPRODUCTOS QUE SE ORIGINEN EN DICHOS TRATAMIENTOS. APROVECHAMINETO, TRANSFORMACIÓN Y COMERCIALIZACIÓN DE TODA CLASE DE AGUAS. E) LA PRESTACIÓN DE SERVICIOS TÉCNICOS DIVERSOS DE INGENIERÍA, ASÍ COMO LA REALIZACIÓN DE ESTUDIOS VARIOS DE PREINVERSIÓN, CONFECCIÓN DE PROYECTOS, CONTROLES DE CALIDAD, AUDITORÍAS TÉCNICAS Y EXPLOTACIONES MEDIOAMBIENTALES. F) LA EJECUCIÓN DE SERVICIOS RELACIONADOS CON EL MEDIO AMBIENTE.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/02027",
+      "_links": {
+        "self": {
+          "name": "GMSM MEDIOAMBIENTE, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/02027"
+        }
+      }
+    },
+    {
+      "name": "HEZKIDE XXI, S.L.",
+      "registrationNumber": "06949",
+      "identificationNumber": "B20717278",
+      "address": "ARBOL DE GERNIKA 11",
+      "location": {
+        "postalCode": "20006",
+        "municipality": "Donostia / San Sebastián",
+        "county": "Gipuzkoa",
+        "municipalityId": "069",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.934",
+          "name": "Enseñanza fuera de establecimiento permanente",
+          "_links": {
+            "self": {
+              "name": "Enseñanza fuera de establecimiento permanente",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.934"
+            }
+          }
+        },
+        {
+          "id": "1.966.9",
+          "name": "Otros servicios culturales n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros servicios culturales n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.966.9"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-01-22",
+      "certificateEndDate": "2026-07-19",
+      "object": "LOS SERVICIOS EDUCATIVOS EN GENERAL, QUE COMPRENDE, ENTRE OTRAS ACTIVIDADES: ACTIVIDADES DE ENSEÑANZA, TALES COMO IDIOMAS Y SIMILARES, GUARDERÍA Y ENSEÑANZA DE EDUCACIÓN INFANTIL, ENSEÑANZA DE EDUCACIÓN EN TODOS SUS NIVELES (BÁSICA, SECUNDARIA OBLIGATORIA, BACHILLERATO, ORIENTACIÓN UNIVERSITARIA, FORMACIÓN PROFESIONAL ESPECÍFICA DE GRADO MEDIO Y GRADO SUPERIOR, PROGRAMAS DE GARANTÍA SOCIAL, ENSEÑANZA NO REGLADA DE FORMACIÓN Y PERFECCIONAMIENTO PROFESIONAL Y EDUCACIÓN SUPERIOR). EL OBJETO SOCIAL TAMBIÉN COMPRENDERÁ LA PROMOCIÓN DE CURSOS Y ESTUDIOS EN TERRITORIO NACIONAL O EN EL EXTRANJERO, FOMENTO DE ACTIVIDADES EDUCATIVAS, CULTURALES Y DE OCIO PARA NIÑOS, JÓVENES Y MAYORES, VENTA DE MATERIAL EDUCATIVO DESTINADO AL OCIO U OTROS FINES. TODAS ESTAS ACTIVIDADES SE DESARROLLARÁN FUERA DEL ESTABLECIMIENTO PERMANENTE, O BIEN A TRAVÉS DE ESTABLECIMIENTO PROPIO. EL OBJETO SOCIAL TAMBIÉN COMPRENDERÁ LAS ACTIVIDADES DE IMPORTACIÓN Y EXPORTACIÓN DE TODO TIPO DE BIENES, SERVICIOS Y EQUIPOS. TAMBIÉN COMPRENDERÁ EL ALQUILER DE TODO TIPO DE BIENES, YA SEAN MUEBLES O INMUEBLES",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06949",
+      "_links": {
+        "self": {
+          "name": "HEZKIDE XXI, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/06949"
+        }
+      }
+    },
+    {
+      "name": "ISPIZUA ARQUITECTOS 3 SLP",
+      "registrationNumber": "06887",
+      "identificationNumber": "B95278149",
+      "address": "ORMAZABEKOA 8 BAJO B",
+      "location": {
+        "postalCode": "48993",
+        "municipality": "Getxo",
+        "county": "Bizkaia",
+        "municipalityId": "044",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.843.2",
+          "name": "Servicios técnicos de arquitectura y urbanismo",
+          "_links": {
+            "self": {
+              "name": "Servicios técnicos de arquitectura y urbanismo",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-01-22",
+      "certificateEndDate": "2026-06-22",
+      "object": "LA PRESTACIÓN DE SERVICIOS PROFESIONALES EN LOS CAMPOS DE LA ARQUITECTURA Y EL URBANISMO",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06887",
+      "_links": {
+        "self": {
+          "name": "ISPIZUA ARQUITECTOS 3 SLP",
+          "href": "https://api.euskadi.eus/procurements/companies/06887"
+        }
+      }
+    },
+    {
+      "name": "ACCIONA CONSTRUCCIÓN, S.A.",
+      "registrationNumber": "01880",
+      "identificationNumber": "A81638108",
+      "address": "CALLE MESENA, Nº  80",
+      "location": {
+        "postalCode": "28033",
+        "municipality": "Madrid",
+        "county": "Madrid",
+        "municipalityId": "079",
+        "countyId": "28"
+      },
+      "economicActivities": [
+        {
+          "id": "1.507",
+          "name": "Construcción, reparación y conservación de toda clase obras",
+          "_links": {
+            "self": {
+              "name": "Construcción, reparación y conservación de toda clase obras",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.507"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-01-22",
+      "certificateEndDate": "2026-07-06",
+      "object": "EXPLOTACIÓN DEL RAMO DE LA CONSTRUCCIÓN Y REALIZACIÓN, POR CUENTA PROPIA O DE TERCEROS, DE PROYECTOS INMOBILIARIOS, TANTO EN LO QUE SE REFIERE A EDIFICACIÓN DE BIENES INMUEBLES COMO EN LO RELATIVO A SU PROMOCIÓN, VENTA, ARRENDAMIENTO, CONCESIÓN, URBANIZACIÓN, PARCELACIÓN Y OTRA FORMA DE ADMINISTRACIÓN, EXPLOTACIÓN Y REALIZACIÓN DE TODA CLASE DE ACTOS Y NEGOCIOS SOBRE BIENES INMUEBLES. PRESTACIÓN DE SERVICIOS DE SANEAMIENTO; LIMPIEZA, MANTENIMIENTO Y AJARDINAMIENTO, INCLUYENDO EL TRATAMIENTO, DEPURACIÓN, RECUPERACIÓN, APROVECHAMIENTO, TRANSFORMACIÓN, RECOGIDA Y TRANSPORTE DE AGUAS Y RESIDUOS. EXPLOTACIÓN, GESTIÓN, REALIZACIÓN Y DESARROLLO DE SUMINISTROS, OBRAS Y SERVICIOS PÚBLICOS.  EXPLOTACIÓN DEL RAMO DE LAS TELECOMUNICACIONES, LA INFORMÁTICA Y LA ELECTRÓNICA. LA FABRICACIÓN Y COMERCIALIZACIÓN DE MATERIALES Y MAQUINARIA Y HERRAMIENTAS PARA LA CONSTRUCCIÓN. LA PARTICIPACIÓN EN OTRAS SOCIEDADES Y EMPRESAS, SIEMPRE QUE ELLO NO SUPONGA LA REALIZACIÓN DE ACTIVIDADES PROPIAS DE LAS ENTIDADES DE INVERSIÓN COLECTIVA. LA REALIZACIÓN DE TODA CLASE DE PROYECTOS Y DE DIRECCIONES DE PROYECTOS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/01880",
+      "_links": {
+        "self": {
+          "name": "ACCIONA CONSTRUCCIÓN, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/01880"
+        }
+      }
+    },
+    {
+      "name": "VIATORPLUSULTRA S.L.",
+      "registrationNumber": "05633",
+      "identificationNumber": "B04709390",
+      "address": "CALLE SIERRA DE BAZA, 30",
+      "location": {
+        "postalCode": "04240",
+        "municipality": "Viator",
+        "county": "Almería",
+        "municipalityId": "101",
+        "countyId": "04"
+      },
+      "economicActivities": [
+        {
+          "id": "1.619.1",
+          "name": "Venta al por mayor de juguetes y artículos de deporte",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de juguetes y artículos de deporte",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.619.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-01-22",
+      "certificateEndDate": "2026-07-21",
+      "object": "COMPRAVENTA DE EQUIPAMIENTO MILITAR, POLICIAL, DE SEGURIDAD Y DEPORTIVO, TANTO AL MAYOR Y AL DETALLE, INCLUIDA LA IMPORTACIÓN, EXPORTACIÓN Y  PRODUCCIÓN DE LOS MISMOS. SERVICIOS DE ASESORAMIENTO EN MATERIA DE SEGURIDAD Y RESPECTO DE ACTIVIDADES MILITARES, TANTO A PERSONAS COMO A EMPRESAS; ORGANIZACIÓN DE CURSOS Y FORMACIÓN EN TERRITORIO ESPAÑOL Y EXTRANJERO. COMPRAVENTA E INSTALACIONES DE PRODUCTOS RELACIONADOS CON LA SEGURIDAD DE LAS PERSONAS Y LOS BIENES.\t\r\n",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/05633",
+      "_links": {
+        "self": {
+          "name": "VIATORPLUSULTRA S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/05633"
+        }
+      }
+    },
+    {
+      "name": "TERUMO EUROPE ESPAÑA, S.L.",
+      "registrationNumber": "03137",
+      "identificationNumber": "B83524769",
+      "address": "CALLE NANCLARES DE OCA 5-7. PLANTA BAJA",
+      "location": {
+        "postalCode": "28022",
+        "municipality": "Madrid",
+        "county": "Madrid",
+        "municipalityId": "079",
+        "countyId": "28"
+      },
+      "economicActivities": [
+        {
+          "id": "1.619.2",
+          "name": "Venta al por mayor de aparatos e instrumentos médicos, ortopédicos, ópticos",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de aparatos e instrumentos médicos, ortopédicos, ópticos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.619.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-01-22",
+      "certificateEndDate": "2026-07-21",
+      "object": "LA COMERCIALIZACIÓN DE TERMÓMETROS TANTO DESTINADOS PARA USOMÉDICO COMO PARA OTROS USOS, DE AGUJAS, JERINGUILLAS, RECIPIENTES Y CUALQUIER APARATO NECESARIO PARA LA EXTRACCIÓN DE MUESTRS DE SANGRE, ASÍ COMO CUALQUIER CLASE DE INSTRUMENTAL MÉDICO, FARMACÉUTICO, QUÍMICO Y CIENTÍFICO, INCLUSO EQUIPOS ELÉCTRICOS Y ELECTRÓNICOS, ASÍ COMO CUALQUIER OTRO PRODUCTO DE VIDRIO FABRICADO CON CAUCHO (GOMA) O RESINA. DICHA COMERCIALIZACIÓN PODRÁ REALIZARSE TANTO AL POR MAYOR COMO AL DETALLE. LA SOCIEDAD PODRÁ EJERCER SU ACTIVIDAD DE FORMA INDIVIDUAL, CONJUNTAMENTE CON OTRAS PERSONAS FÍSICAS O JURÍDICAS, DE FORMA DIRECTA O INDIRECTA MEDIANTE SU PARTICIPACIÓN EN OTRAS SOCIEDADES. ASI MISMO LA SOCIEDAD PODRÁ REALIZAR CUALQUIER ACTIVIDAD, FINANCIERA, INDUSTRIAL O DE COMPRAVENTA DE INMUEBLES RELACIONADA DIRECTA O INDIRECTAMENTE CON SU OBJETO SOCIAL PARTICIPAR EN OTRAS SOCIEDADES O ADQUIRIR LAS MISMAS , QUE TENGAN IGUAL O SEMEJANTE OBJETO SOCIAL. PRESTAR SERVICIOS DE ASESORAMIENTO EN VENTAS Y DIRECCIÓN DE EMPRESAS A TERCERAS EMPRESAS DEDICADAS A LA COMERCIALIZACIÓN DE LOS MISMOS O SIMILARES PRODUCTOS QUE ESTA SOCIEDAD. LAS ACTIVIDADES SOCIALES CUYO EJERCICIO REQUIERA LA INSCRIPCIÓN DE LA COMPAÑÍA EN REGISTROS ADMINISTRATIVOS ESPECIALES, O LA CONCESIÓN DE AUTORIZACIONES ADMINISTRATIVAS SE INICIARÁN AL CUMPLIMENTARSE LOS PERTINENTES REQUISITOS.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03137",
+      "_links": {
+        "self": {
+          "name": "TERUMO EUROPE ESPAÑA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/03137"
+        }
+      }
+    },
+    {
+      "name": "SERIGRAFIA GAUR, S.L.",
+      "registrationNumber": "09789",
+      "identificationNumber": "B20620035",
+      "address": "OIALUME BIDEA13 - PABELLÓN 13-14",
+      "location": {
+        "postalCode": "20115",
+        "municipality": "Astigarraga",
+        "county": "Gipuzkoa",
+        "municipalityId": "903",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.474",
+          "name": "Artes gráficas (impresión gráfica)",
+          "_links": {
+            "self": {
+              "name": "Artes gráficas (impresión gráfica)",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.474"
+            }
+          }
+        },
+        {
+          "id": "1.613.9",
+          "name": "Venta al por mayor de accesorios del vestido y otros productos textiles",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de accesorios del vestido y otros productos textiles",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.613.9"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-01-22",
+      "certificateEndDate": "2026-07-11",
+      "object": "A) IMPRESIÓN DE TEXTOS O IMÁGENES ASÍ COMO IMPRESIÓN DE PRENSA DIARIA POR CUALQUIER PROCEDIMIENTO O SISTEMA. B) REPRODUCCIÓN DE TEXTOS O IMÁGENES POR PROCEDIMIENTOS TALES COMO MULTICOPISTAS, FOTOCOPIAS POR PROCEDIMIENTOS FOTOGRÁFICOS Y ELECTROSTÁTICOS, SISTEMAS DE REPRODUCCIÓN DE PLANOS, ETC. C) ESTEREOTIPIA, GALVANOTIPIA Y GALVANOPLASTIA, FABRICADOS DE GOMA Y CAUCHO, FABRICACIÓN DE RODILLOS Y DE OTROS ELEMENTOS DEDICADOS A LOS PROCESOS DE IMPRESIÓN. D) COMPOSICIÓN DE TEXTOS POR CUALQUIER PROCEDIMIENTO ASÍ COMO REPRODUCCIÓN DE TEXTOS O IMÁGENES DESTINADOS A LA IMPRESIÓN.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/09789",
+      "_links": {
+        "self": {
+          "name": "SERIGRAFIA GAUR, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/09789"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,458 @@
+{
+  "totalItems": 9042,
+  "totalPages": 905,
+  "currentPage": 208,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "name": "INGENIERIA ELECTRICA ALTUBE S L",
+      "registrationNumber": "01883",
+      "identificationNumber": "B48763502",
+      "address": "JON ARROSPIDE 30",
+      "location": {
+        "postalCode": "48014",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.504.11",
+          "name": "Instalaciones eléctricas en general, redes telegráficas, telefonía, tv, etc",
+          "_links": {
+            "self": {
+              "name": "Instalaciones eléctricas en general, redes telegráficas, telefonía, tv, etc",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.504.11"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-10-20",
+      "certificateEndDate": "2026-04-13",
+      "object": "LA REALIZACIÓN DE PROYECTOS Y DE TODA CLASE DE INSTALACIONES Y REPARACIONES ELÉCTRICAS O ELECTRÓNICAS, SIN LIMITACIÓN ALGUNA, ASÍ COMO LA COMPRA, VENTA, IMPORTACIÓN, EXPORTACIÓN Y DE COMERCIALIZACIÓN EN GENERAL DE TODA CLASE DE BIENES O ELEMENTOS DE CARÁCTER ELÉCTRICO, ELECTRÓNICO O INDUSTRIAL",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/01883",
+      "_links": {
+        "self": {
+          "name": "INGENIERIA ELECTRICA ALTUBE S L",
+          "href": "https://api.euskadi.eus/procurements/companies/01883"
+        }
+      }
+    },
+    {
+      "name": "IRABIA CONTROL DE PLAGAS, S.L.",
+      "registrationNumber": "05818",
+      "identificationNumber": "B31547888",
+      "address": "Poligono Industrial c/P 82",
+      "location": {
+        "postalCode": "31192",
+        "municipality": "Pamplona/Iruña",
+        "county": "Navarra",
+        "municipalityId": "201",
+        "countyId": "31"
+      },
+      "economicActivities": [
+        {
+          "id": "1.461.1",
+          "name": "Productos del aserrado y preparación industrial de madera",
+          "_links": {
+            "self": {
+              "name": "Productos del aserrado y preparación industrial de madera",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.461.1"
+            }
+          }
+        },
+        {
+          "id": "1.921.3",
+          "name": "Exterminio de animales dañinos y desinfección",
+          "_links": {
+            "self": {
+              "name": "Exterminio de animales dañinos y desinfección",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.921.3"
+            }
+          }
+        },
+        {
+          "id": "1.922",
+          "name": "Servicios de limpieza",
+          "_links": {
+            "self": {
+              "name": "Servicios de limpieza",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.922"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-10-19",
+      "certificateEndDate": "2026-04-19",
+      "object": "LA DESINFECCION, DESINSECTACION, DESRATIZACION Y CUALQUIER OTRA ACTIVIDAD COMPLEMENTARIA QUE SEA ACORDADA POR LOS SOCIOS EN JUNTA GENERAL MEDIANTE ESCRITURA DE MODIFICACION.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/05818",
+      "_links": {
+        "self": {
+          "name": "IRABIA CONTROL DE PLAGAS, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/05818"
+        }
+      }
+    },
+    {
+      "name": "OREKAGUNE GIZARTEAN KOMUNITATEAN ESKUHARTZEKO ELKARTEA",
+      "registrationNumber": "06551",
+      "identificationNumber": "G20942272",
+      "address": "NAFARROA ETORBIDEA 29, 3. lokala",
+      "location": {
+        "postalCode": "20100",
+        "municipality": "Errenteria",
+        "county": "Gipuzkoa",
+        "municipalityId": "067",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.952",
+          "name": "Asistencia y servicios sociales en centros no residenciales",
+          "_links": {
+            "self": {
+              "name": "Asistencia y servicios sociales en centros no residenciales",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.952"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-10-19",
+      "certificateEndDate": "2026-04-19",
+      "object": "1.COLABORAR CON LAS CORPORACIONES LOCALES Y DEMÁS DE LAS ADMINISTRACIONES PÚBLICAS COMPETENTES EN EL MARCO TERRITORIAL AUTONÓMICO, CON EL OBJETO DE GESTIONAR LOS PROGRAMAS DE DESARROLLO QUE AYUDEN A CUMPLIR LOS FINES ASOCIATIVOS. 2.REALIZAR ESTUDIOS DE INVESTIGACIÓN EN INTERÉS DE LOS FINES DE LA ASOCIACIÓN, Y DE LA SOCIEDAD EN GENREAL",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06551",
+      "_links": {
+        "self": {
+          "name": "OREKAGUNE GIZARTEAN KOMUNITATEAN ESKUHARTZEKO ELKARTEA",
+          "href": "https://api.euskadi.eus/procurements/companies/06551"
+        }
+      }
+    },
+    {
+      "name": "INSTAL-MATEL, S.L.",
+      "registrationNumber": "09632",
+      "identificationNumber": "B20524831",
+      "address": "PASEO UBARBURU 37 LOCAL 8",
+      "location": {
+        "postalCode": "20014",
+        "municipality": "Donostia / San Sebastián",
+        "county": "Gipuzkoa",
+        "municipalityId": "069",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.761.1",
+          "name": "Servicios telefónicos en domicilios particulares",
+          "_links": {
+            "self": {
+              "name": "Servicios telefónicos en domicilios particulares",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.761.1"
+            }
+          }
+        },
+        {
+          "id": "1.761.2",
+          "name": "Servicios telefónicos para uso público",
+          "_links": {
+            "self": {
+              "name": "Servicios telefónicos para uso público",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.761.2"
+            }
+          }
+        },
+        {
+          "id": "1.769.9",
+          "name": "Otros servicios privados de telecomunicación n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros servicios privados de telecomunicación n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.769.9"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-10-19",
+      "certificateEndDate": "2026-04-19",
+      "object": "LA EXPLOTACIÓN DE UN NEGOCIO DEDICADO A LA COMPRA, VENTA, IMPORTACIÓN, EXPORTACIÓN Y COMERCIALIZACIÓN DE TODO TIPO DE APARATOS DE TELEFONÍA, ASÍ COMO LA INSTALACIÓN Y MANTENIMIENTO DE LOS MISMOS.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/09632",
+      "_links": {
+        "self": {
+          "name": "INSTAL-MATEL, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/09632"
+        }
+      }
+    },
+    {
+      "name": "KIROL AUKERA MATERIAL DEPORTIVO, S.L.",
+      "registrationNumber": "09635",
+      "identificationNumber": "B20649455",
+      "address": "EDIFICIO HIRUBIDE LOCAL 1 BARRIO REKALDE",
+      "location": {
+        "postalCode": "20160",
+        "municipality": "Lasarte-Oria",
+        "county": "Gipuzkoa",
+        "municipalityId": "902",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.505.2",
+          "name": "Solados y pavimentos de todas clases en cualquier tipo de obra",
+          "_links": {
+            "self": {
+              "name": "Solados y pavimentos de todas clases en cualquier tipo de obra",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.505.2"
+            }
+          }
+        },
+        {
+          "id": "1.659.6",
+          "name": "Venta al por menor de juguetes, artículos de deporte",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de juguetes, artículos de deporte",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.659.6"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-10-19",
+      "certificateEndDate": "2026-04-19",
+      "object": "- EL COMERCIO DE TODO TIPO DE ARTÍCULOS RELACIONADOS CON EL DEPORTE, INCLUYÉNDOSE ENTRE OTROS, LAS INSTALACIONES DEPORTIVAS, MATERIAL, PRENDAS DE VESTIDO, CALZADO Y TOCADOS, ARMAS CARTUCHERÍA Y ARTÍCULOS DE PIROTECNIA. - EL ARRENDAMIENTO DE ARTÍCULOS RELACIONADOS CON EL DEPORTE, COMO INSTALACIONES MAQUINARIA Y MATERIAL DEPORTIVO.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/09635",
+      "_links": {
+        "self": {
+          "name": "KIROL AUKERA MATERIAL DEPORTIVO, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/09635"
+        }
+      }
+    },
+    {
+      "name": "TALLERES METALICOS JULIAN, S.L.",
+      "registrationNumber": "09898",
+      "identificationNumber": "B39666987",
+      "address": "Calle La Central 1F",
+      "location": {
+        "postalCode": "39600",
+        "municipality": "Camargo",
+        "county": "Cantabria",
+        "municipalityId": "016",
+        "countyId": "39"
+      },
+      "economicActivities": [
+        {
+          "id": "1.314.1",
+          "name": "Carpintería metálica",
+          "_links": {
+            "self": {
+              "name": "Carpintería metálica",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.314.1"
+            }
+          }
+        },
+        {
+          "id": "1.617.4",
+          "name": "Venta al por mayor de materiales de construcción, vidrio y artículos instalación",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de materiales de construcción, vidrio y artículos instalación",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.617.4"
+            }
+          }
+        },
+        {
+          "id": "1.722",
+          "name": "Transporte de mercancías por carretera",
+          "_links": {
+            "self": {
+              "name": "Transporte de mercancías por carretera",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.722"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-10-19",
+      "certificateEndDate": "2026-04-19",
+      "object": "TALLER METÁLICO EN GENERAL, CARPINTERÍA METÁLICA, CERRAJERÍA, CALDERERÍA Y SOLDADURA DE TODO TIPO DE METALES.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/09898",
+      "_links": {
+        "self": {
+          "name": "TALLERES METALICOS JULIAN, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/09898"
+        }
+      }
+    },
+    {
+      "name": "AGENCIA DE DESARROLLO DEL BIDASOA, S.A.",
+      "registrationNumber": "05594",
+      "identificationNumber": "A20421053",
+      "address": "C/ Hendaia, 8, Palacio Ducoureau Jauregia",
+      "location": {
+        "postalCode": "20301",
+        "municipality": "Irun",
+        "county": "Gipuzkoa",
+        "municipalityId": "045",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.932.1",
+          "name": "Enseñanza de formación y perfeccionamiento profesional no superior",
+          "_links": {
+            "self": {
+              "name": "Enseñanza de formación y perfeccionamiento profesional no superior",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.932.1"
+            }
+          }
+        },
+        {
+          "id": "1.991",
+          "name": "Prestación de servicios por sociedades de desarrollo industrial",
+          "_links": {
+            "self": {
+              "name": "Prestación de servicios por sociedades de desarrollo industrial",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.991"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-10-18",
+      "certificateEndDate": "2026-04-18",
+      "object": "LA REALIZACIÓN DE CUANTAS ACTUACIONES SEAN DE INTERÉS PARA EL FOMENTO Y PROMOCIÓN DE LA COMARCA DEL BAJO BIDASOA, PUDIENDO LLEVAR A EFECTO LAS SIGUIENTES ACTIVIDADES: -SERVICIOS DE FORMACIÓN Y ORIENTACIÓN LABORAL, ASÍ COMO LABORES DE INFORMACIÓN Y ASESORAMIENTO EMPRESARIAL. - SERVICIOS DE PROMOCIÓN DE EMPRESAS Y EMPLEO, INCLUYENDO CONCESIÓN DE AYUDAS, PRÉSTAMOS Y CRÉDITOS  Y LA PARTICIPACIÓN EN AQUÉLLAS, ASÍ COMO EL FOMENTO Y PROMOCIÓN DE SUELO INDUSTRIAL. - LA REALIZACIÓN DE ESTUDIOS Y PLANIFICACIONES. -SERVICIOS DE POTENCIACIÓN DE LOS DIFERENTES SECTORES ECONÓMICOS DE LA COMARCA DEL BAJO BIDASOA. -PROMOCIÓN DE LA COOPERACIÓN  TRANSFRONTERIZA. -FOMENTO DE INSTITUCIONES DE INVESTIGACIÓN Y DESARROLLO TECNOLÓGICO",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/05594",
+      "_links": {
+        "self": {
+          "name": "AGENCIA DE DESARROLLO DEL BIDASOA, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/05594"
+        }
+      }
+    },
+    {
+      "name": "EUSKOTEL DUBIX, S.L.",
+      "registrationNumber": "09121",
+      "identificationNumber": "B20472049",
+      "address": "AUZOLAN 5 W",
+      "location": {
+        "postalCode": "20303",
+        "municipality": "Irun",
+        "county": "Gipuzkoa",
+        "municipalityId": "045",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.617.9",
+          "name": "Venta al por mayor interindustrial de otros productos n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor interindustrial de otros productos n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.617.9"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-10-18",
+      "certificateEndDate": "2026-04-18",
+      "object": "- LA COMERCIALIZACIÓN Y EL MANTENIMIENTO DE TODOS LOS PRODUCTOS, EQUIPOS INDUSTRIALES DIVERSOS RELACIONADOS CON LAS ACTIVIDADES DE TINTORERÍA, LAVANDERÍA, EQUIPAMIENTOS DESTINADOS A HOTELES, BARES, RESTAURANTES, COLECTIVIDADES, ETC. - LA CREACIÓN, ADQUISICIÓN, ALQUILER DE TODOS LOS FONDOS DE COMERCIO, CONTRATO DE ALQUILER, INSTALACIÓN, EXPLOTACIÓN DE TODOS LOS ESTABLECIMIENTOS, FÁBRICAS, TALLERES RELACIONADOS CON LAS ACTIVIDADES ANTES INDICADAS. - LA ADQUISICIÓN, EXPLOTACIÓN O CESIÓN DE TODOS LOS PROCESOS Y PATENTES RELACIONADOS CON LAS ANTERIORES ACTIVIDADES.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/09121",
+      "_links": {
+        "self": {
+          "name": "EUSKOTEL DUBIX, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/09121"
+        }
+      }
+    },
+    {
+      "name": "AZAFATAN ALKARTEA LANKOR, S.L.",
+      "registrationNumber": "01998",
+      "identificationNumber": "B20309845",
+      "address": "P. EMPRESARIAL ZUATZU  EDIF. ZURRIOLA P. BAJA,  LOCAL 5",
+      "location": {
+        "postalCode": "20018",
+        "municipality": "Donostia / San Sebastián",
+        "county": "Gipuzkoa",
+        "municipalityId": "069",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.849.3",
+          "name": "Servicios de traducción y similares",
+          "_links": {
+            "self": {
+              "name": "Servicios de traducción y similares",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.849.3"
+            }
+          }
+        },
+        {
+          "id": "1.849.6",
+          "name": "Servicios de colocación y suministro de personal",
+          "_links": {
+            "self": {
+              "name": "Servicios de colocación y suministro de personal",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.849.6"
+            }
+          }
+        },
+        {
+          "id": "1.989.2",
+          "name": "Servicios de organización de congresos, asambleas y similares",
+          "_links": {
+            "self": {
+              "name": "Servicios de organización de congresos, asambleas y similares",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.989.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-10-18",
+      "certificateEndDate": "2026-04-18",
+      "object": "a) LA PRESTACIÓN DE SERVICIOS A EMPRESAS Y PARTICULARES Y LA ORGANIZACIÓN O REALIZACIÓN DE CONGRESOS Y REUNIONES.\nb) LA LIMPIEZA DE EDIFICIOS, OFICINAS Y LOCALES TANTO DE INTERIORES COMO EXTERIORES, LA CONTRATACIÓN DEL PERSONAL QUE FUERE NECESARIO PARA EL DESARROLLO DE DICHAS ACTIVIDADES Y CUANTAS OPERACIONES SEAN PREPARATORIAS, COMPLEMENTARIAS O AXULIARES DE AQUELLAS.\nc) LAS ACTIVIDADES COMERCIALES, INDUSTRIALES E INMOBILIARIAS RELACIONADAS DIRECTA O INDIRECTAMENTE CON EL TURISMO",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/01998",
+      "_links": {
+        "self": {
+          "name": "AZAFATAN ALKARTEA LANKOR, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/01998"
+        }
+      }
+    },
+    {
+      "name": "FRANCISCO JAVIER SOLANO ÁLVAREZ",
+      "registrationNumber": "08089",
+      "identificationNumber": "15946439X",
+      "address": "IZABURU 25 03 B",
+      "location": {
+        "postalCode": "20009",
+        "municipality": "Donostia / San Sebastián",
+        "county": "Gipuzkoa",
+        "municipalityId": "069",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "2.411",
+          "name": "Arquitectos",
+          "_links": {
+            "self": {
+              "name": "Arquitectos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/2.411"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-10-18",
+      "certificateEndDate": "2026-04-18",
+      "object": "ARQUITECTOS.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08089",
+      "_links": {
+        "self": {
+          "name": "FRANCISCO JAVIER SOLANO ÁLVAREZ",
+          "href": "https://api.euskadi.eus/procurements/companies/08089"
+        }
+      }
+    }
+  ]
+}

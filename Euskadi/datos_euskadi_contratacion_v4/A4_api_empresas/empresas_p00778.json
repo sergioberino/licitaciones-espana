@@ -1,0 +1,418 @@
+{
+  "totalItems": 9042,
+  "totalPages": 905,
+  "currentPage": 778,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "name": "MONTAJES ELÉCTRICOS ISMESA, S.A.",
+      "registrationNumber": "00594",
+      "identificationNumber": "A48196505",
+      "address": "C/ GORDÓNIZ, Nº 44 - 11º.",
+      "location": {
+        "postalCode": "48002",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.504.1",
+          "name": "Instalaciones eléctricas en general",
+          "_links": {
+            "self": {
+              "name": "Instalaciones eléctricas en general",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.504.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2006-08-22",
+      "certificateEndDate": "2007-01-28",
+      "object": "LA REALIZACIÓN DE PROYECTOS DE INGENIERÍA Y MONTAJES ELÉCTRICOS, INDUSTRIALES, INSTALACIONES DE BAJA, MEDIA Y ALTA TENSIÓN ELÉCTRICA",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/00594",
+      "_links": {
+        "self": {
+          "name": "MONTAJES ELÉCTRICOS ISMESA, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/00594"
+        }
+      }
+    },
+    {
+      "name": "CONSTRULAN, S.L.",
+      "registrationNumber": "03016",
+      "identificationNumber": "B20390712",
+      "address": "POLÍGONO BASABE, PAB. E-0-3",
+      "location": {
+        "postalCode": "20550",
+        "municipality": "Aretxabaleta",
+        "county": "Gipuzkoa",
+        "municipalityId": "013",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.501.1",
+          "name": "Construcción completa, reparación y conservación de edificaciones",
+          "_links": {
+            "self": {
+              "name": "Construcción completa, reparación y conservación de edificaciones",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2006-07-24",
+      "certificateEndDate": "2007-01-04",
+      "object": "LA REALIZACIÓN DE TODO TIPO DE TRABAJOS Y LABORES DE ALBAÑILERÍA Y CONSTRUCCIÓN\r\n",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03016",
+      "_links": {
+        "self": {
+          "name": "CONSTRULAN, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/03016"
+        }
+      }
+    },
+    {
+      "name": "TECNOLAV 2002, S.L.",
+      "registrationNumber": "02909",
+      "identificationNumber": "B95271920",
+      "address": "BARRIO TXOZNA AUSOA, Nº 1 (MUNGIALDE ETORBIDEA)",
+      "location": {
+        "postalCode": "48160",
+        "municipality": "Derio",
+        "county": "Bizkaia",
+        "municipalityId": "901",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.654.5",
+          "name": "Venta al por menor de toda clase de maquinaría",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de toda clase de maquinaría",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.654.5"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2006-07-18",
+      "certificateEndDate": "2006-12-14",
+      "object": "LA COMPRA, VENTA, REPRESENTACIÓN Y EXPLOTACIÓN DE TODO TIPO DE MAQUINARIA, ASÍ COMO LA REPARACIÓN Y MANTENIMIENTO DE LA MISMA",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/02909",
+      "_links": {
+        "self": {
+          "name": "TECNOLAV 2002, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/02909"
+        }
+      }
+    },
+    {
+      "name": "SIBERIA PRODUCE, S.L.",
+      "registrationNumber": "03212",
+      "identificationNumber": "B01397207",
+      "address": "C/DUQUE DE WELLINGTON, 30 -4º A",
+      "location": {
+        "postalCode": "01010",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.961.1",
+          "name": "Producción de películas cinematográficas (incluso vídeos)",
+          "_links": {
+            "self": {
+              "name": "Producción de películas cinematográficas (incluso vídeos)",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.961.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2006-07-06",
+      "certificateEndDate": "2006-11-12",
+      "object": "LA CREACIÓN, GRABACIÓN, PRODUCCIÓN, DIFUSIÓN, COMERCIALIZACIÓN DE ESPACIOS TELEVISIVOS Y/O CINEMATOGRÁFICOS, MEDIANTE CUALQUIER TIPO DE SOPORTE",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03212",
+      "_links": {
+        "self": {
+          "name": "SIBERIA PRODUCE, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/03212"
+        }
+      }
+    },
+    {
+      "name": "LENDING SERVICE, S.L.",
+      "registrationNumber": "02449",
+      "identificationNumber": "B20164570",
+      "address": "FERRERIAS 5-7-9 ENTLO.",
+      "location": {
+        "postalCode": "20011",
+        "municipality": "Donostia / San Sebastián",
+        "county": "Gipuzkoa",
+        "municipalityId": "069",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.952",
+          "name": "Asistencia y servicios sociales en centros no residenciales",
+          "_links": {
+            "self": {
+              "name": "Asistencia y servicios sociales en centros no residenciales",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.952"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2006-07-03",
+      "certificateEndDate": "2006-12-08",
+      "object": "1) LA LIMPIEZA DE EDIFICIOS, INSTALACIONES INDUSTRIALES E INMUEBLES EN GENERAL CUALQUIERA QUE FUERE SU DESTINO; BARCOS, NAVES, AERONAVES Y DEMÁS MEDIOS DE LOCOMOCIÓN; PARQUES, JARDINES, MONTES, VÍAS Y ESPACIOS PÚBLICOS Y PRIVADOS, URBANOS E INTERURBANOS; ALCANTARILLAS CONDUCCIONES INDUSTRIALES Y SANITARIAS; ASÍ COMOLA RECOGIDA Y TRANSPORTE DE BASURAS Y RESIDUOS, INORGÁNICOS Y ORGÁNICOS, URBANOS E INDUSTRIALES (INCLUSO LOS DE PROCEDENCIA HOSPITALARIA) Y LA ELIMINACÓN HIGIÉNICO-SANITARIA, TRATAMIENTO O RECUPERACIÓN DE LOS MISMOS; LA HIGIENIZACIÓN DE AGUAS MARÍTIMAS, FLUVIALES Y RESIDUALES, TANTO URBANAS COMO INDUSTRIALES Y DELMEDIO AMBIENTE, EN GENERAL.- SERVICIOS DE DESCONTAMINACIÓN DE INSTALACIONES RADIOACTIVAS, SANITARIAS Y CENTRALES NUCLEARES. 2) MANTENIMIENTO INTEGRAL DE TODO TIPO DE INSTALACIONES INDUSTRIALES Y DE EDIFICIOS, EN GENERAL, INCLUÍDA LA EJECUCIÓN DE OBRAS MEDIANTE TRABAJOS DE ELECTRICIDAD, DE ACONDICIONAMIENTO DE AIRES, CALEFACCIÓN, FONTANERÍA, CARPINTERÍA, PINTURA, ALBAÑILERÍA, MANTENIMIENTO DE ASCENSORES Y APARATOS DE ELEVACIÓN O TRANSPORTE DE CARGAS, ACTUACIONES EN ACOMETIDAS Y REDES DE DISTRIBUCIÓN INTERIOR O EXTERIOR DE GAS Y OTROS COMBUSTIBLES O SUMINISTROS. 3) CONFECCIÓN DE PROYECTOS Y EJECUCIÓN DE OBRAS DE CONSTRUCCIÓN Y RESTAURACIÓN DE LAS ESTRUCTURAS Y REVESTIMIENTOS DE TODA CLASE DE EDIFICIOS Y MONUMENTOS; SU LIMPIEZA, IMPERMEABILIZACIÓN, TRATAMIENTO, PINTADO Y RECONSTRUCCIÓN. 4) LA IMPLANTACIÓN, CUIDADO Y MANTENIMIENTO DE JARDINES, ZONAS VERDES Y ÁREAS  EXPLOTACIONES FORESTALES ASÍ COMO CUALQUIER OBRA O SERVICIO QUE TENGA POR OBJETO SU CONSERVACIÓN (RED DE RIEGO, ILUMINACIÓN, FUENTES, ETC.); LA EJECUCIÓN Y MANTENIMIENTO DE CAMINOS FORESTALES, VÍAS DE SACA Y CONSTRUCCIÓN DE DIQUE PARA L PREVENCIÓN DE LA EROSIÓN. 5) PRESTACIÓN DE SERVICIOS AUXILIARES EN URBANIZACIONES, FINCAS URBANAS, INSTALACIONES INDUSTRIALES, REDES VIALES, CENTROS COMERCIALES, ORGANISMOS OFICIALES Y DEPENDENCIAS ADMINISTRATIVAS, INSTALACIONES DEPORTES O DE RECREO, MUSEOS, RECINTOS FERIALES, SALAS DE EXPOSICIONES, CONFERENCIAS Y CONGRESOS, HOSPITALES; CONVENVCIONES, INAUGURACIONES, CENTRAL CULTURALES Y DEPORTIVOS, EVENTOS DEPORTIVOS, SOCIALES Y CULTURALES, EXPOSICIONES, CONFERENCIAS INTERNACIONALES, JUNTAS GENERALES DE ACCIONISTAS Y DE COMUNIDADES DE PROPIETARIOS, RECEPCIONES, RUEDAS DE PRENSA, CENTROS DOCENTES, PARQUES, INSTALACIONES AGROPECUARIAS (AGRICULTURA, GANADERÍA Y PESCA), BOSQUES, FINCAS RÚSTICAS, COTOS DE CAZA, RECINTOS DE RECREO Y DE ESPECTÁCULOS Y, EN GENERAL EN TODA CLASE DE INMUEBLES Y EVENTOS POR MEDIO DE CONSERJES, ORDENANZAS, BEDELES, UJIERES, CELADORES  O CONTROLADORES, OPERADORES DE CONSOLA, PERSONAL DE SALA, PORTEROS, RECEPCIONISTAS, TAQUILLEROS (INCLUYENDO RECOGIDA DE ENTRADAS), TELEFOINSTAS, ACOMODADORES, COBRADORES, CUIDADORES, SOCORRISTAS, AZAFATAS, PERSONAL DE SALA Y PROFESIONALES AFINES O QUE COMPLEMENTEN SUS FUNCIONES CONSISTENTES EN EL MANTENIMIENTO Y LA CONSERVACIÓN DE LOS LOCALES ASÍ COMO EN LA ATENCIÓN Y SERVICIOS A LOS VECINOS, OCUPANTES, VISITANTES  Y/O USUARIOS. 6) ATENCIÓN DE LOS SERVICIOS DE URGENCIA, PREVENCIÓN, INFORMACIÓN, CENTRALITA DE TELÉFONOS, COCINA Y COMEDORES. 7) APERTURA, CIERRE Y CUSTODIA DE LLAVES. 8) ENCENDIDO, APAGADO, REARME MANEJO, SUPERVISIÓN, ENTRETENIMIENTO, MANTENIMIENTO, LIMPIEZA Y REPARACIÓN DE MOTORES E INSTALACIONES DE CALOR, FRÍO Y ELECTRICIDAD, ASCENSORES, CONDUCCIONES DE AGUA, GAS Y OTROS SUMINISTROS, FLUIDOS O COMBUSTIBLES, SISTEMAS Y APARATOS DE PREVENCIÓN DE INCENDIOS, COMPRESORES E INSTALACIONES AUTOMÁTICAS. 9) LECTURA DE CONTADORES, CORTE, MANTENIMIENTO, REPARACIÓN Y REPOSICIÓN DE LOS MISMOS, ESCUCHA Y TRANSCRIPCIÓN DE LECTURAS, INSPECCIÓN DE CONTADORES, TOMA Y ACTUALIZACIÓN DE DATOS Y COLOCACIÓN DE AVISOS. 11) SERVICIOS DE PREVENCIÓN Y LUCHA CONTRA INCENDIOS EN GENERAL EN MONTES, BOSQUES, FINCAS RÚSTICAS, VIVIENDAS E INSTALACIONES INDUSTRIALES Y URBANAS. 12) CONTROL DE CALIDAD DE SERVICIOS O PRODUCTOS. 14) CARGA, DESCARGA, ESTIBA Y DESESTIBA, TRANSPORTE, DISTRIBUCIÓN, COLOCACIÓN, CLASIFICACIÓN, CONTROL DE ALMACÉN, PREPARACIÓN DE INVENTARIOS, REPOSICIÓN, CONTROL DE EXISTENCIAS EN ALMACENES Y ALMACENAMIENTO DE TODO TIPO DE MERCANCÍAS. 15) RECOGIDA, MANIPULACIÓN, TRANSPORTE, REPARTO, DISTRIBUCIÓN, CUSTODIA Y ENTREGA DE TODA CLASE DE PAQUETES, DOCUMENTOS, CATÁLOGOS, PROPAGANDA Y MERCANCÍAS, YA SEA POR CUENTA PROPIA O AJENA. 16) SERVICIOS DE ASISTENCIA SOCIAL Y SANITARIA A LOS SIGUIENTES COLECTIVOS: MENORES, ANCIANOS, MINUSVÁLIDOS, FAMILIAS, INFANCIA, MUJERES SOLITARIAS CON CARGAS FAMILIARES NO COMPARTIDAS, DISCAPACITADOS FÍSICOS Y PSÍQUICOS Y PERSONAS O GRUPOS DE POBLACIÓN EN SITUACIÓN DE NECESIDAD, MEDIANTE LA REALIZACIÓN DE LAS SIGUIENTES TAREAS: SERVICIO DE AYUDA Y ASISTENCIA A DOMICILIO: TELEASISTENCIA DOMICILIARIA Y SOCIO-SANITARIA; EXPLOTACIÓN O GESTIÓN, TOTAL O PARCIAL, DE RESIDENCIA, PISOS UTELADOS, CENTROS DE DÍA, COMUNIDADES TERAPÉUTICAS Y OTROS CENTROS DE ACOGIDA Y REHABILITACIÓN; TRASLADO Y ACOMPAÑAMIENTO DE LOS COLECTIVOS ANTES CITADOS; HOSPITALIZACIÓN A DOMICILIO Y AYUDA MÉDICA Y DE ENFERMERÍA A DOMICILIO; VIGILANCIA, ATENCIÓN, EDUCACIÓN Y CONTROL DE ALUMNADOS U OTROS COLECTIVOS DURANTE EL DESARROLLO DE LA ACTIVIDAD DE COMEDOR EN CENTROS PÚBLICOS O PRIVADOS DE EDUCACIÓN. lA PRESTACIÓN DE TODO TIPO DE SERVICIOS DE CARÁCTER ASISTENCIAL EN TODA SU EXTENSIÓN, QUE SE PUEDAN DESARROLLAR EN CENTROS DE HOSPITALIZACIÓN, ASISTENCIAS, RESIDENCIAS DE ANCIANOS, CENTROS DE ACOGIDA, COLEGIOS Y SIMILARES, ASÍ COMO EN DOMICILIOS PRIVADOS POR CUENTA DE LA ADMINISTRACIÓN PÚBLICA, ORGANISMOS AUTÓNOMOS DE LA MISMA, FUNDACIONES, PATRONATOS COLEGIOS Y, EN GENERAL, DE ORGANISMOS PÚBLICOS, PRIVADOS Y/O RELIGIOSOS. 17) LA PRESTACIÓN DE SERVICIOS DE ASESORAMIENTO, ASESORÍA TÉCNICA O COMERCIAL Y EJECUCIÓN DE TRABAJOS ADMINISTRATIVOS, TÉCNICOS, JURÍDICOS,  ORGANIZATIVOS E INFORMÁTICOS (INCLUIDOS LOS DE DESARROLLO DE PROGRAMAS), A TRAVÉS DE ESPECIALISTAS EN LAS CITADAS MATERIAS Y DE TRADUCTORES, INTÉRPRETES, PROYECTISTAS, MECANÓGRAFOS, TAQUÍGRAFOS, TELEFONISTAS, ESTENOTIPISTAS, OPERADORES DE ORDENADOR, PROGRAMADORES Y SECRETARIAS. QUEDAN EXPRESAMENTE EXLUÍDAS DEL OBJETO SOCIAL TODAS AQUELLAS ACTIVIDADES  PARA LAS QUE LA LEY EXIJA AUTORIZACIONES ESPECIALES NO CONCEDIDAS A LA SOCIEDAD O REQUISITOS NO CUMPLIDOS POR LA MISMA Y, EN ESPECIAL, LAS RESERVADAS A LAS EMPRESAS DE SEGURIDAD POR LA LEY 23/92 DE 30 DE JULIO, DE SEGURIDAD PRIVADA, Y DISPOSICIONES REGLAMENTARIAS QUE LA COMPLEMENTAN. LAS ACTIVIDADES PARA LAS QUE LA LEY ASÍ LO REQUIERA SERÁN EJERCIDAS POR PERSONAS CON LA TITULACIÓN ADECUADA",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/02449",
+      "_links": {
+        "self": {
+          "name": "LENDING SERVICE, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/02449"
+        }
+      }
+    },
+    {
+      "name": "SOLUZIONA, S.A.",
+      "registrationNumber": "03045",
+      "identificationNumber": "A82552464",
+      "address": "PARQ. EMPRES.LA FINCA.Paseo Club Deportivo, 1 Edif.4",
+      "location": {
+        "postalCode": "28223",
+        "municipality": "Pozuelo de Alarcón",
+        "county": "Madrid",
+        "municipalityId": "115",
+        "countyId": "28"
+      },
+      "economicActivities": [
+        {
+          "id": "1.504.1",
+          "name": "Instalaciones eléctricas en general",
+          "_links": {
+            "self": {
+              "name": "Instalaciones eléctricas en general",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.504.1"
+            }
+          }
+        },
+        {
+          "id": "1.504.7",
+          "name": "Instalaciones telefónicas, telegráficas, televisión, etc",
+          "_links": {
+            "self": {
+              "name": "Instalaciones telefónicas, telegráficas, televisión, etc",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.504.7"
+            }
+          }
+        },
+        {
+          "id": "1.843.1",
+          "name": "Servicios técnicos de ingeniería",
+          "_links": {
+            "self": {
+              "name": "Servicios técnicos de ingeniería",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.1"
+            }
+          }
+        },
+        {
+          "id": "1.845",
+          "name": "Explotación electrónica por cuenta de terceros",
+          "_links": {
+            "self": {
+              "name": "Explotación electrónica por cuenta de terceros",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.845"
+            }
+          }
+        },
+        {
+          "id": "1.849.9",
+          "name": "Otros servicios independientes n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros servicios independientes n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.849.9"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2006-07-03",
+      "certificateEndDate": "2006-11-11",
+      "object": "1) LA PARTICIPACIÓN EN TODA CLASE DE ENTIDADES MERCANTILES CUALQUIERA QUE SEA SU NATURALEZA JURÍDICA, A TRAVÉS DE LA ADQUISICIÓN Y TENENCIA DE ACCIONES O PARTICIPACIONES REPRESENTATIVAS DEL CAPITAL DE LAS MISMAS O MEDIANTE LA FORMALIZACIÓN DE LOS NEGOCIOS JURÍDICOS QUE DEN LUGAR A LA CONSTITUCIÓN DE DICHAS ENTIDADES.\r\n\r\n2) LA DIRECCIÓN, ADMINISTRACIÓN, GESTIÓN, DESARROLLO, ORGANIZACIÓN Y SUPERVISIÓN DE ESTAS ENTIDADES, ASÍ COMO LA PRESTACIÓN A LAS MISMAS DE SERVICIOS DE ASESORAMIENTO DE CARÁCTER EMPRESARIAL, ECONÓMICO, TÉCNICO, ADMINISTRATIVO, CONTABLE, CORPORATIVO, FISCAL, JURÍDICO Y CUALESQUIERA OTROS QUE PUEDAN REQUERIRSE PARA EL ADECUADO DESENVOLVIMIENTO DE LA ACTIVIDAD  DE LAS ENTIDADES PARTICIPADAS.\r\n\r\n3) EL ESTUDIO, EVALUACIÓN, Y EN SU CASO REALIZACIÓN, DIRECTAMENTE O A TRAVÉS DE LAS ENTIDADES CONSTITUIDAS O PARTICIPADAS AL EFECTO, DE RAMAS DE NEGOCIO TANTO EN EL ÁMBITO INDUSTRIAL COMO DE SERVICIOS EN GENERAL (PÚBLICOS Y PRIVADOS), TALES COMO COMERCIO INTERIOR O EXTERIOR, INVESTIGACIÓN, DESARROLLO Y EXPLOTACIÓN DE NUEVAS TECNOLOGÍAS; INSPECCIÓN Y CONTROL DE CALIDAD; INVESTIGACIÓN, DESARROLLO Y EXPLOTACIÓN DE SISTEMAS DE SEGURIDAD INDUSTRIAL; ABASTECIMIENTO DE AGUAS; TRATAMIENTO DE RESIDUOS, DISEÑO, DESARROLLO, IMPLANTACIÓN Y EXPLOTACIÓN DE SERCICIOS RELACIONADOS CON LA INFORMACIÓN, GESTIÓN Y ORGANIZACIÓN EMPRESARIAL (CONSULTORÌA), INGENIERÍA, MEDIOAMBIENTE,  INDUSTRIA QUÍMICA; MINERÍA, GAS E HIDROCARBUROS, DISEÑO, EJECUCIÓN Y EXPLOTACIÓN DE INSTALACIONES ENERGÉTICAS DE TODA ESPECIE, PLANIFICACIÓN Y RACIONALIZACIÓN DEL USO DE LA ENERGÍA Y SU COGENERACIÓN, TELECOMUNICACIONES Y SISTEMAS DE INFORMACIÓN EN TODOS SUS ASPECTOS.\r\n\r\n4) LA PRESTACIÓN DE SERVICIOS AUXILIARES PARA TRABAJOS ADMINISTRATIVOS DE ARCHIVO Y SIMILARES Y, EN ESPECIAL, LA DISTRIBUCIÓN Y ARCHIVO DE PUBLICACIONES Y OTROS DOCUMENTOS,, REALIZACIÓN DE FOTOCOPIAS, COPIAS DE PLANOS, FRANQUEO DE CORRESPONDENCIA Y OTROS ANÁLOGOS.\r\n\r\n5) LA REALIZACIÓN DE ENCUESTAS, TOMA DE DATOS Y OTROS SERVICIOS ANÁLOGOS Y, EN ESPECIAL, LOS TRABAJOS DE CAMPO DE TOMA DE DATOS PARA ESTUDIOS DE MERCADO, ESTADOS DE OPINIÓN U OTRO TIPO DE ENCUESTAS.\r\n \r\n6) PRODUCCIÓN, COMPRAVENTA, COMERCIALIZACIÓN, DISTRIBUCIÓN, INTEGRACIÓN Y PARAMETRIZACIÓN D E SISTEMAS Y DESARROLLOS INFORMÁTICOS, TELEMÁTICOS, DE TELECOMUNICACIÓN, DE AUTOMATIZACIÓN Y CONTROL ASÍ COMO DE SU CORRESONDIENTE EQUIPAMIENTO.\r\n\r\n7) REDACCIÓN Y ELABORACIÓN DE ESTUDIOS Y PROYECTOS, DIRECCIÓN DE OBRAS E INSTALACIONES  INFORMÁTICAS, TELEMÁTICAS, DE TELECOMUNICACIONES, AUTOMATIZACIÓN Y CONTROL Y DE LAS NUEVAS TECNOLOGÍAS.\r\n\r\n8) SERVICIOS DE GESTIÓN Y EXTERNALIZACIÓN DE LAS DIFERENTES FUNCIONES DE LAS EMPRESAS, ORGANISMOS Y ENTIDADES DE CUALQUIER ÍNDOLE, PÚBLICAS O PRIVADAS, TALES COMO SERVICIOS GENERALES, CALL CENTERS, GESTIÓN DE NÓMINAS Y ACTIVIDADES QUE IMPLIQUEN LA PRESTACIÓN DE SERVICIOS EN GENERAL, INCLUÍDAS LAS DE TELECOMUNICACIONES.\r\n\r\n9) SERVICIOS DE ASESORAMIENTO INTEGRAL, CONSULTORÍA, ELABORACIÓN DE ESTUDIOS, DIAGNÓSTICOS, INFORMES Y ASISTENCIA TÉCNICA A EMPRESAS, ORGANISMOS Y ENTIDADES DE TODA ÍNDOLE, EN EL ÁMBITO DE LA DIRECCIÓN Y GESTIÓN ESPECIALMENTE EN LAS ÁREAS DE ESTRATEGIA, INNOVACIÓN Y TECNOLOGÍA, ORGANIZACIÓN, PROCESOS, SELECCIÓN Y EVALUACIÓN, MODELOS DE GESTIÓN Y DESARROLLO DE RR.HH.\r\n\r\n10) INVESTIGACIÓN Y DESARROLLO (I+D) Y CONSULTORÍA INTEGRAL EN LOS DISTINTOS CAMPOS DE LAS DENOMINADAS NUEVAS TECNOLOGÍAS.\r\n\r\n11) COMRAVENTA, ARRENDAMIENTO Y GESTIÓN DE INMUEBLES, ASÍ COMO SERVICIOS CONEXOS CON DICHAS ACTIVIDADES.\r\n\r\n12) LA INSTALACIÓN, EL MONTAJE, LA PUESTA EN SERVICIO,  EL SEGUIMIENTO, LA GESTIÓN, EL CONTROL, LA OPERACIÓN, EL MANTENIMIENTO Y LA REPARACIÓN DE REDES, SISTEMAS, EQUIPOS E INSTALACIONES DE TELECOMUNICACIONES, ELÉCTRICOS, ELECTRÓNICOS, RADIOELÉCTRICOS, INFORMÁTICOS, DE INSTRUMENTACIÓN Y CONTROL E INDUSTRIALES, INCLUSO DE LAS  INFRAESTRUCTURAS TELEMÁTICAS, ASÍ COMO EL PROYECTO, ESTUDIO, PLANIFICACIÓN, DISEÑO, INGENIERÍA, DIRECCIÓN FACULTATIVA Y CONSULTORÍA DE LOS MISMOS, Y LA CONSTRUCCIÓN DE LAS INFRAESTRUCTURAS ASOCIADAS. EN ESPECIAL: \r\ni) TRABAJOS DE MANTENIMIENTO PREVENTIVO, CORRECTIVO O PERFECTIVO Y DE REPARACIÓN DE EQUIPOS Y SISTEMAS FÍSICOS Y LÓGICOS PARA EL TRATAMIENTO DE LA INFORMACIÓN, ASÍ COMO DE LOS EQUIPOS EMISORES Y RECEPTORES DE LA MISMA Y SUS CORRESPONDIENTES SISTEMAS Y MEDIOS DE TRANSMISIÓN.\r\nii) LA PRESTACIÓN DE SERVICIOS DE EXPLOTACIÓN Y CONTROL DE SISTEMAS INFORMÁTICOS E INFRAESTRUCTURAS TELEMÁTICAS Y, EN ESPECIAL, LA REALIZACIÓN DE TRABAJOS ASOCIADOS A LA PUESTA EN FUNCIONAMIENTO, EL SEGUIMIENTO, LA GESTIÓN Y CONTROL DE EQUIPOS Y SISTEMAS INFORMÁTICOS Y DE LAS INFRAESTRUCTURAS TELEMÁTICAS, NECESARIAS PARA LA ADECUADA EXPLOTACIÓN DE PROGRAMAS Y APLICACIONES INFORMÁTICAS.\r\n\r\n13) LA PRESTACIÓN DE SERVICIOS DE CAPTURA DE INFORMACIÓN POR MEDIOS ELECTRÓNICOS, INFORMÁTICOS Y TELEMÁTICOS Y, EN ESPECIAL, LOS TRABAJOS DE MECANOGRAFÍA Y GRABACIÓN O CAPTURA DE DATOS POR MEDIOS ELECTRÓNICOS Y DIGITALIZACIÓN O CONVERSIÓN DE FORMATOS DE DOCUMENTOS MEDIANTE EL USO DE LAS TECNOLOGÍAS DE LA INFORMACIÓN Y LAS COMUNICACIONES.\r\n\r\n14) LA PRESTACIÓN DE SERVICIOS DE DESARROLLO Y MANTENIMIENTO DE  PROGRAMAS DE ORDENADOR Y, EN ESPECIAL, LOS TRABAJOS DE PLANIFICACIÓN, ANÁLISIS, DISEÑO, CONSTRUCCIÓN, PRUEBAS Y MANTENIMIENTO DE SISTEMAS DE INFORMACIÓN (PROGRAMAS Y APLICACIONES INFORMÁTICAS).\r\n\r\n15) LA PRESTACIÓN DE SERVICIOS DE TELECOMUNICACIONES  Y, EN ESPECIAL, DE SERVICIOS DE COMUNICACIÓN DE VOZY /O DATOS, ALQUILER DE CIRCUITOS  PARA LA TRANSMISIÓN DE VOZ Y/O DATOS, LA PROVISIÓN DE LOS MEDIOS TÉCNICOS Y HUMANOS NECESARIOS PARA QUE LOS USUARIOS FINALES DE LAS REDES DE TELECOMUNICACIONES ACCEDAN Y TENGAN PRESENCIA EN INTERNET Y OTROS SERVICIOS DE VALOR AÑADIDO SOBRE REDES DE TELECOMUNICACIONES.\r\n\r\n16) LA PRESTACIÓN,  EXPLOTACIÓN Y GESTIÓN DE CUALESQUIERA OTROS SERVICIOS INFORMÁTICOS Y DE TELECOMUNICACIONES, INCLUSO ACTIVIDADES DE OUTSOURCING.\r\n\r\n17) LA REALIZACIÓN DE ESTUDIOS Y PROYECTOS, Y LA INSTALACIÓN, MANTENIMIENTO Y REPARACIÓN DE SISTEMAS DE MECÁNICOS Y SISTEMAS DE TODO TIPO, DE SISTEMAS ELECTRÓNICOS DE CONTROL Y SEGURIDAD, DE CLIMATIZACIÓN, DE AIRE ACONDICIONADO, CALEFACCIÓN, AGUA CALIENTE SANITARIA, FONTANERÍA, CONDUCCIONES DE AGUA Y GAS, DE PROTECCIÓN CONTRA INCENDIOS ASÍ COMO LA CONSTRUCCIÓN DE LAS INFRAESTRUCTURAS ASOCIADAS.\r\n\r\n18) LA FABRICACIÓN, ADAPTACIÓN, ENSAMBLAJE, SUMINISTRO Y COMERCIALIZACIÓN DE EQUIPOS, ACCESORIOS, PRODUCTOS Y SERVICIOS RELACIONADOS CON LAS TELECOMUNICACIONES, SISTEMAS Y EQUPOS MENCIONADOS ANTERIORMENTE.\r\n\r\n19) LA REALIZACIÓN DE ESTUDIOS Y PROYECTOS Y LA EJECUCIÓN Y MANTENIMIENTO DE TODO TIPO DE OBRAS Y CONSTRUCCIONES.\r\n\r\n20) LA PRESTACIÓN DE TODA CLASE DE SERVICIOS DE INGENIERÍA, CONTROL DE CALIDAD, ASISTENCIA TÉCNICA Y ASESORAMIENTO EN GENERAL A EMPRESAS Y PERSONAS FÍSICAS Y JURÍDICAS.\r\n\r\n21) LA REALIZACIÓN DE TODA CLASE DE ESTUDIOS Y PROYECTOS DE INGENIERÍA, ARQUITECTURA Y PROSPECCIONES.\r\n\r\n22) LA REALIZACIÓN DE TODAS AQUELLAS ACTIVIDADES COMPLEMENTARIAS Y AUXILIARES QUE SE CONSIDEREN NECESARIAS PARA LA REALIZACIÓN DE LAS ACTIVIDADES PRINCIPALES DE LA COMPAÑÍA",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03045",
+      "_links": {
+        "self": {
+          "name": "SOLUZIONA, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/03045"
+        }
+      }
+    },
+    {
+      "name": "ICSA SOCIOS CONSULTORES, S.L.",
+      "registrationNumber": "03227",
+      "identificationNumber": "B95343448",
+      "address": "BERTENDONA, 4 - 7º DPTO. 5",
+      "location": {
+        "postalCode": "48008",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.659.2",
+          "name": "Venta al por menor de muebles de oficina y máquinas y equipos de oficina",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de muebles de oficina y máquinas y equipos de oficina",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.659.2"
+            }
+          }
+        },
+        {
+          "id": "1.842",
+          "name": "Servicios financieros y contables",
+          "_links": {
+            "self": {
+              "name": "Servicios financieros y contables",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.842"
+            }
+          }
+        },
+        {
+          "id": "1.932.1",
+          "name": "Enseñanza de formación y perfeccionamiento profesional no superior",
+          "_links": {
+            "self": {
+              "name": "Enseñanza de formación y perfeccionamiento profesional no superior",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.932.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2006-06-29",
+      "certificateEndDate": "2006-11-17",
+      "object": "EL ASESORAMIENTO INCLUIDA LA FORMACIÓN NECESARIA A TODA CLASE DE INSTITUCIONES Y ORGANIZACIONES PÚBLICAS Y PRIVADAS, EMPERSAS Y ENTIDADES CON ÁNIMO DE LUCRO O SIN ÉL Y, EN GENERAL A CUALQUIER TIPO DE ASOCIACIÓN DE PERSONAS QUE PERSIGA UNOS FINES COMUNES, DISPONGA DE UNOS MEDIOS PARA ALCANZARLOS Y SE DOTE DE UNOS PROCEDIMIENTOS PARA OBTENERLOS.\r\nLA COMPRA, VENTA, EDICIÓN, REPRESENTACIÓN, DISTRIBUCIÓN, EXPORTACIÓN E IMPORTACIÓN, AL POR MAYOR O MENOR DE LIBROS Y PUBLICACIONES, DISCOS, CASETTES Y DE CUALQUIER OTRO SOPORTE DE AUDIO O VIDEO Y MATERIAL DE LIBRERÍA",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03227",
+      "_links": {
+        "self": {
+          "name": "ICSA SOCIOS CONSULTORES, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/03227"
+        }
+      }
+    },
+    {
+      "name": "LIMPIEZAS ELURRA, S.L.",
+      "registrationNumber": "00627",
+      "identificationNumber": "B20070538",
+      "address": "C/ AVENIDA CARLOS I, Nº 17.",
+      "location": {
+        "postalCode": "20011",
+        "municipality": "Donostia / San Sebastián",
+        "county": "Gipuzkoa",
+        "municipalityId": "069",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.922",
+          "name": "Servicios de limpieza",
+          "_links": {
+            "self": {
+              "name": "Servicios de limpieza",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.922"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2006-06-27",
+      "certificateEndDate": "2006-12-08",
+      "object": "LA LIMPIEZA, TANTO INTERIOR COMO EXTERIOR, DE TODA CLASE DE EDIFICIOS Y POR CUALQUIER MEDIO",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/00627",
+      "_links": {
+        "self": {
+          "name": "LIMPIEZAS ELURRA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/00627"
+        }
+      }
+    },
+    {
+      "name": "SOLUCIONES TÉCNICAS SOLARES, S.L.",
+      "registrationNumber": "03215",
+      "identificationNumber": "B20866661",
+      "address": "ZUBIBERRI, 31 -2 LOCAL 5",
+      "location": {
+        "postalCode": "20018",
+        "municipality": "Donostia / San Sebastián",
+        "county": "Gipuzkoa",
+        "municipalityId": "069",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.843.1",
+          "name": "Servicios técnicos de ingeniería",
+          "_links": {
+            "self": {
+              "name": "Servicios técnicos de ingeniería",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2006-06-20",
+      "certificateEndDate": "2006-12-01",
+      "object": "A) EL TRÁFICO Y LA EXPLOTACIÓN DE INMUEBLES, ESPECIALMENTE MEDIANTE LA COMPRA, VENTA, EL ARRENDAMIENTO, LA PARCELACIÓN DE LOS MISMOS, SU URBANIZACIÓN, LA PROMOCIÓN Y CONSTRUCCIÓN, ASÍ COMO LA ELABORACIÓN DE ESTUDIOS Y PROYECTOS, A TRAVÉS DE LOS TÉCNICOS LEGALMENTE CUALIFICADOS EN SU CASO, PARA TODO ELLO; B) LA PROMOCIÓN, FABRICACIÓN, VENTA, PROYECCIÓN E IMPORTACIÓN RELACIONADA CON LA ENERGÍA SOLAR O RENOVABLE",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03215",
+      "_links": {
+        "self": {
+          "name": "SOLUCIONES TÉCNICAS SOLARES, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/03215"
+        }
+      }
+    },
+    {
+      "name": "LKS INVESTIGACIÓN AVANZADA DE MERCADO Y MARKETING, S.L.",
+      "registrationNumber": "02204",
+      "identificationNumber": "B95018065",
+      "address": "C/ DOCTOR AREILZA, Nº 56 - 1º CTRO.",
+      "location": {
+        "postalCode": "48010",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.846",
+          "name": "Empresas de estudios de mercado",
+          "_links": {
+            "self": {
+              "name": "Empresas de estudios de mercado",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.846"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2006-06-15",
+      "certificateEndDate": "2006-10-11",
+      "object": "LA REALIZACIÓN DE INVESTIGACIÓN AVANZADA DE MERCADO Y MARKETING, LA REALIZACIÓN DE ESTUDIOS SOCIOLÓGICOS, LA GENERACIÓN Y ACTUALIZACIÓN DE BASES DE DATOS COMERCIALES Y LA CREACIÓN DE HERRAMIENTAS PARA LA RECOGIDA PERMANENTE Y ANÁLISIS DE INFORMACIÓN PARA SU ULTERIOR TRATAMIENTO",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/02204",
+      "_links": {
+        "self": {
+          "name": "LKS INVESTIGACIÓN AVANZADA DE MERCADO Y MARKETING, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/02204"
+        }
+      }
+    }
+  ]
+}

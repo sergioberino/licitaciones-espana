@@ -1,0 +1,428 @@
+{
+  "totalItems": 9042,
+  "totalPages": 905,
+  "currentPage": 696,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "name": "CONSTRUCCIONES ONANDIA, S.A.",
+      "registrationNumber": "03934",
+      "identificationNumber": "A48090674",
+      "address": "SARRIKOBASO 20A BAJO (ENTRADA C/ ILLETA)",
+      "location": {
+        "postalCode": "48991",
+        "municipality": "Getxo",
+        "county": "Bizkaia",
+        "municipalityId": "044",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.501.1",
+          "name": "Construcción completa, reparación y conservación de edificaciones",
+          "_links": {
+            "self": {
+              "name": "Construcción completa, reparación y conservación de edificaciones",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.1"
+            }
+          }
+        },
+        {
+          "id": "1.507",
+          "name": "Construcción, reparación y conservación de toda clase obras",
+          "_links": {
+            "self": {
+              "name": "Construcción, reparación y conservación de toda clase obras",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.507"
+            }
+          }
+        },
+        {
+          "id": "1.722",
+          "name": "Transporte de mercancías por carretera",
+          "_links": {
+            "self": {
+              "name": "Transporte de mercancías por carretera",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.722"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2012-06-19",
+      "certificateEndDate": "2012-12-18",
+      "object": "1.- LA CONSTRUCCION EN GENERAL. 2.- TRANSPORTE DE MERCANCÍAS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03934",
+      "_links": {
+        "self": {
+          "name": "CONSTRUCCIONES ONANDIA, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/03934"
+        }
+      }
+    },
+    {
+      "name": "CANALIZACIONES INDUSTRIALES DE GAS, S.L.",
+      "registrationNumber": "01136",
+      "identificationNumber": "B01040203",
+      "address": "C/ UZBINA, 4. POLÍGONO INDUSTRIAL DE JÚNDIZ",
+      "location": {
+        "postalCode": "01015",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.501.1",
+          "name": "Construcción completa, reparación y conservación de edificaciones",
+          "_links": {
+            "self": {
+              "name": "Construcción completa, reparación y conservación de edificaciones",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.1"
+            }
+          }
+        },
+        {
+          "id": "1.501.2",
+          "name": "Construcción completa, reparación y conservación obras civiles",
+          "_links": {
+            "self": {
+              "name": "Construcción completa, reparación y conservación obras civiles",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.2"
+            }
+          }
+        },
+        {
+          "id": "1.504.2",
+          "name": "Instalaciones de fontanería",
+          "_links": {
+            "self": {
+              "name": "Instalaciones de fontanería",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.504.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2012-06-18",
+      "certificateEndDate": "2012-12-15",
+      "object": "LA EJECUCIÓN, POR CUENTA PROPIA O AJENA, DE TODA CLASE DE CANALIZACIONES DE GAS, INCLUIDAS LAS SOLDADURAS DE ACERO, POLIETILENO O CUALQUIER OTRO MATERIAL, ASÍ COMO EL ESTUDIO, PROMOCIÓN Y REALIZACIÓN DE TODA CLASE DE OBRAS, TANTO PRIVADAS COMO PÚBLICAS, YA SEAN DE CONSTRUCCIÓN, MEJORA Y CONSERVACIÓN, O INDUSTRIALES, DE INGENIERÍA CIVIL Y CARRETERAS; ASÍ COMO TAMBIÉN DE TODA CLASE DE INMUEBLES. LA COMPRA, VENTA Y EXPLOTACIÓN, PROPIA O POR TERCEROS, DE SOLARES Y TERRENOS DE TODAS CLASES, ASÍ COMO DE EDIFICIOS E INMUEBLES EN GENERAL. LA PROSPECCIÓN Y EXPLOTACIÓN DE TODA CLASE DE MINAS Y CANTERAS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/01136",
+      "_links": {
+        "self": {
+          "name": "CANALIZACIONES INDUSTRIALES DE GAS, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/01136"
+        }
+      }
+    },
+    {
+      "name": "BAIMEN 21, INSPECCIONES AMBIENTALES, S.L.",
+      "registrationNumber": "03651",
+      "identificationNumber": "B01400506",
+      "address": "VICENTE GOIKOETXEA, 6-6º",
+      "location": {
+        "postalCode": "01008",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.843.9",
+          "name": "Otros servicios técnicos n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros servicios técnicos n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.9"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2012-06-15",
+      "certificateEndDate": "2012-12-04",
+      "object": "LA ACTIVIDAD QUE DESARROLLARÁ LA MERCANTIL SERÁN LAS SIGUIENTES EN FAVOR O POR CUENTA DE LAS ADMINISTRACIONES PÚBLICAS, ENTES DEPENDIENTES DE ÉSTAS, ASÍ COMO CUALQUIER OTRA ORGANIZACIÓN COMPUESTA POR MIEMBROS O CAPITAL DE CARÁCTER PÚBLICO:\r\n- VIGILANCIA Y CONTROL DE DETERMINADAS FACULTADES DELEGADAS MEDIANTE ACREDITACIÓN DE LAS ADMINISTRACIONES PÚBLICAS O ENTES DEPENDIENTES DE ÉSTA, DE ACUERDO CON LAS FUNCIONES Y REQUISITOS ESTABLECIDOS NORMATIVAMENTE PARA SU EJECUCIÓN.\r\n- APOYO EN LA TRAMITACIÓN DE LICENCIAS, AUTORIZACIONES Y OTROS EXPEDIENTES Y PRESTACIÓN DE OTROS SERVICIOS DERIVADOS DE SUS COMPETENCIAS MEDIOAMBIENTALES Y DE DESARROLLO SOSTENIBLE, COMO LAS RELATIVAS A LAS AGUAS RESIDUALES, DE CONSUMO, DE BAÑO Y DE CUALQUIER OTRA NATURALEZA, LA ATMÓSFERA, EL RUIDO, LOS SUELOS, LOS ESPACIOS PROTEGIDOS, LA FLORA Y FAUNA, LA CONTAMINACIÓN ELECTROMAGNÉTICA, RESIDUOS Y DEMÁS VECTORES AMBIENTALES.\r\n- INSPECCIONES AMBIENTALES QUE CUALQUIERA DE LAS ADMINISTRACIONES PÚBLICAS O ENTES DEPENDIENTES DE ÉSTAS, PUEDAN REALIZAR EN RAZÓN DE LAS COMPETENCIAS QUE LAS DISTINTAS LEGISLACIONES GENERALES O SECTORIALES LES CONFIERAN.\r\n- COMPROBACIÓN DE CONDICIONADOS O MEDIDAS CORRECTORAS EN LOS EXPEDIENTES DE ACTIVIDADES CLASIFICADAS E INOCUAS, DE EVALUACIÓN DE IMPACTO AMBIENTAL, DE AUTORIZACIONES AMBIENTALES INTEGRADAS, DE PERMISOS DE VERTIDOS DE AGUAS, DE EMISIONES ATMOSFÉRICAS, DE PRODUCCIÓN, TRANSPORTE Y GESTIÓN DE CUALQUIER TIPOLOGÍA DE RESIDUOS, DE LOS SISTEMAS INTEGRADOS DE GESTIÓN, DE CALIDAD DE LOS SUELOS, DE SUBVENCIONES EN MATERIA DE MEDIO AMBIENTE, O DE EXPEDIENTES DE CUALQUIER OTRA NATURALEZA DONDE EXISTA, AL MENOS, UNA COMPONENTE AMBIENTAL Y/O RIESGO PARA LAS PERSONAS Y EL MEDIO AMBIENTE.\r\n- APOYO TÉCNICO Y/O LEGAL EN LA RESOLUCIÓN DE LOS EXPEDIENTES ADMINISTRATIVOS ARRIBA MENCIONADOS.\r\n- ASISTENCIA TÉCNICA EN LA ELABORACIÓN DE MATERIALES DIDÁCTICOS O DIVULGATIVOS EN MATERIA DE MEDIO AMBIENTE Y DESARROLLO SOSTENIBLE.\r\n- CONSULTORÍA Y ASISTENCIA TÉCNICA EN LOS EXPEDIENTES DE DECLARACIÓN DE LA CALIDAD DEL SUELO.\r\n-VIGILANCIA Y CONTROL DE SERVICIOS Y OBRAS EJECUTADOS DE FORMA INDIRECTA.\r\n-VIGILANCIA Y CONTROL DE MÁRGENES Y RIBERAS DE CAUCES PÚBLICOS, DEL DOMINIO TERRESTRE-MARÍTICO, DE LAGOS Y EMBALSES, DE ÁRES PROTEGIDAS, DE PARQUES NATURALES, NACIONALES, DE LICS, DE ZONAS DE ESPECIAL INTERÉS AMBIENTAL, DE MONTES Y DE CUANTAS OTRAS DETERMINE LA ADMINISTRACIÓN PÚBLICA POR RAZÓN DE LA PROTECCIÓN DE SUS VALORES AMBIENTALES, NATURALES Y ECOLÓGICOS.\r\n- PLANIFICACIÓN Y TOMA DE MUESTRAS AMBIENTALES EN CUALQUIER MATIZ.\r\n- INVESTIGACIÓN DE ACCIDENTES E INCIDENTES AMBIENTALES, BIEN SEA A INSTANCIAS DE LA ADMINISTRACIÓN PÚBLICA O ENTES DEPENDIENTES DE ESTAS, BIEN A DENUNCIAS DE OTRAS PARTES INTERESADAS.\r\n- VIGILANCIA Y CONTROL EN LA PRESTACIÓN DE LOS DISTINTOS SERVICIOS PÚBLICOS QUE LAS ADMINISTRACIONES PÚBLICAS O ENTES DEPENDIENTES DE ÉSTAS CONTRATEN A TERCEROS, TANTO DESDE LA PERSPECTIVA AMBIENTAL, COMO DE CALIDAD, ORGANIZACIONAL O ECONÓMICA, DE PERSONAL O DE RECURSOS MATERIALES.\r\n- REDACCIÓN DE ANTEPROYECTOS, PROYECTOS, TECTOS NORMATIVOS Y PLIEGOS DE CONTRATACIÓN.\r\n- ELABORACIÓN DE ESTUDIOS E INFORMES EN MATERIA DE MEDIO AMBIENTE Y DESARROLLO SOSTENIBLE.\r\n- CREACIÓN Y GESTIÓN DE BOLSAS DE INTERCAMBIO DE MATERIALES Y RESIDUOS.\r\n- REALIZACIÓN DE PROYECTOS, ESTUDIOS, AUDITORÍAS, PEERITACIONES, INFORMES Y ASESORÍAS EN MATERIA DE MEDIO AMBIENTE; EL ANÁLISIS DE AGUAS, RESIDUOS URBANOS, INDUSTRIALES, PELIGROSOS Y EMANACIONES GASESOSAS; LA VENTA, ASISTENCIA TÉCNICA Y MANTENIMIENTO DE EQUIPOS Y PRODUCTOS RELACIONADOS CON EL MEDIO AMBIENTE.\r\n- CONSULTORÍA Y ASISTENCIA EN EL DISEÑO DE POLÍTICAS, ESTRATEGIAS, PLANES, PROGRAMAS Y PROYECTOS EN MATERIA DE MEDIO AMBIENTE Y DESARROLLO SOSTENIBLE; ORGANIZACIÓN Y DINAMIZACIÓN DE PROCESOS PARTICIPATIVOS EN LA TOMA DE DECISIONES EN MATERIA DE MEDIO AMBIENTE Y DESARROLLO SOSTENIBLE; AUDITORÍAS DE SOSTENIBILIDAD PARA LA CERTIFICACIÓN DE SISTEMAS DE GESTIÓN DE MEDIO AMBIENTE Y DESARROLLO SOSTENIBLE.\r\n- CONTABILIDAD Y ECONOMÍA AMBIENTAL.\r\n- ASESORÍA Y ASISTENCIA TÉCNICA A LAS ENTIDADES ASEGURADORAS Y REASEGURADORAS PARA LA SUSCRIPCIÓN DE SEGUROS DE CARÁCTER MEDIOAMBIENTAL, ASÍ COMO EN EL PERITAJE DE LOS DAÑOS PRODUCIDOS, SUS CAUSAS, RESPONSABLES Y CULPABILIDAD O NEGLIGENCIA DE ESTOS.\r\n- APOYO EN LA SATISFACCIÓN DEL DERECHO DE LOS CIUDADANOS AL ACCESO A LA INFORMACIÓN, LA PARTICIPACIÓN EN LAS TOMAS DE DECISIONES Y EL ACCESO A LA JUSTICIA EN MATERIA DE MEDIO AMBIENTE.\r\n- ELABORACIÓN DE PROTOCOLOS, MODELOS E INFORMES DE EVALUACIÓN AMBIENTAL.\r\n- REVISIÓN DE DOCUMENTACIÓN SOBRE LAS DIFERENTES ACTIVIDADES QUE SE EJERCEN EN UN DETERMINADO TERRITORIO PARA LA VERIFICACIÓN DE UN ADECUADO CUMPLIMIENTO EN MATERIA MEDIOAMBIENTAL.\r\n- REDACCIÓN DE INFORMES DESCRIPTIVOS DE LAS ACTIVIDADES ECONÓMICAS Y EMPRESARIALES Y DE SU SITUACIÓN EN CUANTO AL CUMPLIMIENTO DE LA NORMATIVA AMBIENTAL.\r\n- ELABORACIÓN DE PLANES DE EVALUACIÓN AMBIENTAL.\r\n- REALIZACIÓN DE VISITAS A LAS INSTALACIONES DONDE SE REALIZAN LAS ACTIVIDADES ECONÓMICAS Y EMPRESARIALES PARA LA VERIFICACIÓN DE SU ESTADO MEDIOAMBIENTAL Y ADECUACIÓN AL CUMPLIMIENTO DE LA NORMATIVA MEDIOAMBIENTAL.\r\n- ELABORACIÓN DE ANÁLISIS DE RIESGOS AMBIENTALES Y PARA LA SALUD DE LAS PERSONAS DE LAS ACTIVIDADES ECONÓMICAS Y EMPRESARIALES.\r\n- SEGUIMIENTO DE ESTADO MEDIOAMBIENTAL DE LAS ACTIVIDADES ECONÓMICAS Y EMPRESARIALES.\r\n- ELABORACIÓN DE INFORMES DE CONCLUSIONES Y PROPUESTAS DE MEJORA DEL ESTADO MEDIOAMBIENTAL DE LAS ACTIVIDADES ECONÓMICAS Y EMPRESARIALES.\r\n- ELABORACIÓN DE PLANES DE ADECUACIÓN A NORMATIVA MEDIOAMBIENTAL.\r\n- IMPLANTACIÓN Y CERTIFICACIÓN DE SISTEMAS DE GESTIÓN AMBIENTAL, DE LA SOSTENIBILIDAD Y DE LA RESPONSABILIDAD SOCIAL CORPORATIVA.\r\n- EN GENERAL, TODA ACTIVIDAD ENCAMINADA A LA ASESORÍA, CONSULTORÍA, AUDITORÍA Y CERTIFICACIÓN DE CUALQUIER MATERIA MEDIOAMBIENTAL Y DE DESARROLLO SOSTENIBLE",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03651",
+      "_links": {
+        "self": {
+          "name": "BAIMEN 21, INSPECCIONES AMBIENTALES, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/03651"
+        }
+      }
+    },
+    {
+      "name": "CONVATEC, S.L.",
+      "registrationNumber": "01173",
+      "identificationNumber": "A08380602",
+      "address": "C/ CONSTITUCIÓN, Nº 1 - 3ª planta",
+      "location": {
+        "postalCode": "08960",
+        "municipality": "Sant Just Desvern",
+        "county": "Barcelona",
+        "municipalityId": "221",
+        "countyId": "08"
+      },
+      "economicActivities": [
+        {
+          "id": "1.614.1",
+          "name": "Venta al por mayor de productos farmacéuticos y medicamentos",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de productos farmacéuticos y medicamentos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.614.1"
+            }
+          }
+        },
+        {
+          "id": "1.619.2",
+          "name": "Venta al por mayor de aparatos e instrumentos médicos, ortopédicos, ópticos",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de aparatos e instrumentos médicos, ortopédicos, ópticos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.619.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2012-06-12",
+      "certificateEndDate": "2012-06-12",
+      "object": "1). LA FABRICACIÓN, IMPORTACIÓN, EXPORTACIÓN, Y/O COMERCIALIZACIÓN DE PRODUCTOS SANITARIOS Y FARMACÉUTICOS; 2).  LA REPRESENTACIÓN, CON O SIN EXCLUSIVA, DE EMPRESAS Y SOCIEDADES, ESPAÑOLAS O EXTRANJERAS, RELACIONADAS CON LAS ANTERIORES ACTIVIDADES",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/01173",
+      "_links": {
+        "self": {
+          "name": "CONVATEC, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/01173"
+        }
+      }
+    },
+    {
+      "name": "FIRMES Y AGLOMERADOS, S.A.",
+      "registrationNumber": "00011",
+      "identificationNumber": "A01026103",
+      "address": "C/ AVENIDA DE LOS OLMOS, Nº 4.",
+      "location": {
+        "postalCode": "01013",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.507",
+          "name": "Construcción, reparación y conservación de toda clase obras",
+          "_links": {
+            "self": {
+              "name": "Construcción, reparación y conservación de toda clase obras",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.507"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2012-06-11",
+      "certificateEndDate": "2012-11-16",
+      "object": "LA REALIZACIÓN DE OBRAS PÚBLICAS EN GENERAL Y EN PARTICULAR MOVIMIENTOS DE TIERRAS,CIMENTACIONES, AFIRMADOS, RIEGOS ASFÁLTICOS, FABRICACIÓN Y EMPLEO DE AGLOMERADOS, SANEAMIENTO, CONDUCCIONES DE AGUA, CANALIZACIONES EN GENERAL Y EN ESPECIAL CANALIZACIONES DE GAS, ESTRUCTURAS DE HORMIGÓN ARMADO Y METÁLICAS, ASÍ COMO LA FABRICACIÓN DE MATERIALES PARA LA CONSTRUCCIÓN, IMPERMEABILIZACIONES, CONSTRUCCIONES DE CARRETERAS, EXPLOTACIONES DE CANTERAS Y FABRICACIÓN DE HORMIGONES Y PRODUCTOS ASFÁLTICOS, ASÍ COMO LA CONSTRUCCIÓN Y PROMOCIÓN DE VIVIENDAS, PABELLONES INDUSTRIALES Y CUALESQUIERA OTRAS OBRAS DE CARÁCTER PÚBLICO Y PRIVADO",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/00011",
+      "_links": {
+        "self": {
+          "name": "FIRMES Y AGLOMERADOS, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/00011"
+        }
+      }
+    },
+    {
+      "name": "GABINETE TÉCNICO DE TELECOMUNICACIONES TELKROM, S.L.",
+      "registrationNumber": "04518",
+      "identificationNumber": "B48488365",
+      "address": "SIMON BOLIBAR 27, 1º DPTO. 36",
+      "location": {
+        "postalCode": "48013",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.504.7",
+          "name": "Instalaciones telefónicas, telegráficas, televisión, etc",
+          "_links": {
+            "self": {
+              "name": "Instalaciones telefónicas, telegráficas, televisión, etc",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.504.7"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2012-06-08",
+      "certificateEndDate": "2012-10-24",
+      "object": "A) LA EXPLOTACIÓN DE UNA EMPRESA DEDICADA A LA IMPORTACIÓN Y EXPORTACIÓN DE APARATOS, EQUIPOS Y SISTEMAS ELECTRÓNICOS Y DE TELECOMUNICACIONES; LA REALIZACIÓN DE PROYECTOS E INSTALACIONES DE SISTEMAS DE TELECOMUNICACIÓN, LA DISTRIBUCIÓN, INSTALACIÓN Y COMERCIALIZACIÓN (POR MEDIOS PROPIOS O AJENOS), LA REPRESENTACIÓN Y ACTIVIDADES DE MEDIACIÓN TANTO PARA LA INDUSTRIA, EL HOGAR COMO PARA EL COMERCIO, VENTA AL MAYOR Y MENOR COMO ALMACENISTAS, DETALLISTA O EXCLUSIVISTAS DE LO EXPRESADO; B) LA PRESTACIÓN DE SERVICIOS DE ASESORAMIENTO, ASÍ COMO LA REALIZACIÓN DE AUDITORÍAS, MEDIANTE PERSONAL TITULADOS PARA ELLO Y LA REALIZACIÓN DE OPERACIONES PREPARATORIAS, COMPLEMENTARIAS O ACCESORIAS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/04518",
+      "_links": {
+        "self": {
+          "name": "GABINETE TÉCNICO DE TELECOMUNICACIONES TELKROM, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/04518"
+        }
+      }
+    },
+    {
+      "name": "ZUZEN-EXPRESS, S.L.",
+      "registrationNumber": "04821",
+      "identificationNumber": "B20888640",
+      "address": "ALDA. REKALDE, 1 LOCAL 4  (EDIFICIO IRUBIDE)",
+      "location": {
+        "postalCode": "20018",
+        "municipality": "Donostia / San Sebastián",
+        "county": "Gipuzkoa",
+        "municipalityId": "069",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.722",
+          "name": "Transporte de mercancías por carretera",
+          "_links": {
+            "self": {
+              "name": "Transporte de mercancías por carretera",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.722"
+            }
+          }
+        },
+        {
+          "id": "1.756.1",
+          "name": "Agencias de transporte, transitarios",
+          "_links": {
+            "self": {
+              "name": "Agencias de transporte, transitarios",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.756.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2012-06-07",
+      "certificateEndDate": "2012-11-23",
+      "object": "LA AGENCIA DE TRANSPORTE, RECADEROS, TRANSPORTISTAS, DISTRIBUIDORES Y ALMACENISTAS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/04821",
+      "_links": {
+        "self": {
+          "name": "ZUZEN-EXPRESS, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/04821"
+        }
+      }
+    },
+    {
+      "name": "GMS MANAGEMENT SOLUTIONS, S.L.",
+      "registrationNumber": "02809",
+      "identificationNumber": "B83509307",
+      "address": "C/ Plaza Pablo Ruiz Picasso Nº1",
+      "location": {
+        "postalCode": "28008",
+        "municipality": "Madrid",
+        "county": "Madrid",
+        "municipalityId": "079",
+        "countyId": "28"
+      },
+      "economicActivities": [
+        {
+          "id": "1.842",
+          "name": "Servicios financieros y contables",
+          "_links": {
+            "self": {
+              "name": "Servicios financieros y contables",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.842"
+            }
+          }
+        },
+        {
+          "id": "1.847",
+          "name": "Servicios de consultoría",
+          "_links": {
+            "self": {
+              "name": "Servicios de consultoría",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.847"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2012-06-06",
+      "certificateEndDate": "2012-11-17",
+      "object": "A) REALIZAR TRABAJOS DE ASESORAMIENTO Y CONSULTORÍA SOBRE TEMAS ECONÓMICOS, FINANCIEROS, CONTABLES, Y EN GENERAL, SOBRE TODOS AQUELLOS RELACIONADOS CON LA INFORMACIÓN, ORGANIZACIÓN Y PLANIFICACIÓN, INCLUIDOS LOS SERVICIOS DE CONSULTORÍA Y ASESORAMIENTO RELATIVOS AL DISEÑO Y MEJORA DE LOS PROCESOS DE GESTIÓN, ANÁLISIS Y ESTRUCTURA DE COSTES, GESTIÓN DE RECURSOS HUMANOS, PLANIFICACIÓN ESTRATÉGICA, GESTIÓN DE CALIDAD, GESTIÓN MEDIOAMBIENTAL, MEJORA DEL CONOCIMIENTO ORGANIZATIVO, DISEÑO E IMPLANTACIÓN DE SISTEMAS DE INFORMACIÓN, GESTIÓN Y CONTROL DE TESORERÍA Y DERIVADOS FINANCIEROS, EXTERNALIZACIÓN DE LOS DEPATAMENTOS DE AUDITORÍA INTERNA Y MEJORA DE SU FUNCIONAMIENTO, ANÁLISIS SOBRE LA VIABILIDAD DE LAS EMPRESAS, ANÁLISIS DE SEGURIDAD EN EL TRATAMIENTO INFORMATIZADO DE DATOS, O EN EL TRATAMIENTO DE INFORMACIÓN EN INTERNET Y EN SU TRANSMISIÓN Y COMUNICACIÓN, DISEÑO DE SISTEMAS DE CONTROL  INTERNO Y PARA EL CONTROL DE RIESGOS DE TODO TIPO (FINANCIEROS, DE MATERIAS PRIMAS, DERIVADOS, ETC.), ANÁLISIS FINANCIEROS, Y LOS SERVICIOS DE ASESORÍA MEDIAOMBIENTAL Y CONSULTORÍA EN GESTIÓN DE PATRIMONIOS Y PROYECTOS INMOBILIARIOS.\r\n\r\nB) REALIZAR ACTIVIDADES DE FORMACIÓN EMPRESARIAL Y PROFESIONAL, ASÍ COMO DISEÑAR, CREAR, EDITAR Y DISTRIBUIR CURSOS, MANUALES, LIBROS, VÍDEOS, SOFTWARE, Y EN GENERAL CUALQUIER PRODUCTO AUDIOVISUAL DESTINADO A LA FORMACIÓN Y DESARROLLO PROFESIONAL DE DIRECTIVOS, EMPRESARIOS, EMPLEADOS Y PERSONAS RELACIONADAS CON EL ÁMBITO  EMPRESARIAL.    \r\n\r\n\r\n\r\n 2) LA SOCIEDAD Y SUS SOCIOS RESPETARÁN Y CUMPLIRÁN LAS NORMAS DEONTOLÓGICAS DE LOS COLEGIOS Y ORGANIZACIONES PROFESIONALES QUE REGULEN LAS ACTIVIDADES PROFESIONALES QUE CONSTITUYEN SU OBJETO SOCIAL, ASÍ COMO DE CUALQUIER DISPOSICIÓN NORMATIVA QUE AFECTE A DICHAS ACTIVIDADES; 3) EN EL SUPUESTO EN QUE EL DESARROLLO DEL OBJETO SOCIAL REQUIERA LA OBTENCIÓN DE CUALQUIER TIPO DE CONCESIÓN, LICENCIA O AUTORIZACIÓN ADMINISTRATIVA, ÉSTA SE OBTENDRÁ CON CARÁCTER PREVIO AL INICIO DE LA ACTIVIDAD; 4) LAS ACTIVIDADES INTEGRANTES DEL OBJETO SOCIAL PODRÁN SER DESARROLLADAS, TOTAL O PARCIALMENTE, DE MODO INDIRECTO, MEDIANTE LA TITULARIDAD DE ACCIONES O PARTICIPACIONES EN SOCIEDADES DE OBJETO IDÉNTICO O ANÁLOGO. QUEDAN EXCLUIDAS TODAS AQUELLAS ACTIVIDADES PARA CUYO EJERCICIO LA LEY EXIJA REQUISITOS QUE NO QUEDEN CUMPLIDOS POR ESTA SOCIEDAD; 5) DICHAS ACTIVIDADES PODRÁN SER DESARROLLADAS TANTO EN EL ÁMBITO NACIONAL COMO EN EL INTERNACIONAL",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/02809",
+      "_links": {
+        "self": {
+          "name": "GMS MANAGEMENT SOLUTIONS, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/02809"
+        }
+      }
+    },
+    {
+      "name": "COMPAÑÍA VASCA DE INGENIERÍA, S.L.",
+      "registrationNumber": "02962",
+      "identificationNumber": "B95313359",
+      "address": "ALAMEDA RECALDE 18 - 7ºB",
+      "location": {
+        "postalCode": "48009",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.843.1",
+          "name": "Servicios técnicos de ingeniería",
+          "_links": {
+            "self": {
+              "name": "Servicios técnicos de ingeniería",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2012-06-05",
+      "certificateEndDate": "2012-11-15",
+      "object": "LA COMPRA, PROMOCIÓN, CONSTRUCCIÓN, O EXPLOTACIÓN DE INMUEBLES, ASÍ COMO SU VENTA POSTERIOR, LA CONSTRUCCIÓN POR CUENTA PROPIA O AJENA, ASÍ COMO LA URBANIZACIÓN DE TODA CLASE DE TERRENOS.\r\nLA ELABORACIÓN DE TODO TIPO DE PLANES, ESTUDIOS Y PROYECTOS, DE URBANISMO, DE CONSTRUCCIÓN, Y DE INSTALACIONES INDUSTRIALES, INCLUSO DE OBRA CIVIL   ",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/02962",
+      "_links": {
+        "self": {
+          "name": "COMPAÑÍA VASCA DE INGENIERÍA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/02962"
+        }
+      }
+    },
+    {
+      "name": "ALERE HEALTHCARE, S.A.U.",
+      "registrationNumber": "02576",
+      "identificationNumber": "A58882952",
+      "address": "BOTÁNICA, 146",
+      "location": {
+        "postalCode": "08908",
+        "municipality": "Hospitalet de Llobregat, L'",
+        "county": "Barcelona",
+        "municipalityId": "101",
+        "countyId": "08"
+      },
+      "economicActivities": [
+        {
+          "id": "1.619.7",
+          "name": "Venta al por mayor de instrumentos de precisión, medida y similares",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de instrumentos de precisión, medida y similares",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.619.7"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2012-06-04",
+      "certificateEndDate": "2011-10-11",
+      "object": "LA FABRICACIÓN, COMPRA, VENTA,  COMERCIALIZACIÓN, DISTRIBUCIÓN, IMPORTACIÓN Y EXPORTACIÓN DE PRODUCTOS QUÍMICOS Y BIOLÓGICOS, ESPECIALMENTE PARA PROCEDIMIENTOS DE DIAGNÓSTICO; ASÍ COMO DE PRODUCTOS Y APARATOS DESTINADOS A SUPLIR LAS CARENCIAS Y NECESIDADES DEL CUERPO HUMANO; Y CUALQUIER OTRA ACTIVIDAD RELACIONADA, CONEXA O DERIVADA DE LAS ANTERIOMENTE MENCIONADAS.     ",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/02576",
+      "_links": {
+        "self": {
+          "name": "ALERE HEALTHCARE, S.A.U.",
+          "href": "https://api.euskadi.eus/procurements/companies/02576"
+        }
+      }
+    }
+  ]
+}

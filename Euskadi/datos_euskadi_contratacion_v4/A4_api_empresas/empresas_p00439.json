@@ -1,0 +1,478 @@
+{
+  "totalItems": 9042,
+  "totalPages": 905,
+  "currentPage": 439,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "name": "RESIDUA INGENIERIA Y CONSULTORIA SL",
+      "registrationNumber": "09058",
+      "identificationNumber": "B75147587",
+      "address": "Paseo de Lugaritz, 23 B",
+      "location": {
+        "postalCode": "20018",
+        "municipality": "Donostia / San Sebastián",
+        "county": "Gipuzkoa",
+        "municipalityId": "069",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.843.1",
+          "name": "Servicios técnicos de ingeniería",
+          "_links": {
+            "self": {
+              "name": "Servicios técnicos de ingeniería",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2023-10-24",
+      "certificateEndDate": "2024-04-24",
+      "object": "EL EJERCICIO DE LAS ACTIVIDADES, LA PRESTACIÓN DE SERVICIOS, CONTRATACIÓN Y EJECUCIÓN DE TRABAJOS DE INGENIERÍA, CONSULTORÍA, AUDITORÍA Y ASESORAMIENTO PROFESIONAL, EN SU MÁS AMPLIO SENTIDO, RELACIONADO CON LA GESTIÓN DE RESIDUOS; ASÍ COMO LA INVESTIGACIÓN Y DESARROLLO DE PRODUCTOS Y SERVICIOS RELACIONADOS.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/09058",
+      "_links": {
+        "self": {
+          "name": "RESIDUA INGENIERIA Y CONSULTORIA SL",
+          "href": "https://api.euskadi.eus/procurements/companies/09058"
+        }
+      }
+    },
+    {
+      "name": "ASESORES EN EQUIPAMIENTOS HOSTECK, S.L.",
+      "registrationNumber": "08991",
+      "identificationNumber": "B01530492",
+      "address": "SENDA RIO ALI Nº 2, 1ºC",
+      "location": {
+        "postalCode": "01015",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.653.3",
+          "name": "Venta al por menor de artículos de menaje, ferretería, adorno, regalo",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de artículos de menaje, ferretería, adorno, regalo",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.653.3"
+            }
+          }
+        },
+        {
+          "id": "1.691.9",
+          "name": "Reparación de otros bienes de consumo n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Reparación de otros bienes de consumo n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.691.9"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2023-10-24",
+      "certificateEndDate": "2024-04-24",
+      "object": "COMERCIO AL POR MENOR Y SERVICIO TÉCNICO DE MAQUINARIA DE HOSTELERÍA, LAVANDERÍA, FRÍO INDUSTRIAL Y COMERCIAL, VENTILACIÓN Y ACERO INOXIDABLE. INSTALACIONES DE GAS Y FONTANERÍA. COMERCIO AL POR MENOR DE APARATOS ELECTRODOMÉSTICOS EN ESTABLECIMIENTOS ESPECIALIZADOS.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08991",
+      "_links": {
+        "self": {
+          "name": "ASESORES EN EQUIPAMIENTOS HOSTECK, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/08991"
+        }
+      }
+    },
+    {
+      "name": "ACCENTURE, S.L. (Sociedad Unipersonal)",
+      "registrationNumber": "00888",
+      "identificationNumber": "B79217790",
+      "address": "Paseo de la Castellana, 85",
+      "location": {
+        "postalCode": "28046",
+        "municipality": "Madrid",
+        "county": "Madrid",
+        "municipalityId": "079",
+        "countyId": "28"
+      },
+      "economicActivities": [
+        {
+          "id": "1.845",
+          "name": "Explotación electrónica por cuenta de terceros",
+          "_links": {
+            "self": {
+              "name": "Explotación electrónica por cuenta de terceros",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.845"
+            }
+          }
+        },
+        {
+          "id": "1.847",
+          "name": "Servicios de consultoría",
+          "_links": {
+            "self": {
+              "name": "Servicios de consultoría",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.847"
+            }
+          }
+        },
+        {
+          "id": "1.849.9",
+          "name": "Otros servicios independientes n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros servicios independientes n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.849.9"
+            }
+          }
+        },
+        {
+          "id": "1.932.1",
+          "name": "Enseñanza de formación y perfeccionamiento profesional no superior",
+          "_links": {
+            "self": {
+              "name": "Enseñanza de formación y perfeccionamiento profesional no superior",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.932.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2023-10-24",
+      "certificateEndDate": "2024-04-11",
+      "object": "LA REALIZACIÓN DE TODA CLASE DE TRABAJOS DE ASESORAMIENTO Y CONSULTORÍA SOBRE DESARROLLO, INSTALACIÓN, INTEGRACIÓN Y MANTENIMIENTO DE SISTEMAS Y SOPORTES INFORMÁTICOS AVANZADOS QUE PERMITAN OFRECER SOLUCIONES INFORMÁTICAS COMPLETAS, MEDIANTE LA UTILIZACIÓN DE TECNOLOGÍAS AVANZADAS EN EL CAMPO DE LA INFORMÁTICA Y LAS COMUNICACIONES, ASÍ COMO LA IMPLANTACIÓN DE PAQUETES DE SOFTWARE PROPIOS. LA PRESTACIÓN DE SERVICIOS DE ASESORAMIENTO Y CONSULTORÍA SOBRE PLANIFICACIÓN ESTRATÉGICA Y ADAPTACIÓN AL CAMBIO TECNOLÓGICO, ASÍ COMO DE PLANIFICACIÓN DE LA GESTIÓN Y ORGANIZACIÓN DE EMPRESAS. LA ADMINISTRACIÓN, GERENCIA Y DIRECCIÓN DE EMPRESAS O DE ÁREAS FUNCIONALES DE LAS MISMAS Y EL DESARROLLO DE TÉCNICAS ADECUADAS Y EFICACES PARA LA GESTIÓN Y CONTROL DE NEGOCIOS Y REALIZACIÓN DE CUANTAS OPERACIONES DE ÍNDOLE CIVIL, COMERCIAL O INDUSTRIAL QUE PUEDAN RELACIONARSE CON EL OBJETO SOCIAL, ESPECIALMENTE MEDIANTE LA CONSTITUCIÓN DE NUEVAS SOCIEDADES. EL DISEÑO, DESARROLLO, INSTALACIÓN, EXPLOTACIÓN Y MANTENIMIENTO DE SISTEMAS DE INFORMACIÓN A LA DIRECCIÓN DE EMPRESAS DESTINADAS A CONTROLAR Y MEJORAR LA GESTIÓN DE LAS MISMAS. LA REALIZACIÓN DE ACTIVIDADES DE FORMACIÓN EMPRESARIAL Y PROFESIONAL, ASÍ COMO EL DISEÑO, CREACIÓN, EDICIÓN Y DISTRIBUCIÓN DE CURSOS, MANUALES, LIBROS, VIDEOS, SOFTWARE PROPIOS Y CUALQUIER OTRO PRODUCTO AUDIOVISUAL, DESTINADO A LA FORMACIÓN Y DESARROLLO PROFESIONAL DE EMPRESARIOS, DIRECTIVOS O EMPLEADOS DE CUALESQUIERA COMPAÑÍAS PÚBLICAS O PRIVADAS. LA COMERCIALIZACIÓN DE SERVICIOS DE MANTENIMIENTO DE SISTEMAS Y SOPORTES INFORMÁTICOS AVANZADOS COMO REVENTA DE SOFTWARE Y HARDWARE, OUTSOURCING DE SISTEMAS INFORMÁTCIOS Y EN GENERAL CUALQUIER OTRO SERVICIO DE VALOR AÑADIDO DEDICADO AL DESARROLLO DE NUEVOS NEGOCIOS EN EL ÁREA DE LOS SERVICIOS INFORMÁTICOS. LA PRESTACIÓN DE SERVICOS DE EXTERNALIZACIÓN DE ACTIVIDADES Y PROCESOS DE NEGOCIO DE CUALQUIER NATURALEZA. LA CREACIÓN O PARTICIPACIÓN EN SOCIEDADES U OTRAS ENTIDADES CON OBJETO SOCIAL SIMILAR",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/00888",
+      "_links": {
+        "self": {
+          "name": "ACCENTURE, S.L. (Sociedad Unipersonal)",
+          "href": "https://api.euskadi.eus/procurements/companies/00888"
+        }
+      }
+    },
+    {
+      "name": "MEDLINE INTERNATIONAL IBERIA, S.L.",
+      "registrationNumber": "04686",
+      "identificationNumber": "B86030723",
+      "address": "AVDA. CASTILLA, 2 - LOCAL D (EDIF. MUNICH)",
+      "location": {
+        "postalCode": "28830",
+        "municipality": "San Fernando de Henares",
+        "county": "Madrid",
+        "municipalityId": "130",
+        "countyId": "28"
+      },
+      "economicActivities": [
+        {
+          "id": "1.619.2",
+          "name": "Venta al por mayor de aparatos e instrumentos médicos, ortopédicos, ópticos",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de aparatos e instrumentos médicos, ortopédicos, ópticos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.619.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2023-10-23",
+      "certificateEndDate": "2024-04-23",
+      "object": "LA ORGANIZACIÓN DE LA VENTA Y DISTRIBUCIÓN DE MATERIAL MÉDICO DESECHABLE",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/04686",
+      "_links": {
+        "self": {
+          "name": "MEDLINE INTERNATIONAL IBERIA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/04686"
+        }
+      }
+    },
+    {
+      "name": "ABEL CIVES LOPEZ DE ARMENTIA",
+      "registrationNumber": "08321",
+      "identificationNumber": "72745245V",
+      "address": "C/Bekolarra nº 2 pab. 21",
+      "location": {
+        "postalCode": "01010",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.611",
+          "name": "Venta al por mayor de toda clase de mercancías",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de toda clase de mercancías",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.611"
+            }
+          }
+        },
+        {
+          "id": "1.699",
+          "name": "Otras reparaciones n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otras reparaciones n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.699"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2023-10-22",
+      "certificateEndDate": "2024-04-22",
+      "object": "VENTA AL POR MAYOR DE TODA CLASE DE MERCANCÍAS. OTRAS REPARACIONES N.C.O.P.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08321",
+      "_links": {
+        "self": {
+          "name": "ABEL CIVES LOPEZ DE ARMENTIA",
+          "href": "https://api.euskadi.eus/procurements/companies/08321"
+        }
+      }
+    },
+    {
+      "name": "KULTUR KIROL ZERBITZUAK, S.L.",
+      "registrationNumber": "04474",
+      "identificationNumber": "B20994802",
+      "address": "POL. INDUSTRIAL, ZONA-A, PAB. 29-B",
+      "location": {
+        "postalCode": "20159",
+        "municipality": "Asteasu",
+        "county": "Gipuzkoa",
+        "municipalityId": "014",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.849.7",
+          "name": "Servicios de gestión administrativa",
+          "_links": {
+            "self": {
+              "name": "Servicios de gestión administrativa",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.849.7"
+            }
+          }
+        },
+        {
+          "id": "1.859",
+          "name": "Alquiler de otros bienes muebles n.c.o.p. (sin personal permanente)",
+          "_links": {
+            "self": {
+              "name": "Alquiler de otros bienes muebles n.c.o.p. (sin personal permanente)",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.859"
+            }
+          }
+        },
+        {
+          "id": "1.922.1",
+          "name": "Servicios de limpieza de interiores",
+          "_links": {
+            "self": {
+              "name": "Servicios de limpieza de interiores",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.922.1"
+            }
+          }
+        },
+        {
+          "id": "1.989.2",
+          "name": "Servicios de organización de congresos, asambleas y similares",
+          "_links": {
+            "self": {
+              "name": "Servicios de organización de congresos, asambleas y similares",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.989.2"
+            }
+          }
+        },
+        {
+          "id": "1.989.3",
+          "name": "Parques o recintos feriales",
+          "_links": {
+            "self": {
+              "name": "Parques o recintos feriales",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.989.3"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2023-10-22",
+      "certificateEndDate": "2024-04-22",
+      "object": "SERVICIOS DE INSTALACIÓN, MONTAJE, DISEÑO, A BASE DE ESCENARIOS, TABLADOS, CUBIERTAS, TORRES DE ILUMINACIÓN, SISTEMAS ELÉCTRICOS Y DE SONIDO, ELEMENTOS PUBLICITARIOS, MOBILIARIO, VALLAS DE SEGURIDAD, CARPAS Y EN GENERAL TODO TIPO DE INFRAESTRUCTURAS MATERIALES Y HUMANAS PARA LA REALIZACIÓN DE EVENTOS, ACTOS, CONGRESOS, ESPECTÁCULOS Y PRESTACIONES DE SERVICIOS DENTRO DE LOS ÁMBITOS POLÍTICOS, DEPORTIVOS, PUBLICITARIOS, SOCIALES, INSTITUCIONAL Y EMPRESARIAL.\r\nSUMINISTRO, VENTA Y ALQUILER DE MATERIALES Y ESTRUCTURAS DESTINADOS A EVENTOS ASI COMO A INSTALACIONES DEPORTIVAS Y CULTURALES.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/04474",
+      "_links": {
+        "self": {
+          "name": "KULTUR KIROL ZERBITZUAK, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/04474"
+        }
+      }
+    },
+    {
+      "name": "GRÚAS GOIHERRI, S.A.",
+      "registrationNumber": "04117",
+      "identificationNumber": "A20085627",
+      "address": "CARRETERA MADRID-IRUN KM. 423",
+      "location": {
+        "postalCode": "20240",
+        "municipality": "Ordizia",
+        "county": "Gipuzkoa",
+        "municipalityId": "076",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.691.2",
+          "name": "Reparación de vehículos automóviles, bicicletas y otros vehículos",
+          "_links": {
+            "self": {
+              "name": "Reparación de vehículos automóviles, bicicletas y otros vehículos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.691.2"
+            }
+          }
+        },
+        {
+          "id": "1.722",
+          "name": "Transporte de mercancías por carretera",
+          "_links": {
+            "self": {
+              "name": "Transporte de mercancías por carretera",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.722"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2023-10-20",
+      "certificateEndDate": "2024-04-18",
+      "object": "LA CONTRATACIÓN Y PRESTACIÓN DE TODO TIPO DE PORTES, TRANSPORTES Y TRASLADOS MEDIANTE TODA CLASE DE VEHÍCULOS, ASÍ COMO LA COMPRAVENTA DE ÉSTOS Y SU CESIÓN Y ARRENDAMIENTO; TAMBIÉN CONSTITUIRÁ EL OBJETO SOCIAL EL SUMINISTRO DE MATERIALES PARA OBRAS Y CONSTRUCCIONES DE TODA ÍNDOLE; PUDIENDO TODAS ESTAS ACTIVIDADES Y SUS CONTRATOS CORRESPONDIENTES, SER ESTABLECIDOS TANTO CON PERSONAS PRIVADAS, FÍSICAS Y JURÍDICAS, COMO CON ENTES PÚBLICOS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/04117",
+      "_links": {
+        "self": {
+          "name": "GRÚAS GOIHERRI, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/04117"
+        }
+      }
+    },
+    {
+      "name": "SANFER PLATAFORMA, S.L.",
+      "registrationNumber": "08341",
+      "identificationNumber": "B25843038",
+      "address": "corregidor escofet 12",
+      "location": {
+        "postalCode": "25005",
+        "municipality": "Lleida",
+        "county": "Lleida",
+        "municipalityId": "120",
+        "countyId": "25"
+      },
+      "economicActivities": [
+        {
+          "id": "1.614.1",
+          "name": "Venta al por mayor de productos farmacéuticos y medicamentos",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de productos farmacéuticos y medicamentos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.614.1"
+            }
+          }
+        },
+        {
+          "id": "1.631",
+          "name": "Intermediarios del comercio",
+          "_links": {
+            "self": {
+              "name": "Intermediarios del comercio",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.631"
+            }
+          }
+        },
+        {
+          "id": "1.652.3",
+          "name": "Venta al por menor de perfumería y cosmética y artículos de aseo personal",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de perfumería y cosmética y artículos de aseo personal",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.652.3"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2023-10-20",
+      "certificateEndDate": "2024-03-21",
+      "object": "EL DESARROLLO DE LAS ACTIVIDADES CORRESPONDIENTES A LOS SIGUIENTES CÓDIGOS Y DESCRIPCIONES DE CLASIFICACIÓN NACIONAL DE ACTIVIDADES ECONÓMICAS: ACTIVIDAD PRINCIPAL: 46.18 / INTERMEDIARIOS DEL COMERCIO ESPECIALIZADOS EN LA VENTA DE OTROS PRODUCTOS ESPECÍFICOS. OTRAS ACTIVIDADES: 46.46 / COMERCIO AL POR MAYOR DE PRODUCTOS FARMACÉUTICOS, 47.73 / COMERCIO AL POR MENOR DE PRODUCTOS FARMACÉUTICOS EN ESTABLECIMIENTOS ESPECIALIZADOS.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08341",
+      "_links": {
+        "self": {
+          "name": "SANFER PLATAFORMA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/08341"
+        }
+      }
+    },
+    {
+      "name": "OESIA NETWORKS, S.L.",
+      "registrationNumber": "02557",
+      "identificationNumber": "B95087482",
+      "address": "C/ Marie Curie, nº 19",
+      "location": {
+        "postalCode": "28521",
+        "municipality": "Rivas-Vaciamadrid",
+        "county": "Madrid",
+        "municipalityId": "123",
+        "countyId": "28"
+      },
+      "economicActivities": [
+        {
+          "id": "1.845",
+          "name": "Explotación electrónica por cuenta de terceros",
+          "_links": {
+            "self": {
+              "name": "Explotación electrónica por cuenta de terceros",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.845"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2023-10-19",
+      "certificateEndDate": "2024-04-14",
+      "object": "1. PRESTACIÓN DE SERVICIOS DE TECNOLOGÍAS DE LA INFORMACIÓN Y DE LAS TELECOMUNICACIONES, INCLUÍDOS, ENTRE OTROS, LA CAPTURA DE INFORMACIÓN POR MEDIOS ELECTRÓNICOS, INFORMÁTICOS Y TELEMÁTICOS. 2. DISEÑO, DESARROLLO, PRODUCCIÓN, IMPLANTACIÓN, INTEGRACIÓN, OPERACIÓN, MANTENIMIENTO, REPARACIÓN Y COMERCIALIZACIÓN DE PRODUCTOS HARDWARE Y SOFTWARE, PROPIOS Y AJENOS, Y LA COMERCIALIZACIÓN DE ESTUDIOS RELATIVOS A DICHOS PRODUCTOS. 3. LA PRESTACIÓN DE SERVICIOS DE CONSULTORÍA Y AUDITORÍA ECONÓMICA, ESTRATÉGICA, FINANCIERA, DE GESTIÓN, DE NEGOCIO, ORGANIZATIVA, DE PROCESOS, DE PROYECTOS, DE TECNOLOGÍAS DE LA INFORMACIÓN Y DE LAS TELECOMUNICACIONES. 4. LA ASESORÍA PARA LA DETECCIÓN DE NECESIDADES FORMATIVAS, PLANIFICACIÓN, PROGRAMACIÓN DOCENTE Y EVALUACIÓN. LA ORGANIZACIÓN E IMPARTICICIÓN DE SEMINARIOS, CONFERENCIAS Y CURSOS. PREPARACIÓN DE MONITORES DE FORMACÓN. LA SELECCIÓN DE PERSONAL INFORMÁTICO. 5. LA EDICIÓN, PRODUCCIÓN Y COMERCIALIZACIÓN DE FOLLETOS, REVISTAS, LIBROS Y MATERIAL AUDIOVISUAL QUE CONTRIBUYAN AL DESARROLLO DE PERSONAS Y ENTIDADES. 6. LA PRESTACIÓN DE SERVICIOS DE EXTERNALIZACIÓN DE ACTIVIDADES Y PROCESOS PERTENECIENTES A CUALQUIER CAMPO O SECTOR, INCLUÍDOS, ENTRE OTROS: SERVICIOS DE RECEPCIÓN Y CONTROL DE ACCESOS E INFORMACIÓN AL PÚBLICO DE EDIFICIOS, SERVICIOS DE TRANSPORTE, MENSAJERÍA, CORRESPONDENCIA Y DISTRIBUCIÓN; SERVICIOS DE ARCHIVO Y ALMACENAJE; SERVICIOS DE GESTIÓN COMERCIAL Y DE APOYO PARA LA REALIZACIÓN DE VENTAS Y SERVICIOS, ETC. 7. LA PRESTACIÓN DE SERVICIOS DE TELEOPERACIÓN, ATENCIÓN DE CENTROS DE SERVICIOS DE URGENCIA Y EMERGENCIAS. 8. ORGANIZACIÓN Y PROMOCIÓN DE CONGRESOS, CONVENCIONES, FERIAS Y EXPOSICIONES, Y SERVICIOS COMPLEMENTARIOS DE LOS MISMOS, INCLUÍDOS LOS SERVICIOS DE AZAFATAS. SERVICIOS DE TRADUCTORES E INTÉRPRETES.\n\n",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/02557",
+      "_links": {
+        "self": {
+          "name": "OESIA NETWORKS, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/02557"
+        }
+      }
+    },
+    {
+      "name": "GRAFICAS INSTAR, S.A.",
+      "registrationNumber": "08409",
+      "identificationNumber": "A08375560",
+      "address": "Av Sarrià, 130",
+      "location": {
+        "postalCode": "08017",
+        "municipality": "Barcelona",
+        "county": "Barcelona",
+        "municipalityId": "019",
+        "countyId": "08"
+      },
+      "economicActivities": [
+        {
+          "id": "1.474",
+          "name": "Artes gráficas (impresión gráfica)",
+          "_links": {
+            "self": {
+              "name": "Artes gráficas (impresión gráfica)",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.474"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2023-10-18",
+      "certificateEndDate": "2024-04-18",
+      "object": "A) LA PRODUCCIÓN Y REPRODUCCIÓN DE LIBROS Y DE TODA CLASE DE PUBLICACIONES, POR CUENTA PROPIA O AJENA, INCLUYENDO LA COMPRA DE PAPEL, LA PREIMPRESIÓN, IMPRESIÓN, ENCUADERNACIÓN Y CUALQUIER OTRO PROCESO GRÁFICO, UTILIZANDO LAS TÉCNICAS ADECUADAS. B) LA EDICIÓN, DISTRIBUCIÓN Y VENTA DE LIBROS Y TODA CLASE DE PUBLICACIONES, TALES COMO FOLLETOS, IMPRESOS, GRÁFICOS, MAPAS Y CUALESQUIERA OTRA, COMPRENDIENDO LA EDICIÓN DIGITAL CUALQUIERA QUE SEA EL SOPORTE EN QUE SE PUEDA REPRODUCIR, VISIONAR Y COMERCIALIZAR, INCLUYENDO LA PARTICIPACIÓN EN LICITACIONES Y CONCURSOS PÚBLICOS EN ESPAÑA Y EN EL EXTRANJERO. C) LA ACTIVIDAD PROMOCIONAL EN GENERAL Y ASESORÍA VINCULADA A LA GESTIÓN Y DISEÑO DE MATERIAL GRÁFICO PROMOCIONAL, YA SEA EN SOPORTE PAPEL O DIGITAL.\n\n",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08409",
+      "_links": {
+        "self": {
+          "name": "GRAFICAS INSTAR, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/08409"
+        }
+      }
+    }
+  ]
+}

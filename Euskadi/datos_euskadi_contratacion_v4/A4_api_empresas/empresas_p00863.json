@@ -1,0 +1,310 @@
+{
+  "totalItems": 9042,
+  "totalPages": 905,
+  "currentPage": 863,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "name": "MPM PAISAJISTAS, S.L.U.",
+      "registrationNumber": "04221",
+      "identificationNumber": "B20990321",
+      "address": "CS ITXASKUBERRI, S/N",
+      "location": {
+        "postalCode": "20170",
+        "municipality": "Usurbil",
+        "county": "Gipuzkoa",
+        "municipalityId": "073",
+        "countyId": "20"
+      },
+      "object": ".",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/04221",
+      "_links": {
+        "self": {
+          "name": "MPM PAISAJISTAS, S.L.U.",
+          "href": "https://api.euskadi.eus/procurements/companies/04221"
+        }
+      }
+    },
+    {
+      "name": "SEGUROLA EXCAVACIONES, S.L.",
+      "registrationNumber": "04222",
+      "identificationNumber": "B20712840",
+      "address": "C/ PORTUETXE, 45-B, 4º.OFICINA 1-B",
+      "location": {
+        "postalCode": "20018",
+        "municipality": "Donostia / San Sebastián",
+        "county": "Gipuzkoa",
+        "municipalityId": "069",
+        "countyId": "20"
+      },
+      "object": "pte.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/04222",
+      "_links": {
+        "self": {
+          "name": "SEGUROLA EXCAVACIONES, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/04222"
+        }
+      }
+    },
+    {
+      "name": "GASTEIZ COURIER MENSAJEROS, S.L.",
+      "registrationNumber": "04228",
+      "identificationNumber": "B01130889",
+      "address": "Avda. Paseo de los Olmos, 2 - Edif. B Pab. 6-7",
+      "location": {
+        "postalCode": "01013",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "object": "pte",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/04228",
+      "_links": {
+        "self": {
+          "name": "GASTEIZ COURIER MENSAJEROS, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/04228"
+        }
+      }
+    },
+    {
+      "name": "ETXABE ETXEGINTZA, S.L.",
+      "registrationNumber": "04238",
+      "identificationNumber": "B95201539",
+      "address": "IBAUN ERDI, 5",
+      "location": {
+        "postalCode": "48277",
+        "municipality": "Etxebarria",
+        "county": "Bizkaia",
+        "municipalityId": "030",
+        "countyId": "48"
+      },
+      "object": "pte",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/04238",
+      "_links": {
+        "self": {
+          "name": "ETXABE ETXEGINTZA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/04238"
+        }
+      }
+    },
+    {
+      "name": "INDOOR GARDEN, S.L.",
+      "registrationNumber": "04244",
+      "identificationNumber": "B01465590",
+      "address": "C/ URARTEA, 16 PAB. 8",
+      "location": {
+        "postalCode": "01010",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "classification": [
+        {
+          "id": "S",
+          "name": "Servicios",
+          "groups": [
+            {
+              "id": "O",
+              "subgroups": [
+                {
+                  "id": "06",
+                  "name": "Conservación y mantenimiento de montes y jardines",
+                  "categories": [
+                    {
+                      "id": "1",
+                      "name": "Desde 0 Hasta 150.000",
+                      "_links": {
+                        "self": {
+                          "name": "Desde 0 Hasta 150.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/S/categories/1"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "Conservación y mantenimiento de montes y jardines",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/O/subgroups/06"
+                    }
+                  }
+                }
+              ],
+              "_links": {
+                "self": {
+                  "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/O"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Servicios",
+              "href": "https://api.euskadi.eus/procurements/companies/types/S"
+            }
+          }
+        }
+      ],
+      "object": ".",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/04244",
+      "_links": {
+        "self": {
+          "name": "INDOOR GARDEN, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/04244"
+        }
+      }
+    },
+    {
+      "name": "ONDEO INDUSTRIAL SOLUTIONS, S.A.",
+      "registrationNumber": "04246",
+      "identificationNumber": "A83133264",
+      "address": "ISLAS CANARIAS, Nº 19",
+      "location": {
+        "postalCode": "48015",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "object": ".",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/04246",
+      "_links": {
+        "self": {
+          "name": "ONDEO INDUSTRIAL SOLUTIONS, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/04246"
+        }
+      }
+    },
+    {
+      "name": "PROYECTOS DE DESARROLLO COMERCIAL GARAPEN, S.A.",
+      "registrationNumber": "04247",
+      "identificationNumber": "A95015921",
+      "address": "RIBERA DE AXPE 11, PORTAL C2, LOCAL 106",
+      "location": {
+        "postalCode": "48000",
+        "municipality": "Erandio",
+        "county": "Bizkaia",
+        "municipalityId": "902",
+        "countyId": "48"
+      },
+      "object": ".",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/04247",
+      "_links": {
+        "self": {
+          "name": "PROYECTOS DE DESARROLLO COMERCIAL GARAPEN, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/04247"
+        }
+      }
+    },
+    {
+      "name": "INGETEAM INDUSTRY, S.A.",
+      "registrationNumber": "04248",
+      "identificationNumber": "A95184446",
+      "address": "PARQUE TECNOLÓGICO DE BIZKAIA, 106",
+      "location": {
+        "postalCode": "48170",
+        "municipality": "Zamudio",
+        "county": "Bizkaia",
+        "municipalityId": "905",
+        "countyId": "48"
+      },
+      "object": ".",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/04248",
+      "_links": {
+        "self": {
+          "name": "INGETEAM INDUSTRY, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/04248"
+        }
+      }
+    },
+    {
+      "name": "AUTOBUSES GARAYAR, S.A.",
+      "registrationNumber": "04249",
+      "identificationNumber": "A20062345",
+      "address": "CASA BIYONA, SORGINTXULO,17",
+      "location": {
+        "postalCode": "20120",
+        "municipality": "Hernani",
+        "county": "Gipuzkoa",
+        "municipalityId": "040",
+        "countyId": "20"
+      },
+      "object": ".",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/04249",
+      "_links": {
+        "self": {
+          "name": "AUTOBUSES GARAYAR, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/04249"
+        }
+      }
+    },
+    {
+      "name": "TOLOSALDEA-BUS SL",
+      "registrationNumber": "04250",
+      "identificationNumber": "B20477071",
+      "address": "DONOSTIA HIRIBIDEA, 9",
+      "location": {
+        "postalCode": "20400",
+        "municipality": "Tolosa",
+        "county": "Gipuzkoa",
+        "municipalityId": "071",
+        "countyId": "20"
+      },
+      "classification": [
+        {
+          "id": "S",
+          "name": "Servicios",
+          "groups": [
+            {
+              "id": "R",
+              "subgroups": [
+                {
+                  "id": "01",
+                  "name": "Transporte de viajeros por carretera",
+                  "categories": [
+                    {
+                      "id": "5",
+                      "name": "Mas de 1.200.000",
+                      "_links": {
+                        "self": {
+                          "name": "Mas de 1.200.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/S/categories/5"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "Transporte de viajeros por carretera",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/R/subgroups/01"
+                    }
+                  }
+                }
+              ],
+              "_links": {
+                "self": {
+                  "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/R"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Servicios",
+              "href": "https://api.euskadi.eus/procurements/companies/types/S"
+            }
+          }
+        }
+      ],
+      "object": "SOLICITUD CLASIFICACION EMPRESARIAL.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/04250",
+      "_links": {
+        "self": {
+          "name": "TOLOSALDEA-BUS SL",
+          "href": "https://api.euskadi.eus/procurements/companies/04250"
+        }
+      }
+    }
+  ]
+}

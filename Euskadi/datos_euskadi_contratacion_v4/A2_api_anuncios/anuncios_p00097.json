@@ -1,0 +1,990 @@
+{
+  "totalItems": 656503,
+  "totalPages": 65651,
+  "currentPage": 1,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "id": 1268992,
+      "code": "SU-05-25",
+      "object": "Suministro y mantenimiento en concepto de arrendamiento (renting) de máquinas y equipamientos para la sala de musculación en el polideportivo Palatu de Murgia. ",
+      "firstPublicationDate": "2025-12-29",
+      "lastPublicationDate": "2026-02-10",
+      "entity": {
+        "id": 504,
+        "name": "Ayuntamiento de Zuia",
+        "org": {
+          "id": 911587,
+          "name": "Alcalde",
+          "_links": {
+            "self": {
+              "name": "Alcalde",
+              "href": "https://api.euskadi.eus/procurements/contracting-notices/orgs/911587"
+            }
+          }
+        },
+        "_links": {
+          "self": {
+            "name": "Ayuntamiento de Zuia",
+            "href": "https://api.euskadi.eus/procurements/contracting-notices/entities/504"
+          }
+        }
+      },
+      "contractingAuthority": {
+        "id": 137,
+        "identificationNumber": "P0107200H",
+        "name": "Ayuntamiento de Zuia",
+        "scope": "ARABA/ÁLAVA",
+        "address": "Plaza del Ayuntamiento, 1. 01130 Murgia (Araba/Alava)",
+        "webPage": "http://www.zuia.eus",
+        "publicationDate": "2019-10-04",
+        "mainActivity": "Servicios públicos generales",
+        "codNUTS": "ES211",
+        "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder137/es_doc/es_arch_poder137.html",
+        "_links": {
+          "self": {
+            "name": "Ayuntamiento de Zuia",
+            "href": "https://api.euskadi.eus/procurements/contracting-authorities/137"
+          }
+        }
+      },
+      "contractType": {
+        "id": 3,
+        "name": "Suministros",
+        "_links": {
+          "self": {
+            "name": "Suministros",
+            "href": "https://api.euskadi.eus/procurements/contracts/types/3"
+          }
+        }
+      },
+      "contractProcedureStatus": {
+        "id": 4,
+        "name": "Plazo cerrado",
+        "_links": {
+          "self": {
+            "name": "Plazo cerrado",
+            "href": "https://api.euskadi.eus/procurements/contracting-notices/procedures-status/4"
+          }
+        }
+      },
+      "contractProcedureType": {
+        "id": 1,
+        "name": "Abierto",
+        "_links": {
+          "self": {
+            "name": "Abierto",
+            "href": "https://api.euskadi.eus/procurements/contracting-notices/procedures-type/1"
+          }
+        }
+      },
+      "deadlineDate": "2026-01-26",
+      "budgetWithoutVAT": 37327.19,
+      "webpagElectronicBidding": "https://www.contratacion.euskadi.eus/KPELicitacion",
+      "financedEuropeanFunds": false,
+      "recoveryPlan": false,
+      "minorContract": false,
+      "subjectAppeal": false,
+      "sara": false,
+      "openingDates": [
+        "1_27/01/2026",
+        "2_27/01/2026",
+        "3_11/02/2026"
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/anuncio_contratacion/expjaso667117/es_doc/index.html",
+      "_links": {
+        "self": {
+          "name": "Suministro y mantenimiento en concepto de arrendamiento (renting) de máquinas y equipamientos para la sala de musculación en el polideportivo Palatu de Murgia. ",
+          "href": "https://api.euskadi.eus/procurements/contracting-notices/1268992"
+        },
+        "contracts": {
+          "href": "https://api.euskadi.eus/procurements/contracts/contracting-notices/1268992"
+        }
+      }
+    },
+    {
+      "id": 1268990,
+      "code": "ZSE-07-25",
+      "object": "Contrato de servicio de atención psicológica en el municipio de Zuia",
+      "firstPublicationDate": "2025-12-12",
+      "lastPublicationDate": "2026-02-10",
+      "entity": {
+        "id": 504,
+        "name": "Ayuntamiento de Zuia",
+        "org": {
+          "id": 911587,
+          "name": "Alcalde",
+          "_links": {
+            "self": {
+              "name": "Alcalde",
+              "href": "https://api.euskadi.eus/procurements/contracting-notices/orgs/911587"
+            }
+          }
+        },
+        "_links": {
+          "self": {
+            "name": "Ayuntamiento de Zuia",
+            "href": "https://api.euskadi.eus/procurements/contracting-notices/entities/504"
+          }
+        }
+      },
+      "contractingAuthority": {
+        "id": 137,
+        "identificationNumber": "P0107200H",
+        "name": "Ayuntamiento de Zuia",
+        "scope": "ARABA/ÁLAVA",
+        "address": "Plaza del Ayuntamiento, 1. 01130 Murgia (Araba/Alava)",
+        "webPage": "http://www.zuia.eus",
+        "publicationDate": "2019-10-04",
+        "mainActivity": "Servicios públicos generales",
+        "codNUTS": "ES211",
+        "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder137/es_doc/es_arch_poder137.html",
+        "_links": {
+          "self": {
+            "name": "Ayuntamiento de Zuia",
+            "href": "https://api.euskadi.eus/procurements/contracting-authorities/137"
+          }
+        }
+      },
+      "contractType": {
+        "id": 2,
+        "name": "Servicios",
+        "_links": {
+          "self": {
+            "name": "Servicios",
+            "href": "https://api.euskadi.eus/procurements/contracts/types/2"
+          }
+        }
+      },
+      "contractProcedureStatus": {
+        "id": 4,
+        "name": "Plazo cerrado",
+        "_links": {
+          "self": {
+            "name": "Plazo cerrado",
+            "href": "https://api.euskadi.eus/procurements/contracting-notices/procedures-status/4"
+          }
+        }
+      },
+      "contractProcedureType": {
+        "id": 1,
+        "name": "Abierto",
+        "_links": {
+          "self": {
+            "name": "Abierto",
+            "href": "https://api.euskadi.eus/procurements/contracting-notices/procedures-type/1"
+          }
+        }
+      },
+      "deadlineDate": "2026-01-26",
+      "budgetWithoutVAT": 18938.36,
+      "webpagElectronicBidding": "https://www.contratacion.euskadi.eus/KPELicitacion",
+      "financedEuropeanFunds": false,
+      "recoveryPlan": false,
+      "minorContract": false,
+      "subjectAppeal": false,
+      "sara": false,
+      "openingDates": [
+        "1_27/01/2026",
+        "2_27/01/2026",
+        "3_11/02/2026"
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/anuncio_contratacion/expjaso664973/es_doc/index.html",
+      "_links": {
+        "self": {
+          "name": "Contrato de servicio de atención psicológica en el municipio de Zuia",
+          "href": "https://api.euskadi.eus/procurements/contracting-notices/1268990"
+        },
+        "contracts": {
+          "href": "https://api.euskadi.eus/procurements/contracts/contracting-notices/1268990"
+        }
+      }
+    },
+    {
+      "id": 1268989,
+      "code": "00/D/18/0000756",
+      "object": "Servicio de mantenimiento y logística del complejo Miramon",
+      "firstPublicationDate": "2025-11-26",
+      "lastPublicationDate": "2026-02-10",
+      "entity": {
+        "id": 919,
+        "name": "Juntas Generales de Gipuzkoa",
+        "org": {
+          "id": 912530,
+          "name": "Mesa de las Juntas Generales de Gipuzkoa",
+          "_links": {
+            "self": {
+              "name": "Mesa de las Juntas Generales de Gipuzkoa",
+              "href": "https://api.euskadi.eus/procurements/contracting-notices/orgs/912530"
+            }
+          }
+        },
+        "_links": {
+          "self": {
+            "name": "Juntas Generales de Gipuzkoa",
+            "href": "https://api.euskadi.eus/procurements/contracting-notices/entities/919"
+          }
+        }
+      },
+      "contractingAuthority": {
+        "id": 470,
+        "identificationNumber": "S2033001E",
+        "name": "Juntas Generales de Gipuzkoa",
+        "scope": "GIPUZKOA",
+        "address": "Paseo Miramon, 164. 2014 Donostia-San Sesbastián (Gipuzkoa)",
+        "webPage": "http://www.bngipuzkoa.eus",
+        "publicationDate": "2019-10-03",
+        "mainActivity": "Otra actividad",
+        "alternativeActivity": "Parlamento",
+        "codNUTS": "ES212",
+        "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder470/es_doc/es_arch_poder470.html",
+        "_links": {
+          "self": {
+            "name": "Juntas Generales de Gipuzkoa",
+            "href": "https://api.euskadi.eus/procurements/contracting-authorities/470"
+          }
+        }
+      },
+      "contractType": {
+        "id": 2,
+        "name": "Servicios",
+        "_links": {
+          "self": {
+            "name": "Servicios",
+            "href": "https://api.euskadi.eus/procurements/contracts/types/2"
+          }
+        }
+      },
+      "contractProcedureStatus": {
+        "id": 8,
+        "name": "Formalizado / En ejecución",
+        "_links": {
+          "self": {
+            "name": "Formalizado / En ejecución",
+            "href": "https://api.euskadi.eus/procurements/contracting-notices/procedures-status/8"
+          }
+        }
+      },
+      "contractProcedureType": {
+        "id": 11,
+        "name": "Derivado de Acuerdo Marco",
+        "_links": {
+          "self": {
+            "name": "Derivado de Acuerdo Marco",
+            "href": "https://api.euskadi.eus/procurements/contracting-notices/procedures-type/11"
+          }
+        }
+      },
+      "budgetWithoutVAT": 52124.83,
+      "webpagElectronicBidding": "https://www.contratacion.euskadi.eus/KPELicitacion",
+      "financedEuropeanFunds": false,
+      "recoveryPlan": false,
+      "minorContract": false,
+      "subjectAppeal": false,
+      "sara": false,
+      "numberBidders": 1,
+      "electronicTenders": 1,
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/anuncio_contratacion/expjaso662619/es_doc/index.html",
+      "_links": {
+        "self": {
+          "name": "Servicio de mantenimiento y logística del complejo Miramon",
+          "href": "https://api.euskadi.eus/procurements/contracting-notices/1268989"
+        },
+        "contracts": {
+          "href": "https://api.euskadi.eus/procurements/contracts/contracting-notices/1268989"
+        }
+      }
+    },
+    {
+      "id": 1268987,
+      "code": "G26/214",
+      "object": "C1 azterketen langak, kalifikazioak eta hauen CEFRrekiko lotura errebisatzeko ekintza-plana.",
+      "firstPublicationDate": "2025-12-16",
+      "lastPublicationDate": "2026-02-10",
+      "entity": {
+        "id": 1253,
+        "name": "Instituto de Alfabetización y Reeuskaldunización de Adultos (HABE)",
+        "org": {
+          "id": 914251,
+          "name": "Director/a de HABE",
+          "_links": {
+            "self": {
+              "name": "Director/a de HABE",
+              "href": "https://api.euskadi.eus/procurements/contracting-notices/orgs/914251"
+            }
+          }
+        },
+        "_links": {
+          "self": {
+            "name": "Instituto de Alfabetización y Reeuskaldunización de Adultos (HABE)",
+            "href": "https://api.euskadi.eus/procurements/contracting-notices/entities/1253"
+          }
+        }
+      },
+      "contractingAuthority": {
+        "id": 1,
+        "identificationNumber": "S4833001C",
+        "name": "Gobierno Vasco",
+        "scope": "CAPV",
+        "address": "Donostia-San Sebastián, 1 01010 Vitoria-Gasteiz",
+        "webPage": "http://www.euskadi.eus",
+        "publicationDate": "2025-01-13",
+        "mainActivity": "Servicios públicos generales",
+        "codNUTS": "ES21",
+        "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder1/es_doc/index.html",
+        "_links": {
+          "self": {
+            "name": "Gobierno Vasco",
+            "href": "https://api.euskadi.eus/procurements/contracting-authorities/1"
+          }
+        }
+      },
+      "contractType": {
+        "id": 2,
+        "name": "Servicios",
+        "_links": {
+          "self": {
+            "name": "Servicios",
+            "href": "https://api.euskadi.eus/procurements/contracts/types/2"
+          }
+        }
+      },
+      "contractProcedureStatus": {
+        "id": 8,
+        "name": "Formalizado / En ejecución",
+        "_links": {
+          "self": {
+            "name": "Formalizado / En ejecución",
+            "href": "https://api.euskadi.eus/procurements/contracting-notices/procedures-status/8"
+          }
+        }
+      },
+      "contractProcedureType": {
+        "id": 1,
+        "name": "Abierto",
+        "_links": {
+          "self": {
+            "name": "Abierto",
+            "href": "https://api.euskadi.eus/procurements/contracting-notices/procedures-type/1"
+          }
+        }
+      },
+      "deadlineDate": "2026-01-04",
+      "budgetWithoutVAT": 28000,
+      "webpagElectronicBidding": "https://www.contratacion.euskadi.eus/KPELicitacion",
+      "financedEuropeanFunds": false,
+      "recoveryPlan": false,
+      "minorContract": false,
+      "subjectAppeal": false,
+      "sara": false,
+      "numberBidders": 1,
+      "electronicTenders": 1,
+      "openingDates": [
+        "1_05/01/2026",
+        "2_05/01/2026",
+        "3_09/01/2026"
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/anuncio_contratacion/expjaso665308/es_doc/index.html",
+      "_links": {
+        "self": {
+          "name": "C1 azterketen langak, kalifikazioak eta hauen CEFRrekiko lotura errebisatzeko ekintza-plana.",
+          "href": "https://api.euskadi.eus/procurements/contracting-notices/1268987"
+        },
+        "contracts": {
+          "href": "https://api.euskadi.eus/procurements/contracts/contracting-notices/1268987"
+        }
+      }
+    },
+    {
+      "id": 1268985,
+      "code": "2026_01",
+      "object": "Servicios de mantenimiento  integral del sitio web corporativo, el repositorio de contenidos e intranet para la Asociación BC3 Basque Centre for Climate Change-Klima Aldaketa Ikergai",
+      "firstPublicationDate": "2026-01-26",
+      "lastPublicationDate": "2026-02-10",
+      "entity": {
+        "id": 738,
+        "name": "BC3 Basque Centre for Climate Change",
+        "org": {
+          "id": 912178,
+          "name": "Dirección Científica y Gerencia",
+          "_links": {
+            "self": {
+              "name": "Dirección Científica y Gerencia",
+              "href": "https://api.euskadi.eus/procurements/contracting-notices/orgs/912178"
+            }
+          }
+        },
+        "_links": {
+          "self": {
+            "name": "BC3 Basque Centre for Climate Change",
+            "href": "https://api.euskadi.eus/procurements/contracting-notices/entities/738"
+          }
+        }
+      },
+      "contractingAuthority": {
+        "id": 290,
+        "identificationNumber": "G95532826",
+        "name": "BC3 Basque Centre for Climate Change",
+        "scope": "CAPV",
+        "address": "Sede Eraikina, 1 solairua. EHUko Zientzia Parkea. Barrio Sarriena s/n. 48940 Leioa (Bizkaia)",
+        "webPage": "http://www.bc3research.org",
+        "publicationDate": "2025-10-06",
+        "mainActivity": "Otra actividad",
+        "alternativeActivity": "Investigación",
+        "codNUTS": "ES21",
+        "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder290/es_doc/index.html",
+        "_links": {
+          "self": {
+            "name": "BC3 Basque Centre for Climate Change",
+            "href": "https://api.euskadi.eus/procurements/contracting-authorities/290"
+          }
+        }
+      },
+      "contractType": {
+        "id": 2,
+        "name": "Servicios",
+        "_links": {
+          "self": {
+            "name": "Servicios",
+            "href": "https://api.euskadi.eus/procurements/contracts/types/2"
+          }
+        }
+      },
+      "contractProcedureStatus": {
+        "id": 4,
+        "name": "Plazo cerrado",
+        "_links": {
+          "self": {
+            "name": "Plazo cerrado",
+            "href": "https://api.euskadi.eus/procurements/contracting-notices/procedures-status/4"
+          }
+        }
+      },
+      "contractProcedureType": {
+        "id": 1,
+        "name": "Abierto",
+        "_links": {
+          "self": {
+            "name": "Abierto",
+            "href": "https://api.euskadi.eus/procurements/contracting-notices/procedures-type/1"
+          }
+        }
+      },
+      "deadlineDate": "2026-02-10",
+      "budgetWithoutVAT": 19500,
+      "webpagElectronicBidding": "https://www.bc3research.org/perfil_del_contratante",
+      "financedEuropeanFunds": false,
+      "recoveryPlan": false,
+      "minorContract": false,
+      "subjectAppeal": false,
+      "sara": false,
+      "openingDates": [
+        "1_11/02/2026",
+        "2_18/02/2026",
+        "3_27/02/2026"
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/anuncio_contratacion/expjaso676517/es_doc/index.html",
+      "_links": {
+        "self": {
+          "name": "Servicios de mantenimiento  integral del sitio web corporativo, el repositorio de contenidos e intranet para la Asociación BC3 Basque Centre for Climate Change-Klima Aldaketa Ikergai",
+          "href": "https://api.euskadi.eus/procurements/contracting-notices/1268985"
+        },
+        "contracts": {
+          "href": "https://api.euskadi.eus/procurements/contracts/contracting-notices/1268985"
+        }
+      }
+    },
+    {
+      "id": 1268984,
+      "code": "2026-SER-1",
+      "object": "Servicio para conserjería en el Centro Sociocultural Sologana",
+      "firstPublicationDate": "2026-01-05",
+      "lastPublicationDate": "2026-02-10",
+      "entity": {
+        "id": 813,
+        "name": "Ayuntamiento de Arratzua-Ubarrundia",
+        "org": {
+          "id": 912339,
+          "name": "Pleno",
+          "_links": {
+            "self": {
+              "name": "Pleno",
+              "href": "https://api.euskadi.eus/procurements/contracting-notices/orgs/912339"
+            }
+          }
+        },
+        "_links": {
+          "self": {
+            "name": "Ayuntamiento de Arratzua-Ubarrundia",
+            "href": "https://api.euskadi.eus/procurements/contracting-notices/entities/813"
+          }
+        }
+      },
+      "contractingAuthority": {
+        "id": 361,
+        "identificationNumber": "P0100900J",
+        "name": "Ayuntamiento de Arratzua-Ubarrundia",
+        "scope": "ARABA/ÁLAVA",
+        "address": "Uribea, 12. 01520 Arratzua-Ubarrundia (Araba/Álava)",
+        "webPage": "http://www.arratzua-ubarrundia.eus",
+        "publicationDate": "2019-10-04",
+        "mainActivity": "Servicios públicos generales",
+        "codNUTS": "ES211",
+        "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder361/es_doc/es_arch_poder361.html",
+        "_links": {
+          "self": {
+            "name": "Ayuntamiento de Arratzua-Ubarrundia",
+            "href": "https://api.euskadi.eus/procurements/contracting-authorities/361"
+          }
+        }
+      },
+      "contractType": {
+        "id": 2,
+        "name": "Servicios",
+        "_links": {
+          "self": {
+            "name": "Servicios",
+            "href": "https://api.euskadi.eus/procurements/contracts/types/2"
+          }
+        }
+      },
+      "contractProcedureStatus": {
+        "id": 4,
+        "name": "Plazo cerrado",
+        "_links": {
+          "self": {
+            "name": "Plazo cerrado",
+            "href": "https://api.euskadi.eus/procurements/contracting-notices/procedures-status/4"
+          }
+        }
+      },
+      "contractProcedureType": {
+        "id": 1,
+        "name": "Abierto",
+        "_links": {
+          "self": {
+            "name": "Abierto",
+            "href": "https://api.euskadi.eus/procurements/contracting-notices/procedures-type/1"
+          }
+        }
+      },
+      "deadlineDate": "2026-01-29",
+      "budgetWithoutVAT": 71456,
+      "webpagElectronicBidding": "https://www.contratacion.euskadi.eus/KPELicitacion",
+      "financedEuropeanFunds": false,
+      "recoveryPlan": false,
+      "minorContract": false,
+      "subjectAppeal": false,
+      "sara": false,
+      "openingDates": [
+        "1_03/02/2026",
+        "2_03/02/2026",
+        "3_10/02/2026"
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/anuncio_contratacion/expjaso668149/es_doc/index.html",
+      "_links": {
+        "self": {
+          "name": "Servicio para conserjería en el Centro Sociocultural Sologana",
+          "href": "https://api.euskadi.eus/procurements/contracting-notices/1268984"
+        },
+        "contracts": {
+          "href": "https://api.euskadi.eus/procurements/contracts/contracting-notices/1268984"
+        }
+      }
+    },
+    {
+      "id": 1268983,
+      "code": "15/2026-PS",
+      "object": "Atención sanitaria de segundo nivel para pacientes de la zona de Tolosaldea de Área de Salud de Gipuzkoa",
+      "firstPublicationDate": "2025-12-17",
+      "lastPublicationDate": "2026-02-10",
+      "entity": {
+        "id": 1235,
+        "name": "Salud",
+        "org": {
+          "id": 914268,
+          "name": "Delegación Territorial de Gipuzkoa",
+          "_links": {
+            "self": {
+              "name": "Delegación Territorial de Gipuzkoa",
+              "href": "https://api.euskadi.eus/procurements/contracting-notices/orgs/914268"
+            }
+          }
+        },
+        "_links": {
+          "self": {
+            "name": "Salud",
+            "href": "https://api.euskadi.eus/procurements/contracting-notices/entities/1235"
+          }
+        }
+      },
+      "contractingAuthority": {
+        "id": 1,
+        "identificationNumber": "S4833001C",
+        "name": "Gobierno Vasco",
+        "scope": "CAPV",
+        "address": "Donostia-San Sebastián, 1 01010 Vitoria-Gasteiz",
+        "webPage": "http://www.euskadi.eus",
+        "publicationDate": "2025-01-13",
+        "mainActivity": "Servicios públicos generales",
+        "codNUTS": "ES21",
+        "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder1/es_doc/index.html",
+        "_links": {
+          "self": {
+            "name": "Gobierno Vasco",
+            "href": "https://api.euskadi.eus/procurements/contracting-authorities/1"
+          }
+        }
+      },
+      "contractType": {
+        "id": 2,
+        "name": "Servicios",
+        "_links": {
+          "self": {
+            "name": "Servicios",
+            "href": "https://api.euskadi.eus/procurements/contracts/types/2"
+          }
+        }
+      },
+      "contractProcedureStatus": {
+        "id": 4,
+        "name": "Plazo cerrado",
+        "_links": {
+          "self": {
+            "name": "Plazo cerrado",
+            "href": "https://api.euskadi.eus/procurements/contracting-notices/procedures-status/4"
+          }
+        }
+      },
+      "contractProcedureType": {
+        "id": 1,
+        "name": "Abierto",
+        "_links": {
+          "self": {
+            "name": "Abierto",
+            "href": "https://api.euskadi.eus/procurements/contracting-notices/procedures-type/1"
+          }
+        }
+      },
+      "deadlineDate": "2026-01-30",
+      "budgetWithoutVAT": 88550000,
+      "webpagElectronicBidding": "https://www.contratacion.euskadi.eus/KPELicitacion",
+      "financedEuropeanFunds": false,
+      "recoveryPlan": false,
+      "minorContract": false,
+      "subjectAppeal": true,
+      "sara": true,
+      "openingDates": [
+        "1_05/02/2026",
+        "2_12/02/2026",
+        "3_26/02/2026"
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/anuncio_contratacion/expjaso519596/es_doc/index.html",
+      "_links": {
+        "self": {
+          "name": "Atención sanitaria de segundo nivel para pacientes de la zona de Tolosaldea de Área de Salud de Gipuzkoa",
+          "href": "https://api.euskadi.eus/procurements/contracting-notices/1268983"
+        },
+        "contracts": {
+          "href": "https://api.euskadi.eus/procurements/contracts/contracting-notices/1268983"
+        }
+      }
+    },
+    {
+      "id": 1268981,
+      "code": "2024ZAUN0096",
+      "object": "Asistencia técnica para la definición, elaboración e implementación del Plan estratégico de Irun 2040.",
+      "firstPublicationDate": "2025-10-08",
+      "lastPublicationDate": "2026-02-10",
+      "entity": {
+        "id": 707,
+        "name": "Ayuntamiento de Irun ",
+        "org": {
+          "id": 912122,
+          "name": "Alcalde",
+          "_links": {
+            "self": {
+              "name": "Alcalde",
+              "href": "https://api.euskadi.eus/procurements/contracting-notices/orgs/912122"
+            }
+          }
+        },
+        "_links": {
+          "self": {
+            "name": "Ayuntamiento de Irun ",
+            "href": "https://api.euskadi.eus/procurements/contracting-notices/entities/707"
+          }
+        }
+      },
+      "contractingAuthority": {
+        "id": 259,
+        "identificationNumber": "P2004900C",
+        "name": "Ayuntamiento de Irun",
+        "scope": "GIPUZKOA",
+        "address": "San Juan Harria plaza. 20304 Irun (Gipuzkoa)",
+        "webPage": "http://www.irun.org",
+        "publicationDate": "2026-02-02",
+        "mainActivity": "Servicios públicos generales",
+        "codNUTS": "ES212",
+        "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder259/es_doc/index.html",
+        "_links": {
+          "self": {
+            "name": "Ayuntamiento de Irun",
+            "href": "https://api.euskadi.eus/procurements/contracting-authorities/259"
+          }
+        }
+      },
+      "contractType": {
+        "id": 2,
+        "name": "Servicios",
+        "_links": {
+          "self": {
+            "name": "Servicios",
+            "href": "https://api.euskadi.eus/procurements/contracts/types/2"
+          }
+        }
+      },
+      "contractProcedureStatus": {
+        "id": 8,
+        "name": "Formalizado / En ejecución",
+        "_links": {
+          "self": {
+            "name": "Formalizado / En ejecución",
+            "href": "https://api.euskadi.eus/procurements/contracting-notices/procedures-status/8"
+          }
+        }
+      },
+      "contractProcedureType": {
+        "id": 1,
+        "name": "Abierto",
+        "_links": {
+          "self": {
+            "name": "Abierto",
+            "href": "https://api.euskadi.eus/procurements/contracting-notices/procedures-type/1"
+          }
+        }
+      },
+      "deadlineDate": "2025-10-28",
+      "budgetWithoutVAT": 100000,
+      "webpagElectronicBidding": "https://www.contratacion.euskadi.eus/KPELicitacion",
+      "financedEuropeanFunds": false,
+      "recoveryPlan": false,
+      "minorContract": false,
+      "subjectAppeal": false,
+      "sara": false,
+      "numberBidders": 3,
+      "numberBiddersPyme": 1,
+      "electronicTenders": 3,
+      "openingDates": [
+        "1_30/10/2025",
+        "2_30/10/2025",
+        "3_06/11/2025",
+        "3_08/01/2026",
+        "3_18/12/2025"
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/anuncio_contratacion/expjaso598050/es_doc/index.html",
+      "_links": {
+        "self": {
+          "name": "Asistencia técnica para la definición, elaboración e implementación del Plan estratégico de Irun 2040.",
+          "href": "https://api.euskadi.eus/procurements/contracting-notices/1268981"
+        },
+        "contracts": {
+          "href": "https://api.euskadi.eus/procurements/contracts/contracting-notices/1268981"
+        }
+      }
+    },
+    {
+      "id": 1268980,
+      "code": "B057-2026-00006",
+      "object": "Senda peatonal, desde Eluntzeta hasta los tres bancos.",
+      "firstPublicationDate": "2026-02-10",
+      "lastPublicationDate": "2026-02-10",
+      "entity": {
+        "id": 822,
+        "name": "Ayuntamiento de  Lekeitio",
+        "org": {
+          "id": 912353,
+          "name": "Junta de Gobierno",
+          "_links": {
+            "self": {
+              "name": "Junta de Gobierno",
+              "href": "https://api.euskadi.eus/procurements/contracting-notices/orgs/912353"
+            }
+          }
+        },
+        "_links": {
+          "self": {
+            "name": "Ayuntamiento de  Lekeitio",
+            "href": "https://api.euskadi.eus/procurements/contracting-notices/entities/822"
+          }
+        }
+      },
+      "contractingAuthority": {
+        "id": 370,
+        "identificationNumber": "P4806700C",
+        "name": "Ayuntamiento de Lekeitio",
+        "scope": "BIZKAIA",
+        "address": "Gamarra kalea, 1. 48280 Lekeitio (Bizkaia)",
+        "webPage": "http://www.lekeitio.eus",
+        "publicationDate": "2019-10-07",
+        "mainActivity": "Servicios públicos generales",
+        "codNUTS": "ES213",
+        "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder370/es_doc/es_arch_poder370.html",
+        "_links": {
+          "self": {
+            "name": "Ayuntamiento de Lekeitio",
+            "href": "https://api.euskadi.eus/procurements/contracting-authorities/370"
+          }
+        }
+      },
+      "contractType": {
+        "id": 1,
+        "name": "Obras",
+        "_links": {
+          "self": {
+            "name": "Obras",
+            "href": "https://api.euskadi.eus/procurements/contracts/types/1"
+          }
+        }
+      },
+      "contractProcedureStatus": {
+        "id": 3,
+        "name": "Abierto / Plazo de presentación",
+        "_links": {
+          "self": {
+            "name": "Abierto / Plazo de presentación",
+            "href": "https://api.euskadi.eus/procurements/contracting-notices/procedures-status/3"
+          }
+        }
+      },
+      "contractProcedureType": {
+        "id": 1,
+        "name": "Abierto",
+        "_links": {
+          "self": {
+            "name": "Abierto",
+            "href": "https://api.euskadi.eus/procurements/contracting-notices/procedures-type/1"
+          }
+        }
+      },
+      "deadlineDate": "2026-03-09",
+      "budgetWithoutVAT": 296916.17,
+      "webpagElectronicBidding": "https://egoitza.lekeitio.com/kontratazioa/licitacion/oferta/asistenteInscripcion?numexpediente=B057-2026-00006",
+      "financedEuropeanFunds": false,
+      "recoveryPlan": false,
+      "minorContract": false,
+      "subjectAppeal": false,
+      "sara": false,
+      "openingDates": [
+        "1_11/03/2026"
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/anuncio_contratacion/expgebizkaia3338409/es_doc/index.html",
+      "_links": {
+        "self": {
+          "name": "Senda peatonal, desde Eluntzeta hasta los tres bancos.",
+          "href": "https://api.euskadi.eus/procurements/contracting-notices/1268980"
+        },
+        "contracts": {
+          "href": "https://api.euskadi.eus/procurements/contracts/contracting-notices/1268980"
+        }
+      }
+    },
+    {
+      "id": 1268982,
+      "code": "B039-2025-00003",
+      "object": "Suministro, instalación y mantenimiento mquinaria y material firness en régimen de arrendamiento",
+      "firstPublicationDate": "2026-02-02",
+      "lastPublicationDate": "2026-02-10",
+      "entity": {
+        "id": 901,
+        "name": "Ayuntamiento de Garai ",
+        "org": {
+          "id": 912500,
+          "name": "Pleno",
+          "_links": {
+            "self": {
+              "name": "Pleno",
+              "href": "https://api.euskadi.eus/procurements/contracting-notices/orgs/912500"
+            }
+          }
+        },
+        "_links": {
+          "self": {
+            "name": "Ayuntamiento de Garai ",
+            "href": "https://api.euskadi.eus/procurements/contracting-notices/entities/901"
+          }
+        }
+      },
+      "contractingAuthority": {
+        "id": 452,
+        "identificationNumber": "P4804700E",
+        "name": "Ayuntamiento de Garai",
+        "scope": "BIZKAIA",
+        "address": "Bº San Migel, 20. 48200 Garai (Bizkaia)",
+        "webPage": "http://www.garai-udala.eus",
+        "publicationDate": "2021-02-02",
+        "mainActivity": "Servicios públicos generales",
+        "codNUTS": "ES213",
+        "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder452/es_doc/es_arch_poder452.html",
+        "_links": {
+          "self": {
+            "name": "Ayuntamiento de Garai",
+            "href": "https://api.euskadi.eus/procurements/contracting-authorities/452"
+          }
+        }
+      },
+      "contractType": {
+        "id": 3,
+        "name": "Suministros",
+        "_links": {
+          "self": {
+            "name": "Suministros",
+            "href": "https://api.euskadi.eus/procurements/contracts/types/3"
+          }
+        }
+      },
+      "contractProcedureStatus": {
+        "id": 3,
+        "name": "Abierto / Plazo de presentación",
+        "_links": {
+          "self": {
+            "name": "Abierto / Plazo de presentación",
+            "href": "https://api.euskadi.eus/procurements/contracting-notices/procedures-status/3"
+          }
+        }
+      },
+      "contractProcedureType": {
+        "id": 1,
+        "name": "Abierto",
+        "_links": {
+          "self": {
+            "name": "Abierto",
+            "href": "https://api.euskadi.eus/procurements/contracting-notices/procedures-type/1"
+          }
+        }
+      },
+      "deadlineDate": "2026-02-17",
+      "budgetWithoutVAT": 63000,
+      "webpagElectronicBidding": "https://egoitza.garai-udala.eus/kontratazioa/licitacion/oferta/asistenteInscripcion?numexpediente=B039-2025-00003",
+      "financedEuropeanFunds": false,
+      "recoveryPlan": false,
+      "minorContract": false,
+      "subjectAppeal": false,
+      "sara": false,
+      "openingDates": [
+        "1_18/02/2026",
+        "2_18/02/2026"
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/anuncio_contratacion/expgebizkaia3325109/es_doc/index.html",
+      "_links": {
+        "self": {
+          "name": "Suministro, instalación y mantenimiento mquinaria y material firness en régimen de arrendamiento",
+          "href": "https://api.euskadi.eus/procurements/contracting-notices/1268982"
+        },
+        "contracts": {
+          "href": "https://api.euskadi.eus/procurements/contracts/contracting-notices/1268982"
+        }
+      }
+    }
+  ]
+}

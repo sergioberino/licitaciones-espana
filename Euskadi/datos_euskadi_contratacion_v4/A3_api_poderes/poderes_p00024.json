@@ -1,0 +1,451 @@
+{
+  "totalItems": 919,
+  "totalPages": 92,
+  "currentPage": 24,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "id": 25484,
+      "identificationNumber": "P0100226J",
+      "name": "Junta Administrativa de Salinillas de Buradón",
+      "scope": "ARABA/ÁLAVA",
+      "address": "Plaza Palacio 1, CP. 01212, Salinillas de Buradón",
+      "webPage": "https://salinillasdeburadon.org/",
+      "publicationDate": "2022-03-31",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES211",
+      "entities": [
+        {
+          "id": 25485,
+          "name": "Junta Administrativa de Salinillas de Buradón",
+          "orgs": [
+            {
+              "id": 25486,
+              "name": "Junta Administrativa de Salinillas de Buradón",
+              "_links": {
+                "self": {
+                  "name": "Junta Administrativa de Salinillas de Buradón",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/25484/entities/25485/orgs/25486"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Junta Administrativa de Salinillas de Buradón",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/25484/entities/25485"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder25484/es_doc/index.html",
+      "_links": {
+        "self": {
+          "name": "Junta Administrativa de Salinillas de Buradón",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/25484"
+        }
+      }
+    },
+    {
+      "id": 283,
+      "identificationNumber": "A20470050",
+      "name": "BIC Gipuzkoa Berrilan, S.A.",
+      "scope": "GIPUZKOA",
+      "address": "Paseo Mikeletegi, 83. 20009 Donostia/San Sebastián (Gizpuako)",
+      "webPage": "http://www.bicgipuzkoa.eus",
+      "publicationDate": "2022-03-29",
+      "mainActivity": "Otra actividad",
+      "alternativeActivity": "Promoción empresarial",
+      "codNUTS": "ES212",
+      "entities": [
+        {
+          "id": 731,
+          "name": "BIC Gipuzkoa",
+          "orgs": [
+            {
+              "id": 912168,
+              "name": " Directora Gerente",
+              "_links": {
+                "self": {
+                  "name": " Directora Gerente",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/283/entities/731/orgs/912168"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "BIC Gipuzkoa",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/283/entities/731"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder283/es_doc/index.html",
+      "_links": {
+        "self": {
+          "name": "BIC Gipuzkoa Berrilan, S.A.",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/283"
+        }
+      }
+    },
+    {
+      "id": 549,
+      "identificationNumber": "A20458329",
+      "name": "Oarsoaldea, S.A.",
+      "scope": "GIPUZKOA",
+      "address": "Astigarrako bidea 2,2º. (Mamut Eraikina). 20180 Oiartzun (Guipuzkoa)",
+      "webPage": "http://www.oarsoaldea.eus",
+      "publicationDate": "2022-03-23",
+      "mainActivity": "Otra actividad",
+      "alternativeActivity": "Promoción empresarial",
+      "codNUTS": "ES212",
+      "entities": [
+        {
+          "id": 999,
+          "name": "Oarsoaldea, S.A.",
+          "orgs": [
+            {
+              "id": 912658,
+              "name": "Director Gerente",
+              "_links": {
+                "self": {
+                  "name": "Director Gerente",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/549/entities/999/orgs/912658"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Oarsoaldea, S.A.",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/549/entities/999"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder549/es_doc/index.html",
+      "_links": {
+        "self": {
+          "name": "Oarsoaldea, S.A.",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/549"
+        },
+        "contractingAuthorities": [
+          {
+            "name": "Ayuntamiento de Errenteria",
+            "href": "https://api.euskadi.eus/procurements/contracting-authorities/23491"
+          },
+          {
+            "name": "Ayuntamiento de Pasaia",
+            "href": "https://api.euskadi.eus/procurements/contracting-authorities/23549"
+          }
+        ]
+      }
+    },
+    {
+      "id": 322,
+      "identificationNumber": "G75067454",
+      "name": "Basque Center for Macromolecular Design and Engineering, POLYMAT Fundazioa",
+      "scope": "GIPUZKOA",
+      "address": "Avenida de Tolosa 72",
+      "webPage": "http://www.polymat.eu",
+      "publicationDate": "2022-03-18",
+      "mainActivity": "Otra actividad",
+      "alternativeActivity": "Investigación",
+      "codNUTS": "ES212",
+      "entities": [
+        {
+          "id": 771,
+          "name": "POLYMAT Fundazioa",
+          "orgs": [
+            {
+              "id": 912245,
+              "name": "Gerente",
+              "_links": {
+                "self": {
+                  "name": "Gerente",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/322/entities/771/orgs/912245"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "POLYMAT Fundazioa",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/322/entities/771"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder322/es_doc/index.html",
+      "_links": {
+        "self": {
+          "name": "Basque Center for Macromolecular Design and Engineering, POLYMAT Fundazioa",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/322"
+        }
+      }
+    },
+    {
+      "id": 25456,
+      "identificationNumber": "P0101300B",
+      "name": "Junta Administrativa de Barriobusto",
+      "scope": "ARABA/ÁLAVA",
+      "address": "Plaza Marcelino Martinez S/N",
+      "webPage": "https://ayuntamientodeoyon.com/",
+      "publicationDate": "2022-03-17",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES211",
+      "entities": [
+        {
+          "id": 25457,
+          "name": "Junta Administrativa de Barriobusto",
+          "orgs": [
+            {
+              "id": 25458,
+              "name": "Junta Administrativa de Barriobusto",
+              "_links": {
+                "self": {
+                  "name": "Junta Administrativa de Barriobusto",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/25456/entities/25457/orgs/25458"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Junta Administrativa de Barriobusto",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/25456/entities/25457"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder25456/es_doc/index.html",
+      "_links": {
+        "self": {
+          "name": "Junta Administrativa de Barriobusto",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/25456"
+        }
+      }
+    },
+    {
+      "id": 398,
+      "identificationNumber": "G01315530",
+      "name": "Fundación Artium de Álava",
+      "scope": "ARABA/ÁLAVA",
+      "address": "Francia, 24. 01002 Vitoria-Gasteiz (Arab/Álava)  ",
+      "webPage": "http://www.artium.org",
+      "publicationDate": "2022-03-11",
+      "mainActivity": "Ocio, cultura y religión",
+      "codNUTS": "ES211",
+      "entities": [
+        {
+          "id": 849,
+          "name": "Fundación Artium de Álava",
+          "orgs": [
+            {
+              "id": 912399,
+              "name": "Directora",
+              "_links": {
+                "self": {
+                  "name": "Directora",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/398/entities/849/orgs/912399"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Fundación Artium de Álava",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/398/entities/849"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder398/es_doc/index.html",
+      "_links": {
+        "self": {
+          "name": "Fundación Artium de Álava",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/398"
+        }
+      }
+    },
+    {
+      "id": 25445,
+      "identificationNumber": "P0100195G",
+      "name": "Junta Administrativa de Antoñana",
+      "scope": "ARABA/ÁLAVA",
+      "address": "Calle Arquillos de Arriba, 2 (Antoñana)",
+      "webPage": "https://www.kanpezu.eus/servicios/juntas-administrativas/",
+      "publicationDate": "2022-03-10",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES211",
+      "entities": [
+        {
+          "id": 25446,
+          "name": "Junta Administrativa de Antoñana",
+          "orgs": [
+            {
+              "id": 25447,
+              "name": "Junta Administrativa de Antoñana",
+              "_links": {
+                "self": {
+                  "name": "Junta Administrativa de Antoñana",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/25445/entities/25446/orgs/25447"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Junta Administrativa de Antoñana",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/25445/entities/25446"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder25445/es_doc/index.html",
+      "_links": {
+        "self": {
+          "name": "Junta Administrativa de Antoñana",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/25445"
+        }
+      }
+    },
+    {
+      "id": 25439,
+      "identificationNumber": "P0100096G",
+      "name": "Junta Administrativa de Villambrosa",
+      "scope": "ARABA/ÁLAVA",
+      "address": "Calle Pueblo, 10 -Villambrosa ",
+      "webPage": "https://www.erriberagoitia.com/villambrosa/",
+      "publicationDate": "2022-03-03",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES211",
+      "entities": [
+        {
+          "id": 25440,
+          "name": "Junta Administrativa de Villambrosa",
+          "orgs": [
+            {
+              "id": 25441,
+              "name": "Junta Administrativa de Villambrosa",
+              "_links": {
+                "self": {
+                  "name": "Junta Administrativa de Villambrosa",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/25439/entities/25440/orgs/25441"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Junta Administrativa de Villambrosa",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/25439/entities/25440"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder25439/es_doc/index.html",
+      "_links": {
+        "self": {
+          "name": "Junta Administrativa de Villambrosa",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/25439"
+        }
+      }
+    },
+    {
+      "id": 329,
+      "identificationNumber": "P2000900G",
+      "name": "Ayuntamiento de Amezketa",
+      "scope": "GIPUZKOA",
+      "address": "Fernando Amezketarraren Enparantza, z/g. 20268 Amezketa (Gipuzkoa) ",
+      "webPage": "http://www.amezketa.eus",
+      "publicationDate": "2022-02-24",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES212",
+      "entities": [
+        {
+          "id": 780,
+          "name": "Ayuntamiento de Amezketa",
+          "orgs": [
+            {
+              "id": 912259,
+              "name": "Pleno",
+              "_links": {
+                "self": {
+                  "name": "Pleno",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/329/entities/780/orgs/912259"
+                }
+              }
+            },
+            {
+              "id": 912258,
+              "name": "Alcaldía",
+              "_links": {
+                "self": {
+                  "name": "Alcaldía",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/329/entities/780/orgs/912258"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Ayuntamiento de Amezketa",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/329/entities/780"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder329/es_doc/index.html",
+      "_links": {
+        "self": {
+          "name": "Ayuntamiento de Amezketa",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/329"
+        }
+      }
+    },
+    {
+      "id": 25142,
+      "identificationNumber": "G01293232",
+      "name": "Comunidad de Regantes Tumecillo",
+      "scope": "ARABA/ÁLAVA",
+      "address": "C/ Ayuntamiento 4, Comunión",
+      "webPage": "http://www.cuadrilladeanana.es/lantaron/doce_comunion.php",
+      "publicationDate": "2022-02-23",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES211",
+      "entities": [
+        {
+          "id": 25143,
+          "name": "Comunidad de Regantes Tumecillo",
+          "orgs": [
+            {
+              "id": 25144,
+              "name": "Junta de Gobierno de la Comunidad de Regantes Tumecillo",
+              "_links": {
+                "self": {
+                  "name": "Junta de Gobierno de la Comunidad de Regantes Tumecillo",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/25142/entities/25143/orgs/25144"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Comunidad de Regantes Tumecillo",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/25142/entities/25143"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder25142/es_doc/index.html",
+      "_links": {
+        "self": {
+          "name": "Comunidad de Regantes Tumecillo",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/25142"
+        }
+      }
+    }
+  ]
+}

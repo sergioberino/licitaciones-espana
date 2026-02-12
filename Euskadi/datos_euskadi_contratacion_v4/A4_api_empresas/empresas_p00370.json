@@ -1,0 +1,398 @@
+{
+  "totalItems": 9042,
+  "totalPages": 905,
+  "currentPage": 370,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "name": "EUSKOIME INSTALACIONES ELÉCTRICAS, S.L.",
+      "registrationNumber": "08666",
+      "identificationNumber": "B95934600",
+      "address": "C/ Astintze, 6A - 1ª Plta. Oficina 106",
+      "location": {
+        "postalCode": "48160",
+        "municipality": "Derio",
+        "county": "Bizkaia",
+        "municipalityId": "901",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.504.12",
+          "name": "Instalaciones eléctricas en toda clase de edificios",
+          "_links": {
+            "self": {
+              "name": "Instalaciones eléctricas en toda clase de edificios",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.504.12"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-02-18",
+      "certificateEndDate": "2025-08-12",
+      "object": "TODO TIPO DE INSTALACIONES ELÉCTRICAS TANTO DE BAJA, MEDIA, ALTA TENSIÓN, ASÍ COMO SUS REPARACIONES Y MANTENIMIENTOS, MANTENIMIENTOS MECÁNICOS, JARDINERÍA, EN EDIFICIOS DE TODA CLASE, Y LOCALES COMERCIALES E INDUSTRIALES.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08666",
+      "_links": {
+        "self": {
+          "name": "EUSKOIME INSTALACIONES ELÉCTRICAS, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/08666"
+        }
+      }
+    },
+    {
+      "name": "MARIA VIOLETA TORAN PEREG",
+      "registrationNumber": "10027",
+      "identificationNumber": "34105690W",
+      "address": "Calle tejería 13. 6D",
+      "location": {
+        "postalCode": "20012",
+        "municipality": "Donostia / San Sebastián",
+        "county": "Gipuzkoa",
+        "municipalityId": "069",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.966.9",
+          "name": "Otros servicios culturales n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros servicios culturales n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.966.9"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-02-18",
+      "certificateEndDate": "2025-08-06",
+      "object": "OTROS SERVICIOS CULTURALES N.C.O.P.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/10027",
+      "_links": {
+        "self": {
+          "name": "MARIA VIOLETA TORAN PEREG",
+          "href": "https://api.euskadi.eus/procurements/companies/10027"
+        }
+      }
+    },
+    {
+      "name": "ELIN MEDICA, S.L.",
+      "registrationNumber": "08553",
+      "identificationNumber": "B48505101",
+      "address": "c/ Maria Teresa Gil de Garate n 30- 1 Ext- Izq",
+      "location": {
+        "postalCode": "26002",
+        "municipality": "Logroño",
+        "county": "Rioja, La",
+        "municipalityId": "089",
+        "countyId": "26"
+      },
+      "economicActivities": [
+        {
+          "id": "1.659.3",
+          "name": "Venta al por menor de aparatos médicos, ortopédicos, ópticos y fotográficos",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de aparatos médicos, ortopédicos, ópticos y fotográficos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.659.3"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-02-17",
+      "certificateEndDate": "2025-08-06",
+      "object": " LA COLOCACIÓN EN EL MERCADO Y DISTRIBUCIÓN DE MATERIAL MÉDICO Y EN GENERAL TODO TIPO DE PROGRAMAS INFORMÁTICOS DE USO MÉDICO PARTICULAR .",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08553",
+      "_links": {
+        "self": {
+          "name": "ELIN MEDICA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/08553"
+        }
+      }
+    },
+    {
+      "name": "ASOCIACIÓN INSTITUTO DE INVESTIGACIÓN SANITARIA BIOGIPUZKOA",
+      "registrationNumber": "06477",
+      "identificationNumber": "G75020313",
+      "address": "Paseo Dr. Begiristain s/n",
+      "location": {
+        "postalCode": "20014",
+        "municipality": "Donostia / San Sebastián",
+        "county": "Gipuzkoa",
+        "municipalityId": "069",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.861.2",
+          "name": "Alquiler de locales industriales y otros alquileres n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Alquiler de locales industriales y otros alquileres n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.861.2"
+            }
+          }
+        },
+        {
+          "id": "1.932.2",
+          "name": "Enseñanza de formación y perfeccionamiento profesional superior",
+          "_links": {
+            "self": {
+              "name": "Enseñanza de formación y perfeccionamiento profesional superior",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.932.2"
+            }
+          }
+        },
+        {
+          "id": "1.936.2",
+          "name": "Investigación en ciencias médicas",
+          "_links": {
+            "self": {
+              "name": "Investigación en ciencias médicas",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.936.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-02-17",
+      "certificateEndDate": "2025-08-05",
+      "object": "PROMOVER LA INVESTIGACIÓN BIOMÉDICA, EPIDEMIOLÓGICA, DE SALUD PÚBLICA Y EN SERVICIOS SANITARIOS, FUNDAMENTAR CIENTÍFICAMENTE LOS PROGRAMAS Y POLÍTICAS DEL SISTEMA SANITARIO Y POTENCIAR DE FORMA PREFERENTE LA INVESTIGACIÓN TRASLACIONAL, ORIENTADA A ACELERAR EL TRASLADO DE LOS CONOCIMIENTOS CIENTÍFICOS A LA PRÁCTICA CLÍNICA, SEGÚN RECOMENDACIONES INTERNACIONALES",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06477",
+      "_links": {
+        "self": {
+          "name": "ASOCIACIÓN INSTITUTO DE INVESTIGACIÓN SANITARIA BIOGIPUZKOA",
+          "href": "https://api.euskadi.eus/procurements/companies/06477"
+        }
+      }
+    },
+    {
+      "name": "SUMINISTROS DENTALES ANTON, S.L.",
+      "registrationNumber": "08298",
+      "identificationNumber": "B48562748",
+      "address": "P.I. SANGRONIZ, IBERRE KALEA 3 - MOD. 6",
+      "location": {
+        "postalCode": "48950",
+        "municipality": "Erandio",
+        "county": "Bizkaia",
+        "municipalityId": "902",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.619.2",
+          "name": "Venta al por mayor de aparatos e instrumentos médicos, ortopédicos, ópticos",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de aparatos e instrumentos médicos, ortopédicos, ópticos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.619.2"
+            }
+          }
+        },
+        {
+          "id": "1.659.3",
+          "name": "Venta al por menor de aparatos médicos, ortopédicos, ópticos y fotográficos",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de aparatos médicos, ortopédicos, ópticos y fotográficos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.659.3"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-02-17",
+      "certificateEndDate": "2025-08-02",
+      "object": "LA COMPRAVENTA DE PRODUCTOS DENTALES.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08298",
+      "_links": {
+        "self": {
+          "name": "SUMINISTROS DENTALES ANTON, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/08298"
+        }
+      }
+    },
+    {
+      "name": "ANE HERVAS GOIRICELAYA",
+      "registrationNumber": "09450",
+      "identificationNumber": "78957148B",
+      "address": "Mastizar 5",
+      "location": {
+        "postalCode": "48630",
+        "municipality": "Gorliz",
+        "county": "Bizkaia",
+        "municipalityId": "043",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "2.411",
+          "name": "Arquitectos",
+          "_links": {
+            "self": {
+              "name": "Arquitectos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/2.411"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-02-14",
+      "certificateEndDate": "2025-07-30",
+      "object": "ARQUITECTOS.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/09450",
+      "_links": {
+        "self": {
+          "name": "ANE HERVAS GOIRICELAYA",
+          "href": "https://api.euskadi.eus/procurements/companies/09450"
+        }
+      }
+    },
+    {
+      "name": "ELEXALDE MENDI GARBIKETAK KOOP. ELK. TXIKIA",
+      "registrationNumber": "09717",
+      "identificationNumber": "F70755111",
+      "address": "Barrio Zuatzaurre",
+      "location": {
+        "postalCode": "48960",
+        "municipality": "Galdakao",
+        "county": "Bizkaia",
+        "municipalityId": "036",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.912",
+          "name": "Servicios forestales",
+          "_links": {
+            "self": {
+              "name": "Servicios forestales",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.912"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-02-14",
+      "certificateEndDate": "2025-06-26",
+      "object": "LA REALIZACIÓN DE TRABAJOS DE DESBROCE, MANTENIMIENTO Y CONSERVACIÓN DE MONTES, JARDINES Y VÍAS PÚBLICAS, ASÍ COMO SERVICIOS DE LIMPIEZA EN GENERAL.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/09717",
+      "_links": {
+        "self": {
+          "name": "ELEXALDE MENDI GARBIKETAK KOOP. ELK. TXIKIA",
+          "href": "https://api.euskadi.eus/procurements/companies/09717"
+        }
+      }
+    },
+    {
+      "name": "LUIS ANGEL VAQUERO BRAGADO",
+      "registrationNumber": "10025",
+      "identificationNumber": "30624586V",
+      "address": "Calle Torre-Barri",
+      "location": {
+        "postalCode": "48393",
+        "municipality": "Forua",
+        "county": "Bizkaia",
+        "municipalityId": "906",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.922",
+          "name": "Servicios de limpieza",
+          "_links": {
+            "self": {
+              "name": "Servicios de limpieza",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.922"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-02-14",
+      "certificateEndDate": "2025-08-12",
+      "object": "SERVICIOS DE LIMPIEZA.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/10025",
+      "_links": {
+        "self": {
+          "name": "LUIS ANGEL VAQUERO BRAGADO",
+          "href": "https://api.euskadi.eus/procurements/companies/10025"
+        }
+      }
+    },
+    {
+      "name": "INCOTEC ADIGEST, S.L.",
+      "registrationNumber": "06997",
+      "identificationNumber": "B01348150",
+      "address": "CERCAS BAJAS, 13 BAJO",
+      "location": {
+        "postalCode": "01001",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.849.9",
+          "name": "Otros servicios independientes n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros servicios independientes n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.849.9"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-02-13",
+      "certificateEndDate": "2025-07-29",
+      "object": "PRESTACIÓN DE SERVICIOS DE NATURALEZA ADMINISTRATIVA, CONTABLE, DE ORGANIZACIÓN Y PLANIFICACIÓN, DE RECURSOS HUMANOS. EL ESTUDIO, ANÁLISIS Y ELABORACIÓN DE INFORMES TÉCNICOS-ECONÓMICOS, TRADUCCIONES, GESTIÓN DE ARCHIVOS, SELECCIÓN DE PERSONAL. ESTUDIOS Y GESTIONES SOBRE ORGANIZACIÓN DE EMPRESAS, SU ESTRUCTURA PATRIMONIAL Y SOCIETARIA. EL DISEÑO Y EJECUCIÓN DE LAS MEDIDAS Y PROYECTOS ANTERIORES, EN DEFINITIVA LA PLANIFICACIÓN INTERNA Y EXTERNA DE LAS EMPRESAS.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06997",
+      "_links": {
+        "self": {
+          "name": "INCOTEC ADIGEST, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/06997"
+        }
+      }
+    },
+    {
+      "name": "ESTUDIOS Y DESARROLLO DE INGENIERIA, S.L.",
+      "registrationNumber": "09767",
+      "identificationNumber": "B24389397",
+      "address": "Calle Alfonso V",
+      "location": {
+        "postalCode": "24001",
+        "municipality": "León",
+        "county": "León",
+        "municipalityId": "089",
+        "countyId": "24"
+      },
+      "economicActivities": [
+        {
+          "id": "1.843.1",
+          "name": "Servicios técnicos de ingeniería",
+          "_links": {
+            "self": {
+              "name": "Servicios técnicos de ingeniería",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.1"
+            }
+          }
+        },
+        {
+          "id": "1.845",
+          "name": "Explotación electrónica por cuenta de terceros",
+          "_links": {
+            "self": {
+              "name": "Explotación electrónica por cuenta de terceros",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.845"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-02-13",
+      "certificateEndDate": "2025-08-13",
+      "object": "-ESTUDIOS Y DESARROLLO DE INGENIERÍA, PROYECTOS TÉCNICOS Y DIRECCIÓN DE OBRAS. FORMACIÓN DE PROYECTOS DE INVENTARIO DE BIENES EN ENTIDADES PÚBLICAS Y PRIVADAS, SISTEMAS DE GESTIÓN INFORMÁTICA, TÉCNICA-JURÍDICA Y DE ASISTENCIA. TRABAJOS DE PLANIFICACIÓN URBANÍSTICA, OBRAS PÚBLICAS, EDIFICACIÓN, CARTOGRAFÍA, CATASTRO, TOPOGRAFÍA, Y FOTOGRAMETRÍA, GEOTECNIA Y MEDIO AMBIENTE. ELABORACIÓN, TASACIONES, PERITACIONES, CONSTRUCCIÓN, PROMOCIÓN Y ALQUILER DE INMUEBLES.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/09767",
+      "_links": {
+        "self": {
+          "name": "ESTUDIOS Y DESARROLLO DE INGENIERIA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/09767"
+        }
+      }
+    }
+  ]
+}

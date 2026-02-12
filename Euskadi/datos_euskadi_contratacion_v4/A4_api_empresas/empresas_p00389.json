@@ -1,0 +1,498 @@
+{
+  "totalItems": 9042,
+  "totalPages": 905,
+  "currentPage": 389,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "name": "STREET SKP BSOFT, S. L.",
+      "registrationNumber": "08782",
+      "identificationNumber": "B95913414",
+      "address": "Castanos 9",
+      "location": {
+        "postalCode": "48007",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.849.9",
+          "name": "Otros servicios independientes n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros servicios independientes n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.849.9"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2024-09-25",
+      "certificateEndDate": "2025-03-25",
+      "object": "A.- EL DESARROLLO DE TODA CLASE DE APLICACIONES PARA MÓVILES, ORDENADORES, Y EN GENERAL DISPOSITIVOS PORTÁTILES. B.- LA PRESTACIÓN DE SERVICIOS DE ASESORAMIENTO, CONSULTORÍA, FORMACIÓN Y CAPACITACIÓN EN MATERIA INFORMÁTICA, TRATAMIENTO DE DATOS, GESTIÓN, DESARROLLO Y DISEÑO DE APLICACIONES DE SOFTWARE. C.- LA CREACIÓN, PUBLICACIÓN Y EDICIÓN DE BASES DE DATOS, PÁGINAS WEB SOBRE CUALQUIER SOPORTE INFORMÁTICO, DIGITAL O ELECTRÓNICO. D.- Y LA COMPRA, VENTA, ARRENDAMIENTO Y COMERCIALIZACIÓN DE TODA CLASE DE EQUIPOS Y SISTEMAS INFORMÁTICOS, SU INSTALACIÓN, MANTENIMIENTO, CONSERVACIÓN Y REPARACIÓN.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08782",
+      "_links": {
+        "self": {
+          "name": "STREET SKP BSOFT, S. L.",
+          "href": "https://api.euskadi.eus/procurements/companies/08782"
+        }
+      }
+    },
+    {
+      "name": "FCC MEDIO AMBIENTE, S.A.U.",
+      "registrationNumber": "06642",
+      "identificationNumber": "A28541639",
+      "address": "CALLE FEDERICO SALMÓN, NÚMERO 13",
+      "location": {
+        "postalCode": "28016",
+        "municipality": "Madrid",
+        "county": "Madrid",
+        "municipalityId": "079",
+        "countyId": "28"
+      },
+      "economicActivities": [
+        {
+          "id": "1.151.4",
+          "name": "Producción de energía no especificada en otros epígrafes",
+          "_links": {
+            "self": {
+              "name": "Producción de energía no especificada en otros epígrafes",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.151.4"
+            }
+          }
+        },
+        {
+          "id": "1.152",
+          "name": "Fabricación y distribución de gas",
+          "_links": {
+            "self": {
+              "name": "Fabricación y distribución de gas",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.152"
+            }
+          }
+        },
+        {
+          "id": "1.253.9",
+          "name": "Fabricación de otros productos químicos de uso industrial n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Fabricación de otros productos químicos de uso industrial n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.253.9"
+            }
+          }
+        },
+        {
+          "id": "1.507",
+          "name": "Construcción, reparación y conservación de toda clase obras",
+          "_links": {
+            "self": {
+              "name": "Construcción, reparación y conservación de toda clase obras",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.507"
+            }
+          }
+        },
+        {
+          "id": "1.621",
+          "name": "Venta al por mayor de chatarra y metales de desecho férreos y no férreos",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de chatarra y metales de desecho férreos y no férreos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.621"
+            }
+          }
+        },
+        {
+          "id": "1.691.2",
+          "name": "Reparación de vehículos automóviles, bicicletas y otros vehículos",
+          "_links": {
+            "self": {
+              "name": "Reparación de vehículos automóviles, bicicletas y otros vehículos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.691.2"
+            }
+          }
+        },
+        {
+          "id": "1.843.1",
+          "name": "Servicios técnicos de ingeniería",
+          "_links": {
+            "self": {
+              "name": "Servicios técnicos de ingeniería",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.1"
+            }
+          }
+        },
+        {
+          "id": "1.843.9",
+          "name": "Otros servicios técnicos n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros servicios técnicos n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.9"
+            }
+          }
+        },
+        {
+          "id": "1.844",
+          "name": "Servicios de publicidad, relaciones públicas y similares",
+          "_links": {
+            "self": {
+              "name": "Servicios de publicidad, relaciones públicas y similares",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.844"
+            }
+          }
+        },
+        {
+          "id": "1.911",
+          "name": "Servicios agrícolas y ganaderos",
+          "_links": {
+            "self": {
+              "name": "Servicios agrícolas y ganaderos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.911"
+            }
+          }
+        },
+        {
+          "id": "1.921.1",
+          "name": "Servicios de limpieza en calles, vías públicas y jardines",
+          "_links": {
+            "self": {
+              "name": "Servicios de limpieza en calles, vías públicas y jardines",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.921.1"
+            }
+          }
+        },
+        {
+          "id": "1.921.2",
+          "name": "Servicios de recogida de basuras y desechos",
+          "_links": {
+            "self": {
+              "name": "Servicios de recogida de basuras y desechos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.921.2"
+            }
+          }
+        },
+        {
+          "id": "1.921.4",
+          "name": "Servicios de alcantarillado, evacuación y depuración de aguas residuales",
+          "_links": {
+            "self": {
+              "name": "Servicios de alcantarillado, evacuación y depuración de aguas residuales",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.921.4"
+            }
+          }
+        },
+        {
+          "id": "1.921.5",
+          "name": "Servicios de incineración y eliminación de basuras y desechos",
+          "_links": {
+            "self": {
+              "name": "Servicios de incineración y eliminación de basuras y desechos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.921.5"
+            }
+          }
+        },
+        {
+          "id": "1.922",
+          "name": "Servicios de limpieza",
+          "_links": {
+            "self": {
+              "name": "Servicios de limpieza",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.922"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2024-09-25",
+      "certificateEndDate": "2025-03-12",
+      "object": "-LA PRESTACIÓN DE SERVICIOS DE RECOLECCIÓN, TRANSPORTE Y ELIMINACIÓN DE RESIDUOS, LIMPIEZA EN GENERAL Y CUALQUIER OTRA ACTIVIDAD DE SANEAMIENTO. (38.11 y 38.12; 38.21 y 38.22). -EL DISEÑO, FABRICACIÓN, COMPRA, VENTA, SUMINISTRO, IMPORTACIÓN, EXPORTACIÓN, ALQUILER, MANTENIMIENTO, REPARACIÓN, DISTRIBUCIÓN, REPRESENTACIÓN Y EXPLOTACIÓN, INCLUSO PUBLICITARIA, DE MAQUINARIA; HERRAMIENTAS; VEHÍCULOS INCLUIDOS A MOTOR Y SIN MOTOR EN LAS MODALIDADES DE CON Y SIN COMPARTICIÓN; INSTALACIONES; MATERIALES Y EQUIPOS; MOBILIARIO Y EQUIPAMIENTO URBANO ENTENDIDO EN SU MÁS AMPLIA ACEPCIÓN, ASÍ COMO ELEMENTOS DE SEÑALIZACIÓN, TANTO EN POBLACIONES COMO EN VÍAS INTERURBANAS DE COMUNICACIÓN, ASÍ COMO DE MAQUINARIA Y SUS COMPONENTES, HERRAMIENTAS, VEHÍCULOS, INSTALACIONES, MATERIALES Y EQUIPOS. (28.99,29.10, 29.20, 29.31 Y 29.32; 33.12, 33.14, 33.17 Y 33.19). -EL DISEÑO, INVESTIGACIÓN, DESARROLLO, ASESORAMIENTO RELATIVO A ESTUDIOS EN MATERIA DE MOVILIDAD URBANA. (72.19). - PRESTACIÓN DE SERVICIOS DE GESTIÓN MEDIOAMBIENTAL. (39.00). -LA CREACIÓN, DISEÑO, COMPRA, VENTA, EXPLOTACIÓN Y CESIÓN, EN CUALQUIER FORMA, DE PATENTES, MODELOS, MARCAS, LICENCIAS Y DEMÁS MODALIDADES DE LA PROPIEDAD INDUSTRIAL O INTELECTUAL. (74.10 Y 74.90). -LA GESTIÓN DE RESIDUOS Y SUELOS CONTAMINADOS, ASÍ COMO CUALQUIER ACTIVIDAD DE ASESORAMIENTO, INVESTIGACIÓN O CONSULTORÍA VINCULADO A LOS MISMOS. EL DISEÑO, INVESTIGACIÓN, DESARROLLO, CONSTRUCCIÓN, EXPLOTACIÓN, MANTENIMIENTO Y COMERCIALIZACIÓN DE PLANTAS E INSTALACIONES DE REUTILIZACIÓN, TRATAMIENTO Y DEPURACIÓN DE AGUAS Y RESIDUOS, LA RECUPERACIÓN, VALORACIÓN Y ELIMINACIÓN, ALMACENAMIENTO O ESTACIÓN DE TRANSFERENCIA DE RESIDUOS O SUELOS CONTAMINADOS, ASÍ COMO LA COMPRAVENTA TANTO DE LOS SUBPRODUCTOS QUE SE ORIGINEN DE DICHOS TRATAMIENTOS COMO TODO TIPO DE RESIDUOS. INVESTIGACIÓN, CAPTACIÓN, APROVECHAMIENTO, TRANSFORMACIÓN Y COMERCIALIZACIÓN DE TODA LA CLASE DE AGUAS. - LA PRESTACIÓN DE SERVICIOS TÉCNICOS DE INGENIERÍA, INCLUIDOS PROYECTOS, ESTUDIOS E INFORMES, ASÍ COMO LA REALIZACIÓN DE ESTUDIOS DE PRE-INVERSIÓN, CONTROLES DE CALIDAD, AUDITORÍAS INTERNAS Y EXPLOTACIÓN DE DATOS. (38.21 Y 38.22, Y 39.00). - EL ESTUDIO, PROYECTO, ADQUISICIÓN, CESIÓN, ENAJENACIÓN, PROMOCIÓN, ASESORAMIENTO, ADMINISTRACIÓN, GESTIÓN O EXPLOTACIÓN DE CENTROS RESIDENCIALES GERIÁTRICOS, ASÍ COMO TODA ACTIVIDAD RELACIONADA CON SERVICIOS SOCIALES Y ASISTENCIA SANITARIA DE ATENCIÓN A LA VEJEZ, DISCAPACIDAD PSÍQUICA Y FÍSICA Y TRANSTORNOS PSIQUIÁTRICOS; GESTIÓN Y ATENCIÓN A LOS MISMOS CON APERTURAS DE CENTROS DE DÍA, CENTROS SANITARIOS O SOCIOSANITARIOS, RESIDENCIAS, VIVIENDAS COMUNITARIAS O APARTAMENTOS TUTELADOS Y ATENCIÓN DOMICILIARIA. (87.31 Y 87.32; 88.11, 88.12 Y 88.99). -SERVICIO DE DISEÑO, FABRICACIÓN, COMPRA, VENTA, SUMINISTRO, IMPORTACIÓN, EXPORTACIÓN, ALQUILER, MANTENIMIENTO, DISTRIBUCIÓN, REPRESENTACIÓN Y EXPLOTACIÓN, INSTALACIÓN Y MONTAJES ELÉCTRICOS, ELECTRÓNICOS, INFORMÁTICOS Y DE TELECOMUNICACIONES, ASÍ COMO EL DISEÑO, INVESTIGACIÓN, DESARROLLO Y COMERCIALIZACIÓN DE PRODUCTOS RELACIONADOS CON DICHOS SERVICIOS. (62.02, 62.03 Y 62.09). -DISEÑO, DESARROLLO, CONSTRUCCIÓN, EXPLOTACIÓN, MANTENIMIENTO Y COMERCIALIZACIÓN DE EDIFICIOS, COMERCIOS, INDUSTRIAS, PLANTAS, INSTALACIONES, PARQUES, JARDINES, ZONAS VERDES, FUENTES ORNAMENTALES Y BEBEDEROS, REDES DE ALCANTARILLADO Y POZOS NEGROS. (41.21 Y 41.22; 42.21; 42.99; 43.21 Y 43.29). -LA PRESTACIÓN DE SERVICIOS DE SANEAMIENTO, LIMPIEZA, GESTIÓN, MANTENIMIENTO Y REPARACIÓN DE EDIFICIOS, OBRAS, INFRAESTRUCTURAS, BUQUES, AERONAVES Y, EN GENERAL, TODO TIPO DE INSTALACIONES PÚBLICAS O PRIVADAS. LA PRESTACIÓN DE TODO TIPO DE SERVICIOS CUYA TITULARIDAD CORRESPONDA A LAS ADMINISTRACIONES PÚBLICAS, INCLUYENDO EL CONTROL DE ACCESO, INFORMACIÓN AL PÚBLICO, GESTIÓN DE ANIMALES ABANDONADOS, INCLUYENDO LA REALIZACIÓN DE CUALQUIER TAREA DE COLABORACIÓN INHERENTE A LA GESTIÓN RECAUDADORA DE CUALQUIERA DE DICHAS ADMINISTRACIONES, QUE NO IMPLIQUE EJERCICIO DE AUTORIDAD NI CUSTODIA DE FONDOS PÚBLICOS. (81.10, 81.21, 81.22 Y 81.29; 82.91). -LA CONSTRUCCIÓN, EJECUCIÓN, MANTENIMIENTO DE OBRAS DE CARÁCTER PÚBLICO Y PRIVADO, ASÍ COMO LA EXPLOTACIÓN DE TODO TIPO DE INFRAESTRUCTURAS. (42.11, 42.12, 42.13, 42.91, 42.99 Y 43.99). -EL ESTABLECIMIENTO Y EXPLOTACIÓN DE FÁBRICAS DE CEMENTO, CAL, YESO Y PREFABRICADOS DERIVADOS DE ESTOS MATERIALES, ASÍ COMO LA INDUSTRIA DEL HORMIGÓN Y LA CREACIÓN Y EXPLOTACIÓN DE CUANTAS INDUSTRIAS SE RELACIONEN CON LOS MENCIONADOS PRODUCTOS. LA INVESTIGACIÓN Y APROVECHAMIENTO DE YACIMIENTOS MINERALES, ASÍ COMO LA ADQUISICIÓN, USO Y DISFRUTE DE PERMISOS, CONCESIONES Y DEMÁS DERECHOS E INTERESES MINEROS; LA INDUSTRIALIZACIÓN Y COMERCIALIZACIÓN DE LOS PRODUCTOS MINEROS DERIVADOS DE AQUELLOS DERECHOS. (23.51 Y 23.52; 23.61, 23.62, 23.63 Y 23.69; 08.11 Y 08.12). -LA ADQUISICIÓN, ENAJENACIÓN, GRAVAMEN, ARRENDAMIENTO, ADMINISTRACIÓN, PROMOCIÓN, CONSTRUCCIÓN, URBANIZACIÓN, PARCELACIÓN Y EXPLOTACIÓN, POR CUALQUIER TÍTULO ADMITIDO EN DERECHO, DE TODA CLASE DE BIENES INMUEBLES, RÚSTICOS O URBANOS. (68.10, 68.20 Y 68.32). -EL ESTUDIO, PROYECTO, ADQUISICIÓN, CESIÓN, ENAJENACIÓN, PROMOCIÓN, ASESORAMIENTO, ADMINISTRACIÓN, GESTIÓN O EXPLOTACIÓN EN ARRENDAMIENTO O EN CUALQUIER OTRA FORMA DE CENTROS COMERCIALES. (68.10, 68.20 Y 68.32). -EL ESTUDIO, PROYECTO, ADQUISICIÓN, CESIÓN, ENAJENACIÓN, PROMOCIÓN, ASESORAMIENTO, ADMINISTRACIÓN, GESTIÓN O EXPLOTACIÓN DE NEGOCIOS RELACIONADOS CON EL SECTOR ALIMENTARIO Y DE HOSTELERÍA EN GENERAL. (55.90 Y 56.29). -LA PRESENTACIÓN DE SERVICIOS DE INGENIERÍA, INCLUIDOS PROYECTOS, ESTUDIOS E INFORMES, ASÍ COMO LA REALIZACIÓN DE ESTUDIOS DE PRE-INVESIÓN, CONTROLES DE CALIDAD, AUDITORÍAS INTERNAS Y EXPLOTACIÓN ELECTRÓNICA DE DATOS. (71.12). -EL NEGOCIO ELÉCTRICO Y ENERGÉTICO EN GENERAL, EN TODAS SUS VERTIENTES Y VARIANTES, ASÍ COMO EN SUS DISTINTAS ACTIVIDADES INDUSTRIALES Y COMERCIALES. LA PRESTACIÓN DE SERVICIOS DE CARÁCTER INDUSTRIAL, ASÍ COMO LOS QUE TENGAN CARÁCTER PREPARATORIO O COMPLEMENTARIO DE LAS ACTIVIDADES INCLUIDAS EN EL OBJETO SOCIAL, PARTICULARMENTE EN RELACIÓN CON LA VIGILANCIA, OPERACIÓN, MANTENIMIENTO, REPARACIÓN Y CONSTRUCCIÓN DE INSTALACIONES. LA REALIZACIÓN DE TODO TIPO DE ESTUDIOS E INVESTIGACIONES RELACIONADAS CON EL NEGOCIO ELÉCTRICO Y ENERGÉTICO EN GENERAL, MUY PARTICULARMENTE CON LAS DENOMINADAS ENERGÍAS RENOVABLES. LA PRESTACIÓN DE SERVICIOS Y EJECUCIÓN DE PROYECTOS TENDENTES A LA CONSECUCIÓN DE AHORRO Y LA EFICIENCIA ENERGÉTICAS Y EL DESARROLLO SOSTENIBLE. (35.14 Y 35.19; 42.22). -EL ESTUDIO, PROYECTO, ADQUISICIÓN, CESIÓN, ENAJENACIÓN, PROMOCIÓN, ASESORAMIENTO, ADMINISTRACIÓN, GESTIÓN O EXPLOTACIÓN DE SERVICIOS DE TRANSPORTES DE PASAJEROS Y MERCANCÍAS, INCLUYENDO LOS SERVICIOS DE TRANSPORTE SANITARIO DE ENFERMOS EN VEHÍCULOS ESPECIALMENTE ACONDICIONADOS AL EFECTO, DE CENTRALES DE TRANSPORTE DE CUALQUIER TIPO, AEROPUERTOS Y ESTACIONES PORTUARIAS, ASÍ COMO TODA CLASE DE SERVICIOS A LAS COMPAÑÍAS PRESTADORAS DE TRANSPORTES. GESTIÓN, EXPLOTACIÓN Y MANTENIMIENTO DE CUALQUIER TIPO DE APARCAMIENTOS, ASÍ COMO SERVICIO DE RETIRADA Y DEPÓSITO DE VEHÍCULOS. (49.31, 49.39 Y 49.41; 52.10, 52.21, 52.22, 52.23 Y 52.29). -GESTIÓN, EXPLOTACIÓN Y MANTENIMIENTO DE SERVICIOS DE ESTACIONAMIENTO O SERVICIO REGULADO EN LAS VÍAS PÚBLICAS BAJO CONTROL HORARIO. (80.10). -EL ESTUDIO, PROYECTO, ADQUISICIÓN, CESIÓN, ENAJENACIÓN, PROMOCIÓN, ASESORAMIENTO, ADMINISTRACIÓN, GESTIÓN O EXPLOTACIÓN DE NEGOCIOS RELACIONADOS CON LOS SERVICIOS DE LOGÍSTICA. (52.10 Y 52.29). -EL ESTUDIO, PROYECTO, ADQUISICIÓN, CESIÓN, ENAJENACIÓN, PROMOCIÓN, ASESORAMIENTO, ADMINISTRACIÓN, GESTIÓN O EXPLOTACIÓN DE NEGOCIOS RELACIONADOS CON TURISMO, DEPORTE Y OCIO. (79.12 Y 93.29). -EL ESTUDIO, PROYECTO, ADQUISICIÓN, CESIÓN, ENAJENACIÓN, PROMOCIÓN, ASESORAMIENTO, ADMINISTRACIÓN, GESTIÓN O EXPLOTACIÓN DE CEMENTERIOS Y TANATORIOS. (96.03). -EL ESTUDIO, PROYECTO, ADQUISICIÓN, CESIÓN, ENAJENACIÓN, PROMOCIÓN, ASESORAMIENTO, ADMINISTRACIÓN, GESTIÓN O EXPLOTACIÓN DE NEGOCIOS RELACIONADOS CON LOS SERVICIOS FINANCIEROS. (64.99). -LA PARTICIPACIÓN EN OTRAS SOCIEDADES Y EMPRESAS, NACIONALES O EXTRANJERAS, MEDIANTE LAS SUSCRIPCIÓN, ADQUISICIÓN, NEGOCIACIÓN Y TENENCIA DE ACCIONES, PARTICIPACIONES Y CUALESQUIERA OTROS TÍTULOS, YA SEAN DE RENTA FIJA O VARIABLE. EN NINGÚN CASO LA SOCIEDAD REALIZARÁ LAS ACTIVIDADES PROPIAS DE LAS SOCIEDADES E INSTITUCIONES DE INVERSIÓN COLECTIVA, REGULADAS POR LA LEY 35/2003 DE 4 DE NOVIEMBRE, DE INSTITUCIONES DE INVERSIÓN COLECTIVA. (64.20)",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06642",
+      "_links": {
+        "self": {
+          "name": "FCC MEDIO AMBIENTE, S.A.U.",
+          "href": "https://api.euskadi.eus/procurements/companies/06642"
+        }
+      }
+    },
+    {
+      "name": "AUDCON QUALITY, S.L.",
+      "registrationNumber": "09821",
+      "identificationNumber": "B95294872",
+      "address": "Calle Elcano (48011) Nº 5 - 1º IZQ",
+      "location": {
+        "postalCode": "48011",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.847",
+          "name": "Servicios de consultoría",
+          "_links": {
+            "self": {
+              "name": "Servicios de consultoría",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.847"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2024-09-25",
+      "certificateEndDate": "2025-03-24",
+      "object": "SERVICIOS FINANCIEROS Y CONTABLES. PRESTACIÓN DE SERVICIOS, EN PRINCIPIO A LAS EMPRESAS Y ORGANISMOS DE CONTABILIDAD, TENEDURÍA DE LIBROS, MATERIA FISCAL, ECONÓMICA Y FINANCIERA Y DE OTROS SERVICIOS INDEPENDIENTES DE ASESORÍA FISCAL Y CONTABLE. LLEVANZA DE LAS NÓMINAS, ALTA Y BAJA DE TRABAJADORES Y DEMÁS ASPECTOS SOCIO-LABORALES DE LAS EMPRESAS. LA REALIZACIÓN DE TRABAJOS Y EMISIÓN DE INFORMES DE AUDITORÍA, DE ACUERDO Y CON SUJECIÓN A LA NORMATIVA ESTABLECIDA EN EL TEXTO REFUNDIDO DE LA LEY DE AUDITORÍA DE CUENTAS APROBADA POR REAL DECRETO LEGISLATIVO 1/2011, DE 1 DE JULIO Y DE ACUERDO AL REGLAMENTO QUE DESARROLLA LA MISMA.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/09821",
+      "_links": {
+        "self": {
+          "name": "AUDCON QUALITY, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/09821"
+        }
+      }
+    },
+    {
+      "name": "VIEWNEXT, S.A.",
+      "registrationNumber": "02278",
+      "identificationNumber": "A80157746",
+      "address": "AVENIDA DE BURGOS, 8-A",
+      "location": {
+        "postalCode": "28036",
+        "municipality": "Madrid",
+        "county": "Madrid",
+        "municipalityId": "079",
+        "countyId": "28"
+      },
+      "economicActivities": [
+        {
+          "id": "1.845",
+          "name": "Explotación electrónica por cuenta de terceros",
+          "_links": {
+            "self": {
+              "name": "Explotación electrónica por cuenta de terceros",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.845"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2024-09-25",
+      "certificateEndDate": "2025-03-23",
+      "object": "El diseño desarrollo, gestión administración, integración, producción, mantenimiento, operación, reparación explotación y comercialización de sistemas de información, así como la utilización de Centros de Innovación tecnológica; la prestación de servicios y la explotación en los ámbitos de consultoría tecnológica; así como la externalización de las actividades anteriormente expuesta.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/02278",
+      "_links": {
+        "self": {
+          "name": "VIEWNEXT, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/02278"
+        }
+      }
+    },
+    {
+      "name": "OIHANA LOREA ZABALEGUI",
+      "registrationNumber": "09820",
+      "identificationNumber": "44627654H",
+      "address": "Calle Santa Maria 21, local 11, oficina 1",
+      "location": {
+        "postalCode": "31671",
+        "municipality": "Aribe",
+        "county": "Navarra",
+        "municipalityId": "034",
+        "countyId": "31"
+      },
+      "economicActivities": [
+        {
+          "id": "1.843.9",
+          "name": "Otros servicios técnicos n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros servicios técnicos n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.9"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2024-09-25",
+      "certificateEndDate": "2025-03-25",
+      "object": "OTROS SERVICIOS TÉCNICOS N.C.O.P.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/09820",
+      "_links": {
+        "self": {
+          "name": "OIHANA LOREA ZABALEGUI",
+          "href": "https://api.euskadi.eus/procurements/companies/09820"
+        }
+      }
+    },
+    {
+      "name": "ELEARNING SOLUTIONS, S.L.",
+      "registrationNumber": "09532",
+      "identificationNumber": "B91820472",
+      "address": "Calle Pedro Salinas 5, planta 1, oficina 9",
+      "location": {
+        "postalCode": "41013",
+        "municipality": "Sevilla",
+        "county": "Sevilla",
+        "municipalityId": "091",
+        "countyId": "41"
+      },
+      "economicActivities": [
+        {
+          "id": "1.999",
+          "name": "Otros servicios n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros servicios n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.999"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2024-09-25",
+      "certificateEndDate": "2025-03-16",
+      "object": "1.- ASESORAMIENTO, GESTIÓN, INSTALACIÓN Y MANTENIMIENTO DE REDES INFORMÁTICAS Y SOFTWARE DE GESTIÓN, ASÍ COMO LA OPTIMIZACIÓN Y PUESTA EN MARCHA DE RECURSOS INFORMÁTICOS DERIVADOS DE LAS NUEVAS TECNOLOGÍAS, TALES COMO PDAS Y REDES WIFI. 2.- ASESORAMIENTO TÉCNICO-INFORMÁTICO A EMPRESAS, PROFESIONALES Y PARTICULARES, ASÍ COMO GESTIÓN SOBRE EQUIPOS INFORMÁTICOS, TELEFONÍA MÓVIL, INTERNET Y COMUNICACIONES APLICADAS A LA GESTIÓN EMPRESARIAL. 3.- PROVEEDOR DE ACCESO Y SERVICIOS DE INTERNET. 4.- LA VENTA, AL POR MAYOR Y MENOR, DE EQUIPOS INFORMÁTICOS, ORDENADORES, PERIFÉRICOS, ACCESORIOS Y CONSUMIBLES, ASÍ COMO DE MOBILIARIO, MÁQUINAS Y EQUIPOS DE OFICINA. 5.- DESARROLLO, MANTENIMIENTO E INSTALACIÓN DE SISTEMAS DE TELEPROCESO, ESTO ES: TRANSMISIÓN DE DATOS, IMÁGENES E INFORMACIÓN POR VÍA DE REDES INFORMÁTICAS. 6.- CREACIÓN, COMERCIALIZACIÓN Y MANTENIMIENTO DE PROGRAMAS INFORMÁTICOS Y DE PÁGINAS WEB.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/09532",
+      "_links": {
+        "self": {
+          "name": "ELEARNING SOLUTIONS, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/09532"
+        }
+      }
+    },
+    {
+      "name": "IÑAKI HERVAS GOIRICELAYA",
+      "registrationNumber": "09818",
+      "identificationNumber": "78940066H",
+      "address": "Calle Mastizar (48630) 5",
+      "location": {
+        "postalCode": "48630",
+        "municipality": "Gorliz",
+        "county": "Bizkaia",
+        "municipalityId": "043",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "2.421",
+          "name": "Arquitectos técnicos y aparejadores",
+          "_links": {
+            "self": {
+              "name": "Arquitectos técnicos y aparejadores",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/2.421"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2024-09-24",
+      "certificateEndDate": "2025-03-20",
+      "object": "ARQUITECTOS TÉCNICOS Y APAREJADORES.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/09818",
+      "_links": {
+        "self": {
+          "name": "IÑAKI HERVAS GOIRICELAYA",
+          "href": "https://api.euskadi.eus/procurements/companies/09818"
+        }
+      }
+    },
+    {
+      "name": "SANTIAGO JESUS COUTO DEMETRIO",
+      "registrationNumber": "09284",
+      "identificationNumber": "04764755Y",
+      "address": "Ollerias Bajas 7 - 6D",
+      "location": {
+        "postalCode": "48006",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "2.774",
+          "name": "Traductores e intérpretes",
+          "_links": {
+            "self": {
+              "name": "Traductores e intérpretes",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/2.774"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2024-09-24",
+      "certificateEndDate": "2025-03-24",
+      "object": "TRADUCTORES E INTÉRPRETES.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/09284",
+      "_links": {
+        "self": {
+          "name": "SANTIAGO JESUS COUTO DEMETRIO",
+          "href": "https://api.euskadi.eus/procurements/companies/09284"
+        }
+      }
+    },
+    {
+      "name": "THE MAD PIXEL FACTORY, S.L.",
+      "registrationNumber": "07426",
+      "identificationNumber": "B82521519",
+      "address": "Calle Fuencarral 125, 2izq",
+      "location": {
+        "postalCode": "28010",
+        "municipality": "Madrid",
+        "county": "Madrid",
+        "municipalityId": "079",
+        "countyId": "28"
+      },
+      "economicActivities": [
+        {
+          "id": "1.845",
+          "name": "Explotación electrónica por cuenta de terceros",
+          "_links": {
+            "self": {
+              "name": "Explotación electrónica por cuenta de terceros",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.845"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2024-09-24",
+      "certificateEndDate": "2025-03-24",
+      "object": "A) CREACIÓN, PRODUCCION Y DISTRIBUCION DE DISEÑOS GRÁFICOS, ESPECIALMENTE PARA MULTIMEDIA E INTERNET, Y LOS ELEMENTOS MULTIMEDIA QUE LOS COMPONEN. B) CREACIÓN, PRODUCCIÓN Y DISTRIBUCIÓN DE PRODUCTOS Y SERVICIOS DE DISEÑO Y DESARROLLO DE APLICACIONES INFORMÁTICAS. C) CREACIÓN, PRODUCCIÓN Y DISTRIBUCIÓN DE PRODUCTOS Y SERVICIOS DE DISEÑO GRÁFICO Y EDITORIAL, MARKETING Y PUBLICIDAD",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07426",
+      "_links": {
+        "self": {
+          "name": "THE MAD PIXEL FACTORY, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/07426"
+        }
+      }
+    },
+    {
+      "name": "EDUARDO GARCIA DE VICUÑA ARRIETA",
+      "registrationNumber": "09817",
+      "identificationNumber": "44687178H",
+      "address": "C/ENTZIA Nº 5 3B",
+      "location": {
+        "postalCode": "01200",
+        "municipality": "Agurain/Salvatierra",
+        "county": "Araba/Álava",
+        "municipalityId": "051",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.502.2",
+          "name": "Consolidación y preparación de terrenos para la construcción de edificaciones",
+          "_links": {
+            "self": {
+              "name": "Consolidación y preparación de terrenos para la construcción de edificaciones",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.502.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2024-09-24",
+      "certificateEndDate": "2025-03-20",
+      "object": "CONSOLIDACIÓN Y PREPARACIÓN DE TERRENOS PARA LA CONSTRUCCIÓN DE EDIFICACIONES.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/09817",
+      "_links": {
+        "self": {
+          "name": "EDUARDO GARCIA DE VICUÑA ARRIETA",
+          "href": "https://api.euskadi.eus/procurements/companies/09817"
+        }
+      }
+    }
+  ]
+}

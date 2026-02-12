@@ -1,0 +1,392 @@
+{
+  "totalItems": 9042,
+  "totalPages": 905,
+  "currentPage": 877,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "name": "INICIATIVAS DE TECNOLOGIA Y SOSTENIBILIDAD SL",
+      "registrationNumber": "05136",
+      "identificationNumber": "B01411719",
+      "address": "Av.Bruselas 8 of.5",
+      "location": {
+        "postalCode": "01003",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.504.1",
+          "name": "Instalaciones eléctricas en general",
+          "_links": {
+            "self": {
+              "name": "Instalaciones eléctricas en general",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.504.1"
+            }
+          }
+        }
+      ],
+      "classification": [
+        {
+          "id": "O",
+          "name": "Obras",
+          "groups": [
+            {
+              "id": "I",
+              "name": "INSTALACIONES ELÉCTRICAS",
+              "subgroups": [
+                {
+                  "id": "09",
+                  "name": "Instalaciones eléctricas sin cualificación específica",
+                  "categories": [
+                    {
+                      "id": "3",
+                      "name": "Desde 360.001 Hasta 840.000",
+                      "_links": {
+                        "self": {
+                          "name": "Desde 360.001 Hasta 840.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/O/categories/3"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "Instalaciones eléctricas sin cualificación específica",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/O/groups/I/subgroups/09"
+                    }
+                  }
+                }
+              ],
+              "_links": {
+                "self": {
+                  "name": "INSTALACIONES ELÉCTRICAS",
+                  "href": "https://api.euskadi.eus/procurements/companies/types/O/groups/I"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Obras",
+              "href": "https://api.euskadi.eus/procurements/companies/types/O"
+            }
+          }
+        },
+        {
+          "id": "S",
+          "name": "Servicios",
+          "groups": [
+            {
+              "id": "P",
+              "subgroups": [
+                {
+                  "id": "01",
+                  "name": "Mantenimiento y reparación de equipos e instalaciones eléctricas y electrónicas",
+                  "categories": [
+                    {
+                      "id": "1",
+                      "name": "Desde 0 Hasta 150.000",
+                      "_links": {
+                        "self": {
+                          "name": "Desde 0 Hasta 150.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/S/categories/1"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "Mantenimiento y reparación de equipos e instalaciones eléctricas y electrónicas",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/P/subgroups/01"
+                    }
+                  }
+                }
+              ],
+              "_links": {
+                "self": {
+                  "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/P"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Servicios",
+              "href": "https://api.euskadi.eus/procurements/companies/types/S"
+            }
+          }
+        }
+      ],
+      "object": "PRODUCCIÓN, MONTAJE Y COMERCIALIZACIÓN DE ENERGÍAS RENOVABLES Y DE\nSUS INSTALACIONES.-PRODUCCIÓN, MONTAJE Y COMERCIALIZACIÓN DE ENERGÍAS\nRENOVABLES Y DE SUS INSTALACIONES, LACOMERCIALIZACIÓN, DISTRIBUCIÓN,\nINSTALACIÓN Y MANTENIMIENTO DE SISTEMAS DE GESTIÓN Y MONITORIZACIÓN\nORIENTADOS A LA GESTIÓN AMBIENTAL Y ENERGÉTICA. PRESTACIÓN DE SERVICIOS\nDECONSULTORIA. LA PROMOCIÓN Y PRESTACIÓN DE SERVICIOS DE FORMACIÓN\nRELACIONADOS CON LA EFICIENCIAENERGÉTICA.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/05136",
+      "_links": {
+        "self": {
+          "name": "INICIATIVAS DE TECNOLOGIA Y SOSTENIBILIDAD SL",
+          "href": "https://api.euskadi.eus/procurements/companies/05136"
+        }
+      }
+    },
+    {
+      "name": "IBON BELANDIA JUARISTI",
+      "registrationNumber": "05138",
+      "identificationNumber": "16090265V",
+      "address": "BARRIO ALDEKOANE",
+      "location": {
+        "postalCode": "48940",
+        "municipality": "Leioa",
+        "county": "Bizkaia",
+        "municipalityId": "054",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.961.1",
+          "name": "Producción de películas cinematográficas (incluso vídeos)",
+          "_links": {
+            "self": {
+              "name": "Producción de películas cinematográficas (incluso vídeos)",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.961.1"
+            }
+          }
+        }
+      ],
+      "object": "PRODUCCIÓN DE PELÍCULAS CINEMATOGRÁFICAS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/05138",
+      "_links": {
+        "self": {
+          "name": "IBON BELANDIA JUARISTI",
+          "href": "https://api.euskadi.eus/procurements/companies/05138"
+        }
+      }
+    },
+    {
+      "name": "ALAIBUS, S.L.",
+      "registrationNumber": "05144",
+      "identificationNumber": "B48485734",
+      "address": "Av.del Txorierri 46 Pol. Berreteaga 2 E",
+      "location": {
+        "postalCode": "48150",
+        "municipality": "Sondika",
+        "county": "Bizkaia",
+        "municipalityId": "904",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.721.3",
+          "name": "Transporte de viajeros por carretera",
+          "_links": {
+            "self": {
+              "name": "Transporte de viajeros por carretera",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.721.3"
+            }
+          }
+        }
+      ],
+      "object": "La sociedad tiene por objeto , la actividad de transportes en general , pudiendo explotar líneas regulares y discrecionales de ámbito internacional , nacional , comarcal , provincial y local , así como el establecimiento y explotación de agencias de transporte , aparcamientos , garajes , centros de estaciones de servicios o de asistencia a vehículos.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/05144",
+      "_links": {
+        "self": {
+          "name": "ALAIBUS, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/05144"
+        }
+      }
+    },
+    {
+      "name": "IRATZE LORAZAINTZA, S.L.",
+      "registrationNumber": "05157",
+      "identificationNumber": "B75059980",
+      "address": "Argoin, 3",
+      "location": {
+        "postalCode": "20270",
+        "municipality": "Anoeta",
+        "county": "Gipuzkoa",
+        "municipalityId": "010",
+        "countyId": "20"
+      },
+      "classification": [
+        {
+          "id": "S",
+          "name": "Servicios",
+          "groups": [
+            {
+              "id": "O",
+              "subgroups": [
+                {
+                  "id": "06",
+                  "name": "Conservación y mantenimiento de montes y jardines",
+                  "categories": [
+                    {
+                      "id": "3",
+                      "name": "Desde 300.001 Hasta 600.000",
+                      "_links": {
+                        "self": {
+                          "name": "Desde 300.001 Hasta 600.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/S/categories/3"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "Conservación y mantenimiento de montes y jardines",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/O/subgroups/06"
+                    }
+                  }
+                }
+              ],
+              "_links": {
+                "self": {
+                  "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/O"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Servicios",
+              "href": "https://api.euskadi.eus/procurements/companies/types/S"
+            }
+          }
+        }
+      ],
+      "object": "-",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/05157",
+      "_links": {
+        "self": {
+          "name": "IRATZE LORAZAINTZA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/05157"
+        }
+      }
+    },
+    {
+      "name": "LURBETA, S.L.",
+      "registrationNumber": "05166",
+      "identificationNumber": "B95728200",
+      "address": "Barrio Orozketa, s/n",
+      "location": {
+        "postalCode": "48215",
+        "municipality": "Iurreta",
+        "county": "Bizkaia",
+        "municipalityId": "910",
+        "countyId": "48"
+      },
+      "object": "-",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/05166",
+      "_links": {
+        "self": {
+          "name": "LURBETA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/05166"
+        }
+      }
+    },
+    {
+      "name": "TELYRED 2004, S.L.",
+      "registrationNumber": "05170",
+      "identificationNumber": "B95346623",
+      "address": "Mateo Bidaurrazaga, 4 Lonja",
+      "location": {
+        "postalCode": "48150",
+        "municipality": "Sondika",
+        "county": "Bizkaia",
+        "municipalityId": "904",
+        "countyId": "48"
+      },
+      "object": "-",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/05170",
+      "_links": {
+        "self": {
+          "name": "TELYRED 2004, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/05170"
+        }
+      }
+    },
+    {
+      "name": "ISLA GRÚAS, S.L.",
+      "registrationNumber": "05172",
+      "identificationNumber": "B95018875",
+      "address": "c/ Lezeaga, 16 - 6º D",
+      "location": {
+        "postalCode": "48002",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "object": "-",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/05172",
+      "_links": {
+        "self": {
+          "name": "ISLA GRÚAS, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/05172"
+        }
+      }
+    },
+    {
+      "name": "ACTUACIONES CULTURALES ESTRATÉGICAS 4, S.L.",
+      "registrationNumber": "05174",
+      "identificationNumber": "B95744710",
+      "address": "Fernández del Campo, 7 - 2º Iz.",
+      "location": {
+        "postalCode": "48010",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "object": "-",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/05174",
+      "_links": {
+        "self": {
+          "name": "ACTUACIONES CULTURALES ESTRATÉGICAS 4, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/05174"
+        }
+      }
+    },
+    {
+      "name": "JOSÉ ALTUNA MENDIZABAL",
+      "registrationNumber": "05178",
+      "identificationNumber": "15913617D",
+      "address": "Casa Irubide, s/n",
+      "location": {
+        "postalCode": "20130",
+        "municipality": "Urnieta",
+        "county": "Gipuzkoa",
+        "municipalityId": "072",
+        "countyId": "20"
+      },
+      "object": "transporte viajeros por carretera",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/05178",
+      "_links": {
+        "self": {
+          "name": "JOSÉ ALTUNA MENDIZABAL",
+          "href": "https://api.euskadi.eus/procurements/companies/05178"
+        }
+      }
+    },
+    {
+      "name": "UR GARDENA, S.L.",
+      "registrationNumber": "05190",
+      "identificationNumber": "B95494373",
+      "address": "REGALES Nº 38 3º DCHA",
+      "location": {
+        "postalCode": "48980",
+        "municipality": "Santurtzi",
+        "county": "Bizkaia",
+        "municipalityId": "082",
+        "countyId": "48"
+      },
+      "object": "servicio de limpieza y recogida de basuras",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/05190",
+      "_links": {
+        "self": {
+          "name": "UR GARDENA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/05190"
+        }
+      }
+    }
+  ]
+}

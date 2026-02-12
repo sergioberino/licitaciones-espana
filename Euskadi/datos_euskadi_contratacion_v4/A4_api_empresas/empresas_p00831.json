@@ -1,0 +1,398 @@
+{
+  "totalItems": 9042,
+  "totalPages": 905,
+  "currentPage": 831,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "name": "TEXTIL CANO Y SEGURA, S.A.",
+      "registrationNumber": "01050",
+      "identificationNumber": "A08906943",
+      "address": "C/ INDUSTRIA, S/N - POL. IND. CAN COLL",
+      "location": {
+        "postalCode": "08185",
+        "municipality": "Lliçà de Vall",
+        "county": "Barcelona",
+        "municipalityId": "108",
+        "countyId": "08"
+      },
+      "economicActivities": [
+        {
+          "id": "1.431.3",
+          "name": "Tejido de algodón y sus mezclas",
+          "_links": {
+            "self": {
+              "name": "Tejido de algodón y sus mezclas",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.431.3"
+            }
+          }
+        },
+        {
+          "id": "1.436",
+          "name": "Acabado de textiles",
+          "_links": {
+            "self": {
+              "name": "Acabado de textiles",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.436"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "1998-12-14",
+      "certificateEndDate": "1999-05-23",
+      "object": "LA FABRICACIÓN, REPRESENTACIÓN, IMPORTACIÓN, EXPORTACIÓN, COMPRA Y VENTA, MANIPULACIÓN, CONFECCIÓN, MANUFACTURACIÓN Y COMERCIALIZACIÓN DE TODA CLASE DE PRODUCTOS, PRENDAS TEXTILES Y TEJIDOS, EN GENERAL, ASÍ COMO HILADOS DE CÁÑAMO, ABACA, SISAL, COCO, ALGODÓN, LANA, LINO Y CUALQUIER OTRO HILADO DE CUALQUIER CLASE DE FIBRA NATURAL, SINTÉTICA O SEMISINTÉTICA, FABRICACIÓN DE REDES, BORDADOS, TORCIDOS Y CORDELERÍA, ASÍ COMO SU PLEGADO, EMPAPELADO, ACANADO, ESTAMPADO, TINTE, APRESTOS, BLANQUEO Y CUANTAS OPERACIONES Y ACTIVIDADES SE RELACIONAN CON LA INDUSTRIA TEXTIL, SU MAQUINARIA, ACCESORIOS Y ELEMENTOS RELACIONADOS CON LA MISMA. LA CONTRATACIÓN, ADQUISICIÓN Y COMERCIALIZACIÓN DE TODA CLASE DE BIENES INMUEBLES, EDIFICADOS O NO. LA PROMOCIÓN INMOBILIARIA, EFECTUANDO LOS PROYECTOS DE URBANIZACIÓN Y EJECUCIÓN DE PLANES, EN LA FORMA INDICADA EN LA LEY DEL SUELO Y LEGISLACIÓN CONCORDANTE, Y ESPECIALMENTE EN LO QUE SE REFIERE A PLANES ESPECIALES DE REFORMA INTERIOR, PLANES PARCIALES, PLANES ESPECIALES Y CUALQUIER OTRO QUE SE CONTENGA EN LA LEGISLACIÓN ESPECIAL, POR CUALESQUIERA DE LOS SISTEMAS DE ACTUACIÓN, BIEN SEA DE COOPERACIÓN O COMPENSACIÓN, REALIZANDO PARCELACIONES Y/O REPARCELACIONES. PUDIENDO REALIZAR PARA EL CUMPLIMIENTO DE TAL OBJETO LA ACTIVIDAD DE CONSTRUCCIÓN POR SÍ O POR MEDIO DE TERCERO. LA PARTICIPACIÓN EN CUALQUIER TIPO DE SOCIEDADES, TENGAN O NO IGUAL O ANÁLOGO OBJETO SOCIAL, TANTO DE NACIONALIDAD ESPAÑOLA COMO EXTRANJERA; ASÍ COMO EN UNIONES Y CONCENTRACIONES DE EMPRESAS EN LOS TÉRMINOS ESTABLECIDOS EN LA LEY Y EN EL CONVENIO DE UNIÓN O CONCENTRACIÓN. LA ADMINISTRACIÓN DE BIENES AJENOS Y LA MEDIACIÓN, MANDATO Y REPRESENTACIÓN, CONTRATANDO EN NOMBRE PROPIO O EN EL DEL COMITENTE O MANDANTE, PUDIENDO EFECTUARLO TAMBIÉN, SI PROCEDIERE, BAJO LA FIGURA DE LA AUTOCONTRATACIÓN, EXCEPTUANDO LAS ACTIVIDADES DE MEDIACIÓN SUJETAS A NORMATIVA ESPECIAL",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/01050",
+      "_links": {
+        "self": {
+          "name": "TEXTIL CANO Y SEGURA, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/01050"
+        }
+      }
+    },
+    {
+      "name": "OHMEDA, S.A.",
+      "registrationNumber": "00190",
+      "identificationNumber": "A28039154",
+      "address": "MANUEL TOVAR, 26. POLIGONO INDUSTRIAL FUENCARRAL",
+      "location": {
+        "postalCode": "28034",
+        "municipality": "Madrid",
+        "county": "Madrid",
+        "municipalityId": "079",
+        "countyId": "28"
+      },
+      "economicActivities": [
+        {
+          "id": "1.619.2",
+          "name": "Venta al por mayor de aparatos e instrumentos médicos, ortopédicos, ópticos",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de aparatos e instrumentos médicos, ortopédicos, ópticos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.619.2"
+            }
+          }
+        },
+        {
+          "id": "1.654.5",
+          "name": "Venta al por menor de toda clase de maquinaría",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de toda clase de maquinaría",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.654.5"
+            }
+          }
+        },
+        {
+          "id": "1.699",
+          "name": "Otras reparaciones n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otras reparaciones n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.699"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "1998-12-11",
+      "certificateEndDate": "1998-09-30",
+      "object": "VENTA Y SERVICIO DE ASISTENCIA TECNICA DE EQUIPOS MEDICOS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/00190",
+      "_links": {
+        "self": {
+          "name": "OHMEDA, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/00190"
+        }
+      }
+    },
+    {
+      "name": "SEPROVE - IRU, S.L.",
+      "registrationNumber": "02075",
+      "identificationNumber": "B20597969",
+      "address": "C/ ATXURI, Nº 1 - BAJO.",
+      "location": {
+        "postalCode": "20590",
+        "municipality": "Soraluze-Placencia de las Armas",
+        "county": "Gipuzkoa",
+        "municipalityId": "065",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.619.7",
+          "name": "Venta al por mayor de instrumentos de precisión, medida y similares",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de instrumentos de precisión, medida y similares",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.619.7"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "1998-12-02",
+      "certificateEndDate": "1999-05-06",
+      "object": "LA COMERCIALIZACIÓN DE ELEMENTOS DE VERIFICACIÓN Y CONTROL (METROLOGÍA) DE ELEMENTOS DE AIRE, ATORNILLADORES, PISTOLAS, LIJADORES, LIMPIADORES, SOPLETES, AMOLADORAS, EQUILIBRADORES.\r\nSELECCIÓN Y EMPAQUETADO DE \"PIEZAS\" (ARTÍCULO) DE TORNILLERÍA PARA LA AUTOMOCIÓN Y AUXILIADORES DEL MISMO.\r\nREPRESENTACIÓN DE DIFERENTES ARTÍCULOS DE CONSTRUCCIÓN, FERRETERÍA, SUMINISTROS INDUSTRIALES.\r\nCOMPRA Y VENTA DE ARTÍCULOS DE TORNILLERÍA.\r\nMONTAJE DE APARATOS ESPRIMIDORES DE FRUTAS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/02075",
+      "_links": {
+        "self": {
+          "name": "SEPROVE - IRU, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/02075"
+        }
+      }
+    },
+    {
+      "name": "SERVICIOS DEPORTIVOS SUSTRAIAK, S.L.",
+      "registrationNumber": "01942",
+      "identificationNumber": "B48904429",
+      "address": "C/ JULIAN GAIARRE, 50",
+      "location": {
+        "postalCode": "48004",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.967.2",
+          "name": "Escuelas y servicios de perfeccionamiento del deporte",
+          "_links": {
+            "self": {
+              "name": "Escuelas y servicios de perfeccionamiento del deporte",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.967.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "1998-11-27",
+      "certificateEndDate": "1999-05-19",
+      "object": "\r\n- SERVICIOS DE MANTENIMIENTO DE TODA CLASE DE INSTALACIONES DEPORTIVAS.\r\n- SERVICIOS DE ENSEÑANZA EN TEMAS DEPORTIVOS Y ASESORAMIENTO Y PRESTACIÓN DE SERVICIOS. ENSEÑANZA A TODA CLASE DE PERSONAS FÍSICAS O JURÍDICAS, INDIVIDUAL O COLECTIVAMENTE Y EN GENERAL, A TODO CUANTO SEA AUXILIAR, ACCESORIO, CONSECUENCIA, O SE RELACIONE DIRECTA O INDIRECTAMENTE CON EL DEPORTE.\r\n- PRESTACIÓN DE SERVICIOS DEPORTIVOS DE TODA ÍNDOLE.\r\n- SERVICIOS DE ORGANIZACIÓN DE EMPRESA, DE ASESORAMIENTO CONTABLE, DE PUBLICIDAD, DE ASESORAMIENTO Y ASISTENCIA PARA LA ORGANIZACIÓN O LA DIRECCIÓN DE NEGOCIOS, ASÍ COMO DE CONSULTING PARA LA DIRECCIÓN DE NEGOCIOS, DE RELACIONES PÚBLICAS Y VERIFICACIÓN DE LISTADOS.\r\n- SERVICIOS DE LIMPIEZA INDUSTRIAL Y LAVANDERÍA.\r\n- SERVICIOS DE PERITACIONES.\r\n- SEGUROS.\r\n- SERVICIOS DE CONSTRUCCIÓN, REPARACIÓN Y MANTENIMIENTO DE EDIFICIOS.\r\n- CONSTRUCCIÓN Y REPARACIÓN DE MAQUINARIA EN GENERAL.\r\n- SUMINISTROS DE MAQUINARIA, HERRAMIENTA Y MATERIAL INDUSTRIAL Y DE CONSTRUCCIÓN.\r\n- SERVICIOS DE INTERIORISMO Y DECORACIÓN, IMAGEN CORPORATIVA.\r\n- REPRESENTACIONES COMERCIALES DE TODA ÍNDOLE MERCANTIL.\r\n- TRABAJOS DE MECANOGRAFIADO Y SIMILARES.\r\n- ASESORAMIENTO, CONSULTING Y ESTRATEGIA DE GESTIÓN DEPORTIVA A EMPRESAS Y ORGANISMOS PÚBLICOS Y/O PRIVADOS, INCLUSO MUTUALIDADES DEPORTIVAS, EN MATERIA DEPORTIVA.\r\n- AGENCIA DE TRANSPORTES, DESPLAZAMIENTOS COLECTIVOS, ALOJAMIENTO Y HOSPEDAJE, SERVICIOS HOSTELEROS.\r\n-SERVICIOS DE VIGILANCIA PERSONAS E INSTALACIONES, RECINTOS DEPORTIVOS, GUARDIAS JURADOS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/01942",
+      "_links": {
+        "self": {
+          "name": "SERVICIOS DEPORTIVOS SUSTRAIAK, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/01942"
+        }
+      }
+    },
+    {
+      "name": "FERNÁNDEZ CONSTRUCTOR, S.A. UNIPERSONAL",
+      "registrationNumber": "02071",
+      "identificationNumber": "A28085009",
+      "address": "C/ ALCALÁ, Nº 81 - 2º",
+      "location": {
+        "postalCode": "28009",
+        "municipality": "Madrid",
+        "county": "Madrid",
+        "municipalityId": "079",
+        "countyId": "28"
+      },
+      "economicActivities": [
+        {
+          "id": "1.507",
+          "name": "Construcción, reparación y conservación de toda clase obras",
+          "_links": {
+            "self": {
+              "name": "Construcción, reparación y conservación de toda clase obras",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.507"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "1998-11-26",
+      "certificateEndDate": "1999-04-19",
+      "object": "a) LA REDACCIÓN DE PROYECTOS, CONSTRUCCIÓN Y REALIZACIÓN DE TODA CLASE DE OBRAS PÚBLICAS O PRIVADAS, YA SEAN INDUSTRIALES, AGRÍCOLAS, DE INGENIERÍA CIVIL, VÍAS FÉRREAS Y CARRETERAS, INCLUSO SU ASFALTADO Y PAVIMENTACIÓN. b) LA REALIZACIÓN DE TODA CLASE DE TRANSPORTES, YA SEA COMO EXPLOTACIONES DE CONCESIONES REGULARES O DISCRECIONALES, CUMPLIENDO LOS REQUISITOS Y DISPOSICIONES LEGALES APLICABLES. c) LA COMPRA, VENTA, ALQUILER, IMPORTACIÓN Y EXPORTACIÓN DE MATERIALES, VEHÍCULOS Y MAQUINARIA DE OBRA O CONSTRUCCIÓN d) LA SUSCRIPCIÓN, LA ADQUISICIÓN, TENENCIA Y ENAJENACIÓN DE ACCIONES Y PARTICIPACIONES EN EL ACTIVO DE SOCIEDADES DE TODA CLASE, YA SEAN CIVILES O MERCANTILES, Y TODO ELLO POR CUENTA PROPIA, Y CON EXCLUSIÓN DE LAS ACTIVIDADES REGULADAS POR LA LEY DE INSTITUCIONES DE INVERSIÓN COLECTIVA Y MERCADO DE VALORES",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/02071",
+      "_links": {
+        "self": {
+          "name": "FERNÁNDEZ CONSTRUCTOR, S.A. UNIPERSONAL",
+          "href": "https://api.euskadi.eus/procurements/companies/02071"
+        }
+      }
+    },
+    {
+      "name": "BOUREAU-INFO, S.L.",
+      "registrationNumber": "01916",
+      "identificationNumber": "B02141976",
+      "address": "C/ HELIODORO DE LA TORRE, Nº 2",
+      "location": {
+        "postalCode": "48014",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.617.8",
+          "name": "Venta al por mayor de máquinas y material de oficina",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de máquinas y material de oficina",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.617.8"
+            }
+          }
+        },
+        {
+          "id": "1.619.5",
+          "name": "Venta al por mayor de artículos de papelería y escritorios",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de artículos de papelería y escritorios",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.619.5"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "1998-11-25",
+      "certificateEndDate": "1999-05-06",
+      "object": "LA COMPRAVENTA AL POR MAYOR Y MENOR DE ARTÍCULOS PARA OFICINA, ESCRITURA Y PAPELERÍA",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/01916",
+      "_links": {
+        "self": {
+          "name": "BOUREAU-INFO, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/01916"
+        }
+      }
+    },
+    {
+      "name": "LIMPIEZAS ORME, S.L.",
+      "registrationNumber": "01623",
+      "identificationNumber": "B48665459",
+      "address": "AVDA. LEHENDAKARI AGUIRRE, Nº 139 - TRASERA",
+      "location": {
+        "postalCode": "48015",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.922",
+          "name": "Servicios de limpieza",
+          "_links": {
+            "self": {
+              "name": "Servicios de limpieza",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.922"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "1998-11-20",
+      "certificateEndDate": "1999-05-17",
+      "object": "LA LIMPIEZA INTEGRAL Y MANTENIMIENTO DE TODO TIPO DE LOCALES, OFICINAS COMERCIALES, JARDINES Y ELEMENTOS DE COMUNIDADES DE PROPIETARIOS, EDIFICIOS COMERCIALES, VIVIENDAS Y FÁBRICAS. LA DESINFECCIÓN, DESINSECTACIÓN Y DESRATIZACIÓN DE TODO TIPO DE LOCALES, OFICINAS COMERCIALES, JARDINES Y ELEMENTOS DE COMUNIDADES DE PROPIETARIOS, EDIFICIOS COMERCIALES, VIVIENDAS Y FÁBRICAS. EL PULIDO Y ABRILLANTADO DE SUELOS. LA LIMPIEZA Y RESTAURACIÓN DE FACHADAS EN GENERAL",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/01623",
+      "_links": {
+        "self": {
+          "name": "LIMPIEZAS ORME, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/01623"
+        }
+      }
+    },
+    {
+      "name": "SELE DIGITAL, S.A.",
+      "registrationNumber": "02070",
+      "identificationNumber": "A48309520",
+      "address": "C/ MONCADA, Nº 1 - 1º.",
+      "location": {
+        "postalCode": "48002",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.475",
+          "name": "Actividades anexas a las artes gráficas",
+          "_links": {
+            "self": {
+              "name": "Actividades anexas a las artes gráficas",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.475"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "1998-11-20",
+      "certificateEndDate": "1999-04-22",
+      "object": "LA FOTO REPRODUCCIÓN INDUSTRIAL, LA FOTOMECÁNICA Y LA AUTOEDICIÓN POR CUALQUIER MÉTODO O PROCEDIMIENTO TECNOLÓGICO ACTUAL O FUTURO",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/02070",
+      "_links": {
+        "self": {
+          "name": "SELE DIGITAL, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/02070"
+        }
+      }
+    },
+    {
+      "name": "COMERCIAL OFICINAS DEL NORTE, S.A.L.",
+      "registrationNumber": "01984",
+      "identificationNumber": "A48624886",
+      "address": "C/ BLAS DE OTERO, Nº 47 - LONJA",
+      "location": {
+        "postalCode": "48014",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.659.2",
+          "name": "Venta al por menor de muebles de oficina y máquinas y equipos de oficina",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de muebles de oficina y máquinas y equipos de oficina",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.659.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "1998-11-19",
+      "certificateEndDate": "1999-05-09",
+      "object": "LA COMPRA-VENTA DE MOBILIARIO, MÁQUINAS Y SUMINISTROS DE OFICINA",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/01984",
+      "_links": {
+        "self": {
+          "name": "COMERCIAL OFICINAS DEL NORTE, S.A.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/01984"
+        }
+      }
+    },
+    {
+      "name": "JEFEDA, S.L.",
+      "registrationNumber": "00157",
+      "identificationNumber": "B26011007",
+      "address": "POL. ENTREVIÑAS, S/N",
+      "location": {
+        "postalCode": "26580",
+        "municipality": "Arnedo",
+        "county": "Rioja, La",
+        "municipalityId": "018",
+        "countyId": "26"
+      },
+      "economicActivities": [
+        {
+          "id": "1.451",
+          "name": "Fabricación en serie de calzado",
+          "_links": {
+            "self": {
+              "name": "Fabricación en serie de calzado",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.451"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "1998-11-18",
+      "certificateEndDate": "1999-05-10",
+      "object": "FABRICACIÓN DE CALZADO Y SUS DERIVADOS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/00157",
+      "_links": {
+        "self": {
+          "name": "JEFEDA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/00157"
+        }
+      }
+    }
+  ]
+}

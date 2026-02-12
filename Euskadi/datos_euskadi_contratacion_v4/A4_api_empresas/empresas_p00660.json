@@ -1,0 +1,408 @@
+{
+  "totalItems": 9042,
+  "totalPages": 905,
+  "currentPage": 660,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "name": "CONSTRUCCIONES JC MENDIOLA S.L.",
+      "registrationNumber": "05037",
+      "identificationNumber": "B75057620",
+      "address": "C/ LABEAGA 07, BAJO",
+      "location": {
+        "postalCode": "20700",
+        "municipality": "Urretxu",
+        "county": "Gipuzkoa",
+        "municipalityId": "077",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.501.1",
+          "name": "Construcción completa, reparación y conservación de edificaciones",
+          "_links": {
+            "self": {
+              "name": "Construcción completa, reparación y conservación de edificaciones",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.1"
+            }
+          }
+        },
+        {
+          "id": "1.501.2",
+          "name": "Construcción completa, reparación y conservación obras civiles",
+          "_links": {
+            "self": {
+              "name": "Construcción completa, reparación y conservación obras civiles",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2015-05-19",
+      "certificateEndDate": "2015-04-15",
+      "object": "EL NEGOCIO DE CONSTRUCCIÓN DE OBRAS PÚBLICAS Y PRIVADAS, MEDIANTE CONTRATA CON LA ADMINISTRACIÓN DEL ESTADO, PROVINCIA, MUNICIPIO, ORGANISMOS PÚBLICOS, ENTIDADES PRIVADAS Y PARTICULARES, LA EJECUCIÓN DE OBRA PROPIA, BIEN POR EJECUCIÓN DIRECTO O MEDIANTE CONTRATA, TANTO LA ACOGIDA AL RÉGIMEN DE VIVIENDAS DE PROTECCIÓN OFICIAL EN SUS VARIAS MODALIDADES, COMO DE OTRA CLASE, PARA SU VENTA O APROVECHAMIENTO DIRECTOS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/05037",
+      "_links": {
+        "self": {
+          "name": "CONSTRUCCIONES JC MENDIOLA S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/05037"
+        }
+      }
+    },
+    {
+      "name": "ENRIMAT-TRANS, S.L.",
+      "registrationNumber": "04009",
+      "identificationNumber": "B95549317",
+      "address": "BIZKARGI, 22-5º. IZQ. B",
+      "location": {
+        "postalCode": "48002",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.722",
+          "name": "Transporte de mercancías por carretera",
+          "_links": {
+            "self": {
+              "name": "Transporte de mercancías por carretera",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.722"
+            }
+          }
+        },
+        {
+          "id": "1.756",
+          "name": "Intermediarios del transporte",
+          "_links": {
+            "self": {
+              "name": "Intermediarios del transporte",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.756"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2015-05-14",
+      "certificateEndDate": "2015-08-25",
+      "object": "EL TRANSPORTE DE MERCANCÍAS, PEQUEÑA PAQUETERÍA Y OTROS SERVICIOS SIMILARES",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/04009",
+      "_links": {
+        "self": {
+          "name": "ENRIMAT-TRANS, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/04009"
+        }
+      }
+    },
+    {
+      "name": "UNIFY COMMUNICATIONS, S.A.",
+      "registrationNumber": "03338",
+      "identificationNumber": "A84809953",
+      "address": "P.E. OMEGA. Avda. de Barajas, 34-1º",
+      "location": {
+        "postalCode": "28108",
+        "municipality": "Alcobendas",
+        "county": "Madrid",
+        "municipalityId": "006",
+        "countyId": "28"
+      },
+      "economicActivities": [
+        {
+          "id": "1.615.4",
+          "name": "Venta al por mayor de aparatos y material radioeléctrico y electrónico",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de aparatos y material radioeléctrico y electrónico",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.615.4"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2015-05-06",
+      "certificateEndDate": "2015-10-07",
+      "object": "LA INVESTIGACIÓN, DESARROLLO, FABRICACIÓN, COMERCIALIZACIÓN Y PRESTACIÓN DE CUALQUIER CLASE DE SERVICIOS Y ACTIVIDADES RELACIONADOS CON: LA ELECTRICIDAD, LA ELECTROTECNIA, ELECTRÓNICA Y LAS TÉCNICAS Y PROCESOS DE LA INFORMACIÓN Y LAS COMUNICACIONES EN SUS DIVERSOS ÁMBITOS Y APLICACIONES, INCLUYENDO OBRA CIVIL E INFRAESTRUCTURAS ASOCIADAS, ASÍ COMO SEGURIDAD FÍSICA Y LÓGICA. LA REALIZACIÓN DE DICHOS SERVICIOS ABARCA LA CONSULTORÍA, INGENIERÍA BÁSICA, DISEÑO E INGENIERÍA DE DETALLE, IMPLANTACIÓN, INSTALACIÓN, MANTENIMIENTO, OPERACIÓN, \" OUTSOURCING\", RECICLAJE Y FORMACIÓN",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03338",
+      "_links": {
+        "self": {
+          "name": "UNIFY COMMUNICATIONS, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/03338"
+        }
+      }
+    },
+    {
+      "name": "SEGURIDAD LPM, S.L.",
+      "registrationNumber": "04301",
+      "identificationNumber": "B60232709",
+      "address": "C/SANTA EULALIA, Nº 10",
+      "location": {
+        "postalCode": "08902",
+        "municipality": "Barcelona",
+        "county": "Barcelona",
+        "municipalityId": "019",
+        "countyId": "08"
+      },
+      "economicActivities": [
+        {
+          "id": "1.849.4",
+          "name": "Servicios de custodia, seguridad y protección",
+          "_links": {
+            "self": {
+              "name": "Servicios de custodia, seguridad y protección",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.849.4"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2015-05-06",
+      "certificateEndDate": "2015-10-10",
+      "object": "LA PRESTACIÓN DE SERVICIOS DE: A) VIGILANCIA, PROTECCIÓN DE BIENES, ESTABLECIMIENTOS, ESPECTÁCULOS, CERTÁMENES O CONVENCIONES. B) PROTECCIÓN DE PERSONAS DETERMINADAS, PREVIA LA AUTORIZACIÓN CORREPSONDIENTE. C) DEPÓSITO, CUSTODIA, RECUENTO Y CLASIFICACIÓN DE MONEDAS Y BILLETES, TÍTULOS-VALORES Y DEMÁS OBJETOS QUE, POR SU VALOR ECON´MICO Y EXPECTATIVAS QUE GENEREN O POR SU PELIGROSIDAD, PUEDAN REQUERIR PROTECCIÓN ESPECIAL, SIN PERJUICIO DE LAS ACTIVIDADES PROPIAS DE LAS ENTIDADES FINANCIERAS. D) TRANSPORTE Y DISTRIBUCIÓN DE LOS OBJETOS A QUE SE REFIERE EL APARTADO ANTERIOR A TRAVÉS DE LOS DISTINTOS MEDIOS, REALIZÁNDOLOS EN SU CASO, MEDIANTE VEHÍCULOS CUYAS CARACTERÍSTICAS SERÁN DETERMINADAS POR EL MINISTERIO DEL INTERIOR, DE FORMA QUE NO PUEDAN CONFUNDIRSE CON LOS DE LAS FUERZAS ARMADAS NI CON LOS DE LAS FUERZAS Y CUERPOS DE SEGURIDAD. E) INSTALACIÓN Y MANTENIMIENTO DE APARATOS, DISPOSITIVOS Y SISTEMAS DE SEGURIDAD. F) EXPLOTACIÓN DE CENTRALES PARA LA RECEPCIÓN, VERIFICACIÓN Y TRANSMISIÓN DE LAS SEÑALES DE ALARMAS Y SU COMUNICACIÓN A LAS FUERZAS Y CUERPOS DE SEGURIDAD, ASÍ COMO PRESTACIÓN DE SERVICIOS DE RESPUESTA CUYA REALIZACIÓN NO SEA DE LA COMPETENCIA DE DICHAS FUERZAS Y CUERPOS. G) PLANIFICACIÓN Y ASESORAMIENTO DE LAS ACTIVIDADES DE SEGURIDAD CONTEMPLADAS EN ESTA LEY",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/04301",
+      "_links": {
+        "self": {
+          "name": "SEGURIDAD LPM, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/04301"
+        }
+      }
+    },
+    {
+      "name": "ODEI INDUSTRIAL, S.L.",
+      "registrationNumber": "00424",
+      "identificationNumber": "A48200166",
+      "address": "IBERRE, 2 - A",
+      "location": {
+        "postalCode": "48600",
+        "municipality": "Sopela",
+        "county": "Bizkaia",
+        "municipalityId": "085",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.316.9",
+          "name": "Fabricación de otros artículos acabados en metales n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Fabricación de otros artículos acabados en metales n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.316.9"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2015-05-04",
+      "certificateEndDate": "2015-09-23",
+      "object": " LA COMPRA, VENTA, COMERCIALIZACION, DISTRIBUCION, IMPORTACION Y EXPORTACION, CONSTRUCCION Y ELABORACION DE TODO TIPO DE PRODUCTOS Y BIENES RELACIONADOS CON LA INDUSTRIA EN GENERAL Y EN CONCRETO CON LAS RAMAS DE LA INDUSTRIA HOSPITALARIA Y DE LA ELECTRICIDAD Y COMPONENTES ELECTRONICOS EN PARTICULAR, DENTRO DE CUYO MARCO PODRA POR CUENTA PROPIA O DE UN TERCERO, CONSTRUIR Y CONTRATAR TODO TIPO DE INSTALACIONES,",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/00424",
+      "_links": {
+        "self": {
+          "name": "ODEI INDUSTRIAL, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/00424"
+        }
+      }
+    },
+    {
+      "name": "CÍA. DE AUTOBUSES PINEDO, S.A.",
+      "registrationNumber": "04445",
+      "identificationNumber": "A01002237",
+      "address": "PORTAL DE GAMARRA, 11",
+      "location": {
+        "postalCode": "01013",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.721.3",
+          "name": "Transporte de viajeros por carretera",
+          "_links": {
+            "self": {
+              "name": "Transporte de viajeros por carretera",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.721.3"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2015-05-02",
+      "certificateEndDate": "2015-11-02",
+      "object": "LA EXPLOTACIÓN DE LÍNEAS DE AUTOBUSES Y TRANSPORTE DE PERSONAS Y MERCANCÍAS, ASÍ COMO CUALQUIER OTRA ACTIVIDAD RELACIONADA CON EL RAMO DEL AUTOMOVILISMO, JUNTAMENTE CON LA REALIZACIÓN DE CUANTOS ACTOS Y CONTRATOS INTERESEN A LOS FINES ALUDIDOS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/04445",
+      "_links": {
+        "self": {
+          "name": "CÍA. DE AUTOBUSES PINEDO, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/04445"
+        }
+      }
+    },
+    {
+      "name": "ASIER AJURIA URIGÜEN",
+      "registrationNumber": "05349",
+      "identificationNumber": "30667834W",
+      "address": "ZEARRETA, 2 - 4º IZDA",
+      "location": {
+        "postalCode": "48300",
+        "municipality": "Gernika-Lumo",
+        "county": "Bizkaia",
+        "municipalityId": "046",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.721.2",
+          "name": "Transporte por autotaxis",
+          "_links": {
+            "self": {
+              "name": "Transporte por autotaxis",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.721.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2015-04-23",
+      "certificateEndDate": "2015-09-05",
+      "object": "TRANSPORTE POR AUTOTAXIS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/05349",
+      "_links": {
+        "self": {
+          "name": "ASIER AJURIA URIGÜEN",
+          "href": "https://api.euskadi.eus/procurements/companies/05349"
+        }
+      }
+    },
+    {
+      "name": "FARLA, S.A.",
+      "registrationNumber": "01780",
+      "identificationNumber": "A01011915",
+      "address": "POL. INDUSTRIALDEA, PABELLÓN: 6 - 7.",
+      "location": {
+        "postalCode": "01400",
+        "municipality": "Laudio/Llodio",
+        "county": "Araba/Álava",
+        "municipalityId": "036",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.654.1",
+          "name": "Venta al por menor de vehículos terrestres",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de vehículos terrestres",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.654.1"
+            }
+          }
+        },
+        {
+          "id": "1.691.2",
+          "name": "Reparación de vehículos automóviles, bicicletas y otros vehículos",
+          "_links": {
+            "self": {
+              "name": "Reparación de vehículos automóviles, bicicletas y otros vehículos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.691.2"
+            }
+          }
+        },
+        {
+          "id": "1.854",
+          "name": "Alquiler de automóviles sin conductor",
+          "_links": {
+            "self": {
+              "name": "Alquiler de automóviles sin conductor",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.854"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2015-04-22",
+      "certificateEndDate": "2015-10-14",
+      "object": "LA COMPRAVENTA, IMPORTACIÓN Y EXPORTACIÓN DE MAQUINARIA INDUSTRIAL, PRINCIPALMENTE MÁQUINAS ELEVADORAS, Y DE TODA CLASE DE VEHÍCULOS AUTOMÓVILES, SU REPARACIÓN Y RECAMBIOS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/01780",
+      "_links": {
+        "self": {
+          "name": "FARLA, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/01780"
+        }
+      }
+    },
+    {
+      "name": "ALLUITZ MOTOR, S.L.",
+      "registrationNumber": "05346",
+      "identificationNumber": "B48472310",
+      "address": "ALLUITZ, S/N",
+      "location": {
+        "postalCode": "48200",
+        "municipality": "Durango",
+        "county": "Bizkaia",
+        "municipalityId": "027",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.654.1",
+          "name": "Venta al por menor de vehículos terrestres",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de vehículos terrestres",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.654.1"
+            }
+          }
+        },
+        {
+          "id": "1.691.2",
+          "name": "Reparación de vehículos automóviles, bicicletas y otros vehículos",
+          "_links": {
+            "self": {
+              "name": "Reparación de vehículos automóviles, bicicletas y otros vehículos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.691.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2015-04-21",
+      "certificateEndDate": "2015-09-10",
+      "object": "LA REPARACIÓN DE VEHÍCULOS A MOTOR, TANTO ELÉCTRICA, MECÁNICA COMO CARROCERÍA, ASÍ COMO LA COMPRAVENTA DE TODO TIPO DE VEHÍCULOS, INCLUIDOS LOS TURISMOS Y LOS INDUSTRIALES, TANTO NUEVOS COMO USADOS O DE OCASIÓN Y DE SUS RECAMBIOS Y ACCESORIOS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/05346",
+      "_links": {
+        "self": {
+          "name": "ALLUITZ MOTOR, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/05346"
+        }
+      }
+    },
+    {
+      "name": "RESTAURACIONES Y REFORMAS, S.A. (REYFOR)",
+      "registrationNumber": "00942",
+      "identificationNumber": "A01030139",
+      "address": "C/ PASAJE DE LAS ANTILLAS, Nº 2 - 1º.",
+      "location": {
+        "postalCode": "01012",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.501.1",
+          "name": "Construcción completa, reparación y conservación de edificaciones",
+          "_links": {
+            "self": {
+              "name": "Construcción completa, reparación y conservación de edificaciones",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2015-04-20",
+      "certificateEndDate": "2015-10-09",
+      "object": "LA COMPRA Y VENTA DE TERRENOS E INMUEBLES DE TODO TIPO, LA PROMOCIÓN, CONSTRUCCIÓN Y VENTA DE VIVIENDAS, LOCALES Y EDIFICICACIONES DE TODAS CLASES, LA EJECUCIÓN DE OBRAS DE CUALQUIER NATURALEZA POR CUENTA PROPIA O DE TERCEROS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/00942",
+      "_links": {
+        "self": {
+          "name": "RESTAURACIONES Y REFORMAS, S.A. (REYFOR)",
+          "href": "https://api.euskadi.eus/procurements/companies/00942"
+        }
+      }
+    }
+  ]
+}

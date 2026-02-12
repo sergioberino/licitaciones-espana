@@ -1,0 +1,398 @@
+{
+  "totalItems": 9042,
+  "totalPages": 905,
+  "currentPage": 608,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "name": "ARRATIKER, S.L.",
+      "registrationNumber": "06318",
+      "identificationNumber": "B95826343",
+      "address": "ITURRIMAUR PASEALEKUA, 18",
+      "location": {
+        "postalCode": "48143",
+        "municipality": "Areatza",
+        "county": "Bizkaia",
+        "municipalityId": "093",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.501.2",
+          "name": "Construcción completa, reparación y conservación obras civiles",
+          "_links": {
+            "self": {
+              "name": "Construcción completa, reparación y conservación obras civiles",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2019-06-18",
+      "certificateEndDate": "2019-11-21",
+      "object": "A) CONSTRUCCIÓN, OBRA CIVIL, EXCAVACIÓN, CONSOLIDACIÓN Y PREPARACIÓN DE TERRENOS, PAVIMENTACIÓN, CIMENTACIÓN Y ASFALTADO. B) SERVICIOS DE LIMPIEZA Y SANEAMIENTO, MANTENIMIENTO EN VÍAS PÚBLICAS, JARDINERÍA, SERVICIOS FORESTALES. C) SERVICIOS DE TOPOGRAFÍA Y DELINEACIÓN",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06318",
+      "_links": {
+        "self": {
+          "name": "ARRATIKER, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/06318"
+        }
+      }
+    },
+    {
+      "name": "INEO SPORT S.L.",
+      "registrationNumber": "06306",
+      "identificationNumber": "B95603239",
+      "address": "Barrio Bengoetxe nº7 - Lonja",
+      "location": {
+        "postalCode": "48960",
+        "municipality": "Galdakao",
+        "county": "Bizkaia",
+        "municipalityId": "036",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.659.6",
+          "name": "Venta al por menor de juguetes, artículos de deporte",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de juguetes, artículos de deporte",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.659.6"
+            }
+          }
+        },
+        {
+          "id": "1.699",
+          "name": "Otras reparaciones n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otras reparaciones n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.699"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2019-06-17",
+      "certificateEndDate": "2019-11-02",
+      "object": "LA VENTA MENOR DE ARTÍCULOS DE DEPORTE DE CUALQUIER TIPO",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06306",
+      "_links": {
+        "self": {
+          "name": "INEO SPORT S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/06306"
+        }
+      }
+    },
+    {
+      "name": "NAZARET FUNDAZIOA",
+      "registrationNumber": "06308",
+      "identificationNumber": "G75116525",
+      "address": "ALDAKONEA, 36",
+      "location": {
+        "postalCode": "20012",
+        "municipality": "Donostia / San Sebastián",
+        "county": "Gipuzkoa",
+        "municipalityId": "069",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.931.3",
+          "name": "Enseñanza de bachillerato, formación profesional exclusivamente",
+          "_links": {
+            "self": {
+              "name": "Enseñanza de bachillerato, formación profesional exclusivamente",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.931.3"
+            }
+          }
+        },
+        {
+          "id": "1.932.1",
+          "name": "Enseñanza de formación y perfeccionamiento profesional no superior",
+          "_links": {
+            "self": {
+              "name": "Enseñanza de formación y perfeccionamiento profesional no superior",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.932.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2019-06-17",
+      "certificateEndDate": "2019-10-30",
+      "object": "LA EDUCACIÓN, SIN EXCLUSIÓN DE NINGÚN GRADO NI GÉNERO DE ENSEÑANZA, LA FORMACIÓN Y EL DESARROLLO SOCIAL, PREFERENTEMENTE EN EL ÁMBITO TERRITORIAL DE GIPUZKOA",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06308",
+      "_links": {
+        "self": {
+          "name": "NAZARET FUNDAZIOA",
+          "href": "https://api.euskadi.eus/procurements/companies/06308"
+        }
+      }
+    },
+    {
+      "name": "JOSEBA DE BERISTAIN Y EGUIA",
+      "registrationNumber": "06309",
+      "identificationNumber": "14896729C",
+      "address": "Elcano, 5 - 2 Dcha.",
+      "location": {
+        "postalCode": "48011",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "2.731",
+          "name": "Abogados",
+          "_links": {
+            "self": {
+              "name": "Abogados",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/2.731"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2019-06-17",
+      "certificateEndDate": "2019-11-10",
+      "object": "ABOGADO",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06309",
+      "_links": {
+        "self": {
+          "name": "JOSEBA DE BERISTAIN Y EGUIA",
+          "href": "https://api.euskadi.eus/procurements/companies/06309"
+        }
+      }
+    },
+    {
+      "name": "EMSOR, S.A.",
+      "registrationNumber": "05198",
+      "identificationNumber": "A78923034",
+      "address": "C/ISABEL COLBRAND Nº 10-12",
+      "location": {
+        "postalCode": "28050",
+        "municipality": "Madrid",
+        "county": "Madrid",
+        "municipalityId": "079",
+        "countyId": "28"
+      },
+      "economicActivities": [
+        {
+          "id": "1.619.2",
+          "name": "Venta al por mayor de aparatos e instrumentos médicos, ortopédicos, ópticos",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de aparatos e instrumentos médicos, ortopédicos, ópticos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.619.2"
+            }
+          }
+        },
+        {
+          "id": "1.849.9",
+          "name": "Otros servicios independientes n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros servicios independientes n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.849.9"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2019-06-13",
+      "certificateEndDate": "2019-11-21",
+      "object": "a) LA COMERCIALIZACIÓN DE INSTRUMENTOS, APARATOS, EQUIPOS Y SISTEMAS, YA SEAN INDUSTRIALES, CIENTÍFICOS O DE CUALQUIER OTRO TIPO, SUSCEPTIBLES DE UTILIZARSE EN LA MEDICINA. b) LA PRESTACIÓN DE LOS SERVICIOS DE ASISTENCIA TÉCNICA, MANTENIMIENTO, REPARACIÓN, ASESORAMIENTO Y FORMACIÓN DE PERSONAL, EN RELACIÓN CON LOS BIENES MENCIONADOS EN EL APARTADO ANTERIOR",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/05198",
+      "_links": {
+        "self": {
+          "name": "EMSOR, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/05198"
+        }
+      }
+    },
+    {
+      "name": "ASOCIACIÓN EDUCATIVA RECICLANET HEZGARRI ELKARTEA",
+      "registrationNumber": "06299",
+      "identificationNumber": "G95138475",
+      "address": "Avda. Madariaga, 9",
+      "location": {
+        "postalCode": "48014",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.845",
+          "name": "Explotación electrónica por cuenta de terceros",
+          "_links": {
+            "self": {
+              "name": "Explotación electrónica por cuenta de terceros",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.845"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2019-06-12",
+      "certificateEndDate": "2019-08-01",
+      "object": "1) POTENCIAR LA EDUCACIÓN, LA PARTICIPACIÓN Y EL ACCESO A LA INFORMACIÓN DE LOS PUEBLOS, COLECTIVOS O CIUDADANOS POBRES EN RECURSOS TECNOLÓGICOS. 2) IMPULSAR EL INTERCAMBIO, Y LA COOPERACIÓN TÉCNICO-CULTURAL ENTRE LOS COLECTIVOS SOCIALES, ORGANIZACIONES Y CIUDADANOS DE TODO EL MUNDO. 3) SUMINISTRAR A ESTOS COLECTIVOS Y CIUDADANOS LOS INSTRUMENTOS NECESARIOS PARA GESTIONAR MEJOR SUS RECURSOS DESDE EL ÁMBITO DE LAS TECNOLOGÍAS DE LA INFORMACIÓN (TI). 4) OFRECER SERVICIOS DE TELECOMUNICACIONES Y SERVICIOS INFORMÁTICOS A CIUDADANOS, ENTIDADES E INSTITUCIONES. 5) RECUPERAR TODO TIPO DE MATERIAL INFORMÁTICO, EN ESPECIAL EL DENOMINADO OBSOLETO PARA SU USO EN PROYECTOS EDUCATIVOS DE TODA ÍNDOLE EN COLECTIVOS, ORGANIZACIONES Y CIUDADANOS POBRES EN RECURSOS TECNOLÓGICOS. 6) ORGANIZAR CURSOS Y CONFERENCIAS Y EDITAR PUBLICACIONES. 7) COLABORAR CON ACTIVIDADES SIMILARES DESARROLLADAS POR OTRAS ORGANIZACIONES CON FINES ANÁLOGOS A RECICLANET. 8) DESARROLLAR PROGRAMAS EDUCATIVOS, DE PROMOCIÓN, ACCIÓN SOCIAL Y ANIMACIONES COMUNITARIAS A TRAVÉS DE LAS AGRUPACIONES DE VOLUNTARIOS Y COLABORADORES DE LA ASOCIACIÓN. 9) REALIZAR ACTIVIDADES ECONÓMICAS Y ACTOS JURÍDICOS DE TODO TIPO ENCAMINADOS A LA CONSECUCIÓN DE SUS FINES SOCIALES. 10) ADQUIRIR Y POSEER BIENES DE TODA CLASE Y POR CUALQUIER TÍTULO ASÍ COMO CELEBRAR ACTOS Y CONTRATOS DE TODO GÉNERO. 11) REALIZAR EN GENERAL Y SIN OTRAS LIMITACIONES QUE LAS LEGALES O ESTATUTARIAS CUALQUIER TIPO DE ACTIVIDAD PARA LA CONSECUCIÓN DE SUS OBJETIVOS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06299",
+      "_links": {
+        "self": {
+          "name": "ASOCIACIÓN EDUCATIVA RECICLANET HEZGARRI ELKARTEA",
+          "href": "https://api.euskadi.eus/procurements/companies/06299"
+        }
+      }
+    },
+    {
+      "name": "ANA ALONSO MENDEZ",
+      "registrationNumber": "06301",
+      "identificationNumber": "30653120P",
+      "address": "REYES CATOLICOS Nº1 - 4º C",
+      "location": {
+        "postalCode": "48012",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "2.411",
+          "name": "Arquitectos",
+          "_links": {
+            "self": {
+              "name": "Arquitectos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/2.411"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2019-06-12",
+      "certificateEndDate": "2019-07-18",
+      "object": "ARQUITECTOS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06301",
+      "_links": {
+        "self": {
+          "name": "ANA ALONSO MENDEZ",
+          "href": "https://api.euskadi.eus/procurements/companies/06301"
+        }
+      }
+    },
+    {
+      "name": "LABORATORIOS HEIGA S.L",
+      "registrationNumber": "06303",
+      "identificationNumber": "B73273773",
+      "address": "Calle Rocío, nave C3, Polígono Industrial Oeste",
+      "location": {
+        "postalCode": "30820",
+        "municipality": "Alcantarilla",
+        "county": "Murcia",
+        "municipalityId": "005",
+        "countyId": "30"
+      },
+      "economicActivities": [
+        {
+          "id": "1.619.2",
+          "name": "Venta al por mayor de aparatos e instrumentos médicos, ortopédicos, ópticos",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de aparatos e instrumentos médicos, ortopédicos, ópticos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.619.2"
+            }
+          }
+        },
+        {
+          "id": "1.861.2",
+          "name": "Alquiler de locales industriales y otros alquileres n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Alquiler de locales industriales y otros alquileres n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.861.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2019-06-12",
+      "certificateEndDate": "2019-08-21",
+      "object": "LA FABRICACIÓN, DISTRIBUCIÓN Y COMERCIALIZACIÓN DE REACTIVO PARA LABORATORIO DE ANÁLISIS CLÍNICOS Y MÉDICOS EN GENERAL, ASÍ COMO INSTRUMENTAL DESTINADO A LABORATORIOS, CLÍNICAS Y HOSPITALES EN GENERAL. ALQUILER, COMPRA Y VENTA DE NAVES INDUSTRIALES",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06303",
+      "_links": {
+        "self": {
+          "name": "LABORATORIOS HEIGA S.L",
+          "href": "https://api.euskadi.eus/procurements/companies/06303"
+        }
+      }
+    },
+    {
+      "name": "KODIKLINIK SL",
+      "registrationNumber": "06289",
+      "identificationNumber": "B75199620",
+      "address": "KONDEKO ALDAPA 5-3",
+      "location": {
+        "postalCode": "20400",
+        "municipality": "Tolosa",
+        "county": "Gipuzkoa",
+        "municipalityId": "071",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.849.9",
+          "name": "Otros servicios independientes n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros servicios independientes n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.849.9"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2019-06-06",
+      "certificateEndDate": "2019-09-15",
+      "object": "LA CODIFICACIÓN CLÍNICA. LA ASESORÍA Y FORMACIÓN DE LOS PROFESIONALES EN CODIFICACIÓN CLÍNICA. LA DIGITALIZACIÓN, TRATAMIENTO Y EXPLOTACIÓN DE DATOS DE TODO EL SECTOR HOSPITALARIO",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06289",
+      "_links": {
+        "self": {
+          "name": "KODIKLINIK SL",
+          "href": "https://api.euskadi.eus/procurements/companies/06289"
+        }
+      }
+    },
+    {
+      "name": "ACEMOS BUILDING SOLUTIONS SL",
+      "registrationNumber": "06287",
+      "identificationNumber": "B71336390",
+      "address": "CARRETERA DE ARTICA 29 PL. 6 OF.4",
+      "location": {
+        "postalCode": "31013",
+        "municipality": "Berrioplano/Berriobeiti",
+        "county": "Navarra",
+        "municipalityId": "902",
+        "countyId": "31"
+      },
+      "economicActivities": [
+        {
+          "id": "1.843.2",
+          "name": "Servicios técnicos de arquitectura y urbanismo",
+          "_links": {
+            "self": {
+              "name": "Servicios técnicos de arquitectura y urbanismo",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2019-06-05",
+      "certificateEndDate": "2019-08-08",
+      "object": "A) SERVICIOS DE INTERMEDIACIÓN DE ARQUITECTURA E INGENIERÍA; B) PROMOCIÓN DE EDIFICIOS Y SERVICIOS INMOBILIARIOS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06287",
+      "_links": {
+        "self": {
+          "name": "ACEMOS BUILDING SOLUTIONS SL",
+          "href": "https://api.euskadi.eus/procurements/companies/06287"
+        }
+      }
+    }
+  ]
+}

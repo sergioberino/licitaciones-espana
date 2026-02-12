@@ -1,0 +1,561 @@
+{
+  "totalItems": 919,
+  "totalPages": 92,
+  "currentPage": 77,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "id": 41,
+      "identificationNumber": "P2002300H",
+      "name": "Ayuntamiento de Belauntza",
+      "scope": "GIPUZKOA",
+      "address": "Ayuntamiento de Belauntza",
+      "webPage": "http://www.belauntza.net",
+      "publicationDate": "2019-10-02",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES212",
+      "entities": [
+        {
+          "id": 261,
+          "name": "Ayuntamiento de Belauntza",
+          "orgs": [
+            {
+              "id": 911101,
+              "name": "Pleno municipal",
+              "_links": {
+                "self": {
+                  "name": "Pleno municipal",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/41/entities/261/orgs/911101"
+                }
+              }
+            },
+            {
+              "id": 911102,
+              "name": "Alcalde",
+              "_links": {
+                "self": {
+                  "name": "Alcalde",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/41/entities/261/orgs/911102"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Ayuntamiento de Belauntza",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/41/entities/261"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder41/es_doc/es_arch_poder41.html",
+      "_links": {
+        "self": {
+          "name": "Ayuntamiento de Belauntza",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/41"
+        }
+      }
+    },
+    {
+      "id": 43,
+      "identificationNumber": "P2000400H",
+      "name": "Ayuntamiento de Albiztur",
+      "scope": "GIPUZKOA",
+      "address": "Lierni Muñoa Salaberria",
+      "webPage": "http://www.albiztur.com",
+      "publicationDate": "2019-10-02",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES212",
+      "entities": [
+        {
+          "id": 310,
+          "name": "Ayuntamiento de Albiztur",
+          "orgs": [
+            {
+              "id": 911137,
+              "name": "Pleno municipal del Ayuntamiento de Albiztur",
+              "_links": {
+                "self": {
+                  "name": "Pleno municipal del Ayuntamiento de Albiztur",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/43/entities/310/orgs/911137"
+                }
+              }
+            },
+            {
+              "id": 911138,
+              "name": "Alcalde de Albiztur",
+              "_links": {
+                "self": {
+                  "name": "Alcalde de Albiztur",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/43/entities/310/orgs/911138"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Ayuntamiento de Albiztur",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/43/entities/310"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder43/es_doc/es_arch_poder43.html",
+      "_links": {
+        "self": {
+          "name": "Ayuntamiento de Albiztur",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/43"
+        }
+      }
+    },
+    {
+      "id": 46,
+      "identificationNumber": "A20077541",
+      "name": "Orquesta Sinfónica de Euskadi S.A.",
+      "scope": "CAPV",
+      "address": "Orquesta Sinfónica de Euskadi - Euskadiko Orkestra Sinfonikoa",
+      "webPage": "http://www.euskadikoorkestra.eus",
+      "publicationDate": "2019-10-02",
+      "mainActivity": "Ocio, cultura y religión",
+      "codNUTS": "ES21",
+      "entities": [
+        {
+          "id": 313,
+          "name": "Orquesta de Euskadi S.A.",
+          "orgs": [
+            {
+              "id": 911153,
+              "name": "Director General",
+              "_links": {
+                "self": {
+                  "name": "Director General",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/46/entities/313/orgs/911153"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Orquesta de Euskadi S.A.",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/46/entities/313"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder46/es_doc/es_arch_poder46.html",
+      "_links": {
+        "self": {
+          "name": "Orquesta Sinfónica de Euskadi S.A.",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/46"
+        }
+      }
+    },
+    {
+      "id": 51,
+      "identificationNumber": "P2009600D",
+      "name": "Ayuntamiento de Altzaga",
+      "scope": "GIPUZKOA",
+      "address": "Belén Mendizabal Otegui",
+      "webPage": "http://www.altzaga.net/",
+      "publicationDate": "2019-10-02",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES212",
+      "entities": [
+        {
+          "id": 318,
+          "name": "Ayuntamiento de Altzaga",
+          "orgs": [
+            {
+              "id": 911162,
+              "name": "Pleno",
+              "_links": {
+                "self": {
+                  "name": "Pleno",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/51/entities/318/orgs/911162"
+                }
+              }
+            },
+            {
+              "id": 911161,
+              "name": "Alcalde",
+              "_links": {
+                "self": {
+                  "name": "Alcalde",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/51/entities/318/orgs/911161"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Ayuntamiento de Altzaga",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/51/entities/318"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder51/es_doc/es_arch_poder51.html",
+      "_links": {
+        "self": {
+          "name": "Ayuntamiento de Altzaga",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/51"
+        }
+      }
+    },
+    {
+      "id": 52,
+      "identificationNumber": "P2001300I",
+      "name": "Ayuntamiento de Arama",
+      "scope": "GIPUZKOA",
+      "address": "Belén Mendizabal Otegui ",
+      "webPage": "http://www.aramaudala.net",
+      "publicationDate": "2019-10-02",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES212",
+      "entities": [
+        {
+          "id": 320,
+          "name": "Ayuntamiento de Arama",
+          "orgs": [
+            {
+              "id": 911163,
+              "name": "Alcalde",
+              "_links": {
+                "self": {
+                  "name": "Alcalde",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/52/entities/320/orgs/911163"
+                }
+              }
+            },
+            {
+              "id": 911164,
+              "name": "Pleno",
+              "_links": {
+                "self": {
+                  "name": "Pleno",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/52/entities/320/orgs/911164"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Ayuntamiento de Arama",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/52/entities/320"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder52/es_doc/es_arch_poder52.html",
+      "_links": {
+        "self": {
+          "name": "Ayuntamiento de Arama",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/52"
+        }
+      }
+    },
+    {
+      "id": 55,
+      "identificationNumber": "P2001500D",
+      "name": "Ayuntamiento de Asteasu",
+      "scope": "GIPUZKOA",
+      "address": "Lege zaharren enparantza, z/g. 20012 Asteasu",
+      "webPage": "http://www.asteasu.eus",
+      "publicationDate": "2019-10-02",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES212",
+      "entities": [
+        {
+          "id": 341,
+          "name": "Ayuntamiento de Asteasu",
+          "orgs": [
+            {
+              "id": 911213,
+              "name": "Junta Municipal de Gobierno",
+              "_links": {
+                "self": {
+                  "name": "Junta Municipal de Gobierno",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/55/entities/341/orgs/911213"
+                }
+              }
+            },
+            {
+              "id": 911211,
+              "name": "Alcalde",
+              "_links": {
+                "self": {
+                  "name": "Alcalde",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/55/entities/341/orgs/911211"
+                }
+              }
+            },
+            {
+              "id": 911212,
+              "name": "Pleno",
+              "_links": {
+                "self": {
+                  "name": "Pleno",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/55/entities/341/orgs/911212"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Ayuntamiento de Asteasu",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/55/entities/341"
+            }
+          }
+        },
+        {
+          "id": 422,
+          "name": "Asteasu Lantzen S.A.",
+          "orgs": [
+            {
+              "id": 911407,
+              "name": "Junta Universal",
+              "_links": {
+                "self": {
+                  "name": "Junta Universal",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/55/entities/422/orgs/911407"
+                }
+              }
+            },
+            {
+              "id": 911406,
+              "name": "Consejo de administración",
+              "_links": {
+                "self": {
+                  "name": "Consejo de administración",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/55/entities/422/orgs/911406"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Asteasu Lantzen S.A.",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/55/entities/422"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder55/es_doc/es_arch_poder55.html",
+      "_links": {
+        "self": {
+          "name": "Ayuntamiento de Asteasu",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/55"
+        }
+      }
+    },
+    {
+      "id": 91,
+      "identificationNumber": "P2000500E",
+      "name": "Ayuntamiento de Alegia",
+      "scope": "GIPUZKOA",
+      "address": "Enparantza Nagusia, z/g. 20260 Alegia (Gipuzkoa)",
+      "webPage": "http://www.alegia.eu",
+      "publicationDate": "2019-10-02",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES212",
+      "entities": [
+        {
+          "id": 440,
+          "name": "Ayuntamiento de Alegia",
+          "orgs": [
+            {
+              "id": 911453,
+              "name": "Alcalde",
+              "_links": {
+                "self": {
+                  "name": "Alcalde",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/91/entities/440/orgs/911453"
+                }
+              }
+            },
+            {
+              "id": 911454,
+              "name": "Ayuntamiento Pleno",
+              "_links": {
+                "self": {
+                  "name": "Ayuntamiento Pleno",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/91/entities/440/orgs/911454"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Ayuntamiento de Alegia",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/91/entities/440"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder91/es_doc/es_arch_poder91.html",
+      "_links": {
+        "self": {
+          "name": "Ayuntamiento de Alegia",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/91"
+        }
+      }
+    },
+    {
+      "id": 93,
+      "identificationNumber": "Q2000559A",
+      "name": "Autoridad Territorial del Transporte de Gipuzkoa",
+      "scope": "GIPUZKOA",
+      "address": "Easo 74-1º. 20006 Donostia/San Sebastián (Gipuzkoa)",
+      "webPage": "http://www.atgipuzkoa.eus",
+      "publicationDate": "2019-10-02",
+      "mainActivity": "Otra actividad",
+      "alternativeActivity": "Transportes",
+      "codNUTS": "ES212",
+      "entities": [
+        {
+          "id": 443,
+          "name": "Autoridad Territorial del Transporte de Gipuzkoa",
+          "orgs": [
+            {
+              "id": 911464,
+              "name": "Directora general",
+              "_links": {
+                "self": {
+                  "name": "Directora general",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/93/entities/443/orgs/911464"
+                }
+              }
+            },
+            {
+              "id": 911462,
+              "name": "Asamblea general",
+              "_links": {
+                "self": {
+                  "name": "Asamblea general",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/93/entities/443/orgs/911462"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Autoridad Territorial del Transporte de Gipuzkoa",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/93/entities/443"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder93/es_doc/es_arch_poder93.html",
+      "_links": {
+        "self": {
+          "name": "Autoridad Territorial del Transporte de Gipuzkoa",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/93"
+        }
+      }
+    },
+    {
+      "id": 95,
+      "identificationNumber": "P2001600B",
+      "name": "Ayuntamiento de Ataun",
+      "scope": "GIPUZKOA",
+      "address": "Barrio Helbarrena, 44. 20211 Ataun (Gipuzkoa)",
+      "webPage": "http://www.ataun.eus",
+      "publicationDate": "2019-10-02",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES212",
+      "entities": [
+        {
+          "id": 444,
+          "name": "Ayuntamiento de Ataun",
+          "orgs": [
+            {
+              "id": 911473,
+              "name": "Alcalde",
+              "_links": {
+                "self": {
+                  "name": "Alcalde",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/95/entities/444/orgs/911473"
+                }
+              }
+            },
+            {
+              "id": 911474,
+              "name": "Pleno",
+              "_links": {
+                "self": {
+                  "name": "Pleno",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/95/entities/444/orgs/911474"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Ayuntamiento de Ataun",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/95/entities/444"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder95/es_doc/es_arch_poder95.html",
+      "_links": {
+        "self": {
+          "name": "Ayuntamiento de Ataun",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/95"
+        }
+      }
+    },
+    {
+      "id": 103,
+      "identificationNumber": "P2000300J",
+      "name": "Ayuntamiento de Aizarnazabal",
+      "scope": "GIPUZKOA",
+      "address": "Herriko Plaza, 1, 20749 Aizarnazabal (Gipuzkoa)",
+      "webPage": "http://www.aizarnazabal.eus",
+      "publicationDate": "2019-10-02",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES212",
+      "entities": [
+        {
+          "id": 454,
+          "name": "Ayuntamiento de Aizarnazabal",
+          "orgs": [
+            {
+              "id": 911490,
+              "name": "Alcalde",
+              "_links": {
+                "self": {
+                  "name": "Alcalde",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/103/entities/454/orgs/911490"
+                }
+              }
+            },
+            {
+              "id": 911489,
+              "name": "Ayuntamiento Pleno",
+              "_links": {
+                "self": {
+                  "name": "Ayuntamiento Pleno",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/103/entities/454/orgs/911489"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Ayuntamiento de Aizarnazabal",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/103/entities/454"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder103/es_doc/es_arch_poder103.html",
+      "_links": {
+        "self": {
+          "name": "Ayuntamiento de Aizarnazabal",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/103"
+        }
+      }
+    }
+  ]
+}

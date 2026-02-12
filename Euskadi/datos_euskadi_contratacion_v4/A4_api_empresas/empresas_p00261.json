@@ -1,0 +1,418 @@
+{
+  "totalItems": 9042,
+  "totalPages": 905,
+  "currentPage": 261,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "name": "INGENERGIC NORTE, S.L.",
+      "registrationNumber": "10119",
+      "identificationNumber": "B01567056",
+      "address": "Plaza Provincias Vascongadas n.º 1",
+      "location": {
+        "postalCode": "01002",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.504.1",
+          "name": "Instalaciones eléctricas en general",
+          "_links": {
+            "self": {
+              "name": "Instalaciones eléctricas en general",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.504.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-09-22",
+      "certificateEndDate": "2026-03-22",
+      "object": "PROYECTOS E INSTALACIONES ELECTROTÉCNICAS EN BAJA TENSIÓN EN GENERAL, PARA INDUSTRIA, VIVIENDA, COMUNICACIONES, ENERGÍAS RENOVABLES Y AUTOMATISMOS, ROBÓTICA.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/10119",
+      "_links": {
+        "self": {
+          "name": "INGENERGIC NORTE, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/10119"
+        }
+      }
+    },
+    {
+      "name": "MORGAN CREATIVOS CINE-TV, S.L.",
+      "registrationNumber": "09389",
+      "identificationNumber": "B83015602",
+      "address": "Soraluze 1 - 2izda",
+      "location": {
+        "postalCode": "20003",
+        "municipality": "Donostia / San Sebastián",
+        "county": "Gipuzkoa",
+        "municipalityId": "069",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.961.1",
+          "name": "Producción de películas cinematográficas (incluso vídeos)",
+          "_links": {
+            "self": {
+              "name": "Producción de películas cinematográficas (incluso vídeos)",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.961.1"
+            }
+          }
+        },
+        {
+          "id": "1.962.1",
+          "name": "Distribución y venta de películas",
+          "_links": {
+            "self": {
+              "name": "Distribución y venta de películas",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.962.1"
+            }
+          }
+        },
+        {
+          "id": "1.989.2",
+          "name": "Servicios de organización de congresos, asambleas y similares",
+          "_links": {
+            "self": {
+              "name": "Servicios de organización de congresos, asambleas y similares",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.989.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-09-22",
+      "certificateEndDate": "2026-03-22",
+      "object": "PRODUCCIONES VIDEOGRÁFICAS Y CINEMATOGRÁFICAS. ORGANIZACIÓN DE EVENTOS, MUESTRAS, CONGRESOS Y FESTIVALES DE CINE.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/09389",
+      "_links": {
+        "self": {
+          "name": "MORGAN CREATIVOS CINE-TV, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/09389"
+        }
+      }
+    },
+    {
+      "name": "MEDICAL NORTE, S.L.",
+      "registrationNumber": "06361",
+      "identificationNumber": "B95055786",
+      "address": "MARÍA DÍAZ DE HARO, 17",
+      "location": {
+        "postalCode": "48013",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.659.3",
+          "name": "Venta al por menor de aparatos médicos, ortopédicos, ópticos y fotográficos",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de aparatos médicos, ortopédicos, ópticos y fotográficos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.659.3"
+            }
+          }
+        },
+        {
+          "id": "1.699",
+          "name": "Otras reparaciones n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otras reparaciones n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.699"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-09-22",
+      "certificateEndDate": "2026-03-22",
+      "object": "EL COMERCIO AL POR MENOR DE EQUIPOS DE ELECTROMEDICINA, MOBILIARIO Y EQUIPOS CLÍNICOS, ACCESORIOS Y ELEMENTOS DE MATERIAL DE CONSUMO PARA LOS MISMOS. LA INTERMEDIACIÓN, REPRESENTACIÓN Y COMISIÓN DE LOS ELEMENTOS Y MATERIALES ANTERIORES",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06361",
+      "_links": {
+        "self": {
+          "name": "MEDICAL NORTE, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/06361"
+        }
+      }
+    },
+    {
+      "name": "EGUONDO, S.L.",
+      "registrationNumber": "10120",
+      "identificationNumber": "B09695966",
+      "address": "Calle Abatxolo",
+      "location": {
+        "postalCode": "48920",
+        "municipality": "Portugalete",
+        "county": "Bizkaia",
+        "municipalityId": "078",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.647.3",
+          "name": "Autoservicio de superficie ventas entre 120 y 399 m.cuadrados",
+          "_links": {
+            "self": {
+              "name": "Autoservicio de superficie ventas entre 120 y 399 m.cuadrados",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.647.3"
+            }
+          }
+        },
+        {
+          "id": "1.932.1",
+          "name": "Enseñanza de formación y perfeccionamiento profesional no superior",
+          "_links": {
+            "self": {
+              "name": "Enseñanza de formación y perfeccionamiento profesional no superior",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.932.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-09-22",
+      "certificateEndDate": "2026-03-22",
+      "object": "COMERCIO AL POR MENOR EN ESTABLECIMIENTOS NO ESPECIALIZADOS, DROGUERÍA Y BAZAR, CON PREDOMINIO EN PRODUCTOS ALIMENTICIOS, BEBIDAS Y TABACO. CNAE 47.11. EL ARRENDAMIENTO Y SUBARRENDAMIENTO DE INMUEBLES.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/10120",
+      "_links": {
+        "self": {
+          "name": "EGUONDO, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/10120"
+        }
+      }
+    },
+    {
+      "name": "BEN-RI ELECTRONICA S.A.",
+      "registrationNumber": "06037",
+      "identificationNumber": "A80284458",
+      "address": "C/Lozoya, nº 8",
+      "location": {
+        "postalCode": "28925",
+        "municipality": "Alcorcón",
+        "county": "Madrid",
+        "municipalityId": "007",
+        "countyId": "28"
+      },
+      "economicActivities": [
+        {
+          "id": "1.354",
+          "name": "Fabricación de componentes electrónicos y circuitos integrados",
+          "_links": {
+            "self": {
+              "name": "Fabricación de componentes electrónicos y circuitos integrados",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.354"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-09-22",
+      "certificateEndDate": "2026-03-22",
+      "object": "LAS ACTIVIDADES DE DISEÑO, FABRICACIÓN, IMPORTACIÓN, EXPORTACIÓN, VENTA, ARRENDAMIENTO, INSTALACIÓN Y MANTENIMIENTO DE EQUIPOS ELECTRÓNICOS Y DE TELECOMUNICACIÓN, ARRENDAMIENTO DE BIENES MUEBLES E INMUEBLES",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06037",
+      "_links": {
+        "self": {
+          "name": "BEN-RI ELECTRONICA S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/06037"
+        }
+      }
+    },
+    {
+      "name": "AINARA MARTIN BLANCO",
+      "registrationNumber": "08317",
+      "identificationNumber": "72458076A",
+      "address": "Calle Aita Larramendi (20140) 23-C-1º-C",
+      "location": {
+        "postalCode": "20140",
+        "municipality": "Andoain",
+        "county": "Gipuzkoa",
+        "municipalityId": "009",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.869",
+          "name": "OTRAS",
+          "_links": {
+            "self": {
+              "name": "OTRAS",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.869"
+            }
+          }
+        },
+        {
+          "id": "2.826",
+          "name": "Personal docente de enseñanzas diversas",
+          "_links": {
+            "self": {
+              "name": "Personal docente de enseñanzas diversas",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/2.826"
+            }
+          }
+        },
+        {
+          "id": "2.899",
+          "name": "Otros profesionales",
+          "_links": {
+            "self": {
+              "name": "Otros profesionales",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/2.899"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-09-22",
+      "certificateEndDate": "2026-03-22",
+      "object": "OTROS PROFESIONALES.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08317",
+      "_links": {
+        "self": {
+          "name": "AINARA MARTIN BLANCO",
+          "href": "https://api.euskadi.eus/procurements/companies/08317"
+        }
+      }
+    },
+    {
+      "name": "FERNANDEZ DOBARAN MARIA EUGENIA 000326564E, S.L.",
+      "registrationNumber": "08272",
+      "identificationNumber": "B95286035",
+      "address": "ITURRIONDO 10 2 DR",
+      "location": {
+        "postalCode": "48940",
+        "municipality": "Leioa",
+        "county": "Bizkaia",
+        "municipalityId": "054",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.932.1",
+          "name": "Enseñanza de formación y perfeccionamiento profesional no superior",
+          "_links": {
+            "self": {
+              "name": "Enseñanza de formación y perfeccionamiento profesional no superior",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.932.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-09-22",
+      "certificateEndDate": "2026-03-22",
+      "object": "LA ACTIVIDAD AGRÍCOLA, GANADERA, FORESTAL, PESQUERA, INDUSTRIAL, DE CONSTRUCCIÓN, COMERCIAL, TURÍSTICA, DE TRANSPORTES, DE COMUNICACIONES, DE INTERMEDIACIÓN, DE PROFESIONALES O DE SERVICIOS EN GENERAL.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08272",
+      "_links": {
+        "self": {
+          "name": "FERNANDEZ DOBARAN MARIA EUGENIA 000326564E, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/08272"
+        }
+      }
+    },
+    {
+      "name": "GAUSARK, S.L.P.",
+      "registrationNumber": "03818",
+      "identificationNumber": "B20319265",
+      "address": "TXAPILLO, 3 - BAJO",
+      "location": {
+        "postalCode": "20009",
+        "municipality": "Donostia / San Sebastián",
+        "county": "Gipuzkoa",
+        "municipalityId": "069",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.843.2",
+          "name": "Servicios técnicos de arquitectura y urbanismo",
+          "_links": {
+            "self": {
+              "name": "Servicios técnicos de arquitectura y urbanismo",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-09-22",
+      "certificateEndDate": "2026-03-22",
+      "object": "EL EJERCICIO EN COMÚN DE LA ACTIVIDAD PROFESIONAL DE ARQUITECTO",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03818",
+      "_links": {
+        "self": {
+          "name": "GAUSARK, S.L.P.",
+          "href": "https://api.euskadi.eus/procurements/companies/03818"
+        }
+      }
+    },
+    {
+      "name": "GEOLOGÍA Y GEOTECNIA LARREA S.L.",
+      "registrationNumber": "05294",
+      "identificationNumber": "B48723936",
+      "address": "SIPIRI Nº 8 2ª - DPTO 5",
+      "location": {
+        "postalCode": "48600",
+        "municipality": "Sopela",
+        "county": "Bizkaia",
+        "municipalityId": "085",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.843.3",
+          "name": "Servicios técnicos de prospecciones y estudios geológicos",
+          "_links": {
+            "self": {
+              "name": "Servicios técnicos de prospecciones y estudios geológicos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.3"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-09-22",
+      "certificateEndDate": "2026-03-22",
+      "object": "TRABAJOS DE RECONOCIMIENTO E INVESTIGACIÓN GEOLÓGICOS, GEOTÉCNICOS E HIDROGEOLÓGICOS. ESTUDIOS, PROYECTOS, ASESORAMIENTO Y ASISTENCIA TÉCNICA RELACIONADOS CON EL OBJETO REFERIDO ANTERIOR ",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/05294",
+      "_links": {
+        "self": {
+          "name": "GEOLOGÍA Y GEOTECNIA LARREA S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/05294"
+        }
+      }
+    },
+    {
+      "name": "ARKITEKTURA ETA HIRIGINTZA BULEGOA, S.A.",
+      "registrationNumber": "06383",
+      "identificationNumber": "A48278667",
+      "address": "Marques del Puerto, 9 - 3º Dcha",
+      "location": {
+        "postalCode": "48008",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.843.2",
+          "name": "Servicios técnicos de arquitectura y urbanismo",
+          "_links": {
+            "self": {
+              "name": "Servicios técnicos de arquitectura y urbanismo",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-09-22",
+      "certificateEndDate": "2026-03-22",
+      "object": "A) ELABORAR TODO TIPO DE INFORME DICTAMEN, PERITACIÓN, ARBITRAJE, VALORACIÓN, ESTUDIO, PLAN, PROGRAMA O PROYECTO RELATIVO A LAS ACTIVIDADES CONCERNIENTES A LA ORDENACIÓN DEL TERRITORIO Y A LA ORDENACIÓN URBANA, TANTO EN SU FASE DE PLANEAMIENTO COMO EN LA DE GESTIÓN DE SU EJECUCIÓN, ASÍ COMO EN MATERIAS RELATIVAS A LA FISCALIDAD QUE GRAVA LOS BIENES INMUEBLES. B) ELABORAR, EN CUALQUIERA DE SUS FASES, TODA CLASE DE PROYECTOS DE OBRAS Y DIRECCIONES DE SU REALIZACIÓN MATERIAL, RELACIONADAS CON LA ARQUITECTURA Y LA INGENIERÍA CIVIL, COMPRENDIENDO ENTRE OTRAS OBRAS DE EDIFICACIÓN, DE URBANIZACIÓN, DE JARDINERÍA, DE CONSERVACIÓN DEL PAISAJE Y DEL MEDIO FÍSICO Y DE INFRAESTRUCTURAS. C) ASESORAR CON CARÁCTER LEGAL, TÉCNICO Y FINANCIERO EN LAS MATERIAS INDICADAS ANTERIORMENTE, TANTO A PARTICULARES COMO A LA ADMINISTRACIÓN PÚBLICA. D) GESTIONAR LA PREPARACIÓN Y URBANIZACIÓN DEL SUELO URBANO Y URBANIZABLE PARA POSIBILITAR SU POSTERIOR EDIFICACIÓN, A TRAVÉS DE REALIZAR LA TOTALIDAD DE LAS OPERACIONES JURÍDICAS TÉCNICAS Y MATERIALES PRECISOS AL EFECTO",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06383",
+      "_links": {
+        "self": {
+          "name": "ARKITEKTURA ETA HIRIGINTZA BULEGOA, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/06383"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,438 @@
+{
+  "totalItems": 9042,
+  "totalPages": 905,
+  "currentPage": 337,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "name": "ENSANCHE SERVICIOS INTEGRALES ELECTRICOS Y DE TELECOMUNICACIONES, S.L.",
+      "registrationNumber": "09425",
+      "identificationNumber": "B75001453",
+      "address": "OIALUME BIDEA 22, LOCAL 7",
+      "location": {
+        "postalCode": "20115",
+        "municipality": "Astigarraga",
+        "county": "Gipuzkoa",
+        "municipalityId": "903",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.504.1",
+          "name": "Instalaciones eléctricas en general",
+          "_links": {
+            "self": {
+              "name": "Instalaciones eléctricas en general",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.504.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-07-21",
+      "certificateEndDate": "2026-01-21",
+      "object": "- MONTAJES E INSTALACIONES ELÉCTRICAS. - ACABADO DE OBRAS.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/09425",
+      "_links": {
+        "self": {
+          "name": "ENSANCHE SERVICIOS INTEGRALES ELECTRICOS Y DE TELECOMUNICACIONES, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/09425"
+        }
+      }
+    },
+    {
+      "name": "SONEX TVCC SAN SEBASTIAN, S.L.",
+      "registrationNumber": "06692",
+      "identificationNumber": "B75047027",
+      "address": "PASEO DE  ZORROAGA Nº 11  BAJO",
+      "location": {
+        "postalCode": "20011",
+        "municipality": "Donostia / San Sebastián",
+        "county": "Gipuzkoa",
+        "municipalityId": "069",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.504.1",
+          "name": "Instalaciones eléctricas en general",
+          "_links": {
+            "self": {
+              "name": "Instalaciones eléctricas en general",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.504.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-07-21",
+      "certificateEndDate": "2026-08-09",
+      "object": "INSTALACIÓN Y MANTENIMIENTO DE APARATOS, DISPOSITIVOS Y SISTEMAS DE SEGURIDAD TANTO CON CONEXIÓN COMO SIN CONEXIÓN A CENTRALES DE ALARMA.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06692",
+      "_links": {
+        "self": {
+          "name": "SONEX TVCC SAN SEBASTIAN, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/06692"
+        }
+      }
+    },
+    {
+      "name": "C2MASI, S.L.",
+      "registrationNumber": "09753",
+      "identificationNumber": "B01462936",
+      "address": "Herminio Madinabeitia, 10",
+      "location": {
+        "postalCode": "01006",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.847",
+          "name": "Servicios de consultoría",
+          "_links": {
+            "self": {
+              "name": "Servicios de consultoría",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.847"
+            }
+          }
+        },
+        {
+          "id": "1.966.9",
+          "name": "Otros servicios culturales n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros servicios culturales n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.966.9"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-07-21",
+      "certificateEndDate": "2026-01-21",
+      "object": "A) LA PROMOCIÓN, EL DESARROLLO E IMPULSO DE LA CREATIVIDAD Y DE LA INNOVACIÓN EN CUALQUIER SECTOR DE ACTIVIDAD; LA CONSULTORÍA, LA INGENIERÍA, EL MARKETING Y LA COMUNICACIÓN, ASÍ COMO LA GESTIÓN APLICADAS A LA INDUSTRIA, SERVICIOS EMPRESARIALES A LAS ADMINISTRACIONES PÚBLICAS Y ORGANIZACIONES NO LUCRATIVAS. DESARROLLO DE UTILLAJE Y PROTOTIPOS PARA EL SECTOR INDUSTRIAL EN GENERAL. B) EL SEGUIMIENTO Y SUPERVISIÓN DE LAS ACTIVIDADES Y RESULTADOS DE LAS SOCIEDADES FILIALES O PARTICIPADAS ASÍ COMO LA PRESTACIÓN A DICHAS SOCIEDADES DE LOS SERVICIOS OPORTUNOS PARA SU MEJOR ORGANIZACIÓN, PROMOCIÓN Y DESARROLLO. C) EL DESARROLLO, PROMOCIÓN Y PUESTA EN MARCHA DE NUEVAS OPORTUNIDADES DE NEGOCIO Y EMPRESAS INDUSTRIALES, COMERCIALES Y DE SERVICIOS.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/09753",
+      "_links": {
+        "self": {
+          "name": "C2MASI, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/09753"
+        }
+      }
+    },
+    {
+      "name": "ROLL INFORMÁTICA SYSTEM, S.L.",
+      "registrationNumber": "05975",
+      "identificationNumber": "B48843643",
+      "address": "Calle Aureliano Valle, 7",
+      "location": {
+        "postalCode": "48010",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.659.2",
+          "name": "Venta al por menor de muebles de oficina y máquinas y equipos de oficina",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de muebles de oficina y máquinas y equipos de oficina",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.659.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-07-21",
+      "certificateEndDate": "2026-01-21",
+      "object": "LA COMPRAVENTA AL POR MENOR DE MUEBLES Y MAQUINARIA DE OFICINA, Y PROGRAMAS INFORMÁTICOS, ASÍ COMO LA REPARACIÓN Y  MANTENIMIENTO DE \"HARDWARE\" Y \"SOFTWARE\", ENSAMBLAJE DE EQUIPOS, DESARRALLO DE APLICACIONES, Y ASESORAMIENTO TODO ELLO RELACIONADO CON EL CAMPO INFORMÁTICO",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/05975",
+      "_links": {
+        "self": {
+          "name": "ROLL INFORMÁTICA SYSTEM, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/05975"
+        }
+      }
+    },
+    {
+      "name": "LERAIKI, S.L.",
+      "registrationNumber": "05719",
+      "identificationNumber": "B95591020",
+      "address": "CL ARTAZAGANE Nº 40- 2IZQ",
+      "location": {
+        "postalCode": "48940",
+        "municipality": "Leioa",
+        "county": "Bizkaia",
+        "municipalityId": "054",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.501.1",
+          "name": "Construcción completa, reparación y conservación de edificaciones",
+          "_links": {
+            "self": {
+              "name": "Construcción completa, reparación y conservación de edificaciones",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.1"
+            }
+          }
+        },
+        {
+          "id": "1.999",
+          "name": "Otros servicios n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros servicios n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.999"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-07-21",
+      "certificateEndDate": "2026-01-21",
+      "object": "A). - LA PRESTACIÓN POR CUENTA PROPIA O AJENA DE TODA  CLASE  DE  SERVICIOS PARA EL HOGAR COMUNIDADES  Y LAS EMPRESAS ENCAMINADOS A DAR SOLUCIONES PROFESIO­NALES, PRÁCTICAS Y ECONÓMICAS EN SUS SERVICIOS GENE­RALES DE REPARACIÓN, MANTENIMIENTO, CONSTRUCCIÓN, CONSERVACIÓN, INSTALACIÓN Y MONTAJE EN TODOS  LOS CAMPOS DE ASISTENCIA SOBRE PRESTACIÓN DE SERVICIOS RELATIVOS A: ELECTRICIDAD, ELECTRÓNICA, CARPINTERÍA DE MADE­RA, CARPINTERÍA METÁLICA, CARPINTERÍA DE ALUMINIO, FONTANERÍA, CLIMATIZACIÓN, ALBAÑILERÍA, CERRAJERÍA, REVESTIMIENTOS, TECHOS DESMONTABLES, JARDINES Y EX­TERIORES, LIMPIEZA, PISCINAS, SEGURIDAD, ELEMENTOS ESTRUCTURALES, ELEMENTOS EXTERIORES, MANTENIMIENTO INTEGRAL DE COMUNIDADES, MONTAJES DE ESTRUCTURAS Y EN DEFINITIVA CUALQUIER ACTIVIDAD DE MULTISERVICIO O DE  MULTIASISTENCIA AL HOGAR , EMPRESAS Y COMUNIDADES , DENTRO DE LAS NECESIDADES QUE EN CADA  CASO SE LE  DEMANDEN. B). - LA REALIZACIÓN POR CUENTA PROPIA O AJENA DE TODA CLASE DE CONSTRUCCIONES, INSTALACIONES, REFORMAS, REHABILITACIONES Y DECORACIONES. LA SUPERVISIÓN Y CONTROL DE OBRAS, ASÍ COMO LA COORDINACIÓN DE GREMIOS, EL ASESORAMIENTO Y LA ASISTENCIA TÉCNICA EN TODO CUANTO SE RELACIONE, DIRECTA O INDIRECTAMENTE, CON EL CAMPO DE LA CONSTRUCCIÓN DE EDIFICIOS Y DE LAS OBRAS PÚBLICAS O CIVILES. LA CONSTRUCCIÓN Y EDIFICACIÓN DE TODA CLASE DE EDIFICIOS Y FINCAS RÚSTICAS O URBANAS; LA URBANIZACIÓN, EXCAVACIÓN, CIMENTACIÓN, DERRIBO Y PROMOCIÓN, BIEN POR CUENTA PROPIA O POR LA DE TERCEROS, ASÍ COMO LA ADQUISICIÓN, ENAJENACIÓN, VENTA, ARRIENDO Y EXPLOTACIÓN DE TODA CLASE DE INMUEBLES. C) .- TODAS LAS  ACTIVIDADES  QUE  SE RELACIONEN CON LAS CONTRATAS DE OBRAS, SEAN PÚBLICAS O CIVILES. LA EXPLOTACIÓN DE TODA CLASE DE SERVICIOS PÚBLICOS Y CONCESIONES ADMINISTRATIVAS, POR CUALQUIER MEDIO VÁLIDO EN DERECHO. D)ALQUILER DE MAQUINARIA PARA LA CONSTRUCCIÓN Y DE OBRAS PÚBLICAS. E).- LA IMPORTACIÓN, EXPORTACIÓN, COMPRA, VENTA Y COMERCIALIZACIÓN EN GENERAL, DE TODA CLASE DE ELE­MENTOS, BIENES, PRODUCTOS O MAQUINARIAS QUE SE RELACIONEN CON LA CONSTRUCCIÓN Y LAS OBRAS, SEAN CIVILES O PÚBLICAS, ASI COMO LA REPRESENTACION COMO AGENTE, COMISIONISTA, DELEGADO O CUALQUIER OTRA FORMA DE MEDIACIÓN MERCANTIL, DE TODA CLASE DE EMPRESAS, NACIONALES O EXTRANJERAS RELACIONADAS CON EL OBJETO SO­CIAL ESPECIFICADO, ASÍ COMO LA EXPLOTACIÓN DE MÉTODOS O PROCEDIMIENTOS DE TRABAJOS INDUSTRIALES. F) .- LA ADQUISICIÓN, CESIÓN, TENENCIA, DISFRU­TE, ADMINISTRACIÓN, GESTIÓN Y NEGOCIACIÓN EN GENERAL DE VALORES MOBILIARIOS E INMUEBLES, PARTICIPACIONES SOCIALES O EN COPROPIEDAD DE TODA CLASE DE BIENES\n\n\n\n\n\n \n\n\n",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/05719",
+      "_links": {
+        "self": {
+          "name": "LERAIKI, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/05719"
+        }
+      }
+    },
+    {
+      "name": "TEKPAM INGENIERIA, S.L.",
+      "registrationNumber": "09453",
+      "identificationNumber": "B82626300",
+      "address": "Calle Mónaco 32",
+      "location": {
+        "postalCode": "28440",
+        "municipality": "Guadarrama",
+        "county": "Madrid",
+        "municipalityId": "068",
+        "countyId": "28"
+      },
+      "economicActivities": [
+        {
+          "id": "1.615.4",
+          "name": "Venta al por mayor de aparatos y material radioeléctrico y electrónico",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de aparatos y material radioeléctrico y electrónico",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.615.4"
+            }
+          }
+        },
+        {
+          "id": "1.631",
+          "name": "Intermediarios del comercio",
+          "_links": {
+            "self": {
+              "name": "Intermediarios del comercio",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.631"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-07-21",
+      "certificateEndDate": "2026-01-21",
+      "object": "1.- LA FABRICACIÓN, IMPORTACIÓN, EXPORTACIÓN, VENTA E INSTALACIÓN DE: EQUIPOS, SISTEMAS O APARATOS EN GENERAL, ELÉCTRICOS, ELECTRÓNICOS, MECÁNICOS ELECTROMECÁNICOS, BASADOS EN PRINCIPIOS FÍSICOS QUÍMICOS O MECÁNICOS, ETC., DESTINADOS A CUALQUIER USO A APLICACIÓN LEGAL, TANTO CIENTÍFICA, MILITAR, INDUSTRIAL COMO PRIVADA. ENTRE ELLOS: EQUIPOS Y APARATOS DE INSTRUMENTACIÓN ELECTRÓNICA, CIENTÍFICA O INDUSTRIAL, PARA MEDIDA, VERIFICACIÓN, CONTROL, REGULACIÓN O ANÁLISIS; INSTRUMENTOS Y APARATOS PARA GEODESIA, TOPOGRAFÍA, AGRIMENSURA, NIVELACIÓN, FOTOGRAMETRÍA, HIDROGRAFÍA, NAVEGACIÓN, METEOROLOGÍA, HIDROLOGÍA, HIDROGEOLOGÍA, GEOLOGÍA, GEOFÍSICA, ETC., INSTRUMENTOS Y APARATOS PARA ANÁLISIS FÍSICOS O QUÍMICOS, INSTRUMENTOS Y APARATOS PARA ANÁLISIS FÍSICOS Y QUÍMICOS DE LOS SUELOS INSTRUMENTOS Y APARATOS PARA LA MEDIDA DE LA HUMEDAD EN CEREALES, GRANOS, MADERA, ETC., INSTRUMENTOS Y APARATOS PARA LA MEDIDA Y CONTROL DE LA POLUCIÓN ATMOSFÉRICA Y DE LAS AGUAS; INSTRUMENTOS, MÁQUINAS Y APARATOS PARA LA INVESTIGACIÓN DEL SUBSUELO Y EXPLOTACIÓN MINERA, HORNOS ELÉCTRICOS INDUSTRIALES O  DE LABORATORIO, MÁQUINAS Y APARATOS PARA SOLDAR O CORTAR, HERRAMIENTAS Y MAQUINAS, EQUIPOS SISTEMAS, APARATOS Y ACCESORIOS PARA TELECOMUNICACIÓN  Y ELECTRÓNICA EN GENERAL, RADIO, RADIOTELEGRAFÍA, RADIOTELEFONÍA, TELEGRAFÍA, TELEFONÍA, TELEVISIÓN, ETC., PARA TELEMANDOS, TELEMEDIDAS, TELECONTROL, TRANSMISIÓN DE DATOS, ACCIONAMIENTOS AUTOMÁTICOS, ETC., PARTES Y PIEZAS SUELTAS DE TODO LO ANTERIOR; COMPONENTES ELÉCTRICOS, ELECTRÓNICOS Y MECÁNICOS DE TODO TIPO (CABLES ELÉCTRICOS, TELEFÓNICOS, CONECTORES ELÉCTRICOS, ACOPLADORES, SEMICONDUCTORES, VÁLVULAS, RESISTENCIAS, CONDENSADORES, CIRCUITOS INTEGRADOS, ETC). 2.- LA REALIZACIÓN DE ESTUDIOS Y PROYECTOS EN LO QUE SE INCLUYA LA OBRA CIVIL NECESARIA, LA INSTALACIÓN O EVALUACIÓN DE LA INSTALACIÓN DE CUALQUIERA DE LOS EQUIPOS, SISTEMAS O APARATOS EN GENERAL REFERIDOS ANTERIORMENTE. 3.- LA CONSTRUCCIÓN Y EJECUCIÓN DE TODA CLASE DE OBRAS Y EDIFICIOS PÚBLICOS Y PRIVADOS YA SEAN POR CUENTA PROPIA O AJENA Y SU EXPLOTACIÓN EN ARRENDAMIENTO, COMPRA O CUALQUIER OTRO TÍTULO. 4.- LA REALIZACIÓN DE ESTUDIOS Y PROYECTOS TÉCNICOS DE TELECOMUNICACIÓN, RADIOCOMUNICACIÓN, INTERCOMUNICACIÓN INCLUIDA LA INDUSTRIAL, TRANSMISIÓN DE DATOS, TELEMANDOS, TELEMEDIDAS, ANTENA COLECTIVAS, PORTEROS AUTOMÁTICOS, ETC., ASÍ COMO ESTUDIOS E INFORMES GEOLÓGICOS, GEOFÍSICOS, HIDROGEOLÓGICOS, GEOTÉCNICOS, PETROGRÁFICOS ESTRATIGRÁFICOS, FOTOGEOLÓGICOS, SÍSMICOS, ASÍ COMO CUALQUIER OTRO NEGOCIO RELACIONADO CON LO ANTERIOR,  Y  EN GENERAL CUALQUIER ASUNTO DE LICITO COMERCIO O INDUSTRIA QUE DECIDA EXPLOTAR LA JUNTA GENERAL.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/09453",
+      "_links": {
+        "self": {
+          "name": "TEKPAM INGENIERIA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/09453"
+        }
+      }
+    },
+    {
+      "name": "ACERCA COMUNICACION CULTURAL, S.L.",
+      "registrationNumber": "10013",
+      "identificationNumber": "B86879392",
+      "address": "SAGASTA 26, 4º IZ",
+      "location": {
+        "postalCode": "28004",
+        "municipality": "Madrid",
+        "county": "Madrid",
+        "municipalityId": "079",
+        "countyId": "28"
+      },
+      "economicActivities": [
+        {
+          "id": "1.844",
+          "name": "Servicios de publicidad, relaciones públicas y similares",
+          "_links": {
+            "self": {
+              "name": "Servicios de publicidad, relaciones públicas y similares",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.844"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-07-21",
+      "certificateEndDate": "2026-01-21",
+      "object": "OFRECER SERVICIOS DE COMUNICACIÓN ON LINE Y OFF LINE, CONFERENCIAS, FORMACIÓN Y ASESORÍA EN TODO TIPO DE MUESTRAS, ESPECTÁCULOS, FESTIVALES, FERIAS, CERTÁMENES, EXPOSICIONES, EVENTOS Y OTROS RELACIONADOS CON CUALQUIER INDUSTRIA O ACTIVIDAD ARTÍSTICA, CULTURAL, FILANTRÓPICA Y DE COMUNICACIÓN. REDACCIÓN Y EDICIÓN DE CONTENIDOS PARA TODO TIPO DE MEDIOS DE COMUNICACIÓN, BLOGS, PÁGINAS WEBS Y PUBLICACIONES. AGENCIA DE PUBLICIDAD Y RELACIONES PÚBLICAS. PRODUCCIÓN, EXHIBICIÓN, EDICIÓN, IMPORTACIÓN, EXPORTACIÓN, DISTRIBUCIÓN, COMPRAVENTA Y ALQUILER DE TODO TIPO DE PRODUCTOS ARTÍSTICOS, CINEMATOGRÁFICOS, MUSICALES, AUDIOVISUALES Y LIBROS Y OTRAS PUBLICACIONES EN SOPORTE PAPEL, ELECTRÓNICO, AUDIO O VIDEO, ENCUADERNACIONES, COMPOSICIÓN Y FOTOGRABADO. FORMACIÓN EN LOS CAMPOS ARTÍSTICOS, CULTURALES Y NO LUCRATIVOS. CÓDIGO C.N.A.E.  NÚMERO 7021. IMPORTACIÓN, EXPORTACIÓN, COMPRAVENTA E INTERMEDIACIÓN DE OBRAS DE ARTE ASÍ COMO LA EXPLOTACIÓN DE GALERÍAS DE ARTE DE TODO TIPO Y LOS SERVICIOS DE ASESORÍA A LAS MISMAS. CÓDIGOS C.N.A.E.  NÚMEROS 4778 Y 9102. DISEÑO Y MANTENIMIENTO DE PÁGINAS WEB. CÓDIGO C.N.A.E. NÚMERO 6201.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/10013",
+      "_links": {
+        "self": {
+          "name": "ACERCA COMUNICACION CULTURAL, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/10013"
+        }
+      }
+    },
+    {
+      "name": "ANTONIO MIGUEL VALDIVIESO PEÑA",
+      "registrationNumber": "05973",
+      "identificationNumber": "14593778W",
+      "address": "FRAY JUAN 21 6 D",
+      "location": {
+        "postalCode": "48013",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "2.432",
+          "name": "Decoradores-diseñadores de interiores",
+          "_links": {
+            "self": {
+              "name": "Decoradores-diseñadores de interiores",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/2.432"
+            }
+          }
+        },
+        {
+          "id": "2.854",
+          "name": "Expertos en organización de congresos, asambleas y similares",
+          "_links": {
+            "self": {
+              "name": "Expertos en organización de congresos, asambleas y similares",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/2.854"
+            }
+          }
+        },
+        {
+          "id": "2.861",
+          "name": "Pintores, escultores, ceramistas, artesanos, artistas y similares",
+          "_links": {
+            "self": {
+              "name": "Pintores, escultores, ceramistas, artesanos, artistas y similares",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/2.861"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-07-20",
+      "certificateEndDate": "2026-01-20",
+      "object": "DECORADORES-DISEÑO DE INTERIORES",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/05973",
+      "_links": {
+        "self": {
+          "name": "ANTONIO MIGUEL VALDIVIESO PEÑA",
+          "href": "https://api.euskadi.eus/procurements/companies/05973"
+        }
+      }
+    },
+    {
+      "name": "INGENIERIA ANALITICA SL",
+      "registrationNumber": "06065",
+      "identificationNumber": "B25331547",
+      "address": "Avda. Cerdanyola 73  4º izquierda",
+      "location": {
+        "postalCode": "08172",
+        "municipality": "Sant Cugat del Vallès",
+        "county": "Barcelona",
+        "municipalityId": "205",
+        "countyId": "08"
+      },
+      "economicActivities": [
+        {
+          "id": "1.619.7",
+          "name": "Venta al por mayor de instrumentos de precisión, medida y similares",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de instrumentos de precisión, medida y similares",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.619.7"
+            }
+          }
+        },
+        {
+          "id": "1.843.9",
+          "name": "Otros servicios técnicos n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros servicios técnicos n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.9"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-07-20",
+      "certificateEndDate": "2026-01-20",
+      "object": "LA FABRICACIÓN Y COMERCIALIZACIÓN DE INSTRUMENTACIÓN CIENTÍFICA, MÉDICA Y PEDAGÓGICA O DIDÁCTICA EN GENERAL, ASÍ COMO DE MATERIALES, ACCESORIOS, PRODUCTOS QUÍMICOS, BIOQUÍMICOS Y REACTIVOS QUE SE EMPLEEN EN LAS TÉCNICAS INSTRUMENTALES DE ANÁLISIS INSTRUMENTALES, DE INVESTIGACIÓN CIENTÍFICA, CLÍNICOS Y DE CONTROL DE CALIDAD, Y EN LABORATORIOS ANALÍTICOS Y AFINES, ASÍ COMO EL DESARROLLO DE PROGRAMAS DE INVESTIGACIÓN TÉCNICAS EN RELACIÓN A CUANTO ANTECEDE. ASÍ COMO LA OBTENCIÓN Y EJERCICIO DE REPRESENTACIONES COMERCIALES RELACIONADAS CON CUANTO ANTECEDE",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06065",
+      "_links": {
+        "self": {
+          "name": "INGENIERIA ANALITICA SL",
+          "href": "https://api.euskadi.eus/procurements/companies/06065"
+        }
+      }
+    },
+    {
+      "name": "ASOCIACIÓN ZEHAR-ERREFUXIATUEKIN",
+      "registrationNumber": "06609",
+      "identificationNumber": "G48839856",
+      "address": "C/ Cristo 9bis, 5º",
+      "location": {
+        "postalCode": "48007",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.659.4",
+          "name": "Venta al por menor de libros, periódicos y artículos de papelería y escritorio",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de libros, periódicos y artículos de papelería y escritorio",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.659.4"
+            }
+          }
+        },
+        {
+          "id": "1.861.2",
+          "name": "Alquiler de locales industriales y otros alquileres n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Alquiler de locales industriales y otros alquileres n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.861.2"
+            }
+          }
+        },
+        {
+          "id": "1.999",
+          "name": "Otros servicios n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros servicios n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.999"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-07-20",
+      "certificateEndDate": "2026-01-20",
+      "object": "-PRESTAR AYUDA MORAL Y MATERIAL A PERSONAS EXTRANJERAS QUE LLEGUEN O PRETENDAN LLEGAR A EUZKADI HUYENDO DE LA PERSECUCIÓN POR MOTIVOS DE RAZA, RELIGIÓN, NACIONALIDAD, PERTENENCIA A DETERMINADO GRUPO SOCIAL U OPINIÓN POLÍTICA; O QUE ENCONTRÁNDOSE RADICADOS EN TERRITORIO NACIONAL NO PUEDAN O NO QUIERAN REGRESAR A SUS PAÍSES DE ORIGEN POR FUNDADOS TEMORES DE SUFRIR PERSECUCIÓN DE ESTA ÍNDOLE. -ORGANIZAR SERVICIOS DE RECEPCIÓN, ORIENTACIÓN Y AYUDA JURÍDICA A LAS PERSONAS A QUE SE HACE REFERENCIA EN EL FIN ANTERIOR PARA INFORMARLES ADECUADAMENTE SOBRE SU SITUACIÓN LEGAL, LAS CONDICIONES DE SU PERMANENCIA EN LA COMUNIDAD AUTÓNOMA DEL PAÍS VASCO Y LA MEJOR MANERA DE DAR CUMPLIMIENTO A LAS NORMAS QUE LES SON APLICABLES. -ORGANIZAR SERVICIOS DE ASISTENCIA SOCIAL PARA ESTAS MISMAS PERSONAS CON EL FIN DE OBTENER SU ASENTAMIENTO, MANTENER LA UNIDAD DE SUS FAMILIAS Y FACILITAR SU INTEGRACIÓN EN LA SOCIEDAD ESPAÑOLA. -ORGANIZAR SERVICIOS DE ASISTENCIA MATERIAL A LAS PERSONAS REFERIDAS AL OBJETO DE PROPORCIONARLES LA AYUDA IMPRESCINDIBLE PARA QUE PUEDAN REANUDAR UNA VIDA NORMAL, CONTINUAR SUS ESTUDIOS, EDUCAR A SUS HIJOS Y RECIBIR LA ATENCIÓN SANITARIA PRECISA PARA ELLOS Y SUS FAMILIARES. -COORDINAR SUS PROGRAMAS Y ACTIVIDADES CON LAS DE OTRAS ONGS QUE EN EL ÁMBITO AUTONÓMICO SE OCUPEN DE PROBLEMAS ANÁLOGOS. -CONTRIBUIR AL ESCLARECIMIENTO ANTE LA OPINIÓN PÚBLICA ACERCA DE LOS PROBLEMAS QUE SUSCITA LA PRESENCIA DE REFUGIADOS EN LA C.A.P.V. DIVULGANDO LOS PRINCIPIOS Y NORMAS CONTENIDAS EN LOS INSTRUMENTOS INTERNACIONALES APROBADOS POR NACIONES UNIDAS PARA PROTEGER Y AYUDAR  A LOS REFUGIADOS Y ASILADOS. -PROMOVER EL ESTUDIO Y APROBACIÓN DE LAS NORMAS LEGALES NECESARIAS PARA LA MÁS COMPLETA PROTECCIÓN JURÍDICA Y ASISTENCIA MATERIAL A LOS REFUGIADOS Y ASILADOS Y AMPARARLOS CONTRA LA DISCRIMINACIÓN POR MOTIVOS DE RAZA, RELIGIÓN U OPINIÓN POLÍTICA. -CREAR Y POTENCIAR PROYECTOS DE DESARROLLO Y COOPERACIÓN EN LOS PAÍSES DE PROCEDENCIA DE LOS REFUGIADOS EN COLABORACIÓN CON ORGANISMOS, INSTITUCIONES LOCALES AL OBJETO DE POTENCIAR UNA MEJORA DE SUS CONDICIONES DE VIDA",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06609",
+      "_links": {
+        "self": {
+          "name": "ASOCIACIÓN ZEHAR-ERREFUXIATUEKIN",
+          "href": "https://api.euskadi.eus/procurements/companies/06609"
+        }
+      }
+    }
+  ]
+}

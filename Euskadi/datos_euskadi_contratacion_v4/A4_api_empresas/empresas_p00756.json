@@ -1,0 +1,438 @@
+{
+  "totalItems": 9042,
+  "totalPages": 905,
+  "currentPage": 756,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "name": "EXCAVACIONES Y DERRIBOS URDAIBAI",
+      "registrationNumber": "03684",
+      "identificationNumber": "B95304317",
+      "address": "C/ ZELAIETAS Nº 5",
+      "location": {
+        "postalCode": "48314",
+        "municipality": "Gautegiz Arteaga",
+        "county": "Bizkaia",
+        "municipalityId": "041",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.507",
+          "name": "Construcción, reparación y conservación de toda clase obras",
+          "_links": {
+            "self": {
+              "name": "Construcción, reparación y conservación de toda clase obras",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.507"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2008-10-20",
+      "certificateEndDate": "2009-03-22",
+      "object": "LA REALIZACIÓN DE TODA CLASE DE OBRAS, EXCAVACIONES, DERRIBOS Y CONSTRUCCIONES, TANTO PÚBLICAS COMO PRIVADAS, EDIFICACIONES DE INMUEBLES, URBANIZACIÓN DE PARCELAS O ZONAS, PROMOCIÓN Y COMERCIALIZACIÓN DE ÉSTOS Y AQUÉLLOS Y CUALQUIER CLASE DE ACTIVIDAD LÍCITA DIRECTA O INDIRECTAMENTE RELACIONADAS CON LAS ANTERIORES, YA SEA POR CUENTA PROPIA O AJENA",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03684",
+      "_links": {
+        "self": {
+          "name": "EXCAVACIONES Y DERRIBOS URDAIBAI",
+          "href": "https://api.euskadi.eus/procurements/companies/03684"
+        }
+      }
+    },
+    {
+      "name": "EDIFICACIÓN Y SERVICIOS TECNEI, S.A.",
+      "registrationNumber": "02365",
+      "identificationNumber": "A48766257",
+      "address": "C /  IBÁÑEZ DE BILBAO, 28 - 5ºA",
+      "location": {
+        "postalCode": "48009",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.501.1",
+          "name": "Construcción completa, reparación y conservación de edificaciones",
+          "_links": {
+            "self": {
+              "name": "Construcción completa, reparación y conservación de edificaciones",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.1"
+            }
+          }
+        },
+        {
+          "id": "1.843.2",
+          "name": "Servicios técnicos de arquitectura y urbanismo",
+          "_links": {
+            "self": {
+              "name": "Servicios técnicos de arquitectura y urbanismo",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2008-10-16",
+      "certificateEndDate": "2009-04-09",
+      "object": "LA REALIZACIÓN DE PROYECTOS DE ARQUITECTURA E INGENIERÍA, ASÍ COMO LA ORGANIZACIÓN Y DIRECCIÓN DE OBRAS, LA EJECUCIÓN DE OBRAS DE EDIFICACIÓN Y CONSTRUCCIÓN DE CUALQUIER CLASE DE INMUEBLES, LA EJECUCIÓN DE OBAS DE URBANIZACIÓN, LA SUBCONTRATACIÓN DE GREMIOS Y LABORES PROPIAS PARA LA VERIFICACIÓN DE TALES FINALIDADES, LA COMPRA, VENTA Y ARRENDAMIENTO DE INMUEBLES, LA PROMOCIÓN INMOBILIARIA.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/02365",
+      "_links": {
+        "self": {
+          "name": "EDIFICACIÓN Y SERVICIOS TECNEI, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/02365"
+        }
+      }
+    },
+    {
+      "name": "REFORMAS Y TRABAJOS VERTICALES A-2, S.L.",
+      "registrationNumber": "03681",
+      "identificationNumber": "B48861280",
+      "address": "FIKA, 38- TRASERA",
+      "location": {
+        "postalCode": "48006",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.501.3",
+          "name": "Albañilería y pequeños trabajos de construcción en general",
+          "_links": {
+            "self": {
+              "name": "Albañilería y pequeños trabajos de construcción en general",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.3"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2008-10-15",
+      "certificateEndDate": "2009-04-02",
+      "object": "LA PRESTACIÓN DE SERVICIOS DE RESTAURACIÓN, CONSERVACIÓN Y ARREGLOS DE EDIFICIOS Y CONSTRUCCIONES, INCLUIDOS LA PRESTACIÓN DE TRABAJOS DE ALBAÑILERÍA Y PINTURA",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03681",
+      "_links": {
+        "self": {
+          "name": "REFORMAS Y TRABAJOS VERTICALES A-2, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/03681"
+        }
+      }
+    },
+    {
+      "name": "SUMINISTROS ELÉCTRICOS ERKA, S.L.",
+      "registrationNumber": "01427",
+      "identificationNumber": "B20042842",
+      "address": "C/ SAN FRANCISCO, Nº 15 - BAJO.",
+      "location": {
+        "postalCode": "20002",
+        "municipality": "Donostia / San Sebastián",
+        "county": "Gipuzkoa",
+        "municipalityId": "069",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.504.1",
+          "name": "Instalaciones eléctricas en general",
+          "_links": {
+            "self": {
+              "name": "Instalaciones eléctricas en general",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.504.1"
+            }
+          }
+        },
+        {
+          "id": "1.617.9",
+          "name": "Venta al por mayor interindustrial de otros productos n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor interindustrial de otros productos n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.617.9"
+            }
+          }
+        },
+        {
+          "id": "1.653.2",
+          "name": "Venta al por menor de material y aparatos eléctricos, electrodomésticos y cocina",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de material y aparatos eléctricos, electrodomésticos y cocina",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.653.2"
+            }
+          }
+        },
+        {
+          "id": "1.843.1",
+          "name": "Servicios técnicos de ingeniería",
+          "_links": {
+            "self": {
+              "name": "Servicios técnicos de ingeniería",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2008-10-14",
+      "certificateEndDate": "2009-03-31",
+      "object": "LA COMPRAVENTA AL POR MAYOR Y MENOR DE MATERIALES ELÉCTRICOS EN GENERAL Y LA EJECUCIÓN DE TODA CLASE DE INSTALACIONES ELÉCTRICAS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/01427",
+      "_links": {
+        "self": {
+          "name": "SUMINISTROS ELÉCTRICOS ERKA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/01427"
+        }
+      }
+    },
+    {
+      "name": "VIAJES ARABA, S.L.",
+      "registrationNumber": "03120",
+      "identificationNumber": "B01022631",
+      "address": "C/ SIERVAS DE JESÚS, Nº 2 (ESQUINA PEDRO EGAÑA)",
+      "location": {
+        "postalCode": "01001",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.755",
+          "name": "Agencias de viajes",
+          "_links": {
+            "self": {
+              "name": "Agencias de viajes",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.755"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2008-10-14",
+      "certificateEndDate": "2009-03-10",
+      "object": "ÚNICA Y EXCLUSIVAMENTE EL EJERCICIO DE LAS ACTIVIDADES PROPIAS DE LAS AGENCIAS DE VIAJES GRUPO \"A\", TAL COMO SE DESARROLLA EN LOS ARTÍCULOS 1, 2, 3 Y 4 DEL REGLAMENTO DE RÉGIMEN JURÍDICO DE LAS AGENCIAS DE VIAJES Y DE SUS ACTIVIDADES, APROBADO POR ORDEN DE 9 DE AGOSTO DE 1974, PUBLICADO EN EL B.O.E. DE 26 DE SEPTIEMBRE DE 1974",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03120",
+      "_links": {
+        "self": {
+          "name": "VIAJES ARABA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/03120"
+        }
+      }
+    },
+    {
+      "name": "BSM INFORMÁTICA, S.L.",
+      "registrationNumber": "03678",
+      "identificationNumber": "B20518635",
+      "address": "C/EZURRIKI, 19",
+      "location": {
+        "postalCode": "20305",
+        "municipality": "Irun",
+        "county": "Gipuzkoa",
+        "municipalityId": "045",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.617.8",
+          "name": "Venta al por mayor de máquinas y material de oficina",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de máquinas y material de oficina",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.617.8"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2008-10-14",
+      "certificateEndDate": "2009-03-16",
+      "object": "EL INTEGRADO POR LAS SIGUIENTES ACTIVIDADES: COMPRA Y VENTA DE EQUIPOS INFORMÁTICOS COMPLETOS, INSTALACIONES INFORMÁTICAS COMPLEJAS, REDES INFORMÁTICAS, COMPONENTES INFORMÁTICOS, REPUESTOS INFORMÁTICOS, PROGRAMAS INFORMÁTICOS TODOS ELLOS DE CUALQUIER TIPO, TANTO PROCEDENTES DEL EXTRANJERO COMO DE FABRICACIÓN NACIONAL Y CON DESTINO A CUALQUIER PARTE DEL MUNDO Y TODO ELLO HASTA SU PUESTA EN FUNCIONAMIENTO DEFINITIVO; VENTA DE PROGRAMAS INFORMÁTICOS DE ELABORACIÓN Y DESARROLLO PROPIOS Y MODIFICACIÓN DE LOS PROGRAMAS ADQUIRIDOS  PARA ADAPTARLOS A LAS NECESIDADES DE CADA MOMENTO; ASISTENCIA TÉCNICA Y ASESORAMIENTO DE TODO TIPO EN MATERIA DE INFORMÁTICA O RELACIONADA CON LA INFORMÁTICA. SOPORTE, MANTENIMIENTO Y ACTUALIZACIÓN DE LOS PROYECTOS EJECUTADOS POR LA SOCIEDAD O POR TERCEROS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03678",
+      "_links": {
+        "self": {
+          "name": "BSM INFORMÁTICA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/03678"
+        }
+      }
+    },
+    {
+      "name": "ESTEBAN ZORRILLA, S.L.",
+      "registrationNumber": "01625",
+      "identificationNumber": "B48149785",
+      "address": "C/ PRIM, Nº 31 - BAJO.",
+      "location": {
+        "postalCode": "48006",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.504.2",
+          "name": "Instalaciones de fontanería",
+          "_links": {
+            "self": {
+              "name": "Instalaciones de fontanería",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.504.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2008-10-13",
+      "certificateEndDate": "2009-03-23",
+      "object": "a) LA INSTALACIÓN Y REPARACIÓN DE FONTANERÍA Y ACEPTACIÓN MÁS AMPLIA.\r\n\r\nb) ALMACENAMIENTO, DEPÓSITO Y DISTRIBUCIÓN DE MERCANCÍA, PRODUCTOS, ARTÍCULOS Y MATERIAS DE TODA CLASE.\r\n\r\nc) LA ADQUISICIÓN POR CUALQUIER TÍTULO, DE FINCAS RÚSTICAS Y URBANAS, LA CONSTRUCCIÓN DE ESTOS Y LA ADMINISTRACIÓN, TENENCIA, EXPLOTACIÓN Y ARRENDAMIENTO, DE TALES BIENES Y SU VENTA TOTAL O PARCIAL, SEGÚN CONVENGA PARA SU APROVECHAMIENTO AGRÍCOLA, FORESTAL, URBANO, INDUSTRIAL O DE CUALQUIER OTRO.\r\n\r\nd) LA PROMOCIÓN Y EXPLOTACIÓN DE TODA CLASE DE PRODUCTOS  ELABORADOS, NATURALES, MATERIAS PRIMAS, MANUFACTURADOS, SEMIELABORADOS, RELACIONADOS CON LA AGRICULTURA, GANADERÍA, TRANSPORTE Y AUTOMACIÓN DE CUALQUIER CLASE Y NATURALEZA, TELECOMUNICACIÓN, INDUSTRIA FORESTAL, SIDEROMETALÚRGICA, MECÁNICA, ELECTROMECÁNICA, QUÍMICA Y ALIMENTACIÓN, TEXTIL, BIOQUÍMICA Y LA DE SUS DERIVADOS, AFINES Y COMPLEMENTARIOS.\r\n\r\ne) EL ESTUDIO, INVESTIGACIÓN, PROMOCIÓN Y PRESTACIÓN DE TODA CLASE DE SERVICIOS DE ASISTENCIA Y GESTIÓN TÉCNICA, ADMINISTRATIVA Y COMERCIAL.\r\n\r\nf) LA ADQUISICIÓN CESIÓN, INVERSIÓN, TENENCIA, DISFRUTE, ADMINISTRACIÓN, GESTIÓN Y NEGOCIACIÓN EN GENERAL, DE VALORES MOBILIARIOS, PARTICIPACIONES SOCIALES O EN COPROPIEDAD DE TODA CLASE DE BIENES",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/01625",
+      "_links": {
+        "self": {
+          "name": "ESTEBAN ZORRILLA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/01625"
+        }
+      }
+    },
+    {
+      "name": "ARABAKO IGERITAN TECNIKOAN, S.L.",
+      "registrationNumber": "01987",
+      "identificationNumber": "B01242502",
+      "address": "C/ PRUDENCIO Mª DE VERÁSTEGUI, Nº 14 - 2º IZDA.",
+      "location": {
+        "postalCode": "01002",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.652.2",
+          "name": "Venta al por menor de productos de droguería y productos para decoración",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de productos de droguería y productos para decoración",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.652.2"
+            }
+          }
+        },
+        {
+          "id": "1.659.6",
+          "name": "Venta al por menor de juguetes, artículos de deporte",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de juguetes, artículos de deporte",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.659.6"
+            }
+          }
+        },
+        {
+          "id": "1.849.4",
+          "name": "Servicios de custodia, seguridad y protección",
+          "_links": {
+            "self": {
+              "name": "Servicios de custodia, seguridad y protección",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.849.4"
+            }
+          }
+        },
+        {
+          "id": "1.921.1",
+          "name": "Servicios de limpieza en calles, vías públicas y jardines",
+          "_links": {
+            "self": {
+              "name": "Servicios de limpieza en calles, vías públicas y jardines",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.921.1"
+            }
+          }
+        },
+        {
+          "id": "1.967.2",
+          "name": "Escuelas y servicios de perfeccionamiento del deporte",
+          "_links": {
+            "self": {
+              "name": "Escuelas y servicios de perfeccionamiento del deporte",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.967.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2008-10-13",
+      "certificateEndDate": "2009-04-03",
+      "object": "LA ENSEÑANZA, DIFUSIÓN Y ANIMACIÓN DE TODO TIPO DE ACTIVIDADES RELACIONADAS CON EL DEPORTE, INCLUÍDO EL SOCORRISMO ACUÁTICO Y TERRESTRE. LA GESTIÓN, ADMINISTRACIÓN Y CONTROL DE INSTALACIONES DEPORTIVAS, INCLUÍDA SU LIMPIEZA Y MANTENIMIENTO, LA REGULACIÓN Y CONTROL DE ACCESOS A LAS MISMAS, LA INFORMACIÓN Y VIGILANCIA, LA GESTIÓN DE SUS SERVICIOS SANITARIOS, SU EQUIPAMIENTO Y DINAMIZACIÓN. EL ALQUILER, EQUIPACIÓN Y VENTA DE PRENDAS Y EQUIPOS DEPORTIVOS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/01987",
+      "_links": {
+        "self": {
+          "name": "ARABAKO IGERITAN TECNIKOAN, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/01987"
+        }
+      }
+    },
+    {
+      "name": "PSH ENERGÍA, S.A.",
+      "registrationNumber": "03287",
+      "identificationNumber": "A81784704",
+      "address": "C/ CIUDAD DE FRÍAS 5, NAVE 1.",
+      "location": {
+        "postalCode": "28021",
+        "municipality": "Madrid",
+        "county": "Madrid",
+        "municipalityId": "079",
+        "countyId": "28"
+      },
+      "economicActivities": [
+        {
+          "id": "1.504.1",
+          "name": "Instalaciones eléctricas en general",
+          "_links": {
+            "self": {
+              "name": "Instalaciones eléctricas en general",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.504.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2008-10-13",
+      "certificateEndDate": "2009-03-16",
+      "object": "LA COMERCIALIZACIÓN, INSTALACIÓN, FABRICACIÓN Y MANTENIMIENTO DE EQUIPOS ELÉCTRICOS, ELECTRÓNICOS, EQUIPOS Y CUADROS ELETRÓGENOS Y AIRE ACONDICIONADO.\r\nPORYECTOS Y EJECUCIÓN DE SALAS DE PROCESOS DE DATOS (C.P.D.) Y ACTIVIDADES DE INGENIERÍA",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03287",
+      "_links": {
+        "self": {
+          "name": "PSH ENERGÍA, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/03287"
+        }
+      }
+    },
+    {
+      "name": "GEONATURA, S.L.",
+      "registrationNumber": "03674",
+      "identificationNumber": "B80227689",
+      "address": "C/ GARCÍA DE PAREDES, 21",
+      "location": {
+        "postalCode": "28010",
+        "municipality": "Madrid",
+        "county": "Madrid",
+        "municipalityId": "079",
+        "countyId": "28"
+      },
+      "economicActivities": [
+        {
+          "id": "1.619.7",
+          "name": "Venta al por mayor de instrumentos de precisión, medida y similares",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de instrumentos de precisión, medida y similares",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.619.7"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2008-10-13",
+      "certificateEndDate": "2009-03-25",
+      "object": "LA COMPRAVENTA, IMPORTACIÓN, EXPORTACIÓN, DISTRIBUCIÓN Y COMERCIALIZACIÓN DE TODO TIPO DE MATERIAL CIENTIFICO",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03674",
+      "_links": {
+        "self": {
+          "name": "GEONATURA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/03674"
+        }
+      }
+    }
+  ]
+}

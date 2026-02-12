@@ -1,0 +1,458 @@
+{
+  "totalItems": 9042,
+  "totalPages": 905,
+  "currentPage": 394,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "name": "ASVAMEDIC, S.L.L.",
+      "registrationNumber": "05530",
+      "identificationNumber": "B33960816",
+      "address": "ISAAC PERAL Y CABALLERO, 49",
+      "location": {
+        "postalCode": "33211",
+        "municipality": "Gijón",
+        "county": "Asturias",
+        "municipalityId": "024",
+        "countyId": "33"
+      },
+      "economicActivities": [
+        {
+          "id": "1.659.3",
+          "name": "Venta al por menor de aparatos médicos, ortopédicos, ópticos y fotográficos",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de aparatos médicos, ortopédicos, ópticos y fotográficos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.659.3"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2024-09-12",
+      "certificateEndDate": "2025-03-12",
+      "object": "LA DISTRIBUCIÓN, FABRICACIÓN, SERVICIOS DE MEDIACIÓN, COMPRAVENTA, COMERCIO MAYORISTA Y MINORISTA, EXPORTACIÓN E IMPORTACIÓN, ASÍ COMO LA DISTRIBUCIÓN DE TODA CLASE DE MATERIAL MÉDICO QUIRÚRGICO, ELECTRO MÉDICO, SANITARIO, ORTOPÉDICO, GERIÁTRICO, MOBILIARIO CLÍNICO Y TODA CLASE DE PRODUCTOS QUÍMICOS Y FARMACÉUTICOS, ASÍ COMO TAMBIÉN PRENDAS DE VESTIDO, CALZADO Y PRODUCTOS TEXTILES, ORGANIZACIÓN DE EVENTOS,  Y FORMACIÓN RELACIONADA CON EL OBJETO DE LA SOCIEDAD",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/05530",
+      "_links": {
+        "self": {
+          "name": "ASVAMEDIC, S.L.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/05530"
+        }
+      }
+    },
+    {
+      "name": "SAIOA SECO ARAUJO",
+      "registrationNumber": "09515",
+      "identificationNumber": "45818235G",
+      "address": "Calle Miguel de Unamuno (48920) Nº 43",
+      "location": {
+        "postalCode": "48920",
+        "municipality": "Portugalete",
+        "county": "Bizkaia",
+        "municipalityId": "078",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "2.887",
+          "name": "Maquilladores y esteticistas",
+          "_links": {
+            "self": {
+              "name": "Maquilladores y esteticistas",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/2.887"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2024-09-12",
+      "certificateEndDate": "2025-03-12",
+      "object": "MAQUILLADORES Y ESTETICISTAS.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/09515",
+      "_links": {
+        "self": {
+          "name": "SAIOA SECO ARAUJO",
+          "href": "https://api.euskadi.eus/procurements/companies/09515"
+        }
+      }
+    },
+    {
+      "name": "NAKERO OSASUN ETA KIROLA, S.L.",
+      "registrationNumber": "09793",
+      "identificationNumber": "J16390569",
+      "address": "Calle Senda de Langarica",
+      "location": {
+        "postalCode": "01200",
+        "municipality": "Agurain/Salvatierra",
+        "county": "Araba/Álava",
+        "municipalityId": "051",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.967.2",
+          "name": "Escuelas y servicios de perfeccionamiento del deporte",
+          "_links": {
+            "self": {
+              "name": "Escuelas y servicios de perfeccionamiento del deporte",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.967.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2024-09-12",
+      "certificateEndDate": "2025-03-12",
+      "object": "LA PRESTACIÓN DE SERVICIOS DE ACTIVIDADES DEPORTIVAS Y CULTURALES. LA ORGANIZACIÓN DE EVENTOS, CONGRESOS Y FERIAS, LA PRESTACIÓN DE SERVICIOS, ACTIVIDADES DE GESTIÓN Y ADMINISTRACIÓN SERVICIOS EDUCATIVOS, DE OCIO Y ENTRETENIMIENTO, ORGANIZACIÓN DE ACTIVIDADES DEPORTIVAS, GESTIÓN DEPORTIVA DE ESCUELAS DEPORTIVAS, PRESTACIÓN DE SERVICIOS DEPORTIVOS Y DE OCIO, TURISMO ACTIVO, ORGANIZACIÓN DE CAMPUS, CONGRESOS, CONFERENCIAS Y ACTIVIDADES RELACIONADAS CON EL DEPORTE. LA GESTIÓN, CONTROL, CONSERVACIÓN, MANTENIMIENTO Y EXPLOTACIÓN DE INSTALACIONES DEPORTIVAS Y CULTURALES. EL ASESORAMIENTO TÉCNICO-DEPORTIVO Y CULTURAL.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/09793",
+      "_links": {
+        "self": {
+          "name": "NAKERO OSASUN ETA KIROLA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/09793"
+        }
+      }
+    },
+    {
+      "name": "INGENIERIA DE PRESAS, S.L.",
+      "registrationNumber": "08962",
+      "identificationNumber": "B98323850",
+      "address": "PLAZA SEMANA SANTA MARINERA 2, 3",
+      "location": {
+        "postalCode": "46011",
+        "municipality": "València",
+        "county": "Valencia/València",
+        "municipalityId": "250",
+        "countyId": "46"
+      },
+      "economicActivities": [
+        {
+          "id": "1.843.1",
+          "name": "Servicios técnicos de ingeniería",
+          "_links": {
+            "self": {
+              "name": "Servicios técnicos de ingeniería",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2024-09-11",
+      "certificateEndDate": "2025-03-11",
+      "object": "LA PRESTACIÓN DE SERVICIOS TECNOLÓGICOS, DE INGENIERÍA Y DE CONSULTORÍA PARA LA GESTIÓN DE LA SEGURIDAD DE PRESAS Y OTRAS INFRAESTRUCTURAS EN OBRA CIVIL Y MILITAR, ASÍ COMO LA INVESTIGACIÓN Y DESARROLLO TECNOLÓGICO EN DICHO ÁMBITO Y LA EXPLOTACIÓN COMERCIAL DE LOS RESULTADOS DE LA MISMA.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08962",
+      "_links": {
+        "self": {
+          "name": "INGENIERIA DE PRESAS, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/08962"
+        }
+      }
+    },
+    {
+      "name": "ARS MEDIA CREACION AUDIOVISUAL, S.L.",
+      "registrationNumber": "09508",
+      "identificationNumber": "B81400996",
+      "address": "Calle Marcelina nº 1 - local",
+      "location": {
+        "postalCode": "28029",
+        "municipality": "Madrid",
+        "county": "Madrid",
+        "municipalityId": "079",
+        "countyId": "28"
+      },
+      "economicActivities": [
+        {
+          "id": "1.474",
+          "name": "Artes gráficas (impresión gráfica)",
+          "_links": {
+            "self": {
+              "name": "Artes gráficas (impresión gráfica)",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.474"
+            }
+          }
+        },
+        {
+          "id": "1.615.4",
+          "name": "Venta al por mayor de aparatos y material radioeléctrico y electrónico",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de aparatos y material radioeléctrico y electrónico",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.615.4"
+            }
+          }
+        },
+        {
+          "id": "1.961.1",
+          "name": "Producción de películas cinematográficas (incluso vídeos)",
+          "_links": {
+            "self": {
+              "name": "Producción de películas cinematográficas (incluso vídeos)",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.961.1"
+            }
+          }
+        },
+        {
+          "id": "1.961.2",
+          "name": "Doblaje y montaje de películas",
+          "_links": {
+            "self": {
+              "name": "Doblaje y montaje de películas",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.961.2"
+            }
+          }
+        },
+        {
+          "id": "1.973.1",
+          "name": "Servicios fotográficos",
+          "_links": {
+            "self": {
+              "name": "Servicios fotográficos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.973.1"
+            }
+          }
+        },
+        {
+          "id": "1.999",
+          "name": "Otros servicios n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros servicios n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.999"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2024-09-11",
+      "certificateEndDate": "2025-03-11",
+      "object": "- LA IDEACIÓN, PRODUCCIÓN, PROMOCIÓN, IMPORTACIÓN, EXPORTACIÓN, DISTRIBUCIÓN, EXHIBICIÓN, VENTA, INTERCAMBIO Y ALQUILER DE PELÍCULAS CINEMATOGRÁFICAS, CUALQUIERA QUE SEA SU FORMATO O SOPORTE, CONOCIDO O POR CONOCER. - LA CREACIÓN, REALIZACIÓN Y DISTRIBUCIÓN DE IMÁGENES FOTOGRÁFICAS, CON BASE MAGNÉTICA O GRÁFICA. - LA IMPORTACIÓN Y DISTRIBUCIÓN DE EQUIPOS PARA CAPTACIÓN Y MANIPULADO DE IMÁGENES CINEMATOGRÁFICAS, VIDEOGRÁFICAS Y FOTOGRÁFICAS. - LA IDEACIÓN, PRODUCCIÓN Y PROMOCIÓN DE CUALESQUIERA ESPECTÁCULOS DEPORTIVOS, MUSICALES, AUDIOVISUALES, TEATRALES, ARTÍSTICOS Y CULTURALES DE CUALQUIER TIPO, YA TENGAN LUGAR EN SALAS O LOCALES CERRADOS, COMO AL AIRE LIBRE, YA SEA EN ESTABLECIMIENTOS PERMANENTES, YA FUERA DE LOS MISMOS. - LA PROMOCIÓN, EL ASESORAMIENTO Y LA CREACIÓN DE LA IMAGEN DE PERSONAS Y ENTIDADES PÚBLICAS Y PRIVADAS, ASÍ COMO DE EMPRESAS, MARCAS Y CUALESQUIERA PRODUCTOS, NACIONALES O EXTRANJEROS. - EL DISEÑO GRÁFICO Y PUBLICITARIO, LA IMAGEN CORPORATIVA.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/09508",
+      "_links": {
+        "self": {
+          "name": "ARS MEDIA CREACION AUDIOVISUAL, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/09508"
+        }
+      }
+    },
+    {
+      "name": "MARIA AMAIA ERCE GARCIA",
+      "registrationNumber": "09514",
+      "identificationNumber": "15378129F",
+      "address": "Kruz Gallastegi, 3",
+      "location": {
+        "postalCode": "20570",
+        "municipality": "Bergara",
+        "county": "Gipuzkoa",
+        "municipalityId": "074",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.651.1",
+          "name": "Venta al por menor de productos textiles, de hogar, alfombras y similares",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de productos textiles, de hogar, alfombras y similares",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.651.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2024-09-11",
+      "certificateEndDate": "2025-03-11",
+      "object": "VENTA AL POR MENOR DE PRODUCTOS TEXTILES, DE HOGAR, ALFOMBRAS Y SIMILARES.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/09514",
+      "_links": {
+        "self": {
+          "name": "MARIA AMAIA ERCE GARCIA",
+          "href": "https://api.euskadi.eus/procurements/companies/09514"
+        }
+      }
+    },
+    {
+      "name": "KUDEA SERVICIOS POSITIVOS, S.L.",
+      "registrationNumber": "08692",
+      "identificationNumber": "B71457667",
+      "address": "Herriko Plaza 2 1-A",
+      "location": {
+        "postalCode": "31866",
+        "municipality": "Basaburua",
+        "county": "Navarra",
+        "municipalityId": "049",
+        "countyId": "31"
+      },
+      "economicActivities": [
+        {
+          "id": "1.653.9",
+          "name": "Venta al por menor de otros artículos para el equipamiento del hogar",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de otros artículos para el equipamiento del hogar",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.653.9"
+            }
+          }
+        },
+        {
+          "id": "1.845",
+          "name": "Explotación electrónica por cuenta de terceros",
+          "_links": {
+            "self": {
+              "name": "Explotación electrónica por cuenta de terceros",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.845"
+            }
+          }
+        },
+        {
+          "id": "1.966.9",
+          "name": "Otros servicios culturales n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros servicios culturales n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.966.9"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2024-09-11",
+      "certificateEndDate": "2025-03-10",
+      "object": "LA INTERMEDIACIÓN Y GESTIÓN EN LA PROMOCIÓN DEL DESARROLLO DEL ENTORNO RURAL MEDIANTE NUEVAS SOLUCIONES DE MOVILIDAD.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08692",
+      "_links": {
+        "self": {
+          "name": "KUDEA SERVICIOS POSITIVOS, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/08692"
+        }
+      }
+    },
+    {
+      "name": "TENKA 7 ARKITEKTURA, S.L.L.P.",
+      "registrationNumber": "07174",
+      "identificationNumber": "B95944328",
+      "address": "PUENTE DE DEUSTO 7, 3º DEPT.6",
+      "location": {
+        "postalCode": "48014",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.843.2",
+          "name": "Servicios técnicos de arquitectura y urbanismo",
+          "_links": {
+            "self": {
+              "name": "Servicios técnicos de arquitectura y urbanismo",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2024-09-11",
+      "certificateEndDate": "2025-03-10",
+      "object": "LA ACTIVIDAD PROPIA DE LOS PROFESIONALES DE LA ARQUITECTURA",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07174",
+      "_links": {
+        "self": {
+          "name": "TENKA 7 ARKITEKTURA, S.L.L.P.",
+          "href": "https://api.euskadi.eus/procurements/companies/07174"
+        }
+      }
+    },
+    {
+      "name": "JON ORDEÑANA USUBIAGA",
+      "registrationNumber": "09788",
+      "identificationNumber": "14605074M",
+      "address": "c/ Pedro Antonio Añibarro, n.º 1 bis, Bj-b",
+      "location": {
+        "postalCode": "48143",
+        "municipality": "Areatza",
+        "county": "Bizkaia",
+        "municipalityId": "093",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.921.1",
+          "name": "Servicios de limpieza en calles, vías públicas y jardines",
+          "_links": {
+            "self": {
+              "name": "Servicios de limpieza en calles, vías públicas y jardines",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.921.1"
+            }
+          }
+        },
+        {
+          "id": "2.811",
+          "name": "Profesionales que prestan servicios de limpieza",
+          "_links": {
+            "self": {
+              "name": "Profesionales que prestan servicios de limpieza",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/2.811"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2024-09-10",
+      "certificateEndDate": "2025-03-05",
+      "object": "PROFESIONALES QUE PRESTAN SERVICIOS DE LIMPIEZA. SERVICIOS DE LIMPIEZA EN CALLES, VÍAS PÚBLICAS Y JARDINES.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/09788",
+      "_links": {
+        "self": {
+          "name": "JON ORDEÑANA USUBIAGA",
+          "href": "https://api.euskadi.eus/procurements/companies/09788"
+        }
+      }
+    },
+    {
+      "name": "PAMARU ASESORIA INTEGRAL, S.L.",
+      "registrationNumber": "08694",
+      "identificationNumber": "B86748423",
+      "address": "AVENIDA ELIZATXO 41 1ºA",
+      "location": {
+        "postalCode": "20303",
+        "municipality": "Irun",
+        "county": "Gipuzkoa",
+        "municipalityId": "045",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.834",
+          "name": "Servicios relativos a la propiedad inmobiliaria e industrial",
+          "_links": {
+            "self": {
+              "name": "Servicios relativos a la propiedad inmobiliaria e industrial",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.834"
+            }
+          }
+        },
+        {
+          "id": "1.841",
+          "name": "Servicios jurídicos",
+          "_links": {
+            "self": {
+              "name": "Servicios jurídicos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.841"
+            }
+          }
+        },
+        {
+          "id": "1.842",
+          "name": "Servicios financieros y contables",
+          "_links": {
+            "self": {
+              "name": "Servicios financieros y contables",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.842"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2024-09-10",
+      "certificateEndDate": "2025-03-10",
+      "object": "1. ACTIVIDADES INMOBILIARIAS. 3. PRESTACIÓN DE SERVICIOS. ACTIVIDADES DE GESTIÓN Y ADMINISTRACIÓN. SERVICIOS EDUCATIVOS, SANITARIOS, DE OCIO Y ENTRETENIMIENTO.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08694",
+      "_links": {
+        "self": {
+          "name": "PAMARU ASESORIA INTEGRAL, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/08694"
+        }
+      }
+    }
+  ]
+}

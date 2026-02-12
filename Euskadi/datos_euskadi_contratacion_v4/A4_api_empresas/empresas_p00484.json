@@ -1,0 +1,408 @@
+{
+  "totalItems": 9042,
+  "totalPages": 905,
+  "currentPage": 484,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "name": "HIRIGINTZA CONTRACTING, S.L.",
+      "registrationNumber": "06614",
+      "identificationNumber": "B75214056",
+      "address": "PORTUETXE, 47 BAJO",
+      "location": {
+        "postalCode": "20018",
+        "municipality": "Donostia / San Sebastián",
+        "county": "Gipuzkoa",
+        "municipalityId": "069",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.501.1",
+          "name": "Construcción completa, reparación y conservación de edificaciones",
+          "_links": {
+            "self": {
+              "name": "Construcción completa, reparación y conservación de edificaciones",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2022-09-26",
+      "certificateEndDate": "2023-03-26",
+      "object": "LA PROMOCIÓN, INVERSIÓN, TENENCIA, COMPRA, VENTA, ARRENDAMIENTO, ADMINISTRACIÓN, GESTIÓN, CONSTRUCCIÓN DE TODO TIPO, REHABILITACIÓN, REFORMA, SUMINISTRO, MANTENIMIENTO Y EXPLOTACIÓN DE TODA CLASE DE EDIFICACIONES, SOLARES, INSTALACIONES, INFRAESTRUCTURAS E INMUEBLES EN GENERAL, PARA SÍ O PARA TERCEROS, ASÍ COMO LA PRESTACIÓN DE SERVICIOS TÉCNICOS Y DE CONSULTORÍA Y ASESORAMIENTO PROFESIONAL EN RELACIÓN A LA CONSTRUCCIÓN",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06614",
+      "_links": {
+        "self": {
+          "name": "HIRIGINTZA CONTRACTING, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/06614"
+        }
+      }
+    },
+    {
+      "name": "ASIER MATELLANES CABRERO",
+      "registrationNumber": "07947",
+      "identificationNumber": "30692615N",
+      "address": "JOSE MIGUEL ARRIETA 18 1ºB",
+      "location": {
+        "postalCode": "48840",
+        "municipality": "Güeñes",
+        "county": "Bizkaia",
+        "municipalityId": "045",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.721.2",
+          "name": "Transporte por autotaxis",
+          "_links": {
+            "self": {
+              "name": "Transporte por autotaxis",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.721.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2022-09-25",
+      "certificateEndDate": "2023-03-25",
+      "object": "TRANSPORTE POR AUTOTAXIS.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07947",
+      "_links": {
+        "self": {
+          "name": "ASIER MATELLANES CABRERO",
+          "href": "https://api.euskadi.eus/procurements/companies/07947"
+        }
+      }
+    },
+    {
+      "name": "ANDRES MARIA DIEZ AYESA",
+      "registrationNumber": "08586",
+      "identificationNumber": "72515326Y",
+      "address": "MAYOR 84, BAJO",
+      "location": {
+        "postalCode": "01300",
+        "municipality": "Laguardia",
+        "county": "Araba/Álava",
+        "municipalityId": "031",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "2.411",
+          "name": "Arquitectos",
+          "_links": {
+            "self": {
+              "name": "Arquitectos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/2.411"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2022-09-22",
+      "certificateEndDate": "2023-02-28",
+      "object": "ARQUITECTOS.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08586",
+      "_links": {
+        "self": {
+          "name": "ANDRES MARIA DIEZ AYESA",
+          "href": "https://api.euskadi.eus/procurements/companies/08586"
+        }
+      }
+    },
+    {
+      "name": "AMBULANCIAS MAIZ, S.A.U.",
+      "registrationNumber": "01824",
+      "identificationNumber": "A20372116",
+      "address": "C/ PASEO UBARBURU, Nº 11 - TRASERA",
+      "location": {
+        "postalCode": "20014",
+        "municipality": "Donostia / San Sebastián",
+        "county": "Gipuzkoa",
+        "municipalityId": "069",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.721.4",
+          "name": "Transporte sanitario en ambulancias",
+          "_links": {
+            "self": {
+              "name": "Transporte sanitario en ambulancias",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.721.4"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2022-09-22",
+      "certificateEndDate": "2023-03-20",
+      "object": "SERVICIO DE AMBULANCIA, TANTO A ENTIDADES PÚBLICAS O PRIVADAS, SOCIEDADES Y PARTICULARES.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/01824",
+      "_links": {
+        "self": {
+          "name": "AMBULANCIAS MAIZ, S.A.U.",
+          "href": "https://api.euskadi.eus/procurements/companies/01824"
+        }
+      }
+    },
+    {
+      "name": "ADASA SISTEMAS, S.A.",
+      "registrationNumber": "07566",
+      "identificationNumber": "A58596206",
+      "address": "C/ IGNASI IGLESIAS 217-219",
+      "location": {
+        "postalCode": "08820",
+        "municipality": "Prat de Llobregat, El",
+        "county": "Barcelona",
+        "municipalityId": "169",
+        "countyId": "08"
+      },
+      "economicActivities": [
+        {
+          "id": "1.504.1",
+          "name": "Instalaciones eléctricas en general",
+          "_links": {
+            "self": {
+              "name": "Instalaciones eléctricas en general",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.504.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2022-09-22",
+      "certificateEndDate": "2023-03-20",
+      "object": "EL ESTUDIO, PROYECTO, CONSTRUCCIÓN, FABRICACIÓN, SUMINISTRO, MANTENIMIENTO Y CONSERVACIÓN DE OBRAS E INSTALACIONES, SISTEMAS Y EN GENERAL DE MEDIOS DE CONTROL, OPERACIÓN, GESTIÓN, DETECCIÓN, CAPTACIÓN, TRANSFERENCIA Y TELETRANSMISIÓN Y DE AQUELLOS QUE LOS SUCESIVOS ESTADOS DE LA TECNOLOGÍA GENEREN SU NECESIDAD Y POSIBILIDAD, RELACIONADOS CON LA GESTIÓN HIDROLÓGICA E HIDRÁULICA, MEDIOAMBIENTAL Y METEREOLOGÍA, LA GESTIÓN DE RECURSOS NATURALES, ASÍ COMO TODA CLASE DE SERVICIOS URBANOS, PÚBLICOS E INDUSTRIALES",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07566",
+      "_links": {
+        "self": {
+          "name": "ADASA SISTEMAS, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/07566"
+        }
+      }
+    },
+    {
+      "name": "JOSE SERRANO REINA, S.L.",
+      "registrationNumber": "07944",
+      "identificationNumber": "B14222962",
+      "address": "PEDRO CLAVER, 32",
+      "location": {
+        "postalCode": "14800",
+        "municipality": "Priego de Córdoba",
+        "county": "Córdoba",
+        "municipalityId": "055",
+        "countyId": "14"
+      },
+      "economicActivities": [
+        {
+          "id": "1.453",
+          "name": "Confección en serie de toda clase de prendas de vestir",
+          "_links": {
+            "self": {
+              "name": "Confección en serie de toda clase de prendas de vestir",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.453"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2022-09-21",
+      "certificateEndDate": "2023-03-21",
+      "object": "LA CONFECCIÓN DE PRENDAS DE VESTIR Y SU COMERCIALIZACIÓN.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07944",
+      "_links": {
+        "self": {
+          "name": "JOSE SERRANO REINA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/07944"
+        }
+      }
+    },
+    {
+      "name": "SERVICIOS INTEGRALES DE ROTULOS NERVION, S.L.U.",
+      "registrationNumber": "07035",
+      "identificationNumber": "B01387927",
+      "address": "AVENIDA ZUMALAKARREGI 64",
+      "location": {
+        "postalCode": "01400",
+        "municipality": "Laudio/Llodio",
+        "county": "Araba/Álava",
+        "municipalityId": "036",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.474",
+          "name": "Artes gráficas (impresión gráfica)",
+          "_links": {
+            "self": {
+              "name": "Artes gráficas (impresión gráfica)",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.474"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2022-09-21",
+      "certificateEndDate": "2023-03-21",
+      "object": "LA REALIZACIÓN DE ACTIVIDADES Y PRESTACIÓN DE SERVICIOS DE TODO TIPO EN EL ÁREA DE ROTULACIÓN, SEÑALIZACIÓN, DISEÑO Y PUBLICIDAD, ESPECIALMENTE LA FABRICACIÓN, INSTALACIÓN Y COMERCIALIZACIÓN DE PRODUCTOS EN RELACIÓN CON LAS ACTIVIDADES CITADAS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07035",
+      "_links": {
+        "self": {
+          "name": "SERVICIOS INTEGRALES DE ROTULOS NERVION, S.L.U.",
+          "href": "https://api.euskadi.eus/procurements/companies/07035"
+        }
+      }
+    },
+    {
+      "name": "LUCAS ROJAS, S.L.",
+      "registrationNumber": "08283",
+      "identificationNumber": "B14930903",
+      "address": "VALENZUELA, 21",
+      "location": {
+        "postalCode": "14540",
+        "municipality": "Rambla, La",
+        "county": "Córdoba",
+        "municipalityId": "057",
+        "countyId": "14"
+      },
+      "economicActivities": [
+        {
+          "id": "1.659.2",
+          "name": "Venta al por menor de muebles de oficina y máquinas y equipos de oficina",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de muebles de oficina y máquinas y equipos de oficina",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.659.2"
+            }
+          }
+        },
+        {
+          "id": "1.659.4",
+          "name": "Venta al por menor de libros, periódicos y artículos de papelería y escritorio",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de libros, periódicos y artículos de papelería y escritorio",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.659.4"
+            }
+          }
+        },
+        {
+          "id": "1.973.3",
+          "name": "Servicios de copias de documentos con máquina fotocopiadora",
+          "_links": {
+            "self": {
+              "name": "Servicios de copias de documentos con máquina fotocopiadora",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.973.3"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2022-09-21",
+      "certificateEndDate": "2023-03-21",
+      "object": "EL COMERCIO AL MENOR Y MAYOR DE TODO TIPO DE ARTÍCULOS DE LIBRERÍA Y PAPELERÍA.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08283",
+      "_links": {
+        "self": {
+          "name": "LUCAS ROJAS, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/08283"
+        }
+      }
+    },
+    {
+      "name": "ZABALTEGI JUDIZMENDI, S.L.",
+      "registrationNumber": "05438",
+      "identificationNumber": "B01372911",
+      "address": "AV. JUDIZMENDI",
+      "location": {
+        "postalCode": "01002",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.673.2",
+          "name": "Otros cafés y bares",
+          "_links": {
+            "self": {
+              "name": "Otros cafés y bares",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.673.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2022-09-20",
+      "certificateEndDate": "2023-03-20",
+      "object": "-ACTIVIDADES DE REINSERCIÓN SOCIO-LABORAL DE PERSONAS QUE PRESENTEN ESPECIALES DIFICULTADES DE ACCESO AL MERCADO LABORAL, HOSTELERÍA Y SERVICIO A TERCEROS. - LA COMPRAVENTA Y ARRENDAMIENTO DE BIENES INMUEBLES, LOCALES, VIVIENDAS, SOLARES Y EN GENERAL TODA CLASE DE FINCAS RÚSTICAS Y URBANAS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/05438",
+      "_links": {
+        "self": {
+          "name": "ZABALTEGI JUDIZMENDI, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/05438"
+        }
+      }
+    },
+    {
+      "name": "ALLERGAN, S.A.",
+      "registrationNumber": "03005",
+      "identificationNumber": "A28802007",
+      "address": "Avd. Burgos, 91",
+      "location": {
+        "postalCode": "28050",
+        "municipality": "Madrid",
+        "county": "Madrid",
+        "municipalityId": "079",
+        "countyId": "28"
+      },
+      "economicActivities": [
+        {
+          "id": "1.614.1",
+          "name": "Venta al por mayor de productos farmacéuticos y medicamentos",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de productos farmacéuticos y medicamentos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.614.1"
+            }
+          }
+        },
+        {
+          "id": "1.614.2",
+          "name": "Venta al por mayor de productos de perfumería, droguería, higiene y belleza",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de productos de perfumería, droguería, higiene y belleza",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.614.2"
+            }
+          }
+        },
+        {
+          "id": "1.619.2",
+          "name": "Venta al por mayor de aparatos e instrumentos médicos, ortopédicos, ópticos",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de aparatos e instrumentos médicos, ortopédicos, ópticos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.619.2"
+            }
+          }
+        },
+        {
+          "id": "1.849.9",
+          "name": "Otros servicios independientes n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros servicios independientes n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.849.9"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2022-09-20",
+      "certificateEndDate": "2022-08-13",
+      "object": "LA FABRICACIÓN, TRANSFORMACIÓN, ADQUISICIÓN, IMPORTACIÓN, EXPORTACIÓN, COMERCIALIZACIÓN Y DISTRIBUCIÓN DE TODO TIPO DE PRODUCTOS FARMACÉUTICOS, MATERIAL QUIRÚRGICO Y SANITARIO. LA FABRICACIÓN, TRANSFORMACIÓN, ADQUISICIÓN, IMPORTACIÓN, EXPORTACIÓN, COMERCIALIZACIÓN Y DISTRIBUCIÓN DE PRODUCTOS COSMÉTICOS. LA FABRICACIÓN, TRANSFORMACIÓN, ADQUISICIÓN, IMPORTACIÓN, EXPORTACIÓN, COMERCIALIZACIÓN Y DISTRIBUCIÓN DE LENTES DE CONTACTO Y PRODUCTOS ÓPTICOS. LA PRESENTACIÓN DE SERVICIOS DE CONSULTORÍA, ASESORAMIENTO,INFORMACIÓN Y FORMACIÓN DE PROFESIONALES, YA SEAN PERSONAS FÍSICAS O JURÍDICAS, EN EL ÁMBITO DE LA MEDICINA, ASÍ COMO CUALQUIER OTRA ACTIVIDAD Y TODO TIPO DE ASESORAMIENTO TÉCNICO QUE PUEDA DERIVARSE, O SE ENUENTRE ENMARCADO DENTRO DE ESTE ÁMBITO",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03005",
+      "_links": {
+        "self": {
+          "name": "ALLERGAN, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/03005"
+        }
+      }
+    }
+  ]
+}

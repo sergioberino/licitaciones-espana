@@ -1,0 +1,458 @@
+{
+  "totalItems": 9042,
+  "totalPages": 905,
+  "currentPage": 174,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "name": "HERRERIA EL CAMPILLO, S.L.",
+      "registrationNumber": "10187",
+      "identificationNumber": "B95408589",
+      "address": "POL. IND. EL CAMPILLO, PABELLON Nº29",
+      "location": {
+        "postalCode": "48500",
+        "municipality": "Abanto y Ciérvana-Abanto Zierbena",
+        "county": "Bizkaia",
+        "municipalityId": "002",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.314.1",
+          "name": "Carpintería metálica",
+          "_links": {
+            "self": {
+              "name": "Carpintería metálica",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.314.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-11-06",
+      "certificateEndDate": "2026-05-06",
+      "object": "LA FABRICACIÓN Y MONTAJE DE CARPINTERÍA METÁLICA EN GENERAL.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/10187",
+      "_links": {
+        "self": {
+          "name": "HERRERIA EL CAMPILLO, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/10187"
+        }
+      }
+    },
+    {
+      "name": "SUMINISTROS MARINOS ITSASO, S.L.",
+      "registrationNumber": "09935",
+      "identificationNumber": "B75132258",
+      "address": "Nabal Aldea D4",
+      "location": {
+        "postalCode": "20110",
+        "municipality": "Pasaia",
+        "county": "Gipuzkoa",
+        "municipalityId": "064",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.619.9",
+          "name": "Venta al por mayor de otros productos n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de otros productos n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.619.9"
+            }
+          }
+        },
+        {
+          "id": "1.654.4",
+          "name": "Venta al por menor de vehículos fluviales y marítimos a vela o motor",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de vehículos fluviales y marítimos a vela o motor",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.654.4"
+            }
+          }
+        },
+        {
+          "id": "1.849.4",
+          "name": "Servicios de custodia, seguridad y protección",
+          "_links": {
+            "self": {
+              "name": "Servicios de custodia, seguridad y protección",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.849.4"
+            }
+          }
+        },
+        {
+          "id": "1.855.2",
+          "name": "Alquiler de embarcaciones",
+          "_links": {
+            "self": {
+              "name": "Alquiler de embarcaciones",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.855.2"
+            }
+          }
+        },
+        {
+          "id": "1.861.2",
+          "name": "Alquiler de locales industriales y otros alquileres n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Alquiler de locales industriales y otros alquileres n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.861.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-11-06",
+      "certificateEndDate": "2026-05-06",
+      "object": "- LA VENTA DE ARTÍCULOS DE PESCA, ROPA NÁUTICA, ACCESORIOS, EMBARCACIONES, RECAMBIOS PARA EMBARCACIONES, MOTORES. - REPARACIÓN, GUARDA Y CUSTODIA DE EMBARCACIONES. - CHÁRTER Y ALQUILER DE EMBARCACIONES.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/09935",
+      "_links": {
+        "self": {
+          "name": "SUMINISTROS MARINOS ITSASO, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/09935"
+        }
+      }
+    },
+    {
+      "name": "PONCE COMUNICACION , S.L.",
+      "registrationNumber": "10189",
+      "identificationNumber": "B95713459",
+      "address": "ERCILLA 21 BIS 7º IZDA.",
+      "location": {
+        "postalCode": "48009",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.844",
+          "name": "Servicios de publicidad, relaciones públicas y similares",
+          "_links": {
+            "self": {
+              "name": "Servicios de publicidad, relaciones públicas y similares",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.844"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-11-06",
+      "certificateEndDate": "2026-05-06",
+      "object": "1. INFORMACIÓN Y COMUNICACIONES.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/10189",
+      "_links": {
+        "self": {
+          "name": "PONCE COMUNICACION , S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/10189"
+        }
+      }
+    },
+    {
+      "name": "LURKOI ATM, S.L.",
+      "registrationNumber": "03182",
+      "identificationNumber": "B20569729",
+      "address": "POL.INDUST.GOIAIN. C/ZABALDEA, 9. PAB. 3",
+      "location": {
+        "postalCode": "01170",
+        "municipality": "Legutio",
+        "county": "Araba/Álava",
+        "municipalityId": "058",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.468.3",
+          "name": "Fabricación de muebles diversos de madera, junco, mimbre y caña",
+          "_links": {
+            "self": {
+              "name": "Fabricación de muebles diversos de madera, junco, mimbre y caña",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.468.3"
+            }
+          }
+        },
+        {
+          "id": "1.501.3",
+          "name": "Albañilería y pequeños trabajos de construcción en general",
+          "_links": {
+            "self": {
+              "name": "Albañilería y pequeños trabajos de construcción en general",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.3"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-11-06",
+      "certificateEndDate": "2026-05-06",
+      "object": "A) LA IMPORTACIÓN, EXPORTACIÓN, COMERCIALIZACIÓN, DISEÑO, FABRICACIÓN E INSTALACIÓN DE TODO TIPO DE MOBILIARIO, DE PARQUES Y JUEGOS INFANTILES; B) LA PROMOCIÓN Y EJECUCIÓN COMPLETA O POR RAMOS DE TODA CLASE DE OBRAS DE CONSTRUCCIÓN, URBANIZACÓN Y SERVICIOS, REPARACIÓN O CONSERVACIÓN, POR CUENTA PROPIA O AJENA, INCLUSO VIVIENDAS, CONSTRUCCIONES AGRÍCOLAS, OTRAS CONSTRUCCIONES AUXILIARES Y LOCALES COMERCIALES DE LOS LLAMADOS DE PROTECCIÓN OFICIAL; LA COMPRAVENTA Y ALQUILER DE EDIFICACIONES EN SU TOTALIDAD POR PARTES O POR PISOS, BIEN PARA VIVIENDAS O PARA LOCALES DE OFICINA, DE NEGOCIO O INDUSTRIALES CONSTRUIDAS PARA TAL FIN, DIRECTAMENTO O POR MEDIO DE CONTRATISTAS, SUBCONTRATISTAS Y DESTAJISTAS, O BIEN ADQUIRIDAS YA CONSTRUIDAS O EN CONSTRUCCIÓN; COMPRAVENTA, PERMUTA, ALQUILER DE TERRENOS RÚSTICOS O URBANOS Y EXPLOTACIÓN DIRECTA A TRAVÉS DE CONTRATOS DE CESIÓN, DE USO O ARRENDAMIENTO DE GARAJES Y PARKINGS. ASÍ MISMO ES OBJETO DE LA SOCIEDAD, LA PARTICIPACIÓN EN EL CAPITAL DE SOCIEDADES MERCANTILES, CUALQUIERA QUE SEA SU FORMA Y OBJETO; C) EL DESARROLLO DE LAS ACTIVIDADES CARACTERÍSTICAS DEL TRANSPORTE PÚBLICO DE MERCANCÍAS POR CUENTA PROPIA Y AJENA, Y SU CONTRATACIÓN COMO ORGANIZACIÓN AUXILIAR INTERPUESTA ENTRE QUIENES UTILICEN DICHO TRANSPORTE POR CARRETERA Y LOS CONCESIONARIOS DE SERVICIOS REGULARES O PROPIETARIOS DE VEHÍCULOS AUTORIZADOS PARA LA PRESTACIÓN DE LOS DISCRECIONALES Y LAS PRESTACIONES DE RELACIONADAS CON AGENCIA DE TRANSPORTES; D) PRIMERA Y SEGUNDA TRANSFORMACIÓN DE LA MADERA; E) LA PRESTACIÓN DE SERVICIOS DE ASESORAMIENTO Y PROSPECCIÓN DE MERCADOS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03182",
+      "_links": {
+        "self": {
+          "name": "LURKOI ATM, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/03182"
+        }
+      }
+    },
+    {
+      "name": "INGENIERIA GOEN, S.L.",
+      "registrationNumber": "08774",
+      "identificationNumber": "B95739496",
+      "address": "novia salcedo 9-dpto.3a",
+      "location": {
+        "postalCode": "48012",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.843.5",
+          "name": "Servicios técnicos de delineación",
+          "_links": {
+            "self": {
+              "name": "Servicios técnicos de delineación",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.5"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-11-06",
+      "certificateEndDate": "2026-05-06",
+      "object": "REALIZACIÓN DE TODO TIPO DE PROYECTOS DE INSTALACIONES DE OBRAS, DE MONTAJES, Y DE CONSTRUCCIONES DE CARÁCTER PARTICULAR Y PÚBLICO; EL CONTROL Y EN SU CASO LA PROMOCIÓN Y EJECUCIÓN DIRECTA DE TODO TIPO DE OBRAS Y CONSTRUCCIONES PÚBLICAS Y PRIVADAS; LA PRESTACIÓN DE TODO TIPO DE SERVICIOS DE INTERMEDIACIÓN ENGLOBADOS DENTRO DE LA INGENIERÍA TÉCNICA Y DELINEACIÓN; LA REPRESENTACIÓN E INTERMEDIACIÓN EN LA VENTA DE PRODUCTOS, LA PRESTACIÓN DE SERVICIOS DE COPIA Y REPRODUCCIÓN DE PLANOS Y DOCUMENTOS, SERVICIOS DE ASESORAMIENTO TÉCNICO; LAS DIRECCIONES DE OBRA DE TODO TIPO.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08774",
+      "_links": {
+        "self": {
+          "name": "INGENIERIA GOEN, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/08774"
+        }
+      }
+    },
+    {
+      "name": "UZARCH, S.L.",
+      "registrationNumber": "10191",
+      "identificationNumber": "B21729579",
+      "address": "Calle Akilino Arriola (48600) 64a 4dch",
+      "location": {
+        "postalCode": "48600",
+        "municipality": "Sopela",
+        "county": "Bizkaia",
+        "municipalityId": "085",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.501.1",
+          "name": "Construcción completa, reparación y conservación de edificaciones",
+          "_links": {
+            "self": {
+              "name": "Construcción completa, reparación y conservación de edificaciones",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.1"
+            }
+          }
+        },
+        {
+          "id": "1.843.2",
+          "name": "Servicios técnicos de arquitectura y urbanismo",
+          "_links": {
+            "self": {
+              "name": "Servicios técnicos de arquitectura y urbanismo",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-11-06",
+      "certificateEndDate": "2026-05-06",
+      "object": "LA ACTIVIDAD PROPIA DE LOS PROFESIONALES DE SERVICIOS TÉCNICOS DE ARQUITECTURA.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/10191",
+      "_links": {
+        "self": {
+          "name": "UZARCH, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/10191"
+        }
+      }
+    },
+    {
+      "name": "EVOLUZIONA INFORMATICA Y TELECOMUNICACIONES, S. L.",
+      "registrationNumber": "09176",
+      "identificationNumber": "B95605200",
+      "address": "AVENIDA JESUS GALINDEZ N30 10D",
+      "location": {
+        "postalCode": "48004",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.659.2",
+          "name": "Venta al por menor de muebles de oficina y máquinas y equipos de oficina",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de muebles de oficina y máquinas y equipos de oficina",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.659.2"
+            }
+          }
+        },
+        {
+          "id": "1.845",
+          "name": "Explotación electrónica por cuenta de terceros",
+          "_links": {
+            "self": {
+              "name": "Explotación electrónica por cuenta de terceros",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.845"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-11-06",
+      "certificateEndDate": "2026-05-03",
+      "object": "LA INSTALACIÓN Y EL MANTENIMIENTO TÉCNICO DE SISTEMAS INFORMÁTICOS Y TELEMÁTICOS, ASÍ COMO LA COMPRAVENTA DE MATERIAL ELECTRÓNICO E INFORMÁTICO.\n",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/09176",
+      "_links": {
+        "self": {
+          "name": "EVOLUZIONA INFORMATICA Y TELECOMUNICACIONES, S. L.",
+          "href": "https://api.euskadi.eus/procurements/companies/09176"
+        }
+      }
+    },
+    {
+      "name": "LANDER BERASATEGI GESALAGA",
+      "registrationNumber": "06464",
+      "identificationNumber": "72471331X",
+      "address": "Plaza Olatz 11 5ºB",
+      "location": {
+        "postalCode": "20730",
+        "municipality": "Azpeitia",
+        "county": "Gipuzkoa",
+        "municipalityId": "018",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "2.411",
+          "name": "Arquitectos",
+          "_links": {
+            "self": {
+              "name": "Arquitectos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/2.411"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-11-06",
+      "certificateEndDate": "2026-05-05",
+      "object": "ARQUITECTOS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06464",
+      "_links": {
+        "self": {
+          "name": "LANDER BERASATEGI GESALAGA",
+          "href": "https://api.euskadi.eus/procurements/companies/06464"
+        }
+      }
+    },
+    {
+      "name": "TOTAL EKIP, S.L.",
+      "registrationNumber": "06563",
+      "identificationNumber": "B02558393",
+      "address": "CUARTA AVENIDA, NÚM. 9, NAVE 8-B, POL. IND. CAMPOLLANO",
+      "location": {
+        "postalCode": "02007",
+        "municipality": "Albacete",
+        "county": "Albacete",
+        "municipalityId": "003",
+        "countyId": "02"
+      },
+      "economicActivities": [
+        {
+          "id": "1.653.1",
+          "name": "Venta al por menor de muebles (excepto los de oficina)",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de muebles (excepto los de oficina)",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.653.1"
+            }
+          }
+        },
+        {
+          "id": "1.653.2",
+          "name": "Venta al por menor de material y aparatos eléctricos, electrodomésticos y cocina",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de material y aparatos eléctricos, electrodomésticos y cocina",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.653.2"
+            }
+          }
+        },
+        {
+          "id": "1.659.2",
+          "name": "Venta al por menor de muebles de oficina y máquinas y equipos de oficina",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de muebles de oficina y máquinas y equipos de oficina",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.659.2"
+            }
+          }
+        },
+        {
+          "id": "1.659.3",
+          "name": "Venta al por menor de aparatos médicos, ortopédicos, ópticos y fotográficos",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de aparatos médicos, ortopédicos, ópticos y fotográficos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.659.3"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-11-06",
+      "certificateEndDate": "2026-04-30",
+      "object": "1.EL SUMINISTRO E INSTALACIÓN DE MOBILIARIO Y EQUIPAMIENTO INTEGRAL CON DESTINO A EDIFICIOS DE INSTITUCIONES PÚBLICAS Y PRIVADAS, INCLUYENDO EQUIPOS ELECTRÓNICOS E INFORMÁTICOS. 2. LA COMPRAVENTA DE APARATOS Y UTENSILIOS CLÍNICOS Y ASISTENCIALES Y DE FISIOTERAPIA Y GIMNASIA TANTO PARA INTERIOR COMO PARA USO EN EL EXTERIOR. 3. LA COMPRAVENTA Y DISTRIBUCIÓN DE MATERIAL DIDÁCTICO Y EDUCATIVO. 4. LA COMPRAVENTA Y SUMINISTROS DE ARTÍCULOS DE LENCERÍA, CORTINAS, MENAJE, MAQUINARIA DE COCINA Y LAVANDERÍA, APARATOS DE ILUMINACIÓN Y, EN GENERAL, EL ACONDICIONAMIENTO Y EQUIPAMIENTO QUE ES NECESARIO PARA EL DESARROLLO DE UNA ACTIVIDAD EMPRESARIAL, ASISTENCIAL O EDUCATIVA, PÚBLICA O PRIVADA. 5. LA IMPORTACIÓN, EXPORTACIÓN Y COMERCIALIZACIÓN A TRAVÉS DE INTERNET DE TODOS LOS PRODUCTOS ENUMERADOS EN LAS ACTIVIDADES DESCRITAS EN LOS APARTADOS ANTERIORES. 6. LA EXPLOTACIÓN DE SUPERFICIES COMERCIALES, DE CUALQUIER TAMAÑO, HIPERMERCADOS, SUPERMERCADOS, TIENDAS O ALMACENES, PARA CUALQUIER TIPO DE GÉNEROS, PRODUCTOS O SERVICIOS. 7. EL ESTABLECIMIENTO DE LÍNEAS DE COMERCIALIZACIÓN, EN FORMA DE FRANQUICIAS Y EL DESARROLLO DE LOS PRODUCTOS Y SOPORTES PUBLICITARIOS CORRESPONDIENTES. 8. LA COMPRAVENTA DE TODO TIPO DE EDIFICIOS, SOLARES Y NAVES, PARA EL USO PROPIO O ALQUILER A TERCEROS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06563",
+      "_links": {
+        "self": {
+          "name": "TOTAL EKIP, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/06563"
+        }
+      }
+    },
+    {
+      "name": "SAYOS & CARRERA S.L",
+      "registrationNumber": "05525",
+      "identificationNumber": "B60900214",
+      "address": "San Rafael 27 BAJO 2",
+      "location": {
+        "postalCode": "08173",
+        "municipality": "Sant Cugat del Vallès",
+        "county": "Barcelona",
+        "municipalityId": "205",
+        "countyId": "08"
+      },
+      "economicActivities": [
+        {
+          "id": "1.843.9",
+          "name": "Otros servicios técnicos n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros servicios técnicos n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.9"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-11-06",
+      "certificateEndDate": "2026-05-05",
+      "object": "LA PRESTACIÓN DE TODO TIPO DE SERVICIOS Y ACTIVIDADES DE CONSULTING, ASI COMO LA PRESTACIÓN DE TODO TIPO DE SERVICIOS Y ACTIVIDADES DE INGENIERÍA DE TELECOMUNICACIONES",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/05525",
+      "_links": {
+        "self": {
+          "name": "SAYOS & CARRERA S.L",
+          "href": "https://api.euskadi.eus/procurements/companies/05525"
+        }
+      }
+    }
+  ]
+}

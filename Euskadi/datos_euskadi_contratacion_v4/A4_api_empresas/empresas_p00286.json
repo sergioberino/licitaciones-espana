@@ -1,0 +1,388 @@
+{
+  "totalItems": 9042,
+  "totalPages": 905,
+  "currentPage": 286,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "name": "SUMINISTROS IMAGA SL",
+      "registrationNumber": "08749",
+      "identificationNumber": "B95818936",
+      "address": "TRAVESIA DE ZABALA, 1 (LONJA)",
+      "location": {
+        "postalCode": "48003",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.613.3",
+          "name": "Venta al por mayor de prendas exteriores de vestir",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de prendas exteriores de vestir",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.613.3"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-09-10",
+      "certificateEndDate": "2026-03-10",
+      "object": "EL SUMINISTRO Y DISTRIBUCIÓN DE TODO TIPO DE MATERIALES Y PRODUCTOS DE PROTECCIÓN LABORAL RELACIONADOS CON EL SECTOR DE CONSTRUCCIÓN Y SECTORES COMPLEMENTARIOS O DEPENDIENTES DE ÉSTE.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08749",
+      "_links": {
+        "self": {
+          "name": "SUMINISTROS IMAGA SL",
+          "href": "https://api.euskadi.eus/procurements/companies/08749"
+        }
+      }
+    },
+    {
+      "name": "EKO INGENIERIA ACUSTICA SL",
+      "registrationNumber": "09308",
+      "identificationNumber": "B01281658",
+      "address": "c) Herminio Madinabeitia nº 18 pabellón 6",
+      "location": {
+        "postalCode": "01006",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.505.4",
+          "name": "Colocación y aislamiento fónicos, térmicos y acústicos",
+          "_links": {
+            "self": {
+              "name": "Colocación y aislamiento fónicos, térmicos y acústicos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.505.4"
+            }
+          }
+        },
+        {
+          "id": "1.843.1",
+          "name": "Servicios técnicos de ingeniería",
+          "_links": {
+            "self": {
+              "name": "Servicios técnicos de ingeniería",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-09-10",
+      "certificateEndDate": "2026-03-10",
+      "object": "TODO TIPO DE SERVICIOS DE INGENIERÍA E INVESTIGACIÓN, TANTO DE PROYECTOS COMO DE EJECUCIÓN Y DESARROLLO DE LOS MISMOS; LA CONSTRUCCIÓN Y REHABILITACIÓN DE TODO TIPO DE EDIFICACIONES Y LOCALES.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/09308",
+      "_links": {
+        "self": {
+          "name": "EKO INGENIERIA ACUSTICA SL",
+          "href": "https://api.euskadi.eus/procurements/companies/09308"
+        }
+      }
+    },
+    {
+      "name": "INGECOM SISTEMAS, S.L.",
+      "registrationNumber": "09297",
+      "identificationNumber": "B75087866",
+      "address": "ZUATZU KALEA, 1 - PLANTA BAJA - LOCAL 5",
+      "location": {
+        "postalCode": "20018",
+        "municipality": "Donostia / San Sebastián",
+        "county": "Gipuzkoa",
+        "municipalityId": "069",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.504.1",
+          "name": "Instalaciones eléctricas en general",
+          "_links": {
+            "self": {
+              "name": "Instalaciones eléctricas en general",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.504.1"
+            }
+          }
+        },
+        {
+          "id": "1.845",
+          "name": "Explotación electrónica por cuenta de terceros",
+          "_links": {
+            "self": {
+              "name": "Explotación electrónica por cuenta de terceros",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.845"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-09-10",
+      "certificateEndDate": "2026-03-10",
+      "object": "LA INSTALACIÓN Y MANTENIMIENTO DE APARATOS, DISPOSITIVOS Y SISTEMAS DE SEGURIDAD; Y LA PLANIFICACIÓN Y ASESORAMIENTO DE LAS ACTIVIDADES DE SEGURIDAD.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/09297",
+      "_links": {
+        "self": {
+          "name": "INGECOM SISTEMAS, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/09297"
+        }
+      }
+    },
+    {
+      "name": "INARLAN ARQUITECTURA E INGENIERÍA, S.L.",
+      "registrationNumber": "05342",
+      "identificationNumber": "B95787800",
+      "address": "PASEO LANDABARRI, 4-BAJO",
+      "location": {
+        "postalCode": "48940",
+        "municipality": "Leioa",
+        "county": "Bizkaia",
+        "municipalityId": "054",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.843.1",
+          "name": "Servicios técnicos de ingeniería",
+          "_links": {
+            "self": {
+              "name": "Servicios técnicos de ingeniería",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-09-10",
+      "certificateEndDate": "2026-03-10",
+      "object": "SERVICIOS TÉCNICOS DE ARQUITECUTRA, INGENIERÍA, URBANISMO, DECORACIÓN, ENERGÍA Y MEDIO AMBIENTE APICADOS EN ESTUDIOS DE VIABILIDAD, ANTEPROYECTOS, PROYECTOS Y DIRECCIONES DE OBRA DE OBRA NUEVA Y OBRAS DE REHABILITACIÓN Y REFORMA EN EL DECTOR DE LA EDIFICACIÓN SINGULAR E INDUSRIAL, EN TRABAJOS DE OBRA CIVIL Y URBANIZACIÓN Y EN REDACCIÓN DE FIGURAS DE PLANEAMIENTO URBANÍSTICO. LA ADQUISICIÓN, PARCELACIÓN, URBANIZACIÓN, EXPLOTACIÓN, PROMOCIÓN Y VENTA DE TERRENOS, COMPLEJOS URBANÍSTICOS, INDUSTRIALES Y DEPORTIVOS Y LA CONSTRUCCIÓN, PROMOCIÓN, EDIFICACIÓN Y VENTA DE VIVIENDAS DE RENTA LIBRE Y V.P.O., LOCALES, GALERÍAS Y CENTROS COMERCIALES, ASÍ COMO EN SU CASO LA EXPLOTACIÓN EN FORMA DE ARRIENDO Y ADMINISTRACIÓN",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/05342",
+      "_links": {
+        "self": {
+          "name": "INARLAN ARQUITECTURA E INGENIERÍA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/05342"
+        }
+      }
+    },
+    {
+      "name": "SERIGRAFÍA ARCOSAN, S.A.L.",
+      "registrationNumber": "01420",
+      "identificationNumber": "A48567218",
+      "address": "POLÍGONO INDUSTRIAL EL CAMPILLO, NAVE: 18 - A. ",
+      "location": {
+        "postalCode": "48500",
+        "municipality": "Abanto y Ciérvana-Abanto Zierbena",
+        "county": "Bizkaia",
+        "municipalityId": "002",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.474",
+          "name": "Artes gráficas (impresión gráfica)",
+          "_links": {
+            "self": {
+              "name": "Artes gráficas (impresión gráfica)",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.474"
+            }
+          }
+        },
+        {
+          "id": "1.659.9",
+          "name": "Venta al por menor de otros productos no especificados en esta agrupación",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de otros productos no especificados en esta agrupación",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.659.9"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-09-10",
+      "certificateEndDate": "2026-03-10",
+      "object": "LA PRESTACIÓN DE SERVICIOS RELACIONADOS LAS ARTES GRÁFICAS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/01420",
+      "_links": {
+        "self": {
+          "name": "SERIGRAFÍA ARCOSAN, S.A.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/01420"
+        }
+      }
+    },
+    {
+      "name": "MARIA OLGA RUIZ FERNANDEZ",
+      "registrationNumber": "10103",
+      "identificationNumber": "20188405V",
+      "address": "Calle Belostikale (48005) 26, 1º B",
+      "location": {
+        "postalCode": "48005",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "2.899",
+          "name": "Otros profesionales",
+          "_links": {
+            "self": {
+              "name": "Otros profesionales",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/2.899"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-09-10",
+      "certificateEndDate": "2026-03-10",
+      "object": "OTROS PROFESIONALES.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/10103",
+      "_links": {
+        "self": {
+          "name": "MARIA OLGA RUIZ FERNANDEZ",
+          "href": "https://api.euskadi.eus/procurements/companies/10103"
+        }
+      }
+    },
+    {
+      "name": "ROS Y ETCÉTERA, S.L.",
+      "registrationNumber": "03823",
+      "identificationNumber": "B48729826",
+      "address": "AVDA. ZUGARTE, 8-3º. EDIFICIO ABRA IV",
+      "location": {
+        "postalCode": "48930",
+        "municipality": "Getxo",
+        "county": "Bizkaia",
+        "municipalityId": "044",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.844",
+          "name": "Servicios de publicidad, relaciones públicas y similares",
+          "_links": {
+            "self": {
+              "name": "Servicios de publicidad, relaciones públicas y similares",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.844"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-09-10",
+      "certificateEndDate": "2026-03-10",
+      "object": "A) LA ADQUISIÓN POR CUALQUIER TÍTULO DE FINCAS RÚSTICAS Y URBANAS, LA CONSTRUCCIÓN DE ÉSTAS Y LA ADMINISTRACIÓN, TENENCIA, EXPLOTACIÓN, COMPRA-VENTA Y ARRENDAMIENTO DE TALES BIENES Y SU VENTA TOTAL Y PARCIAL, SEGÚN CONVENGA PARA SU APROVECHAMIENTO FORESTAL, AGRICOLA, URBANO, INDUSTRIAL O CUALQUIER OTRO, A REALIZAR TODO ELLO POR CUENTA PROPIA.\r\nB) LA ADQUISICIÓN, CESIÓN, TENENCIA Y DISFRUTE EN GENERAL DE TODA CLASE DE TÍTULOS Y VALORES MOBILIARIOS, SIN INCIDIR EN LAS OPERACIONES REGULADAS POR LA LEY DEL MERCADO DE VALORES 24/1988 DE 28 DE JULIO Y LAS DISPOSICIONES QUE LA DESARROLLAN.\r\nC) EL ASESORAMIENTO DE PERSONAS FÍSICAS Y JURÍDICAS, TANTO FISCAL COMO JURÍDICO, FINANCIERO O DE CUALQUIER OTRO TIPO; EL ESTUDIO, INVESTIGACIÓN, PROMOCIÓN Y PRESTACIÓN DE TODA CLASE DE SERVICIOS DE ASISTENCIA Y GESTIÓN TÉCNICA, ADMINISTRATIVA, COMERCIAL Y CONTABLE, TODO ELLO A TRAVÉS DE PERSONAS CON TITULACIÓN PARA ELLO.\r\nD) LA PRESTACIÓN A EMPRESAS, ENTIDADES Y PARTICULARES DE SERVICIOS DE PUBLICIDAD.\r\nE) LA DISTRIBUCIÓN, COMERCIALIZACIÓN Y VENTA POR CATÁLOGO DE PRODUCTOS DE BELLEZA, COSMÉTICA, ROPA DE VESTIR Y COMPLEMENTOS, ASÍ COMO EL ASESORAMIENTO PARA REALIZAR DICHAS ACTIVIDADES.\r\nF) LA PRESTACIÓN DE SERVICIOS Y TRABAJOS EN EL SECTOR EDITORIAL Y LA COMERCIALIZACIÓN DE PRODUCTOS EDITORIALES",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03823",
+      "_links": {
+        "self": {
+          "name": "ROS Y ETCÉTERA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/03823"
+        }
+      }
+    },
+    {
+      "name": "BEARING TRANSMISSION SERVICE SL",
+      "registrationNumber": "09313",
+      "identificationNumber": "B20731253",
+      "address": "POL. BELARTZA - GURUTZEGI 13 B9",
+      "location": {
+        "postalCode": "20018",
+        "municipality": "Donostia / San Sebastián",
+        "county": "Gipuzkoa",
+        "municipalityId": "069",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.617.5",
+          "name": "Venta al por mayor de maquinaria para la madera y el metal",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de maquinaria para la madera y el metal",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.617.5"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-09-10",
+      "certificateEndDate": "2026-03-10",
+      "object": "EL COMERCIO DE PRODUCTOS, REPUESTOS Y ACCESORIOS INDUSTRIALES Y LA INTERMEDIACIÓN EN DICHO COMERCIO ACTUANDO COMO COMISIONISTA O REPRESENTANTE.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/09313",
+      "_links": {
+        "self": {
+          "name": "BEARING TRANSMISSION SERVICE SL",
+          "href": "https://api.euskadi.eus/procurements/companies/09313"
+        }
+      }
+    },
+    {
+      "name": "URDAILIFE SL",
+      "registrationNumber": "08232",
+      "identificationNumber": "B95949376",
+      "address": "Aurrekoetxea, 40, 3º drch",
+      "location": {
+        "postalCode": "48370",
+        "municipality": "Bermeo",
+        "county": "Bizkaia",
+        "municipalityId": "017",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.755",
+          "name": "Agencias de viajes",
+          "_links": {
+            "self": {
+              "name": "Agencias de viajes",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.755"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-09-10",
+      "certificateEndDate": "2026-03-10",
+      "object": "PRINCIPAL: 79.12 ACTIVIDADES DE LOS OPERADORES TURÍSTICOS. SECUNDARIOS: DESARROLLO DE PLANES Y CONSULTORÍA TURÍSTICA PARA EMPRESAS E INSTITUCIONES, CON EL OBJETIVO DE DAR A CONOCER EL PATRIMONIO NATURAL Y CULTURAL, ASÍ COMO LAS ACTIVIDADES EMPRESARIALES ENFOCADAS AL TURISMO. ADEMÁS, DAR UN SERVICIO DE BIENVENIDA, VENTA, ACOMPAÑAMIENTO Y ORGANIZACIÓN DE PRODUCTOS TURÍSTICOS PARA VIAJEROS. Y EN GENERAL LA PRESTACIÓN DE SERVICIOS RELACIONADOS CON EL TURISMO",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08232",
+      "_links": {
+        "self": {
+          "name": "URDAILIFE SL",
+          "href": "https://api.euskadi.eus/procurements/companies/08232"
+        }
+      }
+    },
+    {
+      "name": "ZEHAR HEZIKETA ETA PROGRAMAK",
+      "registrationNumber": "09295",
+      "identificationNumber": "G20927570",
+      "address": "arakistain plaza 1-2",
+      "location": {
+        "postalCode": "20820",
+        "municipality": "Deba",
+        "county": "Gipuzkoa",
+        "municipalityId": "029",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.952",
+          "name": "Asistencia y servicios sociales en centros no residenciales",
+          "_links": {
+            "self": {
+              "name": "Asistencia y servicios sociales en centros no residenciales",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.952"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-09-10",
+      "certificateEndDate": "2026-03-10",
+      "object": "HEZIKETA BALIABIDE ETA PROGRAMAK KUDEATU. HELBURU HORIEK LORTZEKO HONAKO EKINTZA HAUEK ERAMANGO DIRA AURRERA, EZARRITAKO LEGEZKO BALDINTZAK BETE ONDOREN: 1. HAUR ETA GAZTEEN HEZIKETA BALIABIDE ETA PROGRAMAK KUDEATZEA. 2. AISIALDIAREN ERABILPEN OSASUNTSU, ERAIKITZAILE ETA ATSEGIN BAT LORTZEA, IKASTARO, IBILALDI, TALLER, AKANPALEKU ETA ANTZEKOEN BITARTEZ. 3. GIZARTE ETA HEZKUNTZA ALORREKO PROZESU INTEGRALAK SUSTATZEA. 4. HAUR ETA GAZTEEN BABESERAKO JARDUERAK. 5. ZAILTASUN EGOERAN DAUDEN GAZTEENTZAKO INTEGRAZIO ESPAZIOEN BIDERAPENA. 6. ESKUHARTZE KONTESTUAN DIZIPLINARTEKO KOORDINAZIO ETA KOOPERAZIO SISTEMATIKOA.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/09295",
+      "_links": {
+        "self": {
+          "name": "ZEHAR HEZIKETA ETA PROGRAMAK",
+          "href": "https://api.euskadi.eus/procurements/companies/09295"
+        }
+      }
+    }
+  ]
+}

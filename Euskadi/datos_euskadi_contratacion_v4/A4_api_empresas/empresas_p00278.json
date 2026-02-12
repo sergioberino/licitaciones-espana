@@ -1,0 +1,428 @@
+{
+  "totalItems": 9042,
+  "totalPages": 905,
+  "currentPage": 278,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "name": "ACROSS THE SHOPPER, S.L.",
+      "registrationNumber": "09306",
+      "identificationNumber": "B72642077",
+      "address": "AVENIDA 8 DE MARZO 5 - 1º B",
+      "location": {
+        "postalCode": "01002",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.846",
+          "name": "Empresas de estudios de mercado",
+          "_links": {
+            "self": {
+              "name": "Empresas de estudios de mercado",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.846"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-09-15",
+      "certificateEndDate": "2026-03-08",
+      "object": "1. SERVICIOS PROFESIONALES DE INVESTIGACIÓN DE MERCADOS Y CONSULTORÍA DE MARKETING A EMPRESAS Y ASOCIACIONES. 2. REALIZACIÓN DE CURSOS Y ACTIVIDADES DE FORMACIÓN. 3. COMERCIALIZACIÓN DE PRODUCTOS DE ALIMENTACIÓN Y BEBIDAS. 4. SERVICIOS PROFESIONALES DE FOTOGRAFÍA Y DISEÑO. 5. COMPRA Y VENTA DE INMUEBLES.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/09306",
+      "_links": {
+        "self": {
+          "name": "ACROSS THE SHOPPER, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/09306"
+        }
+      }
+    },
+    {
+      "name": "BAIMEN S.A.",
+      "registrationNumber": "04254",
+      "identificationNumber": "A48220370",
+      "address": "RIBERA DE ERANDIO Nº3",
+      "location": {
+        "postalCode": "48950",
+        "municipality": "Erandio",
+        "county": "Bizkaia",
+        "municipalityId": "902",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.504.12",
+          "name": "Instalaciones eléctricas en toda clase de edificios",
+          "_links": {
+            "self": {
+              "name": "Instalaciones eléctricas en toda clase de edificios",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.504.12"
+            }
+          }
+        },
+        {
+          "id": "1.617.9",
+          "name": "Venta al por mayor interindustrial de otros productos n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor interindustrial de otros productos n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.617.9"
+            }
+          }
+        },
+        {
+          "id": "1.653.2",
+          "name": "Venta al por menor de material y aparatos eléctricos, electrodomésticos y cocina",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de material y aparatos eléctricos, electrodomésticos y cocina",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.653.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-09-15",
+      "certificateEndDate": "2026-03-15",
+      "object": "COMPRAVENTA, REPARACIÓN DE MAQUINARIA Y MATERIAL ELÉCTRICO Y TODOS SUS DERIVADOS, ESTUDIOS Y PRESUPUESTOS DE INSTALACIONES ELÉCTRICAS DE TODOTIPO, MONTAJE DE LOS MISMOS Y CUALQUIER OTRA ACTIVIDAD O INDUSTRIA DE LÍCITO COMERCIO QUE EL CONSEJO DE ADMINISTRACIÓN PUEDA DETERMINAR",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/04254",
+      "_links": {
+        "self": {
+          "name": "BAIMEN S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/04254"
+        }
+      }
+    },
+    {
+      "name": "GOTOR COMUNICACIONES, S.A.",
+      "registrationNumber": "08025",
+      "identificationNumber": "A50315886",
+      "address": "C/Tarento nº23",
+      "location": {
+        "postalCode": "50197",
+        "municipality": "Zaragoza",
+        "county": "Zaragoza",
+        "municipalityId": "297",
+        "countyId": "50"
+      },
+      "economicActivities": [
+        {
+          "id": "1.504.7",
+          "name": "Instalaciones telefónicas, telegráficas, televisión, etc",
+          "_links": {
+            "self": {
+              "name": "Instalaciones telefónicas, telegráficas, televisión, etc",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.504.7"
+            }
+          }
+        },
+        {
+          "id": "1.615.4",
+          "name": "Venta al por mayor de aparatos y material radioeléctrico y electrónico",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de aparatos y material radioeléctrico y electrónico",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.615.4"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-09-15",
+      "certificateEndDate": "2026-03-08",
+      "object": "EL COMERCIO AL POR MAYOR Y MENOR DE APARATOS DE RADIOTELEFONÍA, TELEFONÍA, TELEVISIÓN, TELEGRAFÍA, FOTOGRAFÍA, DICTÁFONOS, MAGNETÓFONOS, Y SISTEMAS DE ILUMINACIÓN; INSTALACIÓN DE REDES TELEGRÁFICAS, TELEFÓNICAS, TELEFONÍA SIN HILOS Y TELEVISIÓN EN EDIFICIOS Y CONSTRUCCIONES; LA IMPORTACIÓN Y EXPORTACIÓN DE TODO LO RELACIONADO CON LOS ANTERIORES APARTADOS.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08025",
+      "_links": {
+        "self": {
+          "name": "GOTOR COMUNICACIONES, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/08025"
+        }
+      }
+    },
+    {
+      "name": "IKERPARTNERS, S.A.",
+      "registrationNumber": "07589",
+      "identificationNumber": "A75055210",
+      "address": "PASEO TXINGURRI, 28, 4º",
+      "location": {
+        "postalCode": "20017",
+        "municipality": "Donostia / San Sebastián",
+        "county": "Gipuzkoa",
+        "municipalityId": "069",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.847",
+          "name": "Servicios de consultoría",
+          "_links": {
+            "self": {
+              "name": "Servicios de consultoría",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.847"
+            }
+          }
+        },
+        {
+          "id": "1.952",
+          "name": "Asistencia y servicios sociales en centros no residenciales",
+          "_links": {
+            "self": {
+              "name": "Asistencia y servicios sociales en centros no residenciales",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.952"
+            }
+          }
+        },
+        {
+          "id": "1.991",
+          "name": "Prestación de servicios por sociedades de desarrollo industrial",
+          "_links": {
+            "self": {
+              "name": "Prestación de servicios por sociedades de desarrollo industrial",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.991"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-09-15",
+      "certificateEndDate": "2026-03-12",
+      "object": "1.- CONTRIBUIR A LA MEJORA DE LA EFICIENCIA Y EL BUEN GOBIERNO DE LAS INSTITUCIONES DEL SECTOR PÚBLICO, TANTO A NIVEL REGIONAL COMO NACIONAL E INTERNACIONAL, MEDIANTE TRABAJOS DE APOYO ESTRATÉGICO, ASISTENCIA TÉCNICA, ASESORAMIENTO Y GESTIÓN DE ALTA DIRECCIÓN, DISEÑO DE PROYECTOS DE INNOVACIÓN SOCIAL Y FORTALECIMIENTO DEL CAPITAL HUMANO&#8230; E IMPLEMENTACIÓN DE UNA ESTRATEGIA DE ALIANZA PÚBLICO-PRIVADA PARA EL AVANCE DE LO SEÑALADO EN EL EPÍGRAFE 2. 2.- IMPULSAR LA PROMOCIÓN Y DESARROLLO EMPRESARIAL EN DIVERSOS SECTORES ECONÓMICOS: CULTURA, CONOCIMIENTO, EDUCACIÓN/FORMACIÓN, COMERCIO Y TURISMO, SOSTENIBILIDAD Y MEDIO AMBIENTE, TANTO A NIVEL REGIONAL COMO NACIONAL E INTERNACIONAL (PARTICULARMENTE EN AMÉRICA LATINA). 3.- DENTRO DE ESTA PERSPECTIVA DE ALIANZA PÚBLICO-PRIVADA, Y EN EL ÁMBITO ECONÓMICO-FINANCIERO SE CONTRIBUIRÁ AL DESARROLLO DE ACTIVIDADES DE ASESORAMIENTO Y GESTIÓN, SERVICIOS CORPORATIVOS DE FORTALECIMIENTO ORGANIZATIVO, CONSULTORÍA DE CAPITAL RIESGO/CRÉDITOS PARTICIPATIVOS, CAPTACIÓN DE FONDOS VÍA PATROCINIO/MECENAZGO Y A LA COLABORACIÓN/PROMOCIÓN DE REDES DE BUSINESS ANGELS. 4.- EL DESARROLLO DE PROYECTOS DE INNOVACIÓN Y TRANSFORMACIÓN ECONÓMICA, SOCIAL Y TERRITORIAL, CONTEMPLARÁ: A) LA IDENTIFICACIÓN DE PROYECTOS DE INTERÉS EN LOS SECTORES SEÑALADOS EN EL EPÍGRAFE 2, CON EL APOYO DE SOCIAS Y SOCIOS Y CONSULTORAS Y CONSULTORES DE SU PLANTILLA, Y DE EMPRESAS PARTICIPADAS. B) LA BÚSQUEDA E INCORPORACIÓN DE DIVERSOS SOCIOS (PARTNERS) A LA ESTRUCTURA SOCIETARIA PARA EL DESARROLLO DE DIVERSOS PROYECTOS COMPLEJOS, TALES COMO: -IKERMARKET: OFERTA INTEGRAL DE SERVICIOS A LAS EMPRESAS EN SOPORTE ON LINE Y PRESENCIAL. -IKERNET: COMUNIDAD DE PARTICIPACIÓN Y OPINIÓN PÚBLICA.  -IVAEC: INSTITUTO VIRTUAL DE APRENDIZAJE Y EVALUACIÓN DE COMPETENCIAS. -KNOWLEDGE FEDERATION: FORTALECIMIENTO DE ACTIVIDADES GENERADORA DE REDES EMPRESARIALES PRINCIPALMENTE EN AMÉRICA LATINA. - FEDERACIÓN DE CONOCIMIENTO 4.0.: DESARROLLO EN INTERNET DEL PROYECTOS KNOWLEDGE FEDERATION - BUSINESS ANGELS EN EL SECTOR CULTURAL Y DE EMPRESAS CREATIVAS Y DEL CONOCIMIENTO. - CONSORTIUM: MARCO DE ALIANZAS PARA EL DESARROLLO DE PROYECTOS ESTADÍSTICOS Y DE OPINIÓN PÚBLICA EN EL ÁMBITO NACIONAL E INTERNACIONAL. IKERPARTNERS ES UNA EMPRESA SOCIALMENTE RESPONSABLE EN MATERIA DE IGUALDAD DE MUJERES Y HOMBRES CON UNA CULTURA CORPORATIVA PROPIA EN ESTE SENTIDO QUE SE GESTIONA A DOS NIVELES: - EN EL PLANO EXTERNO (CLIENTELA), EN TODOS LOS SERVICIOS, PROCESOS Y PRODUCTOS QUE DESARROLLA, - EN EL ÁMBITO INTERNO DE LA EMPRESA, CON UN ENTORNO DE TRABAJO INCLUSIVO QUE PROMUEVE LA IGUALDAD DE MUJERES Y HOMBRES, EN EL QUE SE FOMENTAN LAS MEDIDAS QUE FACILITEN LA CONCILIACIÓN CORRESPONSABLE DE LA VIDA PERSONAL, FAMILIAR Y LABORAL\r\n\r\n\r\n",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07589",
+      "_links": {
+        "self": {
+          "name": "IKERPARTNERS, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/07589"
+        }
+      }
+    },
+    {
+      "name": "ASOCIACIÓN DE PROFESIONALES EXTRANJEROS DE EUSKADI-PRESTATURIK",
+      "registrationNumber": "08863",
+      "identificationNumber": "G01355403",
+      "address": "Calle Perú 8",
+      "location": {
+        "postalCode": "01012",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.933.9",
+          "name": "Otras actividades de enseñanza tales como idiomas, mecanografía",
+          "_links": {
+            "self": {
+              "name": "Otras actividades de enseñanza tales como idiomas, mecanografía",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.933.9"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-09-15",
+      "certificateEndDate": "2026-03-12",
+      "object": "A. - BUSCAR EL DESARROLLO DE LA CAPACIDAD ORGANIZACIONAL E INDIVIDUAL, QUE PERMITA A LA COMUNIDAD DE PERSONAS EN RIESGO DE EXCLUSIÓN SOCIAL, DENTRO DE ELLOS/AS LOS/AS INMIGRANTES, REFUGIADOS/AS Y PROFESIONALES EXTRANJEROS/AS, CAPITALIZAR SU POTENCIAL COMO AGENTES CIVILES DE LA SOCIEDAD DE ACOGIDA. B. - ORIENTAR A LAS PERSONAS EN RIESGO DE EXCLUSIÓN SOCIAL, INCLUIDOS INMIGRANTES, REFUGIADOS Y PROFESIONALES EXTRANJEROS/AS, EN EL PROCESO DE INTEGRACIÓN, REAL Y DE CALIDAD, EN LA SOCIEDAD VASCA. C. - FORMAR A LAS PERSONAS QUE SE ENCUENTREN EN DESVENTAJA SOCIO-LABORAL, COMO LOS/AS INMIGRANTES, REFUGIADOS Y PROFESIONALES EXTRANJEROS/AS, EN LOS DISTINTOS ÁMBITOS ACADÉMICOS, SOCIALES Y LABORALES PROCURANDO UNA NORMALIZACIÓN DE SU SITUACIÓN EN LA SOCIEDAD RECEPTORA. D. - POTENCIAR LA COLABORACIÓN Y COOPERACIÓN CON LOS DIFERENTES AGENTES PRESENTES EN EL TEJIDO SOCIAL, A FIN DE UNIR ESFUERZOS EN LA CONSECUCIÓN DE UNA CONVIVENCIA ENRIQUECEDORA Y SATISFACTORIA, EN LA QUE LAS PERSONAS PERCEPTORAS, CONSIGAN TAMBIÉN SER PARTE ACTIVA DE LA SOCIEDAD VASCA. E. - DEFENDER A LOS SECTORES MÁS VULNERABLES DENTRO DEL COLECTIVO DE PERSONAS EN EXCLUSIÓN SOCIAL, COMO LAS MUJERES, NIÑOS/AS REFUGIADOS/AS Y PERSONAS CON CUALQUIER DIVERSIDAD. F. - PREVENIR LAS SITUACIONES DE EXCLUSIÓN SOCIAL, GENERADAS POR LA VIOLENCIA DE GÉNERO Y DEMÁS TIPOS DE VIOLENCIA. G. - APROXIMAR AL COLECTIVO DE PERSONAS EN RIESGO DE EXCLUSIÓN SOCIAL, ENTRE ELLOS/AS LOS/AS PROFESIONALES EXTRANJEROS/AS, INMIGRANTES Y REFUGIADOS EN EL CONOCIMIENTO Y ENTENDIMIENTO DE LA CULTURA Y LENGUA VASCA. H. - ACTUAR DE MEDIADORES ENTRE LAS DIFERENTES INSTITUCIONES PÚBLICAS EN LOS DIFERENTES CONFLICTOS SIN DISTINCIÓN ALGUNA DE RAZA, COLOR, SEXO, IDIOMA, RELIGIÓN, OPINIÓN POLÍTICA O DE CUALQUIER OTRA ÍNDOLE, ORIGEN NACIONAL O SOCIAL, POSICIÓN ECONÓMICA, NACIMIENTO O CUALQUIER OTRA CONDICIÓN. I. -ACOGER A LAS PERSONAS QUE SE ENCUENTREN EN EXCLUSIÓN SOCIAL, INCLUIDOS PROFESIONALES EXTRANJEROS, INMIGRANTES Y PERSONAS REFUGIADAS QUE SE ENCUENTREN CARENTES DE VIVIENDA. J. PROTEGER A LAS PERSONAS MAYORES, QUE SE ENCUENTREN EN SITUACIÓN DE VULNERABILIDAD SOCIAL. K. VELAR POR EL MEDIO AMBIENTE, PARA QUE NO SE GENERE INMIGRACIÓN MEDIOAMBIENTAL. L. PROMOVER EL PATRIMONIO INTERCULTURAL, PARA CREAR FOCOS DE INTERÉS. M. TODAS LAS INICIATIVAS DE COOPERACIÓN PARA EL DESARROLLO RESPONDERÁN AL PRINCIPIO DE SOLIDARIDAD DESINTERESADA. PARA LA CONSECUCIÓN DE DICHOS FINES SE LLEVARÁN A CABO, PREVIO CUMPLIMIENTO DE LOS REQUISITOS LEGALES ESTABLECIDOS, LAS SIGUIENTES ACTIVIDADES: A) - DESARROLLAR ACTIVIDADES DE DIVULGACIÓN SOCIAL DEL PROFESIONAL EXTRANJERO TALES COMO: JORNADAS, ENCUENTROS, SEMINARIOS, CONFERENCIAS Y EXCURSIONES. B) - ORGANIZAR ACTIVIDADES ENCAMINADAS A LA INFORMACIÓN, CONOCIMIENTO DEL SISTEMA, EL PATRIMONIO INTERCULTURAL, Y RECURSOS EXISTENTES EN LA SOCIEDAD VASCA. C) - PLANIFICAR Y LLEVAR A CABO CURSOS Y TALLERES DESTINADOS A LA FORMACIÓN Y RECICLAJE DE LOS/AS PERSONAS QUE SE ENCUENTRAN EN RIESGO DE EXCLUSIÓN SOCIAL ENTRE ELLOS/AS LOS/AS PROFESIONALES EXTRANJEROS/AS, INMIGRANTES Y REFUGIADOS. D) - ESTABLECER RELACIONES DE COLABORACIÓN CON ENTIDADES PÚBLICAS Y PRIVADAS NACIONALES Y EXTRANJERAS, QUE COMPARTAN CON LA ASOCIACIÓN DE PROFESIONALES EXTRANJEROS DE EUSKADI-PRESTATURIK LAS MISMAS Y/O SIMILARES FINALIDADES. A TAL FIN LA ASOCIACIÓN PREVIO ACUERDO DE LA JUNTA DIRECTIVA, PODRÁ PERTENECER Y SOLICITAR EL INGRESO EN ORGANIZACIONES NACIONALES O INTERNACIONALES CON ARREGLO A LAS DISPOSICIONES EN VIGOR. E) - DESARROLLAR ACCIONES DE MEDIACIÓN, ACOMPAÑAMIENTO, Y SEGUIMIENTO EN RELACIÓN A AQUELLOS SECTORES SUSCEPTIBLES A UNA MAYOR MARGINACIÓN Y/O EXCLUSIÓN. F) - CONSTRUIR PUNTOS DE ENCUENTRO DESTINADOS A EVITAR O PALIAR LA RUPTURA DE VÍNCULOS SOCIALES CON EL ENTORNO, A TRAVÉS DE EXPOSICIONES, DEBATES, EXCURSIONES Y MESAS REDONDAS. G) - LLEVAR A CABO TAREAS DE INTERRELACIÓN ENTRE LA CULTURA VASCA Y LA CULTURA DE ORIGEN POR MEDIO DE CURSILLOS, RUTAS CULTURALES Y GRUPOS DE APRENDIZAJE DE LAS COSTUMBRES, TRADICIONES E IDIOMA VASCO. H) - DESARROLLAR TODAS LAS ÁREAS DE FORMACIÓN, LAS CUALES SIRVAN PARA MEJORAR LA CALIDAD DE VIDA DE LAS PERSONAS QUE LLEGAN A LA ASOCIACIÓN. I) DAR TECHO A LAS PERSONAS QUE CARECEN DE ESTE DERECHO. J) VISITAS AL ENTORNO NATURAL Y A LOS POSIBLES FOCOS DE INTERÉS CULTURALES, TANTO RURALES COMO URBANOS DE ÁLAVA.  K) LAS ACTUACIONES DE COOPERACIÓN PARA EL DESARROLLO QUE LA ASOCIACIÓN DE PROFESIONALES EXTRANJEROS DE EUSKADI-PRESTATURIK DESARROLLE RESPETARÁN Y FAVORECERÁN LA CULTURA, IDIOSINCRASIA Y ESTRUCTURAS DE ORGANIZACIÓN SOCIAL Y ADMINISTRATIVA, ASÍ COMO TAMBIÉN LOS PROCESOS PROPIOS DE DECISIÓN DE LAS COMUNIDADES LOCALES, MINORÍAS Y PUEBLOS; SIEMPRE QUE NO ATENTEN CONTRA LOS DERECHOS HUMANOS, EL MEDIO AMBIENTE Y LOS COMPROMISOS ADQUIRIDO EN CONVENIOS INTERNACIONALES. L) GESTIONAR Y DESARROLAR PROYECTOS DE COOPERACIÓN EN BENEFICIO DE LOS PAÍSES DEL SUR. SIN PERJUICIO DE LAS ACTIVIDADES DESCRITAS EN EL APARTADO ANTERIOR, LA ASOCIACIÓN, PARA EL CUMPLIMIENTO DE SUS FINES PODRÁ: - DESARROLLAR ACTIVIDADES ECONÓMICAS DE TODO TIPO, ENCAMINADAS A LA REALIZACIÓN DE SUS FINES O A ALLEGAR RECURSOS CON ESE OBJETIVO. - ADQUIRIR Y POSEER BIENES DE TODAS CLASES Y POR CUALQUIER TÍTULO, ASÍ COMO CELEBRAR ACTOS Y CONTRATOS DE TODO GÉNERO. - EJERCITAR TODA CLASE DE ACCIONES CONFORME A LAS LEYES O A SUS ESTATUTOS.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08863",
+      "_links": {
+        "self": {
+          "name": "ASOCIACIÓN DE PROFESIONALES EXTRANJEROS DE EUSKADI-PRESTATURIK",
+          "href": "https://api.euskadi.eus/procurements/companies/08863"
+        }
+      }
+    },
+    {
+      "name": "ORION REPARACIÓN ESTRUCTURAL, S.L.",
+      "registrationNumber": "03341",
+      "identificationNumber": "B48886592",
+      "address": "Pol. Industr. Erletxes, 2,FAS-PT-G2",
+      "location": {
+        "postalCode": "48960",
+        "municipality": "Galdakao",
+        "county": "Bizkaia",
+        "municipalityId": "036",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.507",
+          "name": "Construcción, reparación y conservación de toda clase obras",
+          "_links": {
+            "self": {
+              "name": "Construcción, reparación y conservación de toda clase obras",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.507"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-09-15",
+      "certificateEndDate": "2026-03-12",
+      "object": "LA ACTIVIDAD DE PROMOCIÓN DE VIVIENDAS, CONSTRUCCIÓN COMPLETA, REPARACIÓN CONSERVACIÓN DE EDIFICIOS Y OBRAS PÚBLICAS, ESTUDIO Y REALIZACIÓN DE PROYECTOS URBANÍSTICOS, OBRAS NUEVAS DE EDIFICACIÓN URBANA, SANEAMIENTO, ABASTECIMIENTO DE AGUAS, EXCAVACIONES Y MOVIMIENTOS DE TIERRAS Y SIMILARES, TRABAJOS DE ALBAÑILERÍA, FONTANERÍA, EBANISTERÍA, ELECTRICIDAD, DECORACIÓN DE EDIFICIOS Y LOCALES; CARPINTERÍS METÁLICA DE P.V.C. Y DE MADERA; COMPRAVENTA, CONSTRUCCIÓN, INSTALACIÓN Y MANTENIMIENTO DE ESTRUCTURAS DE CUALQUIER CLASE, ASÍ COMO LA ADQUISICIÓN, ENAJENACIÓN Y GRAVAMEN DE BIENES INMUEBLES",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03341",
+      "_links": {
+        "self": {
+          "name": "ORION REPARACIÓN ESTRUCTURAL, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/03341"
+        }
+      }
+    },
+    {
+      "name": "QUIMIBACTER, S.L.",
+      "registrationNumber": "01422",
+      "identificationNumber": "B20499406",
+      "address": "C/ PLAZA DE LOS ESTUDIOS, Nº 4.",
+      "location": {
+        "postalCode": "20011",
+        "municipality": "Donostia / San Sebastián",
+        "county": "Gipuzkoa",
+        "municipalityId": "069",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.619.7",
+          "name": "Venta al por mayor de instrumentos de precisión, medida y similares",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de instrumentos de precisión, medida y similares",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.619.7"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-09-14",
+      "certificateEndDate": "2026-03-14",
+      "object": "LA COMPRA, VENTA, FABRICACIÓN, PREPARACIÓN, MANIPULACIÓN Y DISTRIBUCIÓN DE TODA CLASE DE APARATOS, MATERIAL, INSTALACIONES, REACTIVOS Y PRODUCTOS UTILIZADOS EN LABORATORIOS INDUSTRIALES, DE CONTROL, DOCENTES, CLÍNICOS Y DE INVESTIGACIÓN, ASÍ COMO LA ADQUISICIÓN, MANIPULACIÓN, ELABORACIÓN, ALMACENAMIENTO Y VENTA DE PRÓTESIS, IMPLANTES, INSTRUMENTAL Y ARTÍCULOS DIVERSOS UTILIZADOS EN LA PRÁCTICA MÉDICA, QUIRÚRGICA Y ORTOPÉDICA, TODO ELLO CON ÁMBITO NACIONAL E INTERNACIONAL",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/01422",
+      "_links": {
+        "self": {
+          "name": "QUIMIBACTER, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/01422"
+        }
+      }
+    },
+    {
+      "name": "ATXURRA ZELAIETA ARQUITECTOS SLP",
+      "registrationNumber": "06237",
+      "identificationNumber": "B95838546",
+      "address": "C/ SAN NICOLAS DE OLABEAGA 62 BAJO",
+      "location": {
+        "postalCode": "48013",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.843.2",
+          "name": "Servicios técnicos de arquitectura y urbanismo",
+          "_links": {
+            "self": {
+              "name": "Servicios técnicos de arquitectura y urbanismo",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-09-14",
+      "certificateEndDate": "2026-03-14",
+      "object": " LA REALIZACIÓN DE LAS ACTIVIDADES PROPIAS DEL EJERCICIO DE LA PROFESIÓN DE ARQUITECTO",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06237",
+      "_links": {
+        "self": {
+          "name": "ATXURRA ZELAIETA ARQUITECTOS SLP",
+          "href": "https://api.euskadi.eus/procurements/companies/06237"
+        }
+      }
+    },
+    {
+      "name": "EREITEN KULTUR ZERBITZUAK, S.L.",
+      "registrationNumber": "04997",
+      "identificationNumber": "B20802104",
+      "address": "LAU HAIZETA, 2 - 5A",
+      "location": {
+        "postalCode": "20017",
+        "municipality": "Donostia / San Sebastián",
+        "county": "Gipuzkoa",
+        "municipalityId": "069",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.966.1",
+          "name": "Bibliotecas y museos",
+          "_links": {
+            "self": {
+              "name": "Bibliotecas y museos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.966.1"
+            }
+          }
+        },
+        {
+          "id": "1.966.9",
+          "name": "Otros servicios culturales n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros servicios culturales n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.966.9"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-09-14",
+      "certificateEndDate": "2026-03-14",
+      "object": "LA PRESTACIÓN DE SERVICIOS CULTURALES, HISTÓRICO-ARTÍSTICOS, ASESORAMIENTO CULTURAL, REALIZACIÓN DE EXCAVACIONES ARQUEOLÓGICAS, RECUPERACIÓN PATRIMONIAL, DISEÑO Y REALIZACIÓN DE ACTIVIDADES FORMATIVAS, CONSULTORÍA, ENSEÑANZA Y FORMACIÓN EL EL ÁMBITO DE LAS NUEVAS TECNOLOGÍAS, APLICADAS AL ÁMBITO DE LA GESTIÓN CULTURAL",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/04997",
+      "_links": {
+        "self": {
+          "name": "EREITEN KULTUR ZERBITZUAK, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/04997"
+        }
+      }
+    },
+    {
+      "name": "NGL PROYECTOS Y CONSTRUCCIONES, S.L.",
+      "registrationNumber": "01959",
+      "identificationNumber": "B48755839",
+      "address": "C/ JUAN BAUTISTA URIARTE, 50 - BAJO",
+      "location": {
+        "postalCode": "48960",
+        "municipality": "Galdakao",
+        "county": "Bizkaia",
+        "municipalityId": "036",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.501.1",
+          "name": "Construcción completa, reparación y conservación de edificaciones",
+          "_links": {
+            "self": {
+              "name": "Construcción completa, reparación y conservación de edificaciones",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.1"
+            }
+          }
+        },
+        {
+          "id": "1.861.2",
+          "name": "Alquiler de locales industriales y otros alquileres n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Alquiler de locales industriales y otros alquileres n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.861.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-09-14",
+      "certificateEndDate": "2026-03-14",
+      "object": "LA CONSTRUCCION, PROMOCION, PROYECTO Y DIRECCION TECNICA DE TODO TIPO DE OBRAS PUBLICAS Y PRIVADAS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/01959",
+      "_links": {
+        "self": {
+          "name": "NGL PROYECTOS Y CONSTRUCCIONES, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/01959"
+        }
+      }
+    }
+  ]
+}

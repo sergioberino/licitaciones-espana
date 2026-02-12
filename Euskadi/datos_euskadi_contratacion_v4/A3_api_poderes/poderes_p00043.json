@@ -1,0 +1,523 @@
+{
+  "totalItems": 919,
+  "totalPages": 92,
+  "currentPage": 43,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "id": 187,
+      "identificationNumber": "P4800050I",
+      "name": "Barakaldo Kirolak",
+      "scope": "BIZKAIA",
+      "address": "Polideportivo Lasesarre. Vega la punta, 1. 48901 Barakaldo (Bizkaia)",
+      "webPage": "http://www.barakaldokirolak.eus",
+      "publicationDate": "2019-10-07",
+      "mainActivity": "Ocio, cultura y religión",
+      "codNUTS": "ES213",
+      "entities": [
+        {
+          "id": 617,
+          "name": "Instituto Municipal del Deporte de Barakaldo",
+          "orgs": [
+            {
+              "id": 911926,
+              "name": "Presidencia",
+              "_links": {
+                "self": {
+                  "name": "Presidencia",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/187/entities/617/orgs/911926"
+                }
+              }
+            },
+            {
+              "id": 911927,
+              "name": "Consejo de dirección",
+              "_links": {
+                "self": {
+                  "name": "Consejo de dirección",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/187/entities/617/orgs/911927"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Instituto Municipal del Deporte de Barakaldo",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/187/entities/617"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder187/es_doc/es_arch_poder187.html",
+      "_links": {
+        "self": {
+          "name": "Barakaldo Kirolak",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/187"
+        }
+      }
+    },
+    {
+      "id": 188,
+      "identificationNumber": "P9801702C",
+      "name": "INGURALDE",
+      "scope": "BIZKAIA",
+      "address": "Aldapa kalea, 3A. 48901 Barakaldo (Bizkaia)",
+      "webPage": "http://www.inguralde.com",
+      "publicationDate": "2019-10-07",
+      "mainActivity": "Protección social",
+      "codNUTS": "ES213",
+      "entities": [
+        {
+          "id": 618,
+          "name": "INGURALDE",
+          "orgs": [
+            {
+              "id": 911929,
+              "name": "Consejo de Dirección",
+              "_links": {
+                "self": {
+                  "name": "Consejo de Dirección",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/188/entities/618/orgs/911929"
+                }
+              }
+            },
+            {
+              "id": 911928,
+              "name": "Presidente/a",
+              "_links": {
+                "self": {
+                  "name": "Presidente/a",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/188/entities/618/orgs/911928"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "INGURALDE",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/188/entities/618"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder188/es_doc/es_arch_poder188.html",
+      "_links": {
+        "self": {
+          "name": "INGURALDE",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/188"
+        }
+      }
+    },
+    {
+      "id": 192,
+      "identificationNumber": "P4810700G",
+      "name": "Ayuntamiento de Igorre",
+      "scope": "BIZKAIA",
+      "address": "Elexalde 1. 48140 Igorre (Bizkaia)",
+      "webPage": "http://www.igorre.net",
+      "publicationDate": "2019-10-07",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES213",
+      "entities": [
+        {
+          "id": 622,
+          "name": "Ayuntamiento de Igorre",
+          "orgs": [
+            {
+              "id": 911939,
+              "name": "Alcalde",
+              "_links": {
+                "self": {
+                  "name": "Alcalde",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/192/entities/622/orgs/911939"
+                }
+              }
+            },
+            {
+              "id": 911940,
+              "name": "Pleno del Ayuntamiento",
+              "_links": {
+                "self": {
+                  "name": "Pleno del Ayuntamiento",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/192/entities/622/orgs/911940"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Ayuntamiento de Igorre",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/192/entities/622"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder192/es_doc/es_arch_poder192.html",
+      "_links": {
+        "self": {
+          "name": "Ayuntamiento de Igorre",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/192"
+        }
+      }
+    },
+    {
+      "id": 193,
+      "identificationNumber": "P4806800A",
+      "name": "Ayuntamiento de Loiu",
+      "scope": "BIZKAIA",
+      "address": "Herriko Plaza, 1. 48180 Loiu (Bizkaia)",
+      "webPage": "http://www.loiu.eus",
+      "publicationDate": "2019-10-07",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES213",
+      "entities": [
+        {
+          "id": 623,
+          "name": "Ayuntamiento de Loiu",
+          "orgs": [
+            {
+              "id": 911936,
+              "name": "Alcalde",
+              "_links": {
+                "self": {
+                  "name": "Alcalde",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/193/entities/623/orgs/911936"
+                }
+              }
+            },
+            {
+              "id": 911938,
+              "name": "Junta de Gobierno Local",
+              "_links": {
+                "self": {
+                  "name": "Junta de Gobierno Local",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/193/entities/623/orgs/911938"
+                }
+              }
+            },
+            {
+              "id": 911937,
+              "name": "Pleno",
+              "_links": {
+                "self": {
+                  "name": "Pleno",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/193/entities/623/orgs/911937"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Ayuntamiento de Loiu",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/193/entities/623"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder193/es_doc/es_arch_poder193.html",
+      "_links": {
+        "self": {
+          "name": "Ayuntamiento de Loiu",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/193"
+        }
+      }
+    },
+    {
+      "id": 196,
+      "identificationNumber": "P4800039B",
+      "name": "Escuelas Infantiles Barakaldo",
+      "scope": "BIZKAIA",
+      "address": "Herriko Plaza 1, 48901 Barakaldo (Bizkaia)",
+      "webPage": "http://www.barakaldo.org/portal/web/escuelas-infantiles",
+      "publicationDate": "2019-10-07",
+      "mainActivity": "Educación",
+      "codNUTS": "ES213",
+      "entities": [
+        {
+          "id": 626,
+          "name": "Escuelas Infantiles de Barakaldo",
+          "orgs": [
+            {
+              "id": 911947,
+              "name": "Presidenta",
+              "_links": {
+                "self": {
+                  "name": "Presidenta",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/196/entities/626/orgs/911947"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Escuelas Infantiles de Barakaldo",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/196/entities/626"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder196/es_doc/es_arch_poder196.html",
+      "_links": {
+        "self": {
+          "name": "Escuelas Infantiles Barakaldo",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/196"
+        }
+      }
+    },
+    {
+      "id": 197,
+      "identificationNumber": "P4803600H",
+      "name": "Ayuntamiento de Etxebarri",
+      "scope": "BIZKAIA",
+      "address": "Sabino Arana, 1A. 48450 Etxebarri (Bizkaia)",
+      "webPage": "http://www.etxebarri.eus",
+      "publicationDate": "2019-10-07",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES213",
+      "entities": [
+        {
+          "id": 627,
+          "name": "Ayuntamiento de Etxebarri",
+          "orgs": [
+            {
+              "id": 911948,
+              "name": "Alcalde",
+              "_links": {
+                "self": {
+                  "name": "Alcalde",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/197/entities/627/orgs/911948"
+                }
+              }
+            },
+            {
+              "id": 911949,
+              "name": "Pleno Municipal",
+              "_links": {
+                "self": {
+                  "name": "Pleno Municipal",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/197/entities/627/orgs/911949"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Ayuntamiento de Etxebarri",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/197/entities/627"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder197/es_doc/es_arch_poder197.html",
+      "_links": {
+        "self": {
+          "name": "Ayuntamiento de Etxebarri",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/197"
+        }
+      }
+    },
+    {
+      "id": 200,
+      "identificationNumber": "P9805302H",
+      "name": "Residencia Municipal de Getxo Sagrado Corazón de Jesús",
+      "scope": "BIZKAIA",
+      "address": "Ormetxe 22. 48992 Getxo (Bizkaia)",
+      "webPage": "http://www.getxo.eus",
+      "publicationDate": "2019-10-07",
+      "mainActivity": "Protección social",
+      "codNUTS": "ES213",
+      "entities": [
+        {
+          "id": 630,
+          "name": "Residencia Municipal de Getxo",
+          "orgs": [
+            {
+              "id": 911954,
+              "name": "Residencia Municipal de Getxo",
+              "_links": {
+                "self": {
+                  "name": "Residencia Municipal de Getxo",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/200/entities/630/orgs/911954"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Residencia Municipal de Getxo",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/200/entities/630"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder200/es_doc/es_arch_poder200.html",
+      "_links": {
+        "self": {
+          "name": "Residencia Municipal de Getxo Sagrado Corazón de Jesús",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/200"
+        }
+      }
+    },
+    {
+      "id": 202,
+      "identificationNumber": "P4808300J",
+      "name": "Ayuntamiento de Muskiz",
+      "scope": "BIZKAIA",
+      "address": "Barrio San Juan, 2. 48550 Muskiz (Bizkaia)",
+      "webPage": "http://www.muskiz.org",
+      "publicationDate": "2019-10-07",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES213",
+      "entities": [
+        {
+          "id": 632,
+          "name": "Ayuntamiento de Muskiz",
+          "orgs": [
+            {
+              "id": 911967,
+              "name": "Pleno",
+              "_links": {
+                "self": {
+                  "name": "Pleno",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/202/entities/632/orgs/911967"
+                }
+              }
+            },
+            {
+              "id": 911968,
+              "name": "Junta de Gobierno Local",
+              "_links": {
+                "self": {
+                  "name": "Junta de Gobierno Local",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/202/entities/632/orgs/911968"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Ayuntamiento de Muskiz",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/202/entities/632"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder202/es_doc/es_arch_poder202.html",
+      "_links": {
+        "self": {
+          "name": "Ayuntamiento de Muskiz",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/202"
+        }
+      }
+    },
+    {
+      "id": 210,
+      "identificationNumber": "A48212567",
+      "name": "GARBIKER",
+      "scope": "BIZKAIA",
+      "address": "Gran Vía de Don Diego López de Haro, 44 1º Izda. 48009 Bilbao (Bizkaia)",
+      "webPage": "http://www.garbiker.bizkaia.eus",
+      "publicationDate": "2019-10-07",
+      "mainActivity": "Medio ambiente",
+      "codNUTS": "ES213",
+      "CPV": [
+        {
+          "name": "Servicios de alcantarillado, basura, limpieza y medio ambiente"
+        }
+      ],
+      "entities": [
+        {
+          "id": 658,
+          "name": "GARBIKER",
+          "orgs": [
+            {
+              "id": 912040,
+              "name": "Director/a gerente",
+              "_links": {
+                "self": {
+                  "name": "Director/a gerente",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/210/entities/658/orgs/912040"
+                }
+              }
+            },
+            {
+              "id": 912039,
+              "name": "Consejo de Administración",
+              "_links": {
+                "self": {
+                  "name": "Consejo de Administración",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/210/entities/658/orgs/912039"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "GARBIKER",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/210/entities/658"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder210/es_doc/es_arch_poder210.html",
+      "_links": {
+        "self": {
+          "name": "GARBIKER",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/210"
+        },
+        "contractingAuthorities": [
+          {
+            "name": "BASALAN  A.B, S.A, M.P",
+            "href": "https://api.euskadi.eus/procurements/contracting-authorities/18640"
+          },
+          {
+            "name": "Diputación Foral de Bizkaia",
+            "href": "https://api.euskadi.eus/procurements/contracting-authorities/18269"
+          }
+        ]
+      }
+    },
+    {
+      "id": 213,
+      "identificationNumber": "P9800001A",
+      "name": "Instituto Foral de Asistencia Social de Bizkaia",
+      "scope": "BIZKAIA",
+      "address": "Camino de Ugasko, 5-Bis 1. 48014 Bilbao (Bizkaia)",
+      "webPage": "http://www.ifas.bizkaia.eus/",
+      "publicationDate": "2019-10-07",
+      "mainActivity": "Protección social",
+      "codNUTS": "ES213",
+      "entities": [
+        {
+          "id": 660,
+          "name": "Instituto Foral de Asistencia Social de Bizkaia",
+          "orgs": [
+            {
+              "id": 912041,
+              "name": "Gerente/a",
+              "_links": {
+                "self": {
+                  "name": "Gerente/a",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/213/entities/660/orgs/912041"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Instituto Foral de Asistencia Social de Bizkaia",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/213/entities/660"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder213/es_doc/es_arch_poder213.html",
+      "_links": {
+        "self": {
+          "name": "Instituto Foral de Asistencia Social de Bizkaia",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/213"
+        }
+      }
+    }
+  ]
+}

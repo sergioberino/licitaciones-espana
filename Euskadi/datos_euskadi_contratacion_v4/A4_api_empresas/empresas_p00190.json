@@ -1,0 +1,434 @@
+{
+  "totalItems": 9042,
+  "totalPages": 905,
+  "currentPage": 190,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "name": "LET'S GO TEAM SDAD. COOP. PEQUEÑA",
+      "registrationNumber": "08050",
+      "identificationNumber": "F95759486",
+      "address": "Calle Bajada de Ereaga (48992) 19, 3º izda.",
+      "location": {
+        "postalCode": "48992",
+        "municipality": "Getxo",
+        "county": "Bizkaia",
+        "municipalityId": "044",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.847",
+          "name": "Servicios de consultoría",
+          "_links": {
+            "self": {
+              "name": "Servicios de consultoría",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.847"
+            }
+          }
+        },
+        {
+          "id": "1.934",
+          "name": "Enseñanza fuera de establecimiento permanente",
+          "_links": {
+            "self": {
+              "name": "Enseñanza fuera de establecimiento permanente",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.934"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-10-27",
+      "certificateEndDate": "2026-04-16",
+      "object": "LA PRESTACIÓN DE SERVICIOS DE CONSULTORÍA Y FORMACIÓN EN EMPRENDIZAJE E INNOVACIÓN.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08050",
+      "_links": {
+        "self": {
+          "name": "LET'S GO TEAM SDAD. COOP. PEQUEÑA",
+          "href": "https://api.euskadi.eus/procurements/companies/08050"
+        }
+      }
+    },
+    {
+      "name": "LEITZARAN GRAFIKAK SL",
+      "registrationNumber": "02607",
+      "identificationNumber": "B20739710",
+      "address": "GUDARIEN ETORBIDEA 29",
+      "location": {
+        "postalCode": "20140",
+        "municipality": "Andoain",
+        "county": "Gipuzkoa",
+        "municipalityId": "009",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.474.1",
+          "name": "Impresión de textos o imágenes por cualquier procedimiento",
+          "_links": {
+            "self": {
+              "name": "Impresión de textos o imágenes por cualquier procedimiento",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.474.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-10-27",
+      "certificateEndDate": "2026-04-26",
+      "classification": [
+        {
+          "id": "S",
+          "name": "Servicios",
+          "groups": [
+            {
+              "id": "M",
+              "subgroups": [
+                {
+                  "id": "04",
+                  "name": "Artes gráficas",
+                  "categories": [
+                    {
+                      "id": "1",
+                      "name": "Desde 0 Hasta 150.000",
+                      "_links": {
+                        "self": {
+                          "name": "Desde 0 Hasta 150.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/S/categories/1"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "Artes gráficas",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/M/subgroups/04"
+                    }
+                  }
+                }
+              ],
+              "_links": {
+                "self": {
+                  "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/M"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Servicios",
+              "href": "https://api.euskadi.eus/procurements/companies/types/S"
+            }
+          }
+        }
+      ],
+      "object": "LA IMPRESION, COMPOSICION,ENCUADERNACION,EDICION Y PUBLICACION DE LIBROS, REVISTAS, FOLLETOS E IMPRESION DE TODO TIPO, LA COMPRA VENTA, IMPORTACION, EXPORTACION Y CUALQUIER OTRA ACTIVIDAD RELACIONADA CON LAS ARTES GRAFICAS.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/02607",
+      "_links": {
+        "self": {
+          "name": "LEITZARAN GRAFIKAK SL",
+          "href": "https://api.euskadi.eus/procurements/companies/02607"
+        }
+      }
+    },
+    {
+      "name": "ELECTROTÉCNICA DE URBINA, S.A.",
+      "registrationNumber": "00344",
+      "identificationNumber": "A01025550",
+      "address": "C/ ARANGUTXI, Nº 21. POLÍGONO INDUSTRIAL DE JÚNDIZ.",
+      "location": {
+        "postalCode": "01015",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.504.1",
+          "name": "Instalaciones eléctricas en general",
+          "_links": {
+            "self": {
+              "name": "Instalaciones eléctricas en general",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.504.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-10-27",
+      "certificateEndDate": "2026-04-24",
+      "object": "LA COMPRAVENTA, ALMACENAMIENTO, DEPÓSITO, DISTRIBUCIÓN, EL MONTAJE, LA REALIZACIÓN DE ESTUDIOS, PRESUPUESTOS Y PRESTACIÓN DE SERVICIOS DE ATENCIÓN, CONSERVACIÓN Y REPARACIÓN DE TODO TIPO DE INSTALACIONES Y APARATOS ELÉCTRICOS, ASÍ COMO DE MAQUINARIA Y DE MATERIAL ELÉCTRICO. EL ESTUDIO, INVESTAGIÓN, PROMOCIÓN Y PRESTACIÓN DE TODA CLASE DE SERVICIOS DE ASISTENCIA, GESTIÓN TÉCNICA Y EXPLOTACIÓN, RELACIONADOS CON EL SECTOR ELÉCTRICO. LOS SERVICIOS DE MEDIACIÓN CON BIENES PROPIOS O AJENOS, ASÍ COMO LOS DE CONSIGNACIÓN, REPRESENTACIÓN Y GESTIÓN DE SUMINISTROS RELACIONADOS CON EL SECTOR ELÉCTRICO",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/00344",
+      "_links": {
+        "self": {
+          "name": "ELECTROTÉCNICA DE URBINA, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/00344"
+        }
+      }
+    },
+    {
+      "name": "43 NORTH STUDIO, S.L.",
+      "registrationNumber": "08138",
+      "identificationNumber": "B01758143",
+      "address": "JON ARROSPIDE 18 (ENTRADA POR RAMPA IRUÑA 1)  ADDZENTROA",
+      "location": {
+        "postalCode": "48014",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.843.2",
+          "name": "Servicios técnicos de arquitectura y urbanismo",
+          "_links": {
+            "self": {
+              "name": "Servicios técnicos de arquitectura y urbanismo",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-10-27",
+      "certificateEndDate": "2026-04-20",
+      "object": "PROYECTOS, DIRECCIÓN DE OBRA EN TODA SU AMPLITUD Y DETALLE PARA EDIFICACIÓN, URBANISMO, OBRA PÚBLICA, PAISAJISMO, JARDINERÍA, INTERIORISMO, DECORACIÓN, MOBILIARIO, COORDINACIÓN DE GREMIOS, COORDINACIÓN DE SEGURIDAD Y SALUD, CONSULTORÍA TÉCNICA, FOTOGRAFÍA Y VÍDEO EN GENERAL, Y COMUNICACIÓN DIGITAL DE EMPRESAS DEL SECTOR DE LA ARQUITECTURA Y CONSTRUCCIÓN.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08138",
+      "_links": {
+        "self": {
+          "name": "43 NORTH STUDIO, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/08138"
+        }
+      }
+    },
+    {
+      "name": "W.L. GORE Y ASOCIADOS, S.L.",
+      "registrationNumber": "02318",
+      "identificationNumber": "B60517794",
+      "address": "C/ Ciudad de Granada, nº 178",
+      "location": {
+        "postalCode": "08018",
+        "municipality": "Barcelona",
+        "county": "Barcelona",
+        "municipalityId": "019",
+        "countyId": "08"
+      },
+      "economicActivities": [
+        {
+          "id": "1.619.2",
+          "name": "Venta al por mayor de aparatos e instrumentos médicos, ortopédicos, ópticos",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de aparatos e instrumentos médicos, ortopédicos, ópticos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.619.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-10-27",
+      "certificateEndDate": "2026-04-18",
+      "object": "-EL ESTUDIO, INVESTIGACIÓN Y EXPLOTACIÓN DE NUEVAS APLICACIONES EN EL ÁMBITO DE LAS MATERIAS PLÁSTICAS, ASÍ COMO LA VENTA, IMPORTACIÓN, EXPORTACIÓN Y FABRICACIÓN DE HILOS, CABLES, JUNTAS, FILTROS, ACCESORIOS Y CUALQUIER OTRO PRODUCTO DE MATERIA PLÁSTICA PARA TODO TIPO DE INDUSTRIA.\n-LA PROMOCIÓN, DISTRIBUCIÓN, CONCESIÓN Y REPRESENTACIÓN BAJO CUALQUIER FORMA DE DICHOS PRODUCTOS, ASÍ COMO DE TODA CLASE DE PRODUCTOS DE IDÉNTICA NATURALEZA, ANEXA, CONEXA, O ACCESORIA Y, EN PARTICULAR, LOS FABRICADOS POR LAS FÁBRICAS DEL GRUPO GORE.\n-LA PROMOCIÓN, DISTRIBUCIÓN, CONCESIÓN Y REPRESENTACIÓN BAJO CUALQUIER FORMA DE PRODUCTOS MEDICALES Y SERVICIOS RELACIONADOS CON LOS MISMO.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/02318",
+      "_links": {
+        "self": {
+          "name": "W.L. GORE Y ASOCIADOS, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/02318"
+        }
+      }
+    },
+    {
+      "name": "CONSTRUCCIONES ECO-SILMA, S.L.",
+      "registrationNumber": "07977",
+      "identificationNumber": "B75215368",
+      "address": "Poligono Basabe - Bloque C - Pabellon C.2.8",
+      "location": {
+        "postalCode": "20550",
+        "municipality": "Aretxabaleta",
+        "county": "Gipuzkoa",
+        "municipalityId": "013",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.501.3",
+          "name": "Albañilería y pequeños trabajos de construcción en general",
+          "_links": {
+            "self": {
+              "name": "Albañilería y pequeños trabajos de construcción en general",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.3"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-10-27",
+      "certificateEndDate": "2026-04-24",
+      "object": "LA REALIZACIÓN DE TODA CLASE DE TRABAJOS DE CONSTRUCCIÓN-URBANIZACIONES, EDIFICACIÓN, EXCAVACIONES, HORMIGÓN, ESTRUCTURAS, ALBAÑILERÍA, FONTANERÍA, ELECTRICIDAD, CARPINTERÍA, PINTURA, ETC- Y REHABILITACIÓN DE EDIFICIOS. LA EXPOSICIÓN Y VENTA DE TODO TIPO DE MATERIALES DE CONSTRUCCIÓN. LA PROMOCIÓN, CONSTRUCCIÓN, ADQUISICIÓN Y ENAJENACIÓN DE TODO TIPO DE BIENES INMUEBLES Y TERRENOS, ASÍ COMO LA GESTIÓN DE TODA CLASE DE OPERACIONES QUE TENGAN RELACIÓN O DESARROLLO, TODO EN EL SENTIDO MÁS AMPLIO. LA COMPRA Y VENTA DE TODA CLASE DE BIENES DE NATURALEZA INMUEBLE, TANTO RUSTICO COMO URBANOS. EL ARRENDAMIENTO, ADMINISTRACIÓN Y EN GENERAL LA EXPLOTACIÓN BAJO CUALQUIERA DE LAS FORMAS ADQUIRIDAS EN DERECHO, DE TODA CLASE DE BIENES INMUEBLES. LA COMERCIALIZACIÓN E INTERMEDIACIÓN EN LA COMPRA, VENTA O ARRENDAMIENTO DE BIENES INMUEBLES, RÚSTICOS O URBANOS, TOTAL O PARCIALMENTE. CODIGO C.N.A.E. NÚMERO 4339.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07977",
+      "_links": {
+        "self": {
+          "name": "CONSTRUCCIONES ECO-SILMA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/07977"
+        }
+      }
+    },
+    {
+      "name": "ARIANE ARRAUSI PEREZ DE GUEREÑU",
+      "registrationNumber": "09120",
+      "identificationNumber": "72757216M",
+      "address": "Calle Pedro Orbea 7 - 6º D (01002) ",
+      "location": {
+        "postalCode": "01002",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "2.826",
+          "name": "Personal docente de enseñanzas diversas",
+          "_links": {
+            "self": {
+              "name": "Personal docente de enseñanzas diversas",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/2.826"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-10-27",
+      "certificateEndDate": "2026-04-22",
+      "object": "PERSONAL DOCENTE DE ENSEÑANZAS DIVERSAS.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/09120",
+      "_links": {
+        "self": {
+          "name": "ARIANE ARRAUSI PEREZ DE GUEREÑU",
+          "href": "https://api.euskadi.eus/procurements/companies/09120"
+        }
+      }
+    },
+    {
+      "name": "REPAIR ESTRUCTURAS, S.L.",
+      "registrationNumber": "01973",
+      "identificationNumber": "B48866131",
+      "address": "P.I.ARTUNDÚAGA, P.8, 1.C/Usausuaga,5-Mod.5,6 y7",
+      "location": {
+        "postalCode": "48970",
+        "municipality": "Basauri",
+        "county": "Bizkaia",
+        "municipalityId": "015",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.501.1",
+          "name": "Construcción completa, reparación y conservación de edificaciones",
+          "_links": {
+            "self": {
+              "name": "Construcción completa, reparación y conservación de edificaciones",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.1"
+            }
+          }
+        },
+        {
+          "id": "1.505.1",
+          "name": "Revestimientos exteriores e interiores de todas clases",
+          "_links": {
+            "self": {
+              "name": "Revestimientos exteriores e interiores de todas clases",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.505.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-10-27",
+      "certificateEndDate": "2026-04-15",
+      "object": "LA CONSTRUCCIÓN COMPLETA, CONSERVACIÓN Y REPARACIÓN DE TODO TIPO DE OBRAS E INSTALACIONES ",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/01973",
+      "_links": {
+        "self": {
+          "name": "REPAIR ESTRUCTURAS, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/01973"
+        }
+      }
+    },
+    {
+      "name": "INVESTIGACIÓN UNIVERSIDAD EMPRESA/JAKINTZA LANEZKO IKERKUNTZA",
+      "registrationNumber": "06063",
+      "identificationNumber": "G48112155",
+      "address": "Esc. Ingeniería Bilbao. Pz. Ing.Torres Quevedo,1. Edif. II. P1. Código Local P1I33",
+      "location": {
+        "postalCode": "48013",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.934",
+          "name": "Enseñanza fuera de establecimiento permanente",
+          "_links": {
+            "self": {
+              "name": "Enseñanza fuera de establecimiento permanente",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.934"
+            }
+          }
+        },
+        {
+          "id": "1.936",
+          "name": "Investigación científica y técnica",
+          "_links": {
+            "self": {
+              "name": "Investigación científica y técnica",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.936"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-10-27",
+      "certificateEndDate": "2026-04-18",
+      "object": "A) FOMENTAR E INTENSIFICAR LAS RELACIONES UNIVERSIDAD EMPRESA. B) GESTIONAR LAS RELACIONES ENTRE LA UNIVERSIDAD DEL PAIS VASCO Y LAS ENTIDADES PÚBLICAS Y PRIVADAS, EN MATERIA DE ESTUDIOS Y PROYECTOS DE INVESTIGACIÓN DE CUALQUIER ÁREA DE LA ACTIVIDAD UNIVERSITARIA, INCLUYENDO LA FORMALIZACIÓN CONTRACTUAL Y LA BÚSQUEDA DE MEDIOS DE FINANCIACIÓN. C) ACTUAR COMO DEPARTAMENTO ASESOR DE COMPRAS PARA MATERIAL Y DESTINADO A LA INVESTIGACIÓN DE LA UNIVERSIDAD. D) ORGANIZAR PROGRAMAS DE RECICLAJE DE INVESTIGADORES UNIVERSITARIOS EN LA EMPRESA Y DE INVESTIGADORES INDUSTRIALES EN LA UNIVERSIDAD. E) FOMENTAR EL INTERCAMBIO DE PROFESIONALES ENTRE LA EMPRESA Y LA UNIVERSIDAD EN SUS DISTINTAS MODALIDADES Y LA CREACIÓN DE PUESTOS DE TRABAJO PARA LOS INVESTIGADORES. F) GESTIONAR LA EXPLOTACIÓN DE PATENTES Y DERECHOS DE PROPIEDAD, ASÍ COMO RESOLVER CUESTIONES Y PROBLEMAS DERIVADOS DE LOS MISMOS. G) FACILITAR LA TRANSFERENCIA A LA EMPRESA DE LAS INVESTIGACIONES TANTO POTENCIALES COMO CONCRETAS, RESULTANTES DE LA INVESTIGACIÓN UNIVERSITARIA Y EN GENERAL, DIFUNDIR EN LA SOCIEDAD LOS NUEVOS CONOCIMIENTOS GENERADOS EN LA UNIVERSIDAD. H) DAR A CONOCER EN LA UNIVERSIDAD LAS NECESIDADES DE LA INDUSTRIA Y DE LA SOCIEDAD EN GENERAL. I) ESTIMULAR Y COLABORAR EN LA ORGANIZACIÓN DE CURSOS, CONFERENCIAS, SEMINARIOS Y CONGRESOS QUE FOMENTEN LAS CORRIENTES DE INFORMACIÓN ENTRE LOS INVESTIGADORES Y SU APLICACIÓN. J) MANTENER PERMANENTEMENTE ACTUALIZADO EL INVENTARIO, POR UN LADO, DE LAS UNIDADES DE INVESTIGACIÓN UNIVERSITARIA, CON SUS FUNCIONES Y SERVICIOS, Y POR EL OTRO, DE LAS NECESIDADES TANTO EMPRESARIALES COMO SOCIALES. K) LLEVAR A CABO CUALQUIER OTRO TIPO DE ACTIVIDADES O PRESTACIONES QUE, RELACIONADAS CON LAS ANTERIOMENTE DESCRITAS, PREPARATORIA O COMPLEMENTARIA DE LA MISMA, CONTRIBUYAN AL MEJOR DESARROLLO DEL OBJETO FUNDAMENTAL",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06063",
+      "_links": {
+        "self": {
+          "name": "INVESTIGACIÓN UNIVERSIDAD EMPRESA/JAKINTZA LANEZKO IKERKUNTZA",
+          "href": "https://api.euskadi.eus/procurements/companies/06063"
+        }
+      }
+    },
+    {
+      "name": "KOLDO BENITO TRECU-EDUARDO ARINA FAÑANAS, S.C.",
+      "registrationNumber": "09033",
+      "identificationNumber": "J10569606",
+      "address": "C/Diputación nº6, 4ºizq-izq",
+      "location": {
+        "postalCode": "48009",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.961.1",
+          "name": "Producción de películas cinematográficas (incluso vídeos)",
+          "_links": {
+            "self": {
+              "name": "Producción de películas cinematográficas (incluso vídeos)",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.961.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-10-27",
+      "certificateEndDate": "2026-04-20",
+      "object": "LA EXPLOTACIÓN DE SERVICIOS AUDIOVISUALES, CON CARÁCTER INDEFINIDO..",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/09033",
+      "_links": {
+        "self": {
+          "name": "KOLDO BENITO TRECU-EDUARDO ARINA FAÑANAS, S.C.",
+          "href": "https://api.euskadi.eus/procurements/companies/09033"
+        }
+      }
+    }
+  ]
+}

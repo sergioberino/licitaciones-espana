@@ -1,0 +1,418 @@
+{
+  "totalItems": 9042,
+  "totalPages": 905,
+  "currentPage": 240,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "name": "3 KIDE, S.L.",
+      "registrationNumber": "10131",
+      "identificationNumber": "B31856636",
+      "address": "POLG. ALKAIAGA, C/ ALASTA 4 - 6 BAJO",
+      "location": {
+        "postalCode": "31770",
+        "municipality": "Lesaka",
+        "county": "Navarra",
+        "municipalityId": "153",
+        "countyId": "31"
+      },
+      "economicActivities": [
+        {
+          "id": "1.504.2",
+          "name": "Instalaciones de fontanería",
+          "_links": {
+            "self": {
+              "name": "Instalaciones de fontanería",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.504.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-09-30",
+      "certificateEndDate": "2026-03-30",
+      "object": "LA REALIZACIÓN DE TODA CLASE DE TRABAJOS RELACIONADOS CON LA FONTANERÍA, CALEFACCIÓN Y ELECTRICIDAD.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/10131",
+      "_links": {
+        "self": {
+          "name": "3 KIDE, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/10131"
+        }
+      }
+    },
+    {
+      "name": "ORTOPEDIA BILBAO, S.L.",
+      "registrationNumber": "10134",
+      "identificationNumber": "B48570584",
+      "address": "Calle Pérez Galdós",
+      "location": {
+        "postalCode": "48010",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.659.3",
+          "name": "Venta al por menor de aparatos médicos, ortopédicos, ópticos y fotográficos",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de aparatos médicos, ortopédicos, ópticos y fotográficos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.659.3"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-09-30",
+      "certificateEndDate": "2026-03-30",
+      "object": "LA DISPENSACIÓN, CONCESIÓN, ALMACENAJE, DISTRIBUCIÓN, COMERCIALIZACIÓN, IMPORTACIÓN Y EXPORTACIÓN, COMPRA, VENTA, AL POR MAYOR Y MENOR DE APARATOS Y ARTÍCULOS ORTOPÉDICOS, PROTÉSICOS Y SUS COMPLEMENTOS.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/10134",
+      "_links": {
+        "self": {
+          "name": "ORTOPEDIA BILBAO, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/10134"
+        }
+      }
+    },
+    {
+      "name": "LYC CONSULTORES, S.L.",
+      "registrationNumber": "10136",
+      "identificationNumber": "B20673943",
+      "address": "P.E. ZUATZU - EDIF. ULIA Planta 1ª - Oficina 1",
+      "location": {
+        "postalCode": "20018",
+        "municipality": "Donostia / San Sebastián",
+        "county": "Gipuzkoa",
+        "municipalityId": "069",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.834",
+          "name": "Servicios relativos a la propiedad inmobiliaria e industrial",
+          "_links": {
+            "self": {
+              "name": "Servicios relativos a la propiedad inmobiliaria e industrial",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.834"
+            }
+          }
+        },
+        {
+          "id": "1.849.7",
+          "name": "Servicios de gestión administrativa",
+          "_links": {
+            "self": {
+              "name": "Servicios de gestión administrativa",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.849.7"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-09-30",
+      "certificateEndDate": "2026-03-30",
+      "object": "A) LA PRESTACIÓN DE SERVICIOS DE ASESORAMIENTO COMERCIAL, CONTABLE, LEGAL Y FISCAL, ASÍ COMO LA LLEVANZA DE CONTABILIDADES Y GESTIÓN DE EMPRESAS Y NEGOCIOS. B) LA PROMOCIÓN GESTIÓN Y DIRECCIÓN DE PARQUES COMERCIALES, GRANDES SUPERFICIES Y EN GENERAL TODO TIPO DE ÁREAS DE OCIO Y ESPARCIMIENTO. C) EL EJERCICIO POR CUENTA PROPIA, EN PARTICIPACIÓN O POR CUENTA DE TERCEROS, DE TODA CLASE DE OPERACIONES EN RELACIÓN CON LA ADQUISICIÓN, ENAJENACIÓN Y ARRENDAMIENTOS DE INMUEBLES DE TODAS CLASES Y, EN GENERAL, CUANTO SE REFIERA A OPERACIONES DE TIPO INMOBILIARIO, SALVO AQUELLAS PARA CUYO DESARROLLO EXIJA LA NORMATIVA ESPECIAL APLICABLE DETERMINADOS REQUISITOS DE LOS QUE CAREZCA LA SOCIEDAD. D) LA TENENCIA, ADMINISTRACIÓN Y DISFRUTE DE VALORES Y ACTIVOS FINANCIEROS DE CUALQUIER TIPO.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/10136",
+      "_links": {
+        "self": {
+          "name": "LYC CONSULTORES, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/10136"
+        }
+      }
+    },
+    {
+      "name": "JOSÉ ETXABE CONSTRUCCIONES, S.L.",
+      "registrationNumber": "02161",
+      "identificationNumber": "B20461786",
+      "address": "FLORIDA AUZOA, NAVE 7",
+      "location": {
+        "postalCode": "20120",
+        "municipality": "Hernani",
+        "county": "Gipuzkoa",
+        "municipalityId": "040",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.501.1",
+          "name": "Construcción completa, reparación y conservación de edificaciones",
+          "_links": {
+            "self": {
+              "name": "Construcción completa, reparación y conservación de edificaciones",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.1"
+            }
+          }
+        },
+        {
+          "id": "1.501.2",
+          "name": "Construcción completa, reparación y conservación obras civiles",
+          "_links": {
+            "self": {
+              "name": "Construcción completa, reparación y conservación obras civiles",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.2"
+            }
+          }
+        },
+        {
+          "id": "1.833.2",
+          "name": "Promoción de edificaciones",
+          "_links": {
+            "self": {
+              "name": "Promoción de edificaciones",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.833.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-09-30",
+      "certificateEndDate": "2026-03-30",
+      "object": "LA PROMOCIÓN, CONSTRUCCIÓN, REPARACIÓN Y CONSERVACIÓN DE EDIFICIOS Y OBRA CIVIL, LA ALBAÑILERÍA Y PEQUEÑOS TRABAJOS DE CONSTRUCCIÓN, EN GENERAL, LA VENTA DE EDIFICACIONES Y TERRENOS QUE TENGAN LA CONSIDERACIÓN DE SUELO Y LA OBRA PÚBLICA",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/02161",
+      "_links": {
+        "self": {
+          "name": "JOSÉ ETXABE CONSTRUCCIONES, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/02161"
+        }
+      }
+    },
+    {
+      "name": "CIRUGÍA Y MEDICINA, S.A.",
+      "registrationNumber": "00244",
+      "identificationNumber": "A48180236",
+      "address": "Alameda Urquijo (48013) 88 P06 CE",
+      "location": {
+        "postalCode": "48013",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.619.2",
+          "name": "Venta al por mayor de aparatos e instrumentos médicos, ortopédicos, ópticos",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de aparatos e instrumentos médicos, ortopédicos, ópticos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.619.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-09-30",
+      "certificateEndDate": "2026-03-30",
+      "object": "COMERCIALIZACIÓN DE APARATOS, INSTRUMENTOS, INSTALACIONES Y SUMINISTROS MÉDICOS, ELECTROMÉDICOS, SANITARIOS, FARMACÉUTICOS Y DE LABORATORIO, ASÍ COMO TODA CLASE DE ACTIVIDADES INDUSTRIALES, MERCANTILES O DE SERVICIOS RELACIONADOS, DIRECTAMENTE, CON ELLOS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/00244",
+      "_links": {
+        "self": {
+          "name": "CIRUGÍA Y MEDICINA, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/00244"
+        }
+      }
+    },
+    {
+      "name": "GERTUKO KOOP. S. GIZARTE EKIMENEKOA",
+      "registrationNumber": "09615",
+      "identificationNumber": "F95942835",
+      "address": " BIXENTE KAPANAGA, 9",
+      "location": {
+        "postalCode": "48215",
+        "municipality": "Iurreta",
+        "county": "Bizkaia",
+        "municipalityId": "910",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.476.2",
+          "name": "Edición de periódicos y revistas",
+          "_links": {
+            "self": {
+              "name": "Edición de periódicos y revistas",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.476.2"
+            }
+          }
+        },
+        {
+          "id": "1.961.1",
+          "name": "Producción de películas cinematográficas (incluso vídeos)",
+          "_links": {
+            "self": {
+              "name": "Producción de películas cinematográficas (incluso vídeos)",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.961.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-09-30",
+      "certificateEndDate": "2026-03-30",
+      "object": "LA PRESTACIÓN DE SERVICIOS ASISTENCIALES MEDIANTE LA REALIZACIÓN DE ACTIVIDADES EDUCATIVAS Y CULTURALES EN EUSKERA MEDIANTE LA PROMOCIÓN Y GESTIÓN DE BIENES Y SERVICIOS PRODUCIDOS EN EUSKARA TANTO PARA SUS SOCIOS COMO PARA DEMÁS CIUDADANOS, ENTIDADES, EMPRESAS O INSTITUCIONES EN EL ÁMBITO DE LA COMUNICACIÓN, LA CULTURA , EL OCIO, LA EDUCACIÓN, LA NORMALIZACIÓN DE LA LENGUA, LA SOBERANÍA ALIMENTARIA, EL FEMINISMO, LA ECONOMÍA SOCIAL Y EL DESARROLLO COMUNITARIO DE LA COMARCA, EN LA MEDIDA EN QUE DICHAS NECESIDADES SOCIALES NO ESTÁN ATENDIDAS POR EL MERCADO, TALES COMO MEDIOS DE COMUNICACIÓN EN EUSKERA, PÁGINAS WEB, DISEÑO GRÁFICO, ASESORAMIENTO EN COMUNICACIÓN, ETC.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/09615",
+      "_links": {
+        "self": {
+          "name": "GERTUKO KOOP. S. GIZARTE EKIMENEKOA",
+          "href": "https://api.euskadi.eus/procurements/companies/09615"
+        }
+      }
+    },
+    {
+      "name": "EDUCATION SERVICES VALHALLA, S.L.",
+      "registrationNumber": "10132",
+      "identificationNumber": "B87887782",
+      "address": "Calle Cristóbal Bordiú 13",
+      "location": {
+        "postalCode": "28003",
+        "municipality": "Madrid",
+        "county": "Madrid",
+        "municipalityId": "079",
+        "countyId": "28"
+      },
+      "economicActivities": [
+        {
+          "id": "1.849.9",
+          "name": "Otros servicios independientes n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros servicios independientes n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.849.9"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-09-30",
+      "certificateEndDate": "2026-03-30",
+      "object": "A) LA PRESTACIÓN DE SERVICIOS DE CONSULTORÍA, FORMACIÓN, ASESORAMIENTO E INFORMACIÓN, TANTO A PERSONAS FÍSICAS COMO JURÍDICAS, COMPRENDIENDO TODO TIPO DE GESTIÓN, TRAMITACIÓN, Y OBTENCIÓN, TANTO DE FINANCIACIÓN PUBLICA COMO PRIVADA, RELACIONES CON INSTITUCIONES PÚBLICAS Y PRIVADAS, ASÍ COMO CUALQUIER OTRA ACTIVIDAD QUE PUEDA DERIVARSE O SE ENCUENTRE ENMARCADA DENTRO DE ESTE ÁMBITO. B) LA PRESTACIÓN DE TODO TIPO DE SERVICIOS DE INFORMÁTICA, DISEÑO Y COMERCIALIZACIÓN DE SOFTWARE Y HARDWARE; DISEÑO Y EXPLOTACIÓN DE PÁGINAS WEB, PRESTACIÓN DE SERVICIOS DE CONSULTORÍA, RECURSOS HUMANOS, ENSEÑANZA Y FORMACIÓN; COMERCIALIZACIÓN DE CURSOS POR INTERNET, REALIZACIÓN DE TODO TIPO DE ACTIVIDADES DE COMERCIO ELECTRÓNICO, INTERMEDIACIÓN EN LA COMERCIALIZACIÓN DE TODO TIPO DE BIENES Y SERVICIOS. C) ACTIVIDADES DE MARKETING Y PUBLICIDAD. D) LA ADQUISICIÓN, TENENCIA, DISFRUTE Y ENAJENACIÓN DE VALORES MOBILIARIOS DE CUALQUIER CLASE, SEAN DE RENTA FIJA O VARIABLE, ASÍ COMO LA ADMINISTRACIÓN Y GESTIÓN DE CARTERA, SIEMPRE QUE ELLO NO IMPLIQUE CAPTACIÓN DE AHORRO DEL PUBLICO EN GENERAL. TODO ELLO SIEMPRE POR CUENTA PROPIA Y DEJANDO A SALVO LAS LEGISLACIONES DE INSTITUCIONES DE INVERSIÓN COLECTIVA Y DE MERCADO DE VALORES. E) COMPRA VENTA DE BIENES INMUEBLES; REALIZACIÓN DE REFORMAS, PROYECTOS DE ARQUITECTURA Y DECORACIÓN DE INTERIORES DE INMUEBLES DE NATURALEZA URBANA Y RÚSTICA.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/10132",
+      "_links": {
+        "self": {
+          "name": "EDUCATION SERVICES VALHALLA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/10132"
+        }
+      }
+    },
+    {
+      "name": "HAZKUNDE S.L.",
+      "registrationNumber": "06469",
+      "identificationNumber": "B95009254",
+      "address": "COLÓN DE LARREATEGUI, 44, 1ºIZQ.",
+      "location": {
+        "postalCode": "48009",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.934",
+          "name": "Enseñanza fuera de establecimiento permanente",
+          "_links": {
+            "self": {
+              "name": "Enseñanza fuera de establecimiento permanente",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.934"
+            }
+          }
+        },
+        {
+          "id": "1.942.9",
+          "name": "Otros servicios sanitarios sin internados, no clasificados",
+          "_links": {
+            "self": {
+              "name": "Otros servicios sanitarios sin internados, no clasificados",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.942.9"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-09-30",
+      "certificateEndDate": "2026-03-30",
+      "object": "INSTALAR Y DESARROLLAR UNA CONSULTA PROFESIONAL DEDICADA A CENTRO DE PSICOTERAPIA INDIVIDUAL, GRUPAL Y COMUNITARIA, Y CUANTAS ACTIVIDADES INDUSTRIALES COMERCIALES O DE SERVICIOS AFINES O COMPLEMENTARIAS DECIDA EMPRENDER, ASÍ COMO LA REPRESENTACIÓN COMERCIAL DE LOS MISMOS, OBJETO QUE PODRÁ CUMPLIRSE TANTO EN NEGOCIOS JURÍDICOS CON PERSONAS FÍSICAS, COMO EN RELACIONES CON PERSONAS JURÍDICAS Y TODO TIPO DE ENTIDADES PUBLICAS O PRIVADAS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06469",
+      "_links": {
+        "self": {
+          "name": "HAZKUNDE S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/06469"
+        }
+      }
+    },
+    {
+      "name": "CERRAMIENTOS Y PREFABRICADOS DEL NORTE, S.A. (CEPRENOR)",
+      "registrationNumber": "01801",
+      "identificationNumber": "A48210553",
+      "address": "POLÍGONO BOROA PARCELA 2C2",
+      "location": {
+        "postalCode": "48340",
+        "municipality": "Amorebieta-Etxano",
+        "county": "Bizkaia",
+        "municipalityId": "003",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.501.2",
+          "name": "Construcción completa, reparación y conservación obras civiles",
+          "_links": {
+            "self": {
+              "name": "Construcción completa, reparación y conservación obras civiles",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.2"
+            }
+          }
+        },
+        {
+          "id": "1.861.2",
+          "name": "Alquiler de locales industriales y otros alquileres n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Alquiler de locales industriales y otros alquileres n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.861.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-09-30",
+      "certificateEndDate": "2026-03-30",
+      "object": "LA FABRICACIÓN, COMERCIALIZACIÓN Y EJECUCIÓN DE PREFABRICADOS Y CIERRES METÁLICOS; SEÑALIZACIÓN HORIZONTAL Y VERTICAL DE CARRETERA EN TODAS SUS MANIFESTACIONES; LA REALIZACIÓN Y EXPLOTACIÓN DE TODO TIPO DE TRABAJOS DE CONSTRUCCIÓN Y EJECUCIÓN DE OBRAS, TANTO EN RÉGIMEN DE CONTRATACIÓN PUBLICA COMO PRIVADA, BIEN DIRECTA Y PRINCIPALMENTE O BIEN MEDIANTE SUBCONTRATACIÓN; ASÍ COMO LA PRESTACIÓN DE SERVICIOS PARA SU MANTENIMIENTO Y CONSERVACIÓN",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/01801",
+      "_links": {
+        "self": {
+          "name": "CERRAMIENTOS Y PREFABRICADOS DEL NORTE, S.A. (CEPRENOR)",
+          "href": "https://api.euskadi.eus/procurements/companies/01801"
+        }
+      }
+    },
+    {
+      "name": "VERSIA SISTEMAS TI, S.A.",
+      "registrationNumber": "03925",
+      "identificationNumber": "A95229274",
+      "address": "Avenida Ibaibe, 27 edificio Garve III 2ª planta",
+      "location": {
+        "postalCode": "48902",
+        "municipality": "Barakaldo",
+        "county": "Bizkaia",
+        "municipalityId": "013",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.845",
+          "name": "Explotación electrónica por cuenta de terceros",
+          "_links": {
+            "self": {
+              "name": "Explotación electrónica por cuenta de terceros",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.845"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-09-30",
+      "certificateEndDate": "2026-03-30",
+      "object": "LA REALIZACIÓN DE ESTUDOS, PROYECTOS Y PRESTACIÓN DE SERVICIOS DE NUEVAS TECNOLOGÍAS (INFORMÁTICA, TELECOMUNICACIONES). EL DISEÑO, FABRICACIÓN, INTERMEDIACIÓN Y COMERCIALIZACIÓN DE PRODUCTOS RELACIONADOS CON EL SECTOR DE LA INFORMÁTICA. LA PRESTACIÓN DE SERVICIOS DE ASESORAMIENTO TÉCNICO, ECONÓMICO Y FINANCIERO A EMPRESAS. LA ADQUISICIÓN, TENENCIA, DISFRUTE Y ENAJENACIÓN DE TODA CLASE DE VALORES MOBILIARIOS, COTIZADOS EN BOLSA O NO, Y SIN INCIDIR EN OPERACIONES REGULADAS POR LEGISLACIÓN ESPECIAL LA COMPRA  Y VENTA, CESIÓN, DISFRUTE, DONACIÓN, ARRENDAMIENO Y EXPLOTACIÓN DE BIENES INMUEBLES. LA CESIÓN, ARRENDAMIENTO Y, POR CUALQUIER OTRO TÍTULO, TRANSMISIÓN DE TODA CLASE DE PATENTES Y MARCAS. LA RECEPCIÓN Y CONCESIÓN DE FINANCIACIÓN DE/Y A TODO TIPO DE ENTIDADES",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03925",
+      "_links": {
+        "self": {
+          "name": "VERSIA SISTEMAS TI, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/03925"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,408 @@
+{
+  "totalItems": 9042,
+  "totalPages": 905,
+  "currentPage": 779,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "name": "ORGANON ESPAÑOLA, S.A.",
+      "registrationNumber": "02446",
+      "identificationNumber": "A08194862",
+      "address": "CARRETERA HOSPITALET, 147-149",
+      "location": {
+        "postalCode": "08940",
+        "municipality": "Cornellà de Llobregat",
+        "county": "Barcelona",
+        "municipalityId": "073",
+        "countyId": "08"
+      },
+      "economicActivities": [
+        {
+          "id": "1.614.1",
+          "name": "Venta al por mayor de productos farmacéuticos y medicamentos",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de productos farmacéuticos y medicamentos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.614.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2006-06-02",
+      "certificateEndDate": "2006-10-21",
+      "object": "LA FABRICACIÓN, COMPRAVENTA AL MAYOR Y MENOR, IMPORTACIÓN, EXPORTACIÓN, DISTRIBUCIÓN, REPRESENTACIÓN Y PROMICIÓN POR CUENTA PROPIA O AJENA DE PRODUCTOS FARMACÉUTICOS PARA SU USO HUMANO Y ANIMAL, DE PRODUCTOS COSMÉTICOS Y DE HIGIENE, Y DE MATERIAL SANITARIO DE CUALQUIER TIPO Y CLASE, INCLUSIVE APARATOS E INSTRUMENTOS MÉDICO QUIRÚRGICOS, ASÍ COMO DE LAS MATERIAS PRIMAS PARA LA ELABORACIÓN DE LOS MISMOS Y DE SUS DERIVADOS, CON TODAS AQUELLAS OPERACIONES ANEJAS, COMPLEMENTARIAS O DERIVADAS DE LAS ANTERIORES.\r\n\r\nLA GESTIÓN, ADMINISTRACIÓN, ADQUISICIÓN, ARRENDAMIENTO NO FINANCIERO CON O SIN OPCIÓN DE COMPRA, EXPLOTACIÓN, ENAJENACIÓN Y COLOCACIÓN EN EL MERCADO DE TODA CLASE DE BIENES INMUEBLES.\r\n\r\nLAS ACTIVIDADES RELACIONADAS PODRÁ  ASIMISMO DESARROLLARLAS LA COMPAÑÍA TOTAL O PARCIALMENTE DE MODO INDIRECTO, A TRAVÉS DE PARTICIPACIONES EN OTRAS SOCIEDADES DE IDÉNTICO O ANÁLOGO OBJETO AL EXPRESADO EN LOS PÁRRAFOS ANTERIORES.       ",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/02446",
+      "_links": {
+        "self": {
+          "name": "ORGANON ESPAÑOLA, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/02446"
+        }
+      }
+    },
+    {
+      "name": "CONSULTORÍA, FORMACIÓN Y SERVICIOS INFORMÁTICOS LERK, S.L.",
+      "registrationNumber": "01534",
+      "identificationNumber": "B01161900",
+      "address": "C/ SAN PRUDENCIO, Nº 29 - 2º. OFICINA: 39.",
+      "location": {
+        "postalCode": "01005",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.845",
+          "name": "Explotación electrónica por cuenta de terceros",
+          "_links": {
+            "self": {
+              "name": "Explotación electrónica por cuenta de terceros",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.845"
+            }
+          }
+        },
+        {
+          "id": "1.932.1",
+          "name": "Enseñanza de formación y perfeccionamiento profesional no superior",
+          "_links": {
+            "self": {
+              "name": "Enseñanza de formación y perfeccionamiento profesional no superior",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.932.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2006-06-01",
+      "certificateEndDate": "2006-11-04",
+      "object": "LOS SERVICIOS DE CONSULTORÍA, FORMACIÓN Y ASESORÍA A EMPRESAS Y PARTICULARES. COMERCIALIZACIÓN DE EQUIPOS INFORMÁTICOS. SERVICIOS DE ASISTENCIA, MANTENIMIENTO E INSTALACIÓN DE EQUIPOS INFORMÁTICOS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/01534",
+      "_links": {
+        "self": {
+          "name": "CONSULTORÍA, FORMACIÓN Y SERVICIOS INFORMÁTICOS LERK, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/01534"
+        }
+      }
+    },
+    {
+      "name": "XIBOT, S.L.",
+      "registrationNumber": "01152",
+      "identificationNumber": "B20208054",
+      "address": "TOLOSA ETORBIDEA, Nº 107",
+      "location": {
+        "postalCode": "20009",
+        "municipality": "Donostia / San Sebastián",
+        "county": "Gipuzkoa",
+        "municipalityId": "069",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.619.4",
+          "name": "Venta al por mayor de productos de papel y cartón",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de productos de papel y cartón",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.619.4"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2006-05-31",
+      "certificateEndDate": "2006-10-21",
+      "object": "CREAR, ADQUIRIR Y COMERCIALIZAR MATERIAL DIDÁCTICO PARA EL DESARROLLO DE LA PERSONALIDAD DEL NIÑO",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/01152",
+      "_links": {
+        "self": {
+          "name": "XIBOT, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/01152"
+        }
+      }
+    },
+    {
+      "name": "LUIS LÓPEZ DE MATURANA, S.L.",
+      "registrationNumber": "03155",
+      "identificationNumber": "B01044346",
+      "address": "PORTAL DE GAMARRA 1 OFICINA 103 EDIFICIO DEBA",
+      "location": {
+        "postalCode": "01013",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.501.3",
+          "name": "Albañilería y pequeños trabajos de construcción en general",
+          "_links": {
+            "self": {
+              "name": "Albañilería y pequeños trabajos de construcción en general",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.3"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2006-05-29",
+      "certificateEndDate": "2006-09-29",
+      "object": "LA ADQUISICIÓN, URBANIZACIÓN, PARCELACIÓN, CONSTRUCCIÓN, EDIFICACIÓN, CONSTITUCIÓN EN PROPIEDAD HORIZONTAL, REFORMA, AMPLIACIÓN, EXPLOTACIÓN DIRECTA O INDIRECTA, CONTRATAS, SUB-CONSTRATAS, ENAJENACIÓN Y, EN GENERAL, TODA ACTIVIDAD RELACIONADA CON BIENES INMUEBLES, ASÍ RÚSTICOS COMO URBANOS Y LA REALIZACIÓN DE OBRAS PÚBLICAS E INVERSIONES Y PROMOCIONES RELACIONADAS CON EL RAMO DE LA CONSTRUCCIÓN",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03155",
+      "_links": {
+        "self": {
+          "name": "LUIS LÓPEZ DE MATURANA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/03155"
+        }
+      }
+    },
+    {
+      "name": "ARMENTIA GESTIÓN, S.L.",
+      "registrationNumber": "03204",
+      "identificationNumber": "B01182633",
+      "address": "C/SAN ANTONIO, 15-1º",
+      "location": {
+        "postalCode": "01005",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.507",
+          "name": "Construcción, reparación y conservación de toda clase obras",
+          "_links": {
+            "self": {
+              "name": "Construcción, reparación y conservación de toda clase obras",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.507"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2006-05-29",
+      "certificateEndDate": "2006-10-10",
+      "object": "LA GESTIÓN Y EJECUCIÓN DE OBRAS DE CONSTRUCCIÓN CIVIL, EDIFICACIÓN Y URBANIZACIÓN INMOBILIARIA",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03204",
+      "_links": {
+        "self": {
+          "name": "ARMENTIA GESTIÓN, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/03204"
+        }
+      }
+    },
+    {
+      "name": "ENDOCORE THERAPEUTICS IBERICA, S.L.",
+      "registrationNumber": "03067",
+      "identificationNumber": "B83911024",
+      "address": "C/ VENTURA RODRÍGUEZ, 11",
+      "location": {
+        "postalCode": "28008",
+        "municipality": "Madrid",
+        "county": "Madrid",
+        "municipalityId": "079",
+        "countyId": "28"
+      },
+      "economicActivities": [
+        {
+          "id": "1.659.3",
+          "name": "Venta al por menor de aparatos médicos, ortopédicos, ópticos y fotográficos",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de aparatos médicos, ortopédicos, ópticos y fotográficos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.659.3"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2006-05-18",
+      "certificateEndDate": "2006-09-21",
+      "object": "LA IMPORTACIÓN, EXPORTACIÓN, COMPRA-VENTA Y DISTRIBUCIÓN EN SU PROPIO NOMBRE, DE TERCEROS Y COMO REPRESENTANTE DE VENTAS, O COMISIONISTA DE DISPOSITIVOS MÉDICOS Y OTROS PRODUCTOS RELACIONADOS CON EL SECTOR, SIENDO NECESARIA LA TITULACIÓN ADECUADA DE LOS PROFESIONALES Y TODO ELLO PREVIO CUMPLIMIENTO DE LOS REQUISITOS LEGALES QUE SE PRECISEN PARA EL EJERCICIO DE DICHA ACTIVIDAD",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03067",
+      "_links": {
+        "self": {
+          "name": "ENDOCORE THERAPEUTICS IBERICA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/03067"
+        }
+      }
+    },
+    {
+      "name": "TUÑÓN ASOCIADOS, S.L.",
+      "registrationNumber": "02230",
+      "identificationNumber": "B31630825",
+      "address": "C/ SADAR, Nº 8 - 4º A.",
+      "location": {
+        "postalCode": "31007",
+        "municipality": "Pamplona/Iruña",
+        "county": "Navarra",
+        "municipalityId": "201",
+        "countyId": "31"
+      },
+      "economicActivities": [
+        {
+          "id": "1.849.9",
+          "name": "Otros servicios independientes n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros servicios independientes n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.849.9"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2006-05-10",
+      "certificateEndDate": "2006-10-27",
+      "object": "\r\n\r\na) LA REALIZACIÓN DE ESTUDIOS, PLANES Y PROYECTOS EN LAS DIVERSAS ÁREAS DE GESTIÓN Y ORGANIZACIÓN DE LAS ADMINISTRACIONES PÚBLICAS.\r\n\r\nb) ESTUDIOS Y PUBLICACIONES DE TEMAS TURÍSTICOS Y ECONÓMICOS.\r\n\r\nc) ELABORACIÓN DE PLANES ESTRATÉGICOS DE TURISMO, CREACIÓN Y DIRECCIÓN DE PRODUCTOS TURÍSTICOS.\r\n\r\nd) ESTUDIOS DE VIABILIDAD Y PUESTA EN MARCHA DE PROYECTOS EMPRESARIALES EN EL SECTOR DEL TURISMO Y EL OCIO.\r\n\r\ne) ESTUDIOS Y PLANES DE COMUNICACIÓN, IMAGEN DE MARCA Y COMERCIALIZACIÓN DE TERRITORIOS, PRODUCTOS Y DESTINOS TURÍSTICOS.\r\n\r\nf) CURSOS Y PLANES DE FORMACIÓN DE TÉCNICOS EN GESTIÓN MUNICIPAL, TURÍSTICA",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/02230",
+      "_links": {
+        "self": {
+          "name": "TUÑÓN ASOCIADOS, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/02230"
+        }
+      }
+    },
+    {
+      "name": "UNISYS ESPAÑA, S.A.",
+      "registrationNumber": "00373",
+      "identificationNumber": "A08154767",
+      "address": "AVDA. DEL PARTENÓN, Nº 4 - CAMPO DE LAS NACIONES",
+      "location": {
+        "postalCode": "28042",
+        "municipality": "Madrid",
+        "county": "Madrid",
+        "municipalityId": "079",
+        "countyId": "28"
+      },
+      "economicActivities": [
+        {
+          "id": "1.504.7",
+          "name": "Instalaciones telefónicas, telegráficas, televisión, etc",
+          "_links": {
+            "self": {
+              "name": "Instalaciones telefónicas, telegráficas, televisión, etc",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.504.7"
+            }
+          }
+        },
+        {
+          "id": "1.615.4",
+          "name": "Venta al por mayor de aparatos y material radioeléctrico y electrónico",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de aparatos y material radioeléctrico y electrónico",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.615.4"
+            }
+          }
+        },
+        {
+          "id": "1.843.9",
+          "name": "Otros servicios técnicos n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros servicios técnicos n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.9"
+            }
+          }
+        },
+        {
+          "id": "1.845",
+          "name": "Explotación electrónica por cuenta de terceros",
+          "_links": {
+            "self": {
+              "name": "Explotación electrónica por cuenta de terceros",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.845"
+            }
+          }
+        },
+        {
+          "id": "1.853",
+          "name": "Alquiler de maquinaria y equipo contable de oficina y cálculo",
+          "_links": {
+            "self": {
+              "name": "Alquiler de maquinaria y equipo contable de oficina y cálculo",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.853"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2006-04-24",
+      "certificateEndDate": "2005-12-20",
+      "object": "LA FABRICACIÓN, LA VENTA, LA IMPORTACIÓN, LA EXPORTACIÓN Y EL MONTAJE: DE SISTEMAS Y EQUIPOS HIDRÁULICOS DE TODA CLASE PARA USOS INDUSTRIALES, MARINOS Y DE AVIACIÓN; DE MAQUINARIA, ÚTILES, HERRAMIENTAS, EQUIPOS Y ACCESORIOS ELÉCTRICOS, ELECTRÓNICOS Y MECÁNICOS; DE MÁQUINAS Y ARTÍCULOS DE OFICINA EN GENERAL, SUMADORAS, CALCULADORAS, COMPUTADORAS, ARCHIVADORES, CAJAS DE CAUDALES Y, ARCHIVOS DE SEGURIDAD; FOTOCOPIADORAS, FOTOREPRODUCTORAS, MÁQUINAS DE IMPRIMIR Y ESCRIBIR; DE EQUIPOS PARA EL TRATAMIENTO DE INFORMACIÓN DE TODA CLASE DE SISTEMAS DE CONTROL DIGITAL",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/00373",
+      "_links": {
+        "self": {
+          "name": "UNISYS ESPAÑA, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/00373"
+        }
+      }
+    },
+    {
+      "name": "GABINETE DE ASISTENCIA PSICOLÓGICA Y PEDAGÓGICA DE AMURRIO, S.L.",
+      "registrationNumber": "02699",
+      "identificationNumber": "B01351493",
+      "address": "C/DIONISIO ALDAMA, Nº 11-1º C",
+      "location": {
+        "postalCode": "01470",
+        "municipality": "Amurrio",
+        "county": "Araba/Álava",
+        "municipalityId": "002",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.952",
+          "name": "Asistencia y servicios sociales en centros no residenciales",
+          "_links": {
+            "self": {
+              "name": "Asistencia y servicios sociales en centros no residenciales",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.952"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2006-04-20",
+      "certificateEndDate": "2006-09-03",
+      "object": "LA REALIZACIÓN DE TODO TIPO DE ACTIVIDADES RELACIONADAS CON LA PSICOLOGÍA, PEDAGOGÍA Y LOGOPEDIA, A TRAVÉS DE LOS PROFESIONALES QUE CUENTEN CON LA TITULACIÓN LEGALMENTE EXIGIDA EN CADA CASO; PODRÁ LA SOCIEDAD, ASIMISMO, PARTICIPAR E INTERVENIR EN LAS OPERACIONES O ACTIVIDADES DE OTRAS EMPRESAS, SEA CUAL FUERE EL OBJETO DE LAS MISMAS A TÍTULO DE SOCIOS, ACCIONISTAS, CUENTA PARTICIPE, GESTOR, ADMINISTRADOR O CUALQUIER OTRO CASO, MEDIANTE EL CUMPLIMIENTO DE LAS DISPOSICIONES LEGALES QUE RIJAN AL EFECTO",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/02699",
+      "_links": {
+        "self": {
+          "name": "GABINETE DE ASISTENCIA PSICOLÓGICA Y PEDAGÓGICA DE AMURRIO, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/02699"
+        }
+      }
+    },
+    {
+      "name": "LANEDER CONSTRUCCIONES, S.A.",
+      "registrationNumber": "02711",
+      "identificationNumber": "A48288443",
+      "address": "IÑIGO LÓPEZ DE HARO, Nº 2 - BAJO",
+      "location": {
+        "postalCode": "48300",
+        "municipality": "Gernika-Lumo",
+        "county": "Bizkaia",
+        "municipalityId": "046",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.507",
+          "name": "Construcción, reparación y conservación de toda clase obras",
+          "_links": {
+            "self": {
+              "name": "Construcción, reparación y conservación de toda clase obras",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.507"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2006-04-19",
+      "certificateEndDate": "2006-09-29",
+      "object": "LA EJECUCIÓN COMPLETA O POR RAMOS DE TODA CLASE DE OBRAS DE CONSTRUCCIÓN, REPARACIÓN Y CONSERVACIÓN POR CUENTA PROPIA O/Y DE TERCEROS. COMPRAVENTA O ALQUILER DE EDIFICACIONES EN SU TOTALIDAD O POR PARTES PARA LOCALES DE NEGOCIO O INDUSTRIAL, CONSTRUIDAS PARA TAL FIN, DIRECTA O POR MEDIO DE CONTRATISTAS, SUBCONTRATISTAS Y DESTAJISTAS O BIEN ADQUIRIDAS YA CONSTRUIDAS O EN CONSTRUCCIÓN. COMPRAVENTA DE TODA CLASE DE MATERIALES AUXILIARES O ANEJOS PARA LA CONSTRUCCIÓN, ASÍ COMO TODO TIPO DE MAQUINARIA. CUALQUIER OTRO NEGOCIO O ACTIVIDAD DE LÍCITO COMERCIO QUE GUARDE RELACIÓN CON LO EXPRESADO",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/02711",
+      "_links": {
+        "self": {
+          "name": "LANEDER CONSTRUCCIONES, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/02711"
+        }
+      }
+    }
+  ]
+}

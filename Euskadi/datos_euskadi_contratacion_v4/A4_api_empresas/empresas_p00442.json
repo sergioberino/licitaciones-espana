@@ -1,0 +1,428 @@
+{
+  "totalItems": 9042,
+  "totalPages": 905,
+  "currentPage": 442,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "name": "HIRIGINTZA, S.A.",
+      "registrationNumber": "05370",
+      "identificationNumber": "A20165890",
+      "address": "Portuetxe, 47 bajo. Edificio ASKAIN",
+      "location": {
+        "postalCode": "20018",
+        "municipality": "Donostia / San Sebastián",
+        "county": "Gipuzkoa",
+        "municipalityId": "069",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.843.1",
+          "name": "Servicios técnicos de ingeniería",
+          "_links": {
+            "self": {
+              "name": "Servicios técnicos de ingeniería",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.1"
+            }
+          }
+        },
+        {
+          "id": "1.843.2",
+          "name": "Servicios técnicos de arquitectura y urbanismo",
+          "_links": {
+            "self": {
+              "name": "Servicios técnicos de arquitectura y urbanismo",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.2"
+            }
+          }
+        },
+        {
+          "id": "1.911",
+          "name": "Servicios agrícolas y ganaderos",
+          "_links": {
+            "self": {
+              "name": "Servicios agrícolas y ganaderos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.911"
+            }
+          }
+        },
+        {
+          "id": "1.999",
+          "name": "Otros servicios n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros servicios n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.999"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2023-10-08",
+      "certificateEndDate": "2024-04-08",
+      "object": "A) LA REALIZACIÓN DE TODA CLASE DE OPERACIONES RELACIONADAS CON LA CONSTRUCCIÓN, TANTO PÚBLICA COMO PRIVADA, INCLUSO LA PROMOCIÓN DE CONSTRUCCIONES EN GENERAL. B) LA COMPRA Y VENTA DE BIENES INMUEBLES Y SU EXPLOTACIÓN, REALIZANDO CONSTRUCCIONES SOBRE LOS MISMOS Y PROCEDIENDO A LA VENTA O ARRENDAMIENTO DE LAS FINCAS QUE SE CONSTRUYAN. C) ALMACENAMIENTO Y COMERCIALIZACIÓN DE TODA CLASE DE MATERIALES DE CONSTRUCCIÓN Y PREFABRICADOS PARA LA MISMA. D) LA REALIZACIÓN DE CUANTAS ACTICIADES SE RELACIONEN CON LA CONSTRUCCIÓN, TALES COMO CARPINTERÍS, ALBAÑILERÍA, FONTANERÍA, CALEFACCIÓN, EJECUCIÓN DE ESTRUCTURAS, ETC., QUE LA SOCIEDAD DESEE ACOMETER DIRECTAMENTE O A TRAVÉS DE CONTRATAS Y SUBCONTRATAS CON GREMIOS RELACIONADOS CON LA CONSTRUCCIÓN. E) ESTUDIOS, TRABAJOS TOPOGRÁFICOS, ASESORAMIENTO, ANTEPROYECTOS, PROYECTOS, DIRECCIÓN DE OBRA, CONTROL DE CALIDAD Y DEMÁS COMETIDOS DE INGENIERÍA Y ARQUITECTURA PARA SÍ O PARA TERCERAS PERSONAS, TANTO FÍSICAS OCOMO JURÍDICAS, ÚBLICAS COMO PRIVADAS O EN LOS CAMPOS DE OBRA CIVIL, EDIFICACIÓN, URBANISMO, TRANSPORTES Y MEDIO AMBIENTE, ASÍ COMO OTRAS OPERACIONES Y ACTIVIDADES RELACIONADAS CON LO ANTERIOR, INDUSTRIA Y COMERCIO",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/05370",
+      "_links": {
+        "self": {
+          "name": "HIRIGINTZA, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/05370"
+        }
+      }
+    },
+    {
+      "name": "TECNIMOVIL JULIAN, S.L.",
+      "registrationNumber": "08958",
+      "identificationNumber": "B09415076",
+      "address": "Ctra. Madrid-Irún, km. 234",
+      "location": {
+        "postalCode": "09001",
+        "municipality": "Villagonzalo Pedernales",
+        "county": "Burgos",
+        "municipalityId": "434",
+        "countyId": "09"
+      },
+      "economicActivities": [
+        {
+          "id": "1.654.1",
+          "name": "Venta al por menor de vehículos terrestres",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de vehículos terrestres",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.654.1"
+            }
+          }
+        },
+        {
+          "id": "1.691.2",
+          "name": "Reparación de vehículos automóviles, bicicletas y otros vehículos",
+          "_links": {
+            "self": {
+              "name": "Reparación de vehículos automóviles, bicicletas y otros vehículos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.691.2"
+            }
+          }
+        },
+        {
+          "id": "1.831.9",
+          "name": "Otros servicios financieros n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros servicios financieros n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.831.9"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2023-10-06",
+      "certificateEndDate": "2024-04-06",
+      "object": "A) . - PROMOCIÓN INMOBILIARIA DE TERRENOS Y EDIFICACIONES B) . - CONSTRUCCIÓN, REPARACIÓN, CONSERVACIÓN DE EDIFICACIONES Y OBRAS CIVILES C) . - ALQUILER DE BIENES INMUEBLES DE NATURALEZA RÚSTICA Y URBANA. D)COMPRAVENTA DE TERRENOS Y EDIFICIOS E) . - SERVICIOS DE INTERMEDIACIÓN EN COMPRAVENTAS Y ALQUILERES DE INMUEBLES F) . - COMPRAVENTA, IMPORTACIÓN, EXPORTACIÓN, REPARACIÓN Y FABRICACIÓN DE MAQUINARIA AGRÍCOLA, VEHÍCULOS AUTOMÓVILES Y MAQUINARIA INDUSTRIAL.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08958",
+      "_links": {
+        "self": {
+          "name": "TECNIMOVIL JULIAN, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/08958"
+        }
+      }
+    },
+    {
+      "name": "AINUR CONSULTORES, S.L.P.",
+      "registrationNumber": "06026",
+      "identificationNumber": "B95273348",
+      "address": "Santiago Brouard, 5 bajo trasera",
+      "location": {
+        "postalCode": "48012",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.843.2",
+          "name": "Servicios técnicos de arquitectura y urbanismo",
+          "_links": {
+            "self": {
+              "name": "Servicios técnicos de arquitectura y urbanismo",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2023-10-06",
+      "certificateEndDate": "2024-01-04",
+      "object": "EL DESARROLLO DE PROYECTOS ARQUITECTÓNICOS Y URBANÍSTICOS Y EL ASESORAMIENTO TÉCNICO EN LA EJECUCIÓN DE LOS MISMOS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06026",
+      "_links": {
+        "self": {
+          "name": "AINUR CONSULTORES, S.L.P.",
+          "href": "https://api.euskadi.eus/procurements/companies/06026"
+        }
+      }
+    },
+    {
+      "name": "MCCGRAPHICS, S.COOP.",
+      "registrationNumber": "04799",
+      "identificationNumber": "F01488261",
+      "address": "POL. IND. TXIRRITA MALEO, PAB. 11",
+      "location": {
+        "postalCode": "20100",
+        "municipality": "Errenteria",
+        "county": "Gipuzkoa",
+        "municipalityId": "067",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.474.1",
+          "name": "Impresión de textos o imágenes por cualquier procedimiento",
+          "_links": {
+            "self": {
+              "name": "Impresión de textos o imágenes por cualquier procedimiento",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.474.1"
+            }
+          }
+        },
+        {
+          "id": "1.844",
+          "name": "Servicios de publicidad, relaciones públicas y similares",
+          "_links": {
+            "self": {
+              "name": "Servicios de publicidad, relaciones públicas y similares",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.844"
+            }
+          }
+        },
+        {
+          "id": "1.845",
+          "name": "Explotación electrónica por cuenta de terceros",
+          "_links": {
+            "self": {
+              "name": "Explotación electrónica por cuenta de terceros",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.845"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2023-10-06",
+      "certificateEndDate": "2024-02-03",
+      "object": "TODAS LAS ACTIVIDADES EMPRESARIALES Y MERCANTILES RELATIVAS A LA PRODUCCIÓN Y PRESTACIÓN DE SERVICIOS PARA LA SOLUCIÓN DE LAS NECESIDADES DE COMUNICACIÓN EN CUALQUIER SOPORTE (PAPEL Y OTROS MATERIALES, ELECTRÓNICO, VOZ, ETC). ESPECÍFICAMENTE COMPRENDE: TODAS LAS ACTIVIDADES DE LAS ARTES GRÁFICAS, MEDIANTE CUALQUIER MEDIO DE IMPRENSIÓN EN CUALQUIER SOPORTE, ASÍ COMO LAS ACTIVIDADES AUXILIARES. LA PRODUCCIÓN Y PRESTACIÓN DE SERVICIOS DE MARKETING DE TODO TIPO O AUXILIARES DE ESTOS. LA PRODUCCIÓN Y PRESTACIÓN DE SERVICIOS DE COMUNICACIÓN Y COMERCIO MEDIANTE MEDIOS ELCETRÓNICOS Y LOS SERVICIOS AUXILIARES ASOCIADOS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/04799",
+      "_links": {
+        "self": {
+          "name": "MCCGRAPHICS, S.COOP.",
+          "href": "https://api.euskadi.eus/procurements/companies/04799"
+        }
+      }
+    },
+    {
+      "name": "ARQUITECTOS DEBOR S.L.",
+      "registrationNumber": "06630",
+      "identificationNumber": "B20650891",
+      "address": "Calle Zuatzu, Nº 2 - Edificio Igeldo - Planta 1ª, local 14",
+      "location": {
+        "postalCode": "20018",
+        "municipality": "Donostia / San Sebastián",
+        "county": "Gipuzkoa",
+        "municipalityId": "069",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.843.2",
+          "name": "Servicios técnicos de arquitectura y urbanismo",
+          "_links": {
+            "self": {
+              "name": "Servicios técnicos de arquitectura y urbanismo",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2023-10-05",
+      "certificateEndDate": "2024-02-12",
+      "object": "1) PRESTACIÓN DE SERVICIOS PARA LA REDACCIÓN DE TODO TIPO DE PROYECTOS DE ARQUITECTURA, URBANISMO, DISEÑO, DECORACIÓN, ASÍ COMO ASESORAMIENTO Y GESTIÓN DE PROYECTOS. 2) COMPRAVENTA DE VEHÍCULOS TURISMOS. 3) EJECUCIÓN DE OBRAS DE CONSTRUCCIÓN. 4) PROMOCIÓN Y GESTIÓN INMOBILIARIA",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06630",
+      "_links": {
+        "self": {
+          "name": "ARQUITECTOS DEBOR S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/06630"
+        }
+      }
+    },
+    {
+      "name": "ARZANEGI ARQUITECTURA, S.L.",
+      "registrationNumber": "08010",
+      "identificationNumber": "B95558193",
+      "address": "Carlos Gangoiti 12 bajo (oficina)",
+      "location": {
+        "postalCode": "48300",
+        "municipality": "Gernika-Lumo",
+        "county": "Bizkaia",
+        "municipalityId": "046",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.843.2",
+          "name": "Servicios técnicos de arquitectura y urbanismo",
+          "_links": {
+            "self": {
+              "name": "Servicios técnicos de arquitectura y urbanismo",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2023-10-05",
+      "certificateEndDate": "2024-03-06",
+      "object": "A) TODA CLASE DE TRABAJOS DE ARQUITECTURA Y URBANISMO. B) TODA ESPECIE DE ACTIVIDADES DE PLANEAMIENTO, GESTIÓN URBANÍSTICA Y ORDENACIÓN DEL TERRITORIO. C) LA DIRECCIÓN DE TODO TIPO DE OBRAS DE URBANIZACIÓN Y DE TODA CLASE DE EDIFICIOS O DE OBRAS CIVILES DE CUALQUIER GÉNERO. D) EL ASESORAMIENTO A TERCEROS EN CUALQUIERA DE LAS OPERACIONES MENCIONADAS.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08010",
+      "_links": {
+        "self": {
+          "name": "ARZANEGI ARQUITECTURA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/08010"
+        }
+      }
+    },
+    {
+      "name": "ARRAZTIO ARKITEKTURA, S.L.P.",
+      "registrationNumber": "08621",
+      "identificationNumber": "B75218719",
+      "address": "PASEO DE ORIAMENDI 20, BAJO",
+      "location": {
+        "postalCode": "20009",
+        "municipality": "Donostia / San Sebastián",
+        "county": "Gipuzkoa",
+        "municipalityId": "069",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.843.2",
+          "name": "Servicios técnicos de arquitectura y urbanismo",
+          "_links": {
+            "self": {
+              "name": "Servicios técnicos de arquitectura y urbanismo",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2023-10-05",
+      "certificateEndDate": "2023-12-18",
+      "object": "LA ACTIVIDAD PROPIA DEL EJERCICIO DE LA PROFESIÓN DE ARQUITECTO.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08621",
+      "_links": {
+        "self": {
+          "name": "ARRAZTIO ARKITEKTURA, S.L.P.",
+          "href": "https://api.euskadi.eus/procurements/companies/08621"
+        }
+      }
+    },
+    {
+      "name": "JOSE CARLOS GORRICHO HERRERO",
+      "registrationNumber": "08947",
+      "identificationNumber": "14242882V",
+      "address": "C/Barrencalle Barrena 1 - 4º izqda.",
+      "location": {
+        "postalCode": "48005",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "2.411",
+          "name": "Arquitectos",
+          "_links": {
+            "self": {
+              "name": "Arquitectos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/2.411"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2023-10-05",
+      "certificateEndDate": "2024-02-02",
+      "object": "ARQUITECTOS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08947",
+      "_links": {
+        "self": {
+          "name": "JOSE CARLOS GORRICHO HERRERO",
+          "href": "https://api.euskadi.eus/procurements/companies/08947"
+        }
+      }
+    },
+    {
+      "name": "FAGOR HEALTHCARE, S. COOP.",
+      "registrationNumber": "08903",
+      "identificationNumber": "F75067710",
+      "address": "Polo de Innovación Garaia, calle Goiru número 1",
+      "location": {
+        "postalCode": "20500",
+        "municipality": "Arrasate / Mondragón",
+        "county": "Gipuzkoa",
+        "municipalityId": "055",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.392.1",
+          "name": "Fabricación de material médico-quirúrgico",
+          "_links": {
+            "self": {
+              "name": "Fabricación de material médico-quirúrgico",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.392.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2023-10-04",
+      "certificateEndDate": "2024-01-10",
+      "object": "LA FABRICACIÓN, INSTALACIÓN Y VENTA DE SISTEMAS DE DISPENSACIÓN DE MEDICAMENTOS, ASÍ COMO OTRAS LÍNEAS DE PRODUCTOS PARA EL CANAL SECTOR SALUD.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08903",
+      "_links": {
+        "self": {
+          "name": "FAGOR HEALTHCARE, S. COOP.",
+          "href": "https://api.euskadi.eus/procurements/companies/08903"
+        }
+      }
+    },
+    {
+      "name": "ESTUDIO MDK ARKITEKTURA, S.L.P.",
+      "registrationNumber": "07275",
+      "identificationNumber": "B95841367",
+      "address": "GOIKO KALEA Nº 48, BAJO C",
+      "location": {
+        "postalCode": "48360",
+        "municipality": "Mundaka",
+        "county": "Bizkaia",
+        "municipalityId": "068",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.843.2",
+          "name": "Servicios técnicos de arquitectura y urbanismo",
+          "_links": {
+            "self": {
+              "name": "Servicios técnicos de arquitectura y urbanismo",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2023-10-04",
+      "certificateEndDate": "2024-03-20",
+      "object": "LA REALIZACIÓN EN COMÚN DE LAS ACTIVIDADES PROPIAS DEL EJERCICIO DE LA ACTIVIDAD PROFESIONAL DE ARQUITECTURA",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07275",
+      "_links": {
+        "self": {
+          "name": "ESTUDIO MDK ARKITEKTURA, S.L.P.",
+          "href": "https://api.euskadi.eus/procurements/companies/07275"
+        }
+      }
+    }
+  ]
+}

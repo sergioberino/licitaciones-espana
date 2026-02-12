@@ -1,0 +1,468 @@
+{
+  "totalItems": 9042,
+  "totalPages": 905,
+  "currentPage": 525,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "name": "ENGRANAJE COMUNICACIÓN, S.L.",
+      "registrationNumber": "07738",
+      "identificationNumber": "B95899738",
+      "address": "Ibáñez de Bilbao 4, 5ºC",
+      "location": {
+        "postalCode": "48001",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.844",
+          "name": "Servicios de publicidad, relaciones públicas y similares",
+          "_links": {
+            "self": {
+              "name": "Servicios de publicidad, relaciones públicas y similares",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.844"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2021-06-21",
+      "certificateEndDate": "2021-11-29",
+      "object": "LA REALIZACIÓN DE PUBLICIDAD, CON MEDIOS PROPIOS O AJENOS, INCLUSO POR VÍA TELEMÁTICA; EL ESTUDIO, CONFECCIÓN, DESARROLLO Y EJECUCIÓN DE CAMPAÑAS DE PUBLICIDAD Y VENTAS, Y EL DESARROLLO DE CUALQUIER OTRA ACTIVIDAD PROPIA DE UNA AGENCIA Y CONSULTORÍA DE PUBLICIDAD; LOS ESTUDIOS DE MERCADO, Y LA RECOGIDA, TRATAMIENTO Y VERIFICACIÓN DE DATOS. EL MONTAJE, ORGANIZACIÓN, FINANCIACIÓN Y PRODUCCIÓN DE ESPECTÁCULOS Y EVENTOS EN GENERAL, DE CUALESQUIERA ACTIVIDADES LÚDICAS, DEPORTIVAS, CULTURALES Y ARTÍSTICAS. LA EDICIÓN Y PUBLICACIÓN DE PERIÓDICOS Y REVISTAS, LIBROS Y DISCOS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07738",
+      "_links": {
+        "self": {
+          "name": "ENGRANAJE COMUNICACIÓN, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/07738"
+        }
+      }
+    },
+    {
+      "name": "PERFELENA, S.L.",
+      "registrationNumber": "07734",
+      "identificationNumber": "B84952829",
+      "address": "Sierra de Algodonales nº 18",
+      "location": {
+        "postalCode": "28500",
+        "municipality": "Arganda del Rey",
+        "county": "Madrid",
+        "municipalityId": "014",
+        "countyId": "28"
+      },
+      "economicActivities": [
+        {
+          "id": "1.614.1",
+          "name": "Venta al por mayor de productos farmacéuticos y medicamentos",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de productos farmacéuticos y medicamentos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.614.1"
+            }
+          }
+        },
+        {
+          "id": "1.614.2",
+          "name": "Venta al por mayor de productos de perfumería, droguería, higiene y belleza",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de productos de perfumería, droguería, higiene y belleza",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.614.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2021-06-18",
+      "certificateEndDate": "2021-11-15",
+      "object": "1. LA FABRICACIÓN, COMERCIALIZACIÓN, DISTRIBUCIÓN, IMPORTACIÓN Y EXPORTACIÓN DE PRODUCTOS QUÍMICOS DESTINADOS AL USO PERSONAL DE LA HIGIENE. 2.- LA COMERCIALIZACIÓN DE TODA CLASE DE ADORNOS, FORNITURAS, ETC. PARA EL EMBELLECIMIENTO PERSONAL. 3.- LA ELABORACIÓN, COMERCIALIZACIÓN, DISTRIBUCIÓN, COMPRAVENTA, IMPORTACIÓN Y EXPORTACIÓN DE PRODUCTOS DE PERFUMERÍA, COSMÉTICA Y TRATAMIENTOS CORPORALES EN GENERAL. 4. LA IMPORTACIÓN, EXPORTACIÓN, COMERCIALIZACIÓN, ALMACENAJE, TRANSPORTE DISTRIBUCIÓN DE ESPECIALIDADES FARMACÉUTICAS Y PRODUCTOS SANITARIOS, INCLUIDOS PSICOTRÓPICOS Y ESTUPEFACIENTES, ASÍ COMO OTROS PRODUCTOS SANITARIOS, INCLUSO PARAFARMACÉUTICOS. 5.- LA ELABORACIÓN Y FABRICACIÓN, POS SÍ O POR MEDIO DE TERCEROS, DE DICHOS PRODUCTOS, ASÍ COMO DE ESPECIALIDADES Y MATERIAS PRIMAS DE USO FARMACÉUTICO. 6.- ASESORAMIENTO DE TODAS LAS ACTIVIDADES ANTERIORES. QUEDAN EXCLUIDAS TODAS AQUELLAS ACTIVIDADES PARA CUYO EJERCICIO LA LEY EXIJA REQUISITOS ESPECIALES QUE NO CUMPLA LA SOCIEDAD. SI LAS DISPOSICIONES LEGALES EXIGIESEN PARA EL EJERCICIO DE ALGUNA DE LAS ACTIVIDADES ALGÚN TÍTULO PROFESIONAL, AUTORIZACIÓN O INSCRIPCIÓN EN REGISTROS ESPECIALES, DEBERÁN EJERCITARSE POR QUIEN OSTENTE DICHO TÍTULO O BIEN NO PODRÁN INICIARSE HASTA QUE SE HAYAN CUMPLIDO LOS REQUISITOS ADMINISTRATIVOS ELEGIDOS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07734",
+      "_links": {
+        "self": {
+          "name": "PERFELENA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/07734"
+        }
+      }
+    },
+    {
+      "name": "BOVIS PROJECT MANAGEMENT, S.A.",
+      "registrationNumber": "07733",
+      "identificationNumber": "A81845091",
+      "address": "Paseo de la Castellana 259C. Planta 20 sur",
+      "location": {
+        "postalCode": "28046",
+        "municipality": "Madrid",
+        "county": "Madrid",
+        "municipalityId": "079",
+        "countyId": "28"
+      },
+      "economicActivities": [
+        {
+          "id": "1.501.1",
+          "name": "Construcción completa, reparación y conservación de edificaciones",
+          "_links": {
+            "self": {
+              "name": "Construcción completa, reparación y conservación de edificaciones",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.1"
+            }
+          }
+        },
+        {
+          "id": "1.834",
+          "name": "Servicios relativos a la propiedad inmobiliaria e industrial",
+          "_links": {
+            "self": {
+              "name": "Servicios relativos a la propiedad inmobiliaria e industrial",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.834"
+            }
+          }
+        },
+        {
+          "id": "1.843.1",
+          "name": "Servicios técnicos de ingeniería",
+          "_links": {
+            "self": {
+              "name": "Servicios técnicos de ingeniería",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.1"
+            }
+          }
+        },
+        {
+          "id": "1.843.2",
+          "name": "Servicios técnicos de arquitectura y urbanismo",
+          "_links": {
+            "self": {
+              "name": "Servicios técnicos de arquitectura y urbanismo",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2021-06-18",
+      "certificateEndDate": "2021-11-27",
+      "object": "CONSULTORÍA, CONTROL, CONSTRUCCIÓN Y DIRECCIÓN DE TODO TIPO DE PROYECTOS Y CONSTRUCCIONES INMOBILIARIAS, ASÍ COMO LA ADQUISICIÓN, ENAJENACIÓN O DISPOSICIÓN, ADMINISTRACIÓN Y ALQUILER DE BIENES INMUEBLES, Y LA COMPRA, SUSCRIPCIÓN, NEGOCIACIÓN, ADMINISTRACIÓN, TENENCIA O ENAJENACIÓN O DISPOSICIÓN, POR CUALQUIER MEDIO ADMITIDO EN DERECHO, DE MODO DIRECTO O INDIRECTO, DE ACCIONES, PARTICIPACIONES U OTROS VALORES INMOBILIARIOS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07733",
+      "_links": {
+        "self": {
+          "name": "BOVIS PROJECT MANAGEMENT, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/07733"
+        }
+      }
+    },
+    {
+      "name": "AITOR PRIETO GARCIA",
+      "registrationNumber": "06584",
+      "identificationNumber": "14611279T",
+      "address": "Jose Miguel Arrieta Maskarua 5-1ºA",
+      "location": {
+        "postalCode": "48840",
+        "municipality": "Güeñes",
+        "county": "Bizkaia",
+        "municipalityId": "045",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.721.2",
+          "name": "Transporte por autotaxis",
+          "_links": {
+            "self": {
+              "name": "Transporte por autotaxis",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.721.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2021-06-17",
+      "certificateEndDate": "2021-12-15",
+      "object": "TRANSPORTE DE PASAJEROS EN AUTO TAXI",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06584",
+      "_links": {
+        "self": {
+          "name": "AITOR PRIETO GARCIA",
+          "href": "https://api.euskadi.eus/procurements/companies/06584"
+        }
+      }
+    },
+    {
+      "name": "BIGAS GRUP HELICOPTERS, S.L.",
+      "registrationNumber": "07729",
+      "identificationNumber": "B64012966",
+      "address": "AEROPORT DE SABADELL, ED. TERMINAL S/N ",
+      "location": {
+        "postalCode": "08205",
+        "municipality": "Sabadell",
+        "county": "Barcelona",
+        "municipalityId": "187",
+        "countyId": "08"
+      },
+      "economicActivities": [
+        {
+          "id": "1.382",
+          "name": "Construcción, reparación y mantenimiento de aeronaves",
+          "_links": {
+            "self": {
+              "name": "Construcción, reparación y mantenimiento de aeronaves",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.382"
+            }
+          }
+        },
+        {
+          "id": "1.654.5",
+          "name": "Venta al por menor de toda clase de maquinaría",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de toda clase de maquinaría",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.654.5"
+            }
+          }
+        },
+        {
+          "id": "1.742.1",
+          "name": "Transporte aéreo nacional de viajeros (servicios no regulares)",
+          "_links": {
+            "self": {
+              "name": "Transporte aéreo nacional de viajeros (servicios no regulares)",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.742.1"
+            }
+          }
+        },
+        {
+          "id": "1.753.9",
+          "name": "Otros servicios anexos al transporte aéreo n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros servicios anexos al transporte aéreo n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.753.9"
+            }
+          }
+        },
+        {
+          "id": "1.855.1",
+          "name": "Alquiler de aeronaves de todas clases",
+          "_links": {
+            "self": {
+              "name": "Alquiler de aeronaves de todas clases",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.855.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2021-06-17",
+      "certificateEndDate": "2021-09-08",
+      "object": "- EL TRANSPORTE TERRESTRE DE MERCANCÍAS POR TERRITORIO NACIONAL E INTERNACIONAL. - LA REPARACIÓN DE TODO TIPO DE VEHÍCULOS EN GENERAL. - EL ALQUILER DE MAQUINARIA PAR LA CONSTRUCCIÓN. - EL MOVIMIENTO DE TIERRAS. - LA PROMOCIÓN, URBANIZACIÓN Y PARCELACIÓN DE TERRENOS Y COMPRAVENTA AL CONTADO O A PLAZOS, PERMUTA Y CUALQUIER OTRO ACTO DISPOSITIVO O DE ADMINISTRACIÓN DE FINCAS, TANTO RÚSTICAS COMO URBANAS; CONSTRUCCIÓN Y SUBCONTRATACIÓN DE EDIFICIOS, BIEN LIBREMENTE O ACOGIÉNDOSE, CUANDO PROCEDA, A LAS LEYES DE PROTECCIÓN OFICIAL; COMPRAVENTA Y ARRIENDO DE PISOS, APARTAMENTOS Y LOCALES Y DEMÁS INMUEBLES E INSTALACIONES. - COMPRAVENTA DE AERONAVES Y SUS CORRESPONDIENTES COMPONENTES. - ARRENDAMIENTO Y SUBARRIENDO DE AERONAVES. - LA REALIZACIÓN DE TRABAJOS AÉREOS EN SUS EPÍGRAFES DE FILMACIÓN Y FOTOGRAFÍA AÉREA, OBSERVACIÓN Y PATRULLAJE, FUMIGACIÓN  Y TRATAMIENTOS AÉREOS EN ZONAS AGRÍCOLAS, PUBLICIDAD AÉREA Y LA REALIZACIÓN DE VUELOS TURÍSTICOS CON PASAJEROS. - OPERADOR AÉREO. - TRANSPORTE PÚBLICO DE PASAJEROS CON AERONAVES. - ESCUELA DE VUELO. - MANTENIMIENTO DE AERONAVES. - REALIZACIÓN DE TODO TIPO DE OBRAS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07729",
+      "_links": {
+        "self": {
+          "name": "BIGAS GRUP HELICOPTERS, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/07729"
+        }
+      }
+    },
+    {
+      "name": "SOLUCIONES SICNOVA, SOCIEDAD LIMITADA",
+      "registrationNumber": "07732",
+      "identificationNumber": "B23599764",
+      "address": "PI LOS RUBALES CALLE 3, NAVE 8",
+      "location": {
+        "postalCode": "23700",
+        "municipality": "Linares",
+        "county": "Jaén",
+        "municipalityId": "055",
+        "countyId": "23"
+      },
+      "economicActivities": [
+        {
+          "id": "1.843.9",
+          "name": "Otros servicios técnicos n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros servicios técnicos n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.9"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2021-06-17",
+      "certificateEndDate": "2021-11-27",
+      "object": "LA INTERMEDIACIÓN, DISTRIBUCIÓN Y COMERCIALIZACIÓN DE TODO TIPO DE PRODUCTOS, MAQUINARIA Y SERVICIOS DE CARÁCTER INNOVADOR, LA FABRICACIÓN DE PROTOTIPOS DE CUALQUIER TIPO DE OBJETO, EN DIFERENTES MATERIALES BASADOS EN ARCHIVOS INFORMÁTICOS. LA PARTICIPACIÓN A TRAVÉS DE OTRAS SOCIEDADES EN LA PROMOCIÓN DE PLANTAS SOLARES FOTOVOLTAICAS COMERCIALIZACIÓN COMO INTERMEDIARIOS, EN EL DESARROLLO DE PRODUCTOS Y APLICACIONES PARA PROYECTOS BASADOS EN ENERGÍAS RENOVABLES Y AHORRO ENERGÉTICO. PRESTACIÓN DE SERVICIOS DE ASESORAMIENTO COMERCIAL, SERVICIOS EXTERNOS DE COMERCIALIZACIÓN PARA EMPRESAS. INTERMEDIACIÓN EN LA COMPRAVENTA DE BIENES INMUEBLES Y PATRIMONIOS EMPRESARIALES. LA PRESTACIÓN DE SERVICIOS CON FORMACIÓN TANTO A PERSONAS FÍSICAS COMO JURÍDICAS. ESTUDIO DE ARQUITECTURA E INGENIERÍA. Y LA CONSTRUCCIÓN DE TODA CLASE DE OBRAS TANTO PÚBLICAS COMO PRIVADAS; EXPLOTACIÓN DEL NEGOCIO DE CONSTRUCCIÓN COMPLETA, REHABILITACIÓN, REPARACIÓN, CONSERVACIÓN, COMPRAVENTA Y ARRENDAMIENTO DE FINCAS RÚSTICAS Y URBANAS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07732",
+      "_links": {
+        "self": {
+          "name": "SOLUCIONES SICNOVA, SOCIEDAD LIMITADA",
+          "href": "https://api.euskadi.eus/procurements/companies/07732"
+        }
+      }
+    },
+    {
+      "name": "NUÑO MARDONES FERNÁNDEZ DE VALDERRAMA",
+      "registrationNumber": "06941",
+      "identificationNumber": "71343655R",
+      "address": "C/Félix González Petite 28",
+      "location": {
+        "postalCode": "01006",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "2.411",
+          "name": "Arquitectos",
+          "_links": {
+            "self": {
+              "name": "Arquitectos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/2.411"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2021-06-16",
+      "certificateEndDate": "2021-12-16",
+      "object": "ARQUITECTOS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06941",
+      "_links": {
+        "self": {
+          "name": "NUÑO MARDONES FERNÁNDEZ DE VALDERRAMA",
+          "href": "https://api.euskadi.eus/procurements/companies/06941"
+        }
+      }
+    },
+    {
+      "name": "GETXO IGERIKETA BOLUE KIROL ELKARTEA",
+      "registrationNumber": "07726",
+      "identificationNumber": "G48461214",
+      "address": "MAKALETA ETORBIDEA Z/GB",
+      "location": {
+        "postalCode": "48991",
+        "municipality": "Getxo",
+        "county": "Bizkaia",
+        "municipalityId": "044",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.933.9",
+          "name": "Otras actividades de enseñanza tales como idiomas, mecanografía",
+          "_links": {
+            "self": {
+              "name": "Otras actividades de enseñanza tales como idiomas, mecanografía",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.933.9"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2021-06-16",
+      "certificateEndDate": "2021-11-14",
+      "object": "EL FOMENTO Y LA PRÁCTICA DE LA ACTIVIDAD DE NATACIÓN",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07726",
+      "_links": {
+        "self": {
+          "name": "GETXO IGERIKETA BOLUE KIROL ELKARTEA",
+          "href": "https://api.euskadi.eus/procurements/companies/07726"
+        }
+      }
+    },
+    {
+      "name": "BAINET COMUNICACIÓN, S.A.",
+      "registrationNumber": "07728",
+      "identificationNumber": "A48844914",
+      "address": "San Vicente, 8, bajo",
+      "location": {
+        "postalCode": "48001",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.476.1",
+          "name": "Edición de libros",
+          "_links": {
+            "self": {
+              "name": "Edición de libros",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.476.1"
+            }
+          }
+        },
+        {
+          "id": "1.844",
+          "name": "Servicios de publicidad, relaciones públicas y similares",
+          "_links": {
+            "self": {
+              "name": "Servicios de publicidad, relaciones públicas y similares",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.844"
+            }
+          }
+        },
+        {
+          "id": "1.845",
+          "name": "Explotación electrónica por cuenta de terceros",
+          "_links": {
+            "self": {
+              "name": "Explotación electrónica por cuenta de terceros",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.845"
+            }
+          }
+        },
+        {
+          "id": "1.964.2",
+          "name": "Servicios de televisión",
+          "_links": {
+            "self": {
+              "name": "Servicios de televisión",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.964.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2021-06-16",
+      "certificateEndDate": "2021-12-08",
+      "object": "A) LA PUBLICIDAD, DISTRIBUCIÓN, COMERCIALIZACIÓN E INTERMEDIACIÓN DE PRODUCCIONES DE CINEMATOGRAFÍA, VÍDEOS, PROGRAMAS DE TELEVISIÓN, SPOTS Y ANUNCIOS, Y TODAS AQUELLAS PROPIAS DE UNA AGENCIA DE PUBLICIDAD, EN EL TERRITORIO NACIONAL O INTERNACIONAL. B) LA CONTRATACIÓN Y COMERCIALIZACIÓN DE LOS DERECHOS DE DIFUSIÓN TELEVISIVA, RADIOFÓNICA O LA REALIZADA POR CUALQUIER OTRO MEDIO. C) LA GESTIÓN Y ADQUISICIÓN DE DERECHOS DE IMAGEN Y DE PUBLICIDAD DE ARTISTAS Y PERSONAS QUE PUEDAN GENERAR UNA ACTIVIDAD COMERCIAL O PUBLICITARIA. D) LA VENTA Y ALQUILER DE LA IMAGEN Y SUS DERECHOS DE CUALQUIER PERSONA FÍSICA O JURÍDICA",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07728",
+      "_links": {
+        "self": {
+          "name": "BAINET COMUNICACIÓN, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/07728"
+        }
+      }
+    },
+    {
+      "name": "JUAN BAUTISTA MIRANDA TRESCASTRO",
+      "registrationNumber": "07730",
+      "identificationNumber": "16300011A",
+      "address": "AVENIDA NACIONES UNIDAS, 51  1  B",
+      "location": {
+        "postalCode": "01015",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.967.1",
+          "name": "Instalaciones deportivas",
+          "_links": {
+            "self": {
+              "name": "Instalaciones deportivas",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.967.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2021-06-16",
+      "certificateEndDate": "2021-10-20",
+      "object": "INSTALACIONES DEPORTIVAS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07730",
+      "_links": {
+        "self": {
+          "name": "JUAN BAUTISTA MIRANDA TRESCASTRO",
+          "href": "https://api.euskadi.eus/procurements/companies/07730"
+        }
+      }
+    }
+  ]
+}

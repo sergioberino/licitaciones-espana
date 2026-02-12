@@ -1,0 +1,478 @@
+{
+  "totalItems": 9042,
+  "totalPages": 905,
+  "currentPage": 221,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "name": "LIMPIEZAS ULIA, S.L.",
+      "registrationNumber": "05040",
+      "identificationNumber": "B20062238",
+      "address": "POKOPANDEGI, 9.1º. OF. 2",
+      "location": {
+        "postalCode": "20018",
+        "municipality": "Donostia / San Sebastián",
+        "county": "Gipuzkoa",
+        "municipalityId": "069",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.922.1",
+          "name": "Servicios de limpieza de interiores",
+          "_links": {
+            "self": {
+              "name": "Servicios de limpieza de interiores",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.922.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-10-13",
+      "certificateEndDate": "2026-04-13",
+      "object": "LA LIMPIEZA DE EDIFICIOS Y LOCALES",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/05040",
+      "_links": {
+        "self": {
+          "name": "LIMPIEZAS ULIA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/05040"
+        }
+      }
+    },
+    {
+      "name": "TEKNOSERVICE S. L.",
+      "registrationNumber": "05878",
+      "identificationNumber": "B41485228",
+      "address": "P. I. PIBO AV. ALBAIDA 1",
+      "location": {
+        "postalCode": "41110",
+        "municipality": "Bollullos de la Mitación",
+        "county": "Sevilla",
+        "municipalityId": "016",
+        "countyId": "41"
+      },
+      "economicActivities": [
+        {
+          "id": "1.659.2",
+          "name": "Venta al por menor de muebles de oficina y máquinas y equipos de oficina",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de muebles de oficina y máquinas y equipos de oficina",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.659.2"
+            }
+          }
+        },
+        {
+          "id": "1.845",
+          "name": "Explotación electrónica por cuenta de terceros",
+          "_links": {
+            "self": {
+              "name": "Explotación electrónica por cuenta de terceros",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.845"
+            }
+          }
+        },
+        {
+          "id": "1.853",
+          "name": "Alquiler de maquinaria y equipo contable de oficina y cálculo",
+          "_links": {
+            "self": {
+              "name": "Alquiler de maquinaria y equipo contable de oficina y cálculo",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.853"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-10-13",
+      "certificateEndDate": "2026-04-13",
+      "object": "VENTA DE PRODUCTOS INFORMATICOS, ACCESORIOS Y COMPLEMENTOS RELACIONADOS CON LOS MISMOS, ASI COMO SU INSTALACION, REPARACION Y CONSERVACION",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/05878",
+      "_links": {
+        "self": {
+          "name": "TEKNOSERVICE S. L.",
+          "href": "https://api.euskadi.eus/procurements/companies/05878"
+        }
+      }
+    },
+    {
+      "name": "MONTAJES ELECTRICOS GAU ARGI, S.L.",
+      "registrationNumber": "05996",
+      "identificationNumber": "B20579439",
+      "address": "JUAN XXIII, Nº 16",
+      "location": {
+        "postalCode": "20730",
+        "municipality": "Azpeitia",
+        "county": "Gipuzkoa",
+        "municipalityId": "018",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.504.1",
+          "name": "Instalaciones eléctricas en general",
+          "_links": {
+            "self": {
+              "name": "Instalaciones eléctricas en general",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.504.1"
+            }
+          }
+        },
+        {
+          "id": "1.653.2",
+          "name": "Venta al por menor de material y aparatos eléctricos, electrodomésticos y cocina",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de material y aparatos eléctricos, electrodomésticos y cocina",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.653.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-10-13",
+      "certificateEndDate": "2026-04-13",
+      "object": "INSTALACIONES ELÉCTRICAS EN GENERAL",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/05996",
+      "_links": {
+        "self": {
+          "name": "MONTAJES ELECTRICOS GAU ARGI, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/05996"
+        }
+      }
+    },
+    {
+      "name": "SEGI HIRU, S.L.",
+      "registrationNumber": "08115",
+      "identificationNumber": "B20745618",
+      "address": "Ubarburu Pasealekua 32",
+      "location": {
+        "postalCode": "20014",
+        "municipality": "Donostia / San Sebastián",
+        "county": "Gipuzkoa",
+        "municipalityId": "069",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.415",
+          "name": "Fabricación de jugos y conservas vegetales",
+          "_links": {
+            "self": {
+              "name": "Fabricación de jugos y conservas vegetales",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.415"
+            }
+          }
+        },
+        {
+          "id": "1.495.9",
+          "name": "Fabricación de otros artículos n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Fabricación de otros artículos n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.495.9"
+            }
+          }
+        },
+        {
+          "id": "1.621",
+          "name": "Venta al por mayor de chatarra y metales de desecho férreos y no férreos",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de chatarra y metales de desecho férreos y no férreos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.621"
+            }
+          }
+        },
+        {
+          "id": "1.756.9",
+          "name": "Otros servicios de mediación de transporte",
+          "_links": {
+            "self": {
+              "name": "Otros servicios de mediación de transporte",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.756.9"
+            }
+          }
+        },
+        {
+          "id": "1.922",
+          "name": "Servicios de limpieza",
+          "_links": {
+            "self": {
+              "name": "Servicios de limpieza",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.922"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-10-13",
+      "certificateEndDate": "2026-04-13",
+      "object": "A) GENERAR EMPLEO PARA ENFERMOS MENTALES B) RECICLAJE DE PRODUCTOS DE AUTOMOCIÓN Y OTROS RELACIONADOS C) CREACIONES ARTESANALES D) PEONAJES NO CUALIFICADOS Y OTROS.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08115",
+      "_links": {
+        "self": {
+          "name": "SEGI HIRU, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/08115"
+        }
+      }
+    },
+    {
+      "name": "ULIBARRI EUSKALTEGIA KOOP",
+      "registrationNumber": "03431",
+      "identificationNumber": "F48199673",
+      "address": "GARDOKI 3-1",
+      "location": {
+        "postalCode": "48008",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.849.9",
+          "name": "Otros servicios independientes n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros servicios independientes n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.849.9"
+            }
+          }
+        },
+        {
+          "id": "1.861.2",
+          "name": "Alquiler de locales industriales y otros alquileres n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Alquiler de locales industriales y otros alquileres n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.861.2"
+            }
+          }
+        },
+        {
+          "id": "1.933.9",
+          "name": "Otras actividades de enseñanza tales como idiomas, mecanografía",
+          "_links": {
+            "self": {
+              "name": "Otras actividades de enseñanza tales como idiomas, mecanografía",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.933.9"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-10-13",
+      "certificateEndDate": "2026-04-04",
+      "object": "KOOPERATIBAK EUSKARA ETA EUSKAL KULTURAREN IRAKASKUNTZA DU XEDE.ERA BEREAN, HIZKUNTZA-NORMALIZAZIOARI ETA -SUSTAPENARI LOTUTAKO EDOZEIN JARDUERATAN ARITZEA, ENPRESA PUBLIKO ZEIN PRIBATUETAN EUSKARA PLANAK DISEINATU, EZARRI ETA HORIEN JARRAIPENA EGITEA; ENPRESETAKO HIZKUNTZA EGOERAREN DIAGNOSIA EGITEA; KULTUR EKITALDIAK SUSTATZEA, ANTOLATZEA EDO/ETA PARTE HARTZEA; ETAB. XEDE HORIETARAKO, ENPRESAK BEREZIKI ZAINDUKO DU HIZKUNTZAREN KALITATEA. BAZKIDE GUZTIEK XEDE HORIETARA ZUZENDUKO DUTE BEREN JARDUNA.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03431",
+      "_links": {
+        "self": {
+          "name": "ULIBARRI EUSKALTEGIA KOOP",
+          "href": "https://api.euskadi.eus/procurements/companies/03431"
+        }
+      }
+    },
+    {
+      "name": "CENTRO DE DIAGNOSTICO VIRGEN BLANCA, S.A.",
+      "registrationNumber": "10381",
+      "identificationNumber": "A48289250",
+      "address": "Calle Maestro Mendiri",
+      "location": {
+        "postalCode": "48006",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.942.1",
+          "name": "Consultorios médicos, centros de socorro sanitarios y urgencias",
+          "_links": {
+            "self": {
+              "name": "Consultorios médicos, centros de socorro sanitarios y urgencias",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.942.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-10-13",
+      "certificateEndDate": "2026-04-09",
+      "object": "POR SU CUENTA, EN PARTICIPACIÓN O POR CUENTA DE TERCEROS: LA ASISTENCIA MÉDICA EN GENERAL; Y EN ESPECIAL DENTRO DEL ÁREA RADIOLÓGICA, PUDIENDO REALIZARLA MEDIANTE EL SERVICIO DE TOMOGRAFÍA COMPUTERIZADA, RESONANCIA MAGNÉTICA Y CUALQUIER OTRA TECNOLOGÍA RADIOLÓGICA, BÁSICA O DE ALTA CATEGORÍA. Y CUALQUIER OTRA ACTIVIDAD NECESARIA O COMPLEMENTARIA DE LAS ANTERIORES.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/10381",
+      "_links": {
+        "self": {
+          "name": "CENTRO DE DIAGNOSTICO VIRGEN BLANCA, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/10381"
+        }
+      }
+    },
+    {
+      "name": "I.M. ARRIXKO IGELTSERITZA, S.L.",
+      "registrationNumber": "10380",
+      "identificationNumber": "B71143911",
+      "address": "SALBATORE KARRIKA 11-1º",
+      "location": {
+        "postalCode": "31790",
+        "municipality": "Arantza",
+        "county": "Navarra",
+        "municipalityId": "022",
+        "countyId": "31"
+      },
+      "economicActivities": [
+        {
+          "id": "1.501.1",
+          "name": "Construcción completa, reparación y conservación de edificaciones",
+          "_links": {
+            "self": {
+              "name": "Construcción completa, reparación y conservación de edificaciones",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-10-13",
+      "certificateEndDate": "2026-04-13",
+      "object": "- LA REALIZACIÓN DE TRABAJOS DE ALBAÑILERÍA, DE CONSTRUCCIÓN, INSTALACIONES Y REPARACIONES ELÉCTRICA, DE FONTANERÍA, CALEFACCIÓN, GAS Y CARPINTERÍA METÁLICA. - LA REPARACIÓN DE TODO TIPO DE HERRAMIENTAS Y MAQUINARIA, ASÍ COMO VEHÍCULOS. - LA COMPRAVENTA Y ALQUILER DE HERRAMIENTA, VEHÍCULOS Y MAQUINARIA. - EL TRANSPORTE PÚBLICO Y PRIVADO POR CARRETERA DE TODA CLASE DE BIENES. - LA PROMOCIÓN, CONSTRUCCIÓN Y REALIZACIÓN DE TODA CLASE DE OBRAS PÚBLICAS O PRIVADAS, ASÍ COMO LA PROMOCIÓN Y REALIZACIÓN DE PLANES GENERALES Y PARCIALES DE REPARCELACIÓN. - Y, LA REALIZACIÓN DE TODA CLASE DE ACTIVIDADES INMOBILIARIAS, EXCEPTO EL ARRENDAMIENTO FINANCIERO.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/10380",
+      "_links": {
+        "self": {
+          "name": "I.M. ARRIXKO IGELTSERITZA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/10380"
+        }
+      }
+    },
+    {
+      "name": "ADR INFOR, S.L.",
+      "registrationNumber": "10379",
+      "identificationNumber": "B26265835",
+      "address": "C/Vara de Rey 41 Bis. 1º Oficina 6.",
+      "location": {
+        "postalCode": "26002",
+        "municipality": "Logroño",
+        "county": "Rioja, La",
+        "municipalityId": "089",
+        "countyId": "26"
+      },
+      "economicActivities": [
+        {
+          "id": "1.845",
+          "name": "Explotación electrónica por cuenta de terceros",
+          "_links": {
+            "self": {
+              "name": "Explotación electrónica por cuenta de terceros",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.845"
+            }
+          }
+        },
+        {
+          "id": "1.932.2",
+          "name": "Enseñanza de formación y perfeccionamiento profesional superior",
+          "_links": {
+            "self": {
+              "name": "Enseñanza de formación y perfeccionamiento profesional superior",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.932.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-10-13",
+      "certificateEndDate": "2026-04-13",
+      "object": "LA ORGANIZACIÓN Y PRESTACIÓN DE SERVICIOS DE CURSOS DE ENSEÑANZA DE MATERIAS EDUCATIVAS Y FORMACIÓN Y RECICLAJE PROFESIONAL. ESTUDIO, PROGRAMACIÓN Y COMERCIALIZACIÓN DE SOFTWARE Y HARDWARE PARA TERCEROS. ESTUDIO Y REDACCIÓN DE PROYECTOS DE INGENIERÍA TÉCNICA PARA TERCEROS.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/10379",
+      "_links": {
+        "self": {
+          "name": "ADR INFOR, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/10379"
+        }
+      }
+    },
+    {
+      "name": "CLINICA VICENTE SAN SEBASTIAN TC 64, S.L.",
+      "registrationNumber": "10378",
+      "identificationNumber": "B95440509",
+      "address": "Calle Ballets Olaeta",
+      "location": {
+        "postalCode": "48014",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.942.1",
+          "name": "Consultorios médicos, centros de socorro sanitarios y urgencias",
+          "_links": {
+            "self": {
+              "name": "Consultorios médicos, centros de socorro sanitarios y urgencias",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.942.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-10-13",
+      "certificateEndDate": "2026-04-09",
+      "object": "LAS ACTIVIDADES Y SERVICIOS DERIVADOS DE LAS CONSIDERADAS COMO ALTAS TECNOLOGÍAS DE RADIODIAGNÓSTICO (RESONANCIA MAGNÉTICA, SCANNER, ETC.).",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/10378",
+      "_links": {
+        "self": {
+          "name": "CLINICA VICENTE SAN SEBASTIAN TC 64, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/10378"
+        }
+      }
+    },
+    {
+      "name": "LEADING DOCUMENT SOLUTIONS, S.L.",
+      "registrationNumber": "10377",
+      "identificationNumber": "B95876157",
+      "address": "Iturriondo 18, PAE IBARRABARRI PABELLON E-17",
+      "location": {
+        "postalCode": "48940",
+        "municipality": "Leioa",
+        "county": "Bizkaia",
+        "municipalityId": "054",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.617.8",
+          "name": "Venta al por mayor de máquinas y material de oficina",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de máquinas y material de oficina",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.617.8"
+            }
+          }
+        },
+        {
+          "id": "1.691.9",
+          "name": "Reparación de otros bienes de consumo n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Reparación de otros bienes de consumo n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.691.9"
+            }
+          }
+        },
+        {
+          "id": "1.934",
+          "name": "Enseñanza fuera de establecimiento permanente",
+          "_links": {
+            "self": {
+              "name": "Enseñanza fuera de establecimiento permanente",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.934"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-10-13",
+      "certificateEndDate": "2026-04-10",
+      "object": "A) .- COMPRA, VENTA, TANTO AL POR MAYOR COMO AL POR MENOR, IMPORTACIÓN Y EXPORTACIÓN, DISTRIBUCIÓN, REPRESENTACIÓN Y PRESTACIÓN DE SERVICIO TÉCNICO, DE PRODUCTOS INFORMÁTICOS, EQUIPOS DE OFICINA, CONSUMIBLES, HARDWARE Y SOFTWARE. B) .- IMPARTICIÓN Y REALIZACIÓN DE CURSOS Y SERVICIOS DE ENSEÑANZA DE TODO TIPO.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/10377",
+      "_links": {
+        "self": {
+          "name": "LEADING DOCUMENT SOLUTIONS, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/10377"
+        }
+      }
+    }
+  ]
+}

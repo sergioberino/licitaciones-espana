@@ -1,0 +1,437 @@
+{
+  "totalItems": 9042,
+  "totalPages": 905,
+  "currentPage": 210,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "name": "GUILLERMO SANTAMARÍA CADENAS",
+      "registrationNumber": "10393",
+      "identificationNumber": "78938549L",
+      "address": "Camino Madaripebidea",
+      "location": {
+        "postalCode": "48950",
+        "municipality": "Erandio",
+        "county": "Bizkaia",
+        "municipalityId": "902",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.973.1",
+          "name": "Servicios fotográficos",
+          "_links": {
+            "self": {
+              "name": "Servicios fotográficos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.973.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-10-17",
+      "certificateEndDate": "2026-04-15",
+      "object": "SERVICIOS FOTOGRÁFICOS.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/10393",
+      "_links": {
+        "self": {
+          "name": "GUILLERMO SANTAMARÍA CADENAS",
+          "href": "https://api.euskadi.eus/procurements/companies/10393"
+        }
+      }
+    },
+    {
+      "name": "NAVIAP SERVICIOS, S.L.",
+      "registrationNumber": "03534",
+      "identificationNumber": "B95035440",
+      "address": "PEREZ GALDOS, 26",
+      "location": {
+        "postalCode": "48010",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.691.9",
+          "name": "Reparación de otros bienes de consumo n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Reparación de otros bienes de consumo n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.691.9"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-10-17",
+      "certificateEndDate": "2026-04-13",
+      "object": "LA PRESTACIÓN DE SERVICIOS DE MANTENIMIENTO Y REPARACIÓN DE EQUIPOS MÉDICOS, SU COMPRA Y VENTA, Y LA REPRESENTACIÓN DE LAS FIRMAS COMERCIALES DEL SECTOR",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03534",
+      "_links": {
+        "self": {
+          "name": "NAVIAP SERVICIOS, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/03534"
+        }
+      }
+    },
+    {
+      "name": "KL KOOP. ELKARTE TXIKIA",
+      "registrationNumber": "06533",
+      "identificationNumber": "F75038877",
+      "address": "Nafarroa Etorbidea",
+      "location": {
+        "postalCode": "20500",
+        "municipality": "Arrasate / Mondragón",
+        "county": "Gipuzkoa",
+        "municipalityId": "055",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.952",
+          "name": "Asistencia y servicios sociales en centros no residenciales",
+          "_links": {
+            "self": {
+              "name": "Asistencia y servicios sociales en centros no residenciales",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.952"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-10-17",
+      "certificateEndDate": "2026-04-15",
+      "object": "LA PRESTACIÓN DE SERVICIOS DE INTERVENCIÓN TERAPÉUTICA EN EL ÁMBITO DE LA SALUD DIRIGIDOS A LA POBLACIÓN EN GENERAL, ASÍ COMO LA GESTIÓN DE DICHOS SERVICIOS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06533",
+      "_links": {
+        "self": {
+          "name": "KL KOOP. ELKARTE TXIKIA",
+          "href": "https://api.euskadi.eus/procurements/companies/06533"
+        }
+      }
+    },
+    {
+      "name": "AURRERANTZ S. COOP. DE INICIATIVA SOCIAL",
+      "registrationNumber": "02762",
+      "identificationNumber": "F95187183",
+      "address": "C/ P. LOJENDIO, 1 ",
+      "location": {
+        "postalCode": "48008",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.922",
+          "name": "Servicios de limpieza",
+          "_links": {
+            "self": {
+              "name": "Servicios de limpieza",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.922"
+            }
+          }
+        },
+        {
+          "id": "1.932.1",
+          "name": "Enseñanza de formación y perfeccionamiento profesional no superior",
+          "_links": {
+            "self": {
+              "name": "Enseñanza de formación y perfeccionamiento profesional no superior",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.932.1"
+            }
+          }
+        },
+        {
+          "id": "1.951",
+          "name": "Asistencia y servicios sociales en centros residenciales",
+          "_links": {
+            "self": {
+              "name": "Asistencia y servicios sociales en centros residenciales",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.951"
+            }
+          }
+        },
+        {
+          "id": "1.952",
+          "name": "Asistencia y servicios sociales en centros no residenciales",
+          "_links": {
+            "self": {
+              "name": "Asistencia y servicios sociales en centros no residenciales",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.952"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-10-17",
+      "certificateEndDate": "2026-04-09",
+      "object": "A) PRESTACIÓN DE SERVICIOS ASISTENCIALES  EN EL DOMICILIO DE LAS PERSONAS BENEFICIARIAS EN RESIDENCIAS Y EN CENTROS DE DÍA, PARA PERSONAS VÁLIDAS Y NO VÁLIDAS.\n\nB) EJERCER COMO CONSULTORA, PRESTADORA DE SERVICIOS, GESTORA DE TODO TIPO DE PROGRAMAS E INICIATIVAS EN LOS CAMPOS DE CONTENIDO SOCIAL, CULTURAL, RECREATIVO, TURÍSTICO, FESTIVO, DE CONSUMO, DE OCIO, SANITARIO, MEDIO AMBIENTAL, DE INTERVENCIÓN Y DE DESARROLLO COMUNITARIOS  DE COOPERACIÓN INTERTERRITORIAL E INTERNACIONAL PARA EL DESARROLLO, DE INSERCIÓN LABORAL, DE FORMACIÓN PARA EL EMPLEO, DE PROMOCIÓN, ASESORAMIENTO E INFORMACIÓN Y ATENCIÓN A LA INFANCIA, JUVENTUD, LA MUJER, LA TERCERA EDAD, ATENCIÓN, TRATAMIENTO, REINSERCIÓN Y PREVENCIÓN DE DROGODEPENDENCIAS, DE DESARROLLO SOCIAL Y PLANIFICACIÓN DEMOGRÁFICA Y URBANA, Y EN GENERAL TODAS AQUELLAS ÁREAS QUE LIGADAS A LAS CIENCIAS HUMANAS, CONTRIBUYEN A ENRIQUECER LA DIMENSIÓN SOCIAL Y CULTURAL DE LOS INDIVIDUOS Y LA COMUNIDAD EN MÁS AMPLIA CONSIDERACIÓN.\n\nC) REALIZAR INVESTIGACIONES, ANÁLISIS PROSPECTIVOS,  ESTUDIOS DE CAMPO, TRABAJOS ESTADÍSTICOS, ASÍ MISMO, ESTRATEGIAS Y PLANES DE ASESORAMIENTO, DIFUSIÓN Y COMUNICACIÓN EN CUALQUIERA DE LAS ÁREAS RELACIONADAS EN LOS PUNTOS A) Y B).\n\nD) EJERCER LA GESTIÓN INTEGRAL O PARCIAL DE PROGRAMAS, SERVICIOS, EQUIPAMIENTOS E INSTALACIONES EN LOS ÁMBITOS SEÑALADOS EN LOS PUNTOS A) Y B), DESARROLLANDO LAS TAREAS  DE GERENCIAS,  DIRECCIÓN, ANIMACIÓN, ASESORAMIENTO TÉCNICO, ADMINISTRACIÓN, CONSEJERÍA, ATENCIÓN AL PÚBLICO, VIGILANCIA Y MANTENIMIENTO.\n\nE) DESARROLLAR INICIATIVAS DE COLABORACIÓN CON LOS ORGANISMOS DE LAS NACIONES UNIDAS, LA ADMINISTRACIÓN DE LA UNIÓN EUROPEA, ESTATAL, AUTONÓMICA, PROVINCIAL, MUNICIPAL, PERSONAS ENCARGADAS DE LA ACCIÓN SOCIAL Y CULTURAL, DEL DESARROLLO COMUNITARIO, DEL MEDIO AMBIENTE Y DE LA ECOLOGÍA, DE LA INVESTIGACIÓN, LA CULTURA Y LAS ARTES, DE INSTITUCIONES DE EDUCACIÓN Y RENOVACIÓN PEDAGÓGICA, DE LA SANIDAD, DE LA COOPERACIÓN PARA EL DESARROLLO, DE LA EDUCACIÓN PARA LA SALUD Y LA PREVENCIÓN, EL TRATAMIENTO Y REINSERCIÓN DE LAS DROGODEPENDENCIAS, DE LA PROMOCIÓN DE LA INFANCIA, JUVENTUD, LA MUJER O LA TERCERA EDAD, DEL ÁMBITO  LABORAL Y DE FORMACIÓN, DE ATENCIÓN E INSERCIÓN DE PERSONAS Y COLECTIVOS EN SITUACIÓN DE \"DESVENTAJA Y/O DE EXCLUSIÓN\".",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/02762",
+      "_links": {
+        "self": {
+          "name": "AURRERANTZ S. COOP. DE INICIATIVA SOCIAL",
+          "href": "https://api.euskadi.eus/procurements/companies/02762"
+        }
+      }
+    },
+    {
+      "name": "JOSE MANUEL VALDERREY DE LERA",
+      "registrationNumber": "08486",
+      "identificationNumber": "15375933L",
+      "address": "Grupo Unión Begoñesa, 21",
+      "location": {
+        "postalCode": "48004",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "2.899",
+          "name": "Otros profesionales",
+          "_links": {
+            "self": {
+              "name": "Otros profesionales",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/2.899"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-10-17",
+      "certificateEndDate": "2026-04-12",
+      "object": "OTROS PROFESIONALES: DIGITALIZACIÓN Y FOTOGRAFÍA.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08486",
+      "_links": {
+        "self": {
+          "name": "JOSE MANUEL VALDERREY DE LERA",
+          "href": "https://api.euskadi.eus/procurements/companies/08486"
+        }
+      }
+    },
+    {
+      "name": "PEDRO GARCIA GONZALEZ",
+      "registrationNumber": "09061",
+      "identificationNumber": "30644283A",
+      "address": "BARRIO ZELAIA 21",
+      "location": {
+        "postalCode": "48140",
+        "municipality": "Arantzazu",
+        "county": "Bizkaia",
+        "municipalityId": "006",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.504.12",
+          "name": "Instalaciones eléctricas en toda clase de edificios",
+          "_links": {
+            "self": {
+              "name": "Instalaciones eléctricas en toda clase de edificios",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.504.12"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-10-17",
+      "certificateEndDate": "2026-04-12",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/09061",
+      "_links": {
+        "self": {
+          "name": "PEDRO GARCIA GONZALEZ",
+          "href": "https://api.euskadi.eus/procurements/companies/09061"
+        }
+      }
+    },
+    {
+      "name": "VERSIA PROCESOS OPERATIVOS, S.L.",
+      "registrationNumber": "05162",
+      "identificationNumber": "B95576724",
+      "address": "Pol.Inbisa-Pab.20B",
+      "location": {
+        "postalCode": "48510",
+        "municipality": "Valle de Trápaga-Trapagaran",
+        "county": "Bizkaia",
+        "municipalityId": "080",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.849.9",
+          "name": "Otros servicios independientes n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros servicios independientes n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.849.9"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-10-17",
+      "certificateEndDate": "2026-04-15",
+      "object": "A) LA PRESTACIÓN DE SRVICIOS DE CONSULTORÍA RELACIONADOS CON LA IMPLANTACIÓN DE MODELOS DE GESTIÓN NORMALIZADOS, SEGÚN ESTÁNDARES GENÉRICOS O SECTORIALES, Y EN PARTICULAR LOS REFERIDOS A CALIDAD, MEDIO AMBIENTE, RIESGOS LABORALES, RESPONSABILIDAD SOCIAL, SEGURIDAD DE LA INFORMACIÓN Y EXCELENCIA EN LA GESTIÓN, Y ELLO CON INDEPENDENCIA DEL SINGULAR SECTOR DE ACTIVIDAD ECONÓMICA DE QUE SE TRATE. B) LA ORGANIZACIÓN DE EMPRESAS, ASÍ COMO LA DE SISTEMAS Y MÉTODOS DE TRABAJO Y GESTIÓN DE LA INFORMACIÓN. C) LA PREVENCIÓN DE RIESGOS LABORALES, LA GESTIÓN DE LA SEGURIDAD QUE GARANTICE LA SALUD LABORAL DE LAS PERSONAS DE LA EMPRESA, ASÍ COMO LA MÁXIMA REDUCCIÓN DE ACCIDENTES DE TRABAJO. D) DESARROLLAR, COMO ENTIDAD ESPECIALIZADA, LA ACTIVIDAD DE4 AUDITORÍA DEL SISTEMA DE PREVENCIÓN DE LAS EMPRESAS. E) ASESORAMIENTO EN LOS SISTEMAS DE ASEGURAMIENTO DE LA CALIDAD BAJO LAS NORMAS ISO 9.000 HASTA LA CONSECUCIÓN DEL CERTIFICADO DE EMPRESA REGISTRADA. F). ASESORAMIENTO EN LA IMPLANTACIÓN DE LA GESTIÓN MEDIO AMBIENTAL EN BASE A LO DISPUESTO EN EL REGLAMENTO  EUROPEO 1836/33 DE ECOGESTIÓN Y ECOAUDITORÍA Y A LAS NORMAS ISO 14.000. G) IMPLANTACIÓN DE SOFTWARE PARA LA GESTIÓN DE LA INFORMACIÓN Y FORMACIÓN. H) LA PRESTACIÓN DE SERVICIOS DE ASESORAMIENTO, SOLUCIONES DE NEGOCIO, ESTUDIO Y GESTIÓN A TODO TIPO DE EMPRESAS, BIEN SEAN PERSONAS INDIVIDUALES O JURÍDICAS, PÚBLICAS O PRIVADAS, EN MATERIA DE ORGANIZACIÓN, ESTRUCTURACIÓN, CONTABILIDAD, CONTROL, ESTUDIO FINANCIERO O ECONÓMICO, COMERCIALIZACIÓN, FABRICACIÓN, JURÍDICA, FISCAL, LABORAL, SOCIAL Y CUALQUIER OTRO TIPO DE ASESORAMIENTO O GESTIÓN EMPRESARIAL QUE SE DEMANDE. I) LA CONSTITUCIÓN CON LA CONCURRENCIA DE OTRAS PERSONAS DE TODA CLASE DE SOCIEDADES MERCANTILES, DE OBJETO IDÉNTICO O ANÁLOGO, LA PARTICIPACIÓN EN OTRAS CONSTITUIDAS, PUDIENDO OSTENTAR EN TODAS ELLAS CARGOS DE ADMINISTRACIÓN, DIRECCIÓN O CONTROL MEDIANTE LA OPORTUNA DELEGACIÓN EN PERSONA FÍSICA",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/05162",
+      "_links": {
+        "self": {
+          "name": "VERSIA PROCESOS OPERATIVOS, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/05162"
+        }
+      }
+    },
+    {
+      "name": "KAIKU, S.COOP.",
+      "registrationNumber": "10392",
+      "identificationNumber": "F20655916",
+      "address": "Pol. Indus. Erratzu",
+      "location": {
+        "postalCode": "20130",
+        "municipality": "Urnieta",
+        "county": "Gipuzkoa",
+        "municipalityId": "072",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.612.5",
+          "name": "Venta al por mayor de leche, productos lácteos, miel, aceites y grasas",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de leche, productos lácteos, miel, aceites y grasas",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.612.5"
+            }
+          }
+        },
+        {
+          "id": "1.652.2",
+          "name": "Venta al por menor de productos de droguería y productos para decoración",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de productos de droguería y productos para decoración",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.652.2"
+            }
+          }
+        },
+        {
+          "id": "1.699",
+          "name": "Otras reparaciones n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otras reparaciones n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.699"
+            }
+          }
+        },
+        {
+          "id": "1.843.9",
+          "name": "Otros servicios técnicos n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros servicios técnicos n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.9"
+            }
+          }
+        },
+        {
+          "id": "1.849.7",
+          "name": "Servicios de gestión administrativa",
+          "_links": {
+            "self": {
+              "name": "Servicios de gestión administrativa",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.849.7"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-10-16",
+      "certificateEndDate": "2026-04-16",
+      "object": "A) LA RECOGIDA, TRANSPORTE, ALMACENAMIENTO, TRANSFORMACIÓN Y VENTA DE LA LECHE OBTENIDA EN LAS EXPLOTACIÓN DE LA COOPERATIVA O DE LAS PERSONAS SOCIAS. B) TOMAR O CEDER, EN ARRENDAMIENTO O BAJO OTRAS FORMAS O TÍTULO JURÍDICO, LA EXPLOTACIÓN DE GRANJAS, PLANTAS INDUSTRIALES CENTRALES LECHERAS Y TODA CLASE DE BIENES Y SERVICIOS QUE SEAN NECESARIOS PARA EL CUMPLIMIENTO DEL OBJETO SOCIAL. C) LA INSTALACIÓN Y CONSTRUCCIÓN DE GRANJAS, FÁBRICAS DE PIENSOS, PLANTAS INDUSTRIALES, CENTRALES LECHERAS CON TODOS LOS ELEMENTOS NECESARIOS PARA, EN CADA CASO, PRODUCIR, ELABORAR, TRANSFORMAR Y COMERCIALIZAR EN EL MERCADO INTERIOR Y EXTERIOR , LA LECHE, SUS DERIVADOS Y SUBPRODUCTOS TALES COMO NATAS, MANTEQUILLAS, QUESOS, CASEÍNAS, LECHE CONCENTRADA Y EN POLVO, YOGURES Y OTROS PRODUCTOS ANÁLOGOS. D) PARTICIPAR O COOPERAR CON OTRAS EMPRESAS NACIONALES O EXTRANJERAS, CUALQUIERA QUE SEA SU NATURALEZA JURÍDICA O ASOCIARSE A ELLAS PARA LA REALIZACIÓN DE CUANTAS OPERACIONES FINANCIERAS, COMERCIALES, INDUSTRIALES O DE EXPLOTACIÓN ESTIMEN CONVENIENTES O NECESARIAS EL CONSEJO RECTOR O ASAMBLEA GENERAL, SEGÚN PROCEDA, PARA UN MEJOR CUMPLIMIENTO DE LOS FINES DE LA SOCIEDAD. E) LA ADQUISICIÓN, PARA LA COOPERATIVA O PARA LA DISTRIBUCIÓN ENTRE SUS PERSONAS SOCIAS, DE ABONOS, PLANTAS, SEMILLAS, ANIMALES DE REPRODUCCIÓN O DE EXPLOTACIÓN, SEMEN, BIENES DE EQUIPO, MAQUINARIA, PIENSOS, ÚTILES DE GANADERÍA Y DEMÁS ELEMENTOS DE LA PRODUCCIÓN Y DEL FOMENTO PECUARIO PARA UNA MEJOR Y MÁS RACIONAL EXPLOTACIÓN DE LA GANADERÍA, ASÍ COMO LA GESTIÓN, INTERMEDIACIÓN O CORREDURÍA DE TODA CLASE DE SEGUROS Y LA ACTUACIÓN COMO OPERADOR DE CARBURANTES. F) ORGANIZAR CUANTOS SERVICIOS Y VETERINARIOS, TÉCNICOS, COMERCIALES, FINANCIEROS, ECONÓMICOS, CONTABLES Y DE ASESORAMIENTO SE CONSIDEREN CONVENIENTES PARA EL MEJOR DESARROLLO Y FUNCIONAMIENTO DE LA ENTIDAD Y RENTABILIDAD DE LAS INSTALACIONES O EXPLOTACIÓN AGRARIAS PUDIENDO, A ESTE FIN, CELEBRAR CONCIERTOS, CONVENIOS O, EN GENERAL, TODO TIPO DE ACUERDOS CON OTRAS SOCIEDADES Y ENTES PÚBLICOS. G) CREAR, PARTICIPAR, ASOCIARSE, FOMENTAR INSTITUTOS O ENTIDADES DE PREVISIÓN Y SEGURO CONTRA RIESGOS GANADEROS; ADQUIRIR Y SUMINISTRAR BIENES SERVICIOS Y ARTÍCULOS PARA EL USO Y CONSUMO DE LA ECONOMÍA DOMÉSTICA DE LAS FAMILIAS DE LAS PERSONAS SOCIAS. H) PROCURAR LA MEJORA CULTURAL, SOCIAL Y ECONÓMICA DE LAS PERSONAS SOCIAS DE LA COOPERATIVA. I) DESARROLLAR LA ACTIVIDAD COOPERATIVIZADA QUE LE ES PROPIA CON CUALQUIER OTRO PRODUCTO PROCEDENTE DE LAS EXPLOTACIONES DE LAS PERSONAS SOCIAS. J) CUALESQUIERA OTRAS ACTIVIDADES QUE SEAN NECESARIAS O CONVENIENTES O QUE FACILITEN EL MEJORAMIENTO ECONÓMICO, TÉCNICO, LABORAL O ECOLÓGICO DE LA COOPERATIVA O DE LAS EXPLOTACIONES DE LAS PERSONAS SOCIAS.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/10392",
+      "_links": {
+        "self": {
+          "name": "KAIKU, S.COOP.",
+          "href": "https://api.euskadi.eus/procurements/companies/10392"
+        }
+      }
+    },
+    {
+      "name": "MOBILIARIO OFICINA MOHR, S.L.",
+      "registrationNumber": "01104",
+      "identificationNumber": "B48491526",
+      "address": "AVDA. MIRANDA, Nº 2. LOCAL 27",
+      "location": {
+        "postalCode": "48902",
+        "municipality": "Barakaldo",
+        "county": "Bizkaia",
+        "municipalityId": "013",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.659.2",
+          "name": "Venta al por menor de muebles de oficina y máquinas y equipos de oficina",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de muebles de oficina y máquinas y equipos de oficina",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.659.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-10-16",
+      "certificateEndDate": "2026-04-13",
+      "object": "LA COMPRA VENTA, REPARACIÓN Y MANTENIMIENTO DE MOBILIARIO, Y MAQUINARIA DE OFICINA, ORDENADORES, MÁQUINAS DE ESCRIBIR, CALCULADORAS, CAJAS FUERTES, ARCHIVOS, ESTANTERÍAS, MESAS, SILLAS, ADORNOS PROPIOS DE OFICINA Y MATERIAL CONSUMIBLE DE ESCRITORIO Y OFICINA, INSTALACIÓN DISEÑO Y CONSTRUCCIÓN DE OFICINAS Y COMERCIOS. INSTALACIONES DE AIRE ACONDICIONADO",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/01104",
+      "_links": {
+        "self": {
+          "name": "MOBILIARIO OFICINA MOHR, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/01104"
+        }
+      }
+    },
+    {
+      "name": "SOLVENTIC SOLUCIONES EFICIENTES, S.L.",
+      "registrationNumber": "04847",
+      "identificationNumber": "B95585543",
+      "address": "POLIGONO AURRERA, PABELLONES 1 Y 2",
+      "location": {
+        "postalCode": "48510",
+        "municipality": "Valle de Trápaga-Trapagaran",
+        "county": "Bizkaia",
+        "municipalityId": "080",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.314.2",
+          "name": "Fabricación de estructuras metálicas",
+          "_links": {
+            "self": {
+              "name": "Fabricación de estructuras metálicas",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.314.2"
+            }
+          }
+        },
+        {
+          "id": "1.504.3",
+          "name": "Instalaciones de frío, calor y acondicionamiento de aire",
+          "_links": {
+            "self": {
+              "name": "Instalaciones de frío, calor y acondicionamiento de aire",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.504.3"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-10-16",
+      "certificateEndDate": "2026-04-13",
+      "object": "A) LA PRESTACIÓN POR CUENTA PROPIA O AJENA DE TODA CLASE DE SERVICIOS PARA EL HOGAR, COMUNIDADES Y LAS EMPRESAS ENCAMINADOS A DAR SOLUCIONES PROFESIONALES, PRÁCTICAS Y ECONÓMICAS EN SUS SERVICIOS GENERALES DE REPARACIÓN, MANTENIMIENTO, CONSERVACIÓN, INSTALACIÓN Y MONTAJE EN TODOS LOS CAMPOS DE ASISTENCIA SOBRE PRESTACIÓN DE SERVICIOS RELATIVOS A: ELECTRICIDAD, ELECTRÓNICA, CARPINTERÍA DE MADERA, CARPINTERÍA METÁLICA, CARPINTERÍA DE ALUMINIO, FONTANERÍA, CLIMATIZACIÓN, ALBAÑILERÍA, CERRAJERÍA, REVESTIMIENTOS, TECHOS DESMONTABLES, JARDINES Y EXTERIORES, LIMPIEZA, PISCINAS, SEGURIDAD, ELEMENTOS ESTRUCTURALES, ELEMENTOS EXTERIORES, MANTENIMIENTO INTEGRAL DE COMUNIDADES, MONTAJES DE ESTRUCTURAS, ORDENADORES, EQUIPOS INFORMÁTICOS E INFORMÁTICA, SERVICIOS AVANZADOS DE CONSULTORÍA Y ASESORÍA Y EN DEFINITIVA CUALQUIER ACTIVIDAD DE MULTISERVICIO O DE MULTIASISTENCIA AL HOGAR, EMPRESAS Y COMUNIDADES, DENTRO DE LAS NECESIDADES QUE EN CADA CASO SE LE DEMANDEN. B) LA CONSULTORÍA DE RIESGOS Y ASESORAMIENTO DE INVERSIONES FINANCIERAS. LA REALIZACIÓN  DE ESTUDIOS DE CARÁCTER ECONÓMICO, COMERCIAL, FINANCIERO, ADMINISTRATIVO O DE OTRA ÍNDOLE, CONDUCENTES A MEJORAR LA GESTIÓN Y PRODUCTIVIDAD DE LAS EMPRESAS. PRESTACIÓN DE SERVICIOS DE ASESORAMIENTO JURÍDICO, FISCAL, CONTABLE Y FINANCIERO. EL ESTUDIO, PROMOCIÓN Y DESARROLLO DE TODA CLASE DE EMPRESAS INDUSTRIALES, COMERCIALES Y DE SERVICIOS, ASÍ COMO LA PRESTACIÓN A ESTAS EMPRESAS DE LOS SERVICIOS CONSISTENTES EN LA INVESTIGACIÓN Y ESTUDIO DE LOS PROBLEMAS QUE A LAS MISMAS Y A SUS OPERACIONES AFECTEN, TALES COMO CONTROL, ANÁLISIS FINANCIEROS, ORGANIZACIÓN GENERAL, INVESTIGACIÓN OPERATIVA, CENSURA DE CUENTAS, INGENIERÍA DE INSTALACIONES, SISTEMAS Y PROCESOS DE DATOS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/04847",
+      "_links": {
+        "self": {
+          "name": "SOLVENTIC SOLUCIONES EFICIENTES, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/04847"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,468 @@
+{
+  "totalItems": 9042,
+  "totalPages": 905,
+  "currentPage": 585,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "name": "URRATEGI ETXEGINTZA, S.L.",
+      "registrationNumber": "03777",
+      "identificationNumber": "B20564811",
+      "address": "BIZKARAI KALEA, 3- BEHEA.",
+      "location": {
+        "postalCode": "20720",
+        "municipality": "Azkoitia",
+        "county": "Gipuzkoa",
+        "municipalityId": "017",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.507",
+          "name": "Construcción, reparación y conservación de toda clase obras",
+          "_links": {
+            "self": {
+              "name": "Construcción, reparación y conservación de toda clase obras",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.507"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2020-01-20",
+      "certificateEndDate": "2020-07-13",
+      "object": "LA CONSTRUCCION COMPLETA, EDIFICACION, OBRA CIVIL Y LA REPARACION Y CONSERVACION DE TODA CLASE DE OBRAS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03777",
+      "_links": {
+        "self": {
+          "name": "URRATEGI ETXEGINTZA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/03777"
+        }
+      }
+    },
+    {
+      "name": "BIDEKURTZE, S.L.",
+      "registrationNumber": "06784",
+      "identificationNumber": "B95193843",
+      "address": "Lurgorri, 3 - Bajo",
+      "location": {
+        "postalCode": "48300",
+        "municipality": "Gernika-Lumo",
+        "county": "Bizkaia",
+        "municipalityId": "046",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.501.1",
+          "name": "Construcción completa, reparación y conservación de edificaciones",
+          "_links": {
+            "self": {
+              "name": "Construcción completa, reparación y conservación de edificaciones",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.1"
+            }
+          }
+        },
+        {
+          "id": "1.833.21",
+          "name": "Promoción de edificaciones - Cuota fija",
+          "_links": {
+            "self": {
+              "name": "Promoción de edificaciones - Cuota fija",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.833.21"
+            }
+          }
+        },
+        {
+          "id": "1.861.2",
+          "name": "Alquiler de locales industriales y otros alquileres n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Alquiler de locales industriales y otros alquileres n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.861.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2020-01-20",
+      "certificateEndDate": "2020-07-07",
+      "object": "A) LA PROMOCIÓN, CONSTRUCCIÓN, COMPRAVENTA, ALQUILER, REALQUILER, PARCELACIÓN Y URBANIZACIÓN DE SOLARES, TERRENOS Y FINCAS, DE CUALQUIER NATURALEZA, PUDIENDO PROCEDER A LA EDIFICACIÓN DE LAS MISMAS Y A SU ENAJENACIÓN ÍNTEGRA O PARCIALMENTE O EN RÉGIMEN DE PROPIEDAD HORIZONTAL. B) LA ADQUISICIÓN POR CUALQUIER TÍTULO DE FINCAS RÚSTICAS O URBANAS, LA CONSTRUCCIÓN DE ÉSTAS Y LA ADMINISTRACIÓN, TENENCIA, EXPLOTACIÓN Y ARRENDAMIENTO DE TALES BIENES Y SU VENTA TOTAL O PARCIAL, SEGÚN CONVENGA PARA SU APROVECHAMIENTO AGRÍCOLA, FORESTAL, URBANO, INDUSTRIAL O CUALQUIER OTRO",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06784",
+      "_links": {
+        "self": {
+          "name": "BIDEKURTZE, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/06784"
+        }
+      }
+    },
+    {
+      "name": "MIREN GURTUBAY UNZUETA",
+      "registrationNumber": "06786",
+      "identificationNumber": "78924658C",
+      "address": "Luis Urrengoetxea 16bis, 3ºA",
+      "location": {
+        "postalCode": "48340",
+        "municipality": "Amorebieta-Etxano",
+        "county": "Bizkaia",
+        "municipalityId": "003",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.501.1",
+          "name": "Construcción completa, reparación y conservación de edificaciones",
+          "_links": {
+            "self": {
+              "name": "Construcción completa, reparación y conservación de edificaciones",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.1"
+            }
+          }
+        },
+        {
+          "id": "1.653.2",
+          "name": "Venta al por menor de material y aparatos eléctricos, electrodomésticos y cocina",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de material y aparatos eléctricos, electrodomésticos y cocina",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.653.2"
+            }
+          }
+        },
+        {
+          "id": "2.411",
+          "name": "Arquitectos",
+          "_links": {
+            "self": {
+              "name": "Arquitectos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/2.411"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2020-01-20",
+      "certificateEndDate": "2020-04-11",
+      "object": "ARQUITECTURA, CONSTRUCCIÓN COMPLETA, REPARACIÓN Y CONSERVACIÓN DE EDIFICACIONES Y VENTA AL POR MENOR DE MATERIAL Y APARATOS ELÉCTRICOS, ELECTRODOMÉSTICOS Y COCINA",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06786",
+      "_links": {
+        "self": {
+          "name": "MIREN GURTUBAY UNZUETA",
+          "href": "https://api.euskadi.eus/procurements/companies/06786"
+        }
+      }
+    },
+    {
+      "name": "ESCARATE ASESORES, S.L.",
+      "registrationNumber": "06779",
+      "identificationNumber": "B79324406",
+      "address": "Avenida del General Perón, 38, Edificio Master?s I, planta 10",
+      "location": {
+        "postalCode": "28020",
+        "municipality": "Madrid",
+        "county": "Madrid",
+        "municipalityId": "079",
+        "countyId": "28"
+      },
+      "economicActivities": [
+        {
+          "id": "1.841",
+          "name": "Servicios jurídicos",
+          "_links": {
+            "self": {
+              "name": "Servicios jurídicos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.841"
+            }
+          }
+        },
+        {
+          "id": "1.842",
+          "name": "Servicios financieros y contables",
+          "_links": {
+            "self": {
+              "name": "Servicios financieros y contables",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.842"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2020-01-17",
+      "certificateEndDate": "2020-06-30",
+      "object": "EL EJERCICIO EN COMÚN DE LAS ACTIVIDADES PROFESIONALES DE ABOGADO Y ECONOMISTA",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06779",
+      "_links": {
+        "self": {
+          "name": "ESCARATE ASESORES, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/06779"
+        }
+      }
+    },
+    {
+      "name": "AEG POWER SOLUTIONS IBÉRICA, S.A.",
+      "registrationNumber": "06781",
+      "identificationNumber": "A81539165",
+      "address": "ALBERT EINSTEIN 31",
+      "location": {
+        "postalCode": "01510",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.342",
+          "name": "Fabricación de material eléctrico de utilización y equipamiento",
+          "_links": {
+            "self": {
+              "name": "Fabricación de material eléctrico de utilización y equipamiento",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.342"
+            }
+          }
+        },
+        {
+          "id": "1.343",
+          "name": "Fabricación de pilas y acumuladores",
+          "_links": {
+            "self": {
+              "name": "Fabricación de pilas y acumuladores",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.343"
+            }
+          }
+        },
+        {
+          "id": "1.617.9",
+          "name": "Venta al por mayor interindustrial de otros productos n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor interindustrial de otros productos n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.617.9"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2020-01-17",
+      "certificateEndDate": "2020-06-16",
+      "object": "A) LA FABRICACIÓN DE ACUMULADORES ALCALINOS Y DE BATERÍAS DE DICHOS ACUMULADORES. B) LA FABRICACIÓN DE PILAS O ACUMULADORES Y SUS BATERÍAS DE TIPO ALCALINO. C) LA FABRICACIÓN DE GENERADORES DE ELECTRICIDAD DE ORIGEN ELECTROQUÍMICO INTEGRANDO COMPONENTES ELECTRÓNICOS, CIRCUITOS IMPRESOS Y OTROS SUBCONJUNTOS INTELIGENTES. D) LA FABRICACIÓN DE EQUIPOS DE ELECTRÓNICA DE POTENCIA TALES COMO RECTIFICADORES, CARGADORES, ONDULADORES, CONVERTIDORES Y CONJUNTOS INTEGRANDO AQUELLOS Y BATERÍAS DE ACUMULADORES EN SISTEMAS AUTÓNOMOS DE ALIMENTACIÓN ELÉCTRICA. E) LA FABRICACIÓN DE EQUIPOS ELECTRÓNICOS DE CONTROL DE SEGURIDAD, DE ALUMBRADO DE EMERGENCIA CON O SIN BATERÍAS. F) LA REALIZACIÓN DE TODA CLASE DE ACTOS Y OPERACIONES RELACIONADAS CON LA FABRICACIÓN, ELABORACIÓN, TRANSFORMACIÓN, COMERCIALIZACIÓN, EXPORTACIÓN E IMPORTACIÓN DE TODOS LOS PRODUCTOS INDICADOS EN LOS PUNTOS ANTERIORES Y DE TODOS LOS SISTEMAS DE ALIMENTACIÓN QUE UTILICEN LOS MISMOS, ASÍ COMO APARATOS Y COMPLEMENTOS ELÉCTRICOS O DE CUALQUIER OTRA NATURALEZA, INCORPORADOS A LOS MISMOS, NACIONALES O EXTRANJEROS, DESTINADOS A LA UTILIZACIÓN TANTO DOMÉSTICA COMO INDUSTRIAL",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06781",
+      "_links": {
+        "self": {
+          "name": "AEG POWER SOLUTIONS IBÉRICA, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/06781"
+        }
+      }
+    },
+    {
+      "name": "CALDERÓN BRAND DESIGN, S.L.",
+      "registrationNumber": "06782",
+      "identificationNumber": "B95776571",
+      "address": "Plaza Hiru Zutabe, 1",
+      "location": {
+        "postalCode": "48003",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.844",
+          "name": "Servicios de publicidad, relaciones públicas y similares",
+          "_links": {
+            "self": {
+              "name": "Servicios de publicidad, relaciones públicas y similares",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.844"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2020-01-17",
+      "certificateEndDate": "2020-06-18",
+      "object": "LA PRESTACIÓN DE SERVICIOS. ACTIVIDADES DE GESTIÓN Y ADMINITRACIÓN. SERVICIOS EDUCATIVOS, SANITARIOS, DE OCIO Y ENTRETENIMIENTO",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06782",
+      "_links": {
+        "self": {
+          "name": "CALDERÓN BRAND DESIGN, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/06782"
+        }
+      }
+    },
+    {
+      "name": "NORTE INDUSTRIAL, S.A.",
+      "registrationNumber": "01910",
+      "identificationNumber": "A48042303",
+      "address": "C/ AVENIDA PINOA, Nº 16.",
+      "location": {
+        "postalCode": "48170",
+        "municipality": "Zamudio",
+        "county": "Bizkaia",
+        "municipalityId": "905",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.316.9",
+          "name": "Fabricación de otros artículos acabados en metales n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Fabricación de otros artículos acabados en metales n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.316.9"
+            }
+          }
+        },
+        {
+          "id": "1.506.0",
+          "name": "Instalaciones de andamios, cimbras, encofrados, etc",
+          "_links": {
+            "self": {
+              "name": "Instalaciones de andamios, cimbras, encofrados, etc",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.506.0"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2020-01-16",
+      "certificateEndDate": "2020-07-13",
+      "object": "LA CONSTRUCCIÓN Y VENTA DE ELEMENTOS DE SEÑALIZACIÓN Y DEMÁS DE APLICACIÓN EN VÍAS PÚBLICAS O PARTICULARES Y ESTRUCTURAS METÁLICAS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/01910",
+      "_links": {
+        "self": {
+          "name": "NORTE INDUSTRIAL, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/01910"
+        }
+      }
+    },
+    {
+      "name": "DENOK KOMUNIKAZIOA, S.L.",
+      "registrationNumber": "05245",
+      "identificationNumber": "B75083022",
+      "address": "Pº ASTEASU ZONA A PABELLÓN 29",
+      "location": {
+        "postalCode": "20159",
+        "municipality": "Asteasu",
+        "county": "Gipuzkoa",
+        "municipalityId": "014",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.844",
+          "name": "Servicios de publicidad, relaciones públicas y similares",
+          "_links": {
+            "self": {
+              "name": "Servicios de publicidad, relaciones públicas y similares",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.844"
+            }
+          }
+        },
+        {
+          "id": "1.989.2",
+          "name": "Servicios de organización de congresos, asambleas y similares",
+          "_links": {
+            "self": {
+              "name": "Servicios de organización de congresos, asambleas y similares",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.989.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2020-01-16",
+      "certificateEndDate": "2020-07-16",
+      "object": "LA GESTIÓN INTEGRAL DE EVENTOS, ACTOS, CONGRESOS Y ESPECTÁCULOS QUE COMPRENDE LA ORIENTACIÓN, DESARROLLO DE PLANES OPERATIVOS INTEGRALES O PARCIALES, EL DISEÑO DE PROYECTOS CREATIVOS, PRODUCCIÓN, APORTACIÓNN DE EQUIPAMIENTOS Y EJECUCIÓN. CONSULTORÍA, ASESORAMIENTO EN COMUNICACIÓN Y PUBLICIDAD DE LA IMAGEN, DIFUSIÓN Y COMUNICACIÓN DEL EVENTO. GESTIÓN DE SERVICIOS, ORGANIZACIONES SOCIALES Y CULTURALES. TODOS ESTOS CONCEPTOS DIRIGIDOS AL AMBITO EMPRESARIAL, CORPORATIVO, INSTITUCIONAL, PRESENTACIONES, INAUGURACIONES, ROAD SHOWS, DEPORTIVOS, CULTURALES, SOCIALES Y PARA EL FOMENTO DEL EUSKERA",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/05245",
+      "_links": {
+        "self": {
+          "name": "DENOK KOMUNIKAZIOA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/05245"
+        }
+      }
+    },
+    {
+      "name": "KIROLGEST,S.L.",
+      "registrationNumber": "06409",
+      "identificationNumber": "B01498948",
+      "address": "C/ OTAZU Nº1B BAJO B",
+      "location": {
+        "postalCode": "01408",
+        "municipality": "Ayala/Aiara",
+        "county": "Araba/Álava",
+        "municipalityId": "010",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.966.9",
+          "name": "Otros servicios culturales n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros servicios culturales n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.966.9"
+            }
+          }
+        },
+        {
+          "id": "1.967.1",
+          "name": "Instalaciones deportivas",
+          "_links": {
+            "self": {
+              "name": "Instalaciones deportivas",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.967.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2020-01-16",
+      "certificateEndDate": "2020-07-13",
+      "object": "1.- CONSTRUCCIÓN, INSTALACIONES Y MANTENIMIENTO. 2.- COMERCIO AL POR MAYOR Y AL POR MENOR. DISTRIBUCIÓN COMERCIAL. IMPORTACIÓN Y EXPORTACIÓN. 3.- ACTIVIDADES INMOBILIARIAS. 4.- ACTIVIDADES PROFESIONALES. 5.- INDUSTRAS MANUFACTURERAS Y TEXTILES. 6.- TURISMO, HOSTELERÍA Y RESTAURACIÓN. 7.- PRESTACIÓN DE SERVICIOS. ACTIVIDADES DE GESTIÓN Y ADMINISTRACIÓN. SERVICIOS EDUCATIVOS, SANITARIOS, DE OCIO Y ENTRETENIMIENTO. 8.- TRANSPORTE Y ALMACENAMIENTO. 9.-INFORMACIÓN Y COMUNICACIONES. 10.- AGRICULTURA, GANADERÍA Y PESCA. 11.- INFORMACIÓN, TELECOMUNICACIONES Y OFIMÁTICA. 12.- ENERGÍAS ALTERNATIVAS. 13.- COMPRAVENTA Y REPARACIÓN DE VEHÍCULOS. REPARACIÓN Y MANTENIMIENTO DE INSTALACIONES Y MAQUINARIA. 14.- INVESTIGACIÓN, DESARROLLO E INNOVACIÓN. 15.- ACTIVIDADES CIENTÍFICAS Y TÉCNICAS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06409",
+      "_links": {
+        "self": {
+          "name": "KIROLGEST,S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/06409"
+        }
+      }
+    },
+    {
+      "name": "BIOTEC MÉDICA, S.A.",
+      "registrationNumber": "01783",
+      "identificationNumber": "A47083100",
+      "address": "C/ MIGUEL DE CERVANTES, Nº 1.",
+      "location": {
+        "postalCode": "47140",
+        "municipality": "Laguna de Duero",
+        "county": "Valladolid",
+        "municipalityId": "076",
+        "countyId": "47"
+      },
+      "economicActivities": [
+        {
+          "id": "1.619.2",
+          "name": "Venta al por mayor de aparatos e instrumentos médicos, ortopédicos, ópticos",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de aparatos e instrumentos médicos, ortopédicos, ópticos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.619.2"
+            }
+          }
+        },
+        {
+          "id": "1.692",
+          "name": "Reparación de maquinaria industrial",
+          "_links": {
+            "self": {
+              "name": "Reparación de maquinaria industrial",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.692"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2020-01-15",
+      "certificateEndDate": "2020-07-15",
+      "object": "LA EXPLOTACIÓN DE TODO TIPO DE NEGOCIOS RELACIONADOS CON LA VENTA Y REPARACIÓN DE MATERIAL MÉDICO QUIRÚRGICO",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/01783",
+      "_links": {
+        "self": {
+          "name": "BIOTEC MÉDICA, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/01783"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,548 @@
+{
+  "totalItems": 919,
+  "totalPages": 92,
+  "currentPage": 51,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "id": 392,
+      "identificationNumber": "P4803700F",
+      "name": "Ayuntamiento de Etxebarria",
+      "scope": "BIZKAIA",
+      "address": "Plaza Peñanekua, 1. 48277 Etxebarria (Bizkaia)",
+      "webPage": "http://www.etxebarria.biz",
+      "publicationDate": "2019-10-07",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES213",
+      "entities": [
+        {
+          "id": 843,
+          "name": "Ayuntamiento de Etxebarria",
+          "orgs": [
+            {
+              "id": 912389,
+              "name": "Pleno",
+              "_links": {
+                "self": {
+                  "name": "Pleno",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/392/entities/843/orgs/912389"
+                }
+              }
+            },
+            {
+              "id": 912388,
+              "name": "Alcaldía",
+              "_links": {
+                "self": {
+                  "name": "Alcaldía",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/392/entities/843/orgs/912388"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Ayuntamiento de Etxebarria",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/392/entities/843"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder392/es_doc/es_arch_poder392.html",
+      "_links": {
+        "self": {
+          "name": "Ayuntamiento de Etxebarria",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/392"
+        }
+      }
+    },
+    {
+      "id": 394,
+      "identificationNumber": "P4805700D",
+      "name": "Ayuntamiento de Ibarrangelu",
+      "scope": "BIZKAIA",
+      "address": "Elexalde, 1. 48311 Ibarrangelu (Bizkaia)",
+      "webPage": "http://www.ibarrangelu.net",
+      "publicationDate": "2019-10-07",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES213",
+      "entities": [
+        {
+          "id": 845,
+          "name": "Ayuntamiento de Ibarrangelu",
+          "orgs": [
+            {
+              "id": 912392,
+              "name": "Pleno",
+              "_links": {
+                "self": {
+                  "name": "Pleno",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/394/entities/845/orgs/912392"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Ayuntamiento de Ibarrangelu",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/394/entities/845"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder394/es_doc/es_arch_poder394.html",
+      "_links": {
+        "self": {
+          "name": "Ayuntamiento de Ibarrangelu",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/394"
+        }
+      }
+    },
+    {
+      "id": 396,
+      "identificationNumber": "P4806000H",
+      "name": "Ayuntamiento de Izurtza",
+      "scope": "BIZKAIA",
+      "address": "Barrio Elexalde, 20. 48213 Izurtza (Bizkaia)",
+      "webPage": "http://www.izurtza.net",
+      "publicationDate": "2019-10-07",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES213",
+      "entities": [
+        {
+          "id": 847,
+          "name": "Ayuntamiento de Izurtza ",
+          "orgs": [
+            {
+              "id": 912397,
+              "name": "Pleno",
+              "_links": {
+                "self": {
+                  "name": "Pleno",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/396/entities/847/orgs/912397"
+                }
+              }
+            },
+            {
+              "id": 912396,
+              "name": "Teneinte de Alcalde",
+              "_links": {
+                "self": {
+                  "name": "Teneinte de Alcalde",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/396/entities/847/orgs/912396"
+                }
+              }
+            },
+            {
+              "id": 912395,
+              "name": "Alcalde",
+              "_links": {
+                "self": {
+                  "name": "Alcalde",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/396/entities/847/orgs/912395"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Ayuntamiento de Izurtza ",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/396/entities/847"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder396/es_doc/es_arch_poder396.html",
+      "_links": {
+        "self": {
+          "name": "Ayuntamiento de Izurtza",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/396"
+        }
+      }
+    },
+    {
+      "id": 399,
+      "identificationNumber": "P4801600J",
+      "name": "Ayuntamiento de Bakio",
+      "scope": "BIZKAIA",
+      "address": "Agirre Lehendakaria Plazea, 2. 48130 Bakio (Bizkaia) ",
+      "webPage": "http://www.bakio.eus",
+      "publicationDate": "2019-10-07",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES213",
+      "entities": [
+        {
+          "id": 850,
+          "name": "Ayuntamiento de Bakio",
+          "orgs": [
+            {
+              "id": 912400,
+              "name": "Alcaldía ",
+              "_links": {
+                "self": {
+                  "name": "Alcaldía ",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/399/entities/850/orgs/912400"
+                }
+              }
+            },
+            {
+              "id": 912401,
+              "name": "Pleno",
+              "_links": {
+                "self": {
+                  "name": "Pleno",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/399/entities/850/orgs/912401"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Ayuntamiento de Bakio",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/399/entities/850"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder399/es_doc/es_arch_poder399.html",
+      "_links": {
+        "self": {
+          "name": "Ayuntamiento de Bakio",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/399"
+        }
+      }
+    },
+    {
+      "id": 400,
+      "identificationNumber": "P4804900A",
+      "name": "Ayuntamiento de Gautegiz Arteaga",
+      "scope": "BIZKAIA",
+      "address": "Herriko Enparantza, 1. 48314 Gautegiz Arteaga (Bizkaia)",
+      "webPage": "http://www.gautegizarteaga.com",
+      "publicationDate": "2019-10-07",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES213",
+      "entities": [
+        {
+          "id": 851,
+          "name": "Ayuntamiento de Gautegiz Arteaga",
+          "orgs": [
+            {
+              "id": 912403,
+              "name": "Junta de Gobierno",
+              "_links": {
+                "self": {
+                  "name": "Junta de Gobierno",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/400/entities/851/orgs/912403"
+                }
+              }
+            },
+            {
+              "id": 912402,
+              "name": "Alcalde",
+              "_links": {
+                "self": {
+                  "name": "Alcalde",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/400/entities/851/orgs/912402"
+                }
+              }
+            },
+            {
+              "id": 912404,
+              "name": "Pleno",
+              "_links": {
+                "self": {
+                  "name": "Pleno",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/400/entities/851/orgs/912404"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Ayuntamiento de Gautegiz Arteaga",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/400/entities/851"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder400/es_doc/es_arch_poder400.html",
+      "_links": {
+        "self": {
+          "name": "Ayuntamiento de Gautegiz Arteaga",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/400"
+        }
+      }
+    },
+    {
+      "id": 401,
+      "identificationNumber": "P4800900E",
+      "name": "Ayuntamiento de Artzentales",
+      "scope": "BIZKAIA",
+      "address": "Bº San Miguel de Linares, 1. 48879 Artzentales (Bizkaia)",
+      "webPage": "http://www.artzentales.org",
+      "publicationDate": "2019-10-07",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES213",
+      "entities": [
+        {
+          "id": 852,
+          "name": "Ayuntamiento de Artzentales",
+          "orgs": [
+            {
+              "id": 912405,
+              "name": "Junta de Gobierno",
+              "_links": {
+                "self": {
+                  "name": "Junta de Gobierno",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/401/entities/852/orgs/912405"
+                }
+              }
+            },
+            {
+              "id": 912406,
+              "name": "Pleno",
+              "_links": {
+                "self": {
+                  "name": "Pleno",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/401/entities/852/orgs/912406"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Ayuntamiento de Artzentales",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/401/entities/852"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder401/es_doc/es_arch_poder401.html",
+      "_links": {
+        "self": {
+          "name": "Ayuntamiento de Artzentales",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/401"
+        }
+      }
+    },
+    {
+      "id": 402,
+      "identificationNumber": "P4807800J",
+      "name": "Ayuntamiento de Muxika",
+      "scope": "BIZKAIA",
+      "address": "Ugarte,1. 48392 Muxika (Bizkaia)",
+      "webPage": "http://www.muxikakoudala.eus/",
+      "publicationDate": "2019-10-07",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES213",
+      "entities": [
+        {
+          "id": 853,
+          "name": "Ayuntamiento de Muxika",
+          "orgs": [
+            {
+              "id": 912407,
+              "name": "Alcaldía",
+              "_links": {
+                "self": {
+                  "name": "Alcaldía",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/402/entities/853/orgs/912407"
+                }
+              }
+            },
+            {
+              "id": 912408,
+              "name": "Pleno",
+              "_links": {
+                "self": {
+                  "name": "Pleno",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/402/entities/853/orgs/912408"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Ayuntamiento de Muxika",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/402/entities/853"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder402/es_doc/es_arch_poder402.html",
+      "_links": {
+        "self": {
+          "name": "Ayuntamiento de Muxika",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/402"
+        }
+      }
+    },
+    {
+      "id": 405,
+      "identificationNumber": "P4803300E",
+      "name": "Ayuntamiento de Dima",
+      "scope": "BIZKAIA",
+      "address": "Ugarana, 1. 48141 Dima (Bizkaia)",
+      "webPage": "http://www.dima.eus",
+      "publicationDate": "2019-10-07",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES213",
+      "entities": [
+        {
+          "id": 856,
+          "name": "Ayuntamiento de Dima",
+          "orgs": [
+            {
+              "id": 912417,
+              "name": "Pleno",
+              "_links": {
+                "self": {
+                  "name": "Pleno",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/405/entities/856/orgs/912417"
+                }
+              }
+            },
+            {
+              "id": 912416,
+              "name": "Alcaldía ",
+              "_links": {
+                "self": {
+                  "name": "Alcaldía ",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/405/entities/856/orgs/912416"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Ayuntamiento de Dima",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/405/entities/856"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder405/es_doc/es_arch_poder405.html",
+      "_links": {
+        "self": {
+          "name": "Ayuntamiento de Dima",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/405"
+        }
+      }
+    },
+    {
+      "id": 409,
+      "identificationNumber": "P4800017H",
+      "name": "Mancomunidad de Servicios del Txorierri",
+      "scope": "BIZKAIA",
+      "address": "Txorierriko Etorbidea, 9. 48160 Derio (Bizkaia)",
+      "webPage": "http://www.txorierri.eus",
+      "publicationDate": "2019-10-07",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES213",
+      "entities": [
+        {
+          "id": 860,
+          "name": "Mancomunidad de Servicios del Txorierri.",
+          "orgs": [
+            {
+              "id": 912422,
+              "name": "Presidencia",
+              "_links": {
+                "self": {
+                  "name": "Presidencia",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/409/entities/860/orgs/912422"
+                }
+              }
+            },
+            {
+              "id": 912421,
+              "name": "Junta Plenaria",
+              "_links": {
+                "self": {
+                  "name": "Junta Plenaria",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/409/entities/860/orgs/912421"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Mancomunidad de Servicios del Txorierri.",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/409/entities/860"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder409/es_doc/es_arch_poder409.html",
+      "_links": {
+        "self": {
+          "name": "Mancomunidad de Servicios del Txorierri",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/409"
+        }
+      }
+    },
+    {
+      "id": 410,
+      "identificationNumber": "P4810500A",
+      "name": "Ayuntamiento de Bedia",
+      "scope": "BIZKAIA",
+      "address": "Agirre Lehendakaria Enparantza, 1. 48390 Bedia (Bizkaia)",
+      "webPage": "http://www.bedia.biz",
+      "publicationDate": "2019-10-07",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES213",
+      "entities": [
+        {
+          "id": 861,
+          "name": "Ayuntamiento de Bedia",
+          "orgs": [
+            {
+              "id": 912423,
+              "name": "Alcaldía",
+              "_links": {
+                "self": {
+                  "name": "Alcaldía",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/410/entities/861/orgs/912423"
+                }
+              }
+            },
+            {
+              "id": 912424,
+              "name": "Junta de Gobierno",
+              "_links": {
+                "self": {
+                  "name": "Junta de Gobierno",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/410/entities/861/orgs/912424"
+                }
+              }
+            },
+            {
+              "id": 912425,
+              "name": "Pleno",
+              "_links": {
+                "self": {
+                  "name": "Pleno",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/410/entities/861/orgs/912425"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Ayuntamiento de Bedia",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/410/entities/861"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder410/es_doc/es_arch_poder410.html",
+      "_links": {
+        "self": {
+          "name": "Ayuntamiento de Bedia",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/410"
+        }
+      }
+    }
+  ]
+}

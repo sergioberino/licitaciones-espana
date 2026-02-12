@@ -1,0 +1,398 @@
+{
+  "totalItems": 9042,
+  "totalPages": 905,
+  "currentPage": 22,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "name": "BASCULAS Y ARCAS CATALUNYA, S.A.",
+      "registrationNumber": "10523",
+      "identificationNumber": "A08944118",
+      "address": "CALLE FLASSADERS, NUM. 15, PLANTA 1 S PERPETUA M",
+      "location": {
+        "postalCode": "08130",
+        "municipality": "Santa Perpètua de Mogoda",
+        "county": "Barcelona",
+        "municipalityId": "260",
+        "countyId": "08"
+      },
+      "economicActivities": [
+        {
+          "id": "1.619.7",
+          "name": "Venta al por mayor de instrumentos de precisión, medida y similares",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de instrumentos de precisión, medida y similares",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.619.7"
+            }
+          }
+        },
+        {
+          "id": "1.843.9",
+          "name": "Otros servicios técnicos n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros servicios técnicos n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.9"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-02-04",
+      "certificateEndDate": "2026-08-04",
+      "object": "FABRICACIÓN, VENTA, CON SU CORRESPONDIENTE COLOCACIÓN Y MONTAJE, MANTENIMIENTO Y REPARACIÓN ASÍ COMO LA EXPORTACIÓN E IMPORTACIÓN DE BÁSCULAS, ARCAS Y ALARMAS DE TODO TIPO.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/10523",
+      "_links": {
+        "self": {
+          "name": "BASCULAS Y ARCAS CATALUNYA, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/10523"
+        }
+      }
+    },
+    {
+      "name": "IPARRAGIRRE ERAIKUNTZA LANAK, S.L.",
+      "registrationNumber": "01558",
+      "identificationNumber": "B20190674",
+      "address": "KALE NAGUSIA, 48 BAJO",
+      "location": {
+        "postalCode": "20213",
+        "municipality": "Idiazabal",
+        "county": "Gipuzkoa",
+        "municipalityId": "043",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.501.1",
+          "name": "Construcción completa, reparación y conservación de edificaciones",
+          "_links": {
+            "self": {
+              "name": "Construcción completa, reparación y conservación de edificaciones",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.1"
+            }
+          }
+        },
+        {
+          "id": "1.501.2",
+          "name": "Construcción completa, reparación y conservación obras civiles",
+          "_links": {
+            "self": {
+              "name": "Construcción completa, reparación y conservación obras civiles",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-02-04",
+      "certificateEndDate": "2026-07-16",
+      "object": "LA CONSTRUCCIÓN DE OBRAS. LA CONSTRUCCIÓN DE TODA CLASE DE OBRAS E INSTALACIONES. ",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/01558",
+      "_links": {
+        "self": {
+          "name": "IPARRAGIRRE ERAIKUNTZA LANAK, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/01558"
+        }
+      }
+    },
+    {
+      "name": "PETER WILLIAM ROBERTS",
+      "registrationNumber": "07524",
+      "identificationNumber": "X0354645P",
+      "address": "Luis Pradera Kalea, 29",
+      "location": {
+        "postalCode": "20015",
+        "municipality": "Donostia / San Sebastián",
+        "county": "Gipuzkoa",
+        "municipalityId": "069",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "3.016",
+          "name": "Humoristas, caricatos, excentr., charlistas, recitadores",
+          "_links": {
+            "self": {
+              "name": "Humoristas, caricatos, excentr., charlistas, recitadores",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/3.016"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-02-03",
+      "certificateEndDate": "2026-08-03",
+      "object": "HUMORISTAS, CARICATOS, EXCENTR., CHARLISTAS, RECITADORES. VENTA AL POR MAYOR DE APARATOS E INSTRUMENTOS MÉDICOS, ORTOPÉDICOS, ÓPTICOS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07524",
+      "_links": {
+        "self": {
+          "name": "PETER WILLIAM ROBERTS",
+          "href": "https://api.euskadi.eus/procurements/companies/07524"
+        }
+      }
+    },
+    {
+      "name": "BEITIA NATURLANAK, S.L.",
+      "registrationNumber": "08313",
+      "identificationNumber": "B95563565",
+      "address": "POLIGONO INDUSTRIAL SAN AGUSTIN, PABELLÓN 11",
+      "location": {
+        "postalCode": "48230",
+        "municipality": "Elorrio",
+        "county": "Bizkaia",
+        "municipalityId": "032",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.912",
+          "name": "Servicios forestales",
+          "_links": {
+            "self": {
+              "name": "Servicios forestales",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.912"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-02-03",
+      "certificateEndDate": "2026-07-21",
+      "object": "LA PRESTACIÓN DE SERVICIOS FORESTALES, DE JARDINERÍA Y PRODUCCIÓN DE PLANTA.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08313",
+      "_links": {
+        "self": {
+          "name": "BEITIA NATURLANAK, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/08313"
+        }
+      }
+    },
+    {
+      "name": "DISTRIBUCIONES ERGUI XXI, S.L.",
+      "registrationNumber": "09580",
+      "identificationNumber": "B20815601",
+      "address": "POLIGONO INDUSTRIAL ERRATZU NAVE 29",
+      "location": {
+        "postalCode": "20130",
+        "municipality": "Urnieta",
+        "county": "Gipuzkoa",
+        "municipalityId": "072",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.617.9",
+          "name": "Venta al por mayor interindustrial de otros productos n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor interindustrial de otros productos n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.617.9"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-02-03",
+      "certificateEndDate": "2026-07-30",
+      "object": "A).- LA COMERCIALIZACIÓN DE MAQUINARIA Y MATERIAL DE SOLDADURA. B).- LA COMERCIALIZACIÓN DE TODO TIPO DE ACCESORIOS INDUSTRIALES. C).- LOS SUMINISTROS A TERCEROS DE TODO TIPO DE MAQUINARIA, ACCESORIOS Y ELEMENTOS INDUSTRIALES. D).- LAS ACTIVIDADES PROPIAS DEL MERCADO INMOBILIARIO. E).- LA COMPRA, VENTA, TENENCIA, ADMINISTRACIÓN DE BIENES MUEBLES, TÍTULOS VALORES Y PARTICIPACIONES SOCIALES, EXCLUIDAS LAS ACTIVIDADES SUJETAS A LA LEY DEL MERCADO DE VALORES, LEY DE INSTITUCIONES DE INVERSIÓN COLECTIVA Y SOCIEDADES GESTORAS DE PATRIMONIO Y DE CARTERA.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/09580",
+      "_links": {
+        "self": {
+          "name": "DISTRIBUCIONES ERGUI XXI, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/09580"
+        }
+      }
+    },
+    {
+      "name": "OIZ MEDICAL, S.L.",
+      "registrationNumber": "09331",
+      "identificationNumber": "B95862298",
+      "address": "Julio Urquijo n° 6-7C",
+      "location": {
+        "postalCode": "48014",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.619.2",
+          "name": "Venta al por mayor de aparatos e instrumentos médicos, ortopédicos, ópticos",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de aparatos e instrumentos médicos, ortopédicos, ópticos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.619.2"
+            }
+          }
+        },
+        {
+          "id": "1.861.2",
+          "name": "Alquiler de locales industriales y otros alquileres n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Alquiler de locales industriales y otros alquileres n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.861.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-02-03",
+      "certificateEndDate": "2026-07-29",
+      "object": "LA COMPRA, VENTA, DISTRIBUCIÓN, COMERCIALIZACIÓN, ALQUILER, IMPORTACIÓN Y EXPORTACIÓN DE EQUIPOS MÉDICOS, DE LABORATORIO, QUIRÚRGICO, ODONTOLÓGICO, VETERINARIO Y DE ORTOPEDIA.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/09331",
+      "_links": {
+        "self": {
+          "name": "OIZ MEDICAL, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/09331"
+        }
+      }
+    },
+    {
+      "name": "FORESTAL SANCHEZ, S.L.",
+      "registrationNumber": "08716",
+      "identificationNumber": "B10914539",
+      "address": "HAMARRETXETA KALEA 11 - 4 A",
+      "location": {
+        "postalCode": "20110",
+        "municipality": "Pasaia",
+        "county": "Gipuzkoa",
+        "municipalityId": "064",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.912",
+          "name": "Servicios forestales",
+          "_links": {
+            "self": {
+              "name": "Servicios forestales",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.912"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-02-03",
+      "certificateEndDate": "2026-07-30",
+      "object": "TRABAJOS FORESTALES EN GENERAL, LIMPIEZA RÍOS, JARDINERÍA.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08716",
+      "_links": {
+        "self": {
+          "name": "FORESTAL SANCHEZ, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/08716"
+        }
+      }
+    },
+    {
+      "name": "BERRI LANTEGIA, S.L.",
+      "registrationNumber": "08906",
+      "identificationNumber": "B20939856",
+      "address": "FABRENSA 3",
+      "location": {
+        "postalCode": "20260",
+        "municipality": "Alegia",
+        "county": "Gipuzkoa",
+        "municipalityId": "005",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.654.5",
+          "name": "Venta al por menor de toda clase de maquinaría",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de toda clase de maquinaría",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.654.5"
+            }
+          }
+        },
+        {
+          "id": "1.692",
+          "name": "Reparación de maquinaria industrial",
+          "_links": {
+            "self": {
+              "name": "Reparación de maquinaria industrial",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.692"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-02-03",
+      "certificateEndDate": "2026-08-03",
+      "object": "LA COMPRA, VENTA, ALQUILER, REPARACIÓN Y TRANSPORTE DE TODO TIPO DE MAQUINARIA, ASÍ COMO SUS ACCESORIOS, RECAMBIOS, REPUESTOS, LUBRICANTES, HERRAMIENTAS Y ROPA Y CALZADO DE SEGURIDAD.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08906",
+      "_links": {
+        "self": {
+          "name": "BERRI LANTEGIA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/08906"
+        }
+      }
+    },
+    {
+      "name": "KANTAR MEDIA, S.A.",
+      "registrationNumber": "05129",
+      "identificationNumber": "A78040235",
+      "address": "RÍOS ROSAS, 26",
+      "location": {
+        "postalCode": "28003",
+        "municipality": "Madrid",
+        "county": "Madrid",
+        "municipalityId": "079",
+        "countyId": "28"
+      },
+      "economicActivities": [
+        {
+          "id": "1.846",
+          "name": "Empresas de estudios de mercado",
+          "_links": {
+            "self": {
+              "name": "Empresas de estudios de mercado",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.846"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-02-03",
+      "certificateEndDate": "2026-07-28",
+      "object": "1. LA REALIZACIÓN, CONTRATACIÓN Y COMERCIALIZACIÓN DE TODO TIPO DE ESTUDIOS DE MERCADO, COMERCIALES, DE AUDIENCIA Y DE OPINIÓN INCLUYENDO CUALQUIER TIPO DE PANEL, ASÍ COMO SU EXPLOTACIÓN Y COMERCIALIZACIÓN INFORMÁTICA, ESTADÍSTICA O POR CUALQUIER OTRO MEDIO. 2. LA PRESTACIÓN DE SERVICIOS DE MARCAS COMERCIALES Y PERSONAS FÍSICAS. LOS MENCIONADOS SRVICOS INCLUIRÁN LA SELECCIÓN DE INFORMACIÓN HECHA PÚBLICA POR LOS MEDIOS DE COMUNICACIÓN; ELABORANDO, CONFECCIONANDO Y DISTRIBUYENDO INFORMES, REPERTORIOS E ÍNDICES DE DICHA INFORMACIÓN ASÍ COMO LA PRESTACIÓN DEL SERVICIO CONOCIDOS EN LOS MERCADOS COMO &quot;CLIPPING&quot;, ENTENDIÉNDOSE POR TAL LA INTENCIÓN Y SUMINISTRO DE RECORTES O EXTRACTOS DE PERIÓDICOS, REVISTAS U OTROS SOPORTES. 3. EL DISEÑO, FABRICACIÓN, DISTRIBUCIÓN, COMERCIALIZACIÓN, MANTENIMIENTO, IMPORTACIÓN Y EXPORTACIÓN DE TODA CLASE DE APARATOS DESTINADOS O RELACIONADOS CON TODO TIPO DE ESTUDIOS DE MERCADO COMERCIALES Y DE OPINIÓN, INCLUYENDO MEDICIONES DE AUDIENCIA DE CUALQUIER MEDIO DE DIFUSIÓN. 4. LA EXPLOTACIÓN Y COMERCIALIZACIÓN INFORMÁTICA DE TODA CLASE DE DATOS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/05129",
+      "_links": {
+        "self": {
+          "name": "KANTAR MEDIA, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/05129"
+        }
+      }
+    },
+    {
+      "name": "SUMINISTROS JESIBAR, S.A.",
+      "registrationNumber": "10052",
+      "identificationNumber": "A48578496",
+      "address": "ARRIAGA SAKONI BIDEA Nº14",
+      "location": {
+        "postalCode": "48950",
+        "municipality": "Erandio",
+        "county": "Bizkaia",
+        "municipalityId": "902",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.617.9",
+          "name": "Venta al por mayor interindustrial de otros productos n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor interindustrial de otros productos n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.617.9"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-02-03",
+      "certificateEndDate": "2026-07-29",
+      "object": "COMERCIO AL POR MAYOR Y MENOR DE MAQUINARIA, MATERIALES Y ÚTILES PARA LA INDUSTRIA, EL COMERCIO Y LA NAVEGACIÓN, TALES COMO MAQUINAS Y EQUIPOS DE CONSTRUCCIÓN, MATERIAL DE TRANSPORTE , MAQUINARIA DE ELEVACIÓN Y MANIPULACIÓN, MATERIALES DE TRANSMISIÓN MECÁNICA Y ELÉCTRICA, Y MOTORES Y GENERADORES, EQUIPOS DE SOLDADURA, ARTÍCULOS DE PROTECCIÓN Y SEGURIDAD EN EL TRABAJO, IMPORTACIÓN EXPORTACIÓN DE TODO ELLO.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/10052",
+      "_links": {
+        "self": {
+          "name": "SUMINISTROS JESIBAR, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/10052"
+        }
+      }
+    }
+  ]
+}

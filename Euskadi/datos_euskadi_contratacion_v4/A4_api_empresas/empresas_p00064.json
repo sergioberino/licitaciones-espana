@@ -1,0 +1,664 @@
+{
+  "totalItems": 9042,
+  "totalPages": 905,
+  "currentPage": 64,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "name": "ESTABLECIMIENTOS SUMISAN, S.A.",
+      "registrationNumber": "00375",
+      "identificationNumber": "A20062568",
+      "address": "AMASORRAIN Nº 3",
+      "location": {
+        "postalCode": "20018",
+        "municipality": "Donostia / San Sebastián",
+        "county": "Gipuzkoa",
+        "municipalityId": "069",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.482.2",
+          "name": "Fabricación de artículos acabados de materias plásticas",
+          "_links": {
+            "self": {
+              "name": "Fabricación de artículos acabados de materias plásticas",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.482.2"
+            }
+          }
+        },
+        {
+          "id": "1.619.2",
+          "name": "Venta al por mayor de aparatos e instrumentos médicos, ortopédicos, ópticos",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de aparatos e instrumentos médicos, ortopédicos, ópticos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.619.2"
+            }
+          }
+        },
+        {
+          "id": "1.699",
+          "name": "Otras reparaciones n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otras reparaciones n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.699"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-01-22",
+      "certificateEndDate": "2026-07-06",
+      "object": "LA MANUFACTURA, EL COMERCIO, LA IMPORTACIÓN Y EXPORTACIÓN AL POR MAYOR Y MENOR DE TODA CLASE DE PRODUCTOS PARA LA CIRUGÍA Y ORTOPEDIA; Y LA CONSTRUCCIÓN, REPARACIÓN Y CONSERVACIÓN DE TODA CLASE DE OBRAS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/00375",
+      "_links": {
+        "self": {
+          "name": "ESTABLECIMIENTOS SUMISAN, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/00375"
+        }
+      }
+    },
+    {
+      "name": "WILLIS IBERIA, CORREDURÍA DE SEGUROS Y REASEGUROS, S.A.",
+      "registrationNumber": "01446",
+      "identificationNumber": "A28961639",
+      "address": "Plaza Pablo Ruiz Picasso nº11, 6ª planta",
+      "location": {
+        "postalCode": "28020",
+        "municipality": "Madrid",
+        "county": "Madrid",
+        "municipalityId": "079",
+        "countyId": "28"
+      },
+      "economicActivities": [
+        {
+          "id": "1.832.1",
+          "name": "Agencias de seguros y corredurías de seguros",
+          "_links": {
+            "self": {
+              "name": "Agencias de seguros y corredurías de seguros",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.832.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-01-22",
+      "certificateEndDate": "2026-07-21",
+      "object": "LA REALIZACIÓN EXCLUSIVA DE ACTIVIDADES DE CORREDURÍA DE SEGUROS DE CONFORMIDAD A LAS LEYES QUE REGULAN LA MATERIA.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/01446",
+      "_links": {
+        "self": {
+          "name": "WILLIS IBERIA, CORREDURÍA DE SEGUROS Y REASEGUROS, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/01446"
+        }
+      }
+    },
+    {
+      "name": "AMINTEL, S.L.",
+      "registrationNumber": "02712",
+      "identificationNumber": "B20697173",
+      "address": "UBEGUN INDUSTRIGUNEA 6B",
+      "location": {
+        "postalCode": "20809",
+        "municipality": "Aia",
+        "county": "Gipuzkoa",
+        "municipalityId": "016",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.504.7",
+          "name": "Instalaciones telefónicas, telegráficas, televisión, etc",
+          "_links": {
+            "self": {
+              "name": "Instalaciones telefónicas, telegráficas, televisión, etc",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.504.7"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-01-22",
+      "certificateEndDate": "2026-07-09",
+      "classification": [
+        {
+          "id": "O",
+          "name": "Obras",
+          "groups": [
+            {
+              "id": "I",
+              "name": "INSTALACIONES ELÉCTRICAS",
+              "subgroups": [
+                {
+                  "id": "07",
+                  "name": "Telecomunicaciones e instalaciones radioeléctricas",
+                  "categories": [
+                    {
+                      "id": "3",
+                      "name": "Desde 360.001 Hasta 840.000",
+                      "_links": {
+                        "self": {
+                          "name": "Desde 360.001 Hasta 840.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/O/categories/3"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "Telecomunicaciones e instalaciones radioeléctricas",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/O/groups/I/subgroups/07"
+                    }
+                  }
+                },
+                {
+                  "id": "08",
+                  "name": "Instalaciones electrónicas",
+                  "categories": [
+                    {
+                      "id": "4",
+                      "name": "Desde 840.001 Hasta 2.400.000",
+                      "_links": {
+                        "self": {
+                          "name": "Desde 840.001 Hasta 2.400.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/O/categories/4"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "Instalaciones electrónicas",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/O/groups/I/subgroups/08"
+                    }
+                  }
+                },
+                {
+                  "id": "09",
+                  "name": "Instalaciones eléctricas sin cualificación específica",
+                  "categories": [
+                    {
+                      "id": "4",
+                      "name": "Desde 840.001 Hasta 2.400.000",
+                      "_links": {
+                        "self": {
+                          "name": "Desde 840.001 Hasta 2.400.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/O/categories/4"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "Instalaciones eléctricas sin cualificación específica",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/O/groups/I/subgroups/09"
+                    }
+                  }
+                }
+              ],
+              "_links": {
+                "self": {
+                  "name": "INSTALACIONES ELÉCTRICAS",
+                  "href": "https://api.euskadi.eus/procurements/companies/types/O/groups/I"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Obras",
+              "href": "https://api.euskadi.eus/procurements/companies/types/O"
+            }
+          }
+        },
+        {
+          "id": "S",
+          "name": "Servicios",
+          "groups": [
+            {
+              "id": "P",
+              "subgroups": [
+                {
+                  "id": "01",
+                  "name": "Mantenimiento y reparación de equipos e instalaciones eléctricas y electrónicas",
+                  "categories": [
+                    {
+                      "id": "3",
+                      "name": "Desde 300.001 Hasta 600.000",
+                      "_links": {
+                        "self": {
+                          "name": "Desde 300.001 Hasta 600.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/S/categories/3"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "Mantenimiento y reparación de equipos e instalaciones eléctricas y electrónicas",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/P/subgroups/01"
+                    }
+                  }
+                }
+              ],
+              "_links": {
+                "self": {
+                  "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/P"
+                }
+              }
+            },
+            {
+              "id": "V",
+              "subgroups": [
+                {
+                  "id": "03",
+                  "name": "Servicios de mtto. y reparación equipos e instalaciones informáticos y telecomun",
+                  "categories": [
+                    {
+                      "id": "5",
+                      "name": "Mas de 1.200.000",
+                      "_links": {
+                        "self": {
+                          "name": "Mas de 1.200.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/S/categories/5"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "Servicios de mtto. y reparación equipos e instalaciones informáticos y telecomun",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/V/subgroups/03"
+                    }
+                  }
+                },
+                {
+                  "id": "04",
+                  "name": "Servicios de telecomunicaciones",
+                  "categories": [
+                    {
+                      "id": "4",
+                      "name": "Desde 600.001 Hasta 1.1200.000",
+                      "_links": {
+                        "self": {
+                          "name": "Desde 600.001 Hasta 1.1200.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/S/categories/4"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "Servicios de telecomunicaciones",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/V/subgroups/04"
+                    }
+                  }
+                }
+              ],
+              "_links": {
+                "self": {
+                  "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/V"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Servicios",
+              "href": "https://api.euskadi.eus/procurements/companies/types/S"
+            }
+          }
+        }
+      ],
+      "object": "a) PROMOVER Y DESARROLLAR, PERMUTAR, VENDER, ALQUILAR O CEDER EN CUALQUIER OTRA FORMA DE NEGOCIO TELEFONÍA Y TELECOMUNICACIONES, ASÍ COMO EL DISEÑO, REDACCIÓN, REALIZACIÓN Y EJECUCIÓN DE PROYECTOS, CONSTRUCCIÓN Y MANTENIMIENTO DE REDES DE TELECOMUNICACIONES Y DE TELEDISTRIBUCIÓN, ABARCANDO CUALQUIER SISTEMA DE TRANSMISIÓN Y TODO TIPO DE PORTADORES ACTUALES Y FUTUROS.\n\nb) LA REALIZACIÓN DE AQUELLAS ACTIVIDADES RELACIONADAS DIRECTA O INDIRECTAMENTE CON LO ANTERIORMENTE EXPUESTO, TALES COMO LA EJECUCIÓN DE OBRA CIVIL, INCLUYENDO LA SUPERVISIÓN, DIRECCIÓN Y ASISTENCIA EN OBRA, LA GESTIÓN DE COMPRAS Y LA CONTRATACIÓN, EL DESARROLLO Y MANTENIMIENTO DE APLICACIONES INFORMÁTICAS, LA FABRICACIÓN DE PORTADORES, COMPONENTES, EQUIPOS Y SISTEMAS DE TELECOMUNICACIONES, TELEDISTRIBUCIÓN Y TELEFONÍA.\n\nC) LA IMPORTACIÓN Y EXPORTACIÓN DE TODA CLASE DE ARTÍCULOS Y MATERIALES RELACIONADOS  CON LAS ACTIVIDADES ANTES INDICADAS, ASÍ COMO LA EXPLOTACIÓN DE LICENCIAS, PATENTES, PERMISOS, MARCAS Y MODELOS, INCLUSO LA IMPORTACIÓN Y EXPORTACIÓN DE LOS MISMOS, EN RELACIÓN CON LAS ACTIVIDADES PRINCIPALES.      \n\nD) LA PROMOCIÓN, CONSTRUCCIÓN Y EJECUCIÓN DE OBRAS PRIVADAS Y PÚBLICAS, TALES COMO OBRAS NUEVAS DE EDIFICACIÓN URBANA, INCLUSO DE PROTECCIÓN OFICIAL, DE PABELLONES INDUSTRIALES, TRABAJOS DE URBANIZACIÓN, DE CONSERVACION, SANEAMIENTO, DE CONSTRUCCIÓN Y REPARACION DE TODO TIPO DE VÍAS; OBRAS HIDRÁULICAS, ABASTECIMIENTOS DE AGUAS, DRAGADOS, EXCAVACIONES, OBRAS PORTUARIAS, COMPRAVENTA Y ARRIENDO DE TODO TIPO DE BIENES INMUEBLES, MUEBLES Y TERRENOS. CUALQUIER ACTIVIDAD RELACIONADA CON LA LIMPIEZA Y ASEO URBANO EN GENERAL. CONSTRUCCIÓN DE TODO TIPO DE OBRAS. CONSERVACIÓN  Y MANTENIMIENTO DE INMUEBLES, DE EDIFICIOS, DE PARQUES, Y JARDINES; MANTENIMIENTO DE REDES DE AGUA, ALCANTARILLADO Y ESTACIONES DEPURADORAS, MANTENIMIENTO DE CARRETERAS Y VIALES, INCLUYENDO LIMPIEZA DE VÍAS PÚBLICAS Y PLAYAS, SERVICIOS DE LIMPIEZA DE EDIFICIOS, FACHADAS E INTERIORES. SERVICIOS DE LIMPIEZA E HIGIENIZACIÓN, DESRATIZACIÓN Y DESINFECCIÓN.\n ",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/02712",
+      "_links": {
+        "self": {
+          "name": "AMINTEL, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/02712"
+        }
+      }
+    },
+    {
+      "name": "SARACHAGA SISTEMAS INTEGRADOS SL",
+      "registrationNumber": "08458",
+      "identificationNumber": "B95072146",
+      "address": "Leceaga nº20",
+      "location": {
+        "postalCode": "48002",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.504.12",
+          "name": "Instalaciones eléctricas en toda clase de edificios",
+          "_links": {
+            "self": {
+              "name": "Instalaciones eléctricas en toda clase de edificios",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.504.12"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-01-22",
+      "certificateEndDate": "2026-06-29",
+      "object": "INSTALACIONES ELÉCTRICAS, INFORMÁTICAS Y TELEFONÍA. INSTALACIONES DE REDES PARA COMUNICACIONES Y CABLEADOS ESTRUCTURADOS. INSTALACIÓN DE FIBRA ÓPTICA.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08458",
+      "_links": {
+        "self": {
+          "name": "SARACHAGA SISTEMAS INTEGRADOS SL",
+          "href": "https://api.euskadi.eus/procurements/companies/08458"
+        }
+      }
+    },
+    {
+      "name": "M.B.A. INCORPORADO, S.L.",
+      "registrationNumber": "04331",
+      "identificationNumber": "B33680547",
+      "address": "Avda. Jardín botánico 1345 - Silos Intra",
+      "location": {
+        "postalCode": "33203",
+        "municipality": "Gijón",
+        "county": "Asturias",
+        "municipalityId": "024",
+        "countyId": "33"
+      },
+      "economicActivities": [
+        {
+          "id": "1.392.2",
+          "name": "Fabricación de aparatos de prótesis y ortopedia",
+          "_links": {
+            "self": {
+              "name": "Fabricación de aparatos de prótesis y ortopedia",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.392.2"
+            }
+          }
+        },
+        {
+          "id": "1.619.2",
+          "name": "Venta al por mayor de aparatos e instrumentos médicos, ortopédicos, ópticos",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de aparatos e instrumentos médicos, ortopédicos, ópticos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.619.2"
+            }
+          }
+        },
+        {
+          "id": "1.659.1",
+          "name": "Venta al por menor de sellos, monedas y obras de arte",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de sellos, monedas y obras de arte",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.659.1"
+            }
+          }
+        },
+        {
+          "id": "1.659.3",
+          "name": "Venta al por menor de aparatos médicos, ortopédicos, ópticos y fotográficos",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de aparatos médicos, ortopédicos, ópticos y fotográficos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.659.3"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-01-22",
+      "certificateEndDate": "2026-07-22",
+      "object": "EL ASESORAMIENTO, INTERMEDIACIÓN, FABRICACIÓN Y COMERCIO AL POR MENOR Y AL POR MAYOR DE APARATOS E INSTRUMENTOS MÉDICO-QUIRÚRGICOS DE TODAS CLASES",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/04331",
+      "_links": {
+        "self": {
+          "name": "M.B.A. INCORPORADO, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/04331"
+        }
+      }
+    },
+    {
+      "name": "HORI-HORI, S.A.",
+      "registrationNumber": "01777",
+      "identificationNumber": "A48464663",
+      "address": "Arbidea 1, behea",
+      "location": {
+        "postalCode": "48004",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.849.3",
+          "name": "Servicios de traducción y similares",
+          "_links": {
+            "self": {
+              "name": "Servicios de traducción y similares",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.849.3"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-01-22",
+      "certificateEndDate": "2026-07-22",
+      "object": "LA IMPARTICIÓN DE CLASES DE EUSKERA Y A LA REALIZACIÓN DE ACTIVIDADES RELACIONADAS CON EL DESARROLLO, PROMOCIÓN Y ENSEÑANZA DE LA LENGUA VASCA. TRADUCCION TEXTOS  A LA LENGUA VASCA Y VICEVERSA.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/01777",
+      "_links": {
+        "self": {
+          "name": "HORI-HORI, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/01777"
+        }
+      }
+    },
+    {
+      "name": "TRIÁNGULO PUBLICIDAD Y MARKETING, S.A.",
+      "registrationNumber": "02775",
+      "identificationNumber": "A48070049",
+      "address": "PLAZA ARRIKIBAR, 2 - 1º",
+      "location": {
+        "postalCode": "48008",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.844",
+          "name": "Servicios de publicidad, relaciones públicas y similares",
+          "_links": {
+            "self": {
+              "name": "Servicios de publicidad, relaciones públicas y similares",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.844"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-01-22",
+      "certificateEndDate": "2026-07-05",
+      "classification": [
+        {
+          "id": "S",
+          "name": "Servicios",
+          "groups": [
+            {
+              "id": "T",
+              "subgroups": [
+                {
+                  "id": "01",
+                  "name": "Servicios de publicidad",
+                  "categories": [
+                    {
+                      "id": "2",
+                      "name": "Desde 150.001 Hasta 300.000",
+                      "_links": {
+                        "self": {
+                          "name": "Desde 150.001 Hasta 300.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/S/categories/2"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "Servicios de publicidad",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/T/subgroups/01"
+                    }
+                  }
+                }
+              ],
+              "_links": {
+                "self": {
+                  "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/T"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Servicios",
+              "href": "https://api.euskadi.eus/procurements/companies/types/S"
+            }
+          }
+        }
+      ],
+      "object": "LA SOCIEDAD TIENE POR OBJETO CREAR, PROYECTAR, EJECUTAR O DISTRIBUIR CAMPAÑAS DE PUBLICIDAD, A TRAVÉS DE CUALQUIER MEDIO DE DIFUSIÓN, POR CUENTA DE TERCEROS. LAS ACTIVIDADES QUE INTEGRAN EL OBJETO SOCIAL PODRÁN DESARROLLARSE TOTAL O PARCIALMENTE DE MODO INDIRECTO, MEDIANTE LA TITULARIDAD DE ACCIONES O PARTICIPACIONES EN SOCIEDADES CON OBJETO IDÉNTICO O ANÁLOGO",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/02775",
+      "_links": {
+        "self": {
+          "name": "TRIÁNGULO PUBLICIDAD Y MARKETING, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/02775"
+        }
+      }
+    },
+    {
+      "name": "FORESTALES MUGARRI, S.L.",
+      "registrationNumber": "03104",
+      "identificationNumber": "B95028577",
+      "address": "CASERÍO TORRE. Bº SANTA APOLONIA, 16",
+      "location": {
+        "postalCode": "48215",
+        "municipality": "Iurreta",
+        "county": "Bizkaia",
+        "municipalityId": "910",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.911",
+          "name": "Servicios agrícolas y ganaderos",
+          "_links": {
+            "self": {
+              "name": "Servicios agrícolas y ganaderos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.911"
+            }
+          }
+        },
+        {
+          "id": "1.912",
+          "name": "Servicios forestales",
+          "_links": {
+            "self": {
+              "name": "Servicios forestales",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.912"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-01-22",
+      "certificateEndDate": "2026-07-06",
+      "object": "REALIZACIÓN DE TODO TIPO DE TRABAJOS FORESTALES, AGRÍCOLAS, GANADEROS Y DE JARDINERÍA, ASÍ COMO SU EXPLOTACIÓN Y LA COMPRAVENTA DE ARTÍCULOS Y PRODUCTOS RELACIONADOS CON LO ANTERIOR",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03104",
+      "_links": {
+        "self": {
+          "name": "FORESTALES MUGARRI, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/03104"
+        }
+      }
+    },
+    {
+      "name": "SUMINISTROS DE PAPELERIA ERIMA SL",
+      "registrationNumber": "06795",
+      "identificationNumber": "B20970653",
+      "address": "POL. IND. SOROXARTA PAB 1A",
+      "location": {
+        "postalCode": "20303",
+        "municipality": "Irun",
+        "county": "Gipuzkoa",
+        "municipalityId": "045",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.615.2",
+          "name": "Venta al por mayor de muebles",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de muebles",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.615.2"
+            }
+          }
+        },
+        {
+          "id": "1.619.5",
+          "name": "Venta al por mayor de artículos de papelería y escritorios",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de artículos de papelería y escritorios",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.619.5"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-01-22",
+      "certificateEndDate": "2026-07-08",
+      "object": "EL SUMINISTRO, LA COMPRAVENTA, COMERCIALIZACIÓN, DISTRIBUCIÓN, IMPORTACIÓN Y EXPORTACIÓN DE MATERIAL DE PAPELERÍA, ARTES GRÁFICAS, MATERIAL ESCOLAR, DE OFICINA, OBJETOS DE ESCRITORIO, MOBILIARIO DE OFICINA, MATERIAL Y SUMINISTROS PARA LA INFORMÁTICA, ASÍ COMO CUANTAS ACTIVIDADES COMPLEMENTARIAS Y AUXILIARES DE LAS ANTERIORES SE PRECISEN",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06795",
+      "_links": {
+        "self": {
+          "name": "SUMINISTROS DE PAPELERIA ERIMA SL",
+          "href": "https://api.euskadi.eus/procurements/companies/06795"
+        }
+      }
+    },
+    {
+      "name": "MARIA CARMEN PLANO GRAÑA",
+      "registrationNumber": "09244",
+      "identificationNumber": "16037693T",
+      "address": "Artecalle 4-1º izqda.",
+      "location": {
+        "postalCode": "48930",
+        "municipality": "Getxo",
+        "county": "Bizkaia",
+        "municipalityId": "044",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "2.826",
+          "name": "Personal docente de enseñanzas diversas",
+          "_links": {
+            "self": {
+              "name": "Personal docente de enseñanzas diversas",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/2.826"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-01-22",
+      "certificateEndDate": "2026-07-19",
+      "object": "PERSONAL DOCENTE DE ENSEÑANZAS DIVERSAS.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/09244",
+      "_links": {
+        "self": {
+          "name": "MARIA CARMEN PLANO GRAÑA",
+          "href": "https://api.euskadi.eus/procurements/companies/09244"
+        }
+      }
+    }
+  ]
+}

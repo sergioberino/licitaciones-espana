@@ -1,0 +1,457 @@
+{
+  "totalItems": 9042,
+  "totalPages": 905,
+  "currentPage": 495,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "name": "IMPRENTA ARENAS, S.L.",
+      "registrationNumber": "03969",
+      "identificationNumber": "B48488654",
+      "address": "EZEQUIEL AGUIRRE, 15",
+      "location": {
+        "postalCode": "48930",
+        "municipality": "Getxo",
+        "county": "Bizkaia",
+        "municipalityId": "044",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.474",
+          "name": "Artes gráficas (impresión gráfica)",
+          "_links": {
+            "self": {
+              "name": "Artes gráficas (impresión gráfica)",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.474"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2022-08-03",
+      "certificateEndDate": "2023-01-19",
+      "object": "LA IMPRESIÓN DE IMÁGENES Y TEXTOS Y TODO LO QUE COMPRENDE LAS ARTES GRÁFICAS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03969",
+      "_links": {
+        "self": {
+          "name": "IMPRENTA ARENAS, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/03969"
+        }
+      }
+    },
+    {
+      "name": "BAICAST, S.C.",
+      "registrationNumber": "07488",
+      "identificationNumber": "J01520824",
+      "address": "Av. Santiago 39 1Izd",
+      "location": {
+        "postalCode": "01003",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.355.2",
+          "name": "Edición de soportes grabados de sonido, vídeo y de informática",
+          "_links": {
+            "self": {
+              "name": "Edición de soportes grabados de sonido, vídeo y de informática",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.355.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2022-08-03",
+      "certificateEndDate": "2023-01-27",
+      "object": "LA EXPLOTACIÓN DEL NEGOCIO DEDICADO A AUDIOVISUALES Y PUBLICIDAD EN INTERNET, Y TODO LO QUE DE CUALQUIER FORMA ESTÉ RELACIONADO CON ESTE FIN PRINCIPAL",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07488",
+      "_links": {
+        "self": {
+          "name": "BAICAST, S.C.",
+          "href": "https://api.euskadi.eus/procurements/companies/07488"
+        }
+      }
+    },
+    {
+      "name": "PROFARPLAN LABORATORIOS, S.L.",
+      "registrationNumber": "08072",
+      "identificationNumber": "B62486204",
+      "address": "C/ DIPUTACIO 321 5º",
+      "location": {
+        "postalCode": "08009",
+        "municipality": "Barcelona",
+        "county": "Barcelona",
+        "municipalityId": "019",
+        "countyId": "08"
+      },
+      "economicActivities": [
+        {
+          "id": "1.652.3",
+          "name": "Venta al por menor de perfumería y cosmética y artículos de aseo personal",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de perfumería y cosmética y artículos de aseo personal",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.652.3"
+            }
+          }
+        },
+        {
+          "id": "1.659.3",
+          "name": "Venta al por menor de aparatos médicos, ortopédicos, ópticos y fotográficos",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de aparatos médicos, ortopédicos, ópticos y fotográficos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.659.3"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2022-08-03",
+      "certificateEndDate": "2023-01-04",
+      "object": "LA FABRICACIÓN, IMPORTACIÓN Y COMERCIALIZACIÓN AL POR MAYOR Y DETALL DE PRODUCTOS DE COSMÉTICA, PERFUMERÍA, MATERIAL SANITARIO Y PRODUCTOS DIETÉTICOS, ASÍ COMO LA IMPORTACIÓN Y COMERCIALIZACIÓN DE ARTÍCULOS DE REGALO Y CONFECCIÓN TEXTIL.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08072",
+      "_links": {
+        "self": {
+          "name": "PROFARPLAN LABORATORIOS, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/08072"
+        }
+      }
+    },
+    {
+      "name": "ZUZEN, S.L.",
+      "registrationNumber": "08090",
+      "identificationNumber": "B75130146",
+      "address": "Atzieta 30, -1A",
+      "location": {
+        "postalCode": "20120",
+        "municipality": "Hernani",
+        "county": "Gipuzkoa",
+        "municipalityId": "040",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.961.1",
+          "name": "Producción de películas cinematográficas (incluso vídeos)",
+          "_links": {
+            "self": {
+              "name": "Producción de películas cinematográficas (incluso vídeos)",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.961.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2022-08-03",
+      "certificateEndDate": "2023-01-03",
+      "object": "PRODUCCIONES CINEMATOGRÁFICAS Y FORMACIÓN AUDIOVISUAL.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08090",
+      "_links": {
+        "self": {
+          "name": "ZUZEN, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/08090"
+        }
+      }
+    },
+    {
+      "name": "Cei SERVICIO DE PREVENCION, S.L.U.",
+      "registrationNumber": "08538",
+      "identificationNumber": "B20846622",
+      "address": "Avenida Rekalde 1, Edificio Irubide Oficina 41",
+      "location": {
+        "postalCode": "20160",
+        "municipality": "Lasarte-Oria",
+        "county": "Gipuzkoa",
+        "municipalityId": "902",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.843.9",
+          "name": "Otros servicios técnicos n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros servicios técnicos n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.9"
+            }
+          }
+        },
+        {
+          "id": "1.861.2",
+          "name": "Alquiler de locales industriales y otros alquileres n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Alquiler de locales industriales y otros alquileres n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.861.2"
+            }
+          }
+        },
+        {
+          "id": "1.932.1",
+          "name": "Enseñanza de formación y perfeccionamiento profesional no superior",
+          "_links": {
+            "self": {
+              "name": "Enseñanza de formación y perfeccionamiento profesional no superior",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.932.1"
+            }
+          }
+        },
+        {
+          "id": "1.934",
+          "name": "Enseñanza fuera de establecimiento permanente",
+          "_links": {
+            "self": {
+              "name": "Enseñanza fuera de establecimiento permanente",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.934"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2022-08-03",
+      "certificateEndDate": "2023-01-01",
+      "object": "LA REALIZACIÓN DE ACTIVIDADES DE PREVENCIÓN DE RIESGOS LABORALES, EL ASESORAMIENTO Y APOYO QUE PRECISE EN FUNCIÓN DE LOS TIPOS DE RIESGOS O AMBAS ACTUACIONES CONJUNTAMENTE: A) EL DISEÑO, IMPLANTACIÓN Y APLICACIÓN DE PLANES DE PREVENCIÓN DE RIESGOS LABORALES QUE PERMITA LA INTEGRACIÓN DE4 LA PREVENCIÓN EN LA EMPRESA. B) LA EVALUACIÓN DE LOS FACTORES DE RIESGO QUE PUEDAN AFECTAR A LA SEGURIDAD Y LA SALUD DE LOS TRABJADORES. C) LA PLANIFICACIÓN DE LA ACTIVIDAD PREVENTIVA Y LA DETERMINACIÓN DE LAS PRIORIDADES  EN LA ADOPCI´`ON DE LAS MEDIDAS PREFENTIVAS Y LA VIGILANCIA DE SU EFICACIA. D) LA INFORMACIÓ Y FORMACIÓN DE LOS TRABAJADORES. E) LA PRESTACIÓN DE LOS PRIMEROS AUXILIOS Y PLANES DE EMERGENCIA. F) LA VIGILANCIA DE LA SALUD DE LOS TRABAJADORES EN RELACIÓN CON LOS RIESGOS DERIVADOS DEL TRABAJO.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08538",
+      "_links": {
+        "self": {
+          "name": "Cei SERVICIO DE PREVENCION, S.L.U.",
+          "href": "https://api.euskadi.eus/procurements/companies/08538"
+        }
+      }
+    },
+    {
+      "name": "OBRASCON HUARTE LAIN, S.A.",
+      "registrationNumber": "02361",
+      "identificationNumber": "A48010573",
+      "address": "PASEO DE LA CASTELLANA, 259 BOQUE D",
+      "location": {
+        "postalCode": "28046",
+        "municipality": "Madrid",
+        "county": "Madrid",
+        "municipalityId": "079",
+        "countyId": "28"
+      },
+      "economicActivities": [
+        {
+          "id": "1.507",
+          "name": "Construcción, reparación y conservación de toda clase obras",
+          "_links": {
+            "self": {
+              "name": "Construcción, reparación y conservación de toda clase obras",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.507"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2022-08-02",
+      "certificateEndDate": "2023-01-11",
+      "object": "A) CON CARÁCTER GENERAL, LLEVAR A CABO TANTO EN EL ÁMBITO PÚBLICO COMO EN EL PRIVADO, YA SEA NACIONAL O INTERNACIONAL: A) EL ESTUDIO Y CONSTRUCCIÓN DE TODA CLASE DE OBRAS, SEAN PÚBLÍCAS O PRIVADAS. B) LA PROMOCIÓN, DESARROLLO CONSTRUCCIÓN Y EXPLOTACIÓN DE TODA CLASE DE INFRAESTRUCTURAS, SERVICIOS Y CONCESIONES DE TODO TIPO. C) LA PROMOCIÓN, DESARROLLO CONSTRUCCIÓN Y EXPLOTACIÓN DE TODA CLASE DE PROYECTOS INDUSTRIALES Y DE INGENIERÍA. B) EN PARTICULAR: A) REALIZAR LA ADQUISICIÓN POR COMPRA, DENUNCIA O CONCESIÓN Y SU EXPLOTACIÓN Y VENTA DE TERRENOS, MINAS, CANTERAS, APROVECHAMIENTO DE AGUA, TALLERES, INDUSTRIAS O ACTIVIDADES DE SERVICIOS, DE CUALQUIER TIPO O CLASE ANEJAS AL RAMO DE LA CONSTRUCCIÓN. B) LLEVAR A CABO LA CONSTRUCCIÓN, EXPLOTACIÓN, CONSERVACIÓN, MATENIMIENTO, LIMPIEZA E HIEGIENIZACIÓN Y VENTA DE TODO TIPO DE VIVIENDAS, APARTAMENTOS, URBANIZACIONES, EDIFICIOS, OFICINAS, LOCALES COMERCIALES, NAVES INDUSTRIALES Y POLÍGONOS, TANTO RESIDENCIALES COMO INDUSTRIALES, Y DE TODO TIPO DE BIENES INMUEBLES, ASÍ COMO DE NÚCLEOS URBANOS, MOBILIARIO URBANO, MONUMENTOS Y EDIFICIOS SINGULARES, JARDINES, MONTES, REDES DE AGUA Y ALCANTARILLADO, Y ESTACIONES DEPURADORAS, PROYECTANDO Y EJECUTANDO TANTO LAS OBRAS NECESARIAS DE INFRAESTRUCTURA COMO LAS DE EDFICIACIÓN Y AL EFECTO REALIZANDO TODA CLASE DE ACTIVIDADES PRINCIPALES, SECUNDARIAS O ACCESOARIAS QUE GUARDEN RELACIÓN CON EL OBJETO DE CONSTRUCCIÓN, EXPLOTACIÓN Y VENTA INMOBILIARIA QUE SE REFLEJA EN EL PRESENTE APARTADO, INCLUYENDO EN TALES ACTIVIDADES LA CONSTRUCCION, EJECUCIÓN, MANTENIMIENTO Y REPARACIÓN DE EQUIPOS E INSTALACIONES RELACIONADAS CON AGUA, GAS, AIRE ACONDICIONADO, CALEFACCIÓN, INFORMÁTICA, OFIMÁTICA, TELECOMUNICACIONES, ELECTRICIDAD Y ELECTRÓNICA, ELECTROMEDICINA Y MAQUINARIA EN GENERAL, ASÍ COMO DE SEGURIDAD Y CONTRA INCENCIOS. C) REALIZAR LAS ACTIVIDADES RELACINADAS CON EL TRANSPORTE DE MATERIALES DE CONSTRUCCIÓN, DE RESIDUOS EN GENERAL E INDUSTRIALES Y URBANOS EN PARTICULAR, Y DE PERSONAS. D) PRESTAR LOS SERVICIOS CUALIFICADOS DE ESTERILIZACIÓN DE MATERIAL SANITARIO Y DE RESTAURACIÓN DE OBRAS DE ARTE. E) PRESTAR SERVICIOS DE TRATAMIENTOS DE AGUAS Y TRATAMIENTOS E INCINERACIÓN DE DESECHOS URBANOS, LODOS Y RESIDUOS EN GENERAL. F) LLEVAR A CABO LA PRESTACIÓN DE SERVICIOS DE TECNOLOGÍAS DE LA INFORMACIÓN Y LAS COMUNICACIONES, TALES COMO SERVICIOS DE MANTENIMIENTO Y REPARACIÓN DE EQUIPOS E INSTALACIONES INFORMÁTICAS Y DE TELECOMUNICACIÓN\nC) PARA CUMPLIR EL OBJETO SOCIAL, LA SOCIEDAD PODRÁ: A) LLEVAR A CABO LAS ACTIVIDADES MENCIONADAS, TOTAL O PARCIALMENTE DE MODO INDIRECTO MEDIANTE LA TITULARIDAD DE ACCIONES O PARTICIPACIONES EN SOCIEDADES CON OBJETO IDÉNTICO O ANÁLOGO. B) ACUDIR, SIN LIMITACIÓN ALGUNA, A CONCURSOS, SUBASTAS O CUALESQUIERA OTROS PROCEDIMIENTOS LEGALES QUE ASÍ SE ESTABLEZCAN, REALIZANDO AL EFECTO TODA CLASE DE OFERTAS Y LLEVANDO A CABO TODOS LOS TRÁMITES NECESARIOS SIN EXCEPCIÓN ALGUNA.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/02361",
+      "_links": {
+        "self": {
+          "name": "OBRASCON HUARTE LAIN, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/02361"
+        }
+      }
+    },
+    {
+      "name": "ENEKO ALICANTE MONTOYA",
+      "registrationNumber": "08533",
+      "identificationNumber": "78950589F",
+      "address": "ORTUTXUETA, Nº 3-2ºIZDA",
+      "location": {
+        "postalCode": "48006",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.999",
+          "name": "Otros servicios n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros servicios n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.999"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2022-07-28",
+      "certificateEndDate": "2023-01-04",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08533",
+      "_links": {
+        "self": {
+          "name": "ENEKO ALICANTE MONTOYA",
+          "href": "https://api.euskadi.eus/procurements/companies/08533"
+        }
+      }
+    },
+    {
+      "name": "EKO GASTEIZ, S.L.",
+      "registrationNumber": "05408",
+      "identificationNumber": "B01509538",
+      "address": "C/ Errekatxiki, 25-2º C",
+      "location": {
+        "postalCode": "01003",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.622",
+          "name": "Venta al por mayor de otros productos de recuperación",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de otros productos de recuperación",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.622"
+            }
+          }
+        },
+        {
+          "id": "1.699",
+          "name": "Otras reparaciones n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otras reparaciones n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.699"
+            }
+          }
+        },
+        {
+          "id": "1.844",
+          "name": "Servicios de publicidad, relaciones públicas y similares",
+          "_links": {
+            "self": {
+              "name": "Servicios de publicidad, relaciones públicas y similares",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.844"
+            }
+          }
+        },
+        {
+          "id": "1.921.9",
+          "name": "Otros servicios de saneamiento y similares n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros servicios de saneamiento y similares n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.921.9"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2022-07-26",
+      "certificateEndDate": "2022-12-21",
+      "object": "LA RECOGIDA SELECTIVA Y RECUPERACIÓN DE RESIDUOS. RECOGIDA DE ACEITES VEGETALES DE COCINA Y DE OTRO TIPO PARA SU RECICLADO. SUMINISTRO, VENTA, CESIÓN Y ALQUILER DE CONTENEDORES PARA RECOGIDA SELECTIVA DE RESIDUOS, ASÍ COMO LA RECOGIDA DE LOS MISMOS. COMPRA Y VENTA, TANTO AL POR MAYOR COMO AL POR MENTO, DE PRODUCTOS DE LIMPIEZA, ACEITES NUEVOS Y RECICLADOS, DESENGRASANTES, LEJÍAS, JABONES Y PRODUCTOS SIMILARES. COMPRAVENTA, EXPLOTACIÓN, ENAJENACIÓN Y ARRENDAMIENTO DE TODO TIPOS DE INMUEBLES. ORGANIZACIÓN DE TODO TIPO DE CAMPAÑAS PUBLICITARIAS. ASESORAMIENTO DE MARKETING Y ESTUDIOS DE MERCADO. ORGANIZACIÓN DE EVENTOS CULTURALES, DE OCIO Y DEPORTIVOS. LA NUEVA CREACIÓN Y GESTIÓN DE CENTROS ESPECIALES DE EMPLEO E INSERCIÓN LABORAL DE MINUSVÁLIDOS. LIMPIEZA, TANTO EXTERIOR COMO INTERIOR, DE BIENES MUEBLES E INMUEBLES. CONSERJERÍA, PORTERO Y CONTROL DE ACCESOS, ATENCIÓN AL PÚBLICO, RECEPCIONISTA, TELEFONISTA, ORDENANZA Y MOZOS DE ALMACÉN, GESTIÓN ADMINISTRATIVA. REVISORES DE ZONA ZUL, SERVICIOS AUXILIARES EN INSTALACIONES MUNICIPALES, AUTONÓMICAS Y ESTATALES, Y OTROS SERVICIOS AUXILIARES VINCULADOS. MANTENIMIENTO Y CONSERVACIÓN DE FINCAS, EMPRESAS, CONJUNTOS RESIDENCIALES, URBANIZACIONES, JARDINES, PARQUES Y DOMICILIOS PARTICULARES. SERVICIOS DE GESTIÓN DE COBRO Y TAQUILLAJE, EN TODO TIPO DE RECINTO, Y EN PARTICULAR, EN PARKING , GASOLINERAS, CINES, TEATROS, MUSEOS. PRESTACIÓN DE SERVICIOS DE MANTENIMIENTO Y COSERVACIÓN DE JARDINERÍA. DESRATIZACIÓN, DESINSECTACIÓN Y DESINFECCIÓN. INTERMEDIACIÓN COMERCIAL LIMPIEZA, MANTENIMIENTO Y REPARACIÓN DE CONTENEDORES DE RESIDUOS. REALIZACIÓN DE CAMPAÑAS DE PUBLICIDAD Y SENSIBILIZACIÓN.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/05408",
+      "_links": {
+        "self": {
+          "name": "EKO GASTEIZ, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/05408"
+        }
+      }
+    },
+    {
+      "name": "EXCAVACIONES Y REPOBLACIONES FORESTALES GARCÍA, S.L.",
+      "registrationNumber": "08530",
+      "identificationNumber": "B95313300",
+      "address": "AVDA. LEHENDAKARI AGIRRE, 7 BAJO",
+      "location": {
+        "postalCode": "48140",
+        "municipality": "Igorre",
+        "county": "Bizkaia",
+        "municipalityId": "094",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.502.3",
+          "name": "Consolidación y preparación de terrenos para la realización de obras civiles",
+          "_links": {
+            "self": {
+              "name": "Consolidación y preparación de terrenos para la realización de obras civiles",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.502.3"
+            }
+          }
+        },
+        {
+          "id": "1.617.3",
+          "name": "Venta al por mayor de madera y corcho",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de madera y corcho",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.617.3"
+            }
+          }
+        },
+        {
+          "id": "1.912",
+          "name": "Servicios forestales",
+          "_links": {
+            "self": {
+              "name": "Servicios forestales",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.912"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2022-07-26",
+      "certificateEndDate": "2023-01-08",
+      "object": "A).-LA PLANTACIÓN Y MANTENIMIENTO DE PARQUES Y JARDINES; LA PLANTACIÓN Y MANTENIMIENTO FORESTALES EN GENERAL; LA POBLACIÓN FORESTAL; LA LUCHA CONTRA PLAGAS; LA LUCHA Y PREVENCIÓN CONTRA INCENDIOS FORESTALES. B).- LA REALIZACIÓN DE TODA CLASE DE ACTIVIDADES RELACIONADAS CON LA AGRICULTURA, SILVICULTURA, VITICULTURA Y GANADERÍA, COMPRENDIDAS EXPRESAMENTE LAS ACTIVIDADES DE PRODUCCIÓN Y OBTENCIÓN, EXPLOTACIÓN, ALMACENAMIENTO, TRANSPORTE Y COMERCIALIZACIÓN DE GANADO VIVO Y SACRIFICADO, DE MATERIAS PRIMAS AGRARIAS Y DE OTROS RECURSOS NATURALES. C).- LA TRANSFORMACIÓN DE PRODUCTOS AGRÍCOLAS, FORESTALES Y GANADEROS MEDIANTE EL EMPLEO DE PROCEDIMIENTOS NATURALES O INDUSTRIALES; Y LA EXPLOTACIÓN DE CARNICERÍAS, CHARCUTERÍAS, CHACINERÍAS Y OTROS PUESTOS DE MERCADO, DE GRANJAS Y OTROS CENTROS DE EXPERIMENTACIÓN, PRODUCCIÓN Y COMERCIALIZACIÓN ALIMENTARIAS. D).- LA EXTRACCIÓN, FABRICACIÓN Y COMPRAVENTA DE ABONOS ORGÁNICOS, MINERALES Y COMPUESTOS Y DE TODA CLASE DE PRODUCTOS DERIVADOS, OBTENIDOS O RELACIONADOS COMERCIAL O INDUSTRIALMENTE CON LAS MATERIAS ANTERIORES. E).- Y LOS SERVICIOS DE AGENCIA, COMISIÓN, DISTRIBUCIÓN, REPRESENTACIÓN, CONSIGNACIÓN Y MEDIACIÓN DE LOS REFERIDOS BIENES Y PRODUCTOS. ",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08530",
+      "_links": {
+        "self": {
+          "name": "EXCAVACIONES Y REPOBLACIONES FORESTALES GARCÍA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/08530"
+        }
+      }
+    },
+    {
+      "name": "ACEITES Y ADITIVOS DEL NORTE, S.L.",
+      "registrationNumber": "07735",
+      "identificationNumber": "B95813887",
+      "address": "C/ BEGOÑAKO ANDRAMARI, 18",
+      "location": {
+        "postalCode": "48970",
+        "municipality": "Basauri",
+        "county": "Bizkaia",
+        "municipalityId": "015",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.616.5",
+          "name": "Venta al por mayor de petróleo y lubricantes",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de petróleo y lubricantes",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.616.5"
+            }
+          }
+        },
+        {
+          "id": "1.722",
+          "name": "Transporte de mercancías por carretera",
+          "_links": {
+            "self": {
+              "name": "Transporte de mercancías por carretera",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.722"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2022-07-21",
+      "certificateEndDate": "2023-01-18",
+      "object": "INTERMEDIARIOS DEL COMERCIO DE COMBUSTIBLES, MINERALES, METALES Y PRODUCTOS QUÍMICOS INDUSTRIALES. TRANSPORTE DE MERCANCÍAS POR CARRETERA",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07735",
+      "_links": {
+        "self": {
+          "name": "ACEITES Y ADITIVOS DEL NORTE, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/07735"
+        }
+      }
+    }
+  ]
+}

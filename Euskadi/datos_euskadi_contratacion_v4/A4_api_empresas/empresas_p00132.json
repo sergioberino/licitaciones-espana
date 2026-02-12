@@ -1,0 +1,580 @@
+{
+  "totalItems": 9042,
+  "totalPages": 905,
+  "currentPage": 132,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "name": "UKABI, S.L.",
+      "registrationNumber": "07256",
+      "identificationNumber": "B20379269",
+      "address": "Salbe 39, bajo",
+      "location": {
+        "postalCode": "20730",
+        "municipality": "Azpeitia",
+        "county": "Gipuzkoa",
+        "municipalityId": "018",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.330",
+          "name": "Construcción de máquinas de oficina y ordenadores",
+          "_links": {
+            "self": {
+              "name": "Construcción de máquinas de oficina y ordenadores",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.330"
+            }
+          }
+        },
+        {
+          "id": "1.659.2",
+          "name": "Venta al por menor de muebles de oficina y máquinas y equipos de oficina",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de muebles de oficina y máquinas y equipos de oficina",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.659.2"
+            }
+          }
+        },
+        {
+          "id": "1.844",
+          "name": "Servicios de publicidad, relaciones públicas y similares",
+          "_links": {
+            "self": {
+              "name": "Servicios de publicidad, relaciones públicas y similares",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.844"
+            }
+          }
+        },
+        {
+          "id": "1.845",
+          "name": "Explotación electrónica por cuenta de terceros",
+          "_links": {
+            "self": {
+              "name": "Explotación electrónica por cuenta de terceros",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.845"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-12-04",
+      "certificateEndDate": "2026-05-17",
+      "object": "LA COMPRA Y VENTA, DISEÑO Y FORMACIÓN EN MATERIA INFORMÁTICA",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07256",
+      "_links": {
+        "self": {
+          "name": "UKABI, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/07256"
+        }
+      }
+    },
+    {
+      "name": "FACTOR SISTEMAS, S.L.",
+      "registrationNumber": "02658",
+      "identificationNumber": "B48474050",
+      "address": "C/NERBIOI, 3 - 4ºIZDA.",
+      "location": {
+        "postalCode": "48001",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.653.2",
+          "name": "Venta al por menor de material y aparatos eléctricos, electrodomésticos y cocina",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de material y aparatos eléctricos, electrodomésticos y cocina",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.653.2"
+            }
+          }
+        },
+        {
+          "id": "1.845",
+          "name": "Explotación electrónica por cuenta de terceros",
+          "_links": {
+            "self": {
+              "name": "Explotación electrónica por cuenta de terceros",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.845"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-12-04",
+      "certificateEndDate": "2026-05-22",
+      "object": "LA IMPORTACIÓN, EXPORTACIÓN, ALMACENAMIENTO, DISTRIBUCIÓN, COMERCIALIZACIÓN Y REPARACIÓN  DE ORDENADORES, COMPUTADORAS, IMPRESORAS Y MÁQUINAS ELEMENTOS Y COMPONENTES DESTINADOS A LA ACTIVIDAD INFORMÁTICA. LA PROMOCIÓN, DESARROLLO, INSTALACIÓN, DESARROLLO Y MANTENIMIENTO DE TODA CLASE DE SISTEMAS INFORMÁTICAS Y PROGRAMAS. LA PRESTACIÓN DE TODA GAMA DE SERVICIOS RELACIONADOS CON EL TRATAMIENTO Y PROCESAMIENTO DE INFORMACIÓN, CON LAS TECNOLOGÍAS DE LA INFORMACIÓN Y DE LAS COMUNICACIONES, TALES COMO LA ASESORÍA, CONSULTORÍA, ANÁLISIS, DISEÑO, PROGRAMACIÓN, PLANIFICACIÓN, IMPLANTACIÓN, GRABACIÓN, SERVICIO Y GESTIÓN DE DATOS, MANTENIMIENTO, ASISTENCIA TÉCNICA, AUDITORÍA O CUALQUIER OTRO. LA SELECCIÓN Y CESIÓN DE PERSONAL INFORMÁTICO, MAQUINARIA Y ELEMENTOS INFORMÁTICOS PARA LA PRESTACIÓN DE LOS SERVICIOS DESCRITOS. LA CONSULTORÍA ESTRATÉGICA Y EL DESARROLLO E IMPLANTACIÓN DE SISTEMAS DE PROMOCIÓN, INFORMACIÓN Y COMERCIALIZACIÓN PARA EMPRESAS. ANÁLISIS, DIAGNÓSTICO Y AUDITORÍA DE LOS SISTEMAS DE INFORMACÓN Y DE LOS SISTEMAS DE SEGURIDAD INFORMÁTICOS DE LAS EMPRESAS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/02658",
+      "_links": {
+        "self": {
+          "name": "FACTOR SISTEMAS, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/02658"
+        }
+      }
+    },
+    {
+      "name": "KREAN, S.COOP.",
+      "registrationNumber": "01700",
+      "identificationNumber": "F20545018",
+      "address": "GARAIA PARKE TEKNOLOGIKOA, GOIRU KALEA 7",
+      "location": {
+        "postalCode": "20500",
+        "municipality": "Arrasate / Mondragón",
+        "county": "Gipuzkoa",
+        "municipalityId": "055",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.842",
+          "name": "Servicios financieros y contables",
+          "_links": {
+            "self": {
+              "name": "Servicios financieros y contables",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.842"
+            }
+          }
+        },
+        {
+          "id": "1.843.1",
+          "name": "Servicios técnicos de ingeniería",
+          "_links": {
+            "self": {
+              "name": "Servicios técnicos de ingeniería",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.1"
+            }
+          }
+        },
+        {
+          "id": "1.861.2",
+          "name": "Alquiler de locales industriales y otros alquileres n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Alquiler de locales industriales y otros alquileres n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.861.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-12-03",
+      "certificateEndDate": "2026-05-27",
+      "object": "a) EL EJERCICIO DE LAS ACTIVIDADES DE INGENIERÍA Y ARQUITECTURA, CONSULTORÍA DE INGENIERÍA EN OBRA CIVIL, PLANEAMIENTO URBANÍSTICO Y EDIFICACIÓN EN INSTALACIONES EN GENERAL DE ASESORAMIENTO PROFESIONAL, EN SU MÁS AMPLIO SENTIDO. b) LA REALIZACIÓN Y PRESTACIÓN A TERCEROS, POR SI O MEDIANTE CONTRATACIÓN AL EFECTO, DE ESTUDIOS Y PROYECTOS, TÉCNICOS, ECONÓMICOS, DE MERCADO, ORGANIZACIÓN Y VIABILIDAD DE ACTIVIDADES EMPRESARIALES ASUMIDAS O A ASUMIR POR AQUELLOS. c) LAS OPERACIONES DE SUMINISTRO DE EQUIPOS E INSTALACIONES INDUSTRIALES EN FORMA COMPLETA (LLAVE EN MANO) O CUALQUIERA DE SUS ELEMENTOS PRINCIPALES O ACCESORIOS COMO SUMINISTRO INDEPENDIENTE, REALIZADOS POR MEDIOS PROPIOS O MEDIANTE CONTRATACIONES AL EFECTO, ASÍ COMO LOS SUMINISTROS Y SERVICIOS NECESARIOS PARA SU PUESTA EN MARCHA Y MANTENIMIENTO, CONSERVACIÓN Y MEJORAS POSTERIORES EN SU FUNCIONAMIENTO. d) LA PROMOCIÓN, CONSTRUCCIÓN, COMPRA, VENTA, ARRENDAMIENTO Y EXPLOTACIÓN EN CUALQUIER OTRA FORMA DE TODA CLASE DE EDIFICACIONES, SOLARES E INMUEBLES EN GENERAL, TANTO POR CUENTA PROPIA COMO AJENA. e) LA REALIZACIÓN POR CUENTA PROPIA O AJENA DE TODA CLASE DE CONSTRUCCIONES, INSTALACIONES, REFORMAS, REHABILITACIONES Y DECORACIONES. LA SUPERVISIÓN Y CONTROL DE OBRAS, ASÍ COMO LA COORDINACIÓN DE GREMIOS, EL ASESORAMIENTO Y LA ASISTENCIA TÉCNICA EN TODO CUANTO SE RELACIONE, DIRECTA O INDIRECTAMENTE, CON EL CAMPO DE LA CONSTRUCCIÓN DE EDIFICIOS Y DE LAS OBRAS PÚBLICAS O CIVILES. f) LA COMPRA, VENTA, IMPORTACIÓN, EXPORTACIÓN Y COMERCIALIZACIÓN EN GENERAL DE TODA CLASE DE MATERIALES DE LA CONSTRUCCIÓN Y/O COMPLEMENTARIOS Y/O DECORATIVOS, ASÍ COMO CUALESQUIERA INSTALACIONES, ELEMENTOS O SERVICIOS DE LAS EDIFICACIONES. g) LA ADQUISICIÓN, CESIÓN, TENENCIA, DISFRUTE, ADMINISTRACIÓN, GESTIÓN Y NEGOCIACIÓN EN GENERAL DE INMUEBLES. h) LA ADMINISTRACIÓN, TENENCIA, ADQUISICIÓN, ARRENDAMIENTO -ACTIVA O PASIVAMENTE-, EXPLOTACIÓN, VENTA Y GRAVAMEN DE FINCAS URBANAS O RÚSTICAS Y EN GENERAL DE INMUEBLES DE TODA CLASE. i) PRESTACIÓN DE SERVICIOS DE CONCEPTUALIZACIÓN, DISEÑO Y DESARROLLO DE PRODUCTO INDUSTRIAL Y GRÁFICO A EMPRESAS Y ENTIDADES PÚBLICAS Y PRIVADAS, ASÍ COMO OTROS SERVICIOS Y ACTIVIDADES DE SIMILAR NATURALEA QUE DECIDA EMPRENDER",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/01700",
+      "_links": {
+        "self": {
+          "name": "KREAN, S.COOP.",
+          "href": "https://api.euskadi.eus/procurements/companies/01700"
+        }
+      }
+    },
+    {
+      "name": "HAGOOS FAMILY FRIENDLY, S.L.",
+      "registrationNumber": "09679",
+      "identificationNumber": "B75051151",
+      "address": "Calle Juan Astigarribia",
+      "location": {
+        "postalCode": "20008",
+        "municipality": "Donostia / San Sebastián",
+        "county": "Gipuzkoa",
+        "municipalityId": "069",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.755",
+          "name": "Agencias de viajes",
+          "_links": {
+            "self": {
+              "name": "Agencias de viajes",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.755"
+            }
+          }
+        },
+        {
+          "id": "1.847",
+          "name": "Servicios de consultoría",
+          "_links": {
+            "self": {
+              "name": "Servicios de consultoría",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.847"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-12-03",
+      "certificateEndDate": "2026-05-13",
+      "object": "LA PRESTACIÓN DE SERVICIOS DE CONSULTORÍA Y ESTUDIOS PARA EMPRESAS DEL SECTOR TURÍSTICO.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/09679",
+      "_links": {
+        "self": {
+          "name": "HAGOOS FAMILY FRIENDLY, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/09679"
+        }
+      }
+    },
+    {
+      "name": "SORBURU KOOP. ELK. TXIKIA",
+      "registrationNumber": "06658",
+      "identificationNumber": "F75120337",
+      "address": "Juan de Olazabal 2, 1C",
+      "location": {
+        "postalCode": "20100",
+        "municipality": "Errenteria",
+        "county": "Gipuzkoa",
+        "municipalityId": "067",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.934",
+          "name": "Enseñanza fuera de establecimiento permanente",
+          "_links": {
+            "self": {
+              "name": "Enseñanza fuera de establecimiento permanente",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.934"
+            }
+          }
+        },
+        {
+          "id": "1.952",
+          "name": "Asistencia y servicios sociales en centros no residenciales",
+          "_links": {
+            "self": {
+              "name": "Asistencia y servicios sociales en centros no residenciales",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.952"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-12-03",
+      "certificateEndDate": "2026-05-24",
+      "object": "CONTRIBUIR A MEJORAR LA CALIDAD DE VIDA DE LAS PERSONAS, EN ESPECIAL DE SECTORES SOCIALES EN SITUACIÓN DE EXCLUSIÓN Y/O ESPECIAL VULNERABILIDAD COMO LAS MUJERES, INMIGRANTES, CUIDADORAS VASCAS FAMILIARES, NIÑEZ Y ADOLESCENCIA, MUJERES QUE AFRONTAN VIOLENCIA, PERSONAS MAYORES, CON FUNCIONALIDAD DIVERSA, ETC. A TRAVÉS DE LAS SIGUIENTES LINEAS DE ACCIÓN: INTERVENCIÓN SOCIAL: INDIVIDUAL, GRUPAL Y COMUNITARIA. FORMACIÓN Y SENSIBILAZIÓN. COOPERACIÓN DEL DESARROLLO. ATENCIÓN EMOCIONAL Y PSICOSOCIAL. TERAPIA ASISTIDA CON ANIMALES. FACILITACIÓN DE ESPACIOS GRUPALES, GRUPOS DE AUTOAYUDA. SUPERVISIÓN A PROFESIONALES EN EL ÁMBITO DE LA ACCIÓN SOCIAL. TRABAJOS EN AGROECOLOGÍA. FOMENTO DE ECONOMÍA COMUNITARIA SOLIDARIA, ECONOMÍA FEMINISTA. ASESORÍA Y CONSULTORÍAS PARA FORTALECIMIENTO DE ASOCIACIONES Y GRUPOS. ASESORÍA EN INTERVENCIÓN GRUPAL TERRITORIAL. ELABORACIÓN DE MATERIALES DIDÁCTICOS Y EDUCATIVOS. ELABORACIÓN DE PLANES, PROYECTOS E INFORMES. INVESTIGACIONES Y SISTEMATIZACIONES.\n",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06658",
+      "_links": {
+        "self": {
+          "name": "SORBURU KOOP. ELK. TXIKIA",
+          "href": "https://api.euskadi.eus/procurements/companies/06658"
+        }
+      }
+    },
+    {
+      "name": "NEREA CORTABITARTE HIDALGO",
+      "registrationNumber": "09559",
+      "identificationNumber": "34098564Y",
+      "address": "ALMIRANTE ALONSO 12 1 IZQUIERDA",
+      "location": {
+        "postalCode": "20280",
+        "municipality": "Hondarribia",
+        "county": "Gipuzkoa",
+        "municipalityId": "036",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.476.1",
+          "name": "Edición de libros",
+          "_links": {
+            "self": {
+              "name": "Edición de libros",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.476.1"
+            }
+          }
+        },
+        {
+          "id": "1.854",
+          "name": "Alquiler de automóviles sin conductor",
+          "_links": {
+            "self": {
+              "name": "Alquiler de automóviles sin conductor",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.854"
+            }
+          }
+        },
+        {
+          "id": "2.899",
+          "name": "Otros profesionales",
+          "_links": {
+            "self": {
+              "name": "Otros profesionales",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/2.899"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-12-03",
+      "certificateEndDate": "2026-05-24",
+      "object": "OTROS PROFESIONALES. EDICIÓN DE LIBROS. ALQUILER DE AUTOMÓVILES SIN CONDUCTOR.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/09559",
+      "_links": {
+        "self": {
+          "name": "NEREA CORTABITARTE HIDALGO",
+          "href": "https://api.euskadi.eus/procurements/companies/09559"
+        }
+      }
+    },
+    {
+      "name": "AUTOBUSES DE LUJUA, S.L.",
+      "registrationNumber": "03770",
+      "identificationNumber": "B48018600",
+      "address": "LARRAKOETXE ENPARANTZA, 1",
+      "location": {
+        "postalCode": "48180",
+        "municipality": "Loiu",
+        "county": "Bizkaia",
+        "municipalityId": "903",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.721.3",
+          "name": "Transporte de viajeros por carretera",
+          "_links": {
+            "self": {
+              "name": "Transporte de viajeros por carretera",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.721.3"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-12-03",
+      "certificateEndDate": "2026-05-25",
+      "classification": [
+        {
+          "id": "S",
+          "name": "Servicios",
+          "groups": [
+            {
+              "id": "R",
+              "subgroups": [
+                {
+                  "id": "01",
+                  "name": "Transporte de viajeros por carretera",
+                  "categories": [
+                    {
+                      "id": "5",
+                      "name": "Mas de 1.200.000",
+                      "_links": {
+                        "self": {
+                          "name": "Mas de 1.200.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/S/categories/5"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "Transporte de viajeros por carretera",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/R/subgroups/01"
+                    }
+                  }
+                }
+              ],
+              "_links": {
+                "self": {
+                  "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/R"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Servicios",
+              "href": "https://api.euskadi.eus/procurements/companies/types/S"
+            }
+          }
+        }
+      ],
+      "object": "LA EXPLOTACIÓN DE LA LÍNEA DE AUTOBUSES ENTRE LUJUA - BILBAO Y LEJONA - BILBAO Y CUALQUIER OTRA CONCESIÓN QUE OBTUVIERAN Y SERVICIOS DE TRANSPORTES EN GENERAL",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03770",
+      "_links": {
+        "self": {
+          "name": "AUTOBUSES DE LUJUA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/03770"
+        }
+      }
+    },
+    {
+      "name": "HARSCO METALS LYCRETE, S.A.",
+      "registrationNumber": "09471",
+      "identificationNumber": "A48065908",
+      "address": "Calle Las Mercedes",
+      "location": {
+        "postalCode": "48930",
+        "municipality": "Getxo",
+        "county": "Bizkaia",
+        "municipalityId": "044",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.222",
+          "name": "Siderurgia no integral",
+          "_links": {
+            "self": {
+              "name": "Siderurgia no integral",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.222"
+            }
+          }
+        },
+        {
+          "id": "1.249",
+          "name": "Industrias de otros productos minerales no metálicos n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Industrias de otros productos minerales no metálicos n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.249"
+            }
+          }
+        },
+        {
+          "id": "1.849.7",
+          "name": "Servicios de gestión administrativa",
+          "_links": {
+            "self": {
+              "name": "Servicios de gestión administrativa",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.849.7"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-12-03",
+      "certificateEndDate": "2026-05-17",
+      "object": "A) DESCARGA, TRANSPORTE Y MANIPULACIÓN DE CHATARRAS, PRERREDUCIDOS Y OTRAS MATERIAS PRIMAS Y SUBPRODUCTOS. B) RECUPERACIÓN, MANIPULACIÓN, GESTIÓN, APROVECHAMIENTO Y VALORIZACIÓN DE ESCORIAS METALÚRGICAS Y TODO TIPO DE MATERIAS DE DICHOS CLIENTES. C) ESTUDIO DEL MERCADO ESPAÑOL RELATIVO A LA INDUSTRIA SIDERÚRGICA, Y LA REALIZACIÓN DE TODO TIPO DE ACTIVIDADES Y SERVICIOS AUXILIARES DE DICHA INDUSTRIA, ASÍ COMO SERVICIOS ADMINISTRATIVOS AUXILIARES GENERALES. D) PRODUCCIÓN, VENTA Y COMERCIALIZACIÓN DEL ASFALTO (U OTROS MATERIALES) A PARTIR DEL TRATAMIENTO Y PROCESADO DE ESCORIAS METALÚRGICAS.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/09471",
+      "_links": {
+        "self": {
+          "name": "HARSCO METALS LYCRETE, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/09471"
+        }
+      }
+    },
+    {
+      "name": "GRUAS EDER-KATILLU, S.L.",
+      "registrationNumber": "07935",
+      "identificationNumber": "B20178448",
+      "address": "poligono industrial goitondo s/n",
+      "location": {
+        "postalCode": "48269",
+        "municipality": "Mallabia",
+        "county": "Bizkaia",
+        "municipalityId": "058",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.722",
+          "name": "Transporte de mercancías por carretera",
+          "_links": {
+            "self": {
+              "name": "Transporte de mercancías por carretera",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.722"
+            }
+          }
+        },
+        {
+          "id": "1.852",
+          "name": "Alquiler de maquinaria y equipo para la construcción",
+          "_links": {
+            "self": {
+              "name": "Alquiler de maquinaria y equipo para la construcción",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.852"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-12-03",
+      "certificateEndDate": "2026-05-21",
+      "object": "EL NEGOCIO DE TRANSPORTE EN GENERAL, RECUPERACIÓN Y REMOLQUE DE VEHÍCULOS.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07935",
+      "_links": {
+        "self": {
+          "name": "GRUAS EDER-KATILLU, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/07935"
+        }
+      }
+    },
+    {
+      "name": "JORGE MIGUEL BENGOA BARRUTIA",
+      "registrationNumber": "03892",
+      "identificationNumber": "16269456S",
+      "address": "ARRIOLA, 03",
+      "location": {
+        "postalCode": "01169",
+        "municipality": "Aramaio",
+        "county": "Araba/Álava",
+        "municipalityId": "003",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.721.2",
+          "name": "Transporte por autotaxis",
+          "_links": {
+            "self": {
+              "name": "Transporte por autotaxis",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.721.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-12-03",
+      "certificateEndDate": "2026-05-13",
+      "classification": [
+        {
+          "id": "S",
+          "name": "Servicios",
+          "groups": [
+            {
+              "id": "R",
+              "subgroups": [
+                {
+                  "id": "01",
+                  "name": "Transporte de viajeros por carretera",
+                  "categories": [
+                    {
+                      "id": "1",
+                      "name": "Desde 0 Hasta 150.000",
+                      "_links": {
+                        "self": {
+                          "name": "Desde 0 Hasta 150.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/S/categories/1"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "Transporte de viajeros por carretera",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/R/subgroups/01"
+                    }
+                  }
+                }
+              ],
+              "_links": {
+                "self": {
+                  "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/R"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Servicios",
+              "href": "https://api.euskadi.eus/procurements/companies/types/S"
+            }
+          }
+        }
+      ],
+      "object": "TRANSPORTE DE VIAJEROS POR AUTOTAXIS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03892",
+      "_links": {
+        "self": {
+          "name": "JORGE MIGUEL BENGOA BARRUTIA",
+          "href": "https://api.euskadi.eus/procurements/companies/03892"
+        }
+      }
+    }
+  ]
+}

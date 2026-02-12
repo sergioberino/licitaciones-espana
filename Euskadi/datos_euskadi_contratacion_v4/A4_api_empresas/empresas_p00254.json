@@ -1,0 +1,498 @@
+{
+  "totalItems": 9042,
+  "totalPages": 905,
+  "currentPage": 254,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "name": "COR ASOC SL",
+      "registrationNumber": "09059",
+      "identificationNumber": "B54477476",
+      "address": "Avenida Oscar Esplá 15, entlo 1",
+      "location": {
+        "postalCode": "03007",
+        "municipality": "Alacant/Alicante",
+        "county": "Alicante/Alacant",
+        "municipalityId": "014",
+        "countyId": "03"
+      },
+      "economicActivities": [
+        {
+          "id": "1.631",
+          "name": "Intermediarios del comercio",
+          "_links": {
+            "self": {
+              "name": "Intermediarios del comercio",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.631"
+            }
+          }
+        },
+        {
+          "id": "1.843.2",
+          "name": "Servicios técnicos de arquitectura y urbanismo",
+          "_links": {
+            "self": {
+              "name": "Servicios técnicos de arquitectura y urbanismo",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-09-24",
+      "certificateEndDate": "2026-03-24",
+      "object": "PRESTACIÓN DE SERVICIOS DE ARQUITECTURA, URBANISMO, EL DISEÑO Y LA INGENIERÍA, ASÍ COMO TODOS LOS SERVICIOS DERIVADOS Y/O COMPLEMENTARIOS A LAS DISCIPLINAS ANTERIORES, COMO LA CONSTRUCCIÓN DE LOS PROYECTOS.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/09059",
+      "_links": {
+        "self": {
+          "name": "COR ASOC SL",
+          "href": "https://api.euskadi.eus/procurements/companies/09059"
+        }
+      }
+    },
+    {
+      "name": "DITECO INGENIERÍA, S.L.U.",
+      "registrationNumber": "02300",
+      "identificationNumber": "B01247683",
+      "address": "KOLDO MITXELENA, 9-BAJO",
+      "location": {
+        "postalCode": "01008",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.843.1",
+          "name": "Servicios técnicos de ingeniería",
+          "_links": {
+            "self": {
+              "name": "Servicios técnicos de ingeniería",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-09-24",
+      "certificateEndDate": "2026-03-24",
+      "object": "LOS TRABAJOS DE INGENIERÍA Y CONSULTORÍA DE LOS MISMOS, EN SU MÁS AMPLIO SENTIDO, LA REALIZACIÓN DE ESTUDIOS Y PROYECTOS TÉCNICOS, ECONÓMICOS DE MERCADO; EL ESTUDIO, PROMOCIÓN, PLANEAMIENTO, DIRECCIÓN, EJECUCIÓN O DESARROLLO, POR CUENTA PROPIA O AJENA, DIRECTAMENTE O A TRAVÉS DE TERCEROS, DE TODA CLASE DE PROYECTOS, OBRAS O EMPRESAS INDUSTRIALES, AGRÍCOLAS, COMERCIALES Y DE SERVICIOS, EN PARTICIPACIÓN DIRECTA O INDIRECTA EN SUS OPERAACIONES Y EN SU CAPITAL O SIMPLEMENTE PARTICIPANDO EN LA DIRECCIÓN  O GESTIÓN DE TALES PROYECTOS    ",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/02300",
+      "_links": {
+        "self": {
+          "name": "DITECO INGENIERÍA, S.L.U.",
+          "href": "https://api.euskadi.eus/procurements/companies/02300"
+        }
+      }
+    },
+    {
+      "name": "MAKE-LAN, S.L.",
+      "registrationNumber": "08428",
+      "identificationNumber": "B01526003",
+      "address": "CL MONASTERIO DE LEYRE 4",
+      "location": {
+        "postalCode": "01010",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.911",
+          "name": "Servicios agrícolas y ganaderos",
+          "_links": {
+            "self": {
+              "name": "Servicios agrícolas y ganaderos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.911"
+            }
+          }
+        },
+        {
+          "id": "1.921.1",
+          "name": "Servicios de limpieza en calles, vías públicas y jardines",
+          "_links": {
+            "self": {
+              "name": "Servicios de limpieza en calles, vías públicas y jardines",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.921.1"
+            }
+          }
+        },
+        {
+          "id": "1.921.9",
+          "name": "Otros servicios de saneamiento y similares n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros servicios de saneamiento y similares n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.921.9"
+            }
+          }
+        },
+        {
+          "id": "1.999",
+          "name": "Otros servicios n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros servicios n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.999"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-09-24",
+      "certificateEndDate": "2026-03-24",
+      "object": "LA SOCIEDAD TIENE POR OBJETO LA REALIZACION, DISEÑO, CONSERVACION Y MANTENIMIENTO DE JARDINERÍA EN TODAS SUS MODALIDADES, TANTO PÚBLICAS COMO PRIVADAS ( CNAE 8130 ACTIVIDADES DE JARDINERIA).",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08428",
+      "_links": {
+        "self": {
+          "name": "MAKE-LAN, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/08428"
+        }
+      }
+    },
+    {
+      "name": "J.CASTIRUN PINTURA  RESTAURACIÓN, S.L.",
+      "registrationNumber": "09329",
+      "identificationNumber": "B02793263",
+      "address": "Calle Monte Aldabe",
+      "location": {
+        "postalCode": "20301",
+        "municipality": "Irun",
+        "county": "Gipuzkoa",
+        "municipalityId": "045",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.505.6",
+          "name": "Pintura, revestimientos y terminación y decoración de locales",
+          "_links": {
+            "self": {
+              "name": "Pintura, revestimientos y terminación y decoración de locales",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.505.6"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-09-24",
+      "certificateEndDate": "2026-03-24",
+      "object": "PINTURA Y DECORACIÓN, TANTO DE EXTERIORES COMO DE INTERIORES DE INMUEBLES, PEQUEÑAS REPARACIONES DE ALBAÑILERIA ASI COMO TRABAJOS DE PLADUR. EL CNAE DE LA ACTIVIDAD PRINCIPAL ES 4334.\n\n",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/09329",
+      "_links": {
+        "self": {
+          "name": "J.CASTIRUN PINTURA  RESTAURACIÓN, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/09329"
+        }
+      }
+    },
+    {
+      "name": "ALMACENES CAYPE, S.A.",
+      "registrationNumber": "00702",
+      "identificationNumber": "A01036102",
+      "address": "C/ HARROBI, 27-29",
+      "location": {
+        "postalCode": "01013",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.475",
+          "name": "Actividades anexas a las artes gráficas",
+          "_links": {
+            "self": {
+              "name": "Actividades anexas a las artes gráficas",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.475"
+            }
+          }
+        },
+        {
+          "id": "1.615.2",
+          "name": "Venta al por mayor de muebles",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de muebles",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.615.2"
+            }
+          }
+        },
+        {
+          "id": "1.617.8",
+          "name": "Venta al por mayor de máquinas y material de oficina",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de máquinas y material de oficina",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.617.8"
+            }
+          }
+        },
+        {
+          "id": "1.659.4",
+          "name": "Venta al por menor de libros, periódicos y artículos de papelería y escritorio",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de libros, periódicos y artículos de papelería y escritorio",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.659.4"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-09-24",
+      "certificateEndDate": "2026-03-24",
+      "object": "COMERCIO AL POR MAYOR Y MENOR DE MATERIAL DE OFICINA Y ESCOLAR Y ACTIVIDADES CONEXAS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/00702",
+      "_links": {
+        "self": {
+          "name": "ALMACENES CAYPE, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/00702"
+        }
+      }
+    },
+    {
+      "name": "ALTAIR INGENIERÍA Y ARQUITECTURA, S.L.",
+      "registrationNumber": "02462",
+      "identificationNumber": "B20540241",
+      "address": "PASEO LUGARITZ, 23",
+      "location": {
+        "postalCode": "20018",
+        "municipality": "Donostia / San Sebastián",
+        "county": "Gipuzkoa",
+        "municipalityId": "069",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.843.1",
+          "name": "Servicios técnicos de ingeniería",
+          "_links": {
+            "self": {
+              "name": "Servicios técnicos de ingeniería",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.1"
+            }
+          }
+        },
+        {
+          "id": "1.843.2",
+          "name": "Servicios técnicos de arquitectura y urbanismo",
+          "_links": {
+            "self": {
+              "name": "Servicios técnicos de arquitectura y urbanismo",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-09-24",
+      "certificateEndDate": "2026-03-24",
+      "object": "LA PRESTACIÓN DE SERVICIOS, CONTRATACIÓN Y EJECUCIÓN DE TRABAJOS DE INGENIERÍA, ARQUITECTURA, CONSULTORÍA, AUDITORÍA Y ASESORAMIENTO PROFESIONAL; ASÍ COMO LA INVESTIGACIÓN Y DESARROLLO DE PRODUCTOS Y SERVICIOS RELACIONADOS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/02462",
+      "_links": {
+        "self": {
+          "name": "ALTAIR INGENIERÍA Y ARQUITECTURA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/02462"
+        }
+      }
+    },
+    {
+      "name": "ARBOL INVESTIGACION Y GESTION, S.L.",
+      "registrationNumber": "06526",
+      "identificationNumber": "B62185293",
+      "address": "C/ Solsones, 4",
+      "location": {
+        "postalCode": "08700",
+        "municipality": "Igualada",
+        "county": "Barcelona",
+        "municipalityId": "102",
+        "countyId": "08"
+      },
+      "economicActivities": [
+        {
+          "id": "1.843.1",
+          "name": "Servicios técnicos de ingeniería",
+          "_links": {
+            "self": {
+              "name": "Servicios técnicos de ingeniería",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.1"
+            }
+          }
+        },
+        {
+          "id": "1.911",
+          "name": "Servicios agrícolas y ganaderos",
+          "_links": {
+            "self": {
+              "name": "Servicios agrícolas y ganaderos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.911"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-09-24",
+      "certificateEndDate": "2026-03-24",
+      "object": "LA CONSULTORÍA, ASESORÍA, INVESTIGACIÓN Y GESTIÓN SOBRE EL ARBOLADO Y LOS ESPACIOS VERDES EN TODOS SUS ÁMBITOS. CONSULTORÍA, ASESORÍA, SERVICIOS Y OBRAS EN EL ARBOLADO Y ESPACIOS VERDES TANTO PÚBLICOS COMO PRIVADOS, ESTUDIOS DEL RIESGO POTENCIAL O DE ROTURA, FITOPATOLOGÍA, PLANES ESTRATÉGICOS DE RIESGO, DE MANTENIMIENTO, GESTIÓN Y CONSERVACIÓN DE ARBOLADO Y ESPACIOS VERDES. DISEÑO DE PLANTACIONES, ESPACIOS VERDES, REALIZACIÓN DE PROYECTOS, PRESUPUESTOS, OBRAS Y SERVICIOS. TRABAJOS DE TRASPLANTES, SUSTENTACIONES ARTIFICIALES Y TRABAJOS ESPECIALES EN ARBOLADO. TRATAMIENTOS BIOLÓGICOS Y NATURALES. DISTRIBUCIÓN DE PRODUCTOS BIOLÓGICOS E INSTRUMENTACIÓN CIENTÍFICA PARA EL TRATAMIENTO O VALORACIÓN DEL ARBOLADO. FORMACIÓN EN ARBORICULTURA Y MANTENIMIENTO DE ZONAS VERDES. EL CNAE PRINCIPAL SERÁ EL 01410",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06526",
+      "_links": {
+        "self": {
+          "name": "ARBOL INVESTIGACION Y GESTION, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/06526"
+        }
+      }
+    },
+    {
+      "name": "SERVICIOS Y LOGISTICA DE RESCATE, S.L.",
+      "registrationNumber": "07310",
+      "identificationNumber": "B20793436",
+      "address": "Calle Zuberoa, 18",
+      "location": {
+        "postalCode": "20800",
+        "municipality": "Zarautz",
+        "county": "Gipuzkoa",
+        "municipalityId": "079",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.619.9",
+          "name": "Venta al por mayor de otros productos n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de otros productos n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.619.9"
+            }
+          }
+        },
+        {
+          "id": "1.659.6",
+          "name": "Venta al por menor de juguetes, artículos de deporte",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de juguetes, artículos de deporte",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.659.6"
+            }
+          }
+        },
+        {
+          "id": "1.932.1",
+          "name": "Enseñanza de formación y perfeccionamiento profesional no superior",
+          "_links": {
+            "self": {
+              "name": "Enseñanza de formación y perfeccionamiento profesional no superior",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.932.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-09-24",
+      "certificateEndDate": "2026-03-24",
+      "object": "VENTA DE MATERIAL TÉCNICO DE SALVAMENTO Y RESCATE. ESTUDIO DE SERVICIOS DE SOCORRISMO, SALVAMENTO Y RESCATE. DESARROLLO Y MEJOR DE EQUIPOS DE SALVAMENTO Y RESCATE. FORMACIÓN, ASESORAMIENTO Y SERVICIOS RELACIONADOS CON EL RESCATE Y LA EMERGENCIA",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07310",
+      "_links": {
+        "self": {
+          "name": "SERVICIOS Y LOGISTICA DE RESCATE, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/07310"
+        }
+      }
+    },
+    {
+      "name": "GAURSA MOBILITY, S.L.",
+      "registrationNumber": "03136",
+      "identificationNumber": "B95267670",
+      "address": "Bº ARRIANDI, 12",
+      "location": {
+        "postalCode": "48215",
+        "municipality": "Iurreta",
+        "county": "Bizkaia",
+        "municipalityId": "910",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.615.1",
+          "name": "Venta al por mayor de vehículos, motocicletas, bicicletas y sus accesorios",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de vehículos, motocicletas, bicicletas y sus accesorios",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.615.1"
+            }
+          }
+        },
+        {
+          "id": "1.722",
+          "name": "Transporte de mercancías por carretera",
+          "_links": {
+            "self": {
+              "name": "Transporte de mercancías por carretera",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.722"
+            }
+          }
+        },
+        {
+          "id": "1.751.5",
+          "name": "Engrase y lavado de vehículos",
+          "_links": {
+            "self": {
+              "name": "Engrase y lavado de vehículos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.751.5"
+            }
+          }
+        },
+        {
+          "id": "1.854.1",
+          "name": "Alquiler de automóviles sin conductor",
+          "_links": {
+            "self": {
+              "name": "Alquiler de automóviles sin conductor",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.854.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-09-24",
+      "certificateEndDate": "2026-03-24",
+      "object": "LA EXPLOTACIÓN DE UN NEGOCIO DEDICADO A LA ASISTENCIA Y REMOLQUE DE VEHÍCULOS, ASÍ COMO A LA COMPRAVENTA, IMPORTACIÓN, REPARACIÓN Y ENTRETENIMIENTO DE TODA CLASE DE VEHÍCULOS A MOTOR, ASÍ COMO DE TODA CLASE DE ACCESORIOS, REPUESTOS, CARBURANTES Y LUBRIFICANTES PARA LOS MISMOS Y EL ALQUILER DE TODA CLASE DE VEHÍCULOS EN TODAS SUS MODALIDADES",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03136",
+      "_links": {
+        "self": {
+          "name": "GAURSA MOBILITY, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/03136"
+        }
+      }
+    },
+    {
+      "name": "INICIATIVAS PUBLICITARIAS VASCAS, S.L.",
+      "registrationNumber": "09564",
+      "identificationNumber": "B95287397",
+      "address": "Goieta 16 B",
+      "location": {
+        "postalCode": "48112",
+        "municipality": "Maruri-Jatabe",
+        "county": "Bizkaia",
+        "municipalityId": "061",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.844",
+          "name": "Servicios de publicidad, relaciones públicas y similares",
+          "_links": {
+            "self": {
+              "name": "Servicios de publicidad, relaciones públicas y similares",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.844"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-09-24",
+      "certificateEndDate": "2026-03-24",
+      "object": "LA PRESTACIÓN DE SERVICIOS DE PUBLICIDAD, MEDIANTE ANUNCIOS, CARTELES, FOLLETOS, PELÍCULAS PUBLICITARIAS A TRAVÉS DE PRENSA, RADIO, TELEVISIÓN, PUBLICIDAD AÉREA, INTERNET, Y OTROS MEDIOS, ASÍ COMO LA CREACIÓN DE ANUNCIOS O CAMPAÑAS DE INFORMACIÓN PUBLICITARIA, PROPAGANDA ELECTORAL, COMUNICACIÓN INSTITUCIONAL O PUBLICA E IMAGEN CORPORATIVA, PUBLICIDAD EXTERIOR, PUBLICIDAD DIRECTA Y MARKETING DIRECTO, DISTRIBUCIÓN Y CENTRALES DE COMPRAS, ESTUDIOS DE PUBLICIDAD RELACIONES PÚBLICAS, PROMOCIÓN DE VENTAS PUBLICITARIAS, REGALOS Y RECLAMOS PUBLICITARIOS Y EN GENERAL CUALQUIER SERVICIO INDEPENDIENTE DE PUBLICIDAD. LA FABRICACIÓN, IMPORTACIÓN, EXPORTACIÓN, COMERCIALIZACIÓN, Y DISTRIBUCIÓN DE ARTÍCULOS Y PRODUCTOS DE RECLAMO PUBLICITARIO.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/09564",
+      "_links": {
+        "self": {
+          "name": "INICIATIVAS PUBLICITARIAS VASCAS, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/09564"
+        }
+      }
+    }
+  ]
+}

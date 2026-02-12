@@ -1,0 +1,468 @@
+{
+  "totalItems": 9042,
+  "totalPages": 905,
+  "currentPage": 572,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "name": "JOSE MARIA OYARZABAL IRAZOQUI",
+      "registrationNumber": "07061",
+      "identificationNumber": "72441889P",
+      "address": "MARTINTXO KALEA  7  2 B",
+      "location": {
+        "postalCode": "20180",
+        "municipality": "Oiartzun",
+        "county": "Gipuzkoa",
+        "municipalityId": "063",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.912",
+          "name": "Servicios forestales",
+          "_links": {
+            "self": {
+              "name": "Servicios forestales",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.912"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2020-06-03",
+      "certificateEndDate": "2020-11-19",
+      "object": "BASOGINTZA ZERBITZUAK",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07061",
+      "_links": {
+        "self": {
+          "name": "JOSE MARIA OYARZABAL IRAZOQUI",
+          "href": "https://api.euskadi.eus/procurements/companies/07061"
+        }
+      }
+    },
+    {
+      "name": "JAVIER CUEVAS SOLAGAISTUA",
+      "registrationNumber": "07063",
+      "identificationNumber": "30668723V",
+      "address": "SAN VICENTE 8, EDIFICIO ALBIA II, 6º A",
+      "location": {
+        "postalCode": "48001",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "2.731",
+          "name": "Abogados",
+          "_links": {
+            "self": {
+              "name": "Abogados",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/2.731"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2020-06-03",
+      "certificateEndDate": "2020-11-13",
+      "object": "ABOGADOS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07063",
+      "_links": {
+        "self": {
+          "name": "JAVIER CUEVAS SOLAGAISTUA",
+          "href": "https://api.euskadi.eus/procurements/companies/07063"
+        }
+      }
+    },
+    {
+      "name": "Xabier Macias Ganuza",
+      "registrationNumber": "07064",
+      "identificationNumber": "72513206W",
+      "address": "Morronguilleta 13 - 3ºA",
+      "location": {
+        "postalCode": "20100",
+        "municipality": "Errenteria",
+        "county": "Gipuzkoa",
+        "municipalityId": "067",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "2.411",
+          "name": "Arquitectos",
+          "_links": {
+            "self": {
+              "name": "Arquitectos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/2.411"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2020-06-03",
+      "certificateEndDate": "2020-11-07",
+      "object": "ARQUITECTURA",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07064",
+      "_links": {
+        "self": {
+          "name": "Xabier Macias Ganuza",
+          "href": "https://api.euskadi.eus/procurements/companies/07064"
+        }
+      }
+    },
+    {
+      "name": "OIHANA SANTOLARIA DEL CAMPO",
+      "registrationNumber": "07065",
+      "identificationNumber": "72481550V",
+      "address": "Jorge Oteiza 4, 1 B",
+      "location": {
+        "postalCode": "20018",
+        "municipality": "Donostia / San Sebastián",
+        "county": "Gipuzkoa",
+        "municipalityId": "069",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "2.411",
+          "name": "Arquitectos",
+          "_links": {
+            "self": {
+              "name": "Arquitectos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/2.411"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2020-06-03",
+      "certificateEndDate": "2020-10-01",
+      "object": "ARKITEKTOA",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07065",
+      "_links": {
+        "self": {
+          "name": "OIHANA SANTOLARIA DEL CAMPO",
+          "href": "https://api.euskadi.eus/procurements/companies/07065"
+        }
+      }
+    },
+    {
+      "name": "CESAR JOSE LOPEZ FERNANDEZ",
+      "registrationNumber": "07066",
+      "identificationNumber": "16291894M",
+      "address": "PLAZA NUEVA  Nº2  IZARRA",
+      "location": {
+        "postalCode": "01440",
+        "municipality": "Urkabustaiz",
+        "county": "Araba/Álava",
+        "municipalityId": "054",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.643.1",
+          "name": "Venta al por menor de pescados y otros productos de la pesca",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de pescados y otros productos de la pesca",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.643.1"
+            }
+          }
+        },
+        {
+          "id": "1.663.1",
+          "name": "Venta al por menor de productos alimenticios fuera de establecimiento comercial",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de productos alimenticios fuera de establecimiento comercial",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.663.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2020-06-03",
+      "certificateEndDate": "2020-11-05",
+      "object": "VENTA AL POR MENOR DE PESCADOS Y OTROS PRODUCTOS DE LA PESCA. VENTA AL POR MENOR DE PRODUCTOS ALIMENTICIOS FUERA DE ESTABLECIMIENTO COMERCIAL",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07066",
+      "_links": {
+        "self": {
+          "name": "CESAR JOSE LOPEZ FERNANDEZ",
+          "href": "https://api.euskadi.eus/procurements/companies/07066"
+        }
+      }
+    },
+    {
+      "name": "RUTH VEGA CLEMENTE",
+      "registrationNumber": "07067",
+      "identificationNumber": "76112146V",
+      "address": "HIPÓDROMO ETORBIDEA, 15 7E",
+      "location": {
+        "postalCode": "20160",
+        "municipality": "Lasarte-Oria",
+        "county": "Gipuzkoa",
+        "municipalityId": "902",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.861.1",
+          "name": "Alquiler de viviendas",
+          "_links": {
+            "self": {
+              "name": "Alquiler de viviendas",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.861.1"
+            }
+          }
+        },
+        {
+          "id": "1.861.2",
+          "name": "Alquiler de locales industriales y otros alquileres n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Alquiler de locales industriales y otros alquileres n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.861.2"
+            }
+          }
+        },
+        {
+          "id": "2.411",
+          "name": "Arquitectos",
+          "_links": {
+            "self": {
+              "name": "Arquitectos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/2.411"
+            }
+          }
+        },
+        {
+          "id": "2.432",
+          "name": "Decoradores-diseñadores de interiores",
+          "_links": {
+            "self": {
+              "name": "Decoradores-diseñadores de interiores",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/2.432"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2020-06-03",
+      "certificateEndDate": "2020-11-18",
+      "object": "ARQUITECTOS. DECORADORES-DISEÑADORES DE INTERIORES. ALQUILER DE VIVIENDAS. ALQUILER DE LOCALES INDUSTRIALES Y OTROS ALQUILERES N.C.O.P",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07067",
+      "_links": {
+        "self": {
+          "name": "RUTH VEGA CLEMENTE",
+          "href": "https://api.euskadi.eus/procurements/companies/07067"
+        }
+      }
+    },
+    {
+      "name": "PROYECTOS INGENIERÍA Y AUDITORÍA EFICIENCIA ENERGÉTICA, S.L.",
+      "registrationNumber": "07057",
+      "identificationNumber": "B99309445",
+      "address": "C/ Pablo Iglesias Nº 33 - Local",
+      "location": {
+        "postalCode": "50018",
+        "municipality": "Zaragoza",
+        "county": "Zaragoza",
+        "municipalityId": "297",
+        "countyId": "50"
+      },
+      "economicActivities": [
+        {
+          "id": "1.504.1",
+          "name": "Instalaciones eléctricas en general",
+          "_links": {
+            "self": {
+              "name": "Instalaciones eléctricas en general",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.504.1"
+            }
+          }
+        },
+        {
+          "id": "1.843.1",
+          "name": "Servicios técnicos de ingeniería",
+          "_links": {
+            "self": {
+              "name": "Servicios técnicos de ingeniería",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2020-06-02",
+      "certificateEndDate": "2020-11-20",
+      "object": "LA AUDITORÍA DE EFICIENCIA ENERGÉTICA",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07057",
+      "_links": {
+        "self": {
+          "name": "PROYECTOS INGENIERÍA Y AUDITORÍA EFICIENCIA ENERGÉTICA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/07057"
+        }
+      }
+    },
+    {
+      "name": "BULLHOST CLOUD SERVICES, S.L.",
+      "registrationNumber": "07059",
+      "identificationNumber": "B95833380",
+      "address": "C/ARTUNDUAGA 2, EDIFICIO URRAKI, PLANTA 2",
+      "location": {
+        "postalCode": "48970",
+        "municipality": "Basauri",
+        "county": "Bizkaia",
+        "municipalityId": "015",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.849.4",
+          "name": "Servicios de custodia, seguridad y protección",
+          "_links": {
+            "self": {
+              "name": "Servicios de custodia, seguridad y protección",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.849.4"
+            }
+          }
+        },
+        {
+          "id": "1.849.9",
+          "name": "Otros servicios independientes n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros servicios independientes n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.849.9"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2020-06-02",
+      "certificateEndDate": "2020-11-04",
+      "object": "LA CONSULTORÍA INFORMÁTICA, ALOJAMIENTO DE DATOS, SERVICIOS GESTIONADOS EN LA NUBE DE INTERNET, SERVICIOS DE PRESENCIA EN INTERNET, SOLUCIONES DE INFRAESTRUCTURA DE TECNOLOGÍAS DE LA INFORMACIÓN Y LA COMUNICACIÓN, Y TODAS AQUELLAS ACTIVIDADES ACCESORIAS Y COMPLEMENTARIAS DE LAS ANTERIORES",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07059",
+      "_links": {
+        "self": {
+          "name": "BULLHOST CLOUD SERVICES, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/07059"
+        }
+      }
+    },
+    {
+      "name": "URBEGI INSERCIÓN, S.L.",
+      "registrationNumber": "06424",
+      "identificationNumber": "B95651352",
+      "address": "POLIGONO INDUSTRIAL EL PARAMO, PABELLON B7",
+      "location": {
+        "postalCode": "48800",
+        "municipality": "Balmaseda",
+        "county": "Bizkaia",
+        "municipalityId": "090",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.677.9",
+          "name": "Otros servicios de alimentación propios de la restauración",
+          "_links": {
+            "self": {
+              "name": "Otros servicios de alimentación propios de la restauración",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.677.9"
+            }
+          }
+        },
+        {
+          "id": "1.849.6",
+          "name": "Servicios de colocación y suministro de personal",
+          "_links": {
+            "self": {
+              "name": "Servicios de colocación y suministro de personal",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.849.6"
+            }
+          }
+        },
+        {
+          "id": "1.922.1",
+          "name": "Servicios de limpieza de interiores",
+          "_links": {
+            "self": {
+              "name": "Servicios de limpieza de interiores",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.922.1"
+            }
+          }
+        },
+        {
+          "id": "1.999",
+          "name": "Otros servicios n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros servicios n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.999"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2020-05-29",
+      "certificateEndDate": "2020-11-13",
+      "object": "LA PROMOCIÓN DE LAS PERSONAS EN SITUACIÓN DE EXCLUSIÓN SOCIO-LABORAL, FAVORECIENDO PROCESOS QUE MEJOREN SU FORMACIÓN Y HABILIDADES Y DESARROLLANDO ACCIONES DIRIGIDAS A LA INSERCIÓN SOCIO-LABORAL",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06424",
+      "_links": {
+        "self": {
+          "name": "URBEGI INSERCIÓN, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/06424"
+        }
+      }
+    },
+    {
+      "name": "ACCEXIBLE IMPACTO, S.L.",
+      "registrationNumber": "07046",
+      "identificationNumber": "B95886198",
+      "address": "ALAMEDA MAZARREO, 35 - 3º D",
+      "location": {
+        "postalCode": "48009",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.659.2",
+          "name": "Venta al por menor de muebles de oficina y máquinas y equipos de oficina",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de muebles de oficina y máquinas y equipos de oficina",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.659.2"
+            }
+          }
+        },
+        {
+          "id": "1.845",
+          "name": "Explotación electrónica por cuenta de terceros",
+          "_links": {
+            "self": {
+              "name": "Explotación electrónica por cuenta de terceros",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.845"
+            }
+          }
+        },
+        {
+          "id": "1.952",
+          "name": "Asistencia y servicios sociales en centros no residenciales",
+          "_links": {
+            "self": {
+              "name": "Asistencia y servicios sociales en centros no residenciales",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.952"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2020-05-28",
+      "certificateEndDate": "2020-11-19",
+      "object": "OTROS SERVICIOS RELACIONADOS CON LAS TECNOLOGÍAS DE LA INFORMACIÓN Y LA INFORMÁTICA. ACTIVIDADES DE PROGRAMACIÓN INFORMÁTICA. ACTIVIDADES DE CONSULTORÍA INFORMÁTICA. PROCESO DE DATOS, HOSTING Y ACTIVIDADES RELACIONADAS. ACTIVIDADES DE SERVICIOS SOCIALES SIN ALOJAMIENTO PARA PERSONAS MAYORES",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07046",
+      "_links": {
+        "self": {
+          "name": "ACCEXIBLE IMPACTO, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/07046"
+        }
+      }
+    }
+  ]
+}

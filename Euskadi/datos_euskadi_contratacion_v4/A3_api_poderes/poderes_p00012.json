@@ -1,0 +1,846 @@
+{
+  "totalItems": 919,
+  "totalPages": 92,
+  "currentPage": 12,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "id": 47,
+      "identificationNumber": "P4806100F",
+      "name": "Ayuntamiento de Lanestosa",
+      "scope": "BIZKAIA",
+      "address": "C/Manuela Saiz de Rozas nº 1, Lanestosa - Bizkaia",
+      "webPage": "https://www.lanestosa.eus/",
+      "publicationDate": "2024-03-11",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES213",
+      "entities": [
+        {
+          "id": 314,
+          "name": "Ayuntamiento de Lanestosa",
+          "orgs": [
+            {
+              "id": 911154,
+              "name": "Pleno del Ayuntamiento de Lanestosa",
+              "_links": {
+                "self": {
+                  "name": "Pleno del Ayuntamiento de Lanestosa",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/47/entities/314/orgs/911154"
+                }
+              }
+            },
+            {
+              "id": 25752,
+              "name": "Alcaldía",
+              "_links": {
+                "self": {
+                  "name": "Alcaldía",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/47/entities/314/orgs/25752"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Ayuntamiento de Lanestosa",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/47/entities/314"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder47/es_doc/index.html",
+      "_links": {
+        "self": {
+          "name": "Ayuntamiento de Lanestosa",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/47"
+        }
+      }
+    },
+    {
+      "id": 59,
+      "identificationNumber": "S0100008B",
+      "name": "eLankidetza-Agencia Vasca de Cooperación y Solidaridad",
+      "scope": "CAPV",
+      "address": "Gaztelako Atea / Portal de Castilla, 15  01007 Vitoria-Gasteiz",
+      "webPage": "http://www.elankidetza.euskadi.eus",
+      "publicationDate": "2024-03-08",
+      "mainActivity": "Protección social",
+      "codNUTS": "ES21",
+      "entities": [
+        {
+          "id": 359,
+          "name": "eLankidetza-Agencia Vasca de Cooperación y Solidaridad",
+          "orgs": [
+            {
+              "id": 911231,
+              "name": "Dirección de eLankidetza-Agencia Vasca de Cooperación y Solidaridad",
+              "_links": {
+                "self": {
+                  "name": "Dirección de eLankidetza-Agencia Vasca de Cooperación y Solidaridad",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/59/entities/359/orgs/911231"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "eLankidetza-Agencia Vasca de Cooperación y Solidaridad",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/59/entities/359"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder59/es_doc/index.html",
+      "_links": {
+        "self": {
+          "name": "eLankidetza-Agencia Vasca de Cooperación y Solidaridad",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/59"
+        }
+      }
+    },
+    {
+      "id": 153,
+      "identificationNumber": "P2007400A",
+      "name": "Ayuntamiento de Donostia/San Sebastián",
+      "scope": "GIPUZKOA",
+      "address": "Ijentea, 1. 20003 Donostia/San Sebastián ",
+      "webPage": "http://www.donostia.eus",
+      "publicationDate": "2024-02-13",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES212",
+      "entities": [
+        {
+          "id": 549,
+          "name": "Ayuntamiento de Donostia/San Sebastián",
+          "orgs": [
+            {
+              "id": 911759,
+              "name": "Concejala delegada de Ecología y Salud Pública ",
+              "_links": {
+                "self": {
+                  "name": "Concejala delegada de Ecología y Salud Pública ",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/153/entities/549/orgs/911759"
+                }
+              }
+            },
+            {
+              "id": 911752,
+              "name": "Concejala delegada de Movilidad y Transporte Sostenible",
+              "_links": {
+                "self": {
+                  "name": "Concejala delegada de Movilidad y Transporte Sostenible",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/153/entities/549/orgs/911752"
+                }
+              }
+            },
+            {
+              "id": 911749,
+              "name": "Concejal Delegado de Cultura, Euskera y Turismo",
+              "_links": {
+                "self": {
+                  "name": "Concejal Delegado de Cultura, Euskera y Turismo",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/153/entities/549/orgs/911749"
+                }
+              }
+            },
+            {
+              "id": 911755,
+              "name": "Concejala delegada de Desarrollo Económico y Empleo ",
+              "_links": {
+                "self": {
+                  "name": "Concejala delegada de Desarrollo Económico y Empleo ",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/153/entities/549/orgs/911755"
+                }
+              }
+            },
+            {
+              "id": 911758,
+              "name": "Concejalía adjunta de Barrios y Proyectos Transversales",
+              "_links": {
+                "self": {
+                  "name": "Concejalía adjunta de Barrios y Proyectos Transversales",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/153/entities/549/orgs/911758"
+                }
+              }
+            },
+            {
+              "id": 911750,
+              "name": "Concejal delegado de Presidencia y Transparencia, Recursos Humanos e Innovación",
+              "_links": {
+                "self": {
+                  "name": "Concejal delegado de Presidencia y Transparencia, Recursos Humanos e Innovación",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/153/entities/549/orgs/911750"
+                }
+              }
+            },
+            {
+              "id": 911753,
+              "name": "Concejal Delegado de Deportes, Seguridad Ciudadana y Protección Civil ",
+              "_links": {
+                "self": {
+                  "name": "Concejal Delegado de Deportes, Seguridad Ciudadana y Protección Civil ",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/153/entities/549/orgs/911753"
+                }
+              }
+            },
+            {
+              "id": 911748,
+              "name": "Junta de Gobierno Local",
+              "_links": {
+                "self": {
+                  "name": "Junta de Gobierno Local",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/153/entities/549/orgs/911748"
+                }
+              }
+            },
+            {
+              "id": 911754,
+              "name": "Concejala delegada de Acción Social",
+              "_links": {
+                "self": {
+                  "name": "Concejala delegada de Acción Social",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/153/entities/549/orgs/911754"
+                }
+              }
+            },
+            {
+              "id": 911751,
+              "name": "Concejal delegado de Hacienda y Finanzas",
+              "_links": {
+                "self": {
+                  "name": "Concejal delegado de Hacienda y Finanzas",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/153/entities/549/orgs/911751"
+                }
+              }
+            },
+            {
+              "id": 911757,
+              "name": "Concejal delegado de Espacios Públicos, Ecología y Actividades Festivas",
+              "_links": {
+                "self": {
+                  "name": "Concejal delegado de Espacios Públicos, Ecología y Actividades Festivas",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/153/entities/549/orgs/911757"
+                }
+              }
+            },
+            {
+              "id": 911760,
+              "name": "Secretario General-Director Jurídico",
+              "_links": {
+                "self": {
+                  "name": "Secretario General-Director Jurídico",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/153/entities/549/orgs/911760"
+                }
+              }
+            },
+            {
+              "id": 911761,
+              "name": "Interventora General",
+              "_links": {
+                "self": {
+                  "name": "Interventora General",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/153/entities/549/orgs/911761"
+                }
+              }
+            },
+            {
+              "id": 911756,
+              "name": "Concejala delegada de Urbanismo Sostenible ",
+              "_links": {
+                "self": {
+                  "name": "Concejala delegada de Urbanismo Sostenible ",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/153/entities/549/orgs/911756"
+                }
+              }
+            },
+            {
+              "id": 911755,
+              "name": "Concejala delegada de Economía, Empleo Local y Ecología",
+              "_links": {
+                "self": {
+                  "name": "Concejala delegada de Economía, Empleo Local y Ecología",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/153/entities/549/orgs/911755"
+                }
+              }
+            },
+            {
+              "id": 911758,
+              "name": "Concejala Delegada de Servicios Sociales, Acción Comunitaria y Barrios",
+              "_links": {
+                "self": {
+                  "name": "Concejala Delegada de Servicios Sociales, Acción Comunitaria y Barrios",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/153/entities/549/orgs/911758"
+                }
+              }
+            },
+            {
+              "id": 26019,
+              "name": "Concejala delegada de Gobernanza Abierta, Digital y Colaborativa",
+              "_links": {
+                "self": {
+                  "name": "Concejala delegada de Gobernanza Abierta, Digital y Colaborativa",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/153/entities/549/orgs/26019"
+                }
+              }
+            },
+            {
+              "id": 911753,
+              "name": "Concejal delegado de Seguridad, Bomberos y Protección Civil",
+              "_links": {
+                "self": {
+                  "name": "Concejal delegado de Seguridad, Bomberos y Protección Civil",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/153/entities/549/orgs/911753"
+                }
+              }
+            },
+            {
+              "id": 911751,
+              "name": "Concejal delegado de Personas, Gestión Económica y Presupuestaria",
+              "_links": {
+                "self": {
+                  "name": "Concejal delegado de Personas, Gestión Económica y Presupuestaria",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/153/entities/549/orgs/911751"
+                }
+              }
+            },
+            {
+              "id": 911756,
+              "name": "Concejala delegada de Planificación Urbanística y Vivienda",
+              "_links": {
+                "self": {
+                  "name": "Concejala delegada de Planificación Urbanística y Vivienda",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/153/entities/549/orgs/911756"
+                }
+              }
+            },
+            {
+              "id": 26018,
+              "name": "Concejala delegada de Diversidad, Inclusión e Igualdad",
+              "_links": {
+                "self": {
+                  "name": "Concejala delegada de Diversidad, Inclusión e Igualdad",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/153/entities/549/orgs/26018"
+                }
+              }
+            },
+            {
+              "id": 911761,
+              "name": "Interventor General",
+              "_links": {
+                "self": {
+                  "name": "Interventor General",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/153/entities/549/orgs/911761"
+                }
+              }
+            },
+            {
+              "id": 26018,
+              "name": "Concejala de Igualdad, Solidaridad y Derechos Civiles",
+              "_links": {
+                "self": {
+                  "name": "Concejala de Igualdad, Solidaridad y Derechos Civiles",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/153/entities/549/orgs/26018"
+                }
+              }
+            },
+            {
+              "id": 26019,
+              "name": "Concejal delegado de Gobernanza ",
+              "_links": {
+                "self": {
+                  "name": "Concejal delegado de Gobernanza ",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/153/entities/549/orgs/26019"
+                }
+              }
+            },
+            {
+              "id": 26020,
+              "name": "Concejala delegada de Turismo Sostenible",
+              "_links": {
+                "self": {
+                  "name": "Concejala delegada de Turismo Sostenible",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/153/entities/549/orgs/26020"
+                }
+              }
+            },
+            {
+              "id": 26021,
+              "name": "Concejala de Proyectos Urbanos ",
+              "_links": {
+                "self": {
+                  "name": "Concejala de Proyectos Urbanos ",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/153/entities/549/orgs/26021"
+                }
+              }
+            },
+            {
+              "id": 26022,
+              "name": "Concejal delegado de Mantenimiento Urbano",
+              "_links": {
+                "self": {
+                  "name": "Concejal delegado de Mantenimiento Urbano",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/153/entities/549/orgs/26022"
+                }
+              }
+            },
+            {
+              "id": 911749,
+              "name": "Concejal Delegado de Cultura, Euskera y Turismo",
+              "_links": {
+                "self": {
+                  "name": "Concejal Delegado de Cultura, Euskera y Turismo",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/153/entities/549/orgs/911749"
+                }
+              }
+            },
+            {
+              "id": 911752,
+              "name": "Concejala delegada de Movilidad y Transporte Sostenible",
+              "_links": {
+                "self": {
+                  "name": "Concejala delegada de Movilidad y Transporte Sostenible",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/153/entities/549/orgs/911752"
+                }
+              }
+            },
+            {
+              "id": 26496,
+              "name": "Concejal delegado de Deportes y Vida Saludable",
+              "_links": {
+                "self": {
+                  "name": "Concejal delegado de Deportes y Vida Saludable",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/153/entities/549/orgs/26496"
+                }
+              }
+            },
+            {
+              "id": 26022,
+              "name": "Concejal delegado de Mantenimiento y Servicios Urbanos",
+              "_links": {
+                "self": {
+                  "name": "Concejal delegado de Mantenimiento y Servicios Urbanos",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/153/entities/549/orgs/26022"
+                }
+              }
+            },
+            {
+              "id": 911760,
+              "name": "Secretaria General – Directora Jurídica",
+              "_links": {
+                "self": {
+                  "name": "Secretaria General – Directora Jurídica",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/153/entities/549/orgs/911760"
+                }
+              }
+            },
+            {
+              "id": 26021,
+              "name": "Concejala delegada de Proyectos Urbanos",
+              "_links": {
+                "self": {
+                  "name": "Concejala delegada de Proyectos Urbanos",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/153/entities/549/orgs/26021"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Ayuntamiento de Donostia/San Sebastián",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/153/entities/549"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder153/es_doc/index.html",
+      "_links": {
+        "self": {
+          "name": "Ayuntamiento de Donostia/San Sebastián",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/153"
+        }
+      }
+    },
+    {
+      "id": 25844,
+      "identificationNumber": "G09637703",
+      "name": "Fundación Vitoria-Gasteiz Araba Mobility Lab",
+      "scope": "ARABA/ÁLAVA",
+      "address": "Provincia Plaza, Vitoria-Gasteiz 01001 Araba/Álava",
+      "webPage": "https://mobilitylab.eus/eu/mobility-lab-eus/",
+      "publicationDate": "2024-01-30",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES211",
+      "entities": [
+        {
+          "id": 25845,
+          "name": "Fundación Vitoria-Gasteiz Araba Mobility Lab",
+          "orgs": [
+            {
+              "id": 25846,
+              "name": "Patronato de la fundación",
+              "_links": {
+                "self": {
+                  "name": "Patronato de la fundación",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/25844/entities/25845/orgs/25846"
+                }
+              }
+            },
+            {
+              "id": 26319,
+              "name": "Director Gerente",
+              "_links": {
+                "self": {
+                  "name": "Director Gerente",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/25844/entities/25845/orgs/26319"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Fundación Vitoria-Gasteiz Araba Mobility Lab",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/25844/entities/25845"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder25844/es_doc/index.html",
+      "_links": {
+        "self": {
+          "name": "Fundación Vitoria-Gasteiz Araba Mobility Lab",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/25844"
+        }
+      }
+    },
+    {
+      "id": 10,
+      "identificationNumber": "S0100001G",
+      "name": "Euskal Trenbide Sarea",
+      "scope": "BIZKAIA",
+      "address": "San Vicente, 8 Planta 14 (Edificio Albia) 480001- BILBAO",
+      "webPage": "http://www.ets-rfv.euskadi.net/v86-ets/es/",
+      "publicationDate": "2024-01-26",
+      "mainActivity": "Otra actividad",
+      "alternativeActivity": "Gestor de la infraestructura ferroviaria",
+      "codNUTS": "ES213",
+      "entities": [
+        {
+          "id": 196,
+          "name": "ETS - Euskal Trenbide Sarea",
+          "orgs": [
+            {
+              "id": 910956,
+              "name": "Secretaría General",
+              "_links": {
+                "self": {
+                  "name": "Secretaría General",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/10/entities/196/orgs/910956"
+                }
+              }
+            },
+            {
+              "id": 25728,
+              "name": "Comisión Delegada en Materia de Contratación de ETS",
+              "_links": {
+                "self": {
+                  "name": "Comisión Delegada en Materia de Contratación de ETS",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/10/entities/196/orgs/25728"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "ETS - Euskal Trenbide Sarea",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/10/entities/196"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder10/es_doc/index.html",
+      "_links": {
+        "self": {
+          "name": "Euskal Trenbide Sarea",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/10"
+        }
+      }
+    },
+    {
+      "id": 221,
+      "identificationNumber": "A48589360",
+      "name": "Euskalduna Jauregia - Palacio Euskalduna, S. A.",
+      "scope": "BIZKAIA",
+      "address": "Avenida Abandoibarra, 4. 48011 Bilbao (Bizkaia)",
+      "webPage": "http://www.euskalduna.eus",
+      "publicationDate": "2024-01-22",
+      "mainActivity": "Ocio, cultura y religión",
+      "codNUTS": "ES213",
+      "entities": [
+        {
+          "id": 668,
+          "name": "Euskalduna Jauregia - Palacio Euskalduna S. A. ",
+          "orgs": [
+            {
+              "id": 912056,
+              "name": "Director/a  General  concurriendo conjuntamente el/la secretario/a del Consejo de Administración",
+              "_links": {
+                "self": {
+                  "name": "Director/a  General  concurriendo conjuntamente el/la secretario/a del Consejo de Administración",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/221/entities/668/orgs/912056"
+                }
+              }
+            },
+            {
+              "id": 912055,
+              "name": "Director/a  General  concurriendo conjuntamente con el/la Presidente/a del Consejo de Administración ",
+              "_links": {
+                "self": {
+                  "name": "Director/a  General  concurriendo conjuntamente con el/la Presidente/a del Consejo de Administración",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/221/entities/668/orgs/912055"
+                }
+              }
+            },
+            {
+              "id": 912054,
+              "name": "Consejo de Administración",
+              "_links": {
+                "self": {
+                  "name": "Consejo de Administración",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/221/entities/668/orgs/912054"
+                }
+              }
+            },
+            {
+              "id": 912053,
+              "name": "Director/a General",
+              "_links": {
+                "self": {
+                  "name": "Director/a General",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/221/entities/668/orgs/912053"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Euskalduna Jauregia - Palacio Euskalduna S. A. ",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/221/entities/668"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder221/es_doc/index.html",
+      "_links": {
+        "self": {
+          "name": "Euskalduna Jauregia - Palacio Euskalduna, S. A.",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/221"
+        }
+      }
+    },
+    {
+      "id": 26467,
+      "identificationNumber": "G48112155",
+      "name": "EUSKOIKER",
+      "scope": "BIZKAIA",
+      "address": "PLAZA INGENIERO TORRES QUEVEDO, 1, ESCUELA DE INGENIERÍA DE BILBAO, EDIFICIO II, 1º P1I33 ",
+      "webPage": "https://www.ehu.eus/euskoiker",
+      "publicationDate": "2024-01-17",
+      "mainActivity": "Otra actividad",
+      "alternativeActivity": "Investigación",
+      "codNUTS": "ES213",
+      "entities": [
+        {
+          "id": 26468,
+          "name": "EUSKOIKER",
+          "orgs": [
+            {
+              "id": 26469,
+              "name": "Director",
+              "_links": {
+                "self": {
+                  "name": "Director",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/26467/entities/26468/orgs/26469"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "EUSKOIKER",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/26467/entities/26468"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder26467/es_doc/index.html",
+      "_links": {
+        "self": {
+          "name": "EUSKOIKER",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/26467"
+        },
+        "contractingAuthorities": [
+          {
+            "name": "UPV/EHU - Universidad del País Vasco",
+            "href": "https://api.euskadi.eus/procurements/contracting-authorities/24656"
+          }
+        ]
+      }
+    },
+    {
+      "id": 26457,
+      "identificationNumber": "V16698979",
+      "name": "Junta de Concertación del ámbito A.I.U. ALT-6 Altzibar Mendebaldea del PGOU de Oiartzun",
+      "scope": "GIPUZKOA",
+      "address": "Done Eztebe Plaza, 1, 20180 Oiartzun, Gipuzkoa",
+      "webPage": "https://www.contratacion.euskadi.eus/KPELicitacion",
+      "publicationDate": "2023-12-28",
+      "mainActivity": "Vivienda y servicios comunitarios",
+      "codNUTS": "ES212",
+      "entities": [
+        {
+          "id": 26458,
+          "name": "Junta Concertación ALT-6 “Altzibar Mendebaldea” Oiartzun",
+          "orgs": [
+            {
+              "id": 26459,
+              "name": "Junta Concertación ALT-6 “Altzibar Mendebaldea” Oiartzun",
+              "_links": {
+                "self": {
+                  "name": "Junta Concertación ALT-6 “Altzibar Mendebaldea” Oiartzun",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/26457/entities/26458/orgs/26459"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Junta Concertación ALT-6 “Altzibar Mendebaldea” Oiartzun",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/26457/entities/26458"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder26457/es_doc/index.html",
+      "_links": {
+        "self": {
+          "name": "Junta de Concertación del ámbito A.I.U. ALT-6 Altzibar Mendebaldea del PGOU de Oiartzun",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/26457"
+        }
+      }
+    },
+    {
+      "id": 230,
+      "identificationNumber": "P4800005C",
+      "name": "Consorcio de Aguas Bilbao Bizkaia",
+      "scope": "BIZKAIA",
+      "address": "Edificio Albia I, 4. San Vicente, 8. 48001 Bilbao (Bizkaia)",
+      "webPage": "http://www.consorciodeaguas.com",
+      "publicationDate": "2023-12-19",
+      "mainActivity": "Medio ambiente",
+      "codNUTS": "ES213",
+      "entities": [
+        {
+          "id": 677,
+          "name": "Consorcio de Aguas Bilbao Bizkaia",
+          "orgs": [
+            {
+              "id": 912076,
+              "name": "Gerente",
+              "_links": {
+                "self": {
+                  "name": "Gerente",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/230/entities/677/orgs/912076"
+                }
+              }
+            },
+            {
+              "id": 912075,
+              "name": "Presidente",
+              "_links": {
+                "self": {
+                  "name": "Presidente",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/230/entities/677/orgs/912075"
+                }
+              }
+            },
+            {
+              "id": 912074,
+              "name": "Comité directivo",
+              "_links": {
+                "self": {
+                  "name": "Comité directivo",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/230/entities/677/orgs/912074"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Consorcio de Aguas Bilbao Bizkaia",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/230/entities/677"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder230/es_doc/index.html",
+      "_links": {
+        "self": {
+          "name": "Consorcio de Aguas Bilbao Bizkaia",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/230"
+        }
+      }
+    },
+    {
+      "id": 143,
+      "identificationNumber": "P2000015D",
+      "name": "Mancomunidad Municipal de San Marcos",
+      "scope": "GIPUZKOA",
+      "address": "Vtoria-Gasteiz, 10. 20018 Donostia/San Sebastián (Gipuzkoa)",
+      "webPage": "http://www.sanmarkos.eus",
+      "publicationDate": "2023-12-13",
+      "mainActivity": "Medio ambiente",
+      "codNUTS": "ES212",
+      "entities": [
+        {
+          "id": 523,
+          "name": "Mancomunidad de San Marcos",
+          "orgs": [
+            {
+              "id": 911678,
+              "name": "Presidente",
+              "_links": {
+                "self": {
+                  "name": "Presidente",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/143/entities/523/orgs/911678"
+                }
+              }
+            },
+            {
+              "id": 911679,
+              "name": "Junta",
+              "_links": {
+                "self": {
+                  "name": "Junta",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/143/entities/523/orgs/911679"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Mancomunidad de San Marcos",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/143/entities/523"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder143/es_doc/index.html",
+      "_links": {
+        "self": {
+          "name": "Mancomunidad Municipal de San Marcos",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/143"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,562 @@
+{
+  "totalItems": 9042,
+  "totalPages": 905,
+  "currentPage": 219,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "name": "ASOCIACION ESTUDIANTIL JUNIOR EMPRESA NITTON",
+      "registrationNumber": "10383",
+      "identificationNumber": "G56659964",
+      "address": "Paseo Uribitarte,6 , Piso 1",
+      "location": {
+        "postalCode": "48001",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.673.2",
+          "name": "Otros cafés y bares",
+          "_links": {
+            "self": {
+              "name": "Otros cafés y bares",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.673.2"
+            }
+          }
+        },
+        {
+          "id": "1.966.9",
+          "name": "Otros servicios culturales n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros servicios culturales n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.966.9"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-10-14",
+      "certificateEndDate": "2026-04-13",
+      "object": "LOS FINES DE ESTA ASOCIACIÓN SON: - FOMENTAR LA INICIATIVA EMPRESARIAL DE LOS ESTUDIANTES DEL GRADO DE LIDERAZGO EMPRENDEDOR E INNOVACIÓN DE MONDRAGÓN UNIBERTSITATEA BASADO EN EL TRABAJO EN EQUIPO. - PROMOVER LA PARTICIPACIÓN DE LOS ESTUDIANTES EN AQUELLOS PROYECTOS QUE CREEN Y DESARROLLEN COMPETENCIAS TEÓRICO-PRÁCTICOS ADQUIRIDOS MEDIANTE EL MÉTODO “APRENDER HACIENDO”. - LLEVAR A CABO PROYECTOS CON CLIENTES REALES QUE CONTRIBUYAN A LA FORMACIÓN EN UN CONTEXTO EMPRESARIAL REAL. - COOPERAR CON EL OBJETIVO DE APRENDER A NIVEL INDIVIDUAL Y DE EQUIPO Y COMO EMPRESA EN UN ENTORNO GLOBAL. PARA LA CONSECUCIÓN DE DICHOS FINES, PREVIO EL CUMPLIMIENTO DE LOS REQUISITOS LEGALES ESTABLECIDOS, LOS ASOCIADOS DESARROLLARÁN ACTIVIDADES CONCRETAS (PROYECTOS) EN LOS SIGUIENTES ÁMBITOS: - RELACIONES PÚBLICAS Y COMUNICACIÓN. - MARKETING Y PUBLICIDAD. - FORMACIÓN. - ARTE Y ESPECTÁCULOS. - DEPORTE Y OCIO. - CONSULTORÍA Y ASESORÍA DE GESTIÓN EMPRESARIAL. - SERVICIO DE HOSTELERÍA. ",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/10383",
+      "_links": {
+        "self": {
+          "name": "ASOCIACION ESTUDIANTIL JUNIOR EMPRESA NITTON",
+          "href": "https://api.euskadi.eus/procurements/companies/10383"
+        }
+      }
+    },
+    {
+      "name": "DISEÑO INTERIORISMO INFORMÁTICA OFICINAS, S.A.",
+      "registrationNumber": "00012",
+      "identificationNumber": "A48189526",
+      "address": "Aureliano Valle, 6",
+      "location": {
+        "postalCode": "48010",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.501.1",
+          "name": "Construcción completa, reparación y conservación de edificaciones",
+          "_links": {
+            "self": {
+              "name": "Construcción completa, reparación y conservación de edificaciones",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.1"
+            }
+          }
+        },
+        {
+          "id": "1.659.2",
+          "name": "Venta al por menor de muebles de oficina y máquinas y equipos de oficina",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de muebles de oficina y máquinas y equipos de oficina",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.659.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-10-13",
+      "certificateEndDate": "2026-04-13",
+      "classification": [
+        {
+          "id": "O",
+          "name": "Obras",
+          "groups": [
+            {
+              "id": "C",
+              "name": "EDIFICACIONES",
+              "subgroups": [
+                {
+                  "id": "04",
+                  "name": "ALBAÑILERIA, REVOCOS Y REVESTIDOS",
+                  "categories": [
+                    {
+                      "id": "3",
+                      "name": "Desde 360.001 Hasta 840.000",
+                      "_links": {
+                        "self": {
+                          "name": "Desde 360.001 Hasta 840.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/O/categories/3"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "ALBAÑILERIA, REVOCOS Y REVESTIDOS",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/O/groups/C/subgroups/04"
+                    }
+                  }
+                },
+                {
+                  "id": "06",
+                  "name": "PAVIMENTOS, SOLADOS Y ALICATADOS",
+                  "categories": [
+                    {
+                      "id": "3",
+                      "name": "Desde 360.001 Hasta 840.000",
+                      "_links": {
+                        "self": {
+                          "name": "Desde 360.001 Hasta 840.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/O/categories/3"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "PAVIMENTOS, SOLADOS Y ALICATADOS",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/O/groups/C/subgroups/06"
+                    }
+                  }
+                },
+                {
+                  "id": "08",
+                  "name": "CARPINTERIA DE MADERA",
+                  "categories": [
+                    {
+                      "id": "2",
+                      "name": "Desde 150.001 Hasta 360.000",
+                      "_links": {
+                        "self": {
+                          "name": "Desde 150.001 Hasta 360.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/O/categories/2"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "CARPINTERIA DE MADERA",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/O/groups/C/subgroups/08"
+                    }
+                  }
+                },
+                {
+                  "id": "09",
+                  "name": "CARPINTERIA METALICA",
+                  "categories": [
+                    {
+                      "id": "2",
+                      "name": "Desde 150.001 Hasta 360.000",
+                      "_links": {
+                        "self": {
+                          "name": "Desde 150.001 Hasta 360.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/O/categories/2"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "CARPINTERIA METALICA",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/O/groups/C/subgroups/09"
+                    }
+                  }
+                }
+              ],
+              "_links": {
+                "self": {
+                  "name": "EDIFICACIONES",
+                  "href": "https://api.euskadi.eus/procurements/companies/types/O/groups/C"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Obras",
+              "href": "https://api.euskadi.eus/procurements/companies/types/O"
+            }
+          }
+        }
+      ],
+      "object": "LA COMERCIALIZACIÓN, COMPRA-VENTA Y DISTRIBUCIÓN DE MOBILIARIO PARA OFICINAS Y COLECTIVIDADES, TANTO METÁLICOS COMO MADERA, SILLERÍA, COMPLEMENTOS Y ACCESORIOS, SISTEMAS DE ARCHIVO Y ALMACENAJE, MAMPARAS DIVISORIAS, PROYECTOS DE IMPLANTACIÓN Y DISTRIBUCIÓN DE ESPACIOS, OBRAS Y REFORMAS DE ACONDICONAMIENTO PARA OFICINAS Y LOCALES, CONTRATACIÓN Y COORDINACIÓN DE TODO TIPO DE GREMIOS RELACIONADOS CON LA CONSTRUCCIÓN, EQUIPOS Y SISTEMAS INFORMÁTICOS, EQUIPOS PARA IMPRESIÓN, CENTRALITAS, TELÉFONOS Y EQUIPOS DE TELECOMUNICACIONES, SISTEMAS DE VIDEO-VIGILANCIA, EQUIPOS AUDIOVISUALES, PRESTACIÓN DE SERVICIOS DE INSTALACIÓN, DE MANTENIMIENTO, DE ASISTENCIA TÉCNICA DE TODOS LOS PRODUCTOS CITADOS ANTERIORMENTE Y, EN GENERAL, TODAS LAS OPERACIONES COMERCIALES, INDUSTRIALES Y FINANCIERAS RELACIONADAS CON LAS ENUMERADAS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/00012",
+      "_links": {
+        "self": {
+          "name": "DISEÑO INTERIORISMO INFORMÁTICA OFICINAS, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/00012"
+        }
+      }
+    },
+    {
+      "name": "RESONANCIA MAGNETICA BILBAO, S.A.",
+      "registrationNumber": "10382",
+      "identificationNumber": "A48229744",
+      "address": "Calle General Eguia",
+      "location": {
+        "postalCode": "48010",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.942.1",
+          "name": "Consultorios médicos, centros de socorro sanitarios y urgencias",
+          "_links": {
+            "self": {
+              "name": "Consultorios médicos, centros de socorro sanitarios y urgencias",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.942.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-10-13",
+      "certificateEndDate": "2026-04-09",
+      "object": "A.- LA PRESTACIÓN, SIEMPRE CON EL TITULAR TITULADO ADECUADO Y CONFORME A LAS NORMAS LEGALES, DE TODA CLASE DE SERVICIOS MÉDICOS O SANITARIOS, ASÍ COMO AQUELLOS QUE CON TALES ACTIVIDADES SE RELACIONEN. B.- LA ADQUISICIÓN, VENTA, ARRENDAMIENTO Y EXPLOTACIÓN EN CUALQUIER MODALIDAD DE CLÍNICAS, RESIDENCIAS Y CUALQUIERA BIENES INMUEBLES. C.- LA PARTICIPACIÓN EN COMUNIDADES, ASOCIACIONES, SOCIEDADES Y EMPRESAS, ASÍ COMO LA PRESTACIÓN A LAS MISMAS DE CUANTAS ASISTENCIAS O SERVICIOS PRECISEN. D.- LA ADQUISICIÓN, DISFRUTE Y ENAJENACIÓN DE TODA CLASE DE VALORES MOBILIARIOS. E.- TODO CUANTO SEA ANTECEDENTE, COMPLEMENTO O CONSECUENCIA DE LO EXPUESTO.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/10382",
+      "_links": {
+        "self": {
+          "name": "RESONANCIA MAGNETICA BILBAO, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/10382"
+        }
+      }
+    },
+    {
+      "name": "AUTO REPARACIONES DEVA, S.L.",
+      "registrationNumber": "07186",
+      "identificationNumber": "B75216549",
+      "address": "BARRIO ITXASPE 34",
+      "location": {
+        "postalCode": "20820",
+        "municipality": "Deba",
+        "county": "Gipuzkoa",
+        "municipalityId": "029",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.615.1",
+          "name": "Venta al por mayor de vehículos, motocicletas, bicicletas y sus accesorios",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de vehículos, motocicletas, bicicletas y sus accesorios",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.615.1"
+            }
+          }
+        },
+        {
+          "id": "1.691.2",
+          "name": "Reparación de vehículos automóviles, bicicletas y otros vehículos",
+          "_links": {
+            "self": {
+              "name": "Reparación de vehículos automóviles, bicicletas y otros vehículos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.691.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-10-13",
+      "certificateEndDate": "2026-04-13",
+      "object": "CUANTAS OPERACIONES SE RELACIONEN DIRECTA O INDIRECTAMENTE CON LA EXPLOTACIÓN DE TALLERES MECÁNICOS Y SIMILARES, LA REPRESENTACIÓN, COMERCIO Y ASISTENCIA TÉCNICA DE AUTOMÓVILES Y VEHÍCULOS, EQUIPOS DE TRANSPORTE, MAQUINARIA EN GENERAL, SUS ACCESORIOS Y PIEZAS DE REPUESTO, ASÍ COMO EL ALMACENAJE, TRANSPORTE Y CONSIGNACIONES, INCLUSO EN SUS RELACIONES CON LOS SERVICIOS AUXILIARES DE ADUANAS Y SUS AGENTES, IMPORTACIÓN Y EXPORTACIÓN, Y CUALQUIER CLASE DE OPERACIONES REALIZADAS CON EL AUTOMÓVIL Y DEMÁS VEHÍCULOS A MOTOR Y SUS REPUESTOS EN SU SENTIDO MÁS AMPLIO",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07186",
+      "_links": {
+        "self": {
+          "name": "AUTO REPARACIONES DEVA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/07186"
+        }
+      }
+    },
+    {
+      "name": "LABIKER INGENIERIA Y CONTROL DE CALIDAD",
+      "registrationNumber": "06020",
+      "identificationNumber": "B01319508",
+      "address": "CALLE UZBINA Nº 24, PAB.A4",
+      "location": {
+        "postalCode": "01015",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.151.4",
+          "name": "Producción de energía no especificada en otros epígrafes",
+          "_links": {
+            "self": {
+              "name": "Producción de energía no especificada en otros epígrafes",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.151.4"
+            }
+          }
+        },
+        {
+          "id": "1.843.1",
+          "name": "Servicios técnicos de ingeniería",
+          "_links": {
+            "self": {
+              "name": "Servicios técnicos de ingeniería",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.1"
+            }
+          }
+        },
+        {
+          "id": "1.843.3",
+          "name": "Servicios técnicos de prospecciones y estudios geológicos",
+          "_links": {
+            "self": {
+              "name": "Servicios técnicos de prospecciones y estudios geológicos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.3"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-10-13",
+      "certificateEndDate": "2026-04-13",
+      "object": "LA CONSULTORÍA Y REALIZACIÓN DE ESTUDIOS E INFORMES DE CARÁCTER TÉCNICO EN MATERIAS DE OBRAS PÚBLICAS, EDIFICACIÓN, ORDENACIÓN DEL TERRITORIO Y URBANISMO, INDUSTRIA, MINERÍA, AGRICULTURA Y MEDIO AMBIENTE. EL ANÁLISIS, LOS ENSAYOS Y EL CONTROL TÉCNICO DE PROYECTOS, MATERIALES, OBRAS E INSTALACIONES ASÍ COMO EL CONTROL DE CALIDAD EN LA EDIFICACIÓN. LA REALIZACIÓN DE ESTUDIOS, INFORMES Y OTROS TRABAJOS TÉCNICOS DE CARTOGRAFÍA, GEOTECNOLOGÍA, ECOLOGÍA, HIDROLOGÍA Y MEDIO AMBIENTE. LA DIRECCIÓN DE OBRA DE TODO TIPO DE INSTALACIONES, EDIFICIOS, INFRAESTRUCTURAS Y EN GENERAL TODO TIPO DE INMUEBLES",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06020",
+      "_links": {
+        "self": {
+          "name": "LABIKER INGENIERIA Y CONTROL DE CALIDAD",
+          "href": "https://api.euskadi.eus/procurements/companies/06020"
+        }
+      }
+    },
+    {
+      "name": "NEUROTIKA SOUND, S.L.",
+      "registrationNumber": "07819",
+      "identificationNumber": "B20853180",
+      "address": "AMA KANDIDA 21, POL.DENAK PAB.206",
+      "location": {
+        "postalCode": "20140",
+        "municipality": "Andoain",
+        "county": "Gipuzkoa",
+        "municipalityId": "009",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.355.2",
+          "name": "Edición de soportes grabados de sonido, vídeo y de informática",
+          "_links": {
+            "self": {
+              "name": "Edición de soportes grabados de sonido, vídeo y de informática",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.355.2"
+            }
+          }
+        },
+        {
+          "id": "1.504.7",
+          "name": "Instalaciones telefónicas, telegráficas, televisión, etc",
+          "_links": {
+            "self": {
+              "name": "Instalaciones telefónicas, telegráficas, televisión, etc",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.504.7"
+            }
+          }
+        },
+        {
+          "id": "1.615.4",
+          "name": "Venta al por mayor de aparatos y material radioeléctrico y electrónico",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de aparatos y material radioeléctrico y electrónico",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.615.4"
+            }
+          }
+        },
+        {
+          "id": "1.859",
+          "name": "Alquiler de otros bienes muebles n.c.o.p. (sin personal permanente)",
+          "_links": {
+            "self": {
+              "name": "Alquiler de otros bienes muebles n.c.o.p. (sin personal permanente)",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.859"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-10-13",
+      "certificateEndDate": "2026-04-13",
+      "object": "LA EXPLOTACIÓN DE UN NEGOCIO DEDICADO A LA IMPORTACIÓN, EXPORTACIÓN, ALMACENAMIENTO, DISTRIBUCIÓN, COMERCIALIZACIÓN, REPRESENTACIÓN, COMPRA Y VENTA AL POR MAYOR Y AL \"DETALL\", ARRENDAMIENTO Y REPARACIÓN DE TODO TIPO DE EQUIPOS Y SISTEMAS AUDIOVISUALES, DE COMUNICACIONES, DE SONIDO E ILUMINACIÓN PROFESIONAL, ASÍ COMO SOPORTES Y COMPLEMENTOS DE LOS MISMOS. IGUALMENTE SE DEDICARÁ A CONSUTING, INGENIERÍA Y DISEÑO DE INSTALACIONES, ESTUDIO Y DESARROLLO DE PROYECTOS DE TODO TIPO EN LAS ACTIVIDADES ANTES RELACIONADAS, E IGUALMENTE AL DESARROLLO DE SISTEMAS, EJECUCIÓN, IMPLANTACIÓN Y PUESTA EN MARCHA DE EQUIPOS, SISTEMAS E INSTALACIONES; EXPLOTACIÓN, MANTENIMIENTO Y SOPORTE TÉCNICO DE LOS MISMOS, TANTO DE MODO DIRECTO COMO POR SUBCONTRATAS EN DICHOS ÁMBITOS Y ACTIVIDADES. COORDINACIÓN DE GREMIOS Y SECTORES, Y EN GENERAL CUALQUIER OTRA ACTIVIDAD AUXILIAR, ANEJA O COMPLEMENTARIA A TODO LO ANTERIORMENTE DESCRITO. ASIMISMO A LA VIDEO PROYECCIÓN, GESTIÓN DE AUDITORÍAS, REMODELACIÓN ACÚSTICA, PROYECTOS DE INSONORIZACIÓN, ACONDICIONAMIENTO ACÚSTICO DE SALAS, INSTALACIÓN DE EQUIPOS DE SONIDO E ILUMINACIÓN Y MEDICIÓN DE NIVELES SONOROS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07819",
+      "_links": {
+        "self": {
+          "name": "NEUROTIKA SOUND, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/07819"
+        }
+      }
+    },
+    {
+      "name": "NEURKI INGENIERIA TOPOGRAFICA SOCIEDAD DE RESPONSABILIDAD LIMITADA PROFESIONAL",
+      "registrationNumber": "04383",
+      "identificationNumber": "B01363597",
+      "address": "Zapateria, 68, bajo",
+      "location": {
+        "postalCode": "01001",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.843.4",
+          "name": "Servicios técnicos de topografía",
+          "_links": {
+            "self": {
+              "name": "Servicios técnicos de topografía",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.4"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-10-13",
+      "certificateEndDate": "2026-04-13",
+      "object": "EL EJERCICIO DE LAS ACTIVIDADES PROFESIONALES PROPIAS DE LOS TITULADOS UNIVERSITARIOS HABILITADOS PARA EL EJERCICIO DE LA PROFESIÓN REGULADA DE INGENIERO TÉCNICO EN TOPOGRAFÍA",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/04383",
+      "_links": {
+        "self": {
+          "name": "NEURKI INGENIERIA TOPOGRAFICA SOCIEDAD DE RESPONSABILIDAD LIMITADA PROFESIONAL",
+          "href": "https://api.euskadi.eus/procurements/companies/04383"
+        }
+      }
+    },
+    {
+      "name": "ARGOLABE INGENIERIA, SL",
+      "registrationNumber": "05808",
+      "identificationNumber": "B01378017",
+      "address": "Av. de Los Huetos, 79",
+      "location": {
+        "postalCode": "01010",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.843.1",
+          "name": "Servicios técnicos de ingeniería",
+          "_links": {
+            "self": {
+              "name": "Servicios técnicos de ingeniería",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-10-13",
+      "certificateEndDate": "2026-04-13",
+      "object": "LA PRESTACIÓN DE SERVICIOS DE INGENIERÍA",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/05808",
+      "_links": {
+        "self": {
+          "name": "ARGOLABE INGENIERIA, SL",
+          "href": "https://api.euskadi.eus/procurements/companies/05808"
+        }
+      }
+    },
+    {
+      "name": "BPG COORDINADORES DE SEGURIDAD, S.L.",
+      "registrationNumber": "03833",
+      "identificationNumber": "B20674917",
+      "address": "MADALENA JAUREGIBERRI, 4 - OFIC. 12",
+      "location": {
+        "postalCode": "20014",
+        "municipality": "Donostia / San Sebastián",
+        "county": "Gipuzkoa",
+        "municipalityId": "069",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.843.1",
+          "name": "Servicios técnicos de ingeniería",
+          "_links": {
+            "self": {
+              "name": "Servicios técnicos de ingeniería",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.1"
+            }
+          }
+        },
+        {
+          "id": "1.849.9",
+          "name": "Otros servicios independientes n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros servicios independientes n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.849.9"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-10-13",
+      "certificateEndDate": "2026-04-13",
+      "object": "LA INTERMEDIACIÓN Y COORDINACIÓN EN LAS SIGUIENTES ACTIVIDADES:\r\nA) REALIZACIÓN DE PROYECTOS DE VIVIENDAS, INGENIERÍA Y OBRA CIVIL.\r\nB) LLEVAR FACTURAS, DIRECCIÓN DE OBRA.\r\nC) REALIZACIÓN DE ESTUDIOS Y AUDITORIAS DE RIESGOS LABORALES.\r\nD) SUPERVISIÓN DE LABORES DE COORDINACIÓN DE RIESGOS LABORALES, TANTO A NIVEL DE PROYECTO COMO A NIVEL DE EJECUCIÓN.\r\nE) FOMENTAR LA PREVENCIÓN DE RIESGOS LABORALES.\r\nF) ORGANIZAR E IMPARTIR CURSOS DE PREVENCIÓN DE RIESGOS LABORALES.\r\nG) IMPARTIR CURSOS DE FORMACIÓN DE FORMADORES DE PREVENCIÓN DE RIESGOS LABORALES.\r\nH) SUPERVISAR Y REALIZAR ESTUDIOS Y PLANES DE SEGURIDAD Y SALUD.\r\nI) LA FORMACIÓN PRÁCTICA DE COORDINADORES EN MATERIA DE SEGURIDAD Y SALUD.\r\nj) FOMENTAR LA INCORPORACIÓN DE LA MUJER AL MERCADO DE TRABAJO.\r\nK) ASESORAMIENTO INTEGRAL DE TODO TIPO DE PERSONAS FÍSICAS Y/O JURÍDICAS, EN MATERIA DE CONSTRUCCIÓN Y/O PREVENCIÓN DE RIESGOS LABORALES",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03833",
+      "_links": {
+        "self": {
+          "name": "BPG COORDINADORES DE SEGURIDAD, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/03833"
+        }
+      }
+    },
+    {
+      "name": "AUDITORIA Y GESTION EMPRESARIAL, S.L.",
+      "registrationNumber": "06812",
+      "identificationNumber": "B20443842",
+      "address": "Calle Garibay nº 21-1º",
+      "location": {
+        "postalCode": "20004",
+        "municipality": "Donostia / San Sebastián",
+        "county": "Gipuzkoa",
+        "municipalityId": "069",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.842",
+          "name": "Servicios financieros y contables",
+          "_links": {
+            "self": {
+              "name": "Servicios financieros y contables",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.842"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-10-13",
+      "certificateEndDate": "2026-04-13",
+      "object": "LAS ACTIVIDADES DE CONSULTORÍA, AUDITORÍA, ASESORAMIENTO DE EMPRESAS O CUALESQUIERA ENTES DE NATURALEZA ECONÓMICA",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06812",
+      "_links": {
+        "self": {
+          "name": "AUDITORIA Y GESTION EMPRESARIAL, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/06812"
+        }
+      }
+    }
+  ]
+}

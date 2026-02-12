@@ -1,0 +1,580 @@
+{
+  "totalItems": 9042,
+  "totalPages": 905,
+  "currentPage": 92,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "name": "KOOPERA SERVICIOS AMBIENTALES SOCIEDAD COOPERATIVA",
+      "registrationNumber": "02612",
+      "identificationNumber": "F48510051",
+      "address": "C/ DERIO BIDEA 57 - POLIGONO ZABALONDO",
+      "location": {
+        "postalCode": "48100",
+        "municipality": "Mungia",
+        "county": "Bizkaia",
+        "municipalityId": "069",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.439.3",
+          "name": "Fabricación de textiles con fibras de recuperación",
+          "_links": {
+            "self": {
+              "name": "Fabricación de textiles con fibras de recuperación",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.439.3"
+            }
+          }
+        },
+        {
+          "id": "1.501.3",
+          "name": "Albañilería y pequeños trabajos de construcción en general",
+          "_links": {
+            "self": {
+              "name": "Albañilería y pequeños trabajos de construcción en general",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.3"
+            }
+          }
+        },
+        {
+          "id": "1.504.11",
+          "name": "Instalaciones eléctricas en general, redes telegráficas, telefonía, tv, etc",
+          "_links": {
+            "self": {
+              "name": "Instalaciones eléctricas en general, redes telegráficas, telefonía, tv, etc",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.504.11"
+            }
+          }
+        },
+        {
+          "id": "1.621",
+          "name": "Venta al por mayor de chatarra y metales de desecho férreos y no férreos",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de chatarra y metales de desecho férreos y no férreos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.621"
+            }
+          }
+        },
+        {
+          "id": "1.622",
+          "name": "Venta al por mayor de otros productos de recuperación",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de otros productos de recuperación",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.622"
+            }
+          }
+        },
+        {
+          "id": "1.651.2",
+          "name": "Venta al por menor de prendas de ropa para el vestido y tocado",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de prendas de ropa para el vestido y tocado",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.651.2"
+            }
+          }
+        },
+        {
+          "id": "1.653.2",
+          "name": "Venta al por menor de material y aparatos eléctricos, electrodomésticos y cocina",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de material y aparatos eléctricos, electrodomésticos y cocina",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.653.2"
+            }
+          }
+        },
+        {
+          "id": "1.656",
+          "name": "Venta al por menor de bienes usados",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de bienes usados",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.656"
+            }
+          }
+        },
+        {
+          "id": "1.691.2",
+          "name": "Reparación de vehículos automóviles, bicicletas y otros vehículos",
+          "_links": {
+            "self": {
+              "name": "Reparación de vehículos automóviles, bicicletas y otros vehículos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.691.2"
+            }
+          }
+        },
+        {
+          "id": "1.692",
+          "name": "Reparación de maquinaria industrial",
+          "_links": {
+            "self": {
+              "name": "Reparación de maquinaria industrial",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.692"
+            }
+          }
+        },
+        {
+          "id": "1.912",
+          "name": "Servicios forestales",
+          "_links": {
+            "self": {
+              "name": "Servicios forestales",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.912"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-01-12",
+      "certificateEndDate": "2026-05-27",
+      "classification": [
+        {
+          "id": "S",
+          "name": "Servicios",
+          "groups": [
+            {
+              "id": "R",
+              "subgroups": [
+                {
+                  "id": "05",
+                  "name": "Recogida y transporte de residuos",
+                  "categories": [
+                    {
+                      "id": "5",
+                      "name": "Mas de 1.200.000",
+                      "_links": {
+                        "self": {
+                          "name": "Mas de 1.200.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/S/categories/5"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "Recogida y transporte de residuos",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/R/subgroups/05"
+                    }
+                  }
+                }
+              ],
+              "_links": {
+                "self": {
+                  "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/R"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Servicios",
+              "href": "https://api.euskadi.eus/procurements/companies/types/S"
+            }
+          }
+        }
+      ],
+      "object": "A) PRESTACIÓN DE SERVICIOS DE RECOGIDA, CLASIFICACIÓN, ALMACENAMIENTO Y RECICLAJE DE ROPA DE SEGUNDA MANO Y/O CUALQUIER OTRA CLASE DE RESIDUO TEXTIL, DE APARATOS ELÉCTRICOS Y ELECTRÓNICOS, LIBROS, JUGUETES, PAPEL, MUEBLES VOLUMINOSOS Y BAZAR, ENVASES, PILAS, MATERIAS PELIGROSAS, O MATERIA ORGÁNICA ASÍ COMO LA GESTIÓN INTEGRAL DE GARBIGUNES Y PUNTOS LIMPIOS. B) FABRICACIÓN TEXTIL CON FIBRA RECUPERADA. C) EL COMERCIO AL POR MAYOR Y MENOR DE ARTÍCULOS TEXTILES, APARATOS ELÉCTRICOS Y ELECTRÓNICOS, PRODUCTOS ECOLÓGICOS, RECUPERADOS, RECICLADOS, Y/O BIOLÓGICOS Y DE PRODUCTOS DE COMERCIO JUSTO Y SOLIDARIO. D) CONSTRUCCIÓN, REPARACIÓN, REFORMA Y MANTENIMIENTO DE TODO TIPO DE EDIFICIOS E INMUEBLES, Y REALIZACIÓN DE CUALQUIER TIPO DE OBRA PÚBLICA O PRIVADA. E) SERVICIOS DE MOVILIDAD Y TRNSPORTE SOSTENIBLE TALES COMO LA GESTIÓN DE INFRAESTRUCTURAS PARA EL PRÉSTAMO DE BICICLETAS PÚBLICAS Y EL MANTENIMIENTO DE APARCAMIENTOS DE BICICLETAS PRIVADAS, SERVICIOS DE CICLOMENSAJERÍA PARA LA DISTRIBUCIÓN DE ENVÍOS DE PAQUETERÍA Y LA ENTREGA DE PRODUCTOS DE COMERCIOS LOCALES, GESTIÓN DE CENTROS DE FABRICACIÓN, VENTA Y REPARACIÓN DE BICICLETAS Y PATINETES NORMALES Y ELÉCTRICAS, ASÍ COMO CUALQUIER OTRA ACTIVIDAD DIRECTA O INDIRECTAMENTE RELACIONADA CON LAS ANTERIORES. EN ESTE OBJETO IMPLICARÁN TODAS LAS PERSONAS SOCIAS SU TRABAJO PERSONAL.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/02612",
+      "_links": {
+        "self": {
+          "name": "KOOPERA SERVICIOS AMBIENTALES SOCIEDAD COOPERATIVA",
+          "href": "https://api.euskadi.eus/procurements/companies/02612"
+        }
+      }
+    },
+    {
+      "name": "SAIOTEGI, S.A.",
+      "registrationNumber": "08111",
+      "identificationNumber": "A20062220",
+      "address": "Paseo Ubarburu 61, polígono 27",
+      "location": {
+        "postalCode": "20115",
+        "municipality": "Astigarraga",
+        "county": "Gipuzkoa",
+        "municipalityId": "903",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.849.9",
+          "name": "Otros servicios independientes n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros servicios independientes n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.849.9"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-01-12",
+      "certificateEndDate": "2026-06-18",
+      "object": "PRESTACIÓN DE SERVICIOS DE: DIRECCIÓN Y CONTROL DE EJECUCIÓN DE OBRAS DE EDIFICACIÓN Y OBRAS CIVILES E INDUSTRIALES, CONTROL DE CALIDAD DE MATERIALES, ENSAYO DE LABORATORIO, ASISTENCIA TÉCNICA E INVESTIGACIÓN APLICADAS A TODOS LOS TRABAJOS Y OBRAS EJECUTADAS POR LA SOCIEDAD. ",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08111",
+      "_links": {
+        "self": {
+          "name": "SAIOTEGI, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/08111"
+        }
+      }
+    },
+    {
+      "name": "GONZALEZ CAVIA Y CABRERA-ARQUITECTURA, URBANISMO Y PAISAJE S.L.",
+      "registrationNumber": "06205",
+      "identificationNumber": "B95405114",
+      "address": "c/ Abadetxe, 11. Bajo dr.",
+      "location": {
+        "postalCode": "48180",
+        "municipality": "Loiu",
+        "county": "Bizkaia",
+        "municipalityId": "903",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.843.2",
+          "name": "Servicios técnicos de arquitectura y urbanismo",
+          "_links": {
+            "self": {
+              "name": "Servicios técnicos de arquitectura y urbanismo",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-01-12",
+      "certificateEndDate": "2026-06-18",
+      "object": "EL EJERCICIO DE LA ACTIVIDAD PROFESIONAL DE LA ARQUITECTURA",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/06205",
+      "_links": {
+        "self": {
+          "name": "GONZALEZ CAVIA Y CABRERA-ARQUITECTURA, URBANISMO Y PAISAJE S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/06205"
+        }
+      }
+    },
+    {
+      "name": "CONSTRUCCIONES Y REPARACIONES MONTEGUI, S.L.",
+      "registrationNumber": "02274",
+      "identificationNumber": "B48651616",
+      "address": "JULIÁN GAIARRE, 38B-40A. LONJA",
+      "location": {
+        "postalCode": "48004",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.501.1",
+          "name": "Construcción completa, reparación y conservación de edificaciones",
+          "_links": {
+            "self": {
+              "name": "Construcción completa, reparación y conservación de edificaciones",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-01-12",
+      "certificateEndDate": "2026-06-17",
+      "object": "1.-LA PROMOCIÓN, CONSTRUCCIÓN, COMPRA, VENTA, ARRENDAMIENTO Y EXPLOTACIÓN EN CUALQUIER OTRA FORMA  DE TODA CLASE DE EDIFICACIONES, SOLARES E INMUEBLES EN GENERAL, TANTO POR CUENTA PROPIA COMO AJENA.\r\n\r\n2.-LA ADMINISTRACIÓN DE FINCAS Y COMUNIDADES, TANTO DE PROPIETARIOS COMO DE AUTOPROMOTORES, ASÍ COMO LA PRESTACIÓN DE TODA CLASE DE SERVICIOS RELACIONADOS CON EL ÁMBITO INMOBILIARIO, ARQUITECTÓNICO, DE TÉCNICA DE LA CONSTRUCCIÓN E INGENIERÍA EN GENERAL, POR MEDIO DE LA FORMULACIÓN, DESARROLLO Y PUESTA EN MARCHA DE ESTUDIOS, ACTUACIONES Y PROYECTOS.\r\n\r\n3.-LA REALIZACIÓN POR CUENTA PROPIA O AJENA DE TODA CLASE DE CONSTRUCCIONES , INSTALACIONES, REFORMAS, REHABILITACIONES Y DECORACIONES. LA  SUPERVISIÓN  Y CONTROL DE OBRAS, ASÍ COMO LA COORDINACIÓN DE GREMIOS, EL ASESORAMIENTO Y LA ASISTENCIA TÉCNICA EN TODO CUANTO SE RELACIONE, DIRECTA O INDIRECTAMENTE, CON EL CAMPO DE LA CONSTRUCCIÓN DE EDIFICIOS Y DE OBRAS PÚBLICAS O CIVILES. \r\n\r\n4.-LA COMPRA, VENTA, IMPORTACIÓN, EXPORTACIÓN Y COMERCIALIZACIÓN EN GENERAL DE TODA CLASE DE MATERIALES DE LA CONSTRUCCIÓN Y/O COMPLEMENTARIOS Y/O DECORATIVOS, ASÍ COMO CUALESQUIERA INSTALACIONES, ELEMENTOS O SERVICIOS DE LAS EDIFICACIONES.\r\n\r\n5.-LA ADQUISICIÓN, CESIÓN, TENENCIA, DISFRUTE, ADMINISTRACIÓN, GESTIÓN Y NEGOCIACIÓN EN GENERAL DE VALORES INMOBILIARIOS, INMUEBLES Y PARTICIPACIONES SOCIALES.\r\n\r\n6-LA CONSTITUCIÓN CON LA CONCURRENCIA DE OTRAS PERSONAS DE TODA CLASE DE SOCIEDADES MERCANTILES, LA PARTICIPACIÓN EN OTRAS CONSTITUÍDAS, PUDIENDO OSTENTAR EN TODAS ELLAS CARGOS DE ADMINISTRACIÓN, DIRECCIÓN O CONTROL MEDIANTE LA OPORTUNA DELEGACIÓN EN PERSONA FÍSICA\r\n       ",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/02274",
+      "_links": {
+        "self": {
+          "name": "CONSTRUCCIONES Y REPARACIONES MONTEGUI, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/02274"
+        }
+      }
+    },
+    {
+      "name": "COMERCIAL DIVING ACTIVITIES, S.L.",
+      "registrationNumber": "10499",
+      "identificationNumber": "B95602082",
+      "address": "Calle Punta Lucero, 7",
+      "location": {
+        "postalCode": "48508",
+        "municipality": "Zierbena",
+        "county": "Bizkaia",
+        "municipalityId": "913",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.501.2",
+          "name": "Construcción completa, reparación y conservación obras civiles",
+          "_links": {
+            "self": {
+              "name": "Construcción completa, reparación y conservación obras civiles",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.2"
+            }
+          }
+        },
+        {
+          "id": "1.933.9",
+          "name": "Otras actividades de enseñanza tales como idiomas, mecanografía",
+          "_links": {
+            "self": {
+              "name": "Otras actividades de enseñanza tales como idiomas, mecanografía",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.933.9"
+            }
+          }
+        },
+        {
+          "id": "1.999",
+          "name": "Otros servicios n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros servicios n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.999"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-01-12",
+      "certificateEndDate": "2026-07-10",
+      "object": "CURSOS Y ENSEÑANZA DE BUCEO PROFESIONAL. TRABAJOS SUBACUÁTICOS Y DE OBRAS HIDRÁULICAS. ALQUILER DE MATERIAL Y HERRAMIENTAS DE BUCEO. ALQUILER DE EMBARCACIONES CON Y SIN TRIPULACIÓN. VENTA DE MATERIAL DE BUCEO. VENTA DE MATERIAL NÁUTICO. REPARACIÓN Y MANTENIMIENTO DE MATERIAL DE BUCEO Y DE INSTALACIONES SERVICIOS NÁUTICOS Y DEPORTIVOS. ORGANIZACIÓN DE EVENTOS DEPORTIVOS Y DE CARÁCTER CULTURAL (INTERÉS SOCIAL). CURSOS DE NÁUTICA DEPORTIVA (PNB, PER, PY, CY). CURSOS DE SALVAMENTO Y RESCATE Y PRIMEROS AUXILIOS. CURSOS DE BUCEO CIENTÍFICO. ESTUDIOS MEDIOAMBIENTALES ASESORÍA TÉCNICA HIPERBÁRICA Y NAVAL. ESTUDIOS DE CARÁCTER OCEANOGRÁFICOS Y TECNOLÓGICOS. PLANIFICACIÓN Y DESARROLLO DE OBRA MARÍTIMAS (HIDRÁULICAS, PISCIFACTORÍAS, ETC). CURSOS DE FORMACIÓN BÁSICA (MARINERO COMPETENTE Y MARINERO PESCADOR). VENTA DE EMBARCACIONES Y MOTORES NÁUTICOS. VENTA DE SEGUROS PARA ACTIVIDADES SUBACUÁTICAS. RECONOCIMIENTOS MÉDICOS DEPORTIVOS Y PROFESIONALES. SERVICIO DE CÁMARA HIPERBÁRICA (ALQUILER, EMERGENCIA, ETC). CURSOS DE ARQUEOLOGÍA SUBMARINA. TRABAJOS DE ARQUEOLOGÍA SUBMARINA. FABRICACIÓN, INSTALACIÓN Y GESTIÓN DE ARRECIFES ARTIFICIALES. CONSTRUCCIÓN DE BIENES MUEBLES E INMUEBLES. DESHACE DE BIENES MUEBLES. CURSOS Y ACTIVIDADES DE BUCEO RECREATIVO.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/10499",
+      "_links": {
+        "self": {
+          "name": "COMERCIAL DIVING ACTIVITIES, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/10499"
+        }
+      }
+    },
+    {
+      "name": "RADIMER SEGURIDAD, S.L.",
+      "registrationNumber": "07238",
+      "identificationNumber": "B95799839",
+      "address": "Polígono Industrial Trápaga-Causo, locales 12-13",
+      "location": {
+        "postalCode": "48510",
+        "municipality": "Valle de Trápaga-Trapagaran",
+        "county": "Bizkaia",
+        "municipalityId": "080",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.849.4",
+          "name": "Servicios de custodia, seguridad y protección",
+          "_links": {
+            "self": {
+              "name": "Servicios de custodia, seguridad y protección",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.849.4"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-01-12",
+      "certificateEndDate": "2026-06-20",
+      "object": "A) LA VIGILANCIA Y PROTECCIÓN DE BIENES, ESTABLECIMIENTOS, ESPECTÁCULOS, CERTÁMENES O CONVENCIONES. B) LA INSTALACIÓN Y MANTENIMIENTO DE APARATOS, DISPOSITIVOS Y SISTEMAS DE SEGURIDAD Y DE PROTECCIÓN CONTRA INCENDIOS. C) LA EXPLOTACIÓN DE CENTRALES PARA LA RECEPCIÓN, VERIFICACIÓN Y TRANSMISIÓN DE LAS SEÑALES DE ALARMAS Y SU COMUNICACIÓN A LAS FUERZAS Y CUERPOS DE SEGURIDAD, ASÍ COMO LA PRESTACIÓN DE SERVICIOS DE RESPUESTA CUYA REALIZACIÓN NO SEA DE LA COMPETENCIA DE DICHAS FUERZAS Y CUERPOS. D) LA PLANIFICACIÓN Y ASESORAMIENTO DE LAS ACTIVIDADES PROPIAS DE LAS EMPRESAS DE SEGURIDAD. E) LA PRESTACIÓN DE SERVICIOS DE VIGILANCIA Y PROTECCIÓN DE LA PROPIEDAD RURAL MEDIANTE GUARDAS PARTICULARES DEL CAMPO. F) EL ESTUDIO Y LA EJECUCIÓN DE INSTALACIONES INDUSTRIALES O DOMÉSTICAS DE TODA CLASE, Y EN ESPECIAL, LAS DEDICADAS A LA PROTECCIÓN CONTRA EL FUEGO Y SEGURIDAD, ASÍ COMO LA FABRICACIÓN Y COMERCIALIZACIÓN DE ELEMENTOS, MÁQUINAS Y PIEZAS A TALES FINES Y LA COMERCIALIZACIÓN DE LOS PRODUCTOS RESULTANTES, QUE SEAN APLICABLES A LAS INSTALACIONES CONTRA INCENDIOS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07238",
+      "_links": {
+        "self": {
+          "name": "RADIMER SEGURIDAD, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/07238"
+        }
+      }
+    },
+    {
+      "name": "HUGO TOBIO SUAREZ",
+      "registrationNumber": "10498",
+      "identificationNumber": "16061281J",
+      "address": "Avenida Elexalde",
+      "location": {
+        "postalCode": "48940",
+        "municipality": "Leioa",
+        "county": "Bizkaia",
+        "municipalityId": "054",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "2.224",
+          "name": "Dibujantes técnicos",
+          "_links": {
+            "self": {
+              "name": "Dibujantes técnicos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/2.224"
+            }
+          }
+        },
+        {
+          "id": "2.751",
+          "name": "Profesionales de la publicidad, relaciones públicas y similares",
+          "_links": {
+            "self": {
+              "name": "Profesionales de la publicidad, relaciones públicas y similares",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/2.751"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-01-09",
+      "certificateEndDate": "2026-07-09",
+      "object": "PROFESIONALES DE LA PUBLICIDAD, RELACIONES PÚBLICAS Y SIMILARES. DIBUJANTES TÉCNICOS.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/10498",
+      "_links": {
+        "self": {
+          "name": "HUGO TOBIO SUAREZ",
+          "href": "https://api.euskadi.eus/procurements/companies/10498"
+        }
+      }
+    },
+    {
+      "name": "AZCOAN EJECUCION Y GESTION DE OBRAS, S.L.",
+      "registrationNumber": "09383",
+      "identificationNumber": "B01522689",
+      "address": "Calle Bizenta Mogel 14 (01008)",
+      "location": {
+        "postalCode": "01008",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.501.1",
+          "name": "Construcción completa, reparación y conservación de edificaciones",
+          "_links": {
+            "self": {
+              "name": "Construcción completa, reparación y conservación de edificaciones",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-01-09",
+      "certificateEndDate": "2026-06-14",
+      "object": "EJECUCIÓN DE TODO TIPO DE OBRAS Y MANTENIMIENTO DE INMUEBLES. CONSTRUCCIÓN DE VIVIENDAS. CONSTRUCCIÓN DE CHALETS. REFORMAS DE LOCALES COMERCIALES. REHABILITACIÓN DE EDIFICIOS. OBRA CIVIL. EDIFICACIÓN INDUSTRIAL. OBRAS DE ACCESIBILIDAD. PROMOCIONES. GESTIÓN DE PROYECTOS LLAVE EN MANO. COMPRAVENTA DE MATERIAL DE CONSTRUCCIÓN, DE OBJETOS DE DECORACIÓN Y DE INTERIORES PARA EDIFICACIONES. COORDINACIÓN DE GREMIOS. ASESORAMIENTO A OTRAS EMPRESAS DE CONSTRUCCIÓN.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/09383",
+      "_links": {
+        "self": {
+          "name": "AZCOAN EJECUCION Y GESTION DE OBRAS, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/09383"
+        }
+      }
+    },
+    {
+      "name": "GRAFICAS ZAMUDIO PRINTEK SAL",
+      "registrationNumber": "02122",
+      "identificationNumber": "A48743207",
+      "address": "POLÍGONO INDUSTRIAL TORRELARRAGOITI. PARCELA, 4",
+      "location": {
+        "postalCode": "48170",
+        "municipality": "Zamudio",
+        "county": "Bizkaia",
+        "municipalityId": "905",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.474",
+          "name": "Artes gráficas (impresión gráfica)",
+          "_links": {
+            "self": {
+              "name": "Artes gráficas (impresión gráfica)",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.474"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-01-09",
+      "certificateEndDate": "2026-06-18",
+      "classification": [
+        {
+          "id": "S",
+          "name": "Servicios",
+          "groups": [
+            {
+              "id": "M",
+              "subgroups": [
+                {
+                  "id": "04",
+                  "name": "Artes gráficas",
+                  "categories": [
+                    {
+                      "id": "3",
+                      "name": "Desde 300.001 Hasta 600.000",
+                      "_links": {
+                        "self": {
+                          "name": "Desde 300.001 Hasta 600.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/S/categories/3"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "Artes gráficas",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/M/subgroups/04"
+                    }
+                  }
+                }
+              ],
+              "_links": {
+                "self": {
+                  "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/M"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Servicios",
+              "href": "https://api.euskadi.eus/procurements/companies/types/S"
+            }
+          }
+        }
+      ],
+      "object": "a) IMPRESIÓN DE TODA CLASE DE TEXTOS, GRABADOS E IMÁGENES, POR CUALQUIER SISTEMA O PROCEDIMIENTO.\n\nb) CREACIÓN Y REALIZACIÓN DE IMPRESOS COMERCIALES Y PROPAGANDA.\n\nc) ENCUADERNACIÓN Y EDICIÓN DE LIBROS, TANTO POR MEDIOS MECÁNICOS O AUTOMATIZADOS, COMO ARTESANOS.\n\nd) ESTAMPACIÓN EN RELIEVE DE TODA CLASE DE IMPRESOS.\n\ne) LA REALIZACIÓN DE TODO TIPO DE TRABAJOS RELACIONADOS CON LAS ARTES GRÁFICAS Y DE EDICIÓN.\n\nf) LA REPRESENTACIÓN COMO AGENTE, DISTRIBUIDOR, COMISIONISTA, DELEGADO O CUALQUIER OTRA FORMA DE MEDIACIÓN MERCANTIL, DE TODA CLASE DE EMPRESAS NACIONALES O EXTRANJERAS, QUE SE RELACIONEN DIRECTA O INDIRECTAMENTE CON LAS ARTES GRÁFICAS\n",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/02122",
+      "_links": {
+        "self": {
+          "name": "GRAFICAS ZAMUDIO PRINTEK SAL",
+          "href": "https://api.euskadi.eus/procurements/companies/02122"
+        }
+      }
+    },
+    {
+      "name": "AUTO INDUSTRIAL BASCONIA, S.A.",
+      "registrationNumber": "00411",
+      "identificationNumber": "A48116339",
+      "address": "Gudarien Kalea, 2 - 1º",
+      "location": {
+        "postalCode": "48970",
+        "municipality": "Basauri",
+        "county": "Bizkaia",
+        "municipalityId": "015",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.615.1",
+          "name": "Venta al por mayor de vehículos, motocicletas, bicicletas y sus accesorios",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de vehículos, motocicletas, bicicletas y sus accesorios",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.615.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2026-01-09",
+      "certificateEndDate": "2026-06-13",
+      "object": "COMPRAVENTA AL POR MAYOR O MENOR DE RECAMBIOS Y ACCESORIOS RELACIONADOS CON LA RAMA DEL AUTOMÓVIL Y DEMÁS VEHÍCULOS A MOTOR Y CON LA MAQUINARIA EN GENERAL; IMPORTACIÓN Y EXPORTACIÓN DE TODA CLASE DE MERCANCÍAS RELACIONADAS CON LO ANTERIOR; COMPRAVENTA DE COCHES Y DEMÁS VEHÍCULOS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/00411",
+      "_links": {
+        "self": {
+          "name": "AUTO INDUSTRIAL BASCONIA, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/00411"
+        }
+      }
+    }
+  ]
+}

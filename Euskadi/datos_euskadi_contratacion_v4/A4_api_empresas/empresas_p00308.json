@@ -1,0 +1,444 @@
+{
+  "totalItems": 9042,
+  "totalPages": 905,
+  "currentPage": 308,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "name": "FIT-3, S.L.",
+      "registrationNumber": "09519",
+      "identificationNumber": "B01567338",
+      "address": "Calle Portal de Zurbano",
+      "location": {
+        "postalCode": "01013",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.504.3",
+          "name": "Instalaciones de frío, calor y acondicionamiento de aire",
+          "_links": {
+            "self": {
+              "name": "Instalaciones de frío, calor y acondicionamiento de aire",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.504.3"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-09-01",
+      "certificateEndDate": "2026-02-28",
+      "object": "EL MONTAJE E INSTALACIONES DE TUBERÍAS; TRABAJOS RELACIONADOS CON CALEFACCIÓN, FONTANERÍA, GAS.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/09519",
+      "_links": {
+        "self": {
+          "name": "FIT-3, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/09519"
+        }
+      }
+    },
+    {
+      "name": "MARIA ELENA PEREZ GONZALEZ",
+      "registrationNumber": "10086",
+      "identificationNumber": "30689667P",
+      "address": "Calle Músico Arambarri 3 6ºD",
+      "location": {
+        "postalCode": "48004",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "2.838",
+          "name": "Ópticos-optometristas y podólogos",
+          "_links": {
+            "self": {
+              "name": "Ópticos-optometristas y podólogos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/2.838"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-09-01",
+      "certificateEndDate": "2026-02-28",
+      "object": "ÓPTICOS-OPTOMETRISTAS Y PODÓLOGOS.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/10086",
+      "_links": {
+        "self": {
+          "name": "MARIA ELENA PEREZ GONZALEZ",
+          "href": "https://api.euskadi.eus/procurements/companies/10086"
+        }
+      }
+    },
+    {
+      "name": "BECTON DICKINSON, S.A.",
+      "registrationNumber": "00489",
+      "identificationNumber": "A50140706",
+      "address": "C/ CAMINO DE VALDEOLIVA, S/N.",
+      "location": {
+        "postalCode": "28750",
+        "municipality": "San Agustín del Guadalix",
+        "county": "Madrid",
+        "municipalityId": "129",
+        "countyId": "28"
+      },
+      "economicActivities": [
+        {
+          "id": "1.392.1",
+          "name": "Fabricación de material médico-quirúrgico",
+          "_links": {
+            "self": {
+              "name": "Fabricación de material médico-quirúrgico",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.392.1"
+            }
+          }
+        },
+        {
+          "id": "1.699",
+          "name": "Otras reparaciones n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otras reparaciones n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.699"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-09-01",
+      "certificateEndDate": "2026-03-01",
+      "object": "LA FABRICACIÓN Y/O VENTA DE MATERIAL HIPODÉRMICO, MEDICAMENTOS, PRODUCTOS FARMACÉUTICOS, INSTRUMENTOS MÉDICOS, DENTALES, OFTALMOLÓGICOS, EQUIPOS, SISTEMAS Y MATERIALES PARA LABORATORIOS QUÍMICOS, FARMACÉUTICOS, CENTROS DE INVESTIGACIÓN, HOSPITALES, CLÍNICAS, SEGMENTO VETERINARIO E INDUSTRIAL. ASÍ COMO ADQUIRIR TANTO EN MERCADOS INTERIORES COMO EXTERIORES LOS BIENES NECESARIOS PARA DICHA FABRICACIÓN Y/O VENTA, Y LA PRESTACIÓN DE CUALQUIER SERVICIO POST-VENTA. EL TRANSPORTE DE MUESTRAS DE DIAGNÓSTICO O MUESTRAS CLÍNICAS (INCLUIDA SANGRE HUMANA O PRODUCTOS DERIVADOS DE LA SANGRE HUMANA) INCLUYENDO LA MANIPULACIÓN REQUERIDA PARA LA REFERIDA ACTIVIDAD DE TRANSPORTE. LA PRODUCCIÓN Y VENTA DE ENERGÍA ELÉCTRICA",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/00489",
+      "_links": {
+        "self": {
+          "name": "BECTON DICKINSON, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/00489"
+        }
+      }
+    },
+    {
+      "name": "BAGA BIGA PRODUKZIOAK SOCIEDAD LIMITADA",
+      "registrationNumber": "08475",
+      "identificationNumber": "B95431896",
+      "address": "Errota bidea, 1",
+      "location": {
+        "postalCode": "48100",
+        "municipality": "Mungia",
+        "county": "Bizkaia",
+        "municipalityId": "069",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.355.2",
+          "name": "Edición de soportes grabados de sonido, vídeo y de informática",
+          "_links": {
+            "self": {
+              "name": "Edición de soportes grabados de sonido, vídeo y de informática",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.355.2"
+            }
+          }
+        },
+        {
+          "id": "1.963.3",
+          "name": "Exhibición de películas y vídeos fuera de establecimiento permanente",
+          "_links": {
+            "self": {
+              "name": "Exhibición de películas y vídeos fuera de establecimiento permanente",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.963.3"
+            }
+          }
+        },
+        {
+          "id": "1.965.1",
+          "name": "Espectáculos en salas y locales (excepto los taurinos)",
+          "_links": {
+            "self": {
+              "name": "Espectáculos en salas y locales (excepto los taurinos)",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.965.1"
+            }
+          }
+        },
+        {
+          "id": "1.989.2",
+          "name": "Servicios de organización de congresos, asambleas y similares",
+          "_links": {
+            "self": {
+              "name": "Servicios de organización de congresos, asambleas y similares",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.989.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-08-31",
+      "certificateEndDate": "2026-02-28",
+      "object": "1. LA REALIZACIÓN DE SERVICIOS DE HOSTELERÍA, LIMPIEZA DE LOCALES, INSTALACIONES, MATERIALES, LA EXPLOTACIÓN DE CAFETERÍAS, BARES, RESTAURANTES, LA REALIZACIÓN DE SUMINISTROS DE BIENES DE ESTE RAMO CITADO DE HOSTELERÍA A COLEGIOS, EMPRESAS, HOSPITALES, HOTELES, CAFETERÍAS, RESTAURANTES, LA REALIZACIÓN DE PROYECTOS, PLANIFICACIONES E INSTALACIONES DE BIENES Y SERVICIOS RELATIVOS AL REPETIDO RAMO; Y, EN RELACIÓN CON LO APUNTADO, LA COMPRA, VENTA, COMERCIALIZACIÓN, DISTRIBUCIÓN, IMPORTACIÓN Y EXPORTACIÓN DE PRODUTOS QUE TENGAN RELACIÓN DIRECTA CON EL RAMOS DE LA HOSTELERÍA; MANOFACTURACIÓN Y ENVASADO DE COMIDAS, ASÍ COMO LAS TRANSFORMACIONES ALIMENTICIAS. 2. EL SERVICIO DE ORGANIZACIÓN DE CONGRESOS, ASAMBLEAS Y ESPECTÁCULOS Y LA EDICIÓN DE SOPORTES GRABADOS DE SONIDO, DE VÍDO Y DE INFORMÁTICA.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08475",
+      "_links": {
+        "self": {
+          "name": "BAGA BIGA PRODUKZIOAK SOCIEDAD LIMITADA",
+          "href": "https://api.euskadi.eus/procurements/companies/08475"
+        }
+      }
+    },
+    {
+      "name": "TEYCOMAN, S.L.",
+      "registrationNumber": "09276",
+      "identificationNumber": "B48469274",
+      "address": "C. Jon Arrospide Kalea, 11 2, DPTO 17,",
+      "location": {
+        "postalCode": "48014",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.504.3",
+          "name": "Instalaciones de frío, calor y acondicionamiento de aire",
+          "_links": {
+            "self": {
+              "name": "Instalaciones de frío, calor y acondicionamiento de aire",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.504.3"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-08-31",
+      "certificateEndDate": "2026-02-28",
+      "object": "MONTAJE, REPARACIÓN Y MANTENIMIENTO DE CALDERAS E INSTALACIONES DE CALEFACCIÓN, AGUA CALIENTE SANITARIA, AIRE ACONDICIONADO Y GAS.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/09276",
+      "_links": {
+        "self": {
+          "name": "TEYCOMAN, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/09276"
+        }
+      }
+    },
+    {
+      "name": "MARAMARA TALDEAREN HIZKUNTZA ZERBITZUAK SL",
+      "registrationNumber": "04277",
+      "identificationNumber": "B20988226",
+      "address": "PORTUETXE 53B OFICINA  109",
+      "location": {
+        "postalCode": "20018",
+        "municipality": "Donostia / San Sebastián",
+        "county": "Gipuzkoa",
+        "municipalityId": "069",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.849.3",
+          "name": "Servicios de traducción y similares",
+          "_links": {
+            "self": {
+              "name": "Servicios de traducción y similares",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.849.3"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-08-31",
+      "certificateEndDate": "2026-02-28",
+      "classification": [
+        {
+          "id": "S",
+          "name": "Servicios",
+          "groups": [
+            {
+              "id": "T",
+              "subgroups": [
+                {
+                  "id": "05",
+                  "name": "Servicios de traductores e intérpretes",
+                  "categories": [
+                    {
+                      "id": "4",
+                      "name": "Desde 600.001 Hasta 1.1200.000",
+                      "_links": {
+                        "self": {
+                          "name": "Desde 600.001 Hasta 1.1200.000",
+                          "href": "https://api.euskadi.eus/procurements/companies/types/S/categories/4"
+                        }
+                      }
+                    }
+                  ],
+                  "_links": {
+                    "self": {
+                      "name": "Servicios de traductores e intérpretes",
+                      "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/T/subgroups/05"
+                    }
+                  }
+                }
+              ],
+              "_links": {
+                "self": {
+                  "href": "https://api.euskadi.eus/procurements/companies/types/S/groups/T"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Servicios",
+              "href": "https://api.euskadi.eus/procurements/companies/types/S"
+            }
+          }
+        }
+      ],
+      "object": "HIZKUNTZA ZERBITZUAK (TESTU SORKUNTZA,ITZULPENAK, ZUZENKETAK ETA TRANSKRIPZIOAK), ARGITALPENAK (ALDIZKAKOAK ETA LIBURUAK), IKUS-ENTZUNEZKOAK ETA ESZENA ARTEAK, PUBLIZITATE ZERBITZUA, KOMUNIKAZIOA ETA MARKETINA, HELDUEN IRAKASKUNTZA, INFORMAZIOA ETA BERRIKUNTZA TEKNOLOGIAK, DISEINUA",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/04277",
+      "_links": {
+        "self": {
+          "name": "MARAMARA TALDEAREN HIZKUNTZA ZERBITZUAK SL",
+          "href": "https://api.euskadi.eus/procurements/companies/04277"
+        }
+      }
+    },
+    {
+      "name": "TRANSQUIMICA,S.A.",
+      "registrationNumber": "07593",
+      "identificationNumber": "A48073191",
+      "address": "POLIGONO INDUSTRIAL KALZADAKO, C1",
+      "location": {
+        "postalCode": "01468",
+        "municipality": "Amurrio",
+        "county": "Araba/Álava",
+        "municipalityId": "002",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.616.6",
+          "name": "Venta al por mayor de productos químicos industriales",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de productos químicos industriales",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.616.6"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-08-31",
+      "certificateEndDate": "2026-02-28",
+      "object": "LA FABRICACIÓN, COMPRA, VENTA, IMPORTACIÓN Y EXPORTACIÓN Y COMERCIO EN GENERAL DE PRODUCTOS QUÍMICOS DE CUALQUIER CLASE",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/07593",
+      "_links": {
+        "self": {
+          "name": "TRANSQUIMICA,S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/07593"
+        }
+      }
+    },
+    {
+      "name": "AARE SERVICIOS CULTURALES, S.L.",
+      "registrationNumber": "03580",
+      "identificationNumber": "B01413160",
+      "address": "ISABEL ORBE, 13-5º C",
+      "location": {
+        "postalCode": "01002",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.966.9",
+          "name": "Otros servicios culturales n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros servicios culturales n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.966.9"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-08-31",
+      "certificateEndDate": "2026-02-28",
+      "object": "LA GESTIÓN CULTURAL, CATALOGACIÓN Y DOCUMENTACIÓN DE REGISTROS ARTÍSTICOS Y DOCUMENTALES, ACTIVIDADES DIDÁCTICAS -TALLERES, VISITAS GUIADAS, ETC.- RELACIONADAS CON EL ARTE, LA MÚSICA, EL TEATRO, LA LITERATURA, ETC. Y EXPOSITIVAS, SERVICIOS DE ASISTENCIA AL PUBLICO EN ESPACIOS CULTURALES . MUSEOS, SALAS DE EXPOSICIONES, ARCHIVOS, BIBLIOTECAS, CENTROS CÍVICOS, ETC.-, ESTUDIOS DE INVESTIGACIÓN, DISEÑO, DESARROLLO Y GESTIÓN DE PROYECTOS CULTURALES",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03580",
+      "_links": {
+        "self": {
+          "name": "AARE SERVICIOS CULTURALES, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/03580"
+        }
+      }
+    },
+    {
+      "name": "MONTAJES MENDIBIL, S.L.",
+      "registrationNumber": "05968",
+      "identificationNumber": "B20831889",
+      "address": "Calle Pio Baroja 4, 6ºC ",
+      "location": {
+        "postalCode": "20305",
+        "municipality": "Irun",
+        "county": "Gipuzkoa",
+        "municipalityId": "045",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.999",
+          "name": "Otros servicios n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros servicios n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.999"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-08-31",
+      "certificateEndDate": "2026-02-28",
+      "object": "LA REALIZACION DE TODA CLASE DE TRABAJOS DE ALBAÑILERÍA, FONTANERÍA, ELECTRICIDAD, CARPINTERÍA Y TODOS AQUELLOS COMPLEMENTARIOS DE LOS ANTERIORES TENDENTES A LA NUEVA CONSTRUCCIÓN DE INMUEBLES O SU REPARACIÓN, MANTENIMIENTO, ADECUACIÓN O TRANSFORMACIÓN TANTO POR CUENTA PROPIA COMO MEDIANTE SUBCONTRATACIÓN DE TERCEROS, ASÍ COMO LA REALIZACIÓN DE TODA CLASE DE OBRAS, CONSTRUCCIONES O MONTAJES RELACIONADOS CON EL MANTENIMIENTO, CONSTRUCCIÓN, REPARACIÓN O TRANSFORMACIÓN DEL MOBILIARIO E INFRAESTRUCTURAS URBANAS PÚBLICAS O PRIVADAS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/05968",
+      "_links": {
+        "self": {
+          "name": "MONTAJES MENDIBIL, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/05968"
+        }
+      }
+    },
+    {
+      "name": "COLUMNA BRAND STRATEGY  COLORS, S.A.",
+      "registrationNumber": "08728",
+      "identificationNumber": "A58380353",
+      "address": "c/ Viladomat, 135, 5º",
+      "location": {
+        "postalCode": "08015",
+        "municipality": "Barcelona",
+        "county": "Barcelona",
+        "municipalityId": "019",
+        "countyId": "08"
+      },
+      "economicActivities": [
+        {
+          "id": "1.844",
+          "name": "Servicios de publicidad, relaciones públicas y similares",
+          "_links": {
+            "self": {
+              "name": "Servicios de publicidad, relaciones públicas y similares",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.844"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2025-08-31",
+      "certificateEndDate": "2026-02-28",
+      "object": "LA EDICIÓN DE LIBROS Y DE IMPRESOS, FOLLETOS Y DEMÁS MATERIALES RELACIONADOS CON EL MUNDO DE LA CULTURA Y LA COMUNICACIÓN. PRESTAR SERVICIOS INTEGRALES DE ESTRATEGIA, CREACIÓN, IMPLEMENTACIÓN Y GESTIÓN DE MARCAS. IDENTIDAD CORPORATIVA, NAMING, GESTIÓN DE DISEÑO, DISEÑO ARQUITECTÓNICO Y DE INTERIORES, DISEÑO DE EMBALAJES, DISEÑO INDUSTRIAL Y DISEÑO DE CUALQUIER TIPO DE SOPORTE DONDE LA MARCA ACTÚE. SERVICIOS DE MARKETING Y COMUNICACIÓN PARA LAS MARCAS.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/08728",
+      "_links": {
+        "self": {
+          "name": "COLUMNA BRAND STRATEGY  COLORS, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/08728"
+        }
+      }
+    }
+  ]
+}

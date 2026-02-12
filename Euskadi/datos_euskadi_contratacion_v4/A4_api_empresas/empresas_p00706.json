@@ -1,0 +1,438 @@
+{
+  "totalItems": 9042,
+  "totalPages": 905,
+  "currentPage": 706,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "name": "STRELIA TECHNOLOGY SERVICES, S.L.",
+      "registrationNumber": "04703",
+      "identificationNumber": "B64277049",
+      "address": "PORTAL DE GAMARRA, 40",
+      "location": {
+        "postalCode": "01013",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.845",
+          "name": "Explotación electrónica por cuenta de terceros",
+          "_links": {
+            "self": {
+              "name": "Explotación electrónica por cuenta de terceros",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.845"
+            }
+          }
+        },
+        {
+          "id": "1.847",
+          "name": "Servicios de consultoría",
+          "_links": {
+            "self": {
+              "name": "Servicios de consultoría",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.847"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2011-11-03",
+      "certificateEndDate": "2012-03-19",
+      "object": "LA PRESTACIÓN DE SERVICIOS DE CONSULTORÍA EMPRESARIAL, ASESORAMIENTO, ASÍ COMO TODO TIPO DE ACTIVIDADES DE SELECCIÓN Y FORMACIÓN DE PERSONAL, GESTIÓN TÉCNICA, ADMINISTRATIVA, PREVENCIÓN, DE SOPORTE Y/O COMERCIAL RELACIONADAS O DERIVADAS DE LA PRIMERA. ASIMISMO, LA PRESTACIÓN DE SERVICIOS DE COMUNICACIONES, INFORMÁTICA Y SISTEMAS, INCLUIDA LA VENTA Y EL ALQUILER DE EQUIPOS, Y OTROS SERVICIOS AUXILIARES A LA GESTIÓN Y ORGANIZACIÓN EMPRESARIAL. ADQUISICIÓN, COMPRA, ALQUILER Y VENTA DE INMUEBLES RÚSTICOS Y/O URBANOS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/04703",
+      "_links": {
+        "self": {
+          "name": "STRELIA TECHNOLOGY SERVICES, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/04703"
+        }
+      }
+    },
+    {
+      "name": "ADTIVA COMUNICACIÓN CREATIVA, S.L.",
+      "registrationNumber": "03193",
+      "identificationNumber": "B95385480",
+      "address": "PASEO CAMPO VOLANTÍN, 20 - 2º",
+      "location": {
+        "postalCode": "48007",
+        "municipality": "Bilbao",
+        "county": "Bizkaia",
+        "municipalityId": "020",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.844",
+          "name": "Servicios de publicidad, relaciones públicas y similares",
+          "_links": {
+            "self": {
+              "name": "Servicios de publicidad, relaciones públicas y similares",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.844"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2011-10-31",
+      "certificateEndDate": "2012-03-14",
+      "object": "AGENCIA DE PUBLICIDAD DE SERVICIOS PLENOS, PLANES Y ESTRATEGIAS DE MARKETING, PLANES Y ESTRATEGIAS DE COMUNICACIÓN, ESTUDIOS DE MARKETING, ESTUDIOS DE IMAGEN CORPORATIVA, ACCIONES DE PROMOCIÓN DE VENTAS Y CURSOS DE FORMACIÓN DE LAS ACTIVIDADES RESEÑADAS, ASÍ COMO EL ASESORAMIENTO DE PERSONAS Y EMPRESAS, EL ESTUDIO, INVESTIGACIÓN Y PRESTACIÓN DE TODA CLASE DE SERVICIOS DE ASISTENCIA Y GESTIÓN TÉCNICAS RELACIONADAS CON LA PUBLICIDAD, EL MARKETING Y LA COMUNICACIÓN EN GENERAL ",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03193",
+      "_links": {
+        "self": {
+          "name": "ADTIVA COMUNICACIÓN CREATIVA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/03193"
+        }
+      }
+    },
+    {
+      "name": "CONSTRUCCIONES ECHAIDE, S.A.",
+      "registrationNumber": "01549",
+      "identificationNumber": "A20123758",
+      "address": "C/ AVENIDA ARABA, BLOQUE 5 - BAJO.",
+      "location": {
+        "postalCode": "20400",
+        "municipality": "Tolosa",
+        "county": "Gipuzkoa",
+        "municipalityId": "071",
+        "countyId": "20"
+      },
+      "economicActivities": [
+        {
+          "id": "1.501.1",
+          "name": "Construcción completa, reparación y conservación de edificaciones",
+          "_links": {
+            "self": {
+              "name": "Construcción completa, reparación y conservación de edificaciones",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.501.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2011-10-26",
+      "certificateEndDate": "2011-09-18",
+      "object": "LA COMPRA Y VENTA DE TODA CLASE DE TERRENOS RÚSTICOS O, SOLARES URBANOS; LA CONSTRUCCIÓN DE EDIFICACIONES; LA CREACIÓN Y DESENVOLVIMIENTO DE URBANIZACIONES; LA CONSTRUCCIÓN DE OBRAS PÚBLICAS MEDIANTE CONTRATA CON LA ADMINISTRACIÓN DEL ESTADO, COMUNIDADES AUTÓNOMAS, PROVINCIA, MUNICIPIO Y ORGANISMOS PÚBLICOS; Y LA PROMOCIÓN DE OBRA PROPIA, BIEN POR EJECUCIÓN DIRECTA O BIEN MEDIANTE CONTRATA",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/01549",
+      "_links": {
+        "self": {
+          "name": "CONSTRUCCIONES ECHAIDE, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/01549"
+        }
+      }
+    },
+    {
+      "name": "COINMA, S. COOP.",
+      "registrationNumber": "01336",
+      "identificationNumber": "F01004928",
+      "address": "C/ VITORIABIDEA, Nº 4.",
+      "location": {
+        "postalCode": "01010",
+        "municipality": "Vitoria-Gasteiz",
+        "county": "Araba/Álava",
+        "municipalityId": "059",
+        "countyId": "01"
+      },
+      "economicActivities": [
+        {
+          "id": "1.468.1",
+          "name": "Fabricación de mobiliario de madera para el hogar",
+          "_links": {
+            "self": {
+              "name": "Fabricación de mobiliario de madera para el hogar",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.468.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2011-10-20",
+      "certificateEndDate": "2012-03-08",
+      "object": "LA FABRICACIÓN Y VENTA DE MUEBLES DE HOGAR, OFICINA Y LAS ACTIVIDADES DIRECTAMENTE RELACIONADAS CON LAS MISMAS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/01336",
+      "_links": {
+        "self": {
+          "name": "COINMA, S. COOP.",
+          "href": "https://api.euskadi.eus/procurements/companies/01336"
+        }
+      }
+    },
+    {
+      "name": "LABORATORIO STADA, S.L.",
+      "registrationNumber": "03019",
+      "identificationNumber": "B28882777",
+      "address": "FREDERIC MOMPOU, 5",
+      "location": {
+        "postalCode": "08960",
+        "municipality": "Sant Just Desvern",
+        "county": "Barcelona",
+        "municipalityId": "221",
+        "countyId": "08"
+      },
+      "economicActivities": [
+        {
+          "id": "1.254.2",
+          "name": "Fabricación de especialidades y otros productos farmacéuticos",
+          "_links": {
+            "self": {
+              "name": "Fabricación de especialidades y otros productos farmacéuticos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.254.2"
+            }
+          }
+        },
+        {
+          "id": "1.614.1",
+          "name": "Venta al por mayor de productos farmacéuticos y medicamentos",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de productos farmacéuticos y medicamentos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.614.1"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2011-10-19",
+      "certificateEndDate": "2012-04-03",
+      "object": "LA SOCIEDAD TENDRÁ POR OBJETO LA ADQUISICIÓN, ELABORACIÓN, TRANSFORMACIÓN, EXPORTACIÓN E IMPORTACIÓN, DISTRIBUCIÓN, REPRESENTACIÓN, COMERCIALIZACIÓN Y VENTA DE ESPECIALIDADES FARMACÉUTICAS, OTROS PRODUCTOS FARMACÉUTICOS Y MEDICINALES, PREPARADOS ALIMENTICIOS PARA REGÍMENES DIETÉTICOS Y/O ESPECIALES Y PRODUCTOS COSMÉTICOS; LA INVESTIGACIÓN Y DESARROLLO CIENTÍFICO Y TÉCNICO; LA TENENCIA, DESARROLLO Y EXPLOTACIÓN DE PATENTES, MARCAS, REGISTROS Y PROCEDIMIENTOS DE FABRICACIÓN RESPECTO A LAS ACTIVIDADES EXPRESADAS",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03019",
+      "_links": {
+        "self": {
+          "name": "LABORATORIO STADA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/03019"
+        }
+      }
+    },
+    {
+      "name": "TOUR MENSAJEROS BIZKAIA, S.L.",
+      "registrationNumber": "04550",
+      "identificationNumber": "B48704571",
+      "address": "POL. LEGUIZAMON. C/NERVIOI, 3. PABELLÓN 1",
+      "location": {
+        "postalCode": "48450",
+        "municipality": "Etxebarria",
+        "county": "Bizkaia",
+        "municipalityId": "030",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.722",
+          "name": "Transporte de mercancías por carretera",
+          "_links": {
+            "self": {
+              "name": "Transporte de mercancías por carretera",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.722"
+            }
+          }
+        },
+        {
+          "id": "1.849.5",
+          "name": "Servicios de recadería y reparto y manipulación de correspondencia",
+          "_links": {
+            "self": {
+              "name": "Servicios de recadería y reparto y manipulación de correspondencia",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.849.5"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2011-10-19",
+      "certificateEndDate": "2012-03-28",
+      "object": "EL TRANSPORTE DE CARTAS, IMPRESOS Y TODO TIPO DE PAQUETES, TANTO POR TERRITORIO NACIONAL COMO EXTRANJERO",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/04550",
+      "_links": {
+        "self": {
+          "name": "TOUR MENSAJEROS BIZKAIA, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/04550"
+        }
+      }
+    },
+    {
+      "name": "JAZZ INTERIORISMO, S.L.",
+      "registrationNumber": "03918",
+      "identificationNumber": "B95427415",
+      "address": "AVDA TRAÑABARREN, 13-L3-ESC. 1-7º C",
+      "location": {
+        "postalCode": "48220",
+        "municipality": "Abadiño",
+        "county": "Bizkaia",
+        "municipalityId": "001",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.653.1",
+          "name": "Venta al por menor de muebles (excepto los de oficina)",
+          "_links": {
+            "self": {
+              "name": "Venta al por menor de muebles (excepto los de oficina)",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.653.1"
+            }
+          }
+        },
+        {
+          "id": "1.843.9",
+          "name": "Otros servicios técnicos n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros servicios técnicos n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.843.9"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2011-10-17",
+      "certificateEndDate": "2012-03-21",
+      "object": "LA DECORACIÓN. TODO TIPO DE DISEÑO DE INTERIORES Y DE EXTERIORES, INTERMEDIARIOS EN LA PROMOCIÓN DE EDIFICACIONES. PROMOCIÓN DE CONSTRUCCIÓN DE EDIFICIOS, COMPRAVENTA DE INMUEBLES Y CONSTRUCCIONES. COMPRA AL POR MAYOR Y MENOR DE MATERIALES DE CONSTRUCCIÓN, TRABAJOS DE ALBAÑILERÍA Y DE CONSTRUCCIÓN EN GENERAL. COORDINACIÓN DE GREMIOS RELACIONADOS CON LA CONSTRUCCÓN. COMPRAVENTA DE TODO TIPO DE MOBILIARIO",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03918",
+      "_links": {
+        "self": {
+          "name": "JAZZ INTERIORISMO, S.L.",
+          "href": "https://api.euskadi.eus/procurements/companies/03918"
+        }
+      }
+    },
+    {
+      "name": "DISTRIBUCIONES MÉDICAS, S.A. (DIMESA)",
+      "registrationNumber": "00589",
+      "identificationNumber": "A08475519",
+      "address": "C/ TUCUMÁN, Nº 28.",
+      "location": {
+        "postalCode": "08030",
+        "municipality": "Barcelona",
+        "county": "Barcelona",
+        "municipalityId": "019",
+        "countyId": "08"
+      },
+      "economicActivities": [
+        {
+          "id": "1.619.2",
+          "name": "Venta al por mayor de aparatos e instrumentos médicos, ortopédicos, ópticos",
+          "_links": {
+            "self": {
+              "name": "Venta al por mayor de aparatos e instrumentos médicos, ortopédicos, ópticos",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.619.2"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2011-10-13",
+      "certificateEndDate": "2012-03-01",
+      "object": "LA FABRICACIÓN, COMERCIALIZACIÓN Y DISTRIBUCIÓN DE PRODUCTOS Y MATERIALES MÉDICOS Y DE LABORATORIO, O SUSCEPTIBLES DE SER UTILIZADOS EN HOSPITALES, LABORATORIOS Y CENTROS DE ASISTENCIA QUIRÚRGICA Y MÉDICO SANITARIA, Y SU IMPORTACIÓN, EXPORTACIÓN Y REPRESENTACIÓN",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/00589",
+      "_links": {
+        "self": {
+          "name": "DISTRIBUCIONES MÉDICAS, S.A. (DIMESA)",
+          "href": "https://api.euskadi.eus/procurements/companies/00589"
+        }
+      }
+    },
+    {
+      "name": "HUMAN MANAGEMENT SYSTEMS, S.A.",
+      "registrationNumber": "03589",
+      "identificationNumber": "A48262224",
+      "address": "BENJAMIN DE TUDELA, 21",
+      "location": {
+        "postalCode": "31008",
+        "municipality": "Pamplona/Iruña",
+        "county": "Navarra",
+        "municipalityId": "201",
+        "countyId": "31"
+      },
+      "economicActivities": [
+        {
+          "id": "1.847",
+          "name": "Servicios de consultoría",
+          "_links": {
+            "self": {
+              "name": "Servicios de consultoría",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.847"
+            }
+          }
+        },
+        {
+          "id": "1.849.6",
+          "name": "Servicios de colocación y suministro de personal",
+          "_links": {
+            "self": {
+              "name": "Servicios de colocación y suministro de personal",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.849.6"
+            }
+          }
+        },
+        {
+          "id": "1.849.9",
+          "name": "Otros servicios independientes n.c.o.p",
+          "_links": {
+            "self": {
+              "name": "Otros servicios independientes n.c.o.p",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.849.9"
+            }
+          }
+        },
+        {
+          "id": "1.932.1",
+          "name": "Enseñanza de formación y perfeccionamiento profesional no superior",
+          "_links": {
+            "self": {
+              "name": "Enseñanza de formación y perfeccionamiento profesional no superior",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.932.1"
+            }
+          }
+        },
+        {
+          "id": "1.934",
+          "name": "Enseñanza fuera de establecimiento permanente",
+          "_links": {
+            "self": {
+              "name": "Enseñanza fuera de establecimiento permanente",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.934"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2011-10-13",
+      "certificateEndDate": "2011-12-21",
+      "object": "A)servicios de consultoría y asesoramiento en captación, selección, contratación y reciclaje de personal directivo, técnico y empleado, en general, y para la Administración Central, Autonómica, Provincial y Local. b) Servicios de formación profesional, ocupacional y de reciclaje para directivos, técnicos, empleados en general y para la Administración Central, Autonómica, Provincial y Local. c) La elaboración de estudios e investigaciones, auditorías, evaluaciones, valoraciones, diagnóstico integral, y en general, todo tipo de análisis y trabajos de planificación en el área de los Recursos Humanos de la empresa, instituciones, organizaciones y demás entidades jurídicas. d) los servicios de consultoría y formación en las áreas de calidad, ingeniería, comercial, finanzas, jurídica, laboral, contable, de la información, y en general, de todas las áreas de la actividad empresarial. e) el desarrollo, creación edición, traducción, compra, venta, distribución, alquiler y tráfico de material didáctico, incluyendo audiovisuales y enseñanza asistida por ordenador; cursos de perfeccionamiento, conferencias, seminarios, etc., en todas las áreas de la empresa, incluída su administración. f) la promoción y construcción de toda clase de edificios, para su posterior venta en su totalidad o por partes privativas, así como la compra de tierras y solares. g) la adquisición y cesión, inversión, tenencia y disfrute, administración, gestión y negociación en general de valores mobiliarios e inmuebles, participaciones sociales o en copropiedad, de toda clase de bienes. h) la constitución, con la concurrencia de otras personas, de toda clase de sociedades mercantiles, la participación en otras ya constituidas, ostentando cargos en ellas. i) todo cuando con ello se relacione",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/03589",
+      "_links": {
+        "self": {
+          "name": "HUMAN MANAGEMENT SYSTEMS, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/03589"
+        }
+      }
+    },
+    {
+      "name": "DECORACIONES DIMACA, S.A.",
+      "registrationNumber": "02025",
+      "identificationNumber": "A48158968",
+      "address": "POL. TRÁPAGA-CAUSO, PAB. Nº 5",
+      "location": {
+        "postalCode": "48510",
+        "municipality": "Valle de Trápaga-Trapagaran",
+        "county": "Bizkaia",
+        "municipalityId": "080",
+        "countyId": "48"
+      },
+      "economicActivities": [
+        {
+          "id": "1.463",
+          "name": "Fabricación en serie de piezas de carpintería y parquet",
+          "_links": {
+            "self": {
+              "name": "Fabricación en serie de piezas de carpintería y parquet",
+              "href": "https://api.euskadi.eus/procurements/companies/economic-activities/1.463"
+            }
+          }
+        }
+      ],
+      "certificateStartDate": "2011-10-11",
+      "certificateEndDate": "2012-03-22",
+      "object": "LA CARPINTERÍA MECÁNICA EN GENERAL Y DECORACIÓN.\r\nDISEÑO, FABRICACIÓN, INSTALACIÓN Y MONTAJE DE STANDS PARA LA CELEBRACIÓN DE CERTÁMENES Y EVENTOS EN FERIAS DE MUESTRAS.\r\nDISEÑO DE INTERIORES EN TODO TIPO DE LOCALES COMERCIALES Y VIVIENDAS. \r\n\r\nLA SOCIEDAD PODRÁ REALIZAR LAS ACTIVIDADES QUE CONSTITUYEN SU OBJETO, TOTAL O PARCIALMENTE, DE UNA FORMA DIRECTA O MEDIANTE LA PARTICIPACIÓN EN OTRA SOCIEDADES O ENTIDADES CON O SIN PERSONALIDAD JURÍDICA.\r\nLA SOCIEDAD NO REALIZARÁ NINGUNA DE LA ACTIVIDADES SUJETAS A RÉGIMEN DE AUTORIZACIÓN ESPECIAL Y LEGISLACIÓN ESPECIAL.",
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kperoc/es/ac71aBusquedaRegistrosWar/empresa/02025",
+      "_links": {
+        "self": {
+          "name": "DECORACIONES DIMACA, S.A.",
+          "href": "https://api.euskadi.eus/procurements/companies/02025"
+        }
+      }
+    }
+  ]
+}

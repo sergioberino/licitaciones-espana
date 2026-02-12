@@ -1,0 +1,593 @@
+{
+  "totalItems": 919,
+  "totalPages": 92,
+  "currentPage": 44,
+  "itemsOfPage": 10,
+  "items": [
+    {
+      "id": 215,
+      "identificationNumber": "G95546396",
+      "name": "Azkue Fundazioa",
+      "scope": "BIZKAIA",
+      "address": "Plaza Agoitz, 1. 48015 Bilbao (Bizkaia)",
+      "webPage": "http://www.azkuefundazioa.eus",
+      "publicationDate": "2019-10-07",
+      "mainActivity": "Ocio, cultura y religión",
+      "codNUTS": "ES213",
+      "entities": [
+        {
+          "id": 662,
+          "name": "Azkue Fundazioa",
+          "orgs": [
+            {
+              "id": 912043,
+              "name": "Gerente",
+              "_links": {
+                "self": {
+                  "name": "Gerente",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/215/entities/662/orgs/912043"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Azkue Fundazioa",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/215/entities/662"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder215/es_doc/es_arch_poder215.html",
+      "_links": {
+        "self": {
+          "name": "Azkue Fundazioa",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/215"
+        }
+      }
+    },
+    {
+      "id": 216,
+      "identificationNumber": "A95212510",
+      "name": "INTERBIAK BIZKAIA, S.A. M.P.",
+      "scope": "BIZKAIA",
+      "address": "Islas Canarias, 19 -1º. 48015 Bilbao (Bizkaia) ",
+      "webPage": "https://www.interbiak.bizkaia.eus",
+      "publicationDate": "2019-10-07",
+      "mainActivity": "Otra actividad",
+      "alternativeActivity": "Transportes",
+      "codNUTS": "ES213",
+      "CPV": [
+        {
+          "name": "Trabajos de construcción de autopistas y carreteras"
+        }
+      ],
+      "entities": [
+        {
+          "id": 663,
+          "name": "INTERBIAK",
+          "orgs": [
+            {
+              "id": 912045,
+              "name": "Gerente",
+              "_links": {
+                "self": {
+                  "name": "Gerente",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/216/entities/663/orgs/912045"
+                }
+              }
+            },
+            {
+              "id": 912044,
+              "name": "Consejo de Administración ",
+              "_links": {
+                "self": {
+                  "name": "Consejo de Administración ",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/216/entities/663/orgs/912044"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "INTERBIAK",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/216/entities/663"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder216/es_doc/es_arch_poder216.html",
+      "_links": {
+        "self": {
+          "name": "INTERBIAK BIZKAIA, S.A. M.P.",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/216"
+        },
+        "contractingAuthorities": [
+          {
+            "name": "BASALAN  A.B, S.A, M.P",
+            "href": "https://api.euskadi.eus/procurements/contracting-authorities/18640"
+          },
+          {
+            "name": "Diputación Foral de Bizkaia",
+            "href": "https://api.euskadi.eus/procurements/contracting-authorities/18269"
+          }
+        ]
+      }
+    },
+    {
+      "id": 217,
+      "identificationNumber": "A48229058",
+      "name": "BEAZ",
+      "scope": "BIZKAIA",
+      "address": "Sabino Arana, 8. 48013 Bilbao (Bizkaia)",
+      "webPage": "https://beaz.bizkaia.eus",
+      "publicationDate": "2019-10-07",
+      "mainActivity": "Otra actividad",
+      "alternativeActivity": "TICs",
+      "codNUTS": "ES213",
+      "entities": [
+        {
+          "id": 664,
+          "name": "BEAZ",
+          "orgs": [
+            {
+              "id": 912049,
+              "name": "Dirección General",
+              "_links": {
+                "self": {
+                  "name": "Dirección General",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/217/entities/664/orgs/912049"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "BEAZ",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/217/entities/664"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder217/es_doc/es_arch_poder217.html",
+      "_links": {
+        "self": {
+          "name": "BEAZ",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/217"
+        }
+      }
+    },
+    {
+      "id": 222,
+      "identificationNumber": "G48117600",
+      "name": "Getxo Kirolak",
+      "scope": "BIZKAIA",
+      "address": "Avenida los Chopos, s/n. 48992 Algorta-Getxo  (Bizkaia)",
+      "webPage": "http://www.getxo.eus",
+      "publicationDate": "2019-10-07",
+      "mainActivity": "Ocio, cultura y religión",
+      "codNUTS": "ES213",
+      "entities": [
+        {
+          "id": 669,
+          "name": "Getxo Kirolak",
+          "orgs": [
+            {
+              "id": 912058,
+              "name": "Consejo Rector",
+              "_links": {
+                "self": {
+                  "name": "Consejo Rector",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/222/entities/669/orgs/912058"
+                }
+              }
+            },
+            {
+              "id": 912057,
+              "name": "Presidente",
+              "_links": {
+                "self": {
+                  "name": "Presidente",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/222/entities/669/orgs/912057"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Getxo Kirolak",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/222/entities/669"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder222/es_doc/es_arch_poder222.html",
+      "_links": {
+        "self": {
+          "name": "Getxo Kirolak",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/222"
+        }
+      }
+    },
+    {
+      "id": 224,
+      "identificationNumber": "A95616892",
+      "name": "AZPIEGITURAK, S.A.M.P.",
+      "scope": "BIZKAIA",
+      "address": "Islas Canarias, 21-2º. 48015 Bilbao (Bizkaia)",
+      "webPage": "http://www.azpiegiturak.bizkaia.eus",
+      "publicationDate": "2019-10-07",
+      "mainActivity": "Asuntos económicos y financieros",
+      "codNUTS": "ES213",
+      "CPV": [
+        {
+          "name": "Trabajos de construcción"
+        }
+      ],
+      "entities": [
+        {
+          "id": 671,
+          "name": "AZPIEGITURAK, S.A.M.P.",
+          "orgs": [
+            {
+              "id": 912061,
+              "name": "Consejero delegado",
+              "_links": {
+                "self": {
+                  "name": "Consejero delegado",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/224/entities/671/orgs/912061"
+                }
+              }
+            },
+            {
+              "id": 912062,
+              "name": "Consejo de administración",
+              "_links": {
+                "self": {
+                  "name": "Consejo de administración",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/224/entities/671/orgs/912062"
+                }
+              }
+            },
+            {
+              "id": 912060,
+              "name": "Directora gerente",
+              "_links": {
+                "self": {
+                  "name": "Directora gerente",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/224/entities/671/orgs/912060"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "AZPIEGITURAK, S.A.M.P.",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/224/entities/671"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder224/es_doc/es_arch_poder224.html",
+      "_links": {
+        "self": {
+          "name": "AZPIEGITURAK, S.A.M.P.",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/224"
+        },
+        "contractingAuthorities": [
+          {
+            "name": "BASALAN  A.B, S.A, M.P",
+            "href": "https://api.euskadi.eus/procurements/contracting-authorities/18640"
+          },
+          {
+            "name": "Diputación Foral de Bizkaia",
+            "href": "https://api.euskadi.eus/procurements/contracting-authorities/18269"
+          },
+          {
+            "name": "GARBIKER",
+            "href": "https://api.euskadi.eus/procurements/contracting-authorities/17703"
+          },
+          {
+            "name": "INTERBIAK BIZKAIA, S.A. M.P.",
+            "href": "https://api.euskadi.eus/procurements/contracting-authorities/18496"
+          },
+          {
+            "name": "LANTIK",
+            "href": "https://api.euskadi.eus/procurements/contracting-authorities/18505"
+          }
+        ]
+      }
+    },
+    {
+      "id": 225,
+      "identificationNumber": "Q4800720G",
+      "name": "BIZKAIKOA EPEF",
+      "scope": "BIZKAIA",
+      "address": "María Díaz de Haro, 11 1º. 48006 Bilbao (Bizkaia)",
+      "webPage": "http://www.bizkaikoa.bizkaia.eus",
+      "publicationDate": "2019-10-07",
+      "mainActivity": "Ocio, cultura y religión",
+      "codNUTS": "ES213",
+      "CPV": [
+        {
+          "name": "Servicios de bibliotecas, archivos, museos y otros servicios culturales"
+        }
+      ],
+      "entities": [
+        {
+          "id": 672,
+          "name": "BIZKAIKOA EPEF",
+          "orgs": [
+            {
+              "id": 912064,
+              "name": "Consejo de Administración",
+              "_links": {
+                "self": {
+                  "name": "Consejo de Administración",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/225/entities/672/orgs/912064"
+                }
+              }
+            },
+            {
+              "id": 912063,
+              "name": "Gerente",
+              "_links": {
+                "self": {
+                  "name": "Gerente",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/225/entities/672/orgs/912063"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "BIZKAIKOA EPEF",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/225/entities/672"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder225/es_doc/es_arch_poder225.html",
+      "_links": {
+        "self": {
+          "name": "BIZKAIKOA EPEF",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/225"
+        },
+        "contractingAuthorities": [
+          {
+            "name": "BASALAN  A.B, S.A, M.P",
+            "href": "https://api.euskadi.eus/procurements/contracting-authorities/18640"
+          }
+        ]
+      }
+    },
+    {
+      "id": 226,
+      "identificationNumber": "G95449021",
+      "name": "Fundación Juan Crisóstomo de Arriaga-Orquesta Sinfónica de Bilbao",
+      "scope": "BIZKAIA",
+      "address": "Palacio Euskalduna Jauregia. Abandoibarra Etorbidea, 4. 48014 Bilbao",
+      "webPage": "http://www.bilbaorkestra.eus",
+      "publicationDate": "2019-10-07",
+      "mainActivity": "Ocio, cultura y religión",
+      "codNUTS": "ES213",
+      "entities": [
+        {
+          "id": 673,
+          "name": "Fundación Juan Crisóstomo de Arriaga-Orquesta Sinfónica de Bilbao",
+          "orgs": [
+            {
+              "id": 912065,
+              "name": "Director General ",
+              "_links": {
+                "self": {
+                  "name": "Director General ",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/226/entities/673/orgs/912065"
+                }
+              }
+            },
+            {
+              "id": 912066,
+              "name": "Presidente/a del Patronato",
+              "_links": {
+                "self": {
+                  "name": "Presidente/a del Patronato",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/226/entities/673/orgs/912066"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Fundación Juan Crisóstomo de Arriaga-Orquesta Sinfónica de Bilbao",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/226/entities/673"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder226/es_doc/es_arch_poder226.html",
+      "_links": {
+        "self": {
+          "name": "Fundación Juan Crisóstomo de Arriaga-Orquesta Sinfónica de Bilbao",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/226"
+        }
+      }
+    },
+    {
+      "id": 229,
+      "identificationNumber": "P4810800E",
+      "name": "Ayuntamiento de Zaldibar",
+      "scope": "BIZKAIA",
+      "address": "Bizkaiko Diputazio plaza, 1. 48250 Zaldibar (Bizkaia)",
+      "webPage": "http://www.zaldibar.eus",
+      "publicationDate": "2019-10-07",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES213",
+      "entities": [
+        {
+          "id": 676,
+          "name": "Ayuntamiento de Zaldibar  ",
+          "orgs": [
+            {
+              "id": 912073,
+              "name": "Pleno",
+              "_links": {
+                "self": {
+                  "name": "Pleno",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/229/entities/676/orgs/912073"
+                }
+              }
+            },
+            {
+              "id": 912071,
+              "name": "Alcaldesa",
+              "_links": {
+                "self": {
+                  "name": "Alcaldesa",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/229/entities/676/orgs/912071"
+                }
+              }
+            },
+            {
+              "id": 912072,
+              "name": "Junta de Gobierno Local",
+              "_links": {
+                "self": {
+                  "name": "Junta de Gobierno Local",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/229/entities/676/orgs/912072"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Ayuntamiento de Zaldibar  ",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/229/entities/676"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder229/es_doc/es_arch_poder229.html",
+      "_links": {
+        "self": {
+          "name": "Ayuntamiento de Zaldibar",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/229"
+        }
+      }
+    },
+    {
+      "id": 240,
+      "identificationNumber": "P4808000F",
+      "name": "Ayuntamiento de Mungia",
+      "scope": "BIZKAIA",
+      "address": "Trobika Kalea, 1, 48100 Mungia, Bizkaia",
+      "webPage": "http://www.mungia.org",
+      "publicationDate": "2019-10-07",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES213",
+      "entities": [
+        {
+          "id": 688,
+          "name": "Ayuntamiento de Mungia",
+          "orgs": [
+            {
+              "id": 912089,
+              "name": "Alcalde",
+              "_links": {
+                "self": {
+                  "name": "Alcalde",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/240/entities/688/orgs/912089"
+                }
+              }
+            },
+            {
+              "id": 912093,
+              "name": "Pleno",
+              "_links": {
+                "self": {
+                  "name": "Pleno",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/240/entities/688/orgs/912093"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Ayuntamiento de Mungia",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/240/entities/688"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder240/es_doc/es_arch_poder240.html",
+      "_links": {
+        "self": {
+          "name": "Ayuntamiento de Mungia",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/240"
+        }
+      }
+    },
+    {
+      "id": 241,
+      "identificationNumber": "P4805000I",
+      "name": "Ayuntamiento de Gordexola",
+      "scope": "BIZKAIA",
+      "address": "Plaza Molinar, 1. 48192 Gordexola (Bizkaia)",
+      "webPage": "http://www.gordexola.eus",
+      "publicationDate": "2019-10-07",
+      "mainActivity": "Servicios públicos generales",
+      "codNUTS": "ES213",
+      "entities": [
+        {
+          "id": 689,
+          "name": "Ayuntamiento de Gordexola",
+          "orgs": [
+            {
+              "id": 912090,
+              "name": "Alcaldía",
+              "_links": {
+                "self": {
+                  "name": "Alcaldía",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/241/entities/689/orgs/912090"
+                }
+              }
+            },
+            {
+              "id": 912091,
+              "name": "Pleno",
+              "_links": {
+                "self": {
+                  "name": "Pleno",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/241/entities/689/orgs/912091"
+                }
+              }
+            },
+            {
+              "id": 912092,
+              "name": "Junta de Gobierno Local",
+              "_links": {
+                "self": {
+                  "name": "Junta de Gobierno Local",
+                  "href": "https://api.euskadi.eus/procurements/contracting-authorities/241/entities/689/orgs/912092"
+                }
+              }
+            }
+          ],
+          "_links": {
+            "self": {
+              "name": "Ayuntamiento de Gordexola",
+              "href": "https://api.euskadi.eus/procurements/contracting-authorities/241/entities/689"
+            }
+          }
+        }
+      ],
+      "mainEntityOfPage": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/poder_adjudicador/poder241/es_doc/es_arch_poder241.html",
+      "_links": {
+        "self": {
+          "name": "Ayuntamiento de Gordexola",
+          "href": "https://api.euskadi.eus/procurements/contracting-authorities/241"
+        }
+      }
+    }
+  ]
+}
