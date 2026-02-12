@@ -1,8 +1,8 @@
 """
-Load this microservice's configuration from environment (no hardcoded credentials).
+Carga la configuración de este microservicio desde el entorno (sin credenciales en código).
 
-All values are read from this service's environment (e.g. from this service's .env in the
-ETL workspace). DB_* for Postgres; EMBEDDING_SERVICE_URL for the embedding API.
+Todos los valores se leen del entorno de este servicio (p. ej. .env del workspace ETL).
+DB_* para Postgres; EMBEDDING_SERVICE_URL para el API de embedding; EMBED_* e INGEST_* para lotes.
 """
 
 import os
@@ -11,7 +11,7 @@ from urllib.parse import quote_plus
 
 
 def get_database_url() -> Optional[str]:
-    """Build PostgreSQL connection URL from this service's DB_HOST, DB_PORT, DB_NAME, DB_USER, DB_PASSWORD."""
+    """Construye la URL de conexión a PostgreSQL desde DB_HOST, DB_PORT, DB_NAME, DB_USER, DB_PASSWORD de este servicio."""
     host = os.environ.get("DB_HOST")
     port = os.environ.get("DB_PORT", "5432")
     name = os.environ.get("DB_NAME")
@@ -26,12 +26,12 @@ def get_database_url() -> Optional[str]:
 
 
 def get_embedding_service_url() -> str:
-    """Base URL for the embedding API. Read from this service's EMBEDDING_SERVICE_URL (default http://embedding:8000)."""
-    return os.environ.get("EMBEDDING_SERVICE_URL", "http://embedding:8000").rstrip("/")
+    """URL base del API de embedding. Variable EMBEDDING_SERVICE_URL (ej. http://embedding:8000 en red Docker)."""
+    return os.environ.get("EMBEDDING_SERVICE_URL", "http://localhost:8000").rstrip("/")
 
 
 def get_embed_batch_size() -> int:
-    """Batch size for embedding service calls (EMBED_BATCH_SIZE). Default 256 (reasonable for multilingual-e5-large in production)."""
+    """Tamaño de lote para llamadas al servicio de embedding (EMBED_BATCH_SIZE). Por defecto 256."""
     raw = os.environ.get("EMBED_BATCH_SIZE", "256")
     try:
         n = int(raw)
@@ -41,7 +41,7 @@ def get_embed_batch_size() -> int:
 
 
 def get_ingest_batch_size() -> int:
-    """Batch size for bulk INSERT into Postgres (INGEST_BATCH_SIZE). Default 10000 rows per transaction."""
+    """Tamaño de lote para INSERT masivo en Postgres (INGEST_BATCH_SIZE). Por defecto 10000 filas por transacción."""
     raw = os.environ.get("INGEST_BATCH_SIZE", "10000")
     try:
         n = int(raw)
@@ -51,7 +51,7 @@ def get_ingest_batch_size() -> int:
 
 
 def get_embed_max_workers() -> int:
-    """Max concurrent embedding requests per batch (EMBED_MAX_WORKERS). Default 1 = sequential; increase for more compute."""
+    """Máximo de peticiones de embedding concurrentes por lote (EMBED_MAX_WORKERS). 1 = secuencial; aumentar si hay más capacidad."""
     raw = os.environ.get("EMBED_MAX_WORKERS", "1")
     try:
         n = int(raw)

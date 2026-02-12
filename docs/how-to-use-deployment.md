@@ -1,6 +1,8 @@
-# How to run the ETL microservice (Docker)
+# How to run the ETL microservice
 
-This doc describes how to run **this repo** in Docker only. You need a Postgres instance (local or remote); set `DB_HOST`, `DB_PORT`, `DB_NAME`, `DB_USER`, `DB_PASSWORD` in `.env` (see `.env.example`).
+This microservice is an **atomic plug-and-play unit**: it works in isolation (set `DB_*` and `EMBEDDING_SERVICE_URL` to your endpoints) or as part of a larger stack. All configuration is via environment variables.
+
+This section describes running **this repo** in Docker. You need a Postgres instance (local or remote); set `DB_HOST`, `DB_PORT`, `DB_NAME`, `DB_USER`, `DB_PASSWORD` in `.env` (see `.env.example`).
 
 ## Prerequisites
 
@@ -22,16 +24,15 @@ This runs only the **etl** service. The compose mounts the repo as `/app` and `.
 
 ## ETL CLI (licitia-etl)
 
-Entrypoint: **`licitia-etl`**. Use it for connection checks, DB initialization, and populating the CPV router (embedding index). The service is intended to be run by **scheduled tasks** (e.g. cron, orchestrator); batch sizes are configured via environment variables.
+Entrypoint: **`licitia-etl`**. Use it for connection checks, DB initialization, and populating the CPV router (embedding index). Suitable for **scheduled tasks** (e.g. cron or job runner); batch sizes are configured via environment variables.
 
 ### Command reference and intended usage
 
 | Command | Intended usage | Notes |
 |--------|----------------|-------|
-| **check-connection** | Validate PostgreSQL connectivity (e.g. before init-db or in health checks). | Exit 0 if OK. Uses `DB_HOST`, `DB_PORT`, `DB_NAME`, `DB_USER`, `DB_PASSWORD`. |
-| **check-embedding** | Validate that the embedding service is reachable (e.g. before generate_embedding). | GET `/openapi.json`. Uses `EMBEDDING_SERVICE_URL`. |
-| **init-db** | Apply schema migrations and populate **dim** (e.g. dim.cpv_dim). Run once per environment or after schema changes. | Applies SQL files in order: 001_dim_cpv → 001b_dim_cpv_router → 002 → 003 → 004 → 005. Idempotent. Optional: `--schema-dir` or `LICITACIONES_SCHEMAS_DIR`. |
-| **generate_embedding** | Populate **dim.cpv_router** from dim.cpv_dim using the embedding service. Intended for **scheduled runs** (e.g. after init-db or when CPV taxonomy is updated). | Reads `EMBED_BATCH_SIZE` (batch size for embedding API) and `INGEST_BATCH_SIZE` (rows per bulk INSERT). Optional: `--target cpv`, `--embedding-service-url`. |
+| **status** | Comprueba el estado del ETL (conexión a PostgreSQL y al servicio de embedding). | Exit 0 si todo OK. Usa `DB_*` y `EMBEDDING_SERVICE_URL`. Mensajes en español. |
+| **init-db** | Aplica migraciones de esquema y rellena **dim** (p. ej. dim.cpv_dim). Ejecutar una vez por entorno o tras cambios de esquema. | Aplica SQL en orden: 001_dim_cpv → 001b_dim_cpv_router → 002 → 003 → 004 → 005. Idempotente. Opcional: `--schema-dir` o `LICITACIONES_SCHEMAS_DIR`. |
+| **generate_embedding** | Rellena **dim.cpv_router** desde dim.cpv_dim usando el servicio de embedding. Para **ejecuciones programadas** (tras init-db o al actualizar la taxonomía CPV). | Lee `EMBED_BATCH_SIZE`, `INGEST_BATCH_SIZE`, `EMBED_MAX_WORKERS`. Opcional: `--target cpv`, `--embedding-service-url`. |
 
 ### Default environment variables for generate_embedding
 
@@ -40,13 +41,13 @@ Entrypoint: **`licitia-etl`**. Use it for connection checks, DB initialization, 
 | **EMBED_BATCH_SIZE** | `256` | Number of texts sent per batch to the embedding service. 256 is a reasonable value for **multilingual-e5-large** in production (throughput vs memory). |
 | **INGEST_BATCH_SIZE** | `10000` | Number of rows per bulk INSERT into Postgres (dim.cpv_router). Balances transaction size and round-trips. |
 
-These are **environment variables only** (no CLI flags), so scheduled/orchestrated runs use a single configuration source.
+These are **environment variables only** (no CLI flags), so scheduled runs use a single configuration source.
 
 ### One-off run (new container, then removed)
 
 ```bash
 docker compose run --rm etl licitia-etl --help
-docker compose run --rm etl licitia-etl check-connection
+docker compose run --rm etl licitia-etl status
 docker compose run --rm etl licitia-etl init-db
 docker compose run --rm etl licitia-etl generate_embedding --target cpv
 ```
@@ -54,7 +55,7 @@ docker compose run --rm etl licitia-etl generate_embedding --target cpv
 ### Inside the running container
 
 ```bash
-docker compose exec etl licitia-etl check-connection
+docker compose exec etl licitia-etl status
 docker compose exec etl licitia-etl init-db
 docker compose exec etl licitia-etl generate_embedding --target cpv
 ```
@@ -74,7 +75,7 @@ Exit code 0 = all checks passed.
 ```bash
 docker compose exec etl bash
 # You are at /app. Examples:
-#   licitia-etl check-connection
+#   licitia-etl status
 #   python scripts/health.py
 #   python nacional/licitaciones.py --help
 ```
@@ -103,7 +104,7 @@ cp .env.example .env
 
 docker compose build
 docker compose up -d
-docker compose run --rm etl licitia-etl check-connection
+docker compose run --rm etl licitia-etl status
 ```
 
 ## Operational notes

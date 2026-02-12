@@ -1,8 +1,8 @@
 """
-Populate dim.cpv_router from dim.cpv_dim using the embedding service.
+Rellena dim.cpv_router desde dim.cpv_dim usando el servicio de embedding.
 
-ETL orchestrates; embedding service computes; DB stores.
-Uses parallel embedding per batch, tmp staging, and a pipelined ingest consumer.
+El ETL orquesta; el servicio de embedding calcula; la base de datos almacena.
+Usa embedding en paralelo por lote, staging en tmp y un consumidor de ingestión en pipeline.
 """
 
 import json
@@ -22,7 +22,7 @@ import psycopg2.extras
 import psycopg2.extensions
 import requests
 
-# Retry settings for embedding service
+# Reintentos para el servicio de embedding
 MAX_RETRIES = 3
 RETRY_BACKOFF_SEC = 2.0
 BAR_WIDTH = 20
@@ -32,7 +32,7 @@ logger = logging.getLogger("etl.embed_cpv")
 
 
 def _configure_logging() -> None:
-    """Ensure logger has a stderr handler with consistent prefix when run from CLI."""
+    """Configura el logger con un handler a stderr y prefijo uniforme cuando se ejecuta desde el CLI."""
     if logger.handlers:
         return
     h = logging.StreamHandler(sys.stderr)
@@ -42,7 +42,7 @@ def _configure_logging() -> None:
 
 
 def _embed_passage(base_url: str, text: str) -> List[float]:
-    """Call POST /embed/passage; return embedding vector. Raises on failure after retries."""
+    """Llama a POST /embed/passage; devuelve el vector de embedding. Lanza excepción tras agotar reintentos."""
     url = f"{base_url}/embed/passage"
     payload = {"text": text or ""}
     last_exc = None
@@ -63,19 +63,19 @@ def _embed_passage(base_url: str, text: str) -> List[float]:
 
 
 def _vector_literal(embedding: List[float]):
-    """Format embedding as PostgreSQL vector literal (pass as AsIs so it is not quoted)."""
+    """Formatea el embedding como literal vector de PostgreSQL (AsIs para no entrecomillar)."""
     s = "[" + ",".join(str(x) for x in embedding) + "]"
     return psycopg2.extensions.AsIs(s + "::vector")
 
 
 def _get_tmp_dir() -> Path:
-    """Staging base for embedding batches. Uses LICITACIONES_TMP_DIR (default /app/tmp)."""
+    """Directorio base de staging para lotes de embedding. Variable LICITACIONES_TMP_DIR (por defecto /app/tmp)."""
     raw = os.environ.get("LICITACIONES_TMP_DIR", "/app/tmp")
     return Path(raw)
 
 
 def _progress_bar(done: int, total: int) -> str:
-    """Minimal character progress bar for the current batch."""
+    """Barra de progreso mínima (caracteres) para el lote actual."""
     if total <= 0:
         return "[" + "-" * BAR_WIDTH + "] 0%"
     pct = min(100, int(100 * done / total))
@@ -91,11 +91,11 @@ def run_cpv_embed(
     embed_max_workers: int = 1,
 ) -> Tuple[int, List[int]]:
     """
-    Read dim.cpv_dim (num_code, label), call embedding service (parallel or sequential per batch),
-    stage batches to tmp, and ingest via a pipelined consumer.
+    Lee dim.cpv_dim (num_code, label), llama al servicio de embedding (en paralelo o secuencial por lote),
+    guarda lotes en tmp e ingesta con un consumidor en pipeline.
 
-    embed_max_workers=1 means sequential embedding; >1 allows concurrent requests per batch (hardware-dependent).
-    Returns (total_inserted, list of failed num_codes).
+    embed_max_workers=1 es embedding secuencial; >1 permite peticiones concurrentes por lote (depende del hardware).
+    Devuelve (total_insertado, lista de num_codes fallidos).
     """
     _configure_logging()
     base_url = embedding_base_url.rstrip("/")
@@ -109,7 +109,7 @@ def run_cpv_embed(
                 "SELECT EXISTS (SELECT 1 FROM information_schema.tables WHERE table_schema = 'dim' AND table_name = 'cpv_dim')"
             )
             if not cur.fetchone()[0]:
-                raise RuntimeError("dim.cpv_dim does not exist; run init-db first")
+                raise RuntimeError("dim.cpv_dim no existe; ejecute init-db primero")
             cur.execute("SELECT count(*) FROM dim.cpv_dim")
             total_rows = cur.fetchone()[0]
             cur.execute("TRUNCATE dim.cpv_router")

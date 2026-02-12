@@ -1,8 +1,8 @@
 """
-ETL microservice for licitaciones-espana.
+Microservicio ETL. Unidad atómica: se ejecuta aislado o en un stack; configuración solo por entorno.
 
-CLI entrypoint: licitia-etl
-Subcommands: check-connection, check-embedding, init-db, generate_embedding
+Punto de entrada CLI: licitia-etl
+Comandos: status, init-db, generate_embedding
 """
 
 __version__ = "0.1.0"

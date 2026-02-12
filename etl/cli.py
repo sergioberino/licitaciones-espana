@@ -1,14 +1,8 @@
 """
-CLI for this ETL microservice. Entrypoint: licitia-etl.
+CLI de este microservicio ETL. Punto de entrada: licitia-etl.
 
-Subcommands:
-  check-connection   Validate PostgreSQL connection (exit 0 if OK).
-  check-embedding   Validate embedding service is reachable (GET /openapi.json; exit 0 if OK).
-  init-db           Apply schema migrations (001 → 001b → 002 → 003 → 004 → 005).
-  generate_embedding  Populate dim.cpv_router from dim.cpv_dim via embedding service.
-
-Configuration is read from this service's environment (e.g. this service's .env):
-DB_*, EMBEDDING_SERVICE_URL, EMBED_BATCH_SIZE, INGEST_BATCH_SIZE, LICITACIONES_SCHEMAS_DIR.
+Comandos: status, init-db, generate_embedding.
+Configuración: variables de entorno (p. ej. .env de este servicio): DB_*, EMBEDDING_SERVICE_URL, etc.
 """
 
 import argparse
@@ -31,39 +25,45 @@ from etl.config import (
 
 
 def _load_env() -> None:
-    """Load this service's .env (current directory and this workspace root)."""
+    """Carga el .env de este servicio (directorio actual y raíz de este workspace)."""
     workspace_root = Path(__file__).resolve().parent.parent
     load_dotenv()
     load_dotenv(workspace_root / ".env")
 
 
 def _schema_dir() -> Path:
-    """Schema directory: LICITACIONES_SCHEMAS_DIR from this service's env, or default schemas/ in this workspace."""
+    """Directorio de esquemas: LICITACIONES_SCHEMAS_DIR o por defecto schemas/ en este workspace."""
     base = os.environ.get("LICITACIONES_SCHEMAS_DIR")
     if base:
         return Path(base)
     return Path(__file__).resolve().parent.parent / "schemas"
 
 
-def cmd_check_connection(_args: argparse.Namespace) -> int:
+def _comprobar_base_datos() -> tuple[bool, str]:
+    """
+    Comprueba la conexión a PostgreSQL. Subrutina usada por status.
+    Devuelve (éxito, mensaje). En error, mensaje describe el fallo.
+    """
     url = get_database_url()
     if url is None:
-        print("FAIL No DB configuration (set DB_HOST, DB_NAME, DB_USER in this service's .env)", file=sys.stderr)
-        return 1
+        return False, "Falta configuración de base de datos (definir DB_HOST, DB_NAME, DB_USER en .env)."
+    host = os.environ.get("DB_HOST", "?")
+    port = os.environ.get("DB_PORT", "5432")
     try:
         with psycopg2.connect(url) as conn:
             with conn.cursor() as cur:
                 cur.execute("SELECT 1")
                 cur.fetchone()
-        print("OK")
-        return 0
+        return True, f"ETL conectado correctamente a la base de datos en {host}:{port}."
     except psycopg2.Error as e:
-        print(f"FAIL {e}", file=sys.stderr)
-        return 1
+        return False, f"ETL no puede conectar con la base de datos: {e}"
 
 
-def cmd_check_embedding(_args: argparse.Namespace) -> int:
-    """Check that the embedding service is reachable by GET /openapi.json."""
+def _comprobar_embedding() -> tuple[bool, str]:
+    """
+    Comprueba que el servicio de embedding sea accesible (GET /openapi.json). Subrutina usada por status.
+    Devuelve (éxito, mensaje). En error, mensaje describe el fallo.
+    """
     base_url = get_embedding_service_url()
     url = f"{base_url}/openapi.json"
     try:
@@ -71,16 +71,26 @@ def cmd_check_embedding(_args: argparse.Namespace) -> int:
         r.raise_for_status()
         data = r.json()
         if not data:
-            print("FAIL Embedding service returned empty openapi.json", file=sys.stderr)
-            return 1
-        print("OK")
-        return 0
+            return False, "El servicio de embedding devolvió openapi.json vacío."
+        return True, f"ETL conectado correctamente al servicio de embedding en {base_url}."
     except requests.RequestException as e:
-        print(f"FAIL {e}", file=sys.stderr)
-        return 1
+        return False, f"ETL no puede conectar con el servicio de embedding: {e}"
     except ValueError as e:
-        print(f"FAIL Invalid JSON from embedding service: {e}", file=sys.stderr)
+        return False, f"Respuesta inválida del servicio de embedding: {e}"
+
+
+def cmd_status(_args: argparse.Namespace) -> int:
+    """Comando status: comprueba base de datos y servicio de embedding; imprime mensajes en español."""
+    ok_db, msg_db = _comprobar_base_datos()
+    print(msg_db if ok_db else msg_db, file=sys.stderr if not ok_db else sys.stdout)
+    if not ok_db:
         return 1
+    ok_emb, msg_emb = _comprobar_embedding()
+    print(msg_emb if ok_emb else msg_emb, file=sys.stderr if not ok_emb else sys.stdout)
+    if not ok_emb:
+        return 1
+    print("ETL está operativo. Base de datos y servicio de embedding accesibles.")
+    return 0
 
 
 SCHEMA_FILES = [
@@ -94,18 +104,19 @@ SCHEMA_FILES = [
 
 
 def cmd_init_db(args: argparse.Namespace) -> int:
+    """Aplica las migraciones de esquema y rellena dim (p. ej. dim.cpv_dim)."""
     if get_database_url() is None:
-        print("FAIL No DB configuration (set DB_HOST, DB_NAME, DB_USER in this service's .env)", file=sys.stderr)
+        print("Falta configuración de base de datos (definir DB_HOST, DB_NAME, DB_USER en .env).", file=sys.stderr)
         return 1
     schema_dir = getattr(args, "schema_dir", None) or _schema_dir()
     if not schema_dir.exists():
-        print(f"FAIL Schema dir not found: {schema_dir}", file=sys.stderr)
+        print(f"Directorio de esquemas no encontrado: {schema_dir}", file=sys.stderr)
         return 1
     url = get_database_url()
     for filename in SCHEMA_FILES:
         path = schema_dir / filename
         if not path.exists():
-            print(f"FAIL Schema file not found: {path}", file=sys.stderr)
+            print(f"Archivo de esquema no encontrado: {path}", file=sys.stderr)
             return 1
         sql = path.read_text(encoding="utf-8")
         try:
@@ -115,22 +126,23 @@ def cmd_init_db(args: argparse.Namespace) -> int:
                     cur.execute(sql)
                 conn.commit()
         except psycopg2.Error as e:
-            print(f"FAIL Applying {filename}: {e}", file=sys.stderr)
+            print(f"Error aplicando {filename}: {e}", file=sys.stderr)
             return 1
-        print(f"Applied {filename}")
-    print("init-db done.")
+        print(f"Aplicado {filename}")
+    print("init-db completado.")
     return 0
 
 
 def cmd_generate_embedding(args: argparse.Namespace) -> int:
+    """Rellena dim.cpv_router desde dim.cpv_dim usando el servicio de embedding."""
     from etl.embed_cpv import run_cpv_embed
 
     if get_database_url() is None:
-        print("FAIL No DB configuration (set DB_HOST, DB_NAME, DB_USER in this service's .env)", file=sys.stderr)
+        print("Falta configuración de base de datos (definir DB_HOST, DB_NAME, DB_USER en .env).", file=sys.stderr)
         return 1
     target = getattr(args, "target", "cpv")
     if target != "cpv":
-        print(f"FAIL Unsupported --target {target}; only 'cpv' is supported.", file=sys.stderr)
+        print(f"Destino no soportado --target {target}; solo se admite 'cpv'.", file=sys.stderr)
         return 1
     embed_url = getattr(args, "embedding_service_url", None) or get_embedding_service_url()
     embed_batch = get_embed_batch_size()
@@ -144,58 +156,75 @@ def cmd_generate_embedding(args: argparse.Namespace) -> int:
             ingest_batch_size=ingest_batch,
             embed_max_workers=embed_workers,
         )
-        print(f"Inserted {total} rows into dim.cpv_router.")
+        print(f"Insertadas {total} filas en dim.cpv_router.")
         if failed:
-            print(f"WARN {len(failed)} rows failed (num_codes): {failed[:20]}{'...' if len(failed) > 20 else ''}", file=sys.stderr)
+            print(
+                f"AVISO: {len(failed)} filas fallaron (num_codes): {failed[:20]}{'...' if len(failed) > 20 else ''}",
+                file=sys.stderr,
+            )
             return 1
         return 0
     except Exception as e:
-        print(f"FAIL {e}", file=sys.stderr)
+        print(f"Error: {e}", file=sys.stderr)
         return 1
+
+
+_HELP_EPILOG = """
+Atribución
+  Basado en: https://github.com/BquantFinance/licitaciones-espana
+  CLI desarrollado por: Sergio Berino, Grupo TOP Digital
+
+Integraciones y configuración
+  El ETL se integra con PostgreSQL (DB_HOST, DB_PORT, DB_NAME, DB_USER, DB_PASSWORD)
+  y con el servicio de embedding (EMBEDDING_SERVICE_URL). Configure estas variables
+  en el .env de este servicio. Opcionales: EMBED_BATCH_SIZE, INGEST_BATCH_SIZE,
+  EMBED_MAX_WORKERS, LICITACIONES_SCHEMAS_DIR.
+
+Orden recomendado
+  status → init-db → generate_embedding --target cpv
+
+Versión: ver CHANGELOG.md para el historial de cambios.
+"""
 
 
 def main() -> int:
     _load_env()
     parser = argparse.ArgumentParser(
         prog="licitia-etl",
-        description="ETL microservice CLI for licitaciones-espana. Initialization and DB checks.",
+        description="CLI del microservicio ETL. Comprueba estado, aplica esquemas y rellena el índice CPV (embedding). Configuración solo por variables de entorno.",
+        epilog=_HELP_EPILOG,
+        formatter_class=argparse.RawDescriptionHelpFormatter,
     )
-    parser.add_argument("--version", action="version", version=f"%(prog)s {__version__}")
-    subparsers = parser.add_subparsers(dest="command", help="Available commands")
+    parser.add_argument("--version", action="version", version=f"%(prog)s {__version__}\nVer CHANGELOG.md para el historial.")
+    subparsers = parser.add_subparsers(dest="command", help="Comandos disponibles")
 
     subparsers.add_parser(
-        "check-connection",
-        help="Validate PostgreSQL connection (exit 0 if OK).",
-        description="Validate that the ETL can connect to PostgreSQL using configured credentials.",
-    ).set_defaults(func=cmd_check_connection)
-
-    subparsers.add_parser(
-        "check-embedding",
-        help="Validate embedding service is reachable (exit 0 if OK).",
-        description="GET the embedding service /openapi.json; exit 0 if a response is returned.",
-    ).set_defaults(func=cmd_check_embedding)
+        "status",
+        help="Comprueba el estado del ETL (base de datos y servicio de embedding).",
+        description="Comprueba la conexión a PostgreSQL y al servicio de embedding. Sale con 0 si todo es correcto.",
+    ).set_defaults(func=cmd_status)
 
     init_parser = subparsers.add_parser(
         "init-db",
-        help="Apply schema migrations and populate dim (e.g. dim.cpv_dim).",
-        description="Run schemas 001 → 001b → 002 → 003 → 004 → 005. Idempotent.",
+        help="Aplica migraciones de esquema y rellena dim (p. ej. dim.cpv_dim).",
+        description="Ejecuta los esquemas 001_dim_cpv → 001b_dim_cpv_router → 002 → 003 → 004 → 005. Idempotente. Requiere: DB_*.",
     )
     init_parser.add_argument(
         "--schema-dir",
         type=Path,
         default=None,
         metavar="DIR",
-        help="Path to schemas directory (default: this workspace schemas/ or LICITACIONES_SCHEMAS_DIR)",
+        help="Directorio de esquemas (por defecto: schemas/ de este workspace o LICITACIONES_SCHEMAS_DIR)",
     )
     init_parser.set_defaults(func=cmd_init_db, schema_dir=None)
 
     gen_parser = subparsers.add_parser(
         "generate_embedding",
-        help="Populate dim.cpv_router from dim.cpv_dim using the embedding service.",
+        help="Rellena dim.cpv_router desde dim.cpv_dim usando el servicio de embedding.",
         description=(
-            "Read CPV labels, call embedding service in batches, bulk insert into dim.cpv_router. "
-            "Batch sizes are read from env: EMBED_BATCH_SIZE (embedding API), INGEST_BATCH_SIZE (SQL bulk insert). "
-            "Intended for scheduled runs (e.g. cron / orchestrator)."
+            "Lee etiquetas CPV, llama al servicio de embedding por lotes e inserta en dim.cpv_router. "
+            "Tamaños de lote por env: EMBED_BATCH_SIZE, INGEST_BATCH_SIZE, EMBED_MAX_WORKERS. "
+            "Requiere: DB_*, EMBEDDING_SERVICE_URL. Orden recomendado: ejecutar tras init-db."
         ),
     )
     gen_parser.add_argument(
@@ -203,14 +232,14 @@ def main() -> int:
         type=str,
         default="cpv",
         metavar="TARGET",
-        help="Entity to embed (default: cpv; only cpv supported)",
+        help="Entidad a embeber (por defecto: cpv; solo se admite cpv)",
     )
     gen_parser.add_argument(
         "--embedding-service-url",
         type=str,
         default=None,
         metavar="URL",
-        help="Base URL for embedding API (default: EMBEDDING_SERVICE_URL from env)",
+        help="URL base del API de embedding (por defecto: EMBEDDING_SERVICE_URL del entorno)",
     )
     gen_parser.set_defaults(func=cmd_generate_embedding)
 
