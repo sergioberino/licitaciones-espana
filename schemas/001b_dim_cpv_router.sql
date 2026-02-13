@@ -1,7 +1,3 @@
--- dim.cpv_router: one embedding per CPV for ANN search (CPV router, adr-hito6).
--- Apply after 001_dim_cpv.sql (dim schema and dim.cpv_dim must exist).
--- Populated by ETL generate_embedding --target cpv (embedding service + bulk insert).
-
 CREATE EXTENSION IF NOT EXISTS vector;
 
 CREATE TABLE IF NOT EXISTS dim.cpv_router (
@@ -11,4 +7,4 @@ CREATE TABLE IF NOT EXISTS dim.cpv_router (
 );
 
 CREATE INDEX IF NOT EXISTS idx_cpv_router_embedding_hnsw
-  ON dim.cpv_router USING hnsw (embedding vector_cosine_ops);
+  ON dim.cpv_router USING hnsw (embedding vector_l2_ops);

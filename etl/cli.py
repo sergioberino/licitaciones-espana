@@ -93,18 +93,22 @@ def cmd_status(_args: argparse.Namespace) -> int:
     return 0
 
 
+# Solo capa dim en esta iteración; 004–007 (nacional, catalunya, valencia, views) quedan para TDR/ingesta.
 SCHEMA_FILES = [
     "001_dim_cpv.sql",
     "001b_dim_cpv_router.sql",
-    "002_nacional.sql",
-    "003_catalunya.sql",
-    "004_valencia.sql",
-    "005_views.sql",
+    "002_dim_ccaa.sql",
+    "002b_dim_provincia.sql",
+    "003_dim_dir3.sql",
 ]
 
 
+# Schemas que el ETL es responsable de crear (solo si no existen).
+ETL_SCHEMAS_SQL = "CREATE SCHEMA IF NOT EXISTS dim; CREATE SCHEMA IF NOT EXISTS raw;"
+
+
 def cmd_init_db(args: argparse.Namespace) -> int:
-    """Aplica las migraciones de esquema y rellena dim (p. ej. dim.cpv_dim)."""
+    """Aplica las migraciones de esquema y rellena dim (p. ej. dim.cpv_dim). Crea los schemas dim y raw si no existen."""
     if get_database_url() is None:
         print("Falta configuración de base de datos (definir DB_HOST, DB_NAME, DB_USER en .env).", file=sys.stderr)
         return 1
@@ -113,6 +117,19 @@ def cmd_init_db(args: argparse.Namespace) -> int:
         print(f"Directorio de esquemas no encontrado: {schema_dir}", file=sys.stderr)
         return 1
     url = get_database_url()
+    try:
+        with psycopg2.connect(url) as conn:
+            conn.autocommit = False
+            with conn.cursor() as cur:
+                for stmt in ETL_SCHEMAS_SQL.split(";"):
+                    stmt = stmt.strip()
+                    if stmt:
+                        cur.execute(stmt)
+            conn.commit()
+    except psycopg2.Error as e:
+        print(f"Error creando schemas (dim, raw): {e}", file=sys.stderr)
+        return 1
+    print("Schemas dim, raw comprobados (CREATE IF NOT EXISTS).")
     for filename in SCHEMA_FILES:
         path = schema_dir / filename
         if not path.exists():
@@ -123,12 +140,30 @@ def cmd_init_db(args: argparse.Namespace) -> int:
             with psycopg2.connect(url) as conn:
                 conn.autocommit = False
                 with conn.cursor() as cur:
+                    if filename == "003_dim_dir3.sql":
+                        cur.execute("DROP TABLE IF EXISTS dim.dim_dir3 CASCADE")
                     cur.execute(sql)
                 conn.commit()
         except psycopg2.Error as e:
+            # Objeto ya existente o datos ya cargados: loguear y continuar con el siguiente fichero.
+            pgcode = getattr(e, "pgcode", None)
+            msg = str(e).lower()
+            skip_codes = ("42P07", "23505")
+            if pgcode in skip_codes or "already exists" in msg or "duplicate key" in msg:
+                print(f"Ya existe ({filename}): objeto o datos ya presentes. Omitiendo.", file=sys.stderr)
+                continue
             print(f"Error aplicando {filename}: {e}", file=sys.stderr)
             return 1
         print(f"Aplicado {filename}")
+        # Tras 003_dim_dir3.sql: ingesta DIR3 desde XLSX (Listado Unidades AGE).
+        if filename == "003_dim_dir3.sql":
+            try:
+                from etl.dir3_ingest import run_dir3_ingest
+                n = run_dir3_ingest(url)
+                print(f"DIR3 ingerido: {n} filas.")
+            except Exception as e:
+                print(f"Error insertando DIR3: {e}", file=sys.stderr)
+                return 1
     print("init-db completado.")
     return 0
 
@@ -207,7 +242,7 @@ def main() -> int:
     init_parser = subparsers.add_parser(
         "init-db",
         help="Aplica migraciones de esquema y rellena dim (p. ej. dim.cpv_dim).",
-        description="Ejecuta los esquemas 001_dim_cpv → 001b_dim_cpv_router → 002 → 003 → 004 → 005. Idempotente. Requiere: DB_*.",
+        description="Aplica esquemas dim (001_dim_cpv → 001b_dim_cpv_router → 002_dim_ccaa → 002b_dim_provincia → 003_dim_dir3) e ingesta DIR3 desde XLSX. Idempotente. Requiere: DB_*.",
     )
     init_parser.add_argument(
         "--schema-dir",

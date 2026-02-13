@@ -15,7 +15,7 @@ Configuración solo por **variables de entorno** (`.env`). Funciona en modo **st
 | Comando | Descripción |
 |--------|-------------|
 | `licitia-etl status` | Comprueba conexión a base de datos y servicio de embedding. |
-| `licitia-etl init-db` | Aplica esquemas y carga datos estáticos (dim, CPV). |
+| `licitia-etl init-db` | Aplica esquemas y carga datos estáticos (CPV, DIR3, Provincias, CCAA). |
 | `licitia-etl generate_embedding --target cpv` | Rellena el índice de embedding para el router CPV. |
 
 Orden recomendado: **status** → **init-db** → **generate_embedding --target cpv**.

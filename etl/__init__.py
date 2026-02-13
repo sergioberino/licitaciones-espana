@@ -5,4 +5,4 @@ Punto de entrada CLI: licitia-etl
 Comandos: status, init-db, generate_embedding
 """
 
-__version__ = "0.1.0"
+__version__ = "0.1.1"
