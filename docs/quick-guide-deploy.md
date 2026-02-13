@@ -66,6 +66,3 @@ docker compose logs -f etl            # Logs del servicio
 docker compose down                  # Parar y eliminar contenedores
 ```
 
-## Notas operativas
-
-Ver [operational-notes.md](operational-notes.md) para tareas de auditoría y problemas conocidos (p. ej. errores en la ingestión de cpv_router durante `generate_embedding`).

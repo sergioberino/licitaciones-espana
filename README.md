@@ -47,9 +47,7 @@ Detalle: [docs/quick-guide-deploy.md](docs/quick-guide-deploy.md).
 ## Más información
 
 - **Changelog:** [CHANGELOG.md](CHANGELOG.md)
-- **Notas operativas y tareas de auditoría:** [docs/operational-notes.md](docs/operational-notes.md)
-- **Contrato de extracción y scripts de datos:** [docs/extraction-contract.md](docs/extraction-contract.md)
-
+  
 ## Créditos
 
 - **Repo de extracción de datos públicos:** [@Gsnchez](https://twitter.com/Gsnchez) | [BQuant Finance](https://bquantfinance.com)
