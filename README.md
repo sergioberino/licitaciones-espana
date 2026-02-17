@@ -41,7 +41,7 @@ Detalle: [docs/quick-guide-deploy.md](docs/quick-guide-deploy.md).
 ## Roadmap
 
 - Esquemas y datos estáticos incluidos; `init-db` los aplica. Scheduler con tareas en BD, ejecución según frecuencia (Mensual/Trimestral/Anual), `scheduler.log` y status con PRÓXIMA EJECUCIÓN.
-- La generación de embeddings no pertenece al dominio del ETL; es responsabilidad del microservicio de indexación si se requiere.
+
 
 ## Más información
 
