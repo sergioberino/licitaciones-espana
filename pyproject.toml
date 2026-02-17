@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "licitaciones-etl"
-version = "0.1.0"
-description = "ETL microservice CLI for licitaciones-espana (schemas, init-db, check-connection)"
+version = "1.0.0"
+description = "ETL microservice CLI for licitaciones-espana (schemas, init-db, ingest, scheduler)"
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
@@ -20,3 +20,9 @@ licitia-etl = "etl.cli:main"
 [tool.setuptools.packages.find]
 where = ["."]
 include = ["etl*"]
+
+[tool.pytest.ini_options]
+markers = [
+    "integration: tests that require DB (run with licitia-etl ingest test --integration)",
+]
+testpaths = ["tests"]

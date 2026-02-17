@@ -1,6 +1,6 @@
 -- dim.cpv_dim: CPV dimension (source Code with control digit + num_code 8-digit for Parquet/L0).
 -- Generated from schemas/cpv_code.sql by scripts/cpv_dim_convert.py (control digit stripped).
--- Domain tables (002-005) reference dim.cpv_dim(num_code). Order: 001_dim_cpv then 001b_dim_cpv_router then 002-005.
+-- Domain tables (002-005) reference dim.cpv_dim(num_code). Order: 001_dim_cpv then 002-005.
 
 CREATE SCHEMA IF NOT EXISTS dim;
 

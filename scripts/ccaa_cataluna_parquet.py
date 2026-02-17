@@ -4,9 +4,13 @@
 CATALUNYA - CSV A PARQUET v1.0
 ================================================================================
 Convierte los CSVs relevantes a Parquet, descartando redundantes.
+Opcional: --parquet-rel <ruta_relativa> para convertir solo la entrada que
+genera ese parquet (ej. convenios/convenios.parquet). Con --parquet-rel no
+se ejecutan las consolidaciones Barcelona.
 ================================================================================
 """
 
+import argparse
 import os
 import pandas as pd
 from pathlib import Path
@@ -404,6 +408,11 @@ def consolidate_barcelona_resumen(input_dir, output_dir):
 # =============================================================================
 
 def main():
+    parser = argparse.ArgumentParser(description="Catalunya: CSV a Parquet. Opcional: --parquet-rel para un solo parquet.")
+    parser.add_argument("--parquet-rel", type=str, default=None,
+                        help="Ruta relativa del parquet de salida (ej. convenios/convenios.parquet). Si se indica, solo se convierte esa entrada y no se ejecutan consolidaciones Barcelona.")
+    args = parser.parse_args()
+
     start = datetime.now()
     
     print("\n" + "="*70)
@@ -420,6 +429,17 @@ def main():
     
     output_dir.mkdir(exist_ok=True)
     
+    # Filtrar ARCHIVOS si se pasó --parquet-rel
+    archivos_a_convertir = ARCHIVOS
+    if args.parquet_rel:
+        archivos_a_convertir = {
+            csv_rel: (prel, d) for csv_rel, (prel, d) in ARCHIVOS.items() if prel == args.parquet_rel
+        }
+        if not archivos_a_convertir:
+            log(f"❌ Ningún archivo produce el parquet: {args.parquet_rel}")
+            return
+        log(f"Modo filtrado: solo {args.parquet_rel}")
+    
     stats = {
         'convertidos': 0,
         'registros_total': 0,
@@ -434,7 +454,7 @@ def main():
     log("📄 CONVIRTIENDO ARCHIVOS INDIVIDUALES")
     log("="*70)
     
-    for csv_rel, (parquet_rel, descripcion) in ARCHIVOS.items():
+    for csv_rel, (parquet_rel, descripcion) in archivos_a_convertir.items():
         csv_path = input_dir / csv_rel
         
         if not csv_path.exists():
@@ -453,36 +473,37 @@ def main():
             stats['errores'] += 1
     
     # =========================================================================
-    # CONSOLIDACIONES BARCELONA
+    # CONSOLIDACIONES BARCELONA (solo si no se filtró por --parquet-rel)
     # =========================================================================
-    log("\n" + "="*70)
-    log("📦 CONSOLIDANDO BARCELONA (múltiples archivos → 1 parquet)")
-    log("="*70)
-    
-    n, s = consolidate_barcelona_menores(input_dir, output_dir)
-    stats['registros_total'] += n
-    stats['tamaño_total_mb'] += s
-    if n > 0: stats['convertidos'] += 1
-    
-    n, s = consolidate_barcelona_contratistas(input_dir, output_dir)
-    stats['registros_total'] += n
-    stats['tamaño_total_mb'] += s
-    if n > 0: stats['convertidos'] += 1
-    
-    n, s = consolidate_barcelona_perfil(input_dir, output_dir)
-    stats['registros_total'] += n
-    stats['tamaño_total_mb'] += s
-    if n > 0: stats['convertidos'] += 1
-    
-    n, s = consolidate_barcelona_modificaciones(input_dir, output_dir)
-    stats['registros_total'] += n
-    stats['tamaño_total_mb'] += s
-    if n > 0: stats['convertidos'] += 1
-    
-    n, s = consolidate_barcelona_resumen(input_dir, output_dir)
-    stats['registros_total'] += n
-    stats['tamaño_total_mb'] += s
-    if n > 0: stats['convertidos'] += 1
+    if not args.parquet_rel:
+        log("\n" + "="*70)
+        log("📦 CONSOLIDANDO BARCELONA (múltiples archivos → 1 parquet)")
+        log("="*70)
+        
+        n, s = consolidate_barcelona_menores(input_dir, output_dir)
+        stats['registros_total'] += n
+        stats['tamaño_total_mb'] += s
+        if n > 0: stats['convertidos'] += 1
+        
+        n, s = consolidate_barcelona_contratistas(input_dir, output_dir)
+        stats['registros_total'] += n
+        stats['tamaño_total_mb'] += s
+        if n > 0: stats['convertidos'] += 1
+        
+        n, s = consolidate_barcelona_perfil(input_dir, output_dir)
+        stats['registros_total'] += n
+        stats['tamaño_total_mb'] += s
+        if n > 0: stats['convertidos'] += 1
+        
+        n, s = consolidate_barcelona_modificaciones(input_dir, output_dir)
+        stats['registros_total'] += n
+        stats['tamaño_total_mb'] += s
+        if n > 0: stats['convertidos'] += 1
+        
+        n, s = consolidate_barcelona_resumen(input_dir, output_dir)
+        stats['registros_total'] += n
+        stats['tamaño_total_mb'] += s
+        if n > 0: stats['convertidos'] += 1
     
     # =========================================================================
     # RESUMEN

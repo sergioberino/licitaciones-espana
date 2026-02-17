@@ -1,15 +1,17 @@
 """
-Conversión de CSVs de Valencia a Parquet
-Ejecutar después de ccaa_valencia.py
+Conversión de CSVs de Valencia a Parquet.
+Un único datos.parquet por categoría (concatenando todos los CSVs de esa categoría).
 
-Ejecutar: python ccaa_valencia_parquet.py
+Uso: python ccaa_valencia_parquet.py [--categories contratacion,paro]
 Entrada: tmp/valencia_datos/  (o LICITACIONES_TMP_DIR/valencia_datos)
-Salida: tmp/valencia_parquet/
+Salida: tmp/valencia_parquet/<categoria>/datos.parquet
 """
 
-import pandas as pd
-from pathlib import Path
+import argparse
 import os
+from pathlib import Path
+
+import pandas as pd
 
 # === CONFIGURACIÓN (P2: under tmp/; LICITACIONES_TMP_DIR or repo tmp) ===
 _repo_root = Path(__file__).resolve().parent.parent
@@ -74,93 +76,73 @@ def convert_to_parquet(csv_path: Path, parquet_path: Path) -> bool:
         return False
 
 
+def convert_category_to_single_parquet(category_dir: Path, output_category: Path, parquet_path: Path) -> tuple[int, bool]:
+    """Concatena todos los CSVs de una categoría y escribe un único datos.parquet. Devuelve (registros, ok)."""
+    csv_files = sorted(category_dir.glob("*.csv"))
+    if not csv_files:
+        return 0, False
+    dfs = []
+    for csv_file in csv_files:
+        try:
+            enc, sep = detect_encoding_and_sep(csv_file)
+            df = pd.read_csv(csv_file, encoding=enc, sep=sep, low_memory=False, on_bad_lines="skip")
+            for col in df.columns:
+                if df[col].dtype == "object":
+                    df[col] = df[col].astype(str)
+            dfs.append(df)
+        except Exception as e:
+            print(f"  ⚠️ Omitido {csv_file.name}: {e}")
+    if not dfs:
+        return 0, False
+    combined = pd.concat(dfs, ignore_index=True)
+    # Normalizar columnas para Parquet: tipos mixtos (object con float/str) provocan ArrowTypeError
+    for col in combined.columns:
+        if combined[col].dtype == "object" or combined[col].dtype.name == "string":
+            combined[col] = combined[col].astype(str).replace("nan", "").replace("<NA>", "")
+    output_category.mkdir(parents=True, exist_ok=True)
+    combined.to_parquet(parquet_path, index=False, compression="snappy")
+    return len(combined), True
+
+
 def main():
+    parser = argparse.ArgumentParser(description="Valencia: CSV a Parquet (un datos.parquet por categoría)")
+    parser.add_argument("--categories", type=str, default=None,
+                        help="Categorías a procesar (coma-separadas); si no se indica, todas.")
+    args = parser.parse_args()
+    categories_filter = [c.strip() for c in args.categories.split(",")] if args.categories else None
+
     print("=" * 60)
     print("CONVERSIÓN CSV → PARQUET - COMUNITAT VALENCIANA")
     print("=" * 60)
-    
+
     if not INPUT_DIR.exists():
         print(f"❌ No existe la carpeta {INPUT_DIR}")
         print("   Ejecuta primero: python ccaa_valencia.py")
-        return
-    
-    OUTPUT_DIR.mkdir(exist_ok=True)
-    
-    total_csv = 0
-    total_parquet = 0
+        return 1
+
+    OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
     total_registros = 0
-    
-    # Procesar cada categoría
+    datos_parquet = "datos.parquet"
+
     for category_dir in sorted(INPUT_DIR.iterdir()):
         if not category_dir.is_dir():
             continue
-        
-        csv_files = list(category_dir.glob("*.csv"))
-        if not csv_files:
+        if categories_filter and category_dir.name not in categories_filter:
             continue
-        
-        print(f"\n📁 {category_dir.name.upper()}")
-        print("-" * 40)
-        
-        # Crear subcarpeta de salida
+
         output_category = OUTPUT_DIR / category_dir.name
-        output_category.mkdir(exist_ok=True)
-        
-        for csv_file in sorted(csv_files):
-            total_csv += 1
-            
-            # Nombre del parquet
-            parquet_name = csv_file.stem.replace(" ", "_") + ".parquet"
-            parquet_path = output_category / parquet_name
-            
-            if parquet_path.exists():
-                print(f"  ⏭️ Ya existe: {parquet_name}")
-                total_parquet += 1
-                continue
-            
-            if convert_to_parquet(csv_file, parquet_path):
-                total_parquet += 1
-    
-    # Resumen final
+        parquet_path = output_category / datos_parquet
+        print(f"\n📁 {category_dir.name.upper()}")
+        n, ok = convert_category_to_single_parquet(category_dir, output_category, parquet_path)
+        if ok:
+            total_registros += n
+            print(f"  ✅ {datos_parquet}: {n:,} registros")
+
     print("\n" + "=" * 60)
     print("✅ CONVERSIÓN COMPLETADA")
     print("=" * 60)
-    
-    total_size_csv = 0
-    total_size_parquet = 0
-    
-    print("\n📊 RESUMEN POR CATEGORÍA:")
-    for category_dir in sorted(OUTPUT_DIR.iterdir()):
-        if category_dir.is_dir():
-            files = list(category_dir.glob("*.parquet"))
-            size = sum(f.stat().st_size for f in files) / (1024 * 1024)
-            total_size_parquet += size
-            
-            # Contar registros
-            registros = 0
-            for f in files:
-                try:
-                    df = pd.read_parquet(f)
-                    registros += len(df)
-                except:
-                    pass
-            
-            total_registros += registros
-            print(f"  📁 {category_dir.name}: {len(files)} archivos, {registros:,} registros, {size:.1f} MB")
-    
-    # CSV original
-    for category_dir in sorted(INPUT_DIR.iterdir()):
-        if category_dir.is_dir():
-            files = list(category_dir.glob("*.csv"))
-            total_size_csv += sum(f.stat().st_size for f in files) / (1024 * 1024)
-    
-    print(f"\n📈 TOTALES:")
-    print(f"   Archivos: {total_parquet}")
-    print(f"   Registros: {total_registros:,}")
-    print(f"   Tamaño CSV: {total_size_csv:.1f} MB")
-    print(f"   Tamaño Parquet: {total_size_parquet:.1f} MB")
-    print(f"   Reducción: {(1 - total_size_parquet/total_size_csv)*100:.0f}%")
+    return 0
 
 
 if __name__ == "__main__":
-    main()
+    raise SystemExit(main())

@@ -1,26 +1,37 @@
 """
 CLI de este microservicio ETL. Punto de entrada: licitia-etl.
 
-Comandos: status, init-db, generate_embedding.
-Configuración: variables de entorno (p. ej. .env de este servicio): DB_*, EMBEDDING_SERVICE_URL, etc.
+Comandos: status, init-db, ingest, health, scheduler, db-info.
 """
 
 import argparse
 import os
+import shutil
+import signal
+import subprocess
 import sys
+import time
 from pathlib import Path
+from typing import Optional
 
 import psycopg2
-import requests
 from dotenv import load_dotenv
 
 from etl import __version__
 from etl.config import (
     get_database_url,
-    get_embed_batch_size,
-    get_embed_max_workers,
-    get_embedding_service_url,
+    get_db_schema,
     get_ingest_batch_size,
+)
+from etl.ingest_l0 import (
+    CATALUNYA_PARQUET_PATHS,
+    CONJUNTOS_REGISTRY,
+    _tmp_dir,
+    format_conjunto_help,
+    get_cleanup_dirs,
+    get_table_name,
+    infer_column_defs_from_parquet,
+    load_parquet_to_l0,
 )
 
 
@@ -59,77 +70,68 @@ def _comprobar_base_datos() -> tuple[bool, str]:
         return False, f"ETL no puede conectar con la base de datos: {e}"
 
 
-def _comprobar_embedding() -> tuple[bool, str]:
-    """
-    Comprueba que el servicio de embedding sea accesible (GET /openapi.json). Subrutina usada por status.
-    Devuelve (éxito, mensaje). En error, mensaje describe el fallo.
-    """
-    base_url = get_embedding_service_url()
-    url = f"{base_url}/openapi.json"
-    try:
-        r = requests.get(url, timeout=10)
-        r.raise_for_status()
-        data = r.json()
-        if not data:
-            return False, "El servicio de embedding devolvió openapi.json vacío."
-        return True, f"ETL conectado correctamente al servicio de embedding en {base_url}."
-    except requests.RequestException as e:
-        return False, f"ETL no puede conectar con el servicio de embedding: {e}"
-    except ValueError as e:
-        return False, f"Respuesta inválida del servicio de embedding: {e}"
-
-
 def cmd_status(_args: argparse.Namespace) -> int:
-    """Comando status: comprueba base de datos y servicio de embedding; imprime mensajes en español."""
+    """Comando status: comprueba base de datos; imprime mensajes en español."""
     ok_db, msg_db = _comprobar_base_datos()
     print(msg_db if ok_db else msg_db, file=sys.stderr if not ok_db else sys.stdout)
     if not ok_db:
         return 1
-    ok_emb, msg_emb = _comprobar_embedding()
-    print(msg_emb if ok_emb else msg_emb, file=sys.stderr if not ok_emb else sys.stdout)
-    if not ok_emb:
-        return 1
-    print("ETL está operativo. Base de datos y servicio de embedding accesibles.")
+    print("ETL operativo. Base de datos accesible.")
     return 0
 
 
-# Solo capa dim en esta iteración; 004–007 (nacional, catalunya, valencia, views) quedan para TDR/ingesta.
 SCHEMA_FILES = [
     "001_dim_cpv.sql",
-    "001b_dim_cpv_router.sql",
     "002_dim_ccaa.sql",
     "002b_dim_provincia.sql",
     "003_dim_dir3.sql",
+    "008_scheduler.sql",
+    "009_scheduler_runs_pid.sql",
 ]
 
 
-# Schemas que el ETL es responsable de crear (solo si no existen).
-ETL_SCHEMAS_SQL = "CREATE SCHEMA IF NOT EXISTS dim; CREATE SCHEMA IF NOT EXISTS raw;"
-
-
 def cmd_init_db(args: argparse.Namespace) -> int:
-    """Aplica las migraciones de esquema y rellena dim (p. ej. dim.cpv_dim). Crea los schemas dim y raw si no existen."""
+    """Aplica las migraciones de esquema y rellena dim. Requiere DB_SCHEMA en .env. Crea schemas dim y DB_SCHEMA si no existen."""
     if get_database_url() is None:
         print("Falta configuración de base de datos (definir DB_HOST, DB_NAME, DB_USER en .env).", file=sys.stderr)
+        return 1
+    db_schema = get_db_schema()
+    if not db_schema:
+        print(
+            "Falta DB_SCHEMA. Defina la variable de entorno DB_SCHEMA en el .env de este servicio.",
+            file=sys.stderr,
+        )
+        print(
+            "DB_SCHEMA es el nombre del schema de trabajo donde el ETL creará objetos para ingesta (p. ej. raw, staging).",
+            file=sys.stderr,
+        )
+        print("Ejemplo: DB_SCHEMA=raw", file=sys.stderr)
+        return 1
+    if not db_schema.replace("_", "").isalnum():
+        print(
+            "DB_SCHEMA debe ser un identificador válido (letras, números y guión bajo). Ejemplo: raw, staging_raw.",
+            file=sys.stderr,
+        )
         return 1
     schema_dir = getattr(args, "schema_dir", None) or _schema_dir()
     if not schema_dir.exists():
         print(f"Directorio de esquemas no encontrado: {schema_dir}", file=sys.stderr)
         return 1
     url = get_database_url()
+    etl_schemas_sql = f"CREATE SCHEMA IF NOT EXISTS dim; CREATE SCHEMA IF NOT EXISTS {db_schema};"
     try:
         with psycopg2.connect(url) as conn:
             conn.autocommit = False
             with conn.cursor() as cur:
-                for stmt in ETL_SCHEMAS_SQL.split(";"):
+                for stmt in etl_schemas_sql.split(";"):
                     stmt = stmt.strip()
                     if stmt:
                         cur.execute(stmt)
             conn.commit()
     except psycopg2.Error as e:
-        print(f"Error creando schemas (dim, raw): {e}", file=sys.stderr)
+        print(f"Error creando schemas (dim, {db_schema}): {e}", file=sys.stderr)
         return 1
-    print("Schemas dim, raw comprobados (CREATE IF NOT EXISTS).")
+    print(f"Schemas dim, {db_schema} comprobados (CREATE IF NOT EXISTS).")
     for filename in SCHEMA_FILES:
         path = schema_dir / filename
         if not path.exists():
@@ -168,36 +170,696 @@ def cmd_init_db(args: argparse.Namespace) -> int:
     return 0
 
 
-def cmd_generate_embedding(args: argparse.Namespace) -> int:
-    """Rellena dim.cpv_router desde dim.cpv_dim usando el servicio de embedding."""
-    from etl.embed_cpv import run_cpv_embed
+def _parse_anos(anos_str: str) -> tuple[int, int]:
+    """Parsea --anos X-Y y devuelve (ano_inicio, ano_fin). Lanza ValueError si el formato es inválido."""
+    s = (anos_str or "").strip()
+    if "-" not in s:
+        raise ValueError("Formato de --anos debe ser X-Y (ej. 2020-2023)")
+    a, b = s.split("-", 1)
+    try:
+        inicio = int(a.strip())
+        fin = int(b.strip())
+    except ValueError:
+        raise ValueError("Los años en --anos deben ser números (ej. 2020-2023)")
+    if inicio > fin:
+        raise ValueError("El año de inicio no puede ser mayor que el de fin en --anos")
+    return inicio, fin
+
+
+def cmd_ingest_test(args: argparse.Namespace) -> int:
+    """Ejecuta la suite de tests de ingest (pytest), E2E por conjuntos, o limpieza del schema test."""
+    if getattr(args, "ingest_delete", False) and not getattr(args, "ingest_conjuntos", False):
+        return _drop_e2e_schema()
+    if getattr(args, "ingest_conjuntos", False):
+        return _cmd_ingest_test_conjuntos_e2e(args)
+
+    import pytest as _pytest
+
+    etl_root = Path(__file__).resolve().parent.parent
+    test_path = str(etl_root / "tests" / "test_ingest_l0.py")
+    pytest_args = [
+        test_path,
+        "-v",
+        "-s",  # sin captura: stdout/stderr y logs visibles
+        "--log-cli-level=INFO",
+        "--log-cli-format=%(levelname)s [%(name)s] %(message)s",
+        "--tb=short",
+    ]
+    if getattr(args, "ingest_integration", False):
+        pass  # Incluir tests marcados con @pytest.mark.integration
+    else:
+        pytest_args.extend(["-m", "not integration"])
+    if getattr(args, "ingest_verbose", False):
+        pytest_args.append("-vv")
+        pytest_args.extend(["--log-cli-level=DEBUG"])
+
+    print("Ejecutando tests de ingest:", " ".join(pytest_args), file=sys.stderr)
+    return _pytest.main(pytest_args)
+
+
+E2E_SCHEMA = "test"
+
+
+def _drop_e2e_schema() -> int:
+    """Elimina el schema usado por el E2E (test) para dejar la BD limpia."""
+    if get_database_url() is None:
+        print("Falta configuración de base de datos (definir DB_HOST, DB_NAME, DB_USER en .env).", file=sys.stderr)
+        return 1
+    try:
+        with psycopg2.connect(get_database_url()) as conn:
+            conn.autocommit = True
+            with conn.cursor() as cur:
+                cur.execute(f'DROP SCHEMA IF EXISTS "{E2E_SCHEMA}" CASCADE')
+        print(f"Schema '{E2E_SCHEMA}' eliminado.", file=sys.stderr)
+        return 0
+    except psycopg2.Error as e:
+        print(f"Error eliminando schema {E2E_SCHEMA}: {e}", file=sys.stderr)
+        return 1
+
+
+def _cmd_ingest_test_conjuntos_e2e(args: argparse.Namespace) -> int:
+    """E2E: flujo completo (descarga si aplica + ingest) de un subconjunto por conjunto en schema 'test'."""
+    if get_database_url() is None:
+        print("Falta configuración de base de datos (definir DB_HOST, DB_NAME, DB_USER en .env).", file=sys.stderr)
+        return 1
+    if not get_db_schema():
+        print("Falta DB_SCHEMA. Defina la variable de entorno DB_SCHEMA en el .env de este servicio.", file=sys.stderr)
+        return 1
+    try:
+        with psycopg2.connect(get_database_url()) as conn:
+            conn.autocommit = True
+            with conn.cursor() as cur:
+                cur.execute(f'CREATE SCHEMA IF NOT EXISTS "{E2E_SCHEMA}"')
+    except psycopg2.Error as e:
+        print(f"Error creando schema {E2E_SCHEMA}: {e}", file=sys.stderr)
+        return 1
+    conjuntos = sorted(CONJUNTOS_REGISTRY.keys())
+    print(f"E2E ingest: un subconjunto por conjunto en schema '{E2E_SCHEMA}' ({len(conjuntos)} conjuntos).", file=sys.stderr)
+    for conjunto in conjuntos:
+        reg = CONJUNTOS_REGISTRY[conjunto]
+        subconjuntos = list(reg["subconjuntos"])
+        subconjunto = subconjuntos[0]
+        anos = "2026-2026" if reg.get("requires_anos") else ""
+        print(f"  Ingest {conjunto} {subconjunto} ...", file=sys.stderr)
+        fake = argparse.Namespace(
+            conjunto=conjunto,
+            subconjunto=subconjunto,
+            anos=anos,
+            solo_descargar=False,
+            solo_procesar=False,
+            e2e_schema=E2E_SCHEMA,
+        )
+        rc = cmd_ingest(fake)
+        if rc != 0:
+            if getattr(args, "ingest_delete", False):
+                _drop_e2e_schema()
+            print(f"E2E falló en {conjunto} {subconjunto}.", file=sys.stderr)
+            return rc
+    if getattr(args, "ingest_delete", False):
+        _drop_e2e_schema()
+    print("E2E completado: un subconjunto de cada conjunto verificado.", file=sys.stderr)
+    return 0
+
+
+def cmd_ingest(args: argparse.Namespace) -> int:
+    """Comando ingest: descarga/genera parquet y carga en tablas L0 del schema de trabajo (nacional, catalunya, valencia, andalucia)."""
+    if getattr(args, "conjunto", "") == "test":
+        return cmd_ingest_test(args)
+
+    conjunto = getattr(args, "conjunto", "")
+    if getattr(args, "ingest_list_subconjuntos", False):
+        if conjunto not in CONJUNTOS_REGISTRY:
+            print(
+                f"Conjunto no reconocido: {conjunto}. Admitidos: {', '.join(CONJUNTOS_REGISTRY)}.",
+                file=sys.stderr,
+            )
+            return 1
+        reg = CONJUNTOS_REGISTRY[conjunto]
+        subconjuntos = list(reg["subconjuntos"])
+        print(f"Subconjuntos para '{conjunto}' ({len(subconjuntos)}):")
+        for s in subconjuntos:
+            print(f"  {s}")
+        print()
+        print("Argumentos para este conjunto:")
+        print(format_conjunto_help(conjunto, reg))
+        return 0
 
     if get_database_url() is None:
         print("Falta configuración de base de datos (definir DB_HOST, DB_NAME, DB_USER en .env).", file=sys.stderr)
         return 1
-    target = getattr(args, "target", "cpv")
-    if target != "cpv":
-        print(f"Destino no soportado --target {target}; solo se admite 'cpv'.", file=sys.stderr)
-        return 1
-    embed_url = getattr(args, "embedding_service_url", None) or get_embedding_service_url()
-    embed_batch = get_embed_batch_size()
-    ingest_batch = get_ingest_batch_size()
-    embed_workers = get_embed_max_workers()
-    try:
-        total, failed = run_cpv_embed(
-            get_database_url(),
-            embed_url,
-            embed_batch_size=embed_batch,
-            ingest_batch_size=ingest_batch,
-            embed_max_workers=embed_workers,
+    db_schema = getattr(args, "e2e_schema", None) or get_db_schema()
+    if not db_schema:
+        print(
+            "Falta DB_SCHEMA. Defina la variable de entorno DB_SCHEMA en el .env de este servicio.",
+            file=sys.stderr,
         )
-        print(f"Insertadas {total} filas en dim.cpv_router.")
-        if failed:
+        return 1
+    conjunto = getattr(args, "conjunto", "")
+    subconjunto = getattr(args, "subconjunto", None)
+
+    if conjunto not in CONJUNTOS_REGISTRY:
+        print(
+            f"Conjunto no reconocido: {conjunto}. Admitidos: {', '.join(CONJUNTOS_REGISTRY)}.",
+            file=sys.stderr,
+        )
+        return 1
+    reg = CONJUNTOS_REGISTRY[conjunto]
+
+    if subconjunto is None:
+        if len(reg["subconjuntos"]) == 1:
+            subconjunto = reg["subconjuntos"][0]
+        else:
             print(
-                f"AVISO: {len(failed)} filas fallaron (num_codes): {failed[:20]}{'...' if len(failed) > 20 else ''}",
+                f"Para '{conjunto}' indique subconjunto. Válidos: {', '.join(reg['subconjuntos'])}.",
                 file=sys.stderr,
             )
             return 1
+    if subconjunto not in reg["subconjuntos"]:
+        print(
+            f"Subconjunto no reconocido para {conjunto}: {subconjunto}. Válidos: {', '.join(reg['subconjuntos'])}.",
+            file=sys.stderr,
+        )
+        return 1
+
+    anos_str = getattr(args, "anos", "")
+    ano_inicio = ano_fin = None
+    if anos_str:
+        try:
+            ano_inicio, ano_fin = _parse_anos(anos_str)
+        except ValueError as e:
+            print(str(e), file=sys.stderr)
+            return 1
+    if reg.get("requires_anos") and not anos_str:
+        print("Obligatorio indicar --anos X-Y para este conjunto (ej. 2023-2023).", file=sys.stderr)
+        return 1
+
+    get_path = reg["get_parquet_path"]
+    if conjunto == "nacional":
+        if not ano_inicio or not ano_fin:
+            ano_inicio, ano_fin = _parse_anos(anos_str or "0-0")
+        parquet_path = get_path(subconjunto, ano_inicio, ano_fin)
+    else:
+        parquet_path = get_path(subconjunto)
+
+    table_name = get_table_name(conjunto, subconjunto)
+    etl_root = Path(__file__).resolve().parent.parent
+    solo_descargar = getattr(args, "solo_descargar", False)
+    solo_procesar = getattr(args, "solo_procesar", False)
+
+    # Scheduler: registrar run al inicio (evitar solapamiento) y al finalizar
+    run_id: Optional[int] = None
+    ingest_result: list = [None, 0, 0, None]  # status, rows_inserted, rows_omitted, error_message
+    db_url = get_database_url()
+    if db_url:
+        try:
+            from etl.scheduler import get_task_id, has_running_run, insert_run_start, update_run_finish, update_run_process_id
+            with psycopg2.connect(db_url) as conn:
+                conn.autocommit = False
+                task_id = get_task_id(conn, conjunto, subconjunto)
+                if task_id and has_running_run(conn, task_id):
+                    print("[ingest] Ya hay una ejecución en curso para esta tarea (scheduler).", file=sys.stderr)
+                    return 1
+                if task_id:
+                    run_id = insert_run_start(conn, task_id)
+                    update_run_process_id(conn, run_id, os.getpid())
+                    conn.commit()
+        except (ImportError, psycopg2.Error, Exception):
+            run_id = None
+
+    try:
+        if not solo_procesar:
+            run_script = solo_descargar or True  # siempre descarga/generación; con --solo-procesar no se entra aquí
+        else:
+            run_script = False
+        if run_script:
+            print("[ingest] Fase: descarga/generación parquet (ejecutando script...).", file=sys.stderr)
+            run_env = os.environ.copy()
+            run_env["LICITACIONES_TMP_DIR"] = str(_tmp_dir())
+            if "script_module" in reg:
+                script_conjunto = reg["script_conjunto_arg"][subconjunto]
+                cmd = [
+                    sys.executable,
+                    "-m",
+                    reg["script_module"],
+                    "--conjunto",
+                    script_conjunto,
+                    "--anos",
+                    f"{ano_inicio}-{ano_fin}",
+                ]
+                if solo_descargar:
+                    cmd.append("--solo-descargar")
+            elif "script_commands" in reg:
+                # Madrid: lista de [script, ...args] por subconjunto
+                run_cwd = etl_root
+                for cmd_parts in reg["script_commands"][subconjunto]:
+                    cmd = [sys.executable] + list(cmd_parts)
+                    print(f"Ejecutando: {' '.join(cmd)}", file=sys.stderr)
+                    try:
+                        rc = subprocess.run(cmd, cwd=run_cwd, env=run_env, check=False)
+                        if rc.returncode != 0:
+                            print("[ingest] Error en fase descarga/generación; considerar reintentar.", file=sys.stderr)
+                            print(f"Script finalizó con código {rc.returncode}.", file=sys.stderr)
+                            ingest_result[0], ingest_result[3] = "failed", f"Script finalizó con código {rc.returncode}"
+                            return rc.returncode
+                    except FileNotFoundError as e:
+                        print("[ingest] Error en fase descarga/generación; considerar reintentar.", file=sys.stderr)
+                        print(f"No se pudo ejecutar: {e}", file=sys.stderr)
+                        ingest_result[0], ingest_result[3] = "failed", str(e)
+                        return 1
+                if solo_descargar:
+                    print("Descarga/generación completada (--solo-descargar).")
+                    ingest_result[0] = "ok"
+                    return 0
+            elif "scripts" in reg:
+                run_cwd = etl_root / reg["script_cwd"] if reg.get("script_cwd") else etl_root
+                if conjunto == "ted":
+                    # TED: un solo script con download y --years
+                    if ano_inicio is None or ano_fin is None:
+                        print("TED requiere --anos X-Y; no se pudo obtener rango de años.", file=sys.stderr)
+                        return 1
+                    cmd = [
+                        sys.executable,
+                        reg["scripts"][0],
+                        "download",
+                        "--years",
+                        f"{ano_inicio}-{ano_fin}",
+                    ]
+                    print(f"Ejecutando: {' '.join(cmd)}", file=sys.stderr)
+                    try:
+                        rc = subprocess.run(cmd, cwd=etl_root, env=run_env, check=False)
+                        if rc.returncode != 0:
+                            print("[ingest] Error en fase descarga/generación; considerar reintentar.", file=sys.stderr)
+                            print(f"Script finalizó con código {rc.returncode}.", file=sys.stderr)
+                            return rc.returncode
+                    except FileNotFoundError as e:
+                        print("[ingest] Error en fase descarga/generación; considerar reintentar.", file=sys.stderr)
+                        print(f"No se pudo ejecutar: {e}", file=sys.stderr)
+                        return 1
+                else:
+                    for script_rel in reg["scripts"]:
+                        cmd = [sys.executable, script_rel]
+                        if "script_subconjunto_arg" in reg and script_rel.endswith("ccaa_andalucia.py"):
+                            cmd.append(reg["script_subconjunto_arg"][subconjunto])
+                        elif conjunto == "andalucia" and "ccaa_andalucia_parquet.py" in script_rel:
+                            cmd.extend(["--subconjunto", subconjunto])
+                        elif conjunto == "valencia" and "ccaa_valencia.py" in script_rel:
+                            cmd.extend(["--categories", subconjunto])
+                        elif conjunto == "valencia" and "ccaa_valencia_parquet.py" in script_rel:
+                            cmd.extend(["--categories", subconjunto])
+                        elif conjunto == "catalunya" and "ccaa_cataluna_parquet.py" in script_rel:
+                            parquet_rel = CATALUNYA_PARQUET_PATHS[subconjunto]
+                            cmd.extend(["--parquet-rel", parquet_rel])
+                        elif conjunto == "catalunya" and "ccaa_cataluna.py" in script_rel and "subconjunto_to_limit_datasets" in reg:
+                            ids = reg["subconjunto_to_limit_datasets"].get(subconjunto)
+                            if ids:
+                                cmd.extend(["--limit-datasets", ids])
+                        print(f"Ejecutando: {' '.join(cmd)}", file=sys.stderr)
+                        try:
+                            rc = subprocess.run(cmd, cwd=run_cwd, env=run_env, check=False)
+                            if rc.returncode != 0:
+                                print("[ingest] Error en fase descarga/generación; considerar reintentar.", file=sys.stderr)
+                                print(f"Script finalizó con código {rc.returncode}.", file=sys.stderr)
+                                return rc.returncode
+                        except FileNotFoundError as e:
+                            print("[ingest] Error en fase descarga/generación; considerar reintentar.", file=sys.stderr)
+                            print(f"No se pudo ejecutar: {e}", file=sys.stderr)
+                            return 1
+                if solo_descargar:
+                    print("Descarga/generación completada (--solo-descargar).")
+                    return 0
+            else:
+                if solo_descargar:
+                    print("No hay script configurado para este conjunto.", file=sys.stderr)
+                    return 1
+            if "script_module" in reg:
+                print(f"Ejecutando: {' '.join(cmd)}", file=sys.stderr)
+                try:
+                    rc = subprocess.run(cmd, cwd=etl_root, env=run_env, check=False)
+                    if rc.returncode != 0:
+                        print("[ingest] Error en fase descarga/generación; considerar reintentar.", file=sys.stderr)
+                        print(f"El script finalizó con código {rc.returncode}.", file=sys.stderr)
+                        return rc.returncode
+                except FileNotFoundError as e:
+                    print("[ingest] Error en fase descarga/generación; considerar reintentar.", file=sys.stderr)
+                    print(f"No se pudo ejecutar el script: {e}", file=sys.stderr)
+                    return 1
+                if solo_descargar:
+                    print("Descarga completada (--solo-descargar).")
+                    return 0
+
+        if solo_descargar:
+            return 0
+
+        if not parquet_path.exists():
+            print(f"Parquet no encontrado: {parquet_path}. Ejecute sin --solo-procesar o genere el parquet antes.", file=sys.stderr)
+            ingest_result[0], ingest_result[3] = "failed", "Parquet no encontrado"
+            return 1
+
+        print("[ingest] Fase: lectura parquet e ingest en BD.", file=sys.stderr)
+        column_defs = reg.get("column_defs")
+        natural_id_col = reg.get("natural_id_col")
+        if column_defs is None and parquet_path.exists():
+            column_defs = infer_column_defs_from_parquet(parquet_path)
+        try:
+            inserted, skipped = load_parquet_to_l0(
+                get_database_url(),
+                db_schema,
+                table_name,
+                parquet_path,
+                get_ingest_batch_size(),
+                column_defs=column_defs,
+                natural_id_col=natural_id_col,
+            )
+            print(f"Ingesta L0 completada: {inserted} insertadas, {skipped} omitidas (ya existentes).")
+            ingest_result[0], ingest_result[1], ingest_result[2] = "ok", inserted, skipped
+            if not getattr(args, "ingest_keep_parquet", False) and parquet_path.exists():
+                try:
+                    parquet_path.unlink(missing_ok=True)
+                    print("[ingest] Parquet eliminado del directorio temporal (datos ya persistidos en BD).", file=sys.stderr)
+                except OSError as e:
+                    print(f"[ingest] No se pudo eliminar el parquet temporal: {e}", file=sys.stderr)
+            for cleanup_dir in get_cleanup_dirs(conjunto, subconjunto):
+                if cleanup_dir.exists():
+                    try:
+                        shutil.rmtree(cleanup_dir, ignore_errors=True)
+                        print(f"[ingest] Directorio de artefactos eliminado: {cleanup_dir}", file=sys.stderr)
+                    except OSError as e:
+                        print(f"[ingest] No se pudo eliminar {cleanup_dir}: {e}", file=sys.stderr)
+            return 0
+        except FileNotFoundError as e:
+            print(str(e), file=sys.stderr)
+            ingest_result[0], ingest_result[3] = "failed", str(e)
+            return 1
+        except Exception as e:
+            print("[ingest] Error en fase lectura parquet/ingest (fichero corrupto o no parquet válido); si acabas de descargar, considerar reintentar la descarga.", file=sys.stderr)
+            print(f"Error en ingesta L0: {e}", file=sys.stderr)
+            ingest_result[0], ingest_result[3] = "failed", str(e)
+            return 1
+    finally:
+        if run_id and db_url:
+            try:
+                from etl.scheduler import update_run_finish
+                with psycopg2.connect(db_url) as conn:
+                    update_run_finish(
+                        conn,
+                        run_id,
+                        ingest_result[0] or "failed",
+                        ingest_result[1],
+                        ingest_result[2],
+                        ingest_result[3],
+                    )
+                    conn.commit()
+            except Exception:
+                pass
+
+
+def cmd_health(_args: argparse.Namespace) -> int:
+    """Comprueba conexión a BD y opcionalmente schema scheduler. Exit 0/1 para supervisión."""
+    ok, msg = _comprobar_base_datos()
+    print(msg, file=sys.stderr if not ok else sys.stdout)
+    if not ok:
+        return 1
+    url = get_database_url()
+    if url:
+        try:
+            from etl.scheduler import ensure_scheduler_schema
+            with psycopg2.connect(url) as conn:
+                ensure_scheduler_schema(conn)
+            with psycopg2.connect(url) as conn:
+                with conn.cursor() as cur:
+                    cur.execute("SELECT 1 FROM scheduler.tasks LIMIT 1")
+                    cur.fetchone()
+            print("Schema scheduler: OK.", file=sys.stdout)
+        except Exception:
+            print("Schema scheduler: no disponible (ejecute init-db y scheduler register).", file=sys.stderr)
+    return 0
+
+
+def cmd_scheduler_register(args: argparse.Namespace) -> int:
+    """Pobla scheduler.tasks desde CONJUNTOS_REGISTRY y frecuencias por defecto; opcionalmente solo para los conjuntos indicados."""
+    url = get_database_url()
+    if not url:
+        print("Falta configuración de base de datos (DB_HOST, DB_NAME, DB_USER).", file=sys.stderr)
+        return 1
+    conjuntos = getattr(args, "conjuntos", None) or []
+    valid = [c for c in CONJUNTOS_REGISTRY if c != "test"]
+    if conjuntos:
+        invalid = [c for c in conjuntos if c not in valid]
+        if invalid:
+            print(f"Conjunto(s) no reconocidos: {', '.join(invalid)}. Válidos: {', '.join(valid)}.", file=sys.stderr)
+            return 1
+        conjuntos_filter = conjuntos
+    else:
+        conjuntos_filter = None
+    try:
+        from etl.scheduler import ensure_scheduler_schema, register_tasks
+        with psycopg2.connect(url) as conn:
+            conn.autocommit = False
+            ensure_scheduler_schema(conn)
+            conn.commit()
+            inserted, updated, registered = register_tasks(conn, conjuntos=conjuntos_filter)
+            conn.commit()
+        print(f"scheduler.tasks: {inserted} insertadas, {updated} actualizadas.")
+        for conj, sub in sorted(registered):
+            print(f"  {conj} / {sub}")
+        print("Para ejecutar las tareas: licitia-etl scheduler run.")
+        return 0
+    except Exception as e:
+        print(f"Error: {e}", file=sys.stderr)
+        return 1
+
+
+def cmd_scheduler_status(_args: argparse.Namespace) -> int:
+    """Lista tareas con última ejecución y próxima programada (tabla tipo docker ps)."""
+    url = get_database_url()
+    if not url:
+        print("Falta configuración de base de datos (DB_HOST, DB_NAME, DB_USER).", file=sys.stderr)
+        return 1
+    try:
+        from etl.scheduler import get_next_run_at, list_tasks_with_last_run
+        with psycopg2.connect(url) as conn:
+            rows = list_tasks_with_last_run(conn)
+        if not rows:
+            print("No hay tareas registradas. Ejecute: licitia-etl scheduler register")
+            return 0
+        fmt = "%-12s %-28s %-12s %-20s %-10s %-8s %-8s %-20s"
+        print("ESTADO = último run (scheduled/failed/running). FILAS = insertadas+omitidas. PID = proceso del último run.")
+        print(fmt % ("CONJUNTO", "SUBCONJUNTO", "FRECUENCIA", "ÚLTIMA EJECUCIÓN", "ESTADO", "PID", "FILAS", "PRÓXIMA EJECUCIÓN"))
+        print("-" * 132)
+        for r in rows:
+            conj = (r.get("conjunto") or "")[:12]
+            sub = (r.get("subconjunto") or "")[:28]
+            freq = (r.get("schedule_expr") or "")[:12]
+            started = r.get("last_started_at")
+            last = (str(started)[:19] if started else "-")[:20]
+            raw_status = r.get("last_status")
+            status = "scheduled" if raw_status == "ok" else (raw_status or "-")
+            status = status[:10]
+            pid_val = r.get("last_process_id")
+            pid_str = str(pid_val) if pid_val is not None else "-"
+            pid_str = pid_str[:8]
+            ins, omit = r.get("last_rows_inserted"), r.get("last_rows_omitted")
+            filas = f"{ins or 0}+{omit or 0}" if (ins is not None or omit is not None) else "-"
+            if raw_status == "running":
+                next_run = "-"
+            else:
+                next_at = get_next_run_at(r.get("schedule_expr") or "Trimestral", r.get("last_finished_at"))
+                next_run = str(next_at)[:19].replace("T", " ") if next_at else "-"
+            next_run = (next_run or "-")[:20]
+            print(fmt % (conj, sub, freq, last, status, pid_str, filas, next_run))
+        return 0
+    except Exception as e:
+        print(f"Error: {e}", file=sys.stderr)
+        return 1
+
+
+def cmd_scheduler_run(args: argparse.Namespace) -> int:
+    """Inicia el scheduler: bucle de todas las tareas (--all o sin args) o ejecuta una tarea por conjunto/subconjunto. Con -d no bloquea."""
+    url = get_database_url()
+    if not url:
+        print("Falta configuración de base de datos (DB_HOST, DB_NAME, DB_USER).", file=sys.stderr)
+        return 1
+    from etl.scheduler import get_scheduler_pid_path, run_scheduler_loop, run_single_task
+    conjunto = getattr(args, "conjunto", None)
+    subconjunto = getattr(args, "subconjunto", None)
+    run_all = getattr(args, "run_all", False)
+    tick = getattr(args, "tick_seconds", 60) or 60
+    detach = getattr(args, "detach", False)
+
+    # Una sola tarea: conjunto (y subconjunto si hace falta)
+    if conjunto is not None:
+        if subconjunto is None and conjunto in CONJUNTOS_REGISTRY:
+            subs = CONJUNTOS_REGISTRY[conjunto].get("subconjuntos", ())
+            if len(subs) > 1:
+                print(f"El conjunto '{conjunto}' tiene varios subconjuntos. Indique uno: {', '.join(subs)}", file=sys.stderr)
+                return 1
+            subconjunto = subs[0] if subs else ""
+        if not subconjunto:
+            print("Indique subconjunto (ej. licitia-etl scheduler run nacional consultas_preliminares).", file=sys.stderr)
+            return 1
+        rc = run_single_task(url, conjunto, subconjunto)
+        return rc
+
+    # Bucle: todas las tareas debidas
+    if detach:
+        pid_path = get_scheduler_pid_path()
+        log_path = pid_path.parent / "scheduler.log"
+        pid_path.parent.mkdir(parents=True, exist_ok=True)
+        cmd = [sys.executable, "-m", "etl.cli", "scheduler", "run", "--all", "--tick-seconds", str(tick)]
+        log_file = open(log_path, "a")
+        kwargs = {"stdout": log_file, "stderr": subprocess.STDOUT}
+        if os.name != "nt":
+            kwargs["start_new_session"] = True
+        elif sys.platform == "win32":
+            kwargs["creationflags"] = subprocess.CREATE_NEW_PROCESS_GROUP | getattr(
+                subprocess, "DETACHED_PROCESS", 0x00000008
+            )
+        try:
+            p = subprocess.Popen(cmd, **kwargs)
+        except Exception as e:
+            print(f"Error al arrancar el scheduler en segundo plano: {e}", file=sys.stderr)
+            return 1
+        time.sleep(1)
+        print(f"Scheduler iniciado en segundo plano. PID: {p.pid}. Log: {log_path}")
+        print("Para detener: licitia-etl scheduler stop. Para estado: licitia-etl scheduler status.")
+        return 0
+    run_scheduler_loop(url, tick_seconds=tick, pid_path=get_scheduler_pid_path())
+    return 0
+
+
+def cmd_scheduler_logs(_args: argparse.Namespace) -> int:
+    """Imprime por pantalla el contenido de scheduler.log."""
+    from etl.scheduler import get_scheduler_log_path
+    log_path = get_scheduler_log_path()
+    if not log_path.exists():
+        print("No existe el archivo de log del scheduler (el scheduler aún no ha escrito en él).", file=sys.stderr)
+        return 0
+    try:
+        print(log_path.read_text(encoding="utf-8"), end="")
+    except OSError as e:
+        print(f"No se pudo leer el log: {e}", file=sys.stderr)
+        return 1
+    return 0
+
+
+def cmd_scheduler_stop(_args: argparse.Namespace) -> int:
+    """Detiene el proceso del scheduler (SIGTERM al PID del archivo)."""
+    from etl.scheduler import get_scheduler_pid_path
+    path = get_scheduler_pid_path()
+    if not path.exists():
+        print("No hay archivo de PID del scheduler (el scheduler no está en ejecución).", file=sys.stderr)
+        return 1
+    try:
+        pid = int(path.read_text().strip())
+    except (ValueError, OSError):
+        print("El archivo de PID del scheduler no es válido.", file=sys.stderr)
+        return 1
+    try:
+        os.kill(pid, 0)
+    except ProcessLookupError:
+        print(f"El proceso del scheduler (PID {pid}) no está en ejecución.", file=sys.stderr)
+        try:
+            path.unlink(missing_ok=True)
+        except OSError:
+            pass
+        return 1
+    os.kill(pid, signal.SIGTERM)
+    try:
+        path.unlink(missing_ok=True)
+    except OSError:
+        pass
+    print("Se envió SIGTERM al scheduler. Debe terminar en breve.")
+    return 0
+
+
+def cmd_scheduler_unregister(args: argparse.Namespace) -> int:
+    """Elimina tarea(s): por PID (detiene el proceso y elimina la tarea) o --all (elimina todas las tareas)."""
+    url = get_database_url()
+    if not url:
+        print("Falta configuración de base de datos (DB_HOST, DB_NAME, DB_USER).", file=sys.stderr)
+        return 1
+    unregister_all = getattr(args, "unregister_all", False)
+    pid_arg = getattr(args, "pid", None)
+    if unregister_all and pid_arg is not None:
+        print("Indique solo PID o solo --all, no ambos.", file=sys.stderr)
+        return 1
+    if not unregister_all and pid_arg is None:
+        print("Indique el PID de la run (ver 'scheduler status') o use --all para eliminar todas las tareas.", file=sys.stderr)
+        return 1
+    try:
+        from etl.scheduler import (
+            delete_task,
+            get_run_by_process_id,
+            update_run_finish,
+        )
+        with psycopg2.connect(url) as conn:
+            conn.autocommit = False
+            if unregister_all:
+                with conn.cursor() as cur:
+                    cur.execute("SELECT count(*) FROM scheduler.tasks")
+                    n = cur.fetchone()[0]
+                    cur.execute("DELETE FROM scheduler.tasks")
+                conn.commit()
+                print(f"Eliminadas {n} tareas del scheduler.")
+                return 0
+            pid = pid_arg
+            run_info = get_run_by_process_id(conn, pid)
+            if not run_info:
+                print(f"No existe ninguna run con process_id={pid}. Compruebe el PID en 'scheduler status'.", file=sys.stderr)
+                return 1
+            task_id = run_info["task_id"]
+            run_id = run_info["run_id"]
+            conjunto, subconjunto = run_info["conjunto"], run_info["subconjunto"]
+            try:
+                os.kill(pid, signal.SIGTERM)
+                print(f"Enviado SIGTERM al proceso {pid}.")
+            except ProcessLookupError:
+                pass
+            except OSError:
+                pass
+            update_run_finish(conn, run_id, "failed", error_message="Detenido por unregister")
+            delete_task(conn, task_id)
+            conn.commit()
+            print(f"Tarea {conjunto} / {subconjunto} (task_id={task_id}) eliminada del scheduler.")
+            return 0
+    except Exception as e:
+        print(f"Error: {e}", file=sys.stderr)
+        return 1
+
+
+def cmd_db_info(_args: argparse.Namespace) -> int:
+    """Muestra información de la BD: tamaño por schema y tablas relevantes."""
+    url = get_database_url()
+    if not url:
+        print("Falta configuración de base de datos (DB_HOST, DB_NAME, DB_USER).", file=sys.stderr)
+        return 1
+    db_schema = get_db_schema() or "raw"
+    try:
+        with psycopg2.connect(url) as conn:
+            with conn.cursor() as cur:
+                print("Tamaño por schema:")
+                cur.execute("""
+                    SELECT nspname AS schema_name,
+                           pg_size_pretty(SUM(pg_total_relation_size(c.oid))::bigint) AS size
+                    FROM pg_class c
+                    JOIN pg_namespace n ON n.oid = c.relnamespace
+                    WHERE nspname IN (%s, 'dim', 'scheduler')
+                    GROUP BY nspname
+                """, (db_schema,))
+                sizes = cur.fetchall()
+                for row in sizes:
+                    print(f"  {row[0]}: {row[1]}")
+                cur.execute("""
+                    SELECT table_schema, table_name
+                    FROM information_schema.tables
+                    WHERE table_schema IN (%s, 'dim', 'scheduler')
+                    AND table_type = 'BASE TABLE'
+                    ORDER BY table_schema, table_name
+                """, (db_schema,))
+                tables = cur.fetchall()
+                print("\nTablas:")
+                for sch, name in tables:
+                    print(f"  {sch}.{name}")
         return 0
     except Exception as e:
         print(f"Error: {e}", file=sys.stderr)
@@ -209,14 +871,8 @@ Atribución
   Basado en: https://github.com/BquantFinance/licitaciones-espana
   CLI desarrollado por: Sergio Berino, Grupo TOP Digital
 
-Integraciones y configuración
-  El ETL se integra con PostgreSQL (DB_HOST, DB_PORT, DB_NAME, DB_USER, DB_PASSWORD)
-  y con el servicio de embedding (EMBEDDING_SERVICE_URL). Configure estas variables
-  en el .env de este servicio. Opcionales: EMBED_BATCH_SIZE, INGEST_BATCH_SIZE,
-  EMBED_MAX_WORKERS, LICITACIONES_SCHEMAS_DIR.
-
 Orden recomendado
-  status → init-db → generate_embedding --target cpv
+  status → init-db → ingest; para supervisión: health, scheduler status, db-info.
 
 Versión: ver CHANGELOG.md para el historial de cambios.
 """
@@ -226,7 +882,7 @@ def main() -> int:
     _load_env()
     parser = argparse.ArgumentParser(
         prog="licitia-etl",
-        description="CLI del microservicio ETL. Comprueba estado, aplica esquemas y rellena el índice CPV (embedding). Configuración solo por variables de entorno.",
+        description="CLI del microservicio ETL: comprobar estado, aplicar esquemas, ingestar datos y gestionar el scheduler.",
         epilog=_HELP_EPILOG,
         formatter_class=argparse.RawDescriptionHelpFormatter,
     )
@@ -235,48 +891,210 @@ def main() -> int:
 
     subparsers.add_parser(
         "status",
-        help="Comprueba el estado del ETL (base de datos y servicio de embedding).",
-        description="Comprueba la conexión a PostgreSQL y al servicio de embedding. Sale con 0 si todo es correcto.",
+        help="Comprueba que la conexión a la base de datos sea correcta.",
+        description="Comprueba que la conexión a la base de datos sea correcta. Útil como primer paso tras configurar el ETL. Sale con 0 si todo es correcto.",
     ).set_defaults(func=cmd_status)
 
     init_parser = subparsers.add_parser(
         "init-db",
-        help="Aplica migraciones de esquema y rellena dim (p. ej. dim.cpv_dim).",
-        description="Aplica esquemas dim (001_dim_cpv → 001b_dim_cpv_router → 002_dim_ccaa → 002b_dim_provincia → 003_dim_dir3) e ingesta DIR3 desde XLSX. Idempotente. Requiere: DB_*.",
+        help="Aplica esquemas y rellena dimensiones (CPV, DIR3, etc.).",
+        description="Aplica los esquemas de dimensiones y de trabajo e ingesta datos auxiliares (p. ej. CPV, DIR3). Es idempotente. Requiere base de datos configurada.",
     )
     init_parser.add_argument(
         "--schema-dir",
         type=Path,
         default=None,
         metavar="DIR",
-        help="Directorio de esquemas (por defecto: schemas/ de este workspace o LICITACIONES_SCHEMAS_DIR)",
+        help="Directorio donde se encuentran los ficheros de esquema (por defecto el del servicio)",
     )
     init_parser.set_defaults(func=cmd_init_db, schema_dir=None)
 
-    gen_parser = subparsers.add_parser(
-        "generate_embedding",
-        help="Rellena dim.cpv_router desde dim.cpv_dim usando el servicio de embedding.",
+    _conjuntos_summary = ", ".join(
+        f"{c} ({len(r['subconjuntos'])})" for c, r in sorted(CONJUNTOS_REGISTRY.items())
+    )
+    ingest_parser = subparsers.add_parser(
+        "ingest",
+        help="Descarga/genera parquet e ingesta en tablas L0 del schema de trabajo.",
         description=(
-            "Lee etiquetas CPV, llama al servicio de embedding por lotes e inserta en dim.cpv_router. "
-            "Tamaños de lote por env: EMBED_BATCH_SIZE, INGEST_BATCH_SIZE, EMBED_MAX_WORKERS. "
-            "Requiere: DB_*, EMBEDDING_SERVICE_URL. Orden recomendado: ejecutar tras init-db."
+            "Ingest real: conjunto + subconjunto (ej. nacional consultas_preliminares --anos 2026-2026). "
+            f"Conjuntos: {_conjuntos_summary}. "
+            "Use --subconjuntos para listar subconjuntos de un conjunto (ej. licitia-etl ingest valencia --subconjuntos). "
+            "Requiere base de datos configurada. La carga es idempotente: re-ejecutar omite filas ya existentes.\n\n"
+            "Si conjunto='test' se ejecuta la suite de tests en lugar de un ingest real. "
+            "Véase el grupo 'Opciones solo para conjunto test' más abajo."
         ),
+        formatter_class=argparse.RawDescriptionHelpFormatter,
     )
-    gen_parser.add_argument(
-        "--target",
+    ingest_parser.add_argument(
+        "conjunto",
         type=str,
-        default="cpv",
-        metavar="TARGET",
-        help="Entidad a embeber (por defecto: cpv; solo se admite cpv)",
+        help="Conjunto: %s; o 'test' para la suite de tests" % ", ".join(sorted(CONJUNTOS_REGISTRY)),
     )
-    gen_parser.add_argument(
-        "--embedding-service-url",
+    ingest_parser.add_argument(
+        "subconjunto",
         type=str,
+        nargs="?",
         default=None,
-        metavar="URL",
-        help="URL base del API de embedding (por defecto: EMBEDDING_SERVICE_URL del entorno)",
+        help="Subconjunto (ej. consultas_preliminares). Obligatorio si el conjunto tiene varios; para ted puede omitirse (solo hay ted_es_can).",
     )
-    gen_parser.set_defaults(func=cmd_generate_embedding)
+    group_test = ingest_parser.add_argument_group(
+        "Opciones solo para conjunto 'test'",
+        "Solo tienen efecto cuando conjunto='test'. Por defecto se ejecutan solo tests unitarios (pytest).",
+    )
+    group_test.add_argument(
+        "--integration",
+        dest="ingest_integration",
+        action="store_true",
+        help="Incluir test de integración (idempotencia en BD con parquet mínimo y tabla temporal)",
+    )
+    group_test.add_argument(
+        "--conjuntos",
+        dest="ingest_conjuntos",
+        action="store_true",
+        help="E2E: flujo completo (descarga + ingest) de un subconjunto por conjunto en schema 'test'.",
+    )
+    group_test.add_argument(
+        "--delete",
+        dest="ingest_delete",
+        action="store_true",
+        help="Eliminar el schema 'test'. Solo: licitia-etl ingest test --delete. Con --conjuntos: elimina 'test' al finalizar el E2E.",
+    )
+    group_test.add_argument(
+        "--verbose",
+        "-v",
+        dest="ingest_verbose",
+        action="store_true",
+        help="Más detalle en la traza (pytest -vv y log DEBUG)",
+    )
+    group_ingest = ingest_parser.add_argument_group(
+        "Opciones para ingest real",
+        "Solo tienen efecto cuando conjunto es uno de: %s." % ", ".join(sorted(CONJUNTOS_REGISTRY)),
+    )
+    group_ingest.add_argument(
+        "--subconjuntos",
+        dest="ingest_list_subconjuntos",
+        action="store_true",
+        help="Listar subconjuntos y argumentos del conjunto (ej. licitia-etl ingest valencia --subconjuntos)",
+    )
+    group_ingest.add_argument(
+        "--anos",
+        type=str,
+        default="",
+        metavar="X-Y",
+        help="Rango de años (obligatorio para nacional; ej. 2020-2023)",
+    )
+    group_ingest.add_argument(
+        "--solo-descargar",
+        action="store_true",
+        help="Solo ejecutar descarga/generación del parquet, sin cargar en BD",
+    )
+    group_ingest.add_argument(
+        "--solo-procesar",
+        action="store_true",
+        help="Solo cargar parquet en L0 (el archivo debe existir ya)",
+    )
+    group_ingest.add_argument(
+        "--keep-parquet",
+        dest="ingest_keep_parquet",
+        action="store_true",
+        help="No eliminar el parquet del directorio temporal tras una ingest correcta (por defecto se elimina)",
+    )
+    ingest_parser.set_defaults(func=cmd_ingest)
+
+    subparsers.add_parser(
+        "health",
+        help="Comprueba conexión a la base de datos y, si existe, el schema del scheduler.",
+        description="Comprueba conexión a la base de datos y, si existe, el schema del scheduler. Devuelve código 0/1 para supervisión.",
+    ).set_defaults(func=cmd_health)
+
+    sched_parser = subparsers.add_parser(
+        "scheduler",
+        help="Gestiona las tareas programadas de ingest (registro, estado, ejecución y parada).",
+    )
+    sched_sub = sched_parser.add_subparsers(dest="scheduler_cmd", help="Subcomando", required=True)
+    _sched_registry_list = ", ".join(
+        f"{c} ({len(r['subconjuntos'])})" for c, r in sorted(CONJUNTOS_REGISTRY.items()) if c != "test"
+    )
+    reg_parser = sched_sub.add_parser(
+        "register",
+        help="Registra tareas por conjunto. Sin argumentos: todos; con argumentos: solo los indicados. Posibles: %s." % _sched_registry_list,
+    )
+    reg_parser.add_argument(
+        "conjuntos",
+        nargs="*",
+        metavar="conjunto",
+        help="Conjunto(s) a registrar (por defecto: todos). Valores: %s." % ", ".join(sorted(c for c in CONJUNTOS_REGISTRY if c != "test")),
+    )
+    reg_parser.set_defaults(func=cmd_scheduler_register)
+    sched_sub.add_parser(
+        "status",
+        help="Lista las tareas registradas con su última ejecución y estado.",
+    ).set_defaults(func=cmd_scheduler_status)
+    run_parser = sched_sub.add_parser(
+        "run",
+        help="Ejecuta el bucle de tareas (--all o sin args) o una sola tarea por conjunto/subconjunto. Con -d no bloquea.",
+    )
+    run_parser.add_argument(
+        "conjunto",
+        nargs="?",
+        default=None,
+        metavar="conjunto",
+        help="Si se indica: ejecuta solo esta tarea una vez. Sin esto ni --all: bucle de todas las debidas.",
+    )
+    run_parser.add_argument(
+        "subconjunto",
+        nargs="?",
+        default=None,
+        metavar="subconjunto",
+        help="Subconjunto (necesario si conjunto tiene varios; ej. consultas_preliminares para nacional).",
+    )
+    run_parser.add_argument(
+        "--all",
+        action="store_true",
+        dest="run_all",
+        help="Ejecutar el bucle de todas las tareas debidas (por defecto si no se indica conjunto).",
+    )
+    run_parser.add_argument("--tick-seconds", type=int, default=60, metavar="N", help="Intervalo del bucle en segundos (por defecto 60).")
+    run_parser.add_argument(
+        "--detach",
+        "-d",
+        action="store_true",
+        help="Ejecutar en segundo plano (salida en scheduler.log). Para detener: scheduler stop.",
+    )
+    run_parser.set_defaults(func=cmd_scheduler_run)
+    sched_sub.add_parser(
+        "stop",
+        help="Detiene el proceso del scheduler iniciado con 'scheduler run'.",
+    ).set_defaults(func=cmd_scheduler_stop)
+    sched_sub.add_parser(
+        "logs",
+        help="Imprime por pantalla el contenido de scheduler.log.",
+    ).set_defaults(func=cmd_scheduler_logs)
+    unreg_parser = sched_sub.add_parser(
+        "unregister",
+        help="Elimina una tarea por PID (detiene el proceso si está en curso) o todas las tareas con --all.",
+    )
+    unreg_parser.add_argument(
+        "pid",
+        type=int,
+        nargs="?",
+        default=None,
+        metavar="PID",
+        help="PID del proceso (run) a detener y cuya tarea eliminar. Ver PID en 'scheduler status'.",
+    )
+    unreg_parser.add_argument(
+        "--all",
+        action="store_true",
+        dest="unregister_all",
+        help="Elimina todas las tareas del scheduler (no detiene el proceso del scheduler; use 'scheduler stop' para eso).",
+    )
+    unreg_parser.set_defaults(func=cmd_scheduler_unregister)
+
+    subparsers.add_parser(
+        "db-info",
+        help="Muestra el tamaño de los esquemas relevantes y la lista de tablas.",
+        description="Muestra el tamaño de los esquemas relevantes y la lista de tablas (L0, dim, scheduler). Útil para operaciones y supervisión.",
+    ).set_defaults(func=cmd_db_info)
 
     args = parser.parse_args()
     if not args.command:

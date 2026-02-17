@@ -1,53 +1,52 @@
 # ETL — Microservicio CLI (licitia-etl)
 
-Microservicio **ETL** que se integra con una **base de datos PostgreSQL** y un **servicio de embedding** para preparar y mantener esquemas, dimensiones y el índice CPV de búsqueda semántica. Aprovecha las extracciones y el contexto de datos del repositorio original [BquantFinance/licitaciones-espana](https://github.com/BquantFinance/licitaciones-espana).
+Microservicio **ETL** que se integra con una **base de datos PostgreSQL** para preparar y mantener esquemas, dimensiones y tablas L0 de ingesta. Aprovecha las extracciones y el contexto de datos del repositorio original [BquantFinance/licitaciones-espana](https://github.com/BquantFinance/licitaciones-espana).
 
 ## Qué hace este servicio
 
-- **Comprobar estado** (`status`): conexión a la base de datos y al servicio de embedding.
-- **Inicializar base de datos** (`init-db`): aplica esquemas SQL (dim, tablas nacional/catalunya/valencia, vistas) y carga datos estáticos (p. ej. dimensión CPV).
-- **Rellenar índice CPV** (`generate_embedding`): lee la dimensión CPV, llama al servicio de embedding por lotes e inserta vectores en `dim.cpv_router` para búsqueda por similitud.
+- **Comprobar estado** (`status`): conexión a la base de datos.
+- **Inicializar base de datos** (`init-db`): aplica esquemas SQL (dim, scheduler, tablas L0) y carga datos estáticos (p. ej. dimensión CPV, DIR3).
+- **Ingestar datos** (`ingest`): descarga o usa parquets existentes y carga en tablas L0 del schema de trabajo.
+- **Scheduler** (`scheduler register` / `run` / `stop` / `status`): registra tareas por conjunto y las ejecuta según frecuencia (Mensual/Trimestral/Anual).
+- **Supervisión** (`health`, `db-info`): comprobación de BD y schema scheduler; tamaño y listado de tablas.
 
-Configuración solo por **variables de entorno** (`.env`). Funciona en modo **standalone** (tu Postgres y tu embedding) o dentro de un stack orquestado (Docker Compose).
+Configuración por **variables de entorno** (`.env`). Funciona en modo **standalone** o dentro de un stack orquestado (Docker Compose).
 
 ## Comandos
 
 | Comando | Descripción |
 |--------|-------------|
-| `licitia-etl status` | Comprueba conexión a base de datos y servicio de embedding. |
+| `licitia-etl status` | Comprueba conexión a la base de datos. |
 | `licitia-etl init-db` | Aplica esquemas y carga datos estáticos (CPV, DIR3, Provincias, CCAA). |
-| `licitia-etl generate_embedding --target cpv` | Rellena el índice de embedding para el router CPV. |
+| `licitia-etl ingest` *conjunto* *subconjunto* [*--anos*] | Descarga/genera parquet e ingesta en tablas L0. |
+| `licitia-etl scheduler register` [*conjuntos*] | Registra tareas programadas (sin argumentos: todos los conjuntos). |
+| `licitia-etl scheduler run` | Inicia el scheduler (ejecuta tareas según frecuencia). |
+| `licitia-etl scheduler stop` | Detiene el proceso del scheduler. |
+| `licitia-etl scheduler status` | Lista tareas con última ejecución, estado (scheduled/running/failed) y **PRÓXIMA EJECUCIÓN**. |
+| `licitia-etl health` | Comprueba BD y schema scheduler; código 0/1 para supervisión. |
+| `licitia-etl db-info` | Muestra tamaño por schema y listado de tablas. |
 
-Orden recomendado: **status** → **init-db** → **generate_embedding --target cpv**.
+Orden recomendado: **status** → **init-db** → **ingest**; para ejecución programada: **scheduler register** → **scheduler run**.
 
-Ver `licitia-etl --help` para opciones, variables de entorno y atribución (fork y autor del CLI).
+Ver `licitia-etl --help` para opciones y atribución (fork y autor del CLI).
 
 ## Configuración
 
-Variables principales en el `.env` de este servicio:
-
-- **Base de datos:** `DB_HOST`, `DB_PORT`, `DB_NAME`, `DB_USER`, `DB_PASSWORD`
-- **Servicio de embedding:** `EMBEDDING_SERVICE_URL`
-- **Opcionales (generate_embedding):** `EMBED_BATCH_SIZE`, `INGEST_BATCH_SIZE`, `EMBED_MAX_WORKERS`
-
-Ejemplo mínimo: copiar `.env.example` a `.env` y definir al menos `DB_*` y `EMBEDDING_SERVICE_URL`.
-
-## Cómo ejecutarlo
-
-- **En Docker (orquestado):** desde la raíz del repo de ingestión, el compose arranca postgres, embedding y este servicio ETL. Ejemplo: `docker compose run --rm etl licitia-etl status`.
-- **Standalone:** Postgres y el servicio de embedding deben estar accesibles; configurar `DB_HOST` y `EMBEDDING_SERVICE_URL` en consecuencia.
+Variables principales en el `.env` de este servicio: base de datos (host, puerto, nombre, usuario, contraseña) y schema de trabajo. Copiar `.env.example` a `.env` y rellenar los valores necesarios.
 
 Detalle: [docs/quick-guide-deploy.md](docs/quick-guide-deploy.md).
 
+**Release 1.0.0** — Listo para producción. Scheduler completo (register, run, stop, status con PRÓXIMA EJECUCIÓN), ingest L0, health, db-info. Sin referencias a embeddings en este dominio.
+
 ## Roadmap
 
-- **v0.1.0 (actual):** Esquemas y datos estáticos (CPV, dim) incluidos en el repo; `init-db` los aplica. Índice CPV poblado con `generate_embedding --target cpv`.
-- **Próximamente:** Recuperación automática de datos estáticos (CPV, DIR3, códigos de provincias y CCAA) desde fuentes oficiales. Mejoras alineadas con [BquantFinance/licitaciones-espana](https://github.com/BquantFinance/licitaciones-espana) se pueden proponer en el repositorio original.
+- Esquemas y datos estáticos incluidos; `init-db` los aplica. Scheduler con tareas en BD, ejecución según frecuencia (Mensual/Trimestral/Anual), `scheduler.log` y status con PRÓXIMA EJECUCIÓN.
+- La generación de embeddings no pertenece al dominio del ETL; es responsabilidad del microservicio de indexación si se requiere.
 
 ## Más información
 
 - **Changelog:** [CHANGELOG.md](CHANGELOG.md)
-  
+
 ## Créditos
 
 - **Repo de extracción de datos públicos:** [@Gsnchez](https://twitter.com/Gsnchez) | [BQuant Finance](https://bquantfinance.com)
