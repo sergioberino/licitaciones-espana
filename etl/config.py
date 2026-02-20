@@ -35,6 +35,6 @@ def get_ingest_batch_size() -> int:
 
 
 def get_db_schema() -> Optional[str]:
-    """Nombre del schema de trabajo para ingesta (raw, staging, etc.). Variable DB_SCHEMA. Requerido para init-db."""
-    raw = (os.environ.get("DB_SCHEMA") or "").strip()
+    """Nombre del schema de trabajo para ingesta L0 (raw). L0_DB_SCHEMA o DB_SCHEMA. Requerido para init-db."""
+    raw = (os.environ.get("L0_DB_SCHEMA") or os.environ.get("DB_SCHEMA") or "").strip()
     return raw if raw else None
