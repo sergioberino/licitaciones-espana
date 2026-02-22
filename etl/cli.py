@@ -510,51 +510,100 @@ def cmd_ingest(args: argparse.Namespace) -> int:
         if solo_descargar:
             return 0
 
-        if not parquet_path.exists():
+        # --- Batch loading: detect partials or single Parquet ---
+        output_dir = parquet_path.parent
+        partial_glob = sorted(output_dir.glob("_part_*.parquet"))
+        use_partials = len(partial_glob) > 0
+
+        parquet_files: list[Path]
+        if use_partials:
+            parquet_files = partial_glob
+            print(f"[ingest] Encontrados {len(parquet_files)} parciales en {output_dir}.", file=sys.stderr)
+        elif parquet_path.exists():
+            parquet_files = [parquet_path]
+        else:
             print(f"Parquet no encontrado: {parquet_path}. Ejecute sin --solo-procesar o genere el parquet antes.", file=sys.stderr)
             ingest_result[0], ingest_result[3] = "failed", "Parquet no encontrado"
             return 1
 
-        print("[ingest] Fase: lectura parquet e ingest en BD.", file=sys.stderr)
+        print(f"[ingest] Fase: carga en BD ({len(parquet_files)} {'parcial' if len(parquet_files) == 1 else 'parciales'}).", file=sys.stderr)
         column_defs = reg.get("column_defs")
         natural_id_col = reg.get("natural_id_col")
-        if column_defs is None and parquet_path.exists():
-            column_defs = infer_column_defs_from_parquet(parquet_path)
-        try:
-            inserted, skipped = load_parquet_to_l0(
-                get_database_url(),
-                db_schema,
-                table_name,
-                parquet_path,
-                get_ingest_batch_size(),
-                column_defs=column_defs,
-                natural_id_col=natural_id_col,
-            )
-            print(f"Ingesta L0 completada: {inserted} insertadas, {skipped} omitidas (ya existentes).")
-            ingest_result[0], ingest_result[1], ingest_result[2] = "ok", inserted, skipped
-            if not getattr(args, "ingest_keep_parquet", False) and parquet_path.exists():
-                try:
-                    parquet_path.unlink(missing_ok=True)
-                    print("[ingest] Parquet eliminado del directorio temporal (datos ya persistidos en BD).", file=sys.stderr)
-                except OSError as e:
-                    print(f"[ingest] No se pudo eliminar el parquet temporal: {e}", file=sys.stderr)
-            for cleanup_dir in get_cleanup_dirs(conjunto, subconjunto):
-                if cleanup_dir.exists():
+
+        total_inserted = 0
+        total_skipped = 0
+        batch_errors: list[str] = []
+
+        for batch_idx, pq in enumerate(parquet_files, start=1):
+            label = f"[{batch_idx}/{len(parquet_files)}]"
+            print(f"[ingest] {label} Cargando {pq.name}...", file=sys.stderr)
+
+            if column_defs is None and pq.exists():
+                column_defs = infer_column_defs_from_parquet(pq)
+
+            try:
+                inserted, skipped = load_parquet_to_l0(
+                    get_database_url(),
+                    db_schema,
+                    table_name,
+                    pq,
+                    get_ingest_batch_size(),
+                    column_defs=column_defs,
+                    natural_id_col=natural_id_col,
+                )
+                total_inserted += inserted
+                total_skipped += skipped
+                print(f"[ingest] {label} +{inserted} insertadas, {skipped} omitidas (acum: {total_inserted}+{total_skipped}).", file=sys.stderr)
+
+                if run_id and db_url:
                     try:
-                        shutil.rmtree(cleanup_dir, ignore_errors=True)
-                        print(f"[ingest] Directorio de artefactos eliminado: {cleanup_dir}", file=sys.stderr)
-                    except OSError as e:
-                        print(f"[ingest] No se pudo eliminar {cleanup_dir}: {e}", file=sys.stderr)
-            return 0
-        except FileNotFoundError as e:
-            print(str(e), file=sys.stderr)
-            ingest_result[0], ingest_result[3] = "failed", str(e)
+                        from etl.scheduler import update_run_progress
+                        with psycopg2.connect(db_url) as _conn:
+                            update_run_progress(_conn, run_id, total_inserted, total_skipped,
+                                                f"Batch {batch_idx}/{len(parquet_files)}")
+                            _conn.commit()
+                    except Exception:
+                        pass
+
+                if use_partials:
+                    try:
+                        pq.unlink(missing_ok=True)
+                    except OSError:
+                        pass
+
+            except Exception as e:
+                msg = f"Error en batch {batch_idx}: {e}"
+                print(f"[ingest] {msg}", file=sys.stderr)
+                batch_errors.append(msg)
+                continue
+
+        if batch_errors and total_inserted == 0:
+            ingest_result[0] = "failed"
+            ingest_result[3] = "; ".join(batch_errors[:3])
             return 1
-        except Exception as e:
-            print("[ingest] Error en fase lectura parquet/ingest (fichero corrupto o no parquet válido); si acabas de descargar, considerar reintentar la descarga.", file=sys.stderr)
-            print(f"Error en ingesta L0: {e}", file=sys.stderr)
-            ingest_result[0], ingest_result[3] = "failed", str(e)
-            return 1
+
+        ingest_result[0] = "ok"
+        ingest_result[1] = total_inserted
+        ingest_result[2] = total_skipped
+        if batch_errors:
+            ingest_result[3] = f"{len(batch_errors)} batch(es) fallido(s): {'; '.join(batch_errors[:3])}"
+
+        print(f"[ingest] Ingesta completada: {total_inserted} insertadas, {total_skipped} omitidas.", file=sys.stderr)
+
+        if not use_partials and not getattr(args, "ingest_keep_parquet", False) and parquet_path.exists():
+            try:
+                parquet_path.unlink(missing_ok=True)
+                print("[ingest] Parquet eliminado del directorio temporal.", file=sys.stderr)
+            except OSError as e:
+                print(f"[ingest] No se pudo eliminar el parquet temporal: {e}", file=sys.stderr)
+        for cleanup_dir in get_cleanup_dirs(conjunto, subconjunto):
+            if cleanup_dir.exists():
+                try:
+                    shutil.rmtree(cleanup_dir, ignore_errors=True)
+                    print(f"[ingest] Directorio de artefactos eliminado: {cleanup_dir}", file=sys.stderr)
+                except OSError as e:
+                    print(f"[ingest] No se pudo eliminar {cleanup_dir}: {e}", file=sys.stderr)
+        return 0
     finally:
         if run_id and db_url:
             try:

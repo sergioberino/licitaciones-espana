@@ -141,6 +141,23 @@ def update_run_process_id(conn: "psycopg2.extensions.connection", run_id: int, p
         )
 
 
+def update_run_progress(
+    conn: "psycopg2.extensions.connection",
+    run_id: int,
+    rows_inserted: int,
+    rows_omitted: int,
+    error_message: Optional[str] = None,
+) -> None:
+    """Update cumulative progress on a running run (does NOT set finished_at or change status)."""
+    with conn.cursor() as cur:
+        cur.execute(
+            """UPDATE scheduler.runs
+               SET rows_inserted = %s, rows_omitted = %s, error_message = %s
+               WHERE run_id = %s AND status = 'running'""",
+            (rows_inserted, rows_omitted, error_message, run_id),
+        )
+
+
 def update_run_finish(
     conn: "psycopg2.extensions.connection",
     run_id: int,
@@ -289,6 +306,7 @@ def get_current_running_run(conn: "psycopg2.extensions.connection") -> Optional[
         cur.execute(
             """
             SELECT r.run_id, r.task_id, r.started_at, r.status, r.process_id,
+                   r.rows_inserted, r.rows_omitted, r.error_message,
                    t.conjunto, t.subconjunto
             FROM scheduler.runs r
             JOIN scheduler.tasks t ON t.task_id = r.task_id

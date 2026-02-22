@@ -861,7 +861,7 @@ def main():
                 print(f"   [{i}/{len(zip_filtrados)}] {zip_path.name}", end='')
                 lics = procesar_zip(zip_path, conjunto_id)
                 if lics:
-                    part_path = OUTPUT_DIR / f'_part_{part_idx:04d}.parquet'
+                    part_path = OUTPUT_DIR / f'_part_{conjunto_id}_{part_idx:04d}.parquet'
                     n = _flush_to_parquet(lics, part_path)
                     partial_parquets.append(part_path)
                     part_idx += 1
@@ -870,12 +870,11 @@ def main():
                 gc.collect()
 
     if partial_parquets:
-        if len(conjuntos) == 1:
-            nombre_base = f'licitaciones_{conjuntos[0]}_{ano_inicio}_{ano_fin}'
-        else:
-            nombre_base = f'licitaciones_completo_{ano_inicio}_{ano_fin}'
-        df = exportar_datos(partial_parquets, nombre_base)
-        print("\n✅ SCRAPING COMPLETADO")
+        total_parts = len(partial_parquets)
+        print(f"\n✅ SCRAPING COMPLETADO: {total_parts} parciales listos para ingest.")
+        for p in partial_parquets:
+            size_mb = p.stat().st_size / (1024 * 1024)
+            print(f"   {p.name} ({size_mb:.1f} MB)")
     else:
         print("\n⚠️ No se encontraron registros")
 
