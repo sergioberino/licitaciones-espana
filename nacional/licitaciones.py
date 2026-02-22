@@ -618,7 +618,7 @@ def _parsear_entry_any(entry):
 
 
 def procesar_archivo_atom(filepath, log_diagnostico=True):
-    """Procesa un archivo ATOM."""
+    """Procesa un archivo ATOM usando streaming iterparse para limitar memoria."""
     licitaciones = []
     num_entries = 0
 
@@ -636,17 +636,22 @@ def procesar_archivo_atom(filepath, log_diagnostico=True):
     except Exception as e:
         if log_diagnostico:
             print(f"   [DEBUG] iterparse falló: {e}")
-        try:
-            tree = ET.parse(filepath)
-            root = tree.getroot()
-            for entry in root.findall('atom:entry', NS):
-                num_entries += 1
-                lic = _parsear_entry_any(entry)
-                if lic:
-                    licitaciones.append(lic)
-        except Exception as e2:
-            if log_diagnostico:
-                print(f"   [DEBUG] parse+findall falló: {e2}")
+        file_size_mb = filepath.stat().st_size / (1024 * 1024)
+        if file_size_mb > 100:
+            print(f"   [WARN] Archivo demasiado grande ({file_size_mb:.0f} MB) para fallback ET.parse — omitido")
+        else:
+            try:
+                tree = ET.parse(filepath)
+                root = tree.getroot()
+                for entry in root.findall('atom:entry', NS):
+                    num_entries += 1
+                    lic = _parsear_entry_any(entry)
+                    if lic:
+                        licitaciones.append(lic)
+                del tree, root
+            except Exception as e2:
+                if log_diagnostico:
+                    print(f"   [DEBUG] parse+findall falló: {e2}")
 
     if log_diagnostico and num_entries > 0 and len(licitaciones) == 0:
         print(f"   [DEBUG] {filepath.name}: {num_entries} entradas ATOM → 0 registros (todas fallaron al parsear)")
@@ -699,38 +704,50 @@ def procesar_zip(zip_path, conjunto_id):
 # EXPORTACIÓN
 # ============================================================================
 
-def exportar_datos(licitaciones, nombre_base='licitaciones_completo'):
-    """Exporta licitaciones a CSV y Parquet."""
-    print(f"\n💾 EXPORTANDO DATOS")
+def _flush_to_parquet(records: list[dict], path: Path) -> int:
+    """Write a batch of record dicts to a Parquet file and return count."""
+    if not records:
+        return 0
+    df = pd.DataFrame(records)
+    df.to_parquet(path, index=False, compression='snappy')
+    n = len(df)
+    del df
+    return n
+
+
+def exportar_datos(partial_parquets: list[Path], nombre_base: str = 'licitaciones_completo'):
+    """Merge partial Parquet files into deduplicated CSV + Parquet output.
+
+    Reads each partial into a DataFrame and concatenates (Parquet columnar
+    representation is ~5x more memory-efficient than Python dicts).
+    """
+    print(f"\n💾 EXPORTANDO DATOS ({len(partial_parquets)} parciales)")
     print("=" * 60)
-    
-    df = pd.DataFrame(licitaciones)
-    
-    # Convertir tipos
+
+    frames = [pd.read_parquet(p) for p in partial_parquets]
+    df = pd.concat(frames, ignore_index=True)
+    del frames
+
     for col in ['fecha_limite', 'fecha_adjudicacion', 'fecha_publicacion']:
         if col in df.columns:
             df[col] = pd.to_datetime(df[col], errors='coerce')
-    
+
     if 'fecha_updated' in df.columns:
         df['fecha_updated'] = pd.to_datetime(df['fecha_updated'], errors='coerce', utc=True)
-    
-    # Extraer año
+
     df['ano'] = pd.to_datetime(df['fecha_publicacion'], errors='coerce').dt.year
-    
-    # Eliminar duplicados
+
     n_antes = len(df)
     df = df.drop_duplicates(subset=['id'], keep='last')
     n_despues = len(df)
     if n_antes != n_despues:
         print(f"   ⚠ Eliminados {n_antes - n_despues:,} duplicados")
-    
-    # CSV
+
     csv_path = OUTPUT_DIR / f'{nombre_base}.csv'
     df.to_csv(csv_path, index=False, encoding='utf-8-sig')
     size_mb = csv_path.stat().st_size / 1024 / 1024
     print(f"   ✓ CSV: {csv_path} ({size_mb:.1f} MB)")
-    
-    # Parquet
+
     try:
         parquet_path = OUTPUT_DIR / f'{nombre_base}.parquet'
         df.to_parquet(parquet_path, index=False, compression='snappy')
@@ -738,8 +755,7 @@ def exportar_datos(licitaciones, nombre_base='licitaciones_completo'):
         print(f"   ✓ Parquet: {parquet_path} ({size_mb:.1f} MB)")
     except Exception as e:
         print(f"   ⚠ Parquet no disponible: {e}")
-    
-    # Resumen por conjunto
+
     print(f"\n📊 RESUMEN POR CONJUNTO")
     print("=" * 60)
     if 'conjunto' in df.columns:
@@ -750,19 +766,24 @@ def exportar_datos(licitaciones, nombre_base='licitaciones_completo'):
             print(f"      Años: {df_c['ano'].min():.0f} - {df_c['ano'].max():.0f}")
             if 'importe_sin_iva' in df_c.columns:
                 print(f"      Importe: {df_c['importe_sin_iva'].sum()/1e9:.2f}B €")
-    
-    # Resumen total
+
     print(f"\n📊 RESUMEN TOTAL")
     print("=" * 60)
     print(f"   Total registros: {len(df):,}")
     print(f"   Rango fechas: {df['ano'].min():.0f} - {df['ano'].max():.0f}")
     print(f"   Órganos únicos: {df['organo_contratante'].nunique():,}")
     print(f"   Adjudicatarios únicos: {df['adjudicatario'].nunique():,}")
-    
+
     if 'importe_sin_iva' in df.columns:
         total = df['importe_sin_iva'].sum()
         print(f"   Importe total: {total/1e9:.2f}B €")
-    
+
+    for p in partial_parquets:
+        try:
+            p.unlink()
+        except OSError:
+            pass
+
     return df
 
 # ============================================================================
@@ -815,14 +836,16 @@ def main():
     print(f"\n{'='*60}")
     print(f"⚙️ PROCESANDO ARCHIVOS")
     print(f"{'='*60}")
-    
-    todas_licitaciones = []
-    
+
+    import gc
+
+    partial_parquets: list[Path] = []
+    part_idx = 0
+
     for conjunto_id in conjuntos:
         conjunto_dir = DATA_DIR / conjunto_id
         zip_files = sorted(conjunto_dir.glob('*.zip'))
-        
-        # Filtrar por años
+
         zip_filtrados = []
         for z in zip_files:
             match = re.search(r'_(\d{4})(\d{2})?\.zip$', z.name)
@@ -830,22 +853,28 @@ def main():
                 ano = int(match.group(1))
                 if ano_inicio <= ano <= ano_fin:
                     zip_filtrados.append(z)
-        
+
         if zip_filtrados:
             print(f"\n📦 {CONJUNTOS[conjunto_id]['nombre']}: {len(zip_filtrados)} archivos")
-            
+
             for i, zip_path in enumerate(zip_filtrados, 1):
                 print(f"   [{i}/{len(zip_filtrados)}] {zip_path.name}", end='')
                 lics = procesar_zip(zip_path, conjunto_id)
-                todas_licitaciones.extend(lics)
-    
-    if todas_licitaciones:
-        # Nombre de salida según conjunto(s): uno solo → licitaciones_consultas_2025_2025; todos → licitaciones_completo_2025_2025
+                if lics:
+                    part_path = OUTPUT_DIR / f'_part_{part_idx:04d}.parquet'
+                    n = _flush_to_parquet(lics, part_path)
+                    partial_parquets.append(part_path)
+                    part_idx += 1
+                    print(f"      → parcial {part_path.name} ({n:,} registros)")
+                del lics
+                gc.collect()
+
+    if partial_parquets:
         if len(conjuntos) == 1:
             nombre_base = f'licitaciones_{conjuntos[0]}_{ano_inicio}_{ano_fin}'
         else:
             nombre_base = f'licitaciones_completo_{ano_inicio}_{ano_fin}'
-        df = exportar_datos(todas_licitaciones, nombre_base)
+        df = exportar_datos(partial_parquets, nombre_base)
         print("\n✅ SCRAPING COMPLETADO")
     else:
         print("\n⚠️ No se encontraron registros")
