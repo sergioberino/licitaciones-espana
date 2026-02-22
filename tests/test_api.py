@@ -28,6 +28,15 @@ def test_scheduler_status_returns_200_or_503_has_tasks():
         assert isinstance(data["tasks"], list)
 
 
+def test_ingest_current_run_returns_200_or_503_and_contract():
+    client = TestClient(app)
+    r = client.get("/ingest/current-run")
+    assert r.status_code in (200, 503)
+    data = r.json()
+    assert "running" in data
+    assert "run" in data
+
+
 def test_db_info_returns_200_or_503_has_schemas_and_tables():
     client = TestClient(app)
     r = client.get("/db-info")

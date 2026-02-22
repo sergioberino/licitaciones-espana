@@ -1070,11 +1070,6 @@ def _mapear_sin_cabecera(df, nombre, categoria):
     """Map files that had no header (read with header=None)."""
     ncols = len(df.columns)
 
-    # Print first row for diagnostics
-    if len(df) > 0:
-        row0 = [str(df.iloc[0, i])[:30] for i in range(min(ncols, 20))]
-        print(f"\n      [DEBUG SIN_CABECERA] {ncols} cols, row0: {row0}")
-
     if categoria == 'modificados':
         # modificados_2015: 19 cols
         # Layout based on 2016+ AC_OLD_MOD pattern + extra cols:

@@ -9,7 +9,7 @@ import os
 import signal
 import subprocess
 import sys
-from datetime import datetime
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from typing import Any, Optional
 
@@ -22,6 +22,7 @@ SCHEDULER_TZ = ZoneInfo("Europe/Madrid")
 SCHEDULER_HOUR = 2  # 02:00 local
 SCHEDULER_PID_FILENAME = "licitia-etl-scheduler.pid"
 SCHEDULER_LOG_FILENAME = "scheduler.log"
+MAX_RUN_DURATION_HOURS = int(os.environ.get("SCHEDULER_MAX_RUN_HOURS", "6"))
 
 
 def _scheduler_log_prefix() -> str:
@@ -158,6 +159,53 @@ def update_run_finish(
         )
 
 
+def recover_stale_runs(conn: "psycopg2.extensions.connection") -> int:
+    """Detect orphaned 'running' runs (dead PID or exceeded max duration) and mark them failed.
+
+    Called on API startup and at each scheduler loop tick to self-heal after
+    container restarts or process crashes.  Returns the number of recovered runs.
+    """
+    with conn.cursor(cursor_factory=RealDictCursor) as cur:
+        cur.execute(
+            "SELECT run_id, process_id, started_at, task_id FROM scheduler.runs WHERE status = 'running'"
+        )
+        stale = cur.fetchall()
+
+    if not stale:
+        return 0
+
+    recovered = 0
+    cutoff = datetime.now(tz=timezone.utc) - timedelta(hours=MAX_RUN_DURATION_HOURS)
+
+    for row in stale:
+        pid = row.get("process_id")
+        started = row.get("started_at")
+        reason: str | None = None
+
+        if pid:
+            try:
+                os.kill(pid, 0)
+                if started and started < cutoff:
+                    reason = f"Timeout: running for >{MAX_RUN_DURATION_HOURS}h"
+                else:
+                    continue
+            except ProcessLookupError:
+                reason = f"Process {pid} not found (container restarted?)"
+            except PermissionError:
+                continue
+        else:
+            if started and started < cutoff:
+                reason = f"Timeout: no PID recorded, running >{MAX_RUN_DURATION_HOURS}h"
+            else:
+                continue
+
+        if reason:
+            update_run_finish(conn, row["run_id"], "failed", error_message=reason)
+            recovered += 1
+
+    return recovered
+
+
 def register_tasks(
     conn: "psycopg2.extensions.connection",
     conjuntos: Optional[list[str]] = None,
@@ -221,10 +269,10 @@ def list_tasks_with_last_run(conn: "psycopg2.extensions.connection") -> list[dic
             SELECT t.task_id, t.conjunto, t.subconjunto, t.schedule_expr, t.enabled, t.created_at,
                    r.run_id AS last_run_id, r.started_at AS last_started_at, r.finished_at AS last_finished_at,
                    r.status AS last_status, r.rows_inserted AS last_rows_inserted, r.rows_omitted AS last_rows_omitted,
-                   r.process_id AS last_process_id
+                   r.process_id AS last_process_id, r.error_message AS last_error_message
             FROM scheduler.tasks t
             LEFT JOIN LATERAL (
-              SELECT run_id, started_at, finished_at, status, rows_inserted, rows_omitted, process_id
+              SELECT run_id, started_at, finished_at, status, rows_inserted, rows_omitted, process_id, error_message
               FROM scheduler.runs
               WHERE task_id = t.task_id
               ORDER BY started_at DESC
@@ -233,6 +281,24 @@ def list_tasks_with_last_run(conn: "psycopg2.extensions.connection") -> list[dic
             ORDER BY t.conjunto, t.subconjunto
         """)
         return [dict(row) for row in cur.fetchall()]
+
+
+def get_current_running_run(conn: "psycopg2.extensions.connection") -> Optional[dict[str, Any]]:
+    """Devuelve la run activa más reciente (status=running) con task metadata, o None."""
+    with conn.cursor(cursor_factory=RealDictCursor) as cur:
+        cur.execute(
+            """
+            SELECT r.run_id, r.task_id, r.started_at, r.status, r.process_id,
+                   t.conjunto, t.subconjunto
+            FROM scheduler.runs r
+            JOIN scheduler.tasks t ON t.task_id = r.task_id
+            WHERE r.status = 'running'
+            ORDER BY r.started_at DESC
+            LIMIT 1
+            """
+        )
+        row = cur.fetchone()
+        return dict(row) if row else None
 
 
 def get_scheduler_pid_path() -> Path:
@@ -357,6 +423,12 @@ def run_scheduler_loop(
         while not shutdown:
             tick_count += 1
             try:
+                with psycopg2.connect(db_url) as conn:
+                    conn.autocommit = False
+                    recovered = recover_stale_runs(conn)
+                    conn.commit()
+                    if recovered:
+                        _log_scheduler(f"Recuperados {recovered} run(s) huérfanos.")
                 with psycopg2.connect(db_url) as conn:
                     due = get_tasks_due(conn)
                 for task in due:

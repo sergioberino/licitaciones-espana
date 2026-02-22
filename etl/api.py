@@ -1,15 +1,23 @@
 import argparse
+import os
+import subprocess
+import sys
 from datetime import datetime
+from pathlib import Path
 
 import psycopg2
 from fastapi import FastAPI
 from fastapi.responses import JSONResponse
 from pydantic import BaseModel
 
-from etl.cli import cmd_ingest, cmd_scheduler_register, cmd_scheduler_run, cmd_scheduler_stop, _comprobar_base_datos
+from etl.cli import cmd_scheduler_register, cmd_scheduler_run, cmd_scheduler_stop, _comprobar_base_datos
 from etl.config import get_database_url, get_db_schema
 from etl.ingest_l0 import CONJUNTOS_REGISTRY
-from etl.scheduler import get_next_run_at, list_tasks_with_last_run
+from etl.scheduler import get_current_running_run, get_next_run_at, list_tasks_with_last_run, recover_stale_runs
+
+
+def _ingest_log_path() -> Path:
+    return Path(os.environ.get("LICITACIONES_TMP_DIR", "/tmp")) / "ingest.log"
 
 
 class IngestRunBody(BaseModel):
@@ -38,10 +46,27 @@ class SchedulerRunBody(BaseModel):
 app = FastAPI(title="ETL API", version="1.0")
 
 
+@app.on_event("startup")
+def _startup_recover_stale_runs():
+    """Auto-heal stale 'running' scheduler records left by dead containers."""
+    db_url = get_database_url()
+    if not db_url:
+        return
+    try:
+        with psycopg2.connect(db_url) as conn:
+            conn.autocommit = False
+            count = recover_stale_runs(conn)
+            conn.commit()
+            if count:
+                print(f"[startup] Recovered {count} stale scheduler run(s).")
+    except Exception as e:
+        print(f"[startup] Could not recover stale runs: {e}")
+
+
 def _serialize_row(row: dict) -> dict:
     """Convert a row dict to JSON-serializable form (datetime -> ISO string)."""
     out = dict(row)
-    for key in ("last_started_at", "last_finished_at", "next_run_at", "created_at"):
+    for key in ("started_at", "finished_at", "last_started_at", "last_finished_at", "next_run_at", "created_at"):
         val = out.get(key)
         if isinstance(val, datetime):
             out[key] = val.isoformat()
@@ -73,11 +98,14 @@ def ingest_conjuntos():
 
 @app.post(
     "/ingest/run",
-    summary="Run ingest for a conjunto/subconjunto",
-    description="Runs the same logic as the CLI 'ingest' command: download/generate parquet and load into L0. Body: conjunto (required), subconjunto (optional), anos (optional, required for nacional/ted), solo_descargar, solo_procesar. Returns 200 with ok/message or 4xx/5xx on error.",
+    summary="Run ingest for a conjunto/subconjunto (non-blocking)",
+    description="Validates inputs then spawns the CLI ingest command as a background process. "
+    "Returns immediately with 200. The subprocess registers its own scheduler run "
+    "and updates it on completion. Poll GET /ingest/current-run for status and "
+    "GET /ingest/log for live subprocess output.",
 )
 def ingest_run(body: IngestRunBody):
-    """Execute ingest for the given conjunto and optional subconjunto."""
+    """Spawn a background ingest process for the given conjunto/subconjunto."""
     conjunto = (body.conjunto or "").strip().lower()
     if not conjunto:
         return JSONResponse(
@@ -112,33 +140,38 @@ def ingest_run(body: IngestRunBody):
             status_code=422,
             content={"detail": "Obligatorio indicar anos X-Y para este conjunto (ej. 2023-2023)."},
         )
-    args = argparse.Namespace(
-        conjunto=conjunto,
-        subconjunto=subconjunto,
-        anos=anos,
-        solo_descargar=body.solo_descargar,
-        solo_procesar=body.solo_procesar,
-        ingest_keep_parquet=False,
-        ingest_list_subconjuntos=False,
-        ingest_integration=False,
-        ingest_conjuntos=False,
-        ingest_delete=False,
-        ingest_verbose=False,
-        e2e_schema=None,
-    )
+
+    cmd = [sys.executable, "-m", "etl.cli", "ingest", conjunto]
+    if subconjunto:
+        cmd.append(subconjunto)
+    if anos:
+        cmd.extend(["--anos", anos])
+    if body.solo_descargar:
+        cmd.append("--solo-descargar")
+    if body.solo_procesar:
+        cmd.append("--solo-procesar")
+
+    log_path = _ingest_log_path()
+    log_path.parent.mkdir(parents=True, exist_ok=True)
+
     try:
-        rc = cmd_ingest(args)
+        log_file = open(log_path, "w", encoding="utf-8")
+        kwargs: dict = {"stdout": log_file, "stderr": subprocess.STDOUT}
+        if os.name != "nt":
+            kwargs["start_new_session"] = True
+        p = subprocess.Popen(cmd, **kwargs)
     except Exception as e:
         return JSONResponse(
             status_code=500,
-            content={"ok": False, "message": str(e)},
+            content={"ok": False, "message": f"No se pudo iniciar el ingest: {e}"},
         )
-    if rc == 0:
-        return {"ok": True, "message": "Ingest completed"}
-    return JSONResponse(
-        status_code=500,
-        content={"ok": False, "message": "Ingest failed (see server logs)"},
-    )
+
+    label = f"{conjunto}/{subconjunto}" if subconjunto else conjunto
+    return {
+        "ok": True,
+        "message": f"Ingest de {label} iniciado en segundo plano (PID: {p.pid}). "
+        f"Consulte el panel para seguir el progreso.",
+    }
 
 
 @app.post(
@@ -223,6 +256,26 @@ def scheduler_stop():
     return {"ok": True, "message": "Scheduler stop requested"}
 
 
+@app.post(
+    "/scheduler/recover",
+    summary="Recover stale scheduler runs",
+    description="Detect orphaned 'running' records (dead PID or timed-out) and mark them as failed. Safe to call at any time.",
+)
+def scheduler_recover():
+    """Manually trigger stale-run recovery."""
+    db_url = get_database_url()
+    if db_url is None:
+        return JSONResponse(status_code=503, content={"ok": False, "message": "Database not configured"})
+    try:
+        with psycopg2.connect(db_url) as conn:
+            conn.autocommit = False
+            count = recover_stale_runs(conn)
+            conn.commit()
+    except psycopg2.Error as e:
+        return JSONResponse(status_code=500, content={"ok": False, "message": str(e)})
+    return {"ok": True, "recovered": count}
+
+
 @app.get("/status")
 def status():
     ok, msg = _comprobar_base_datos()
@@ -263,6 +316,42 @@ def scheduler_status():
             r["next_run_at"] = next_at
         list_of_dicts.append(_serialize_row(r))
     return {"tasks": list_of_dicts}
+
+
+@app.get(
+    "/ingest/log",
+    summary="Tail the ingest subprocess log",
+    description="Returns the last N lines of the ingest log file written by the background subprocess. "
+    "Poll this while an ingest is running to show live progress.",
+)
+def ingest_log(lines: int = 80):
+    """Read the tail of the ingest subprocess log."""
+    log_path = _ingest_log_path()
+    if not log_path.exists():
+        return {"lines": [], "exists": False, "total_lines": 0}
+    try:
+        text = log_path.read_text(encoding="utf-8", errors="replace")
+    except OSError:
+        return {"lines": [], "exists": True, "total_lines": 0}
+    all_lines = text.splitlines()
+    tail = all_lines[-lines:] if len(all_lines) > lines else all_lines
+    return {"lines": tail, "exists": True, "total_lines": len(all_lines)}
+
+
+@app.get("/ingest/current-run")
+def ingest_current_run():
+    """Return the currently running ingest run (if any)."""
+    url = get_database_url()
+    if url is None:
+        return JSONResponse(status_code=503, content={"running": False, "run": None})
+    try:
+        with psycopg2.connect(url) as conn:
+            run = get_current_running_run(conn)
+    except psycopg2.Error:
+        return JSONResponse(status_code=503, content={"running": False, "run": None})
+    if not run:
+        return {"running": False, "run": None}
+    return {"running": True, "run": _serialize_row(run)}
 
 
 @app.get("/db-info")
