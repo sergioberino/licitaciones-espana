@@ -1,53 +1,145 @@
-# ETL — Microservicio CLI (licitia-etl)
+# licitaciones-espana — ETL Microservice
 
-Microservicio **ETL** que se integra con una **base de datos PostgreSQL** para preparar y mantener esquemas, dimensiones y tablas L0 de ingesta. Aprovecha las extracciones y el contexto de datos del repositorio original [BquantFinance/licitaciones-espana](https://github.com/BquantFinance/licitaciones-espana).
+Fork de [BquantFinance/licitaciones-espana](https://github.com/BquantFinance/licitaciones-espana) que extiende el repositorio original de extracción de datos públicos de contratación con un **CLI** (`licitia-etl`) y una **API REST** (FastAPI) para su uso como microservicio conectable.
+
+## Arquitectura
+
+```
+┌─────────────────────────────────────────────┐
+│          licitaciones-espana (ETL)           │
+│                                             │
+│  ┌──────────┐          ┌──────────────────┐ │
+│  │   CLI    │          │    API REST      │ │
+│  │licitia-etl│         │  FastAPI :8001   │ │
+│  └────┬─────┘          └───────┬──────────┘ │
+│       │                        │            │
+│       ▼                        ▼            │
+│  ┌──────────────────────────────────────┐   │
+│  │     Core: schemas, ingest, scheduler │   │
+│  └──────────────────┬───────────────────┘   │
+│                     │                       │
+└─────────────────────┼───────────────────────┘
+                      ▼
+               ┌─────────────┐
+               │ PostgreSQL   │
+               │ (cualquiera) │
+               └─────────────┘
+```
+
+**Sin dependencias externas.** La única conexión es a una base de datos PostgreSQL configurable por variables de entorno. No depende de ningún otro microservicio ni componente externo.
+
+---
+
+## Interfaces
+
+### CLI (`licitia-etl`)
+
+Instalable via `pip install -e .`. Punto de entrada: `etl.cli:main`.
+
+| Comando | Descripción |
+|---------|-------------|
+| `licitia-etl status` | Comprueba conexión a la base de datos |
+| `licitia-etl init-db` | Aplica esquemas y carga datos estáticos (CPV, DIR3, Provincias, CCAA) |
+| `licitia-etl ingest` *conjunto* *subconjunto* [*--anos*] | Descarga/genera parquet e ingesta en tablas L0 |
+| `licitia-etl scheduler register` [*conjuntos*] | Registra tareas programadas |
+| `licitia-etl scheduler run` | Inicia el scheduler (ejecuta tareas según frecuencia) |
+| `licitia-etl scheduler stop` | Detiene el proceso del scheduler |
+| `licitia-etl scheduler status` | Lista tareas con última ejecución, estado y próxima ejecución |
+| `licitia-etl health` | Comprueba BD y schema scheduler (código de salida 0/1) |
+| `licitia-etl db-info` | Muestra tamaño por schema y listado de tablas |
+
+Orden recomendado: `status` → `init-db` → `ingest`. Para ejecución programada: `scheduler register` → `scheduler run`.
+
+### API REST (FastAPI)
+
+Puerto configurable (defecto: 8001). Expone las mismas operaciones que el CLI para integración programática.
+
+| Endpoint | Método | Descripción |
+|----------|--------|-------------|
+| `/health` | GET | Estado del servicio y conectividad BD |
+| `/ingest/conjuntos` | GET | Catálogo de conjuntos/subconjuntos disponibles |
+| `/ingest/run` | POST | Lanza una ingesta (mismo efecto que `licitia-etl ingest`) |
+| `/ingest/status` | GET | Estado de la ingesta en curso |
+| `/scheduler/tasks` | GET | Lista tareas programadas con estado |
+| `/scheduler/register` | POST | Registra tareas del scheduler |
+| `/scheduler/run` | POST | Arranca el scheduler |
+| `/scheduler/stop` | POST | Detiene el scheduler |
+
+---
 
 ## Qué hace este servicio
 
-- **Comprobar estado** (`status`): conexión a la base de datos.
-- **Inicializar base de datos** (`init-db`): aplica esquemas SQL (dim, scheduler, tablas L0) y carga datos estáticos (p. ej. dimensión CPV, DIR3).
-- **Ingestar datos** (`ingest`): descarga o usa parquets existentes y carga en tablas L0 del schema de trabajo.
-- **Scheduler** (`scheduler register` / `run` / `stop` / `status`): registra tareas por conjunto y las ejecuta según frecuencia (Mensual/Trimestral/Anual).
-- **Supervisión** (`health`, `db-info`): comprobación de BD y schema scheduler; tamaño y listado de tablas.
+1. **Esquemas y datos estáticos** — Crea schemas (`dim`, `scheduler`, L0) y carga dimensiones estáticas (CPV ~9.450 códigos, CCAA, Provincias, DIR3).
+2. **Ingesta L0** — Descarga datos de fuentes públicas (Parquet/XLSX), los transforma y carga en tablas L0 del schema de trabajo.
+3. **Scheduler** — Ejecuta ingestas programadas por frecuencia (Mensual/Trimestral/Anual) con registro de ejecuciones, log y próxima ejecución.
+4. **Supervisión** — Health check con conectividad BD, info de schemas y tablas.
 
-Configuración por **variables de entorno** (`.env`). Funciona en modo **standalone** o dentro de un stack orquestado (Docker Compose).
+### Conjuntos soportados
 
-## Comandos
+Los conjuntos de datos se registran en `CONJUNTOS_REGISTRY` (`etl/ingest_l0.py`). Cada conjunto define sus subconjuntos, frecuencia de actualización y lógica de descarga/procesamiento.
 
-| Comando | Descripción |
-|--------|-------------|
-| `licitia-etl status` | Comprueba conexión a la base de datos. |
-| `licitia-etl init-db` | Aplica esquemas y carga datos estáticos (CPV, DIR3, Provincias, CCAA). |
-| `licitia-etl ingest` *conjunto* *subconjunto* [*--anos*] | Descarga/genera parquet e ingesta en tablas L0. |
-| `licitia-etl scheduler register` [*conjuntos*] | Registra tareas programadas (sin argumentos: todos los conjuntos). |
-| `licitia-etl scheduler run` | Inicia el scheduler (ejecuta tareas según frecuencia). |
-| `licitia-etl scheduler stop` | Detiene el proceso del scheduler. |
-| `licitia-etl scheduler status` | Lista tareas con última ejecución, estado (scheduled/running/failed) y **PRÓXIMA EJECUCIÓN**. |
-| `licitia-etl health` | Comprueba BD y schema scheduler; código 0/1 para supervisión. |
-| `licitia-etl db-info` | Muestra tamaño por schema y listado de tablas. |
+---
 
-Orden recomendado: **status** → **init-db** → **ingest**; para ejecución programada: **scheduler register** → **scheduler run**.
+## Setup
 
-Ver `licitia-etl --help` para opciones y atribución (fork y autor del CLI).
+### Docker (recomendado)
 
-## Configuración
+```bash
+cp .env.example .env
+# Editar .env con credenciales de la BD
+docker compose up -d
+docker compose exec etl licitia-etl init-db
+docker compose exec etl licitia-etl ingest nacional licitaciones
+```
 
-Variables principales en el `.env` de este servicio: base de datos (host, puerto, nombre, usuario, contraseña) y schema de trabajo. Copiar `.env.example` a `.env` y rellenar los valores necesarios.
+### Local
 
-Detalle: [docs/quick-guide-deploy.md](docs/quick-guide-deploy.md).
+```bash
+cp .env.example .env
+pip install -e .
+licitia-etl status
+licitia-etl init-db
+```
 
-**Release 1.0.0** — Listo para producción. Scheduler completo (register, run, stop, status con PRÓXIMA EJECUCIÓN), ingest L0, health, db-info. Sin referencias a embeddings en este dominio.
+### Configuración
 
-## Roadmap
+Variables de entorno en `.env`:
 
-- Esquemas y datos estáticos incluidos; `init-db` los aplica. Scheduler con tareas en BD, ejecución según frecuencia (Mensual/Trimestral/Anual), `scheduler.log` y status con PRÓXIMA EJECUCIÓN.
+| Variable | Descripción | Ejemplo |
+|----------|-------------|---------|
+| `DB_HOST` | Host de PostgreSQL | `localhost` |
+| `DB_PORT` | Puerto | `5432` |
+| `DB_NAME` | Nombre de la BD | `licitaciones` |
+| `DB_USER` | Usuario | `postgres` |
+| `DB_PASSWORD` | Contraseña | — |
+| `DB_SCHEMA` | Schema de trabajo (L0) | `raw` |
+| `DIM_SCHEMA` | Schema de dimensiones | `dim` |
+| `INGEST_BATCH_SIZE` | Tamaño de lote para inserts | `8192` |
 
+---
 
-## Más información
+## Estructura del proyecto
 
-- **Changelog:** [CHANGELOG.md](CHANGELOG.md)
+```
+etl/
+├── cli.py           # CLI (argparse) — punto de entrada licitia-etl
+├── api.py           # API REST (FastAPI)
+├── config.py        # Configuración (env vars → DATABASE_URL)
+├── ingest_l0.py     # Lógica de ingesta L0 + CONJUNTOS_REGISTRY
+├── scheduler.py     # Scheduler (register, run, stop, status)
+├── dir3_ingest.py   # Ingesta de datos DIR3 (XLSX público)
+├── __init__.py
+└── __main__.py
+schemas/             # DDL SQL (dim, scheduler, L0)
+nacional/            # Scripts de extracción — conjunto nacional
+catalunya/           # Scripts de extracción — conjunto catalán
+valencia/            # Scripts de extracción — conjunto valenciano
+tests/               # Tests (unit + integration)
+```
+
+---
 
 ## Créditos
 
-- **Repo de extracción de datos públicos:** [@Gsnchez](https://twitter.com/Gsnchez) | [BQuant Finance](https://bquantfinance.com)
-- **Mantenedor del CLI (licitia-etl):** [Sergio Berino](https://es.linkedin.com/in/sergio-emilio-berino-a19a53328/en) | [Grupo TOP Digital](https://grupotopdigital.es/)
+- **Repositorio original de extracción de datos públicos:** [@Gsnchez](https://twitter.com/Gsnchez) | [BQuant Finance](https://bquantfinance.com)
+- **Mantenedor del CLI y API (licitia-etl):** [Sergio Berino](https://es.linkedin.com/in/sergio-emilio-berino-a19a53328/en) | [Grupo TOP Digital](https://grupotopdigital.es/)

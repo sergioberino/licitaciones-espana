@@ -14,7 +14,7 @@ From repo root or inside the ETL container:
 licitia-etl init-db
 ```
 
-This applies, in order: **001_dim_cpv.sql**, **002_dim_ccaa.sql**, **002b_dim_provincia.sql**, **003_dim_dir3.sql**, **008_scheduler.sql**, **009_scheduler_runs_pid.sql**. Idempotent (DDL uses IF NOT EXISTS; CPV inserts use ON CONFLICT DO NOTHING). The ETL does not create or maintain dim.cpv_router (that is the indexer's responsibility if needed).
+This applies, in order: **001_dim_cpv.sql**, **002_dim_ccaa.sql**, **002b_dim_provincia.sql**, **003_dim_dir3.sql**, **008_scheduler.sql**, **009_scheduler_runs_pid.sql**. Idempotent (DDL uses IF NOT EXISTS; CPV inserts use ON CONFLICT DO NOTHING). The ETL does not create or maintain dim.cpv_router (out of scope for this service).
 
 ### Option B: Fresh database (Docker)
 
@@ -56,7 +56,7 @@ _(Run from repo root.)_
 
 ## CPV dimension (dim.cpv_dim)
 
-**CPV dimension is in `dim.cpv_dim`**, created and populated by `001_dim_cpv.sql`. Columns: **num_code** (INTEGER, PK, 8-digit without control digit, used for Parquet/L0 and FKs), **code** (VARCHAR, original code with control digit from public source), **label** (TEXT). Domain tables reference `dim.cpv_dim(num_code)` via `cpv_id` and `cpvs` (INTEGER[]). Display with `LPAD(num_code::TEXT, 8, '0')`. To regenerate `001_dim_cpv.sql` from the source dump, run `python3 scripts/cpv_dim_convert.py` (reads `schemas/cpv_code.sql`, strips control digit, writes `schemas/001_dim_cpv.sql`). The ETL does not create or maintain a CPV router table; that is the indexer's responsibility if required.
+**CPV dimension is in `dim.cpv_dim`**, created and populated by `001_dim_cpv.sql`. Columns: **num_code** (INTEGER, PK, 8-digit without control digit, used for Parquet/L0 and FKs), **code** (VARCHAR, original code with control digit from public source), **label** (TEXT). Domain tables reference `dim.cpv_dim(num_code)` via `cpv_id` and `cpvs` (INTEGER[]). Display with `LPAD(num_code::TEXT, 8, '0')`. To regenerate `001_dim_cpv.sql` from the source dump, run `python3 scripts/cpv_dim_convert.py` (reads `schemas/cpv_code.sql`, strips control digit, writes `schemas/001_dim_cpv.sql`). The ETL does not create or maintain a CPV router table (out of scope for this service).
 
 ---
 

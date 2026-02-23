@@ -91,7 +91,7 @@ def health():
 @app.get(
     "/ingest/conjuntos",
     summary="List ingest conjuntos and subconjuntos",
-    description="Returns the same conjunto/subconjunto catalog as the CLI (ingest --subconjuntos). Used by the frontend to populate the Ingestar form.",
+    description="Returns the same conjunto/subconjunto catalog as the CLI (ingest --subconjuntos).",
 )
 def ingest_conjuntos():
     """List available conjuntos and their subconjuntos for ingest."""
