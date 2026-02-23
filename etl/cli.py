@@ -882,29 +882,34 @@ def cmd_db_info(_args: argparse.Namespace) -> int:
     if not url:
         print("Falta configuración de base de datos (DB_HOST, DB_NAME, DB_USER).", file=sys.stderr)
         return 1
-    db_schema = get_db_schema() or "raw"
     try:
         with psycopg2.connect(url) as conn:
             with conn.cursor() as cur:
+                cur.execute("SELECT pg_size_pretty(pg_database_size(current_database()))")
+                db_total = cur.fetchone()
+                print(f"Base de datos: {db_total[0] if db_total else '?'}\n")
                 print("Tamaño por schema:")
                 cur.execute("""
-                    SELECT nspname AS schema_name,
+                    SELECT n.nspname AS schema_name,
                            pg_size_pretty(SUM(pg_total_relation_size(c.oid))::bigint) AS size
                     FROM pg_class c
                     JOIN pg_namespace n ON n.oid = c.relnamespace
-                    WHERE nspname IN (%s, 'dim', 'scheduler')
-                    GROUP BY nspname
-                """, (db_schema,))
+                    WHERE n.nspname NOT IN ('pg_catalog', 'information_schema', 'pg_toast')
+                      AND n.nspname NOT LIKE 'pg_temp_%%'
+                    GROUP BY n.nspname
+                    ORDER BY SUM(pg_total_relation_size(c.oid)) DESC
+                """)
                 sizes = cur.fetchall()
                 for row in sizes:
                     print(f"  {row[0]}: {row[1]}")
                 cur.execute("""
                     SELECT table_schema, table_name
                     FROM information_schema.tables
-                    WHERE table_schema IN (%s, 'dim', 'scheduler')
-                    AND table_type = 'BASE TABLE'
+                    WHERE table_schema NOT IN ('pg_catalog', 'information_schema', 'pg_toast')
+                      AND table_schema NOT LIKE 'pg_temp_%%'
+                      AND table_type = 'BASE TABLE'
                     ORDER BY table_schema, table_name
-                """, (db_schema,))
+                """)
                 tables = cur.fetchall()
                 print("\nTablas:")
                 for sch, name in tables:

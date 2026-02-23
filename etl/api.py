@@ -11,7 +11,7 @@ from fastapi.responses import JSONResponse
 from pydantic import BaseModel
 
 from etl.cli import cmd_scheduler_register, cmd_scheduler_run, cmd_scheduler_stop, _comprobar_base_datos
-from etl.config import get_database_url, get_db_schema
+from etl.config import get_database_url
 from etl.ingest_l0 import CONJUNTOS_REGISTRY
 from etl.scheduler import get_current_running_run, get_next_run_at, list_tasks_with_last_run, recover_stale_runs
 
@@ -362,35 +362,31 @@ def db_info():
             status_code=503,
             content={"detail": "database unavailable"},
         )
-    db_schema = get_db_schema()
-    schemas = ([db_schema] if db_schema else []) + ["dim", "scheduler"]
-    placeholders = ", ".join(["%s"] * len(schemas))
     try:
         with psycopg2.connect(url) as conn:
             with conn.cursor() as cur:
-                cur.execute(
-                    f"""
-                    SELECT nspname AS schema_name,
+                cur.execute("""
+                    SELECT n.nspname AS schema_name,
                            pg_size_pretty(SUM(pg_total_relation_size(c.oid))::bigint) AS size
                     FROM pg_class c
                     JOIN pg_namespace n ON n.oid = c.relnamespace
-                    WHERE nspname IN ({placeholders})
-                    GROUP BY nspname
-                    """,
-                    schemas,
-                )
+                    WHERE n.nspname NOT IN ('pg_catalog', 'information_schema', 'pg_toast')
+                      AND n.nspname NOT LIKE 'pg_temp_%%'
+                    GROUP BY n.nspname
+                    ORDER BY SUM(pg_total_relation_size(c.oid)) DESC
+                """)
                 sizes = cur.fetchall()
-                cur.execute(
-                    f"""
+                cur.execute("""
                     SELECT table_schema, table_name
                     FROM information_schema.tables
-                    WHERE table_schema IN ({placeholders})
+                    WHERE table_schema NOT IN ('pg_catalog', 'information_schema', 'pg_toast')
+                      AND table_schema NOT LIKE 'pg_temp_%%'
                       AND table_type = 'BASE TABLE'
                     ORDER BY table_schema, table_name
-                    """,
-                    schemas,
-                )
+                """)
                 tables = cur.fetchall()
+                cur.execute("SELECT pg_size_pretty(pg_database_size(current_database()))")
+                db_total = cur.fetchone()
     except psycopg2.Error:
         return JSONResponse(
             status_code=503,
@@ -399,4 +395,5 @@ def db_info():
     return {
         "schemas": [{"schema_name": r[0], "size": r[1]} for r in sizes],
         "tables": [{"schema": r[0], "name": r[1]} for r in tables],
+        "total_size": db_total[0] if db_total else None,
     }
