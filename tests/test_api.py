@@ -47,3 +47,15 @@ def test_db_info_returns_200_or_503_has_schemas_and_tables():
         assert "tables" in data
         assert isinstance(data["schemas"], list)
         assert isinstance(data["tables"], list)
+
+
+def test_borme_ingest_requires_anos():
+    client = TestClient(app)
+    r = client.post("/borme/ingest", json={})
+    assert r.status_code == 422
+
+
+def test_borme_anomalias_requires_anos():
+    client = TestClient(app)
+    r = client.post("/borme/anomalias", json={})
+    assert r.status_code == 422

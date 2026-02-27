@@ -20,6 +20,10 @@ def _ingest_log_path() -> Path:
     return Path(os.environ.get("LICITACIONES_TMP_DIR", "/tmp")) / "ingest.log"
 
 
+def _borme_log_path() -> Path:
+    return Path(os.environ.get("LICITACIONES_TMP_DIR", "/tmp")) / "borme.log"
+
+
 class IngestRunBody(BaseModel):
     """Body for POST /ingest/run. Same options as CLI ingest command."""
 
@@ -42,6 +46,15 @@ class SchedulerRunBody(BaseModel):
     conjunto: str | None = None
     subconjunto: str | None = None
     detach: bool = False
+
+
+class BormeIngestBody(BaseModel):
+    anos: str
+
+
+class BormeAnomaliasBody(BaseModel):
+    anos: str
+    anonimizar: bool = False
 
 app = FastAPI(title="ETL API", version="1.0")
 
@@ -407,3 +420,80 @@ def db_info():
         "tables": [{"schema": r[0], "name": r[1]} for r in tables],
         "total_size": db_total[0] if db_total else None,
     }
+
+
+@app.post("/borme/ingest", summary="BORME: scrape + parse + load into borme schema")
+def borme_ingest(body: BormeIngestBody):
+    """Spawn background CLI process for BORME ingest."""
+    cmd = [sys.executable, "-m", "etl.cli", "borme", "ingest", "--anos", body.anos]
+    log_path = _borme_log_path()
+    log_path.parent.mkdir(parents=True, exist_ok=True)
+    try:
+        log_file = open(log_path, "w", encoding="utf-8")
+        kwargs: dict = {"stdout": log_file, "stderr": subprocess.STDOUT}
+        if os.name != "nt":
+            kwargs["start_new_session"] = True
+        p = subprocess.Popen(cmd, **kwargs)
+    except Exception as e:
+        return JSONResponse(
+            status_code=500,
+            content={"ok": False, "message": f"Could not start BORME ingest: {e}"},
+        )
+    return {"ok": True, "message": f"BORME ingest started (PID: {p.pid})", "pid": p.pid, "anos": body.anos}
+
+
+@app.post("/borme/anomalias", summary="BORME: anomaly detector vs L0 nacional")
+def borme_anomalias(body: BormeAnomaliasBody):
+    """Spawn background CLI process for BORME anomaly detection."""
+    cmd = [sys.executable, "-m", "etl.cli", "borme", "anomalias", "--anos", body.anos]
+    if body.anonimizar:
+        cmd.append("--anonimizar")
+    log_path = _borme_log_path()
+    log_path.parent.mkdir(parents=True, exist_ok=True)
+    try:
+        log_file = open(log_path, "w", encoding="utf-8")
+        kwargs: dict = {"stdout": log_file, "stderr": subprocess.STDOUT}
+        if os.name != "nt":
+            kwargs["start_new_session"] = True
+        p = subprocess.Popen(cmd, **kwargs)
+    except Exception as e:
+        return JSONResponse(
+            status_code=500,
+            content={"ok": False, "message": f"Could not start BORME anomalias: {e}"},
+        )
+    return {"ok": True, "message": f"BORME anomalías started (PID: {p.pid})", "pid": p.pid, "anos": body.anos, "anonimizar": body.anonimizar}
+
+
+@app.get("/borme/jobs/{job_id}", summary="BORME job status")
+def borme_job_status(job_id: str):
+    """Check status of a BORME job by PID."""
+    try:
+        pid = int(job_id)
+        os.kill(pid, 0)
+        alive = True
+    except (ValueError, ProcessLookupError, PermissionError):
+        alive = False
+    log_path = _borme_log_path()
+    log_lines = []
+    if log_path.exists():
+        try:
+            text = log_path.read_text(encoding="utf-8", errors="replace")
+            log_lines = text.splitlines()[-50:]
+        except OSError:
+            pass
+    return {"job_id": job_id, "alive": alive, "status": "running" if alive else "finished", "log_tail": log_lines}
+
+
+@app.get("/borme/log", summary="Tail the BORME subprocess log")
+def borme_log(lines: int = 80):
+    """Read the tail of the BORME subprocess log."""
+    log_path = _borme_log_path()
+    if not log_path.exists():
+        return {"lines": [], "exists": False, "total_lines": 0}
+    try:
+        text = log_path.read_text(encoding="utf-8", errors="replace")
+    except OSError:
+        return {"lines": [], "exists": True, "total_lines": 0}
+    all_lines = text.splitlines()
+    tail = all_lines[-lines:] if len(all_lines) > lines else all_lines
+    return {"lines": tail, "exists": True, "total_lines": len(all_lines)}
