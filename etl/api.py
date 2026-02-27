@@ -80,6 +80,29 @@ def _startup_recover_stale_runs():
         print(f"[startup] Could not recover stale runs: {e}")
 
 
+@app.on_event("startup")
+def _startup_schema_check():
+    """Detect-only schema migration check on boot (no auto-apply)."""
+    from etl import schema_check
+    url = get_database_url()
+    if not url:
+        return
+    try:
+        conn = psycopg2.connect(url)
+        conn.autocommit = True
+        schema_check.bootstrap(conn)
+        status = schema_check.check(conn)
+        schema_check.log_check(status)
+        app.state.migration_status = {
+            "pending": len(status.pending),
+            "applied": len(status.applied),
+            "tampered": len(status.tampered),
+        }
+        conn.close()
+    except Exception:
+        app.state.migration_status = None
+
+
 def _serialize_row(row: dict) -> dict:
     """Convert a row dict to JSON-serializable form (datetime -> ISO string)."""
     out = dict(row)
@@ -90,7 +113,7 @@ def _serialize_row(row: dict) -> dict:
     return out
 
 
-@app.get("/health", summary="Health check", description="Returns service liveness and database connectivity.")
+@app.get("/health", summary="Health check", description="Liveness, DB connectivity, and migration status.")
 def health():
     db_url = get_database_url()
     db_ok = False
@@ -102,7 +125,38 @@ def health():
             db_ok = True
         except Exception:
             pass
-    return {"status": "ok", "db": db_ok}
+    migrations = getattr(app.state, "migration_status", None)
+    return {"status": "ok", "db": db_ok, "migrations": migrations}
+
+
+@app.get("/migrations", summary="Migration audit trail", description="Returns all recorded schema migrations.")
+def get_migrations():
+    from etl import schema_check
+    db_url = get_database_url()
+    if not db_url:
+        return JSONResponse(status_code=503, content={"detail": "Database not configured"})
+    try:
+        conn = psycopg2.connect(db_url)
+        conn.autocommit = True
+        schema_check.bootstrap(conn)
+        status = schema_check.check(conn)
+        rows = schema_check.get_rows(conn)
+        conn.close()
+        from etl import __version__
+        return {
+            "service": "etl",
+            "version": __version__,
+            "status": {
+                "pending": len(status.pending),
+                "applied": len(status.applied),
+                "tampered": len(status.tampered),
+            },
+            "pending_files": status.pending,
+            "tampered_files": status.tampered,
+            "migrations": rows,
+        }
+    except Exception as e:
+        return JSONResponse(status_code=503, content={"detail": str(e)})
 
 
 @app.get(

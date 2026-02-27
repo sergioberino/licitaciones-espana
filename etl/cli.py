@@ -80,18 +80,11 @@ def cmd_status(_args: argparse.Namespace) -> int:
     return 0
 
 
-SCHEMA_FILES = [
-    "001_dim_cpv.sql",
-    "002_dim_ccaa.sql",
-    "002b_dim_provincia.sql",
-    "003_dim_dir3.sql",
-    "008_scheduler.sql",
-    "009_scheduler_runs_pid.sql",
-]
-
-
 def cmd_init_db(args: argparse.Namespace) -> int:
     """Aplica las migraciones de esquema y rellena dim. Requiere DB_SCHEMA en .env. Crea schemas dim y DB_SCHEMA si no existen."""
+    import hashlib
+    from etl import schema_check
+
     if get_database_url() is None:
         print("Falta configuración de base de datos (definir DB_HOST, DB_NAME, DB_USER en .env).", file=sys.stderr)
         return 1
@@ -118,6 +111,8 @@ def cmd_init_db(args: argparse.Namespace) -> int:
         print(f"Directorio de esquemas no encontrado: {schema_dir}", file=sys.stderr)
         return 1
     url = get_database_url()
+    version = f"etl:{__version__}"
+
     etl_schemas_sql = f"CREATE SCHEMA IF NOT EXISTS dim; CREATE SCHEMA IF NOT EXISTS {db_schema};"
     try:
         with psycopg2.connect(url) as conn:
@@ -132,40 +127,91 @@ def cmd_init_db(args: argparse.Namespace) -> int:
         print(f"Error creando schemas (dim, {db_schema}): {e}", file=sys.stderr)
         return 1
     print(f"Schemas dim, {db_schema} comprobados (CREATE IF NOT EXISTS).")
-    for filename in SCHEMA_FILES:
-        path = schema_dir / filename
-        if not path.exists():
-            print(f"Archivo de esquema no encontrado: {path}", file=sys.stderr)
-            return 1
-        sql = path.read_text(encoding="utf-8")
-        try:
-            with psycopg2.connect(url) as conn:
-                conn.autocommit = False
+
+    conn = psycopg2.connect(url)
+    conn.autocommit = False
+    try:
+        schema_check.bootstrap(conn)
+        status = schema_check.check(conn, schema_dir)
+        schema_check.log_check(status)
+
+        if not status.pending:
+            print("[schema-apply] No hay migraciones pendientes.")
+            conn.close()
+            print("init-db completado.")
+            return 0
+
+        for filename in status.pending:
+            path = schema_dir / filename
+            if not path.exists():
+                print(f"Archivo de esquema no encontrado: {path}", file=sys.stderr)
+                conn.close()
+                return 1
+            checksum = hashlib.sha256(path.read_bytes()).hexdigest()
+            sql = path.read_text(encoding="utf-8")
+            try:
                 with conn.cursor() as cur:
                     if filename == "003_dim_dir3.sql":
                         cur.execute("DROP TABLE IF EXISTS dim.dim_dir3 CASCADE")
                     cur.execute(sql)
                 conn.commit()
-        except psycopg2.Error as e:
-            # Objeto ya existente o datos ya cargados: loguear y continuar con el siguiente fichero.
-            pgcode = getattr(e, "pgcode", None)
-            msg = str(e).lower()
-            skip_codes = ("42P07", "23505")
-            if pgcode in skip_codes or "already exists" in msg or "duplicate key" in msg:
-                print(f"Ya existe ({filename}): objeto o datos ya presentes. Omitiendo.", file=sys.stderr)
-                continue
-            print(f"Error aplicando {filename}: {e}", file=sys.stderr)
-            return 1
-        print(f"Aplicado {filename}")
-        # Tras 003_dim_dir3.sql: ingesta DIR3 desde XLSX (Listado Unidades AGE).
-        if filename == "003_dim_dir3.sql":
-            try:
-                from etl.dir3_ingest import run_dir3_ingest
-                n = run_dir3_ingest(url)
-                print(f"DIR3 ingerido: {n} filas.")
-            except Exception as e:
-                print(f"Error insertando DIR3: {e}", file=sys.stderr)
+            except psycopg2.Error as e:
+                conn.rollback()
+                pgcode = getattr(e, "pgcode", None)
+                msg = str(e).lower()
+                skip_codes = ("42P07", "23505")
+                if pgcode in skip_codes or "already exists" in msg or "duplicate key" in msg:
+                    print(f"[schema-apply] Ya existe ({filename}): objeto o datos ya presentes. Registrando como aplicado.", file=sys.stderr)
+                    with conn.cursor() as cur:
+                        cur.execute(
+                            "INSERT INTO scheduler.schema_migrations (filename, checksum, applied_by) "
+                            "VALUES (%s, %s, %s) "
+                            "ON CONFLICT (filename) DO UPDATE SET checksum = EXCLUDED.checksum, "
+                            "applied_at = NOW(), applied_by = EXCLUDED.applied_by, success = TRUE, error_msg = NULL",
+                            (filename, checksum, version),
+                        )
+                    conn.commit()
+                    continue
+                print(f"[schema-apply] Error aplicando {filename}: {e}", file=sys.stderr)
+                try:
+                    with conn.cursor() as cur:
+                        cur.execute(
+                            "INSERT INTO scheduler.schema_migrations (filename, checksum, applied_by, success, error_msg) "
+                            "VALUES (%s, %s, %s, FALSE, %s) "
+                            "ON CONFLICT (filename) DO UPDATE SET checksum = EXCLUDED.checksum, "
+                            "applied_at = NOW(), applied_by = EXCLUDED.applied_by, success = FALSE, error_msg = EXCLUDED.error_msg",
+                            (filename, checksum, version, str(e)),
+                        )
+                    conn.commit()
+                except Exception:
+                    pass
+                conn.close()
                 return 1
+
+            with conn.cursor() as cur:
+                cur.execute(
+                    "INSERT INTO scheduler.schema_migrations (filename, checksum, applied_by) "
+                    "VALUES (%s, %s, %s) "
+                    "ON CONFLICT (filename) DO UPDATE SET checksum = EXCLUDED.checksum, "
+                    "applied_at = NOW(), applied_by = EXCLUDED.applied_by, success = TRUE, error_msg = NULL",
+                    (filename, checksum, version),
+                )
+            conn.commit()
+            print(f"[schema-apply] {version} — applied {filename} (SHA256: {checksum[:12]}) [OK]")
+
+            if filename == "003_dim_dir3.sql":
+                try:
+                    from etl.dir3_ingest import run_dir3_ingest
+                    n = run_dir3_ingest(url)
+                    print(f"DIR3 ingerido: {n} filas.")
+                except Exception as e:
+                    print(f"Error insertando DIR3: {e}", file=sys.stderr)
+                    conn.close()
+                    return 1
+    finally:
+        if not conn.closed:
+            conn.close()
+
     print("init-db completado.")
     return 0
 
