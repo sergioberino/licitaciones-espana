@@ -21,6 +21,7 @@ from etl.ingest_l0 import (
     format_conjunto_help,
     get_parquet_path_andalucia,
     get_parquet_path_catalunya,
+    get_parquet_path_galicia,
     get_parquet_path_nacional,
     get_parquet_path_valencia,
     get_table_name,
@@ -40,6 +41,7 @@ def test_registry_has_all_conjuntos():
     assert "euskadi" in CONJUNTOS_REGISTRY
     assert "madrid" in CONJUNTOS_REGISTRY
     assert "ted" in CONJUNTOS_REGISTRY
+    assert "galicia" in CONJUNTOS_REGISTRY
 
 
 def test_registry_nacional_has_five_subconjuntos():
@@ -75,6 +77,21 @@ def test_registry_euskadi_madrid_ted_scripts():
     t = CONJUNTOS_REGISTRY["ted"]
     assert "scripts" in t and len(t["scripts"]) >= 1
     assert t.get("requires_anos") is True
+
+
+def test_registry_has_galicia():
+    assert "galicia" in CONJUNTOS_REGISTRY
+    reg = CONJUNTOS_REGISTRY["galicia"]
+    assert reg["subconjuntos"] == ("contratos",)
+    assert reg.get("requires_anos") is False
+    assert "scripts" in reg
+
+
+def test_get_parquet_path_galicia():
+    p = get_parquet_path_galicia("contratos")
+    assert isinstance(p, Path)
+    assert p.suffix == ".parquet"
+    assert "galicia" in str(p)
 
 
 def test_get_table_name():
@@ -166,6 +183,7 @@ def test_derive_cpv_prefixes_handles_float_nan():
     ("euskadi", "contratos_master"),
     ("madrid", "comunidad"),
     ("ted", "ted_es_can"),
+    ("galicia", "contratos"),
 ])
 def test_parquet_path_resolution(conjunto, subconjunto):
     reg = CONJUNTOS_REGISTRY[conjunto]

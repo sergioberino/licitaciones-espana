@@ -210,6 +210,16 @@ def get_parquet_path_euskadi(subconjunto: str) -> Path:
     return root / "Euskadi" / "euskadi_parquet" / f"{subconjunto}.parquet"
 
 
+# Galicia: scraper contratos públicos (contratosdegalicia.gal)
+SUBCONJUNTOS_GALICIA = ("contratos",)
+
+
+def get_parquet_path_galicia(subconjunto: str) -> Path:
+    if subconjunto not in SUBCONJUNTOS_GALICIA:
+        raise ValueError(f"Subconjunto galicia no reconocido: {subconjunto}")
+    return _tmp_dir() / "galicia" / "contratos_galicia.parquet"
+
+
 # Madrid: Comunidad de Madrid (comunidad_madrid/) y Ayuntamiento (datos_madrid_contratacion_completa/)
 SUBCONJUNTOS_MADRID = ("comunidad", "ayuntamiento")
 
@@ -258,6 +268,8 @@ def get_cleanup_dirs(conjunto: str, subconjunto: str) -> list[Path]:
         ])
     elif conjunto == "andalucia":
         out.append(root / "ccaa_Andalucia")
+    elif conjunto == "galicia":
+        out.append(_tmp_dir() / "galicia")
     elif conjunto == "madrid" and subconjunto == "ayuntamiento":
         out.append(root / "datos_madrid_contratacion_completa")
     return out
@@ -308,6 +320,14 @@ CONJUNTOS_REGISTRY: dict[str, dict[str, Any]] = {
         "natural_id_col": NATURAL_ID_PARQUET_COL,
         "scripts": ["ccaa_euskadi.py", "consolidacion_euskadi.py"],
         "script_cwd": "Euskadi",
+    },
+    "galicia": {
+        "subconjuntos": SUBCONJUNTOS_GALICIA,
+        "get_parquet_path": get_parquet_path_galicia,
+        "requires_anos": False,
+        "column_defs": None,
+        "natural_id_col": NATURAL_ID_PARQUET_COL,
+        "scripts": ["galicia/scraper_galicia.py"],
     },
     "madrid": {
         "subconjuntos": SUBCONJUNTOS_MADRID,
@@ -363,6 +383,8 @@ def format_conjunto_help(conjunto: str, reg: dict[str, Any]) -> str:
         lines.append(
             "  Scripts: descarga y consolidación desde Euskadi/. Siempre se ejecuta descarga/consolidación completas; el subconjunto solo determina qué parquet se carga en L0."
         )
+    if "scripts" in reg and conjunto == "galicia":
+        lines.append("  Scraper: descarga contratos de contratosdegalicia.gal. El subconjunto se carga en L0.")
     if "scripts" in reg and conjunto == "ted":
         lines.append("  El script recibe: download --years X-Y.")
         lines.append("  Puede omitir el subconjunto (solo hay ted_es_can).")

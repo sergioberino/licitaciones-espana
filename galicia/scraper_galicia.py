@@ -21,6 +21,17 @@ from datetime import datetime, timedelta
 from dateutil.relativedelta import relativedelta
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
+from pathlib import Path
+
+
+def _parquet_output_path() -> Path:
+    """Return the parquet output path, respecting LICITACIONES_TMP_DIR for microservice use."""
+    tmp = os.environ.get("LICITACIONES_TMP_DIR", "")
+    if tmp:
+        return Path(tmp) / "galicia" / "contratos_galicia.parquet"
+    return Path("contratos_galicia.parquet")
+
+
 # ─────────────────────────────────────────────────────────────────────────────
 # CONFIG
 # ─────────────────────────────────────────────────────────────────────────────
@@ -801,6 +812,12 @@ def main():
     # ── Final export ─────────────────────────────────────────────────────
     log(f"Guardando resultado final: {len(all_records):,} registros...")
     df = save_csv(all_records, csv_path, "[FINAL] ")
+
+    # Parquet output for L0 pipeline
+    pq_path = _parquet_output_path()
+    pq_path.parent.mkdir(parents=True, exist_ok=True)
+    df.to_parquet(pq_path, index=False)
+    log(f"Parquet: {pq_path} ({pq_path.stat().st_size / 1024 / 1024:.1f} MB)")
 
     elapsed = time.time() - t0
     hours = int(elapsed // 3600)
