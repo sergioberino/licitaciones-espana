@@ -56,7 +56,11 @@ class BormeAnomaliasBody(BaseModel):
     anos: str
     anonimizar: bool = False
 
-app = FastAPI(title="ETL API", version="1.0")
+app = FastAPI(
+    title="ETL API",
+    version="1.1.0",
+    description="Microservicio ETL para licitia-ingestion: ingest L0, scheduler, BORME.",
+)
 
 
 @app.on_event("startup")
@@ -86,7 +90,7 @@ def _serialize_row(row: dict) -> dict:
     return out
 
 
-@app.get("/health")
+@app.get("/health", summary="Health check", description="Returns service liveness and database connectivity.")
 def health():
     db_url = get_database_url()
     db_ok = False
@@ -299,7 +303,7 @@ def scheduler_recover():
     return {"ok": True, "recovered": count}
 
 
-@app.get("/status")
+@app.get("/status", summary="Database status", description="Checks the database connection and returns availability.")
 def status():
     ok, msg = _comprobar_base_datos()
     if ok:
@@ -310,7 +314,7 @@ def status():
     )
 
 
-@app.get("/scheduler/status")
+@app.get("/scheduler/status", summary="Scheduler tasks status", description="Lists all registered scheduler tasks with their last run info and computed next_run_at.")
 def scheduler_status():
     url = get_database_url()
     if url is None:
@@ -361,7 +365,7 @@ def ingest_log(lines: int = 80):
     return {"lines": tail, "exists": True, "total_lines": len(all_lines)}
 
 
-@app.get("/ingest/current-run")
+@app.get("/ingest/current-run", summary="Current running ingest job", description="Returns the currently running ingest scheduler run, if any.")
 def ingest_current_run():
     """Return the currently running ingest run (if any)."""
     url = get_database_url()
@@ -377,7 +381,7 @@ def ingest_current_run():
     return {"running": True, "run": _serialize_row(run)}
 
 
-@app.get("/db-info")
+@app.get("/db-info", summary="Database info (schemas and tables)", description="Returns database schemas with sizes, table listing, and total database size.")
 def db_info():
     url = get_database_url()
     if url is None:
