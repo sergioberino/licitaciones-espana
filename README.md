@@ -2,6 +2,8 @@
 
 Fork de [BquantFinance/licitaciones-espana](https://github.com/BquantFinance/licitaciones-espana) que extiende el repositorio original de extracción de datos públicos de contratación con un **CLI** (`licitia-etl`) y una **API REST** (FastAPI) para su uso como microservicio conectable.
 
+Sincronizado con BquantFinance/licitaciones-espana (commit e594735, 2026-02-27).
+
 ## Arquitectura
 
 ```
@@ -30,6 +32,22 @@ Fork de [BquantFinance/licitaciones-espana](https://github.com/BquantFinance/lic
 
 ---
 
+## Fuentes de datos
+
+| Fuente | Tipo | Subconjuntos | Frecuencia |
+|--------|------|--------------|------------|
+| Nacional (PLACSP) | L0 conjunto | licitaciones, agregacion_ccaa, contratos_menores, encargos_medios_propios, consultas_preliminares | Según lo configurado |
+| Catalunya | L0 conjunto | contratacion_registro, subvenciones_raisc, convenios, presupuestos_aprobados, rrhh_altos_cargos | Según lo configurado |
+| Valencia | L0 conjunto | contratacion, subvenciones, presupuestos, +11 más | Según lo configurado |
+| Andalucía | L0 conjunto | licitaciones, menores | Según lo configurado |
+| Euskadi | L0 conjunto | contratos_master, poderes_adjudicadores, empresas_licitadoras, +3 más | Según lo configurado |
+| Madrid | L0 conjunto | comunidad, ayuntamiento | Según lo configurado |
+| TED | L0 conjunto | ted_es_can | Según lo configurado |
+| **Galicia** | **L0 conjunto** | **contratos** | **Trimestral** |
+| **BORME** | **Schema separado** | **empresas, cargos** | **Trimestral** |
+
+---
+
 ## Interfaces
 
 ### CLI (`licitia-etl`)
@@ -47,12 +65,16 @@ Instalable via `pip install -e .`. Punto de entrada: `etl.cli:main`.
 | `licitia-etl scheduler status` | Lista tareas con última ejecución, estado y próxima ejecución |
 | `licitia-etl health` | Comprueba BD y schema scheduler (código de salida 0/1) |
 | `licitia-etl db-info` | Muestra tamaño por schema y listado de tablas |
+| `licitia-etl borme ingest --anos 2020-2026` | Scrape + parse + load en schema borme |
+| `licitia-etl borme anomalias --anos 2020-2026 [--anonimizar]` | Detector de anomalías vs L0 nacional |
 
 Orden recomendado: `status` → `init-db` → `ingest`. Para ejecución programada: `scheduler register` → `scheduler run`.
 
 ### API REST (FastAPI)
 
 Puerto configurable (defecto: 8001). Expone las mismas operaciones que el CLI para integración programática.
+
+Documentación interactiva disponible en `/docs` (Swagger UI). Referencia completa en `docs/api-reference.md`.
 
 | Endpoint | Método | Descripción |
 |----------|--------|-------------|
@@ -64,6 +86,10 @@ Puerto configurable (defecto: 8001). Expone las mismas operaciones que el CLI pa
 | `/scheduler/register` | POST | Registra tareas del scheduler |
 | `/scheduler/run` | POST | Arranca el scheduler |
 | `/scheduler/stop` | POST | Detiene el scheduler |
+| `/borme/ingest` | POST | Ingesta BORME (non-blocking) |
+| `/borme/anomalias` | POST | Detección de anomalías BORME (non-blocking) |
+| `/borme/jobs/{job_id}` | GET | Estado de un job BORME |
+| `/borme/log` | GET | Tail del log BORME |
 
 ---
 
@@ -136,6 +162,20 @@ catalunya/           # Scripts de extracción — conjunto catalán
 valencia/            # Scripts de extracción — conjunto valenciano
 tests/               # Tests (unit + integration)
 ```
+
+---
+
+## Changelog
+
+### v1.1.0 (2026-02-27)
+
+- Upstream sync con BquantFinance/licitaciones-espana (commit e594735)
+- **Galicia** como nuevo L0 conjunto
+- **BORME** integration (ingest + detección de anomalías)
+- API REST y CLI para las nuevas fuentes de datos
+- Limpieza de datos estáticos (todos los datos provienen de scrapers en runtime)
+- Documentación de la API en `/docs`
+- Uso de disco del host en el dashboard
 
 ---
 
