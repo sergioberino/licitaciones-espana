@@ -24,6 +24,31 @@ SCHEDULER_PID_FILENAME = "licitia-etl-scheduler.pid"
 SCHEDULER_LOG_FILENAME = "scheduler.log"
 MAX_RUN_DURATION_HOURS = int(os.environ.get("SCHEDULER_MAX_RUN_HOURS", "6"))
 
+# Debug session log path (NDJSON). Set DEBUG_LOG_PATH to override; used when present.
+_DEBUG_LOG_PATH = os.environ.get("DEBUG_LOG_PATH", "")
+
+
+def _debug_log(location: str, message: str, data: dict, hypothesis_id: str = "") -> None:
+    """Append one NDJSON line to the debug session log file (if DEBUG_LOG_PATH set)."""
+    if not _DEBUG_LOG_PATH:
+        return
+    import json
+    payload = {
+        "id": f"log_{int(__import__('time').time() * 1000)}",
+        "timestamp": int(__import__('time').time() * 1000),
+        "location": location,
+        "message": message,
+        "data": data,
+        "hypothesisId": hypothesis_id,
+    }
+    if os.environ.get("DEBUG_SESSION_ID"):
+        payload["sessionId"] = os.environ.get("DEBUG_SESSION_ID")
+    try:
+        with open(_DEBUG_LOG_PATH, "a", encoding="utf-8") as f:
+            f.write(json.dumps(payload, default=str) + "\n")
+    except OSError:
+        pass
+
 
 def _scheduler_log_prefix() -> str:
     """Prefijo de timestamp en horario GMT+1 para líneas del scheduler."""
@@ -302,6 +327,19 @@ def list_tasks_with_last_run(conn: "psycopg2.extensions.connection") -> list[dic
         return [dict(row) for row in cur.fetchall()]
 
 
+def list_running_runs(conn: "psycopg2.extensions.connection") -> list[dict[str, Any]]:
+    """List all runs with status='running', including task metadata."""
+    with conn.cursor(cursor_factory=RealDictCursor) as cur:
+        cur.execute("""
+            SELECT r.run_id, r.task_id, t.conjunto, t.subconjunto, r.process_id, r.started_at
+            FROM scheduler.runs r
+            JOIN scheduler.tasks t ON t.task_id = r.task_id
+            WHERE r.status = 'running'
+            ORDER BY r.started_at DESC
+        """)
+        return [dict(row) for row in cur.fetchall()]
+
+
 def get_current_running_run(conn: "psycopg2.extensions.connection") -> Optional[dict[str, Any]]:
     """Devuelve la run activa más reciente (status=running) con task metadata, o None."""
     with conn.cursor(cursor_factory=RealDictCursor) as cur:
@@ -329,6 +367,19 @@ def get_scheduler_pid_path() -> Path:
     return Path(base) / SCHEDULER_PID_FILENAME
 
 
+def is_scheduler_loop_running() -> bool:
+    """Return True if the scheduler loop process is alive (PID file exists and process responds)."""
+    path = get_scheduler_pid_path()
+    if not path.exists():
+        return False
+    try:
+        pid = int(path.read_text().strip())
+        os.kill(pid, 0)
+        return True
+    except (ValueError, OSError):
+        return False
+
+
 def get_next_run_at(
     schedule_expr: str,
     last_finished_at: Optional[datetime],
@@ -340,47 +391,121 @@ def get_next_run_at(
     para que la comparación next_at <= now en get_tasks_due sea coherente (mismo instante).
     """
     from datetime import date
+    # Optional override for local testing (e.g. SCHEDULER_NOW_OVERRIDE=2026-03-02T10:00:00)
+    now_override = os.environ.get("SCHEDULER_NOW_OVERRIDE")
+    if now_override:
+        try:
+            from datetime import datetime as dt_parse
+            parsed = dt_parse.fromisoformat(now_override.replace("Z", "+00:00"))
+            if parsed.tzinfo is None:
+                parsed = parsed.replace(tzinfo=SCHEDULER_TZ)
+            reference_now = parsed.astimezone(SCHEDULER_TZ)
+        except (ValueError, TypeError):
+            pass
     now = reference_now if reference_now is not None else datetime.now(SCHEDULER_TZ)
+    # #region agent log
+    _debug_log(
+        "scheduler.py:get_next_run_at",
+        "get_next_run_at entry",
+        {
+            "schedule_expr": schedule_expr,
+            "last_finished_at": last_finished_at.isoformat() if last_finished_at else None,
+            "now": now.isoformat(),
+        },
+        "H2",
+    )
+    # #endregion
     if last_finished_at is None:
+        # #region agent log
+        _debug_log("scheduler.py:get_next_run_at", "get_next_run_at exit (no last run)", {"result": now.isoformat()}, "H2")
+        # #endregion
         return now
-    ref = last_finished_at.astimezone(SCHEDULER_TZ).date()
+    last_fin_tz = last_finished_at.astimezone(SCHEDULER_TZ)
+    ref = last_fin_tz.date()
     year, month = ref.year, ref.month
     expr = (schedule_expr or "").strip().lower()
+    # Next run = first scheduled slot *after* last_finished_at (not after "now"), so we don't skip the due slot
     if expr == "mensual":
         cand = datetime(year, month, 1, SCHEDULER_HOUR, 0, 0, tzinfo=SCHEDULER_TZ)
-        if cand > now:
+        if cand > last_fin_tz:
+            # #region agent log
+            _debug_log("scheduler.py:get_next_run_at", "get_next_run_at exit (mensual cand)", {"result": cand.isoformat()}, "H2")
+            # #endregion
             return cand
         if month == 12:
             next_d = date(year + 1, 1, 1)
         else:
             next_d = date(year, month + 1, 1)
-        return datetime(next_d.year, next_d.month, next_d.day, SCHEDULER_HOUR, 0, 0, tzinfo=SCHEDULER_TZ)
+        res = datetime(next_d.year, next_d.month, next_d.day, SCHEDULER_HOUR, 0, 0, tzinfo=SCHEDULER_TZ)
+        # #region agent log
+        _debug_log("scheduler.py:get_next_run_at", "get_next_run_at exit (mensual next)", {"result": res.isoformat()}, "H2")
+        # #endregion
+        return res
     if expr == "trimestral":
-        # Día 1 de ene/abr/jul/oct
+        # Día 1 de ene/abr/jul/oct — first quarter slot strictly after last_finished_at
         quarters = [date(year, m, 1) for m in (1, 4, 7, 10)]
         for d in quarters:
             cand = datetime(d.year, d.month, d.day, SCHEDULER_HOUR, 0, 0, tzinfo=SCHEDULER_TZ)
-            if cand > now:
+            if cand > last_fin_tz:
+                # #region agent log
+                _debug_log("scheduler.py:get_next_run_at", "get_next_run_at exit (trimestral)", {"result": cand.isoformat()}, "H2")
+                # #endregion
                 return cand
-        return datetime(year + 1, 1, 1, SCHEDULER_HOUR, 0, 0, tzinfo=SCHEDULER_TZ)
+        res = datetime(year + 1, 1, 1, SCHEDULER_HOUR, 0, 0, tzinfo=SCHEDULER_TZ)
+        # #region agent log
+        _debug_log("scheduler.py:get_next_run_at", "get_next_run_at exit (trimestral next year)", {"result": res.isoformat()}, "H2")
+        # #endregion
+        return res
     if expr == "anual":
         cand = datetime(year, 1, 1, SCHEDULER_HOUR, 0, 0, tzinfo=SCHEDULER_TZ)
-        if cand > now:
+        if cand > last_fin_tz:
+            # #region agent log
+            _debug_log("scheduler.py:get_next_run_at", "get_next_run_at exit (anual)", {"result": cand.isoformat()}, "H2")
+            # #endregion
             return cand
-        return datetime(year + 1, 1, 1, SCHEDULER_HOUR, 0, 0, tzinfo=SCHEDULER_TZ)
+        res = datetime(year + 1, 1, 1, SCHEDULER_HOUR, 0, 0, tzinfo=SCHEDULER_TZ)
+        # #region agent log
+        _debug_log("scheduler.py:get_next_run_at", "get_next_run_at exit (anual next)", {"result": res.isoformat()}, "H2")
+        # #endregion
+        return res
     # Por defecto: trimestral
     return get_next_run_at("Trimestral", last_finished_at, reference_now=now)
 
 
 def get_tasks_due(conn: "psycopg2.extensions.connection") -> list[dict[str, Any]]:
     """Tareas habilitadas cuya próxima ejecución es <= ahora y no tienen run en 'running'. Incluye next_run_at."""
-    now = datetime.now(SCHEDULER_TZ)
+    now_override = os.environ.get("SCHEDULER_NOW_OVERRIDE")
+    if now_override:
+        try:
+            from datetime import datetime as dt_parse
+            parsed = dt_parse.fromisoformat(now_override.replace("Z", "+00:00"))
+            if parsed.tzinfo is None:
+                parsed = parsed.replace(tzinfo=SCHEDULER_TZ)
+            now = parsed.astimezone(SCHEDULER_TZ)
+        except (ValueError, TypeError):
+            now = datetime.now(SCHEDULER_TZ)
+    else:
+        now = datetime.now(SCHEDULER_TZ)
     tasks = list_tasks_with_last_run(conn)
     due = []
+    # #region agent log
+    _debug_log(
+        "scheduler.py:get_tasks_due",
+        "get_tasks_due entry",
+        {"now": now.isoformat(), "total_tasks": len(tasks)},
+        "H3",
+    )
+    # #endregion
     for t in tasks:
         if not t.get("enabled"):
+            # #region agent log
+            _debug_log("scheduler.py:get_tasks_due", "task skipped", {"conjunto": t.get("conjunto"), "subconjunto": t.get("subconjunto"), "reason": "enabled=false"}, "H3")
+            # #endregion
             continue
         if has_running_run(conn, t["task_id"]):
+            # #region agent log
+            _debug_log("scheduler.py:get_tasks_due", "task skipped", {"conjunto": t.get("conjunto"), "subconjunto": t.get("subconjunto"), "reason": "has_running_run"}, "H3")
+            # #endregion
             continue
         last_fin = t.get("last_finished_at")
         next_at = get_next_run_at(t.get("schedule_expr") or "Trimestral", last_fin, reference_now=now)
@@ -388,6 +513,16 @@ def get_tasks_due(conn: "psycopg2.extensions.connection") -> list[dict[str, Any]
             row = dict(t)
             row["next_run_at"] = next_at
             due.append(row)
+            # #region agent log
+            _debug_log("scheduler.py:get_tasks_due", "task due", {"conjunto": t.get("conjunto"), "subconjunto": t.get("subconjunto"), "next_run_at": next_at.isoformat()}, "H3")
+            # #endregion
+        else:
+            # #region agent log
+            _debug_log("scheduler.py:get_tasks_due", "task skipped (next_at > now)", {"conjunto": t.get("conjunto"), "subconjunto": t.get("subconjunto"), "next_run_at": next_at.isoformat(), "now": now.isoformat()}, "H3")
+            # #endregion
+    # #region agent log
+    _debug_log("scheduler.py:get_tasks_due", "get_tasks_due exit", {"due_count": len(due)}, "H3")
+    # #endregion
     return due
 
 
@@ -451,6 +586,9 @@ def run_scheduler_loop(
     try:
         while not shutdown:
             tick_count += 1
+            # #region agent log
+            _debug_log("scheduler.py:run_scheduler_loop", "scheduler tick", {"tick_count": tick_count}, "H1")
+            # #endregion
             try:
                 with psycopg2.connect(db_url) as conn:
                     conn.autocommit = False
@@ -460,6 +598,9 @@ def run_scheduler_loop(
                         _log_scheduler(f"Recuperados {recovered} run(s) huérfanos.")
                 with psycopg2.connect(db_url) as conn:
                     due = get_tasks_due(conn)
+                # #region agent log
+                _debug_log("scheduler.py:run_scheduler_loop", "get_tasks_due result", {"due_count": len(due)}, "H5")
+                # #endregion
                 for task in due:
                     if shutdown:
                         break

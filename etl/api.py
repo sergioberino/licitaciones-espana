@@ -13,7 +13,7 @@ from pydantic import BaseModel
 from etl.cli import cmd_scheduler_register, cmd_scheduler_run, cmd_scheduler_stop, _comprobar_base_datos
 from etl.config import get_database_url
 from etl.ingest_l0 import CONJUNTOS_REGISTRY
-from etl.scheduler import get_current_running_run, get_next_run_at, list_tasks_with_last_run, recover_stale_runs
+from etl.scheduler import get_current_running_run, get_next_run_at, is_scheduler_loop_running, list_tasks_with_last_run, recover_stale_runs
 
 
 def _ingest_log_path() -> Path:
@@ -439,7 +439,8 @@ def scheduler_status():
             )
             r["next_run_at"] = next_at
         list_of_dicts.append(_serialize_row(r))
-    return {"tasks": list_of_dicts}
+    loop_running = is_scheduler_loop_running()
+    return {"tasks": list_of_dicts, "loop_running": loop_running}
 
 
 @app.get(
