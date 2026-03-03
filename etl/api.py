@@ -13,7 +13,7 @@ from pydantic import BaseModel
 from etl.cli import cmd_scheduler_register, cmd_scheduler_run, cmd_scheduler_stop, _comprobar_base_datos
 from etl.config import get_database_url
 from etl.ingest_l0 import CONJUNTOS_REGISTRY
-from etl.scheduler import get_current_running_run, get_next_run_at, is_scheduler_loop_running, list_running_runs, list_tasks_with_last_run, recover_stale_runs
+from etl.scheduler import delete_task, ensure_scheduler_schema, get_current_running_run, get_next_run_at, get_task_id, is_scheduler_loop_running, list_running_runs, list_tasks_with_last_run, recover_stale_runs, register_tasks, stop_runs_by_ids
 
 
 def _ingest_log_path() -> Path:
@@ -38,6 +38,7 @@ class SchedulerRegisterBody(BaseModel):
     """Body for POST /scheduler/register. Optional list of conjuntos; if empty, register all."""
 
     conjuntos: list[str] = []
+    tasks: list[dict] = []
 
 
 class SchedulerRunBody(BaseModel):
@@ -46,6 +47,10 @@ class SchedulerRunBody(BaseModel):
     conjunto: str | None = None
     subconjunto: str | None = None
     detach: bool = False
+
+
+class SchedulerRunsStopBody(BaseModel):
+    run_ids: list[int]
 
 
 class BormeIngestBody(BaseModel):
@@ -305,6 +310,27 @@ def ingest_run(body: IngestRunBody):
 )
 def scheduler_register(body: SchedulerRegisterBody | None = None):
     """Register scheduler tasks for given conjuntos or all."""
+    if body and body.tasks:
+        task_pairs = [(t["conjunto"], t["subconjunto"]) for t in body.tasks]
+        url = get_database_url()
+        if not url:
+            return JSONResponse(status_code=503, content={"ok": False, "message": "Database not configured"})
+        try:
+            with psycopg2.connect(url) as conn:
+                conn.autocommit = False
+                ensure_scheduler_schema(conn)
+                conn.commit()
+                inserted, updated, registered = register_tasks(conn, task_pairs=task_pairs)
+                conn.commit()
+        except Exception as e:
+            return JSONResponse(status_code=500, content={"ok": False, "message": str(e)})
+        return {
+            "ok": True,
+            "message": f"{len(registered)} tareas registradas.",
+            "registered": len(registered),
+            "inserted": inserted,
+            "updated": updated,
+        }
     conjuntos = (body and body.conjuntos) or []
     args = argparse.Namespace(conjuntos=conjuntos)
     try:
@@ -378,6 +404,28 @@ def scheduler_stop():
     if rc != 0:
         return JSONResponse(status_code=500, content={"ok": False, "message": "Stop failed (scheduler not running or invalid PID)"})
     return {"ok": True, "message": "Scheduler stop requested"}
+
+
+@app.post(
+    "/scheduler/runs/stop",
+    summary="Stop selected running runs",
+    description="Send SIGTERM to the processes of the given run_ids and mark them as failed.",
+)
+def scheduler_runs_stop(body: SchedulerRunsStopBody):
+    db_url = get_database_url()
+    if db_url is None:
+        return JSONResponse(status_code=503, content={"ok": False, "message": "Database not configured"})
+    try:
+        with psycopg2.connect(db_url) as conn:
+            conn.autocommit = False
+            stopped, errors = stop_runs_by_ids(conn, body.run_ids)
+            conn.commit()
+    except Exception as e:
+        return JSONResponse(status_code=500, content={"ok": False, "message": str(e)})
+    msg = f"{stopped} ejecución(es) detenida(s)."
+    if errors:
+        msg += f" Errores: {'; '.join(errors)}"
+    return {"ok": True, "stopped": stopped, "message": msg}
 
 
 @app.post(

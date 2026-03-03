@@ -253,22 +253,27 @@ def recover_stale_runs(conn: "psycopg2.extensions.connection") -> int:
 def register_tasks(
     conn: "psycopg2.extensions.connection",
     conjuntos: Optional[list[str]] = None,
+    task_pairs: Optional[list[tuple[str, str]]] = None,
 ) -> tuple[int, int, list[tuple[str, str]]]:
     """
     Inserta o actualiza scheduler.tasks desde CONJUNTOS_REGISTRY y frecuencias por defecto.
+    Si task_pairs es proporcionado, solo registra esos (conjunto, subconjunto) exactos.
     Si conjuntos no es None, solo se registran tareas de esos conjuntos.
     ON CONFLICT (conjunto, subconjunto) DO UPDATE schedule_expr, updated_at.
     Devuelve (insertadas, actualizadas, lista de (conjunto, subconjunto) registrados).
     """
-    from etl.ingest_l0 import CONJUNTOS_REGISTRY
     schedules = _build_default_schedules()
-    if conjuntos is not None:
+    if task_pairs:
+        pairs_to_register = {(c, s): schedules.get((c, s), "Trimestral") for c, s in task_pairs}
+    elif conjuntos is not None:
         conjuntos_set = set(conjuntos)
-        schedules = {k: v for k, v in schedules.items() if k[0] in conjuntos_set}
+        pairs_to_register = {k: v for k, v in schedules.items() if k[0] in conjuntos_set}
+    else:
+        pairs_to_register = schedules
     inserted, updated = 0, 0
     registered: list[tuple[str, str]] = []
     with conn.cursor() as cur:
-        for (conjunto, subconjunto), schedule_expr in schedules.items():
+        for (conjunto, subconjunto), schedule_expr in pairs_to_register.items():
             cur.execute(
                 """INSERT INTO scheduler.tasks (conjunto, subconjunto, schedule_expr, enabled, updated_at)
                    VALUES (%s, %s, %s, true, NOW())
@@ -617,6 +622,27 @@ def run_scheduler_loop(
                         else:
                             _log_scheduler(
                                 f"Tarea falló. PID={p.pid} conjunto={conjunto} subconjunto={subconjunto} code={p.returncode}"
+                            )
+                    except Exception as e:
+                        _log_scheduler(
+                            f"Tarea falló. conjunto={conjunto} subconjunto={subconjunto}: {e}",
+                            detailed=True,
+                            exc=e,
+                        )
+                    if shutdown:
+                        break
+            except Exception as e:
+                _log_scheduler(f"Error en el bucle del scheduler: {e}", detailed=True, exc=e)
+            for _ in range(tick_seconds):
+                if shutdown:
+                    break
+                _time.sleep(1)
+    finally:
+        try:
+            path.unlink(missing_ok=True)
+        except OSError:
+            pass
+d} conjunto={conjunto} subconjunto={subconjunto} code={p.returncode}"
                             )
                     except Exception as e:
                         _log_scheduler(
