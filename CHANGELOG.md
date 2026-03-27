@@ -2,6 +2,15 @@
 
 Todos los cambios notables del CLI y del microservicio ETL se documentan aquí.
 
+## [1.2.3] — 2026-03-27
+
+### Añadido
+
+- **`dim.nuts_spain`**: nueva tabla de dimensión con clasificación NUTS de España (77 regiones, niveles 1/2/3 según Eurostat). Columnas: `geocode` (PK), `etiqueta`. Idempotente (`ON CONFLICT DO UPDATE`).
+- **Migración `004_nuts_spain.sql`** añadida a `INIT_MIGRATIONS` — se aplica automáticamente con `licitia-etl init-db` (CLI) y `POST /init-db` (API).
+
+---
+
 ## [1.2.2] — 2026-03-27
 
 ### Correcciones
