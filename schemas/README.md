@@ -4,7 +4,7 @@ Modular, domain-split schema (SRP). Schemas are **validated against Parquet** pr
 
 ## Applying the schema
 
-Run the SQL files **in order** (001 → 002 → 003 → 008 → 009).
+Run the SQL files **in order** (001 → 002 → 002b → 003 → 004 → 008 → 009 → 011).
 
 ### Option A: ETL init-db (recommended)
 
@@ -14,11 +14,11 @@ From repo root or inside the ETL container:
 licitia-etl init-db
 ```
 
-This applies, in order: **001_dim_cpv.sql**, **002_dim_ccaa.sql**, **002b_dim_provincia.sql**, **003_dim_dir3.sql**, **008_scheduler.sql**, **009_scheduler_runs_pid.sql**. Idempotent (DDL uses IF NOT EXISTS; CPV inserts use ON CONFLICT DO NOTHING). The ETL does not create or maintain dim.cpv_router (out of scope for this service).
+This applies, in order: **001_dim_cpv.sql**, **002_dim_ccaa.sql**, **002b_dim_provincia.sql**, **003_dim_dir3.sql**, **004_nuts_spain.sql**, **008_scheduler.sql**, **009_scheduler_runs_pid.sql**, **011_nacional_new_columns.sql**. Idempotent (DDL uses IF NOT EXISTS; inserts use ON CONFLICT DO NOTHING). The ETL does not create or maintain dim.cpv_router (out of scope for this service).
 
 ### Option B: Fresh database (Docker)
 
-If you use a `database` service that mounts a schema directory into `/docker-entrypoint-initdb.d`, point it at `./schemas`. Postgres runs all `.sql` files there **only on first initialization** (empty data dir). Ensure file order: 001_dim_cpv, 002_…, 008_scheduler, 009_scheduler_runs_pid run in order.
+If you use a `database` service that mounts a schema directory into `/docker-entrypoint-initdb.d`, point it at `./schemas`. Postgres runs all `.sql` files there **only on first initialization** (empty data dir). Ensure file order: 001_dim_cpv, 002_dim_ccaa, 002b_dim_provincia, 003_dim_dir3, 004_nuts_spain, 008_scheduler, 009_scheduler_runs_pid, 011_nacional_new_columns run in order.
 
 - **First-time:** start the database — schema is applied automatically.
 - **If the DB volume already exists** and schema was not applied (or was changed): remove the volume and recreate, then start DB again.
@@ -29,10 +29,11 @@ If the database already exists and you do not want to wipe it, run the files man
 
 ```bash
 export DATABASE_URL="postgresql://user:pass@localhost:5432/dbname"
-for f in 001_dim_cpv.sql 002_dim_ccaa.sql 002b_dim_provincia.sql 003_dim_dir3.sql 008_scheduler.sql 009_scheduler_runs_pid.sql; do
+for f in 001_dim_cpv.sql 002_dim_ccaa.sql 002b_dim_provincia.sql 003_dim_dir3.sql 004_nuts_spain.sql 008_scheduler.sql 009_scheduler_runs_pid.sql 011_nacional_new_columns.sql; do
   psql "$DATABASE_URL" -f "schemas/$f"
 done
 ```
+
 _(Run from repo root.)_
 
 ---
@@ -41,11 +42,11 @@ _(Run from repo root.)_
 
 Files in this directory follow three tiers aligned with the L0→L1→L2 data architecture:
 
-| Tier | Applied by | Files |
-|------|-----------|-------|
-| **Infrastructure** | `init-db` (always) | 001, 002, 002b, 003, 008, 009 |
-| **On-demand subsystem** | subsystem command (first use) | 010 (BORME) |
-| **Legacy / manual** | not auto-applied | 005, 006, 007 |
+| Tier                    | Applied by                    | Files                                   |
+| ----------------------- | ----------------------------- | --------------------------------------- |
+| **Infrastructure**      | `init-db` (always)            | 001, 002, 002b, 003, 004, 008, 009, 011 |
+| **On-demand subsystem** | subsystem command (first use) | 010 (BORME)                             |
+| **Legacy / manual**     | not auto-applied              | 005, 006, 007                           |
 
 - **Infrastructure** files create dimension tables (dim), scheduler objects, and the working schema. `init-db` applies only these.
 - **On-demand** files are applied automatically by their subsystem's CLI command (e.g. `licitia-etl borme ingest` ensures `010_borme.sql` is applied before loading data).
@@ -55,18 +56,19 @@ All files are tracked by `schema_check` for audit: `check()` scans every `*.sql`
 
 ## Files
 
-| File | Tier | Contents |
-|------|------|----------|
-| `001_dim_cpv.sql` | infra | dim schema, dim.cpv_dim (num_code, code, label) + ~9.45k CPV rows; source: cpv_code.sql, script: scripts/cpv_dim_convert.py |
-| `002_dim_ccaa.sql` | infra | dim.dim_ccaa (CCAA) |
-| `002b_dim_provincia.sql` | infra | dim.dim_provincia (provincias, FK to dim_ccaa) |
-| `003_dim_dir3.sql` | infra | dim.dim_dir3 (unidades AGE); init-db also runs DIR3 ingest from XLSX |
-| `005_catalunya.sql` | legacy | Catalunya static tables (superseded by dynamic L0 table creation) |
-| `006_valencia.sql` | legacy | Valencia static tables (superseded by dynamic L0 table creation) |
-| `007_views.sql` | legacy | Union views across CCAA tables |
-| `008_scheduler.sql` | infra | scheduler schema, scheduler.tasks, scheduler.runs |
-| `009_scheduler_runs_pid.sql` | infra | adds process_id to scheduler.runs |
-| `010_borme.sql` | on-demand | borme schema, borme.empresas, borme.cargos |
+| File                         | Tier      | Contents                                                                                                                    |
+| ---------------------------- | --------- | --------------------------------------------------------------------------------------------------------------------------- |
+| `001_dim_cpv.sql`            | infra     | dim schema, dim.cpv_dim (num_code, code, label) + ~9.45k CPV rows; source: cpv_code.sql, script: scripts/cpv_dim_convert.py |
+| `002_dim_ccaa.sql`           | infra     | dim.dim_ccaa (CCAA)                                                                                                         |
+| `002b_dim_provincia.sql`     | infra     | dim.dim_provincia (provincias, FK to dim_ccaa)                                                                              |
+| `003_dim_dir3.sql`           | infra     | dim.dim_dir3 (unidades AGE); init-db also runs DIR3 ingest from XLSX                                                        |
+| `004_nuts_spain.sql`         | infra     | dim.nuts_spain (geocode, etiqueta) NUTS classification for Spain with 77 regions                                            |
+| `005_catalunya.sql`          | legacy    | Catalunya static tables (superseded by dynamic L0 table creation)                                                           |
+| `006_valencia.sql`           | legacy    | Valencia static tables (superseded by dynamic L0 table creation)                                                            |
+| `007_views.sql`              | legacy    | Union views across CCAA tables                                                                                              |
+| `008_scheduler.sql`          | infra     | scheduler schema, scheduler.tasks, scheduler.runs                                                                           |
+| `009_scheduler_runs_pid.sql` | infra     | adds process_id to scheduler.runs                                                                                           |
+| `010_borme.sql`              | on-demand | borme schema, borme.empresas, borme.cargos                                                                                  |
 
 **Parquet ↔ schema mapping:** See [docs/extraction-contract.md](../docs/extraction-contract.md) (section "Parquet ↔ schema column mapping") for column mapping from extraction Parquet to these tables. Phase 3 ETL uses that mapping to load Parquet into the database.
 
@@ -82,4 +84,4 @@ All files are tracked by `schema_check` for audit: `check()` scans every `*.sql`
 
 ## Validation (P2 success criteria)
 
-PostgreSQL connection and database creation live **outside this project scope**. There is no DB connection in this repo until Phase 3 and the external database exist. The validated schemas in this folder are **ready to be applied** when that database is available: run the SQL files in order (001_dim_cpv → 002 → 003 → 008 → 009), e.g. via `licitia-etl init-db`. No errors then indicates the schemas are ready for Phase 3 ETL.
+PostgreSQL connection and database creation live **outside this project scope**. There is no DB connection in this repo until Phase 3 and the external database exist. The validated schemas in this folder are **ready to be applied** when that database is available: run the SQL files in order (001_dim_cpv → 002 → 002b → 003 → 004 → 008 → 009 → 011), e.g. via `licitia-etl init-db`. No errors then indicates the schemas are ready for Phase 3 ETL.
