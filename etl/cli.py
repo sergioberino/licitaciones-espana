@@ -41,6 +41,7 @@ INIT_MIGRATIONS = (
     "002_dim_ccaa.sql",
     "002b_dim_provincia.sql",
     "003_dim_dir3.sql",
+    "004_nuts_spain.sql",
     "008_scheduler.sql",
     "009_scheduler_runs_pid.sql",
     "011_nacional_new_columns.sql",
@@ -71,7 +72,10 @@ def _comprobar_base_datos() -> tuple[bool, str]:
     """
     url = get_database_url()
     if url is None:
-        return False, "Falta configuración de base de datos (definir DB_HOST, DB_NAME, DB_USER en .env)."
+        return (
+            False,
+            "Falta configuración de base de datos (definir DB_HOST, DB_NAME, DB_USER en .env).",
+        )
     host = os.environ.get("DB_HOST", "?")
     port = os.environ.get("DB_PORT", "5432")
     try:
@@ -94,21 +98,35 @@ def cmd_status(_args: argparse.Namespace) -> int:
     return 0
 
 
-def run_init_db(url: str | None = None, schema_dir: Path | None = None) -> tuple[int, list[dict]]:
+def run_init_db(
+    url: str | None = None, schema_dir: Path | None = None
+) -> tuple[int, list[dict]]:
     """Run init-db logic: create schemas, apply INIT_MIGRATIONS, run DIR3 hook. Returns (exit_code, results)."""
     from etl import schema_check
 
     url = url or get_database_url()
     if not url:
-        return 1, [{"filename": "", "success": False, "error": "Database not configured"}]
+        return 1, [
+            {"filename": "", "success": False, "error": "Database not configured"}
+        ]
     db_schema = get_db_schema()
     if not db_schema or not db_schema.replace("_", "").isalnum():
-        return 1, [{"filename": "", "success": False, "error": "DB_SCHEMA not set or invalid"}]
+        return 1, [
+            {"filename": "", "success": False, "error": "DB_SCHEMA not set or invalid"}
+        ]
     schema_dir = schema_dir or _schema_dir()
     if not schema_dir.exists():
-        return 1, [{"filename": "", "success": False, "error": f"Schema dir not found: {schema_dir}"}]
+        return 1, [
+            {
+                "filename": "",
+                "success": False,
+                "error": f"Schema dir not found: {schema_dir}",
+            }
+        ]
 
-    etl_schemas_sql = f"CREATE SCHEMA IF NOT EXISTS dim; CREATE SCHEMA IF NOT EXISTS {db_schema};"
+    etl_schemas_sql = (
+        f"CREATE SCHEMA IF NOT EXISTS dim; CREATE SCHEMA IF NOT EXISTS {db_schema};"
+    )
     try:
         with psycopg2.connect(url) as conn:
             conn.autocommit = False
@@ -135,7 +153,13 @@ def run_init_db(url: str | None = None, schema_dir: Path | None = None) -> tuple
             path = schema_dir / filename
             if not path.exists():
                 conn.close()
-                return 1, results + [{"filename": filename, "success": False, "error": f"File not found: {path}"}]
+                return 1, results + [
+                    {
+                        "filename": filename,
+                        "success": False,
+                        "error": f"File not found: {path}",
+                    }
+                ]
             checksum = schema_check.sha256(path)
             sql = path.read_text(encoding="utf-8")
             try:
@@ -149,15 +173,23 @@ def run_init_db(url: str | None = None, schema_dir: Path | None = None) -> tuple
                 pgcode = getattr(e, "pgcode", None)
                 msg = str(e).lower()
                 skip_codes = ("42P07", "23505")
-                if pgcode in skip_codes or "already exists" in msg or "duplicate key" in msg:
+                if (
+                    pgcode in skip_codes
+                    or "already exists" in msg
+                    or "duplicate key" in msg
+                ):
                     schema_check.record(conn, filename, checksum)
                     results.append({"filename": filename, "success": True})
                     continue
                 try:
-                    schema_check.record(conn, filename, checksum, success=False, error_msg=str(e))
+                    schema_check.record(
+                        conn, filename, checksum, success=False, error_msg=str(e)
+                    )
                 except Exception:
                     pass
-                results.append({"filename": filename, "success": False, "error": str(e)})
+                results.append(
+                    {"filename": filename, "success": False, "error": str(e)}
+                )
                 conn.close()
                 return 1, results
 
@@ -167,10 +199,13 @@ def run_init_db(url: str | None = None, schema_dir: Path | None = None) -> tuple
             if filename == "003_dim_dir3.sql":
                 try:
                     from etl.dir3_ingest import run_dir3_ingest
+
                     run_dir3_ingest(url)
                 except Exception as e:
                     conn.close()
-                    return 1, results + [{"filename": "dir3_ingest", "success": False, "error": str(e)}]
+                    return 1, results + [
+                        {"filename": "dir3_ingest", "success": False, "error": str(e)}
+                    ]
     finally:
         if not conn.closed:
             conn.close()
@@ -183,15 +218,24 @@ def cmd_init_db(args: argparse.Namespace) -> int:
     from etl import schema_check
 
     if get_database_url() is None:
-        print("Falta configuración de base de datos (definir DB_HOST, DB_NAME, DB_USER en .env).", file=sys.stderr)
+        print(
+            "Falta configuración de base de datos (definir DB_HOST, DB_NAME, DB_USER en .env).",
+            file=sys.stderr,
+        )
         return 1
     db_schema = get_db_schema()
     if not db_schema:
-        print("Falta DB_SCHEMA. Defina la variable de entorno DB_SCHEMA en el .env de este servicio.", file=sys.stderr)
+        print(
+            "Falta DB_SCHEMA. Defina la variable de entorno DB_SCHEMA en el .env de este servicio.",
+            file=sys.stderr,
+        )
         print("Ejemplo: DB_SCHEMA=raw", file=sys.stderr)
         return 1
     if not db_schema.replace("_", "").isalnum():
-        print("DB_SCHEMA debe ser un identificador válido (letras, números y guión bajo).", file=sys.stderr)
+        print(
+            "DB_SCHEMA debe ser un identificador válido (letras, números y guión bajo).",
+            file=sys.stderr,
+        )
         return 1
     schema_dir = getattr(args, "schema_dir", None) or _schema_dir()
     if not schema_dir.exists():
@@ -199,7 +243,9 @@ def cmd_init_db(args: argparse.Namespace) -> int:
         return 1
 
     url = get_database_url()
-    etl_schemas_sql = f"CREATE SCHEMA IF NOT EXISTS dim; CREATE SCHEMA IF NOT EXISTS {db_schema};"
+    etl_schemas_sql = (
+        f"CREATE SCHEMA IF NOT EXISTS dim; CREATE SCHEMA IF NOT EXISTS {db_schema};"
+    )
     try:
         with psycopg2.connect(url) as conn:
             conn.autocommit = False
@@ -222,7 +268,9 @@ def cmd_init_db(args: argparse.Namespace) -> int:
         schema_check.log_check(status)
         other_pending = [f for f in status.pending if f not in INIT_MIGRATIONS]
         if other_pending:
-            print(f"[schema-apply] Ficheros no-infra detectados (se aplican bajo demanda): {', '.join(other_pending)}")
+            print(
+                f"[schema-apply] Ficheros no-infra detectados (se aplican bajo demanda): {', '.join(other_pending)}"
+            )
     finally:
         if not conn.closed:
             conn.close()
@@ -233,7 +281,10 @@ def cmd_init_db(args: argparse.Namespace) -> int:
         if r.get("success"):
             print(f"[schema-apply] {version} — applied {r['filename']} [OK]")
         else:
-            print(f"[schema-apply] Error: {r.get('filename', '')} — {r.get('error', '')}", file=sys.stderr)
+            print(
+                f"[schema-apply] Error: {r.get('filename', '')} — {r.get('error', '')}",
+                file=sys.stderr,
+            )
     if exit_code == 0:
         print("init-db completado.")
     return exit_code
@@ -257,7 +308,9 @@ def _parse_anos(anos_str: str) -> tuple[int, int]:
 
 def cmd_ingest_test(args: argparse.Namespace) -> int:
     """Ejecuta la suite de tests de ingest (pytest), E2E por conjuntos, o limpieza del schema test."""
-    if getattr(args, "ingest_delete", False) and not getattr(args, "ingest_conjuntos", False):
+    if getattr(args, "ingest_delete", False) and not getattr(
+        args, "ingest_conjuntos", False
+    ):
         return _drop_e2e_schema()
     if getattr(args, "ingest_conjuntos", False):
         return _cmd_ingest_test_conjuntos_e2e(args)
@@ -292,7 +345,10 @@ E2E_SCHEMA = "test"
 def _drop_e2e_schema() -> int:
     """Elimina el schema usado por el E2E (test) para dejar la BD limpia."""
     if get_database_url() is None:
-        print("Falta configuración de base de datos (definir DB_HOST, DB_NAME, DB_USER en .env).", file=sys.stderr)
+        print(
+            "Falta configuración de base de datos (definir DB_HOST, DB_NAME, DB_USER en .env).",
+            file=sys.stderr,
+        )
         return 1
     try:
         with psycopg2.connect(get_database_url()) as conn:
@@ -309,10 +365,16 @@ def _drop_e2e_schema() -> int:
 def _cmd_ingest_test_conjuntos_e2e(args: argparse.Namespace) -> int:
     """E2E: flujo completo (descarga si aplica + ingest) de un subconjunto por conjunto en schema 'test'."""
     if get_database_url() is None:
-        print("Falta configuración de base de datos (definir DB_HOST, DB_NAME, DB_USER en .env).", file=sys.stderr)
+        print(
+            "Falta configuración de base de datos (definir DB_HOST, DB_NAME, DB_USER en .env).",
+            file=sys.stderr,
+        )
         return 1
     if not get_db_schema():
-        print("Falta DB_SCHEMA. Defina la variable de entorno DB_SCHEMA en el .env de este servicio.", file=sys.stderr)
+        print(
+            "Falta DB_SCHEMA. Defina la variable de entorno DB_SCHEMA en el .env de este servicio.",
+            file=sys.stderr,
+        )
         return 1
     try:
         with psycopg2.connect(get_database_url()) as conn:
@@ -323,7 +385,10 @@ def _cmd_ingest_test_conjuntos_e2e(args: argparse.Namespace) -> int:
         print(f"Error creando schema {E2E_SCHEMA}: {e}", file=sys.stderr)
         return 1
     conjuntos = sorted(CONJUNTOS_REGISTRY.keys())
-    print(f"E2E ingest: un subconjunto por conjunto en schema '{E2E_SCHEMA}' ({len(conjuntos)} conjuntos).", file=sys.stderr)
+    print(
+        f"E2E ingest: un subconjunto por conjunto en schema '{E2E_SCHEMA}' ({len(conjuntos)} conjuntos).",
+        file=sys.stderr,
+    )
     for conjunto in conjuntos:
         reg = CONJUNTOS_REGISTRY[conjunto]
         subconjuntos = list(reg["subconjuntos"])
@@ -346,7 +411,9 @@ def _cmd_ingest_test_conjuntos_e2e(args: argparse.Namespace) -> int:
             return rc
     if getattr(args, "ingest_delete", False):
         _drop_e2e_schema()
-    print("E2E completado: un subconjunto de cada conjunto verificado.", file=sys.stderr)
+    print(
+        "E2E completado: un subconjunto de cada conjunto verificado.", file=sys.stderr
+    )
     return 0
 
 
@@ -374,7 +441,10 @@ def cmd_ingest(args: argparse.Namespace) -> int:
         return 0
 
     if get_database_url() is None:
-        print("Falta configuración de base de datos (definir DB_HOST, DB_NAME, DB_USER en .env).", file=sys.stderr)
+        print(
+            "Falta configuración de base de datos (definir DB_HOST, DB_NAME, DB_USER en .env).",
+            file=sys.stderr,
+        )
         return 1
     db_schema = getattr(args, "e2e_schema", None) or get_db_schema()
     if not db_schema:
@@ -419,7 +489,10 @@ def cmd_ingest(args: argparse.Namespace) -> int:
             print(str(e), file=sys.stderr)
             return 1
     if reg.get("requires_anos") and not anos_str:
-        print("Obligatorio indicar --anos X-Y para este conjunto (ej. 2023-2023).", file=sys.stderr)
+        print(
+            "Obligatorio indicar --anos X-Y para este conjunto (ej. 2023-2023).",
+            file=sys.stderr,
+        )
         return 1
 
     get_path = reg["get_parquet_path"]
@@ -437,16 +510,31 @@ def cmd_ingest(args: argparse.Namespace) -> int:
 
     # Scheduler: registrar run al inicio (evitar solapamiento) y al finalizar
     run_id: Optional[int] = None
-    ingest_result: list = [None, 0, 0, None]  # status, rows_inserted, rows_omitted, error_message
+    ingest_result: list = [
+        None,
+        0,
+        0,
+        None,
+    ]  # status, rows_inserted, rows_omitted, error_message
     db_url = get_database_url()
     if db_url:
         try:
-            from etl.scheduler import get_task_id, has_running_run, insert_run_start, update_run_finish, update_run_process_id
+            from etl.scheduler import (
+                get_task_id,
+                has_running_run,
+                insert_run_start,
+                update_run_finish,
+                update_run_process_id,
+            )
+
             with psycopg2.connect(db_url) as conn:
                 conn.autocommit = False
                 task_id = get_task_id(conn, conjunto, subconjunto)
                 if task_id and has_running_run(conn, task_id):
-                    print("[ingest] Ya hay una ejecución en curso para esta tarea (scheduler).", file=sys.stderr)
+                    print(
+                        "[ingest] Ya hay una ejecución en curso para esta tarea (scheduler).",
+                        file=sys.stderr,
+                    )
                     return 1
                 if task_id:
                     run_id = insert_run_start(conn, task_id)
@@ -457,11 +545,16 @@ def cmd_ingest(args: argparse.Namespace) -> int:
 
     try:
         if not solo_procesar:
-            run_script = solo_descargar or True  # siempre descarga/generación; con --solo-procesar no se entra aquí
+            run_script = (
+                solo_descargar or True
+            )  # siempre descarga/generación; con --solo-procesar no se entra aquí
         else:
             run_script = False
         if run_script:
-            print("[ingest] Fase: descarga/generación parquet (ejecutando script...).", file=sys.stderr)
+            print(
+                "[ingest] Fase: descarga/generación parquet (ejecutando script...).",
+                file=sys.stderr,
+            )
             run_env = os.environ.copy()
             run_env["LICITACIONES_TMP_DIR"] = str(_tmp_dir())
             if "script_module" in reg:
@@ -486,12 +579,24 @@ def cmd_ingest(args: argparse.Namespace) -> int:
                     try:
                         rc = subprocess.run(cmd, cwd=run_cwd, env=run_env, check=False)
                         if rc.returncode != 0:
-                            print("[ingest] Error en fase descarga/generación; considerar reintentar.", file=sys.stderr)
-                            print(f"Script finalizó con código {rc.returncode}.", file=sys.stderr)
-                            ingest_result[0], ingest_result[3] = "failed", f"Script finalizó con código {rc.returncode}"
+                            print(
+                                "[ingest] Error en fase descarga/generación; considerar reintentar.",
+                                file=sys.stderr,
+                            )
+                            print(
+                                f"Script finalizó con código {rc.returncode}.",
+                                file=sys.stderr,
+                            )
+                            ingest_result[0], ingest_result[3] = (
+                                "failed",
+                                f"Script finalizó con código {rc.returncode}",
+                            )
                             return rc.returncode
                     except FileNotFoundError as e:
-                        print("[ingest] Error en fase descarga/generación; considerar reintentar.", file=sys.stderr)
+                        print(
+                            "[ingest] Error en fase descarga/generación; considerar reintentar.",
+                            file=sys.stderr,
+                        )
                         print(f"No se pudo ejecutar: {e}", file=sys.stderr)
                         ingest_result[0], ingest_result[3] = "failed", str(e)
                         return 1
@@ -500,11 +605,16 @@ def cmd_ingest(args: argparse.Namespace) -> int:
                     ingest_result[0] = "ok"
                     return 0
             elif "scripts" in reg:
-                run_cwd = etl_root / reg["script_cwd"] if reg.get("script_cwd") else etl_root
+                run_cwd = (
+                    etl_root / reg["script_cwd"] if reg.get("script_cwd") else etl_root
+                )
                 if conjunto == "ted":
                     # TED: un solo script con download y --years
                     if ano_inicio is None or ano_fin is None:
-                        print("TED requiere --anos X-Y; no se pudo obtener rango de años.", file=sys.stderr)
+                        print(
+                            "TED requiere --anos X-Y; no se pudo obtener rango de años.",
+                            file=sys.stderr,
+                        )
                         return 1
                     cmd = [
                         sys.executable,
@@ -517,40 +627,77 @@ def cmd_ingest(args: argparse.Namespace) -> int:
                     try:
                         rc = subprocess.run(cmd, cwd=etl_root, env=run_env, check=False)
                         if rc.returncode != 0:
-                            print("[ingest] Error en fase descarga/generación; considerar reintentar.", file=sys.stderr)
-                            print(f"Script finalizó con código {rc.returncode}.", file=sys.stderr)
+                            print(
+                                "[ingest] Error en fase descarga/generación; considerar reintentar.",
+                                file=sys.stderr,
+                            )
+                            print(
+                                f"Script finalizó con código {rc.returncode}.",
+                                file=sys.stderr,
+                            )
                             return rc.returncode
                     except FileNotFoundError as e:
-                        print("[ingest] Error en fase descarga/generación; considerar reintentar.", file=sys.stderr)
+                        print(
+                            "[ingest] Error en fase descarga/generación; considerar reintentar.",
+                            file=sys.stderr,
+                        )
                         print(f"No se pudo ejecutar: {e}", file=sys.stderr)
                         return 1
                 else:
                     for script_rel in reg["scripts"]:
                         cmd = [sys.executable, script_rel]
-                        if "script_subconjunto_arg" in reg and script_rel.endswith("ccaa_andalucia.py"):
+                        if "script_subconjunto_arg" in reg and script_rel.endswith(
+                            "ccaa_andalucia.py"
+                        ):
                             cmd.append(reg["script_subconjunto_arg"][subconjunto])
-                        elif conjunto == "andalucia" and "ccaa_andalucia_parquet.py" in script_rel:
+                        elif (
+                            conjunto == "andalucia"
+                            and "ccaa_andalucia_parquet.py" in script_rel
+                        ):
                             cmd.extend(["--subconjunto", subconjunto])
-                        elif conjunto == "valencia" and "ccaa_valencia.py" in script_rel:
+                        elif (
+                            conjunto == "valencia" and "ccaa_valencia.py" in script_rel
+                        ):
                             cmd.extend(["--categories", subconjunto])
-                        elif conjunto == "valencia" and "ccaa_valencia_parquet.py" in script_rel:
+                        elif (
+                            conjunto == "valencia"
+                            and "ccaa_valencia_parquet.py" in script_rel
+                        ):
                             cmd.extend(["--categories", subconjunto])
-                        elif conjunto == "catalunya" and "ccaa_cataluna_parquet.py" in script_rel:
+                        elif (
+                            conjunto == "catalunya"
+                            and "ccaa_cataluna_parquet.py" in script_rel
+                        ):
                             parquet_rel = CATALUNYA_PARQUET_PATHS[subconjunto]
                             cmd.extend(["--parquet-rel", parquet_rel])
-                        elif conjunto == "catalunya" and "ccaa_cataluna.py" in script_rel and "subconjunto_to_limit_datasets" in reg:
+                        elif (
+                            conjunto == "catalunya"
+                            and "ccaa_cataluna.py" in script_rel
+                            and "subconjunto_to_limit_datasets" in reg
+                        ):
                             ids = reg["subconjunto_to_limit_datasets"].get(subconjunto)
                             if ids:
                                 cmd.extend(["--limit-datasets", ids])
                         print(f"Ejecutando: {' '.join(cmd)}", file=sys.stderr)
                         try:
-                            rc = subprocess.run(cmd, cwd=run_cwd, env=run_env, check=False)
+                            rc = subprocess.run(
+                                cmd, cwd=run_cwd, env=run_env, check=False
+                            )
                             if rc.returncode != 0:
-                                print("[ingest] Error en fase descarga/generación; considerar reintentar.", file=sys.stderr)
-                                print(f"Script finalizó con código {rc.returncode}.", file=sys.stderr)
+                                print(
+                                    "[ingest] Error en fase descarga/generación; considerar reintentar.",
+                                    file=sys.stderr,
+                                )
+                                print(
+                                    f"Script finalizó con código {rc.returncode}.",
+                                    file=sys.stderr,
+                                )
                                 return rc.returncode
                         except FileNotFoundError as e:
-                            print("[ingest] Error en fase descarga/generación; considerar reintentar.", file=sys.stderr)
+                            print(
+                                "[ingest] Error en fase descarga/generación; considerar reintentar.",
+                                file=sys.stderr,
+                            )
                             print(f"No se pudo ejecutar: {e}", file=sys.stderr)
                             return 1
                 if solo_descargar:
@@ -558,18 +705,29 @@ def cmd_ingest(args: argparse.Namespace) -> int:
                     return 0
             else:
                 if solo_descargar:
-                    print("No hay script configurado para este conjunto.", file=sys.stderr)
+                    print(
+                        "No hay script configurado para este conjunto.", file=sys.stderr
+                    )
                     return 1
             if "script_module" in reg:
                 print(f"Ejecutando: {' '.join(cmd)}", file=sys.stderr)
                 try:
                     rc = subprocess.run(cmd, cwd=etl_root, env=run_env, check=False)
                     if rc.returncode != 0:
-                        print("[ingest] Error en fase descarga/generación; considerar reintentar.", file=sys.stderr)
-                        print(f"El script finalizó con código {rc.returncode}.", file=sys.stderr)
+                        print(
+                            "[ingest] Error en fase descarga/generación; considerar reintentar.",
+                            file=sys.stderr,
+                        )
+                        print(
+                            f"El script finalizó con código {rc.returncode}.",
+                            file=sys.stderr,
+                        )
                         return rc.returncode
                 except FileNotFoundError as e:
-                    print("[ingest] Error en fase descarga/generación; considerar reintentar.", file=sys.stderr)
+                    print(
+                        "[ingest] Error en fase descarga/generación; considerar reintentar.",
+                        file=sys.stderr,
+                    )
                     print(f"No se pudo ejecutar el script: {e}", file=sys.stderr)
                     return 1
                 if solo_descargar:
@@ -587,15 +745,24 @@ def cmd_ingest(args: argparse.Namespace) -> int:
         parquet_files: list[Path]
         if use_partials:
             parquet_files = partial_glob
-            print(f"[ingest] Encontrados {len(parquet_files)} parciales en {output_dir}.", file=sys.stderr)
+            print(
+                f"[ingest] Encontrados {len(parquet_files)} parciales en {output_dir}.",
+                file=sys.stderr,
+            )
         elif parquet_path.exists():
             parquet_files = [parquet_path]
         else:
-            print(f"Parquet no encontrado: {parquet_path}. Ejecute sin --solo-procesar o genere el parquet antes.", file=sys.stderr)
+            print(
+                f"Parquet no encontrado: {parquet_path}. Ejecute sin --solo-procesar o genere el parquet antes.",
+                file=sys.stderr,
+            )
             ingest_result[0], ingest_result[3] = "failed", "Parquet no encontrado"
             return 1
 
-        print(f"[ingest] Fase: carga en BD ({len(parquet_files)} {'parcial' if len(parquet_files) == 1 else 'parciales'}).", file=sys.stderr)
+        print(
+            f"[ingest] Fase: carga en BD ({len(parquet_files)} {'parcial' if len(parquet_files) == 1 else 'parciales'}).",
+            file=sys.stderr,
+        )
         column_defs = reg.get("column_defs")
         natural_id_col = reg.get("natural_id_col")
 
@@ -622,14 +789,23 @@ def cmd_ingest(args: argparse.Namespace) -> int:
                 )
                 total_inserted += inserted
                 total_skipped += skipped
-                print(f"[ingest] {label} +{inserted} insertadas, {skipped} omitidas (acum: {total_inserted}+{total_skipped}).", file=sys.stderr)
+                print(
+                    f"[ingest] {label} +{inserted} insertadas, {skipped} omitidas (acum: {total_inserted}+{total_skipped}).",
+                    file=sys.stderr,
+                )
 
                 if run_id and db_url:
                     try:
                         from etl.scheduler import update_run_progress
+
                         with psycopg2.connect(db_url) as _conn:
-                            update_run_progress(_conn, run_id, total_inserted, total_skipped,
-                                                f"Batch {batch_idx}/{len(parquet_files)}")
+                            update_run_progress(
+                                _conn,
+                                run_id,
+                                total_inserted,
+                                total_skipped,
+                                f"Batch {batch_idx}/{len(parquet_files)}",
+                            )
                             _conn.commit()
                     except Exception:
                         pass
@@ -655,28 +831,50 @@ def cmd_ingest(args: argparse.Namespace) -> int:
         ingest_result[1] = total_inserted
         ingest_result[2] = total_skipped
         if batch_errors:
-            ingest_result[3] = f"{len(batch_errors)} batch(es) fallido(s): {'; '.join(batch_errors[:3])}"
+            ingest_result[3] = (
+                f"{len(batch_errors)} batch(es) fallido(s): {'; '.join(batch_errors[:3])}"
+            )
 
-        print(f"[ingest] Ingesta completada: {total_inserted} insertadas, {total_skipped} omitidas.", file=sys.stderr)
+        print(
+            f"[ingest] Ingesta completada: {total_inserted} insertadas, {total_skipped} omitidas.",
+            file=sys.stderr,
+        )
 
-        if not use_partials and not getattr(args, "ingest_keep_parquet", False) and parquet_path.exists():
+        if (
+            not use_partials
+            and not getattr(args, "ingest_keep_parquet", False)
+            and parquet_path.exists()
+        ):
             try:
                 parquet_path.unlink(missing_ok=True)
-                print("[ingest] Parquet eliminado del directorio temporal.", file=sys.stderr)
+                print(
+                    "[ingest] Parquet eliminado del directorio temporal.",
+                    file=sys.stderr,
+                )
             except OSError as e:
-                print(f"[ingest] No se pudo eliminar el parquet temporal: {e}", file=sys.stderr)
+                print(
+                    f"[ingest] No se pudo eliminar el parquet temporal: {e}",
+                    file=sys.stderr,
+                )
         for cleanup_dir in get_cleanup_dirs(conjunto, subconjunto):
             if cleanup_dir.exists():
                 try:
                     shutil.rmtree(cleanup_dir, ignore_errors=True)
-                    print(f"[ingest] Directorio de artefactos eliminado: {cleanup_dir}", file=sys.stderr)
+                    print(
+                        f"[ingest] Directorio de artefactos eliminado: {cleanup_dir}",
+                        file=sys.stderr,
+                    )
                 except OSError as e:
-                    print(f"[ingest] No se pudo eliminar {cleanup_dir}: {e}", file=sys.stderr)
+                    print(
+                        f"[ingest] No se pudo eliminar {cleanup_dir}: {e}",
+                        file=sys.stderr,
+                    )
         return 0
     finally:
         if run_id and db_url:
             try:
                 from etl.scheduler import update_run_finish
+
                 with psycopg2.connect(db_url) as conn:
                     update_run_finish(
                         conn,
@@ -701,6 +899,7 @@ def cmd_health(_args: argparse.Namespace) -> int:
     if url:
         try:
             from etl.scheduler import ensure_scheduler_schema
+
             with psycopg2.connect(url) as conn:
                 ensure_scheduler_schema(conn)
             with psycopg2.connect(url) as conn:
@@ -709,7 +908,10 @@ def cmd_health(_args: argparse.Namespace) -> int:
                     cur.fetchone()
             print("Schema scheduler: OK.", file=sys.stdout)
         except Exception:
-            print("Schema scheduler: no disponible (ejecute init-db y scheduler register).", file=sys.stderr)
+            print(
+                "Schema scheduler: no disponible (ejecute init-db y scheduler register).",
+                file=sys.stderr,
+            )
     return 0
 
 
@@ -717,14 +919,20 @@ def cmd_scheduler_register(args: argparse.Namespace) -> int:
     """Pobla scheduler.tasks desde CONJUNTOS_REGISTRY y frecuencias por defecto; opcionalmente solo para los conjuntos indicados."""
     url = get_database_url()
     if not url:
-        print("Falta configuración de base de datos (DB_HOST, DB_NAME, DB_USER).", file=sys.stderr)
+        print(
+            "Falta configuración de base de datos (DB_HOST, DB_NAME, DB_USER).",
+            file=sys.stderr,
+        )
         return 1
     conjuntos = getattr(args, "conjuntos", None) or []
     valid = [c for c in CONJUNTOS_REGISTRY if c != "test"] + ["borme"]
     if conjuntos:
         invalid = [c for c in conjuntos if c not in valid]
         if invalid:
-            print(f"Conjunto(s) no reconocidos: {', '.join(invalid)}. Válidos: {', '.join(valid)}.", file=sys.stderr)
+            print(
+                f"Conjunto(s) no reconocidos: {', '.join(invalid)}. Válidos: {', '.join(valid)}.",
+                file=sys.stderr,
+            )
             return 1
         conjuntos_filter = conjuntos
     else:
@@ -738,6 +946,7 @@ def cmd_scheduler_register(args: argparse.Namespace) -> int:
             print(f"Error: {e}", file=sys.stderr)
             return 1
         from etl.scheduler import get_all_task_pairs
+
         all_pairs = get_all_task_pairs()
         if conjuntos_filter:
             conjuntos_set = set(conjuntos_filter)
@@ -747,11 +956,14 @@ def cmd_scheduler_register(args: argparse.Namespace) -> int:
         schedule_overrides = {pair: frecuencia for pair in pairs}
     try:
         from etl.scheduler import ensure_scheduler_schema, register_tasks
+
         with psycopg2.connect(url) as conn:
             conn.autocommit = False
             ensure_scheduler_schema(conn)
             conn.commit()
-            inserted, updated, registered = register_tasks(conn, conjuntos=conjuntos_filter, schedule_overrides=schedule_overrides)
+            inserted, updated, registered = register_tasks(
+                conn, conjuntos=conjuntos_filter, schedule_overrides=schedule_overrides
+            )
             conn.commit()
         print(f"scheduler.tasks: {inserted} insertadas, {updated} actualizadas.")
         for conj, sub in sorted(registered):
@@ -767,18 +979,36 @@ def cmd_scheduler_status(_args: argparse.Namespace) -> int:
     """Lista tareas con última ejecución y próxima programada (tabla tipo docker ps)."""
     url = get_database_url()
     if not url:
-        print("Falta configuración de base de datos (DB_HOST, DB_NAME, DB_USER).", file=sys.stderr)
+        print(
+            "Falta configuración de base de datos (DB_HOST, DB_NAME, DB_USER).",
+            file=sys.stderr,
+        )
         return 1
     try:
         from etl.scheduler import get_next_run_at, list_tasks_with_last_run
+
         with psycopg2.connect(url) as conn:
             rows = list_tasks_with_last_run(conn)
         if not rows:
             print("No hay tareas registradas. Ejecute: licitia-etl scheduler register")
             return 0
         fmt = "%-12s %-28s %-12s %-20s %-10s %-8s %-8s %-20s"
-        print("ESTADO = último run (scheduled/failed/running). FILAS = insertadas+omitidas. PID = proceso del último run.")
-        print(fmt % ("CONJUNTO", "SUBCONJUNTO", "FRECUENCIA", "ÚLTIMA EJECUCIÓN", "ESTADO", "PID", "FILAS", "PRÓXIMA EJECUCIÓN"))
+        print(
+            "ESTADO = último run (scheduled/failed/running). FILAS = insertadas+omitidas. PID = proceso del último run."
+        )
+        print(
+            fmt
+            % (
+                "CONJUNTO",
+                "SUBCONJUNTO",
+                "FRECUENCIA",
+                "ÚLTIMA EJECUCIÓN",
+                "ESTADO",
+                "PID",
+                "FILAS",
+                "PRÓXIMA EJECUCIÓN",
+            )
+        )
         print("-" * 132)
         for r in rows:
             conj = (r.get("conjunto") or "")[:12]
@@ -793,11 +1023,17 @@ def cmd_scheduler_status(_args: argparse.Namespace) -> int:
             pid_str = str(pid_val) if pid_val is not None else "-"
             pid_str = pid_str[:8]
             ins, omit = r.get("last_rows_inserted"), r.get("last_rows_omitted")
-            filas = f"{ins or 0}+{omit or 0}" if (ins is not None or omit is not None) else "-"
+            filas = (
+                f"{ins or 0}+{omit or 0}"
+                if (ins is not None or omit is not None)
+                else "-"
+            )
             if raw_status == "running":
                 next_run = "-"
             else:
-                next_at = get_next_run_at(r.get("schedule_expr") or "Trimestral", r.get("last_finished_at"))
+                next_at = get_next_run_at(
+                    r.get("schedule_expr") or "Trimestral", r.get("last_finished_at")
+                )
                 next_run = str(next_at)[:19].replace("T", " ") if next_at else "-"
             next_run = (next_run or "-")[:20]
             print(fmt % (conj, sub, freq, last, status, pid_str, filas, next_run))
@@ -811,9 +1047,17 @@ def cmd_scheduler_run(args: argparse.Namespace) -> int:
     """Inicia el scheduler: bucle de todas las tareas (--all o sin args) o ejecuta una tarea por conjunto/subconjunto. Con -d no bloquea."""
     url = get_database_url()
     if not url:
-        print("Falta configuración de base de datos (DB_HOST, DB_NAME, DB_USER).", file=sys.stderr)
+        print(
+            "Falta configuración de base de datos (DB_HOST, DB_NAME, DB_USER).",
+            file=sys.stderr,
+        )
         return 1
-    from etl.scheduler import get_scheduler_pid_path, run_scheduler_loop, run_single_task
+    from etl.scheduler import (
+        get_scheduler_pid_path,
+        run_scheduler_loop,
+        run_single_task,
+    )
+
     conjunto = getattr(args, "conjunto", None)
     subconjunto = getattr(args, "subconjunto", None)
     run_all = getattr(args, "run_all", False)
@@ -825,11 +1069,17 @@ def cmd_scheduler_run(args: argparse.Namespace) -> int:
         if subconjunto is None and conjunto in CONJUNTOS_REGISTRY:
             subs = CONJUNTOS_REGISTRY[conjunto].get("subconjuntos", ())
             if len(subs) > 1:
-                print(f"El conjunto '{conjunto}' tiene varios subconjuntos. Indique uno: {', '.join(subs)}", file=sys.stderr)
+                print(
+                    f"El conjunto '{conjunto}' tiene varios subconjuntos. Indique uno: {', '.join(subs)}",
+                    file=sys.stderr,
+                )
                 return 1
             subconjunto = subs[0] if subs else ""
         if not subconjunto:
-            print("Indique subconjunto (ej. licitia-etl scheduler run nacional consultas_preliminares).", file=sys.stderr)
+            print(
+                "Indique subconjunto (ej. licitia-etl scheduler run nacional consultas_preliminares).",
+                file=sys.stderr,
+            )
             return 1
         rc = run_single_task(url, conjunto, subconjunto)
         return rc
@@ -839,7 +1089,16 @@ def cmd_scheduler_run(args: argparse.Namespace) -> int:
         pid_path = get_scheduler_pid_path()
         log_path = pid_path.parent / "scheduler.log"
         pid_path.parent.mkdir(parents=True, exist_ok=True)
-        cmd = [sys.executable, "-m", "etl.cli", "scheduler", "run", "--all", "--tick-seconds", str(tick)]
+        cmd = [
+            sys.executable,
+            "-m",
+            "etl.cli",
+            "scheduler",
+            "run",
+            "--all",
+            "--tick-seconds",
+            str(tick),
+        ]
         log_file = open(log_path, "a")
         kwargs = {"stdout": log_file, "stderr": subprocess.STDOUT}
         if os.name != "nt":
@@ -851,11 +1110,15 @@ def cmd_scheduler_run(args: argparse.Namespace) -> int:
         try:
             p = subprocess.Popen(cmd, **kwargs)
         except Exception as e:
-            print(f"Error al arrancar el scheduler en segundo plano: {e}", file=sys.stderr)
+            print(
+                f"Error al arrancar el scheduler en segundo plano: {e}", file=sys.stderr
+            )
             return 1
         time.sleep(1)
         print(f"Scheduler iniciado en segundo plano. PID: {p.pid}. Log: {log_path}")
-        print("Para detener: licitia-etl scheduler stop. Para estado: licitia-etl scheduler status.")
+        print(
+            "Para detener: licitia-etl scheduler stop. Para estado: licitia-etl scheduler status."
+        )
         return 0
     run_scheduler_loop(url, tick_seconds=tick, pid_path=get_scheduler_pid_path())
     return 0
@@ -864,9 +1127,13 @@ def cmd_scheduler_run(args: argparse.Namespace) -> int:
 def cmd_scheduler_logs(_args: argparse.Namespace) -> int:
     """Imprime por pantalla el contenido de scheduler.log."""
     from etl.scheduler import get_scheduler_log_path
+
     log_path = get_scheduler_log_path()
     if not log_path.exists():
-        print("No existe el archivo de log del scheduler (el scheduler aún no ha escrito en él).", file=sys.stderr)
+        print(
+            "No existe el archivo de log del scheduler (el scheduler aún no ha escrito en él).",
+            file=sys.stderr,
+        )
         return 0
     try:
         print(log_path.read_text(encoding="utf-8"), end="")
@@ -879,9 +1146,13 @@ def cmd_scheduler_logs(_args: argparse.Namespace) -> int:
 def cmd_scheduler_stop(_args: argparse.Namespace) -> int:
     """Detiene el proceso del scheduler (SIGTERM al PID del archivo)."""
     from etl.scheduler import get_scheduler_pid_path
+
     path = get_scheduler_pid_path()
     if not path.exists():
-        print("No hay archivo de PID del scheduler (el scheduler no está en ejecución).", file=sys.stderr)
+        print(
+            "No hay archivo de PID del scheduler (el scheduler no está en ejecución).",
+            file=sys.stderr,
+        )
         return 1
     try:
         pid = int(path.read_text().strip())
@@ -891,7 +1162,10 @@ def cmd_scheduler_stop(_args: argparse.Namespace) -> int:
     try:
         os.kill(pid, 0)
     except ProcessLookupError:
-        print(f"El proceso del scheduler (PID {pid}) no está en ejecución.", file=sys.stderr)
+        print(
+            f"El proceso del scheduler (PID {pid}) no está en ejecución.",
+            file=sys.stderr,
+        )
         try:
             path.unlink(missing_ok=True)
         except OSError:
@@ -910,7 +1184,10 @@ def cmd_scheduler_unregister(args: argparse.Namespace) -> int:
     """Elimina tarea(s): por PID (detiene el proceso y elimina la tarea) o --all (elimina todas las tareas)."""
     url = get_database_url()
     if not url:
-        print("Falta configuración de base de datos (DB_HOST, DB_NAME, DB_USER).", file=sys.stderr)
+        print(
+            "Falta configuración de base de datos (DB_HOST, DB_NAME, DB_USER).",
+            file=sys.stderr,
+        )
         return 1
     unregister_all = getattr(args, "unregister_all", False)
     pid_arg = getattr(args, "pid", None)
@@ -918,7 +1195,10 @@ def cmd_scheduler_unregister(args: argparse.Namespace) -> int:
         print("Indique solo PID o solo --all, no ambos.", file=sys.stderr)
         return 1
     if not unregister_all and pid_arg is None:
-        print("Indique el PID de la run (ver 'scheduler status') o use --all para eliminar todas las tareas.", file=sys.stderr)
+        print(
+            "Indique el PID de la run (ver 'scheduler status') o use --all para eliminar todas las tareas.",
+            file=sys.stderr,
+        )
         return 1
     try:
         from etl.scheduler import (
@@ -926,6 +1206,7 @@ def cmd_scheduler_unregister(args: argparse.Namespace) -> int:
             get_run_by_process_id,
             update_run_finish,
         )
+
         with psycopg2.connect(url) as conn:
             conn.autocommit = False
             if unregister_all:
@@ -939,7 +1220,10 @@ def cmd_scheduler_unregister(args: argparse.Namespace) -> int:
             pid = pid_arg
             run_info = get_run_by_process_id(conn, pid)
             if not run_info:
-                print(f"No existe ninguna run con process_id={pid}. Compruebe el PID en 'scheduler status'.", file=sys.stderr)
+                print(
+                    f"No existe ninguna run con process_id={pid}. Compruebe el PID en 'scheduler status'.",
+                    file=sys.stderr,
+                )
                 return 1
             task_id = run_info["task_id"]
             run_id = run_info["run_id"]
@@ -951,10 +1235,14 @@ def cmd_scheduler_unregister(args: argparse.Namespace) -> int:
                 pass
             except OSError:
                 pass
-            update_run_finish(conn, run_id, "failed", error_message="Detenido por unregister")
+            update_run_finish(
+                conn, run_id, "failed", error_message="Detenido por unregister"
+            )
             delete_task(conn, task_id)
             conn.commit()
-            print(f"Tarea {conjunto} / {subconjunto} (task_id={task_id}) eliminada del scheduler.")
+            print(
+                f"Tarea {conjunto} / {subconjunto} (task_id={task_id}) eliminada del scheduler."
+            )
             return 0
     except Exception as e:
         print(f"Error: {e}", file=sys.stderr)
@@ -965,16 +1253,22 @@ def cmd_db_info(_args: argparse.Namespace) -> int:
     """Muestra información de la BD: tamaño por schema y tablas relevantes."""
     url = get_database_url()
     if not url:
-        print("Falta configuración de base de datos (DB_HOST, DB_NAME, DB_USER).", file=sys.stderr)
+        print(
+            "Falta configuración de base de datos (DB_HOST, DB_NAME, DB_USER).",
+            file=sys.stderr,
+        )
         return 1
     try:
         with psycopg2.connect(url) as conn:
             with conn.cursor() as cur:
-                cur.execute("SELECT pg_size_pretty(pg_database_size(current_database()))")
+                cur.execute(
+                    "SELECT pg_size_pretty(pg_database_size(current_database()))"
+                )
                 db_total = cur.fetchone()
                 print(f"Base de datos: {db_total[0] if db_total else '?'}\n")
                 print("Tamaño por schema:")
-                cur.execute("""
+                cur.execute(
+                    """
                     SELECT n.nspname AS schema_name,
                            pg_size_pretty(SUM(pg_total_relation_size(c.oid))::bigint) AS size
                     FROM pg_class c
@@ -983,18 +1277,21 @@ def cmd_db_info(_args: argparse.Namespace) -> int:
                       AND n.nspname NOT LIKE 'pg_temp_%%'
                     GROUP BY n.nspname
                     ORDER BY SUM(pg_total_relation_size(c.oid)) DESC
-                """)
+                """
+                )
                 sizes = cur.fetchall()
                 for row in sizes:
                     print(f"  {row[0]}: {row[1]}")
-                cur.execute("""
+                cur.execute(
+                    """
                     SELECT table_schema, table_name
                     FROM information_schema.tables
                     WHERE table_schema NOT IN ('pg_catalog', 'information_schema', 'pg_toast')
                       AND table_schema NOT LIKE 'pg_temp_%%'
                       AND table_type = 'BASE TABLE'
                     ORDER BY table_schema, table_name
-                """)
+                """
+                )
                 tables = cur.fetchall()
                 print("\nTablas:")
                 for sch, name in tables:
@@ -1029,21 +1326,29 @@ def cmd_borme(args: argparse.Namespace) -> int:
     """BORME: ingest or anomaly detection."""
     borme_cmd = getattr(args, "borme_cmd", None)
     if not borme_cmd:
-        print("Indique un subcomando: ingest o anomalias. Use 'licitia-etl borme --help' para más info.", file=sys.stderr)
+        print(
+            "Indique un subcomando: ingest o anomalias. Use 'licitia-etl borme --help' para más info.",
+            file=sys.stderr,
+        )
         return 1
     _ensure_borme_schema()
     from etl.borme import run_scraper, run_parser, load_borme_to_db, run_anomalias
+
     if borme_cmd == "ingest":
         pdfs_dir = run_scraper(args.anos)
         parsed_dir = run_parser(pdfs_dir)
         ins_e, skip_e = load_borme_to_db(parsed_dir, "empresas")
         ins_c, skip_c = load_borme_to_db(parsed_dir, "cargos")
-        print(f"BORME ingest: empresas inserted={ins_e} skipped={skip_e}, cargos inserted={ins_c} skipped={skip_c}")
+        print(
+            f"BORME ingest: empresas inserted={ins_e} skipped={skip_e}, cargos inserted={ins_c} skipped={skip_c}"
+        )
         return 0
     elif borme_cmd == "anomalias":
         pdfs_dir = run_scraper(args.anos)
         parsed_dir = run_parser(pdfs_dir)
-        output = run_anomalias(parsed_dir, anonimizar=getattr(args, "anonimizar", False))
+        output = run_anomalias(
+            parsed_dir, anonimizar=getattr(args, "anonimizar", False)
+        )
         print(f"BORME anomalías completadas. Resultados en: {output}")
         return 0
     else:
@@ -1071,7 +1376,11 @@ def main() -> int:
         epilog=_HELP_EPILOG,
         formatter_class=argparse.RawDescriptionHelpFormatter,
     )
-    parser.add_argument("--version", action="version", version=f"%(prog)s {__version__}\nVer CHANGELOG.md para el historial.")
+    parser.add_argument(
+        "--version",
+        action="version",
+        version=f"%(prog)s {__version__}\nVer CHANGELOG.md para el historial.",
+    )
     subparsers = parser.add_subparsers(dest="command", help="Comandos disponibles")
 
     subparsers.add_parser(
@@ -1113,7 +1422,8 @@ def main() -> int:
     ingest_parser.add_argument(
         "conjunto",
         type=str,
-        help="Conjunto: %s; o 'test' para la suite de tests" % ", ".join(sorted(CONJUNTOS_REGISTRY)),
+        help="Conjunto: %s; o 'test' para la suite de tests"
+        % ", ".join(sorted(CONJUNTOS_REGISTRY)),
     )
     ingest_parser.add_argument(
         "subconjunto",
@@ -1153,7 +1463,8 @@ def main() -> int:
     )
     group_ingest = ingest_parser.add_argument_group(
         "Opciones para ingest real",
-        "Solo tienen efecto cuando conjunto es uno de: %s." % ", ".join(sorted(CONJUNTOS_REGISTRY)),
+        "Solo tienen efecto cuando conjunto es uno de: %s."
+        % ", ".join(sorted(CONJUNTOS_REGISTRY)),
     )
     group_ingest.add_argument(
         "--subconjuntos",
@@ -1196,25 +1507,35 @@ def main() -> int:
         "scheduler",
         help="Gestiona las tareas programadas de ingest (registro, estado, ejecución y parada).",
     )
-    sched_sub = sched_parser.add_subparsers(dest="scheduler_cmd", help="Subcomando", required=True)
-    _sched_registry_list = ", ".join(
-        f"{c} ({len(r['subconjuntos'])})" for c, r in sorted(CONJUNTOS_REGISTRY.items()) if c != "test"
-    ) + ", borme (1)"
+    sched_sub = sched_parser.add_subparsers(
+        dest="scheduler_cmd", help="Subcomando", required=True
+    )
+    _sched_registry_list = (
+        ", ".join(
+            f"{c} ({len(r['subconjuntos'])})"
+            for c, r in sorted(CONJUNTOS_REGISTRY.items())
+            if c != "test"
+        )
+        + ", borme (1)"
+    )
     reg_parser = sched_sub.add_parser(
         "register",
-        help="Registra tareas por conjunto. Sin argumentos: todos; con argumentos: solo los indicados. Posibles: %s." % _sched_registry_list,
+        help="Registra tareas por conjunto. Sin argumentos: todos; con argumentos: solo los indicados. Posibles: %s."
+        % _sched_registry_list,
     )
     reg_parser.add_argument(
         "conjuntos",
         nargs="*",
         metavar="conjunto",
-        help="Conjunto(s) a registrar (por defecto: todos). Valores: %s." % ", ".join(sorted(c for c in CONJUNTOS_REGISTRY if c != "test") + ["borme"]),
+        help="Conjunto(s) a registrar (por defecto: todos). Valores: %s."
+        % ", ".join(sorted(c for c in CONJUNTOS_REGISTRY if c != "test") + ["borme"]),
     )
     reg_parser.add_argument(
         "--frecuencia",
         default=None,
         metavar="FRECUENCIA",
-        help="Frecuencia de ejecución para todas las tareas registradas. Opciones: %s. Por defecto cada tarea usa su frecuencia predeterminada." % ", ".join(VALID_SCHEDULE_EXPRS),
+        help="Frecuencia de ejecución para todas las tareas registradas. Opciones: %s. Por defecto cada tarea usa su frecuencia predeterminada."
+        % ", ".join(VALID_SCHEDULE_EXPRS),
     )
     reg_parser.set_defaults(func=cmd_scheduler_register)
     sched_sub.add_parser(
@@ -1245,7 +1566,13 @@ def main() -> int:
         dest="run_all",
         help="Ejecutar el bucle de todas las tareas debidas (por defecto si no se indica conjunto).",
     )
-    run_parser.add_argument("--tick-seconds", type=int, default=60, metavar="N", help="Intervalo del bucle en segundos (por defecto 60).")
+    run_parser.add_argument(
+        "--tick-seconds",
+        type=int,
+        default=60,
+        metavar="N",
+        help="Intervalo del bucle en segundos (por defecto 60).",
+    )
     run_parser.add_argument(
         "--detach",
         "-d",
@@ -1294,12 +1621,22 @@ def main() -> int:
     )
     borme_sub = borme_parser.add_subparsers(dest="borme_cmd", help="Subcomando BORME")
 
-    borme_ingest = borme_sub.add_parser("ingest", help="Scrape + parse + load into borme schema")
-    borme_ingest.add_argument("--anos", required=True, help="Year range: 2020-2026 or 2024")
+    borme_ingest = borme_sub.add_parser(
+        "ingest", help="Scrape + parse + load into borme schema"
+    )
+    borme_ingest.add_argument(
+        "--anos", required=True, help="Year range: 2020-2026 or 2024"
+    )
 
-    borme_anomalias = borme_sub.add_parser("anomalias", help="Run anomaly detector vs L0 nacional")
-    borme_anomalias.add_argument("--anos", required=True, help="Year range: 2020-2026 or 2024")
-    borme_anomalias.add_argument("--anonimizar", action="store_true", help="Anonymize before matching")
+    borme_anomalias = borme_sub.add_parser(
+        "anomalias", help="Run anomaly detector vs L0 nacional"
+    )
+    borme_anomalias.add_argument(
+        "--anos", required=True, help="Year range: 2020-2026 or 2024"
+    )
+    borme_anomalias.add_argument(
+        "--anonimizar", action="store_true", help="Anonymize before matching"
+    )
 
     borme_parser.set_defaults(func=cmd_borme)
 
