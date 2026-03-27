@@ -2,6 +2,21 @@
 
 Todos los cambios notables del CLI y del microservicio ETL se documentan aquí.
 
+## [1.2.2] — 2026-03-27
+
+### Correcciones
+
+- **Fix crítico ingesta JSONB**: `pd.isna(v)` lanzaba `ValueError: The truth value of an array with more than one element is ambiguous` al procesar filas de `nacional/contratos_menores` con valores reales en las columnas JSONB (`docs_adicionales`, `criterios_adjudicacion`, `requisitos_solvencia`). Los tres batches fallaban completamente.
+  - Guardado seguro: `v is None or (not isinstance(v, (list, dict)) and pd.isna(v))`.
+  - Serialización JSONB correcta: `psycopg2.extras.Json(v)` para valores `list`/`dict`.
+- Test de regresión `test_null_guard_safe_for_jsonb_list_and_dict` añadido.
+
+### Pruebas
+
+- 99 pruebas; 0 fallos.
+
+---
+
 ## [1.2.1] — 2026-03-25
 
 ### Añadido
