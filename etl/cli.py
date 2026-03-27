@@ -23,6 +23,7 @@ from etl.config import (
     get_db_schema,
     get_ingest_batch_size,
 )
+from etl.scheduler import VALID_SCHEDULE_EXPRS, validate_schedule_expr
 from etl.ingest_l0 import (
     CATALUNYA_PARQUET_PATHS,
     CONJUNTOS_REGISTRY,
@@ -936,6 +937,23 @@ def cmd_scheduler_register(args: argparse.Namespace) -> int:
         conjuntos_filter = conjuntos
     else:
         conjuntos_filter = None
+    frecuencia = getattr(args, "frecuencia", None)
+    schedule_overrides = None
+    if frecuencia:
+        try:
+            validate_schedule_expr(frecuencia)
+        except ValueError as e:
+            print(f"Error: {e}", file=sys.stderr)
+            return 1
+        from etl.scheduler import get_all_task_pairs
+
+        all_pairs = get_all_task_pairs()
+        if conjuntos_filter:
+            conjuntos_set = set(conjuntos_filter)
+            pairs = {k for k in all_pairs if k[0] in conjuntos_set}
+        else:
+            pairs = all_pairs
+        schedule_overrides = {pair: frecuencia for pair in pairs}
     try:
         from etl.scheduler import ensure_scheduler_schema, register_tasks
 
@@ -944,7 +962,7 @@ def cmd_scheduler_register(args: argparse.Namespace) -> int:
             ensure_scheduler_schema(conn)
             conn.commit()
             inserted, updated, registered = register_tasks(
-                conn, conjuntos=conjuntos_filter
+                conn, conjuntos=conjuntos_filter, schedule_overrides=schedule_overrides
             )
             conn.commit()
         print(f"scheduler.tasks: {inserted} insertadas, {updated} actualizadas.")
@@ -1511,6 +1529,13 @@ def main() -> int:
         metavar="conjunto",
         help="Conjunto(s) a registrar (por defecto: todos). Valores: %s."
         % ", ".join(sorted(c for c in CONJUNTOS_REGISTRY if c != "test") + ["borme"]),
+    )
+    reg_parser.add_argument(
+        "--frecuencia",
+        default=None,
+        metavar="FRECUENCIA",
+        help="Frecuencia de ejecución para todas las tareas registradas. Opciones: %s. Por defecto cada tarea usa su frecuencia predeterminada."
+        % ", ".join(VALID_SCHEDULE_EXPRS),
     )
     reg_parser.set_defaults(func=cmd_scheduler_register)
     sched_sub.add_parser(

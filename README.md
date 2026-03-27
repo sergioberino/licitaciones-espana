@@ -4,6 +4,18 @@ Fork de [BquantFinance/licitaciones-espana](https://github.com/BquantFinance/lic
 
 Última sincronización con upstream: commit `68e469b`, 2026-03-23 (rama `feat/upstream-sync-1.1.2`).
 
+## Contribución y gobernanza
+
+Consulta `CONTRIBUTING.md` para el flujo obligatorio de contribución (issue -> branch -> PR), políticas de revisión y criterios de bypass para owner/admin en casos excepcionales.
+
+## ¿Cómo contribuir?
+
+1. Crea una issue con contexto y propuesta.
+2. Crea una rama desde `main` con prefijo `feat/`, `fix/` o `chore/`.
+3. Implementa los cambios y valida con tests/checks.
+4. Abre una PR enlazando la issue (por ejemplo: `Closes #123`).
+5. Espera a que los checks obligatorios de CI estén en verde para hacer merge.
+
 ## Arquitectura
 
 ```
@@ -59,7 +71,7 @@ Instalable via `pip install -e .`. Punto de entrada: `etl.cli:main`.
 | `licitia-etl status` | Comprueba conexión a la base de datos |
 | `licitia-etl init-db` | Aplica esquemas y carga datos estáticos (CPV, DIR3, Provincias, CCAA) |
 | `licitia-etl ingest` *conjunto* *subconjunto* [*--anos*] | Descarga/genera parquet e ingesta en tablas L0 |
-| `licitia-etl scheduler register` [*conjuntos*] | Registra tareas programadas |
+| `licitia-etl scheduler register` [*conjuntos*] [`--frecuencia` *expr*] | Registra tareas programadas. `--frecuencia` acepta: `Diario`, `Semanal`, `Mensual`, `Trimestral`, `Semestral`, `Anual` |
 | `licitia-etl scheduler run` | Inicia el scheduler (ejecuta tareas según frecuencia) |
 | `licitia-etl scheduler stop` | Detiene el proceso del scheduler |
 | `licitia-etl scheduler status` | Lista tareas con última ejecución, estado y próxima ejecución |
@@ -89,7 +101,8 @@ Documentación interactiva disponible en `/docs` (Swagger UI). Referencia comple
 | `/ingest/log` | GET | Tail del log del subproceso de ingesta |
 | `/scheduler/status` | GET | Estado de tareas programadas y estado del bucle (`loop_running`) |
 | `/scheduler/running` | GET | Ejecuciones activas con metadatos de tarea |
-| `/scheduler/register` | POST | Registra tareas del scheduler (acepta `conjuntos[]` o `tasks[]`) |
+| `/scheduler/defaults` | GET | Frecuencias válidas (`valid_exprs`) y frecuencia predeterminada por tarea (`defaults[]`) |
+| `/scheduler/register` | POST | Registra tareas del scheduler (acepta `conjuntos[]` o `tasks[]`, `schedule_expr` opcional) |
 | `/scheduler/run` | POST | Arranca el scheduler o ejecuta una tarea concreta |
 | `/scheduler/stop` | POST | Detiene el proceso del scheduler (SIGTERM) |
 | `/scheduler/runs/stop` | POST | Detiene ejecuciones seleccionadas por `run_id` (SIGTERM) |
@@ -106,7 +119,7 @@ Documentación interactiva disponible en `/docs` (Swagger UI). Referencia comple
 
 1. **Esquemas y datos estáticos** — Crea schemas (`dim`, `scheduler`, L0) y carga dimensiones estáticas (CPV ~9.450 códigos, CCAA, Provincias, DIR3).
 2. **Ingesta L0** — Descarga datos de fuentes públicas (Parquet/XLSX), los transforma y carga en tablas L0 del schema de trabajo.
-3. **Scheduler** — Ejecuta ingestas programadas por frecuencia (Mensual/Trimestral/Anual) con registro de ejecuciones, log y próxima ejecución.
+3. **Scheduler** — Ejecuta ingestas programadas con cualquiera de las seis frecuencias disponibles: `Diario`, `Semanal`, `Mensual`, `Trimestral`, `Semestral`, `Anual`. Registra ejecuciones, emite log y calcula próxima ejecución.
 4. **Supervisión** — Health check con conectividad BD, info de schemas y tablas.
 
 ### Conjuntos soportados
@@ -174,18 +187,19 @@ tests/               # Tests (unit + integration)
 
 ---
 
-## Últimos cambios (v1.2.0 — 2026-03-25)
+## Últimos cambios (v1.2.1 — 2026-03-25)
 
-- **DDL Nacional v2**: 8 nuevas columnas en tablas `nacional_*` — `valor_estimado_contrato` (corrección de mapeo de importes), referencias documentales PCAP/PPT (`doc_legal_*`, `doc_tecnico_*`, `docs_adicionales`), `criterios_adjudicacion` y `requisitos_solvencia` (ambas JSONB).
-- **Migración 011** aplicable vía `POST /init-db` o `licitia-etl init-db`.
-- **Fix importe**: `EstimatedOverallContractAmount` ya no se mapea a `importe_sin_iva` sino a `valor_estimado_contrato`.
-- **Sanitización de URLs**: entidades HTML (`&amp;` → `&`) normalizadas en todas las URLs extraídas de atoms PLACSP.
+- **Frecuencias personalizadas en el scheduler**: `Diario`, `Semanal`, `Mensual`, `Trimestral`, `Semestral`, `Anual` — configurables por tarea al registrar.
+- **`GET /scheduler/defaults`**: nuevo endpoint que devuelve las frecuencias válidas y el intervalo predeterminado por tarea.
+- **`POST /scheduler/register`**: acepta `schedule_expr` (global o por tarea); devuelve HTTP 422 si el valor no es válido.
+- **CLI `--frecuencia`**: `licitia-etl scheduler register --frecuencia Semanal` aplica la frecuencia a todas las tareas registradas en esa llamada.
 - Ver [CHANGELOG.md](CHANGELOG.md) para el detalle completo.
 
 ## Historial de versiones
 
 | Versión | Fecha | Resumen |
 |---------|-------|---------|
+| **1.2.1** | 2026-03-25 | Frecuencias personalizadas en el scheduler (Diario/Semanal/Semestral), GET /scheduler/defaults, validación 422, --frecuencia CLI |
 | **1.2.0** | 2026-03-25 | DDL Nacional v2: 8 columnas nuevas, fix importe, criterios adjudicación, requisitos solvencia |
 | **1.1.2** | 2026-03-25 | Sync upstream: Andalucía refactor, Asturías script, calidad module; data hygiene |
 | **1.1.1** | 2026-03-03 | Scheduler CRUD, `loop_running`, `POST /scheduler/runs/stop`, `POST /scheduler/unregister` |
