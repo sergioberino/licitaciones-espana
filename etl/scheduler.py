@@ -802,6 +802,16 @@ def _build_task_cmd(conjunto: str, subconjunto: str) -> list[str]:
             "--anos",
             f"{y}-{y}",
         ]
+
+    if conjunto == "nacional" and subconjunto == "subvenciones":
+        return [
+            sys.executable,
+            "-m",
+            "etl.cli",
+            "subvenciones",
+            "diario",
+        ]
+
     cmd = [sys.executable, "-m", "etl.cli", "ingest", conjunto, subconjunto]
     if conjunto in ("nacional", "ted"):
         y = date.today().year

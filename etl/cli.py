@@ -1329,6 +1329,50 @@ def _ensure_borme_schema() -> None:
                 print(f"[borme] Error aplicando {f}: {e}", file=sys.stderr)
 
 
+def cmd_subvenciones(args: argparse.Namespace) -> int:
+    """Subvenciones: scrape historico o diario desde API de subvenciones."""
+    subv_cmd = getattr(args, "subv_cmd", None)
+    if not subv_cmd:
+        print(
+            "Indique un subcomando: historico o diario. Use 'licitia-etl subvenciones --help' para más info.",
+            file=sys.stderr,
+        )
+        return 1
+
+    from nacional.subvenciones import scrape_historico, scrape_diario
+
+    if subv_cmd == "historico":
+        fecha_desde = args.fecha_desde
+        fecha_hasta = getattr(args, "fecha_hasta", None)
+        if not fecha_desde:
+            print(
+                "Error: --fecha-desde es obligatorio para scrape historico.",
+                file=sys.stderr,
+            )
+            return 1
+        try:
+            parquet_path = scrape_historico(fecha_desde, fecha_hasta)
+            return 0
+        except Exception as e:
+            print(f"Error en scrape historico: {e}", file=sys.stderr)
+            return 1
+
+    elif subv_cmd == "diario":
+        try:
+            inserted, omitted = scrape_diario()
+            print(
+                f"Scrape diario completado. Insertados: {inserted}, Omitidos (duplicados): {omitted}"
+            )
+            return 0
+        except Exception as e:
+            print(f"Error en scrape diario: {e}", file=sys.stderr)
+            return 1
+
+    else:
+        print("Subcomando subvenciones no reconocido.", file=sys.stderr)
+        return 1
+
+
 def cmd_borme(args: argparse.Namespace) -> int:
     """BORME: ingest or anomaly detection."""
     borme_cmd = getattr(args, "borme_cmd", None)
@@ -1646,6 +1690,41 @@ def main() -> int:
     )
 
     borme_parser.set_defaults(func=cmd_borme)
+
+    # Subvenciones
+    subv_parser = subparsers.add_parser(
+        "subvenciones",
+        help="Subvenciones: scrape historico (→ Parquet) o diario (→ DB).",
+        description="Subvenciones: obtiene datos de la API de subvenciones. Modo historico genera Parquet para ingestar luego; modo diario inserta directamente en la base de datos.",
+    )
+    subv_sub = subv_parser.add_subparsers(
+        dest="subv_cmd", help="Subcomando subvenciones"
+    )
+
+    subv_historico = subv_sub.add_parser(
+        "historico",
+        help="Scrape historico: genera archivo Parquet en tmp/output/",
+        description="Obtiene todas las subvenciones en un rango de fechas (DD-MM-YYYY) y genera un archivo Parquet. Luego ingestar con: licitia-etl ingest nacional subvenciones",
+    )
+    subv_historico.add_argument(
+        "--fecha-desde",
+        required=True,
+        help="Fecha inicial en formato DD-MM-YYYY (ej: 01-01-2020)",
+    )
+    subv_historico.add_argument(
+        "--fecha-hasta",
+        required=False,
+        default=None,
+        help="Fecha final en formato DD-MM-YYYY (ej: 31-12-2023). Por defecto: hoy",
+    )
+
+    subv_diario = subv_sub.add_parser(
+        "diario",
+        help="Scrape diario: obtiene ultimas subvenciones e inserta directamente en DB",
+        description="Obtiene las subvenciones más recientes (endpoint /ultimas) e inserta directamente en l0.nacional_subvenciones_minimo. Usado por el scheduler para actualizaciones diarias.",
+    )
+
+    subv_parser.set_defaults(func=cmd_subvenciones)
 
     args = parser.parse_args()
     if not args.command:
