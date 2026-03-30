@@ -3,7 +3,7 @@ import psycopg2
 from psycopg2.extras import execute_batch
 from dataclasses import dataclass, asdict, field
 from datetime import date, datetime
-from typing import List, Dict, Any
+from typing import List, Dict, Any, Union
 import sys
 from pathlib import Path
 import time
@@ -133,11 +133,35 @@ class LatestParams:
             raise ValueError(f"pageSize debe estar entre [50, 100]: {self.pageSize}")
 
 
-def scrape_historico(params: SearchParams) -> int:
+def scrape_subvenciones(params: SearchParams | LatestParams, mode: str) -> None:
     """
-    Fetch all historical grants data and save to database.
-    Returns the total number of records processed.
+    Fetch grants data and save to database.
+    Validates that params type matches the specified mode.
+
+    Args:
+        params: SearchParams for historical data or LatestParams for latest updates
+        mode: "historico" or "diario" - must match params type
+
+    Returns:
+        Total number of records processed
+
+    Raises:
+        ValueError: If mode is invalid or doesn't match params type
     """
+    # Validate mode
+    if mode not in ("historico", "diario"):
+        raise ValueError(f"Modo invalido: {mode}. Debe ser 'historico' o 'diario'")
+
+    # Double validation: check params type matches mode
+    if mode == "historico" and not isinstance(params, SearchParams):
+        raise ValueError(
+            f"Modo 'historico' requiere SearchParams, recibido: {type(params).__name__}"
+        )
+    if mode == "diario" and not isinstance(params, LatestParams):
+        raise ValueError(
+            f"Modo 'diario' requiere LatestParams, recibido: {type(params).__name__}"
+        )
+
     params.validate()
 
     db_url = get_database_url()
@@ -146,13 +170,18 @@ def scrape_historico(params: SearchParams) -> int:
             "No se pudo obtener la URL de la base de datos. Verifica las variables de entorno."
         )
 
+    if mode == "diario":
+        endpoint = API_ENDPOINT_LATEST
+    else:
+        endpoint = API_ENDPOINT_SEARCH
+
     conn = None
     total_records = 0
-    rate_limiter = RateLimiter(max_requests=50, time_window=60)
+    rate_limiter = RateLimiter(max_requests=49, time_window=60)
 
     try:
         conn = psycopg2.connect(db_url)
-        print("[INFO] Conexion a base de datos establecida")
+        print(f"[INFO] Conexion a base de datos establecida (modo: {mode})")
 
         page = params.page
         is_last_page = False
@@ -163,7 +192,7 @@ def scrape_historico(params: SearchParams) -> int:
 
             try:
                 rate_limiter.wait_if_needed()
-                res = requests.get(API_ENDPOINT_SEARCH, params=params.to_dict())
+                res = requests.get(endpoint, params=params.to_dict())
                 res.raise_for_status()
                 data = res.json()
 
@@ -176,7 +205,7 @@ def scrape_historico(params: SearchParams) -> int:
                     print(f"[INFO] Total de registros a procesar: {total_elements}")
                     pbar = tqdm(
                         total=total_elements,
-                        desc="Descargando subvenciones",
+                        desc=f"Descargando subvenciones ({mode})",
                         unit="reg",
                     )
 
@@ -236,9 +265,8 @@ def scrape_historico(params: SearchParams) -> int:
             pbar.close()
 
         print(
-            f"[INFO] Scraping historico completado: {total_records} registros procesados"
+            f"[INFO] Scraping {mode} completado: {total_records} registros procesados"
         )
-        return total_records
 
     except Exception as err:
         print(f"[ERROR] Error fatal durante scraping: {err}")
@@ -248,19 +276,18 @@ def scrape_historico(params: SearchParams) -> int:
             conn.close()
 
 
-def main():
-    """Example usage of the scraper."""
-    params = SearchParams(
-        page=0, pageSize=50, fechaDesde="01-01-2024", fechaHasta="31-12-2024"
-    )
+def scrape_historico(params: SearchParams) -> int:
+    """Wrapper for historical scraping."""
+    return scrape_subvenciones(params, mode="historico")
 
-    try:
-        total = scrape_historico(params)
-        print(f"[INFO] Total procesado: {total} registros")
-        return 0
-    except Exception as err:
-        print(f"[ERROR] {err}")
-        return 1
+
+def scrape_diario(params: LatestParams) -> int:
+    """Wrapper for daily/latest scraping."""
+    return scrape_subvenciones(params, mode="diario")
+
+
+def main():
+    return 0
 
 
 if __name__ == "__main__":
