@@ -45,6 +45,7 @@ INIT_MIGRATIONS = (
     "008_scheduler.sql",
     "009_scheduler_runs_pid.sql",
     "011_nacional_new_columns.sql",
+    "012_subvenciones_minimo.sql",
 )
 
 BORME_MIGRATIONS = ("010_borme.sql",)
