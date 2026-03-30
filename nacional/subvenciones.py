@@ -370,7 +370,7 @@ def main():
             parquet_path = scrape_historico(params)
             print(f"[INFO] Parquet listo para ingest: {parquet_path}")
 
-        else:  # diario
+        else:
             params = LatestParams(page=0, pageSize=50)
             total = scrape_diario(params)
             print(f"[INFO] Total registros nuevos: {total}")
