@@ -767,6 +767,12 @@ def cmd_ingest(args: argparse.Namespace) -> int:
         column_defs = reg.get("column_defs")
         natural_id_col = reg.get("natural_id_col")
 
+        # Special handling for subvenciones: use SUBVENCIONES_PARQUET_COLUMNS
+        if conjunto == "nacional" and subconjunto == "subvenciones":
+            from etl.ingest_l0 import SUBVENCIONES_PARQUET_COLUMNS
+
+            column_defs = SUBVENCIONES_PARQUET_COLUMNS
+
         total_inserted = 0
         total_skipped = 0
         batch_errors: list[str] = []

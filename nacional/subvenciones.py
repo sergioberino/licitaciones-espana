@@ -2,12 +2,14 @@ import requests
 import psycopg2
 from psycopg2.extras import execute_batch
 from dataclasses import dataclass, asdict, field
-from datetime import date, datetime
-from typing import List, Dict, Any, Union
+from datetime import datetime
 import sys
 from pathlib import Path
 import time
 from tqdm import tqdm
+import pandas as pd
+import os
+import argparse
 
 # Add parent directory to path to import etl modules
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
@@ -17,6 +19,16 @@ from etl.config import get_database_url
 API_BASE_URL = "https://www.infosubvenciones.es/bdnstrans/api/convocatorias"
 API_ENDPOINT_SEARCH = API_BASE_URL + "/busqueda"
 API_ENDPOINT_LATEST = API_BASE_URL + "/ultimas"
+
+# Directory configuration (similar to nacional/licitaciones.py)
+_repo_root = Path(__file__).resolve().parent.parent
+_tmp_base = Path(os.environ.get("LICITACIONES_TMP_DIR", _repo_root / "tmp"))
+OUTPUT_DIR = _tmp_base / "output"
+
+
+def _ensure_output_dir():
+    """Ensure output directory exists."""
+    OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
 
 class RateLimiter:
@@ -71,9 +83,9 @@ class SearchParams:
     """Search parameters for grants (subvenciones) API."""
 
     page: int = 0
-    pageSize: int = 1000
+    pageSize: int = 10000
     fechaDesde: str | None = None  # Format: "DD-MM-YYYY"
-    fechaHasta: str | None = None  # Format: "DD-MM-YYYY"
+    fechaHasta: str = datetime.now().strftime("%d-%m-%Y")  # Format: "DD-MM-YYYY"
 
     def to_dict(self) -> dict:
         """Convert to dictionary removing None values."""
@@ -83,9 +95,9 @@ class SearchParams:
         """Validate parameters."""
         if self.page < 0:
             raise ValueError(f"page debe ser >= 0, recibido: {self.page}")
-        if self.pageSize < 50 or self.pageSize > 1000:
+        if self.pageSize < 50 or self.pageSize > 10000:
             raise ValueError(
-                f"pageSize debe estar entre 50-1000, recibido: {self.pageSize}"
+                f"pageSize debe estar entre 50-10000, recibido: {self.pageSize}"
             )
 
         # Validate date formats if present
@@ -133,35 +145,116 @@ class LatestParams:
             raise ValueError(f"pageSize debe estar entre [50, 100]: {self.pageSize}")
 
 
-def scrape_subvenciones(params: SearchParams | LatestParams, mode: str) -> None:
+def scrape_historico(params: SearchParams) -> Path:
     """
-    Fetch grants data and save to database.
-    Validates that params type matches the specified mode.
+    Scrape historical grants data and save to Parquet file.
+    This is for initial bulk load - generates Parquet for etl/ingest_l0.py to process.
 
     Args:
-        params: SearchParams for historical data or LatestParams for latest updates
-        mode: "historico" or "diario" - must match params type
+        params: SearchParams with date range (fechaDesde required, fechaHasta defaults to today)
 
     Returns:
-        Total number of records processed
-
-    Raises:
-        ValueError: If mode is invalid or doesn't match params type
+        Path to generated Parquet file
     """
-    # Validate mode
-    if mode not in ("historico", "diario"):
-        raise ValueError(f"Modo invalido: {mode}. Debe ser 'historico' o 'diario'")
+    if not params.fechaDesde:
+        raise ValueError("fechaDesde es requerido para scrape historico")
 
-    # Double validation: check params type matches mode
-    if mode == "historico" and not isinstance(params, SearchParams):
-        raise ValueError(
-            f"Modo 'historico' requiere SearchParams, recibido: {type(params).__name__}"
-        )
-    if mode == "diario" and not isinstance(params, LatestParams):
-        raise ValueError(
-            f"Modo 'diario' requiere LatestParams, recibido: {type(params).__name__}"
+    params.validate()
+    ano_inicio = int(params.fechaDesde[-4:])
+    ano_fin = int(params.fechaHasta[-4:])
+
+    _ensure_output_dir()
+
+    all_records = []
+    rate_limiter = RateLimiter(max_requests=49, time_window=60)
+
+    page = params.page
+    is_last_page = False
+    pbar = None
+
+    print("[INFO] Iniciando scraping historico...")
+
+    try:
+        while not is_last_page:
+            params.page = page
+
+            rate_limiter.wait_if_needed()
+            res = requests.get(API_ENDPOINT_SEARCH, params=params.to_dict())
+            res.raise_for_status()
+            data = res.json()
+
+            content = data.get("content", [])
+            is_last_page = data.get("last", True)
+
+            # Initialize progress bar on first iteration
+            if pbar is None:
+                total_elements = data.get("totalElements", 0)
+                pbar = tqdm(
+                    total=total_elements,
+                    desc="Descargando subvenciones (historico)",
+                    unit="reg",
+                )
+
+            if not content:
+                break
+
+            # Collect records as dictionaries for DataFrame
+            for item in content:
+                all_records.append(
+                    {
+                        "id": item.get("id"),
+                        "numeroConvocatoria": item.get("numeroConvocatoria"),
+                        "mrr": item.get("mrr"),
+                        "descripcion": item.get("descripcion"),
+                        "descripcionLeng": item.get("descripcionLeng"),
+                        "fechaRecepcion": item.get("fechaRecepcion"),
+                        "nivel1": item.get("nivel1"),
+                        "nivel2": item.get("nivel2"),
+                        "nivel3": item.get("nivel3"),
+                        "codigoINVENTE": item.get("codigoInvente"),
+                    }
+                )
+
+            if pbar:
+                pbar.update(len(content))
+
+            page += 1
+
+        if pbar:
+            pbar.close()
+
+        # Convert to DataFrame and save as Parquet
+        df = pd.DataFrame(all_records)
+
+        parquet_filename = f"licitaciones_subvenciones_{ano_inicio}_{ano_fin}.parquet"
+        parquet_path = OUTPUT_DIR / parquet_filename
+
+        df.to_parquet(parquet_path, engine="pyarrow", index=False)
+
+        print(f"[INFO] Parquet generado: {parquet_path}")
+        print(f"[INFO] Total registros: {len(df):,}")
+        print(
+            f"[INFO] Tamaño archivo: {parquet_path.stat().st_size / (1024 * 1024):.2f} MB"
         )
 
+        return parquet_path
+
+    except Exception as err:
+        print(f"[ERROR] Error durante scraping historico: {err}")
+        raise
+
+
+def scrape_diario(params: LatestParams) -> None:
+    """
+    Scrape latest/daily grants and insert directly into database.
+    This is for daily scheduler updates - small volume so direct insert is efficient.
+
+    Args:
+        params: LatestParams for latest updates
+
+    Returns:
+        Total number of new records inserted
+    """
     params.validate()
 
     db_url = get_database_url()
@@ -170,125 +263,124 @@ def scrape_subvenciones(params: SearchParams | LatestParams, mode: str) -> None:
             "No se pudo obtener la URL de la base de datos. Verifica las variables de entorno."
         )
 
-    if mode == "diario":
-        endpoint = API_ENDPOINT_LATEST
-    else:
-        endpoint = API_ENDPOINT_SEARCH
-
     conn = None
     total_records = 0
     rate_limiter = RateLimiter(max_requests=49, time_window=60)
 
     try:
         conn = psycopg2.connect(db_url)
-        print(f"[INFO] Conexion a base de datos establecida (modo: {mode})")
+        print("[INFO] Conexion a base de datos establecida (modo: diario)")
 
         page = params.page
         is_last_page = False
-        pbar = None
 
         while not is_last_page:
             params.page = page
 
-            try:
-                rate_limiter.wait_if_needed()
-                res = requests.get(endpoint, params=params.to_dict())
-                res.raise_for_status()
-                data = res.json()
+            rate_limiter.wait_if_needed()
+            res = requests.get(API_ENDPOINT_LATEST, params=params.to_dict())
+            res.raise_for_status()
+            data = res.json()
 
-                content = data.get("content", [])
-                is_last_page = data.get("last", True)
+            content = data.get("content", [])
+            is_last_page = data.get("last", True)
 
-                # Initialize progress bar on first iteration
-                if pbar is None:
-                    total_elements = data.get("totalElements", 0)
-                    print(f"[INFO] Total de registros a procesar: {total_elements}")
-                    pbar = tqdm(
-                        total=total_elements,
-                        desc=f"Descargando subvenciones ({mode})",
-                        unit="reg",
+            if not content:
+                break
+
+            records = []
+            for item in content:
+                records.append(
+                    (
+                        item.get("id"),
+                        item.get("numeroConvocatoria"),
+                        item.get("mrr"),
+                        item.get("descripcion"),
+                        item.get("descripcionLeng"),
+                        item.get("fechaRecepcion"),
+                        item.get("nivel1"),
+                        item.get("nivel2"),
+                        item.get("nivel3"),
+                        item.get("codigoInvente"),
                     )
+                )
 
-                if not content:
-                    break
+            with conn.cursor() as cur:
+                execute_batch(
+                    cur,
+                    """
+                    INSERT INTO l0.nacional_subvenciones_minimo 
+                    (id, numeroConvocatoria, mrr, descripcion, descripcionLeng,
+                     fechaRecepcion, nivel1, nivel2, nivel3, codigoINVENTE)
+                    VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+                    ON CONFLICT (id) DO NOTHING
+                    """,
+                    records,
+                    page_size=params.pageSize,
+                )
+                conn.commit()
 
-                records = []
-                for item in content:
-                    records.append(
-                        (
-                            item.get("id"),
-                            item.get("numeroConvocatoria"),
-                            item.get("mrr"),
-                            item.get("descripcion"),
-                            item.get("descripcionLeng"),
-                            item.get("fechaRecepcion"),
-                            item.get("nivel1"),
-                            item.get("nivel2"),
-                            item.get("nivel3"),
-                            item.get("codigoInvente"),
-                        )
-                    )
+            total_records += len(content)
 
-                with conn.cursor() as cur:
-                    execute_batch(
-                        cur,
-                        """
-                        INSERT INTO l0.nacional_subvenciones_minimo 
-                        (id, numeroConvocatoria, mrr, descripcion, descripcionLeng,
-                         fechaRecepcion, nivel1, nivel2, nivel3, codigoINVENTE)
-                        VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
-                        ON CONFLICT (id) DO NOTHING
-                        """,
-                        records,
-                        page_size=1000,
-                    )
-                    conn.commit()
+            page += 1
 
-                total_records += len(content)
-                if pbar:
-                    pbar.update(len(content))
-
-                page += 1
-
-            except requests.exceptions.RequestException as err:
-                print(f"\n[ERROR] Error en peticion HTTP: {err}")
-                raise
-            except psycopg2.Error as err:
-                print(f"\n[ERROR] Error en base de datos: {err}")
-                conn.rollback()
-                raise
-            except Exception as err:
-                print(f"\n[ERROR] Error inesperado: {err}")
-                raise
-
-        if pbar:
-            pbar.close()
-
-        print(
-            f"[INFO] Scraping {mode} completado: {total_records} registros procesados"
-        )
+        print(f"[INFO] Scraping diario completado: {total_records} registros nuevos")
 
     except Exception as err:
-        print(f"[ERROR] Error fatal durante scraping: {err}")
+        print(f"[ERROR] Error durante scraping diario: {err}")
+        if conn:
+            conn.rollback()
         raise
     finally:
         if conn:
             conn.close()
 
 
-def scrape_historico(params: SearchParams) -> int:
-    """Wrapper for historical scraping."""
-    return scrape_subvenciones(params, mode="historico")
-
-
-def scrape_diario(params: LatestParams) -> int:
-    """Wrapper for daily/latest scraping."""
-    return scrape_subvenciones(params, mode="diario")
-
-
 def main():
-    return 0
+    parser = argparse.ArgumentParser(description="Scraper de subvenciones")
+    parser.add_argument(
+        "--modo",
+        choices=["historico", "diario"],
+        required=True,
+        help="Modo de scraping",
+    )
+    parser.add_argument(
+        "--fecha-desde", help="Fecha desde (DD-MM-YYYY) - requerido para historico"
+    )
+    parser.add_argument(
+        "--fecha-hasta",
+        help="Fecha hasta (DD-MM-YYYY) - opcional, por defecto usa fecha actual",
+    )
+
+    args = parser.parse_args()
+
+    try:
+        if args.modo == "historico":
+            if not args.fecha_desde:
+                print("[ERROR] Modo historico requiere: --fecha-desde")
+                return 1
+
+            params = SearchParams(
+                page=0,
+                pageSize=1000,
+                fechaDesde=args.fecha_desde,
+                fechaHasta=args.fecha_hasta,
+            )
+
+            parquet_path = scrape_historico(params)
+            print(f"[INFO] Parquet listo para ingest: {parquet_path}")
+
+        else:  # diario
+            params = LatestParams(page=0, pageSize=50)
+            total = scrape_diario(params)
+            print(f"[INFO] Total registros nuevos: {total}")
+
+        return 0
+
+    except Exception as err:
+        print(f"[ERROR] {err}")
+        return 1
 
 
 if __name__ == "__main__":
-    main()
+    exit(main())
