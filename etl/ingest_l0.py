@@ -641,9 +641,9 @@ def load_parquet_to_l0(
 
     # Subvenciones: skip natural_id validation (uses direct PK)
     if is_subvenciones:
-        logger.info("Filas con natural_id válido: %s de %s.", len(df), len(df))
         use_synthetic_id = False
     else:
+        logger.info("Filas con natural_id válido: %s de %s.", len(df), len(df))
         # Licitaciones: validate natural_id
         # Aceptar primera columna como natural_id si no existe la esperada
         if natural_id_col not in df.columns and len(df.columns):
@@ -704,6 +704,7 @@ def load_parquet_to_l0(
 
     # Build INSERT statement based on dataset type
     if is_subvenciones:
+        print("Añadiendo todas las subvenciones a la base de datos...")
         # Subvenciones: direct columns from parquet, no natural_id
         insert_cols = [c for c, _ in column_defs]
         placeholders = ", ".join(["%s"] * len(insert_cols))

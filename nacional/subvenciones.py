@@ -86,6 +86,8 @@ class SearchParams:
     pageSize: int = 10000
     fechaDesde: str | None = None  # Format: "DD/MM/YYYY"
     fechaHasta: str = datetime.now().strftime("%d/%m/%Y")  # Format: "DD/MM/YYYY"
+    descripcion: str = field(default="Subvención", init=False)
+    descripcionTipoBusqueda: str = field(default=2, init=False)
 
     def to_dict(self) -> dict:
         """Convert to dictionary removing None values."""
@@ -130,9 +132,9 @@ class LatestParams:
 
     page: int = 0
     pageSize: int = 50
-    order: str = field(
-        default="numeroConvocatoria", init=False
-    )  # Fixed order field (API expects camelCase)
+    order: str = field(default="numeroConvocatoria", init=False)
+    descripcion: str = field(default="Subvención", init=False)
+    descripcionTipoBusqueda: str = field(default=2, init=False)
 
     def to_dict(self) -> dict:
         """Convert to dictionary."""
