@@ -45,7 +45,7 @@ INIT_MIGRATIONS = (
     "008_scheduler.sql",
     "009_scheduler_runs_pid.sql",
     "011_nacional_new_columns.sql",
-    "012_subvenciones_minimo.sql",
+    "012_nacional_subvenciones.sql",
 )
 
 BORME_MIGRATIONS = ("010_borme.sql",)
@@ -743,7 +743,7 @@ def cmd_ingest(args: argparse.Namespace) -> int:
 
         # --- Batch loading: detect partials or single Parquet ---
         output_dir = parquet_path.parent
-        
+
         # Search for partials specific to this conjunto/subconjunto to avoid mixing with other datasets
         # For 'nacional', use script_conjunto_arg mapping to match partial naming from scripts
         if conjunto == "nacional" and "script_conjunto_arg" in reg:
@@ -751,7 +751,7 @@ def cmd_ingest(args: argparse.Namespace) -> int:
             partial_pattern = f"_part_{script_conjunto}_*.parquet"
         else:
             partial_pattern = f"_part_{subconjunto}_*.parquet"
-        
+
         partial_glob = sorted(output_dir.glob(partial_pattern))
         use_partials = len(partial_glob) > 0
 

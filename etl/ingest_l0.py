@@ -543,7 +543,7 @@ def ensure_l0_table(
     full_table = f'"{schema}"."{table_name}"'
 
     if is_subvenciones:
-        # Subvenciones: use the existing schema from 012_subvenciones_minimo.sql
+        # Subvenciones: use the existing schema from 012_nacional_subvenciones.sql
         # Don't create the table here, it's created by the SQL migration
         # Just verify it exists
         with conn.cursor() as cur:
@@ -560,7 +560,7 @@ def ensure_l0_table(
             exists = cur.fetchone()[0]
             if not exists:
                 raise ValueError(
-                    f"Table {full_table} does not exist. Run 'init-db' first to apply schema 012_subvenciones_minimo.sql"
+                    f"Table {full_table} does not exist. Run 'init-db' first to apply schema 012_nacional_subvenciones.sql"
                 )
     else:
         # Licitaciones: standard L0 pattern with natural_id
