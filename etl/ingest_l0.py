@@ -532,59 +532,87 @@ def ensure_l0_table(
     column_defs: Optional[list[tuple[str, str]]] = None,
     natural_id_col: str = NATURAL_ID_PARQUET_COL,
 ) -> None:
-    """Crea la tabla L0 con PK surrogada (l0_id, natural_id UNIQUE) y columnas de la fuente + extensiones CPV (solo para licitaciones)."""
+    """Crea la tabla L0. Para licitaciones usa patrón L0 (natural_id), para subvenciones usa PK directa."""
     if column_defs is None:
         column_defs = NACIONAL_PARQUET_COLUMNS
 
-    # Check if we need CPV columns (only for licitaciones, not for subvenciones)
+    # Check if we're dealing with subvenciones (different table structure)
+    is_subvenciones = column_defs is SUBVENCIONES_PARQUET_COLUMNS
     has_cpv = column_defs is NACIONAL_PARQUET_COLUMNS
 
-    col_defs = [
-        '"l0_id" BIGSERIAL PRIMARY KEY',
-        '"natural_id" TEXT UNIQUE NOT NULL',
-    ]
-    col_defs.extend(f'"{c}" {t}' for c, t in column_defs if c != natural_id_col)
-
-    # Only add CPV columns for licitaciones
-    if has_cpv:
-        col_defs.extend(
-            [
-                '"principal_prefix4" INTEGER',
-                '"principal_prefix6" INTEGER',
-                '"secondary_prefix6" INTEGER[]',
-            ]
-        )
-
-    col_defs.append('"ingested_at" TIMESTAMPTZ DEFAULT NOW()')
-
     full_table = f'"{schema}"."{table_name}"'
-    create_sql = (
-        f"CREATE TABLE IF NOT EXISTS {full_table} (\n  "
-        + ",\n  ".join(col_defs)
-        + "\n)"
-    )
-    with conn.cursor() as cur:
-        cur.execute(create_sql)
 
-        # Only create CPV indexes for licitaciones
-        if has_cpv:
-            for col in ("principal_prefix4", "principal_prefix6", "secondary_prefix6"):
-                iname = f"idx_{table_name}_{col}"
-                if col == "secondary_prefix6":
-                    cur.execute(
-                        f'CREATE INDEX IF NOT EXISTS {iname} ON {full_table} USING GIN ("{col}")'
-                    )
-                else:
-                    cur.execute(
-                        f'CREATE INDEX IF NOT EXISTS {iname} ON {full_table} ("{col}")'
-                    )
-
-        col_names = [c[0] for c in column_defs]
-        if "expediente" in col_names and "id_plataforma" in col_names:
-            iname = f"idx_{table_name}_org_key"
+    if is_subvenciones:
+        # Subvenciones: use the existing schema from 012_subvenciones_minimo.sql
+        # Don't create the table here, it's created by the SQL migration
+        # Just verify it exists
+        with conn.cursor() as cur:
             cur.execute(
-                f'CREATE INDEX IF NOT EXISTS {iname} ON {full_table} ("expediente", "id_plataforma")'
+                f"""
+                SELECT EXISTS (
+                    SELECT FROM information_schema.tables 
+                    WHERE table_schema = %s 
+                    AND table_name = %s
+                )
+            """,
+                (schema, table_name),
             )
+            exists = cur.fetchone()[0]
+            if not exists:
+                raise ValueError(
+                    f"Table {full_table} does not exist. Run 'init-db' first to apply schema 012_subvenciones_minimo.sql"
+                )
+    else:
+        # Licitaciones: standard L0 pattern with natural_id
+        col_defs = [
+            '"l0_id" BIGSERIAL PRIMARY KEY',
+            '"natural_id" TEXT UNIQUE NOT NULL',
+        ]
+        col_defs.extend(f'"{c}" {t}' for c, t in column_defs if c != natural_id_col)
+
+        # Only add CPV columns for licitaciones
+        if has_cpv:
+            col_defs.extend(
+                [
+                    '"principal_prefix4" INTEGER',
+                    '"principal_prefix6" INTEGER',
+                    '"secondary_prefix6" INTEGER[]',
+                ]
+            )
+
+        col_defs.append('"ingested_at" TIMESTAMPTZ DEFAULT NOW()')
+
+        create_sql = (
+            f"CREATE TABLE IF NOT EXISTS {full_table} (\n  "
+            + ",\n  ".join(col_defs)
+            + "\n)"
+        )
+        with conn.cursor() as cur:
+            cur.execute(create_sql)
+
+            # Only create CPV indexes for licitaciones
+            if has_cpv:
+                for col in (
+                    "principal_prefix4",
+                    "principal_prefix6",
+                    "secondary_prefix6",
+                ):
+                    iname = f"idx_{table_name}_{col}"
+                    if col == "secondary_prefix6":
+                        cur.execute(
+                            f'CREATE INDEX IF NOT EXISTS {iname} ON {full_table} USING GIN ("{col}")'
+                        )
+                    else:
+                        cur.execute(
+                            f'CREATE INDEX IF NOT EXISTS {iname} ON {full_table} ("{col}")'
+                        )
+
+            col_names = [c[0] for c in column_defs]
+            if "expediente" in col_names and "id_plataforma" in col_names:
+                iname = f"idx_{table_name}_org_key"
+                cur.execute(
+                    f'CREATE INDEX IF NOT EXISTS {iname} ON {full_table} ("expediente", "id_plataforma")'
+                )
 
 
 def load_parquet_to_l0(
@@ -609,43 +637,54 @@ def load_parquet_to_l0(
     if natural_id_col is None:
         natural_id_col = NATURAL_ID_PARQUET_COL
 
-    # Aceptar primera columna como natural_id si no existe la esperada
-    if natural_id_col not in df.columns and len(df.columns):
-        natural_id_col = df.columns[0]
-        logger.info("Usando primera columna como natural_id: %s", natural_id_col)
-    if natural_id_col not in df.columns:
-        raise ValueError(
-            f"El parquet debe tener columna identificadora (ej. '{NATURAL_ID_PARQUET_COL}' o primera columna)."
-        )
+    is_subvenciones = column_defs is SUBVENCIONES_PARQUET_COLUMNS
 
-    # Comprobar cuántas filas tienen natural_id válido; si ninguna, usar id sintético (table_name + índice)
-    nid_series = df[natural_id_col]
-    nid_valid = (
-        nid_series.notna()
-        & (nid_series.astype(str).str.strip() != "")
-        & (nid_series.astype(str) != "nan")
-    )
-    num_valid_nid = int(nid_valid.sum())
-    use_synthetic_id = num_valid_nid == 0
-    if use_synthetic_id:
-        logger.info(
-            "Columna '%s' sin valores válidos; usando natural_id sintético (%s_0, %s_1, ...).",
-            natural_id_col,
-            table_name,
-            table_name,
-        )
-    elif num_valid_nid < len(df):
-        logger.info(
-            "Filas con natural_id válido: %s de %s (se omiten filas sin id).",
-            num_valid_nid,
-            len(df),
-        )
+    # Subvenciones: skip natural_id validation (uses direct PK)
+    if is_subvenciones:
+        logger.info("Filas con natural_id válido: %s de %s.", len(df), len(df))
+        use_synthetic_id = False
     else:
-        logger.info("Filas con natural_id válido: %s de %s.", num_valid_nid, len(df))
+        # Licitaciones: validate natural_id
+        # Aceptar primera columna como natural_id si no existe la esperada
+        if natural_id_col not in df.columns and len(df.columns):
+            natural_id_col = df.columns[0]
+            logger.info("Usando primera columna como natural_id: %s", natural_id_col)
+        if natural_id_col not in df.columns:
+            raise ValueError(
+                f"El parquet debe tener columna identificadora (ej. '{NATURAL_ID_PARQUET_COL}' o primera columna)."
+            )
+
+        # Comprobar cuántas filas tienen natural_id válido; si ninguna, usar id sintético (table_name + índice)
+        nid_series = df[natural_id_col]
+        nid_valid = (
+            nid_series.notna()
+            & (nid_series.astype(str).str.strip() != "")
+            & (nid_series.astype(str) != "nan")
+        )
+        num_valid_nid = int(nid_valid.sum())
+        use_synthetic_id = num_valid_nid == 0
+        if use_synthetic_id:
+            logger.info(
+                "Columna '%s' sin valores válidos; usando natural_id sintético (%s_0, %s_1, ...).",
+                natural_id_col,
+                table_name,
+                table_name,
+            )
+        elif num_valid_nid < len(df):
+            logger.info(
+                "Filas con natural_id válido: %s de %s (se omiten filas sin id).",
+                num_valid_nid,
+                len(df),
+            )
+        else:
+            logger.info(
+                "Filas con natural_id válido: %s de %s.", num_valid_nid, len(df)
+            )
 
     cpv_principal_col = "cpv_principal"
     cpvs_col = "cpvs"
     has_cpv = column_defs is NACIONAL_PARQUET_COLUMNS
+    is_subvenciones = column_defs is SUBVENCIONES_PARQUET_COLUMNS
 
     # Only add CPV columns for licitaciones (nacional columns), not for subvenciones
     if has_cpv:
@@ -663,28 +702,42 @@ def load_parquet_to_l0(
         )
         conn.commit()
 
-    table_base_cols = ["natural_id"] + [
-        c for c, _ in column_defs if c != natural_id_col
-    ]
-
-    # Only add CPV prefix columns for licitaciones (nacional columns), not for subvenciones
-    if has_cpv:
-        insert_cols = table_base_cols + [
-            "principal_prefix4",
-            "principal_prefix6",
-            "secondary_prefix6",
-        ]
+    # Build INSERT statement based on dataset type
+    if is_subvenciones:
+        # Subvenciones: direct columns from parquet, no natural_id
+        insert_cols = [c for c, _ in column_defs]
+        placeholders = ", ".join(["%s"] * len(insert_cols))
+        quoted = ", ".join(f'"{c}"' for c in insert_cols)
+        full_table = f'"{schema}"."{table_name}"'
+        insert_sql = f"""
+            INSERT INTO {full_table} ({quoted})
+            VALUES ({placeholders})
+            ON CONFLICT (id) DO NOTHING
+        """
     else:
-        insert_cols = table_base_cols
+        # Licitaciones: L0 pattern with natural_id
+        table_base_cols = ["natural_id"] + [
+            c for c, _ in column_defs if c != natural_id_col
+        ]
 
-    placeholders = ", ".join(["%s"] * len(insert_cols))
-    quoted = ", ".join(f'"{c}"' for c in insert_cols)
-    full_table = f'"{schema}"."{table_name}"'
-    insert_sql = f"""
-        INSERT INTO {full_table} ({quoted})
-        VALUES ({placeholders})
-        ON CONFLICT (natural_id) DO NOTHING
-    """
+        # Only add CPV prefix columns for licitaciones (nacional columns)
+        if has_cpv:
+            insert_cols = table_base_cols + [
+                "principal_prefix4",
+                "principal_prefix6",
+                "secondary_prefix6",
+            ]
+        else:
+            insert_cols = table_base_cols
+
+        placeholders = ", ".join(["%s"] * len(insert_cols))
+        quoted = ", ".join(f'"{c}"' for c in insert_cols)
+        full_table = f'"{schema}"."{table_name}"'
+        insert_sql = f"""
+            INSERT INTO {full_table} ({quoted})
+            VALUES ({placeholders})
+            ON CONFLICT (natural_id) DO NOTHING
+        """
 
     parquet_cols_ordered = [c for c, _ in column_defs]
     is_nacional = column_defs is NACIONAL_PARQUET_COLUMNS
@@ -696,63 +749,20 @@ def load_parquet_to_l0(
             for start in range(0, len(df), batch_size):
                 batch = df.iloc[start : start + batch_size]
                 rows = []
-                for batch_idx, (_, row) in enumerate(batch.iterrows()):
-                    if use_synthetic_id:
-                        nid = f"{table_name}_{start + batch_idx}"
-                    else:
-                        nid = row.get(natural_id_col)
-                        if pd.isna(nid) or nid is None:
-                            continue
-                        nid = _to_str_for_re(nid).strip() or None
-                        if not nid:
-                            continue
 
-                    # Only derive CPV prefixes for licitaciones, not for subvenciones
-                    if has_cpv:
-                        prefix4, prefix6, sec6 = derive_cpv_prefixes(
-                            row.get(cpv_principal_col),
-                            row.get(cpvs_col),
-                        )
-
-                    vals = [nid]
-                    for idx, c in enumerate(parquet_cols_ordered):
-                        if c == natural_id_col:
-                            continue
-                        v = row.get(c)
-                        if v is None or (
-                            not isinstance(v, (list, dict)) and pd.isna(v)
-                        ):
-                            vals.append(None)
-                            continue
-                        if is_nacional:
-                            if c in (
-                                "importe_sin_iva",
-                                "importe_con_iva",
-                                "importe_adjudicacion",
-                                "importe_adj_con_iva",
-                                "duracion",
+                if is_subvenciones:
+                    # Subvenciones: simple direct mapping from parquet columns
+                    for _, row in batch.iterrows():
+                        vals = []
+                        for c in parquet_cols_ordered:
+                            v = row.get(c)
+                            if v is None or (
+                                not isinstance(v, (list, dict)) and pd.isna(v)
                             ):
-                                try:
-                                    vals.append(float(v))
-                                except (TypeError, ValueError):
-                                    vals.append(None)
-                            elif c == "num_ofertas":
-                                try:
-                                    vals.append(int(v))
-                                except (TypeError, ValueError):
-                                    vals.append(None)
-                            elif c == "es_pyme":
-                                vals.append(bool(v))
-                            elif c == "ano":
-                                try:
-                                    vals.append(int(v))
-                                except (TypeError, ValueError):
-                                    vals.append(None)
-                            elif isinstance(v, (list, dict)):
-                                vals.append(psycopg2.extras.Json(v))
-                            else:
-                                vals.append(v)
-                        else:
+                                vals.append(None)
+                                continue
+
+                            # Type conversion based on column_defs
                             pg_type = next(
                                 (t for col, t in column_defs if col == c), "TEXT"
                             )
@@ -767,17 +777,94 @@ def load_parquet_to_l0(
                                 except (TypeError, ValueError):
                                     vals.append(None)
                             elif "BOOL" in pg_type:
-                                vals.append(bool(v))
+                                vals.append(bool(v) if v is not None else None)
                             else:
                                 vals.append(v)
+                        rows.append(tuple(vals))
+                else:
+                    # Licitaciones: L0 pattern with natural_id and CPV prefixes
+                    for batch_idx, (_, row) in enumerate(batch.iterrows()):
+                        if use_synthetic_id:
+                            nid = f"{table_name}_{start + batch_idx}"
+                        else:
+                            nid = row.get(natural_id_col)
+                            if pd.isna(nid) or nid is None:
+                                continue
+                            nid = _to_str_for_re(nid).strip() or None
+                            if not nid:
+                                continue
 
-                    # Only append CPV prefix columns for licitaciones, not for subvenciones
-                    if has_cpv:
-                        vals.append(prefix4)
-                        vals.append(prefix6)
-                        vals.append(sec6 if sec6 else None)
+                        # Only derive CPV prefixes for licitaciones, not for subvenciones
+                        if has_cpv:
+                            prefix4, prefix6, sec6 = derive_cpv_prefixes(
+                                row.get(cpv_principal_col),
+                                row.get(cpvs_col),
+                            )
 
-                    rows.append(tuple(vals))
+                        vals = [nid]
+                        for idx, c in enumerate(parquet_cols_ordered):
+                            if c == natural_id_col:
+                                continue
+                            v = row.get(c)
+                            if v is None or (
+                                not isinstance(v, (list, dict)) and pd.isna(v)
+                            ):
+                                vals.append(None)
+                                continue
+                            if is_nacional:
+                                if c in (
+                                    "importe_sin_iva",
+                                    "importe_con_iva",
+                                    "importe_adjudicacion",
+                                    "importe_adj_con_iva",
+                                    "duracion",
+                                ):
+                                    try:
+                                        vals.append(float(v))
+                                    except (TypeError, ValueError):
+                                        vals.append(None)
+                                elif c == "num_ofertas":
+                                    try:
+                                        vals.append(int(v))
+                                    except (TypeError, ValueError):
+                                        vals.append(None)
+                                elif c == "es_pyme":
+                                    vals.append(bool(v))
+                                elif c == "ano":
+                                    try:
+                                        vals.append(int(v))
+                                    except (TypeError, ValueError):
+                                        vals.append(None)
+                                elif isinstance(v, (list, dict)):
+                                    vals.append(psycopg2.extras.Json(v))
+                                else:
+                                    vals.append(v)
+                            else:
+                                pg_type = next(
+                                    (t for col, t in column_defs if col == c), "TEXT"
+                                )
+                                if "INT" in pg_type or "BIGINT" in pg_type:
+                                    try:
+                                        vals.append(int(v))
+                                    except (TypeError, ValueError):
+                                        vals.append(None)
+                                elif "NUMERIC" in pg_type:
+                                    try:
+                                        vals.append(float(v))
+                                    except (TypeError, ValueError):
+                                        vals.append(None)
+                                elif "BOOL" in pg_type:
+                                    vals.append(bool(v))
+                                else:
+                                    vals.append(v)
+
+                        # Only append CPV prefix columns for licitaciones, not for subvenciones
+                        if has_cpv:
+                            vals.append(prefix4)
+                            vals.append(prefix6)
+                            vals.append(sec6 if sec6 else None)
+
+                        rows.append(tuple(vals))
 
                 total_candidates += len(rows)
                 if rows:
