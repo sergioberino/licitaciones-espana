@@ -1,4 +1,4 @@
-CREATE TABLE IF NOT EXISTS l0.nacional_subvenciones_minimo (
+CREATE TABLE IF NOT EXISTS l0.nacional_subvenciones (
   id INTEGER PRIMARY KEY,
   numeroConvocatoria VARCHAR(255) NOT NULL,
   mrr BOOLEAN,

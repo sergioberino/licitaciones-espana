@@ -309,7 +309,7 @@ def scrape_diario(params: LatestParams) -> None:
                 execute_batch(
                     cur,
                     """
-                    INSERT INTO l0.nacional_subvenciones_minimo 
+                    INSERT INTO l0.nacional_subvenciones 
                     (id, numeroConvocatoria, mrr, descripcion, descripcionLeng,
                      fechaRecepcion, nivel1, nivel2, nivel3, codigoINVENTE)
                     VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)

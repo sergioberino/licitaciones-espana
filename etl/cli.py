@@ -1721,7 +1721,7 @@ def main() -> int:
     subv_diario = subv_sub.add_parser(
         "diario",
         help="Scrape diario: obtiene ultimas subvenciones e inserta directamente en DB",
-        description="Obtiene las subvenciones más recientes (endpoint /ultimas) e inserta directamente en l0.nacional_subvenciones_minimo. Usado por el scheduler para actualizaciones diarias.",
+        description="Obtiene las subvenciones más recientes (endpoint /ultimas) e inserta directamente en l0.nacional_subvenciones. Usado por el scheduler para actualizaciones diarias.",
     )
 
     subv_parser.set_defaults(func=cmd_subvenciones)
