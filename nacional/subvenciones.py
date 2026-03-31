@@ -337,48 +337,60 @@ def scrape_diario(params: LatestParams) -> None:
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Scraper de subvenciones")
+    """Main entry point compatible with nacional/licitaciones.py interface."""
+    parser = argparse.ArgumentParser(description="Scraper de subvenciones públicas")
     parser.add_argument(
-        "--modo",
-        choices=["historico", "diario"],
-        required=True,
-        help="Modo de scraping",
+        "--anos", type=str, required=True, help="Rango de años (ej: 2020-2026 o 2023)"
     )
     parser.add_argument(
-        "--fecha-desde", help="Fecha desde (DD-MM-YYYY) - requerido para historico"
+        "--conjunto",
+        type=str,
+        default="subvenciones",
+        help="Conjunto de datos (subvenciones)",
     )
     parser.add_argument(
-        "--fecha-hasta",
-        help="Fecha hasta (DD-MM-YYYY) - opcional, por defecto usa fecha actual",
+        "--solo-descargar",
+        action="store_true",
+        help="Solo descargar/generar Parquet, no cargar en BD",
     )
 
     args = parser.parse_args()
 
+    # Parsear años (igual que licitaciones.py)
+    partes = args.anos.split("-")
+    ano_inicio = int(partes[0])
+    ano_fin = int(partes[1]) if len(partes) > 1 else datetime.now().year
+
+    # Convertir años a fechas DD-MM-YYYY para la API
+    fecha_desde = f"01-01-{ano_inicio}"
+    fecha_hasta = f"31-12-{ano_fin}"
+
+    print("=" * 60)
+    print("🔎 SCRAPER DE SUBVENCIONES PÚBLICAS")
+    print("=" * 60)
+    print(f"   Años: {ano_inicio} - {ano_fin}")
+    print(f"   Fechas: {fecha_desde} - {fecha_hasta}")
+    print(f"   Conjunto: {args.conjunto}")
+
     try:
-        if args.modo == "historico":
-            if not args.fecha_desde:
-                print("[ERROR] Modo historico requiere: --fecha-desde")
-                return 1
+        params = SearchParams(
+            page=0,
+            pageSize=10000,
+            fechaDesde=fecha_desde,
+            fechaHasta=fecha_hasta,
+        )
 
-            params = SearchParams(
-                page=0,
-                pageSize=1000,
-                fechaDesde=args.fecha_desde,
-                fechaHasta=args.fecha_hasta,
-            )
+        parquet_path = scrape_historico(params)
+        print(f"\n✅ Parquet generado y listo para ingest")
+        print(f"   Archivo: {parquet_path}")
 
-            parquet_path = scrape_historico(params)
-            print(f"[INFO] Parquet listo para ingest: {parquet_path}")
-
-        else:
-            params = LatestParams(page=0, pageSize=50)
-            total = scrape_diario(params)
-            print(f"[INFO] Total registros nuevos: {total}")
+        if args.solo_descargar:
+            print("   (--solo-descargar: no se cargará en BD)")
 
         return 0
 
     except Exception as err:
-        print(f"[ERROR] {err}")
+        print(f"\n❌ [ERROR] {err}")
         return 1
 
 
