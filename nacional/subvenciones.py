@@ -213,19 +213,20 @@ def scrape_historico(params: SearchParams) -> Path:
                 break
 
             # Collect records as dictionaries for DataFrame
+            # Convert API response (camelCase) to parquet columns (snake_case)
             for item in content:
                 all_records.append(
                     {
                         "id": item.get("id"),
-                        "numeroConvocatoria": item.get("numeroConvocatoria"),
+                        "numero_convocatoria": item.get("numeroConvocatoria"),
                         "mrr": item.get("mrr"),
                         "descripcion": item.get("descripcion"),
-                        "descripcionLeng": item.get("descripcionLeng"),
-                        "fechaRecepcion": item.get("fechaRecepcion"),
+                        "descripcion_leng": item.get("descripcionLeng"),
+                        "fecha_recepcion": item.get("fechaRecepcion"),
                         "nivel1": item.get("nivel1"),
                         "nivel2": item.get("nivel2"),
                         "nivel3": item.get("nivel3"),
-                        "codigoINVENTE": item.get("codigoInvente"),
+                        "codigo_invente": item.get("codigoInvente"),
                     }
                 )
 

@@ -102,15 +102,15 @@ NACIONAL_PARQUET_COLUMNS = [
 # Columnas del parquet de subvenciones
 SUBVENCIONES_PARQUET_COLUMNS = [
     ("id", "INTEGER"),
-    ("numeroConvocatoria", "TEXT"),
+    ("numero_convocatoria", "TEXT"),
     ("mrr", "BOOLEAN"),
     ("descripcion", "TEXT"),
-    ("descripcionLeng", "TEXT"),
-    ("fechaRecepcion", "DATE"),
+    ("descripcion_leng", "TEXT"),
+    ("fecha_recepcion", "DATE"),
     ("nivel1", "TEXT"),
     ("nivel2", "TEXT"),
     ("nivel3", "TEXT"),
-    ("codigoINVENTE", "TEXT"),
+    ("codigo_invente", "TEXT"),
 ]
 
 # Nombre de la columna que en el parquet contiene el identificador único (URL); en la tabla L0 se persiste como natural_id.
