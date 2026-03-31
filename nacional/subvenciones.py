@@ -207,11 +207,6 @@ def scrape_historico(params: SearchParams) -> Path:
                 pbar = tqdm(
                     total=total_elements,
                     unit="reg",
-                    ncols=80,
-                    bar_format="{desc}: {percentage:3.0f}%|{bar}| {n_fmt}/{total_fmt} [{elapsed}<{remaining}]",
-                    file=sys.stderr,
-                    dynamic_ncols=False,
-                    leave=True,
                 )
 
             if not content:
