@@ -743,14 +743,23 @@ def cmd_ingest(args: argparse.Namespace) -> int:
 
         # --- Batch loading: detect partials or single Parquet ---
         output_dir = parquet_path.parent
-        partial_glob = sorted(output_dir.glob("_part_*.parquet"))
+        
+        # Search for partials specific to this conjunto/subconjunto to avoid mixing with other datasets
+        # For 'nacional', use script_conjunto_arg mapping to match partial naming from scripts
+        if conjunto == "nacional" and "script_conjunto_arg" in reg:
+            script_conjunto = reg["script_conjunto_arg"].get(subconjunto, subconjunto)
+            partial_pattern = f"_part_{script_conjunto}_*.parquet"
+        else:
+            partial_pattern = f"_part_{subconjunto}_*.parquet"
+        
+        partial_glob = sorted(output_dir.glob(partial_pattern))
         use_partials = len(partial_glob) > 0
 
         parquet_files: list[Path]
         if use_partials:
             parquet_files = partial_glob
             print(
-                f"[ingest] Encontrados {len(parquet_files)} parciales en {output_dir}.",
+                f"[ingest] Encontrados {len(parquet_files)} parciales para {subconjunto} en {output_dir}.",
                 file=sys.stderr,
             )
         elif parquet_path.exists():

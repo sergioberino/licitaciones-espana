@@ -205,8 +205,10 @@ def scrape_historico(params: SearchParams) -> Path:
                 total_elements = data.get("totalElements", 0)
                 pbar = tqdm(
                     total=total_elements,
-                    desc="Descargando subvenciones (historico)",
+                    desc="Subvenciones",
                     unit="reg",
+                    ncols=80,
+                    bar_format="{desc}: {percentage:3.0f}%|{bar}| {n_fmt}/{total_fmt} [{elapsed}<{remaining}]",
                 )
 
             if not content:
