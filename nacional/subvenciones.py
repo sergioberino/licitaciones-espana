@@ -363,7 +363,7 @@ def main():
     if len(partes) > 1:
         ano_fin = int(partes[1])
         if ano_fin == datetime.now().year:
-            ano_fin = datetime.now().strftime("%d-%m-%Y")
+            fecha_hasta = datetime.now().strftime("%d-%m-%Y")
         else:
             fecha_hasta = f"31-12-{ano_fin}"
     else:
