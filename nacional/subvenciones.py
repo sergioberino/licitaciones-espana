@@ -130,7 +130,9 @@ class LatestParams:
 
     page: int = 0
     pageSize: int = 50
-    order: str = field(default="numeroConvocatoria", init=False)  # Fixed order field
+    order: str = field(
+        default="numeroConvocatoria", init=False
+    )  # Fixed order field (API expects camelCase)
 
     def to_dict(self) -> dict:
         """Convert to dictionary."""
@@ -339,8 +341,8 @@ def scrape_diario(params: LatestParams) -> None:
                     cur,
                     """
                     INSERT INTO l0.nacional_subvenciones 
-                    (id, numeroConvocatoria, mrr, descripcion, descripcionLeng,
-                     fechaRecepcion, nivel1, nivel2, nivel3, codigoINVENTE)
+                    (id, numero_convocatoria, mrr, descripcion, descripcion_leng,
+                     fecha_recepcion, nivel1, nivel2, nivel3, codigo_invente)
                     VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
                     ON CONFLICT (id) DO NOTHING
                     """,
