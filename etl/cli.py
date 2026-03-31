@@ -559,11 +559,14 @@ def cmd_ingest(args: argparse.Namespace) -> int:
             run_env = os.environ.copy()
             run_env["LICITACIONES_TMP_DIR"] = str(_tmp_dir())
             if "script_module" in reg:
+                script_module = reg.get("script_module_by_subconjunto", {}).get(
+                    subconjunto, reg["script_module"]
+                )
                 script_conjunto = reg["script_conjunto_arg"][subconjunto]
                 cmd = [
                     sys.executable,
                     "-m",
-                    reg["script_module"],
+                    script_module,
                     "--conjunto",
                     script_conjunto,
                     "--anos",

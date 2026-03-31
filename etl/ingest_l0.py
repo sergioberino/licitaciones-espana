@@ -37,6 +37,16 @@ SCRIPT_CONJUNTO_TO_NACIONAL = {
     "subvenciones": "subvenciones",
 }
 
+# Script module per subconjunto (allows different scripts for different subconjuntos)
+SCRIPT_MODULE_BY_SUBCONJUNTO = {
+    "licitaciones": "nacional.licitaciones",
+    "agregacion_ccaa": "nacional.licitaciones",
+    "contratos_menores": "nacional.licitaciones",
+    "encargos_medios_propios": "nacional.licitaciones",
+    "consultas_preliminares": "nacional.licitaciones",
+    "subvenciones": "nacional.subvenciones",  # Uses its own module
+}
+
 # Columnas del parquet nacional. TEXT implica NULL permitido; en ingesta, NaN/float se normalizan a NULL/vacío (p. ej. cpv_principal, cpvs).
 NACIONAL_PARQUET_COLUMNS = [
     ("id", "TEXT"),
@@ -313,7 +323,8 @@ CONJUNTOS_REGISTRY: dict[str, dict[str, Any]] = {
         "requires_anos": True,
         "column_defs": NACIONAL_PARQUET_COLUMNS,
         "natural_id_col": NATURAL_ID_PARQUET_COL,
-        "script_module": "nacional.licitaciones",
+        "script_module": "nacional.licitaciones",  # Default module
+        "script_module_by_subconjunto": SCRIPT_MODULE_BY_SUBCONJUNTO,  # Per-subconjunto override
         "script_conjunto_arg": SCRIPT_CONJUNTO_TO_NACIONAL,
     },
     "catalunya": {
