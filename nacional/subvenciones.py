@@ -84,8 +84,8 @@ class SearchParams:
 
     page: int = 0
     pageSize: int = 10000
-    fechaDesde: str | None = None  # Format: "DD-MM-YYYY"
-    fechaHasta: str = datetime.now().strftime("%d-%m-%Y")  # Format: "DD-MM-YYYY"
+    fechaDesde: str | None = None  # Format: "DD/MM/YYYY"
+    fechaHasta: str = datetime.now().strftime("%d/%m/%Y")  # Format: "DD/MM/YYYY"
 
     def to_dict(self) -> dict:
         """Convert to dictionary removing None values."""
@@ -115,12 +115,12 @@ class SearchParams:
 
     @staticmethod
     def _validate_date_format(date_str: str, field_name: str) -> None:
-        """Validate that a date has DD-MM-YYYY format."""
+        """Validate that a date has DD/MM/YYYY format."""
         try:
-            datetime.strptime(date_str, "%d-%m-%Y")
+            datetime.strptime(date_str, "%d/%m/%Y")
         except ValueError:
             raise ValueError(
-                f"{field_name} debe tener formato DD-MM-YYYY, recibido: {date_str}"
+                f"{field_name} debe tener formato DD/MM/YYYY, recibido: {date_str}"
             )
 
 
@@ -180,7 +180,21 @@ def scrape_historico(params: SearchParams) -> Path:
 
             rate_limiter.wait_if_needed()
             res = requests.get(API_ENDPOINT_SEARCH, params=params.to_dict())
-            res.raise_for_status()
+
+            # Check for errors before parsing JSON
+            if res.status_code != 200:
+                try:
+                    error_data = res.json()
+                    if "errores" in error_data:
+                        error_msgs = "\n  - ".join(error_data["errores"])
+                        raise ValueError(
+                            f"Error de la API ({error_data.get('codigo', 'UNKNOWN')}):\n  - {error_msgs}"
+                        )
+                except ValueError:
+                    raise
+                except Exception:
+                    res.raise_for_status()  # Fallback to default error
+
             data = res.json()
 
             content = data.get("content", [])
@@ -279,7 +293,21 @@ def scrape_diario(params: LatestParams) -> None:
 
             rate_limiter.wait_if_needed()
             res = requests.get(API_ENDPOINT_LATEST, params=params.to_dict())
-            res.raise_for_status()
+
+            # Check for errors before parsing JSON
+            if res.status_code != 200:
+                try:
+                    error_data = res.json()
+                    if "errores" in error_data:
+                        error_msgs = "\n  - ".join(error_data["errores"])
+                        raise ValueError(
+                            f"Error de la API ({error_data.get('codigo', 'UNKNOWN')}):\n  - {error_msgs}"
+                        )
+                except ValueError:
+                    raise
+                except Exception:
+                    res.raise_for_status()  # Fallback to default error
+
             data = res.json()
 
             content = data.get("content", [])
@@ -363,13 +391,13 @@ def main():
     if len(partes) > 1:
         ano_fin = int(partes[1])
         if ano_fin == datetime.now().year:
-            fecha_hasta = datetime.now().strftime("%d-%m-%Y")
+            fecha_hasta = datetime.now().strftime("%d/%m/%Y")
         else:
-            fecha_hasta = f"31-12-{ano_fin}"
+            fecha_hasta = f"31/12/{ano_fin}"
     else:
-        fecha_hasta = datetime.now().strftime("%d-%m-%Y")
+        fecha_hasta = datetime.now().strftime("%d/%m/%Y")
 
-    fecha_desde = f"01-01-{ano_inicio}"
+    fecha_desde = f"01/01/{ano_inicio}"
 
     print(f"   Fechas: {fecha_desde} - {fecha_hasta}")
     print(f"   Conjunto: {args.conjunto}")
@@ -388,8 +416,7 @@ def main():
 
         return 0
 
-    except Exception as err:
-        print(f"\n[ERROR] {err}")
+    except Exception:
         return 1
 
 
