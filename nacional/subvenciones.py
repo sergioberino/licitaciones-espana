@@ -359,16 +359,18 @@ def main():
     # Parsear años (igual que licitaciones.py)
     partes = args.anos.split("-")
     ano_inicio = int(partes[0])
-    ano_fin = int(partes[1]) if len(partes) > 1 else datetime.now().year
 
-    # Convertir años a fechas DD-MM-YYYY para la API
+    if len(partes) > 1:
+        ano_fin = int(partes[1])
+        if ano_fin == datetime.now().year:
+            ano_fin = datetime.now().strftime("%d-%m-%Y")
+        else:
+            fecha_hasta = f"31-12-{ano_fin}"
+    else:
+        fecha_hasta = datetime.now().strftime("%d-%m-%Y")
+
     fecha_desde = f"01-01-{ano_inicio}"
-    fecha_hasta = f"31-12-{ano_fin}"
 
-    print("=" * 60)
-    print("🔎 SCRAPER DE SUBVENCIONES PÚBLICAS")
-    print("=" * 60)
-    print(f"   Años: {ano_inicio} - {ano_fin}")
     print(f"   Fechas: {fecha_desde} - {fecha_hasta}")
     print(f"   Conjunto: {args.conjunto}")
 
@@ -381,16 +383,13 @@ def main():
         )
 
         parquet_path = scrape_historico(params)
-        print(f"\n✅ Parquet generado y listo para ingest")
-        print(f"   Archivo: {parquet_path}")
-
         if args.solo_descargar:
             print("   (--solo-descargar: no se cargará en BD)")
 
         return 0
 
     except Exception as err:
-        print(f"\n❌ [ERROR] {err}")
+        print(f"\n[ERROR] {err}")
         return 1
 
 
