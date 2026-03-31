@@ -44,7 +44,7 @@ SCRIPT_MODULE_BY_SUBCONJUNTO = {
     "contratos_menores": "nacional.licitaciones",
     "encargos_medios_propios": "nacional.licitaciones",
     "consultas_preliminares": "nacional.licitaciones",
-    "subvenciones": "nacional.subvenciones",  # Uses its own module
+    "subvenciones": "nacional.subvenciones",
 }
 
 # Columnas del parquet nacional. TEXT implica NULL permitido; en ingesta, NaN/float se normalizan a NULL/vacío (p. ej. cpv_principal, cpvs).
@@ -532,22 +532,31 @@ def ensure_l0_table(
     column_defs: Optional[list[tuple[str, str]]] = None,
     natural_id_col: str = NATURAL_ID_PARQUET_COL,
 ) -> None:
-    """Crea la tabla L0 con PK surrogada (l0_id, natural_id UNIQUE) y columnas de la fuente + extensiones CPV."""
+    """Crea la tabla L0 con PK surrogada (l0_id, natural_id UNIQUE) y columnas de la fuente + extensiones CPV (solo para licitaciones)."""
     if column_defs is None:
         column_defs = NACIONAL_PARQUET_COLUMNS
+
+    # Check if we need CPV columns (only for licitaciones, not for subvenciones)
+    has_cpv = column_defs is NACIONAL_PARQUET_COLUMNS
+
     col_defs = [
         '"l0_id" BIGSERIAL PRIMARY KEY',
         '"natural_id" TEXT UNIQUE NOT NULL',
     ]
     col_defs.extend(f'"{c}" {t}' for c, t in column_defs if c != natural_id_col)
-    col_defs.extend(
-        [
-            '"principal_prefix4" INTEGER',
-            '"principal_prefix6" INTEGER',
-            '"secondary_prefix6" INTEGER[]',
-            '"ingested_at" TIMESTAMPTZ DEFAULT NOW()',
-        ]
-    )
+
+    # Only add CPV columns for licitaciones
+    if has_cpv:
+        col_defs.extend(
+            [
+                '"principal_prefix4" INTEGER',
+                '"principal_prefix6" INTEGER',
+                '"secondary_prefix6" INTEGER[]',
+            ]
+        )
+
+    col_defs.append('"ingested_at" TIMESTAMPTZ DEFAULT NOW()')
+
     full_table = f'"{schema}"."{table_name}"'
     create_sql = (
         f"CREATE TABLE IF NOT EXISTS {full_table} (\n  "
@@ -556,16 +565,20 @@ def ensure_l0_table(
     )
     with conn.cursor() as cur:
         cur.execute(create_sql)
-        for col in ("principal_prefix4", "principal_prefix6", "secondary_prefix6"):
-            iname = f"idx_{table_name}_{col}"
-            if col == "secondary_prefix6":
-                cur.execute(
-                    f'CREATE INDEX IF NOT EXISTS {iname} ON {full_table} USING GIN ("{col}")'
-                )
-            else:
-                cur.execute(
-                    f'CREATE INDEX IF NOT EXISTS {iname} ON {full_table} ("{col}")'
-                )
+
+        # Only create CPV indexes for licitaciones
+        if has_cpv:
+            for col in ("principal_prefix4", "principal_prefix6", "secondary_prefix6"):
+                iname = f"idx_{table_name}_{col}"
+                if col == "secondary_prefix6":
+                    cur.execute(
+                        f'CREATE INDEX IF NOT EXISTS {iname} ON {full_table} USING GIN ("{col}")'
+                    )
+                else:
+                    cur.execute(
+                        f'CREATE INDEX IF NOT EXISTS {iname} ON {full_table} ("{col}")'
+                    )
+
         col_names = [c[0] for c in column_defs]
         if "expediente" in col_names and "id_plataforma" in col_names:
             iname = f"idx_{table_name}_org_key"
@@ -632,9 +645,13 @@ def load_parquet_to_l0(
 
     cpv_principal_col = "cpv_principal"
     cpvs_col = "cpvs"
-    for c in (cpv_principal_col, cpvs_col):
-        if c not in df.columns:
-            df[c] = None
+    has_cpv = column_defs is NACIONAL_PARQUET_COLUMNS
+
+    # Only add CPV columns for licitaciones (nacional columns), not for subvenciones
+    if has_cpv:
+        for c in (cpv_principal_col, cpvs_col):
+            if c not in df.columns:
+                df[c] = None
 
     with psycopg2.connect(db_url) as conn:
         ensure_l0_table(
@@ -649,11 +666,17 @@ def load_parquet_to_l0(
     table_base_cols = ["natural_id"] + [
         c for c, _ in column_defs if c != natural_id_col
     ]
-    insert_cols = table_base_cols + [
-        "principal_prefix4",
-        "principal_prefix6",
-        "secondary_prefix6",
-    ]
+
+    # Only add CPV prefix columns for licitaciones (nacional columns), not for subvenciones
+    if has_cpv:
+        insert_cols = table_base_cols + [
+            "principal_prefix4",
+            "principal_prefix6",
+            "secondary_prefix6",
+        ]
+    else:
+        insert_cols = table_base_cols
+
     placeholders = ", ".join(["%s"] * len(insert_cols))
     quoted = ", ".join(f'"{c}"' for c in insert_cols)
     full_table = f'"{schema}"."{table_name}"'
@@ -683,10 +706,14 @@ def load_parquet_to_l0(
                         nid = _to_str_for_re(nid).strip() or None
                         if not nid:
                             continue
-                    prefix4, prefix6, sec6 = derive_cpv_prefixes(
-                        row.get(cpv_principal_col),
-                        row.get(cpvs_col),
-                    )
+
+                    # Only derive CPV prefixes for licitaciones, not for subvenciones
+                    if has_cpv:
+                        prefix4, prefix6, sec6 = derive_cpv_prefixes(
+                            row.get(cpv_principal_col),
+                            row.get(cpvs_col),
+                        )
+
                     vals = [nid]
                     for idx, c in enumerate(parquet_cols_ordered):
                         if c == natural_id_col:
@@ -743,9 +770,13 @@ def load_parquet_to_l0(
                                 vals.append(bool(v))
                             else:
                                 vals.append(v)
-                    vals.append(prefix4)
-                    vals.append(prefix6)
-                    vals.append(sec6 if sec6 else None)
+
+                    # Only append CPV prefix columns for licitaciones, not for subvenciones
+                    if has_cpv:
+                        vals.append(prefix4)
+                        vals.append(prefix6)
+                        vals.append(sec6 if sec6 else None)
+
                     rows.append(tuple(vals))
 
                 total_candidates += len(rows)
