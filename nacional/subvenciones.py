@@ -203,9 +203,9 @@ def scrape_historico(params: SearchParams) -> Path:
             # Initialize progress bar on first iteration
             if pbar is None:
                 total_elements = data.get("totalElements", 0)
+                print(f"Progreso descarga de subvenciones\n")
                 pbar = tqdm(
                     total=total_elements,
-                    desc=f"Progreso descarga de subvenciones\n",
                     unit="reg",
                     ncols=80,
                     bar_format="{desc}: {percentage:3.0f}%|{bar}| {n_fmt}/{total_fmt} [{elapsed}<{remaining}]",
