@@ -131,7 +131,7 @@ class LatestParams:
     """Parameters for latest grants endpoint (ultimas). pageSize and order are fixed."""
 
     page: int = 0
-    pageSize: int = 50
+    pageSize: int = 100
     order: str = field(default="numeroConvocatoria", init=False)
     descripcion: str = field(default="Subvención", init=False)
     descripcionTipoBusqueda: str = field(default=2, init=False)
@@ -145,8 +145,8 @@ class LatestParams:
         if self.page < 0:
             raise ValueError(f"page debe ser >= 0, recibido: {self.page}")
 
-        if self.pageSize < 50 or self.pageSize > 100:
-            raise ValueError(f"pageSize debe estar entre [50, 100]: {self.pageSize}")
+        if self.pageSize < 100 or self.pageSize > 1000:
+            raise ValueError(f"pageSize debe estar entre [100, 1000]: {self.pageSize}")
 
 
 def scrape_historico(params: SearchParams) -> Path:
