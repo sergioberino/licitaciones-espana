@@ -400,6 +400,22 @@ def format_conjunto_help(conjunto: str, reg: dict[str, Any]) -> str:
     return "\n".join(lines) if lines else "  (Sin argumentos específicos.)"
 
 
+def _scalar_isna(v: Any) -> bool:
+    """Devuelve True si v es un escalar NA/None. Seguro para arrays (devuelve False si v es array-like)."""
+    if v is None:
+        return True
+    if isinstance(v, (list, dict)):
+        return False
+    try:
+        result = pd.isna(v)
+        # pd.isna devuelve array si v es array-like; en ese caso no es un NA escalar
+        if hasattr(result, "__len__"):
+            return False
+        return bool(result)
+    except (TypeError, ValueError):
+        return False
+
+
 def _to_str_for_re(s: Any) -> str:
     """Convierte a str para uso en re; None y NaN devuelven ''."""
     if s is None or (isinstance(s, float) and pd.isna(s)):
@@ -613,7 +629,7 @@ def load_parquet_to_l0(
                         if c == natural_id_col:
                             continue
                         v = row.get(c)
-                        if v is None or (not isinstance(v, (list, dict)) and pd.isna(v)):
+                        if _scalar_isna(v):
                             vals.append(None)
                             continue
                         if is_nacional:
