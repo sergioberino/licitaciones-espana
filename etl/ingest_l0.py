@@ -432,6 +432,23 @@ def _scalar_isna(v: Any) -> bool:
         return False
 
 
+def _convert_numpy_to_python(obj: Any) -> Any:
+    """Convierte recursivamente numpy arrays a listas de Python para serialización JSON."""
+    if obj is None:
+        return None
+    # Arrays numpy: convertir a lista
+    if hasattr(obj, 'tolist'):
+        return obj.tolist()
+    # Listas: convertir cada elemento
+    if isinstance(obj, list):
+        return [_convert_numpy_to_python(item) for item in obj]
+    # Diccionarios: convertir cada valor
+    if isinstance(obj, dict):
+        return {k: _convert_numpy_to_python(v) for k, v in obj.items()}
+    # Otros tipos: devolver tal cual
+    return obj
+
+
 def _to_str_for_re(s: Any) -> str:
     """Convierte a str para uso en re; None y NaN devuelven ''."""
     if s is None or (isinstance(s, float) and pd.isna(s)):
@@ -708,10 +725,9 @@ def load_parquet_to_l0(
                                     vals.append(int(v))
                                 except (TypeError, ValueError):
                                     vals.append(None)
-                            elif isinstance(v, (list, dict)):
-                                vals.append(psycopg2.extras.Json(v))
-                            elif hasattr(v, "tolist"):
-                                vals.append(psycopg2.extras.Json(v.tolist()))
+                            elif isinstance(v, (list, dict)) or hasattr(v, 'tolist'):
+                                # JSONB: convertir recursivamente numpy arrays a listas Python
+                                vals.append(psycopg2.extras.Json(_convert_numpy_to_python(v)))
                             else:
                                 vals.append(v)
                         else:
@@ -731,12 +747,8 @@ def load_parquet_to_l0(
                             elif "BOOL" in pg_type:
                                 vals.append(bool(v))
                             elif "JSONB" in pg_type:
-                                if isinstance(v, (list, dict)):
-                                    vals.append(psycopg2.extras.Json(v))
-                                elif hasattr(v, "tolist"):
-                                    vals.append(psycopg2.extras.Json(v.tolist()))
-                                else:
-                                    vals.append(v)
+                                # JSONB: convertir recursivamente numpy arrays a listas Python
+                                vals.append(psycopg2.extras.Json(_convert_numpy_to_python(v)))
                             else:
                                 vals.append(v)
                     vals.append(prefix4)
