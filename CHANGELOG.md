@@ -2,6 +2,30 @@
 
 Todos los cambios notables del CLI y del microservicio ETL se documentan aquí.
 
+## [1.3.1] — 2026-04-06
+
+### Añadido
+
+- **CLI `licitia-etl subvenciones diario`** ([#24](https://github.com/sergioberino/licitaciones-espana/pull/24), cierra [#25](https://github.com/sergioberino/licitaciones-espana/issues/25)): comando explícito para la **actualización diaria** de subvenciones (misma lógica que puede usar el scheduler), invocando `scrape_diario` / `LatestParams` desde `nacional.subvenciones`. Documentación del módulo CLI actualizada (`subvenciones` en la lista de comandos).
+
+### Mejorado
+
+- **Actualización diaria BDNS**: la rama integrada en #24 afinó el flujo de “últimas” convocatorias (paginación, límite de página, filtros, fechas/camelCase→snake_case, queries e índices según subvenciones, etc.) además del punto de entrada CLI anterior.
+
+### Repositorio padre (`BquantFinance/licitaciones-espana`)
+
+Esta release del **fork** no incluye aún una fusión completa con `upstream/main`. En el remoto padre hay **5 commits** posteriores al ancestro común (`68e469b`) que aún no están integrados aquí (fusión automática con `upstream/main` produce conflictos en `.gitignore`, `README.md`, `galicia/scraper_galicia.py`, `requirements.txt`, `tests/test_parsear_entry.py`):
+
+- `c598558` — fix: corregir mapeo de importes en `BudgetAmount`
+- `18fb1c4` — Refactor Galicia scraper (pipeline de detalle reanudable)
+- `e22ec38` — Merge PR #7 (fix/budget-mapping)
+- `d659449` — Merge branch `main` into rama Galicia
+- `6648927` — Merge PR #9 (refactor scraper Galicia)
+
+Para alinear el fork con el padre habrá que resolver esos conflictos en un PR dedicado.
+
+---
+
 ## [1.3.0] — 2026-04-06
 
 ### Añadido
