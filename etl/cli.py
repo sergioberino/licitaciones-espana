@@ -1,7 +1,7 @@
 """
 CLI de este microservicio ETL. Punto de entrada: licitia-etl.
 
-Comandos: status, init-db, ingest, health, scheduler, db-info, borme.
+Comandos: status, init-db, ingest, health, scheduler, db-info, borme, subvenciones.
 """
 
 import argparse
@@ -1341,7 +1341,34 @@ def _ensure_borme_schema() -> None:
                 print(f"[borme] Error aplicando {f}: {e}", file=sys.stderr)
 
 
-# cmd_subvenciones eliminated - now integrated with 'licitia-etl ingest nacional subvenciones --anos X-Y'
+def cmd_subvenciones(args: argparse.Namespace) -> int:
+    """Subvenciones: actualización diaria."""
+    subv_cmd = getattr(args, "subvenciones_cmd", None)
+    if not subv_cmd:
+        print(
+            "Indique un subcomando: diario. Use 'licitia-etl subvenciones --help' para más info.",
+            file=sys.stderr,
+        )
+        return 1
+
+    if subv_cmd == "diario":
+        try:
+            sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+            from nacional.subvenciones import scrape_diario, LatestParams
+
+            params = LatestParams(page=0, pageSize=100)
+            scrape_diario(params)
+            print("[INFO] Actualización diaria de subvenciones completada.")
+            return 0
+        except Exception as e:
+            print(
+                f"[ERROR] Error en actualización diaria de subvenciones: {e}",
+                file=sys.stderr,
+            )
+            return 1
+    else:
+        print("Subcomando subvenciones no reconocido.", file=sys.stderr)
+        return 1
 
 
 def cmd_borme(args: argparse.Namespace) -> int:
@@ -1662,8 +1689,20 @@ def main() -> int:
 
     borme_parser.set_defaults(func=cmd_borme)
 
-    # Subvenciones: now integrated with 'ingest nacional subvenciones --anos X-Y'
-    # No separate command needed - follows same pattern as licitaciones
+    # Subvenciones: diario command for scheduler and manual execution
+    subv_parser = subparsers.add_parser(
+        "subvenciones",
+        help="Actualización diaria de subvenciones desde API.",
+        description="Actualización diaria de subvenciones: scrape de últimas convocatorias e insert directo en BD.",
+    )
+    subv_sub = subv_parser.add_subparsers(
+        dest="subvenciones_cmd", help="Subcomando subvenciones"
+    )
+
+    subv_diario = subv_sub.add_parser(
+        "diario", help="Actualización diaria (últimas subvenciones)"
+    )
+    subv_parser.set_defaults(func=cmd_subvenciones)
 
     args = parser.parse_args()
     if not args.command:
