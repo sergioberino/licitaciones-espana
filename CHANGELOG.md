@@ -2,6 +2,18 @@
 
 Todos los cambios notables del CLI y del microservicio ETL se documentan aquí.
 
+## [1.3.0] — 2026-04-06
+
+### Añadido
+
+- **Ingesta de subvenciones nacionales (BDNS)** ([#21](https://github.com/sergioberino/licitaciones-espana/pull/21)): nueva fuente vía API `infosubvenciones.es` (`nacional/subvenciones.py`), subconjunto `nacional` / `subvenciones`, migración `schemas/012_nacional_subvenciones.sql`, integración en `ingest_l0`, CLI y scheduler (frecuencia diaria para actualización incremental).
+
+### Corregido
+
+- **JSONB y arrays numpy en ingesta L0** ([#23](https://github.com/sergioberino/licitaciones-espana/pull/23)): normalización recursiva de valores (p. ej. arrays numpy) antes de `psycopg2.extras.Json`, evitando fallos al serializar columnas JSONB en ingestas nacionales.
+
+---
+
 ## [1.2.3] — 2026-03-27
 
 ### Añadido
