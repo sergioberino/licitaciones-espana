@@ -443,6 +443,39 @@ def format_conjunto_help(conjunto: str, reg: dict[str, Any]) -> str:
     return "\n".join(lines) if lines else "  (Sin argumentos específicos.)"
 
 
+def _scalar_isna(v: Any) -> bool:
+    """Devuelve True si v es un escalar NA/None. Seguro para arrays (devuelve False si v es array-like)."""
+    if v is None:
+        return True
+    if isinstance(v, (list, dict)):
+        return False
+    try:
+        result = pd.isna(v)
+        # pd.isna devuelve array si v es array-like; en ese caso no es un NA escalar
+        if hasattr(result, "__len__"):
+            return False
+        return bool(result)
+    except (TypeError, ValueError):
+        return False
+
+
+def _convert_numpy_to_python(obj: Any) -> Any:
+    """Convierte recursivamente numpy arrays a listas de Python para serialización JSON."""
+    if obj is None:
+        return None
+    # Arrays numpy: convertir a lista
+    if hasattr(obj, 'tolist'):
+        return obj.tolist()
+    # Listas: convertir cada elemento
+    if isinstance(obj, list):
+        return [_convert_numpy_to_python(item) for item in obj]
+    # Diccionarios: convertir cada valor
+    if isinstance(obj, dict):
+        return {k: _convert_numpy_to_python(v) for k, v in obj.items()}
+    # Otros tipos: devolver tal cual
+    return obj
+
+
 def _to_str_for_re(s: Any) -> str:
     """Convierte a str para uso en re; None y NaN devuelven ''."""
     if s is None or (isinstance(s, float) and pd.isna(s)):
@@ -550,8 +583,8 @@ def ensure_l0_table(
             cur.execute(
                 f"""
                 SELECT EXISTS (
-                    SELECT FROM information_schema.tables 
-                    WHERE table_schema = %s 
+                    SELECT FROM information_schema.tables
+                    WHERE table_schema = %s
                     AND table_name = %s
                 )
             """,
@@ -638,13 +671,11 @@ def load_parquet_to_l0(
         natural_id_col = NATURAL_ID_PARQUET_COL
 
     is_subvenciones = column_defs is SUBVENCIONES_PARQUET_COLUMNS
+    has_cpv = column_defs is NACIONAL_PARQUET_COLUMNS
 
-    # Subvenciones: skip natural_id validation (uses direct PK)
     if is_subvenciones:
         use_synthetic_id = False
     else:
-        logger.info("Filas con natural_id válido: %s de %s.", len(df), len(df))
-        # Licitaciones: validate natural_id
         # Aceptar primera columna como natural_id si no existe la esperada
         if natural_id_col not in df.columns and len(df.columns):
             natural_id_col = df.columns[0]
@@ -683,8 +714,6 @@ def load_parquet_to_l0(
 
     cpv_principal_col = "cpv_principal"
     cpvs_col = "cpvs"
-    has_cpv = column_defs is NACIONAL_PARQUET_COLUMNS
-    is_subvenciones = column_defs is SUBVENCIONES_PARQUET_COLUMNS
 
     # Only add CPV columns for licitaciones (nacional columns), not for subvenciones
     if has_cpv:
@@ -704,8 +733,7 @@ def load_parquet_to_l0(
 
     # Build INSERT statement based on dataset type
     if is_subvenciones:
-        print("Añadiendo todas las subvenciones a la base de datos...")
-        # Subvenciones: direct columns from parquet, no natural_id
+        logger.info("Ingestando subvenciones en la base de datos...")
         insert_cols = [c for c, _ in column_defs]
         placeholders = ", ".join(["%s"] * len(insert_cols))
         quoted = ", ".join(f'"{c}"' for c in insert_cols)
@@ -716,12 +744,9 @@ def load_parquet_to_l0(
             ON CONFLICT (id) DO NOTHING
         """
     else:
-        # Licitaciones: L0 pattern with natural_id
         table_base_cols = ["natural_id"] + [
             c for c, _ in column_defs if c != natural_id_col
         ]
-
-        # Only add CPV prefix columns for licitaciones (nacional columns)
         if has_cpv:
             insert_cols = table_base_cols + [
                 "principal_prefix4",
@@ -730,7 +755,6 @@ def load_parquet_to_l0(
             ]
         else:
             insert_cols = table_base_cols
-
         placeholders = ", ".join(["%s"] * len(insert_cols))
         quoted = ", ".join(f'"{c}"' for c in insert_cols)
         full_table = f'"{schema}"."{table_name}"'
@@ -752,18 +776,13 @@ def load_parquet_to_l0(
                 rows = []
 
                 if is_subvenciones:
-                    # Subvenciones: simple direct mapping from parquet columns
                     for _, row in batch.iterrows():
                         vals = []
                         for c in parquet_cols_ordered:
                             v = row.get(c)
-                            if v is None or (
-                                not isinstance(v, (list, dict)) and pd.isna(v)
-                            ):
+                            if _scalar_isna(v):
                                 vals.append(None)
                                 continue
-
-                            # Type conversion based on column_defs
                             pg_type = next(
                                 (t for col, t in column_defs if col == c), "TEXT"
                             )
@@ -779,11 +798,14 @@ def load_parquet_to_l0(
                                     vals.append(None)
                             elif "BOOL" in pg_type:
                                 vals.append(bool(v) if v is not None else None)
+                            elif "JSONB" in pg_type:
+                                vals.append(
+                                    psycopg2.extras.Json(_convert_numpy_to_python(v))
+                                )
                             else:
                                 vals.append(v)
                         rows.append(tuple(vals))
                 else:
-                    # Licitaciones: L0 pattern with natural_id and CPV prefixes
                     for batch_idx, (_, row) in enumerate(batch.iterrows()):
                         if use_synthetic_id:
                             nid = f"{table_name}_{start + batch_idx}"
@@ -794,22 +816,21 @@ def load_parquet_to_l0(
                             nid = _to_str_for_re(nid).strip() or None
                             if not nid:
                                 continue
-
-                        # Only derive CPV prefixes for licitaciones, not for subvenciones
                         if has_cpv:
                             prefix4, prefix6, sec6 = derive_cpv_prefixes(
                                 row.get(cpv_principal_col),
                                 row.get(cpvs_col),
                             )
+                        else:
+                            prefix4 = prefix6 = None
+                            sec6 = None
 
                         vals = [nid]
                         for idx, c in enumerate(parquet_cols_ordered):
                             if c == natural_id_col:
                                 continue
                             v = row.get(c)
-                            if v is None or (
-                                not isinstance(v, (list, dict)) and pd.isna(v)
-                            ):
+                            if _scalar_isna(v):
                                 vals.append(None)
                                 continue
                             if is_nacional:
@@ -836,8 +857,14 @@ def load_parquet_to_l0(
                                         vals.append(int(v))
                                     except (TypeError, ValueError):
                                         vals.append(None)
-                                elif isinstance(v, (list, dict)):
-                                    vals.append(psycopg2.extras.Json(v))
+                                elif isinstance(v, (list, dict)) or hasattr(
+                                    v, "tolist"
+                                ):
+                                    vals.append(
+                                        psycopg2.extras.Json(
+                                            _convert_numpy_to_python(v)
+                                        )
+                                    )
                                 else:
                                     vals.append(v)
                             else:
@@ -856,15 +883,18 @@ def load_parquet_to_l0(
                                         vals.append(None)
                                 elif "BOOL" in pg_type:
                                     vals.append(bool(v))
+                                elif "JSONB" in pg_type:
+                                    vals.append(
+                                        psycopg2.extras.Json(
+                                            _convert_numpy_to_python(v)
+                                        )
+                                    )
                                 else:
                                     vals.append(v)
-
-                        # Only append CPV prefix columns for licitaciones, not for subvenciones
                         if has_cpv:
                             vals.append(prefix4)
                             vals.append(prefix6)
                             vals.append(sec6 if sec6 else None)
-
                         rows.append(tuple(vals))
 
                 total_candidates += len(rows)
