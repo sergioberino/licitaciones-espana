@@ -10,6 +10,7 @@ from tqdm import tqdm
 import pandas as pd
 import os
 import argparse
+import re
 
 # Add parent directory to path to import etl modules
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
@@ -133,8 +134,6 @@ class LatestParams:
     page: int = 0
     pageSize: int = 100
     order: str = field(default="numeroConvocatoria", init=False)
-    descripcion: str = field(default="Subvención", init=False)
-    descripcionTipoBusqueda: str = field(default=2, init=False)
 
     def to_dict(self) -> dict:
         """Convert to dictionary."""
@@ -285,6 +284,7 @@ def scrape_diario(params: LatestParams) -> None:
     conn = None
     total_records = 0
     rate_limiter = RateLimiter(max_requests=49, time_window=60)
+    subvencion_pattern = re.compile(r"subvenci[oó]n", re.IGNORECASE)
 
     try:
         conn = psycopg2.connect(db_url)
@@ -299,7 +299,6 @@ def scrape_diario(params: LatestParams) -> None:
             rate_limiter.wait_if_needed()
             res = requests.get(API_ENDPOINT_LATEST, params=params.to_dict())
 
-            # Check for errors before parsing JSON
             if res.status_code != 200:
                 try:
                     error_data = res.json()
@@ -311,7 +310,7 @@ def scrape_diario(params: LatestParams) -> None:
                 except ValueError:
                     raise
                 except Exception:
-                    res.raise_for_status()  # Fallback to default error
+                    res.raise_for_status()
 
             data = res.json()
 
@@ -323,12 +322,15 @@ def scrape_diario(params: LatestParams) -> None:
 
             records = []
             for item in content:
+                descripcion = item.get("descripcion") or ""
+                if not subvencion_pattern.search(descripcion):
+                    continue
                 records.append(
                     (
                         item.get("id"),
                         item.get("numeroConvocatoria"),
                         item.get("mrr"),
-                        item.get("descripcion"),
+                        descripcion,
                         item.get("descripcionLeng"),
                         item.get("fechaRecepcion"),
                         item.get("nivel1"),
@@ -338,22 +340,36 @@ def scrape_diario(params: LatestParams) -> None:
                     )
                 )
 
-            with conn.cursor() as cur:
-                execute_batch(
-                    cur,
-                    """
-                    INSERT INTO l0.nacional_subvenciones 
-                    (id, numero_convocatoria, mrr, descripcion, descripcion_leng,
-                     fecha_recepcion, nivel1, nivel2, nivel3, codigo_invente)
-                    VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
-                    ON CONFLICT (id) DO NOTHING
-                    """,
-                    records,
-                    page_size=params.pageSize,
-                )
-                conn.commit()
+            if not records:
+                page += 1
+                continue
 
-            total_records += len(content)
+            with conn.cursor() as cur:
+                cur.execute(
+                    "SELECT id FROM l0.nacional_subvenciones WHERE id = ANY(%s)",
+                    ([r[0] for r in records],),
+                )
+                existing_ids = {row[0] for row in cur.fetchall()}
+
+                new_records = [r for r in records if r[0] not in existing_ids]
+
+                if new_records:
+                    execute_batch(
+                        cur,
+                        """
+                        INSERT INTO l0.nacional_subvenciones 
+                        (id, numero_convocatoria, mrr, descripcion, descripcion_leng,
+                         fecha_recepcion, nivel1, nivel2, nivel3, codigo_invente)
+                        VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+                        """,
+                        new_records,
+                        page_size=params.pageSize,
+                    )
+                    conn.commit()
+                    total_records += len(new_records)
+
+                if existing_ids:
+                    break
 
             page += 1
 
