@@ -1358,7 +1358,6 @@ def cmd_subvenciones(args: argparse.Namespace) -> int:
 
             params = LatestParams(page=0, pageSize=100)
             scrape_diario(params)
-            print("[INFO] Actualización diaria de subvenciones completada.")
             return 0
         except Exception as e:
             print(
