@@ -45,6 +45,7 @@ INIT_MIGRATIONS = (
     "008_scheduler.sql",
     "009_scheduler_runs_pid.sql",
     "011_nacional_new_columns.sql",
+    "012_nacional_subvenciones.sql",
 )
 
 BORME_MIGRATIONS = ("010_borme.sql",)
@@ -558,11 +559,14 @@ def cmd_ingest(args: argparse.Namespace) -> int:
             run_env = os.environ.copy()
             run_env["LICITACIONES_TMP_DIR"] = str(_tmp_dir())
             if "script_module" in reg:
+                script_module = reg.get("script_module_by_subconjunto", {}).get(
+                    subconjunto, reg["script_module"]
+                )
                 script_conjunto = reg["script_conjunto_arg"][subconjunto]
                 cmd = [
                     sys.executable,
                     "-m",
-                    reg["script_module"],
+                    script_module,
                     "--conjunto",
                     script_conjunto,
                     "--anos",
@@ -739,14 +743,23 @@ def cmd_ingest(args: argparse.Namespace) -> int:
 
         # --- Batch loading: detect partials or single Parquet ---
         output_dir = parquet_path.parent
-        partial_glob = sorted(output_dir.glob("_part_*.parquet"))
+
+        # Search for partials specific to this conjunto/subconjunto to avoid mixing with other datasets
+        # For 'nacional', use script_conjunto_arg mapping to match partial naming from scripts
+        if conjunto == "nacional" and "script_conjunto_arg" in reg:
+            script_conjunto = reg["script_conjunto_arg"].get(subconjunto, subconjunto)
+            partial_pattern = f"_part_{script_conjunto}_*.parquet"
+        else:
+            partial_pattern = f"_part_{subconjunto}_*.parquet"
+
+        partial_glob = sorted(output_dir.glob(partial_pattern))
         use_partials = len(partial_glob) > 0
 
         parquet_files: list[Path]
         if use_partials:
             parquet_files = partial_glob
             print(
-                f"[ingest] Encontrados {len(parquet_files)} parciales en {output_dir}.",
+                f"[ingest] Encontrados {len(parquet_files)} parciales para {subconjunto} en {output_dir}.",
                 file=sys.stderr,
             )
         elif parquet_path.exists():
@@ -765,6 +778,12 @@ def cmd_ingest(args: argparse.Namespace) -> int:
         )
         column_defs = reg.get("column_defs")
         natural_id_col = reg.get("natural_id_col")
+
+        # Special handling for subvenciones: use SUBVENCIONES_PARQUET_COLUMNS
+        if conjunto == "nacional" and subconjunto == "subvenciones":
+            from etl.ingest_l0 import SUBVENCIONES_PARQUET_COLUMNS
+
+            column_defs = SUBVENCIONES_PARQUET_COLUMNS
 
         total_inserted = 0
         total_skipped = 0
@@ -1322,6 +1341,9 @@ def _ensure_borme_schema() -> None:
                 print(f"[borme] Error aplicando {f}: {e}", file=sys.stderr)
 
 
+# cmd_subvenciones eliminated - now integrated with 'licitia-etl ingest nacional subvenciones --anos X-Y'
+
+
 def cmd_borme(args: argparse.Namespace) -> int:
     """BORME: ingest or anomaly detection."""
     borme_cmd = getattr(args, "borme_cmd", None)
@@ -1639,6 +1661,9 @@ def main() -> int:
     )
 
     borme_parser.set_defaults(func=cmd_borme)
+
+    # Subvenciones: now integrated with 'ingest nacional subvenciones --anos X-Y'
+    # No separate command needed - follows same pattern as licitaciones
 
     args = parser.parse_args()
     if not args.command:

@@ -44,9 +44,9 @@ def test_registry_has_all_conjuntos():
     assert "galicia" in CONJUNTOS_REGISTRY
 
 
-def test_registry_nacional_has_five_subconjuntos():
+def test_registry_nacional_has_six_subconjuntos():
     reg = CONJUNTOS_REGISTRY["nacional"]
-    assert len(reg["subconjuntos"]) == 5
+    assert len(reg["subconjuntos"]) == 6
     assert "consultas_preliminares" in reg["subconjuntos"]
     assert reg.get("requires_anos") is True
 
