@@ -186,7 +186,11 @@ def get_parquet_path_andalucia(subconjunto: str) -> Path:
     if subconjunto not in SUBCONJUNTOS_ANDALUCIA:
         raise ValueError(f"Subconjunto andalucia no reconocido: {subconjunto}")
     etl_root = Path(__file__).resolve().parent.parent
-    name = "licitaciones_andalucia.parquet" if subconjunto == "licitaciones" else "licitaciones_menores.parquet"
+    name = (
+        "licitaciones_andalucia.parquet"
+        if subconjunto == "licitaciones"
+        else "licitaciones_menores.parquet"
+    )
     return etl_root / "ccaa_Andalucia" / name
 
 
@@ -270,10 +274,12 @@ def get_cleanup_dirs(conjunto: str, subconjunto: str) -> list[Path]:
     if conjunto == CONJUNTO_NACIONAL:
         out.append(_tmp_output_dir())
     elif conjunto == "euskadi":
-        out.extend([
-            root / "Euskadi" / "datos_euskadi_contratacion_v4",
-            root / "Euskadi" / "euskadi_parquet",
-        ])
+        out.extend(
+            [
+                root / "Euskadi" / "datos_euskadi_contratacion_v4",
+                root / "Euskadi" / "euskadi_parquet",
+            ]
+        )
     elif conjunto == "andalucia":
         out.append(root / "ccaa_Andalucia")
     elif conjunto == "galicia":
@@ -345,8 +351,14 @@ CONJUNTOS_REGISTRY: dict[str, dict[str, Any]] = {
         "natural_id_col": NATURAL_ID_PARQUET_COL,
         "script_commands": {
             "comunidad": [
-                ["comunidad_madrid/descarga_contratacion_comunidad_madrid_v1.py", "todo"],
-                ["comunidad_madrid/descarga_contratacion_comunidad_madrid_v1.py", "unificar"],
+                [
+                    "comunidad_madrid/descarga_contratacion_comunidad_madrid_v1.py",
+                    "todo",
+                ],
+                [
+                    "comunidad_madrid/descarga_contratacion_comunidad_madrid_v1.py",
+                    "unificar",
+                ],
                 ["comunidad_madrid/csv_to_parquet_comunidad.py"],
             ],
             "ayuntamiento": [
@@ -377,27 +389,64 @@ def format_conjunto_help(conjunto: str, reg: dict[str, Any]) -> str:
         lines.append(f"  Subconjuntos → subcomandos: {mapeo}.")
     if "script_commands" in reg:
         sc = reg["script_commands"]
-        resumen = "; ".join(
-            f"{s} ({len(cmd)} paso(s))" for s, cmd in sc.items()
-        )
+        resumen = "; ".join(f"{s} ({len(cmd)} paso(s))" for s, cmd in sc.items())
         lines.append(f"  Comandos por subconjunto: {resumen}.")
     if reg.get("script_cwd"):
         lines.append(f"  Ejecución desde directorio {reg['script_cwd']}/.")
     if "scripts" in reg and conjunto == "valencia":
         lines.append("  El CLI pasa --categories al script de descarga y parquet.")
     if "scripts" in reg and conjunto == "catalunya":
-        lines.append("  El CLI pasa --limit-datasets al script de descarga (solo el dataset del subconjunto) y --parquet-rel al de parquet.")
+        lines.append(
+            "  El CLI pasa --limit-datasets al script de descarga (solo el dataset del subconjunto) y --parquet-rel al de parquet."
+        )
     if "scripts" in reg and conjunto == "euskadi":
         lines.append(
             "  Scripts: descarga y consolidación desde Euskadi/. Siempre se ejecuta descarga/consolidación completas; el subconjunto solo determina qué parquet se carga en L0."
         )
     if "scripts" in reg and conjunto == "galicia":
-        lines.append("  Scraper: descarga contratos de contratosdegalicia.gal. El subconjunto se carga en L0.")
+        lines.append(
+            "  Scraper: descarga contratos de contratosdegalicia.gal. El subconjunto se carga en L0."
+        )
     if "scripts" in reg and conjunto == "ted":
         lines.append("  El script recibe: download --years X-Y.")
         lines.append("  Puede omitir el subconjunto (solo hay ted_es_can).")
-    lines.append("  Opcional: --solo-descargar (solo generar parquet), --solo-procesar (solo cargar parquet existente).")
+    lines.append(
+        "  Opcional: --solo-descargar (solo generar parquet), --solo-procesar (solo cargar parquet existente)."
+    )
     return "\n".join(lines) if lines else "  (Sin argumentos específicos.)"
+
+
+def _scalar_isna(v: Any) -> bool:
+    """Devuelve True si v es un escalar NA/None. Seguro para arrays (devuelve False si v es array-like)."""
+    if v is None:
+        return True
+    if isinstance(v, (list, dict)):
+        return False
+    try:
+        result = pd.isna(v)
+        # pd.isna devuelve array si v es array-like; en ese caso no es un NA escalar
+        if hasattr(result, "__len__"):
+            return False
+        return bool(result)
+    except (TypeError, ValueError):
+        return False
+
+
+def _convert_numpy_to_python(obj: Any) -> Any:
+    """Convierte recursivamente numpy arrays a listas de Python para serialización JSON."""
+    if obj is None:
+        return None
+    # Arrays numpy: convertir a lista
+    if hasattr(obj, 'tolist'):
+        return obj.tolist()
+    # Listas: convertir cada elemento
+    if isinstance(obj, list):
+        return [_convert_numpy_to_python(item) for item in obj]
+    # Diccionarios: convertir cada valor
+    if isinstance(obj, dict):
+        return {k: _convert_numpy_to_python(v) for k, v in obj.items()}
+    # Otros tipos: devolver tal cual
+    return obj
 
 
 def _to_str_for_re(s: Any) -> str:
@@ -468,7 +517,11 @@ def infer_column_defs_from_parquet(parquet_path: Path) -> list[tuple[str, str]]:
     except Exception as e:
         _configure_logging()
         err_msg = str(e).lower()
-        if "magic" in err_msg or "arrowinvalid" in type(e).__name__.lower() or "parquet" in err_msg:
+        if (
+            "magic" in err_msg
+            or "arrowinvalid" in type(e).__name__.lower()
+            or "parquet" in err_msg
+        ):
             logger.error(
                 "Parquet inválido (magic bytes no encontrados o fichero corrupto). "
                 "Comprobar que la ruta es un .parquet válido; si acabas de descargar, reintentar la descarga. %s",
@@ -492,29 +545,39 @@ def ensure_l0_table(
         '"l0_id" BIGSERIAL PRIMARY KEY',
         '"natural_id" TEXT UNIQUE NOT NULL',
     ]
+    col_defs.extend(f'"{c}" {t}' for c, t in column_defs if c != natural_id_col)
     col_defs.extend(
-        f'"{c}" {t}' for c, t in column_defs if c != natural_id_col
+        [
+            '"principal_prefix4" INTEGER',
+            '"principal_prefix6" INTEGER',
+            '"secondary_prefix6" INTEGER[]',
+            '"ingested_at" TIMESTAMPTZ DEFAULT NOW()',
+        ]
     )
-    col_defs.extend([
-        '"principal_prefix4" INTEGER',
-        '"principal_prefix6" INTEGER',
-        '"secondary_prefix6" INTEGER[]',
-        '"ingested_at" TIMESTAMPTZ DEFAULT NOW()',
-    ])
     full_table = f'"{schema}"."{table_name}"'
-    create_sql = f"CREATE TABLE IF NOT EXISTS {full_table} (\n  " + ",\n  ".join(col_defs) + "\n)"
+    create_sql = (
+        f"CREATE TABLE IF NOT EXISTS {full_table} (\n  "
+        + ",\n  ".join(col_defs)
+        + "\n)"
+    )
     with conn.cursor() as cur:
         cur.execute(create_sql)
         for col in ("principal_prefix4", "principal_prefix6", "secondary_prefix6"):
             iname = f"idx_{table_name}_{col}"
             if col == "secondary_prefix6":
-                cur.execute(f'CREATE INDEX IF NOT EXISTS {iname} ON {full_table} USING GIN ("{col}")')
+                cur.execute(
+                    f'CREATE INDEX IF NOT EXISTS {iname} ON {full_table} USING GIN ("{col}")'
+                )
             else:
-                cur.execute(f'CREATE INDEX IF NOT EXISTS {iname} ON {full_table} ("{col}")')
+                cur.execute(
+                    f'CREATE INDEX IF NOT EXISTS {iname} ON {full_table} ("{col}")'
+                )
         col_names = [c[0] for c in column_defs]
         if "expediente" in col_names and "id_plataforma" in col_names:
             iname = f"idx_{table_name}_org_key"
-            cur.execute(f'CREATE INDEX IF NOT EXISTS {iname} ON {full_table} ("expediente", "id_plataforma")')
+            cur.execute(
+                f'CREATE INDEX IF NOT EXISTS {iname} ON {full_table} ("expediente", "id_plataforma")'
+            )
 
 
 def load_parquet_to_l0(
@@ -544,11 +607,17 @@ def load_parquet_to_l0(
         natural_id_col = df.columns[0]
         logger.info("Usando primera columna como natural_id: %s", natural_id_col)
     if natural_id_col not in df.columns:
-        raise ValueError(f"El parquet debe tener columna identificadora (ej. '{NATURAL_ID_PARQUET_COL}' o primera columna).")
+        raise ValueError(
+            f"El parquet debe tener columna identificadora (ej. '{NATURAL_ID_PARQUET_COL}' o primera columna)."
+        )
 
     # Comprobar cuántas filas tienen natural_id válido; si ninguna, usar id sintético (table_name + índice)
     nid_series = df[natural_id_col]
-    nid_valid = nid_series.notna() & (nid_series.astype(str).str.strip() != "") & (nid_series.astype(str) != "nan")
+    nid_valid = (
+        nid_series.notna()
+        & (nid_series.astype(str).str.strip() != "")
+        & (nid_series.astype(str) != "nan")
+    )
     num_valid_nid = int(nid_valid.sum())
     use_synthetic_id = num_valid_nid == 0
     if use_synthetic_id:
@@ -559,7 +628,11 @@ def load_parquet_to_l0(
             table_name,
         )
     elif num_valid_nid < len(df):
-        logger.info("Filas con natural_id válido: %s de %s (se omiten filas sin id).", num_valid_nid, len(df))
+        logger.info(
+            "Filas con natural_id válido: %s de %s (se omiten filas sin id).",
+            num_valid_nid,
+            len(df),
+        )
     else:
         logger.info("Filas con natural_id válido: %s de %s.", num_valid_nid, len(df))
 
@@ -570,11 +643,23 @@ def load_parquet_to_l0(
             df[c] = None
 
     with psycopg2.connect(db_url) as conn:
-        ensure_l0_table(conn, schema, table_name, column_defs=column_defs, natural_id_col=natural_id_col)
+        ensure_l0_table(
+            conn,
+            schema,
+            table_name,
+            column_defs=column_defs,
+            natural_id_col=natural_id_col,
+        )
         conn.commit()
 
-    table_base_cols = ["natural_id"] + [c for c, _ in column_defs if c != natural_id_col]
-    insert_cols = table_base_cols + ["principal_prefix4", "principal_prefix6", "secondary_prefix6"]
+    table_base_cols = ["natural_id"] + [
+        c for c, _ in column_defs if c != natural_id_col
+    ]
+    insert_cols = table_base_cols + [
+        "principal_prefix4",
+        "principal_prefix6",
+        "secondary_prefix6",
+    ]
     placeholders = ", ".join(["%s"] * len(insert_cols))
     quoted = ", ".join(f'"{c}"' for c in insert_cols)
     full_table = f'"{schema}"."{table_name}"'
@@ -613,11 +698,17 @@ def load_parquet_to_l0(
                         if c == natural_id_col:
                             continue
                         v = row.get(c)
-                        if v is None or (not isinstance(v, (list, dict)) and pd.isna(v)):
+                        if _scalar_isna(v):
                             vals.append(None)
                             continue
                         if is_nacional:
-                            if c in ("importe_sin_iva", "importe_con_iva", "importe_adjudicacion", "importe_adj_con_iva", "duracion"):
+                            if c in (
+                                "importe_sin_iva",
+                                "importe_con_iva",
+                                "importe_adjudicacion",
+                                "importe_adj_con_iva",
+                                "duracion",
+                            ):
                                 try:
                                     vals.append(float(v))
                                 except (TypeError, ValueError):
@@ -634,12 +725,15 @@ def load_parquet_to_l0(
                                     vals.append(int(v))
                                 except (TypeError, ValueError):
                                     vals.append(None)
-                            elif isinstance(v, (list, dict)):
-                                vals.append(psycopg2.extras.Json(v))
+                            elif isinstance(v, (list, dict)) or hasattr(v, 'tolist'):
+                                # JSONB: convertir recursivamente numpy arrays a listas Python
+                                vals.append(psycopg2.extras.Json(_convert_numpy_to_python(v)))
                             else:
                                 vals.append(v)
                         else:
-                            pg_type = next((t for col, t in column_defs if col == c), "TEXT")
+                            pg_type = next(
+                                (t for col, t in column_defs if col == c), "TEXT"
+                            )
                             if "INT" in pg_type or "BIGINT" in pg_type:
                                 try:
                                     vals.append(int(v))
@@ -652,6 +746,9 @@ def load_parquet_to_l0(
                                     vals.append(None)
                             elif "BOOL" in pg_type:
                                 vals.append(bool(v))
+                            elif "JSONB" in pg_type:
+                                # JSONB: convertir recursivamente numpy arrays a listas Python
+                                vals.append(psycopg2.extras.Json(_convert_numpy_to_python(v)))
                             else:
                                 vals.append(v)
                     vals.append(prefix4)
@@ -667,5 +764,9 @@ def load_parquet_to_l0(
                     conn.commit()
     skipped = total_candidates - inserted
 
-    logger.info("Ingesta completada: %s filas insertadas, %s omitidas (ya existentes).", inserted, skipped)
+    logger.info(
+        "Ingesta completada: %s filas insertadas, %s omitidas (ya existentes).",
+        inserted,
+        skipped,
+    )
     return (inserted, skipped)
