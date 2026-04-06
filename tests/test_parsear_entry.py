@@ -16,7 +16,7 @@ def _parse_entry(filename):
 class TestBudgetMapping:
     @pytest.fixture(autouse=True)
     def parsed(self):
-        self.result = _parse_entry("entry_complete.xml")
+        self.result = _parse_entry("entry_budget.xml")
 
     def test_valor_estimado_contrato(self):
         assert self.result["valor_estimado_contrato"] == 7809917.35

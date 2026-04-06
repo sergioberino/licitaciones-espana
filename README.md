@@ -2,7 +2,7 @@
 
 Fork de [BquantFinance/licitaciones-espana](https://github.com/BquantFinance/licitaciones-espana) que extiende el repositorio original de extracción de datos públicos de contratación con un **CLI** (`licitia-etl`) y una **API REST** (FastAPI) para su uso como microservicio conectable.
 
-Última sincronización con upstream: commit `68e469b`, 2026-03-23 (rama `feat/upstream-sync-1.1.2`).
+Última sincronización con upstream: merge de `BquantFinance/licitaciones-espana` `main` incluyendo corrección de mapeo `BudgetAmount`, refactor scraper Galicia y merges asociados (véase historial git).
 
 ## Contribución y gobernanza
 
@@ -214,3 +214,9 @@ Ver [CHANGELOG.md](CHANGELOG.md) para el historial completo.
 
 - **Repositorio original de extracción de datos públicos:** [@Gsnchez](https://twitter.com/Gsnchez) | [BQuant Finance](https://bquantfinance.com)
 - **Mantenedor del CLI y API (licitia-etl):** [Sergio Berino](https://es.linkedin.com/in/sergio-emilio-berino-a19a53328/en) | [Grupo TOP Digital](https://grupotopdigital.es/)
+
+<!--
+Documentación detallada por CCAA del repositorio upstream (p. ej. tablas Catalunya Socrata) está en
+https://github.com/BquantFinance/licitaciones-espana — este README del fork se centra en el microservicio ETL.
+-->
+

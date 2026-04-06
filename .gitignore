@@ -51,3 +51,8 @@ ccaa_Andalucia/perfiles_cache.json
 
 # Asturias runtime output
 asturias_data/
+
+# Galicia scraper resumable pipeline (upstream)
+galicia/contratos_galicia_base.parquet
+galicia/contratos_galicia_base_progress.json
+galicia/contratos_galicia_detail.sqlite3
