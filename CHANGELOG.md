@@ -2,6 +2,18 @@
 
 Todos los cambios notables del CLI y del microservicio ETL se documentan aquí.
 
+## [1.3.3] — 2026-04-07
+
+### Mejorado
+
+- **Logs de subvenciones (BDNS) para Docker / panel “Salida”**: `scrape_historico` y `scrape_diario` emiten progreso por línea (sin `tqdm`), prefijo `[subvenciones]`, marcadores `SCRAPING COMPLETADO` / error, y resúmenes por página (nuevos, duplicados, filtrados) en el flujo diario.
+
+### Alineación de versiones
+
+- **`__version__`**, `pyproject.toml` y metadatos OpenAPI (`FastAPI.version`) unificados en **1.3.3** (antes `__init__.py` / API seguían en 1.2.3 pese a tags posteriores).
+
+---
+
 ## [1.3.2] — 2026-04-06
 
 ### Sincronización con repositorio padre

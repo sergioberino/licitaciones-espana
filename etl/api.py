@@ -83,7 +83,7 @@ class BormeAnomaliasBody(BaseModel):
 
 app = FastAPI(
     title="ETL API",
-    version="1.2.3",
+    version="1.3.3",
     description="Microservicio ETL: ingest L0, scheduler, BORME.",
 )
 
@@ -568,6 +568,7 @@ def scheduler_status():
             next_at = get_next_run_at(
                 r.get("schedule_expr") or "Trimestral",
                 r.get("last_finished_at"),
+                created_at=r.get("created_at"),
             )
             r["next_run_at"] = next_at
         list_of_dicts.append(_serialize_row(r))
