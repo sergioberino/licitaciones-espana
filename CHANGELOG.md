@@ -2,6 +2,15 @@
 
 Todos los cambios notables del CLI y del microservicio ETL se documentan aquí.
 
+## [1.3.4] — 2026-04-07
+
+### Corregido
+
+- **`GET /scheduler/status` y `licitia-etl scheduler status`**: `get_next_run_at()` ahora acepta **`created_at`** (alineado con `api.py` y `get_tasks_due`). Antes el código desplegado llamaba con `created_at=...` pero la firma en `scheduler.py` no lo incluía → `TypeError: unexpected keyword argument 'created_at'`.
+- **`get_tasks_due`** y **CLI** pasan `created_at` de la tarea para coherencia con el cálculo de `next_run_at` para tareas nuevas sin ejecución previa.
+
+---
+
 ## [1.3.3] — 2026-04-07
 
 ### Mejorado

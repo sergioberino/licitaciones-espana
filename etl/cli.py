@@ -1051,7 +1051,9 @@ def cmd_scheduler_status(_args: argparse.Namespace) -> int:
                 next_run = "-"
             else:
                 next_at = get_next_run_at(
-                    r.get("schedule_expr") or "Trimestral", r.get("last_finished_at")
+                    r.get("schedule_expr") or "Trimestral",
+                    r.get("last_finished_at"),
+                    created_at=r.get("created_at"),
                 )
                 next_run = str(next_at)[:19].replace("T", " ") if next_at else "-"
             next_run = (next_run or "-")[:20]

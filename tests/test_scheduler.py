@@ -81,10 +81,36 @@ def test_next_run_diario_after_finish_after_hour():
     assert result == datetime(2026, 3, 26, 2, 0, 0, tzinfo=SCHEDULER_TZ)
 
 def test_next_run_diario_none_returns_now():
-    """No last run → returns reference_now (task is immediately due)."""
+    """No last run and no created_at anchor → returns reference_now."""
     now = datetime(2026, 3, 25, 10, 0, 0, tzinfo=SCHEDULER_TZ)
     result = get_next_run_at("Diario", None, reference_now=now)
     assert result == now
+
+
+def test_next_run_diario_none_uses_created_at_anchor_next_day():
+    """Newly registered daily task should schedule first run after creation time."""
+    now = datetime(2026, 4, 7, 10, 0, 0, tzinfo=SCHEDULER_TZ)
+    created_at = datetime(2026, 4, 7, 9, 30, 0, tzinfo=SCHEDULER_TZ)
+    result = get_next_run_at(
+        "Diario",
+        None,
+        reference_now=now,
+        created_at=created_at,
+    )
+    assert result == datetime(2026, 4, 8, 2, 0, 0, tzinfo=SCHEDULER_TZ)
+
+
+def test_next_run_diario_none_uses_created_at_anchor_same_day_before_slot():
+    """If task is created before 02:00, first slot is same day at 02:00."""
+    now = datetime(2026, 4, 7, 1, 30, 0, tzinfo=SCHEDULER_TZ)
+    created_at = datetime(2026, 4, 7, 1, 0, 0, tzinfo=SCHEDULER_TZ)
+    result = get_next_run_at(
+        "Diario",
+        None,
+        reference_now=now,
+        created_at=created_at,
+    )
+    assert result == datetime(2026, 4, 7, 2, 0, 0, tzinfo=SCHEDULER_TZ)
 
 def test_next_run_diario_finish_at_exact_hour():
     """Finished exactly at 02:00 → next day 02:00 (slot not repeated same day)."""

@@ -495,11 +495,14 @@ def get_next_run_at(
     schedule_expr: str,
     last_finished_at: Optional[datetime],
     reference_now: Optional[datetime] = None,
+    created_at: Optional[datetime] = None,
 ) -> datetime:
     """
     Calcula la próxima ejecución según schedule_expr (ver VALID_SCHEDULE_EXPRS) y la última finalización.
-    Hora fija 02:00 Europe/Madrid. Si last_finished_at es None (nunca ejecutada), devuelve reference_now o now
-    para que la comparación next_at <= now en get_tasks_due sea coherente (mismo instante).
+    Hora fija 02:00 Europe/Madrid.
+    - Si hay last_finished_at: siguiente slot estrictamente posterior a esa finalización.
+    - Si no hay last_finished_at pero hay created_at: primer slot estrictamente posterior a created_at.
+    - Si no hay ni last_finished_at ni created_at: devuelve reference_now/now para retrocompatibilidad.
     """
     from datetime import date
 
@@ -525,12 +528,27 @@ def get_next_run_at(
             "last_finished_at": (
                 last_finished_at.isoformat() if last_finished_at else None
             ),
+            "created_at": created_at.isoformat() if created_at else None,
             "now": now.isoformat(),
         },
         "H2",
     )
     # #endregion
     if last_finished_at is None:
+        if created_at is not None:
+            created_tz = created_at.astimezone(SCHEDULER_TZ)
+            result = get_next_run_at(
+                schedule_expr,
+                created_tz,
+                reference_now=now,
+            )
+            _debug_log(
+                "scheduler.py:get_next_run_at",
+                "get_next_run_at exit (created_at anchor)",
+                {"result": result.isoformat()},
+                "H2",
+            )
+            return result
         # #region agent log
         _debug_log(
             "scheduler.py:get_next_run_at",
@@ -744,7 +762,10 @@ def get_tasks_due(conn: "psycopg2.extensions.connection") -> list[dict[str, Any]
             continue
         last_fin = t.get("last_finished_at")
         next_at = get_next_run_at(
-            t.get("schedule_expr") or "Trimestral", last_fin, reference_now=now
+            t.get("schedule_expr") or "Trimestral",
+            last_fin,
+            reference_now=now,
+            created_at=t.get("created_at"),
         )
         if next_at <= now:
             row = dict(t)
