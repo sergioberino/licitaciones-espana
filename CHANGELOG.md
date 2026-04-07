@@ -12,6 +12,10 @@ Todos los cambios notables del CLI y del microservicio ETL se documentan aquí.
 
 - **`__version__`**, `pyproject.toml` y metadatos OpenAPI (`FastAPI.version`) unificados en **1.3.3** (antes `__init__.py` / API seguían en 1.2.3 pese a tags posteriores).
 
+### Eliminado
+
+- **`tests/test_api.py`**: smoke tests HTTP contra la app FastAPI (sustituibles por pruebas manuales o contract tests en otro entorno si se desean).
+
 ---
 
 ## [1.3.2] — 2026-04-06
