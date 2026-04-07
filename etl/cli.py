@@ -1354,19 +1354,76 @@ def cmd_subvenciones(args: argparse.Namespace) -> int:
         return 1
 
     if subv_cmd == "diario":
+        # Register scheduler run (same pattern as cmd_ingest)
+        run_id = None
+        db_url = get_database_url()
+        subv_result = [
+            "failed",
+            0,
+            0,
+            None,
+        ]  # status, rows_inserted, rows_omitted, error_msg
+
+        if db_url:
+            try:
+                from etl.scheduler import (
+                    get_task_id,
+                    has_running_run,
+                    insert_run_start,
+                    update_run_process_id,
+                )
+
+                with psycopg2.connect(db_url) as conn:
+                    conn.autocommit = False
+                    task_id = get_task_id(conn, "nacional", "subvenciones")
+                    if task_id and has_running_run(conn, task_id):
+                        print(
+                            "[subvenciones] Ya hay una ejecución en curso para esta tarea (scheduler).",
+                            file=sys.stderr,
+                        )
+                        return 1
+                    if task_id:
+                        run_id = insert_run_start(conn, task_id)
+                        update_run_process_id(conn, run_id, os.getpid())
+                        conn.commit()
+            except (ImportError, psycopg2.Error, Exception):
+                run_id = None
+
         try:
             sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
             from nacional.subvenciones import scrape_diario, LatestParams
 
             params = LatestParams(page=0, pageSize=100)
-            scrape_diario(params)
+            result = scrape_diario(params)
+            subv_result[0] = "ok"
+            subv_result[1] = result.get("inserted", 0)
+            subv_result[2] = result.get("omitted", 0)
             return 0
         except Exception as e:
+            subv_result[3] = str(e)
             print(
                 f"[ERROR] Error en actualización diaria de subvenciones: {e}",
                 file=sys.stderr,
             )
             return 1
+        finally:
+            # Update scheduler run status
+            if run_id and db_url:
+                try:
+                    from etl.scheduler import update_run_finish
+
+                    with psycopg2.connect(db_url) as conn:
+                        update_run_finish(
+                            conn,
+                            run_id,
+                            subv_result[0] or "failed",
+                            subv_result[1],
+                            subv_result[2],
+                            subv_result[3],
+                        )
+                        conn.commit()
+                except Exception:
+                    pass
     else:
         print("Subcomando subvenciones no reconocido.", file=sys.stderr)
         return 1

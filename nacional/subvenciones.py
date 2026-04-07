@@ -17,6 +17,7 @@ LOG_PREFIX = "[subvenciones]"
 def _log(level: str, msg: str) -> None:
     print(f"{LOG_PREFIX} [{level}] {msg}", flush=True)
 
+
 # Add parent directory to path to import etl modules
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 from etl.config import get_database_url
@@ -68,7 +69,10 @@ class RateLimiter:
             wait_time = self.time_window - (now - oldest_request)
 
             if wait_time > 0:
-                _log("WARN", f"Límite de peticiones alcanzado. Esperando {wait_time:.1f}s...")
+                _log(
+                    "WARN",
+                    f"Límite de peticiones alcanzado. Esperando {wait_time:.1f}s...",
+                )
                 time.sleep(wait_time + 0.1)
                 now = time.time()
                 self.request_times = [
@@ -212,7 +216,10 @@ def scrape_historico(params: SearchParams) -> Path:
 
             if page == 0:
                 total_elements = data.get("totalElements", 0)
-                _log("INFO", f"Total registros en API: {total_elements:,} ({total_pages} páginas)")
+                _log(
+                    "INFO",
+                    f"Total registros en API: {total_elements:,} ({total_pages} páginas)",
+                )
 
             if not content:
                 _log("WARN", f"Página {page + 1} vacía — fin de datos")
@@ -262,7 +269,7 @@ def scrape_historico(params: SearchParams) -> Path:
         raise
 
 
-def scrape_diario(params: LatestParams) -> None:
+def scrape_diario(params: LatestParams) -> dict[str, int]:
     """
     Scrape latest/daily grants and insert directly into database.
     This is for daily scheduler updates - small volume so direct insert is efficient.
@@ -271,7 +278,7 @@ def scrape_diario(params: LatestParams) -> None:
         params: LatestParams for latest updates
 
     Returns:
-        Total number of new records inserted
+        Dictionary with metrics: inserted, omitted, filtered, pages
     """
     params.validate()
 
@@ -285,12 +292,11 @@ def scrape_diario(params: LatestParams) -> None:
     total_new = 0
     total_duplicates = 0
     total_filtered = 0
-    pages_scanned = 0
     rate_limiter = RateLimiter(max_requests=49, time_window=60)
     subvencion_pattern = re.compile(r"subvenci[oó]n", re.IGNORECASE)
 
     print(f"\n{'='*60}", flush=True)
-    print(f"📦 SUBVENCIONES DIARIAS (BDNS)", flush=True)
+    print(f"SUBVENCIONES DIARIAS (BDNS)", flush=True)
     print(f"   Endpoint: {API_ENDPOINT_LATEST}", flush=True)
     print(f"   Modo: insert directo en BD", flush=True)
     print(f"{'='*60}", flush=True)
@@ -328,7 +334,6 @@ def scrape_diario(params: LatestParams) -> None:
             total_pages = data.get("totalPages", "?")
 
             if not content:
-                _log("INFO", f"Página {page + 1} vacía — fin de datos")
                 break
 
             page_filtered = 0
@@ -355,13 +360,7 @@ def scrape_diario(params: LatestParams) -> None:
             total_filtered += page_filtered
 
             if not records:
-                _log(
-                    "INFO",
-                    f"Página {page + 1}/{total_pages} — {len(content)} convocatorias, "
-                    f"0 subvenciones (filtradas {page_filtered})",
-                )
                 page += 1
-                pages_scanned += 1
                 continue
 
             with conn.cursor() as cur:
@@ -390,31 +389,19 @@ def scrape_diario(params: LatestParams) -> None:
                     conn.commit()
                     total_new += len(new_records)
 
-                _log(
-                    "INFO",
-                    f"Página {page + 1}/{total_pages} — "
-                    f"{len(new_records)} nuevos, {page_dups} ya existentes"
-                    + (f", {page_filtered} filtrados" if page_filtered else ""),
-                )
-
                 if existing_ids:
-                    _log(
-                        "INFO",
-                        f"Detectados {page_dups} registros ya existentes — "
-                        f"datos actualizados, deteniendo paginación",
-                    )
-                    pages_scanned += 1
                     break
 
             page += 1
-            pages_scanned += 1
 
-        print(f"\n✅ SCRAPING COMPLETADO: subvenciones diarias", flush=True)
-        _log("INFO", f"Páginas consultadas: {pages_scanned}")
-        _log("INFO", f"Registros nuevos insertados: {total_new:,}")
-        _log("INFO", f"Registros ya existentes (omitidos): {total_duplicates:,}")
-        if total_filtered:
-            _log("INFO", f"Convocatorias no-subvención filtradas: {total_filtered:,}")
+        print(f"\nSCRAPING COMPLETADO: subvenciones diarias", flush=True)
+
+        return {
+            "inserted": total_new,
+            "omitted": total_duplicates,
+            "filtered": total_filtered,
+            "pages": page + 1,
+        }
 
     except Exception as err:
         print(f"\n❌ ERROR: scraping diario falló", flush=True)
