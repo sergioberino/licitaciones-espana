@@ -6,11 +6,16 @@ from datetime import datetime
 import sys
 from pathlib import Path
 import time
-from tqdm import tqdm
 import pandas as pd
 import os
 import argparse
 import re
+
+LOG_PREFIX = "[subvenciones]"
+
+
+def _log(level: str, msg: str) -> None:
+    print(f"{LOG_PREFIX} [{level}] {msg}", flush=True)
 
 # Add parent directory to path to import etl modules
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
@@ -63,9 +68,7 @@ class RateLimiter:
             wait_time = self.time_window - (now - oldest_request)
 
             if wait_time > 0:
-                print(
-                    f"[WARN] Limite de peticiones alcanzado. Esperando {wait_time:.1f}s..."
-                )
+                _log("WARN", f"Límite de peticiones alcanzado. Esperando {wait_time:.1f}s...")
                 time.sleep(wait_time + 0.1)
                 now = time.time()
                 self.request_times = [
@@ -173,9 +176,13 @@ def scrape_historico(params: SearchParams) -> Path:
 
     page = params.page
     is_last_page = False
-    pbar = None
+    total_elements = 0
 
-    print("[INFO] Iniciando scraping historico...")
+    print(f"\n{'='*60}", flush=True)
+    print(f"📦 SUBVENCIONES HISTÓRICAS (BDNS)", flush=True)
+    print(f"   Rango: {params.fechaDesde} — {params.fechaHasta}", flush=True)
+    print(f"   Endpoint: {API_ENDPOINT_SEARCH}", flush=True)
+    print(f"{'='*60}", flush=True)
 
     try:
         while not is_last_page:
@@ -184,7 +191,6 @@ def scrape_historico(params: SearchParams) -> Path:
             rate_limiter.wait_if_needed()
             res = requests.get(API_ENDPOINT_SEARCH, params=params.to_dict())
 
-            # Check for errors before parsing JSON
             if res.status_code != 200:
                 try:
                     error_data = res.json()
@@ -196,27 +202,22 @@ def scrape_historico(params: SearchParams) -> Path:
                 except ValueError:
                     raise
                 except Exception:
-                    res.raise_for_status()  # Fallback to default error
+                    res.raise_for_status()
 
             data = res.json()
 
             content = data.get("content", [])
             is_last_page = data.get("last", True)
+            total_pages = data.get("totalPages", "?")
 
-            # Initialize progress bar on first iteration
-            if pbar is None:
+            if page == 0:
                 total_elements = data.get("totalElements", 0)
-                print(f"Progreso descarga de subvenciones\n")
-                pbar = tqdm(
-                    total=total_elements,
-                    unit="reg",
-                )
+                _log("INFO", f"Total registros en API: {total_elements:,} ({total_pages} páginas)")
 
             if not content:
+                _log("WARN", f"Página {page + 1} vacía — fin de datos")
                 break
 
-            # Collect records as dictionaries for DataFrame
-            # Convert API response (camelCase) to parquet columns (snake_case)
             for item in content:
                 all_records.append(
                     {
@@ -233,15 +234,14 @@ def scrape_historico(params: SearchParams) -> Path:
                     }
                 )
 
-            if pbar:
-                pbar.update(len(content))
+            pct = (len(all_records) / total_elements * 100) if total_elements else 0
+            _log(
+                "INFO",
+                f"Página {page + 1}/{total_pages} — {len(all_records):,}/{total_elements:,} registros ({pct:.0f}%)",
+            )
 
             page += 1
 
-        if pbar:
-            pbar.close()
-
-        # Convert to DataFrame and save as Parquet
         df = pd.DataFrame(all_records)
 
         parquet_filename = f"licitaciones_subvenciones_{ano_inicio}_{ano_fin}.parquet"
@@ -249,16 +249,16 @@ def scrape_historico(params: SearchParams) -> Path:
 
         df.to_parquet(parquet_path, engine="pyarrow", index=False)
 
-        print(f"[INFO] Parquet generado: {parquet_path}")
-        print(f"[INFO] Total registros: {len(df):,}")
-        print(
-            f"[INFO] Tamaño archivo: {parquet_path.stat().st_size / (1024 * 1024):.2f} MB"
-        )
+        size_mb = parquet_path.stat().st_size / (1024 * 1024)
+        print(f"\n✅ SCRAPING COMPLETADO: subvenciones históricas", flush=True)
+        _log("INFO", f"Parquet generado: {parquet_path.name} ({size_mb:.1f} MB)")
+        _log("INFO", f"Total registros: {len(df):,}")
 
         return parquet_path
 
     except Exception as err:
-        print(f"[ERROR] Error durante scraping historico: {err}")
+        print(f"\n❌ ERROR: scraping histórico falló", flush=True)
+        _log("ERROR", f"{err}")
         raise
 
 
@@ -282,13 +282,22 @@ def scrape_diario(params: LatestParams) -> None:
         )
 
     conn = None
-    total_records = 0
+    total_new = 0
+    total_duplicates = 0
+    total_filtered = 0
+    pages_scanned = 0
     rate_limiter = RateLimiter(max_requests=49, time_window=60)
     subvencion_pattern = re.compile(r"subvenci[oó]n", re.IGNORECASE)
 
+    print(f"\n{'='*60}", flush=True)
+    print(f"📦 SUBVENCIONES DIARIAS (BDNS)", flush=True)
+    print(f"   Endpoint: {API_ENDPOINT_LATEST}", flush=True)
+    print(f"   Modo: insert directo en BD", flush=True)
+    print(f"{'='*60}", flush=True)
+
     try:
         conn = psycopg2.connect(db_url)
-        print("[INFO] Conexion a base de datos establecida (modo: diario)")
+        _log("INFO", "Conexión a base de datos establecida")
 
         page = params.page
         is_last_page = False
@@ -316,14 +325,18 @@ def scrape_diario(params: LatestParams) -> None:
 
             content = data.get("content", [])
             is_last_page = data.get("last", True)
+            total_pages = data.get("totalPages", "?")
 
             if not content:
+                _log("INFO", f"Página {page + 1} vacía — fin de datos")
                 break
 
+            page_filtered = 0
             records = []
             for item in content:
                 descripcion = item.get("descripcion") or ""
                 if not subvencion_pattern.search(descripcion):
+                    page_filtered += 1
                     continue
                 records.append(
                     (
@@ -339,9 +352,16 @@ def scrape_diario(params: LatestParams) -> None:
                         item.get("codigoInvente"),
                     )
                 )
+            total_filtered += page_filtered
 
             if not records:
+                _log(
+                    "INFO",
+                    f"Página {page + 1}/{total_pages} — {len(content)} convocatorias, "
+                    f"0 subvenciones (filtradas {page_filtered})",
+                )
                 page += 1
+                pages_scanned += 1
                 continue
 
             with conn.cursor() as cur:
@@ -352,6 +372,8 @@ def scrape_diario(params: LatestParams) -> None:
                 existing_ids = {row[0] for row in cur.fetchall()}
 
                 new_records = [r for r in records if r[0] not in existing_ids]
+                page_dups = len(existing_ids)
+                total_duplicates += page_dups
 
                 if new_records:
                     execute_batch(
@@ -366,17 +388,37 @@ def scrape_diario(params: LatestParams) -> None:
                         page_size=params.pageSize,
                     )
                     conn.commit()
-                    total_records += len(new_records)
+                    total_new += len(new_records)
+
+                _log(
+                    "INFO",
+                    f"Página {page + 1}/{total_pages} — "
+                    f"{len(new_records)} nuevos, {page_dups} ya existentes"
+                    + (f", {page_filtered} filtrados" if page_filtered else ""),
+                )
 
                 if existing_ids:
+                    _log(
+                        "INFO",
+                        f"Detectados {page_dups} registros ya existentes — "
+                        f"datos actualizados, deteniendo paginación",
+                    )
+                    pages_scanned += 1
                     break
 
             page += 1
+            pages_scanned += 1
 
-        print(f"[INFO] Scraping diario completado: {total_records} registros nuevos")
+        print(f"\n✅ SCRAPING COMPLETADO: subvenciones diarias", flush=True)
+        _log("INFO", f"Páginas consultadas: {pages_scanned}")
+        _log("INFO", f"Registros nuevos insertados: {total_new:,}")
+        _log("INFO", f"Registros ya existentes (omitidos): {total_duplicates:,}")
+        if total_filtered:
+            _log("INFO", f"Convocatorias no-subvención filtradas: {total_filtered:,}")
 
     except Exception as err:
-        print(f"[ERROR] Error durante scraping diario: {err}")
+        print(f"\n❌ ERROR: scraping diario falló", flush=True)
+        _log("ERROR", f"{err}")
         if conn:
             conn.rollback()
         raise
