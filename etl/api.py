@@ -83,7 +83,7 @@ class BormeAnomaliasBody(BaseModel):
 
 app = FastAPI(
     title="ETL API",
-    version="1.3.4",
+    version="1.4.0",
     description="Microservicio ETL: ingest L0, scheduler, BORME.",
 )
 
@@ -143,20 +143,49 @@ def _serialize_row(row: dict) -> dict:
     return out
 
 
-@app.get("/health", summary="Health check", description="Liveness, DB connectivity, and migration status.")
+def _get_dim_status(conn) -> dict | None:
+    """Check row and embedding presence for each dim table."""
+    def _check_table(cur, table: str) -> dict:
+        try:
+            cur.execute(f"SELECT EXISTS(SELECT 1 FROM dim.{table})")
+            has_rows = cur.fetchone()[0]
+        except Exception:
+            return {"has_rows": False, "has_embeddings": False}
+        has_embeddings = False
+        if has_rows:
+            try:
+                cur.execute(f"SELECT EXISTS(SELECT 1 FROM dim.{table} WHERE embedding IS NOT NULL)")
+                has_embeddings = cur.fetchone()[0]
+            except Exception:
+                pass
+        return {"has_rows": has_rows, "has_embeddings": has_embeddings}
+
+    try:
+        with conn.cursor() as cur:
+            return {
+                "cpv": _check_table(cur, "cpv_dim"),
+                "cnae": _check_table(cur, "cnae_dim"),
+            }
+    except Exception:
+        return None
+
+
+@app.get("/health", summary="Health check", description="Liveness, DB connectivity, migration status, and dimension table readiness.")
 def health():
     db_url = get_database_url()
     db_ok = False
+    dim_status = None
     if db_url:
         try:
             with psycopg2.connect(db_url) as conn:
                 with conn.cursor() as cur:
                     cur.execute("SELECT 1")
-            db_ok = True
+                db_ok = True
+                dim_status = _get_dim_status(conn)
         except Exception:
             pass
     migrations = getattr(app.state, "migration_status", None)
-    return {"status": "ok", "db": db_ok, "migrations": migrations}
+    return {"status": "ok", "db": db_ok, "migrations": migrations, "dim_status": dim_status}
 
 
 @app.get("/migrations", summary="Migration audit trail", description="Returns all recorded schema migrations.")
@@ -730,6 +759,22 @@ def borme_job_status(job_id: str):
         except OSError:
             pass
     return {"job_id": job_id, "alive": alive, "status": "running" if alive else "finished", "log_tail": log_lines}
+
+
+@app.post(
+    "/cnae/ingest",
+    summary="Ingest CNAE codes",
+    description="Fetch CNAE-2025 codes from ISTAC API and upsert into dim.cnae_dim.",
+)
+def cnae_ingest():
+    from etl.cnae_ingest import run_cnae_ingest
+    try:
+        result = run_cnae_ingest()
+        if result["ok"]:
+            return result
+        return JSONResponse(status_code=500, content=result)
+    except Exception as e:
+        return JSONResponse(status_code=500, content={"ok": False, "message": str(e)})
 
 
 @app.get("/borme/log", summary="Tail the BORME subprocess log")

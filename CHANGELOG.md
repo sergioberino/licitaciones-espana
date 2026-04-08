@@ -2,6 +2,18 @@
 
 Todos los cambios notables del CLI y del microservicio ETL se documentan aquí.
 
+## [1.4.0] — 2026-04-08
+
+### Añadido
+
+- **CNAE (Clasificación Nacional de Actividades Económicas):** nueva tabla de dimensión `dim.cnae_dim` con migración DDL (`013_dim_cnae.sql`) incluida en `INIT_MIGRATIONS`.
+- **Ingesta CNAE desde fuente oficial:** módulo `etl/cnae_ingest.py` que obtiene los códigos CNAE-2025 de la API SDMX del ISTAC (datos.canarias.es), filtra códigos numéricos y realiza upsert en `dim.cnae_dim`.
+- **CLI `licitia-etl cnae ingest`:** nuevo verbo para ejecutar la ingesta CNAE bajo demanda (patrón similar a BORME).
+- **API `POST /cnae/ingest`:** endpoint REST para disparar la ingesta CNAE desde el panel de administración.
+- **`dim_status` en `GET /health`:** el endpoint de salud ahora incluye el estado de las tablas de dimensión (`cpv`, `cnae`): `has_rows` y `has_embeddings`, permitiendo al panel detectar si faltan datos o indexaciones.
+
+---
+
 ## [1.3.4] — 2026-04-07
 
 ### Corregido
