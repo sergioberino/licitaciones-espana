@@ -8,6 +8,14 @@ Todos los cambios notables del CLI y del microservicio ETL se documentan aquí.
 
 - **`GET /health`**: devuelve HTTP 503 con `"status": "degraded"` cuando la base de datos no es accesible (antes siempre 200 + `"status": "ok"`). Permite que los health probes de Docker detecten correctamente un servicio degradado.
 
+### Corregido
+
+- **`POST /scheduler/unregister` — eliminación de tareas independiente de `enabled`**: el endpoint usaba `get_task_id()` que filtra por `AND enabled = true`, impidiendo borrar tareas visibles en la UI con `enabled = false` (0 deleted). Ahora ejecuta `DELETE FROM scheduler.tasks WHERE conjunto = %s AND subconjunto = %s` directamente.
+
+### Añadido
+
+- **Registro de ejecuciones del scheduler para `cmd_borme` (ingest)**: `cmd_borme` era el único comando CLI que no registraba runs en `scheduler.runs`. Sin run registrada, `last_finished_at` nunca se actualizaba y `next_run_at` se calculaba siempre sobre `created_at`, dejando la tarea permanentemente "Vencida". Ahora sigue el mismo patrón de tracking que `cmd_ingest` y `cmd_subvenciones`.
+
 ---
 
 ## [1.4.0] — 2026-04-08
