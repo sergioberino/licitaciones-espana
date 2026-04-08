@@ -16,11 +16,9 @@ from etl.ingest_l0 import CONJUNTOS_REGISTRY
 from etl.scheduler import (
     VALID_SCHEDULE_EXPRS,
     _build_default_schedules,
-    delete_task,
     ensure_scheduler_schema,
     get_current_running_run,
     get_next_run_at,
-    get_task_id,
     is_scheduler_loop_running,
     list_running_runs,
     list_tasks_with_last_run,
@@ -185,7 +183,9 @@ def health():
         except Exception:
             pass
     migrations = getattr(app.state, "migration_status", None)
-    return {"status": "ok", "db": db_ok, "migrations": migrations, "dim_status": dim_status}
+    payload = {"status": "ok" if db_ok else "degraded", "db": db_ok, "migrations": migrations, "dim_status": dim_status}
+    status_code = 200 if db_ok else 503
+    return JSONResponse(content=payload, status_code=status_code)
 
 
 @app.get("/migrations", summary="Migration audit trail", description="Returns all recorded schema migrations.")
@@ -551,10 +551,12 @@ def scheduler_unregister(body: SchedulerUnregisterBody):
             for t in body.tasks:
                 conjunto = t.get("conjunto", "")
                 subconjunto = t.get("subconjunto", "")
-                task_id = get_task_id(conn, conjunto, subconjunto)
-                if task_id is not None:
-                    delete_task(conn, task_id)
-                    deleted += 1
+                with conn.cursor() as cur:
+                    cur.execute(
+                        "DELETE FROM scheduler.tasks WHERE conjunto = %s AND subconjunto = %s",
+                        (conjunto, subconjunto),
+                    )
+                    deleted += cur.rowcount
             conn.commit()
     except Exception as e:
         return JSONResponse(status_code=500, content={"ok": False, "message": str(e)})
