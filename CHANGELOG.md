@@ -2,6 +2,14 @@
 
 Todos los cambios notables del CLI y del microservicio ETL se documentan aquí.
 
+## [1.4.1] — 2026-04-08
+
+### Mejorado
+
+- **`GET /health`**: devuelve HTTP 503 con `"status": "degraded"` cuando la base de datos no es accesible (antes siempre 200 + `"status": "ok"`). Permite que los health probes de Docker detecten correctamente un servicio degradado.
+
+---
+
 ## [1.4.0] — 2026-04-08
 
 ### Añadido

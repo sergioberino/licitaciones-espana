@@ -1487,14 +1487,70 @@ def cmd_borme(args: argparse.Namespace) -> int:
     from etl.borme import run_scraper, run_parser, load_borme_to_db, run_anomalias
 
     if borme_cmd == "ingest":
-        pdfs_dir = run_scraper(args.anos)
-        parsed_dir = run_parser(pdfs_dir)
-        ins_e, skip_e = load_borme_to_db(parsed_dir, "empresas")
-        ins_c, skip_c = load_borme_to_db(parsed_dir, "cargos")
-        print(
-            f"BORME ingest: empresas inserted={ins_e} skipped={skip_e}, cargos inserted={ins_c} skipped={skip_c}"
-        )
-        return 0
+        run_id: Optional[int] = None
+        db_url = get_database_url()
+        borme_result = ["failed", 0, 0, None]  # status, rows_inserted, rows_omitted, error_msg
+
+        if db_url:
+            try:
+                from etl.scheduler import (
+                    get_task_id,
+                    has_running_run,
+                    insert_run_start,
+                    update_run_process_id,
+                )
+
+                with psycopg2.connect(db_url) as conn:
+                    conn.autocommit = False
+                    task_id = get_task_id(conn, "borme", "ingest")
+                    if task_id and has_running_run(conn, task_id):
+                        print(
+                            "[borme] Ya hay una ejecución en curso para esta tarea (scheduler).",
+                            file=sys.stderr,
+                        )
+                        return 1
+                    if task_id:
+                        run_id = insert_run_start(conn, task_id)
+                        update_run_process_id(conn, run_id, os.getpid())
+                        conn.commit()
+            except (ImportError, psycopg2.Error, Exception):
+                run_id = None
+
+        try:
+            pdfs_dir = run_scraper(args.anos)
+            parsed_dir = run_parser(pdfs_dir)
+            ins_e, skip_e = load_borme_to_db(parsed_dir, "empresas")
+            ins_c, skip_c = load_borme_to_db(parsed_dir, "cargos")
+            total_inserted = ins_e + ins_c
+            total_skipped = skip_e + skip_c
+            borme_result[0] = "ok"
+            borme_result[1] = total_inserted
+            borme_result[2] = total_skipped
+            print(
+                f"BORME ingest: empresas inserted={ins_e} skipped={skip_e}, cargos inserted={ins_c} skipped={skip_c}"
+            )
+            return 0
+        except Exception as e:
+            borme_result[3] = str(e)
+            print(f"[borme] Error en ingest: {e}", file=sys.stderr)
+            return 1
+        finally:
+            if run_id and db_url:
+                try:
+                    from etl.scheduler import update_run_finish
+
+                    with psycopg2.connect(db_url) as conn:
+                        update_run_finish(
+                            conn,
+                            run_id,
+                            borme_result[0] or "failed",
+                            borme_result[1],
+                            borme_result[2],
+                            borme_result[3],
+                        )
+                        conn.commit()
+                except Exception:
+                    pass
     elif borme_cmd == "anomalias":
         pdfs_dir = run_scraper(args.anos)
         parsed_dir = run_parser(pdfs_dir)
