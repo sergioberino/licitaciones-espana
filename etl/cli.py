@@ -1,7 +1,7 @@
 """
 CLI de este microservicio ETL. Punto de entrada: licitia-etl.
 
-Comandos: status, init-db, ingest, health, scheduler, db-info, borme, subvenciones.
+Comandos: status, init-db, ingest, health, scheduler, db-info, borme, subvenciones, cnae.
 """
 
 import argparse
@@ -1344,6 +1344,50 @@ def _ensure_borme_schema() -> None:
                 print(f"[borme] Error aplicando {f}: {e}", file=sys.stderr)
 
 
+def _ensure_cnae_schema() -> None:
+    """Apply 013_dim_cnae.sql if not yet applied (on-demand DDL safety net)."""
+    from etl import schema_check
+
+    url = get_database_url()
+    if not url:
+        return
+    schema_dir = _schema_dir()
+    with psycopg2.connect(url) as conn:
+        conn.autocommit = False
+        schema_check.bootstrap(conn)
+        for f in ("013_dim_cnae.sql",):
+            try:
+                applied = schema_check.ensure_file(conn, f, schema_dir)
+                if applied:
+                    print(f"[cnae] Applied {f}")
+            except Exception as e:
+                print(f"[cnae] Warning applying {f}: {e}")
+        conn.commit()
+
+
+def cmd_cnae(args: argparse.Namespace) -> int:
+    """CNAE: ingest from government source."""
+    cnae_cmd = getattr(args, "cnae_cmd", None)
+    if not cnae_cmd:
+        print(
+            "Indique un subcomando: ingest. Use 'licitia-etl cnae --help' para más info.",
+            file=sys.stderr,
+        )
+        return 1
+    _ensure_cnae_schema()
+    from etl.cnae_ingest import run_cnae_ingest
+
+    if cnae_cmd == "ingest":
+        result = run_cnae_ingest()
+        if result["ok"]:
+            print(f"CNAE ingest: {result['message']}")
+            return 0
+        else:
+            print(f"CNAE ingest failed: {result['message']}", file=sys.stderr)
+            return 1
+    return 0
+
+
 def cmd_subvenciones(args: argparse.Namespace) -> int:
     """Subvenciones: actualización diaria."""
     subv_cmd = getattr(args, "subvenciones_cmd", None)
@@ -1762,6 +1806,15 @@ def main() -> int:
         "diario", help="Actualización diaria (últimas subvenciones)"
     )
     subv_parser.set_defaults(func=cmd_subvenciones)
+
+    cnae_parser = subparsers.add_parser(
+        "cnae",
+        help="CNAE: ingest de códigos CNAE desde fuente oficial.",
+        description="CNAE: ingesta de la clasificación nacional de actividades económicas desde la API ISTAC.",
+    )
+    cnae_sub = cnae_parser.add_subparsers(dest="cnae_cmd", help="Subcomando CNAE")
+    cnae_sub.add_parser("ingest", help="Fetch CNAE codes from ISTAC API and load into dim.cnae_dim")
+    cnae_parser.set_defaults(func=cmd_cnae)
 
     args = parser.parse_args()
     if not args.command:
