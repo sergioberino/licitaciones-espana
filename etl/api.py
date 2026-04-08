@@ -83,7 +83,7 @@ class BormeAnomaliasBody(BaseModel):
 
 app = FastAPI(
     title="ETL API",
-    version="1.3.4",
+    version="1.4.0",
     description="Microservicio ETL: ingest L0, scheduler, BORME.",
 )
 
