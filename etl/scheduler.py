@@ -25,6 +25,7 @@ SCHEDULER_LOG_FILENAME = "scheduler.log"
 MAX_RUN_DURATION_HOURS = int(os.environ.get("SCHEDULER_MAX_RUN_HOURS", "6"))
 
 VALID_SCHEDULE_EXPRS = (
+    "Minutal",  # Para testing: ejecuta cada minuto
     "Diario",
     "Semanal",
     "Mensual",
@@ -563,6 +564,13 @@ def get_next_run_at(
     year, month = ref.year, ref.month
     expr = (schedule_expr or "").strip().lower()
     # Next run = first scheduled slot *after* last_finished_at (not after "now"), so we don't skip the due slot
+
+    # Minutal: para testing, ejecutar cada minuto
+    if expr == "minutal":
+        # Siguiente minuto después de last_finished_at
+        next_minute = last_fin_tz + timedelta(minutes=1)
+        return next_minute.replace(second=0, microsecond=0)
+
     if expr == "diario":
         cand = datetime(
             last_fin_tz.year,
