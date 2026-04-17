@@ -164,7 +164,7 @@ def ensure_scheduler_schema(conn: "psycopg2.extensions.connection") -> None:
     from pathlib import Path
 
     schema_dir = Path(__file__).resolve().parent.parent / "schemas"
-    for name in ("008_scheduler.sql", "009_scheduler_runs_pid.sql"):
+    for name in ("008_scheduler.sql", "009_scheduler_runs_pid.sql", "021_scheduler_incidents.sql"):
         path = schema_dir / name
         if path.exists():
             with conn.cursor() as cur:

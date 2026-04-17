@@ -54,6 +54,7 @@ INIT_MIGRATIONS = (
     "018_dim_beneficiarios_subvenciones.sql",
     "019_dim_instrumentos_subvenciones.sql",
     "020_dim_politica_gastos.sql",
+    "021_scheduler_incidents.sql",
 )
 
 BORME_MIGRATIONS = ("010_borme.sql",)
