@@ -1,4 +1,5 @@
 import argparse
+import json
 import os
 import subprocess
 import sys
@@ -19,6 +20,8 @@ from etl.scheduler import (
     ensure_scheduler_schema,
     get_current_running_run,
     get_next_run_at,
+    get_scheduler_log_path,
+    get_scheduler_pid_path,
     is_scheduler_loop_running,
     list_running_runs,
     list_tasks_with_last_run,
@@ -69,6 +72,11 @@ class SchedulerRunsStopBody(BaseModel):
 
 class SchedulerUnregisterBody(BaseModel):
     tasks: list[dict]
+
+
+class IncidentResolveBody(BaseModel):
+    resolution: str
+    note: str | None = None
 
 
 class BormeIngestBody(BaseModel):
@@ -134,7 +142,7 @@ def _startup_schema_check():
 def _serialize_row(row: dict) -> dict:
     """Convert a row dict to JSON-serializable form (datetime -> ISO string)."""
     out = dict(row)
-    for key in ("started_at", "finished_at", "last_started_at", "last_finished_at", "next_run_at", "created_at"):
+    for key in ("started_at", "finished_at", "last_started_at", "last_finished_at", "next_run_at", "created_at", "resolved_at"):
         val = out.get(key)
         if isinstance(val, datetime):
             out[key] = val.isoformat()
@@ -563,6 +571,93 @@ def scheduler_unregister(body: SchedulerUnregisterBody):
     return {"ok": True, "deleted": deleted, "message": f"{deleted} tarea(s) eliminada(s)."}
 
 
+@app.get("/scheduler/log", summary="Tail the scheduler daemon log")
+def scheduler_log(lines: int = 200):
+    """Read the tail of the scheduler daemon log."""
+    log_path = get_scheduler_log_path()
+    if not log_path.exists():
+        return {"lines": [], "exists": False, "total_lines": 0}
+    try:
+        text = log_path.read_text(encoding="utf-8", errors="replace")
+    except OSError:
+        return {"lines": [], "exists": True, "total_lines": 0}
+    all_lines = text.splitlines()
+    tail = all_lines[-lines:] if len(all_lines) > lines else all_lines
+    return {"lines": tail, "exists": True, "total_lines": len(all_lines)}
+
+
+@app.get("/scheduler/incidents", summary="List scheduler incidents")
+def scheduler_incidents(status: str = "open"):
+    """List scheduler incidents, filtered by status (open, resolved, all)."""
+    db_url = get_database_url()
+    if not db_url:
+        return JSONResponse(status_code=503, content={"incidents": []})
+    try:
+        with psycopg2.connect(db_url) as conn:
+            with conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor) as cur:
+                if status == "open":
+                    cur.execute(
+                        "SELECT * FROM scheduler.incidents WHERE resolved_at IS NULL ORDER BY created_at DESC"
+                    )
+                elif status == "resolved":
+                    cur.execute(
+                        "SELECT * FROM scheduler.incidents WHERE resolved_at IS NOT NULL ORDER BY created_at DESC"
+                    )
+                else:
+                    cur.execute("SELECT * FROM scheduler.incidents ORDER BY created_at DESC")
+                rows = cur.fetchall()
+        return {"incidents": [_serialize_row(dict(r)) for r in rows]}
+    except Exception as e:
+        return JSONResponse(status_code=500, content={"incidents": [], "error": str(e)})
+
+
+@app.get("/scheduler/incidents/{incident_id}", summary="Get incident detail")
+def scheduler_incident_detail(incident_id: int):
+    """Get a single scheduler incident by ID."""
+    db_url = get_database_url()
+    if not db_url:
+        return JSONResponse(status_code=503, content={"detail": "Database not configured"})
+    try:
+        with psycopg2.connect(db_url) as conn:
+            with conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor) as cur:
+                cur.execute(
+                    "SELECT * FROM scheduler.incidents WHERE incident_id = %s",
+                    (incident_id,),
+                )
+                row = cur.fetchone()
+        if not row:
+            return JSONResponse(status_code=404, content={"detail": "Incident not found"})
+        return _serialize_row(dict(row))
+    except Exception as e:
+        return JSONResponse(status_code=500, content={"detail": str(e)})
+
+
+@app.post("/scheduler/incidents/{incident_id}/resolve", summary="Resolve a scheduler incident")
+def scheduler_incident_resolve(incident_id: int, body: IncidentResolveBody):
+    """Mark a scheduler incident as resolved."""
+    db_url = get_database_url()
+    if not db_url:
+        return JSONResponse(status_code=503, content={"ok": False, "message": "Database not configured"})
+    try:
+        with psycopg2.connect(db_url) as conn:
+            with conn.cursor() as cur:
+                cur.execute(
+                    """UPDATE scheduler.incidents
+                       SET resolved_at = NOW(), resolved_by = 'user', resolution = %s
+                       WHERE incident_id = %s AND resolved_at IS NULL""",
+                    (body.resolution + (f"\n\nNote: {body.note}" if body.note else ""), incident_id),
+                )
+                if cur.rowcount == 0:
+                    return JSONResponse(
+                        status_code=404,
+                        content={"ok": False, "message": "Incident not found or already resolved"},
+                    )
+                conn.commit()
+        return {"ok": True, "message": "Incident resolved"}
+    except Exception as e:
+        return JSONResponse(status_code=500, content={"ok": False, "message": str(e)})
+
+
 @app.get("/status", summary="Database status", description="Checks the database connection and returns availability.")
 def status():
     ok, msg = _comprobar_base_datos()
@@ -604,7 +699,33 @@ def scheduler_status():
             r["next_run_at"] = next_at
         list_of_dicts.append(_serialize_row(r))
     loop_running = is_scheduler_loop_running()
-    return {"tasks": list_of_dicts, "loop_running": loop_running}
+
+    hb_path = get_scheduler_pid_path().parent / "scheduler.heartbeat"
+    last_heartbeat = None
+    try:
+        if hb_path.exists():
+            last_heartbeat = json.loads(hb_path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        pass
+
+    open_incidents = 0
+    try:
+        with psycopg2.connect(url) as conn:
+            with conn.cursor() as cur:
+                cur.execute("SELECT COUNT(*) FROM scheduler.incidents WHERE resolved_at IS NULL")
+                open_incidents = cur.fetchone()[0]
+    except Exception:
+        pass
+
+    recovery = getattr(app.state, "recovery_status", None)
+
+    return {
+        "tasks": list_of_dicts,
+        "loop_running": loop_running,
+        "last_heartbeat": last_heartbeat,
+        "open_incidents": open_incidents,
+        "recovery": recovery,
+    }
 
 
 @app.get("/scheduler/running", summary="Running scheduler runs", description="Lists all currently running ingest runs with task metadata.")
