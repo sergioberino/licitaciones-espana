@@ -2,7 +2,6 @@
 
 from unittest.mock import MagicMock
 
-import pytest
 import requests
 
 from nacional.licitaciones import descargar_archivo
@@ -34,7 +33,8 @@ def test_descargar_archivo_redownloads_existing_file(tmp_path):
 
 
 def test_descargar_archivo_cleans_stale_file_on_failure(tmp_path):
-    """On 404, a stale file from a previous run must not remain."""
+    """After a failed download, the target path must be absent (fresh download
+    semantics guaranteed by the unconditional pre-delete, no stale artifact)."""
     filepath = tmp_path / "monthly.zip"
     stale = b"z" * 2048
     filepath.write_bytes(stale)
