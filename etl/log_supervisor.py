@@ -1,13 +1,10 @@
 """LogSupervisor — flight recorder pattern for scheduler logging.
 
-Two modes:
-  NORMAL: rolling window of max_normal_lines, trims older lines each tick.
-  INCIDENT: triggered by anomaly, stops trimming until cooldown or manual ack.
-
 Incidents are persisted to scheduler.incidents (PostgreSQL) when db_url is set.
 """
 
 import json
+import os
 import sys
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
@@ -19,6 +16,13 @@ SCHEDULER_TZ = ZoneInfo("Europe/Madrid")
 
 
 class LogSupervisor:
+    """Two modes:
+      NORMAL: rolling window of max_normal_lines, trims older lines each tick.
+      INCIDENT: triggered by anomaly, stops trimming until cooldown expires.
+
+    Not thread-safe: call from a single thread or serialized scheduler loop.
+    """
+
     def __init__(
         self,
         log_path: Path,
@@ -103,7 +107,8 @@ class LogSupervisor:
                     row = cur.fetchone()
                     conn.commit()
                     return row[0] if row else None
-        except Exception:
+        except Exception as e:
+            self.log(f"Failed to persist incident to DB: {e}", level="WARNING")
             return None
 
     def get_log_snapshot(self, lines: int = 50) -> str:
@@ -148,7 +153,9 @@ class LogSupervisor:
         }
         try:
             self.heartbeat_path.parent.mkdir(parents=True, exist_ok=True)
-            self.heartbeat_path.write_text(json.dumps(payload), encoding="utf-8")
+            tmp_path = self.heartbeat_path.with_suffix(".tmp")
+            tmp_path.write_text(json.dumps(payload), encoding="utf-8")
+            os.replace(tmp_path, self.heartbeat_path)
         except OSError:
             pass
 
