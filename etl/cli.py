@@ -51,6 +51,9 @@ INIT_MIGRATIONS = (
     "015_dim_ministerios_organos.sql",
     "016_dim_provincias_organos.sql",
     "017_dim_otros_organos.sql",
+    "018_dim_beneficiarios_subvenciones.sql",
+    "019_dim_instrumentos_subvenciones.sql",
+    "020_dim_politica_gastos.sql",
 )
 
 BORME_MIGRATIONS = ("010_borme.sql",)
