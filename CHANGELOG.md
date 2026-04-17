@@ -2,6 +2,19 @@
 
 Todos los cambios notables del CLI y del microservicio ETL se documentan aquí.
 
+## [1.5.0] — 2026-04-17
+
+### Añadido
+
+- **Tablas dimensionales de órganos gestores:** 4 nuevas tablas en el esquema `dim` para entidades administrativas de nivel 3 — comunidades autónomas (`dim.organos_gestores_ccaa`), ministerios (`dim.ministerios_organos`), provincias (`dim.provincias_organos`) y otros órganos (`dim.otros_organos`). Datos estáticos pre-cargados vía migraciones `014`–`017`.
+- **Tablas dimensionales de subvenciones:** 3 nuevas tablas — beneficiarios (`dim.beneficiarios_subvenciones`), instrumentos (`dim.instrumentos_subvenciones`) y política de gastos (`dim.politica_gastos`). Migraciones `018`–`020`.
+
+### Corregido
+
+- **`INIT_MIGRATIONS` — nombre de fichero 014 desalineado:** `cli.py` referenciaba `014_dim_organos_gestores_ccaa.sql` pero el fichero real es `014_dim_ccaa_organos.sql`, lo que impedía que la migración se aplicase durante `init-db`.
+
+---
+
 ## [1.4.1] — 2026-04-08
 
 ### Mejorado

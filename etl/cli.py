@@ -47,7 +47,7 @@ INIT_MIGRATIONS = (
     "011_nacional_new_columns.sql",
     "012_nacional_subvenciones.sql",
     "013_dim_cnae.sql",
-    "014_dim_organos_gestores_ccaa.sql",
+    "014_dim_ccaa_organos.sql",
     "015_dim_ministerios_organos.sql",
     "016_dim_provincias_organos.sql",
     "017_dim_otros_organos.sql",
