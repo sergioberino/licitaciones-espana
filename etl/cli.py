@@ -47,6 +47,13 @@ INIT_MIGRATIONS = (
     "011_nacional_new_columns.sql",
     "012_nacional_subvenciones.sql",
     "013_dim_cnae.sql",
+    "014_dim_organos_gestores_ccaa.sql",
+    "015_dim_ministerios_organos.sql",
+    "016_dim_provincias_organos.sql",
+    "017_dim_otros_organos.sql",
+    "018_dim_beneficiarios_subvenciones.sql",
+    "019_dim_instrumentos_subvenciones.sql",
+    "020_dim_politica_gastos.sql",
 )
 
 BORME_MIGRATIONS = ("010_borme.sql",)
@@ -1489,7 +1496,12 @@ def cmd_borme(args: argparse.Namespace) -> int:
     if borme_cmd == "ingest":
         run_id: Optional[int] = None
         db_url = get_database_url()
-        borme_result = ["failed", 0, 0, None]  # status, rows_inserted, rows_omitted, error_msg
+        borme_result = [
+            "failed",
+            0,
+            0,
+            None,
+        ]  # status, rows_inserted, rows_omitted, error_msg
 
         if db_url:
             try:
@@ -1869,7 +1881,9 @@ def main() -> int:
         description="CNAE: ingesta de la clasificación nacional de actividades económicas desde la API ISTAC.",
     )
     cnae_sub = cnae_parser.add_subparsers(dest="cnae_cmd", help="Subcomando CNAE")
-    cnae_sub.add_parser("ingest", help="Fetch CNAE codes from ISTAC API and load into dim.cnae_dim")
+    cnae_sub.add_parser(
+        "ingest", help="Fetch CNAE codes from ISTAC API and load into dim.cnae_dim"
+    )
     cnae_parser.set_defaults(func=cmd_cnae)
 
     args = parser.parse_args()
