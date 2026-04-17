@@ -99,15 +99,18 @@ def _startup_recover_stale_runs():
     """Auto-heal stale 'running' scheduler records left by dead containers."""
     db_url = get_database_url()
     if not db_url:
+        app.state.stale_runs_recovered = 0
         return
     try:
         with psycopg2.connect(db_url) as conn:
             conn.autocommit = False
             count = recover_stale_runs(conn)
             conn.commit()
+            app.state.stale_runs_recovered = count
             if count:
                 print(f"[startup] Recovered {count} stale scheduler run(s).")
     except Exception as e:
+        app.state.stale_runs_recovered = 0
         print(f"[startup] Could not recover stale runs: {e}")
 
 
@@ -137,6 +140,107 @@ def _startup_schema_check():
             conn.close()
     except Exception:
         app.state.migration_status = None
+
+
+@app.on_event("startup")
+def _startup_crash_detection():
+    """Detect if ETL restarted after a crash and record incident."""
+    from etl.log_supervisor import LogSupervisor
+    from etl.scheduler import get_scheduler_pid_path
+
+    app.state.recovery_status = None
+    db_url = get_database_url()
+    if not db_url:
+        return
+
+    stale_recovered = getattr(app.state, "stale_runs_recovered", 0)
+    pid_path = get_scheduler_pid_path()
+    stale_pid = False
+
+    if pid_path.exists():
+        try:
+            pid = int(pid_path.read_text().strip())
+            os.kill(pid, 0)
+        except (ValueError, ProcessLookupError):
+            stale_pid = True
+            try:
+                pid_path.unlink(missing_ok=True)
+            except OSError:
+                pass
+        except PermissionError:
+            pass
+
+    if not stale_recovered and not stale_pid:
+        return
+
+    log_path = pid_path.parent / "scheduler.log"
+    hb_path = pid_path.parent / "scheduler.heartbeat"
+    supervisor = LogSupervisor(
+        log_path=log_path,
+        db_url=db_url,
+        heartbeat_path=hb_path,
+    )
+
+    detail_parts = []
+    if stale_recovered:
+        detail_parts.append(f"Recovered {stale_recovered} stale run(s)")
+    if stale_pid:
+        detail_parts.append("Stale PID file found (scheduler was running before crash)")
+
+    supervisor.incident(
+        "service_crash",
+        "ETL service restarted — possible crash detected",
+        detail="; ".join(detail_parts),
+        severity="error",
+    )
+    print(f"[startup] Crash detected: {'; '.join(detail_parts)}")
+
+    app.state.recovery_status = {
+        "detected": True,
+        "stale_runs": stale_recovered,
+        "stale_pid": stale_pid,
+        "auto_restart_attempted": False,
+        "auto_restart_success": False,
+    }
+
+    # Attempt auto-restart of scheduler in background thread
+    import threading
+
+    def _auto_restart():
+        import time
+
+        max_retries = 3
+        for attempt in range(1, max_retries + 1):
+            try:
+                print(f"[crash-recovery] Auto-restart attempt {attempt}/{max_retries}")
+                args = argparse.Namespace(
+                    conjunto=None,
+                    subconjunto=None,
+                    run_all=True,
+                    tick_seconds=60,
+                    detach=True,
+                )
+                rc = cmd_scheduler_run(args)
+                if rc == 0:
+                    app.state.recovery_status["auto_restart_attempted"] = True
+                    app.state.recovery_status["auto_restart_success"] = True
+                    print(f"[crash-recovery] Scheduler restarted successfully on attempt {attempt}")
+                    return
+            except Exception as e:
+                print(f"[crash-recovery] Attempt {attempt} failed: {e}")
+            time.sleep(5)
+
+        app.state.recovery_status["auto_restart_attempted"] = True
+        app.state.recovery_status["auto_restart_success"] = False
+        supervisor.incident(
+            "auto_restart_failed",
+            f"Failed to auto-restart scheduler after {max_retries} attempts",
+            severity="error",
+        )
+        print(f"[crash-recovery] All {max_retries} restart attempts failed. Check docker logs.")
+
+    thread = threading.Thread(target=_auto_restart, daemon=True)
+    thread.start()
 
 
 def _serialize_row(row: dict) -> dict:
