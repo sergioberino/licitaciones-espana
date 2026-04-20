@@ -76,10 +76,6 @@ class RateLimiter:
             wait_time = self.time_window - (now - oldest_request)
 
             if wait_time > 0:
-                _log(
-                    "WARN",
-                    f"Límite de peticiones alcanzado. Esperando {wait_time:.1f}s...",
-                )
                 time.sleep(wait_time + 0.1)
                 now = time.time()
                 self.request_times = [t for t in self.request_times if now - t < self.time_window]
@@ -284,19 +280,19 @@ def scrape_historico(params: SearchParams) -> list[Path]:
     params.validate()
 
     _ensure_output_dir()
-    rate_limiter = RateLimiter(max_requests=40, time_window=60)  # Conservative limit to avoid 429s
+    rate_limiter = RateLimiter(max_requests=40, time_window=60)
 
-    print(f"\n{'='*60}", flush=True)
-    print(f"SUBVENCIONES HISTÓRICAS (BDNS)", flush=True)
-    print(f"   Rango: {params.fechaDesde} — {params.fechaHasta}", flush=True)
-    print(f"{'='*60}\n", flush=True)
+    _log("INFO", "=" * 60)
+    _log("INFO", "SUBVENCIONES HISTÓRICAS (BDNS)")
+    _log("INFO", f"Rango: {params.fechaDesde} — {params.fechaHasta}")
+    _log("INFO", "=" * 60)
 
     try:
         light_convocatorias = []
         page = 0
         is_last_page = False
 
-        print("Obteniendo lista de convocatorias...", flush=True)
+        _log("INFO", "Obteniendo lista de convocatorias...")
         with tqdm(desc="Páginas", unit="pag") as pbar:
             while not is_last_page:
                 params.page = page
@@ -337,13 +333,13 @@ def scrape_historico(params: SearchParams) -> list[Path]:
                 page += 1
                 pbar.update(1)
 
-        print(f"INFO {len(light_convocatorias):,} convocatorias obtenidas\n", flush=True)
+        _log("INFO", f"{len(light_convocatorias):,} convocatorias obtenidas")
 
-        print("Obteniendo detalles de convocatorias...", flush=True)
+        _log("INFO", "Obteniendo detalles de convocatorias...")
         detailed_records = []
         failed_count = 0
 
-        for conv in tqdm(light_convocatorias, desc="Detalles", unit="conv"):
+        for conv in tqdm(light_convocatorias, unit="conv"):
             try:
                 result = fetch_convocatoria_detalle(conv["numero_convocatoria"], rate_limiter)
                 if result:
@@ -355,15 +351,12 @@ def scrape_historico(params: SearchParams) -> list[Path]:
                 failed_count += 1
 
         if failed_count > 0:
-            print(f"{failed_count} convocatorias fallaron", flush=True)
+            _log("WARN", f"{failed_count} convocatorias fallaron")
 
         if not detailed_records:
             raise ValueError("No se obtuvieron registros detallados")
 
-        print(f"INFO {len(detailed_records):,} registros detallados obtenidos\n", flush=True)
-
-        # Fase 3: Generar parquets en batches
-        print(f"Generando parquets (máx {MAX_RECORDS_PER_PARQUET:,} por archivo)...", flush=True)
+        _log("INFO", f"Generando parquets (máx {MAX_RECORDS_PER_PARQUET:,} por archivo)...")
         parquet_paths = []
 
         for batch_idx in range(0, len(detailed_records), MAX_RECORDS_PER_PARQUET):
@@ -395,15 +388,15 @@ def scrape_historico(params: SearchParams) -> list[Path]:
             parquet_paths.append(parquet_path)
 
             size_mb = parquet_path.stat().st_size / (1024 * 1024)
-            print(
-                f"INFO {parquet_path.name} ({len(df):,} registros guardados, {size_mb:.1f} MB)",
-                flush=True,
+            _log(
+                "INFO",
+                f"{parquet_path.name} ({len(df):,} registros guardados, {size_mb:.1f} MB)",
             )
 
         return parquet_paths
 
     except Exception as err:
-        print(f"\nERROR: {err}\n", flush=True)
+        _log("ERROR", str(err))
         raise
 
 
@@ -433,10 +426,10 @@ def scrape_diario(params: LatestParams) -> dict[str, int]:
     total_new = 0
     total_duplicates = 0
     total_filtered = 0
-    rate_limiter = RateLimiter(max_requests=40, time_window=60)  # Conservative limit to avoid 429s
+    rate_limiter = RateLimiter(max_requests=40, time_window=60)
     subvencion_pattern = re.compile(r"subvenci[oó]n", re.IGNORECASE)
 
-    print(f"\nActualizando subvenciones diarias...\n", flush=True)
+    _log("INFO", "Actualizando subvenciones diarias...")
 
     try:
         conn = psycopg2.connect(db_url)
@@ -603,9 +596,9 @@ def scrape_diario(params: LatestParams) -> dict[str, int]:
 
             page += 1
 
-        print(
-            f"\nCOMPLETADO: {total_new} nuevos, {total_duplicates} duplicados, {total_filtered} filtrados\n",
-            flush=True,
+        _log(
+            "INFO",
+            f"COMPLETADO: {total_new} nuevos, {total_duplicates} duplicados, {total_filtered} filtrados",
         )
 
         return {
@@ -616,7 +609,7 @@ def scrape_diario(params: LatestParams) -> dict[str, int]:
         }
 
     except Exception as err:
-        print(f"\nERROR: {err}\n", flush=True)
+        _log("ERROR", str(err))
         if conn:
             conn.rollback()
         raise
@@ -660,8 +653,8 @@ def main():
 
     fecha_desde = f"01/01/{ano_inicio}"
 
-    print(f"   Fechas: {fecha_desde} - {fecha_hasta}")
-    print(f"   Conjunto: {args.conjunto}")
+    _log("INFO", f"Fechas: {fecha_desde} - {fecha_hasta}")
+    _log("INFO", f"Conjunto: {args.conjunto}")
 
     try:
         params = SearchParams(
@@ -673,10 +666,10 @@ def main():
 
         parquet_paths = scrape_historico(params)
         if args.solo_descargar:
-            print(f"   (--solo-descargar: no se cargará en BD)")
-            print(f"   Archivos generados: {len(parquet_paths)}")
+            _log("INFO", "(--solo-descargar: no se cargará en BD)")
+            _log("INFO", f"Archivos generados: {len(parquet_paths)}")
             for path in parquet_paths:
-                print(f"     - {path.name}")
+                _log("INFO", f"  - {path.name}")
 
         return 0
 
