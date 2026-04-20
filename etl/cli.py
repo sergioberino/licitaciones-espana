@@ -11,6 +11,8 @@ import signal
 import subprocess
 import sys
 import time
+import threading
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 from typing import Optional
 
@@ -107,22 +109,16 @@ def cmd_status(_args: argparse.Namespace) -> int:
     return 0
 
 
-def run_init_db(
-    url: str | None = None, schema_dir: Path | None = None
-) -> tuple[int, list[dict]]:
+def run_init_db(url: str | None = None, schema_dir: Path | None = None) -> tuple[int, list[dict]]:
     """Run init-db logic: create schemas, apply INIT_MIGRATIONS, run DIR3 hook. Returns (exit_code, results)."""
     from etl import schema_check
 
     url = url or get_database_url()
     if not url:
-        return 1, [
-            {"filename": "", "success": False, "error": "Database not configured"}
-        ]
+        return 1, [{"filename": "", "success": False, "error": "Database not configured"}]
     db_schema = get_db_schema()
     if not db_schema or not db_schema.replace("_", "").isalnum():
-        return 1, [
-            {"filename": "", "success": False, "error": "DB_SCHEMA not set or invalid"}
-        ]
+        return 1, [{"filename": "", "success": False, "error": "DB_SCHEMA not set or invalid"}]
     schema_dir = schema_dir or _schema_dir()
     if not schema_dir.exists():
         return 1, [
@@ -133,9 +129,7 @@ def run_init_db(
             }
         ]
 
-    etl_schemas_sql = (
-        f"CREATE SCHEMA IF NOT EXISTS dim; CREATE SCHEMA IF NOT EXISTS {db_schema};"
-    )
+    etl_schemas_sql = f"CREATE SCHEMA IF NOT EXISTS dim; CREATE SCHEMA IF NOT EXISTS {db_schema};"
     try:
         with psycopg2.connect(url) as conn:
             conn.autocommit = False
@@ -182,23 +176,15 @@ def run_init_db(
                 pgcode = getattr(e, "pgcode", None)
                 msg = str(e).lower()
                 skip_codes = ("42P07", "23505")
-                if (
-                    pgcode in skip_codes
-                    or "already exists" in msg
-                    or "duplicate key" in msg
-                ):
+                if pgcode in skip_codes or "already exists" in msg or "duplicate key" in msg:
                     schema_check.record(conn, filename, checksum)
                     results.append({"filename": filename, "success": True})
                     continue
                 try:
-                    schema_check.record(
-                        conn, filename, checksum, success=False, error_msg=str(e)
-                    )
+                    schema_check.record(conn, filename, checksum, success=False, error_msg=str(e))
                 except Exception:
                     pass
-                results.append(
-                    {"filename": filename, "success": False, "error": str(e)}
-                )
+                results.append({"filename": filename, "success": False, "error": str(e)})
                 conn.close()
                 return 1, results
 
@@ -252,9 +238,7 @@ def cmd_init_db(args: argparse.Namespace) -> int:
         return 1
 
     url = get_database_url()
-    etl_schemas_sql = (
-        f"CREATE SCHEMA IF NOT EXISTS dim; CREATE SCHEMA IF NOT EXISTS {db_schema};"
-    )
+    etl_schemas_sql = f"CREATE SCHEMA IF NOT EXISTS dim; CREATE SCHEMA IF NOT EXISTS {db_schema};"
     try:
         with psycopg2.connect(url) as conn:
             conn.autocommit = False
@@ -317,9 +301,7 @@ def _parse_anos(anos_str: str) -> tuple[int, int]:
 
 def cmd_ingest_test(args: argparse.Namespace) -> int:
     """Ejecuta la suite de tests de ingest (pytest), E2E por conjuntos, o limpieza del schema test."""
-    if getattr(args, "ingest_delete", False) and not getattr(
-        args, "ingest_conjuntos", False
-    ):
+    if getattr(args, "ingest_delete", False) and not getattr(args, "ingest_conjuntos", False):
         return _drop_e2e_schema()
     if getattr(args, "ingest_conjuntos", False):
         return _cmd_ingest_test_conjuntos_e2e(args)
@@ -420,9 +402,7 @@ def _cmd_ingest_test_conjuntos_e2e(args: argparse.Namespace) -> int:
             return rc
     if getattr(args, "ingest_delete", False):
         _drop_e2e_schema()
-    print(
-        "E2E completado: un subconjunto de cada conjunto verificado.", file=sys.stderr
-    )
+    print("E2E completado: un subconjunto de cada conjunto verificado.", file=sys.stderr)
     return 0
 
 
@@ -617,9 +597,7 @@ def cmd_ingest(args: argparse.Namespace) -> int:
                     ingest_result[0] = "ok"
                     return 0
             elif "scripts" in reg:
-                run_cwd = (
-                    etl_root / reg["script_cwd"] if reg.get("script_cwd") else etl_root
-                )
+                run_cwd = etl_root / reg["script_cwd"] if reg.get("script_cwd") else etl_root
                 if conjunto == "ted":
                     # TED: un solo script con download y --years
                     if ano_inicio is None or ano_fin is None:
@@ -662,24 +640,13 @@ def cmd_ingest(args: argparse.Namespace) -> int:
                             "ccaa_andalucia.py"
                         ):
                             cmd.append(reg["script_subconjunto_arg"][subconjunto])
-                        elif (
-                            conjunto == "andalucia"
-                            and "ccaa_andalucia_parquet.py" in script_rel
-                        ):
+                        elif conjunto == "andalucia" and "ccaa_andalucia_parquet.py" in script_rel:
                             cmd.extend(["--subconjunto", subconjunto])
-                        elif (
-                            conjunto == "valencia" and "ccaa_valencia.py" in script_rel
-                        ):
+                        elif conjunto == "valencia" and "ccaa_valencia.py" in script_rel:
                             cmd.extend(["--categories", subconjunto])
-                        elif (
-                            conjunto == "valencia"
-                            and "ccaa_valencia_parquet.py" in script_rel
-                        ):
+                        elif conjunto == "valencia" and "ccaa_valencia_parquet.py" in script_rel:
                             cmd.extend(["--categories", subconjunto])
-                        elif (
-                            conjunto == "catalunya"
-                            and "ccaa_cataluna_parquet.py" in script_rel
-                        ):
+                        elif conjunto == "catalunya" and "ccaa_cataluna_parquet.py" in script_rel:
                             parquet_rel = CATALUNYA_PARQUET_PATHS[subconjunto]
                             cmd.extend(["--parquet-rel", parquet_rel])
                         elif (
@@ -692,9 +659,7 @@ def cmd_ingest(args: argparse.Namespace) -> int:
                                 cmd.extend(["--limit-datasets", ids])
                         print(f"Ejecutando: {' '.join(cmd)}", file=sys.stderr)
                         try:
-                            rc = subprocess.run(
-                                cmd, cwd=run_cwd, env=run_env, check=False
-                            )
+                            rc = subprocess.run(cmd, cwd=run_cwd, env=run_env, check=False)
                             if rc.returncode != 0:
                                 print(
                                     "[ingest] Error en fase descarga/generación; considerar reintentar.",
@@ -717,9 +682,7 @@ def cmd_ingest(args: argparse.Namespace) -> int:
                     return 0
             else:
                 if solo_descargar:
-                    print(
-                        "No hay script configurado para este conjunto.", file=sys.stderr
-                    )
+                    print("No hay script configurado para este conjunto.", file=sys.stderr)
                     return 1
             if "script_module" in reg:
                 print(f"Ejecutando: {' '.join(cmd)}", file=sys.stderr)
@@ -797,57 +760,134 @@ def cmd_ingest(args: argparse.Namespace) -> int:
         total_skipped = 0
         batch_errors: list[str] = []
 
-        for batch_idx, pq in enumerate(parquet_files, start=1):
-            label = f"[{batch_idx}/{len(parquet_files)}]"
-            print(f"[ingest] {label} Cargando {pq.name}...", file=sys.stderr)
+        use_threadpool = (
+            conjunto == "nacional" and subconjunto == "subvenciones" and len(parquet_files) > 1
+        )
+        max_workers = 3 if use_threadpool else 1
 
-            if column_defs is None and pq.exists():
-                column_defs = infer_column_defs_from_parquet(pq)
+        if use_threadpool:
+            print(
+                f"[ingest] Usando ThreadPool con {max_workers} workers para carga paralela.",
+                file=sys.stderr,
+            )
+            stats_lock = threading.Lock()
 
-            try:
-                inserted, skipped = load_parquet_to_l0(
-                    get_database_url(),
-                    db_schema,
-                    table_name,
-                    pq,
-                    get_ingest_batch_size(),
-                    column_defs=column_defs,
-                    natural_id_col=natural_id_col,
-                )
-                total_inserted += inserted
-                total_skipped += skipped
-                print(
-                    f"[ingest] {label} +{inserted} insertadas, {skipped} omitidas (acum: {total_inserted}+{total_skipped}).",
-                    file=sys.stderr,
-                )
+            def load_parquet_worker(batch_idx: int, pq: Path):
+                """Worker function to load a single parquet file."""
+                label = f"[{batch_idx}/{len(parquet_files)}]"
+                print(f"[ingest] {label} Cargando {pq.name}...", file=sys.stderr)
 
-                if run_id and db_url:
-                    try:
-                        from etl.scheduler import update_run_progress
+                try:
+                    inserted, skipped = load_parquet_to_l0(
+                        get_database_url(),
+                        db_schema,
+                        table_name,
+                        pq,
+                        get_ingest_batch_size(),
+                        column_defs=column_defs,
+                        natural_id_col=natural_id_col,
+                    )
 
-                        with psycopg2.connect(db_url) as _conn:
-                            update_run_progress(
-                                _conn,
-                                run_id,
-                                total_inserted,
-                                total_skipped,
-                                f"Batch {batch_idx}/{len(parquet_files)}",
-                            )
-                            _conn.commit()
-                    except Exception:
-                        pass
+                    with stats_lock:
+                        nonlocal total_inserted, total_skipped
+                        total_inserted += inserted
+                        total_skipped += skipped
+                        print(
+                            f"[ingest] {label} +{inserted} insertadas, {skipped} omitidas (acum: {total_inserted}+{total_skipped}).",
+                            file=sys.stderr,
+                        )
 
-                if use_partials:
-                    try:
-                        pq.unlink(missing_ok=True)
-                    except OSError:
-                        pass
+                    if run_id and db_url:
+                        try:
+                            from etl.scheduler import update_run_progress
 
-            except Exception as e:
-                msg = f"Error en batch {batch_idx}: {e}"
-                print(f"[ingest] {msg}", file=sys.stderr)
-                batch_errors.append(msg)
-                continue
+                            with psycopg2.connect(db_url) as _conn:
+                                update_run_progress(
+                                    _conn,
+                                    run_id,
+                                    total_inserted,
+                                    total_skipped,
+                                    f"Batch {batch_idx}/{len(parquet_files)}",
+                                )
+                                _conn.commit()
+                        except Exception:
+                            pass
+
+                    if use_partials:
+                        try:
+                            pq.unlink(missing_ok=True)
+                        except OSError:
+                            pass
+
+                    return None
+
+                except Exception as e:
+                    msg = f"Error en batch {batch_idx}: {e}"
+                    print(f"[ingest] {msg}", file=sys.stderr)
+                    return msg
+
+            with ThreadPoolExecutor(max_workers=max_workers) as executor:
+                futures = {
+                    executor.submit(load_parquet_worker, idx, pq): idx
+                    for idx, pq in enumerate(parquet_files, start=1)
+                }
+
+                for future in as_completed(futures):
+                    error = future.result()
+                    if error:
+                        batch_errors.append(error)
+        else:
+            for batch_idx, pq in enumerate(parquet_files, start=1):
+                label = f"[{batch_idx}/{len(parquet_files)}]"
+                print(f"[ingest] {label} Cargando {pq.name}...", file=sys.stderr)
+
+                if column_defs is None and pq.exists():
+                    column_defs = infer_column_defs_from_parquet(pq)
+
+                try:
+                    inserted, skipped = load_parquet_to_l0(
+                        get_database_url(),
+                        db_schema,
+                        table_name,
+                        pq,
+                        get_ingest_batch_size(),
+                        column_defs=column_defs,
+                        natural_id_col=natural_id_col,
+                    )
+                    total_inserted += inserted
+                    total_skipped += skipped
+                    print(
+                        f"[ingest] {label} +{inserted} insertadas, {skipped} omitidas (acum: {total_inserted}+{total_skipped}).",
+                        file=sys.stderr,
+                    )
+
+                    if run_id and db_url:
+                        try:
+                            from etl.scheduler import update_run_progress
+
+                            with psycopg2.connect(db_url) as _conn:
+                                update_run_progress(
+                                    _conn,
+                                    run_id,
+                                    total_inserted,
+                                    total_skipped,
+                                    f"Batch {batch_idx}/{len(parquet_files)}",
+                                )
+                                _conn.commit()
+                        except Exception:
+                            pass
+
+                    if use_partials:
+                        try:
+                            pq.unlink(missing_ok=True)
+                        except OSError:
+                            pass
+
+                except Exception as e:
+                    msg = f"Error en batch {batch_idx}: {e}"
+                    print(f"[ingest] {msg}", file=sys.stderr)
+                    batch_errors.append(msg)
+                    continue
 
         if batch_errors and total_inserted == 0:
             ingest_result[0] = "failed"
@@ -1050,11 +1090,7 @@ def cmd_scheduler_status(_args: argparse.Namespace) -> int:
             pid_str = str(pid_val) if pid_val is not None else "-"
             pid_str = pid_str[:8]
             ins, omit = r.get("last_rows_inserted"), r.get("last_rows_omitted")
-            filas = (
-                f"{ins or 0}+{omit or 0}"
-                if (ins is not None or omit is not None)
-                else "-"
-            )
+            filas = f"{ins or 0}+{omit or 0}" if (ins is not None or omit is not None) else "-"
             if raw_status == "running":
                 next_run = "-"
             else:
@@ -1139,9 +1175,7 @@ def cmd_scheduler_run(args: argparse.Namespace) -> int:
         try:
             p = subprocess.Popen(cmd, **kwargs)
         except Exception as e:
-            print(
-                f"Error al arrancar el scheduler en segundo plano: {e}", file=sys.stderr
-            )
+            print(f"Error al arrancar el scheduler en segundo plano: {e}", file=sys.stderr)
             return 1
         time.sleep(1)
         print(f"Scheduler iniciado en segundo plano. PID: {p.pid}. Log: {log_path}")
@@ -1264,14 +1298,10 @@ def cmd_scheduler_unregister(args: argparse.Namespace) -> int:
                 pass
             except OSError:
                 pass
-            update_run_finish(
-                conn, run_id, "failed", error_message="Detenido por unregister"
-            )
+            update_run_finish(conn, run_id, "failed", error_message="Detenido por unregister")
             delete_task(conn, task_id)
             conn.commit()
-            print(
-                f"Tarea {conjunto} / {subconjunto} (task_id={task_id}) eliminada del scheduler."
-            )
+            print(f"Tarea {conjunto} / {subconjunto} (task_id={task_id}) eliminada del scheduler.")
             return 0
     except Exception as e:
         print(f"Error: {e}", file=sys.stderr)
@@ -1290,9 +1320,7 @@ def cmd_db_info(_args: argparse.Namespace) -> int:
     try:
         with psycopg2.connect(url) as conn:
             with conn.cursor() as cur:
-                cur.execute(
-                    "SELECT pg_size_pretty(pg_database_size(current_database()))"
-                )
+                cur.execute("SELECT pg_size_pretty(pg_database_size(current_database()))")
                 db_total = cur.fetchone()
                 print(f"Base de datos: {db_total[0] if db_total else '?'}\n")
                 print("Tamaño por schema:")
@@ -1566,9 +1594,7 @@ def cmd_borme(args: argparse.Namespace) -> int:
     elif borme_cmd == "anomalias":
         pdfs_dir = run_scraper(args.anos)
         parsed_dir = run_parser(pdfs_dir)
-        output = run_anomalias(
-            parsed_dir, anonimizar=getattr(args, "anonimizar", False)
-        )
+        output = run_anomalias(parsed_dir, anonimizar=getattr(args, "anonimizar", False))
         print(f"BORME anomalías completadas. Resultados en: {output}")
         return 0
     else:
@@ -1683,8 +1709,7 @@ def main() -> int:
     )
     group_ingest = ingest_parser.add_argument_group(
         "Opciones para ingest real",
-        "Solo tienen efecto cuando conjunto es uno de: %s."
-        % ", ".join(sorted(CONJUNTOS_REGISTRY)),
+        "Solo tienen efecto cuando conjunto es uno de: %s." % ", ".join(sorted(CONJUNTOS_REGISTRY)),
     )
     group_ingest.add_argument(
         "--subconjuntos",
@@ -1727,9 +1752,7 @@ def main() -> int:
         "scheduler",
         help="Gestiona las tareas programadas de ingest (registro, estado, ejecución y parada).",
     )
-    sched_sub = sched_parser.add_subparsers(
-        dest="scheduler_cmd", help="Subcomando", required=True
-    )
+    sched_sub = sched_parser.add_subparsers(dest="scheduler_cmd", help="Subcomando", required=True)
     _sched_registry_list = (
         ", ".join(
             f"{c} ({len(r['subconjuntos'])})"
@@ -1841,19 +1864,11 @@ def main() -> int:
     )
     borme_sub = borme_parser.add_subparsers(dest="borme_cmd", help="Subcomando BORME")
 
-    borme_ingest = borme_sub.add_parser(
-        "ingest", help="Scrape + parse + load into borme schema"
-    )
-    borme_ingest.add_argument(
-        "--anos", required=True, help="Year range: 2020-2026 or 2024"
-    )
+    borme_ingest = borme_sub.add_parser("ingest", help="Scrape + parse + load into borme schema")
+    borme_ingest.add_argument("--anos", required=True, help="Year range: 2020-2026 or 2024")
 
-    borme_anomalias = borme_sub.add_parser(
-        "anomalias", help="Run anomaly detector vs L0 nacional"
-    )
-    borme_anomalias.add_argument(
-        "--anos", required=True, help="Year range: 2020-2026 or 2024"
-    )
+    borme_anomalias = borme_sub.add_parser("anomalias", help="Run anomaly detector vs L0 nacional")
+    borme_anomalias.add_argument("--anos", required=True, help="Year range: 2020-2026 or 2024")
     borme_anomalias.add_argument(
         "--anonimizar", action="store_true", help="Anonymize before matching"
     )
@@ -1866,13 +1881,9 @@ def main() -> int:
         help="Actualización diaria de subvenciones desde API.",
         description="Actualización diaria de subvenciones: scrape de últimas convocatorias e insert directo en BD.",
     )
-    subv_sub = subv_parser.add_subparsers(
-        dest="subvenciones_cmd", help="Subcomando subvenciones"
-    )
+    subv_sub = subv_parser.add_subparsers(dest="subvenciones_cmd", help="Subcomando subvenciones")
 
-    subv_diario = subv_sub.add_parser(
-        "diario", help="Actualización diaria (últimas subvenciones)"
-    )
+    subv_diario = subv_sub.add_parser("diario", help="Actualización diaria (últimas subvenciones)")
     subv_parser.set_defaults(func=cmd_subvenciones)
 
     cnae_parser = subparsers.add_parser(
@@ -1881,9 +1892,7 @@ def main() -> int:
         description="CNAE: ingesta de la clasificación nacional de actividades económicas desde la API ISTAC.",
     )
     cnae_sub = cnae_parser.add_subparsers(dest="cnae_cmd", help="Subcomando CNAE")
-    cnae_sub.add_parser(
-        "ingest", help="Fetch CNAE codes from ISTAC API and load into dim.cnae_dim"
-    )
+    cnae_sub.add_parser("ingest", help="Fetch CNAE codes from ISTAC API and load into dim.cnae_dim")
     cnae_parser.set_defaults(func=cmd_cnae)
 
     args = parser.parse_args()
