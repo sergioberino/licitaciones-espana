@@ -280,7 +280,7 @@ def scrape_historico(params: SearchParams) -> list[Path]:
     params.validate()
 
     _ensure_output_dir()
-    rate_limiter = RateLimiter(max_requests=40, time_window=60)
+    rate_limiter = RateLimiter(max_requests=59, time_window=60)
 
     _log("INFO", "=" * 60)
     _log("INFO", "SUBVENCIONES HISTÓRICAS (BDNS)")
@@ -367,7 +367,7 @@ def scrape_historico(params: SearchParams) -> list[Path]:
                 if col in df.columns:
                     df[col] = df[col].apply(lambda x: json.dumps(x) if x is not None else None)
 
-            parquet_filename = f"_part_subvenciones_{batch_number:04d}.parquet"
+            parquet_filename = f"_part_subvenciones_{batch_number:03d}.parquet"
             parquet_path = OUTPUT_DIR / parquet_filename
 
             df.to_parquet(parquet_path, engine="pyarrow", index=False)
@@ -445,7 +445,7 @@ def scrape_diario(params: LatestParams) -> dict[str, int]:
     total_new = 0
     total_duplicates = 0
     total_filtered = 0
-    rate_limiter = RateLimiter(max_requests=40, time_window=60)
+    rate_limiter = RateLimiter(max_requests=49, time_window=60)
     subvencion_pattern = re.compile(r"subvenci[oó]n", re.IGNORECASE)
 
     _log("INFO", "Actualizando subvenciones diarias...")
