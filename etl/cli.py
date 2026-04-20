@@ -820,6 +820,7 @@ def cmd_ingest(args: argparse.Namespace) -> int:
                 print(
                     f"[ingest] {label} +{inserted} insertadas, {skipped} omitidas (acum: {total_inserted}+{total_skipped}).",
                     file=sys.stderr,
+                    flush=True,
                 )
 
                 if run_id and db_url:
@@ -866,6 +867,7 @@ def cmd_ingest(args: argparse.Namespace) -> int:
         print(
             f"[ingest] Ingesta completada: {total_inserted} insertadas, {total_skipped} omitidas.",
             file=sys.stderr,
+            flush=True,
         )
 
         if (
@@ -915,6 +917,30 @@ def cmd_ingest(args: argparse.Namespace) -> int:
                     conn.commit()
             except Exception:
                 pass
+            # scheduler.log: resumen insertadas/omitidas para ingests fuera del bucle del daemon
+            # (Ejecutar tarea vía API, POST /ingest/run, CLI). El bucle pone SCHEDULER_LOOP_CHILD=1 en el hijo.
+            if os.environ.get("SCHEDULER_LOOP_CHILD") != "1":
+                try:
+                    from datetime import datetime
+
+                    from zoneinfo import ZoneInfo
+
+                    from etl.scheduler import get_scheduler_log_path
+
+                    pl = get_scheduler_log_path()
+                    pl.parent.mkdir(parents=True, exist_ok=True)
+                    ts = datetime.now(ZoneInfo("Europe/Madrid")).strftime(
+                        "%Y-%m-%d %H:%M:%S %Z"
+                    )
+                    st = ingest_result[0] or "failed"
+                    line = (
+                        f"[{ts}] [INFO] Ingest terminado: {conjunto} {subconjunto} run_id={run_id} "
+                        f"status={st} insertadas={ingest_result[1]} omitidas={ingest_result[2]}\n"
+                    )
+                    with open(pl, "a", encoding="utf-8") as lf:
+                        lf.write(line)
+                except Exception:
+                    pass
 
 
 def cmd_health(_args: argparse.Namespace) -> int:

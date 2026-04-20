@@ -348,10 +348,11 @@ def register_tasks(
 def get_run_by_process_id(
     conn: "psycopg2.extensions.connection", process_id: int
 ) -> Optional[dict[str, Any]]:
-    """Devuelve la run (run_id, task_id, conjunto, subconjunto) con process_id dado, o None."""
+    """Devuelve la run (run_id, task_id, conjunto, subconjunto, rows_inserted, rows_omitted) con process_id dado, o None."""
     with conn.cursor(cursor_factory=RealDictCursor) as cur:
         cur.execute(
-            """SELECT r.run_id, r.task_id, t.conjunto, t.subconjunto
+            """SELECT r.run_id, r.task_id, t.conjunto, t.subconjunto,
+                      r.rows_inserted, r.rows_omitted
                FROM scheduler.runs r
                JOIN scheduler.tasks t ON t.task_id = r.task_id
                WHERE r.process_id = %s
@@ -920,6 +921,7 @@ def run_scheduler_loop(
         while not shutdown:
             tick_count += 1
             tick_start = _time.monotonic()
+            tick_due_count = 0
 
             try:
                 with psycopg2.connect(db_url) as conn:
@@ -935,6 +937,7 @@ def run_scheduler_loop(
 
                 with psycopg2.connect(db_url) as conn:
                     due = get_tasks_due(conn)
+                    tick_due_count = len(due)
 
                 running_count = 0
                 try:
@@ -964,19 +967,38 @@ def run_scheduler_loop(
                             f"Starting: {conjunto} {subconjunto} cmd={' '.join(cmd)}"
                         )
                         task_start = _time.monotonic()
-                        p = subprocess.Popen(cmd)
+                        env = os.environ.copy()
+                        env["PYTHONUNBUFFERED"] = "1"
+                        p = subprocess.Popen(cmd, env=env)
                         p.wait()
                         duration = _time.monotonic() - task_start
                         dur_str = f"{duration:.0f}s"
+                        rows_note = ""
+                        try:
+                            with psycopg2.connect(db_url) as _c:
+                                info = get_run_by_process_id(_c, p.pid)
+                                if info:
+                                    ins = info.get("rows_inserted")
+                                    om = info.get("rows_omitted")
+                                    if ins is not None or om is not None:
+                                        rows_note = (
+                                            f" insertadas={ins if ins is not None else 0} "
+                                            f"omitidas={om if om is not None else 0}"
+                                        )
+                        except Exception:
+                            pass
                         if p.returncode == 0:
                             supervisor.log(
-                                f"Completed: {conjunto} {subconjunto} PID={p.pid} code=0 ({dur_str})"
+                                f"Completed: {conjunto} {subconjunto} PID={p.pid} code=0 ({dur_str}){rows_note}"
                             )
                         else:
                             supervisor.incident(
                                 "task_failure",
                                 f"Subprocess exited with code {p.returncode}: {conjunto} {subconjunto}",
-                                detail=f"PID={p.pid} duration={dur_str} cmd={' '.join(cmd)}",
+                                detail=(
+                                    f"PID={p.pid} duration={dur_str} cmd={' '.join(cmd)}"
+                                    f"{rows_note}"
+                                ),
                                 task_id=task.get("task_id"),
                                 severity="error",
                             )
@@ -1006,10 +1028,12 @@ def run_scheduler_loop(
             supervisor.maybe_trim()
 
             tick_elapsed = _time.monotonic() - tick_start
-            if tick_elapsed > tick_seconds * 5:
+            # Long ticks are normal when due tasks run (subprocess can take hours). Only warn on
+            # idle/slow ticks (no work scheduled) — avoids false "heartbeat_gap" during ingest.
+            if tick_elapsed > tick_seconds * 5 and tick_due_count == 0:
                 supervisor.incident(
                     "heartbeat_gap",
-                    f"Tick {tick_count} took {tick_elapsed:.0f}s (expected ~{tick_seconds}s)",
+                    f"Tick {tick_count} took {tick_elapsed:.0f}s (expected ~{tick_seconds}s) with no due tasks",
                     severity="warning",
                 )
 

@@ -17,6 +17,7 @@ from etl.ingest_l0 import CONJUNTOS_REGISTRY
 from etl.scheduler import (
     VALID_SCHEDULE_EXPRS,
     _build_default_schedules,
+    _build_task_cmd,
     ensure_scheduler_schema,
     get_current_running_run,
     get_next_run_at,
@@ -89,7 +90,7 @@ class BormeAnomaliasBody(BaseModel):
 
 app = FastAPI(
     title="ETL API",
-    version="1.4.1",
+    version="1.5.1",
     description="Microservicio ETL: ingest L0, scheduler, BORME.",
 )
 
@@ -181,19 +182,30 @@ def _startup_crash_detection():
         heartbeat_path=hb_path,
     )
 
-    detail_parts = []
+    from etl.docker_incident_context import collect_container_snapshot
+
+    detail_parts: list[str] = []
     if stale_recovered:
-        detail_parts.append(f"Recovered {stale_recovered} stale run(s)")
+        detail_parts.append(
+            f"Se marcaron como fallidas {stale_recovered} ejecución(es) que quedaron en estado "
+            "«running» sin proceso vivo (posible reinicio del contenedor o parada abrupta)."
+        )
     if stale_pid:
-        detail_parts.append("Stale PID file found (scheduler was running before crash)")
+        detail_parts.append(
+            "Archivo PID del scheduler huérfano: apuntaba a un proceso que ya no existe "
+            "(habitual tras reinicio manual del servicio o del contenedor)."
+        )
+
+    docker_ctx = collect_container_snapshot()
+    detail_text = "\n\n".join(detail_parts) + "\n\n---\n\n" + docker_ctx
 
     supervisor.incident(
         "service_crash",
-        "ETL service restarted — possible crash detected",
-        detail="; ".join(detail_parts),
+        "Reinicio del servicio ETL: posible caída o parada no limpia detectada al arrancar",
+        detail=detail_text,
         severity="error",
     )
-    print(f"[startup] Crash detected: {'; '.join(detail_parts)}")
+    print(f"[startup] Incidente de arranque registrado: {' | '.join(detail_parts)}")
 
     app.state.recovery_status = {
         "detected": True,
@@ -212,7 +224,7 @@ def _startup_crash_detection():
         max_retries = 3
         for attempt in range(1, max_retries + 1):
             try:
-                print(f"[crash-recovery] Auto-restart attempt {attempt}/{max_retries}")
+                print(f"[crash-recovery] Intento de reinicio automático {attempt}/{max_retries}")
                 args = argparse.Namespace(
                     conjunto=None,
                     subconjunto=None,
@@ -224,20 +236,29 @@ def _startup_crash_detection():
                 if rc == 0:
                     app.state.recovery_status["auto_restart_attempted"] = True
                     app.state.recovery_status["auto_restart_success"] = True
-                    print(f"[crash-recovery] Scheduler restarted successfully on attempt {attempt}")
+                    print(f"[crash-recovery] Scheduler reiniciado correctamente en el intento {attempt}")
                     return
             except Exception as e:
-                print(f"[crash-recovery] Attempt {attempt} failed: {e}")
+                print(f"[crash-recovery] Intento {attempt} fallido: {e}")
             time.sleep(5)
 
         app.state.recovery_status["auto_restart_attempted"] = True
         app.state.recovery_status["auto_restart_success"] = False
+        fail_detail = (
+            f"No se pudo reiniciar el scheduler automáticamente tras {max_retries} intentos. "
+            "Revise los logs del contenedor ETL y el estado del proceso.\n\n---\n\n"
+            + collect_container_snapshot()
+        )
         supervisor.incident(
             "auto_restart_failed",
-            f"Failed to auto-restart scheduler after {max_retries} attempts",
+            "Fallo al reiniciar el scheduler automáticamente tras varios intentos",
+            detail=fail_detail,
             severity="error",
         )
-        print(f"[crash-recovery] All {max_retries} restart attempts failed. Check docker logs.")
+        print(
+            f"[crash-recovery] Fallaron los {max_retries} intentos de reinicio. "
+            "Revise los logs del contenedor ETL."
+        )
 
     thread = threading.Thread(target=_auto_restart, daemon=True)
     thread.start()
@@ -446,7 +467,13 @@ def ingest_run(body: IngestRunBody):
 
     try:
         log_file = open(log_path, "w", encoding="utf-8")
-        kwargs: dict = {"stdout": log_file, "stderr": subprocess.STDOUT}
+        ingest_env = os.environ.copy()
+        ingest_env["PYTHONUNBUFFERED"] = "1"
+        kwargs: dict = {
+            "stdout": log_file,
+            "stderr": subprocess.STDOUT,
+            "env": ingest_env,
+        }
         if os.name != "nt":
             kwargs["start_new_session"] = True
         p = subprocess.Popen(cmd, **kwargs)
@@ -542,7 +569,7 @@ def scheduler_defaults():
 @app.post(
     "/scheduler/run",
     summary="Run scheduler or single task",
-    description="If conjunto (and subconjunto if needed) given: run that task once (blocking, 200). If detach=true: start full scheduler loop in background (202). Reuses CLI logic.",
+    description="Single task: spawns CLI in background (same as POST /ingest/run) and returns immediately so proxies do not time out. If detach=true: start full scheduler loop in background (202).",
 )
 def scheduler_run(body: SchedulerRunBody | None = None):
     """Run a single task or start the scheduler loop in background."""
@@ -568,6 +595,50 @@ def scheduler_run(body: SchedulerRunBody | None = None):
             status_code=422,
             content={"detail": "Indique subconjunto para esta tarea."},
         )
+    # Single task from UI/API: do not block the HTTP request for the full ingest duration (often
+    # 10+ minutes). Proxies and browsers time out → 502 and false "failure" toasts while work continues.
+    if conjunto and subconjunto and not body.detach:
+        if conjunto not in CONJUNTOS_REGISTRY or conjunto == "test":
+            return JSONResponse(
+                status_code=422,
+                content={
+                    "detail": f"Conjunto no reconocido: {conjunto}. Admitidos: {', '.join(sorted(c for c in CONJUNTOS_REGISTRY if c != 'test'))}.",
+                },
+            )
+        reg = CONJUNTOS_REGISTRY[conjunto]
+        subconjuntos = list(reg.get("subconjuntos", ()))
+        if subconjunto not in subconjuntos:
+            return JSONResponse(
+                status_code=422,
+                content={"detail": f"Subconjunto no reconocido para {conjunto}: {subconjunto}."},
+            )
+        cmd = _build_task_cmd(conjunto, subconjunto)
+        log_path = _ingest_log_path()
+        log_path.parent.mkdir(parents=True, exist_ok=True)
+        try:
+            log_file = open(log_path, "w", encoding="utf-8")
+            ingest_env = os.environ.copy()
+            ingest_env["PYTHONUNBUFFERED"] = "1"
+            kwargs: dict = {
+                "stdout": log_file,
+                "stderr": subprocess.STDOUT,
+                "env": ingest_env,
+            }
+            if os.name != "nt":
+                kwargs["start_new_session"] = True
+            p = subprocess.Popen(cmd, **kwargs)
+        except Exception as e:
+            return JSONResponse(
+                status_code=500,
+                content={"ok": False, "message": f"No se pudo iniciar la tarea: {e}"},
+            )
+        label = f"{conjunto}/{subconjunto}"
+        return {
+            "ok": True,
+            "message": f"Tarea {label} iniciada en segundo plano (PID: {p.pid}). "
+            "Use la salida del proceso y las ejecuciones en curso para seguir el progreso.",
+        }
+
     args = argparse.Namespace(
         conjunto=conjunto,
         subconjunto=subconjunto,
