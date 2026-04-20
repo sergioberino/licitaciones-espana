@@ -12,6 +12,8 @@ import argparse
 import re
 import json
 from tqdm import tqdm
+from concurrent.futures import ThreadPoolExecutor, as_completed
+import threading
 
 LOG_PREFIX = "[subvenciones]"
 
@@ -47,20 +49,13 @@ def _ensure_output_dir():
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
 
+@dataclass
 class RateLimiter:
     """Manage API rate limiting to avoid exceeding request limits and get API ban."""
 
-    def __init__(self, max_requests: int = 49, time_window: int = 60):
-        """
-        Initialize rate limiter.
-
-        Args:
-            max_requests: Maximum requests allowed in time window (default 49 to stay safe)
-            time_window: Time window in seconds (default 60 for 1 minute)
-        """
-        self.max_requests = max_requests
-        self.time_window = time_window
-        self.request_times = []
+    max_requests: int = field(default=49)
+    time_window: int = field(default=60)
+    request_times: list = field(default_factory=list, init=False)
 
     def wait_if_needed(self):
         """Wait if necessary to avoid exceeding rate limit."""
@@ -259,17 +254,16 @@ def fetch_convocatoria_detalle(
         return None
 
 
-def scrape_historico(params: SearchParams) -> list[Path]:
+def scrape_historico(params: SearchParams, max_workers: int = 1) -> list[Path]:
     """
     Scrape historical grants data and save to Parquet files.
     This is for initial bulk load - generates Parquet files for etl/ingest_l0.py to process.
 
-    Fetches detailed information for each convocatoria sequentially (no parallelism needed
-    due to strict API rate limiting of 50 req/min).
     Generates multiple parquet files with max 20000 records each.
 
     Args:
         params: SearchParams with date range (fechaDesde required, fechaHasta defaults to today)
+        max_workers: Number of threads for parallel fetching (default: 1 = sequential)
 
     Returns:
         List of paths to generated Parquet files
@@ -280,7 +274,7 @@ def scrape_historico(params: SearchParams) -> list[Path]:
     params.validate()
 
     _ensure_output_dir()
-    rate_limiter = RateLimiter(max_requests=59, time_window=60)
+    rate_limiter = RateLimiter(max_requests=200, time_window=60)
 
     _log("INFO", "=" * 60)
     _log("INFO", "SUBVENCIONES HISTÓRICAS (BDNS)")
@@ -335,10 +329,12 @@ def scrape_historico(params: SearchParams) -> list[Path]:
 
         _log("INFO", f"{len(light_convocatorias):,} convocatorias obtenidas")
 
-        _log("INFO", f"Obteniendo detalles y generando parquets...")
+        _log("INFO", f"Obteniendo detalles y generando parquets (workers: {max_workers})...")
 
         batch_buffer = []
+        batch_buffer_lock = threading.Lock() if max_workers > 1 else None
         failed_count = 0
+        failed_lock = threading.Lock() if max_workers > 1 else None
         parquet_paths = []
         batch_num = 0
         total_saved = 0
@@ -379,24 +375,61 @@ def scrape_historico(params: SearchParams) -> list[Path]:
             )
             return parquet_path
 
-        for conv in tqdm(light_convocatorias, unit="conv"):
-            try:
-                result = fetch_convocatoria_detalle(conv["numero_convocatoria"], rate_limiter)
-                if result:
-                    batch_buffer.append(result)
+        if max_workers > 1:
+            # Modo paralelo con ThreadPool
+            def process_convocatoria(conv):
+                nonlocal batch_num, total_saved, failed_count
 
-                    if len(batch_buffer) >= MAX_RECORDS_PER_PARQUET:
-                        parquet_path = save_batch(batch_buffer, batch_num)
-                        if parquet_path:
-                            parquet_paths.append(parquet_path)
-                            total_saved += len(batch_buffer)
-                        batch_buffer = []
-                        batch_num += 1
-                else:
+                try:
+                    result = fetch_convocatoria_detalle(conv["numero_convocatoria"], rate_limiter)
+                    if result:
+                        with batch_buffer_lock:
+                            batch_buffer.append(result)
+
+                            if len(batch_buffer) >= MAX_RECORDS_PER_PARQUET:
+                                parquet_path = save_batch(batch_buffer[:], batch_num)
+                                if parquet_path:
+                                    parquet_paths.append(parquet_path)
+                                    total_saved += len(batch_buffer)
+                                batch_buffer.clear()
+                                batch_num += 1
+                    else:
+                        with failed_lock:
+                            failed_count += 1
+                except Exception as e:
+                    _log("ERROR", f"Excepción: {e}")
+                    with failed_lock:
+                        failed_count += 1
+
+            with ThreadPoolExecutor(max_workers=max_workers) as executor:
+                futures = [
+                    executor.submit(process_convocatoria, conv) for conv in light_convocatorias
+                ]
+
+                with tqdm(total=len(light_convocatorias), unit="conv") as pbar:
+                    for future in as_completed(futures):
+                        future.result()
+                        pbar.update(1)
+        else:
+            # Modo secuencial (original)
+            for conv in tqdm(light_convocatorias, unit="conv"):
+                try:
+                    result = fetch_convocatoria_detalle(conv["numero_convocatoria"], rate_limiter)
+                    if result:
+                        batch_buffer.append(result)
+
+                        if len(batch_buffer) >= MAX_RECORDS_PER_PARQUET:
+                            parquet_path = save_batch(batch_buffer, batch_num)
+                            if parquet_path:
+                                parquet_paths.append(parquet_path)
+                                total_saved += len(batch_buffer)
+                            batch_buffer = []
+                            batch_num += 1
+                    else:
+                        failed_count += 1
+                except Exception as e:
+                    _log("ERROR", f"Excepción: {e}")
                     failed_count += 1
-            except Exception as e:
-                _log("ERROR", f"Excepción: {e}")
-                failed_count += 1
 
         if batch_buffer:
             parquet_path = save_batch(batch_buffer, batch_num)
@@ -655,6 +688,12 @@ def main():
         action="store_true",
         help="Solo descargar/generar Parquet, no cargar en BD",
     )
+    parser.add_argument(
+        "--workers",
+        type=int,
+        default=1,
+        help="Número de workers para ThreadPool (default: 1 = secuencial)",
+    )
 
     args = parser.parse_args()
 
@@ -685,7 +724,10 @@ def main():
             fechaHasta=fecha_hasta,
         )
 
-        parquet_paths = scrape_historico(params)
+        workers = getattr(args, "workers", 1)
+        _log("INFO", f"Usando {workers} worker(s) para fetching")
+
+        parquet_paths = scrape_historico(params, max_workers=workers)
         if args.solo_descargar:
             _log("INFO", "(--solo-descargar: no se cargará en BD)")
             _log("INFO", f"Archivos generados: {len(parquet_paths)}")
