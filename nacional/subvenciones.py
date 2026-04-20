@@ -254,7 +254,7 @@ def fetch_convocatoria_detalle(
         return None
 
 
-def scrape_historico(params: SearchParams, max_workers: int = 1) -> list[Path]:
+def scrape_historico(params: SearchParams, max_workers: int = 3) -> list[Path]:
     """
     Scrape historical grants data and save to Parquet files.
     This is for initial bulk load - generates Parquet files for etl/ingest_l0.py to process.
@@ -263,7 +263,7 @@ def scrape_historico(params: SearchParams, max_workers: int = 1) -> list[Path]:
 
     Args:
         params: SearchParams with date range (fechaDesde required, fechaHasta defaults to today)
-        max_workers: Number of threads for parallel fetching (default: 1 = sequential)
+        max_workers: Number of threads for parallel fetching (default: 3)
 
     Returns:
         List of paths to generated Parquet files
@@ -688,12 +688,6 @@ def main():
         action="store_true",
         help="Solo descargar/generar Parquet, no cargar en BD",
     )
-    parser.add_argument(
-        "--workers",
-        type=int,
-        default=1,
-        help="Número de workers para ThreadPool (default: 1 = secuencial)",
-    )
 
     args = parser.parse_args()
 
@@ -724,10 +718,7 @@ def main():
             fechaHasta=fecha_hasta,
         )
 
-        workers = getattr(args, "workers", 1)
-        _log("INFO", f"Usando {workers} worker(s) para fetching")
-
-        parquet_paths = scrape_historico(params, max_workers=workers)
+        parquet_paths = scrape_historico(params)
         if args.solo_descargar:
             _log("INFO", "(--solo-descargar: no se cargará en BD)")
             _log("INFO", f"Archivos generados: {len(parquet_paths)}")
