@@ -145,8 +145,6 @@ SUBVENCIONES_PARQUET_COLUMNS = [
     # Documentos y anuncios
     ("documentos", "JSONB"),
     ("anuncios", "JSONB"),
-    # Advertencia
-    ("advertencia", "TEXT"),
 ]
 
 # Nombre de la columna que en el parquet contiene el identificador único (URL); en la tabla L0 se persiste como natural_id.
@@ -580,11 +578,7 @@ def infer_column_defs_from_parquet(parquet_path: Path) -> list[tuple[str, str]]:
     except Exception as e:
         _configure_logging()
         err_msg = str(e).lower()
-        if (
-            "magic" in err_msg
-            or "arrowinvalid" in type(e).__name__.lower()
-            or "parquet" in err_msg
-        ):
+        if "magic" in err_msg or "arrowinvalid" in type(e).__name__.lower() or "parquet" in err_msg:
             logger.error(
                 "Parquet inválido (magic bytes no encontrados o fichero corrupto). "
                 "Comprobar que la ruta es un .parquet válido; si acabas de descargar, reintentar la descarga. %s",
@@ -652,9 +646,7 @@ def ensure_l0_table(
         col_defs.append('"ingested_at" TIMESTAMPTZ DEFAULT NOW()')
 
         create_sql = (
-            f"CREATE TABLE IF NOT EXISTS {full_table} (\n  "
-            + ",\n  ".join(col_defs)
-            + "\n)"
+            f"CREATE TABLE IF NOT EXISTS {full_table} (\n  " + ",\n  ".join(col_defs) + "\n)"
         )
         with conn.cursor() as cur:
             cur.execute(create_sql)
@@ -672,9 +664,7 @@ def ensure_l0_table(
                             f'CREATE INDEX IF NOT EXISTS {iname} ON {full_table} USING GIN ("{col}")'
                         )
                     else:
-                        cur.execute(
-                            f'CREATE INDEX IF NOT EXISTS {iname} ON {full_table} ("{col}")'
-                        )
+                        cur.execute(f'CREATE INDEX IF NOT EXISTS {iname} ON {full_table} ("{col}")')
 
             col_names = [c[0] for c in column_defs]
             if "expediente" in col_names and "id_plataforma" in col_names:
@@ -744,9 +734,7 @@ def load_parquet_to_l0(
                 len(df),
             )
         else:
-            logger.info(
-                "Filas con natural_id válido: %s de %s.", num_valid_nid, len(df)
-            )
+            logger.info("Filas con natural_id válido: %s de %s.", num_valid_nid, len(df))
 
     cpv_principal_col = "cpv_principal"
     cpvs_col = "cpvs"
@@ -780,9 +768,7 @@ def load_parquet_to_l0(
             ON CONFLICT (id) DO NOTHING
         """
     else:
-        table_base_cols = ["natural_id"] + [
-            c for c, _ in column_defs if c != natural_id_col
-        ]
+        table_base_cols = ["natural_id"] + [c for c, _ in column_defs if c != natural_id_col]
         if has_cpv:
             insert_cols = table_base_cols + [
                 "principal_prefix4",
@@ -819,9 +805,7 @@ def load_parquet_to_l0(
                             if _scalar_isna(v):
                                 vals.append(None)
                                 continue
-                            pg_type = next(
-                                (t for col, t in column_defs if col == c), "TEXT"
-                            )
+                            pg_type = next((t for col, t in column_defs if col == c), "TEXT")
                             if "INT" in pg_type or "BIGINT" in pg_type:
                                 try:
                                     vals.append(int(v))
@@ -835,9 +819,7 @@ def load_parquet_to_l0(
                             elif "BOOL" in pg_type:
                                 vals.append(bool(v) if v is not None else None)
                             elif "JSONB" in pg_type:
-                                vals.append(
-                                    psycopg2.extras.Json(_convert_numpy_to_python(v))
-                                )
+                                vals.append(psycopg2.extras.Json(_convert_numpy_to_python(v)))
                             else:
                                 vals.append(v)
                         rows.append(tuple(vals))
@@ -893,20 +875,12 @@ def load_parquet_to_l0(
                                         vals.append(int(v))
                                     except (TypeError, ValueError):
                                         vals.append(None)
-                                elif isinstance(v, (list, dict)) or hasattr(
-                                    v, "tolist"
-                                ):
-                                    vals.append(
-                                        psycopg2.extras.Json(
-                                            _convert_numpy_to_python(v)
-                                        )
-                                    )
+                                elif isinstance(v, (list, dict)) or hasattr(v, "tolist"):
+                                    vals.append(psycopg2.extras.Json(_convert_numpy_to_python(v)))
                                 else:
                                     vals.append(v)
                             else:
-                                pg_type = next(
-                                    (t for col, t in column_defs if col == c), "TEXT"
-                                )
+                                pg_type = next((t for col, t in column_defs if col == c), "TEXT")
                                 if "INT" in pg_type or "BIGINT" in pg_type:
                                     try:
                                         vals.append(int(v))
@@ -920,11 +894,7 @@ def load_parquet_to_l0(
                                 elif "BOOL" in pg_type:
                                     vals.append(bool(v))
                                 elif "JSONB" in pg_type:
-                                    vals.append(
-                                        psycopg2.extras.Json(
-                                            _convert_numpy_to_python(v)
-                                        )
-                                    )
+                                    vals.append(psycopg2.extras.Json(_convert_numpy_to_python(v)))
                                 else:
                                     vals.append(v)
                         if has_cpv:

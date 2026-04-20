@@ -42,7 +42,5 @@ CREATE TABLE IF NOT EXISTS l0.nacional_subvenciones (
   sectores_productos JSONB,
   -- Documentos y anuncios
   documentos JSONB,
-  anuncios JSONB,
-  -- Advertencia
-  advertencia TEXT
+  anuncios JSONB
 );

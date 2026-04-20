@@ -228,7 +228,6 @@ def fetch_convocatoria_detalle(
                 "sectores_productos": _convert_to_json_serializable(data.get("sectoresProductos")),
                 "documentos": _convert_to_json_serializable(data.get("documentos")),
                 "anuncios": _convert_to_json_serializable(data.get("anuncios")),
-                "advertencia": data.get("advertencia"),
             }
 
             return record
@@ -313,12 +312,15 @@ def scrape_historico(params: SearchParams) -> list[Path]:
                     break
 
                 for item in content:
-                    light_convocatorias.append(
-                        {
-                            "id": item.get("id"),
-                            "numero_convocatoria": item.get("numeroConvocatoria"),
-                        }
-                    )
+                    # Convert numeroConvocatoria to int for consistent type handling
+                    numero_conv = item.get("numeroConvocatoria")
+                    if numero_conv:
+                        light_convocatorias.append(
+                            {
+                                "id": item.get("id"),
+                                "numero_convocatoria": int(numero_conv),
+                            }
+                        )
 
                 page += 1
                 pbar.update(1)
@@ -365,12 +367,6 @@ def scrape_historico(params: SearchParams) -> list[Path]:
             parquet_path = OUTPUT_DIR / parquet_filename
 
             df.to_parquet(parquet_path, engine="pyarrow", index=False)
-
-            size_mb = parquet_path.stat().st_size / (1024 * 1024)
-            _log(
-                "INFO",
-                f"{parquet_path.name} ({len(df):,} registros guardados, {size_mb:.1f} MB)",
-            )
             return parquet_path
 
         def fetcher():
@@ -378,7 +374,8 @@ def scrape_historico(params: SearchParams) -> list[Path]:
             nonlocal failed_count
             for conv in tqdm(light_convocatorias, unit="conv", desc="Fetch+Preproc"):
                 try:
-                    result = fetch_convocatoria_detalle(conv["numero_convocatoria"])
+                    # Convert back to string for API request
+                    result = fetch_convocatoria_detalle(str(conv["numero_convocatoria"]))
                     if result:
                         buffer.put(result)
                     else:
@@ -520,12 +517,15 @@ def scrape_diario(params: LatestParams) -> dict[str, int]:
                 if not subvencion_pattern.search(descripcion):
                     page_filtered += 1
                     continue
-                light_convocatorias.append(
-                    {
-                        "id": item.get("id"),
-                        "numero_convocatoria": item.get("numeroConvocatoria"),
-                    }
-                )
+                # Convert numeroConvocatoria to int for consistent type comparison
+                numero_conv = item.get("numeroConvocatoria")
+                if numero_conv:
+                    light_convocatorias.append(
+                        {
+                            "id": item.get("id"),
+                            "numero_convocatoria": int(numero_conv),
+                        }
+                    )
             total_filtered += page_filtered
 
             if not light_convocatorias:
@@ -536,12 +536,14 @@ def scrape_diario(params: LatestParams) -> dict[str, int]:
             with conn.cursor() as cur:
                 cur.execute(
                     "SELECT id FROM l0.nacional_subvenciones WHERE id = ANY(%s)",
-                    ([conv["id"] for conv in light_convocatorias],),
+                    ([conv["numero_convocatoria"] for conv in light_convocatorias],),
                 )
                 existing_ids = {row[0] for row in cur.fetchall()}
 
                 new_convocatorias = [
-                    conv for conv in light_convocatorias if conv["id"] not in existing_ids
+                    conv
+                    for conv in light_convocatorias
+                    if conv["numero_convocatoria"] not in existing_ids
                 ]
                 page_dups = len(existing_ids)
                 total_duplicates += page_dups
@@ -557,7 +559,8 @@ def scrape_diario(params: LatestParams) -> dict[str, int]:
                 detailed_records = []
                 _log("INFO", "Obteniendo detalles de convocatorias...")
                 for conv in tqdm(new_convocatorias, unit="conv"):
-                    detail = fetch_convocatoria_detalle(conv["numero_convocatoria"])
+                    # Convert back to string for API request
+                    detail = fetch_convocatoria_detalle(str(conv["numero_convocatoria"]))
                     if detail:
                         detailed_records.append(detail)
 
@@ -573,8 +576,8 @@ def scrape_diario(params: LatestParams) -> dict[str, int]:
                      tipos_beneficiarios, sectores, regiones, descripcion_finalidad, descripcion_bases_reguladoras,
                      url_bases_reguladoras, se_publica_diario_oficial, abierto, fecha_inicio_solicitud,
                      fecha_fin_solicitud, text_inicio, text_fin, ayuda_estado, url_ayuda_estado,
-                     fondos, reglamento, objetivos, sectores_productos, documentos, anuncios, advertencia)
-                    VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+                     fondos, reglamento, objetivos, sectores_productos, documentos, anuncios)
+                    VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
                     ON CONFLICT (id) DO NOTHING
                 """
 
@@ -632,7 +635,6 @@ def scrape_diario(params: LatestParams) -> dict[str, int]:
                             record.get("sectores_productos"),
                             record.get("documentos"),
                             record.get("anuncios"),
-                            record.get("advertencia"),
                         )
                     )
 
