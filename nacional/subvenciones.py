@@ -12,8 +12,8 @@ import argparse
 import re
 import threading
 from concurrent.futures import ThreadPoolExecutor, as_completed
-from typing import Optional
 import json
+from tqdm import tqdm
 
 LOG_PREFIX = "[subvenciones]"
 
@@ -30,9 +30,7 @@ from etl.config import get_database_url
 API_BASE_URL = "https://www.infosubvenciones.es/bdnstrans/api/convocatorias"
 API_ENDPOINT_SEARCH = API_BASE_URL + "/busqueda"
 API_ENDPOINT_LATEST = API_BASE_URL + "/ultimas"
-API_ENDPOINT_DETAIL = (
-    API_BASE_URL  # Same as base URL, uses query params vpd and numConv
-)
+API_ENDPOINT_DETAIL = API_BASE_URL
 
 # Default VPD parameter for detail endpoint
 DEFAULT_VPD = "GE"
@@ -68,7 +66,7 @@ class RateLimiter:
         self.max_requests = max_requests
         self.time_window = time_window
         self.request_times = []
-        self._lock = threading.Lock()  # Thread-safe lock
+        self._lock = threading.Lock()
 
     def wait_if_needed(self):
         """Wait if necessary to avoid exceeding rate limit. Thread-safe."""
@@ -76,9 +74,7 @@ class RateLimiter:
             now = time.time()
 
             # Remove requests outside the current time window
-            self.request_times = [
-                t for t in self.request_times if now - t < self.time_window
-            ]
+            self.request_times = [t for t in self.request_times if now - t < self.time_window]
 
             # Check if we've reached the limit
             if len(self.request_times) >= self.max_requests:
@@ -113,6 +109,7 @@ class SearchParams:
     pageSize: int = 10000
     fechaDesde: str | None = None  # Format: "DD/MM/YYYY"
     fechaHasta: str = datetime.now().strftime("%d/%m/%Y")  # Format: "DD/MM/YYYY"
+    vpd: str = field(default=DEFAULT_VPD, init=False)
 
     def to_dict(self) -> dict:
         """Convert to dictionary removing None values."""
@@ -123,9 +120,7 @@ class SearchParams:
         if self.page < 0:
             raise ValueError(f"page debe ser >= 0, recibido: {self.page}")
         if self.pageSize < 50 or self.pageSize > 10000:
-            raise ValueError(
-                f"pageSize debe estar entre 50-10000, recibido: {self.pageSize}"
-            )
+            raise ValueError(f"pageSize debe estar entre 50-10000, recibido: {self.pageSize}")
 
         # Validate date formats if present
         if self.fechaDesde:
@@ -146,9 +141,7 @@ class SearchParams:
         try:
             datetime.strptime(date_str, "%d/%m/%Y")
         except ValueError:
-            raise ValueError(
-                f"{field_name} debe tener formato DD/MM/YYYY, recibido: {date_str}"
-            )
+            raise ValueError(f"{field_name} debe tener formato DD/MM/YYYY, recibido: {date_str}")
 
 
 @dataclass
@@ -158,6 +151,7 @@ class LatestParams:
     page: int = 0
     pageSize: int = 100
     order: str = field(default="numeroConvocatoria", init=False)
+    vpd: str = field(default=DEFAULT_VPD, init=False)
 
     def to_dict(self) -> dict:
         """Convert to dictionary."""
@@ -173,8 +167,8 @@ class LatestParams:
 
 
 def _flatten_organo(
-    organo: Optional[dict],
-) -> tuple[Optional[str], Optional[str], Optional[str]]:
+    organo: dict | None,
+) -> tuple[str | None, str | None, str | None]:
     """Flatten organo nested object to nivel1, nivel2, nivel3."""
     if not organo:
         return None, None, None
@@ -198,8 +192,7 @@ def _convert_to_json_serializable(obj):
 def fetch_convocatoria_detalle(
     numero_convocatoria: str,
     rate_limiter: RateLimiter,
-    vpd: str = DEFAULT_VPD,
-) -> Optional[dict]:
+) -> dict | None:
     """
     Fetch detailed information for a single convocatoria.
 
@@ -215,7 +208,7 @@ def fetch_convocatoria_detalle(
         rate_limiter.wait_if_needed()
 
         params = {
-            "vpd": vpd,
+            "vpd": DEFAULT_VPD,
             "numConv": numero_convocatoria,
         }
 
@@ -249,9 +242,7 @@ def fetch_convocatoria_detalle(
             "mrr": data.get("mrr"),
             "descripcion": data.get("descripcion"),
             "descripcion_leng": data.get("descripcionLeng"),
-            "tipos_beneficiarios": _convert_to_json_serializable(
-                data.get("tiposBeneficiarios")
-            ),
+            "tipos_beneficiarios": _convert_to_json_serializable(data.get("tiposBeneficiarios")),
             "sectores": _convert_to_json_serializable(data.get("sectores")),
             "regiones": _convert_to_json_serializable(data.get("regiones")),
             "descripcion_finalidad": data.get("descripcionFinalidad"),
@@ -268,9 +259,7 @@ def fetch_convocatoria_detalle(
             "fondos": _convert_to_json_serializable(data.get("fondos")),
             "reglamento": _convert_to_json_serializable(data.get("reglamento")),
             "objetivos": _convert_to_json_serializable(data.get("objetivos")),
-            "sectores_productos": _convert_to_json_serializable(
-                data.get("sectoresProductos")
-            ),
+            "sectores_productos": _convert_to_json_serializable(data.get("sectoresProductos")),
             "documentos": _convert_to_json_serializable(data.get("documentos")),
             "anuncios": _convert_to_json_serializable(data.get("anuncios")),
             "advertencia": data.get("advertencia"),
@@ -309,149 +298,107 @@ def scrape_historico(params: SearchParams, max_workers: int = 10) -> list[Path]:
     ano_fin = int(params.fechaHasta[-4:])
 
     _ensure_output_dir()
-
-    # Step 1: Fetch all light convocatorias
-    light_convocatorias = []
     rate_limiter = RateLimiter(max_requests=49, time_window=60)
-
-    page = params.page
-    is_last_page = False
-    total_elements = 0
 
     print(f"\n{'='*60}", flush=True)
     print(f"SUBVENCIONES HISTÓRICAS (BDNS)", flush=True)
     print(f"   Rango: {params.fechaDesde} — {params.fechaHasta}", flush=True)
-    print(f"   Endpoint: {API_ENDPOINT_SEARCH}", flush=True)
-    print(f"{'='*60}", flush=True)
+    print(f"{'='*60}\n", flush=True)
 
     try:
-        # Fase 1: Obtener convocatorias ligeras
-        _log("INFO", "Fase 1: Obteniendo convocatorias ligeras...")
-        while not is_last_page:
-            params.page = page
+        light_convocatorias = []
+        page = 0
+        is_last_page = False
 
-            rate_limiter.wait_if_needed()
-            res = requests.get(API_ENDPOINT_SEARCH, params=params.to_dict())
+        print("Obteniendo lista de convocatorias...", flush=True)
+        with tqdm(desc="Páginas", unit="pag") as pbar:
+            while not is_last_page:
+                params.page = page
+                rate_limiter.wait_if_needed()
+                res = requests.get(API_ENDPOINT_SEARCH, params=params.to_dict())
 
-            if res.status_code != 200:
-                try:
-                    error_data = res.json()
-                    if "errores" in error_data:
-                        error_msgs = "\n  - ".join(error_data["errores"])
-                        raise ValueError(
-                            f"Error de la API ({error_data.get('codigo', 'UNKNOWN')}):\n  - {error_msgs}"
-                        )
-                except ValueError:
-                    raise
-                except Exception:
-                    res.raise_for_status()
+                if res.status_code != 200:
+                    try:
+                        error_data = res.json()
+                        if "errores" in error_data:
+                            error_msgs = "\n  - ".join(error_data["errores"])
+                            raise ValueError(
+                                f"Error de la API ({error_data.get('codigo', 'UNKNOWN')}):\n  {error_msgs}"
+                            )
+                    except ValueError:
+                        raise
+                    except Exception:
+                        res.raise_for_status()
 
-            data = res.json()
+                data = res.json()
+                content = data.get("content", [])
+                is_last_page = data.get("last", True)
 
-            content = data.get("content", [])
-            is_last_page = data.get("last", True)
-            total_pages = data.get("totalPages", "?")
+                if page == 0:
+                    total_elements = data.get("totalElements", 0)
+                    pbar.total = data.get("totalPages", 0)
+                    pbar.set_description(f"Páginas (total: {total_elements:,} convocatorias)")
 
-            if page == 0:
-                total_elements = data.get("totalElements", 0)
-                _log(
-                    "INFO",
-                    f"Total registros en API: {total_elements:,} ({total_pages} páginas)",
-                )
+                if not content:
+                    break
 
-            if not content:
-                _log("WARN", f"Página {page + 1} vacía — fin de datos")
-                break
+                for item in content:
+                    light_convocatorias.append(
+                        {
+                            "id": item.get("id"),
+                            "numero_convocatoria": item.get("numeroConvocatoria"),
+                        }
+                    )
 
-            for item in content:
-                light_convocatorias.append(
-                    {
-                        "id": item.get("id"),
-                        "numero_convocatoria": item.get("numeroConvocatoria"),
-                    }
-                )
+                page += 1
+                pbar.update(1)
 
-            pct = (
-                (len(light_convocatorias) / total_elements * 100)
-                if total_elements
-                else 0
-            )
-            _log(
-                "INFO",
-                f"Página {page + 1}/{total_pages} — {len(light_convocatorias):,}/{total_elements:,} convocatorias ({pct:.0f}%)",
-            )
+        print(f"INFO {len(light_convocatorias):,} convocatorias obtenidas\n", flush=True)
 
-            page += 1
-
-        _log(
-            "INFO",
-            f"Fase 1 completada: {len(light_convocatorias):,} convocatorias obtenidas",
-        )
-
-        # Fase 2: Obtener detalles en paralelo usando ThreadPool
-        _log(
-            "INFO",
-            f"Fase 2: Obteniendo detalles (ThreadPool con {max_workers} workers)...",
-        )
+        print(f"Obteniendo detalles de convocatorias ({max_workers} workers)...", flush=True)
         detailed_records = []
         failed_count = 0
 
         with ThreadPoolExecutor(max_workers=max_workers) as executor:
-            # Submit all tasks
-            future_to_conv = {
+            futures = [
                 executor.submit(
                     fetch_convocatoria_detalle,
                     conv["numero_convocatoria"],
                     rate_limiter,
-                ): conv
+                )
                 for conv in light_convocatorias
-            }
+            ]
 
-            # Process completed tasks
-            for i, future in enumerate(as_completed(future_to_conv), 1):
-                try:
-                    result = future.result()
-                    if result:
-                        detailed_records.append(result)
-                    else:
+            with tqdm(total=len(light_convocatorias), desc="Detalles", unit="conv") as pbar:
+                for future in as_completed(futures):
+                    try:
+                        result = future.result()
+                        if result:
+                            detailed_records.append(result)
+                        else:
+                            failed_count += 1
+                    except Exception as e:
+                        _log("ERROR", f"Excepción: {e}")
                         failed_count += 1
-                except Exception as e:
-                    _log("ERROR", f"Excepción en thread: {e}")
-                    failed_count += 1
-
-                # Progress update every 100 records
-                if i % 100 == 0 or i == len(light_convocatorias):
-                    pct = i / len(light_convocatorias) * 100
-                    _log(
-                        "INFO",
-                        f"Progreso: {i:,}/{len(light_convocatorias):,} ({pct:.1f}%) — Exitosos: {len(detailed_records):,}, Fallidos: {failed_count}",
-                    )
-
-        _log(
-            "INFO",
-            f"Fase 2 completada: {len(detailed_records):,} registros detallados obtenidos",
-        )
+                    pbar.update(1)
 
         if failed_count > 0:
-            _log("WARN", f"{failed_count} convocatorias fallaron al obtener detalles")
+            print(f"{failed_count} convocatorias fallaron", flush=True)
 
         if not detailed_records:
             raise ValueError("No se obtuvieron registros detallados")
 
-        # Fase 3: Generar parquets en batches de MAX_RECORDS_PER_PARQUET
-        _log(
-            "INFO",
-            f"Fase 3: Generando parquets (máximo {MAX_RECORDS_PER_PARQUET:,} registros por archivo)...",
-        )
+        print(f"INFO {len(detailed_records):,} registros detallados obtenidos\n", flush=True)
+
+        # Fase 3: Generar parquets en batches
+        print(f"Generando parquets (máx {MAX_RECORDS_PER_PARQUET:,} por archivo)...", flush=True)
         parquet_paths = []
 
         for batch_idx in range(0, len(detailed_records), MAX_RECORDS_PER_PARQUET):
-            batch_records = detailed_records[
-                batch_idx : batch_idx + MAX_RECORDS_PER_PARQUET
-            ]
+            batch_records = detailed_records[batch_idx : batch_idx + MAX_RECORDS_PER_PARQUET]
             df = pd.DataFrame(batch_records)
 
-            # Ensure JSONB columns are properly serialized
+            # Serialize JSONB columns
             jsonb_cols = [
                 "instrumentos",
                 "tipos_beneficiarios",
@@ -466,32 +413,25 @@ def scrape_historico(params: SearchParams, max_workers: int = 10) -> list[Path]:
             ]
             for col in jsonb_cols:
                 if col in df.columns:
-                    df[col] = df[col].apply(
-                        lambda x: json.dumps(x) if x is not None else None
-                    )
+                    df[col] = df[col].apply(lambda x: json.dumps(x) if x is not None else None)
 
             batch_num = batch_idx // MAX_RECORDS_PER_PARQUET
-            parquet_filename = f"licitaciones_subvenciones_{ano_inicio}_{ano_fin}_batch{batch_num:03d}.parquet"
+            parquet_filename = f"_part_subvenciones_{batch_num:04d}.parquet"
             parquet_path = OUTPUT_DIR / parquet_filename
 
             df.to_parquet(parquet_path, engine="pyarrow", index=False)
             parquet_paths.append(parquet_path)
 
             size_mb = parquet_path.stat().st_size / (1024 * 1024)
-            _log(
-                "INFO",
-                f"Parquet generado: {parquet_path.name} ({len(df):,} registros, {size_mb:.1f} MB)",
+            print(
+                f"INFO {parquet_path.name} ({len(df):,} registros guardados, {size_mb:.1f} MB)",
+                flush=True,
             )
-
-        print(f"\n✅ SCRAPING COMPLETADO: subvenciones históricas", flush=True)
-        _log("INFO", f"Total archivos parquet: {len(parquet_paths)}")
-        _log("INFO", f"Total registros: {len(detailed_records):,}")
 
         return parquet_paths
 
     except Exception as err:
-        print(f"\n❌ ERROR: scraping histórico falló", flush=True)
-        _log("ERROR", f"{err}")
+        print(f"\nERROR: {err}\n", flush=True)
         raise
 
 
@@ -524,15 +464,10 @@ def scrape_diario(params: LatestParams) -> dict[str, int]:
     rate_limiter = RateLimiter(max_requests=49, time_window=60)
     subvencion_pattern = re.compile(r"subvenci[oó]n", re.IGNORECASE)
 
-    print(f"\n{'='*60}", flush=True)
-    print(f"SUBVENCIONES DIARIAS (BDNS)", flush=True)
-    print(f"   Endpoint: {API_ENDPOINT_LATEST}", flush=True)
-    print(f"   Modo: insert directo en BD con detalles completos", flush=True)
-    print(f"{'='*60}", flush=True)
+    print(f"\nActualizando subvenciones diarias...\n", flush=True)
 
     try:
         conn = psycopg2.connect(db_url)
-        _log("INFO", "Conexión a base de datos establecida")
 
         page = params.page
         is_last_page = False
@@ -549,7 +484,7 @@ def scrape_diario(params: LatestParams) -> dict[str, int]:
                     if "errores" in error_data:
                         error_msgs = "\n  - ".join(error_data["errores"])
                         raise ValueError(
-                            f"Error de la API ({error_data.get('codigo', 'UNKNOWN')}):\n  - {error_msgs}"
+                            f"Error de la API ({error_data.get('codigo', 'UNKNOWN')}):\n msj error: {error_msgs}"
                         )
                 except ValueError:
                     raise
@@ -560,7 +495,6 @@ def scrape_diario(params: LatestParams) -> dict[str, int]:
 
             content = data.get("content", [])
             is_last_page = data.get("last", True)
-            total_pages = data.get("totalPages", "?")
 
             if not content:
                 break
@@ -594,44 +528,26 @@ def scrape_diario(params: LatestParams) -> dict[str, int]:
                 existing_ids = {row[0] for row in cur.fetchall()}
 
                 new_convocatorias = [
-                    conv
-                    for conv in light_convocatorias
-                    if conv["id"] not in existing_ids
+                    conv for conv in light_convocatorias if conv["id"] not in existing_ids
                 ]
                 page_dups = len(existing_ids)
                 total_duplicates += page_dups
 
                 if not new_convocatorias:
-                    _log("INFO", f"Página {page + 1}: {page_dups} duplicados, 0 nuevos")
-                    # If we found duplicates, stop searching (assuming chronological order)
+                    # If we found duplicates, stop searching
                     if existing_ids:
                         break
                     page += 1
                     continue
 
                 # Fetch details for new convocatorias (sequential, no ThreadPool)
-                _log(
-                    "INFO",
-                    f"Obteniendo detalles para {len(new_convocatorias)} nuevas convocatorias...",
-                )
                 detailed_records = []
-                for i, conv in enumerate(new_convocatorias, 1):
-                    detail = fetch_convocatoria_detalle(
-                        conv["numero_convocatoria"], rate_limiter
-                    )
+                for conv in tqdm(new_convocatorias, desc="Obteniendo detalles", unit="conv"):
+                    detail = fetch_convocatoria_detalle(conv["numero_convocatoria"], rate_limiter)
                     if detail:
                         detailed_records.append(detail)
-                    else:
-                        _log(
-                            "WARN",
-                            f"No se pudo obtener detalle para {conv['numero_convocatoria']}",
-                        )
-
-                    if i % 10 == 0:
-                        _log("INFO", f"Progreso detalles: {i}/{len(new_convocatorias)}")
 
                 if not detailed_records:
-                    _log("WARN", "No se obtuvieron registros detallados válidos")
                     page += 1
                     continue
 
@@ -706,18 +622,19 @@ def scrape_diario(params: LatestParams) -> dict[str, int]:
                         )
                     )
 
-                execute_batch(cur, insert_sql, records_to_insert, page_size=100)
+                execute_batch(cur, insert_sql, records_to_insert)
                 conn.commit()
                 total_new += len(records_to_insert)
-                _log("INFO", f"Insertados {len(records_to_insert)} registros nuevos")
 
-                # If we found duplicates, stop searching
                 if existing_ids:
                     break
 
             page += 1
 
-        print(f"\n✅ SCRAPING COMPLETADO: subvenciones diarias", flush=True)
+        print(
+            f"\nCOMPLETADO: {total_new} nuevos, {total_duplicates} duplicados, {total_filtered} filtrados\n",
+            flush=True,
+        )
 
         return {
             "inserted": total_new,
@@ -727,8 +644,7 @@ def scrape_diario(params: LatestParams) -> dict[str, int]:
         }
 
     except Exception as err:
-        print(f"\n❌ ERROR: scraping diario falló", flush=True)
-        _log("ERROR", f"{err}")
+        print(f"\nERROR: {err}\n", flush=True)
         if conn:
             conn.rollback()
         raise
