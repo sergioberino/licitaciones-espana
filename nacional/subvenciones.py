@@ -507,7 +507,8 @@ def scrape_diario(params: LatestParams) -> dict[str, int]:
 
                 # Fetch details for new convocatorias (sequential, no ThreadPool)
                 detailed_records = []
-                for conv in tqdm(new_convocatorias, desc="Obteniendo detalles", unit="conv"):
+                _log("INFO", "Obteniendo detalles de convocatorias...")
+                for conv in tqdm(new_convocatorias, unit="conv"):
                     detail = fetch_convocatoria_detalle(conv["numero_convocatoria"], rate_limiter)
                     if detail:
                         detailed_records.append(detail)
