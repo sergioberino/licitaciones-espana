@@ -646,14 +646,15 @@ def main():
     if len(partes) > 1:
         ano_fin = int(partes[1])
         if ano_fin == datetime.now().year:
-            fecha_hasta = datetime.now().strftime("%d/%m/%Y")
+            # fecha_hasta = datetime.now().strftime("%d/%m/%Y")
+            fecha_hasta = "18/04/2026"
         else:
             fecha_hasta = f"31/12/{ano_fin}"
     else:
         fecha_hasta = datetime.now().strftime("%d/%m/%Y")
 
-    fecha_desde = f"01/01/{ano_inicio}"
-
+    # fecha_desde = f"01/01/{ano_inicio}"
+    fecha_desde = f"16/04/2026"
     _log("INFO", f"Fechas: {fecha_desde} - {fecha_hasta}")
     _log("INFO", f"Conjunto: {args.conjunto}")
 
