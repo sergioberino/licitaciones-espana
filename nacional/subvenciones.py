@@ -192,90 +192,107 @@ def _convert_to_json_serializable(obj):
 def fetch_convocatoria_detalle(
     numero_convocatoria: str,
     rate_limiter: RateLimiter,
+    max_retries: int = 5,
 ) -> dict | None:
     """
     Fetch detailed information for a single convocatoria.
 
+    Implements retry with exponential backoff for 429 errors (rate limit exceeded).
+
     Args:
         numero_convocatoria: The convocatoria number to fetch details for
         rate_limiter: RateLimiter instance (thread-safe)
-        vpd: VPD parameter (default: "GE")
+        max_retries: Maximum number of retries for 429 errors (default: 5)
 
     Returns:
-        Dictionary with detailed convocatoria data or None if error
+        Dictionary with detailed convocatoria data or None if error after all retries
     """
-    try:
-        rate_limiter.wait_if_needed()
+    params = {
+        "vpd": DEFAULT_VPD,
+        "numConv": numero_convocatoria,
+    }
 
-        params = {
-            "vpd": DEFAULT_VPD,
-            "numConv": numero_convocatoria,
-        }
+    for attempt in range(max_retries + 1):
+        try:
+            rate_limiter.wait_if_needed()
+            res = requests.get(API_ENDPOINT_DETAIL, params=params, timeout=30)
 
-        res = requests.get(API_ENDPOINT_DETAIL, params=params, timeout=30)
+            if res.status_code == 429:
+                # Rate limit exceeded - retry with exponential backoff
+                if attempt < max_retries:
+                    wait_time = (2**attempt) * 0.5  # 0.5s, 1s, 2s, 4s, 8s
+                    time.sleep(wait_time)
+                    continue
+                else:
+                    _log("WARN", f"Max retries alcanzado para {numero_convocatoria} (429)")
+                    return None
 
-        if res.status_code != 200:
+            if res.status_code != 200:
+                _log(
+                    "WARN",
+                    f"Error al obtener detalle de convocatoria {numero_convocatoria}: HTTP {res.status_code}",
+                )
+                return None
+
+            data = res.json()
+
+            # Flatten organo
+            organo = data.get("organo", {})
+            nivel1, nivel2, nivel3 = _flatten_organo(organo)
+
+            # Build flattened record
+            record = {
+                "id": data.get("id"),
+                "nivel1": nivel1,
+                "nivel2": nivel2,
+                "nivel3": nivel3,
+                "sede_electronica": data.get("sedeElectronica"),
+                "codigo_bdns": data.get("codigoBDNS"),
+                "fecha_recepcion": data.get("fechaRecepcion"),
+                "instrumentos": _convert_to_json_serializable(data.get("instrumentos")),
+                "tipo_convocatoria": data.get("tipoConvocatoria"),
+                "presupuesto_total": data.get("presupuestoTotal"),
+                "mrr": data.get("mrr"),
+                "descripcion": data.get("descripcion"),
+                "descripcion_leng": data.get("descripcionLeng"),
+                "tipos_beneficiarios": _convert_to_json_serializable(
+                    data.get("tiposBeneficiarios")
+                ),
+                "sectores": _convert_to_json_serializable(data.get("sectores")),
+                "regiones": _convert_to_json_serializable(data.get("regiones")),
+                "descripcion_finalidad": data.get("descripcionFinalidad"),
+                "descripcion_bases_reguladoras": data.get("descripcionBasesReguladoras"),
+                "url_bases_reguladoras": data.get("urlBasesReguladoras"),
+                "se_publica_diario_oficial": data.get("sePublicaDiarioOficial"),
+                "abierto": data.get("abierto"),
+                "fecha_inicio_solicitud": data.get("fechaInicioSolicitud"),
+                "fecha_fin_solicitud": data.get("fechaFinSolicitud"),
+                "text_inicio": data.get("textInicio"),
+                "text_fin": data.get("textFin"),
+                "ayuda_estado": data.get("ayudaEstado"),
+                "url_ayuda_estado": data.get("urlAyudaEstado"),
+                "fondos": _convert_to_json_serializable(data.get("fondos")),
+                "reglamento": _convert_to_json_serializable(data.get("reglamento")),
+                "objetivos": _convert_to_json_serializable(data.get("objetivos")),
+                "sectores_productos": _convert_to_json_serializable(data.get("sectoresProductos")),
+                "documentos": _convert_to_json_serializable(data.get("documentos")),
+                "anuncios": _convert_to_json_serializable(data.get("anuncios")),
+                "advertencia": data.get("advertencia"),
+            }
+
+            return record
+
+        except Exception as e:
             _log(
-                "WARN",
-                f"Error al obtener detalle de convocatoria {numero_convocatoria}: HTTP {res.status_code}",
+                "ERROR",
+                f"Excepción al obtener detalle de convocatoria {numero_convocatoria}: {e}",
             )
             return None
 
-        data = res.json()
-
-        # Flatten organo
-        organo = data.get("organo", {})
-        nivel1, nivel2, nivel3 = _flatten_organo(organo)
-
-        # Build flattened record
-        record = {
-            "id": data.get("id"),
-            "nivel1": nivel1,
-            "nivel2": nivel2,
-            "nivel3": nivel3,
-            "sede_electronica": data.get("sedeElectronica"),
-            "codigo_bdns": data.get("codigoBDNS"),
-            "fecha_recepcion": data.get("fechaRecepcion"),
-            "instrumentos": _convert_to_json_serializable(data.get("instrumentos")),
-            "tipo_convocatoria": data.get("tipoConvocatoria"),
-            "presupuesto_total": data.get("presupuestoTotal"),
-            "mrr": data.get("mrr"),
-            "descripcion": data.get("descripcion"),
-            "descripcion_leng": data.get("descripcionLeng"),
-            "tipos_beneficiarios": _convert_to_json_serializable(data.get("tiposBeneficiarios")),
-            "sectores": _convert_to_json_serializable(data.get("sectores")),
-            "regiones": _convert_to_json_serializable(data.get("regiones")),
-            "descripcion_finalidad": data.get("descripcionFinalidad"),
-            "descripcion_bases_reguladoras": data.get("descripcionBasesReguladoras"),
-            "url_bases_reguladoras": data.get("urlBasesReguladoras"),
-            "se_publica_diario_oficial": data.get("sePublicaDiarioOficial"),
-            "abierto": data.get("abierto"),
-            "fecha_inicio_solicitud": data.get("fechaInicioSolicitud"),
-            "fecha_fin_solicitud": data.get("fechaFinSolicitud"),
-            "text_inicio": data.get("textInicio"),
-            "text_fin": data.get("textFin"),
-            "ayuda_estado": data.get("ayudaEstado"),
-            "url_ayuda_estado": data.get("urlAyudaEstado"),
-            "fondos": _convert_to_json_serializable(data.get("fondos")),
-            "reglamento": _convert_to_json_serializable(data.get("reglamento")),
-            "objetivos": _convert_to_json_serializable(data.get("objetivos")),
-            "sectores_productos": _convert_to_json_serializable(data.get("sectoresProductos")),
-            "documentos": _convert_to_json_serializable(data.get("documentos")),
-            "anuncios": _convert_to_json_serializable(data.get("anuncios")),
-            "advertencia": data.get("advertencia"),
-        }
-
-        return record
-
-    except Exception as e:
-        _log(
-            "ERROR",
-            f"Excepción al obtener detalle de convocatoria {numero_convocatoria}: {e}",
-        )
-        return None
+    return None
 
 
-def scrape_historico(params: SearchParams, max_workers: int = 10) -> list[Path]:
+def scrape_historico(params: SearchParams, max_workers: int = 2) -> list[Path]:
     """
     Scrape historical grants data and save to Parquet files.
     This is for initial bulk load - generates Parquet files for etl/ingest_l0.py to process.
@@ -285,7 +302,7 @@ def scrape_historico(params: SearchParams, max_workers: int = 10) -> list[Path]:
 
     Args:
         params: SearchParams with date range (fechaDesde required, fechaHasta defaults to today)
-        max_workers: Number of threads for parallel detail fetching (default: 10)
+        max_workers: Number of threads for parallel detail fetching (default: 2, max useful with 50 req/min limit)
 
     Returns:
         List of paths to generated Parquet files
@@ -298,7 +315,7 @@ def scrape_historico(params: SearchParams, max_workers: int = 10) -> list[Path]:
     ano_fin = int(params.fechaHasta[-4:])
 
     _ensure_output_dir()
-    rate_limiter = RateLimiter(max_requests=49, time_window=60)
+    rate_limiter = RateLimiter(max_requests=40, time_window=60)  # Conservative limit to avoid 429s
 
     print(f"\n{'='*60}", flush=True)
     print(f"SUBVENCIONES HISTÓRICAS (BDNS)", flush=True)
@@ -337,7 +354,7 @@ def scrape_historico(params: SearchParams, max_workers: int = 10) -> list[Path]:
                 if page == 0:
                     total_elements = data.get("totalElements", 0)
                     pbar.total = data.get("totalPages", 0)
-                    pbar.set_description(f"Páginas (total: {total_elements:,} convocatorias)")
+                    pbar.set_description(f"{total_elements:,} convocatorias encontradas")
 
                 if not content:
                     break
@@ -461,7 +478,7 @@ def scrape_diario(params: LatestParams) -> dict[str, int]:
     total_new = 0
     total_duplicates = 0
     total_filtered = 0
-    rate_limiter = RateLimiter(max_requests=49, time_window=60)
+    rate_limiter = RateLimiter(max_requests=40, time_window=60)  # Conservative limit to avoid 429s
     subvencion_pattern = re.compile(r"subvenci[oó]n", re.IGNORECASE)
 
     print(f"\nActualizando subvenciones diarias...\n", flush=True)
