@@ -34,7 +34,7 @@ API_ENDPOINT_DETAIL = API_BASE_URL
 DEFAULT_VPD = "GE"
 
 # Maximum records per parquet file
-MAX_RECORDS_PER_PARQUET = 20000
+MAX_RECORDS_PER_PARQUET = 100
 
 # Directory configuration (similar to nacional/licitaciones.py)
 _repo_root = Path(__file__).resolve().parent.parent
