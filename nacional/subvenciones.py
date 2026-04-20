@@ -335,63 +335,82 @@ def scrape_historico(params: SearchParams) -> list[Path]:
 
         _log("INFO", f"{len(light_convocatorias):,} convocatorias obtenidas")
 
-        _log("INFO", "Obteniendo detalles de convocatorias...")
-        detailed_records = []
+        _log("INFO", f"Obteniendo detalles y generando parquets...")
+
+        batch_buffer = []
         failed_count = 0
-
-        for conv in tqdm(light_convocatorias, unit="conv"):
-            try:
-                result = fetch_convocatoria_detalle(conv["numero_convocatoria"], rate_limiter)
-                if result:
-                    detailed_records.append(result)
-                else:
-                    failed_count += 1
-            except Exception as e:
-                _log("ERROR", f"Excepción: {e}")
-                failed_count += 1
-
-        if failed_count > 0:
-            _log("WARN", f"{failed_count} convocatorias fallaron")
-
-        if not detailed_records:
-            raise ValueError("No se obtuvieron registros detallados")
-
-        _log("INFO", f"Generando parquets (máx {MAX_RECORDS_PER_PARQUET:,} por archivo)...")
         parquet_paths = []
+        batch_num = 0
+        total_saved = 0
 
-        for batch_idx in range(0, len(detailed_records), MAX_RECORDS_PER_PARQUET):
-            batch_records = detailed_records[batch_idx : batch_idx + MAX_RECORDS_PER_PARQUET]
-            df = pd.DataFrame(batch_records)
+        jsonb_cols = [
+            "instrumentos",
+            "tipos_beneficiarios",
+            "sectores",
+            "regiones",
+            "fondos",
+            "reglamento",
+            "objetivos",
+            "sectores_productos",
+            "documentos",
+            "anuncios",
+        ]
 
-            # Serialize JSONB columns
-            jsonb_cols = [
-                "instrumentos",
-                "tipos_beneficiarios",
-                "sectores",
-                "regiones",
-                "fondos",
-                "reglamento",
-                "objetivos",
-                "sectores_productos",
-                "documentos",
-                "anuncios",
-            ]
+        def save_batch(records, batch_number):
+            """Save current batch to parquet and clear buffer."""
+            if not records:
+                return None
+
+            df = pd.DataFrame(records)
+
             for col in jsonb_cols:
                 if col in df.columns:
                     df[col] = df[col].apply(lambda x: json.dumps(x) if x is not None else None)
 
-            batch_num = batch_idx // MAX_RECORDS_PER_PARQUET
-            parquet_filename = f"_part_subvenciones_{batch_num:04d}.parquet"
+            parquet_filename = f"_part_subvenciones_{batch_number:04d}.parquet"
             parquet_path = OUTPUT_DIR / parquet_filename
 
             df.to_parquet(parquet_path, engine="pyarrow", index=False)
-            parquet_paths.append(parquet_path)
 
             size_mb = parquet_path.stat().st_size / (1024 * 1024)
             _log(
                 "INFO",
                 f"{parquet_path.name} ({len(df):,} registros guardados, {size_mb:.1f} MB)",
             )
+            return parquet_path
+
+        for conv in tqdm(light_convocatorias, unit="conv"):
+            try:
+                result = fetch_convocatoria_detalle(conv["numero_convocatoria"], rate_limiter)
+                if result:
+                    batch_buffer.append(result)
+
+                    if len(batch_buffer) >= MAX_RECORDS_PER_PARQUET:
+                        parquet_path = save_batch(batch_buffer, batch_num)
+                        if parquet_path:
+                            parquet_paths.append(parquet_path)
+                            total_saved += len(batch_buffer)
+                        batch_buffer = []
+                        batch_num += 1
+                else:
+                    failed_count += 1
+            except Exception as e:
+                _log("ERROR", f"Excepción: {e}")
+                failed_count += 1
+
+        if batch_buffer:
+            parquet_path = save_batch(batch_buffer, batch_num)
+            if parquet_path:
+                parquet_paths.append(parquet_path)
+                total_saved += len(batch_buffer)
+
+        if failed_count > 0:
+            _log("WARN", f"{failed_count} convocatorias fallaron")
+
+        if not parquet_paths:
+            raise ValueError("No se generaron parquets (sin registros válidos)")
+
+        _log("INFO", f"{total_saved:,} registros guardados en {len(parquet_paths)} parquets")
 
         return parquet_paths
 
