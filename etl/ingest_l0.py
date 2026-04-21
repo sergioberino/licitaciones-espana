@@ -108,7 +108,6 @@ SUBVENCIONES_PARQUET_COLUMNS = [
     ("nivel3", "TEXT"),
     # Información básica
     ("sede_electronica", "TEXT"),
-    ("codigo_bdns", "TEXT"),
     ("fecha_recepcion", "DATE"),
     # Instrumentos y tipo
     ("instrumentos", "JSONB"),
