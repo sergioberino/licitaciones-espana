@@ -43,6 +43,10 @@ _repo_root = Path(__file__).resolve().parent.parent
 _tmp_base = Path(os.environ.get("LICITACIONES_TMP_DIR", _repo_root / "tmp"))
 OUTPUT_DIR = _tmp_base / "output"
 
+# Global adaptive delay for rate limit control (shared across all API calls)
+_api_delay_seconds = 0  # Start with no delay, adjust only if rate limited
+_api_delay_lock = threading.Lock()  # Thread-safe access to delay variable
+
 
 def _ensure_output_dir():
     """Ensure output directory exists."""
@@ -142,7 +146,8 @@ def fetch_convocatoria_detalle(
 ) -> dict | None:
     """
     Fetch detailed information for a single convocatoria.
-    Implements progressive retry with 4 attempts: 5s, 15s, 25s, 40s delays.
+    Uses adaptive exponential delay to handle rate limiting automatically.
+    Delay starts at 25ms and increases exponentially on 429 errors.
 
     Args:
         numero_convocatoria: The convocatoria number to fetch details for
@@ -150,33 +155,42 @@ def fetch_convocatoria_detalle(
     Returns:
         Dictionary with detailed convocatoria data or None if error
     """
+    global _api_delay_seconds
+
     params = {
         "vpd": DEFAULT_VPD,
         "numConv": numero_convocatoria,
     }
 
-    max_retries = 4
-    retry_delays = [5, 15, 25, 40]  # Progressive delays in seconds
+    max_attempts = 10  # Maximum attempts before giving up
 
-    for attempt in range(max_retries):
+    for attempt in range(max_attempts):
+        # Apply adaptive delay before request
+        with _api_delay_lock:
+            current_delay = _api_delay_seconds
+
+        if current_delay > 0:
+            time.sleep(current_delay)
+
         try:
             res = requests.get(API_ENDPOINT_DETAIL, params=params, timeout=30)
 
             if res.status_code == 429:
-                if attempt < max_retries - 1:
-                    delay = retry_delays[attempt]
-                    _log(
-                        "WARN",
-                        f"HTTP 429 para convocatoria {numero_convocatoria}, esperando {delay}s antes de reintentar (intento {attempt + 1}/{max_retries})...",
-                    )
-                    time.sleep(delay)
-                    continue
-                else:
-                    _log(
-                        "ERROR",
-                        f"HTTP 429 para convocatoria {numero_convocatoria} después de {max_retries} intentos",
-                    )
-                    return None
+                # Increase delay on rate limit
+                # First time: set to 25ms, then increase by ×1.6 factor
+                with _api_delay_lock:
+                    if _api_delay_seconds == 0:
+                        _api_delay_seconds = 0.025  # First rate limit: start at 25ms
+                    else:
+                        _api_delay_seconds *= 1.6  # Subsequent: gradual exponential increase
+
+                    new_delay = _api_delay_seconds
+
+                _log(
+                    "WARN",
+                    f"HTTP 429 (rate limit), incrementando delay a {new_delay * 1000:.1f}ms (intento {attempt + 1}/{max_attempts})",
+                )
+                continue
 
             if res.status_code != 200:
                 _log(
@@ -233,21 +247,17 @@ def fetch_convocatoria_detalle(
             return record
 
         except Exception as e:
-            if attempt < max_retries - 1:
-                delay = retry_delays[attempt]
-                _log(
-                    "WARN",
-                    f"Excepción al obtener convocatoria {numero_convocatoria} (intento {attempt + 1}/{max_retries}): {e}, esperando {delay}s...",
-                )
-                time.sleep(delay)
-                continue
-            else:
-                _log(
-                    "ERROR",
-                    f"Excepción al obtener detalle de convocatoria {numero_convocatoria}: {e}",
-                )
-                return None
+            _log(
+                "ERROR",
+                f"Excepción al obtener convocatoria {numero_convocatoria}: {e}",
+            )
+            return None
 
+    # If we exhausted all attempts
+    _log(
+        "ERROR",
+        f"No se pudo obtener convocatoria {numero_convocatoria} después de {max_attempts} intentos",
+    )
     return None
 
 
@@ -470,6 +480,7 @@ def scrape_diario(params: LatestParams) -> dict[str, int]:
         )
 
     conn = None
+    cur = None
     total_new = 0
     total_duplicates = 0
     total_filtered = 0
@@ -479,6 +490,7 @@ def scrape_diario(params: LatestParams) -> dict[str, int]:
 
     try:
         conn = psycopg2.connect(db_url)
+        cur = conn.cursor()  # Open cursor once at the start
 
         page = params.page
         is_last_page = False
@@ -532,118 +544,125 @@ def scrape_diario(params: LatestParams) -> dict[str, int]:
                 page += 1
                 continue
 
-            # Check for duplicates
-            with conn.cursor() as cur:
-                cur.execute(
-                    "SELECT id FROM l0.nacional_subvenciones WHERE id = ANY(%s)",
-                    ([conv["numero_convocatoria"] for conv in light_convocatorias],),
-                )
-                existing_ids = {row[0] for row in cur.fetchall()}
+            # Check for duplicates using the persistent cursor
+            cur.execute(
+                "SELECT id FROM l0.nacional_subvenciones WHERE id = ANY(%s)",
+                ([conv["numero_convocatoria"] for conv in light_convocatorias],),
+            )
+            existing_ids = {row[0] for row in cur.fetchall()}
 
-                new_convocatorias = [
-                    conv
-                    for conv in light_convocatorias
-                    if conv["numero_convocatoria"] not in existing_ids
-                ]
-                page_dups = len(existing_ids)
-                total_duplicates += page_dups
+            new_convocatorias = [
+                conv
+                for conv in light_convocatorias
+                if conv["numero_convocatoria"] not in existing_ids
+            ]
+            page_dups = len(existing_ids)
+            total_duplicates += page_dups
 
-                if not new_convocatorias:
-                    # If we found duplicates, stop searching
-                    if existing_ids:
-                        break
-                    page += 1
-                    continue
+            # Show progress message for this page
+            _log(
+                "INFO",
+                f"Para la página número {page + 1} se han encontrado {len(new_convocatorias)} convocatorias nuevas",
+            )
 
-                # Fetch details for new convocatorias (sequential, opción 1)
-                detailed_records = []
-                _log("INFO", "Obteniendo detalles de convocatorias...")
-                for conv in tqdm(new_convocatorias, unit="conv"):
-                    # Convert back to string for API request
-                    detail = fetch_convocatoria_detalle(str(conv["numero_convocatoria"]))
-                    if detail:
-                        detailed_records.append(detail)
-
-                if not detailed_records:
-                    page += 1
-                    continue
-
-                # Insert detailed records
-                insert_sql = """
-                    INSERT INTO l0.nacional_subvenciones 
-                    (id, nivel1, nivel2, nivel3, sede_electronica, codigo_bdns, fecha_recepcion,
-                     instrumentos, tipo_convocatoria, presupuesto_total, mrr, descripcion, descripcion_leng,
-                     tipos_beneficiarios, sectores, regiones, descripcion_finalidad, descripcion_bases_reguladoras,
-                     url_bases_reguladoras, se_publica_diario_oficial, abierto, fecha_inicio_solicitud,
-                     fecha_fin_solicitud, text_inicio, text_fin, ayuda_estado, url_ayuda_estado,
-                     fondos, reglamento, objetivos, sectores_productos, documentos, anuncios)
-                    VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
-                    ON CONFLICT (id) DO NOTHING
-                """
-
-                records_to_insert = []
-                for record in detailed_records:
-                    # Serialize JSONB columns
-                    jsonb_cols = [
-                        "instrumentos",
-                        "tipos_beneficiarios",
-                        "sectores",
-                        "regiones",
-                        "fondos",
-                        "reglamento",
-                        "objetivos",
-                        "sectores_productos",
-                        "documentos",
-                        "anuncios",
-                    ]
-                    for col in jsonb_cols:
-                        if record.get(col) is not None:
-                            record[col] = json.dumps(record[col])
-
-                    records_to_insert.append(
-                        (
-                            record.get("id"),
-                            record.get("nivel1"),
-                            record.get("nivel2"),
-                            record.get("nivel3"),
-                            record.get("sede_electronica"),
-                            record.get("codigo_bdns"),
-                            record.get("fecha_recepcion"),
-                            record.get("instrumentos"),
-                            record.get("tipo_convocatoria"),
-                            record.get("presupuesto_total"),
-                            record.get("mrr"),
-                            record.get("descripcion"),
-                            record.get("descripcion_leng"),
-                            record.get("tipos_beneficiarios"),
-                            record.get("sectores"),
-                            record.get("regiones"),
-                            record.get("descripcion_finalidad"),
-                            record.get("descripcion_bases_reguladoras"),
-                            record.get("url_bases_reguladoras"),
-                            record.get("se_publica_diario_oficial"),
-                            record.get("abierto"),
-                            record.get("fecha_inicio_solicitud"),
-                            record.get("fecha_fin_solicitud"),
-                            record.get("text_inicio"),
-                            record.get("text_fin"),
-                            record.get("ayuda_estado"),
-                            record.get("url_ayuda_estado"),
-                            record.get("fondos"),
-                            record.get("reglamento"),
-                            record.get("objetivos"),
-                            record.get("sectores_productos"),
-                            record.get("documentos"),
-                            record.get("anuncios"),
-                        )
-                    )
-
-                execute_batch(cur, insert_sql, records_to_insert)
-                conn.commit()
-                total_new += len(records_to_insert)
-
+            if not new_convocatorias:
+                # If we found duplicates, stop searching
                 if existing_ids:
+                    _log("INFO", "Ya se encontraron todas las convocatorias recientes")
                     break
+                page += 1
+                continue
+
+            detailed_records = []
+            for conv in enumerate(new_convocatorias):
+                # Convert back to string for API request
+                detail = fetch_convocatoria_detalle(str(conv["numero_convocatoria"]))
+                if detail:
+                    detailed_records.append(detail)
+
+            if not detailed_records:
+                page += 1
+                continue
+
+            records_to_insert = []
+            for record in detailed_records:
+                # Serialize JSONB columns
+                jsonb_cols = [
+                    "instrumentos",
+                    "tipos_beneficiarios",
+                    "sectores",
+                    "regiones",
+                    "fondos",
+                    "reglamento",
+                    "objetivos",
+                    "sectores_productos",
+                    "documentos",
+                    "anuncios",
+                ]
+                for col in jsonb_cols:
+                    if record.get(col) is not None:
+                        record[col] = json.dumps(record[col])
+
+                records_to_insert.append(
+                    (
+                        record.get("id"),
+                        record.get("nivel1"),
+                        record.get("nivel2"),
+                        record.get("nivel3"),
+                        record.get("sede_electronica"),
+                        record.get("codigo_bdns"),
+                        record.get("fecha_recepcion"),
+                        record.get("instrumentos"),
+                        record.get("tipo_convocatoria"),
+                        record.get("presupuesto_total"),
+                        record.get("mrr"),
+                        record.get("descripcion"),
+                        record.get("descripcion_leng"),
+                        record.get("tipos_beneficiarios"),
+                        record.get("regiones"),
+                        record.get("sectores"),
+                        record.get("descripcion_finalidad"),
+                        record.get("descripcion_bases_reguladoras"),
+                        record.get("url_bases_reguladoras"),
+                        record.get("se_publica_diario_oficial"),
+                        record.get("abierto"),
+                        record.get("fecha_inicio_solicitud"),
+                        record.get("fecha_fin_solicitud"),
+                        record.get("text_inicio"),
+                        record.get("text_fin"),
+                        record.get("ayuda_estado"),
+                        record.get("url_ayuda_estado"),
+                        record.get("fondos"),
+                        record.get("reglamento"),
+                        record.get("objetivos"),
+                        record.get("sectores_productos"),
+                        record.get("documentos"),
+                        record.get("anuncios"),
+                    )
+                )
+
+            # Insert using the persistent cursor
+            insert_sql = """
+                INSERT INTO l0.nacional_subvenciones 
+                (id, nivel1, nivel2, nivel3, sede_electronica, codigo_bdns, fecha_recepcion,
+                 instrumentos, tipo_convocatoria, presupuesto_total, mrr, descripcion, descripcion_leng,
+                 tipos_beneficiarios, sectores, regiones, descripcion_finalidad, descripcion_bases_reguladoras,
+                 url_bases_reguladoras, se_publica_diario_oficial, abierto, fecha_inicio_solicitud,
+                 fecha_fin_solicitud, text_inicio, text_fin, ayuda_estado, url_ayuda_estado,
+                 fondos, reglamento, objetivos, sectores_productos, documentos, anuncios)
+                VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+                ON CONFLICT (id) DO NOTHING
+            """
+
+            execute_batch(cur, insert_sql, records_to_insert)
+            conn.commit()
+
+            _log("INFO", f"  Insertados {len(records_to_insert)} registros en BD")
+            total_new += len(records_to_insert)
+
+            if existing_ids:
+                _log("INFO", "Ya se encontraron todas las convocatorias recientes")
+                break
 
             page += 1
 
@@ -666,6 +685,8 @@ def scrape_diario(params: LatestParams) -> dict[str, int]:
         raise
     finally:
         if conn:
+            if cur:
+                cur.close()
             conn.close()
 
 
@@ -697,14 +718,14 @@ def main():
         ano_fin = int(partes[1])
         if ano_fin == datetime.now().year:
             # fecha_hasta = datetime.now().strftime("%d/%m/%Y")
-            fecha_hasta = "18/04/2026"
+            fecha_hasta = "19/04/2026"
         else:
             fecha_hasta = f"31/12/{ano_fin}"
     else:
         fecha_hasta = datetime.now().strftime("%d/%m/%Y")
 
     # fecha_desde = f"01/01/{ano_inicio}"
-    fecha_desde = f"10/04/2026"
+    fecha_desde = f"19/04/2026"
     _log("INFO", f"Fechas: {fecha_desde} - {fecha_hasta}")
     _log("INFO", f"Conjunto: {args.conjunto}")
 
