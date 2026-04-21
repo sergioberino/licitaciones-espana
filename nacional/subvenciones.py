@@ -190,12 +190,12 @@ def fetch_convocatoria_detalle(
 
             # Build flattened record
             record = {
-                "id": data.get("id"),
+                # codigoBDNS = numeroConvocatoria en datos ligeros
+                "id": data.get("codigoBDNS"),
                 "nivel1": nivel1,
                 "nivel2": nivel2,
                 "nivel3": nivel3,
                 "sede_electronica": data.get("sedeElectronica"),
-                "codigo_bdns": data.get("codigoBDNS"),
                 "fecha_recepcion": data.get("fechaRecepcion"),
                 "instrumentos": _convert_to_json_serializable(data.get("instrumentos")),
                 "tipo_convocatoria": data.get("tipoConvocatoria"),
@@ -457,7 +457,6 @@ def scrape_diario(params: SearchParams) -> dict[str, int]:
     total_new = 0
     total_duplicates = 0
     total_filtered = 0
-    subvencion_pattern = re.compile(r"subvenci[oó]n", re.IGNORECASE)
 
     _log("INFO", "Obteniendo convocatorias nuevas...")
     try:
@@ -520,10 +519,6 @@ def scrape_diario(params: SearchParams) -> dict[str, int]:
             page_filtered = 0
             light_convocatorias = []
             for item in content:
-                descripcion = item.get("descripcion") or ""
-                if not subvencion_pattern.search(descripcion):
-                    page_filtered += 1
-                    continue
                 numero_conv = item.get("numeroConvocatoria")
                 if numero_conv:
                     light_convocatorias.append({"id": int(numero_conv)})
@@ -614,7 +609,6 @@ def scrape_diario(params: SearchParams) -> dict[str, int]:
                     record.get("nivel2"),
                     record.get("nivel3"),
                     record.get("sede_electronica"),
-                    record.get("codigo_bdns"),
                     record.get("fecha_recepcion"),
                     record.get("instrumentos"),
                     record.get("tipo_convocatoria"),
@@ -647,13 +641,13 @@ def scrape_diario(params: SearchParams) -> dict[str, int]:
 
         insert_sql = """
             INSERT INTO l0.nacional_subvenciones 
-            (id, nivel1, nivel2, nivel3, sede_electronica, codigo_bdns, fecha_recepcion,
+            (id, nivel1, nivel2, nivel3, sede_electronica, fecha_recepcion,
              instrumentos, tipo_convocatoria, presupuesto_total, mrr, descripcion, descripcion_leng,
              tipos_beneficiarios, sectores, regiones, descripcion_finalidad, descripcion_bases_reguladoras,
              url_bases_reguladoras, se_publica_diario_oficial, abierto, fecha_inicio_solicitud,
              fecha_fin_solicitud, text_inicio, text_fin, ayuda_estado, url_ayuda_estado,
              fondos, reglamento, objetivos, sectores_productos, documentos, anuncios)
-            VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+            VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
             ON CONFLICT (id) DO NOTHING
         """
 

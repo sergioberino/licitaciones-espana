@@ -6,7 +6,6 @@ CREATE TABLE IF NOT EXISTS l0.nacional_subvenciones (
   nivel3 TEXT,
   -- Información básica
   sede_electronica TEXT,
-  codigo_bdns TEXT,
   fecha_recepcion DATE,
   -- Instrumentos y tipo
   instrumentos JSONB,
