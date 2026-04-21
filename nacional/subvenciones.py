@@ -358,7 +358,7 @@ def scrape_historico(params: SearchParams) -> list[Path]:
             for conv in tqdm(light_convocatorias, unit="conv"):
                 try:
                     # Convert id to string for API request
-                    result = fetch_convocatoria_detalle(str(numero_conv))
+                    result = fetch_convocatoria_detalle(str(conv["id"]))
                     if result:
                         buffer.put(result)
                     else:
