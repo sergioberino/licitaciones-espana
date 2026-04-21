@@ -2,6 +2,33 @@
 
 Todos los cambios notables del CLI y del microservicio ETL se documentan aquí.
 
+## [1.5.1] — 2026-04-17
+
+### Resumen
+
+- **Observabilidad del scheduler:** registro estructurado de líneas (`scheduler.log`), tabla `scheduler.incidents`, API de consulta de log e incidentes, latido en fichero (`scheduler.heartbeat`).
+- **Recuperación operativa:** al arranque del API se detectan reinicios bruscos (ejecuciones «running» sin proceso, PID huérfano), se registran incidentes en español y se intenta el reinicio automático del daemon del scheduler en segundo plano.
+- **Diagnóstico en incidentes:** contexto de contenedores vía API Docker sobre socket Unix (sin binario `docker` en la imagen), con soporte de respuestas HTTP chunked; montaje opcional del socket en `docker-compose` del servicio (solo lectura; evaluar riesgo de seguridad).
+
+### Añadido
+
+- **Migración `021_scheduler_incidents.sql`** (y registro en `INIT_MIGRATIONS`): persistencia de incidentes del supervisor.
+- **`etl/log_supervisor.py`:** supervisor de log con recorte, escritura de incidentes en BD y latido.
+- **API:** endpoints para leer trazas del scheduler y listar / resolver incidentes (según implementación publicada).
+- **`etl/docker_incident_context.py`:** captura de listado de contenedores para adjuntar al detalle de incidentes de arranque.
+
+### Mejorado
+
+- **`POST /scheduler/run` (tarea única):** la petición no bloquea hasta el fin de la ingesta; se lanza el proceso en segundo plano (evita cortes por tiempo de espera en proxies o navegador).
+- **Subprocesos de ingesta y tareas del bucle del scheduler:** `PYTHONUNBUFFERED=1` y `flush` en progreso por stderr para que la salida aparezca en tiempo casi real en ficheros de log.
+- **Bucle del scheduler:** la línea `Completed` del log puede incluir **insertadas** / **omitidas** leídas de `scheduler.runs` tras el subproceso; incidente `heartbeat_gap` solo si el tick fue anormalmente largo **sin** tareas debidas (evita falsos positivos durante ingestas largas).
+
+### Corregido
+
+- **Ingesta nacional / licitaciones:** se evita reutilizar un ZIP en caché de descarga incompleta o obsoleto (se fuerza re-descarga cuando corresponde).
+
+---
+
 ## [1.5.0] — 2026-04-17
 
 ### Añadido

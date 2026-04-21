@@ -194,13 +194,8 @@ def generar_urls_conjunto(conjunto_id, ano_inicio, ano_fin):
 
 def descargar_archivo(session, url, filepath, max_reintentos=3):
     """Descarga un archivo."""
-    # Skip si existe y tiene tamaño razonable
-    if filepath.exists() and filepath.stat().st_size > 1000:
-        size_mb = filepath.stat().st_size / 1024 / 1024
-        print(f"   ⏭ Ya existe ({size_mb:.1f} MB)")
-        return filepath
-    elif filepath.exists():
-        print(f"   ⚠ Archivo existente muy pequeño ({filepath.stat().st_size} B), re-descargando...")
+    if filepath.exists():
+        filepath.unlink()
 
     for intento in range(max_reintentos):
         try:

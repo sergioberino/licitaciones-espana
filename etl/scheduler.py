@@ -164,7 +164,7 @@ def ensure_scheduler_schema(conn: "psycopg2.extensions.connection") -> None:
     from pathlib import Path
 
     schema_dir = Path(__file__).resolve().parent.parent / "schemas"
-    for name in ("008_scheduler.sql", "009_scheduler_runs_pid.sql"):
+    for name in ("008_scheduler.sql", "009_scheduler_runs_pid.sql", "021_scheduler_incidents.sql"):
         path = schema_dir / name
         if path.exists():
             with conn.cursor() as cur:
@@ -348,10 +348,11 @@ def register_tasks(
 def get_run_by_process_id(
     conn: "psycopg2.extensions.connection", process_id: int
 ) -> Optional[dict[str, Any]]:
-    """Devuelve la run (run_id, task_id, conjunto, subconjunto) con process_id dado, o None."""
+    """Devuelve la run (run_id, task_id, conjunto, subconjunto, rows_inserted, rows_omitted) con process_id dado, o None."""
     with conn.cursor(cursor_factory=RealDictCursor) as cur:
         cur.execute(
-            """SELECT r.run_id, r.task_id, t.conjunto, t.subconjunto
+            """SELECT r.run_id, r.task_id, t.conjunto, t.subconjunto,
+                      r.rows_inserted, r.rows_omitted
                FROM scheduler.runs r
                JOIN scheduler.tasks t ON t.task_id = r.task_id
                WHERE r.process_id = %s
@@ -864,21 +865,38 @@ def run_scheduler_loop(
     """
     path = pid_path or get_scheduler_pid_path()
     path.parent.mkdir(parents=True, exist_ok=True)
+
     if path.exists():
         try:
             pid = int(path.read_text().strip())
             if pid:
                 os.kill(pid, 0)
-                _log_scheduler("El scheduler ya está en ejecución.")
+                print("El scheduler ya está en ejecución.", file=sys.stderr)
                 sys.exit(1)
         except (ValueError, OSError):
             pass
     path.write_text(str(os.getpid()))
+
+    from etl.log_supervisor import LogSupervisor
+
+    log_path = path.parent / SCHEDULER_LOG_FILENAME
+    hb_path = path.parent / "scheduler.heartbeat"
+    supervisor = LogSupervisor(
+        log_path=log_path,
+        db_url=db_url,
+        heartbeat_path=hb_path,
+    )
+
     shutdown = False
 
     def _signal_handler(_sig: int, _frame: Any) -> None:
         nonlocal shutdown
         shutdown = True
+        supervisor.incident(
+            "process_signal",
+            f"Received signal {_sig}, shutting down",
+            severity="warning",
+        )
 
     signal.signal(signal.SIGTERM, _signal_handler)
     signal.signal(signal.SIGINT, _signal_handler)
@@ -886,34 +904,58 @@ def run_scheduler_loop(
     import time as _time
 
     tick_count = 0
+    start_time = _time.monotonic()
+
+    try:
+        with psycopg2.connect(db_url) as conn:
+            task_rows = list_tasks_with_last_run(conn)
+        n_tasks = len(task_rows)
+    except Exception:
+        n_tasks = "?"
+
+    supervisor.log(
+        f"[STARTUP] PID={os.getpid()} tick={tick_seconds}s tasks_registered={n_tasks}"
+    )
+
     try:
         while not shutdown:
             tick_count += 1
-            # #region agent log
-            _debug_log(
-                "scheduler.py:run_scheduler_loop",
-                "scheduler tick",
-                {"tick_count": tick_count},
-                "H1",
-            )
-            # #endregion
+            tick_start = _time.monotonic()
+            tick_due_count = 0
+
             try:
                 with psycopg2.connect(db_url) as conn:
                     conn.autocommit = False
                     recovered = recover_stale_runs(conn)
                     conn.commit()
                     if recovered:
-                        _log_scheduler(f"Recuperados {recovered} run(s) huérfanos.")
+                        supervisor.incident(
+                            "stale_run",
+                            f"Recovered {recovered} stale run(s)",
+                            severity="warning",
+                        )
+
                 with psycopg2.connect(db_url) as conn:
                     due = get_tasks_due(conn)
-                # #region agent log
-                _debug_log(
-                    "scheduler.py:run_scheduler_loop",
-                    "get_tasks_due result",
-                    {"due_count": len(due)},
-                    "H5",
+                    tick_due_count = len(due)
+
+                running_count = 0
+                try:
+                    with psycopg2.connect(db_url) as conn:
+                        running_count = len(list_running_runs(conn))
+                except Exception:
+                    pass
+
+                supervisor.write_heartbeat(
+                    tick=tick_count,
+                    pid=os.getpid(),
+                    tasks_due=len(due),
+                    tasks_running=running_count,
                 )
-                # #endregion
+                supervisor.log(
+                    f"[tick {tick_count}] {len(due)} due, {running_count} running"
+                )
+
                 for task in due:
                     if shutdown:
                         break
@@ -921,33 +963,96 @@ def run_scheduler_loop(
                     subconjunto = task["subconjunto"]
                     cmd = _build_task_cmd(conjunto, subconjunto)
                     try:
-                        p = subprocess.Popen(cmd)
+                        supervisor.log(
+                            f"Starting: {conjunto} {subconjunto} cmd={' '.join(cmd)}"
+                        )
+                        task_start = _time.monotonic()
+                        env = os.environ.copy()
+                        env["PYTHONUNBUFFERED"] = "1"
+                        p = subprocess.Popen(cmd, env=env)
                         p.wait()
+                        duration = _time.monotonic() - task_start
+                        dur_str = f"{duration:.0f}s"
+                        rows_note = ""
+                        try:
+                            with psycopg2.connect(db_url) as _c:
+                                info = get_run_by_process_id(_c, p.pid)
+                                if info:
+                                    ins = info.get("rows_inserted")
+                                    om = info.get("rows_omitted")
+                                    if ins is not None or om is not None:
+                                        rows_note = (
+                                            f" insertadas={ins if ins is not None else 0} "
+                                            f"omitidas={om if om is not None else 0}"
+                                        )
+                        except Exception:
+                            pass
                         if p.returncode == 0:
-                            _log_scheduler(
-                                f"Tarea ejecutada correctamente. PID={p.pid} conjunto={conjunto} subconjunto={subconjunto}"
+                            supervisor.log(
+                                f"Completed: {conjunto} {subconjunto} PID={p.pid} code=0 ({dur_str}){rows_note}"
                             )
                         else:
-                            _log_scheduler(
-                                f"Tarea falló. PID={p.pid} conjunto={conjunto} subconjunto={subconjunto} code={p.returncode}"
+                            supervisor.incident(
+                                "task_failure",
+                                f"Subprocess exited with code {p.returncode}: {conjunto} {subconjunto}",
+                                detail=(
+                                    f"PID={p.pid} duration={dur_str} cmd={' '.join(cmd)}"
+                                    f"{rows_note}"
+                                ),
+                                task_id=task.get("task_id"),
+                                severity="error",
                             )
                     except Exception as e:
-                        _log_scheduler(
-                            f"Tarea falló. conjunto={conjunto} subconjunto={subconjunto}: {e}",
-                            detailed=True,
+                        supervisor.incident(
+                            "exception",
+                            f"Failed to run {conjunto} {subconjunto}: {e}",
                             exc=e,
+                            task_id=task.get("task_id"),
                         )
                     if shutdown:
                         break
-            except Exception as e:
-                _log_scheduler(
-                    f"Error en el bucle del scheduler: {e}", detailed=True, exc=e
+
+            except psycopg2.Error as e:
+                supervisor.incident(
+                    "db_connection",
+                    f"Database error in scheduler loop: {e}",
+                    exc=e,
                 )
+            except Exception as e:
+                supervisor.incident(
+                    "exception",
+                    f"Unexpected error in scheduler loop: {e}",
+                    exc=e,
+                )
+
+            supervisor.maybe_trim()
+
+            tick_elapsed = _time.monotonic() - tick_start
+            # Long ticks are normal when due tasks run (subprocess can take hours). Only warn on
+            # idle/slow ticks (no work scheduled) — avoids false "heartbeat_gap" during ingest.
+            if tick_elapsed > tick_seconds * 5 and tick_due_count == 0:
+                supervisor.incident(
+                    "heartbeat_gap",
+                    f"Tick {tick_count} took {tick_elapsed:.0f}s (expected ~{tick_seconds}s) with no due tasks",
+                    severity="warning",
+                )
+
             for _ in range(tick_seconds):
                 if shutdown:
                     break
                 _time.sleep(1)
+
+    except Exception as e:
+        supervisor.incident(
+            "exception", f"Fatal scheduler error: {e}", exc=e, severity="fatal"
+        )
     finally:
+        uptime = _time.monotonic() - start_time
+        uptime_str = f"{uptime / 3600:.1f}h" if uptime > 3600 else f"{uptime / 60:.0f}m"
+        reason = "signal" if shutdown else "crash"
+        supervisor.log(
+            f"[SHUTDOWN] reason={reason} uptime={uptime_str} ticks={tick_count}"
+        )
         try:
             path.unlink(missing_ok=True)
         except OSError:

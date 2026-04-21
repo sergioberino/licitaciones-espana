@@ -10,4 +10,5 @@ services:
     volumes:
       - .:/app
       - ./tmp:/app/tmp
+      - /var/run/docker.sock:/var/run/docker.sock:ro
     command: ["tail", "-f", "/dev/null"]

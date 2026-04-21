@@ -1,4 +1,5 @@
 import argparse
+import json
 import os
 import subprocess
 import sys
@@ -16,9 +17,12 @@ from etl.ingest_l0 import CONJUNTOS_REGISTRY
 from etl.scheduler import (
     VALID_SCHEDULE_EXPRS,
     _build_default_schedules,
+    _build_task_cmd,
     ensure_scheduler_schema,
     get_current_running_run,
     get_next_run_at,
+    get_scheduler_log_path,
+    get_scheduler_pid_path,
     is_scheduler_loop_running,
     list_running_runs,
     list_tasks_with_last_run,
@@ -71,6 +75,11 @@ class SchedulerUnregisterBody(BaseModel):
     tasks: list[dict]
 
 
+class IncidentResolveBody(BaseModel):
+    resolution: str
+    note: str | None = None
+
+
 class BormeIngestBody(BaseModel):
     anos: str
 
@@ -81,7 +90,7 @@ class BormeAnomaliasBody(BaseModel):
 
 app = FastAPI(
     title="ETL API",
-    version="1.4.1",
+    version="1.5.1",
     description="Microservicio ETL: ingest L0, scheduler, BORME.",
 )
 
@@ -91,15 +100,18 @@ def _startup_recover_stale_runs():
     """Auto-heal stale 'running' scheduler records left by dead containers."""
     db_url = get_database_url()
     if not db_url:
+        app.state.stale_runs_recovered = 0
         return
     try:
         with psycopg2.connect(db_url) as conn:
             conn.autocommit = False
             count = recover_stale_runs(conn)
             conn.commit()
+            app.state.stale_runs_recovered = count
             if count:
                 print(f"[startup] Recovered {count} stale scheduler run(s).")
     except Exception as e:
+        app.state.stale_runs_recovered = 0
         print(f"[startup] Could not recover stale runs: {e}")
 
 
@@ -131,10 +143,131 @@ def _startup_schema_check():
         app.state.migration_status = None
 
 
+@app.on_event("startup")
+def _startup_crash_detection():
+    """Detect if ETL restarted after a crash and record incident."""
+    from etl.log_supervisor import LogSupervisor
+    from etl.scheduler import get_scheduler_pid_path
+
+    app.state.recovery_status = None
+    db_url = get_database_url()
+    if not db_url:
+        return
+
+    stale_recovered = getattr(app.state, "stale_runs_recovered", 0)
+    pid_path = get_scheduler_pid_path()
+    stale_pid = False
+
+    if pid_path.exists():
+        try:
+            pid = int(pid_path.read_text().strip())
+            os.kill(pid, 0)
+        except (ValueError, ProcessLookupError):
+            stale_pid = True
+            try:
+                pid_path.unlink(missing_ok=True)
+            except OSError:
+                pass
+        except PermissionError:
+            pass
+
+    if not stale_recovered and not stale_pid:
+        return
+
+    log_path = pid_path.parent / "scheduler.log"
+    hb_path = pid_path.parent / "scheduler.heartbeat"
+    supervisor = LogSupervisor(
+        log_path=log_path,
+        db_url=db_url,
+        heartbeat_path=hb_path,
+    )
+
+    from etl.docker_incident_context import collect_container_snapshot
+
+    detail_parts: list[str] = []
+    if stale_recovered:
+        detail_parts.append(
+            f"Se marcaron como fallidas {stale_recovered} ejecución(es) que quedaron en estado "
+            "«running» sin proceso vivo (posible reinicio del contenedor o parada abrupta)."
+        )
+    if stale_pid:
+        detail_parts.append(
+            "Archivo PID del scheduler huérfano: apuntaba a un proceso que ya no existe "
+            "(habitual tras reinicio manual del servicio o del contenedor)."
+        )
+
+    docker_ctx = collect_container_snapshot()
+    detail_text = "\n\n".join(detail_parts) + "\n\n---\n\n" + docker_ctx
+
+    supervisor.incident(
+        "service_crash",
+        "Reinicio del servicio ETL: posible caída o parada no limpia detectada al arrancar",
+        detail=detail_text,
+        severity="error",
+    )
+    print(f"[startup] Incidente de arranque registrado: {' | '.join(detail_parts)}")
+
+    app.state.recovery_status = {
+        "detected": True,
+        "stale_runs": stale_recovered,
+        "stale_pid": stale_pid,
+        "auto_restart_attempted": False,
+        "auto_restart_success": False,
+    }
+
+    # Attempt auto-restart of scheduler in background thread
+    import threading
+
+    def _auto_restart():
+        import time
+
+        max_retries = 3
+        for attempt in range(1, max_retries + 1):
+            try:
+                print(f"[crash-recovery] Intento de reinicio automático {attempt}/{max_retries}")
+                args = argparse.Namespace(
+                    conjunto=None,
+                    subconjunto=None,
+                    run_all=True,
+                    tick_seconds=60,
+                    detach=True,
+                )
+                rc = cmd_scheduler_run(args)
+                if rc == 0:
+                    app.state.recovery_status["auto_restart_attempted"] = True
+                    app.state.recovery_status["auto_restart_success"] = True
+                    print(f"[crash-recovery] Scheduler reiniciado correctamente en el intento {attempt}")
+                    return
+            except Exception as e:
+                print(f"[crash-recovery] Intento {attempt} fallido: {e}")
+            time.sleep(5)
+
+        app.state.recovery_status["auto_restart_attempted"] = True
+        app.state.recovery_status["auto_restart_success"] = False
+        fail_detail = (
+            f"No se pudo reiniciar el scheduler automáticamente tras {max_retries} intentos. "
+            "Revise los logs del contenedor ETL y el estado del proceso.\n\n---\n\n"
+            + collect_container_snapshot()
+        )
+        supervisor.incident(
+            "auto_restart_failed",
+            "Fallo al reiniciar el scheduler automáticamente tras varios intentos",
+            detail=fail_detail,
+            severity="error",
+        )
+        print(
+            f"[crash-recovery] Fallaron los {max_retries} intentos de reinicio. "
+            "Revise los logs del contenedor ETL."
+        )
+
+    thread = threading.Thread(target=_auto_restart, daemon=True)
+    thread.start()
+
+
 def _serialize_row(row: dict) -> dict:
     """Convert a row dict to JSON-serializable form (datetime -> ISO string)."""
     out = dict(row)
-    for key in ("started_at", "finished_at", "last_started_at", "last_finished_at", "next_run_at", "created_at"):
+    for key in ("started_at", "finished_at", "last_started_at", "last_finished_at", "next_run_at", "created_at", "resolved_at"):
         val = out.get(key)
         if isinstance(val, datetime):
             out[key] = val.isoformat()
@@ -334,7 +467,13 @@ def ingest_run(body: IngestRunBody):
 
     try:
         log_file = open(log_path, "w", encoding="utf-8")
-        kwargs: dict = {"stdout": log_file, "stderr": subprocess.STDOUT}
+        ingest_env = os.environ.copy()
+        ingest_env["PYTHONUNBUFFERED"] = "1"
+        kwargs: dict = {
+            "stdout": log_file,
+            "stderr": subprocess.STDOUT,
+            "env": ingest_env,
+        }
         if os.name != "nt":
             kwargs["start_new_session"] = True
         p = subprocess.Popen(cmd, **kwargs)
@@ -430,7 +569,7 @@ def scheduler_defaults():
 @app.post(
     "/scheduler/run",
     summary="Run scheduler or single task",
-    description="If conjunto (and subconjunto if needed) given: run that task once (blocking, 200). If detach=true: start full scheduler loop in background (202). Reuses CLI logic.",
+    description="Single task: spawns CLI in background (same as POST /ingest/run) and returns immediately so proxies do not time out. If detach=true: start full scheduler loop in background (202).",
 )
 def scheduler_run(body: SchedulerRunBody | None = None):
     """Run a single task or start the scheduler loop in background."""
@@ -456,6 +595,50 @@ def scheduler_run(body: SchedulerRunBody | None = None):
             status_code=422,
             content={"detail": "Indique subconjunto para esta tarea."},
         )
+    # Single task from UI/API: do not block the HTTP request for the full ingest duration (often
+    # 10+ minutes). Proxies and browsers time out → 502 and false "failure" toasts while work continues.
+    if conjunto and subconjunto and not body.detach:
+        if conjunto not in CONJUNTOS_REGISTRY or conjunto == "test":
+            return JSONResponse(
+                status_code=422,
+                content={
+                    "detail": f"Conjunto no reconocido: {conjunto}. Admitidos: {', '.join(sorted(c for c in CONJUNTOS_REGISTRY if c != 'test'))}.",
+                },
+            )
+        reg = CONJUNTOS_REGISTRY[conjunto]
+        subconjuntos = list(reg.get("subconjuntos", ()))
+        if subconjunto not in subconjuntos:
+            return JSONResponse(
+                status_code=422,
+                content={"detail": f"Subconjunto no reconocido para {conjunto}: {subconjunto}."},
+            )
+        cmd = _build_task_cmd(conjunto, subconjunto)
+        log_path = _ingest_log_path()
+        log_path.parent.mkdir(parents=True, exist_ok=True)
+        try:
+            log_file = open(log_path, "w", encoding="utf-8")
+            ingest_env = os.environ.copy()
+            ingest_env["PYTHONUNBUFFERED"] = "1"
+            kwargs: dict = {
+                "stdout": log_file,
+                "stderr": subprocess.STDOUT,
+                "env": ingest_env,
+            }
+            if os.name != "nt":
+                kwargs["start_new_session"] = True
+            p = subprocess.Popen(cmd, **kwargs)
+        except Exception as e:
+            return JSONResponse(
+                status_code=500,
+                content={"ok": False, "message": f"No se pudo iniciar la tarea: {e}"},
+            )
+        label = f"{conjunto}/{subconjunto}"
+        return {
+            "ok": True,
+            "message": f"Tarea {label} iniciada en segundo plano (PID: {p.pid}). "
+            "Use la salida del proceso y las ejecuciones en curso para seguir el progreso.",
+        }
+
     args = argparse.Namespace(
         conjunto=conjunto,
         subconjunto=subconjunto,
@@ -563,6 +746,93 @@ def scheduler_unregister(body: SchedulerUnregisterBody):
     return {"ok": True, "deleted": deleted, "message": f"{deleted} tarea(s) eliminada(s)."}
 
 
+@app.get("/scheduler/log", summary="Tail the scheduler daemon log")
+def scheduler_log(lines: int = 200):
+    """Read the tail of the scheduler daemon log."""
+    log_path = get_scheduler_log_path()
+    if not log_path.exists():
+        return {"lines": [], "exists": False, "total_lines": 0}
+    try:
+        text = log_path.read_text(encoding="utf-8", errors="replace")
+    except OSError:
+        return {"lines": [], "exists": True, "total_lines": 0}
+    all_lines = text.splitlines()
+    tail = all_lines[-lines:] if len(all_lines) > lines else all_lines
+    return {"lines": tail, "exists": True, "total_lines": len(all_lines)}
+
+
+@app.get("/scheduler/incidents", summary="List scheduler incidents")
+def scheduler_incidents(status: str = "open"):
+    """List scheduler incidents, filtered by status (open, resolved, all)."""
+    db_url = get_database_url()
+    if not db_url:
+        return JSONResponse(status_code=503, content={"incidents": []})
+    try:
+        with psycopg2.connect(db_url) as conn:
+            with conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor) as cur:
+                if status == "open":
+                    cur.execute(
+                        "SELECT * FROM scheduler.incidents WHERE resolved_at IS NULL ORDER BY created_at DESC"
+                    )
+                elif status == "resolved":
+                    cur.execute(
+                        "SELECT * FROM scheduler.incidents WHERE resolved_at IS NOT NULL ORDER BY created_at DESC"
+                    )
+                else:
+                    cur.execute("SELECT * FROM scheduler.incidents ORDER BY created_at DESC")
+                rows = cur.fetchall()
+        return {"incidents": [_serialize_row(dict(r)) for r in rows]}
+    except Exception as e:
+        return JSONResponse(status_code=500, content={"incidents": [], "error": str(e)})
+
+
+@app.get("/scheduler/incidents/{incident_id}", summary="Get incident detail")
+def scheduler_incident_detail(incident_id: int):
+    """Get a single scheduler incident by ID."""
+    db_url = get_database_url()
+    if not db_url:
+        return JSONResponse(status_code=503, content={"detail": "Database not configured"})
+    try:
+        with psycopg2.connect(db_url) as conn:
+            with conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor) as cur:
+                cur.execute(
+                    "SELECT * FROM scheduler.incidents WHERE incident_id = %s",
+                    (incident_id,),
+                )
+                row = cur.fetchone()
+        if not row:
+            return JSONResponse(status_code=404, content={"detail": "Incident not found"})
+        return _serialize_row(dict(row))
+    except Exception as e:
+        return JSONResponse(status_code=500, content={"detail": str(e)})
+
+
+@app.post("/scheduler/incidents/{incident_id}/resolve", summary="Resolve a scheduler incident")
+def scheduler_incident_resolve(incident_id: int, body: IncidentResolveBody):
+    """Mark a scheduler incident as resolved."""
+    db_url = get_database_url()
+    if not db_url:
+        return JSONResponse(status_code=503, content={"ok": False, "message": "Database not configured"})
+    try:
+        with psycopg2.connect(db_url) as conn:
+            with conn.cursor() as cur:
+                cur.execute(
+                    """UPDATE scheduler.incidents
+                       SET resolved_at = NOW(), resolved_by = 'user', resolution = %s
+                       WHERE incident_id = %s AND resolved_at IS NULL""",
+                    (body.resolution + (f"\n\nNote: {body.note}" if body.note else ""), incident_id),
+                )
+                if cur.rowcount == 0:
+                    return JSONResponse(
+                        status_code=404,
+                        content={"ok": False, "message": "Incident not found or already resolved"},
+                    )
+                conn.commit()
+        return {"ok": True, "message": "Incident resolved"}
+    except Exception as e:
+        return JSONResponse(status_code=500, content={"ok": False, "message": str(e)})
+
+
 @app.get("/status", summary="Database status", description="Checks the database connection and returns availability.")
 def status():
     ok, msg = _comprobar_base_datos()
@@ -604,7 +874,33 @@ def scheduler_status():
             r["next_run_at"] = next_at
         list_of_dicts.append(_serialize_row(r))
     loop_running = is_scheduler_loop_running()
-    return {"tasks": list_of_dicts, "loop_running": loop_running}
+
+    hb_path = get_scheduler_pid_path().parent / "scheduler.heartbeat"
+    last_heartbeat = None
+    try:
+        if hb_path.exists():
+            last_heartbeat = json.loads(hb_path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        pass
+
+    open_incidents = 0
+    try:
+        with psycopg2.connect(url) as conn:
+            with conn.cursor() as cur:
+                cur.execute("SELECT COUNT(*) FROM scheduler.incidents WHERE resolved_at IS NULL")
+                open_incidents = cur.fetchone()[0]
+    except Exception:
+        pass
+
+    recovery = getattr(app.state, "recovery_status", None)
+
+    return {
+        "tasks": list_of_dicts,
+        "loop_running": loop_running,
+        "last_heartbeat": last_heartbeat,
+        "open_incidents": open_incidents,
+        "recovery": recovery,
+    }
 
 
 @app.get("/scheduler/running", summary="Running scheduler runs", description="Lists all currently running ingest runs with task metadata.")
