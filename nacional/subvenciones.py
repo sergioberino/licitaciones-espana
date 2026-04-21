@@ -103,6 +103,7 @@ class LatestParams:
     page: int = 0
     pageSize: int = 100
     order: str = field(default="numeroConvocatoria", init=False)
+    direccion: str = field(default="desc", init=False)
     vpd: str = field(default=DEFAULT_VPD, init=False)
 
     def to_dict(self) -> dict:
