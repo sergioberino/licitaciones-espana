@@ -1471,9 +1471,9 @@ def cmd_subvenciones(args: argparse.Namespace) -> int:
 
         try:
             sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
-            from nacional.subvenciones import scrape_diario, LatestParams
+            from nacional.subvenciones import scrape_diario, SearchParams
 
-            params = LatestParams(page=0, pageSize=100)
+            params = SearchParams(page=0, pageSize=100)
             result = scrape_diario(params)
             subv_result[0] = "ok"
             subv_result[1] = result.get("inserted", 0)

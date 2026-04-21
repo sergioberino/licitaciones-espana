@@ -29,7 +29,6 @@ from etl.config import get_database_url
 # No API_KEY required - public access
 API_BASE_URL = "https://www.infosubvenciones.es/bdnstrans/api/convocatorias"
 API_ENDPOINT_SEARCH = API_BASE_URL + "/busqueda"
-API_ENDPOINT_LATEST = API_BASE_URL + "/ultimas"
 API_ENDPOINT_DETAIL = API_BASE_URL
 
 # Default VPD parameter for detail endpoint
@@ -60,8 +59,14 @@ class SearchParams:
     page: int = 0
     pageSize: int = 10000
     fechaDesde: str | None = None  # Format: "DD/MM/YYYY"
-    fechaHasta: str = datetime.now().strftime("%d/%m/%Y")  # Format: "DD/MM/YYYY"
+    fechaHasta: str | None = None  # Format: "DD/MM/YYYY", defaults to today if None
+    direccion: str = "asc"  # Sort direction: "asc" or "desc"
     vpd: str = field(default=DEFAULT_VPD, init=False)
+
+    def __post_init__(self):
+        """Set default fechaHasta to current date if not provided."""
+        if self.fechaHasta is None:
+            self.fechaHasta = datetime.now().strftime("%d/%m/%Y")
 
     def to_dict(self) -> dict:
         """Convert to dictionary removing None values."""
@@ -94,29 +99,6 @@ class SearchParams:
             datetime.strptime(date_str, "%d/%m/%Y")
         except ValueError:
             raise ValueError(f"{field_name} debe tener formato DD/MM/YYYY, recibido: {date_str}")
-
-
-@dataclass
-class LatestParams:
-    """Parameters for latest grants endpoint (ultimas). pageSize and order are fixed."""
-
-    page: int = 0
-    pageSize: int = 100
-    order: str = field(default="numeroConvocatoria", init=False)
-    direccion: str = field(default="desc", init=False)
-    vpd: str = field(default=DEFAULT_VPD, init=False)
-
-    def to_dict(self) -> dict:
-        """Convert to dictionary."""
-        return asdict(self)
-
-    def validate(self) -> None:
-        """Validate parameters."""
-        if self.page < 0:
-            raise ValueError(f"page debe ser >= 0, recibido: {self.page}")
-
-        if self.pageSize < 100 or self.pageSize > 1000:
-            raise ValueError(f"pageSize debe estar entre [100, 1000]: {self.pageSize}")
 
 
 def _flatten_organo(
@@ -319,15 +301,10 @@ def scrape_historico(params: SearchParams) -> list[Path]:
                 break
 
             for item in content:
-                # Convert numeroConvocatoria to int for consistent type handling
+                # Convert numeroConvocatoria to int as id
                 numero_conv = item.get("numeroConvocatoria")
                 if numero_conv:
-                    light_convocatorias.append(
-                        {
-                            "id": item.get("id"),
-                            "numero_convocatoria": int(numero_conv),
-                        }
-                    )
+                    light_convocatorias.append({"id": int(numero_conv)})
 
             page += 1
 
@@ -380,8 +357,8 @@ def scrape_historico(params: SearchParams) -> list[Path]:
             nonlocal failed_count
             for conv in tqdm(light_convocatorias, unit="conv"):
                 try:
-                    # Convert back to string for API request
-                    result = fetch_convocatoria_detalle(str(conv["numero_convocatoria"]))
+                    # Convert id to string for API request
+                    result = fetch_convocatoria_detalle(str(numero_conv))
                     if result:
                         buffer.put(result)
                     else:
@@ -453,16 +430,16 @@ def scrape_historico(params: SearchParams) -> list[Path]:
         raise
 
 
-def scrape_diario(params: LatestParams) -> dict[str, int]:
+def scrape_diario(params: SearchParams) -> dict[str, int]:
     """
     Scrape latest/daily grants and insert directly into database.
     This is for daily scheduler updates - small volume so direct insert is efficient.
 
-    Fetches detailed information for each convocatoria sequentially (no ThreadPool needed
-    for small volumes).
+    Uses the same search endpoint as scrape_historico but without date filters,
+    fetching the most recent records until duplicates are found.
 
     Args:
-        params: LatestParams for latest updates
+        params: SearchParams for search (fechaDesde should be None for daily updates)
 
     Returns:
         Dictionary with metrics: inserted, omitted, filtered, pages
@@ -483,10 +460,31 @@ def scrape_diario(params: LatestParams) -> dict[str, int]:
     subvencion_pattern = re.compile(r"subvenci[oó]n", re.IGNORECASE)
 
     _log("INFO", "Obteniendo convocatorias nuevas...")
-
     try:
         conn = psycopg2.connect(db_url)
         cur = conn.cursor()
+
+        # Get the most recent fecha_recepcion from DB to use as fechaDesde
+        cur.execute(
+            "SELECT MAX(fecha_recepcion) FROM l0.nacional_subvenciones WHERE fecha_recepcion IS NOT NULL"
+        )
+        result = cur.fetchone()
+        max_fecha = result[0] if result and result[0] else None
+
+        if max_fecha:
+            # Set fechaDesde to the most recent date in DB
+            params.fechaDesde = max_fecha.strftime("%d/%m/%Y")
+            _log("INFO", f"Buscando desde fecha más reciente en BD: {params.fechaDesde}")
+        else:
+            # If no records in DB, don't set fechaDesde (get all records)
+            params.fechaDesde = None
+            _log("INFO", "No hay registros en BD, obteniendo todas las convocatorias")
+
+        # Set fechaHasta to current date
+        params.fechaHasta = datetime.now().strftime("%d/%m/%Y")
+
+        # Set direccion to desc to get most recent first
+        params.direccion = "desc"
 
         all_new_convocatorias = []
         page = params.page
@@ -496,7 +494,7 @@ def scrape_diario(params: LatestParams) -> dict[str, int]:
         while not is_last_page and not found_duplicates:
             params.page = page
 
-            res = requests.get(API_ENDPOINT_LATEST, params=params.to_dict())
+            res = requests.get(API_ENDPOINT_SEARCH, params=params.to_dict())
 
             if res.status_code != 200:
                 try:
@@ -528,12 +526,7 @@ def scrape_diario(params: LatestParams) -> dict[str, int]:
                     continue
                 numero_conv = item.get("numeroConvocatoria")
                 if numero_conv:
-                    light_convocatorias.append(
-                        {
-                            "id": item.get("id"),
-                            "numero_convocatoria": int(numero_conv),
-                        }
-                    )
+                    light_convocatorias.append({"id": int(numero_conv)})
             total_filtered += page_filtered
 
             if not light_convocatorias:
@@ -543,14 +536,12 @@ def scrape_diario(params: LatestParams) -> dict[str, int]:
             # Check for duplicates
             cur.execute(
                 "SELECT id FROM l0.nacional_subvenciones WHERE id = ANY(%s)",
-                ([conv["numero_convocatoria"] for conv in light_convocatorias],),
+                ([conv["id"] for conv in light_convocatorias],),
             )
             existing_ids = {row[0] for row in cur.fetchall()}
 
             new_convocatorias = [
-                conv
-                for conv in light_convocatorias
-                if conv["numero_convocatoria"] not in existing_ids
+                conv for conv in light_convocatorias if conv["id"] not in existing_ids
             ]
             total_duplicates += len(existing_ids)
 
@@ -582,7 +573,7 @@ def scrape_diario(params: LatestParams) -> dict[str, int]:
         detailed_records = []
         _log("INFO", "Obteniendo detalles de las nuevas convocatorias encontradas...")
         for conv in tqdm(all_new_convocatorias, unit="conv"):
-            detail = fetch_convocatoria_detalle(str(conv["numero_convocatoria"]))
+            detail = fetch_convocatoria_detalle(str(conv["id"]))
             if detail:
                 detailed_records.append(detail)
 
@@ -736,6 +727,7 @@ def main():
             pageSize=10000,
             fechaDesde=fecha_desde,
             fechaHasta=fecha_hasta,
+            direccion="asc",  # For historical scraping, use ascending order
         )
 
         parquet_paths = scrape_historico(params)
