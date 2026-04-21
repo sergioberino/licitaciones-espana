@@ -293,52 +293,47 @@ def scrape_historico(params: SearchParams) -> list[Path]:
         is_last_page = False
 
         _log("INFO", "Obteniendo lista de convocatorias...")
-        with tqdm(desc="Páginas", unit="pag") as pbar:
-            while not is_last_page:
-                params.page = page
-                res = requests.get(API_ENDPOINT_SEARCH, params=params.to_dict())
+        while not is_last_page:
+            params.page = page
+            res = requests.get(API_ENDPOINT_SEARCH, params=params.to_dict())
 
-                if res.status_code != 200:
-                    try:
-                        error_data = res.json()
-                        if "errores" in error_data:
-                            error_msgs = "\n  - ".join(error_data["errores"])
-                            raise ValueError(
-                                f"Error de la API ({error_data.get('codigo', 'UNKNOWN')}):\n  {error_msgs}"
-                            )
-                    except ValueError:
-                        raise
-                    except Exception:
-                        res.raise_for_status()
-
-                data = res.json()
-                content = data.get("content", [])
-                is_last_page = data.get("last", True)
-
-                if page == 0:
-                    pbar.total = data.get("totalPages", 0)
-
-                if not content:
-                    break
-
-                for item in content:
-                    # Convert numeroConvocatoria to int for consistent type handling
-                    numero_conv = item.get("numeroConvocatoria")
-                    if numero_conv:
-                        light_convocatorias.append(
-                            {
-                                "id": item.get("id"),
-                                "numero_convocatoria": int(numero_conv),
-                            }
+            if res.status_code != 200:
+                try:
+                    error_data = res.json()
+                    if "errores" in error_data:
+                        error_msgs = "\n  - ".join(error_data["errores"])
+                        raise ValueError(
+                            f"Error de la API ({error_data.get('codigo', 'UNKNOWN')}):\n  {error_msgs}"
                         )
+                except ValueError:
+                    raise
+                except Exception:
+                    res.raise_for_status()
 
-                page += 1
-                pbar.update(1)
+            data = res.json()
+            content = data.get("content", [])
+            is_last_page = data.get("last", True)
 
-        _log("INFO", f"{len(light_convocatorias):,} convocatorias obtenidas")
+            if not content:
+                break
+
+            for item in content:
+                # Convert numeroConvocatoria to int for consistent type handling
+                numero_conv = item.get("numeroConvocatoria")
+                if numero_conv:
+                    light_convocatorias.append(
+                        {
+                            "id": item.get("id"),
+                            "numero_convocatoria": int(numero_conv),
+                        }
+                    )
+
+            page += 1
+
+        _log("INFO", f"{len(light_convocatorias):,} convocatorias obtenidas\n")
         _log(
             "INFO",
-            "Obteniendo detalles y generando parquets (modo pipeline: 1 fetcher + 1 saver)...",
+            "Obteniendo detalles y generando parquets...",
         )
 
         buffer = Queue(maxsize=100)
@@ -486,16 +481,18 @@ def scrape_diario(params: LatestParams) -> dict[str, int]:
     total_filtered = 0
     subvencion_pattern = re.compile(r"subvenci[oó]n", re.IGNORECASE)
 
-    _log("INFO", "Actualizando subvenciones diarias...")
+    _log("INFO", "Obteniendo convocatorias nuevas...")
 
     try:
         conn = psycopg2.connect(db_url)
-        cur = conn.cursor()  # Open cursor once at the start
+        cur = conn.cursor()
 
+        all_new_convocatorias = []
         page = params.page
         is_last_page = False
+        found_duplicates = False
 
-        while not is_last_page:
+        while not is_last_page and not found_duplicates:
             params.page = page
 
             res = requests.get(API_ENDPOINT_LATEST, params=params.to_dict())
@@ -514,7 +511,6 @@ def scrape_diario(params: LatestParams) -> dict[str, int]:
                     res.raise_for_status()
 
             data = res.json()
-
             content = data.get("content", [])
             is_last_page = data.get("last", True)
 
@@ -529,7 +525,6 @@ def scrape_diario(params: LatestParams) -> dict[str, int]:
                 if not subvencion_pattern.search(descripcion):
                     page_filtered += 1
                     continue
-                # Convert numeroConvocatoria to int for consistent type comparison
                 numero_conv = item.get("numeroConvocatoria")
                 if numero_conv:
                     light_convocatorias.append(
@@ -544,7 +539,7 @@ def scrape_diario(params: LatestParams) -> dict[str, int]:
                 page += 1
                 continue
 
-            # Check for duplicates using the persistent cursor
+            # Check for duplicates
             cur.execute(
                 "SELECT id FROM l0.nacional_subvenciones WHERE id = ANY(%s)",
                 ([conv["numero_convocatoria"] for conv in light_convocatorias],),
@@ -556,120 +551,124 @@ def scrape_diario(params: LatestParams) -> dict[str, int]:
                 for conv in light_convocatorias
                 if conv["numero_convocatoria"] not in existing_ids
             ]
-            page_dups = len(existing_ids)
-            total_duplicates += page_dups
+            total_duplicates += len(existing_ids)
 
-            # Show progress message for this page
-            _log(
-                "INFO",
-                f"Para la página número {page + 1} se han encontrado {len(new_convocatorias)} convocatorias nuevas",
-            )
+            # Add new convocatorias to the accumulated list
+            all_new_convocatorias.extend(new_convocatorias)
 
-            if not new_convocatorias:
-                # If we found duplicates, stop searching
-                if existing_ids:
-                    _log("INFO", "Ya se encontraron todas las convocatorias recientes")
-                    break
-                page += 1
-                continue
-
-            detailed_records = []
-            for conv in new_convocatorias:
-                # Convert back to string for API request
-                detail = fetch_convocatoria_detalle(str(conv["numero_convocatoria"]))
-                if detail:
-                    detailed_records.append(detail)
-
-            if not detailed_records:
-                page += 1
-                continue
-
-            records_to_insert = []
-            for record in detailed_records:
-                # Serialize JSONB columns
-                jsonb_cols = [
-                    "instrumentos",
-                    "tipos_beneficiarios",
-                    "sectores",
-                    "regiones",
-                    "fondos",
-                    "reglamento",
-                    "objetivos",
-                    "sectores_productos",
-                    "documentos",
-                    "anuncios",
-                ]
-                for col in jsonb_cols:
-                    if record.get(col) is not None:
-                        record[col] = json.dumps(record[col])
-
-                records_to_insert.append(
-                    (
-                        record.get("id"),
-                        record.get("nivel1"),
-                        record.get("nivel2"),
-                        record.get("nivel3"),
-                        record.get("sede_electronica"),
-                        record.get("codigo_bdns"),
-                        record.get("fecha_recepcion"),
-                        record.get("instrumentos"),
-                        record.get("tipo_convocatoria"),
-                        record.get("presupuesto_total"),
-                        record.get("mrr"),
-                        record.get("descripcion"),
-                        record.get("descripcion_leng"),
-                        record.get("tipos_beneficiarios"),
-                        record.get("regiones"),
-                        record.get("sectores"),
-                        record.get("descripcion_finalidad"),
-                        record.get("descripcion_bases_reguladoras"),
-                        record.get("url_bases_reguladoras"),
-                        record.get("se_publica_diario_oficial"),
-                        record.get("abierto"),
-                        record.get("fecha_inicio_solicitud"),
-                        record.get("fecha_fin_solicitud"),
-                        record.get("text_inicio"),
-                        record.get("text_fin"),
-                        record.get("ayuda_estado"),
-                        record.get("url_ayuda_estado"),
-                        record.get("fondos"),
-                        record.get("reglamento"),
-                        record.get("objetivos"),
-                        record.get("sectores_productos"),
-                        record.get("documentos"),
-                        record.get("anuncios"),
-                    )
-                )
-
-            # Insert using the persistent cursor
-            insert_sql = """
-                INSERT INTO l0.nacional_subvenciones 
-                (id, nivel1, nivel2, nivel3, sede_electronica, codigo_bdns, fecha_recepcion,
-                 instrumentos, tipo_convocatoria, presupuesto_total, mrr, descripcion, descripcion_leng,
-                 tipos_beneficiarios, sectores, regiones, descripcion_finalidad, descripcion_bases_reguladoras,
-                 url_bases_reguladoras, se_publica_diario_oficial, abierto, fecha_inicio_solicitud,
-                 fecha_fin_solicitud, text_inicio, text_fin, ayuda_estado, url_ayuda_estado,
-                 fondos, reglamento, objetivos, sectores_productos, documentos, anuncios)
-                VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
-                ON CONFLICT (id) DO NOTHING
-            """
-
-            execute_batch(cur, insert_sql, records_to_insert)
-            conn.commit()
-
-            _log("INFO", f"  Insertados {len(records_to_insert)} registros en BD")
-            total_new += len(records_to_insert)
-
+            # Stop if we found duplicates (means we reached already processed data)
             if existing_ids:
-                _log("INFO", "Ya se encontraron todas las convocatorias recientes")
+                found_duplicates = True
                 break
 
             page += 1
 
+        if not all_new_convocatorias:
+            _log("INFO", "No hay convocatorias nuevas")
+            return {
+                "inserted": 0,
+                "omitted": total_duplicates,
+                "filtered": total_filtered,
+                "pages": page + 1,
+            }
+
         _log(
             "INFO",
-            f"COMPLETADO: {total_new} nuevos, {total_duplicates} duplicados, {total_filtered} filtrados",
+            f"{len(all_new_convocatorias)} convocatorias nuevas encontradas, guardando en BD...",
         )
+
+        # FASE 2: Obtener detalles de todas las convocatorias e insertar
+        detailed_records = []
+        for conv in all_new_convocatorias:
+            detail = fetch_convocatoria_detalle(str(conv["numero_convocatoria"]))
+            if detail:
+                detailed_records.append(detail)
+
+        if not detailed_records:
+            _log("INFO", "No se pudieron obtener detalles de las convocatorias")
+            return {
+                "inserted": 0,
+                "omitted": total_duplicates,
+                "filtered": total_filtered,
+                "pages": page + 1,
+            }
+
+        # Prepare all records for insertion
+        records_to_insert = []
+        jsonb_cols = [
+            "instrumentos",
+            "tipos_beneficiarios",
+            "sectores",
+            "regiones",
+            "fondos",
+            "reglamento",
+            "objetivos",
+            "sectores_productos",
+            "documentos",
+            "anuncios",
+        ]
+
+        for record in detailed_records:
+            # Serialize JSONB columns
+            for col in jsonb_cols:
+                if record.get(col) is not None:
+                    record[col] = json.dumps(record[col])
+
+            records_to_insert.append(
+                (
+                    record.get("id"),
+                    record.get("nivel1"),
+                    record.get("nivel2"),
+                    record.get("nivel3"),
+                    record.get("sede_electronica"),
+                    record.get("codigo_bdns"),
+                    record.get("fecha_recepcion"),
+                    record.get("instrumentos"),
+                    record.get("tipo_convocatoria"),
+                    record.get("presupuesto_total"),
+                    record.get("mrr"),
+                    record.get("descripcion"),
+                    record.get("descripcion_leng"),
+                    record.get("tipos_beneficiarios"),
+                    record.get("regiones"),
+                    record.get("sectores"),
+                    record.get("descripcion_finalidad"),
+                    record.get("descripcion_bases_reguladoras"),
+                    record.get("url_bases_reguladoras"),
+                    record.get("se_publica_diario_oficial"),
+                    record.get("abierto"),
+                    record.get("fecha_inicio_solicitud"),
+                    record.get("fecha_fin_solicitud"),
+                    record.get("text_inicio"),
+                    record.get("text_fin"),
+                    record.get("ayuda_estado"),
+                    record.get("url_ayuda_estado"),
+                    record.get("fondos"),
+                    record.get("reglamento"),
+                    record.get("objetivos"),
+                    record.get("sectores_productos"),
+                    record.get("documentos"),
+                    record.get("anuncios"),
+                )
+            )
+
+        insert_sql = """
+            INSERT INTO l0.nacional_subvenciones 
+            (id, nivel1, nivel2, nivel3, sede_electronica, codigo_bdns, fecha_recepcion,
+             instrumentos, tipo_convocatoria, presupuesto_total, mrr, descripcion, descripcion_leng,
+             tipos_beneficiarios, sectores, regiones, descripcion_finalidad, descripcion_bases_reguladoras,
+             url_bases_reguladoras, se_publica_diario_oficial, abierto, fecha_inicio_solicitud,
+             fecha_fin_solicitud, text_inicio, text_fin, ayuda_estado, url_ayuda_estado,
+             fondos, reglamento, objetivos, sectores_productos, documentos, anuncios)
+            VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+            ON CONFLICT (id) DO NOTHING
+        """
+
+        execute_batch(cur, insert_sql, records_to_insert, page_size=100)
+        conn.commit()
+        total_new = len(records_to_insert)
+
+        _log("INFO", f"Actualizado con {total_new} convocatorias más recientes en BD")
 
         return {
             "inserted": total_new,
