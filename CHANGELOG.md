@@ -2,6 +2,85 @@
 
 Todos los cambios notables del CLI y del microservicio ETL se documentan aquí.
 
+## [1.5.2] — 2026-04-21
+
+### Resumen
+
+- **Ingesta completa de datos de subvenciones:** migración de 6 a 32 campos por convocatoria, guardando TODOS los datos detallados (instrumentos, beneficiarios, sectores, regiones, presupuesto, documentos, anuncios) en lugar de solo datos ligeros.
+- **Nueva arquitectura de scraping en 2 fases:** fase 1 obtiene IDs ligeros (`/busqueda`), fase 2 obtiene detalles completos por cada ID (`/convocatorias`).
+- **Optimizaciones de rendimiento:** rate limiting adaptativo global thread-safe, multithreading producer-consumer para scraping histórico, carga paralela de parquets, consulta optimizada 250x más rápida.
+- **Eliminación de dependencia API externa:** con datos completos en BD, Licitia ya no necesita llamar a API externa para obtener detalles de subvenciones.
+
+### Añadido
+
+- **`nacional/subvenciones.py`:**
+  - Nueva función `fetch_convocatoria_detalle()`: obtiene información completa de una convocatoria desde endpoint de detalle con rate limiting adaptativo.
+  - Funciones helper `_flatten_organo()` y `_convert_to_json_serializable()` para procesamiento de datos.
+  - Rate limiting adaptativo global con `_api_delay_seconds` y `_api_delay_lock` (thread-safe).
+  - Pattern producer-consumer en `scrape_historico`: thread fetcher obtiene detalles y pone en Queue, thread saver consume Queue y genera parquets por batches.
+  - Campo `direccion` en `SearchParams`: `"asc"` para histórico, `"desc"` para diario.
+
+- **`etl/cli.py`:**
+  - Soporte ThreadPool (3 workers) para carga paralela de múltiples parquets de subvenciones.
+  - Solo activo para `nacional/subvenciones` con múltiples archivos parquet.
+
+- **`schemas/012_nacional_subvenciones.sql`:**
+  - 26 campos nuevos: `sede_electronica`, `tipo_convocatoria`, `presupuesto_total`.
+  - 10 arrays JSONB: `instrumentos`, `tipos_beneficiarios`, `sectores`, `regiones`, `fondos`, `reglamento`, `objetivos`, `sectores_productos`, `documentos`, `anuncios`.
+  - Campos de bases reguladoras: `descripcion_finalidad`, `descripcion_bases_reguladoras`, `url_bases_reguladoras`.
+  - Estado y fechas: `abierto`, `se_publica_diario_oficial`, `fecha_inicio_solicitud`, `fecha_fin_solicitud`, `text_inicio`, `text_fin`.
+  - Ayuda de estado: `ayuda_estado`, `url_ayuda_estado`.
+
+### Mejorado
+
+- **Rate limiting adaptativo:** delay inicial 0ms (sin penalización previa), se activa solo tras HTTP 429, incremento exponencial suave ×1.6 (0ms → 25ms → 40ms → 64ms → 102ms). Resultado: ~7 conv/s (~0.15s por convocatoria).
+
+- **Consulta optimizada en `scrape_diario`:** cambio de `MAX(fecha_recepcion)` (escaneo completo) a `ORDER BY id DESC LIMIT 1` (usa índice PK). Mejora de 250x (500ms → 2ms). Los IDs más altos corresponden implícitamente a fechas más recientes.
+
+- **`scrape_diario`:** ahora también obtiene detalles completos de cada convocatoria nueva (antes solo guardaba datos ligeros). Validación mejorada: lanza error descriptivo si la tabla está vacía, indicando ejecutar ingest histórico primero.
+
+- **`scrape_historico`:** generación de múltiples parquets por batches (max 100 registros cada uno) en lugar de un solo parquet grande. Nomenclatura: `_part_subvenciones_000.parquet`, `_part_subvenciones_001.parquet`, etc.
+
+- **`etl/ingest_l0.py`:** actualizado `SUBVENCIONES_PARQUET_COLUMNS` con las 32 columnas del nuevo schema.
+
+### Eliminado
+
+- **`nacional/subvenciones.py`:**
+  - Endpoint `/ultimas` (ahora todo usa `/busqueda` con parámetro `direccion`).
+  - Clase `LatestParams` (sustituida por `SearchParams` con campo `direccion`).
+  - Clase `RateLimiter` (sustituida por rate limiting global adaptativo).
+  - Constante `API_ENDPOINT_ULTIMAS`.
+  - Campos redundantes: `numero_convocatoria`, `codigo_bdns` (redundantes con `id`), `codigo_invente` (no disponible en API).
+
+### Corregido
+
+- **Bug crítico en `scrape_historico`:** función `fetcher()` usaba variable `numero_conv` indefinida, causando que todas las peticiones usaran el mismo ID. Solo el primer registro se insertaba, los 607 restantes se marcaban como duplicados. Corregido a `conv["id"]`. Tasa de éxito: 0.16% → 100%.
+
+### Migración requerida (BREAKING CHANGE)
+
+**ATENCIÓN:** Estructura de tabla incompatible (6 → 32 campos). Datos existentes no son compatibles.
+
+1. Borrar datos antiguos:
+
+   ```sql
+   TRUNCATE TABLE l0.nacional_subvenciones;
+   ```
+
+2. Aplicar nuevo schema:
+
+   ```bash
+   docker compose exec etl licitia-etl init-db
+   ```
+
+3. Reingestar datos:
+   ```bash
+   docker compose exec etl licitia-etl ingest nacional subvenciones --anos 2020-2026
+   ```
+
+**Nota:** El proceso de migración puede tardar varias horas dependiendo de los años a ingestar.
+
+---
+
 ## [1.5.1] — 2026-04-17
 
 ### Resumen
@@ -212,12 +291,14 @@ La integración completa con `upstream/main` quedó resuelta en **[1.3.2]**.
 ## [1.1.2] — 2026-03-25
 
 ### Upstream sync (BquantFinance/licitaciones-espana)
+
 - **Andalucía scraper refactor** (`scripts/ccaa_andalucia.py`): improved coverage and stability (upstream PR #5); 11 new tests in `tests/test_ccaa_andalucia.py`
 - **Asturias downloader script** (`scripts/ccaa_asturias.py`): new standalone script to fetch contracts from Asturias open-data portal to Parquet; see `scripts/README.md` for usage. Ingest wiring (CONJUNTOS_REGISTRY) deferred to 1.2.0.
 - **Calidad analytics module** (`calidad/calidad_licitaciones.py`): 20 quality indicators on contracts dataset; standalone tool, not part of ingest pipeline
 - `requirements.txt`: `requests>=2.31.0` added; `numpy<2` pin preserved
 
 ### Fork changes
+
 - **Data hygiene**: removed `catalunya/README.md` (doc-only); `.gitignore` updated to cover `asturias_data/`, `ccaa_Andalucia/perfiles_cache.json`, `catalunya/`
 - **No new HTTP API routes** added in this release; API surface unchanged from 1.1.1
 - **No new CLI subcommands** added; ingest catalog visible via `GET /ingest/conjuntos` (8 conjuntos)
@@ -225,25 +306,27 @@ La integración completa con `upstream/main` quedó resuelta en **[1.3.2]**.
 ### QA performed (2026-03-25)
 
 **CLI / pytest**
+
 - 55 tests passed, 1 skipped (DB-dependent), 0 failed — full suite including 11 new upstream Andalucía tests
 - `python -m etl.cli --help` and `python -m etl.cli ingest --help` — exit 0, no import errors
 - `calidad.calidad_licitaciones` imports cleanly
 
 **API (ETL microservice at `http://localhost:8002`)**
 
-| Endpoint | HTTP | Notes |
-|----------|------|-------|
-| `GET /health` | 200 | `db: true`, 4 migrations pending |
-| `GET /status` | 200 | `database: connected` |
-| `GET /db-info` | 200 | 37 tables, 765 MB |
-| `GET /ingest/conjuntos` | 200 | 8 conjuntos returned |
-| `GET /migrations` | 200 | 6 applied, 4 pending |
-| `GET /scheduler/status` | 200 | 5 nacional tasks registered, `loop_running: false` |
-| `GET /scheduler/running` | 200 | No active runs |
+| Endpoint                 | HTTP | Notes                                              |
+| ------------------------ | ---- | -------------------------------------------------- |
+| `GET /health`            | 200  | `db: true`, 4 migrations pending                   |
+| `GET /status`            | 200  | `database: connected`                              |
+| `GET /db-info`           | 200  | 37 tables, 765 MB                                  |
+| `GET /ingest/conjuntos`  | 200  | 8 conjuntos returned                               |
+| `GET /migrations`        | 200  | 6 applied, 4 pending                               |
+| `GET /scheduler/status`  | 200  | 5 nacional tasks registered, `loop_running: false` |
+| `GET /scheduler/running` | 200  | No active runs                                     |
 
 No 500 errors. All endpoints returned expected codes.
 
 ### Notes
+
 - API version string updated from 1.1.0 → 1.1.2
 - 4 schema migrations on disk pending application (`005_catalunya.sql`, `006_valencia.sql`, `007_views.sql`, `010_borme.sql`) — apply via `POST /init-db` or `licitia-etl init-db`
 - `etl/__init__.py` `__version__` remains `1.1.0`; full multi-file semver alignment planned for 1.2.0
@@ -280,8 +363,6 @@ No 500 errors. All endpoints returned expected codes.
 
 - **get_tasks_due:** Uso de `reference_now` en `get_next_run_at` para que las tareas nunca ejecutadas se consideren debidas en el mismo tick (evita desfase de milisegundos que dejaba `due_count` en 0).
 - **insert_run_start:** Firma correcta `insert_run_start(conn, task_id)` en `cmd_ingest`.
-
-
 
 ### Nota
 
