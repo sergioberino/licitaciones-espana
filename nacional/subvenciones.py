@@ -377,7 +377,7 @@ def scrape_historico(params: SearchParams) -> list[Path]:
         def fetcher():
             """Thread 1: fetch + preprocesar → buffer."""
             nonlocal failed_count
-            for conv in tqdm(light_convocatorias, unit="conv", desc="Fetch+Preproc"):
+            for conv in tqdm(light_convocatorias, unit="conv"):
                 try:
                     # Convert back to string for API request
                     result = fetch_convocatoria_detalle(str(conv["numero_convocatoria"]))
@@ -574,12 +574,13 @@ def scrape_diario(params: LatestParams) -> dict[str, int]:
 
         _log(
             "INFO",
-            f"{len(all_new_convocatorias)} convocatorias nuevas encontradas, guardando en BD...",
+            f"{len(all_new_convocatorias)} convocatorias nuevas encontradas",
         )
 
         # FASE 2: Obtener detalles de todas las convocatorias e insertar
         detailed_records = []
-        for conv in all_new_convocatorias:
+        _log("INFO", "Obteniendo detalles de las nuevas convocatorias encontradas...")
+        for conv in tqdm(all_new_convocatorias, unit="conv"):
             detail = fetch_convocatoria_detalle(str(conv["numero_convocatoria"]))
             if detail:
                 detailed_records.append(detail)
@@ -593,7 +594,7 @@ def scrape_diario(params: LatestParams) -> dict[str, int]:
                 "pages": page + 1,
             }
 
-        # Prepare all records for insertion
+        _log("INFO", "Guardando en BD...")
         records_to_insert = []
         jsonb_cols = [
             "instrumentos",
