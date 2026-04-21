@@ -574,7 +574,7 @@ def scrape_diario(params: LatestParams) -> dict[str, int]:
                 continue
 
             detailed_records = []
-            for conv in enumerate(new_convocatorias):
+            for conv in new_convocatorias:
                 # Convert back to string for API request
                 detail = fetch_convocatoria_detalle(str(conv["numero_convocatoria"]))
                 if detail:
@@ -725,7 +725,7 @@ def main():
         fecha_hasta = datetime.now().strftime("%d/%m/%Y")
 
     # fecha_desde = f"01/01/{ano_inicio}"
-    fecha_desde = f"19/04/2026"
+    fecha_desde = f"16/04/2026"
     _log("INFO", f"Fechas: {fecha_desde} - {fecha_hasta}")
     _log("INFO", f"Conjunto: {args.conjunto}")
 
