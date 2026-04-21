@@ -35,7 +35,7 @@ API_ENDPOINT_DETAIL = API_BASE_URL
 DEFAULT_VPD = "GE"
 
 # Maximum records per parquet file
-MAX_RECORDS_PER_PARQUET = 100
+MAX_RECORDS_PER_PARQUET = 10000
 
 # Directory configuration (similar to nacional/licitaciones.py)
 _repo_root = Path(__file__).resolve().parent.parent
@@ -464,9 +464,8 @@ def scrape_diario(params: SearchParams) -> dict[str, int]:
         cur = conn.cursor()
 
         # Get the most recent fecha_recepcion from DB to use as fechaDesde
-        cur.execute(
-            "SELECT MAX(fecha_recepcion) FROM l0.nacional_subvenciones WHERE fecha_recepcion IS NOT NULL"
-        )
+        # Order by id DESC (indexed) for fast lookup - higher id = more recent
+        cur.execute("SELECT fecha_recepcion FROM l0.nacional_subvenciones ORDER BY id DESC LIMIT 1")
         result = cur.fetchone()
         max_fecha = result[0] if result and result[0] else None
 
@@ -475,9 +474,11 @@ def scrape_diario(params: SearchParams) -> dict[str, int]:
             params.fechaDesde = max_fecha.strftime("%d/%m/%Y")
             _log("INFO", f"Buscando desde fecha más reciente en BD: {params.fechaDesde}")
         else:
-            # If no records in DB, don't set fechaDesde (get all records)
-            params.fechaDesde = None
-            _log("INFO", "No hay registros en BD, obteniendo todas las convocatorias")
+            raise ValueError(
+                "No hay registros en la base de datos. "
+                "Ejecuta primero '... licitia-etl ingest nacional subvenciones --anos YYYY-YYYY' "
+                "para cargar datos históricos antes de realizar el scrape diario."
+            )
 
         # Set fechaHasta to current date
         params.fechaHasta = datetime.now().strftime("%d/%m/%Y")
@@ -703,15 +704,13 @@ def main():
     if len(partes) > 1:
         ano_fin = int(partes[1])
         if ano_fin == datetime.now().year:
-            # fecha_hasta = datetime.now().strftime("%d/%m/%Y")
-            fecha_hasta = "19/04/2026"
+            fecha_hasta = datetime.now().strftime("%d/%m/%Y")
         else:
             fecha_hasta = f"31/12/{ano_fin}"
     else:
         fecha_hasta = datetime.now().strftime("%d/%m/%Y")
 
-    # fecha_desde = f"01/01/{ano_inicio}"
-    fecha_desde = f"16/04/2026"
+    fecha_desde = f"01/01/{ano_inicio}"
     _log("INFO", f"Fechas: {fecha_desde} - {fecha_hasta}")
     _log("INFO", f"Conjunto: {args.conjunto}")
 
