@@ -949,15 +949,13 @@ def main():
     if len(partes) > 1:
         ano_fin = int(partes[1])
         if ano_fin == datetime.now().year:
-            # fecha_hasta = datetime.now().strftime("%d/%m/%Y")
-            fecha_hasta = "21/04/2026"
+            fecha_hasta = datetime.now().strftime("%d/%m/%Y")
         else:
             fecha_hasta = f"31/12/{ano_fin}"
     else:
         fecha_hasta = datetime.now().strftime("%d/%m/%Y")
 
-    # fecha_desde = f"01/01/{ano_inicio}"
-    fecha_desde = "17/04/2026"
+    fecha_desde = f"01/01/{ano_inicio}"
 
     try:
         params = SearchParams(
