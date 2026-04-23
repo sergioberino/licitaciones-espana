@@ -2,7 +2,7 @@
 
 Todos los cambios notables del CLI y del microservicio ETL se documentan aquí.
 
-## [1.5.2] — 2026-04-21
+## [1.5.2] — 2026-04-23
 
 ### Resumen
 
@@ -12,6 +12,9 @@ Todos los cambios notables del CLI y del microservicio ETL se documentan aquí.
 - **Nueva arquitectura de scraping en 2 fases:** fase 1 obtiene IDs ligeros (`/busqueda`), fase 2 obtiene detalles completos por cada ID (`/convocatorias`).
 - **Optimizaciones de rendimiento:** rate limiting adaptativo global thread-safe, multithreading producer-consumer para scraping histórico, carga paralela de parquets, consulta optimizada 250x más rápida.
 - **Eliminación de dependencia API externa:** con datos completos en BD, Licitia ya no necesita llamar a API externa para obtener detalles de subvenciones.
+- **Limpieza de campos:** eliminados `text_inicio` y `text_fin` (backups de fecha en texto plano) para reducir ruido en BD.
+- **Filtrado de caducadas en preprocesamiento:** el thread `saver` descarta convocatorias con `abierto = False` y `fecha_fin_solicitud` pasada antes de guardarlas.
+- **Nuevo campo `resumen_bases_reguladoras TEXT`:** reservado para feature futura, siempre `NULL` en ingesta.
 
 ### Añadido
 
