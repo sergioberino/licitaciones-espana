@@ -2,6 +2,14 @@
 
 Todos los cambios notables del CLI y del microservicio ETL se documentan aquí.
 
+## [1.5.2] — 2026-04-23
+
+### Corregido
+
+- **Ingesta CNAE — secciones excluidas:** el filtro `isdigit()` en `_filter_numeric_codes` descartaba todos los códigos de sección (letras `A`–`U`), cargando únicamente divisiones, grupos y clases numéricas. Ahora se ingestian todos los niveles jerárquicos de la clasificación (secciones, divisiones, grupos y clases). Función renombrada a `_extract_codes` para reflejar el comportamiento real.
+
+---
+
 ## [1.5.1] — 2026-04-17
 
 ### Resumen
