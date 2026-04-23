@@ -22,6 +22,7 @@ CREATE TABLE IF NOT EXISTS l0.nacional_subvenciones (
   descripcion_finalidad TEXT,
   descripcion_bases_reguladoras TEXT,
   url_bases_reguladoras TEXT,
+  resumen_bases_reguladoras TEXT,
   -- Publicación y estado
   se_publica_diario_oficial BOOLEAN,
   abierto BOOLEAN,
