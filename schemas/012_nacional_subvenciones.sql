@@ -8,7 +8,7 @@ CREATE TABLE IF NOT EXISTS l0.nacional_subvenciones (
   sede_electronica TEXT,
   fecha_recepcion DATE,
   -- Instrumentos y tipo
-  instrumento_id SMALLINT REFERENCES dim.instrumentos_subvenciones(id),
+  instrumento_id SMALLINT,
   tipo_convocatoria TEXT,
   presupuesto_total NUMERIC,
   mrr BOOLEAN,
