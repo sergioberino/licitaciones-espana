@@ -465,8 +465,6 @@ def fetch_convocatoria_detalle(
                 "abierto": data.get("abierto"),
                 "fecha_inicio_solicitud": data.get("fechaInicioSolicitud"),
                 "fecha_fin_solicitud": data.get("fechaFinSolicitud"),
-                "text_inicio": data.get("textInicio"),
-                "text_fin": data.get("textFin"),
                 "ayuda_estado": data.get("ayudaEstado"),
                 "url_ayuda_estado": data.get("urlAyudaEstado"),
                 "fondos": _normalize_empty_jsonb(_convert_to_json_serializable(data.get("fondos"))),
@@ -872,8 +870,6 @@ def scrape_diario(params: SearchParams) -> dict[str, int]:
                     record.get("abierto"),
                     record.get("fecha_inicio_solicitud"),
                     record.get("fecha_fin_solicitud"),
-                    record.get("text_inicio"),
-                    record.get("text_fin"),
                     record.get("ayuda_estado"),
                     record.get("url_ayuda_estado"),
                     record.get("fondos"),
@@ -891,9 +887,9 @@ def scrape_diario(params: SearchParams) -> dict[str, int]:
              instrumento_id, tipo_convocatoria, presupuesto_total, mrr, descripcion, descripcion_leng,
              tipos_beneficiarios, sectores, regiones, descripcion_finalidad, descripcion_bases_reguladoras,
              url_bases_reguladoras, se_publica_diario_oficial, abierto, fecha_inicio_solicitud,
-             fecha_fin_solicitud, text_inicio, text_fin, ayuda_estado, url_ayuda_estado,
+             fecha_fin_solicitud, ayuda_estado, url_ayuda_estado,
              fondos, reglamento, objetivos, sectores_productos, documentos, anuncios)
-            VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+            VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
             ON CONFLICT (id) DO NOTHING
         """
 
