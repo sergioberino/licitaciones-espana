@@ -808,14 +808,17 @@ def load_parquet_to_l0(
 
                             # Handle arrays (SMALLINT[], VARCHAR[], etc.)
                             if "[]" in pg_type:
-                                # Convert to list if not already
-                                if isinstance(v, list):
-                                    vals.append(v if v else None)  # Empty list → None
-                                elif v is None:
-                                    vals.append(None)
+                                # Convert numpy arrays to Python lists
+                                converted = _convert_numpy_to_python(v)
+                                if converted is None or (
+                                    isinstance(converted, list) and len(converted) == 0
+                                ):
+                                    vals.append(None)  # Empty list → None
+                                elif isinstance(converted, list):
+                                    vals.append(converted)
                                 else:
                                     # Single value → list with one element
-                                    vals.append([v])
+                                    vals.append([converted])
                             elif "INT" in pg_type or "BIGINT" in pg_type:
                                 try:
                                     vals.append(int(v))

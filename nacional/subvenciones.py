@@ -523,10 +523,8 @@ def scrape_historico(params: SearchParams) -> list[Path]:
 
     _ensure_output_dir()
 
-    _log("INFO", "=" * 60)
     _log("INFO", "SUBVENCIONES HISTÓRICAS (BDNS)")
     _log("INFO", f"Rango: {params.fechaDesde} — {params.fechaHasta}")
-    _log("INFO", "=" * 60)
 
     try:
         light_convocatorias = []
