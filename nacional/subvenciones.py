@@ -371,6 +371,24 @@ def _convert_to_json_serializable(obj):
     return str(obj)
 
 
+def _is_expired_grant(record: dict) -> bool:
+    """
+    Returns True if the grant should be discarded:
+    - abierto is False AND fecha_fin_solicitud < today
+    Records without fecha_fin_solicitud are kept.
+    """
+    if record.get("abierto"):
+        return False
+    fecha_fin = record.get("fecha_fin_solicitud")
+    if not fecha_fin:
+        return False
+    try:
+        # API returns YYYY-MM-DD, compare as ISO string (lexicographic order works)
+        return fecha_fin < datetime.now().strftime("%Y-%m-%d")
+    except Exception:
+        return False
+
+
 def fetch_convocatoria_detalle(
     numero_convocatoria: str,
 ) -> dict | None:
@@ -572,6 +590,7 @@ def scrape_historico(params: SearchParams) -> list[Path]:
         parquet_paths = []
         batch_num = [0]  # Shared between threads
         total_saved = [0]  # Shared between threads
+        skipped_expired = [0]  # Shared between threads
         fetching_done = threading.Event()
 
         # Only these columns need JSON serialization now
@@ -625,6 +644,10 @@ def scrape_historico(params: SearchParams) -> list[Path]:
             while not (fetching_done.is_set() and buffer.empty()):
                 try:
                     record = buffer.get(timeout=1)
+                    if _is_expired_grant(record):
+                        skipped_expired[0] += 1
+                        buffer.task_done()
+                        continue
                     batch_buffer.append(record)
 
                     if len(batch_buffer) >= MAX_RECORDS_PER_PARQUET:
@@ -665,6 +688,9 @@ def scrape_historico(params: SearchParams) -> list[Path]:
 
         if failed_count > 0:
             _log("WARN", f"{failed_count} convocatorias fallaron")
+
+        if skipped_expired[0] > 0:
+            _log("INFO", f"{skipped_expired[0]} convocatorias descartadas (cerradas y caducadas)")
 
         if not parquet_paths:
             raise ValueError("No se generaron parquets (sin registros válidos)")
@@ -816,10 +842,16 @@ def scrape_diario(params: SearchParams) -> dict[str, int]:
         # FASE 2: Obtener detalles de todas las convocatorias e insertar
         detailed_records = []
         _log("INFO", "Obteniendo detalles de las nuevas convocatorias encontradas...")
+        skipped_expired = 0
         for conv in tqdm(all_new_convocatorias, unit="conv"):
             detail = fetch_convocatoria_detalle(str(conv["id"]))
             if detail:
-                detailed_records.append(detail)
+                if _is_expired_grant(detail):
+                    skipped_expired += 1
+                else:
+                    detailed_records.append(detail)
+        if skipped_expired:
+            _log("INFO", f"{skipped_expired} convocatorias descartadas (cerradas y caducadas)")
 
         if not detailed_records:
             _log("INFO", "No se pudieron obtener detalles de las convocatorias")
