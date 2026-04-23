@@ -689,7 +689,7 @@ def load_parquet_to_l0(
         raise FileNotFoundError(f"Parquet no encontrado: {parquet_path}")
 
     df = pd.read_parquet(parquet_path)
-    logger.info("Parquet cargado: %s filas.", len(df))
+    logger.info("Parquet cargado: %s filas, cargando en base de datos...", len(df))
 
     if column_defs is None:
         column_defs = NACIONAL_PARQUET_COLUMNS
@@ -757,7 +757,6 @@ def load_parquet_to_l0(
 
     # Build INSERT statement based on dataset type
     if is_subvenciones:
-        logger.info("Ingestando subvenciones en la base de datos...")
         insert_cols = [c for c, _ in column_defs]
         placeholders = ", ".join(["%s"] * len(insert_cols))
         quoted = ", ".join(f'"{c}"' for c in insert_cols)
@@ -933,10 +932,4 @@ def load_parquet_to_l0(
                         inserted += cur.rowcount or 0
                     conn.commit()
     skipped = total_candidates - inserted
-
-    logger.info(
-        "Ingesta completada: %s filas insertadas, %s omitidas (ya existentes).",
-        inserted,
-        skipped,
-    )
     return (inserted, skipped)
