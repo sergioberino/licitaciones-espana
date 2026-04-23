@@ -109,17 +109,17 @@ SUBVENCIONES_PARQUET_COLUMNS = [
     # Información básica
     ("sede_electronica", "TEXT"),
     ("fecha_recepcion", "DATE"),
-    # Instrumentos y tipo
-    ("instrumentos", "JSONB"),
+    # Instrumentos y tipo (normalizado)
+    ("instrumento_id", "SMALLINT"),
     ("tipo_convocatoria", "TEXT"),
     ("presupuesto_total", "NUMERIC"),
     ("mrr", "BOOLEAN"),
     ("descripcion", "TEXT"),
     ("descripcion_leng", "TEXT"),
-    # Beneficiarios y sectores
-    ("tipos_beneficiarios", "JSONB"),
-    ("sectores", "JSONB"),
-    ("regiones", "JSONB"),
+    # Beneficiarios y sectores (arrays normalizados)
+    ("tipos_beneficiarios", "SMALLINT[]"),
+    ("sectores", "VARCHAR(10)[]"),
+    ("regiones", "VARCHAR(10)[]"),
     # Finalidad y bases reguladoras
     ("descripcion_finalidad", "TEXT"),
     ("descripcion_bases_reguladoras", "TEXT"),
@@ -135,11 +135,11 @@ SUBVENCIONES_PARQUET_COLUMNS = [
     # Ayuda de estado
     ("ayuda_estado", "TEXT"),
     ("url_ayuda_estado", "TEXT"),
-    # Fondos y reglamento
+    # Fondos y reglamento (simplificado)
     ("fondos", "JSONB"),
-    ("reglamento", "JSONB"),
-    # Objetivos y sectores productos
-    ("objetivos", "JSONB"),
+    ("reglamento", "TEXT"),
+    # Objetivos y sectores productos (simplificado)
+    ("objetivos", "TEXT"),
     ("sectores_productos", "JSONB"),
     # Documentos y anuncios
     ("documentos", "JSONB"),
@@ -805,7 +805,18 @@ def load_parquet_to_l0(
                                 vals.append(None)
                                 continue
                             pg_type = next((t for col, t in column_defs if col == c), "TEXT")
-                            if "INT" in pg_type or "BIGINT" in pg_type:
+
+                            # Handle arrays (SMALLINT[], VARCHAR[], etc.)
+                            if "[]" in pg_type:
+                                # Convert to list if not already
+                                if isinstance(v, list):
+                                    vals.append(v if v else None)  # Empty list → None
+                                elif v is None:
+                                    vals.append(None)
+                                else:
+                                    # Single value → list with one element
+                                    vals.append([v])
+                            elif "INT" in pg_type or "BIGINT" in pg_type:
                                 try:
                                     vals.append(int(v))
                                 except (TypeError, ValueError):

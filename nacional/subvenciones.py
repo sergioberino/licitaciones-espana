@@ -79,7 +79,6 @@ def _load_instrumentos_map() -> dict[str, int]:
 
             # Create mapping: descripcion (stripped) -> id
             _instrumentos_map_cache = {row[1].strip(): row[0] for row in rows}
-            _log("INFO", f"Cargados {len(_instrumentos_map_cache)} instrumentos desde BD")
             return _instrumentos_map_cache
 
         except Exception as e:
@@ -111,7 +110,6 @@ def _load_beneficiarios_map() -> dict[str, int]:
 
             # Create mapping: descripcion (stripped) -> id
             _beneficiarios_map_cache = {row[1].strip(): row[0] for row in rows}
-            _log("INFO", f"Cargados {len(_beneficiarios_map_cache)} beneficiarios desde BD")
             return _beneficiarios_map_cache
 
         except Exception as e:
@@ -964,8 +962,6 @@ def main():
 
     # fecha_desde = f"01/01/{ano_inicio}"
     fecha_desde = "17/04/2026"
-    _log("INFO", f"Fechas: {fecha_desde} - {fecha_hasta}")
-    _log("INFO", f"Conjunto: {args.conjunto}")
 
     try:
         params = SearchParams(
@@ -973,7 +969,7 @@ def main():
             pageSize=10000,
             fechaDesde=fecha_desde,
             fechaHasta=fecha_hasta,
-            direccion="asc",  # For historical scraping, use ascending order
+            direccion="asc",
         )
 
         parquet_paths = scrape_historico(params)
