@@ -4,6 +4,7 @@ PK surrogada: l0_id BIGSERIAL PRIMARY KEY + natural_id TEXT UNIQUE NOT NULL (URL
 Deriva prefijos CPV (principal_prefix4/6, secondary_prefix6), asegura tablas con índices e inserta con ON CONFLICT (natural_id) DO NOTHING.
 """
 
+import json
 import logging
 import os
 import re
@@ -808,8 +809,17 @@ def load_parquet_to_l0(
 
                             # Handle arrays (SMALLINT[], VARCHAR[], etc.)
                             if "[]" in pg_type:
+                                # Parse if it's a JSON string (from serialization)
+                                if isinstance(v, str):
+                                    try:
+                                        v = json.loads(v)
+                                    except (json.JSONDecodeError, TypeError):
+                                        pass
+
                                 # Convert numpy arrays to Python lists
                                 converted = _convert_numpy_to_python(v)
+
+                                # Handle None or empty arrays
                                 if converted is None or (
                                     isinstance(converted, list) and len(converted) == 0
                                 ):

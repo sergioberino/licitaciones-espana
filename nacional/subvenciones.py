@@ -585,6 +585,13 @@ def scrape_historico(params: SearchParams) -> list[Path]:
             "documentos",
             "anuncios",
         ]
+        
+        # Array columns that need serialization for parquet
+        array_cols = [
+            "tipos_beneficiarios",
+            "sectores",
+            "regiones",
+        ]
 
         def save_batch(records, batch_number):
             """Save current batch to parquet and clear buffer."""
@@ -595,6 +602,11 @@ def scrape_historico(params: SearchParams) -> list[Path]:
 
             # Serialize JSONB columns
             for col in jsonb_cols:
+                if col in df.columns:
+                    df[col] = df[col].apply(lambda x: json.dumps(x) if x is not None else None)
+            
+            # Serialize array columns to JSON strings for parquet compatibility
+            for col in array_cols:
                 if col in df.columns:
                     df[col] = df[col].apply(lambda x: json.dumps(x) if x is not None else None)
 
