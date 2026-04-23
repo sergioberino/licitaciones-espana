@@ -173,25 +173,24 @@ def _extract_beneficiarios_ids(beneficiarios_array) -> list[int] | None:
     return ids if ids else None
 
 
-def _extract_nut_codes(sectores_array) -> list[str] | None:
+def _extract_nut_codes(regiones_array) -> list[str] | None:
     """
-    Extract NUT codes (geographic regions) from API array.
-    In API, this data incorrectly comes in 'sectores' field.
+    Extract NUT codes (geographic regions) from API regiones array.
 
     Args:
-        sectores_array: Array from API (e.g., [{"descripcion": "ES618 - Sevilla"}])
+        regiones_array: Array from API (e.g., [{"descripcion": "ES41 - CASTILLA Y LEON"}])
 
     Returns:
         List of NUT codes or None if empty
     """
-    if not sectores_array or not isinstance(sectores_array, list):
+    if not regiones_array or not isinstance(regiones_array, list):
         return None
 
-    if len(sectores_array) == 0:
+    if len(regiones_array) == 0:
         return None
 
     nut_codes = []
-    for item in sectores_array:
+    for item in regiones_array:
         if isinstance(item, dict):
             descripcion = item.get("descripcion", "").strip()
             # Extract NUT code (format: "ES618 - Sevilla" -> "ES618")
@@ -203,26 +202,25 @@ def _extract_nut_codes(sectores_array) -> list[str] | None:
     return nut_codes if nut_codes else None
 
 
-def _extract_sector_codes(regiones_array) -> list[str] | None:
+def _extract_sector_codes(sectores_array) -> list[str] | None:
     """
-    Extract sector CNAE codes (economic sectors) from API array.
-    In API, this data incorrectly comes in 'regiones' field.
+    Extract sector CNAE codes (economic sectors) from API sectores array.
     Normalizes decimal codes: '96.4' -> '9640', '96.18' -> '9618'
 
     Args:
-        regiones_array: Array from API (e.g., [{"codigo": "I", "descripcion": "HOSTELERÍA"}])
+        sectores_array: Array from API (e.g., [{"codigo": "I", "descripcion": "HOSTELERÍA"}])
 
     Returns:
         List of normalized sector codes or None if empty
     """
-    if not regiones_array or not isinstance(regiones_array, list):
+    if not sectores_array or not isinstance(sectores_array, list):
         return None
 
-    if len(regiones_array) == 0:
+    if len(sectores_array) == 0:
         return None
 
     sector_codes = []
-    for item in regiones_array:
+    for item in sectores_array:
         if isinstance(item, dict):
             codigo = item.get("codigo", "").strip()
             if codigo:
@@ -452,14 +450,14 @@ def fetch_convocatoria_detalle(
                 "mrr": data.get("mrr"),
                 "descripcion": data.get("descripcion"),
                 "descripcion_leng": data.get("descripcionLeng"),
-                # Note: API has bug - sectores/regiones are swapped, we correct it here
+                # Extract arrays
                 "tipos_beneficiarios": _extract_beneficiarios_ids(data.get("tiposBeneficiarios")),
                 "sectores": _extract_sector_codes(
-                    data.get("regiones")
-                ),  # Correct: extract CNAE from API 'regiones'
-                "regiones": _extract_nut_codes(
                     data.get("sectores")
-                ),  # Correct: extract NUT from API 'sectores'
+                ),  # Extract CNAE codes from API 'sectores'
+                "regiones": _extract_nut_codes(
+                    data.get("regiones")
+                ),  # Extract NUT codes from API 'regiones'
                 "descripcion_finalidad": data.get("descripcionFinalidad"),
                 "descripcion_bases_reguladoras": data.get("descripcionBasesReguladoras"),
                 "url_bases_reguladoras": data.get("urlBasesReguladoras"),
@@ -585,13 +583,6 @@ def scrape_historico(params: SearchParams) -> list[Path]:
             "documentos",
             "anuncios",
         ]
-        
-        # Array columns that need serialization for parquet
-        array_cols = [
-            "tipos_beneficiarios",
-            "sectores",
-            "regiones",
-        ]
 
         def save_batch(records, batch_number):
             """Save current batch to parquet and clear buffer."""
@@ -602,11 +593,6 @@ def scrape_historico(params: SearchParams) -> list[Path]:
 
             # Serialize JSONB columns
             for col in jsonb_cols:
-                if col in df.columns:
-                    df[col] = df[col].apply(lambda x: json.dumps(x) if x is not None else None)
-            
-            # Serialize array columns to JSON strings for parquet compatibility
-            for col in array_cols:
                 if col in df.columns:
                     df[col] = df[col].apply(lambda x: json.dumps(x) if x is not None else None)
 
