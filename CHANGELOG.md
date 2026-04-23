@@ -7,6 +7,8 @@ Todos los cambios notables del CLI y del microservicio ETL se documentan aquí.
 ### Resumen
 
 - **Ingesta completa de datos de subvenciones:** migración de 6 a 32 campos por convocatoria, guardando TODOS los datos detallados (instrumentos, beneficiarios, sectores, regiones, presupuesto, documentos, anuncios) en lugar de solo datos ligeros.
+- **Normalización de schema:** campos JSONB convertidos a estructuras tipadas (FKs, arrays PostgreSQL nativos) para mejorar rendimiento de consultas e integridad referencial.
+- **Simplificación de campos:** extracción de valores únicos (primer instrumento, primer objetivo, solo descripción) para reducir complejidad y redundancia.
 - **Nueva arquitectura de scraping en 2 fases:** fase 1 obtiene IDs ligeros (`/busqueda`), fase 2 obtiene detalles completos por cada ID (`/convocatorias`).
 - **Optimizaciones de rendimiento:** rate limiting adaptativo global thread-safe, multithreading producer-consumer para scraping histórico, carga paralela de parquets, consulta optimizada 250x más rápida.
 - **Eliminación de dependencia API externa:** con datos completos en BD, Licitia ya no necesita llamar a API externa para obtener detalles de subvenciones.
@@ -15,6 +17,14 @@ Todos los cambios notables del CLI y del microservicio ETL se documentan aquí.
 
 - **`nacional/subvenciones.py`:**
   - Nueva función `fetch_convocatoria_detalle()`: obtiene información completa de una convocatoria desde endpoint de detalle con rate limiting adaptativo.
+  - Funciones de normalización con cachés en memoria:
+    - `_load_instrumentos_map()` y `_extract_instrumento_id()`: mapeo de descripciones JSONB a IDs de `dim.instrumentos_subvenciones`, extrae solo el primer instrumento.
+    - `_load_beneficiarios_map()` y `_extract_beneficiarios_ids()`: mapeo de descripciones JSONB a array de IDs de `dim.beneficiarios_subvenciones`.
+    - `_extract_nut_codes()`: extracción de códigos NUT (regiones) desde API.
+    - `_extract_sector_codes()`: extracción de códigos CNAE (sectores) con normalización de decimales (`'96.4'` → `'9640'`).
+    - `_extract_reglamento_descripcion()`: extrae solo campo `descripcion`, descarta campo `orden`.
+    - `_extract_objetivos_descripcion()`: extrae solo descripción del primer objetivo, descarta objetivos adicionales.
+    - `_normalize_empty_jsonb()`: convierte arrays vacíos `[]` a `None`.
   - Funciones helper `_flatten_organo()` y `_convert_to_json_serializable()` para procesamiento de datos.
   - Rate limiting adaptativo global con `_api_delay_seconds` y `_api_delay_lock` (thread-safe).
   - Pattern producer-consumer en `scrape_historico`: thread fetcher obtiene detalles y pone en Queue, thread saver consume Queue y genera parquets por batches.
@@ -25,8 +35,16 @@ Todos los cambios notables del CLI y del microservicio ETL se documentan aquí.
   - Solo activo para `nacional/subvenciones` con múltiples archivos parquet.
 
 - **`schemas/012_nacional_subvenciones.sql`:**
-  - 26 campos nuevos: `sede_electronica`, `tipo_convocatoria`, `presupuesto_total`.
-  - 10 arrays JSONB: `instrumentos`, `tipos_beneficiarios`, `sectores`, `regiones`, `fondos`, `reglamento`, `objetivos`, `sectores_productos`, `documentos`, `anuncios`.
+  - Campos normalizados con estructuras tipadas:
+    - `instrumento_id SMALLINT`: FK a `dim.instrumentos_subvenciones(id)`, extrae solo el primer instrumento del array JSONB.
+    - `tipos_beneficiarios SMALLINT[]`: array de FKs a `dim.beneficiarios_subvenciones(id)`, mapeo de descripciones a IDs.
+    - `sectores VARCHAR(10)[]`: array de códigos CNAE/NACE con normalización de decimales, referencia a `dim.cnae_dim(codigo)`.
+    - `regiones VARCHAR(10)[]`: array de códigos NUT, FK a `dim.nuts_spain(geocode)`.
+    - `reglamento TEXT`: solo campo `descripcion`, descartado campo `orden`.
+    - `objetivos TEXT`: solo descripción del primer objetivo, descartados objetivos adicionales.
+  - Campos JSONB optimizados: arrays vacíos `[]` convertidos a `NULL` en `fondos`, `sectores_productos`, `documentos`, `anuncios`.
+  - Índices GIN en arrays para búsquedas eficientes con operadores `@>`, `&&`, `ANY()`.
+  - 26 campos adicionales: `sede_electronica`, `tipo_convocatoria`, `presupuesto_total`.
   - Campos de bases reguladoras: `descripcion_finalidad`, `descripcion_bases_reguladoras`, `url_bases_reguladoras`.
   - Estado y fechas: `abierto`, `se_publica_diario_oficial`, `fecha_inicio_solicitud`, `fecha_fin_solicitud`, `text_inicio`, `text_fin`.
   - Ayuda de estado: `ayuda_estado`, `url_ayuda_estado`.
@@ -41,7 +59,7 @@ Todos los cambios notables del CLI y del microservicio ETL se documentan aquí.
 
 - **`scrape_historico`:** generación de múltiples parquets por batches (max 100 registros cada uno) en lugar de un solo parquet grande. Nomenclatura: `_part_subvenciones_000.parquet`, `_part_subvenciones_001.parquet`, etc.
 
-- **`etl/ingest_l0.py`:** actualizado `SUBVENCIONES_PARQUET_COLUMNS` con las 32 columnas del nuevo schema.
+- **`etl/ingest_l0.py`:** actualizado `SUBVENCIONES_PARQUET_COLUMNS` con tipos normalizados (SMALLINT, SMALLINT[], VARCHAR[], TEXT). Lógica de inserción mejorada para manejar arrays PostgreSQL nativos (conversión automática de numpy arrays a listas Python, deserialización de JSON cuando necesario).
 
 ### Eliminado
 
@@ -58,7 +76,15 @@ Todos los cambios notables del CLI y del microservicio ETL se documentan aquí.
 
 ### Migración requerida (BREAKING CHANGE)
 
-**ATENCIÓN:** Estructura de tabla incompatible (6 → 32 campos). Datos existentes no son compatibles.
+**ATENCIÓN:** Estructura de tabla incompatible (6 → 32 campos, JSONB → estructuras tipadas). Datos existentes no son compatibles.
+
+**Simplificaciones aplicadas:**
+
+- Solo se guarda el **primer instrumento** del array (campo `instrumento_id`).
+- Solo se guarda la **descripción del primer objetivo** (campo `objetivos TEXT`).
+- Campo `reglamento`: solo se guarda `descripcion`, se descarta `orden`.
+- Códigos CNAE con decimales se normalizan automáticamente (`'96.4'` → `'9640'`).
+- Arrays vacíos `[]` se convierten a `NULL`.
 
 1. Borrar datos antiguos:
 
@@ -77,7 +103,7 @@ Todos los cambios notables del CLI y del microservicio ETL se documentan aquí.
    docker compose exec etl licitia-etl ingest nacional subvenciones --anos 2020-2026
    ```
 
-**Nota:** El proceso de migración puede tardar varias horas dependiendo de los años a ingestar.
+**Nota:** El proceso de migración puede tardar varias horas dependiendo de los años a ingestar. Ver `ignored/CAMBIOS_SCHEMA_SUBVENCIONES.md` para guía completa de migración.
 
 ---
 
