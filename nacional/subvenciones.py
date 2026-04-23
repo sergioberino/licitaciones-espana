@@ -46,6 +46,257 @@ OUTPUT_DIR = _tmp_base / "output"
 _api_delay_seconds = 0  # Start with no delay, adjust only if rate limited
 _api_delay_lock = threading.Lock()  # Thread-safe access to delay variable
 
+# Cache para mapeo de instrumentos (cargado desde BD)
+_instrumentos_map_cache = None
+_instrumentos_map_lock = threading.Lock()
+
+# Cache para mapeo de beneficiarios (cargado desde BD)
+_beneficiarios_map_cache = None
+_beneficiarios_map_lock = threading.Lock()
+
+
+def _load_instrumentos_map() -> dict[str, int]:
+    """
+    Load instrumentos mapping from database.
+    Cached globally to avoid repeated queries.
+
+    Returns:
+        Dictionary mapping descripcion -> id
+    """
+    global _instrumentos_map_cache
+
+    with _instrumentos_map_lock:
+        if _instrumentos_map_cache is not None:
+            return _instrumentos_map_cache
+
+        try:
+            conn = psycopg2.connect(get_database_url())
+            cur = conn.cursor()
+            cur.execute("SELECT id, descripcion FROM dim.instrumentos_subvenciones")
+            rows = cur.fetchall()
+            cur.close()
+            conn.close()
+
+            # Create mapping: descripcion (stripped) -> id
+            _instrumentos_map_cache = {row[1].strip(): row[0] for row in rows}
+            _log("INFO", f"Cargados {len(_instrumentos_map_cache)} instrumentos desde BD")
+            return _instrumentos_map_cache
+
+        except Exception as e:
+            _log("ERROR", f"Error cargando instrumentos desde BD: {e}")
+            return {}
+
+
+def _load_beneficiarios_map() -> dict[str, int]:
+    """
+    Load beneficiarios mapping from database.
+    Cached globally to avoid repeated queries.
+
+    Returns:
+        Dictionary mapping descripcion -> id
+    """
+    global _beneficiarios_map_cache
+
+    with _beneficiarios_map_lock:
+        if _beneficiarios_map_cache is not None:
+            return _beneficiarios_map_cache
+
+        try:
+            conn = psycopg2.connect(get_database_url())
+            cur = conn.cursor()
+            cur.execute("SELECT id, descripcion FROM dim.beneficiarios_subvenciones")
+            rows = cur.fetchall()
+            cur.close()
+            conn.close()
+
+            # Create mapping: descripcion (stripped) -> id
+            _beneficiarios_map_cache = {row[1].strip(): row[0] for row in rows}
+            _log("INFO", f"Cargados {len(_beneficiarios_map_cache)} beneficiarios desde BD")
+            return _beneficiarios_map_cache
+
+        except Exception as e:
+            _log("ERROR", f"Error cargando beneficiarios desde BD: {e}")
+            return {}
+
+
+def _extract_instrumento_id(instrumentos_array) -> int | None:
+    """
+    Extract instrumento_id from API instrumentos array.
+    Takes the first element's descripcion and maps it to ID from database.
+
+    Args:
+        instrumentos_array: Array from API (e.g., [{"descripcion": "..."}])
+
+    Returns:
+        Integer ID or None if not found
+    """
+    if not instrumentos_array or not isinstance(instrumentos_array, list):
+        return None
+
+    if len(instrumentos_array) == 0:
+        return None
+
+    first_instrumento = instrumentos_array[0]
+    if not isinstance(first_instrumento, dict):
+        return None
+
+    descripcion = first_instrumento.get("descripcion", "").strip()
+    instrumentos_map = _load_instrumentos_map()
+    return instrumentos_map.get(descripcion)
+
+
+def _extract_beneficiarios_ids(beneficiarios_array) -> list[int] | None:
+    """
+    Extract beneficiarios IDs from API tipos_beneficiarios array.
+    Maps all descriptions to their IDs.
+
+    Args:
+        beneficiarios_array: Array from API (e.g., [{"descripcion": "..."}])
+
+    Returns:
+        List of integer IDs or None if empty
+    """
+    if not beneficiarios_array or not isinstance(beneficiarios_array, list):
+        return None
+
+    if len(beneficiarios_array) == 0:
+        return None
+
+    beneficiarios_map = _load_beneficiarios_map()
+    ids = []
+
+    for item in beneficiarios_array:
+        if isinstance(item, dict):
+            descripcion = item.get("descripcion", "").strip()
+            beneficiario_id = beneficiarios_map.get(descripcion)
+            if beneficiario_id:
+                ids.append(beneficiario_id)
+
+    return ids if ids else None
+
+
+def _extract_nut_codes(sectores_array) -> list[str] | None:
+    """
+    Extract NUT codes (geographic regions) from API array.
+    In API, this data incorrectly comes in 'sectores' field.
+
+    Args:
+        sectores_array: Array from API (e.g., [{"descripcion": "ES618 - Sevilla"}])
+
+    Returns:
+        List of NUT codes or None if empty
+    """
+    if not sectores_array or not isinstance(sectores_array, list):
+        return None
+
+    if len(sectores_array) == 0:
+        return None
+
+    nut_codes = []
+    for item in sectores_array:
+        if isinstance(item, dict):
+            descripcion = item.get("descripcion", "").strip()
+            # Extract NUT code (format: "ES618 - Sevilla" -> "ES618")
+            if " - " in descripcion:
+                nut_code = descripcion.split(" - ")[0].strip()
+                if nut_code:
+                    nut_codes.append(nut_code)
+
+    return nut_codes if nut_codes else None
+
+
+def _extract_sector_codes(regiones_array) -> list[str] | None:
+    """
+    Extract sector CNAE codes (economic sectors) from API array.
+    In API, this data incorrectly comes in 'regiones' field.
+    Normalizes decimal codes: '96.4' -> '9640', '96.18' -> '9618'
+
+    Args:
+        regiones_array: Array from API (e.g., [{"codigo": "I", "descripcion": "HOSTELERÍA"}])
+
+    Returns:
+        List of normalized sector codes or None if empty
+    """
+    if not regiones_array or not isinstance(regiones_array, list):
+        return None
+
+    if len(regiones_array) == 0:
+        return None
+
+    sector_codes = []
+    for item in regiones_array:
+        if isinstance(item, dict):
+            codigo = item.get("codigo", "").strip()
+            if codigo:
+                # Normalizar códigos con decimal (ej: '96.4' -> '9640', '96.18' -> '9618')
+                if "." in codigo:
+                    codigo_sin_punto = codigo.replace(".", "")
+                    # Si después de quitar el punto tiene 3 dígitos, añadir un 0 al final
+                    if len(codigo_sin_punto) == 3:
+                        codigo = codigo_sin_punto + "0"
+                    else:
+                        codigo = codigo_sin_punto
+
+                sector_codes.append(codigo)
+
+    return sector_codes if sector_codes else None
+
+
+def _extract_reglamento_descripcion(reglamento_obj) -> str | None:
+    """
+    Extract descripcion from reglamento object.
+
+    Args:
+        reglamento_obj: Object from API (e.g., {"orden": null, "descripcion": "..."})
+
+    Returns:
+        String with descripcion or None
+    """
+    if not reglamento_obj or not isinstance(reglamento_obj, dict):
+        return None
+
+    descripcion = reglamento_obj.get("descripcion", "").strip()
+    return descripcion if descripcion else None
+
+
+def _extract_objetivos_descripcion(objetivos_array) -> str | None:
+    """
+    Extract descripcion from first objetivo in array.
+
+    Args:
+        objetivos_array: Array from API (e.g., [{"descripcion": "..."}])
+
+    Returns:
+        String with first descripcion or None
+    """
+    if not objetivos_array or not isinstance(objetivos_array, list):
+        return None
+
+    if len(objetivos_array) == 0:
+        return None
+
+    first_objetivo = objetivos_array[0]
+    if isinstance(first_objetivo, dict):
+        descripcion = first_objetivo.get("descripcion", "").strip()
+        return descripcion if descripcion else None
+
+    return None
+
+
+def _normalize_empty_jsonb(value):
+    """
+    Convert empty arrays [] to None for cleaner database storage.
+
+    Args:
+        value: JSONB value (typically array or dict)
+
+    Returns:
+        None if empty array, otherwise the original value
+    """
+    if isinstance(value, list) and len(value) == 0:
+        return None
+    return value
+
 
 def _ensure_output_dir():
     """Ensure output directory exists."""
@@ -197,17 +448,20 @@ def fetch_convocatoria_detalle(
                 "nivel3": nivel3,
                 "sede_electronica": data.get("sedeElectronica"),
                 "fecha_recepcion": data.get("fechaRecepcion"),
-                "instrumentos": _convert_to_json_serializable(data.get("instrumentos")),
+                "instrumento_id": _extract_instrumento_id(data.get("instrumentos")),
                 "tipo_convocatoria": data.get("tipoConvocatoria"),
                 "presupuesto_total": data.get("presupuestoTotal"),
                 "mrr": data.get("mrr"),
                 "descripcion": data.get("descripcion"),
                 "descripcion_leng": data.get("descripcionLeng"),
-                "tipos_beneficiarios": _convert_to_json_serializable(
-                    data.get("tiposBeneficiarios")
-                ),
-                "sectores": _convert_to_json_serializable(data.get("sectores")),
-                "regiones": _convert_to_json_serializable(data.get("regiones")),
+                # Note: API has bug - sectores/regiones are swapped, we correct it here
+                "tipos_beneficiarios": _extract_beneficiarios_ids(data.get("tiposBeneficiarios")),
+                "sectores": _extract_sector_codes(
+                    data.get("regiones")
+                ),  # Correct: extract CNAE from API 'regiones'
+                "regiones": _extract_nut_codes(
+                    data.get("sectores")
+                ),  # Correct: extract NUT from API 'sectores'
                 "descripcion_finalidad": data.get("descripcionFinalidad"),
                 "descripcion_bases_reguladoras": data.get("descripcionBasesReguladoras"),
                 "url_bases_reguladoras": data.get("urlBasesReguladoras"),
@@ -219,12 +473,18 @@ def fetch_convocatoria_detalle(
                 "text_fin": data.get("textFin"),
                 "ayuda_estado": data.get("ayudaEstado"),
                 "url_ayuda_estado": data.get("urlAyudaEstado"),
-                "fondos": _convert_to_json_serializable(data.get("fondos")),
-                "reglamento": _convert_to_json_serializable(data.get("reglamento")),
-                "objetivos": _convert_to_json_serializable(data.get("objetivos")),
-                "sectores_productos": _convert_to_json_serializable(data.get("sectoresProductos")),
-                "documentos": _convert_to_json_serializable(data.get("documentos")),
-                "anuncios": _convert_to_json_serializable(data.get("anuncios")),
+                "fondos": _normalize_empty_jsonb(_convert_to_json_serializable(data.get("fondos"))),
+                "reglamento": _extract_reglamento_descripcion(data.get("reglamento")),
+                "objetivos": _extract_objetivos_descripcion(data.get("objetivos")),
+                "sectores_productos": _normalize_empty_jsonb(
+                    _convert_to_json_serializable(data.get("sectoresProductos"))
+                ),
+                "documentos": _normalize_empty_jsonb(
+                    _convert_to_json_serializable(data.get("documentos"))
+                ),
+                "anuncios": _normalize_empty_jsonb(
+                    _convert_to_json_serializable(data.get("anuncios"))
+                ),
             }
 
             return record
@@ -322,14 +582,9 @@ def scrape_historico(params: SearchParams) -> list[Path]:
         total_saved = [0]  # Shared between threads
         fetching_done = threading.Event()
 
+        # Only these columns need JSON serialization now
         jsonb_cols = [
-            "instrumentos",
-            "tipos_beneficiarios",
-            "sectores",
-            "regiones",
             "fondos",
-            "reglamento",
-            "objetivos",
             "sectores_productos",
             "documentos",
             "anuncios",
@@ -342,6 +597,7 @@ def scrape_historico(params: SearchParams) -> list[Path]:
 
             df = pd.DataFrame(records)
 
+            # Serialize JSONB columns
             for col in jsonb_cols:
                 if col in df.columns:
                     df[col] = df[col].apply(lambda x: json.dumps(x) if x is not None else None)
@@ -584,21 +840,16 @@ def scrape_diario(params: SearchParams) -> dict[str, int]:
 
         _log("INFO", "Guardando en BD...")
         records_to_insert = []
+        # Only these columns need JSON serialization now
         jsonb_cols = [
-            "instrumentos",
-            "tipos_beneficiarios",
-            "sectores",
-            "regiones",
             "fondos",
-            "reglamento",
-            "objetivos",
             "sectores_productos",
             "documentos",
             "anuncios",
         ]
 
         for record in detailed_records:
-            # Serialize JSONB columns
+            # Serialize JSONB columns only
             for col in jsonb_cols:
                 if record.get(col) is not None:
                     record[col] = json.dumps(record[col])
@@ -611,15 +862,15 @@ def scrape_diario(params: SearchParams) -> dict[str, int]:
                     record.get("nivel3"),
                     record.get("sede_electronica"),
                     record.get("fecha_recepcion"),
-                    record.get("instrumentos"),
+                    record.get("instrumento_id"),
                     record.get("tipo_convocatoria"),
                     record.get("presupuesto_total"),
                     record.get("mrr"),
                     record.get("descripcion"),
                     record.get("descripcion_leng"),
-                    record.get("tipos_beneficiarios"),
-                    record.get("regiones"),
-                    record.get("sectores"),
+                    record.get("tipos_beneficiarios"),  # Array of SMALLINT
+                    record.get("sectores"),  # Array of VARCHAR (CNAE codes)
+                    record.get("regiones"),  # Array of VARCHAR (NUT codes)
                     record.get("descripcion_finalidad"),
                     record.get("descripcion_bases_reguladoras"),
                     record.get("url_bases_reguladoras"),
@@ -643,7 +894,7 @@ def scrape_diario(params: SearchParams) -> dict[str, int]:
         insert_sql = """
             INSERT INTO l0.nacional_subvenciones 
             (id, nivel1, nivel2, nivel3, sede_electronica, fecha_recepcion,
-             instrumentos, tipo_convocatoria, presupuesto_total, mrr, descripcion, descripcion_leng,
+             instrumento_id, tipo_convocatoria, presupuesto_total, mrr, descripcion, descripcion_leng,
              tipos_beneficiarios, sectores, regiones, descripcion_finalidad, descripcion_bases_reguladoras,
              url_bases_reguladoras, se_publica_diario_oficial, abierto, fecha_inicio_solicitud,
              fecha_fin_solicitud, text_inicio, text_fin, ayuda_estado, url_ayuda_estado,
@@ -704,13 +955,15 @@ def main():
     if len(partes) > 1:
         ano_fin = int(partes[1])
         if ano_fin == datetime.now().year:
-            fecha_hasta = datetime.now().strftime("%d/%m/%Y")
+            # fecha_hasta = datetime.now().strftime("%d/%m/%Y")
+            fecha_hasta = "21/04/2026"
         else:
             fecha_hasta = f"31/12/{ano_fin}"
     else:
         fecha_hasta = datetime.now().strftime("%d/%m/%Y")
 
-    fecha_desde = f"01/01/{ano_inicio}"
+    # fecha_desde = f"01/01/{ano_inicio}"
+    fecha_desde = "17/04/2026"
     _log("INFO", f"Fechas: {fecha_desde} - {fecha_hasta}")
     _log("INFO", f"Conjunto: {args.conjunto}")
 
