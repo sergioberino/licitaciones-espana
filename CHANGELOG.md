@@ -4,6 +4,7 @@ Todos los cambios notables del CLI y del microservicio ETL se documentan aquí.
 
 ## [1.5.2] — 2026-04-23
 
+<<<<<<< fix/flujo-carga-subvenciones
 ### Resumen
 
 - **Ingesta completa de datos de subvenciones:** migración de 6 a 32 campos por convocatoria, guardando TODOS los datos detallados (instrumentos, beneficiarios, sectores, regiones, presupuesto, documentos, anuncios) en lugar de solo datos ligeros.
@@ -107,6 +108,11 @@ Todos los cambios notables del CLI y del microservicio ETL se documentan aquí.
    ```
 
 **Nota:** El proceso de migración puede tardar varias horas dependiendo de los años a ingestar. Ver `ignored/CAMBIOS_SCHEMA_SUBVENCIONES.md` para guía completa de migración.
+=======
+### Corregido
+
+- **Ingesta CNAE — secciones excluidas:** el filtro `isdigit()` en `_filter_numeric_codes` descartaba todos los códigos de sección (letras `A`–`U`), cargando únicamente divisiones, grupos y clases numéricas. Ahora se ingestian todos los niveles jerárquicos de la clasificación (secciones, divisiones, grupos y clases). Función renombrada a `_extract_codes` para reflejar el comportamiento real.
+>>>>>>> main
 
 ---
 
