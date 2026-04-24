@@ -57,6 +57,7 @@ INIT_MIGRATIONS = (
     "019_dim_instrumentos_subvenciones.sql",
     "020_dim_politica_gastos.sql",
     "021_scheduler_incidents.sql",
+    "022_llm_resumen_logs.sql",
 )
 
 BORME_MIGRATIONS = ("010_borme.sql",)
@@ -968,9 +969,7 @@ def cmd_ingest(args: argparse.Namespace) -> int:
 
                     pl = get_scheduler_log_path()
                     pl.parent.mkdir(parents=True, exist_ok=True)
-                    ts = datetime.now(ZoneInfo("Europe/Madrid")).strftime(
-                        "%Y-%m-%d %H:%M:%S %Z"
-                    )
+                    ts = datetime.now(ZoneInfo("Europe/Madrid")).strftime("%Y-%m-%d %H:%M:%S %Z")
                     st = ingest_result[0] or "failed"
                     line = (
                         f"[{ts}] [INFO] Ingest terminado: {conjunto} {subconjunto} run_id={run_id} "
