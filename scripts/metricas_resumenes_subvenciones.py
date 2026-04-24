@@ -67,7 +67,18 @@ def _fmt_time(v: float) -> str:
 
 
 def _prices_for(model: str) -> dict[str, float] | None:
-    return MODEL_PRICES.get(model)
+    """Busca el precio por nombre exacto o por prefijo seguido de '-' o dígito.
+
+    Ejemplo: 'gpt-4.1-2025-04-14' → coincide con 'gpt-4.1'.
+    Las claves más largas tienen prioridad para evitar que 'gpt-4.1' absorba
+    'gpt-4.1-mini'.
+    """
+    if model in MODEL_PRICES:
+        return MODEL_PRICES[model]
+    for key in sorted(MODEL_PRICES, key=len, reverse=True):
+        if model.startswith(key + "-"):
+            return MODEL_PRICES[key]
+    return None
 
 
 # ---------------------------------------------------------------------------
