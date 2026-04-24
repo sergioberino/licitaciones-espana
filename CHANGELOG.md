@@ -37,6 +37,10 @@ Todos los cambios notables del CLI y del microservicio ETL se documentan aquí.
   - Soporte ThreadPool (3 workers) para carga paralela de múltiples parquets de subvenciones.
   - Solo activo para `nacional/subvenciones` con múltiples archivos parquet.
 
+- **`schemas/022_llm_resumen_logs.sql`:** nueva tabla `ops.llm_resumen_subvenciones_logs` para registrar logs de generación de resúmenes de subvenciones mediante LLM (tokens de entrada/salida, modelo usado y tiempo de procesamiento). PK compartida con `l0.nacional_subvenciones(id)`.
+
+- **`scripts/metricas_resumenes_subvenciones.py`:** script que genera un informe Markdown (`MétricasResumenesSubvenciónes-<fecha>.md`) con métricas de coste por modelo (totales, medias y medianas de tokens y tiempo, con precio en USD por millón de tokens).
+
 - **`schemas/012_nacional_subvenciones.sql`:**
   - Campos normalizados con estructuras tipadas:
     - `instrumento_id SMALLINT`: FK a `dim.instrumentos_subvenciones(id)`, extrae solo el primer instrumento del array JSONB.
