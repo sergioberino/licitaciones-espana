@@ -54,6 +54,10 @@ _instrumentos_map_lock = threading.Lock()
 _beneficiarios_map_cache = None
 _beneficiarios_map_lock = threading.Lock()
 
+# Cache para mapeo de política de gastos (cargado desde BD)
+_politica_gastos_map_cache = None
+_politica_gastos_map_lock = threading.Lock()
+
 
 def _load_instrumentos_map() -> dict[str, int]:
     """
@@ -115,6 +119,54 @@ def _load_beneficiarios_map() -> dict[str, int]:
         except Exception as e:
             _log("ERROR", f"Error cargando beneficiarios desde BD: {e}")
             return {}
+
+
+def _load_politica_gastos_map() -> dict[str, int]:
+    """
+    Load politica_gastos mapping from database.
+    Cached globally to avoid repeated queries.
+
+    Returns:
+        Dictionary mapping descripcion -> id
+    """
+    global _politica_gastos_map_cache
+
+    with _politica_gastos_map_lock:
+        if _politica_gastos_map_cache is not None:
+            return _politica_gastos_map_cache
+
+        try:
+            conn = psycopg2.connect(get_database_url())
+            cur = conn.cursor()
+            cur.execute("SELECT id, descripcion FROM dim.politica_gastos")
+            rows = cur.fetchall()
+            cur.close()
+            conn.close()
+
+            # Create mapping: descripcion (stripped) -> id
+            _politica_gastos_map_cache = {row[1].strip(): row[0] for row in rows}
+            return _politica_gastos_map_cache
+
+        except Exception as e:
+            _log("ERROR", f"Error cargando politica_gastos desde BD: {e}")
+            return {}
+
+
+def _extract_politica_gastos_id(descripcion_finalidad) -> int | None:
+    """
+    Map descripcionFinalidad text from API to ID in dim.politica_gastos.
+
+    Args:
+        descripcion_finalidad: Text string from API (e.g., "JUSTICIA")
+
+    Returns:
+        Integer ID or None if not found
+    """
+    if not descripcion_finalidad or not isinstance(descripcion_finalidad, str):
+        return None
+
+    politica_gastos_map = _load_politica_gastos_map()
+    return politica_gastos_map.get(descripcion_finalidad.strip())
 
 
 def _extract_instrumento_id(instrumentos_array) -> int | None:
@@ -476,7 +528,7 @@ def fetch_convocatoria_detalle(
                 "regiones": _extract_nut_codes(
                     data.get("regiones")
                 ),  # Extract NUT codes from API 'regiones'
-                "descripcion_finalidad": data.get("descripcionFinalidad"),
+                "politica_gastos": _extract_politica_gastos_id(data.get("descripcionFinalidad")),
                 "descripcion_bases_reguladoras": data.get("descripcionBasesReguladoras"),
                 "url_bases_reguladoras": data.get("urlBasesReguladoras"),
                 "resumen_bases_reguladoras": None,
@@ -896,7 +948,7 @@ def scrape_diario(params: SearchParams) -> dict[str, int]:
                     record.get("tipos_beneficiarios"),  # Array of SMALLINT
                     record.get("sectores"),  # Array of VARCHAR (CNAE codes)
                     record.get("regiones"),  # Array of VARCHAR (NUT codes)
-                    record.get("descripcion_finalidad"),
+                    record.get("politica_gastos"),
                     record.get("descripcion_bases_reguladoras"),
                     record.get("url_bases_reguladoras"),
                     record.get("resumen_bases_reguladoras"),
@@ -919,7 +971,7 @@ def scrape_diario(params: SearchParams) -> dict[str, int]:
             INSERT INTO l0.nacional_subvenciones 
             (id, nivel1, nivel2, nivel3, sede_electronica, fecha_recepcion,
              instrumento_id, tipo_convocatoria, presupuesto_total, mrr, descripcion, descripcion_leng,
-             tipos_beneficiarios, sectores, regiones, descripcion_finalidad, descripcion_bases_reguladoras,
+             tipos_beneficiarios, sectores, regiones, politica_gastos, descripcion_bases_reguladoras,
              url_bases_reguladoras, resumen_bases_reguladoras, se_publica_diario_oficial, abierto, fecha_inicio_solicitud,
              fecha_fin_solicitud, ayuda_estado, url_ayuda_estado,
              fondos, reglamento, objetivos, sectores_productos, documentos, anuncios)
