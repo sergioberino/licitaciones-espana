@@ -53,12 +53,12 @@ def _extract_label_es(name_block: dict | None) -> str | None:
     return texts[0].get("value") if texts else None
 
 
-def _filter_numeric_codes(raw_codes: list[dict]) -> list[tuple[str, str]]:
-    """Filter to numeric-only CNAE codes and return (code, label) tuples."""
+def _extract_codes(raw_codes: list[dict]) -> list[tuple[str, str]]:
+    """Return (code, label) tuples for all CNAE codes with a Spanish label."""
     result = []
     for item in raw_codes:
         code_id = item.get("id", "")
-        if not code_id.isdigit():
+        if not code_id:
             continue
         label = _extract_label_es(item.get("name"))
         if not label:
@@ -82,11 +82,11 @@ def run_cnae_ingest(url: str | None = None) -> dict:
     logger.info("CNAE ingest: fetching from %s", source_url)
 
     raw_codes = _fetch_all_codes(source_url)
-    codes = _filter_numeric_codes(raw_codes)
-    logger.info("CNAE ingest: %d numeric codes after filtering", len(codes))
+    codes = _extract_codes(raw_codes)
+    logger.info("CNAE ingest: %d codes extracted", len(codes))
 
     if not codes:
-        return {"ok": True, "rows": 0, "message": "No numeric CNAE codes found in API response"}
+        return {"ok": True, "rows": 0, "message": "No CNAE codes found in API response"}
 
     conn = psycopg2.connect(db_url)
     try:
