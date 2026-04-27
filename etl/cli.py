@@ -55,6 +55,7 @@ INIT_MIGRATIONS = (
     "019_dim_instrumentos_subvenciones.sql",
     "020_dim_politica_gastos.sql",
     "021_scheduler_incidents.sql",
+    "022_nacional_procedimiento_code_integer.sql",
 )
 
 BORME_MIGRATIONS = ("010_borme.sql",)
@@ -174,6 +175,10 @@ def run_init_db(
             sql = path.read_text(encoding="utf-8")
             try:
                 with conn.cursor() as cur:
+                    cur.execute(
+                        "SELECT set_config('etl.db_schema', %s, false)",
+                        (db_schema,),
+                    )
                     if filename == "003_dim_dir3.sql":
                         cur.execute("DROP TABLE IF EXISTS dim.dim_dir3 CASCADE")
                     cur.execute(sql)

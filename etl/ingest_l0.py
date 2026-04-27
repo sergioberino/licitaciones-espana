@@ -61,7 +61,7 @@ NACIONAL_PARQUET_COLUMNS = [
     ("tipo_contrato_code", "TEXT"),
     ("tipo_contrato", "TEXT"),
     ("subtipo_code", "TEXT"),
-    ("procedimiento_code", "TEXT"),
+    ("procedimiento_code", "INTEGER"),
     ("procedimiento", "TEXT"),
     ("estado_code", "TEXT"),
     ("estado", "TEXT"),
@@ -855,6 +855,17 @@ def load_parquet_to_l0(
                                 elif c == "ano":
                                     try:
                                         vals.append(int(v))
+                                    except (TypeError, ValueError):
+                                        vals.append(None)
+                                elif c == "procedimiento_code":
+                                    try:
+                                        if v is None or (
+                                            not isinstance(v, (list, dict))
+                                            and pd.isna(v)
+                                        ):
+                                            vals.append(None)
+                                        else:
+                                            vals.append(int(v))
                                     except (TypeError, ValueError):
                                         vals.append(None)
                                 elif isinstance(v, (list, dict)) or hasattr(

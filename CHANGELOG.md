@@ -2,6 +2,19 @@
 
 Todos los cambios notables del CLI y del microservicio ETL se documentan aquí.
 
+## [1.5.3] — 2026-04-27
+
+### Corregido
+
+- **L0 nacional — procedimiento de contratación (PLACSP / CODICE):** el diccionario de códigos `cbc:ProcedureCode` estaba desalineado respecto al códice vigente (p. ej. **3** = «Negociado sin publicidad», **4** = «Negociado con publicidad»). Se añaden los códigos **7** (Concurso de proyectos) y **8** (Contrato menor). Se mantienen **100** y **999** hasta una auditoría posterior.
+- **`procedimiento_code` en base de datos:** tipo **INTEGER** en el esquema L0 de tablas `nacional_*` (excepto `nacional_subvenciones`). Migración **`022_nacional_procedimiento_code_integer.sql`**: convierte columnas existentes de texto a entero de forma segura y **actualiza la columna `procedimiento`** según el mapeo corregido (corrige filas ya insertadas sin depender solo de re-ingesta).
+
+### Mejorado
+
+- **`init-db`:** antes de aplicar cada migración SQL se fija el parámetro de sesión `etl.db_schema` desde **`DB_SCHEMA`**, de modo que los `DO` bloques que iteran tablas `nacional_%` actúan sobre el esquema de trabajo configurado (p. ej. `raw` o `l0`).
+
+---
+
 ## [1.5.2] — 2026-04-23
 
 ### Corregido

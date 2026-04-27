@@ -108,12 +108,40 @@ ESTADOS = {
     'RES': 'Resuelta', 'ANUL': 'Anulada', 'DES': 'Desierta',
 }
 
-PROCEDIMIENTOS = {
-    '1': 'Abierto', '2': 'Restringido', '3': 'Negociado con publicidad',
-    '4': 'Negociado sin publicidad', '5': 'Diálogo competitivo',
-    '6': 'Asociación innovación', '100': 'Basado en acuerdo marco',
-    '999': 'Otros',
+# Códigos según códice CODICE / PLACSP (licitaciones recientes). 100 y 999 se
+# mantienen hasta auditoría (ampliaciones frecuentes en XML).
+PROCEDIMIENTOS: dict[int, str] = {
+    1: "Abierto",
+    2: "Restringido",
+    3: "Negociado sin publicidad",
+    4: "Negociado con publicidad",
+    5: "Diálogo competitivo",
+    6: "Asociación para la innovación",
+    7: "Concurso de proyectos",
+    8: "Contrato menor",
+    100: "Basado en acuerdo marco",
+    999: "Otros",
 }
+
+
+def normalize_procedimiento_code(raw: str | None) -> int | None:
+    """Convierte cbc:ProcedureCode en entero PLACSP o None si vacío / no numérico."""
+    if raw is None:
+        return None
+    s = str(raw).strip()
+    if not s or not s.isdigit():
+        return None
+    return int(s)
+
+
+def procedimiento_etiqueta(code: int | None) -> str | None:
+    """Etiqueta humana para un código de procedimiento; códigos desconocidos → str(code)."""
+    if code is None:
+        return None
+    if code in PROCEDIMIENTOS:
+        return PROCEDIMIENTOS[code]
+    return str(code)
+
 
 # ============================================================================
 # FUNCIONES AUXILIARES
@@ -409,7 +437,9 @@ def parsear_entry(entry):
         
         # Proceso
         process = status.find('cac:TenderingProcess', NS)
-        procedimiento_code = safe_text(process, 'cbc:ProcedureCode')
+        procedimiento_code = normalize_procedimiento_code(
+            safe_text(process, "cbc:ProcedureCode")
+        )
         urgencia = safe_text(process, 'cbc:UrgencyCode')
         
         # Fecha límite
@@ -582,7 +612,7 @@ def parsear_entry(entry):
             'tipo_contrato': TIPOS_CONTRATO.get(tipo_code, tipo_code),
             'subtipo_code': subtipo_code,
             'procedimiento_code': procedimiento_code,
-            'procedimiento': PROCEDIMIENTOS.get(procedimiento_code, procedimiento_code),
+            'procedimiento': procedimiento_etiqueta(procedimiento_code),
             'estado_code': estado_code,
             'estado': ESTADOS.get(estado_code, estado_code),
             'valor_estimado_contrato': valor_estimado_contrato,
@@ -680,7 +710,11 @@ def parsear_entry_cpm(entry):
         cpvs_todos = ';'.join(cpvs) if cpvs else None
 
         process = status.find('cac:TenderingProcess', NS)
-        procedimiento_code = safe_text(process, 'cbc:ProcedureCode') if process is not None else None
+        procedimiento_code = (
+            normalize_procedimiento_code(safe_text(process, "cbc:ProcedureCode"))
+            if process is not None
+            else None
+        )
 
         fecha_limite = safe_text(status, 'cbc:LimitDate')
         valid_notice = status.find('cac-place-ext:ValidNoticeInfo', NS)
@@ -703,7 +737,7 @@ def parsear_entry_cpm(entry):
             'tipo_contrato': TIPOS_CONTRATO.get(tipo_code, tipo_code) if tipo_code else None,
             'subtipo_code': subtipo_code,
             'procedimiento_code': procedimiento_code,
-            'procedimiento': PROCEDIMIENTOS.get(procedimiento_code, procedimiento_code) if procedimiento_code else None,
+            'procedimiento': procedimiento_etiqueta(procedimiento_code),
             'estado_code': estado_code,
             'estado': ESTADOS.get(estado_code, estado_code) if estado_code else None,
             'valor_estimado_contrato': None,

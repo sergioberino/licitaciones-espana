@@ -11,6 +11,7 @@ from fastapi import FastAPI, HTTPException
 from fastapi.responses import JSONResponse
 from pydantic import BaseModel
 
+from etl import __version__
 from etl.cli import cmd_scheduler_register, cmd_scheduler_run, cmd_scheduler_stop, _comprobar_base_datos
 from etl.config import get_database_url
 from etl.ingest_l0 import CONJUNTOS_REGISTRY
@@ -90,7 +91,7 @@ class BormeAnomaliasBody(BaseModel):
 
 app = FastAPI(
     title="ETL API",
-    version="1.5.1",
+    version=__version__,
     description="Microservicio ETL: ingest L0, scheduler, BORME.",
 )
 
@@ -336,7 +337,6 @@ def get_migrations():
             rows = schema_check.get_rows(conn)
         finally:
             conn.close()
-        from etl import __version__
         init_pending = [f for f in status.pending if f in INIT_MIGRATIONS]
         return {
             "service": "etl",
