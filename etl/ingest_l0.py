@@ -122,7 +122,7 @@ SUBVENCIONES_PARQUET_COLUMNS = [
     ("sectores", "VARCHAR(10)[]"),
     ("regiones", "VARCHAR(10)[]"),
     # Finalidad y bases reguladoras
-    ("descripcion_finalidad", "TEXT"),
+    ("politica_gastos", "SMALLINT"),
     ("descripcion_bases_reguladoras", "TEXT"),
     ("url_bases_reguladoras", "TEXT"),
     ("resumen_bases_reguladoras", "TEXT"),

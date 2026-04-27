@@ -19,7 +19,7 @@ CREATE TABLE IF NOT EXISTS l0.nacional_subvenciones (
   sectores VARCHAR(10)[], -- Array de códigos CNAE/NACE (referencia: dim.cnae_dim.codigo)
   regiones VARCHAR(10)[], -- Array de códigos NUT (dim.nuts_spain.geocode),
   -- Finalidad y bases reguladoras
-  descripcion_finalidad TEXT,
+  politica_gastos SMALLINT, -- ID de dim.politica_gastos
   descripcion_bases_reguladoras TEXT,
   url_bases_reguladoras TEXT,
   resumen_bases_reguladoras TEXT,
