@@ -65,7 +65,8 @@ Todos los cambios notables del CLI y del microservicio ETL se documentan aquí.
   - Campos JSONB optimizados: arrays vacíos `[]` convertidos a `NULL` en `fondos`, `sectores_productos`, `documentos`, `anuncios`.
   - Índices GIN en arrays para búsquedas eficientes con operadores `@>`, `&&`, `ANY()`.
   - 26 campos adicionales: `sede_electronica`, `tipo_convocatoria`, `presupuesto_total`.
-  - Campos de bases reguladoras: `descripcion_finalidad`, `descripcion_bases_reguladoras`, `url_bases_reguladoras`.
+  - Campos de bases reguladoras: `descripcion_bases_reguladoras`, `url_bases_reguladoras`.
+  - `politica_gastos SMALLINT`: reemplaza `descripcion_finalidad TEXT`; almacena el ID de `dim.politica_gastos` obtenido haciendo lookup del campo `descripcionFinalidad` de la API (case-insensitive). Migración `023_politica_gastos_column.sql` para bases de datos existentes.
   - Estado y fechas: `abierto`, `se_publica_diario_oficial`, `fecha_inicio_solicitud`, `fecha_fin_solicitud`, `text_inicio`, `text_fin`.
   - Ayuda de estado: `ayuda_estado`, `url_ayuda_estado`.
 
