@@ -143,8 +143,8 @@ def _load_politica_gastos_map() -> dict[str, int]:
             cur.close()
             conn.close()
 
-            # Create mapping: descripcion (stripped) -> id
-            _politica_gastos_map_cache = {row[1].strip(): row[0] for row in rows}
+            # Create mapping: descripcion uppercased -> id (API returns Title Case, dim table is UPPERCASE)
+            _politica_gastos_map_cache = {row[1].strip().upper(): row[0] for row in rows}
             return _politica_gastos_map_cache
 
         except Exception as e:
@@ -166,7 +166,7 @@ def _extract_politica_gastos_id(descripcion_finalidad) -> int | None:
         return None
 
     politica_gastos_map = _load_politica_gastos_map()
-    return politica_gastos_map.get(descripcion_finalidad.strip())
+    return politica_gastos_map.get(descripcion_finalidad.strip().upper())
 
 
 def _extract_instrumento_id(instrumentos_array) -> int | None:
