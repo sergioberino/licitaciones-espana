@@ -13,6 +13,23 @@ Todos los cambios notables del CLI y del microservicio ETL se documentan aquí.
 
 - **`init-db`:** antes de aplicar cada migración SQL se fija el parámetro de sesión `etl.db_schema` desde **`DB_SCHEMA`**, de modo que los `DO` bloques que iteran tablas `nacional_%` actúan sobre el esquema de trabajo configurado (p. ej. `raw` o `l0`).
 
+
+---
+
+## [1.5.4] — 2026-04-28
+
+### Cambio mayor (subvenciones)
+
+- **BDNS — `l0.nacional_subvenciones` normalizado** ([#35](https://github.com/sergioberino/licitaciones-espana/pull/35)): JSONB anidados sustituidos por estructuras tipadas (`instrumento_id` FK, arrays `tipos_beneficiarios`, `sectores` CNAE, `regiones` NUT; `reglamento` / `objetivos` en TEXT; índices GIN en arrays). Ingesta en dos fases (`/busqueda` + `/convocatorias` por ID), rate limiting adaptativo global, paralelismo en scraping y carga de parquets, consulta incremental optimizada en el flujo diario. **Cambio incompatible:** hace falta truncar/recrear la tabla y **reingestar** (pasos detallados en la PR).
+
+### Añadido
+
+- **Observabilidad LLM para resúmenes de subvenciones** ([#37](https://github.com/sergioberino/licitaciones-espana/pull/37)): migración **`023_llm_resumen_logs.sql`** — tabla **`ops.llm_resumen_subvenciones_logs`** (tokens de entrada y salida, modelo, tiempo de procesamiento; PK alineada con `l0.nacional_subvenciones`). Script **`scripts/metricas_resumenes_subvenciones.py`** que genera un informe Markdown de costes y métricas por modelo.
+
+### Mejorado
+
+- **`politica_gastos`:** lookup de `descripcionFinalidad` frente a **`dim.politica_gastos`** de forma case-insensitive (clave normalizada a mayúsculas, coherente con el catálogo dimensional).
+
 ---
 
 ## [1.5.2] — 2026-04-23
