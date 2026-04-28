@@ -1037,8 +1037,8 @@ def main():
     else:
         fecha_hasta = datetime.now().strftime("%d/%m/%Y")
 
-    # fecha_desde = f"01/01/{ano_inicio}"
-    fecha_desde = "24/04/2026"
+    fecha_desde = f"01/01/{ano_inicio}"
+
     try:
         params = SearchParams(
             page=0,
