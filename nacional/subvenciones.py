@@ -145,10 +145,11 @@ def _load_politica_gastos_map() -> dict[str, int]:
 
             # Create mapping: descripcion uppercased -> id (API returns Title Case, dim table is UPPERCASE)
             _politica_gastos_map_cache = {row[1].strip().upper(): row[0] for row in rows}
+            _log("INFO", f"politica_gastos map cargado con {len(_politica_gastos_map_cache)} entradas: {list(_politica_gastos_map_cache.keys())}")
             return _politica_gastos_map_cache
 
         except Exception as e:
-            _log("ERROR", f"Error cargando politica_gastos desde BD: {e}")
+            _log("ERROR", f"Error cargando politica_gastos desde BD: {e} — todos los valores serán NULL")
             return {}
 
 
@@ -166,7 +167,11 @@ def _extract_politica_gastos_id(descripcion_finalidad) -> int | None:
         return None
 
     politica_gastos_map = _load_politica_gastos_map()
-    return politica_gastos_map.get(descripcion_finalidad.strip().upper())
+    key = descripcion_finalidad.strip().upper()
+    result = politica_gastos_map.get(key)
+    if result is None:
+        _log("WARN", f"politica_gastos: sin match para {repr(key)} — valores disponibles: {list(politica_gastos_map.keys())}")
+    return result
 
 
 def _extract_instrumento_id(instrumentos_array) -> int | None:
@@ -1037,8 +1042,8 @@ def main():
     else:
         fecha_hasta = datetime.now().strftime("%d/%m/%Y")
 
-    fecha_desde = f"01/01/{ano_inicio}"
-
+    # fecha_desde = f"01/01/{ano_inicio}"
+    fecha_desde = "24/04/2026"
     try:
         params = SearchParams(
             page=0,
