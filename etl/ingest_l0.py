@@ -899,8 +899,7 @@ def load_parquet_to_l0(
                                 elif c == "procedimiento_code":
                                     try:
                                         if v is None or (
-                                            not isinstance(v, (list, dict))
-                                            and pd.isna(v)
+                                            not isinstance(v, (list, dict)) and pd.isna(v)
                                         ):
                                             vals.append(None)
                                         else:
