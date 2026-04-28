@@ -4,6 +4,7 @@ PK surrogada: l0_id BIGSERIAL PRIMARY KEY + natural_id TEXT UNIQUE NOT NULL (URL
 Deriva prefijos CPV (principal_prefix4/6, secondary_prefix6), asegura tablas con índices e inserta con ON CONFLICT (natural_id) DO NOTHING.
 """
 
+import json
 import logging
 import os
 import re
@@ -101,16 +102,48 @@ NACIONAL_PARQUET_COLUMNS = [
 
 # Columnas del parquet de subvenciones
 SUBVENCIONES_PARQUET_COLUMNS = [
-    ("id", "INTEGER"),
-    ("numero_convocatoria", "TEXT"),
-    ("mrr", "BOOLEAN"),
-    ("descripcion", "TEXT"),
-    ("descripcion_leng", "TEXT"),
-    ("fecha_recepcion", "DATE"),
+    ("id", "BIGINT"),
+    # Órgano (aplanado)
     ("nivel1", "TEXT"),
     ("nivel2", "TEXT"),
     ("nivel3", "TEXT"),
-    ("codigo_invente", "TEXT"),
+    # Información básica
+    ("sede_electronica", "TEXT"),
+    ("fecha_recepcion", "DATE"),
+    # Instrumentos y tipo (normalizado)
+    ("instrumento_id", "SMALLINT"),
+    ("tipo_convocatoria", "TEXT"),
+    ("presupuesto_total", "NUMERIC"),
+    ("mrr", "BOOLEAN"),
+    ("descripcion", "TEXT"),
+    ("descripcion_leng", "TEXT"),
+    # Beneficiarios y sectores (arrays normalizados)
+    ("tipos_beneficiarios", "SMALLINT[]"),
+    ("sectores", "VARCHAR(10)[]"),
+    ("regiones", "VARCHAR(10)[]"),
+    # Finalidad y bases reguladoras
+    ("politica_gastos", "SMALLINT"),
+    ("descripcion_bases_reguladoras", "TEXT"),
+    ("url_bases_reguladoras", "TEXT"),
+    ("resumen_bases_reguladoras", "TEXT"),
+    # Publicación y estado
+    ("se_publica_diario_oficial", "BOOLEAN"),
+    ("abierto", "BOOLEAN"),
+    # Fechas de solicitud
+    ("fecha_inicio_solicitud", "DATE"),
+    ("fecha_fin_solicitud", "DATE"),
+    # Ayuda de estado
+    ("ayuda_estado", "TEXT"),
+    ("url_ayuda_estado", "TEXT"),
+    # Fondos y reglamento (simplificado)
+    ("fondos", "JSONB"),
+    ("reglamento", "TEXT"),
+    # Objetivos y sectores productos (simplificado)
+    ("objetivos", "TEXT"),
+    ("sectores_productos", "JSONB"),
+    # Documentos y anuncios
+    ("documentos", "JSONB"),
+    ("anuncios", "JSONB"),
 ]
 
 # Nombre de la columna que en el parquet contiene el identificador único (URL); en la tabla L0 se persiste como natural_id.
@@ -464,7 +497,7 @@ def _convert_numpy_to_python(obj: Any) -> Any:
     if obj is None:
         return None
     # Arrays numpy: convertir a lista
-    if hasattr(obj, 'tolist'):
+    if hasattr(obj, "tolist"):
         return obj.tolist()
     # Listas: convertir cada elemento
     if isinstance(obj, list):
@@ -544,11 +577,7 @@ def infer_column_defs_from_parquet(parquet_path: Path) -> list[tuple[str, str]]:
     except Exception as e:
         _configure_logging()
         err_msg = str(e).lower()
-        if (
-            "magic" in err_msg
-            or "arrowinvalid" in type(e).__name__.lower()
-            or "parquet" in err_msg
-        ):
+        if "magic" in err_msg or "arrowinvalid" in type(e).__name__.lower() or "parquet" in err_msg:
             logger.error(
                 "Parquet inválido (magic bytes no encontrados o fichero corrupto). "
                 "Comprobar que la ruta es un .parquet válido; si acabas de descargar, reintentar la descarga. %s",
@@ -616,9 +645,7 @@ def ensure_l0_table(
         col_defs.append('"ingested_at" TIMESTAMPTZ DEFAULT NOW()')
 
         create_sql = (
-            f"CREATE TABLE IF NOT EXISTS {full_table} (\n  "
-            + ",\n  ".join(col_defs)
-            + "\n)"
+            f"CREATE TABLE IF NOT EXISTS {full_table} (\n  " + ",\n  ".join(col_defs) + "\n)"
         )
         with conn.cursor() as cur:
             cur.execute(create_sql)
@@ -636,9 +663,7 @@ def ensure_l0_table(
                             f'CREATE INDEX IF NOT EXISTS {iname} ON {full_table} USING GIN ("{col}")'
                         )
                     else:
-                        cur.execute(
-                            f'CREATE INDEX IF NOT EXISTS {iname} ON {full_table} ("{col}")'
-                        )
+                        cur.execute(f'CREATE INDEX IF NOT EXISTS {iname} ON {full_table} ("{col}")')
 
             col_names = [c[0] for c in column_defs]
             if "expediente" in col_names and "id_plataforma" in col_names:
@@ -663,7 +688,7 @@ def load_parquet_to_l0(
         raise FileNotFoundError(f"Parquet no encontrado: {parquet_path}")
 
     df = pd.read_parquet(parquet_path)
-    logger.info("Parquet cargado: %s filas.", len(df))
+    logger.info("Parquet cargado: %s filas, cargando en base de datos...", len(df))
 
     if column_defs is None:
         column_defs = NACIONAL_PARQUET_COLUMNS
@@ -708,9 +733,7 @@ def load_parquet_to_l0(
                 len(df),
             )
         else:
-            logger.info(
-                "Filas con natural_id válido: %s de %s.", num_valid_nid, len(df)
-            )
+            logger.info("Filas con natural_id válido: %s de %s.", num_valid_nid, len(df))
 
     cpv_principal_col = "cpv_principal"
     cpvs_col = "cpvs"
@@ -733,7 +756,6 @@ def load_parquet_to_l0(
 
     # Build INSERT statement based on dataset type
     if is_subvenciones:
-        logger.info("Ingestando subvenciones en la base de datos...")
         insert_cols = [c for c, _ in column_defs]
         placeholders = ", ".join(["%s"] * len(insert_cols))
         quoted = ", ".join(f'"{c}"' for c in insert_cols)
@@ -744,9 +766,7 @@ def load_parquet_to_l0(
             ON CONFLICT (id) DO NOTHING
         """
     else:
-        table_base_cols = ["natural_id"] + [
-            c for c, _ in column_defs if c != natural_id_col
-        ]
+        table_base_cols = ["natural_id"] + [c for c, _ in column_defs if c != natural_id_col]
         if has_cpv:
             insert_cols = table_base_cols + [
                 "principal_prefix4",
@@ -783,10 +803,31 @@ def load_parquet_to_l0(
                             if _scalar_isna(v):
                                 vals.append(None)
                                 continue
-                            pg_type = next(
-                                (t for col, t in column_defs if col == c), "TEXT"
-                            )
-                            if "INT" in pg_type or "BIGINT" in pg_type:
+                            pg_type = next((t for col, t in column_defs if col == c), "TEXT")
+
+                            # Handle arrays (SMALLINT[], VARCHAR[], etc.)
+                            if "[]" in pg_type:
+                                # Parse if it's a JSON string (from serialization)
+                                if isinstance(v, str):
+                                    try:
+                                        v = json.loads(v)
+                                    except (json.JSONDecodeError, TypeError):
+                                        pass
+
+                                # Convert numpy arrays to Python lists
+                                converted = _convert_numpy_to_python(v)
+
+                                # Handle None or empty arrays
+                                if converted is None or (
+                                    isinstance(converted, list) and len(converted) == 0
+                                ):
+                                    vals.append(None)  # Empty list → None
+                                elif isinstance(converted, list):
+                                    vals.append(converted)
+                                else:
+                                    # Single value → list with one element
+                                    vals.append([converted])
+                            elif "INT" in pg_type or "BIGINT" in pg_type:
                                 try:
                                     vals.append(int(v))
                                 except (TypeError, ValueError):
@@ -799,9 +840,7 @@ def load_parquet_to_l0(
                             elif "BOOL" in pg_type:
                                 vals.append(bool(v) if v is not None else None)
                             elif "JSONB" in pg_type:
-                                vals.append(
-                                    psycopg2.extras.Json(_convert_numpy_to_python(v))
-                                )
+                                vals.append(psycopg2.extras.Json(_convert_numpy_to_python(v)))
                             else:
                                 vals.append(v)
                         rows.append(tuple(vals))
@@ -879,9 +918,7 @@ def load_parquet_to_l0(
                                 else:
                                     vals.append(v)
                             else:
-                                pg_type = next(
-                                    (t for col, t in column_defs if col == c), "TEXT"
-                                )
+                                pg_type = next((t for col, t in column_defs if col == c), "TEXT")
                                 if "INT" in pg_type or "BIGINT" in pg_type:
                                     try:
                                         vals.append(int(v))
@@ -895,11 +932,7 @@ def load_parquet_to_l0(
                                 elif "BOOL" in pg_type:
                                     vals.append(bool(v))
                                 elif "JSONB" in pg_type:
-                                    vals.append(
-                                        psycopg2.extras.Json(
-                                            _convert_numpy_to_python(v)
-                                        )
-                                    )
+                                    vals.append(psycopg2.extras.Json(_convert_numpy_to_python(v)))
                                 else:
                                     vals.append(v)
                         if has_cpv:
@@ -915,10 +948,4 @@ def load_parquet_to_l0(
                         inserted += cur.rowcount or 0
                     conn.commit()
     skipped = total_candidates - inserted
-
-    logger.info(
-        "Ingesta completada: %s filas insertadas, %s omitidas (ya existentes).",
-        inserted,
-        skipped,
-    )
     return (inserted, skipped)

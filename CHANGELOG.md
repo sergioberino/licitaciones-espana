@@ -233,12 +233,14 @@ La integración completa con `upstream/main` quedó resuelta en **[1.3.2]**.
 ## [1.1.2] — 2026-03-25
 
 ### Upstream sync (BquantFinance/licitaciones-espana)
+
 - **Andalucía scraper refactor** (`scripts/ccaa_andalucia.py`): improved coverage and stability (upstream PR #5); 11 new tests in `tests/test_ccaa_andalucia.py`
 - **Asturias downloader script** (`scripts/ccaa_asturias.py`): new standalone script to fetch contracts from Asturias open-data portal to Parquet; see `scripts/README.md` for usage. Ingest wiring (CONJUNTOS_REGISTRY) deferred to 1.2.0.
 - **Calidad analytics module** (`calidad/calidad_licitaciones.py`): 20 quality indicators on contracts dataset; standalone tool, not part of ingest pipeline
 - `requirements.txt`: `requests>=2.31.0` added; `numpy<2` pin preserved
 
 ### Fork changes
+
 - **Data hygiene**: removed `catalunya/README.md` (doc-only); `.gitignore` updated to cover `asturias_data/`, `ccaa_Andalucia/perfiles_cache.json`, `catalunya/`
 - **No new HTTP API routes** added in this release; API surface unchanged from 1.1.1
 - **No new CLI subcommands** added; ingest catalog visible via `GET /ingest/conjuntos` (8 conjuntos)
@@ -246,25 +248,27 @@ La integración completa con `upstream/main` quedó resuelta en **[1.3.2]**.
 ### QA performed (2026-03-25)
 
 **CLI / pytest**
+
 - 55 tests passed, 1 skipped (DB-dependent), 0 failed — full suite including 11 new upstream Andalucía tests
 - `python -m etl.cli --help` and `python -m etl.cli ingest --help` — exit 0, no import errors
 - `calidad.calidad_licitaciones` imports cleanly
 
 **API (ETL microservice at `http://localhost:8002`)**
 
-| Endpoint | HTTP | Notes |
-|----------|------|-------|
-| `GET /health` | 200 | `db: true`, 4 migrations pending |
-| `GET /status` | 200 | `database: connected` |
-| `GET /db-info` | 200 | 37 tables, 765 MB |
-| `GET /ingest/conjuntos` | 200 | 8 conjuntos returned |
-| `GET /migrations` | 200 | 6 applied, 4 pending |
-| `GET /scheduler/status` | 200 | 5 nacional tasks registered, `loop_running: false` |
-| `GET /scheduler/running` | 200 | No active runs |
+| Endpoint                 | HTTP | Notes                                              |
+| ------------------------ | ---- | -------------------------------------------------- |
+| `GET /health`            | 200  | `db: true`, 4 migrations pending                   |
+| `GET /status`            | 200  | `database: connected`                              |
+| `GET /db-info`           | 200  | 37 tables, 765 MB                                  |
+| `GET /ingest/conjuntos`  | 200  | 8 conjuntos returned                               |
+| `GET /migrations`        | 200  | 6 applied, 4 pending                               |
+| `GET /scheduler/status`  | 200  | 5 nacional tasks registered, `loop_running: false` |
+| `GET /scheduler/running` | 200  | No active runs                                     |
 
 No 500 errors. All endpoints returned expected codes.
 
 ### Notes
+
 - API version string updated from 1.1.0 → 1.1.2
 - 4 schema migrations on disk pending application (`005_catalunya.sql`, `006_valencia.sql`, `007_views.sql`, `010_borme.sql`) — apply via `POST /init-db` or `licitia-etl init-db`
 - `etl/__init__.py` `__version__` remains `1.1.0`; full multi-file semver alignment planned for 1.2.0
@@ -301,8 +305,6 @@ No 500 errors. All endpoints returned expected codes.
 
 - **get_tasks_due:** Uso de `reference_now` en `get_next_run_at` para que las tareas nunca ejecutadas se consideren debidas en el mismo tick (evita desfase de milisegundos que dejaba `due_count` en 0).
 - **insert_run_start:** Firma correcta `insert_run_start(conn, task_id)` en `cmd_ingest`.
-
-
 
 ### Nota
 
