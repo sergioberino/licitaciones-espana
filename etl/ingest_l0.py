@@ -132,6 +132,8 @@ SUBVENCIONES_PARQUET_COLUMNS = [
     # Fechas de solicitud
     ("fecha_inicio_solicitud", "DATE"),
     ("fecha_fin_solicitud", "DATE"),
+    ("fecha_inicio_solicitud_texto", "TEXT"),
+    ("fecha_fin_solicitud_texto", "TEXT"),
     # Ayuda de estado
     ("ayuda_estado", "TEXT"),
     ("url_ayuda_estado", "TEXT"),
@@ -906,14 +908,8 @@ def load_parquet_to_l0(
                                             vals.append(int(v))
                                     except (TypeError, ValueError):
                                         vals.append(None)
-                                elif isinstance(v, (list, dict)) or hasattr(
-                                    v, "tolist"
-                                ):
-                                    vals.append(
-                                        psycopg2.extras.Json(
-                                            _convert_numpy_to_python(v)
-                                        )
-                                    )
+                                elif isinstance(v, (list, dict)) or hasattr(v, "tolist"):
+                                    vals.append(psycopg2.extras.Json(_convert_numpy_to_python(v)))
                                 else:
                                     vals.append(v)
                             else:
