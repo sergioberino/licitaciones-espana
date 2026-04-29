@@ -8,6 +8,10 @@ Todos los cambios notables del CLI y del microservicio ETL se documentan aquí.
 
 - **`014_dim_ccaa_organos.sql` — geocodes de CCAA incorrectos:** el fichero SQL tenía los códigos NUTS asignados por orden de aparición en el JSON en lugar de por nombre, mezclando las comunidades autónomas (p. ej. Asturias aparecía con `ES63` —Ceuta— y Canarias con `ES12` —Asturias—). Se volvió a generar el .sql con los código nuts correctos.
 
+### Añadido
+
+- **BDNS — texto de fechas de solicitud** ([#39](https://github.com/sergioberino/licitaciones-espana/pull/39)): nuevas columnas `fecha_inicio_solicitud_texto` y `fecha_fin_solicitud_texto` (`TEXT`) en `l0.nacional_subvenciones`, mapeando `textInicio` y `textFin` de la API. Cubren los casos frecuentes en que `fechaInicioSolicitud` / `fechaFinSolicitud` son `null` pero el plazo está descrito en texto libre. Actualizado el scraper histórico, el diario y `SUBVENCIONES_PARQUET_COLUMNS`.
+
 ---
 
 ## [1.5.4] — 2026-04-28
