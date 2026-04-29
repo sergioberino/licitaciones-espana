@@ -118,9 +118,8 @@ def _startup_recover_stale_runs():
 
 @app.on_event("startup")
 def _startup_schema_check():
-    """Detect-only schema migration check on boot (no auto-apply)."""
+    """Log-only schema migration check on boot (no auto-apply, no state dependency)."""
     from etl import schema_check
-    from etl.cli import INIT_MIGRATIONS
     url = get_database_url()
     if not url:
         return
@@ -131,17 +130,10 @@ def _startup_schema_check():
             schema_check.bootstrap(conn)
             status = schema_check.check(conn)
             schema_check.log_check(status)
-            init_pending = [f for f in status.pending if f in INIT_MIGRATIONS]
-            app.state.migration_status = {
-                "pending": len(status.pending),
-                "pending_infra": len(init_pending),
-                "applied": len(status.applied),
-                "tampered": len(status.tampered),
-            }
         finally:
             conn.close()
     except Exception:
-        app.state.migration_status = None
+        pass
 
 
 @app.on_event("startup")
@@ -316,31 +308,7 @@ def health():
                 dim_status = _get_dim_status(conn)
         except Exception:
             pass
-    migrations = getattr(app.state, "migration_status", None)
-    # Re-evaluate on each /health so tampered/pending reflect current SQL on disk (e.g. after deploy)
-    # without requiring an ETL process restart.
-    if db_ok and db_url:
-        try:
-            from etl import schema_check
-            from etl.cli import INIT_MIGRATIONS
-
-            conn = psycopg2.connect(db_url)
-            conn.autocommit = True
-            try:
-                schema_check.bootstrap(conn)
-                status = schema_check.check(conn)
-                init_pending = [f for f in status.pending if f in INIT_MIGRATIONS]
-                migrations = {
-                    "pending": len(status.pending),
-                    "pending_infra": len(init_pending),
-                    "applied": len(status.applied),
-                    "tampered": len(status.tampered),
-                }
-                app.state.migration_status = migrations
-            finally:
-                conn.close()
-        except Exception:
-            pass
+    migrations = {"schema_check_delegated": True, "note": "Use migrator job for migration management"}
 
     payload = {"status": "ok" if db_ok else "degraded", "db": db_ok, "migrations": migrations, "dim_status": dim_status}
     status_code = 200 if db_ok else 503
@@ -366,6 +334,7 @@ def get_migrations():
         return {
             "service": "etl",
             "version": __version__,
+            "deprecated": "Use ops.migrator_history via 'docker compose run migrator --history'. This endpoint will be removed in a future version.",
             "status": {
                 "pending": len(status.pending),
                 "pending_infra": len(init_pending),
@@ -439,6 +408,7 @@ def post_init_db():
     failed = [r for r in results if not r.get("success")]
     return {
         "ok": exit_code == 0,
+        "deprecated": "Use 'docker compose run migrator --apply' for production upgrades. This endpoint is retained for greenfield/dev convenience.",
         "message": f"Init-db: {len(results)} processed, {len(failed)} failed.",
         "results": results,
     }
