@@ -2,6 +2,14 @@
 
 Todos los cambios notables del CLI y del microservicio ETL se documentan aquí.
 
+## [1.5.5] — 2026-04-29
+
+### Corregido
+
+- **`014_dim_ccaa_organos.sql` — geocodes de CCAA incorrectos:** el fichero SQL tenía los códigos NUTS asignados por orden de aparición en el JSON en lugar de por nombre, mezclando las comunidades autónomas (p. ej. Asturias aparecía con `ES63` —Ceuta— y Canarias con `ES12` —Asturias—). Se volvió a generar el .sql con los código nuts correctos.
+
+---
+
 ## [1.5.4] — 2026-04-28
 
 ### Cambio mayor (subvenciones)
