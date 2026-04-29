@@ -8,7 +8,7 @@ from pathlib import Path
 
 import psycopg2
 from fastapi import FastAPI, HTTPException
-from fastapi.responses import JSONResponse
+from fastapi.responses import JSONResponse, PlainTextResponse
 from pydantic import BaseModel
 
 from etl import __version__
@@ -378,6 +378,36 @@ def get_migrations():
         }
     except Exception as e:
         return JSONResponse(status_code=503, content={"detail": str(e)})
+
+
+@app.get("/ddl", summary="DDL contract listing", description="Lists all .sql schema files with checksums and sizes. No DB access required.")
+def get_ddl():
+    from etl.schema_check import _schemas_dir, sha256 as _sha256
+    d = _schemas_dir()
+    schemas = []
+    for f in sorted(d.iterdir(), key=lambda p: p.name):
+        if f.suffix == ".sql":
+            schemas.append({
+                "filename": f.name,
+                "checksum": _sha256(f),
+                "size_bytes": f.stat().st_size,
+            })
+    return {
+        "etl_version": __version__,
+        "generated_at": datetime.utcnow().isoformat(timespec="seconds") + "Z",
+        "schemas": schemas,
+    }
+
+
+@app.get("/ddl/{filename}", summary="DDL file content", description="Returns the raw SQL content of a schema file as text/plain.")
+def get_ddl_file(filename: str):
+    if ".." in filename or "/" in filename:
+        raise HTTPException(status_code=400, detail="Invalid filename")
+    from etl.schema_check import _schemas_dir
+    path = _schemas_dir() / filename
+    if not path.exists() or not filename.endswith(".sql"):
+        raise HTTPException(status_code=404, detail="File not found")
+    return PlainTextResponse(path.read_text(encoding="utf-8"), media_type="text/plain")
 
 
 @app.post("/init-db", summary="Apply init-db migrations", description="Applies infrastructure migrations (dim, scheduler). Returns results for dashboard.")
