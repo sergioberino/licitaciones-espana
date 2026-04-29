@@ -8,6 +8,10 @@ Fork de [BquantFinance/licitaciones-espana](https://github.com/BquantFinance/lic
 
 Consulta `CONTRIBUTING.md` para el flujo obligatorio de contribución (issue -> branch -> PR), políticas de revisión y criterios de bypass para owner/admin en casos excepcionales.
 
+## Política de releases
+
+La política transversal (modo repositorio aislado vs consumo como submódulo, cadencia por issue resuelto, SemVer y bump del puntero en el repo de integración) está en **[docs/policies/rolling-updates-repo-sync.md](docs/policies/rolling-updates-repo-sync.md)**. Debe mantenerse alineada con la copia en el repositorio de integración que empaqueta este código.
+
 ## ¿Cómo contribuir?
 
 1. Crea una issue con contexto y propuesta.
