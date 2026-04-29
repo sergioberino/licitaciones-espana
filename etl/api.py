@@ -317,6 +317,31 @@ def health():
         except Exception:
             pass
     migrations = getattr(app.state, "migration_status", None)
+    # Re-evaluate on each /health so tampered/pending reflect current SQL on disk (e.g. after deploy)
+    # without requiring an ETL process restart.
+    if db_ok and db_url:
+        try:
+            from etl import schema_check
+            from etl.cli import INIT_MIGRATIONS
+
+            conn = psycopg2.connect(db_url)
+            conn.autocommit = True
+            try:
+                schema_check.bootstrap(conn)
+                status = schema_check.check(conn)
+                init_pending = [f for f in status.pending if f in INIT_MIGRATIONS]
+                migrations = {
+                    "pending": len(status.pending),
+                    "pending_infra": len(init_pending),
+                    "applied": len(status.applied),
+                    "tampered": len(status.tampered),
+                }
+                app.state.migration_status = migrations
+            finally:
+                conn.close()
+        except Exception:
+            pass
+
     payload = {"status": "ok" if db_ok else "degraded", "db": db_ok, "migrations": migrations, "dim_status": dim_status}
     status_code = 200 if db_ok else 503
     return JSONResponse(content=payload, status_code=status_code)
