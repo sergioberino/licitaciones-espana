@@ -1,6 +1,19 @@
 # PostgreSQL schema (licitaciones-espana)
 
-Modular, domain-split schema (SRP). Schemas are **validated against Parquet** produced by the extraction scripts (PRP Phase 2) and are used by **Phase 3 ETL** and the PostgreSQL database. Apply to PostgreSQL before running ETL or API/ingestion.
+**Contratos DDL snapshot** — estos ficheros definen el esquema de base de datos que el ETL espera en una versión determinada. Son la fuente declarativa de verdad para `init-db` (bootstrap de BD vacía) y para el endpoint `GET /ddl` (verificación por consumidores).
+
+Las migraciones incrementales (ALTER, DROP) se gestionan externamente por el job `migrator` del repositorio consumidor.
+
+## Migrator (v2.0.0+)
+
+A partir de la milestone 2.0.0, la auditoría y ejecución de migraciones incrementales se delega al job `migrator` del repositorio consumidor (`services/postgres/migrator/`).
+
+- **`schemas/` = contrato DDL snapshot** — define qué espera el ETL de la BD en esta versión.
+- **Migraciones incrementales** (ALTER, DROP) → ficheros `.sql` en `services/postgres/migrations/etl/`.
+- **`schema_check`** sigue activo como verificación informativa en el arranque (log-only, sin bloqueo).
+- **`GET /ddl`** expone este directorio como endpoint de solo lectura para verificación por consumidores.
+
+Para más detalle, ver la documentación de CI y upgrade en el repositorio consumidor.
 
 ## Applying the schema
 
@@ -40,6 +53,8 @@ _(Run from repo root.)_
 
 ## Tiered migration model
 
+> **Desde v2.0.0**, el tracking de migraciones se centraliza en `ops.migrator_history` (gestionado por el `migrator` del consumidor). Los tiers aquí descritos aplican exclusivamente al orden de ejecución durante `init-db` (bootstrap de BD vacía).
+
 Files in this directory follow three tiers aligned with the L0→L1→L2 data architecture:
 
 | Tier                    | Applied by                    | Files                                   |
@@ -52,7 +67,7 @@ Files in this directory follow three tiers aligned with the L0→L1→L2 data ar
 - **On-demand** files are applied automatically by their subsystem's CLI command (e.g. `licitia-etl borme ingest` ensures `010_borme.sql` is applied before loading data).
 - **Legacy** files (005–007) predate the dynamic `ensure_l0_table()` pattern used by the L0 ingest pipeline. L0 tables for all conjuntos are now created at ingest time; these files remain for reference but are not auto-applied.
 
-All files are tracked by `schema_check` for audit: `check()` scans every `*.sql` file and reports applied/pending status regardless of tier.
+En arranque, `schema_check` escanea estos ficheros y reporta estado (applied/pending/tampered) como log informativo. La auditoría vinculante reside en `ops.migrator_history`.
 
 ## Files
 
