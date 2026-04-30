@@ -2,6 +2,38 @@
 
 Todos los cambios notables del CLI y del microservicio ETL se documentan aquí.
 
+## [2.0.0] — 2026-04-30
+
+### Breaking changes
+
+- **`schemas/` reframed como contratos DDL snapshot:** eliminados ficheros legacy (`005_catalunya`, `006_valencia`, `007_views`) y ALTERs incrementales (`009_scheduler_runs_pid`, `011_nacional_new_columns`, `022_nacional_procedimiento_code_integer`). Los ALTERs se reubican como migraciones incrementales en el repositorio consumidor (`services/postgres/migrations/etl/`). `008_scheduler.sql` consolidado con `process_id`.
+- **`schema_check` desacoplado del runtime HTTP:** el startup es log-only (sin guardar estado para decisiones de salud). `/health` reporta `schema_check_delegated: true`. `/migrations` y `/init-db` añaden aviso de deprecación — la auditoría vinculante reside en `ops.migrator_history` del consumidor.
+- **Consumidores deben adoptar el job `migrator`** para tracking y ejecución de migraciones. Ver [ci-upgrade-architecture.md](https://github.com/sergioberino/licitaciones-espana/blob/main/schemas/README.md) en el README de schemas.
+
+### Añadido
+
+- **`GET /ddl`** — endpoint read-only que expone los contratos DDL de `schemas/` (filename, checksum SHA-256, size) para verificación por consumidores. `GET /ddl/{filename}` devuelve el SQL completo como `text/plain`.
+- **Documentación:** `schemas/README.md` reescrito como guía de contratos DDL snapshot con sección "Migrator (v2.0.0+)".
+
+### Incluye v1.5.5
+
+- **`014_dim_ccaa_organos.sql` corregido:** geocodes NUTS reasignados correctamente por nombre de CCAA.
+- **BDNS fecha_texto:** columnas `fecha_inicio_solicitud_texto` / `fecha_fin_solicitud_texto` en `l0.nacional_subvenciones` ([#39](https://github.com/sergioberino/licitaciones-espana/pull/39)).
+
+---
+
+## [1.5.5] — 2026-04-29
+
+### Corregido
+
+- **`014_dim_ccaa_organos.sql` — geocodes de CCAA incorrectos:** el fichero SQL tenía los códigos NUTS asignados por orden de aparición en el JSON en lugar de por nombre, mezclando las comunidades autónomas (p. ej. Asturias aparecía con `ES63` —Ceuta— y Canarias con `ES12` —Asturias—). Se volvió a generar el .sql con los código nuts correctos.
+
+### Añadido
+
+- **BDNS — texto de fechas de solicitud** ([#39](https://github.com/sergioberino/licitaciones-espana/pull/39)): nuevas columnas `fecha_inicio_solicitud_texto` y `fecha_fin_solicitud_texto` (`TEXT`) en `l0.nacional_subvenciones`, mapeando `textInicio` y `textFin` de la API. Cubren los casos frecuentes en que `fechaInicioSolicitud` / `fechaFinSolicitud` son `null` pero el plazo está descrito en texto libre. Actualizado el scraper histórico, el diario y `SUBVENCIONES_PARQUET_COLUMNS`.
+
+---
+
 ## [1.5.4] — 2026-04-28
 
 ### Cambio mayor (subvenciones)
