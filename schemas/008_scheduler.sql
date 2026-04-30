@@ -24,11 +24,14 @@ CREATE TABLE IF NOT EXISTS scheduler.runs (
   rows_inserted  INTEGER,
   rows_omitted   INTEGER,
   error_message  TEXT,
+  process_id     INTEGER,
   CONSTRAINT runs_status_finished CHECK (
     (status = 'running' AND finished_at IS NULL) OR
     (status IN ('ok', 'failed') AND finished_at IS NOT NULL)
   )
 );
+
+COMMENT ON COLUMN scheduler.runs.process_id IS 'PID del proceso que ejecutó esta run (licitia-etl ingest). NULL si no se registró.';
 
 CREATE INDEX IF NOT EXISTS idx_scheduler_runs_task_id ON scheduler.runs(task_id);
 CREATE INDEX IF NOT EXISTS idx_scheduler_runs_started_at ON scheduler.runs(started_at DESC);
