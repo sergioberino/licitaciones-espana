@@ -29,6 +29,8 @@ CREATE TABLE IF NOT EXISTS l0.nacional_subvenciones (
   -- Fechas de solicitud
   fecha_inicio_solicitud DATE,
   fecha_fin_solicitud DATE,
+  fecha_inicio_solicitud_texto TEXT,
+  fecha_fin_solicitud_texto TEXT,
   -- Ayuda de estado
   ayuda_estado TEXT,
   url_ayuda_estado TEXT,
