@@ -2,6 +2,14 @@
 
 Todos los cambios notables del CLI y del microservicio ETL se documentan aquí.
 
+## [2.0.2] — 2026-05-05
+
+### Añadido
+
+- **`dim.codigos_ine`** ([#44](https://github.com/sergioberino/licitaciones-espana/issues/44), PR [#43](https://github.com/sergioberino/licitaciones-espana/pull/43)): tabla dimensional de referencia que mapea los 8.132 municipios españoles (código INE 5 dígitos) al NUTS3 provincial correspondiente, con FK activa a `dim.nuts_spain(geocode)`. Resuelve el requisito geográfico G2 («centro de trabajo en la región») sin necesidad de implementar un algoritmo INE↔NUTS en el consumidor. Fuente: INE diccionario26.xlsx, vigente a 1-enero-2026.
+
+---
+
 ## [2.0.1] — 2026-05-04
 
 ### Corregido
