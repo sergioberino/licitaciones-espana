@@ -2,6 +2,15 @@
 
 Todos los cambios notables del CLI y del microservicio ETL se documentan aquí.
 
+## [2.0.1] — 2026-05-04
+
+### Corregido
+
+- **Geocodes NUTS en `dim.organos_gestores_ccaa`** ([#38](https://github.com/sergioberino/licitaciones-espana/issues/38), PR [#39](https://github.com/sergioberino/licitaciones-espana/pull/39)): los códigos NUTS estaban asignados por orden de aparición en el JSON en lugar de por nombre de CCAA. Corregido en `schemas/014_dim_ccaa_organos.sql`. Incorporado en v2.0.0; esta release formaliza el cierre de la issue.
+- **BDNS — texto de fechas de solicitud** ([#41](https://github.com/sergioberino/licitaciones-espana/issues/41), PR [#42](https://github.com/sergioberino/licitaciones-espana/pull/42)): columnas `fecha_inicio_solicitud_texto` / `fecha_fin_solicitud_texto` en `l0.nacional_subvenciones`. Incorporado en v2.0.0; esta release formaliza el cierre de la issue.
+
+---
+
 ## [2.0.0] — 2026-04-30
 
 ### Breaking changes
