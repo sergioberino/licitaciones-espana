@@ -2,6 +2,14 @@
 
 Todos los cambios notables del CLI y del microservicio ETL se documentan aquí.
 
+## [2.0.3] — 2026-05-05
+
+### Interno
+
+- Verificación del flujo `ddl-diff-on-bump` end-to-end en dirección forward (CI trigger test). Sin cambios funcionales.
+
+---
+
 ## [2.0.2] — 2026-05-05
 
 ### Añadido
