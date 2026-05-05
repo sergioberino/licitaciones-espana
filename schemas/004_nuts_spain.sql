@@ -86,4 +86,16 @@ INSERT INTO dim.nuts_spain (geocode, etiqueta) VALUES
 ('ES640', 'Melilla'),
 ('ES701', 'Las Palmas'),
 ('ES702', 'Santa Cruz de Tenerife')
+-- Códigos NO oficiales pero necesarios para mapeo de nombres exactos de islas Canarias y Baleares
+('ES704', 'Gran Canaria'),
+('ES705', 'Gran Canaria'),
+('ES706', 'Lanzarote'),
+('ES707', 'Fuerteventura'),
+('ES708', 'La Palma'),
+('ES709', 'La Gomera'),
+('ES70A', 'El Hierro'),
+('ES70B', 'Tenerife'),
+('ES531', 'Mallorca'),
+('ES532', 'Menorca'),
+('ES533', 'Eivissa y Formentera')
 ON CONFLICT (geocode) DO NOTHING;
