@@ -2,6 +2,18 @@
 
 Todos los cambios notables del CLI y del microservicio ETL se documentan aquí.
 
+## [2.0.4] — 2026-05-07
+
+### Corregido
+
+- **BDNS — normalización de códigos CNAE en subvenciones**: la función `_extract_sector_codes` añadía un `0` de relleno cuando el código sin punto tenía 3 dígitos (p. ej. `86.6` → `8660`), produciendo códigos que no existían en `dim.cnae`. Ahora simplemente se elimina el punto (`86.6` → `866`), alineado con los valores reales del catálogo.
+
+### Añadido
+
+- **Códigos no oficiales de islas en `dim.nuts_spain`**: añadidas filas para las islas de Canarias (`ES704`–`ES70B`) y Baleares (`ES531`–`ES533`), que el SVG del frontend usa como identificadores geográficos. Sin estas filas los nombres de isla no se renderizaban correctamente. Filas insertadas con `ON CONFLICT DO NOTHING`, sin breaking changes.
+
+---
+
 ## [2.0.3] — 2026-05-05
 
 ### Interno

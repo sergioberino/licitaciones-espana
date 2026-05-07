@@ -276,14 +276,9 @@ def _extract_sector_codes(sectores_array) -> list[str] | None:
         if isinstance(item, dict):
             codigo = item.get("codigo", "").strip()
             if codigo:
-                # Normalizar códigos con decimal (ej: '96.4' -> '9640', '96.18' -> '9618')
+                # Normalizar códigos con decimal: quitar el punto (ej: '86.6' -> '866', '96.18' -> '9618')
                 if "." in codigo:
-                    codigo_sin_punto = codigo.replace(".", "")
-                    # Si después de quitar el punto tiene 3 dígitos, añadir un 0 al final
-                    if len(codigo_sin_punto) == 3:
-                        codigo = codigo_sin_punto + "0"
-                    else:
-                        codigo = codigo_sin_punto
+                    codigo = codigo.replace(".", "")
 
                 sector_codes.append(codigo)
 
