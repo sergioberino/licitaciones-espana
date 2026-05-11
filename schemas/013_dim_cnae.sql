@@ -5,6 +5,10 @@
 CREATE SCHEMA IF NOT EXISTS dim;
 
 CREATE TABLE IF NOT EXISTS dim.cnae_dim (
-    code    VARCHAR(8) PRIMARY KEY,
-    label   TEXT NOT NULL
+    id        SERIAL PRIMARY KEY,
+    code      VARCHAR(8) NOT NULL UNIQUE,
+    label     TEXT NOT NULL,
+    parent_id INTEGER
 );
+
+COMMENT ON COLUMN dim.cnae_dim.parent_id IS 'Referencia lógica a dim.cnae_dim(id). NULL para secciones raíz (nivel 1, código de una letra). Permite reconstruir la jerarquía CNAE desde nivel 4 hasta nivel 1.';

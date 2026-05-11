@@ -2,9 +2,9 @@
 
 import logging
 import os
+import re
 
 import psycopg2
-from psycopg2 import sql
 import requests
 
 logger = logging.getLogger("etl.cnae_ingest")
@@ -53,18 +53,48 @@ def _extract_label_es(name_block: dict | None) -> str | None:
     return texts[0].get("value") if texts else None
 
 
-def _extract_codes(raw_codes: list[dict]) -> list[tuple[str, str]]:
-    """Return (code, label) tuples for all CNAE codes with a Spanish label."""
-    result = []
+def _is_official_code(code_id: str) -> bool:
+    """Return True only for official CNAE codes: single uppercase letter (section)
+    or digits-only (division/group/class). Excludes aggregates like _T, _N, etc."""
+    return bool(re.match(r"^[A-Z]$", code_id) or re.match(r"^\d+$", code_id))
+
+
+def _build_rows(raw_codes: list[dict]) -> list[tuple[int, str, str, int | None]]:
+    """Build (id, code, label, parent_id) rows with manually assigned sequential IDs.
+
+    The API returns codes in hierarchical order (section letter, then 2-digit, 3-digit,
+    4-digit), so parent_id is resolved by tracking the last assigned id per level:
+      level 1 = single letter (A-U)
+      level 2 = 2-digit code
+      level 3 = 3-digit code
+      level 4 = 4-digit code
+    A code of N digits has parent = last id seen at level N-1.
+    """
+    rows: list[tuple[int, str, str, int | None]] = []
+    counter = 1
+    last_id_by_level: dict[int, int] = {}
+
     for item in raw_codes:
         code_id = item.get("id", "")
-        if not code_id:
+        if not _is_official_code(code_id):
             continue
         label = _extract_label_es(item.get("name"))
         if not label:
             continue
-        result.append((code_id, label))
-    return result
+
+        counter += 1
+
+        if re.match(r"^[A-Z]$", code_id):
+            level = 1
+            parent_id = None
+        else:
+            level = len(code_id)  # 2, 3 or 4
+            parent_id = last_id_by_level.get(level - 1)
+
+        last_id_by_level[level] = counter
+        rows.append((counter, code_id, label, parent_id))
+
+    return rows
 
 
 def run_cnae_ingest(url: str | None = None) -> dict:
@@ -82,25 +112,25 @@ def run_cnae_ingest(url: str | None = None) -> dict:
     logger.info("CNAE ingest: fetching from %s", source_url)
 
     raw_codes = _fetch_all_codes(source_url)
-    codes = _extract_codes(raw_codes)
-    logger.info("CNAE ingest: %d codes extracted", len(codes))
+    rows = _build_rows(raw_codes)
+    logger.info("CNAE ingest: %d codes extracted", len(rows))
 
-    if not codes:
+    if not rows:
         return {"ok": True, "rows": 0, "message": "No CNAE codes found in API response"}
 
     conn = psycopg2.connect(db_url)
     try:
         conn.autocommit = False
-        upsert = sql.SQL(
-            "INSERT INTO dim.cnae_dim (code, label) VALUES (%s, %s) "
-            "ON CONFLICT (code) DO UPDATE SET label = EXCLUDED.label"
+        upsert = (
+            "INSERT INTO dim.cnae_dim (id, code, label, parent_id) VALUES (%s, %s, %s, %s) "
+            "ON CONFLICT (code) DO UPDATE SET label = EXCLUDED.label, parent_id = EXCLUDED.parent_id"
         )
         with conn.cursor() as cur:
-            for code, label in codes:
-                cur.execute(upsert, (code, label))
+            cur.executemany(upsert, rows)
+
         conn.commit()
-        logger.info("CNAE ingest: upserted %d codes into dim.cnae_dim", len(codes))
-        return {"ok": True, "rows": len(codes), "message": f"Upserted {len(codes)} CNAE codes"}
+        logger.info("CNAE ingest: upserted %d codes into dim.cnae_dim", len(rows))
+        return {"ok": True, "rows": len(rows), "message": f"Upserted {len(rows)} CNAE codes"}
     except Exception as e:
         conn.rollback()
         logger.exception("CNAE ingest failed")
