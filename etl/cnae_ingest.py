@@ -18,7 +18,7 @@ PAGE_SIZE = 500
 
 
 def _get_cnae_url() -> str:
-    return DEFAULT_CNAE_URL
+    return os.environ.get("CNAE_SOURCE_URL", "").strip() or DEFAULT_CNAE_URL
 
 
 def _fetch_all_codes(base_url: str) -> list[dict]:
@@ -59,20 +59,33 @@ def _is_official_code(code_id: str) -> bool:
     return bool(re.match(r"^[A-Z]$", code_id) or re.match(r"^\d+$", code_id))
 
 
+def _extract_parent_letter(item: dict) -> str | None:
+    """Extract the section letter from the SDMX parent URN, e.g. '...CL_CNAE_2025(01.001).A' → 'A'."""
+    parent_urn = item.get("parent", "")
+    if not parent_urn:
+        return None
+    candidate = parent_urn.rsplit(".", 1)[-1]
+    return candidate if re.match(r"^[A-Z]$", candidate) else None
+
+
 def _build_rows(raw_codes: list[dict]) -> list[tuple[int, str, str, int | None]]:
     """Build (id, code, label, parent_id) rows with manually assigned sequential IDs.
 
-    The API returns codes in hierarchical order (section letter, then 2-digit, 3-digit,
-    4-digit), so parent_id is resolved by tracking the last assigned id per level:
-      level 1 = single letter (A-U)
-      level 2 = 2-digit code
-      level 3 = 3-digit code
-      level 4 = 4-digit code
-    A code of N digits has parent = last id seen at level N-1.
+    The API delivers numeric codes first (ordered by depth: 2→3→4 digits) and
+    section letters at the end, so parent_id for 2-digit codes cannot be resolved
+    inline. Strategy:
+      - Single-letter sections  → insert with parent_id=None, record id in section_ids.
+      - 2-digit codes           → insert with parent_id=None, record (row_index, letter)
+                                   in `deferred` for a patch after the main loop.
+      - 3/4-digit codes         → parent resolved inline via last_id_by_level (numeric
+                                   codes come in depth order so the parent is always seen first).
+    The deferred patch is a micro-loop over only ~88 two-digit codes.
     """
     rows: list[tuple[int, str, str, int | None]] = []
     counter = 0
-    last_id_by_level: dict[int, int] = {}
+    last_id_by_level: dict[int, int] = {}  # level → last assigned id
+    section_ids: dict[str, int] = {}  # letter → assigned id
+    deferred: list[tuple[int, str]] = []  # (row_index, section_letter) for 2-digit codes
 
     for item in raw_codes:
         code_id = item.get("id", "")
@@ -87,12 +100,29 @@ def _build_rows(raw_codes: list[dict]) -> list[tuple[int, str, str, int | None]]
         if re.match(r"^[A-Z]$", code_id):
             level = 1
             parent_id = None
+            section_ids[code_id] = counter
+        elif len(code_id) == 2:
+            level = 2
+            parent_id = None  # patched below
+            letter = _extract_parent_letter(item)
+            if letter:
+                deferred.append((len(rows), letter))
+            last_id_by_level[level] = counter
         else:
-            level = len(code_id)  # 2, 3 or 4
+            level = len(code_id)  # 3 or 4
             parent_id = last_id_by_level.get(level - 1)
+            last_id_by_level[level] = counter
 
-        last_id_by_level[level] = counter
         rows.append((counter, code_id, label, parent_id))
+
+    # Patch parent_id for 2-digit codes now that all section ids are known
+    for row_index, letter in deferred:
+        section_id = section_ids.get(letter)
+        if section_id is None:
+            logger.warning("CNAE build_rows: section %r not found for row %d", letter, row_index)
+            continue
+        id_, code, label, _ = rows[row_index]
+        rows[row_index] = (id_, code, label, section_id)
 
     return rows
 
