@@ -5,6 +5,9 @@
 CREATE INDEX IF NOT EXISTS idx_nacional_licitaciones_org_key
   ON l0.nacional_licitaciones ("expediente", "id_plataforma");
 
+CREATE INDEX IF NOT EXISTS idx_nacional_licitaciones_estado_code
+  ON l0.nacional_licitaciones (estado_code);
+
 CREATE INDEX IF NOT EXISTS idx_nacional_agregacion_ccaa_org_key
   ON l0.nacional_agregacion_ccaa ("expediente", "id_plataforma");
 
