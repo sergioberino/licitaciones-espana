@@ -11,4 +11,6 @@ CREATE TABLE IF NOT EXISTS dim.cnae_dim (
     parent_id INTEGER
 );
 
-COMMENT ON COLUMN dim.cnae_dim.parent_id IS 'Referencia lógica a dim.cnae_dim(id). NULL para secciones raíz (nivel 1, código de una letra). Permite reconstruir la jerarquía CNAE desde nivel 4 hasta nivel 1.';
+COMMENT ON COLUMN dim.cnae_dim.parent_id IS 'Referencia lógica a dim.cnae_dim(id). 
+NULL para secciones raíz (nivel 1, código de una letra). Permite reconstruir la jerarquía
+CNAE desde nivel 4 hasta nivel 1.';

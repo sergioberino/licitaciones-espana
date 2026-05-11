@@ -11,14 +11,14 @@ logger = logging.getLogger("etl.cnae_ingest")
 
 DEFAULT_CNAE_URL = (
     "https://datos.canarias.es/api/estadisticas/structural-resources/v1.0"
-    "/codelists/ISTAC/CL_CNAE_2025/01.001/codes.json"
+    + "/codelists/ISTAC/CL_CNAE_2025/01.001/codes.json"
 )
 
 PAGE_SIZE = 500
 
 
 def _get_cnae_url() -> str:
-    return os.environ.get("CNAE_SOURCE_URL", "").strip() or DEFAULT_CNAE_URL
+    return DEFAULT_CNAE_URL
 
 
 def _fetch_all_codes(base_url: str) -> list[dict]:
@@ -71,7 +71,7 @@ def _build_rows(raw_codes: list[dict]) -> list[tuple[int, str, str, int | None]]
     A code of N digits has parent = last id seen at level N-1.
     """
     rows: list[tuple[int, str, str, int | None]] = []
-    counter = 1
+    counter = 0
     last_id_by_level: dict[int, int] = {}
 
     for item in raw_codes:
