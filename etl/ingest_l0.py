@@ -64,8 +64,7 @@ NACIONAL_PARQUET_COLUMNS = [
     ("subtipo_code", "TEXT"),
     ("procedimiento_code", "INTEGER"),
     ("procedimiento", "TEXT"),
-    ("estado_code", "TEXT"),
-    ("estado", "TEXT"),
+    ("estado_code", "SMALLINT"),
     ("valor_estimado_contrato", "NUMERIC(18,2)"),
     ("importe_sin_iva", "NUMERIC(18,2)"),
     ("importe_con_iva", "NUMERIC(18,2)"),
@@ -673,6 +672,9 @@ def ensure_l0_table(
                 cur.execute(
                     f'CREATE INDEX IF NOT EXISTS {iname} ON {full_table} ("expediente", "id_plataforma")'
                 )
+            if "estado_code" in col_names:
+                iname = f"idx_{table_name}_estado_code"
+                cur.execute(f'CREATE INDEX IF NOT EXISTS {iname} ON {full_table} ("estado_code")')
 
 
 def load_parquet_to_l0(
@@ -791,7 +793,12 @@ def load_parquet_to_l0(
 
     inserted = 0
     total_candidates = 0
+    estado_code_lookup: dict[str, int] = {}
     with psycopg2.connect(db_url) as conn:
+        if is_nacional:
+            with conn.cursor() as cur_dim:
+                cur_dim.execute("SELECT code, id FROM dim.estado_licitacion")
+                estado_code_lookup = {row[0]: row[1] for row in cur_dim.fetchall()}
         with conn.cursor() as cur:
             for start in range(0, len(df), batch_size):
                 batch = df.iloc[start : start + batch_size]
@@ -908,6 +915,9 @@ def load_parquet_to_l0(
                                             vals.append(int(v))
                                     except (TypeError, ValueError):
                                         vals.append(None)
+                                elif c == "estado_code":
+                                    str_code = str(v).strip()
+                                    vals.append(estado_code_lookup.get(str_code))
                                 elif isinstance(v, (list, dict)) or hasattr(v, "tolist"):
                                     vals.append(psycopg2.extras.Json(_convert_numpy_to_python(v)))
                                 else:

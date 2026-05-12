@@ -85,7 +85,7 @@ INSERT INTO dim.nuts_spain (geocode, etiqueta) VALUES
 ('ES630', 'Ceuta'),
 ('ES640', 'Melilla'),
 ('ES701', 'Las Palmas'),
-('ES702', 'Santa Cruz de Tenerife')
+('ES702', 'Santa Cruz de Tenerife'),
 -- Códigos NO oficiales pero necesarios para mapeo de nombres exactos de islas Canarias y Baleares
 ('ES703', 'El Hierro'),
 ('ES704', 'Fuerteventura'),
