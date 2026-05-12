@@ -37,7 +37,6 @@ from etl.ingest_l0 import (
     load_parquet_to_l0,
 )
 
-
 INIT_MIGRATIONS = (
     "001_dim_cpv.sql",
     "002_dim_ccaa.sql",
@@ -59,6 +58,7 @@ INIT_MIGRATIONS = (
     "021_scheduler_incidents.sql",
     "022_nacional_procedimiento_code_integer.sql",
     "023_llm_resumen_logs.sql",
+    "024_dim_municipios.sql",
 )
 
 BORME_MIGRATIONS = ("010_borme.sql",)
@@ -1354,8 +1354,7 @@ def cmd_db_info(_args: argparse.Namespace) -> int:
                 db_total = cur.fetchone()
                 print(f"Base de datos: {db_total[0] if db_total else '?'}\n")
                 print("Tamaño por schema:")
-                cur.execute(
-                    """
+                cur.execute("""
                     SELECT n.nspname AS schema_name,
                            pg_size_pretty(SUM(pg_total_relation_size(c.oid))::bigint) AS size
                     FROM pg_class c
@@ -1364,21 +1363,18 @@ def cmd_db_info(_args: argparse.Namespace) -> int:
                       AND n.nspname NOT LIKE 'pg_temp_%%'
                     GROUP BY n.nspname
                     ORDER BY SUM(pg_total_relation_size(c.oid)) DESC
-                """
-                )
+                """)
                 sizes = cur.fetchall()
                 for row in sizes:
                     print(f"  {row[0]}: {row[1]}")
-                cur.execute(
-                    """
+                cur.execute("""
                     SELECT table_schema, table_name
                     FROM information_schema.tables
                     WHERE table_schema NOT IN ('pg_catalog', 'information_schema', 'pg_toast')
                       AND table_schema NOT LIKE 'pg_temp_%%'
                       AND table_type = 'BASE TABLE'
                     ORDER BY table_schema, table_name
-                """
-                )
+                """)
                 tables = cur.fetchall()
                 print("\nTablas:")
                 for sch, name in tables:
