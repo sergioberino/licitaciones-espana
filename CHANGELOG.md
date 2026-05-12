@@ -2,6 +2,21 @@
 
 Todos los cambios notables del CLI y del microservicio ETL se documentan aquí.
 
+## [Unreleased]
+
+### Añadido
+
+- **`dim.estado_licitacion` (lookup table de estados)** (`schemas/025_dim_estado_licitacion.sql`): tabla dimensional estática con `id SMALLSERIAL PK`, `code VARCHAR(4) UNIQUE` y `label TEXT`. Seed con los 6 estados PLACSP: `PUB` Publicada, `PRE` Anuncio Previo, `EV` En evaluación, `ADJ` Adjudicada, `RES` Resuelta, `ANUL` Anulada. El label de `PRE` («Anuncio Previo») elimina la necesidad del CASE SQL correctivo que compensaba el valor vacío devuelto por la API original.
+
+### Modificado
+
+- **`l0.nacional_licitaciones.estado_code`**: cambiado de `TEXT` a `SMALLINT` FK referenciando `dim.estado_licitacion.id`. Permite filtrado por estado más eficiente en memoria.
+- **`l0.nacional_licitaciones.estado`** (columna eliminada): la etiqueta legible pasa a obtenerse mediante JOIN con `dim.estado_licitacion.label`.
+- **Índice `estado_code`** creado automáticamente por `ensure_l0_table` en tablas nacionales con esa columna (B-tree sobre `SMALLINT`); el script `scripts/create_indexes_l0_nacional.sql` mantiene la sentencia equivalente para entornos sin ingest automático.
+- **`etl/ingest_l0.py`**: durante la ingesta nacional, se carga el lookup `dim.estado_licitacion` (code→id) y se mapea el código de texto del parquet al entero correspondiente antes de insertar en la tabla L0.
+
+---
+
 ## [2.0.4] — 2026-05-12
 
 ### Añadido
