@@ -2,15 +2,13 @@
 
 Todos los cambios notables del CLI y del microservicio ETL se documentan aquí.
 
-## [2.0.4] — 2026-05-07
-
-### Corregido
-
-- **BDNS — normalización de códigos CNAE en subvenciones**: la función `_extract_sector_codes` añadía un `0` de relleno cuando el código sin punto tenía 3 dígitos (p. ej. `86.6` → `8660`), produciendo códigos que no existían en `dim.cnae`. Ahora simplemente se elimina el punto (`86.6` → `866`), alineado con los valores reales del catálogo.
+## [2.0.4] — 2026-05-12
 
 ### Añadido
 
-- **Códigos no oficiales de islas en `dim.nuts_spain`**: añadidas filas para las islas de Canarias (`ES704`–`ES70B`) y Baleares (`ES531`–`ES533`), que el SVG del frontend usa como identificadores geográficos. Sin estas filas los nombres de isla no se renderizaban correctamente. Filas insertadas con `ON CONFLICT DO NOTHING`, sin breaking changes.
+- **`dim.municipios` con códigos postales** ([#54](https://github.com/sergioberino/licitaciones-espana/issues/54), PR [#55](https://github.com/sergioberino/licitaciones-espana/pull/55)): sustituye `dim.codigos_ine` por `dim.municipios` con `codigos_postales VARCHAR(5)[]`, FK a `dim.nuts_spain` y seed de 8.132 municipios INE vigentes a 1-enero-2026.
+- **Jerarquía CNAE en `dim.cnae_dim`** ([#52](https://github.com/sergioberino/licitaciones-espana/issues/52), PR [#53](https://github.com/sergioberino/licitaciones-espana/pull/53)): `id SERIAL`, `parent_id` y `code` único; el ingest resuelve la jerarquía oficial CNAE-2025 en memoria.
+- **Índice `estado_code` en `l0.nacional_licitaciones`** ([#50](https://github.com/sergioberino/licitaciones-espana/issues/50), PR [#51](https://github.com/sergioberino/licitaciones-espana/pull/51)): acelera filtros por estado en consultas L0 nacionales.
 
 ---
 
