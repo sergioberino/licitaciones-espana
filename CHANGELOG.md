@@ -4,13 +4,9 @@ Todos los cambios notables del CLI y del microservicio ETL se documentan aquí.
 
 ## [2.0.6] — 2026-05-15
 
-### Añadido
+### Corregido
 
-- **`POST /subvenciones/especificas`** — nuevo endpoint para insertar convocatorias puntuales por número de convocatoria (BDNS). Recibe `{ "numConv": [int, ...] }`, consulta cuáles ya existen en `l0.nacional_subvenciones` y descarta los duplicados; los restantes se obtienen de la API BDNS y se insertan. Devuelve `{ "inserted": N, "omitted": N }`.
-
-### Interno
-
-- **Refactor inserción directa en BD (`nacional/subvenciones.py`)**: lógica de insert extraída a helpers privados `_INSERT_SQL`, `_JSONB_COLS`, `_record_to_row()` y `_fetch_and_insert()`, reutilizados por `scrape_diario` y el nuevo `scrape_especificas`.
+- **L0 nacional — `PROCEDIMIENTOS`:** alineación completa con `TenderingProcessCode-2.08.gc` (PLACSP/CODICE): códigos **6–8** y **100** corregidos; añadidos **9–13** (p. ej. **9** = «Abierto simplificado»). Sin cambios en `schemas/` — no afecta al gate `ddl-diff-on-bump`.
 
 ---
 
