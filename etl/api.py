@@ -12,7 +12,12 @@ from fastapi.responses import JSONResponse, PlainTextResponse
 from pydantic import BaseModel
 
 from etl import __version__
-from etl.cli import cmd_scheduler_register, cmd_scheduler_run, cmd_scheduler_stop, _comprobar_base_datos
+from etl.cli import (
+    cmd_scheduler_register,
+    cmd_scheduler_run,
+    cmd_scheduler_stop,
+    _comprobar_base_datos,
+)
 from etl.config import get_database_url
 from etl.ingest_l0 import CONJUNTOS_REGISTRY
 from etl.scheduler import (
@@ -89,6 +94,11 @@ class BormeAnomaliasBody(BaseModel):
     anos: str
     anonimizar: bool = False
 
+
+class SubvencionesFetchBody(BaseModel):
+    numConv: list[int]
+
+
 app = FastAPI(
     title="ETL API",
     version=__version__,
@@ -120,6 +130,7 @@ def _startup_recover_stale_runs():
 def _startup_schema_check():
     """Log-only schema migration check on boot (no auto-apply, no state dependency)."""
     from etl import schema_check
+
     url = get_database_url()
     if not url:
         return
@@ -229,7 +240,9 @@ def _startup_crash_detection():
                 if rc == 0:
                     app.state.recovery_status["auto_restart_attempted"] = True
                     app.state.recovery_status["auto_restart_success"] = True
-                    print(f"[crash-recovery] Scheduler reiniciado correctamente en el intento {attempt}")
+                    print(
+                        f"[crash-recovery] Scheduler reiniciado correctamente en el intento {attempt}"
+                    )
                     return
             except Exception as e:
                 print(f"[crash-recovery] Intento {attempt} fallido: {e}")
@@ -260,7 +273,15 @@ def _startup_crash_detection():
 def _serialize_row(row: dict) -> dict:
     """Convert a row dict to JSON-serializable form (datetime -> ISO string)."""
     out = dict(row)
-    for key in ("started_at", "finished_at", "last_started_at", "last_finished_at", "next_run_at", "created_at", "resolved_at"):
+    for key in (
+        "started_at",
+        "finished_at",
+        "last_started_at",
+        "last_finished_at",
+        "next_run_at",
+        "created_at",
+        "resolved_at",
+    ):
         val = out.get(key)
         if isinstance(val, datetime):
             out[key] = val.isoformat()
@@ -269,6 +290,7 @@ def _serialize_row(row: dict) -> dict:
 
 def _get_dim_status(conn) -> dict | None:
     """Check row and embedding presence for each dim table."""
+
     def _check_table(cur, table: str) -> dict:
         try:
             cur.execute(f"SELECT EXISTS(SELECT 1 FROM dim.{table})")
@@ -294,7 +316,11 @@ def _get_dim_status(conn) -> dict | None:
         return None
 
 
-@app.get("/health", summary="Health check", description="Liveness, DB connectivity, migration status, and dimension table readiness.")
+@app.get(
+    "/health",
+    summary="Health check",
+    description="Liveness, DB connectivity, migration status, and dimension table readiness.",
+)
 def health():
     db_url = get_database_url()
     db_ok = False
@@ -308,17 +334,30 @@ def health():
                 dim_status = _get_dim_status(conn)
         except Exception:
             pass
-    migrations = {"schema_check_delegated": True, "note": "Use migrator job for migration management"}
+    migrations = {
+        "schema_check_delegated": True,
+        "note": "Use migrator job for migration management",
+    }
 
-    payload = {"status": "ok" if db_ok else "degraded", "db": db_ok, "migrations": migrations, "dim_status": dim_status}
+    payload = {
+        "status": "ok" if db_ok else "degraded",
+        "db": db_ok,
+        "migrations": migrations,
+        "dim_status": dim_status,
+    }
     status_code = 200 if db_ok else 503
     return JSONResponse(content=payload, status_code=status_code)
 
 
-@app.get("/migrations", summary="Migration audit trail", description="Returns all recorded schema migrations.")
+@app.get(
+    "/migrations",
+    summary="Migration audit trail",
+    description="Returns all recorded schema migrations.",
+)
 def get_migrations():
     from etl import schema_check
     from etl.cli import INIT_MIGRATIONS
+
     db_url = get_database_url()
     if not db_url:
         return JSONResponse(status_code=503, content={"detail": "Database not configured"})
@@ -349,18 +388,25 @@ def get_migrations():
         return JSONResponse(status_code=503, content={"detail": str(e)})
 
 
-@app.get("/ddl", summary="DDL contract listing", description="Lists all .sql schema files with checksums and sizes. No DB access required.")
+@app.get(
+    "/ddl",
+    summary="DDL contract listing",
+    description="Lists all .sql schema files with checksums and sizes. No DB access required.",
+)
 def get_ddl():
     from etl.schema_check import _schemas_dir, sha256 as _sha256
+
     d = _schemas_dir()
     schemas = []
     for f in sorted(d.iterdir(), key=lambda p: p.name):
         if f.suffix == ".sql":
-            schemas.append({
-                "filename": f.name,
-                "checksum": _sha256(f),
-                "size_bytes": f.stat().st_size,
-            })
+            schemas.append(
+                {
+                    "filename": f.name,
+                    "checksum": _sha256(f),
+                    "size_bytes": f.stat().st_size,
+                }
+            )
     return {
         "etl_version": __version__,
         "generated_at": datetime.utcnow().isoformat(timespec="seconds") + "Z",
@@ -368,22 +414,32 @@ def get_ddl():
     }
 
 
-@app.get("/ddl/{filename}", summary="DDL file content", description="Returns the raw SQL content of a schema file as text/plain.")
+@app.get(
+    "/ddl/{filename}",
+    summary="DDL file content",
+    description="Returns the raw SQL content of a schema file as text/plain.",
+)
 def get_ddl_file(filename: str):
     if ".." in filename or "/" in filename:
         raise HTTPException(status_code=400, detail="Invalid filename")
     from etl.schema_check import _schemas_dir
+
     path = _schemas_dir() / filename
     if not path.exists() or not filename.endswith(".sql"):
         raise HTTPException(status_code=404, detail="File not found")
     return PlainTextResponse(path.read_text(encoding="utf-8"), media_type="text/plain")
 
 
-@app.post("/init-db", summary="Apply init-db migrations", description="Applies infrastructure migrations (dim, scheduler). Returns results for dashboard.")
+@app.post(
+    "/init-db",
+    summary="Apply init-db migrations",
+    description="Applies infrastructure migrations (dim, scheduler). Returns results for dashboard.",
+)
 def post_init_db():
     """Run init-db logic and return JSON for the frontend migration apply flow."""
     from etl import schema_check
     from etl.cli import run_init_db, _schema_dir, INIT_MIGRATIONS
+
     exit_code, results = run_init_db(schema_dir=_schema_dir())
     # Refresh migration status so next /health reflects applied count
     db_url = get_database_url()
@@ -463,7 +519,9 @@ def ingest_run(body: IngestRunBody):
     if subconjunto is None and len(subconjuntos) > 1:
         return JSONResponse(
             status_code=422,
-            content={"detail": f"Para '{conjunto}' indique subconjunto. Válidos: {', '.join(subconjuntos)}."},
+            content={
+                "detail": f"Para '{conjunto}' indique subconjunto. Válidos: {', '.join(subconjuntos)}."
+            },
         )
     if subconjunto and subconjunto not in subconjuntos:
         return JSONResponse(
@@ -519,7 +577,7 @@ def ingest_run(body: IngestRunBody):
 @app.post(
     "/scheduler/register",
     summary="Register scheduler tasks",
-    description="Populate scheduler.tasks from CONJUNTOS_REGISTRY. Optional body: { \"conjuntos\": [\"nacional\", ...] }. If conjuntos empty or omitted, register all. Returns 200 with summary.",
+    description='Populate scheduler.tasks from CONJUNTOS_REGISTRY. Optional body: { "conjuntos": ["nacional", ...] }. If conjuntos empty or omitted, register all. Returns 200 with summary.',
 )
 def scheduler_register(body: SchedulerRegisterBody | None = None):
     """Register scheduler tasks for given conjuntos or all."""
@@ -544,7 +602,9 @@ def scheduler_register(body: SchedulerRegisterBody | None = None):
                 schedule_overrides[key] = task_expr
         url = get_database_url()
         if not url:
-            return JSONResponse(status_code=503, content={"ok": False, "message": "Database not configured"})
+            return JSONResponse(
+                status_code=503, content={"ok": False, "message": "Database not configured"}
+            )
         try:
             with psycopg2.connect(url) as conn:
                 conn.autocommit = False
@@ -572,7 +632,9 @@ def scheduler_register(body: SchedulerRegisterBody | None = None):
     except Exception as e:
         return JSONResponse(status_code=500, content={"ok": False, "message": str(e)})
     if rc != 0:
-        return JSONResponse(status_code=500, content={"ok": False, "message": "Register failed (see server logs)"})
+        return JSONResponse(
+            status_code=500, content={"ok": False, "message": "Register failed (see server logs)"}
+        )
     return {"ok": True, "message": "Tasks registered"}
 
 
@@ -604,7 +666,9 @@ def scheduler_run(body: SchedulerRunBody | None = None):
     if not body.detach and not conjunto:
         return JSONResponse(
             status_code=422,
-            content={"detail": "Indique conjunto y subconjunto para una tarea, o detach=true para el bucle en background."},
+            content={
+                "detail": "Indique conjunto y subconjunto para una tarea, o detach=true para el bucle en background."
+            },
         )
     if conjunto and subconjunto is None and conjunto in CONJUNTOS_REGISTRY:
         subs = list(CONJUNTOS_REGISTRY[conjunto].get("subconjuntos", ()))
@@ -613,7 +677,9 @@ def scheduler_run(body: SchedulerRunBody | None = None):
         elif len(subs) > 1:
             return JSONResponse(
                 status_code=422,
-                content={"detail": f"El conjunto '{conjunto}' tiene varios subconjuntos. Indique uno: {', '.join(subs)}."},
+                content={
+                    "detail": f"El conjunto '{conjunto}' tiene varios subconjuntos. Indique uno: {', '.join(subs)}."
+                },
             )
     if conjunto and not subconjunto and not body.detach:
         return JSONResponse(
@@ -676,9 +742,13 @@ def scheduler_run(body: SchedulerRunBody | None = None):
     except Exception as e:
         return JSONResponse(status_code=500, content={"ok": False, "message": str(e)})
     if rc != 0:
-        return JSONResponse(status_code=500, content={"ok": False, "message": "Run failed (see server logs)"})
+        return JSONResponse(
+            status_code=500, content={"ok": False, "message": "Run failed (see server logs)"}
+        )
     if body.detach:
-        return JSONResponse(status_code=202, content={"ok": True, "message": "Scheduler started in background"})
+        return JSONResponse(
+            status_code=202, content={"ok": True, "message": "Scheduler started in background"}
+        )
     return {"ok": True, "message": "Task completed"}
 
 
@@ -695,7 +765,10 @@ def scheduler_stop():
     except Exception as e:
         return JSONResponse(status_code=500, content={"ok": False, "message": str(e)})
     if rc != 0:
-        return JSONResponse(status_code=500, content={"ok": False, "message": "Stop failed (scheduler not running or invalid PID)"})
+        return JSONResponse(
+            status_code=500,
+            content={"ok": False, "message": "Stop failed (scheduler not running or invalid PID)"},
+        )
     return {"ok": True, "message": "Scheduler stop requested"}
 
 
@@ -707,7 +780,9 @@ def scheduler_stop():
 def scheduler_runs_stop(body: SchedulerRunsStopBody):
     db_url = get_database_url()
     if db_url is None:
-        return JSONResponse(status_code=503, content={"ok": False, "message": "Database not configured"})
+        return JSONResponse(
+            status_code=503, content={"ok": False, "message": "Database not configured"}
+        )
     try:
         with psycopg2.connect(db_url) as conn:
             conn.autocommit = False
@@ -730,7 +805,9 @@ def scheduler_recover():
     """Manually trigger stale-run recovery."""
     db_url = get_database_url()
     if db_url is None:
-        return JSONResponse(status_code=503, content={"ok": False, "message": "Database not configured"})
+        return JSONResponse(
+            status_code=503, content={"ok": False, "message": "Database not configured"}
+        )
     try:
         with psycopg2.connect(db_url) as conn:
             conn.autocommit = False
@@ -749,9 +826,13 @@ def scheduler_recover():
 def scheduler_unregister(body: SchedulerUnregisterBody):
     db_url = get_database_url()
     if db_url is None:
-        return JSONResponse(status_code=503, content={"ok": False, "message": "Database not configured"})
+        return JSONResponse(
+            status_code=503, content={"ok": False, "message": "Database not configured"}
+        )
     if not body.tasks:
-        return JSONResponse(status_code=422, content={"ok": False, "message": "No tasks specified."})
+        return JSONResponse(
+            status_code=422, content={"ok": False, "message": "No tasks specified."}
+        )
     try:
         deleted = 0
         with psycopg2.connect(db_url) as conn:
@@ -837,7 +918,9 @@ def scheduler_incident_resolve(incident_id: int, body: IncidentResolveBody):
     """Mark a scheduler incident as resolved."""
     db_url = get_database_url()
     if not db_url:
-        return JSONResponse(status_code=503, content={"ok": False, "message": "Database not configured"})
+        return JSONResponse(
+            status_code=503, content={"ok": False, "message": "Database not configured"}
+        )
     try:
         with psycopg2.connect(db_url) as conn:
             with conn.cursor() as cur:
@@ -845,7 +928,10 @@ def scheduler_incident_resolve(incident_id: int, body: IncidentResolveBody):
                     """UPDATE scheduler.incidents
                        SET resolved_at = NOW(), resolved_by = 'user', resolution = %s
                        WHERE incident_id = %s AND resolved_at IS NULL""",
-                    (body.resolution + (f"\n\nNote: {body.note}" if body.note else ""), incident_id),
+                    (
+                        body.resolution + (f"\n\nNote: {body.note}" if body.note else ""),
+                        incident_id,
+                    ),
                 )
                 if cur.rowcount == 0:
                     return JSONResponse(
@@ -858,7 +944,11 @@ def scheduler_incident_resolve(incident_id: int, body: IncidentResolveBody):
         return JSONResponse(status_code=500, content={"ok": False, "message": str(e)})
 
 
-@app.get("/status", summary="Database status", description="Checks the database connection and returns availability.")
+@app.get(
+    "/status",
+    summary="Database status",
+    description="Checks the database connection and returns availability.",
+)
 def status():
     ok, msg = _comprobar_base_datos()
     if ok:
@@ -869,7 +959,11 @@ def status():
     )
 
 
-@app.get("/scheduler/status", summary="Scheduler tasks status", description="Lists all registered scheduler tasks with their last run info and computed next_run_at.")
+@app.get(
+    "/scheduler/status",
+    summary="Scheduler tasks status",
+    description="Lists all registered scheduler tasks with their last run info and computed next_run_at.",
+)
 def scheduler_status():
     url = get_database_url()
     if url is None:
@@ -928,7 +1022,11 @@ def scheduler_status():
     }
 
 
-@app.get("/scheduler/running", summary="Running scheduler runs", description="Lists all currently running ingest runs with task metadata.")
+@app.get(
+    "/scheduler/running",
+    summary="Running scheduler runs",
+    description="Lists all currently running ingest runs with task metadata.",
+)
 def scheduler_running():
     url = get_database_url()
     if url is None:
@@ -961,7 +1059,11 @@ def ingest_log(lines: int = 80):
     return {"lines": tail, "exists": True, "total_lines": len(all_lines)}
 
 
-@app.get("/ingest/current-run", summary="Current running ingest job", description="Returns the currently running ingest scheduler run, if any.")
+@app.get(
+    "/ingest/current-run",
+    summary="Current running ingest job",
+    description="Returns the currently running ingest scheduler run, if any.",
+)
 def ingest_current_run():
     """Return the currently running ingest run (if any)."""
     url = get_database_url()
@@ -977,7 +1079,11 @@ def ingest_current_run():
     return {"running": True, "run": _serialize_row(run)}
 
 
-@app.get("/db-info", summary="Database info (schemas and tables)", description="Returns database schemas with sizes, table listing, and total database size.")
+@app.get(
+    "/db-info",
+    summary="Database info (schemas and tables)",
+    description="Returns database schemas with sizes, table listing, and total database size.",
+)
 def db_info():
     url = get_database_url()
     if url is None:
@@ -1039,7 +1145,12 @@ def borme_ingest(body: BormeIngestBody):
             status_code=500,
             content={"ok": False, "message": f"Could not start BORME ingest: {e}"},
         )
-    return {"ok": True, "message": f"BORME ingest started (PID: {p.pid})", "pid": p.pid, "anos": body.anos}
+    return {
+        "ok": True,
+        "message": f"BORME ingest started (PID: {p.pid})",
+        "pid": p.pid,
+        "anos": body.anos,
+    }
 
 
 @app.post("/borme/anomalias", summary="BORME: anomaly detector vs L0 nacional")
@@ -1061,7 +1172,13 @@ def borme_anomalias(body: BormeAnomaliasBody):
             status_code=500,
             content={"ok": False, "message": f"Could not start BORME anomalias: {e}"},
         )
-    return {"ok": True, "message": f"BORME anomalías started (PID: {p.pid})", "pid": p.pid, "anos": body.anos, "anonimizar": body.anonimizar}
+    return {
+        "ok": True,
+        "message": f"BORME anomalías started (PID: {p.pid})",
+        "pid": p.pid,
+        "anos": body.anos,
+        "anonimizar": body.anonimizar,
+    }
 
 
 @app.get("/borme/jobs/{job_id}", summary="BORME job status")
@@ -1081,7 +1198,12 @@ def borme_job_status(job_id: str):
             log_lines = text.splitlines()[-50:]
         except OSError:
             pass
-    return {"job_id": job_id, "alive": alive, "status": "running" if alive else "finished", "log_tail": log_lines}
+    return {
+        "job_id": job_id,
+        "alive": alive,
+        "status": "running" if alive else "finished",
+        "log_tail": log_lines,
+    }
 
 
 @app.post(
@@ -1091,6 +1213,7 @@ def borme_job_status(job_id: str):
 )
 def cnae_ingest():
     from etl.cnae_ingest import run_cnae_ingest
+
     try:
         result = run_cnae_ingest()
         if result["ok"]:
@@ -1098,6 +1221,22 @@ def cnae_ingest():
         return JSONResponse(status_code=500, content=result)
     except Exception as e:
         return JSONResponse(status_code=500, content={"ok": False, "message": str(e)})
+
+
+@app.post(
+    "/subvenciones/especificas",
+    summary="Insertar convocatorias específicas",
+    description="Recibe un array de numConv. Los que ya existan en BD se omiten; el resto se insertan.",
+)
+def subvenciones_especificas(body: SubvencionesFetchBody):
+    sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+    from nacional.subvenciones import scrape_especificas
+
+    try:
+        result = scrape_especificas(body.numConv)
+        return result
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
 
 
 @app.get("/borme/log", summary="Tail the BORME subprocess log")
