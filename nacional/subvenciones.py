@@ -824,17 +824,10 @@ def _fetch_and_insert(cur, conn, convocatorias: list[dict]) -> int:
     La deduplicación previa (filtrar IDs ya existentes) es responsabilidad del llamante.
     """
     detailed_records = []
-    skipped_expired = 0
     for conv in tqdm(convocatorias, unit="conv"):
         detail = fetch_convocatoria_detalle(str(conv["id"]))
         if detail:
-            if _is_expired_grant(detail):
-                skipped_expired += 1
-            else:
-                detailed_records.append(detail)
-
-    if skipped_expired:
-        _log("INFO", f"{skipped_expired} convocatorias descartadas (cerradas y caducadas)")
+            detailed_records.append(detail)
 
     if not detailed_records:
         return 0
