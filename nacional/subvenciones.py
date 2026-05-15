@@ -754,6 +754,149 @@ def scrape_historico(params: SearchParams) -> list[Path]:
         raise
 
 
+# ---------------------------------------------------------------------------
+# Helpers compartidos de inserción directa en BD
+# ---------------------------------------------------------------------------
+
+_INSERT_SQL = """
+    INSERT INTO l0.nacional_subvenciones
+    (id, nivel1, nivel2, nivel3, sede_electronica, fecha_recepcion,
+     instrumento_id, tipo_convocatoria, presupuesto_total, mrr, descripcion, descripcion_leng,
+     tipos_beneficiarios, sectores, regiones, politica_gastos, descripcion_bases_reguladoras,
+     url_bases_reguladoras, resumen_bases_reguladoras, se_publica_diario_oficial, abierto, fecha_inicio_solicitud,
+     fecha_fin_solicitud, fecha_inicio_solicitud_texto, fecha_fin_solicitud_texto, ayuda_estado, url_ayuda_estado,
+     fondos, reglamento, objetivos, sectores_productos, documentos, anuncios)
+    VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    ON CONFLICT (id) DO NOTHING
+"""
+
+_JSONB_COLS = ["fondos", "sectores_productos", "documentos", "anuncios"]
+
+
+def _record_to_row(record: dict) -> tuple:
+    """Serializa las columnas JSONB y devuelve la tupla lista para INSERT."""
+    for col in _JSONB_COLS:
+        if record.get(col) is not None:
+            record[col] = json.dumps(record[col])
+    return (
+        record.get("id"),
+        record.get("nivel1"),
+        record.get("nivel2"),
+        record.get("nivel3"),
+        record.get("sede_electronica"),
+        record.get("fecha_recepcion"),
+        record.get("instrumento_id"),
+        record.get("tipo_convocatoria"),
+        record.get("presupuesto_total"),
+        record.get("mrr"),
+        record.get("descripcion"),
+        record.get("descripcion_leng"),
+        record.get("tipos_beneficiarios"),
+        record.get("sectores"),
+        record.get("regiones"),
+        record.get("politica_gastos"),
+        record.get("descripcion_bases_reguladoras"),
+        record.get("url_bases_reguladoras"),
+        record.get("resumen_bases_reguladoras"),
+        record.get("se_publica_diario_oficial"),
+        record.get("abierto"),
+        record.get("fecha_inicio_solicitud"),
+        record.get("fecha_fin_solicitud"),
+        record.get("fecha_inicio_solicitud_texto"),
+        record.get("fecha_fin_solicitud_texto"),
+        record.get("ayuda_estado"),
+        record.get("url_ayuda_estado"),
+        record.get("fondos"),
+        record.get("reglamento"),
+        record.get("objetivos"),
+        record.get("sectores_productos"),
+        record.get("documentos"),
+        record.get("anuncios"),
+    )
+
+
+def _fetch_and_insert(cur, conn, convocatorias: list[dict]) -> int:
+    """
+    Obtiene el detalle de cada convocatoria (lista de dicts con clave 'id'),
+    construye las filas y las inserta en BD. Devuelve el número de filas insertadas.
+
+    Se omiten automáticamente las convocatorias expiradas y las que fallen en la API.
+    La deduplicación previa (filtrar IDs ya existentes) es responsabilidad del llamante.
+    """
+    detailed_records = []
+    skipped_expired = 0
+    for conv in tqdm(convocatorias, unit="conv"):
+        detail = fetch_convocatoria_detalle(str(conv["id"]))
+        if detail:
+            if _is_expired_grant(detail):
+                skipped_expired += 1
+            else:
+                detailed_records.append(detail)
+
+    if skipped_expired:
+        _log("INFO", f"{skipped_expired} convocatorias descartadas (cerradas y caducadas)")
+
+    if not detailed_records:
+        return 0
+
+    rows = [_record_to_row(r) for r in detailed_records]
+    execute_batch(cur, _INSERT_SQL, rows, page_size=100)
+    conn.commit()
+    return len(rows)
+
+
+def scrape_especificas(ids: list[int]) -> dict[str, int]:
+    """
+    Inserta en BD los numConv que aún no existan.
+    Los que ya estén en la tabla se descartan silenciosamente.
+
+    Args:
+        ids: Lista de números de convocatoria (numConv / id en BD).
+
+    Returns:
+        Diccionario con métricas: inserted, omitted.
+    """
+    if not ids:
+        return {"inserted": 0, "omitted": 0}
+
+    db_url = get_database_url()
+    if not db_url:
+        raise ValueError("No se pudo obtener la URL de la base de datos.")
+
+    conn = None
+    cur = None
+    try:
+        conn = psycopg2.connect(db_url)
+        cur = conn.cursor()
+
+        cur.execute(
+            "SELECT id FROM l0.nacional_subvenciones WHERE id = ANY(%s)",
+            (ids,),
+        )
+        existing_ids = {row[0] for row in cur.fetchall()}
+        nuevos = [{"id": i} for i in ids if i not in existing_ids]
+
+        omitted = len(existing_ids)
+        if not nuevos:
+            _log("INFO", f"Todos los IDs ya existen en BD ({omitted} omitidos)")
+            return {"inserted": 0, "omitted": omitted}
+
+        _log("INFO", f"{len(nuevos)} convocatorias nuevas, {omitted} ya existentes omitidas")
+        inserted = _fetch_and_insert(cur, conn, nuevos)
+        return {"inserted": inserted, "omitted": omitted}
+
+    except Exception as err:
+        _log("ERROR", str(err))
+        if conn:
+            conn.rollback()
+        raise
+    finally:
+        if conn:
+            if cur:
+                cur.close()
+            conn.close()
+
+
 def scrape_diario(params: SearchParams) -> dict[str, int]:
     """
     Scrape latest/daily grants and insert directly into database.
@@ -890,97 +1033,8 @@ def scrape_diario(params: SearchParams) -> dict[str, int]:
         )
 
         # FASE 2: Obtener detalles de todas las convocatorias e insertar
-        detailed_records = []
         _log("INFO", "Obteniendo detalles de las nuevas convocatorias encontradas...")
-        skipped_expired = 0
-        for conv in tqdm(all_new_convocatorias, unit="conv"):
-            detail = fetch_convocatoria_detalle(str(conv["id"]))
-            if detail:
-                if _is_expired_grant(detail):
-                    skipped_expired += 1
-                else:
-                    detailed_records.append(detail)
-        if skipped_expired:
-            _log("INFO", f"{skipped_expired} convocatorias descartadas (cerradas y caducadas)")
-
-        if not detailed_records:
-            _log("INFO", "No se pudieron obtener detalles de las convocatorias")
-            return {
-                "inserted": 0,
-                "omitted": total_duplicates,
-                "filtered": total_filtered,
-                "pages": page + 1,
-            }
-
-        _log("INFO", "Guardando en BD...")
-        records_to_insert = []
-        # Only these columns need JSON serialization now
-        jsonb_cols = [
-            "fondos",
-            "sectores_productos",
-            "documentos",
-            "anuncios",
-        ]
-
-        for record in detailed_records:
-            # Serialize JSONB columns only
-            for col in jsonb_cols:
-                if record.get(col) is not None:
-                    record[col] = json.dumps(record[col])
-
-            records_to_insert.append(
-                (
-                    record.get("id"),
-                    record.get("nivel1"),
-                    record.get("nivel2"),
-                    record.get("nivel3"),
-                    record.get("sede_electronica"),
-                    record.get("fecha_recepcion"),
-                    record.get("instrumento_id"),
-                    record.get("tipo_convocatoria"),
-                    record.get("presupuesto_total"),
-                    record.get("mrr"),
-                    record.get("descripcion"),
-                    record.get("descripcion_leng"),
-                    record.get("tipos_beneficiarios"),  # Array of SMALLINT
-                    record.get("sectores"),  # Array of VARCHAR (CNAE codes)
-                    record.get("regiones"),  # Array of VARCHAR (NUT codes)
-                    record.get("politica_gastos"),
-                    record.get("descripcion_bases_reguladoras"),
-                    record.get("url_bases_reguladoras"),
-                    record.get("resumen_bases_reguladoras"),
-                    record.get("se_publica_diario_oficial"),
-                    record.get("abierto"),
-                    record.get("fecha_inicio_solicitud"),
-                    record.get("fecha_fin_solicitud"),
-                    record.get("fecha_inicio_solicitud_texto"),
-                    record.get("fecha_fin_solicitud_texto"),
-                    record.get("ayuda_estado"),
-                    record.get("url_ayuda_estado"),
-                    record.get("fondos"),
-                    record.get("reglamento"),
-                    record.get("objetivos"),
-                    record.get("sectores_productos"),
-                    record.get("documentos"),
-                    record.get("anuncios"),
-                )
-            )
-
-        insert_sql = """
-            INSERT INTO l0.nacional_subvenciones 
-            (id, nivel1, nivel2, nivel3, sede_electronica, fecha_recepcion,
-             instrumento_id, tipo_convocatoria, presupuesto_total, mrr, descripcion, descripcion_leng,
-             tipos_beneficiarios, sectores, regiones, politica_gastos, descripcion_bases_reguladoras,
-             url_bases_reguladoras, resumen_bases_reguladoras, se_publica_diario_oficial, abierto, fecha_inicio_solicitud,
-             fecha_fin_solicitud, fecha_inicio_solicitud_texto, fecha_fin_solicitud_texto, ayuda_estado, url_ayuda_estado,
-             fondos, reglamento, objetivos, sectores_productos, documentos, anuncios)
-            VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
-            ON CONFLICT (id) DO NOTHING
-        """
-
-        execute_batch(cur, insert_sql, records_to_insert, page_size=100)
-        conn.commit()
-        total_new = len(records_to_insert)
+        total_new = _fetch_and_insert(cur, conn, all_new_convocatorias)
 
         _log("INFO", f"Actualizado con {total_new} convocatorias más recientes en BD")
 
