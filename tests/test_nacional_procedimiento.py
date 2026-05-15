@@ -34,16 +34,19 @@ class TestProcedimientoEtiqueta:
         assert procedimiento_etiqueta(3) == "Negociado sin publicidad"
         assert procedimiento_etiqueta(4) == "Negociado con publicidad"
 
-    def test_one_to_eight(self):
+    def test_one_to_thirteen(self):
         assert procedimiento_etiqueta(1) == "Abierto"
         assert procedimiento_etiqueta(2) == "Restringido"
         assert procedimiento_etiqueta(5) == "Diálogo competitivo"
-        assert procedimiento_etiqueta(6) == "Asociación para la innovación"
-        assert procedimiento_etiqueta(7) == "Concurso de proyectos"
-        assert procedimiento_etiqueta(8) == "Contrato menor"
+        assert procedimiento_etiqueta(6) == "Contrato Menor"
+        assert procedimiento_etiqueta(7) == "Basado en Acuerdo Marco"
+        assert procedimiento_etiqueta(8) == "Concurso de proyectos"
+        assert procedimiento_etiqueta(9) == "Abierto simplificado"
+        assert procedimiento_etiqueta(10) == "Asociación para la innovación"
+        assert procedimiento_etiqueta(13) == "Licitación con negociación"
 
     def test_extensions_retained(self):
-        assert procedimiento_etiqueta(100) == "Basado en acuerdo marco"
+        assert procedimiento_etiqueta(100) == "Normas Internas"
         assert procedimiento_etiqueta(999) == "Otros"
 
     def test_unknown_numeric_fallback(self):
@@ -54,10 +57,12 @@ class TestProcedimientoEtiqueta:
 
 
 class TestProcedimientosDictCompleteness:
-    """Catálogo explícito debe coincidir con etiquetas usadas en migración 022."""
+    """Catálogo explícito debe coincidir con TenderingProcessCode-2.08.gc."""
 
     def test_expected_keys(self):
-        assert set(PROCEDIMIENTOS) == {1, 2, 3, 4, 5, 6, 7, 8, 100, 999}
+        assert set(PROCEDIMIENTOS) == {
+            1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 100, 999
+        }
 
 
 def _entry_xml_with_procedure(code: str) -> ET.Element:
@@ -93,9 +98,10 @@ class TestParsearEntryProcedureIntegration:
         [
             ("3", "Negociado sin publicidad"),
             ("4", "Negociado con publicidad"),
-            ("7", "Concurso de proyectos"),
-            ("8", "Contrato menor"),
-            ("100", "Basado en acuerdo marco"),
+            ("7", "Basado en Acuerdo Marco"),
+            ("8", "Concurso de proyectos"),
+            ("9", "Abierto simplificado"),
+            ("100", "Normas Internas"),
             ("999", "Otros"),
         ],
     )

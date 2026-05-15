@@ -108,18 +108,23 @@ ESTADOS = {
     'RES': 'Resuelta', 'ANUL': 'Anulada', 'DES': 'Desierta',
 }
 
-# Códigos según códice CODICE / PLACSP (licitaciones recientes). 100 y 999 se
-# mantienen hasta auditoría (ampliaciones frecuentes en XML).
+# TenderingProcessCode-2.08.gc (PLACSP / CODICE) — cbc:ProcedureCode
+# https://contrataciondelestado.es/codice/cl/2.08/TenderingProcessCode-2.08.gc
 PROCEDIMIENTOS: dict[int, str] = {
     1: "Abierto",
     2: "Restringido",
     3: "Negociado sin publicidad",
     4: "Negociado con publicidad",
     5: "Diálogo competitivo",
-    6: "Asociación para la innovación",
-    7: "Concurso de proyectos",
-    8: "Contrato menor",
-    100: "Basado en acuerdo marco",
+    6: "Contrato Menor",
+    7: "Basado en Acuerdo Marco",
+    8: "Concurso de proyectos",
+    9: "Abierto simplificado",
+    10: "Asociación para la innovación",
+    11: "Derivado de asociación para la innovación",
+    12: "Basado en sistema dinámico de adquisición",
+    13: "Licitación con negociación",
+    100: "Normas Internas",
     999: "Otros",
 }
 
@@ -984,8 +989,21 @@ def main():
     print(f"   Conjuntos: {', '.join(conjuntos)}")
     
     crear_directorios()
+
+    # Remove stale partial parquets from any previous interrupted or OOM-killed run.
+    # The glob in cli.py picks up ALL matching files regardless of age, so orphaned
+    # partials from a longer prior run would be loaded alongside fresh ones — bloating
+    # RAM and risking another OOM. Clearing them here ensures the output dir contains
+    # only what this run produces.
+    for _conjunto_id in conjuntos:
+        for _stale in OUTPUT_DIR.glob(f'_part_{_conjunto_id}_*.parquet'):
+            try:
+                _stale.unlink()
+            except OSError:
+                pass
+
     session = get_session()
-    
+
     archivos_descargados = []
     
     # Descargar
@@ -1034,6 +1052,10 @@ def main():
                     print(f"      → parcial {part_path.name} ({n:,} registros)")
                 del lics
                 gc.collect()
+                try:
+                    zip_path.unlink()
+                except OSError:
+                    pass
 
     if partial_parquets:
         total_parts = len(partial_parquets)

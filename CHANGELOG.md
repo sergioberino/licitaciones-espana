@@ -2,6 +2,14 @@
 
 Todos los cambios notables del CLI y del microservicio ETL se documentan aquí.
 
+## [2.0.6] — 2026-05-15
+
+### Corregido
+
+- **L0 nacional — `PROCEDIMIENTOS`:** alineación completa con `TenderingProcessCode-2.08.gc` (PLACSP/CODICE): códigos **6–8** y **100** corregidos; añadidos **9–13** (p. ej. **9** = «Abierto simplificado»). Sin cambios en `schemas/` — no afecta al gate `ddl-diff-on-bump`.
+
+---
+
 ## [2.0.5] — 2026-05-12
 
 ### Añadido
