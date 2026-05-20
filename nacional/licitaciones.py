@@ -36,76 +36,86 @@ import tempfile
 # ============================================================================
 
 CONJUNTOS = {
-    'licitaciones': {
-        'nombre': 'Licitaciones (sin menores)',
-        'url_base': 'https://contrataciondelsectorpublico.gob.es/sindicacion/sindicacion_643/',
-        'patron_archivo': 'licitacionesPerfilesContratanteCompleto3_{periodo}.zip',
-        'ano_inicio': 2012,
-        'mensual_desde': 2025,  # 2025+ tiene archivos mensuales
+    "licitaciones": {
+        "nombre": "Licitaciones (sin menores)",
+        "url_base": "https://contrataciondelsectorpublico.gob.es/sindicacion/sindicacion_643/",
+        "patron_archivo": "licitacionesPerfilesContratanteCompleto3_{periodo}.zip",
+        "ano_inicio": 2012,
+        "mensual_desde": 2025,  # 2025+ tiene archivos mensuales
     },
-    'agregacion': {
-        'nombre': 'Licitaciones por agregación (sin menores)',
-        'url_base': 'https://contrataciondelsectorpublico.gob.es/sindicacion/sindicacion_1044/',
-        'patron_archivo': 'PlataformasAgregadasSinMenores_{periodo}.zip',
-        'ano_inicio': 2016,
-        'mensual_desde': 2025,  # 2025+ tiene archivos mensuales
+    "agregacion": {
+        "nombre": "Licitaciones por agregación (sin menores)",
+        "url_base": "https://contrataciondelsectorpublico.gob.es/sindicacion/sindicacion_1044/",
+        "patron_archivo": "PlataformasAgregadasSinMenores_{periodo}.zip",
+        "ano_inicio": 2016,
+        "mensual_desde": 2025,  # 2025+ tiene archivos mensuales
     },
-    'menores': {
-        'nombre': 'Contratos menores',
-        'url_base': 'https://contrataciondelsectorpublico.gob.es/sindicacion/sindicacion_1143/',
-        'patron_archivo': 'contratosMenoresPerfilesContratantes_{periodo}.zip',
-        'ano_inicio': 2018,
-        'mensual_desde': 2025,  # 2025+ tiene archivos mensuales
+    "menores": {
+        "nombre": "Contratos menores",
+        "url_base": "https://contrataciondelsectorpublico.gob.es/sindicacion/sindicacion_1143/",
+        "patron_archivo": "contratosMenoresPerfilesContratantes_{periodo}.zip",
+        "ano_inicio": 2018,
+        "mensual_desde": 2025,  # 2025+ tiene archivos mensuales
     },
-    'encargos': {
-        'nombre': 'Encargos a medios propios',
-        'url_base': 'https://contrataciondelsectorpublico.gob.es/sindicacion/sindicacion_1383/',
-        'patron_archivo': 'EMP_SectorPublico_{periodo}.zip',
-        'ano_inicio': 2022,  # Incluye datos desde julio 2021
-        'mensual_desde': None,  # Solo archivos anuales
+    "encargos": {
+        "nombre": "Encargos a medios propios",
+        "url_base": "https://contrataciondelsectorpublico.gob.es/sindicacion/sindicacion_1383/",
+        "patron_archivo": "EMP_SectorPublico_{periodo}.zip",
+        "ano_inicio": 2022,  # Incluye datos desde julio 2021
+        "mensual_desde": None,  # Solo archivos anuales
     },
-    'consultas': {
-        'nombre': 'Consultas preliminares de mercado',
-        'url_base': 'https://contrataciondelsectorpublico.gob.es/sindicacion/sindicacion_1403/',
-        'patron_archivo': 'CPM_SectorPublico_{periodo}.zip',
-        'ano_inicio': 2022,
-        'mensual_desde': None,  # Solo archivos anuales
+    "consultas": {
+        "nombre": "Consultas preliminares de mercado",
+        "url_base": "https://contrataciondelsectorpublico.gob.es/sindicacion/sindicacion_1403/",
+        "patron_archivo": "CPM_SectorPublico_{periodo}.zip",
+        "ano_inicio": 2022,
+        "mensual_desde": None,  # Solo archivos anuales
     },
 }
 
 # Directorios: configurables por env (WSL/Docker). Por defecto repo-relative bajo tmp/
 _repo_root = Path(__file__).resolve().parent.parent
-_tmp_base = Path(os.environ.get('LICITACIONES_TMP_DIR', _repo_root / 'tmp'))
-if os.environ.get('LICITACIONES_TMP_DIR'):
-    DATA_DIR = _tmp_base / 'raw'
-    OUTPUT_DIR = _tmp_base / 'output'
-elif os.environ.get('LICITACIONES_DATA_DIR') or os.environ.get('LICITACIONES_OUTPUT_DIR'):
-    DATA_DIR = Path(os.environ.get('LICITACIONES_DATA_DIR', _tmp_base / 'raw'))
-    OUTPUT_DIR = Path(os.environ.get('LICITACIONES_OUTPUT_DIR', _tmp_base / 'output'))
+_tmp_base = Path(os.environ.get("LICITACIONES_TMP_DIR", _repo_root / "tmp"))
+if os.environ.get("LICITACIONES_TMP_DIR"):
+    DATA_DIR = _tmp_base / "raw"
+    OUTPUT_DIR = _tmp_base / "output"
+elif os.environ.get("LICITACIONES_DATA_DIR") or os.environ.get("LICITACIONES_OUTPUT_DIR"):
+    DATA_DIR = Path(os.environ.get("LICITACIONES_DATA_DIR", _tmp_base / "raw"))
+    OUTPUT_DIR = Path(os.environ.get("LICITACIONES_OUTPUT_DIR", _tmp_base / "output"))
 else:
-    DATA_DIR = _tmp_base / 'raw'
-    OUTPUT_DIR = _tmp_base / 'output'
+    DATA_DIR = _tmp_base / "raw"
+    OUTPUT_DIR = _tmp_base / "output"
 
 # Namespaces XML
 NS = {
-    'atom': 'http://www.w3.org/2005/Atom',
-    'cbc': 'urn:dgpe:names:draft:codice:schema:xsd:CommonBasicComponents-2',
-    'cac': 'urn:dgpe:names:draft:codice:schema:xsd:CommonAggregateComponents-2',
-    'cbc-place-ext': 'urn:dgpe:names:draft:codice-place-ext:schema:xsd:CommonBasicComponents-2',
-    'cac-place-ext': 'urn:dgpe:names:draft:codice-place-ext:schema:xsd:CommonAggregateComponents-2',
+    "atom": "http://www.w3.org/2005/Atom",
+    "cbc": "urn:dgpe:names:draft:codice:schema:xsd:CommonBasicComponents-2",
+    "cac": "urn:dgpe:names:draft:codice:schema:xsd:CommonAggregateComponents-2",
+    "cbc-place-ext": "urn:dgpe:names:draft:codice-place-ext:schema:xsd:CommonBasicComponents-2",
+    "cac-place-ext": "urn:dgpe:names:draft:codice-place-ext:schema:xsd:CommonAggregateComponents-2",
 }
 
 # Mapeos
 TIPOS_CONTRATO = {
-    '1': 'Suministros', '2': 'Servicios', '3': 'Obras',
-    '21': 'Gestión Servicios Públicos', '31': 'Concesión Obras',
-    '40': 'Concesión Servicios', '7': 'Administrativo Especial',
-    '8': 'Privado', '50': 'Patrimonial', '22': '22',
+    "1": "Suministros",
+    "2": "Servicios",
+    "3": "Obras",
+    "21": "Gestión Servicios Públicos",
+    "31": "Concesión Obras",
+    "40": "Concesión Servicios",
+    "7": "Administrativo Especial",
+    "8": "Privado",
+    "50": "Patrimonial",
+    "22": "22",
 }
 
 ESTADOS = {
-    'PUB': 'Publicada', 'EV': 'En evaluación', 'ADJ': 'Adjudicada',
-    'RES': 'Resuelta', 'ANUL': 'Anulada', 'DES': 'Desierta',
+    "PUB": "Publicada",
+    "EV": "En evaluación",
+    "ADJ": "Adjudicada",
+    "RES": "Resuelta",
+    "ANUL": "Anulada",
+    "DES": "Desierta",
 }
 
 # TenderingProcessCode-2.08.gc (PLACSP / CODICE) — cbc:ProcedureCode
@@ -152,6 +162,7 @@ def procedimiento_etiqueta(code: int | None) -> str | None:
 # FUNCIONES AUXILIARES
 # ============================================================================
 
+
 def crear_directorios():
     """Crea estructura de directorios."""
     DATA_DIR.mkdir(exist_ok=True)
@@ -160,70 +171,78 @@ def crear_directorios():
         (DATA_DIR / conjunto).mkdir(exist_ok=True)
     print(f"📁 Directorios creados")
 
+
 def get_session():
     """Crea sesión HTTP configurada."""
     session = requests.Session()
-    session.headers.update({
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
-        'Accept-Language': 'es-ES,es;q=0.9,en;q=0.8',
-        'Accept-Encoding': 'gzip, deflate, br',
-        'Connection': 'keep-alive',
-    })
+    session.headers.update(
+        {
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+            "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
+            "Accept-Language": "es-ES,es;q=0.9,en;q=0.8",
+            "Accept-Encoding": "gzip, deflate, br",
+            "Connection": "keep-alive",
+        }
+    )
     return session
+
 
 # ============================================================================
 # GENERACIÓN DE URLs
 # ============================================================================
 
+
 def generar_urls_conjunto(conjunto_id, ano_inicio, ano_fin):
     """Genera URLs para un conjunto de datos específico."""
     config = CONJUNTOS[conjunto_id]
     archivos = []
-    
+
     ano_actual = datetime.now().year
     mes_actual = datetime.now().month
-    
+
     # Ajustar año inicio según disponibilidad del conjunto
-    ano_inicio = max(ano_inicio, config['ano_inicio'])
-    
+    ano_inicio = max(ano_inicio, config["ano_inicio"])
+
     for ano in range(ano_inicio, ano_fin + 1):
         # Determinar si usar archivos mensuales o anuales
-        usar_mensual = (
-            config['mensual_desde'] is not None and 
-            ano >= config['mensual_desde']
-        )
-        
+        usar_mensual = config["mensual_desde"] is not None and ano >= config["mensual_desde"]
+
         if usar_mensual:
             # Archivos mensuales
             max_mes = mes_actual if ano == ano_actual else 12
             for mes in range(1, max_mes + 1):
                 periodo = f"{ano}{mes:02d}"
-                nombre = config['patron_archivo'].format(periodo=periodo)
-                url = config['url_base'] + nombre
-                archivos.append({
-                    'nombre': nombre,
-                    'url': url,
-                    'ano': ano,
-                    'mes': mes,
-                })
+                nombre = config["patron_archivo"].format(periodo=periodo)
+                url = config["url_base"] + nombre
+                archivos.append(
+                    {
+                        "nombre": nombre,
+                        "url": url,
+                        "ano": ano,
+                        "mes": mes,
+                    }
+                )
         else:
             # Archivo anual
             periodo = str(ano)
-            nombre = config['patron_archivo'].format(periodo=periodo)
-            url = config['url_base'] + nombre
-            archivos.append({
-                'nombre': nombre,
-                'url': url,
-                'ano': ano,
-                'mes': None,
-            })
-    
+            nombre = config["patron_archivo"].format(periodo=periodo)
+            url = config["url_base"] + nombre
+            archivos.append(
+                {
+                    "nombre": nombre,
+                    "url": url,
+                    "ano": ano,
+                    "mes": None,
+                }
+            )
+
     return archivos
+
 
 # ============================================================================
 # DESCARGA
 # ============================================================================
+
 
 def descargar_archivo(session, url, filepath, max_reintentos=3):
     """Descarga un archivo."""
@@ -234,13 +253,13 @@ def descargar_archivo(session, url, filepath, max_reintentos=3):
         try:
             response = session.get(url, timeout=600, stream=True)
             # Log diagnóstico antes de raise_for_status
-            content_length = response.headers.get('Content-Length')
+            content_length = response.headers.get("Content-Length")
             cl_msg = f", Content-Length: {content_length}" if content_length else ""
             print(f"   [DEBUG] GET {response.status_code}{cl_msg}")
 
             response.raise_for_status()
 
-            with open(filepath, 'wb') as f:
+            with open(filepath, "wb") as f:
                 for chunk in response.iter_content(chunk_size=65536):
                     if chunk:
                         f.write(chunk)
@@ -251,7 +270,9 @@ def descargar_archivo(session, url, filepath, max_reintentos=3):
                 print(f"   ✗ Descarga vacía (0 B) - posible bloqueo o respuesta HTML")
                 return None
             if size_bytes < 500 and content_length and int(content_length) > 1000:
-                print(f"   ✗ Tamaño recibido ({size_bytes} B) mucho menor que Content-Length ({content_length}) - posible corte o error")
+                print(
+                    f"   ✗ Tamaño recibido ({size_bytes} B) mucho menor que Content-Length ({content_length}) - posible corte o error"
+                )
             else:
                 print(f"   ✓ ({size_mb:.1f} MB)")
             return filepath
@@ -265,43 +286,48 @@ def descargar_archivo(session, url, filepath, max_reintentos=3):
             print(f"   ✗ Error de red: {e}")
         except Exception as e:
             print(f"   ✗ Intento {intento + 1}/{max_reintentos}: {e}")
-            time.sleep(2 ** intento)
+            time.sleep(2**intento)
 
     return None
+
 
 def descargar_conjunto(session, conjunto_id, ano_inicio, ano_fin):
     """Descarga todos los archivos de un conjunto."""
     config = CONJUNTOS[conjunto_id]
     archivos = generar_urls_conjunto(conjunto_id, ano_inicio, ano_fin)
-    
+
     print(f"\n{'='*60}")
     print(f"📦 {config['nombre'].upper()}")
     print(f"   URL base: {config['url_base']}")
     print(f"   Archivos: {len(archivos)}")
     print(f"{'='*60}")
-    
+
     descargados = []
     for i, archivo in enumerate(archivos, 1):
-        print(f"[{i}/{len(archivos)}] {archivo['nombre']}", end='')
-        
-        filepath = DATA_DIR / conjunto_id / archivo['nombre']
-        resultado = descargar_archivo(session, archivo['url'], filepath)
-        
+        print(f"[{i}/{len(archivos)}] {archivo['nombre']}", end="")
+
+        filepath = DATA_DIR / conjunto_id / archivo["nombre"]
+        resultado = descargar_archivo(session, archivo["url"], filepath)
+
         if resultado:
-            descargados.append({
-                **archivo,
-                'filepath': resultado,
-                'conjunto': conjunto_id,
-            })
-        
+            descargados.append(
+                {
+                    **archivo,
+                    "filepath": resultado,
+                    "conjunto": conjunto_id,
+                }
+            )
+
         time.sleep(0.3)
-    
+
     print(f"\n✓ {len(descargados)}/{len(archivos)} archivos descargados")
     return descargados
+
 
 # ============================================================================
 # PARSING XML
 # ============================================================================
+
 
 def safe_text(element, xpath):
     """Extrae texto de forma segura."""
@@ -314,6 +340,7 @@ def safe_text(element, xpath):
     except:
         pass
     return None
+
 
 def safe_attr(element, xpath, attr):
     """Extrae atributo de forma segura."""
@@ -333,8 +360,8 @@ def _sanitizar_url(url):
     if url is None:
         return None
     url = _html_module.unescape(url)
-    while '&amp;' in url:
-        url = url.replace('&amp;', '&')
+    while "&amp;" in url:
+        url = url.replace("&amp;", "&")
     return url.strip()
 
 
@@ -342,121 +369,127 @@ def parsear_entry(entry):
     """Parsea una entrada de licitación."""
     try:
         # ID y URL
-        id_lic = safe_text(entry, 'atom:id')
-        link = entry.find('atom:link', NS)
-        url = link.get('href') if link is not None else None
+        id_lic = safe_text(entry, "atom:id")
+        link = entry.find("atom:link", NS)
+        url = link.get("href") if link is not None else None
         url = _sanitizar_url(url)
-        
+
         # Container principal
-        status = entry.find('cac-place-ext:ContractFolderStatus', NS)
+        status = entry.find("cac-place-ext:ContractFolderStatus", NS)
         if status is None:
             return None
-        
+
         # Expediente y estado
-        expediente = safe_text(status, 'cbc:ContractFolderID')
-        estado_code = safe_text(status, 'cbc-place-ext:ContractFolderStatusCode')
-        
+        expediente = safe_text(status, "cbc:ContractFolderID")
+        estado_code = safe_text(status, "cbc-place-ext:ContractFolderStatusCode")
+
         # Órgano contratante
-        located_party = status.find('cac-place-ext:LocatedContractingParty', NS)
-        party = located_party.find('cac:Party', NS) if located_party else None
-        
-        nombre_organo = safe_text(party, 'cac:PartyName/cbc:Name')
-        ciudad_organo = safe_text(party, 'cac:PostalAddress/cbc:CityName')
-        
+        located_party = status.find("cac-place-ext:LocatedContractingParty", NS)
+        party = located_party.find("cac:Party", NS) if located_party else None
+
+        nombre_organo = safe_text(party, "cac:PartyName/cbc:Name")
+        ciudad_organo = safe_text(party, "cac:PostalAddress/cbc:CityName")
+
         # Identificadores del órgano
         nif_organo = None
         dir3_organo = None
         id_plataforma = None
-        
+
         if party is not None:
-            for pid in party.findall('cac:PartyIdentification', NS):
-                id_elem = pid.find('cbc:ID', NS)
+            for pid in party.findall("cac:PartyIdentification", NS):
+                id_elem = pid.find("cbc:ID", NS)
                 if id_elem is not None and id_elem.text:
-                    scheme = id_elem.get('schemeName', '')
-                    if scheme == 'NIF':
+                    scheme = id_elem.get("schemeName", "")
+                    if scheme == "NIF":
                         nif_organo = id_elem.text.strip()
-                    elif scheme == 'DIR3':
+                    elif scheme == "DIR3":
                         dir3_organo = id_elem.text.strip()
-                    elif scheme == 'ID_PLATAFORMA':
+                    elif scheme == "ID_PLATAFORMA":
                         id_plataforma = id_elem.text.strip()
-        
+
         # Jerarquía del órgano
         parent_names = []
-        parent = located_party.find('cac-place-ext:ParentLocatedParty', NS) if located_party else None
+        parent = (
+            located_party.find("cac-place-ext:ParentLocatedParty", NS) if located_party else None
+        )
         while parent is not None:
-            pname = safe_text(parent, 'cac:PartyName/cbc:Name')
+            pname = safe_text(parent, "cac:PartyName/cbc:Name")
             if pname:
                 parent_names.append(pname)
-            parent = parent.find('cac-place-ext:ParentLocatedParty', NS)
-        
-        dependencia = ' > '.join(reversed(parent_names)) if parent_names else None
-        
+            parent = parent.find("cac-place-ext:ParentLocatedParty", NS)
+
+        dependencia = " > ".join(reversed(parent_names)) if parent_names else None
+
         # Proyecto
-        project = status.find('cac:ProcurementProject', NS)
-        objeto = safe_text(project, 'cbc:Name')
-        tipo_code = safe_text(project, 'cbc:TypeCode')
-        subtipo_code = safe_text(project, 'cbc:SubTypeCode')
-        
+        project = status.find("cac:ProcurementProject", NS)
+        objeto = safe_text(project, "cbc:Name")
+        tipo_code = safe_text(project, "cbc:TypeCode")
+        subtipo_code = safe_text(project, "cbc:SubTypeCode")
+
         # Importes
-        budget = project.find('cac:BudgetAmount', NS) if project else None
+        budget = project.find("cac:BudgetAmount", NS) if project else None
         valor_estimado_contrato = None
         importe_sin_iva = None
         importe_con_iva = None
-        
+
         if budget is not None:
-            val = safe_text(budget, 'cbc:EstimatedOverallContractAmount')
+            val = safe_text(budget, "cbc:EstimatedOverallContractAmount")
             if val:
                 try:
                     valor_estimado_contrato = float(val)
                 except (ValueError, TypeError):
                     pass
-            val = safe_text(budget, 'cbc:TotalAmount')
+            val = safe_text(budget, "cbc:TotalAmount")
             if val:
                 try:
                     importe_con_iva = float(val)
                 except (ValueError, TypeError):
                     pass
-            val = safe_text(budget, 'cbc:TaxExclusiveAmount')
+            val = safe_text(budget, "cbc:TaxExclusiveAmount")
             if val:
                 try:
                     importe_sin_iva = float(val)
                 except (ValueError, TypeError):
                     pass
-        
+
         # CPV
         cpvs = []
         if project:
-            for cpv_elem in project.findall('.//cac:RequiredCommodityClassification/cbc:ItemClassificationCode', NS):
+            for cpv_elem in project.findall(
+                ".//cac:RequiredCommodityClassification/cbc:ItemClassificationCode", NS
+            ):
                 if cpv_elem.text:
                     cpvs.append(cpv_elem.text.strip())
         cpv_principal = cpvs[0] if cpvs else None
-        cpvs_todos = ';'.join(cpvs) if cpvs else None
-        
+        cpvs_todos = ";".join(cpvs) if cpvs else None
+
         # Ubicación
-        ubicacion = safe_text(project, './/cac:RealizedLocation/cbc:CountrySubentity')
-        nuts = safe_text(project, './/cac:RealizedLocation/cbc:CountrySubentityCode')
-        
+        ubicacion = safe_text(project, ".//cac:RealizedLocation/cbc:CountrySubentity")
+        nuts = safe_text(project, ".//cac:RealizedLocation/cbc:CountrySubentityCode")
+
         # Duración
-        duracion = safe_text(project, './/cac:PlannedPeriod/cbc:DurationMeasure')
-        duracion_unidad = safe_attr(project, './/cac:PlannedPeriod/cbc:DurationMeasure', 'unitCode')
-        
+        duracion = safe_text(project, ".//cac:PlannedPeriod/cbc:DurationMeasure")
+        duracion_unidad = safe_attr(project, ".//cac:PlannedPeriod/cbc:DurationMeasure", "unitCode")
+
         # Proceso
-        process = status.find('cac:TenderingProcess', NS)
-        procedimiento_code = normalize_procedimiento_code(
-            safe_text(process, "cbc:ProcedureCode")
-        )
-        urgencia = safe_text(process, 'cbc:UrgencyCode')
-        
+        process = status.find("cac:TenderingProcess", NS)
+        procedimiento_code = normalize_procedimiento_code(safe_text(process, "cbc:ProcedureCode"))
+        urgencia = safe_text(process, "cbc:UrgencyCode")
+
         # Fecha límite
-        fecha_limite = safe_text(process, './/cac:TenderSubmissionDeadlinePeriod/cbc:EndDate')
-        hora_limite = safe_text(process, './/cac:TenderSubmissionDeadlinePeriod/cbc:EndTime')
-        
+        fecha_limite = safe_text(process, ".//cac:TenderSubmissionDeadlinePeriod/cbc:EndDate")
+        hora_limite = safe_text(process, ".//cac:TenderSubmissionDeadlinePeriod/cbc:EndTime")
+
         # Términos
-        terms = status.find('cac:TenderingTerms', NS)
-        financiacion_ue = safe_text(terms, 'cbc:FundingProgramCode')
-        
+        terms = status.find("cac:TenderingTerms", NS)
+        financiacion_ue = safe_text(terms, "cbc:FundingProgramCode")
+
+        # Detectar lotes: si hay cac:ProcurementProjectLot, los importes de adjudicación
+        # van en la tabla lotes_licitaciones, no en la licitación principal.
+        tiene_lotes = bool(status.findall("cac:ProcurementProjectLot", NS))
+
         # Resultado/Adjudicación
-        result = status.find('cac:TenderResult', NS)
+        result = status.find("cac:TenderResult", NS)
         adjudicatario = None
         nif_adjudicatario = None
         importe_adjudicacion = None
@@ -464,82 +497,92 @@ def parsear_entry(entry):
         fecha_adjudicacion = None
         num_ofertas = None
         es_pyme = None
-        
+
         if result is not None:
-            adjudicatario = safe_text(result, './/cac:WinningParty/cac:PartyName/cbc:Name')
-            
-            winner_id = result.find('.//cac:WinningParty/cac:PartyIdentification/cbc:ID', NS)
+            adjudicatario = safe_text(result, ".//cac:WinningParty/cac:PartyName/cbc:Name")
+
+            winner_id = result.find(".//cac:WinningParty/cac:PartyIdentification/cbc:ID", NS)
             if winner_id is not None and winner_id.text:
                 nif_adjudicatario = winner_id.text.strip()
-            
-            val = safe_text(result, './/cac:AwardedTenderedProject/cac:LegalMonetaryTotal/cbc:TaxExclusiveAmount')
-            if val:
-                try:
-                    importe_adjudicacion = float(val)
-                except:
-                    pass
-            
-            val = safe_text(result, './/cac:AwardedTenderedProject/cac:LegalMonetaryTotal/cbc:PayableAmount')
-            if val:
-                try:
-                    importe_adj_con_iva = float(val)
-                except:
-                    pass
-            
-            fecha_adjudicacion = safe_text(result, 'cbc:AwardDate')
-            
-            val = safe_text(result, 'cbc:ReceivedTenderQuantity')
+
+            if not tiene_lotes:
+                val = safe_text(
+                    result,
+                    ".//cac:AwardedTenderedProject/cac:LegalMonetaryTotal/cbc:TaxExclusiveAmount",
+                )
+                if val:
+                    try:
+                        importe_adjudicacion = float(val)
+                    except:
+                        pass
+
+                val = safe_text(
+                    result, ".//cac:AwardedTenderedProject/cac:LegalMonetaryTotal/cbc:PayableAmount"
+                )
+                if val:
+                    try:
+                        importe_adj_con_iva = float(val)
+                    except:
+                        pass
+
+            fecha_adjudicacion = safe_text(result, "cbc:AwardDate")
+
+            val = safe_text(result, "cbc:ReceivedTenderQuantity")
             if val:
                 try:
                     num_ofertas = int(val)
                 except:
                     pass
-            
-            pyme = safe_text(result, 'cbc:SMEAwardedIndicator')
-            es_pyme = pyme == 'true' if pyme else None
-        
+
+            pyme = safe_text(result, "cbc:SMEAwardedIndicator")
+            es_pyme = pyme == "true" if pyme else None
+
         # Fechas
-        fecha_updated = safe_text(entry, 'atom:updated')
-        valid_notice = status.find('cac-place-ext:ValidNoticeInfo', NS)
-        fecha_publicacion = safe_text(valid_notice, './/cac-place-ext:AdditionalPublicationDocumentReference/cbc:IssueDate')
-        
+        fecha_updated = safe_text(entry, "atom:updated")
+        valid_notice = status.find("cac-place-ext:ValidNoticeInfo", NS)
+        fecha_publicacion = safe_text(
+            valid_notice, ".//cac-place-ext:AdditionalPublicationDocumentReference/cbc:IssueDate"
+        )
+
         # Documentos
         def _parse_doc_ref(ref_elem):
             if ref_elem is None:
                 return None, None
-            nombre = safe_text(ref_elem, 'cbc:ID')
-            uri = safe_text(ref_elem, 'cac:Attachment/cac:ExternalReference/cbc:URI')
+            nombre = safe_text(ref_elem, "cbc:ID")
+            uri = safe_text(ref_elem, "cac:Attachment/cac:ExternalReference/cbc:URI")
             return nombre, _sanitizar_url(uri)
 
-        legal_ref = status.find('cac:LegalDocumentReference', NS)
+        legal_ref = status.find("cac:LegalDocumentReference", NS)
         doc_legal_nombre, doc_legal_url = _parse_doc_ref(legal_ref)
 
-        tech_ref = status.find('cac:TechnicalDocumentReference', NS)
+        tech_ref = status.find("cac:TechnicalDocumentReference", NS)
         doc_tecnico_nombre, doc_tecnico_url = _parse_doc_ref(tech_ref)
 
         docs_adicionales = []
-        for add_ref in status.findall('cac:AdditionalDocumentReference', NS):
-            nombre = safe_text(add_ref, 'cbc:ID')
-            uri = safe_text(add_ref, 'cac:Attachment/cac:ExternalReference/cbc:URI')
-            doc_hash = safe_text(add_ref, 'cac:Attachment/cac:ExternalReference/cbc:DocumentHash')
+        for add_ref in status.findall("cac:AdditionalDocumentReference", NS):
+            nombre = safe_text(add_ref, "cbc:ID")
+            uri = safe_text(add_ref, "cac:Attachment/cac:ExternalReference/cbc:URI")
+            doc_hash = safe_text(add_ref, "cac:Attachment/cac:ExternalReference/cbc:DocumentHash")
             if nombre or uri:
-                docs_adicionales.append({
-                    'nombre': nombre,
-                    'url': _sanitizar_url(uri),
-                    'hash': doc_hash,
-                })
+                docs_adicionales.append(
+                    {
+                        "nombre": nombre,
+                        "url": _sanitizar_url(uri),
+                        "hash": doc_hash,
+                    }
+                )
         docs_adicionales = docs_adicionales or None
 
         # Criterios de adjudicación
         criterios_adjudicacion = []
-        awarding_terms = terms.find('cac:AwardingTerms', NS) if terms is not None else None
+        awarding_terms = terms.find("cac:AwardingTerms", NS) if terms is not None else None
         if awarding_terms is not None:
-            for crit in awarding_terms.findall('cac:AwardingCriteria', NS):
-                tipo = safe_text(crit, 'cbc:AwardingCriteriaTypeCode')
-                descripcion = safe_text(crit, 'cbc:Description')
-                nota = safe_text(crit, 'cbc:Note')
-                crit_subtipo_code = safe_text(crit, 'cbc:AwardingCriteriaSubTypeCode')
-                peso_raw = safe_text(crit, 'cbc:WeightNumeric')
+            for crit in awarding_terms.findall("cac:AwardingCriteria", NS):
+                tipo = safe_text(crit, "cbc:AwardingCriteriaTypeCode")
+                descripcion = safe_text(crit, "cbc:Description")
+                nota = safe_text(crit, "cbc:Note")
+                crit_subtipo_code = safe_text(crit, "cbc:AwardingCriteriaSubTypeCode")
+                peso_raw = safe_text(crit, "cbc:WeightNumeric")
                 peso = None
                 if peso_raw:
                     try:
@@ -549,109 +592,119 @@ def parsear_entry(entry):
                     except (ValueError, TypeError):
                         pass
                 if tipo or descripcion:
-                    criterios_adjudicacion.append({
-                        'tipo': tipo,
-                        'descripcion': descripcion,
-                        'nota': nota,
-                        'subtipo_code': crit_subtipo_code,
-                        'peso': peso,
-                    })
+                    criterios_adjudicacion.append(
+                        {
+                            "tipo": tipo,
+                            "descripcion": descripcion,
+                            "nota": nota,
+                            "subtipo_code": crit_subtipo_code,
+                            "peso": peso,
+                        }
+                    )
         criterios_adjudicacion = criterios_adjudicacion or None
 
         # Requisitos de solvencia
         requisitos_solvencia = None
-        qualification = terms.find('cac:TendererQualificationRequest', NS) if terms is not None else None
+        qualification = (
+            terms.find("cac:TendererQualificationRequest", NS) if terms is not None else None
+        )
         if qualification is not None:
             groups = {}
 
             tec_list = []
-            for tec in qualification.findall('cac:TechnicalEvaluationCriteria', NS):
-                tec_list.append({
-                    'tipo_code': safe_text(tec, 'cbc:EvaluationCriteriaTypeCode'),
-                    'descripcion': safe_text(tec, 'cbc:Description'),
-                })
+            for tec in qualification.findall("cac:TechnicalEvaluationCriteria", NS):
+                tec_list.append(
+                    {
+                        "tipo_code": safe_text(tec, "cbc:EvaluationCriteriaTypeCode"),
+                        "descripcion": safe_text(tec, "cbc:Description"),
+                    }
+                )
             if tec_list:
-                groups['solvencia_tecnica'] = {
-                    'nombre': 'Solvencia técnica',
-                    'criterios': tec_list,
+                groups["solvencia_tecnica"] = {
+                    "nombre": "Solvencia técnica",
+                    "criterios": tec_list,
                 }
 
             eco_list = []
-            for eco in qualification.findall('cac:FinancialEvaluationCriteria', NS):
-                eco_list.append({
-                    'tipo_code': safe_text(eco, 'cbc:EvaluationCriteriaTypeCode'),
-                    'descripcion': safe_text(eco, 'cbc:Description'),
-                })
+            for eco in qualification.findall("cac:FinancialEvaluationCriteria", NS):
+                eco_list.append(
+                    {
+                        "tipo_code": safe_text(eco, "cbc:EvaluationCriteriaTypeCode"),
+                        "descripcion": safe_text(eco, "cbc:Description"),
+                    }
+                )
             if eco_list:
-                groups['solvencia_economica'] = {
-                    'nombre': 'Solvencia económica',
-                    'criterios': eco_list,
+                groups["solvencia_economica"] = {
+                    "nombre": "Solvencia económica",
+                    "criterios": eco_list,
                 }
 
             esp_list = []
-            for esp in qualification.findall('cac:SpecificTendererRequirement', NS):
-                esp_list.append({
-                    'tipo_code': safe_text(esp, 'cbc:RequirementTypeCode'),
-                    'descripcion': safe_text(esp, 'cbc:Description'),
-                })
+            for esp in qualification.findall("cac:SpecificTendererRequirement", NS):
+                esp_list.append(
+                    {
+                        "tipo_code": safe_text(esp, "cbc:RequirementTypeCode"),
+                        "descripcion": safe_text(esp, "cbc:Description"),
+                    }
+                )
             if esp_list:
-                groups['requisitos_especificos'] = {
-                    'nombre': 'Requisitos específicos',
-                    'criterios': esp_list,
+                groups["requisitos_especificos"] = {
+                    "nombre": "Requisitos específicos",
+                    "criterios": esp_list,
                 }
 
             if groups:
                 requisitos_solvencia = groups
-        
+
         return {
-            'id': id_lic,
-            'expediente': expediente,
-            'objeto': objeto,
-            'organo_contratante': nombre_organo,
-            'nif_organo': nif_organo,
-            'dir3_organo': dir3_organo,
-            'id_plataforma': id_plataforma,
-            'ciudad_organo': ciudad_organo,
-            'dependencia': dependencia,
-            'tipo_contrato_code': tipo_code,
-            'tipo_contrato': TIPOS_CONTRATO.get(tipo_code, tipo_code),
-            'subtipo_code': subtipo_code,
-            'procedimiento_code': procedimiento_code,
-            'procedimiento': procedimiento_etiqueta(procedimiento_code),
-            'estado_code': estado_code,
-            'estado': ESTADOS.get(estado_code, estado_code),
-            'valor_estimado_contrato': valor_estimado_contrato,
-            'importe_sin_iva': importe_sin_iva,
-            'importe_con_iva': importe_con_iva,
-            'importe_adjudicacion': importe_adjudicacion,
-            'importe_adj_con_iva': importe_adj_con_iva,
-            'adjudicatario': adjudicatario,
-            'nif_adjudicatario': nif_adjudicatario,
-            'num_ofertas': num_ofertas,
-            'es_pyme': es_pyme,
-            'cpv_principal': cpv_principal,
-            'cpvs': cpvs_todos,
-            'ubicacion': ubicacion,
-            'nuts': nuts,
-            'duracion': duracion,
-            'duracion_unidad': duracion_unidad,
-            'financiacion_ue': financiacion_ue,
-            'urgencia': urgencia,
-            'fecha_limite': fecha_limite,
-            'hora_limite': hora_limite,
-            'fecha_adjudicacion': fecha_adjudicacion,
-            'fecha_publicacion': fecha_publicacion,
-            'fecha_updated': fecha_updated,
-            'doc_legal_nombre': doc_legal_nombre,
-            'doc_legal_url': doc_legal_url,
-            'doc_tecnico_nombre': doc_tecnico_nombre,
-            'doc_tecnico_url': doc_tecnico_url,
-            'docs_adicionales': docs_adicionales,
-            'criterios_adjudicacion': criterios_adjudicacion,
-            'requisitos_solvencia': requisitos_solvencia,
-            'url': url,
+            "id": id_lic,
+            "expediente": expediente,
+            "objeto": objeto,
+            "organo_contratante": nombre_organo,
+            "nif_organo": nif_organo,
+            "dir3_organo": dir3_organo,
+            "id_plataforma": id_plataforma,
+            "ciudad_organo": ciudad_organo,
+            "dependencia": dependencia,
+            "tipo_contrato_code": tipo_code,
+            "tipo_contrato": TIPOS_CONTRATO.get(tipo_code, tipo_code),
+            "subtipo_code": subtipo_code,
+            "procedimiento_code": procedimiento_code,
+            "procedimiento": procedimiento_etiqueta(procedimiento_code),
+            "estado_code": estado_code,
+            "estado": ESTADOS.get(estado_code, estado_code),
+            "valor_estimado_contrato": valor_estimado_contrato,
+            "importe_sin_iva": importe_sin_iva,
+            "importe_con_iva": importe_con_iva,
+            "importe_adjudicacion": importe_adjudicacion,
+            "importe_adj_con_iva": importe_adj_con_iva,
+            "adjudicatario": adjudicatario,
+            "nif_adjudicatario": nif_adjudicatario,
+            "num_ofertas": num_ofertas,
+            "es_pyme": es_pyme,
+            "cpv_principal": cpv_principal,
+            "cpvs": cpvs_todos,
+            "ubicacion": ubicacion,
+            "nuts": nuts,
+            "duracion": duracion,
+            "duracion_unidad": duracion_unidad,
+            "financiacion_ue": financiacion_ue,
+            "urgencia": urgencia,
+            "fecha_limite": fecha_limite,
+            "hora_limite": hora_limite,
+            "fecha_adjudicacion": fecha_adjudicacion,
+            "fecha_publicacion": fecha_publicacion,
+            "fecha_updated": fecha_updated,
+            "doc_legal_nombre": doc_legal_nombre,
+            "doc_legal_url": doc_legal_url,
+            "doc_tecnico_nombre": doc_tecnico_nombre,
+            "doc_tecnico_url": doc_tecnico_url,
+            "docs_adicionales": docs_adicionales,
+            "criterios_adjudicacion": criterios_adjudicacion,
+            "requisitos_solvencia": requisitos_solvencia,
+            "url": url,
         }
-    
+
     except Exception as e:
         return None
 
@@ -659,122 +712,133 @@ def parsear_entry(entry):
 def parsear_entry_cpm(entry):
     """Parsea una entrada de Consulta Preliminar de Mercado (CPM). Misma estructura de salida que parsear_entry."""
     try:
-        id_lic = safe_text(entry, 'atom:id')
-        link = entry.find('atom:link', NS)
-        url = link.get('href') if link is not None else None
+        id_lic = safe_text(entry, "atom:id")
+        link = entry.find("atom:link", NS)
+        url = link.get("href") if link is not None else None
         url = _sanitizar_url(url)
 
-        status = entry.find('cac-place-ext:PreliminaryMarketConsultationStatus', NS)
+        status = entry.find("cac-place-ext:PreliminaryMarketConsultationStatus", NS)
         if status is None:
             return None
 
-        expediente = safe_text(status, 'cbc:PreliminaryMarketConsultationID')
-        estado_code = safe_text(status, 'cbc-place-ext:PreliminaryMarketConsultationStatusCode')
+        expediente = safe_text(status, "cbc:PreliminaryMarketConsultationID")
+        estado_code = safe_text(status, "cbc-place-ext:PreliminaryMarketConsultationStatusCode")
 
-        located_party = status.find('cac-place-ext:LocatedContractingParty', NS)
-        party = located_party.find('cac:Party', NS) if located_party else None
+        located_party = status.find("cac-place-ext:LocatedContractingParty", NS)
+        party = located_party.find("cac:Party", NS) if located_party else None
 
-        nombre_organo = safe_text(party, 'cac:PartyName/cbc:Name')
-        ciudad_organo = safe_text(party, 'cac:PostalAddress/cbc:CityName')
+        nombre_organo = safe_text(party, "cac:PartyName/cbc:Name")
+        ciudad_organo = safe_text(party, "cac:PostalAddress/cbc:CityName")
 
         nif_organo = None
         dir3_organo = None
         id_plataforma = None
         if party is not None:
-            for pid in party.findall('cac:PartyIdentification', NS):
-                id_elem = pid.find('cbc:ID', NS)
+            for pid in party.findall("cac:PartyIdentification", NS):
+                id_elem = pid.find("cbc:ID", NS)
                 if id_elem is not None and id_elem.text:
-                    scheme = id_elem.get('schemeName', '')
-                    if scheme == 'NIF':
+                    scheme = id_elem.get("schemeName", "")
+                    if scheme == "NIF":
                         nif_organo = id_elem.text.strip()
-                    elif scheme == 'DIR3':
+                    elif scheme == "DIR3":
                         dir3_organo = id_elem.text.strip()
-                    elif scheme == 'ID_PLATAFORMA':
+                    elif scheme == "ID_PLATAFORMA":
                         id_plataforma = id_elem.text.strip()
 
         parent_names = []
-        parent = located_party.find('cac-place-ext:ParentLocatedParty', NS) if located_party else None
+        parent = (
+            located_party.find("cac-place-ext:ParentLocatedParty", NS) if located_party else None
+        )
         while parent is not None:
-            pname = safe_text(parent, 'cac:PartyName/cbc:Name')
+            pname = safe_text(parent, "cac:PartyName/cbc:Name")
             if pname:
                 parent_names.append(pname)
-            parent = parent.find('cac-place-ext:ParentLocatedParty', NS)
-        dependencia = ' > '.join(reversed(parent_names)) if parent_names else None
+            parent = parent.find("cac-place-ext:ParentLocatedParty", NS)
+        dependencia = " > ".join(reversed(parent_names)) if parent_names else None
 
-        project = status.find('cac:ProcurementProject', NS)
-        objeto = safe_text(status, 'cbc:ConsultationName') or safe_text(project, 'cbc:Name')
-        tipo_code = safe_text(project, 'cbc:TypeCode') if project is not None else None
-        subtipo_code = safe_text(project, 'cbc:SubTypeCode') if project is not None else None
+        project = status.find("cac:ProcurementProject", NS)
+        objeto = safe_text(status, "cbc:ConsultationName") or safe_text(project, "cbc:Name")
+        tipo_code = safe_text(project, "cbc:TypeCode") if project is not None else None
+        subtipo_code = safe_text(project, "cbc:SubTypeCode") if project is not None else None
 
         cpvs = []
         if project:
-            for cpv_elem in project.findall('.//cac:RequiredCommodityClassification/cbc:ItemClassificationCode', NS):
+            for cpv_elem in project.findall(
+                ".//cac:RequiredCommodityClassification/cbc:ItemClassificationCode", NS
+            ):
                 if cpv_elem.text:
                     cpvs.append(cpv_elem.text.strip())
         cpv_principal = cpvs[0] if cpvs else None
-        cpvs_todos = ';'.join(cpvs) if cpvs else None
+        cpvs_todos = ";".join(cpvs) if cpvs else None
 
-        process = status.find('cac:TenderingProcess', NS)
+        process = status.find("cac:TenderingProcess", NS)
         procedimiento_code = (
             normalize_procedimiento_code(safe_text(process, "cbc:ProcedureCode"))
             if process is not None
             else None
         )
 
-        fecha_limite = safe_text(status, 'cbc:LimitDate')
-        valid_notice = status.find('cac-place-ext:ValidNoticeInfo', NS)
-        fecha_publicacion = safe_text(valid_notice, './/cac-place-ext:AdditionalPublicationDocumentReference/cbc:IssueDate') if valid_notice is not None else None
+        fecha_limite = safe_text(status, "cbc:LimitDate")
+        valid_notice = status.find("cac-place-ext:ValidNoticeInfo", NS)
+        fecha_publicacion = (
+            safe_text(
+                valid_notice,
+                ".//cac-place-ext:AdditionalPublicationDocumentReference/cbc:IssueDate",
+            )
+            if valid_notice is not None
+            else None
+        )
         if not fecha_publicacion:
-            fecha_publicacion = safe_text(status, 'cbc:PlannedDate')
-        fecha_updated = safe_text(entry, 'atom:updated')
+            fecha_publicacion = safe_text(status, "cbc:PlannedDate")
+        fecha_updated = safe_text(entry, "atom:updated")
 
         return {
-            'id': id_lic,
-            'expediente': expediente,
-            'objeto': objeto,
-            'organo_contratante': nombre_organo,
-            'nif_organo': nif_organo,
-            'dir3_organo': dir3_organo,
-            'id_plataforma': id_plataforma,
-            'ciudad_organo': ciudad_organo,
-            'dependencia': dependencia,
-            'tipo_contrato_code': tipo_code,
-            'tipo_contrato': TIPOS_CONTRATO.get(tipo_code, tipo_code) if tipo_code else None,
-            'subtipo_code': subtipo_code,
-            'procedimiento_code': procedimiento_code,
-            'procedimiento': procedimiento_etiqueta(procedimiento_code),
-            'estado_code': estado_code,
-            'estado': ESTADOS.get(estado_code, estado_code) if estado_code else None,
-            'valor_estimado_contrato': None,
-            'importe_sin_iva': None,
-            'importe_con_iva': None,
-            'importe_adjudicacion': None,
-            'importe_adj_con_iva': None,
-            'adjudicatario': None,
-            'nif_adjudicatario': None,
-            'num_ofertas': None,
-            'es_pyme': None,
-            'cpv_principal': cpv_principal,
-            'cpvs': cpvs_todos,
-            'ubicacion': None,
-            'nuts': None,
-            'duracion': None,
-            'duracion_unidad': None,
-            'financiacion_ue': None,
-            'urgencia': None,
-            'fecha_limite': fecha_limite,
-            'hora_limite': None,
-            'fecha_adjudicacion': None,
-            'fecha_publicacion': fecha_publicacion,
-            'fecha_updated': fecha_updated,
-            'doc_legal_nombre': None,
-            'doc_legal_url': None,
-            'doc_tecnico_nombre': None,
-            'doc_tecnico_url': None,
-            'docs_adicionales': None,
-            'criterios_adjudicacion': None,
-            'requisitos_solvencia': None,
-            'url': url,
+            "id": id_lic,
+            "expediente": expediente,
+            "objeto": objeto,
+            "organo_contratante": nombre_organo,
+            "nif_organo": nif_organo,
+            "dir3_organo": dir3_organo,
+            "id_plataforma": id_plataforma,
+            "ciudad_organo": ciudad_organo,
+            "dependencia": dependencia,
+            "tipo_contrato_code": tipo_code,
+            "tipo_contrato": TIPOS_CONTRATO.get(tipo_code, tipo_code) if tipo_code else None,
+            "subtipo_code": subtipo_code,
+            "procedimiento_code": procedimiento_code,
+            "procedimiento": procedimiento_etiqueta(procedimiento_code),
+            "estado_code": estado_code,
+            "estado": ESTADOS.get(estado_code, estado_code) if estado_code else None,
+            "valor_estimado_contrato": None,
+            "importe_sin_iva": None,
+            "importe_con_iva": None,
+            "importe_adjudicacion": None,
+            "importe_adj_con_iva": None,
+            "adjudicatario": None,
+            "nif_adjudicatario": None,
+            "num_ofertas": None,
+            "es_pyme": None,
+            "cpv_principal": cpv_principal,
+            "cpvs": cpvs_todos,
+            "ubicacion": None,
+            "nuts": None,
+            "duracion": None,
+            "duracion_unidad": None,
+            "financiacion_ue": None,
+            "urgencia": None,
+            "fecha_limite": fecha_limite,
+            "hora_limite": None,
+            "fecha_adjudicacion": None,
+            "fecha_publicacion": fecha_publicacion,
+            "fecha_updated": fecha_updated,
+            "doc_legal_nombre": None,
+            "doc_legal_url": None,
+            "doc_tecnico_nombre": None,
+            "doc_tecnico_url": None,
+            "docs_adicionales": None,
+            "criterios_adjudicacion": None,
+            "requisitos_solvencia": None,
+            "url": url,
         }
     except Exception:
         return None
@@ -788,20 +852,171 @@ def _parsear_entry_any(entry):
     return parsear_entry_cpm(entry)
 
 
+def parsear_lotes_entry(entry, expediente, dir3_organo):
+    """Extrae los lotes de una entrada ATOM (ProcurementProjectLot + TenderResult con LotID).
+
+    Retorna lista de dicts con campos de lotes_licitaciones (vacía si no hay lotes
+    o si expediente/dir3_organo no están disponibles).
+    """
+    if not expediente or not dir3_organo:
+        return []
+
+    status = entry.find("cac-place-ext:ContractFolderStatus", NS)
+    if status is None:
+        return []
+
+    lotes: dict[int, dict] = {}
+
+    # Fuente A: definición del lote (cac:ProcurementProjectLot)
+    for lot_elem in status.findall("cac:ProcurementProjectLot", NS):
+        id_elem = lot_elem.find("cbc:ID", NS)
+        if id_elem is None or not id_elem.text:
+            continue
+        if id_elem.get("schemeName") != "ID_LOTE":
+            continue
+        try:
+            num_lote = int(id_elem.text.strip())
+        except ValueError:
+            continue
+
+        proj = lot_elem.find("cac:ProcurementProject", NS)
+        objeto = safe_text(proj, "cbc:Name")
+
+        budget = proj.find("cac:BudgetAmount", NS) if proj else None
+        importe_sin_iva = None
+        importe_con_iva = None
+        if budget is not None:
+            val = safe_text(budget, "cbc:TaxExclusiveAmount")
+            if val:
+                try:
+                    importe_sin_iva = float(val)
+                except (ValueError, TypeError):
+                    pass
+            val = safe_text(budget, "cbc:TotalAmount")
+            if val:
+                try:
+                    importe_con_iva = float(val)
+                except (ValueError, TypeError):
+                    pass
+
+        cpv_codes = []
+        if proj:
+            for cpv_elem in proj.findall(
+                ".//cac:RequiredCommodityClassification/cbc:ItemClassificationCode", NS
+            ):
+                if cpv_elem.text:
+                    cpv_codes.append(cpv_elem.text.strip())
+        cpv = ";".join(cpv_codes) if cpv_codes else None
+
+        ubicacion = (
+            safe_text(proj, ".//cac:RealizedLocation/cbc:CountrySubentity") if proj else None
+        )
+        nut = safe_text(proj, ".//cac:RealizedLocation/cbc:CountrySubentityCode") if proj else None
+
+        lotes[num_lote] = {
+            "expediente": expediente,
+            "dir3_organo": dir3_organo,
+            "num_lote": num_lote,
+            "objeto": objeto,
+            "importe_sin_iva": importe_sin_iva,
+            "importe_con_iva": importe_con_iva,
+            "cpv": cpv,
+            "ubicacion": ubicacion,
+            "nut": nut,
+            "fecha_adjudicacion": None,
+            "nif_adjudicado": None,
+            "empresa_adjudicada": None,
+            "importe_sin_iva_adj": None,
+            "importe_con_iva_adj": None,
+        }
+
+    # Fuente B: adjudicación del lote (cac:TenderResult con ProcurementProjectLotID)
+    for result in status.findall("cac:TenderResult", NS):
+        lot_id_elem = result.find(".//cac:AwardedTenderedProject/cbc:ProcurementProjectLotID", NS)
+        if lot_id_elem is None or not lot_id_elem.text:
+            continue
+        try:
+            num_lote = int(lot_id_elem.text.strip())
+        except ValueError:
+            continue
+
+        fecha_adj = safe_text(result, "cbc:AwardDate")
+
+        winner_party = result.find("cac:WinningParty", NS)
+        nif_adjudicado = None
+        empresa_adjudicada = None
+        if winner_party is not None:
+            winner_id = winner_party.find(".//cac:PartyIdentification/cbc:ID", NS)
+            if winner_id is not None and winner_id.text and winner_id.get("schemeName") == "NIF":
+                nif_adjudicado = winner_id.text.strip()
+            empresa_adjudicada = safe_text(winner_party, "cac:PartyName/cbc:Name")
+
+        importe_sin_iva_adj = None
+        importe_con_iva_adj = None
+        val = safe_text(
+            result, ".//cac:AwardedTenderedProject/cac:LegalMonetaryTotal/cbc:TaxExclusiveAmount"
+        )
+        if val:
+            try:
+                importe_sin_iva_adj = float(val)
+            except (ValueError, TypeError):
+                pass
+        val = safe_text(
+            result, ".//cac:AwardedTenderedProject/cac:LegalMonetaryTotal/cbc:PayableAmount"
+        )
+        if val:
+            try:
+                importe_con_iva_adj = float(val)
+            except (ValueError, TypeError):
+                pass
+
+        adj_data = {
+            "fecha_adjudicacion": fecha_adj,
+            "nif_adjudicado": nif_adjudicado,
+            "empresa_adjudicada": empresa_adjudicada,
+            "importe_sin_iva_adj": importe_sin_iva_adj,
+            "importe_con_iva_adj": importe_con_iva_adj,
+        }
+
+        if num_lote in lotes:
+            lotes[num_lote].update(adj_data)
+        else:
+            # Solo vienen datos de adjudicación; definición llegará en otro entry
+            lotes[num_lote] = {
+                "expediente": expediente,
+                "dir3_organo": dir3_organo,
+                "num_lote": num_lote,
+                "objeto": None,
+                "importe_sin_iva": None,
+                "importe_con_iva": None,
+                "cpv": None,
+                "ubicacion": None,
+                "nut": None,
+                **adj_data,
+            }
+
+    return list(lotes.values())
+
+
 def procesar_archivo_atom(filepath, log_diagnostico=True):
     """Procesa un archivo ATOM usando streaming iterparse para limitar memoria."""
     licitaciones = []
+    lotes = []
     num_entries = 0
 
     try:
-        context = ET.iterparse(str(filepath), events=('end',))
+        context = ET.iterparse(str(filepath), events=("end",))
 
         for event, elem in context:
-            if elem.tag == '{http://www.w3.org/2005/Atom}entry':
+            if elem.tag == "{http://www.w3.org/2005/Atom}entry":
                 num_entries += 1
                 lic = _parsear_entry_any(elem)
                 if lic:
                     licitaciones.append(lic)
+                    entry_lotes = parsear_lotes_entry(
+                        elem, lic.get("expediente"), lic.get("dir3_organo")
+                    )
+                    lotes.extend(entry_lotes)
                 elem.clear()
 
     except Exception as e:
@@ -809,41 +1024,55 @@ def procesar_archivo_atom(filepath, log_diagnostico=True):
             print(f"   [DEBUG] iterparse falló: {e}")
         file_size_mb = filepath.stat().st_size / (1024 * 1024)
         if file_size_mb > 100:
-            print(f"   [WARN] Archivo demasiado grande ({file_size_mb:.0f} MB) para fallback ET.parse — omitido")
+            print(
+                f"   [WARN] Archivo demasiado grande ({file_size_mb:.0f} MB) para fallback ET.parse — omitido"
+            )
         else:
             try:
                 tree = ET.parse(filepath)
                 root = tree.getroot()
-                for entry in root.findall('atom:entry', NS):
+                for entry in root.findall("atom:entry", NS):
                     num_entries += 1
                     lic = _parsear_entry_any(entry)
                     if lic:
                         licitaciones.append(lic)
+                        entry_lotes = parsear_lotes_entry(
+                            entry, lic.get("expediente"), lic.get("dir3_organo")
+                        )
+                        lotes.extend(entry_lotes)
                 del tree, root
             except Exception as e2:
                 if log_diagnostico:
                     print(f"   [DEBUG] parse+findall falló: {e2}")
 
     if log_diagnostico and num_entries > 0 and len(licitaciones) == 0:
-        print(f"   [DEBUG] {filepath.name}: {num_entries} entradas ATOM → 0 registros (todas fallaron al parsear)")
-        print(f"   [DEBUG] Posible causa: el feed CPM/consultas usa otro esquema XML (p. ej. sin ContractFolderStatus)")
+        print(
+            f"   [DEBUG] {filepath.name}: {num_entries} entradas ATOM → 0 registros (todas fallaron al parsear)"
+        )
+        print(
+            f"   [DEBUG] Posible causa: el feed CPM/consultas usa otro esquema XML (p. ej. sin ContractFolderStatus)"
+        )
 
-    return licitaciones
+    return licitaciones, lotes
+
 
 def procesar_zip(zip_path, conjunto_id):
     """Procesa un archivo ZIP."""
     licitaciones = []
+    lotes = []
 
     try:
         with tempfile.TemporaryDirectory() as temp_dir:
             temp_path = Path(temp_dir)
 
-            print(f"   📦 Extrayendo...", end=' ', flush=True)
-            with zipfile.ZipFile(zip_path, 'r') as zf:
+            print(f"   📦 Extrayendo...", end=" ", flush=True)
+            with zipfile.ZipFile(zip_path, "r") as zf:
                 zf.extractall(temp_path)
             # Log contenido del ZIP para diagnóstico
-            all_files = list(temp_path.rglob('*'))
-            files_info = [(p.relative_to(temp_path), p.stat().st_size) for p in all_files if p.is_file()]
+            all_files = list(temp_path.rglob("*"))
+            files_info = [
+                (p.relative_to(temp_path), p.stat().st_size) for p in all_files if p.is_file()
+            ]
             print(f"✓ {len(files_info)} archivos extraídos", flush=True)
             for rel, size in files_info[:15]:
                 print(f"      [DEBUG] {rel} ({size:,} B)")
@@ -851,42 +1080,46 @@ def procesar_zip(zip_path, conjunto_id):
                 print(f"      [DEBUG] ... y {len(files_info) - 15} más")
 
             # Buscar archivos .atom
-            atom_files = list(temp_path.rglob('*.atom'))
-            print(f"   {len(atom_files)} archivos .atom", end=' ', flush=True)
+            atom_files = list(temp_path.rglob("*.atom"))
+            print(f"   {len(atom_files)} archivos .atom", end=" ", flush=True)
 
             for atom_file in atom_files:
-                lics = procesar_archivo_atom(atom_file)
+                lics, lots = procesar_archivo_atom(atom_file)
                 for lic in lics:
-                    lic['conjunto'] = conjunto_id
+                    lic["conjunto"] = conjunto_id
                 licitaciones.extend(lics)
+                lotes.extend(lots)
 
-            print(f"→ {len(licitaciones):,} registros")
+            print(f"→ {len(licitaciones):,} registros, {len(lotes):,} lotes")
 
     except zipfile.BadZipFile:
         print(f"   ✗ ZIP corrupto o no es un ZIP válido")
     except Exception as e:
         print(f"   ✗ Error: {e}")
         import traceback
+
         print(f"   [DEBUG] {traceback.format_exc()}")
 
-    return licitaciones
+    return licitaciones, lotes
+
 
 # ============================================================================
 # EXPORTACIÓN
 # ============================================================================
+
 
 def _flush_to_parquet(records: list[dict], path: Path) -> int:
     """Write a batch of record dicts to a Parquet file and return count."""
     if not records:
         return 0
     df = pd.DataFrame(records)
-    df.to_parquet(path, index=False, compression='snappy')
+    df.to_parquet(path, index=False, compression="snappy")
     n = len(df)
     del df
     return n
 
 
-def exportar_datos(partial_parquets: list[Path], nombre_base: str = 'licitaciones_completo'):
+def exportar_datos(partial_parquets: list[Path], nombre_base: str = "licitaciones_completo"):
     """Merge partial Parquet files into deduplicated CSV + Parquet output.
 
     Reads each partial into a DataFrame and concatenates (Parquet columnar
@@ -899,29 +1132,29 @@ def exportar_datos(partial_parquets: list[Path], nombre_base: str = 'licitacione
     df = pd.concat(frames, ignore_index=True)
     del frames
 
-    for col in ['fecha_limite', 'fecha_adjudicacion', 'fecha_publicacion']:
+    for col in ["fecha_limite", "fecha_adjudicacion", "fecha_publicacion"]:
         if col in df.columns:
-            df[col] = pd.to_datetime(df[col], errors='coerce')
+            df[col] = pd.to_datetime(df[col], errors="coerce")
 
-    if 'fecha_updated' in df.columns:
-        df['fecha_updated'] = pd.to_datetime(df['fecha_updated'], errors='coerce', utc=True)
+    if "fecha_updated" in df.columns:
+        df["fecha_updated"] = pd.to_datetime(df["fecha_updated"], errors="coerce", utc=True)
 
-    df['ano'] = pd.to_datetime(df['fecha_publicacion'], errors='coerce').dt.year
+    df["ano"] = pd.to_datetime(df["fecha_publicacion"], errors="coerce").dt.year
 
     n_antes = len(df)
-    df = df.drop_duplicates(subset=['id'], keep='last')
+    df = df.drop_duplicates(subset=["id"], keep="last")
     n_despues = len(df)
     if n_antes != n_despues:
         print(f"   ⚠ Eliminados {n_antes - n_despues:,} duplicados")
 
-    csv_path = OUTPUT_DIR / f'{nombre_base}.csv'
-    df.to_csv(csv_path, index=False, encoding='utf-8-sig')
+    csv_path = OUTPUT_DIR / f"{nombre_base}.csv"
+    df.to_csv(csv_path, index=False, encoding="utf-8-sig")
     size_mb = csv_path.stat().st_size / 1024 / 1024
     print(f"   ✓ CSV: {csv_path} ({size_mb:.1f} MB)")
 
     try:
-        parquet_path = OUTPUT_DIR / f'{nombre_base}.parquet'
-        df.to_parquet(parquet_path, index=False, compression='snappy')
+        parquet_path = OUTPUT_DIR / f"{nombre_base}.parquet"
+        df.to_parquet(parquet_path, index=False, compression="snappy")
         size_mb = parquet_path.stat().st_size / 1024 / 1024
         print(f"   ✓ Parquet: {parquet_path} ({size_mb:.1f} MB)")
     except Exception as e:
@@ -929,13 +1162,13 @@ def exportar_datos(partial_parquets: list[Path], nombre_base: str = 'licitacione
 
     print(f"\n📊 RESUMEN POR CONJUNTO")
     print("=" * 60)
-    if 'conjunto' in df.columns:
-        for conjunto in df['conjunto'].unique():
-            df_c = df[df['conjunto'] == conjunto]
+    if "conjunto" in df.columns:
+        for conjunto in df["conjunto"].unique():
+            df_c = df[df["conjunto"] == conjunto]
             print(f"\n   {CONJUNTOS.get(conjunto, {}).get('nombre', conjunto)}:")
             print(f"      Registros: {len(df_c):,}")
             print(f"      Años: {df_c['ano'].min():.0f} - {df_c['ano'].max():.0f}")
-            if 'importe_sin_iva' in df_c.columns:
+            if "importe_sin_iva" in df_c.columns:
                 print(f"      Importe: {df_c['importe_sin_iva'].sum()/1e9:.2f}B €")
 
     print(f"\n📊 RESUMEN TOTAL")
@@ -945,8 +1178,8 @@ def exportar_datos(partial_parquets: list[Path], nombre_base: str = 'licitacione
     print(f"   Órganos únicos: {df['organo_contratante'].nunique():,}")
     print(f"   Adjudicatarios únicos: {df['adjudicatario'].nunique():,}")
 
-    if 'importe_sin_iva' in df.columns:
-        total = df['importe_sin_iva'].sum()
+    if "importe_sin_iva" in df.columns:
+        total = df["importe_sin_iva"].sum()
         print(f"   Importe total: {total/1e9:.2f}B €")
 
     for p in partial_parquets:
@@ -957,37 +1190,46 @@ def exportar_datos(partial_parquets: list[Path], nombre_base: str = 'licitacione
 
     return df
 
+
 # ============================================================================
 # MAIN
 # ============================================================================
 
+
 def main():
-    parser = argparse.ArgumentParser(description='Scraper completo de licitaciones públicas')
-    parser.add_argument('--anos', type=str, required=True, help='Rango de años (ej: 2020-2026)')
-    parser.add_argument('--conjunto', type=str, choices=list(CONJUNTOS.keys()) + ['todos'], 
-                        default='todos', help='Conjunto de datos a descargar')
-    parser.add_argument('--solo-descargar', action='store_true', help='Solo descargar, no procesar')
-    parser.add_argument('--solo-procesar', action='store_true', help='Solo procesar archivos existentes')
-    
+    parser = argparse.ArgumentParser(description="Scraper completo de licitaciones públicas")
+    parser.add_argument("--anos", type=str, required=True, help="Rango de años (ej: 2020-2026)")
+    parser.add_argument(
+        "--conjunto",
+        type=str,
+        choices=list(CONJUNTOS.keys()) + ["todos"],
+        default="todos",
+        help="Conjunto de datos a descargar",
+    )
+    parser.add_argument("--solo-descargar", action="store_true", help="Solo descargar, no procesar")
+    parser.add_argument(
+        "--solo-procesar", action="store_true", help="Solo procesar archivos existentes"
+    )
+
     args = parser.parse_args()
-    
+
     # Parsear años
-    partes = args.anos.split('-')
+    partes = args.anos.split("-")
     ano_inicio = int(partes[0])
     ano_fin = int(partes[1]) if len(partes) > 1 else ano_inicio
-    
+
     # Determinar conjuntos a procesar
-    if args.conjunto == 'todos':
+    if args.conjunto == "todos":
         conjuntos = list(CONJUNTOS.keys())
     else:
         conjuntos = [args.conjunto]
-    
+
     print("=" * 60)
     print("🔎 SCRAPER COMPLETO DE LICITACIONES PÚBLICAS")
     print("=" * 60)
     print(f"   Años: {ano_inicio} - {ano_fin}")
     print(f"   Conjuntos: {', '.join(conjuntos)}")
-    
+
     crear_directorios()
 
     # Remove stale partial parquets from any previous interrupted or OOM-killed run.
@@ -996,7 +1238,7 @@ def main():
     # RAM and risking another OOM. Clearing them here ensures the output dir contains
     # only what this run produces.
     for _conjunto_id in conjuntos:
-        for _stale in OUTPUT_DIR.glob(f'_part_{_conjunto_id}_*.parquet'):
+        for _stale in OUTPUT_DIR.glob(f"_part_{_conjunto_id}_*.parquet"):
             try:
                 _stale.unlink()
             except OSError:
@@ -1005,17 +1247,17 @@ def main():
     session = get_session()
 
     archivos_descargados = []
-    
+
     # Descargar
     if not args.solo_procesar:
         for conjunto_id in conjuntos:
             descargados = descargar_conjunto(session, conjunto_id, ano_inicio, ano_fin)
             archivos_descargados.extend(descargados)
-    
+
     if args.solo_descargar:
         print("\n✅ Descarga completada")
         return
-    
+
     # Procesar
     print(f"\n{'='*60}")
     print(f"⚙️ PROCESANDO ARCHIVOS")
@@ -1024,15 +1266,16 @@ def main():
     import gc
 
     partial_parquets: list[Path] = []
+    partial_lotes_parquets: list[Path] = []
     part_idx = 0
 
     for conjunto_id in conjuntos:
         conjunto_dir = DATA_DIR / conjunto_id
-        zip_files = sorted(conjunto_dir.glob('*.zip'))
+        zip_files = sorted(conjunto_dir.glob("*.zip"))
 
         zip_filtrados = []
         for z in zip_files:
-            match = re.search(r'_(\d{4})(\d{2})?\.zip$', z.name)
+            match = re.search(r"_(\d{4})(\d{2})?\.zip$", z.name)
             if match:
                 ano = int(match.group(1))
                 if ano_inicio <= ano <= ano_fin:
@@ -1042,15 +1285,22 @@ def main():
             print(f"\n📦 {CONJUNTOS[conjunto_id]['nombre']}: {len(zip_filtrados)} archivos")
 
             for i, zip_path in enumerate(zip_filtrados, 1):
-                print(f"   [{i}/{len(zip_filtrados)}] {zip_path.name}", end='')
-                lics = procesar_zip(zip_path, conjunto_id)
-                if lics:
-                    part_path = OUTPUT_DIR / f'_part_{conjunto_id}_{part_idx:04d}.parquet'
-                    n = _flush_to_parquet(lics, part_path)
-                    partial_parquets.append(part_path)
+                print(f"   [{i}/{len(zip_filtrados)}] {zip_path.name}", end="")
+                lics, lotes = procesar_zip(zip_path, conjunto_id)
+                if lics or lotes:
+                    if lics:
+                        part_path = OUTPUT_DIR / f"_part_{conjunto_id}_{part_idx:04d}.parquet"
+                        n = _flush_to_parquet(lics, part_path)
+                        partial_parquets.append(part_path)
+                        print(f"      → parcial {part_path.name} ({n:,} registros)")
+                    if lotes:
+                        lotes_path = (
+                            OUTPUT_DIR / f"_part_{conjunto_id}_{part_idx:04d}_lotes.parquet"
+                        )
+                        _flush_to_parquet(lotes, lotes_path)
+                        partial_lotes_parquets.append(lotes_path)
                     part_idx += 1
-                    print(f"      → parcial {part_path.name} ({n:,} registros)")
-                del lics
+                del lics, lotes
                 gc.collect()
                 try:
                     zip_path.unlink()
@@ -1063,8 +1313,14 @@ def main():
         for p in partial_parquets:
             size_mb = p.stat().st_size / (1024 * 1024)
             print(f"   {p.name} ({size_mb:.1f} MB)")
+        if partial_lotes_parquets:
+            print(f"   Parciales de lotes: {len(partial_lotes_parquets)}")
+            for p in partial_lotes_parquets:
+                size_mb = p.stat().st_size / (1024 * 1024)
+                print(f"   {p.name} ({size_mb:.1f} MB)")
     else:
         print("\n⚠️ No se encontraron registros")
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     main()

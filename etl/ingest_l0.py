@@ -971,3 +971,118 @@ def load_parquet_to_l0(
                     conn.commit()
     skipped = total_candidates - inserted
     return (inserted, skipped)
+
+
+# Columnas del parquet de lotes de licitaciones (sin updated_at — usa DEFAULT NOW() en INSERT)
+LOTES_PARQUET_COLUMNS: list[tuple[str, str]] = [
+    ("expediente", "TEXT"),
+    ("dir3_organo", "TEXT"),
+    ("num_lote", "SMALLINT"),
+    ("objeto", "TEXT"),
+    ("importe_sin_iva", "NUMERIC"),
+    ("importe_con_iva", "NUMERIC"),
+    ("cpv", "TEXT"),
+    ("ubicacion", "TEXT"),
+    ("nut", "TEXT"),
+    ("fecha_adjudicacion", "DATE"),
+    ("nif_adjudicado", "TEXT"),
+    ("empresa_adjudicada", "TEXT"),
+    ("importe_sin_iva_adj", "NUMERIC"),
+    ("importe_con_iva_adj", "NUMERIC"),
+]
+
+LOTES_TABLE = "lotes_licitaciones"
+
+
+def load_lotes_parquets_to_l0(
+    db_url: str,
+    schema: str,
+    output_dir: Path,
+    batch_size: int,
+    script_conjunto: str,
+) -> tuple[int, int]:
+    """Carga parquets de lotes en l0.lotes_licitaciones usando UPSERT incremental con COALESCE.
+
+    Busca archivos _part_{script_conjunto}_*_lotes.parquet en output_dir.
+    Si no existe ninguno, retorna (0, 0) sin error.
+    """
+    _configure_logging()
+    pattern = f"_part_{script_conjunto}_*_lotes.parquet"
+    lotes_files = sorted(output_dir.glob(pattern))
+    if not lotes_files:
+        logger.info("No se encontraron parquets de lotes (%s en %s).", pattern, output_dir)
+        return 0, 0
+
+    full_table = f'"{schema}"."{LOTES_TABLE}"'
+    insert_cols = [c for c, _ in LOTES_PARQUET_COLUMNS]
+    quoted = ", ".join(f'"{c}"' for c in insert_cols)
+    placeholders = ", ".join(["%s"] * len(insert_cols))
+
+    upsert_sql = f"""
+        INSERT INTO {full_table} ({quoted})
+        VALUES ({placeholders})
+        ON CONFLICT (expediente, dir3_organo, num_lote) DO UPDATE SET
+            objeto              = COALESCE(EXCLUDED.objeto,              {LOTES_TABLE}.objeto),
+            importe_sin_iva     = COALESCE(EXCLUDED.importe_sin_iva,     {LOTES_TABLE}.importe_sin_iva),
+            importe_con_iva     = COALESCE(EXCLUDED.importe_con_iva,     {LOTES_TABLE}.importe_con_iva),
+            cpv                 = COALESCE(EXCLUDED.cpv,                 {LOTES_TABLE}.cpv),
+            ubicacion           = COALESCE(EXCLUDED.ubicacion,           {LOTES_TABLE}.ubicacion),
+            nut                 = COALESCE(EXCLUDED.nut,                 {LOTES_TABLE}.nut),
+            fecha_adjudicacion  = COALESCE(EXCLUDED.fecha_adjudicacion,  {LOTES_TABLE}.fecha_adjudicacion),
+            nif_adjudicado      = COALESCE(EXCLUDED.nif_adjudicado,      {LOTES_TABLE}.nif_adjudicado),
+            empresa_adjudicada  = COALESCE(EXCLUDED.empresa_adjudicada,  {LOTES_TABLE}.empresa_adjudicada),
+            importe_sin_iva_adj = COALESCE(EXCLUDED.importe_sin_iva_adj, {LOTES_TABLE}.importe_sin_iva_adj),
+            importe_con_iva_adj = COALESCE(EXCLUDED.importe_con_iva_adj, {LOTES_TABLE}.importe_con_iva_adj),
+            updated_at          = NOW()
+    """
+
+    total_upserted = 0
+    total_unchanged = 0
+
+    with psycopg2.connect(db_url) as conn:
+        for lotes_file in lotes_files:
+            df = pd.read_parquet(lotes_file)
+            logger.info("Cargando lotes desde %s (%s filas).", lotes_file.name, len(df))
+
+            with conn.cursor() as cur:
+                for start in range(0, len(df), batch_size):
+                    batch = df.iloc[start : start + batch_size]
+                    rows = []
+                    for _, row in batch.iterrows():
+                        vals = []
+                        for col, pg_type in LOTES_PARQUET_COLUMNS:
+                            v = row.get(col)
+                            if _scalar_isna(v):
+                                vals.append(None)
+                                continue
+                            if "NUMERIC" in pg_type:
+                                try:
+                                    vals.append(float(v))
+                                except (TypeError, ValueError):
+                                    vals.append(None)
+                            elif "SMALLINT" in pg_type or "INT" in pg_type:
+                                try:
+                                    vals.append(int(v))
+                                except (TypeError, ValueError):
+                                    vals.append(None)
+                            else:
+                                vals.append(str(v) if v is not None else None)
+                        rows.append(tuple(vals))
+
+                    if rows:
+                        upserted = 0
+                        for row_tuple in rows:
+                            cur.execute(upsert_sql, row_tuple)
+                            # rowcount=1 → INSERT (nueva fila), rowcount=2 → UPDATE (ya existía)
+                            upserted += 1 if (cur.rowcount or 0) >= 1 else 0
+                        conn.commit()
+                        # Aproximación: asumimos que la mayoría de rows con rowcount>=1 son cambios
+                        total_upserted += upserted
+                        total_unchanged += len(rows) - upserted
+
+            try:
+                lotes_file.unlink(missing_ok=True)
+            except OSError:
+                pass
+
+    return total_upserted, total_unchanged
