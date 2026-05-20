@@ -34,6 +34,7 @@ from etl.ingest_l0 import (
     get_cleanup_dirs,
     get_table_name,
     infer_column_defs_from_parquet,
+    load_lotes_parquets_to_l0,
     load_parquet_to_l0,
 )
 
@@ -60,6 +61,7 @@ INIT_MIGRATIONS = (
     "023_llm_resumen_logs.sql",
     "024_dim_municipios.sql",
     "025_dim_estado_licitacion.sql",
+    "026_lotes_licitaciones.sql",
 )
 
 BORME_MIGRATIONS = ("010_borme.sql",)
@@ -731,7 +733,9 @@ def cmd_ingest(args: argparse.Namespace) -> int:
         else:
             partial_pattern = f"_part_{subconjunto}_*.parquet"
 
-        partial_glob = sorted(output_dir.glob(partial_pattern))
+        partial_glob = sorted(
+            p for p in output_dir.glob(partial_pattern) if not p.name.endswith("_lotes.parquet")
+        )
         use_partials = len(partial_glob) > 0
 
         parquet_files: list[Path]
@@ -757,6 +761,7 @@ def cmd_ingest(args: argparse.Namespace) -> int:
         )
         column_defs = reg.get("column_defs")
         natural_id_col = reg.get("natural_id_col")
+        natural_id_type = reg.get("natural_id_type", "TEXT")
 
         # Special handling for subvenciones: use SUBVENCIONES_PARQUET_COLUMNS
         if conjunto == "nacional" and subconjunto == "subvenciones":
@@ -794,6 +799,7 @@ def cmd_ingest(args: argparse.Namespace) -> int:
                         get_ingest_batch_size(),
                         column_defs=column_defs,
                         natural_id_col=natural_id_col,
+                        natural_id_type=natural_id_type,
                     )
 
                     with stats_lock:
@@ -861,6 +867,7 @@ def cmd_ingest(args: argparse.Namespace) -> int:
                         get_ingest_batch_size(),
                         column_defs=column_defs,
                         natural_id_col=natural_id_col,
+                        natural_id_type=natural_id_type,
                     )
                     total_inserted += inserted
                     total_skipped += skipped
@@ -901,6 +908,25 @@ def cmd_ingest(args: argparse.Namespace) -> int:
             ingest_result[0] = "failed"
             ingest_result[3] = "; ".join(batch_errors[:3])
             return 1
+
+        # Paso 2: cargar lotes (solo conjunto nacional, todos los subconjuntos excepto subvenciones)
+        if conjunto == "nacional" and subconjunto != "subvenciones":
+            script_conjunto = reg.get("script_conjunto_arg", {}).get(subconjunto, subconjunto)
+            try:
+                lotes_ins, lotes_skip = load_lotes_parquets_to_l0(
+                    get_database_url(),
+                    db_schema,
+                    output_dir,
+                    get_ingest_batch_size(),
+                    script_conjunto,
+                )
+                if lotes_ins or lotes_skip:
+                    print(
+                        f"[ingest] Lotes: +{lotes_ins} nuevos, {lotes_skip} actualizados.",
+                        file=sys.stderr,
+                    )
+            except Exception as e_lotes:
+                print(f"[ingest] Error cargando lotes (no bloqueante): {e_lotes}", file=sys.stderr)
 
         ingest_result[0] = "ok"
         ingest_result[1] = total_inserted
