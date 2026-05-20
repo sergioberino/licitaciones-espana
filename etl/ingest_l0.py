@@ -1036,10 +1036,13 @@ def load_lotes_parquets_to_l0(
             updated_at          = NOW()
     """
 
-    total_upserted = 0
-    total_unchanged = 0
+    total_rows_processed = 0
 
     with psycopg2.connect(db_url) as conn:
+        with conn.cursor() as cur:
+            cur.execute(f"SELECT COUNT(*) FROM {full_table}")
+            count_before = cur.fetchone()[0]
+
         for lotes_file in lotes_files:
             df = pd.read_parquet(lotes_file)
             logger.info("Cargando lotes desde %s (%s filas).", lotes_file.name, len(df))
@@ -1070,19 +1073,20 @@ def load_lotes_parquets_to_l0(
                         rows.append(tuple(vals))
 
                     if rows:
-                        upserted = 0
                         for row_tuple in rows:
                             cur.execute(upsert_sql, row_tuple)
-                            # rowcount=1 → INSERT (nueva fila), rowcount=2 → UPDATE (ya existía)
-                            upserted += 1 if (cur.rowcount or 0) >= 1 else 0
                         conn.commit()
-                        # Aproximación: asumimos que la mayoría de rows con rowcount>=1 son cambios
-                        total_upserted += upserted
-                        total_unchanged += len(rows) - upserted
+                        total_rows_processed += len(rows)
 
             try:
                 lotes_file.unlink(missing_ok=True)
             except OSError:
                 pass
 
-    return total_upserted, total_unchanged
+        with conn.cursor() as cur:
+            cur.execute(f"SELECT COUNT(*) FROM {full_table}")
+            count_after = cur.fetchone()[0]
+
+    total_new = count_after - count_before
+    total_updated = total_rows_processed - total_new
+    return total_new, total_updated

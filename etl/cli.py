@@ -922,7 +922,7 @@ def cmd_ingest(args: argparse.Namespace) -> int:
                 )
                 if lotes_ins or lotes_skip:
                     print(
-                        f"[ingest] Lotes: +{lotes_ins} insertados/actualizados, {lotes_skip} sin cambios.",
+                        f"[ingest] Lotes: +{lotes_ins} nuevos, {lotes_skip} actualizados.",
                         file=sys.stderr,
                     )
             except Exception as e_lotes:
