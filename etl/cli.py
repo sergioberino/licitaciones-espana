@@ -757,6 +757,7 @@ def cmd_ingest(args: argparse.Namespace) -> int:
         )
         column_defs = reg.get("column_defs")
         natural_id_col = reg.get("natural_id_col")
+        natural_id_type = reg.get("natural_id_type", "TEXT")
 
         # Special handling for subvenciones: use SUBVENCIONES_PARQUET_COLUMNS
         if conjunto == "nacional" and subconjunto == "subvenciones":
@@ -794,6 +795,7 @@ def cmd_ingest(args: argparse.Namespace) -> int:
                         get_ingest_batch_size(),
                         column_defs=column_defs,
                         natural_id_col=natural_id_col,
+                        natural_id_type=natural_id_type,
                     )
 
                     with stats_lock:
@@ -861,6 +863,7 @@ def cmd_ingest(args: argparse.Namespace) -> int:
                         get_ingest_batch_size(),
                         column_defs=column_defs,
                         natural_id_col=natural_id_col,
+                        natural_id_type=natural_id_type,
                     )
                     total_inserted += inserted
                     total_skipped += skipped

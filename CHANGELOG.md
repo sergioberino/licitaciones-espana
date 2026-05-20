@@ -2,6 +2,17 @@
 
 Todos los cambios notables del CLI y del microservicio ETL se documentan aquí.
 
+## [2.0.7] — 2026-05-20
+
+### Modificado
+
+- **`l0.nacional_licitaciones.natural_id`: de `TEXT` a `BIGINT`:** la columna almacenaba la URL completa del feed PLACSP (p. ej. `https://contrataciondelestado.es/sindicacion/licitacionesPerfilContratante/16577694`); ahora almacena únicamente el identificador numérico final (`16577694`). El constraint `UNIQUE NOT NULL` y el mecanismo de idempotencia `ON CONFLICT (natural_id) DO NOTHING` se mantienen sin cambios. Mismo cambio aplicado a `nacional_agregacion_ccaa`, `nacional_contratos_menores`, `nacional_encargos_medios_propios` y `nacional_consultas_preliminares`.
+- **`etl/ingest_l0.py`:** `ensure_l0_table` y `load_parquet_to_l0` aceptan el parámetro `natural_id_type` (`"TEXT"` por defecto). Para el conjunto `nacional`, se pasa `"BIGINT"`: durante la ingesta se extrae el sufijo numérico de la URL con `re.search(r'/(\d+)$', ...)` y se inserta como entero.
+- **`etl/cli.py`:** `cmd_ingest` lee `natural_id_type` del `CONJUNTOS_REGISTRY` y lo propaga a `load_parquet_to_l0` (tanto en la ruta secuencial como en la ThreadPool).
+- **`CONJUNTOS_REGISTRY["nacional"]`:** añadido `"natural_id_type": "BIGINT"`.
+
+---
+
 ## [2.0.6] — 2026-05-15
 
 ### Corregido

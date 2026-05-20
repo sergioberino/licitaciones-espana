@@ -357,6 +357,7 @@ CONJUNTOS_REGISTRY: dict[str, dict[str, Any]] = {
         "requires_anos": True,
         "column_defs": NACIONAL_PARQUET_COLUMNS,
         "natural_id_col": NATURAL_ID_PARQUET_COL,
+        "natural_id_type": "BIGINT",
         "script_module": "nacional.licitaciones",  # Default module
         "script_module_by_subconjunto": SCRIPT_MODULE_BY_SUBCONJUNTO,  # Per-subconjunto override
         "script_conjunto_arg": SCRIPT_CONJUNTO_TO_NACIONAL,
@@ -594,6 +595,7 @@ def ensure_l0_table(
     table_name: str,
     column_defs: Optional[list[tuple[str, str]]] = None,
     natural_id_col: str = NATURAL_ID_PARQUET_COL,
+    natural_id_type: str = "TEXT",
 ) -> None:
     """Crea la tabla L0. Para licitaciones usa patrón L0 (natural_id), para subvenciones usa PK directa."""
     if column_defs is None:
@@ -629,7 +631,7 @@ def ensure_l0_table(
         # Licitaciones: standard L0 pattern with natural_id
         col_defs = [
             '"l0_id" BIGSERIAL PRIMARY KEY',
-            '"natural_id" TEXT UNIQUE NOT NULL',
+            f'"natural_id" {natural_id_type} UNIQUE NOT NULL',
         ]
         col_defs.extend(f'"{c}" {t}' for c, t in column_defs if c != natural_id_col)
 
@@ -685,6 +687,7 @@ def load_parquet_to_l0(
     batch_size: int,
     column_defs: Optional[list[tuple[str, str]]] = None,
     natural_id_col: Optional[str] = None,
+    natural_id_type: str = "TEXT",
 ) -> tuple[int, int]:
     """Carga un parquet en la tabla L0. Si column_defs es None, se usa el esquema nacional."""
     _configure_logging()
@@ -755,6 +758,7 @@ def load_parquet_to_l0(
             table_name,
             column_defs=column_defs,
             natural_id_col=natural_id_col,
+            natural_id_type=natural_id_type,
         )
         conn.commit()
 
@@ -856,14 +860,27 @@ def load_parquet_to_l0(
                 else:
                     for batch_idx, (_, row) in enumerate(batch.iterrows()):
                         if use_synthetic_id:
-                            nid = f"{table_name}_{start + batch_idx}"
+                            nid = (
+                                start + batch_idx
+                                if natural_id_type == "BIGINT"
+                                else f"{table_name}_{start + batch_idx}"
+                            )
                         else:
                             nid = row.get(natural_id_col)
                             if pd.isna(nid) or nid is None:
                                 continue
-                            nid = _to_str_for_re(nid).strip() or None
-                            if not nid:
+                            nid_str = _to_str_for_re(nid).strip()
+                            if not nid_str:
                                 continue
+                            if natural_id_type == "BIGINT":
+                                m = re.search(r"/(\d+)$", nid_str)
+                                if not m:
+                                    continue
+                                nid = int(m.group(1))
+                            else:
+                                nid = nid_str or None
+                                if not nid:
+                                    continue
                         if has_cpv:
                             prefix4, prefix6, sec6 = derive_cpv_prefixes(
                                 row.get(cpv_principal_col),
