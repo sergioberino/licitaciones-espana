@@ -733,7 +733,9 @@ def cmd_ingest(args: argparse.Namespace) -> int:
         else:
             partial_pattern = f"_part_{subconjunto}_*.parquet"
 
-        partial_glob = sorted(output_dir.glob(partial_pattern))
+        partial_glob = sorted(
+            p for p in output_dir.glob(partial_pattern) if not p.name.endswith("_lotes.parquet")
+        )
         use_partials = len(partial_glob) > 0
 
         parquet_files: list[Path]
