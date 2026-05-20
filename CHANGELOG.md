@@ -4,8 +4,20 @@ Todos los cambios notables del CLI y del microservicio ETL se documentan aquí.
 
 ## [2.0.7] — 2026-05-20
 
+### Añadido
+
+- **`l0.lotes_licitaciones` — tabla de lotes de licitaciones PLACSP** (`schemas/026_lotes_licitaciones.sql`): nueva tabla en el schema `l0` para almacenar los lotes definidos en los feeds ATOM de la Plataforma de Contratación del Sector Público. Identidad: `UNIQUE (expediente, dir3_organo, num_lote)` — par estable a través de múltiples entries/eventos del mismo expediente (no se referencia `natural_id` ni `l0_id` de `nacional_licitaciones`). Campos de definición del lote (`objeto`, `importe_sin_iva`, `importe_con_iva`, `cpv`, `ubicacion`, `nut`) y de adjudicación (`fecha_adjudicacion`, `nif_adjudicado`, `empresa_adjudicada`, `importe_sin_iva_adj`, `importe_con_iva_adj`). Índices en `expediente`, `dir3_organo` y `nif_adjudicado`. Migración registrada en `INIT_MIGRATIONS`.
+- **`nacional/licitaciones.py` — extracción de lotes:** nueva función `parsear_lotes_entry(entry, expediente, dir3_organo)` que combina dos fuentes independientes presentes en el mismo entry:
+  - **Fuente A** (`cac:ProcurementProjectLot`): definición del lote (objeto, importes, CPVs unidos con `";"`, ubicación/NUT).
+  - **Fuente B** (`cac:TenderResult` con `ProcurementProjectLotID`): adjudicación del lote (fecha, NIF y nombre de adjudicatario, importes adjudicados). Ausencia de `WinningParty` (lote desierto) deja los campos a `NULL`.
+  - Ambas fuentes se combinan por `num_lote`; si en un entry solo aparece una, los campos de la otra quedan a `NULL` para ser rellenados cuando llegue el entry correspondiente.
+- **`etl/ingest_l0.py` — `load_lotes_parquets_to_l0`:** nueva función que busca los parquets `_part_{script_conjunto}_*_lotes.parquet` en el directorio de salida y los carga en `l0.lotes_licitaciones` mediante un UPSERT incremental con `COALESCE`: cada campo se actualiza solo si el valor entrante no es `NULL`, preservando datos ya informados ante entries posteriores (adjudicación, formalización). Constantes `LOTES_PARQUET_COLUMNS` y `LOTES_TABLE` añadidas.
+
 ### Modificado
 
+- **`nacional/licitaciones.py` — `parsear_entry`:** antes de leer `cac:TenderResult`, detecta si el entry contiene `cac:ProcurementProjectLot`; si es así, fija `importe_adjudicacion = None` en la licitación principal (los importes de adjudicación se gestionan en `lotes_licitaciones`).
+- **`nacional/licitaciones.py` — `procesar_archivo_atom` y `procesar_zip`:** ahora retornan la tupla `(licitaciones, lotes)`. El bucle principal de `main()` vuelca los lotes a parquets parciales separados (`_part_{conjunto_id}_{idx:04d}_lotes.parquet`) que el ingest recoge en el Paso 2.
+- **`etl/cli.py` — `cmd_ingest`:** tras cargar los parquets principales del conjunto `nacional` (excepto `subvenciones`), ejecuta `load_lotes_parquets_to_l0` como Paso 2. Errores en la carga de lotes son no bloqueantes (se loguean pero no abortan el ingest). `load_lotes_parquets_to_l0` añadido a la importación desde `etl.ingest_l0`.
 - **`l0.nacional_licitaciones.natural_id`: de `TEXT` a `BIGINT`:** la columna almacenaba la URL completa del feed PLACSP (p. ej. `https://contrataciondelestado.es/sindicacion/licitacionesPerfilContratante/16577694`); ahora almacena únicamente el identificador numérico final (`16577694`). El constraint `UNIQUE NOT NULL` y el mecanismo de idempotencia `ON CONFLICT (natural_id) DO NOTHING` se mantienen sin cambios. Mismo cambio aplicado a `nacional_agregacion_ccaa`, `nacional_contratos_menores`, `nacional_encargos_medios_propios` y `nacional_consultas_preliminares`.
 - **`etl/ingest_l0.py`:** `ensure_l0_table` y `load_parquet_to_l0` aceptan el parámetro `natural_id_type` (`"TEXT"` por defecto). Para el conjunto `nacional`, se pasa `"BIGINT"`: durante la ingesta se extrae el sufijo numérico de la URL con `re.search(r'/(\d+)$', ...)` y se inserta como entero.
 - **`etl/cli.py`:** `cmd_ingest` lee `natural_id_type` del `CONJUNTOS_REGISTRY` y lo propaga a `load_parquet_to_l0` (tanto en la ruta secuencial como en la ThreadPool).
