@@ -628,11 +628,12 @@ def ensure_l0_table(
                     f"Table {full_table} does not exist. Run 'init-db' first to apply schema 012_nacional_subvenciones.sql"
                 )
     else:
-        # Licitaciones: standard L0 pattern with natural_id
-        col_defs = [
-            '"l0_id" BIGSERIAL PRIMARY KEY',
-            f'"natural_id" {natural_id_type} UNIQUE NOT NULL',
-        ]
+        # Licitaciones: standard L0 pattern.
+        # Para tablas nacionales (has_cpv) no se almacena natural_id; la clave de
+        # negocio es (expediente, dir3_organo). Para otros conjuntos se mantiene UNIQUE NOT NULL.
+        col_defs = ['"l0_id" BIGSERIAL PRIMARY KEY']
+        if not has_cpv:
+            col_defs.append(f'"natural_id" {natural_id_type} UNIQUE NOT NULL')
         col_defs.extend(f'"{c}" {t}' for c, t in column_defs if c != natural_id_col)
 
         # Only add CPV columns for licitaciones
@@ -652,6 +653,9 @@ def ensure_l0_table(
         )
         with conn.cursor() as cur:
             cur.execute(create_sql)
+            # Eliminar columna natural_id de tablas nacionales ya existentes en BD.
+            if has_cpv:
+                cur.execute(f'ALTER TABLE {full_table} DROP COLUMN IF EXISTS "natural_id"')
 
             # Only create CPV indexes for licitaciones
             if has_cpv:
@@ -677,6 +681,11 @@ def ensure_l0_table(
             if "estado_code" in col_names:
                 iname = f"idx_{table_name}_estado_code"
                 cur.execute(f'CREATE INDEX IF NOT EXISTS {iname} ON {full_table} ("estado_code")')
+            if has_cpv and "expediente" in col_names and "dir3_organo" in col_names:
+                iname = f"idx_{table_name}_exp_dir3"
+                cur.execute(
+                    f'CREATE UNIQUE INDEX IF NOT EXISTS {iname} ON {full_table} ("expediente", "dir3_organo")'
+                )
 
 
 def load_parquet_to_l0(
@@ -706,6 +715,9 @@ def load_parquet_to_l0(
     has_cpv = column_defs is NACIONAL_PARQUET_COLUMNS
 
     if is_subvenciones:
+        use_synthetic_id = False
+    elif has_cpv:
+        # Tablas nacionales: natural_id eliminado; la clave es (expediente, dir3_organo).
         use_synthetic_id = False
     else:
         # Aceptar primera columna como natural_id si no existe la esperada
@@ -774,7 +786,11 @@ def load_parquet_to_l0(
             ON CONFLICT (id) DO NOTHING
         """
     else:
-        table_base_cols = ["natural_id"] + [c for c, _ in column_defs if c != natural_id_col]
+        if has_cpv:
+            # Nacional: sin natural_id en tabla; se omite la columna "id" del parquet
+            table_base_cols = [c for c, _ in column_defs if c != natural_id_col]
+        else:
+            table_base_cols = ["natural_id"] + [c for c, _ in column_defs if c != natural_id_col]
         if has_cpv:
             insert_cols = table_base_cols + [
                 "principal_prefix4",
@@ -786,7 +802,20 @@ def load_parquet_to_l0(
         placeholders = ", ".join(["%s"] * len(insert_cols))
         quoted = ", ".join(f'"{c}"' for c in insert_cols)
         full_table = f'"{schema}"."{table_name}"'
-        insert_sql = f"""
+        if has_cpv:  # nacional licitaciones: actualización incremental con COALESCE
+            _no_update = {"expediente", "dir3_organo"}
+            update_cols = [c for c in insert_cols if c not in _no_update]
+            update_set = ",\n            ".join(
+                f'"{c}" = COALESCE(EXCLUDED."{c}", "{table_name}"."{c}")' for c in update_cols
+            )
+            insert_sql = f"""
+            INSERT INTO {full_table} ({quoted})
+            VALUES ({placeholders})
+            ON CONFLICT ("expediente", "dir3_organo") DO UPDATE SET
+                {update_set}
+        """
+        else:
+            insert_sql = f"""
             INSERT INTO {full_table} ({quoted})
             VALUES ({placeholders})
             ON CONFLICT (natural_id) DO NOTHING
@@ -797,12 +826,16 @@ def load_parquet_to_l0(
 
     inserted = 0
     total_candidates = 0
+    count_before = 0
     estado_code_lookup: dict[str, int] = {}
     with psycopg2.connect(db_url) as conn:
         if is_nacional:
             with conn.cursor() as cur_dim:
                 cur_dim.execute("SELECT code, id FROM dim.estado_licitacion")
                 estado_code_lookup = {row[0]: row[1] for row in cur_dim.fetchall()}
+            with conn.cursor() as cur:
+                cur.execute(f"SELECT COUNT(*) FROM {full_table}")
+                count_before = cur.fetchone()[0]
         with conn.cursor() as cur:
             for start in range(0, len(df), batch_size):
                 batch = df.iloc[start : start + batch_size]
@@ -859,38 +892,39 @@ def load_parquet_to_l0(
                         rows.append(tuple(vals))
                 else:
                     for batch_idx, (_, row) in enumerate(batch.iterrows()):
-                        if use_synthetic_id:
-                            nid = (
-                                start + batch_idx
-                                if natural_id_type == "BIGINT"
-                                else f"{table_name}_{start + batch_idx}"
-                            )
-                        else:
-                            nid = row.get(natural_id_col)
-                            if pd.isna(nid) or nid is None:
-                                continue
-                            nid_str = _to_str_for_re(nid).strip()
-                            if not nid_str:
-                                continue
-                            if natural_id_type == "BIGINT":
-                                m = re.search(r"/(\d+)$", nid_str)
-                                if not m:
-                                    continue
-                                nid = int(m.group(1))
-                            else:
-                                nid = nid_str or None
-                                if not nid:
-                                    continue
-                        if has_cpv:
+                        if is_nacional:
+                            # natural_id eliminado de tablas nacionales; clave: (expediente, dir3_organo)
                             prefix4, prefix6, sec6 = derive_cpv_prefixes(
                                 row.get(cpv_principal_col),
                                 row.get(cpvs_col),
                             )
+                            vals = []
                         else:
+                            if use_synthetic_id:
+                                nid = (
+                                    start + batch_idx
+                                    if natural_id_type == "BIGINT"
+                                    else f"{table_name}_{start + batch_idx}"
+                                )
+                            else:
+                                nid = row.get(natural_id_col)
+                                if pd.isna(nid) or nid is None:
+                                    continue
+                                nid_str = _to_str_for_re(nid).strip()
+                                if not nid_str:
+                                    continue
+                                if natural_id_type == "BIGINT":
+                                    m = re.search(r"/(\d+)$", nid_str)
+                                    if not m:
+                                        continue
+                                    nid = int(m.group(1))
+                                else:
+                                    nid = nid_str or None
+                                    if not nid:
+                                        continue
                             prefix4 = prefix6 = None
                             sec6 = None
-
-                        vals = [nid]
+                            vals = [nid]
                         for idx, c in enumerate(parquet_cols_ordered):
                             if c == natural_id_col:
                                 continue
@@ -967,8 +1001,14 @@ def load_parquet_to_l0(
                 if rows:
                     for row_tuple in rows:
                         cur.execute(insert_sql, row_tuple)
-                        inserted += cur.rowcount or 0
+                        if not is_nacional:
+                            inserted += cur.rowcount or 0
                     conn.commit()
+        if is_nacional:
+            with conn.cursor() as cur:
+                cur.execute(f"SELECT COUNT(*) FROM {full_table}")
+                count_after = cur.fetchone()[0]
+            inserted = count_after - count_before
     skipped = total_candidates - inserted
     return (inserted, skipped)
 

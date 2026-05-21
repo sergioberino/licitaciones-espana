@@ -2,6 +2,21 @@
 
 Todos los cambios notables del CLI y del microservicio ETL se documentan aquí.
 
+## [2.1.2] — 2026-05-21 (LTS)
+
+### Resumen
+
+- **PATCH sobre `v2.1.1`** — alineación SemVer con el tag chain existente (`v2.1.0` → `v2.1.1` → `v2.1.2`). Mantiene la cadencia *rolling* (un issue cerrado → un incremento PATCH) descrita en `docs/policies/rolling-updates-repo-sync.md` §5.1. Cierra [#63](https://github.com/sergioberino/licitaciones-espana/issues/63).
+
+### Modificado
+
+- **`etl/ingest_l0.py` — `load_parquet_to_l0` — UPSERT incremental para licitaciones nacionales:** el UPSERT para tablas nacionales (`nacional_licitaciones`, `nacional_contratos_menores`, `nacional_encargos_medios_propios`, `nacional_consultas_preliminares`, `nacional_agregacion_ccaa`) cambia de `ON CONFLICT (natural_id) DO NOTHING` a `ON CONFLICT ("expediente", "dir3_organo") DO UPDATE SET` con `COALESCE` en cada columna salvo el par de conflicto. De este modo, campos como `estado_code`, `importe_adjudicacion`, `adjudicatario`, `fecha_adjudicacion` o `procedimiento` se actualizan cuando llegan entries posteriores del mismo expediente, sin machacar datos ya informados. Coherente con el comportamiento ya existente en `l0.lotes_licitaciones`.
+- **`etl/ingest_l0.py` — `ensure_l0_table` — índice único `(expediente, dir3_organo)`:** añade `CREATE UNIQUE INDEX IF NOT EXISTS idx_{table}_exp_dir3 ON ... ("expediente", "dir3_organo")` para tablas nacionales con CPV. Este índice es el que PostgreSQL necesita para resolver el `ON CONFLICT` sobre el par de negocio estable (el mismo utilizado en `l0.lotes_licitaciones`).
+- **`etl/ingest_l0.py` — `load_parquet_to_l0` — conteo exacto de nuevos vs. actualizados:** sustituye `cur.rowcount` por `COUNT(*)` antes/después del bucle de batches para obtener la cifra real de filas _nuevas_ (diferencia neta) frente a _actualizadas_. Idéntico al patrón ya implementado en `load_lotes_parquets_to_l0` en `[2.0.7]`. El conteo tarda unos segundos extra pero la ingesta se ejecuta en horario nocturno (2 am) y no impacta al usuario.
+- **`etl/ingest_l0.py` — `ensure_l0_table` y `load_parquet_to_l0` — eliminación de `natural_id` en tablas nacionales:** la columna `natural_id` se elimina por completo de las tablas nacionales (`nacional_licitaciones`, etc.) ya que carece de utilidad al haber pasado la clave de negocio a `(expediente, dir3_organo)`. `ensure_l0_table` ya no la incluye en el `CREATE TABLE` y ejecuta `ALTER TABLE ... DROP COLUMN IF EXISTS "natural_id"` para tablas ya existentes en BD (idempotente). `load_parquet_to_l0` omite la extracción del ID numérico de la URL y no lo incluye en el `INSERT`.
+
+---
+
 ## [2.0.7] — 2026-05-20
 
 ### Añadido
