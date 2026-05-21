@@ -2,7 +2,11 @@
 
 Todos los cambios notables del CLI y del microservicio ETL se documentan aquí.
 
-## [2.0.8] — 2026-05-21
+## [2.1.2] — 2026-05-21 (LTS)
+
+### Resumen
+
+- **PATCH sobre `v2.1.1`** — alineación SemVer con el tag chain existente (`v2.1.0` → `v2.1.1` → `v2.1.2`). Mantiene la cadencia *rolling* (un issue cerrado → un incremento PATCH) descrita en `docs/policies/rolling-updates-repo-sync.md` §5.1. Cierra [#63](https://github.com/sergioberino/licitaciones-espana/issues/63).
 
 ### Modificado
 
