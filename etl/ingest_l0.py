@@ -628,11 +628,12 @@ def ensure_l0_table(
                     f"Table {full_table} does not exist. Run 'init-db' first to apply schema 012_nacional_subvenciones.sql"
                 )
     else:
-        # Licitaciones: standard L0 pattern with natural_id
-        col_defs = [
-            '"l0_id" BIGSERIAL PRIMARY KEY',
-            f'"natural_id" {natural_id_type} UNIQUE NOT NULL',
-        ]
+        # Licitaciones: standard L0 pattern.
+        # Para tablas nacionales (has_cpv) no se almacena natural_id; la clave de
+        # negocio es (expediente, dir3_organo). Para otros conjuntos se mantiene UNIQUE NOT NULL.
+        col_defs = ['"l0_id" BIGSERIAL PRIMARY KEY']
+        if not has_cpv:
+            col_defs.append(f'"natural_id" {natural_id_type} UNIQUE NOT NULL')
         col_defs.extend(f'"{c}" {t}' for c, t in column_defs if c != natural_id_col)
 
         # Only add CPV columns for licitaciones
@@ -652,6 +653,9 @@ def ensure_l0_table(
         )
         with conn.cursor() as cur:
             cur.execute(create_sql)
+            # Eliminar columna natural_id de tablas nacionales ya existentes en BD.
+            if has_cpv:
+                cur.execute(f'ALTER TABLE {full_table} DROP COLUMN IF EXISTS "natural_id"')
 
             # Only create CPV indexes for licitaciones
             if has_cpv:
@@ -779,7 +783,11 @@ def load_parquet_to_l0(
             ON CONFLICT (id) DO NOTHING
         """
     else:
-        table_base_cols = ["natural_id"] + [c for c, _ in column_defs if c != natural_id_col]
+        if has_cpv:
+            # Nacional: sin natural_id en tabla; se omite la columna "id" del parquet
+            table_base_cols = [c for c, _ in column_defs if c != natural_id_col]
+        else:
+            table_base_cols = ["natural_id"] + [c for c, _ in column_defs if c != natural_id_col]
         if has_cpv:
             insert_cols = table_base_cols + [
                 "principal_prefix4",
@@ -881,38 +889,39 @@ def load_parquet_to_l0(
                         rows.append(tuple(vals))
                 else:
                     for batch_idx, (_, row) in enumerate(batch.iterrows()):
-                        if use_synthetic_id:
-                            nid = (
-                                start + batch_idx
-                                if natural_id_type == "BIGINT"
-                                else f"{table_name}_{start + batch_idx}"
-                            )
-                        else:
-                            nid = row.get(natural_id_col)
-                            if pd.isna(nid) or nid is None:
-                                continue
-                            nid_str = _to_str_for_re(nid).strip()
-                            if not nid_str:
-                                continue
-                            if natural_id_type == "BIGINT":
-                                m = re.search(r"/(\d+)$", nid_str)
-                                if not m:
-                                    continue
-                                nid = int(m.group(1))
-                            else:
-                                nid = nid_str or None
-                                if not nid:
-                                    continue
-                        if has_cpv:
+                        if is_nacional:
+                            # natural_id eliminado de tablas nacionales; clave: (expediente, dir3_organo)
                             prefix4, prefix6, sec6 = derive_cpv_prefixes(
                                 row.get(cpv_principal_col),
                                 row.get(cpvs_col),
                             )
+                            vals = []
                         else:
+                            if use_synthetic_id:
+                                nid = (
+                                    start + batch_idx
+                                    if natural_id_type == "BIGINT"
+                                    else f"{table_name}_{start + batch_idx}"
+                                )
+                            else:
+                                nid = row.get(natural_id_col)
+                                if pd.isna(nid) or nid is None:
+                                    continue
+                                nid_str = _to_str_for_re(nid).strip()
+                                if not nid_str:
+                                    continue
+                                if natural_id_type == "BIGINT":
+                                    m = re.search(r"/(\d+)$", nid_str)
+                                    if not m:
+                                        continue
+                                    nid = int(m.group(1))
+                                else:
+                                    nid = nid_str or None
+                                    if not nid:
+                                        continue
                             prefix4 = prefix6 = None
                             sec6 = None
-
-                        vals = [nid]
+                            vals = [nid]
                         for idx, c in enumerate(parquet_cols_ordered):
                             if c == natural_id_col:
                                 continue
