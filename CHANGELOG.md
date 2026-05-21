@@ -2,6 +2,16 @@
 
 Todos los cambios notables del CLI y del microservicio ETL se documentan aquí.
 
+## [2.0.8] — 2026-05-21
+
+### Modificado
+
+- **`etl/ingest_l0.py` — `load_parquet_to_l0` — UPSERT incremental para licitaciones nacionales:** el UPSERT para tablas nacionales (`nacional_licitaciones`, `nacional_contratos_menores`, `nacional_encargos_medios_propios`, `nacional_consultas_preliminares`, `nacional_agregacion_ccaa`) cambia de `ON CONFLICT (natural_id) DO NOTHING` a `ON CONFLICT ("expediente", "dir3_organo") DO UPDATE SET` con `COALESCE` en cada columna salvo el par de conflicto. De este modo, campos como `estado_code`, `importe_adjudicacion`, `adjudicatario`, `fecha_adjudicacion` o `procedimiento` se actualizan cuando llegan entries posteriores del mismo expediente, sin machacar datos ya informados. Coherente con el comportamiento ya existente en `l0.lotes_licitaciones`.
+- **`etl/ingest_l0.py` — `ensure_l0_table` — índice único `(expediente, dir3_organo)`:** añade `CREATE UNIQUE INDEX IF NOT EXISTS idx_{table}_exp_dir3 ON ... ("expediente", "dir3_organo")` para tablas nacionales con CPV. Este índice es el que PostgreSQL necesita para resolver el `ON CONFLICT` sobre el par de negocio estable (el mismo utilizado en `l0.lotes_licitaciones`).
+- **`etl/ingest_l0.py` — `load_parquet_to_l0` — conteo exacto de nuevos vs. actualizados:** sustituye `cur.rowcount` por `COUNT(*)` antes/después del bucle de batches para obtener la cifra real de filas _nuevas_ (diferencia neta) frente a _actualizadas_. Idéntico al patrón ya implementado en `load_lotes_parquets_to_l0` en `[2.0.7]`. El conteo tarda unos segundos extra pero la ingesta se ejecuta en horario nocturno (2 am) y no impacta al usuario.
+
+---
+
 ## [2.0.7] — 2026-05-20
 
 ### Añadido
