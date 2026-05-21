@@ -716,6 +716,9 @@ def load_parquet_to_l0(
 
     if is_subvenciones:
         use_synthetic_id = False
+    elif has_cpv:
+        # Tablas nacionales: natural_id eliminado; la clave es (expediente, dir3_organo).
+        use_synthetic_id = False
     else:
         # Aceptar primera columna como natural_id si no existe la esperada
         if natural_id_col not in df.columns and len(df.columns):
