@@ -62,6 +62,9 @@ INIT_MIGRATIONS = (
     "024_dim_municipios.sql",
     "025_dim_estado_licitacion.sql",
     "026_lotes_licitaciones.sql",
+    "030_l0_subvenciones_nlp.sql",
+    "032_ops_llm_bases_reguladoras_logs.sql",
+    "033_scheduler_batches.sql",
 )
 
 BORME_MIGRATIONS = ("010_borme.sql",)
