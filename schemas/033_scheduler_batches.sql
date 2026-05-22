@@ -36,7 +36,8 @@ CREATE TABLE IF NOT EXISTS scheduler.batch_step_runs (
   id              BIGSERIAL PRIMARY KEY,
   batch_run_id    BIGINT NOT NULL REFERENCES scheduler.batch_runs(id) ON DELETE CASCADE,
   step_order      INT NOT NULL,
-  task_run_id     BIGINT REFERENCES scheduler.runs(id),
+  -- scheduler.runs.run_id es SERIAL (INTEGER); el FK debe coincidir en tipo.
+  task_run_id     INTEGER REFERENCES scheduler.runs(run_id) ON DELETE SET NULL,
   status          VARCHAR(20) NOT NULL,
   started_at      TIMESTAMPTZ,
   completed_at    TIMESTAMPTZ,
