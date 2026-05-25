@@ -1052,7 +1052,10 @@ def cmd_scheduler_register(args: argparse.Namespace) -> int:
         )
         return 1
     conjuntos = getattr(args, "conjuntos", None) or []
-    valid = [c for c in CONJUNTOS_REGISTRY if c != "test"] + ["borme"]
+    valid = [c for c in CONJUNTOS_REGISTRY if c != "test"] + ["borme", "nlp"]
+    subconjunto = getattr(args, "subconjunto", None)
+    no_enable = getattr(args, "no_enable", False)
+    task_pairs_arg: list[tuple[str, str]] | None = None
     if conjuntos:
         invalid = [c for c in conjuntos if c not in valid]
         if invalid:
@@ -1061,7 +1064,15 @@ def cmd_scheduler_register(args: argparse.Namespace) -> int:
                 file=sys.stderr,
             )
             return 1
-        conjuntos_filter = conjuntos
+        if subconjunto:
+            if len(conjuntos) != 1:
+                print(
+                    "Error: --subconjunto requiere exactamente un conjunto.",
+                    file=sys.stderr,
+                )
+                return 1
+            task_pairs_arg = [(conjuntos[0], subconjunto)]
+        conjuntos_filter = None if task_pairs_arg else conjuntos
     else:
         conjuntos_filter = None
     frecuencia = getattr(args, "frecuencia", None)
@@ -1075,12 +1086,16 @@ def cmd_scheduler_register(args: argparse.Namespace) -> int:
         from etl.scheduler import get_all_task_pairs
 
         all_pairs = get_all_task_pairs()
-        if conjuntos_filter:
+        if task_pairs_arg:
+            pairs = set(task_pairs_arg)
+        elif conjuntos_filter:
             conjuntos_set = set(conjuntos_filter)
             pairs = {k for k in all_pairs if k[0] in conjuntos_set}
         else:
             pairs = all_pairs
         schedule_overrides = {pair: frecuencia for pair in pairs}
+    elif task_pairs_arg and len(task_pairs_arg) == 1:
+        schedule_overrides = {task_pairs_arg[0]: "Diario"}
     try:
         from etl.scheduler import ensure_scheduler_schema, register_tasks
 
@@ -1089,7 +1104,11 @@ def cmd_scheduler_register(args: argparse.Namespace) -> int:
             ensure_scheduler_schema(conn)
             conn.commit()
             inserted, updated, registered = register_tasks(
-                conn, conjuntos=conjuntos_filter, schedule_overrides=schedule_overrides
+                conn,
+                conjuntos=conjuntos_filter,
+                task_pairs=task_pairs_arg,
+                schedule_overrides=schedule_overrides,
+                enabled=not no_enable,
             )
             conn.commit()
         print(f"scheduler.tasks: {inserted} insertadas, {updated} actualizadas.")
@@ -1835,6 +1854,18 @@ def main() -> int:
         metavar="FRECUENCIA",
         help="Frecuencia de ejecución para todas las tareas registradas. Opciones: %s. Por defecto cada tarea usa su frecuencia predeterminada."
         % ", ".join(VALID_SCHEDULE_EXPRS),
+    )
+    reg_parser.add_argument(
+        "--subconjunto",
+        default=None,
+        metavar="SUBCONJUNTO",
+        help="Registra un solo par conjunto/subconjunto (requiere un único conjunto positional). Ej: nlp analizar.",
+    )
+    reg_parser.add_argument(
+        "--no-enable",
+        action="store_true",
+        default=False,
+        help="Registrar con enabled=false (no ejecutar en el bucle hasta habilitar manualmente).",
     )
     reg_parser.set_defaults(func=cmd_scheduler_register)
     sched_sub.add_parser(

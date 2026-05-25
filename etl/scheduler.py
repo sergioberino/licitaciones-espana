@@ -302,6 +302,8 @@ def register_tasks(
     conjuntos: Optional[list[str]] = None,
     task_pairs: Optional[list[tuple[str, str]]] = None,
     schedule_overrides: Optional[dict[tuple[str, str], str]] = None,
+    *,
+    enabled: bool = True,
 ) -> tuple[int, int, list[tuple[str, str]]]:
     """
     Inserta o actualiza scheduler.tasks desde CONJUNTOS_REGISTRY y frecuencias por defecto.
@@ -332,10 +334,12 @@ def register_tasks(
             schedule_expr = validate_schedule_expr(override, default=default_schedule)
             cur.execute(
                 """INSERT INTO scheduler.tasks (conjunto, subconjunto, schedule_expr, enabled, updated_at)
-                   VALUES (%s, %s, %s, true, NOW())
+                   VALUES (%s, %s, %s, %s, NOW())
                    ON CONFLICT (conjunto, subconjunto)
-                   DO UPDATE SET schedule_expr = EXCLUDED.schedule_expr, updated_at = NOW()""",
-                (conjunto, subconjunto, schedule_expr),
+                   DO UPDATE SET schedule_expr = EXCLUDED.schedule_expr,
+                                 enabled = EXCLUDED.enabled,
+                                 updated_at = NOW()""",
+                (conjunto, subconjunto, schedule_expr, enabled),
             )
             registered.append((conjunto, subconjunto))
             if cur.rowcount == 1:
