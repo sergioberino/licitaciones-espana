@@ -4,8 +4,23 @@ Si no están definidos, los tests que requieren BD se marcan como skip.
 """
 
 import os
+from pathlib import Path
 
 import pytest
+
+# Comparte la misma carga del .env del submódulo que los tests de etl/nlp/tests/.
+# Esto permite que tests/test_api.py también lea DB_HOST/DB_NAME/DB_USER al
+# arrancar (sin esto, las fixtures con BD se saltan en local).
+try:
+    from dotenv import load_dotenv
+
+    load_dotenv(Path(__file__).resolve().parents[1] / ".env")
+except ImportError:
+    pass
+
+if os.environ.get("DB_HOST") == "postgres":
+    # docker-compose expone el contenedor como `postgres`; en host es `localhost`.
+    os.environ["DB_HOST"] = "localhost"
 
 
 @pytest.fixture(scope="session")

@@ -34,6 +34,12 @@ class ExtractedText:
     text: str
     content_type: Optional[str]
     char_count: int
+    # Hito 3.1.f — branch que ganó dentro de extract_from_url. Útil para distinguir
+    # PDFs servidos como application/pdf (pdf_native) de los servidos como
+    # application/octet-stream (BDNS), que requieren fallback magic-byte → pypdf.
+    # Valores: 'pdf_native' | 'html' | 'xml' | 'text'
+    #          'octet_fallback_pdf' | 'octet_fallback_html' | 'octet_fallback_text'
+    extraction_mode: str = "unknown"
 
 
 _DEFAULT_TIMEOUT = httpx.Timeout(30.0, connect=10.0)
@@ -69,27 +75,42 @@ def extract_from_url(url: str) -> ExtractedText:
 
     if "application/pdf" in ctype or url.lower().endswith(".pdf"):
         text = _extract_pdf(content)
-    elif "text/html" in ctype or "text/xml" in ctype or "application/xml" in ctype:
+        mode = "pdf_native"
+    elif "text/html" in ctype:
         text = _extract_html(content, encoding=resp.encoding)
+        mode = "html"
+    elif "text/xml" in ctype or "application/xml" in ctype:
+        text = _extract_html(content, encoding=resp.encoding)
+        mode = "xml"
     elif "text/plain" in ctype:
         text = resp.text
+        mode = "text"
     else:
+        # Fallback típico de BDNS, que sirve PDFs como application/octet-stream.
+        # Probamos pypdf primero (magic byte %PDF-), HTML si no, texto plano si no.
         try:
             text = _extract_pdf(content)
+            mode = "octet_fallback_pdf"
         except ExtractionError:
             try:
                 text = _extract_html(content)
+                mode = "octet_fallback_html"
             except Exception:
                 text = resp.text
+                mode = "octet_fallback_text"
 
     text = text.strip()
     if not text:
         raise ExtractionError(f"Empty text extracted from {url}")
-    return ExtractedText(text=text, content_type=ctype, char_count=len(text))
+    return ExtractedText(
+        text=text, content_type=ctype, char_count=len(text), extraction_mode=mode
+    )
 
 
 def extract_from_text(text: str) -> ExtractedText:
     text = text.strip()
     if not text:
         raise ExtractionError("Empty input text")
-    return ExtractedText(text=text, content_type="text/plain", char_count=len(text))
+    return ExtractedText(
+        text=text, content_type="text/plain", char_count=len(text), extraction_mode="text"
+    )

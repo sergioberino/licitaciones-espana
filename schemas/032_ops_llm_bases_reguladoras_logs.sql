@@ -13,8 +13,15 @@ CREATE TABLE IF NOT EXISTS ops.llm_bases_reguladoras_logs (
   created_at        TIMESTAMPTZ NOT NULL DEFAULT NOW()
 );
 
+-- Hito 3.1.b: enlace al run que generó el log. La FK contra ops.nlp_runs
+-- se añade en 035_ops_nlp_runs.sql (canonical) / 031_ops_nlp_runs.sql
+-- (incremental) para evitar el ciclo de orden DDL.
+ALTER TABLE ops.llm_bases_reguladoras_logs
+  ADD COLUMN IF NOT EXISTS run_id BIGINT;
+
 CREATE INDEX IF NOT EXISTS idx_llm_br_logs_doc     ON ops.llm_bases_reguladoras_logs (document_key);
 CREATE INDEX IF NOT EXISTS idx_llm_br_logs_created ON ops.llm_bases_reguladoras_logs (created_at);
+CREATE INDEX IF NOT EXISTS idx_llm_br_logs_run     ON ops.llm_bases_reguladoras_logs (run_id);
 
 CREATE TABLE IF NOT EXISTS ops.nlp_failures (
   id              BIGSERIAL PRIMARY KEY,

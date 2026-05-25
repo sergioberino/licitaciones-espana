@@ -237,3 +237,131 @@ def test_run_batch_valida_mutual_exclusion(pg_conn):
 
     with pytest.raises(ValueError, match=r"mutual|exclus"):
         run_batch(pg_conn, limit=5, dry_run=True, anos=(2024, 2024), codigo_bdns=123)
+
+
+# -----------------------------------------------------------------------------
+# Hito 3.1.d — Tracking en ops.nlp_runs
+# -----------------------------------------------------------------------------
+
+
+def _fetch_run(conn, run_id: int) -> dict:
+    import psycopg2.extras
+
+    with conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor) as cur:
+        cur.execute("SELECT * FROM ops.nlp_runs WHERE run_id = %s", (run_id,))
+        row = cur.fetchone()
+    return dict(row) if row else None
+
+
+def test_run_batch_creates_nlp_run_row(pg_conn):
+    """Con dry_run=True, run_batch crea fila en ops.nlp_runs y la cierra ok.
+
+    BatchStats expone run_id; los counters terminan a cero (no hay items reales)
+    y status='ok'.
+    """
+    from etl.nlp.pipeline import BatchStats, run_batch
+
+    stats = run_batch(pg_conn, limit=1, dry_run=True, codigo_bdns=-99999999)
+    assert isinstance(stats, BatchStats)
+    assert hasattr(stats, "run_id")
+    assert stats.run_id is not None
+
+    row = _fetch_run(pg_conn, stats.run_id)
+    assert row is not None
+    assert row["status"] == "ok"
+    assert row["finished_at"] is not None
+    assert row["dry_run"] is True
+    assert row["selector_kind"] == "codigo_bdns"
+
+
+def test_run_batch_selector_value_jsonb_anos_meses(pg_conn):
+    """selector_value JSONB contiene {anos:[a,b], meses:[m1,m2]} para anos+meses."""
+    from etl.nlp.pipeline import run_batch
+
+    stats = run_batch(pg_conn, limit=1, dry_run=True, anos=(2024, 2024), meses=(3, 6))
+    row = _fetch_run(pg_conn, stats.run_id)
+    assert row["selector_kind"] == "anos"
+    assert row["selector_value"] == {"anos": [2024, 2024], "meses": [3, 6]}
+    assert row["limit_value"] == 1
+
+
+def test_run_batch_selector_value_codigo_bdns(pg_conn):
+    """selector_value JSONB = {codigo_bdns: N} para --codigo-bdns."""
+    from etl.nlp.pipeline import run_batch
+
+    stats = run_batch(pg_conn, limit=10, dry_run=True, codigo_bdns=-99999999)
+    row = _fetch_run(pg_conn, stats.run_id)
+    assert row["selector_kind"] == "codigo_bdns"
+    assert row["selector_value"] == {"codigo_bdns": -99999999}
+
+
+def test_run_batch_selector_value_todo(pg_conn):
+    """selector_value JSONB = {} para --todo."""
+    from etl.nlp.pipeline import run_batch
+
+    stats = run_batch(pg_conn, limit=1, dry_run=True, todo=True)
+    row = _fetch_run(pg_conn, stats.run_id)
+    assert row["selector_kind"] == "todo"
+    assert row["selector_value"] == {}
+
+
+def test_run_batch_marks_failed_on_exception(pg_conn, monkeypatch):
+    """Si select_pending lanza, run_batch cierra fila con status='failed'.
+
+    Capturamos el run_id con un side_effect que también lo guarda fuera
+    para verificar la fila tras la excepción.
+    """
+    from etl.nlp import pipeline
+
+    captured = {}
+    real_create = pipeline._create_nlp_run
+
+    def _wrap_create(*args, **kwargs):
+        rid = real_create(*args, **kwargs)
+        captured["run_id"] = rid
+        return rid
+
+    def _boom(*args, **kwargs):
+        raise RuntimeError("simulated failure")
+
+    monkeypatch.setattr(pipeline, "_create_nlp_run", _wrap_create)
+    monkeypatch.setattr(pipeline, "select_pending", _boom)
+
+    with pytest.raises(RuntimeError, match="simulated failure"):
+        pipeline.run_batch(pg_conn, limit=1, dry_run=True, todo=True)
+
+    assert "run_id" in captured
+    row = _fetch_run(pg_conn, captured["run_id"])
+    assert row is not None
+    assert row["status"] == "failed"
+    assert row["finished_at"] is not None
+    assert "simulated failure" in (row["error_message"] or "")
+
+
+def test_run_batch_uses_env_nlp_run_id(pg_conn, monkeypatch):
+    """Si NLP_RUN_ID está en env, run_batch reusa esa fila (no crea otra).
+
+    El endpoint POST /nlp/analizar crea la fila ANTES del Popen y pasa el id
+    via env var para evitar la race contra el polling de la UI.
+    """
+    from etl.nlp import pipeline
+
+    # Crear una fila pre-existente "owned" por el caller.
+    with pg_conn.cursor() as cur:
+        cur.execute(
+            """
+            INSERT INTO ops.nlp_runs (selector_kind, selector_value, limit_value, dry_run, force, llm_model, pid)
+            VALUES ('todo', '{}'::jsonb, 1, TRUE, FALSE, NULL, NULL)
+            RETURNING run_id
+            """
+        )
+        pre_existing = cur.fetchone()[0]
+    pg_conn.commit()
+
+    monkeypatch.setenv("NLP_RUN_ID", str(pre_existing))
+    stats = pipeline.run_batch(pg_conn, limit=1, dry_run=True, todo=True)
+    assert stats.run_id == pre_existing
+
+    row = _fetch_run(pg_conn, pre_existing)
+    assert row["status"] == "ok"
+    assert row["finished_at"] is not None

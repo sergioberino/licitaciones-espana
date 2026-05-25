@@ -1363,11 +1363,54 @@ def nlp_analizar(body: NlpAnalizarBody):
     if body.dry_run:
         cmd.append("--dry-run")
 
+    # Hito 3.1.d — Crear la fila en ops.nlp_runs ANTES del Popen y pasar el id
+    # al subprocess vía NLP_RUN_ID. Así la UI puede pollear /nlp/runs/{id} sin
+    # carrera con el arranque del subprocess.
+    run_id: int | None = None
+    db_url = get_database_url()
+    if db_url:
+        try:
+            from etl.nlp.pipeline import _create_nlp_run, _selector_metadata
+
+            anos_tuple = (
+                _parse_range_str_pair(body.anos, min_val=1900, max_val=2999, name="anos")
+                if body.anos is not None
+                else None
+            )
+            meses_tuple = (
+                _parse_range_str_pair(body.meses, min_val=1, max_val=12, name="meses")
+                if body.meses is not None
+                else None
+            )
+            selector_kind, selector_value = _selector_metadata(
+                anos=anos_tuple,
+                meses=meses_tuple,
+                codigo_bdns=body.codigo_bdns,
+                todo=bool(body.todo),
+            )
+            with psycopg2.connect(db_url) as conn:
+                run_id = _create_nlp_run(
+                    conn,
+                    selector_kind=selector_kind,
+                    selector_value=selector_value,
+                    limit_value=body.limit if body.limit and body.limit > 0 else None,
+                    dry_run=body.dry_run,
+                    force=body.force,
+                    llm_model=os.environ.get("NLP_LLM_MODEL"),
+                    pid=None,  # se llenará cuando arranque el subprocess
+                )
+        except Exception:
+            # Si falla el preregister no bloqueamos el run: el subprocess creará su
+            # propia fila al arrancar (path legacy). Loguear pero seguir.
+            run_id = None
+
     log_path = nlp_log_path()
     try:
         log_file = open(log_path, "w", encoding="utf-8")
         env = os.environ.copy()
         env["PYTHONUNBUFFERED"] = "1"
+        if run_id is not None:
+            env["NLP_RUN_ID"] = str(run_id)
         kwargs: dict = {"stdout": log_file, "stderr": subprocess.STDOUT, "env": env}
         if os.name != "nt":
             kwargs["start_new_session"] = True
@@ -1376,14 +1419,37 @@ def nlp_analizar(body: NlpAnalizarBody):
         return JSONResponse(status_code=500, content={"detail": f"spawn failed: {e}"})
 
     pid_file.write_text(str(p.pid))
-    return JSONResponse(
-        status_code=202,
-        content={
-            "pid": p.pid,
-            "log_path": str(log_path),
-            "started_at": datetime.utcnow().isoformat() + "Z",
-        },
-    )
+
+    # Si conseguimos crear la fila, completamos pid ahora que sí lo conocemos.
+    if run_id is not None and db_url:
+        try:
+            with psycopg2.connect(db_url) as conn:
+                with conn.cursor() as cur:
+                    cur.execute(
+                        "UPDATE ops.nlp_runs SET pid = %s WHERE run_id = %s",
+                        (p.pid, run_id),
+                    )
+                conn.commit()
+        except Exception:
+            pass
+
+    payload: dict = {
+        "pid": p.pid,
+        "log_path": str(log_path),
+        "started_at": datetime.utcnow().isoformat() + "Z",
+    }
+    if run_id is not None:
+        payload["run_id"] = run_id
+    return JSONResponse(status_code=202, content=payload)
+
+
+def _parse_range_str_pair(value: str, *, min_val: int, max_val: int, name: str) -> tuple[int, int]:
+    """Helper interno: usa el validador del NlpAnalizarBody pero devuelve la tupla.
+
+    Reusa la lógica probada de :func:`_validate_range_str` (ya validado en el body
+    Pydantic, pero necesitamos el tuple parseado para `_selector_metadata`).
+    """
+    return _validate_range_str(value, min_val=min_val, max_val=max_val, name=name)
 
 
 @app.get("/nlp/log", summary="Tail the NLP analizar subprocess log")
@@ -1450,3 +1516,339 @@ def subvenciones_ficha(subvencion_id: int):
         if isinstance(val, datetime):
             out[key] = val.isoformat()
     return out
+
+
+# =============================================================================
+# Hito 3.1.e — Endpoints HTTP para el panel /analisis-nlp (frontend-etl WP3).
+# =============================================================================
+from decimal import Decimal as _Decimal  # noqa: E402
+
+
+def _serialize_nlp_row(row: dict) -> dict:
+    """Convierte datetime→ISO y Decimal→str (no perder precisión vía float)."""
+    out = dict(row)
+    for k, v in list(out.items()):
+        if isinstance(v, datetime):
+            out[k] = v.isoformat()
+        elif isinstance(v, _Decimal):
+            out[k] = str(v)
+    return out
+
+
+@app.get(
+    "/nlp/stats",
+    summary="Resumen agregado para el dashboard /analisis-nlp",
+    description="Counts por validation_status, costes acumulados (last_run / 24h / 30d / all), "
+    "último run, pricing vigente para gpt-5.4-nano. Read-only.",
+)
+def nlp_stats():
+    db_url = get_database_url()
+    if not db_url:
+        return JSONResponse(status_code=503, content={"detail": "database unavailable"})
+    try:
+        with psycopg2.connect(db_url) as conn:
+            with conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor) as cur:
+                # Counts.
+                cur.execute(
+                    """
+                    SELECT
+                      COUNT(*) FILTER (WHERE validation_status = 'valid')   AS valid,
+                      COUNT(*) FILTER (WHERE validation_status = 'partial') AS partial,
+                      COUNT(*) FILTER (WHERE validation_status = 'invalid') AS invalid,
+                      COUNT(*) AS total_nlp
+                    FROM l0.subvenciones_nlp
+                    """
+                )
+                nlp_counts = dict(cur.fetchone())
+                cur.execute("SELECT COUNT(*) AS c FROM l0.nacional_subvenciones")
+                total_subv = int(cur.fetchone()["c"])
+                cur.execute(
+                    """
+                    SELECT COUNT(*) AS c
+                    FROM l0.nacional_subvenciones
+                    WHERE nlp_document_key IS NULL
+                      AND (url_bases_reguladoras IS NOT NULL OR documentos IS NOT NULL)
+                    """
+                )
+                pending = int(cur.fetchone()["c"])
+
+                # Costes por ventana temporal. cost_usd puede ser NULL en logs
+                # antiguos (pre-3.1) → coalesce a 0.
+                def _agg(where_sql: str, params: tuple = ()) -> dict:
+                    cur.execute(
+                        f"""
+                        SELECT
+                          COALESCE(SUM(input_tokens), 0)  AS input_tokens,
+                          COALESCE(SUM(output_tokens), 0) AS output_tokens,
+                          COALESCE(SUM(cost_usd), 0)      AS cost_usd
+                        FROM ops.llm_bases_reguladoras_logs
+                        WHERE {where_sql}
+                        """,
+                        params,
+                    )
+                    return _serialize_nlp_row(dict(cur.fetchone()))
+
+                # last_run = el run_id más reciente con logs LLM.
+                cur.execute(
+                    "SELECT run_id FROM ops.nlp_runs WHERE status IN ('ok','failed') "
+                    "ORDER BY started_at DESC LIMIT 1"
+                )
+                last_run_row = cur.fetchone()
+                last_run_id = last_run_row["run_id"] if last_run_row else None
+                last_run_costs = (
+                    _agg("run_id = %s", (last_run_id,)) if last_run_id else _agg("FALSE")
+                )
+
+                last_24h = _agg("created_at >= NOW() - INTERVAL '24 hours'")
+                last_30d = _agg("created_at >= NOW() - INTERVAL '30 days'")
+                all_time = _agg("TRUE")
+
+                # latest_run (cualquier estado, para mostrar también running).
+                cur.execute(
+                    """
+                    SELECT run_id, started_at, status, items_processed, cost_usd_total
+                    FROM ops.nlp_runs
+                    ORDER BY started_at DESC
+                    LIMIT 1
+                    """
+                )
+                latest = cur.fetchone()
+                latest_run = _serialize_nlp_row(dict(latest)) if latest else None
+
+                # Pricing vigente del modelo activo.
+                model_active = os.environ.get("NLP_LLM_MODEL", "gpt-5.4-nano")
+                provider_active = os.environ.get("NLP_LLM_PROVIDER", "openai")
+                cur.execute(
+                    """
+                    SELECT model, input_per_1m_usd, output_per_1m_usd, valid_from, valid_to
+                    FROM ops.llm_pricing
+                    WHERE provider = %s AND model = %s
+                      AND valid_from <= CURRENT_DATE
+                      AND (valid_to IS NULL OR valid_to > CURRENT_DATE)
+                    ORDER BY valid_from DESC
+                    LIMIT 1
+                    """,
+                    (provider_active, model_active),
+                )
+                pr = cur.fetchone()
+                pricing = _serialize_nlp_row(dict(pr)) if pr else None
+
+        counts = {
+            "valid": int(nlp_counts.get("valid") or 0),
+            "partial": int(nlp_counts.get("partial") or 0),
+            "invalid": int(nlp_counts.get("invalid") or 0),
+            "total_nlp": int(nlp_counts.get("total_nlp") or 0),
+            "total_subv": total_subv,
+            "pending": pending,
+        }
+        return {
+            "counts": counts,
+            "costs": {
+                "last_run": last_run_costs,
+                "last_24h": last_24h,
+                "last_30d": last_30d,
+                "all_time": all_time,
+            },
+            "latest_run": latest_run,
+            "pricing": pricing,
+        }
+    except psycopg2.Error as e:
+        return JSONResponse(status_code=503, content={"detail": str(e)})
+
+
+@app.get(
+    "/nlp/runs",
+    summary="Lista paginada de ops.nlp_runs",
+    description="ORDER BY started_at DESC. Filtros: ?status=running|ok|failed|cancelled.",
+)
+def nlp_runs_list(limit: int = 20, offset: int = 0, status: str | None = None):
+    if limit < 1 or limit > 200:
+        return JSONResponse(status_code=422, content={"detail": "limit must be 1..200"})
+    db_url = get_database_url()
+    if not db_url:
+        return JSONResponse(status_code=503, content={"detail": "database unavailable"})
+    try:
+        with psycopg2.connect(db_url) as conn:
+            with conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor) as cur:
+                where = ""
+                params: list = []
+                if status is not None:
+                    where = "WHERE status = %s"
+                    params.append(status)
+                params.extend([limit, offset])
+                cur.execute(
+                    f"""
+                    SELECT run_id, selector_kind, selector_value, limit_value,
+                           dry_run, force, llm_model, started_at, finished_at,
+                           status, items_planned, items_processed, items_valid,
+                           items_partial, items_invalid, items_skipped,
+                           items_cache_hits, cost_usd_total, input_tokens_total,
+                           output_tokens_total, pid, error_message
+                    FROM ops.nlp_runs
+                    {where}
+                    ORDER BY started_at DESC
+                    LIMIT %s OFFSET %s
+                    """,
+                    params,
+                )
+                items = [_serialize_nlp_row(dict(r)) for r in cur.fetchall()]
+                cur.execute(
+                    f"SELECT COUNT(*) AS c FROM ops.nlp_runs {where}",
+                    params[:-2],
+                )
+                total = int(cur.fetchone()["c"])
+        return {"items": items, "total": total, "limit": limit, "offset": offset}
+    except psycopg2.Error as e:
+        return JSONResponse(status_code=503, content={"detail": str(e)})
+
+
+@app.get(
+    "/nlp/runs/{run_id}",
+    summary="Detalle de un run + items procesados",
+    description="JOIN ops.nlp_runs con ops.llm_bases_reguladoras_logs por run_id.",
+)
+def nlp_run_detail(run_id: int):
+    db_url = get_database_url()
+    if not db_url:
+        return JSONResponse(status_code=503, content={"detail": "database unavailable"})
+    try:
+        with psycopg2.connect(db_url) as conn:
+            with conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor) as cur:
+                cur.execute("SELECT * FROM ops.nlp_runs WHERE run_id = %s", (run_id,))
+                run = cur.fetchone()
+                if run is None:
+                    raise HTTPException(status_code=404, detail=f"run {run_id} no encontrado")
+                cur.execute(
+                    """
+                    SELECT id, document_key, llm_model, input_tokens, output_tokens,
+                           duration_ms, validation_status, cost_usd, created_at
+                    FROM ops.llm_bases_reguladoras_logs
+                    WHERE run_id = %s
+                    ORDER BY created_at ASC
+                    """,
+                    (run_id,),
+                )
+                items = [_serialize_nlp_row(dict(r)) for r in cur.fetchall()]
+        return {"run": _serialize_nlp_row(dict(run)), "items": items}
+    except psycopg2.Error as e:
+        return JSONResponse(status_code=503, content={"detail": str(e)})
+
+
+@app.get(
+    "/nlp/recent",
+    summary="Histórico de convocatorias analizadas (tab UI)",
+    description="JOIN subvenciones_nlp + nacional_subvenciones por nlp_document_key, "
+    "ordenado por extracted_at DESC. Filtros: ?status, ?source.",
+)
+def nlp_recent(
+    limit: int = 20,
+    offset: int = 0,
+    status: str | None = None,
+    source: str | None = None,
+):
+    if limit < 1 or limit > 200:
+        return JSONResponse(status_code=422, content={"detail": "limit must be 1..200"})
+    db_url = get_database_url()
+    if not db_url:
+        return JSONResponse(status_code=503, content={"detail": "database unavailable"})
+    where_clauses = ["s.nlp_document_key IS NOT NULL"]
+    params: list = []
+    if status is not None:
+        where_clauses.append("n.validation_status = %s")
+        params.append(status)
+    if source is not None:
+        where_clauses.append("n.document_source = %s")
+        params.append(source)
+    where_sql = " AND ".join(where_clauses)
+    params.extend([limit, offset])
+    try:
+        with psycopg2.connect(db_url) as conn:
+            with conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor) as cur:
+                cur.execute(
+                    f"""
+                    SELECT
+                      s.id, s.descripcion, s.fecha_recepcion, s.nivel1,
+                      s.nivel1 AS organo,
+                      n.document_key, n.document_source, n.document_heuristic_step,
+                      n.validation_status, n.extracted_at, n.llm_model
+                    FROM l0.nacional_subvenciones s
+                    JOIN l0.subvenciones_nlp n
+                      ON s.nlp_document_key = n.document_key
+                    WHERE {where_sql}
+                    ORDER BY n.extracted_at DESC
+                    LIMIT %s OFFSET %s
+                    """,
+                    params,
+                )
+                items = [_serialize_nlp_row(dict(r)) for r in cur.fetchall()]
+        return {"items": items, "limit": limit, "offset": offset}
+    except psycopg2.Error as e:
+        return JSONResponse(status_code=503, content={"detail": str(e)})
+
+
+@app.get(
+    "/nlp/pending",
+    summary="Convocatorias candidatas a análisis NLP",
+    description="nacional_subvenciones con nlp_document_key IS NULL y documento resoluble. "
+    "Filtros opcionales: ?anos=X-Y ?meses=N-M (mismos parsers que el CLI).",
+)
+def nlp_pending(
+    limit: int = 20,
+    offset: int = 0,
+    anos: str | None = None,
+    meses: str | None = None,
+):
+    if limit < 1 or limit > 500:
+        return JSONResponse(status_code=422, content={"detail": "limit must be 1..500"})
+    if anos is not None:
+        try:
+            _validate_range_str(anos, min_val=1900, max_val=2999, name="anos")
+        except ValueError as e:
+            return JSONResponse(status_code=422, content={"detail": str(e)})
+    if meses is not None:
+        if anos is None:
+            return JSONResponse(
+                status_code=422, content={"detail": "meses requiere anos"}
+            )
+        try:
+            _validate_range_str(meses, min_val=1, max_val=12, name="meses")
+        except ValueError as e:
+            return JSONResponse(status_code=422, content={"detail": str(e)})
+
+    db_url = get_database_url()
+    if not db_url:
+        return JSONResponse(status_code=503, content={"detail": "database unavailable"})
+
+    where = [
+        "s.nlp_document_key IS NULL",
+        "(s.url_bases_reguladoras IS NOT NULL OR s.documentos IS NOT NULL)",
+    ]
+    params: list = []
+    if anos is not None:
+        a, b = _validate_range_str(anos, min_val=1900, max_val=2999, name="anos")
+        where.append("s.fecha_recepcion >= %s AND s.fecha_recepcion <= %s")
+        params.extend([f"{a:04d}-01-01", f"{b:04d}-12-31"])
+        if meses is not None:
+            m1, m2 = _validate_range_str(meses, min_val=1, max_val=12, name="meses")
+            where.append("EXTRACT(MONTH FROM s.fecha_recepcion) BETWEEN %s AND %s")
+            params.extend([m1, m2])
+    where_sql = " AND ".join(where)
+    params.extend([limit, offset])
+    try:
+        with psycopg2.connect(db_url) as conn:
+            with conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor) as cur:
+                cur.execute(
+                    f"""
+                    SELECT s.id, s.descripcion, s.fecha_recepcion, s.nivel1,
+                           s.url_bases_reguladoras, s.documentos
+                    FROM l0.nacional_subvenciones s
+                    WHERE {where_sql}
+                    ORDER BY s.fecha_recepcion DESC NULLS LAST, s.id DESC
+                    LIMIT %s OFFSET %s
+                    """,
+                    params,
+                )
+                items = [_serialize_nlp_row(dict(r)) for r in cur.fetchall()]
+        return {"items": items, "limit": limit, "offset": offset}
+    except psycopg2.Error as e:
+        return JSONResponse(status_code=503, content={"detail": str(e)})

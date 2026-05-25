@@ -60,7 +60,7 @@ no el documento mismo.
 Vars en `.env` raíz (propagadas vía `scripts/distribute-env.sh` → `services/etl/.env`):
 
 - `NLP_LLM_PROVIDER=openai`
-- `NLP_LLM_MODEL=gpt-4.1-mini`
+- `NLP_LLM_MODEL=gpt-5.4-nano`
 - `OPENAI_API_KEY=` (obligatorio para ejecución real)
 - `NLP_LLM_TIMEOUT_S=180`
 

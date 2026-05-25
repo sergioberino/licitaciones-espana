@@ -2,9 +2,11 @@
 from __future__ import annotations
 
 import logging
+import os
 import time
 from dataclasses import dataclass, field
-from datetime import datetime, timezone
+from datetime import date, datetime, timezone
+from decimal import Decimal
 from typing import Optional
 
 from etl.nlp.extractor import ExtractionError, extract_from_url
@@ -112,10 +114,56 @@ def _build_select_pending_sql(
 
 LOG_LLM_SQL = """
 INSERT INTO ops.llm_bases_reguladoras_logs
-  (document_key, llm_model, input_tokens, output_tokens, duration_ms, validation_status, cost_usd)
+  (document_key, llm_model, input_tokens, output_tokens, duration_ms,
+   validation_status, cost_usd, run_id)
 VALUES (%(document_key)s, %(llm_model)s, %(input_tokens)s, %(output_tokens)s,
-        %(duration_ms)s, %(validation_status)s, %(cost_usd)s)
+        %(duration_ms)s, %(validation_status)s, %(cost_usd)s, %(run_id)s)
 """
+
+
+def compute_cost_usd(
+    conn,
+    *,
+    provider: str,
+    model: str,
+    input_tokens: int,
+    output_tokens: int,
+    at_date: Optional[date] = None,
+) -> Optional[Decimal]:
+    """Lee ops.llm_pricing y calcula coste USD para tokens dados.
+
+    - Toma la tarifa cuyo intervalo ``[valid_from, valid_to)`` contiene ``at_date``
+      (default ``date.today()``). Si no hay tarifa vigente, devuelve ``None``
+      (compatibilidad hacia atrás antes del seed).
+    - Cuando hay varias tarifas históricas vigentes en la misma fecha (overlap),
+      se queda con la del ``valid_from`` más reciente.
+    - Devuelve un :class:`decimal.Decimal` (precisión 6) para evitar drift float
+      en agregados monetarios.
+    """
+    at = at_date or date.today()
+    with conn.cursor() as cur:
+        cur.execute(
+            """
+            SELECT input_per_1m_usd, output_per_1m_usd
+            FROM ops.llm_pricing
+            WHERE provider = %s AND model = %s
+              AND valid_from <= %s
+              AND (valid_to IS NULL OR valid_to > %s)
+            ORDER BY valid_from DESC
+            LIMIT 1
+            """,
+            (provider, model, at, at),
+        )
+        row = cur.fetchone()
+    if row is None:
+        return None
+    in_price, out_price = row
+    cost = (
+        Decimal(input_tokens) / Decimal(1_000_000)
+    ) * in_price + (
+        Decimal(output_tokens) / Decimal(1_000_000)
+    ) * out_price
+    return cost.quantize(Decimal("0.000001"))
 
 
 LOG_FAILURE_SQL = """
@@ -148,6 +196,123 @@ class BatchStats:
     dedup_hits: int = 0
     duration_seconds: float = 0.0
     planned: list[PlanItem] = field(default_factory=list)
+    # Hito 3.1.d — id de la fila en ops.nlp_runs creada/actualizada por este batch.
+    run_id: Optional[int] = None
+
+
+# -----------------------------------------------------------------------------
+# Hito 3.1.d — Helpers para tracking en ops.nlp_runs
+# -----------------------------------------------------------------------------
+
+
+def _selector_metadata(
+    *,
+    anos: Optional[tuple[int, int]],
+    meses: Optional[tuple[int, int]],
+    codigo_bdns: Optional[int],
+    todo: bool,
+) -> tuple[str, dict]:
+    """Deriva (selector_kind, selector_value JSONB) para ops.nlp_runs.
+
+    Asume que ``_validate_selector_args`` ya garantizó mutual exclusion.
+    """
+    if anos is not None:
+        value: dict = {"anos": [anos[0], anos[1]]}
+        if meses is not None:
+            value["meses"] = [meses[0], meses[1]]
+        return "anos", value
+    if codigo_bdns is not None:
+        return "codigo_bdns", {"codigo_bdns": codigo_bdns}
+    return "todo", {}
+
+
+def _create_nlp_run(
+    conn,
+    *,
+    selector_kind: str,
+    selector_value: dict,
+    limit_value: Optional[int],
+    dry_run: bool,
+    force: bool,
+    llm_model: Optional[str],
+    pid: Optional[int],
+) -> int:
+    """Inserta fila inicial en ops.nlp_runs y devuelve run_id.
+
+    Usa transacción corta (commit) para que `select * from ops.nlp_runs` muestre
+    el run incluso aunque la conexión actual entre en una transacción larga.
+    """
+    import json as _json
+
+    with conn.cursor() as cur:
+        cur.execute(
+            """
+            INSERT INTO ops.nlp_runs
+              (selector_kind, selector_value, limit_value, dry_run, force, llm_model, pid)
+            VALUES (%s, %s::jsonb, %s, %s, %s, %s, %s)
+            RETURNING run_id
+            """,
+            (
+                selector_kind,
+                _json.dumps(selector_value),
+                limit_value,
+                dry_run,
+                force,
+                llm_model,
+                pid,
+            ),
+        )
+        run_id = cur.fetchone()[0]
+    conn.commit()
+    return run_id
+
+
+def _bump_nlp_run(conn, run_id: int, **counters) -> None:
+    """Incrementa counters en ops.nlp_runs con commit corto.
+
+    Acepta cualquier subconjunto de columnas: items_processed, items_valid,
+    items_partial, items_invalid, items_skipped, items_cache_hits,
+    cost_usd_total, input_tokens_total, output_tokens_total. items_planned
+    se asigna en absoluto (set), no incremental.
+    """
+    if not counters:
+        return
+    sets = []
+    params: list = []
+    for col, delta in counters.items():
+        if col == "items_planned":
+            sets.append(f"{col} = %s")
+            params.append(delta)
+        else:
+            sets.append(f"{col} = {col} + %s")
+            params.append(delta)
+    params.append(run_id)
+    sql = f"UPDATE ops.nlp_runs SET {', '.join(sets)} WHERE run_id = %s"
+    with conn.cursor() as cur:
+        cur.execute(sql, params)
+    conn.commit()
+
+
+def _finalize_nlp_run(
+    conn,
+    run_id: int,
+    *,
+    status: str,
+    error: Optional[str] = None,
+) -> None:
+    """Cierra la fila en ops.nlp_runs con status final y finished_at."""
+    with conn.cursor() as cur:
+        cur.execute(
+            """
+            UPDATE ops.nlp_runs
+               SET status = %s,
+                   finished_at = NOW(),
+                   error_message = COALESCE(%s, error_message)
+             WHERE run_id = %s
+            """,
+            (status, error, run_id),
+        )
+    conn.commit()
 
 
 def select_pending(
@@ -208,180 +373,263 @@ def run_batch(
     stats = BatchStats()
     schema = None if dry_run else load_schema()
 
-    effective_limit: Optional[int] = None if codigo_bdns is not None else limit
-    rows = select_pending(
-        conn,
-        limit=effective_limit,
-        anos=anos,
-        meses=meses,
-        codigo_bdns=codigo_bdns,
-        todo=todo,
+    # ---- ops.nlp_runs lifecycle (Hito 3.1.d) -------------------------------
+    selector_kind, selector_value = _selector_metadata(
+        anos=anos, meses=meses, codigo_bdns=codigo_bdns, todo=todo
     )
-    if anos is not None:
-        selector_repr = f"anos={anos[0]}-{anos[1]}" + (
-            f" meses={meses[0]}-{meses[1]}" if meses is not None else ""
-        )
-    elif codigo_bdns is not None:
-        selector_repr = f"codigo_bdns={codigo_bdns}"
+    env_run_id = os.environ.get("NLP_RUN_ID")
+    if env_run_id:
+        # El endpoint POST /nlp/analizar crea la fila antes del Popen y nos pasa
+        # el id por env var para evitar la race contra el polling de la UI.
+        try:
+            run_id: Optional[int] = int(env_run_id)
+        except ValueError:
+            run_id = None
     else:
-        selector_repr = "todo=true"
-    logger.info(
-        "[nlp] start limit=%s selector=%s force=%s dry_run=%s pending_in_chunk=%d",
-        limit if limit and limit > 0 else "off",
-        selector_repr,
-        force,
-        dry_run,
-        len(rows),
-    )
-
-    for row in rows:
-        subv_id, url, documentos = row
-        resolved = resolve_document(
-            url_bases_reguladoras=url,
-            documentos=documentos,
+        run_id = None
+    if run_id is None:
+        run_id = _create_nlp_run(
+            conn,
+            selector_kind=selector_kind,
+            selector_value=selector_value,
+            limit_value=limit if limit and limit > 0 else None,
+            dry_run=dry_run,
+            force=force,
+            llm_model=os.environ.get("NLP_LLM_MODEL"),
+            pid=os.getpid(),
         )
-        if resolved is None:
-            stats.skipped_no_doc += 1
-            logger.info("[nlp] id=%d skipped_no_doc=true", subv_id)
+    stats.run_id = run_id
+
+    try:
+        effective_limit: Optional[int] = None if codigo_bdns is not None else limit
+        rows = select_pending(
+            conn,
+            limit=effective_limit,
+            anos=anos,
+            meses=meses,
+            codigo_bdns=codigo_bdns,
+            todo=todo,
+        )
+        _bump_nlp_run(conn, run_id, items_planned=len(rows))
+        if anos is not None:
+            selector_repr = f"anos={anos[0]}-{anos[1]}" + (
+                f" meses={meses[0]}-{meses[1]}" if meses is not None else ""
+            )
+        elif codigo_bdns is not None:
+            selector_repr = f"codigo_bdns={codigo_bdns}"
+        else:
+            selector_repr = "todo=true"
+        logger.info(
+            "[nlp] start run_id=%d limit=%s selector=%s force=%s dry_run=%s pending_in_chunk=%d",
+            run_id,
+            limit if limit and limit > 0 else "off",
+            selector_repr,
+            force,
+            dry_run,
+            len(rows),
+        )
+
+        for row in rows:
+            subv_id, url, documentos = row
+            resolved = resolve_document(
+                url_bases_reguladoras=url,
+                documentos=documentos,
+            )
+            if resolved is None:
+                stats.skipped_no_doc += 1
+                logger.info("[nlp] id=%d skipped_no_doc=true", subv_id)
+                if not dry_run:
+                    _bump_nlp_run(conn, run_id, items_skipped=1)
+                if dry_run:
+                    stats.planned.append(
+                        PlanItem(
+                            subvencion_id=subv_id,
+                            document_source=None,
+                            document_key=None,
+                            document_name=None,
+                            heuristic_step=None,
+                            document_ref=None,
+                            cache_hit=False,
+                            skipped_no_doc=True,
+                        )
+                    )
+                continue
+
+            cache_hit = (not force) and _check_cache_hit(conn, resolved.document_key)
+            log_name_part = f" name='{resolved.document_name}'" if resolved.document_name else ""
+            logger.info(
+                "[nlp] id=%d step=%d source=%s%s ref=%s key=%s%s",
+                subv_id,
+                resolved.heuristic_step,
+                resolved.document_source,
+                log_name_part,
+                resolved.document_ref or "-",
+                resolved.document_key,
+                " cache_hit=true (--force=false → skip LLM)" if cache_hit else "",
+            )
+
             if dry_run:
                 stats.planned.append(
                     PlanItem(
                         subvencion_id=subv_id,
-                        document_source=None,
-                        document_key=None,
-                        document_name=None,
-                        heuristic_step=None,
-                        document_ref=None,
-                        cache_hit=False,
-                        skipped_no_doc=True,
+                        document_source=resolved.document_source,
+                        document_key=resolved.document_key,
+                        document_name=resolved.document_name,
+                        heuristic_step=resolved.heuristic_step,
+                        document_ref=resolved.document_ref,
+                        cache_hit=cache_hit,
+                        skipped_no_doc=False,
                     )
                 )
-            continue
+                continue
 
-        cache_hit = (not force) and _check_cache_hit(conn, resolved.document_key)
-        log_name_part = f" name='{resolved.document_name}'" if resolved.document_name else ""
-        logger.info(
-            "[nlp] id=%d step=%d source=%s%s ref=%s key=%s%s",
-            subv_id,
-            resolved.heuristic_step,
-            resolved.document_source,
-            log_name_part,
-            resolved.document_ref or "-",
-            resolved.document_key,
-            " cache_hit=true (--force=false → skip LLM)" if cache_hit else "",
-        )
-
-        if dry_run:
-            stats.planned.append(
-                PlanItem(
-                    subvencion_id=subv_id,
-                    document_source=resolved.document_source,
-                    document_key=resolved.document_key,
-                    document_name=resolved.document_name,
-                    heuristic_step=resolved.heuristic_step,
-                    document_ref=resolved.document_ref,
-                    cache_hit=cache_hit,
-                    skipped_no_doc=False,
+            if cache_hit:
+                propagate_from_cache(
+                    conn, subvencion_id=subv_id, document_key=resolved.document_key
                 )
+                stats.dedup_hits += 1
+                _bump_nlp_run(conn, run_id, items_cache_hits=1)
+                logger.info("[nlp] id=%d step=cache propagated=true", subv_id)
+                continue
+
+            try:
+                extracted = extract_from_url(resolved.document_ref)
+                logger.info(
+                    "[nlp] id=%d step=extract chars=%d content_type=%s mode=%s",
+                    subv_id,
+                    extracted.char_count,
+                    extracted.content_type or "-",
+                    extracted.extraction_mode,
+                )
+            except ExtractionError as e:
+                stats.invalid += 1
+                logger.error("[nlp] id=%d step=extract error=%s", subv_id, e)
+                with conn:
+                    with conn.cursor() as cur:
+                        cur.execute(
+                            LOG_FAILURE_SQL,
+                            {
+                                "subvencion_id": subv_id,
+                                "document_source": resolved.document_source,
+                                "document_ref": resolved.document_ref,
+                                "llm_model": None,
+                                "raw_snippet": None,
+                                "error_message": f"extraction: {e}",
+                            },
+                        )
+                _bump_nlp_run(conn, run_id, items_invalid=1)
+                continue
+
+            try:
+                llm_result = analyze_document(extracted.text, schema)
+                logger.info(
+                    "[nlp] id=%d step=llm model=%s tokens_in=%d tokens_out=%d duration_ms=%d",
+                    subv_id,
+                    llm_result.model,
+                    llm_result.input_tokens,
+                    llm_result.output_tokens,
+                    llm_result.duration_ms,
+                )
+            except Exception as e:
+                stats.invalid += 1
+                logger.error("[nlp] id=%d step=llm error=%s", subv_id, e)
+                with conn:
+                    with conn.cursor() as cur:
+                        cur.execute(
+                            LOG_FAILURE_SQL,
+                            {
+                                "subvencion_id": subv_id,
+                                "document_source": resolved.document_source,
+                                "document_ref": resolved.document_ref,
+                                "llm_model": None,
+                                "raw_snippet": None,
+                                "error_message": f"llm: {e}",
+                            },
+                        )
+                _bump_nlp_run(conn, run_id, items_invalid=1)
+                continue
+
+            validation = validate(llm_result.raw_text)
+            fields = (
+                extract_matching_fields(validation.model)
+                if validation.model and validation.status in ("valid", "partial")
+                else None
             )
-            continue
-
-        if cache_hit:
-            propagate_from_cache(conn, subvencion_id=subv_id, document_key=resolved.document_key)
-            stats.dedup_hits += 1
-            logger.info("[nlp] id=%d step=cache propagated=true", subv_id)
-            continue
-
-        try:
-            extracted = extract_from_url(resolved.document_ref)
+            nlp_json = validation.raw_dict or {}
             logger.info(
-                "[nlp] id=%d step=extract chars=%d content_type=%s",
+                "[nlp] id=%d step=validate status=%s errors=%d",
                 subv_id,
-                extracted.char_count,
-                extracted.content_type or "-",
+                validation.status,
+                len(validation.errors),
             )
-        except ExtractionError as e:
-            stats.invalid += 1
-            logger.error("[nlp] id=%d step=extract error=%s", subv_id, e)
+
+            cost = compute_cost_usd(
+                conn,
+                provider=os.environ.get("NLP_LLM_PROVIDER", "openai"),
+                model=llm_result.model,
+                input_tokens=llm_result.input_tokens,
+                output_tokens=llm_result.output_tokens,
+            )
+
+            if validation.status == "invalid":
+                stats.invalid += 1
+                logger.error(
+                    "[nlp] id=%d step=validate invalid errors=%s",
+                    subv_id,
+                    "; ".join(f"{e.path}: {e.message}" for e in validation.errors),
+                )
+                with conn:
+                    with conn.cursor() as cur:
+                        cur.execute(
+                            LOG_FAILURE_SQL,
+                            {
+                                "subvencion_id": subv_id,
+                                "document_source": resolved.document_source,
+                                "document_ref": resolved.document_ref,
+                                "llm_model": llm_result.model,
+                                "raw_snippet": llm_result.raw_text[:500],
+                                "error_message": "; ".join(
+                                    f"{e.path}: {e.message}" for e in validation.errors
+                                ),
+                            },
+                        )
+                        cur.execute(
+                            LOG_LLM_SQL,
+                            {
+                                "document_key": resolved.document_key,
+                                "llm_model": llm_result.model,
+                                "input_tokens": llm_result.input_tokens,
+                                "output_tokens": llm_result.output_tokens,
+                                "duration_ms": llm_result.duration_ms,
+                                "validation_status": "invalid",
+                                "cost_usd": cost,
+                                "run_id": run_id,
+                            },
+                        )
+                _bump_nlp_run(
+                    conn,
+                    run_id,
+                    items_invalid=1,
+                    cost_usd_total=cost or Decimal("0"),
+                    input_tokens_total=llm_result.input_tokens,
+                    output_tokens_total=llm_result.output_tokens,
+                )
+                continue
+
+            persist_analysis(
+                conn,
+                subvencion_id=subv_id,
+                resolved=resolved,
+                validation=validation,
+                fields=fields,
+                nlp_json=nlp_json,
+                modelo_documental=None,
+                input_char_count=extracted.char_count,
+                llm_model=llm_result.model,
+                extracted_at=datetime.now(timezone.utc),
+            )
             with conn:
                 with conn.cursor() as cur:
-                    cur.execute(
-                        LOG_FAILURE_SQL,
-                        {
-                            "subvencion_id": subv_id,
-                            "document_source": resolved.document_source,
-                            "document_ref": resolved.document_ref,
-                            "llm_model": None,
-                            "raw_snippet": None,
-                            "error_message": f"extraction: {e}",
-                        },
-                    )
-            continue
-
-        try:
-            llm_result = analyze_document(extracted.text, schema)
-            logger.info(
-                "[nlp] id=%d step=llm model=%s tokens_in=%d tokens_out=%d duration_ms=%d",
-                subv_id,
-                llm_result.model,
-                llm_result.input_tokens,
-                llm_result.output_tokens,
-                llm_result.duration_ms,
-            )
-        except Exception as e:
-            stats.invalid += 1
-            logger.error("[nlp] id=%d step=llm error=%s", subv_id, e)
-            with conn:
-                with conn.cursor() as cur:
-                    cur.execute(
-                        LOG_FAILURE_SQL,
-                        {
-                            "subvencion_id": subv_id,
-                            "document_source": resolved.document_source,
-                            "document_ref": resolved.document_ref,
-                            "llm_model": None,
-                            "raw_snippet": None,
-                            "error_message": f"llm: {e}",
-                        },
-                    )
-            continue
-
-        validation = validate(llm_result.raw_text)
-        fields = (
-            extract_matching_fields(validation.model)
-            if validation.model and validation.status in ("valid", "partial")
-            else None
-        )
-        nlp_json = validation.raw_dict or {}
-        logger.info(
-            "[nlp] id=%d step=validate status=%s errors=%d",
-            subv_id,
-            validation.status,
-            len(validation.errors),
-        )
-
-        if validation.status == "invalid":
-            stats.invalid += 1
-            logger.error(
-                "[nlp] id=%d step=validate invalid errors=%s",
-                subv_id,
-                "; ".join(f"{e.path}: {e.message}" for e in validation.errors),
-            )
-            with conn:
-                with conn.cursor() as cur:
-                    cur.execute(
-                        LOG_FAILURE_SQL,
-                        {
-                            "subvencion_id": subv_id,
-                            "document_source": resolved.document_source,
-                            "document_ref": resolved.document_ref,
-                            "llm_model": llm_result.model,
-                            "raw_snippet": llm_result.raw_text[:500],
-                            "error_message": "; ".join(
-                                f"{e.path}: {e.message}" for e in validation.errors
-                            ),
-                        },
-                    )
                     cur.execute(
                         LOG_LLM_SQL,
                         {
@@ -390,56 +638,56 @@ def run_batch(
                             "input_tokens": llm_result.input_tokens,
                             "output_tokens": llm_result.output_tokens,
                             "duration_ms": llm_result.duration_ms,
-                            "validation_status": "invalid",
-                            "cost_usd": None,
+                            "validation_status": validation.status,
+                            "cost_usd": cost,
+                            "run_id": run_id,
                         },
                     )
-            continue
 
-        persist_analysis(
-            conn,
-            subvencion_id=subv_id,
-            resolved=resolved,
-            validation=validation,
-            fields=fields,
-            nlp_json=nlp_json,
-            modelo_documental=None,
-            input_char_count=extracted.char_count,
-            llm_model=llm_result.model,
-            extracted_at=datetime.now(timezone.utc),
-        )
-        with conn:
-            with conn.cursor() as cur:
-                cur.execute(
-                    LOG_LLM_SQL,
-                    {
-                        "document_key": resolved.document_key,
-                        "llm_model": llm_result.model,
-                        "input_tokens": llm_result.input_tokens,
-                        "output_tokens": llm_result.output_tokens,
-                        "duration_ms": llm_result.duration_ms,
-                        "validation_status": validation.status,
-                        "cost_usd": None,
-                    },
+            if validation.status == "valid":
+                stats.valid += 1
+                _bump_nlp_run(
+                    conn,
+                    run_id,
+                    items_processed=1,
+                    items_valid=1,
+                    cost_usd_total=cost or Decimal("0"),
+                    input_tokens_total=llm_result.input_tokens,
+                    output_tokens_total=llm_result.output_tokens,
                 )
+            elif validation.status == "partial":
+                stats.partial += 1
+                _bump_nlp_run(
+                    conn,
+                    run_id,
+                    items_processed=1,
+                    items_partial=1,
+                    cost_usd_total=cost or Decimal("0"),
+                    input_tokens_total=llm_result.input_tokens,
+                    output_tokens_total=llm_result.output_tokens,
+                )
+            stats.processed += 1
+            logger.info("[nlp] id=%d step=persist status=%s", subv_id, validation.status)
 
-        if validation.status == "valid":
-            stats.valid += 1
-        elif validation.status == "partial":
-            stats.partial += 1
-        stats.processed += 1
-        logger.info("[nlp] id=%d step=persist status=%s", subv_id, validation.status)
-
-    stats.duration_seconds = time.time() - started
-    logger.info(
-        "[nlp] done processed=%d valid=%d partial=%d invalid=%d "
-        "skipped_no_doc=%d dedup_hits=%d duration=%.1fs",
-        stats.processed,
-        stats.valid,
-        stats.partial,
-        stats.invalid,
-        stats.skipped_no_doc,
-        stats.dedup_hits,
-        stats.duration_seconds,
-    )
-    return stats
+        stats.duration_seconds = time.time() - started
+        logger.info(
+            "[nlp] done run_id=%d processed=%d valid=%d partial=%d invalid=%d "
+            "skipped_no_doc=%d dedup_hits=%d duration=%.1fs",
+            run_id,
+            stats.processed,
+            stats.valid,
+            stats.partial,
+            stats.invalid,
+            stats.skipped_no_doc,
+            stats.dedup_hits,
+            stats.duration_seconds,
+        )
+        _finalize_nlp_run(conn, run_id, status="ok")
+        return stats
+    except Exception as exc:
+        try:
+            _finalize_nlp_run(conn, run_id, status="failed", error=str(exc))
+        except Exception:
+            # No enmascarar la excepción original si la finalización también falla.
+            logger.exception("[nlp] failed to finalize run_id=%d", run_id)
+        raise
