@@ -72,12 +72,42 @@ def add_subparser(subparsers: argparse._SubParsersAction):
         "analizar",
         help="Procesa convocatorias pendientes",
         description=(
-            "Analiza convocatorias con LLM. Selector obligatorio (uno y solo uno):\n"
-            "  --anos X-Y           rango cerrado de años por fecha_recepcion\n"
+            "Analiza convocatorias con LLM (Batch B / WP2.1).\n"
+            "\n"
+            "Selector OBLIGATORIO (uno y solo uno):\n"
+            "  --anos X-Y           rango cerrado de años contra fecha_recepcion\n"
             "  --codigo-bdns N      una sola convocatoria por id (PK BIGINT)\n"
             "  --todo               procesa todo el catálogo sin filtro de fecha\n"
-            "Modificadores: --meses N-M (solo con --anos, cross-product), --limit N "
-            "(default 100; 0 = sin cap; ignorado con --codigo-bdns), --force, --dry-run."
+            "\n"
+            "Modificadores:\n"
+            "  --meses N-M          solo válido con --anos; cross-product mes×año\n"
+            "  --limit N            cap absoluto (default 100; 0 = sin cap)\n"
+            "                       ignorado con --codigo-bdns (siempre 1 fila)\n"
+            "  --force              ignora cache; siempre llama al LLM\n"
+            "  --dry-run            no llama al LLM ni persiste; muestra plan\n"
+            "\n"
+            "Por qué selector obligatorio (incluso en debug):\n"
+            "  El LLM tiene coste por token y la cardinalidad de "
+            "l0.nacional_subvenciones\n"
+            "  crece de forma autónoma (scheduler). 'licitia-etl nlp analizar' sin\n"
+            "  selector llevaría a procesar las N últimas filas por id DESC sin\n"
+            "  control temporal — guardraíl contra gasto inesperado y reprocesos\n"
+            "  silenciosos. Si quieres procesar TODO el catálogo, dilo explícito:\n"
+            "  '--todo'."
+        ),
+        epilog=(
+            "Ejemplos:\n"
+            "  # Muestreo dry-run de las 5 convocatorias más recientes de 2026\n"
+            "  licitia-etl nlp analizar --anos 2026-2026 --limit 5 --dry-run\n"
+            "\n"
+            "  # Análisis real de mar–jun de 2024 y 2025 (cross-product)\n"
+            "  licitia-etl nlp analizar --anos 2024-2025 --meses 3-6 --limit 20\n"
+            "\n"
+            "  # Reanalizar una convocatoria concreta ignorando cache\n"
+            "  licitia-etl nlp analizar --codigo-bdns 12345 --force\n"
+            "\n"
+            "  # Barrido completo del catálogo sin cap (cuidado con el coste)\n"
+            "  licitia-etl nlp analizar --todo --limit 0\n"
         ),
         formatter_class=argparse.RawDescriptionHelpFormatter,
     )
@@ -131,6 +161,52 @@ def add_subparser(subparsers: argparse._SubParsersAction):
     analizar.set_defaults(func=cmd_analizar)
 
 
+def _print_validation_error(
+    err: ValueError,
+    *,
+    anos: Optional[tuple[int, int]],
+    codigo_bdns: Optional[int],
+    todo: bool,
+) -> None:
+    """Imprime el error de validación con hint accionable a stderr.
+
+    Mantiene la lógica de validación pura en ``_validate_selector_args``
+    (compartida con la API) y añade contexto CLI: razón + ejemplo concreto
+    de la forma correcta de invocar.
+    """
+    msg = str(err)
+    print(f"[nlp] error: {msg}", file=sys.stderr)
+
+    selectors_set = sum(x is not None for x in (anos, codigo_bdns)) + (1 if todo else 0)
+    if selectors_set == 0:
+        hint_lines = [
+            "",
+            "  Selector obligatorio (incluso en debug) — elige uno:",
+            "    --anos 2026-2026 [--meses 3-6]   ventana temporal por fecha_recepcion",
+            "    --codigo-bdns 12345              una convocatoria concreta",
+            "    --todo                           todo el catálogo (¡ojo al coste!)",
+            "",
+            "  Tip: usa --dry-run para validar el plan sin llamar al LLM.",
+        ]
+    elif selectors_set > 1:
+        hint_lines = [
+            "",
+            "  Los selectores son mutuamente excluyentes. Ejemplos válidos:",
+            "    licitia-etl nlp analizar --anos 2026-2026 --limit 5 --dry-run",
+            "    licitia-etl nlp analizar --codigo-bdns 12345",
+            "    licitia-etl nlp analizar --todo --limit 0",
+        ]
+    else:
+        # Selector OK pero falla en --meses o rangos.
+        hint_lines = [
+            "",
+            "  Pista: --meses requiere --anos; rangos son cerrados con inicio ≤ fin.",
+            "  Ej: --anos 2024-2025 --meses 3-6",
+        ]
+    for line in hint_lines:
+        print(line, file=sys.stderr)
+
+
 def cmd_analizar(args: argparse.Namespace) -> int:
     logging.basicConfig(
         level=logging.INFO,
@@ -150,7 +226,7 @@ def cmd_analizar(args: argparse.Namespace) -> int:
     try:
         _validate_selector_args(anos, meses, codigo_bdns, todo)
     except ValueError as e:
-        print(f"[nlp] error: {e}", file=sys.stderr)
+        _print_validation_error(e, anos=anos, codigo_bdns=codigo_bdns, todo=todo)
         return 2
 
     if codigo_bdns is not None and limit != 100:

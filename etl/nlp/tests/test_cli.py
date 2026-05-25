@@ -166,3 +166,50 @@ def test_cli_mutual_exclusion_anos_codigo_bdns(capsys):
     assert rc != 0
     err = capsys.readouterr().err.lower()
     assert "mutual" in err or "exclus" in err
+
+
+# -----------------------------------------------------------------------------
+# Mensajes de error pedagógicos (hint accionable con ejemplos)
+# -----------------------------------------------------------------------------
+
+
+def test_cli_missing_selector_shows_actionable_hint(capsys):
+    """Sin selector → stderr incluye los 3 selectores con ejemplo concreto.
+
+    Este test fija el contrato pedagógico: el usuario debe poder saber qué
+    pasar viendo solo el stderr (sin acudir a --help).
+    """
+    from etl.nlp.cli import cmd_analizar
+
+    rc = cmd_analizar(_make_args(limit=5))
+    assert rc != 0
+    err = capsys.readouterr().err
+    # Las 3 vías deben aparecer expl\u00edcitas.
+    assert "--anos" in err
+    assert "--codigo-bdns" in err
+    assert "--todo" in err
+    # Y un tip de --dry-run para mitigar coste.
+    assert "--dry-run" in err.lower()
+
+
+def test_cli_mutual_exclusion_shows_example_invocations(capsys):
+    """Mutual exclusion → stderr incluye al menos un ejemplo válido completo."""
+    from etl.nlp.cli import cmd_analizar
+
+    rc = cmd_analizar(_make_args(anos=(2024, 2024), todo=True))
+    assert rc != 0
+    err = capsys.readouterr().err
+    # Algún ejemplo invocable debe aparecer.
+    assert "licitia-etl nlp analizar" in err
+
+
+def test_cli_meses_without_anos_shows_relation_hint(capsys):
+    """--meses sin --anos → hint que mencione la dependencia explícita."""
+    from etl.nlp.cli import cmd_analizar
+
+    rc = cmd_analizar(_make_args(meses=(3, 6), todo=True))
+    assert rc != 0
+    err = capsys.readouterr().err.lower()
+    assert "--meses" in err
+    # En este caso hay >1 selector (todo + meses), va por el branch
+    # de mutual_exclusion que también lo cubre.
