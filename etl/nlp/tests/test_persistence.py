@@ -1,25 +1,14 @@
 from datetime import datetime, timezone
 
-import psycopg2
 import pytest
 
-from etl.config import get_database_url
 from etl.nlp.persistence import persist_analysis, propagate_from_cache
 from etl.nlp.project import MatchingFields
 from etl.nlp.resolver import ResolvedDocument
 from etl.nlp.validator import ValidationResult
 
 
-@pytest.fixture
-def pg_conn():
-    url = get_database_url()
-    if url is None:
-        pytest.skip("Falta configuración DB_* (DB_HOST, DB_NAME, DB_USER)")
-    conn = psycopg2.connect(url)
-    yield conn
-    conn.close()
-
-
+@pytest.mark.integration
 def test_persist_valid_writes_cache_and_dual_write(pg_conn):
     cur = pg_conn.cursor()
     cur.execute("DELETE FROM l0.nacional_subvenciones WHERE id = -888888")
@@ -74,6 +63,7 @@ def test_persist_valid_writes_cache_and_dual_write(pg_conn):
     pg_conn.commit()
 
 
+@pytest.mark.integration
 def test_persist_partial_propagates_with_nulls(pg_conn):
     cur = pg_conn.cursor()
     cur.execute("DELETE FROM l0.nacional_subvenciones WHERE id = -888889")
@@ -123,6 +113,7 @@ def test_persist_partial_propagates_with_nulls(pg_conn):
     pg_conn.commit()
 
 
+@pytest.mark.integration
 def test_propagate_from_cache_hit(pg_conn):
     cur = pg_conn.cursor()
     dk = "url:testkey0000000000000000000000ef"
@@ -160,6 +151,7 @@ def test_propagate_from_cache_hit(pg_conn):
     pg_conn.commit()
 
 
+@pytest.mark.integration
 def test_propagate_from_cache_miss(pg_conn):
     assert propagate_from_cache(
         pg_conn, subvencion_id=-1, document_key="url:doesnotexist0000000000000000ff"
