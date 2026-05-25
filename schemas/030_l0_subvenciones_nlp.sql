@@ -52,7 +52,7 @@ CREATE TABLE IF NOT EXISTS l0.subvenciones_nlp (
   CONSTRAINT chk_subvenciones_nlp_validation_status
     CHECK (validation_status IN ('valid','partial','invalid')),
   CONSTRAINT chk_subvenciones_nlp_document_source
-    CHECK (document_source IN ('url_bases_reguladoras','documentos_array','texto_reguladora')),
+    CHECK (document_source IN ('url_bases_reguladoras','documentos_array','texto_convocatoria')),
   CONSTRAINT chk_subvenciones_nlp_heuristic_step
     CHECK (document_heuristic_step BETWEEN 1 AND 3)
 );

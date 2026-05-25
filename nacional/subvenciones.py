@@ -526,7 +526,6 @@ def fetch_convocatoria_detalle(
                 "politica_gastos": _extract_politica_gastos_id(data.get("descripcionFinalidad")),
                 "descripcion_bases_reguladoras": data.get("descripcionBasesReguladoras"),
                 "url_bases_reguladoras": data.get("urlBasesReguladoras"),
-                "resumen_bases_reguladoras": None,
                 "se_publica_diario_oficial": data.get("sePublicaDiarioOficial"),
                 "abierto": data.get("abierto"),
                 "fecha_inicio_solicitud": data.get("fechaInicioSolicitud"),
@@ -763,10 +762,10 @@ _INSERT_SQL = """
     (id, nivel1, nivel2, nivel3, sede_electronica, fecha_recepcion,
      instrumento_id, tipo_convocatoria, presupuesto_total, mrr, descripcion, descripcion_leng,
      tipos_beneficiarios, sectores, regiones, politica_gastos, descripcion_bases_reguladoras,
-     url_bases_reguladoras, resumen_bases_reguladoras, se_publica_diario_oficial, abierto, fecha_inicio_solicitud,
+     url_bases_reguladoras, se_publica_diario_oficial, abierto, fecha_inicio_solicitud,
      fecha_fin_solicitud, fecha_inicio_solicitud_texto, fecha_fin_solicitud_texto, ayuda_estado, url_ayuda_estado,
      fondos, reglamento, objetivos, sectores_productos, documentos, anuncios)
-    VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+    VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
     ON CONFLICT (id) DO NOTHING
 """
 
@@ -797,7 +796,6 @@ def _record_to_row(record: dict) -> tuple:
         record.get("politica_gastos"),
         record.get("descripcion_bases_reguladoras"),
         record.get("url_bases_reguladoras"),
-        record.get("resumen_bases_reguladoras"),
         record.get("se_publica_diario_oficial"),
         record.get("abierto"),
         record.get("fecha_inicio_solicitud"),

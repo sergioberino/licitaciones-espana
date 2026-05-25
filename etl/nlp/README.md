@@ -6,6 +6,21 @@ Pipeline que extrae estructura de bases reguladoras vía LLM (structured output 
 persiste en `l0.subvenciones_nlp` (cache deduplicada por `document_key`) y dual-writea
 columnas NLP en `l0.nacional_subvenciones` para feed, filtros y matching.
 
+## Heurística de resolución del documento
+
+| Step | Fuente | Búsqueda | Output |
+|---|---|---|---|
+| 1 | `url_bases_reguladoras` | URL descargable directa | `source='url_bases_reguladoras'` |
+| 2 | `documentos[]` | regex `bases\s+regulad` sobre `tipo/descripcion/nombre/titulo` | `source='documentos_array'` |
+| 3 | `documentos[]` | regex `texto\s+(de\s+(la\s+)?)?convocatoria` (segunda pasada) | `source='texto_convocatoria'` |
+| fallback | — | nada match | `skipped_no_doc=true` |
+
+Todos los steps producen un `document_key` con prefijo `url:` porque siempre
+apuntan a un documento descargable. La columna `descripcion_bases_reguladoras`
+(TEXT en `l0.nacional_subvenciones`) NO se usa como fuente NLP — su contenido
+suele ser solo referencia BOE (p.ej. *"Orden ICT/1156/2024, BOE núm. 261"*),
+no el documento mismo.
+
 ## Configuración
 
 Vars en `.env` raíz (propagadas vía `scripts/distribute-env.sh` → `services/etl/.env`):

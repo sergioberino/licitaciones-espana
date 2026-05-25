@@ -7,7 +7,7 @@ from dataclasses import dataclass, field
 from datetime import datetime, timezone
 from typing import Optional
 
-from etl.nlp.extractor import ExtractionError, extract_from_text, extract_from_url
+from etl.nlp.extractor import ExtractionError, extract_from_url
 from etl.nlp.llm_client import analyze_document, load_schema
 from etl.nlp.persistence import persist_analysis, propagate_from_cache
 from etl.nlp.project import extract_matching_fields
@@ -19,12 +19,11 @@ logger = logging.getLogger(__name__)
 
 
 SELECT_PENDING_SQL = """
-SELECT s.id, s.url_bases_reguladoras, s.documentos, s.descripcion_bases_reguladoras
+SELECT s.id, s.url_bases_reguladoras, s.documentos
 FROM l0.nacional_subvenciones s
 WHERE s.nlp_document_key IS NULL
   AND (s.url_bases_reguladoras IS NOT NULL
-       OR s.documentos IS NOT NULL
-       OR s.descripcion_bases_reguladoras IS NOT NULL)
+       OR s.documentos IS NOT NULL)
 ORDER BY s.id DESC
 LIMIT %(limit)s
 """
@@ -104,11 +103,10 @@ def run_batch(conn, *, limit: int = 100, force: bool = False, dry_run: bool = Fa
     )
 
     for row in rows:
-        subv_id, url, documentos, texto = row
+        subv_id, url, documentos = row
         resolved = resolve_document(
             url_bases_reguladoras=url,
             documentos=documentos,
-            texto_reguladora=texto,
         )
         if resolved is None:
             stats.skipped_no_doc += 1
@@ -163,10 +161,7 @@ def run_batch(conn, *, limit: int = 100, force: bool = False, dry_run: bool = Fa
             continue
 
         try:
-            if resolved.document_source == "texto_reguladora":
-                extracted = extract_from_text(texto)
-            else:
-                extracted = extract_from_url(resolved.document_ref)
+            extracted = extract_from_url(resolved.document_ref)
             logger.info(
                 "[nlp] id=%d step=extract chars=%d content_type=%s",
                 subv_id,

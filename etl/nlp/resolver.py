@@ -1,14 +1,17 @@
 """Heurística de resolución de documento normativo para Batch B.
 
 Orden:
-  1. url_bases_reguladoras   → step=1, source='url_bases_reguladoras'
-  2. documentos[] con tipo/descripción "bases reguladoras" → step=2
-  3. texto_reguladora        → step=3, source='texto_reguladora'
+  1. url_bases_reguladoras                                → step=1, source='url_bases_reguladoras'
+  2. documentos[] con tipo/descripción 'bases reguladoras' → step=2, source='documentos_array'
+  3. documentos[] con tipo/descripción 'texto convocatoria' → step=3, source='texto_convocatoria'
   Fallback: None → pendiente, no error.
 
-document_key:
-  - source url_*: 'url:' + sha256(normalized_url)[:32]
-  - source texto: 'text:' + sha256(texto)[:32]
+Notas:
+  - Todos los steps producen un document_key con prefijo 'url:' porque siempre
+    apuntan a un documento descargable.
+  - 'descripcion_bases_reguladoras' (TEXT en l0.nacional_subvenciones) NO se usa
+    como fuente: típicamente contiene solo referencias BOE (p.ej. "Orden
+    ICT/1156/2024, BOE núm. 261"), no el documento mismo.
 """
 from __future__ import annotations
 
@@ -21,13 +24,14 @@ from typing import Any, Optional
 @dataclass(frozen=True)
 class ResolvedDocument:
     document_key: str
-    document_source: str   # 'url_bases_reguladoras' | 'documentos_array' | 'texto_reguladora'
+    document_source: str   # 'url_bases_reguladoras' | 'documentos_array' | 'texto_convocatoria'
     heuristic_step: int    # 1 | 2 | 3
-    document_ref: Optional[str]  # URL o None si source=texto
-    document_name: Optional[str] = None  # Solo poblado en step=2 (documentos_array). Informativo.
+    document_ref: str      # URL siempre poblada (todos los steps apuntan a URL)
+    document_name: Optional[str] = None  # Solo poblado en step=2 y step=3 (documentos_array). Informativo.
 
 
 _BASES_REGULADORAS_HINT = re.compile(r"bases?\s+regulad", re.IGNORECASE)
+_TEXTO_CONVOCATORIA_HINT = re.compile(r"texto\s+(?:de\s+(?:la\s+)?)?convocatoria", re.IGNORECASE)
 
 
 def _normalize_url(url: str) -> str:
@@ -48,8 +52,9 @@ def _is_descargable(url: Optional[str]) -> bool:
     return True
 
 
-def _scan_documentos(documentos: Any) -> Optional[tuple[str, str]]:
-    """Busca un documento que sugiera bases reguladoras.
+def _scan_documentos(documentos: Any, hint: re.Pattern[str]) -> Optional[tuple[str, str]]:
+    """Busca el primer documento del array cuyo tipo/descripción match con `hint`.
+
     Devuelve (url, name) si encuentra; None si no.
     name = primer campo no vacío entre {nombre, titulo, descripcion, tipo}.
     """
@@ -61,12 +66,15 @@ def _scan_documentos(documentos: Any) -> Optional[tuple[str, str]]:
         haystack = " ".join(
             str(doc.get(k, "")) for k in ("tipo", "descripcion", "nombre", "titulo")
         )
-        if _BASES_REGULADORAS_HINT.search(haystack):
+        if hint.search(haystack):
             url = doc.get("url") or doc.get("urlDescarga") or doc.get("href")
             if _is_descargable(url):
                 name = next(
-                    (str(doc[k]).strip() for k in ("nombre", "titulo", "descripcion", "tipo")
-                     if doc.get(k)),
+                    (
+                        str(doc[k]).strip()
+                        for k in ("nombre", "titulo", "descripcion", "tipo")
+                        if doc.get(k)
+                    ),
                     "documento sin nombre",
                 )
                 return (url, name)
@@ -77,7 +85,6 @@ def resolve_document(
     *,
     url_bases_reguladoras: Optional[str],
     documentos: Any,
-    texto_reguladora: Optional[str],
 ) -> Optional[ResolvedDocument]:
     if _is_descargable(url_bases_reguladoras):
         normalized = _normalize_url(url_bases_reguladoras)
@@ -89,9 +96,9 @@ def resolve_document(
             document_name=None,
         )
 
-    doc_match = _scan_documentos(documentos)
-    if doc_match:
-        doc_url, doc_name = doc_match
+    bases_match = _scan_documentos(documentos, _BASES_REGULADORAS_HINT)
+    if bases_match:
+        doc_url, doc_name = bases_match
         normalized = _normalize_url(doc_url)
         return ResolvedDocument(
             document_key=_hash_key("url", normalized),
@@ -101,13 +108,16 @@ def resolve_document(
             document_name=doc_name,
         )
 
-    if texto_reguladora and texto_reguladora.strip():
+    texto_match = _scan_documentos(documentos, _TEXTO_CONVOCATORIA_HINT)
+    if texto_match:
+        doc_url, doc_name = texto_match
+        normalized = _normalize_url(doc_url)
         return ResolvedDocument(
-            document_key=_hash_key("text", texto_reguladora.strip()),
-            document_source="texto_reguladora",
+            document_key=_hash_key("url", normalized),
+            document_source="texto_convocatoria",
             heuristic_step=3,
-            document_ref=None,
-            document_name=None,
+            document_ref=doc_url,
+            document_name=doc_name,
         )
 
     return None
