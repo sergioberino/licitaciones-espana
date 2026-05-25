@@ -89,3 +89,52 @@ def test_nlp_analizar_concurrent_run_returns_409(client, tmp_path, monkeypatch):
         assert r.status_code == 409
     finally:
         pid_path.unlink(missing_ok=True)
+
+
+def test_subvenciones_ficha_returns_404_for_missing(client):
+    from unittest.mock import MagicMock
+
+    mock_conn = MagicMock()
+    mock_cur = MagicMock()
+    mock_cur.fetchone.return_value = None
+    mock_conn.cursor.return_value.__enter__ = lambda s: mock_cur
+    mock_conn.cursor.return_value.__exit__ = lambda s, *a: None
+    mock_conn.__enter__ = lambda s: mock_conn
+    mock_conn.__exit__ = lambda s, *a: None
+
+    with patch("etl.api.get_database_url", return_value="postgresql://x"):
+        with patch("etl.api.psycopg2.connect", return_value=mock_conn):
+            r = client.get("/subvenciones/-999999/ficha")
+    assert r.status_code == 404
+
+
+def test_subvenciones_ficha_returns_row_with_nlp_json(client):
+    from unittest.mock import MagicMock
+
+    row = {
+        "id": -99001,
+        "descripcion": "test",
+        "nlp_document_key": "url:fictest123",
+        "nlp_json": {"objeto": "test ficha"},
+        "schema_version": "v5.0.2",
+        "document_source": "url_bases_reguladoras",
+        "document_heuristic_step": 1,
+        "document_ref": "https://example.org/bases.pdf",
+        "nlp_extracted_at_cache": None,
+    }
+    mock_conn = MagicMock()
+    mock_cur = MagicMock()
+    mock_cur.fetchone.return_value = row
+    mock_conn.cursor.return_value.__enter__ = lambda s: mock_cur
+    mock_conn.cursor.return_value.__exit__ = lambda s, *a: None
+    mock_conn.__enter__ = lambda s: mock_conn
+    mock_conn.__exit__ = lambda s, *a: None
+
+    with patch("etl.api.get_database_url", return_value="postgresql://x"):
+        with patch("etl.api.psycopg2.connect", return_value=mock_conn):
+            r = client.get("/subvenciones/-99001/ficha")
+    assert r.status_code == 200
+    body = r.json()
+    assert body["id"] == -99001
+    assert body["nlp_json"] == {"objeto": "test ficha"}
+    assert body["schema_version"] == "v5.0.2"

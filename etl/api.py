@@ -1344,3 +1344,40 @@ def nlp_current_run():
     except (OSError, ValueError):
         pid_file.unlink(missing_ok=True)
         return {"running": False, "pid": None, "started_at": None}
+
+
+@app.get(
+    "/subvenciones/{subvencion_id}/ficha",
+    summary="Ficha ejecutiva de una convocatoria (datos NLP completos)",
+    description="Devuelve la fila de nacional_subvenciones con cols dual-write NLP "
+    "y nlp_json de subvenciones_nlp. Backend-to-backend (LicitIA).",
+)
+def subvenciones_ficha(subvencion_id: int):
+    url = get_database_url()
+    if url is None:
+        return JSONResponse(status_code=503, content={"detail": "database unavailable"})
+    try:
+        with psycopg2.connect(url) as conn:
+            with conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor) as cur:
+                cur.execute(
+                    """
+                    SELECT s.*, n.nlp_json, n.document_source, n.document_heuristic_step,
+                           n.document_ref, n.schema_version, n.extracted_at AS nlp_extracted_at_cache
+                    FROM l0.nacional_subvenciones s
+                    LEFT JOIN l0.subvenciones_nlp n
+                      ON s.nlp_document_key = n.document_key
+                    WHERE s.id = %s
+                    """,
+                    (subvencion_id,),
+                )
+                row = cur.fetchone()
+    except psycopg2.Error:
+        return JSONResponse(status_code=503, content={"detail": "database error"})
+    if row is None:
+        raise HTTPException(status_code=404, detail=f"subvención {subvencion_id} no encontrada")
+    out = _serialize_row(dict(row))
+    for key in ("nlp_extracted_at_cache", "extracted_at", "ingested_at", "fecha_publicacion"):
+        val = out.get(key)
+        if isinstance(val, datetime):
+            out[key] = val.isoformat()
+    return out
