@@ -1951,6 +1951,10 @@ def main() -> int:
     cnae_sub.add_parser("ingest", help="Fetch CNAE codes from ISTAC API and load into dim.cnae_dim")
     cnae_parser.set_defaults(func=cmd_cnae)
 
+    from etl.nlp.cli import add_subparser as nlp_add_subparser
+
+    nlp_add_subparser(subparsers)
+
     args = parser.parse_args()
     if not args.command:
         parser.print_help()

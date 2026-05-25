@@ -1252,3 +1252,95 @@ def borme_log(lines: int = 80):
     all_lines = text.splitlines()
     tail = all_lines[-lines:] if len(all_lines) > lines else all_lines
     return {"lines": tail, "exists": True, "total_lines": len(all_lines)}
+
+
+# ===========================================================================
+# Track B WP2.1 — NLP (Batch B)
+# ===========================================================================
+from etl.nlp.api import nlp_log_path, nlp_pid_path
+
+
+class NlpAnalizarBody(BaseModel):
+    limit: int = 100
+    force: bool = False
+    dry_run: bool = False
+
+
+@app.post(
+    "/nlp/analizar",
+    summary="Run NLP analysis batch (non-blocking)",
+    description="Spawns 'licitia-etl nlp analizar' as background subprocess. "
+    "Returns 202 + pid + log_path. Poll /nlp/log and /nlp/current-run.",
+)
+def nlp_analizar(body: NlpAnalizarBody):
+    if body.limit < 1 or body.limit > 10000:
+        return JSONResponse(status_code=422, content={"detail": "limit must be 1..10000"})
+
+    pid_file = nlp_pid_path()
+    if pid_file.exists():
+        try:
+            running_pid = int(pid_file.read_text().strip())
+            os.kill(running_pid, 0)
+            return JSONResponse(
+                status_code=409,
+                content={"detail": f"nlp run already in progress (pid={running_pid})"},
+            )
+        except (OSError, ValueError):
+            pid_file.unlink(missing_ok=True)
+
+    cmd = [sys.executable, "-m", "etl.cli", "nlp", "analizar", "--limit", str(body.limit)]
+    if body.force:
+        cmd.append("--force")
+    if body.dry_run:
+        cmd.append("--dry-run")
+
+    log_path = nlp_log_path()
+    try:
+        log_file = open(log_path, "w", encoding="utf-8")
+        env = os.environ.copy()
+        env["PYTHONUNBUFFERED"] = "1"
+        kwargs: dict = {"stdout": log_file, "stderr": subprocess.STDOUT, "env": env}
+        if os.name != "nt":
+            kwargs["start_new_session"] = True
+        p = subprocess.Popen(cmd, **kwargs)
+    except Exception as e:
+        return JSONResponse(status_code=500, content={"detail": f"spawn failed: {e}"})
+
+    pid_file.write_text(str(p.pid))
+    return JSONResponse(
+        status_code=202,
+        content={
+            "pid": p.pid,
+            "log_path": str(log_path),
+            "started_at": datetime.utcnow().isoformat() + "Z",
+        },
+    )
+
+
+@app.get("/nlp/log", summary="Tail the NLP analizar subprocess log")
+def nlp_log(lines: int = 200):
+    log_path = nlp_log_path()
+    if not log_path.exists():
+        return {"lines": [], "exists": False, "total_lines": 0}
+    text = log_path.read_text(encoding="utf-8", errors="replace")
+    all_lines = text.splitlines()
+    tail = all_lines[-lines:] if len(all_lines) > lines else all_lines
+    return {"lines": tail, "exists": True, "total_lines": len(all_lines)}
+
+
+@app.get("/nlp/current-run", summary="Status of the current/last NLP run")
+def nlp_current_run():
+    pid_file = nlp_pid_path()
+    if not pid_file.exists():
+        return {"running": False, "pid": None, "started_at": None}
+    try:
+        running_pid = int(pid_file.read_text().strip())
+        os.kill(running_pid, 0)
+        return {
+            "running": True,
+            "pid": running_pid,
+            "started_at": datetime.fromtimestamp(pid_file.stat().st_mtime).isoformat() + "Z",
+        }
+    except (OSError, ValueError):
+        pid_file.unlink(missing_ok=True)
+        return {"running": False, "pid": None, "started_at": None}
