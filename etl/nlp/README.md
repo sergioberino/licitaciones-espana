@@ -8,15 +8,49 @@ columnas NLP en `l0.nacional_subvenciones` para feed, filtros y matching.
 
 ## Heurística de resolución del documento
 
-| Step | Fuente | Búsqueda | Output |
+Estructura real de cada item en `documentos[]` (BDNS SNPSAP):
+
+```json
+{
+  "id": 1454450,
+  "long": 506437,
+  "datMod": "2026-05-13",
+  "nombreFic": "Convocatoria_PKD.report.pdf",
+  "descripcion": "Documento de la convocatoria en español",
+  "datPublicacion": "2026-05-13"
+}
+```
+
+| Step | Fuente | Match (haystack = `descripcion` + `nombreFic`, normalizado) | Output |
 |---|---|---|---|
 | 1 | `url_bases_reguladoras` | URL descargable directa | `source='url_bases_reguladoras'` |
-| 2 | `documentos[]` | regex `bases\s+regulad` sobre `tipo/descripcion/nombre/titulo` | `source='documentos_array'` |
-| 3 | `documentos[]` | regex `texto\s+(de\s+(la\s+)?)?convocatoria` (segunda pasada) | `source='texto_convocatoria'` |
+| 2 | `documentos[]` | regex `bases\s+regulad` + no-anexo | `source='documentos_array'` |
+| 3 | `documentos[]` | regex `(?:texto\|documento)\s+\S+(?:\s+\S+){0,5}\s+convocatoria` + no-anexo | `source='texto_convocatoria'` |
 | fallback | — | nada match | `skipped_no_doc=true` |
 
+**Construcción de URL en step 2/3:**
+
+```
+https://www.infosubvenciones.es/bdnstrans/api/convocatorias/documentos?idDocumento={doc.id}
+```
+
+Endpoint público SNPSAP (`Content-Type: application/octet-stream`).
+
+**Reglas de selección:**
+
+- **Anti-anexo / anti-instrumental:** descartamos documentos con `anexo`, `solicitud`,
+  `formulario`, `extracto`/`extracte` como token autónomo en el haystack. No representan
+  ni las bases ni la convocatoria.
+- **Modificaciones, ampliaciones, revocaciones, rectificaciones:** NO matchean los
+  regex de step 2/3 (sus descripciones no contienen `bases reguladoras` ni el patrón
+  `(texto|documento) … convocatoria`). Se descartan implícitamente.
+- **Múltiples candidatos válidos:** se selecciona `max(datPublicacion)` — la versión
+  vigente más reciente. Justificación: las bases reguladoras no suelen modificarse,
+  pero los textos de convocatoria se readaptan por línea/edición, y queremos siempre
+  la versión vigente.
+
 Todos los steps producen un `document_key` con prefijo `url:` porque siempre
-apuntan a un documento descargable. La columna `descripcion_bases_reguladoras`
+apuntan a una URL descargable. La columna `descripcion_bases_reguladoras`
 (TEXT en `l0.nacional_subvenciones`) NO se usa como fuente NLP — su contenido
 suele ser solo referencia BOE (p.ej. *"Orden ICT/1156/2024, BOE núm. 261"*),
 no el documento mismo.
