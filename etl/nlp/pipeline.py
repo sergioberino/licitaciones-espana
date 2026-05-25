@@ -18,15 +18,96 @@ from etl.nlp.validator import validate
 logger = logging.getLogger(__name__)
 
 
-SELECT_PENDING_SQL = """
-SELECT s.id, s.url_bases_reguladoras, s.documentos
-FROM l0.nacional_subvenciones s
-WHERE s.nlp_document_key IS NULL
-  AND (s.url_bases_reguladoras IS NOT NULL
-       OR s.documentos IS NOT NULL)
-ORDER BY s.id DESC
-LIMIT %(limit)s
-"""
+_SELECT_PENDING_BASE = (
+    "SELECT s.id, s.url_bases_reguladoras, s.documentos "
+    "FROM l0.nacional_subvenciones s"
+)
+
+
+def _validate_selector_args(
+    anos: Optional[tuple[int, int]],
+    meses: Optional[tuple[int, int]],
+    codigo_bdns: Optional[int],
+    todo: bool,
+) -> None:
+    """Reglas del contrato WP2.1.1; lanza ValueError si la combinación es inválida.
+
+    Defense in depth: el CLI valida antes pero la API y usos programáticos
+    también pasan por aquí.
+    """
+    selectors = [anos is not None, codigo_bdns is not None, bool(todo)]
+    n = sum(selectors)
+    if n == 0:
+        raise ValueError(
+            "Falta selector: indique uno y solo uno de --anos, --codigo-bdns o --todo."
+        )
+    if n > 1:
+        raise ValueError(
+            "Selectores mutual exclusion: --anos, --codigo-bdns y --todo son mutuamente excluyentes."
+        )
+    if meses is not None and anos is None:
+        raise ValueError("--meses solo es válido junto a --anos.")
+    if anos is not None:
+        a, b = anos
+        if a > b:
+            raise ValueError(f"--anos: el inicio ({a}) no puede ser mayor que el fin ({b}).")
+    if meses is not None:
+        m1, m2 = meses
+        if not (1 <= m1 <= 12 and 1 <= m2 <= 12):
+            raise ValueError(f"--meses fuera de rango [1,12]: {m1}-{m2}.")
+        if m1 > m2:
+            raise ValueError(f"--meses: el inicio ({m1}) no puede ser mayor que el fin ({m2}).")
+
+
+def _build_select_pending_sql(
+    *,
+    anos: Optional[tuple[int, int]],
+    meses: Optional[tuple[int, int]],
+    codigo_bdns: Optional[int],
+    todo: bool,
+    limit: Optional[int],
+) -> tuple[str, dict]:
+    """Construye el SELECT dinámico según el selector activo.
+
+    Reglas del contrato:
+    - anos        : filtra fecha_recepcion entre [start-01-01, end-12-31]; excluye NULLs.
+    - anos+meses  : AND adicional EXTRACT(MONTH FROM fecha_recepcion) BETWEEN m1 AND m2.
+    - codigo_bdns : id = N; quita el filtro nlp_document_key IS NULL para permitir reanálisis.
+    - todo        : sin filtro de fecha; conserva nlp_document_key IS NULL y la condición de doc.
+    - limit==0 o None: omite la cláusula LIMIT.
+    """
+    where: list[str] = []
+    params: dict = {}
+
+    if codigo_bdns is not None:
+        where.append("s.id = %(codigo_bdns)s")
+        params["codigo_bdns"] = codigo_bdns
+    else:
+        # anos / todo: pendientes y con documento resoluble.
+        where.append("s.nlp_document_key IS NULL")
+        where.append("(s.url_bases_reguladoras IS NOT NULL OR s.documentos IS NOT NULL)")
+        if anos is not None:
+            a, b = anos
+            where.append("s.fecha_recepcion >= %(fecha_desde)s")
+            where.append("s.fecha_recepcion <= %(fecha_hasta)s")
+            params["fecha_desde"] = f"{a:04d}-01-01"
+            params["fecha_hasta"] = f"{b:04d}-12-31"
+            if meses is not None:
+                m1, m2 = meses
+                where.append(
+                    "EXTRACT(MONTH FROM s.fecha_recepcion) BETWEEN %(mes_desde)s AND %(mes_hasta)s"
+                )
+                params["mes_desde"] = m1
+                params["mes_hasta"] = m2
+
+    sql = _SELECT_PENDING_BASE
+    if where:
+        sql += " WHERE " + " AND ".join(where)
+    sql += " ORDER BY s.id DESC"
+    if limit is not None and limit > 0:
+        sql += " LIMIT %(limit)s"
+        params["limit"] = limit
+    return sql, params
 
 
 LOG_LLM_SQL = """
@@ -69,10 +150,26 @@ class BatchStats:
     planned: list[PlanItem] = field(default_factory=list)
 
 
-def select_pending(conn, *, limit: int) -> list[tuple]:
-    """Helper testeable: devuelve filas pendientes ordenadas por id DESC."""
+def select_pending(
+    conn,
+    *,
+    limit: Optional[int],
+    anos: Optional[tuple[int, int]] = None,
+    meses: Optional[tuple[int, int]] = None,
+    codigo_bdns: Optional[int] = None,
+    todo: bool = False,
+) -> list[tuple]:
+    """Helper testeable: devuelve filas pendientes ordenadas por id DESC.
+
+    El selector (anos/codigo_bdns/todo) se valida en :func:`run_batch`; este helper
+    se limita a construir y ejecutar el SQL para que los tests puedan ejercitar
+    los filtros aisladamente.
+    """
+    sql, params = _build_select_pending_sql(
+        anos=anos, meses=meses, codigo_bdns=codigo_bdns, todo=todo, limit=limit
+    )
     with conn.cursor() as cur:
-        cur.execute(SELECT_PENDING_SQL, {"limit": limit})
+        cur.execute(sql, params)
         return cur.fetchall()
 
 
@@ -87,16 +184,51 @@ def _check_cache_hit(conn, document_key: str) -> bool:
         return cur.fetchone() is not None
 
 
-def run_batch(conn, *, limit: int = 100, force: bool = False, dry_run: bool = False) -> BatchStats:
-    """Procesa pendientes ordenados por id DESC."""
+def run_batch(
+    conn,
+    *,
+    limit: int = 100,
+    force: bool = False,
+    dry_run: bool = False,
+    anos: Optional[tuple[int, int]] = None,
+    meses: Optional[tuple[int, int]] = None,
+    codigo_bdns: Optional[int] = None,
+    todo: bool = False,
+) -> BatchStats:
+    """Procesa pendientes ordenados por id DESC.
+
+    Selector obligatorio (uno y solo uno): ``anos``, ``codigo_bdns`` o ``todo``.
+    ``meses`` solo es válido junto a ``anos``. ``limit==0`` desactiva el cap.
+    Con ``codigo_bdns`` el ``limit`` se ignora a nivel de SQL (solo 1 fila como mucho).
+
+    Lanza :class:`ValueError` ante combinaciones inválidas (defense in depth).
+    """
+    _validate_selector_args(anos, meses, codigo_bdns, todo)
     started = time.time()
     stats = BatchStats()
     schema = None if dry_run else load_schema()
 
-    rows = select_pending(conn, limit=limit)
+    effective_limit: Optional[int] = None if codigo_bdns is not None else limit
+    rows = select_pending(
+        conn,
+        limit=effective_limit,
+        anos=anos,
+        meses=meses,
+        codigo_bdns=codigo_bdns,
+        todo=todo,
+    )
+    if anos is not None:
+        selector_repr = f"anos={anos[0]}-{anos[1]}" + (
+            f" meses={meses[0]}-{meses[1]}" if meses is not None else ""
+        )
+    elif codigo_bdns is not None:
+        selector_repr = f"codigo_bdns={codigo_bdns}"
+    else:
+        selector_repr = "todo=true"
     logger.info(
-        "[nlp] start limit=%d force=%s dry_run=%s pending_in_chunk=%d",
-        limit,
+        "[nlp] start limit=%s selector=%s force=%s dry_run=%s pending_in_chunk=%d",
+        limit if limit and limit > 0 else "off",
+        selector_repr,
         force,
         dry_run,
         len(rows),

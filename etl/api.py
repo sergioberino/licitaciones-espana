@@ -9,7 +9,7 @@ from pathlib import Path
 import psycopg2
 from fastapi import FastAPI, HTTPException
 from fastapi.responses import JSONResponse, PlainTextResponse
-from pydantic import BaseModel
+from pydantic import BaseModel, model_validator
 
 from etl import __version__
 from etl.cli import (
@@ -1260,10 +1260,70 @@ def borme_log(lines: int = 80):
 from etl.nlp.api import nlp_log_path, nlp_pid_path
 
 
+def _validate_range_str(value: str, *, min_val: int, max_val: int, name: str) -> tuple[int, int]:
+    """Valida formato 'X' o 'X-Y' contra min_val/max_val. Lanza ValueError."""
+    raw = (value or "").strip()
+    if not raw:
+        raise ValueError(f"{name} no puede estar vacío")
+    parts = raw.split("-")
+    if len(parts) == 1:
+        try:
+            v = int(parts[0])
+        except ValueError:
+            raise ValueError(f"{name} debe ser X o X-Y con números enteros (recibido: '{value}')")
+        start, end = v, v
+    elif len(parts) == 2:
+        a, b = parts[0].strip(), parts[1].strip()
+        if not a or not b:
+            raise ValueError(f"{name} formato X-Y con extremos no vacíos (recibido: '{value}')")
+        try:
+            start, end = int(a), int(b)
+        except ValueError:
+            raise ValueError(f"{name} debe ser X o X-Y con números enteros (recibido: '{value}')")
+    else:
+        raise ValueError(f"{name} formato inválido (recibido: '{value}')")
+    if start > end:
+        raise ValueError(f"{name}: el inicio ({start}) no puede ser mayor que el fin ({end})")
+    if start < min_val or end > max_val:
+        raise ValueError(f"{name} fuera de rango [{min_val},{max_val}]: {start}-{end}")
+    return start, end
+
+
 class NlpAnalizarBody(BaseModel):
+    """Body de POST /nlp/analizar (WP2.1.1).
+
+    Selector obligatorio: ``anos`` (str X-Y), ``codigo_bdns`` (int), o ``todo`` (bool).
+    Modificadores: ``meses`` (str N-M, solo con ``anos``), ``limit`` (default 100),
+    ``force``, ``dry_run``.
+    """
+
+    anos: str | None = None
+    meses: str | None = None
+    codigo_bdns: int | None = None
+    todo: bool = False
     limit: int = 100
     force: bool = False
     dry_run: bool = False
+
+    @model_validator(mode="after")
+    def _validate_selector(self):
+        if self.anos is not None:
+            _validate_range_str(self.anos, min_val=1900, max_val=2999, name="anos")
+        if self.meses is not None:
+            _validate_range_str(self.meses, min_val=1, max_val=12, name="meses")
+        selectors = [self.anos is not None, self.codigo_bdns is not None, bool(self.todo)]
+        n = sum(selectors)
+        if n == 0:
+            raise ValueError(
+                "Falta selector: indique uno y solo uno de anos, codigo_bdns o todo."
+            )
+        if n > 1:
+            raise ValueError(
+                "Selectores mutual exclusion: anos, codigo_bdns y todo son mutuamente excluyentes."
+            )
+        if self.meses is not None and self.anos is None:
+            raise ValueError("meses solo es válido junto a anos.")
+        return self
 
 
 @app.post(
@@ -1273,8 +1333,9 @@ class NlpAnalizarBody(BaseModel):
     "Returns 202 + pid + log_path. Poll /nlp/log and /nlp/current-run.",
 )
 def nlp_analizar(body: NlpAnalizarBody):
-    if body.limit < 1 or body.limit > 10000:
-        return JSONResponse(status_code=422, content={"detail": "limit must be 1..10000"})
+    # --limit 0 = sin cap (WP2.1.1). Con --codigo-bdns el limit se ignora.
+    if body.limit < 0 or body.limit > 10000:
+        return JSONResponse(status_code=422, content={"detail": "limit must be 0..10000"})
 
     pid_file = nlp_pid_path()
     if pid_file.exists():
@@ -1289,6 +1350,14 @@ def nlp_analizar(body: NlpAnalizarBody):
             pid_file.unlink(missing_ok=True)
 
     cmd = [sys.executable, "-m", "etl.cli", "nlp", "analizar", "--limit", str(body.limit)]
+    if body.anos is not None:
+        cmd.extend(["--anos", body.anos])
+    if body.meses is not None:
+        cmd.extend(["--meses", body.meses])
+    if body.codigo_bdns is not None:
+        cmd.extend(["--codigo-bdns", str(body.codigo_bdns)])
+    if body.todo:
+        cmd.append("--todo")
     if body.force:
         cmd.append("--force")
     if body.dry_run:

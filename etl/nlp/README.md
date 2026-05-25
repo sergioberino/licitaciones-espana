@@ -69,9 +69,11 @@ Vars en `.env` raíz (propagadas vía `scripts/distribute-env.sh` → `services/
 ### CLI
 
 ```bash
-licitia-etl nlp analizar --limit 5 --dry-run         # plan, coste 0
-licitia-etl nlp analizar --limit 5                   # ejecución real
-licitia-etl nlp analizar --limit 5 --force           # ignora cache, re-llama LLM
+# Selector obligatorio (uno y solo uno): --anos | --codigo-bdns | --todo
+licitia-etl nlp analizar --anos 2026-2026 --limit 5 --dry-run         # plan, coste 0
+licitia-etl nlp analizar --anos 2024-2025 --meses 3-6 --limit 50      # cross-product
+licitia-etl nlp analizar --codigo-bdns 999999 --force                 # 1 convocatoria
+licitia-etl nlp analizar --todo --limit 0                             # todo el catálogo, sin cap
 ```
 
 ### HTTP (panel admin, requiere sesión vía frontend-etl)
@@ -80,10 +82,65 @@ licitia-etl nlp analizar --limit 5 --force           # ignora cache, re-llama LL
 curl -X POST http://localhost:3001/api/etl/nlp/analizar \
   -H 'Content-Type: application/json' \
   -b 'session=<cookie>' \
-  -d '{"limit": 5, "dry_run": false}'
+  -d '{"anos": "2026-2026", "limit": 5, "dry_run": false}'
 
 curl http://localhost:3001/api/etl/nlp/log?lines=200 -b 'session=<cookie>'
 curl http://localhost:3001/api/etl/nlp/current-run    -b 'session=<cookie>'
+```
+
+## Filtros temporales y selector (WP2.1.1)
+
+A partir de WP2.1.1, `nlp analizar` exige un selector explícito alineado con el
+patrón nacional (no más "lo último por id DESC sin filtro fecha"). Esto es un
+**breaking change menor**: invocaciones previas como
+`licitia-etl nlp analizar --limit 5` (sin selector) ahora fallan con `exit 2` y
+mensaje claro.
+
+### Selector obligatorio (uno y solo uno)
+
+| Flag | Semántica SQL contra `l0.nacional_subvenciones.fecha_recepcion` |
+|---|---|
+| `--anos X-Y` | `fecha_recepcion >= 'X-01-01' AND fecha_recepcion <= 'Y-12-31'`. NULLs excluidas. |
+| `--codigo-bdns N` | `id = N` (PK BIGINT). Quita el filtro `nlp_document_key IS NULL` para permitir reanálisis con `--force`. `--limit` se ignora (warning en log). |
+| `--todo` | Sin filtro de fecha. Conserva `nlp_document_key IS NULL` y `(url... OR documentos...) IS NOT NULL`. |
+
+### Modificadores
+
+- `--meses N-M`: solo válido con `--anos`. Rango cerrado [1..12]. Cross-product:
+  `--anos 2024-2025 --meses 3-6` ⇒ marzo-junio de 2024 **y** marzo-junio de 2025.
+- `--limit N`: cap absoluto. Default 100. **`--limit 0` = sin cap** (omite cláusula
+  `LIMIT` del SQL). Ignorado con `--codigo-bdns`.
+- `--force`: ignora cache, siempre re-llama al LLM.
+- `--dry-run`: no llama al LLM ni persiste; muestra plan por item.
+
+### Guardraíles (errores explícitos, exit_code 2)
+
+- Sin `--anos`/`--codigo-bdns`/`--todo`: `[nlp] error: Falta selector...`.
+- `--meses` sin `--anos`: error.
+- `--anos + --codigo-bdns` o `--anos + --todo` o `--todo + --codigo-bdns`: error mutual exclusion.
+- `--anos 2026-2024` (start > end), `--meses 0-13`, `--meses 5-3`: error.
+- En la API HTTP las mismas reglas se aplican vía `model_validator` Pydantic ⇒ 422.
+
+### Cache hit (sin cambios)
+
+En todos los modos: si la convocatoria está en cache (`subvenciones_nlp.document_key`
+con `valid|partial`) y no se pasa `--force`, se reaprovecha vía `propagate_from_cache`.
+`--force` siempre re-llama al LLM.
+
+### Ejemplos completos
+
+```bash
+# Muestreo Q1 2026 con plan previo
+licitia-etl nlp analizar --anos 2026-2026 --meses 1-3 --limit 20 --dry-run
+licitia-etl nlp analizar --anos 2026-2026 --meses 1-3 --limit 20
+
+# Re-análisis puntual de una convocatoria por id BDNS
+licitia-etl nlp analizar --codigo-bdns 1454450 --force
+
+# Barrido completo del catálogo en background (vía API)
+curl -X POST http://localhost:3001/api/etl/nlp/analizar \
+  -H 'Content-Type: application/json' \
+  -d '{"todo": true, "limit": 0}'
 ```
 
 ### AntonIA (backend-to-backend, sin cookie)
