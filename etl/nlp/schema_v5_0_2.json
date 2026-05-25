@@ -1,0 +1,1755 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "$defs": {
+    "estado_extraccion": {
+      "type": "string",
+      "enum": [
+        "explicito",
+        "inferido",
+        "no_encontrado",
+        "no_aplica",
+        "contradictorio",
+        "remite_a_otro_documento"
+      ],
+      "description": "Estado operativo de extracción. Usar explicito si el dato aparece en la fuente; inferido solo para síntesis razonable; no_encontrado si debería existir pero no aparece; no_aplica si la categoría no procede; contradictorio si hay conflicto entre fuentes; remite_a_otro_documento si la fuente deriva a otra norma/anexo/convocatoria."
+    },
+    "confianza": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "Metadato heurístico 0..1 de seguridad del bloque, no probabilidad calibrada ni threshold operativo. Si no se usa en analítica, puede eliminarse en una versión posterior."
+    },
+    "evidencia": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "documento": {
+          "type": "string",
+          "enum": [
+            "bases_reguladoras",
+            "texto_convocatoria",
+            "anexo",
+            "extracto_bdns",
+            "convocatoria_detalle_bdns",
+            "diario_oficial",
+            "otra_norma",
+            "no_identificado"
+          ]
+        },
+        "localizador": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Artículo, base, apartado, anexo, página o epígrafe si está disponible."
+        },
+        "cita_breve": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Cita corta o paráfrasis muy pegada a fuente. No pegar párrafos largos; objetivo máximo orientativo: 280 caracteres."
+        }
+      },
+      "required": [
+        "documento",
+        "localizador",
+        "cita_breve"
+      ]
+    },
+    "evidencias": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/evidencia"
+      },
+      "description": "Evidencias breves del bloque. Preferencia operativa: 1-3 evidencias, cita breve y localizador si existe. Vacío si no hay fuente localizable."
+    },
+    "baremo_item": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "criterio": {
+          "type": "string"
+        },
+        "puntos_max": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "detalle": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "criterio",
+        "puntos_max",
+        "detalle"
+      ]
+    },
+    "intensidad_detalle": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "tipo_beneficiario": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "actividad_o_gasto": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "intensidad_pct": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "condiciones": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "tipo_beneficiario",
+        "actividad_o_gasto",
+        "intensidad_pct",
+        "condiciones"
+      ]
+    },
+    "articulo_rgec": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "articulo_canonico": {
+          "type": "string",
+          "enum": [
+            "art_1",
+            "art_2",
+            "art_3",
+            "art_4",
+            "art_5",
+            "art_6",
+            "art_7",
+            "art_8",
+            "art_9",
+            "art_10",
+            "art_11",
+            "art_12",
+            "art_13",
+            "art_14",
+            "art_15",
+            "art_16",
+            "art_17",
+            "art_18",
+            "art_19",
+            "art_20",
+            "art_21",
+            "art_22",
+            "art_23",
+            "art_24",
+            "art_25",
+            "art_26",
+            "art_27",
+            "art_28",
+            "art_29",
+            "art_30",
+            "art_31",
+            "art_32",
+            "art_33",
+            "art_34",
+            "art_35",
+            "art_36",
+            "art_37",
+            "art_38",
+            "art_39",
+            "art_40",
+            "art_41",
+            "art_42",
+            "art_43",
+            "art_44",
+            "art_45",
+            "art_46",
+            "art_47",
+            "art_48",
+            "art_49",
+            "art_50",
+            "art_51",
+            "art_52",
+            "art_53",
+            "art_54",
+            "art_55",
+            "art_56",
+            "art_57",
+            "art_58",
+            "otro",
+            "no_determinado"
+          ],
+          "description": "Artículo del Reglamento (UE) 651/2014 si se declara. Usar otro si el artículo no encaja; no_determinado si la fuente no permite identificarlo."
+        },
+        "texto": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "articulo_canonico",
+        "texto"
+      ]
+    },
+    "linea_ayuda": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "nombre": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "descripcion": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "beneficiarios_texto": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "economia_texto": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "notas_matching": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "nombre",
+        "descripcion",
+        "beneficiarios_texto",
+        "economia_texto",
+        "notas_matching"
+      ]
+    },
+    "metrica_ficha": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "etiqueta": {
+          "type": "string"
+        },
+        "valor": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "nota": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "etiqueta",
+        "valor",
+        "nota"
+      ]
+    },
+    "semaforo_item": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "prioridad": {
+          "type": "string",
+          "enum": [
+            "alta",
+            "media",
+            "baja"
+          ]
+        },
+        "comprobacion": {
+          "type": "string"
+        },
+        "riesgo": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "prioridad",
+        "comprobacion",
+        "riesgo"
+      ]
+    },
+    "glosario_item": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "termino": {
+          "type": "string"
+        },
+        "definicion_para_consultor": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "termino",
+        "definicion_para_consultor"
+      ]
+    },
+    "geo_g1": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "tipo_geografia": {
+          "type": "string",
+          "enum": [
+            "domicilio_fiscal",
+            "sede_social",
+            "residencia",
+            "establecimiento_sucursal"
+          ]
+        },
+        "territorios_texto": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "codigos_nuts": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "codigos_ine": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "origen_codigos": {
+          "type": "string",
+          "enum": [
+            "declarados_en_fuente",
+            "inferidos_por_modelo",
+            "no_codificados",
+            "mixto"
+          ]
+        },
+        "texto_requisito": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "tipo_geografia",
+        "territorios_texto",
+        "codigos_nuts",
+        "codigos_ine",
+        "origen_codigos",
+        "texto_requisito"
+      ]
+    },
+    "geo_g2": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "tipo_geografia": {
+          "type": "string",
+          "enum": [
+            "centro_trabajo"
+          ]
+        },
+        "territorios_texto": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "codigos_nuts": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "codigos_ine": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "origen_codigos": {
+          "type": "string",
+          "enum": [
+            "declarados_en_fuente",
+            "inferidos_por_modelo",
+            "no_codificados",
+            "mixto"
+          ]
+        },
+        "texto_requisito": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "tipo_geografia",
+        "territorios_texto",
+        "codigos_nuts",
+        "codigos_ine",
+        "origen_codigos",
+        "texto_requisito"
+      ]
+    },
+    "geo_g3": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "tipo_geografia": {
+          "type": "string",
+          "enum": [
+            "ejecucion_inversion"
+          ]
+        },
+        "territorios_texto": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "codigos_nuts": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "codigos_ine": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "origen_codigos": {
+          "type": "string",
+          "enum": [
+            "declarados_en_fuente",
+            "inferidos_por_modelo",
+            "no_codificados",
+            "mixto"
+          ]
+        },
+        "municipios_anexo": {
+          "type": [
+            "boolean",
+            "null"
+          ],
+          "description": "true si hay anexo de municipios y no conviene enumerarlos en la ficha."
+        },
+        "texto_requisito": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "tipo_geografia",
+        "territorios_texto",
+        "codigos_nuts",
+        "codigos_ine",
+        "origen_codigos",
+        "municipios_anexo",
+        "texto_requisito"
+      ]
+    },
+    "geo_g4": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "tipo_geografia": {
+          "type": "string",
+          "enum": [
+            "impacto_territorial"
+          ]
+        },
+        "territorios_texto": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "codigos_nuts": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "codigos_ine": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "origen_codigos": {
+          "type": "string",
+          "enum": [
+            "declarados_en_fuente",
+            "inferidos_por_modelo",
+            "no_codificados",
+            "mixto"
+          ]
+        },
+        "texto_requisito": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "tipo_geografia",
+        "territorios_texto",
+        "codigos_nuts",
+        "codigos_ine",
+        "origen_codigos",
+        "texto_requisito"
+      ]
+    }
+  },
+  "properties": {
+    "beneficiario_fino": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "estado_extraccion": {
+          "$ref": "#/$defs/estado_extraccion"
+        },
+        "tipo_beneficiario_fino": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "enum": [
+            "autonomo",
+            "microempresa",
+            "pequena_empresa",
+            "mediana_empresa",
+            "gran_empresa",
+            "otro",
+            "no_determinado",
+            null
+          ],
+          "description": "Filtro derivado atómico respecto de tiposBeneficiarios BDNS. Clasifica al beneficiario formal que puede solicitar, no a los miembros internos de una agrupación. Usar autonomo para persona física con actividad económica. Usar microempresa/pequena_empresa/mediana_empresa/gran_empresa solo cuando el beneficiario formal sea una empresa individual o una categoría empresarial directa restringida por la Recomendación 2003/361/CE. Usar otro para agrupaciones, UTE, consorcios, agrupaciones sin personalidad jurídica, comunidades de bienes, entidades públicas, universidades, entidades sin ánimo de lucro u otras figuras no encajables en tamaño empresarial UE. Explicar en texto_beneficiario_fino. Usar no_determinado si no puede clasificarse."
+        },
+        "texto_beneficiario_fino": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Texto normalizado para ficha y auditoría. Debe explicar el beneficiario real cuando el enum no baste: consorcio, UTE, agrupación, entidades públicas concretas, empresas tractoras, etc."
+        },
+        "formas_juridicas_excluidas": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "antiguedad_minima_meses": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "empleo_minimo_trabajadores": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "admite_consorcio": {
+          "type": [
+            "boolean",
+            "null"
+          ],
+          "description": "True si la fuente permite expresamente consorcios/cooperación formal; false si los excluye; null si no se menciona. Para UTE o agrupaciones no denominadas consorcio, reflejar en texto_beneficiario_fino y descripcion_para_ficha."
+        },
+        "condiciones_consorcio": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "minimo_miembros_consorcio": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "maximo_miembros_consorcio": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "requiere_pyme_en_consorcio": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "porcentaje_maximo_por_entidad_o_grupo": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "descripcion_para_ficha": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Narrativa para ficha ejecutiva. Interpretar y sintetizar, no copiar literalmente."
+        },
+        "confianza": {
+          "$ref": "#/$defs/confianza"
+        },
+        "evidencias": {
+          "$ref": "#/$defs/evidencias"
+        }
+      },
+      "required": [
+        "estado_extraccion",
+        "tipo_beneficiario_fino",
+        "texto_beneficiario_fino",
+        "formas_juridicas_excluidas",
+        "antiguedad_minima_meses",
+        "empleo_minimo_trabajadores",
+        "admite_consorcio",
+        "condiciones_consorcio",
+        "minimo_miembros_consorcio",
+        "maximo_miembros_consorcio",
+        "requiere_pyme_en_consorcio",
+        "porcentaje_maximo_por_entidad_o_grupo",
+        "descripcion_para_ficha",
+        "confianza",
+        "evidencias"
+      ],
+      "description": "Bloque de granularización del beneficiario respecto de BDNS. El filtro tipo_beneficiario_fino es atómico y clasifica al beneficiario formal; los requisitos internos de agrupaciones/consorcios se explican en campos textuales y condiciones_consorcio."
+    },
+    "criterios_exclusion": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "estado_extraccion": {
+          "$ref": "#/$defs/estado_extraccion"
+        },
+        "art13_lgs_verificado": {
+          "type": "boolean",
+          "description": "true si las fuentes mencionan prohibiciones del art. 13 LGS en cualquier forma."
+        },
+        "exclusiones_especificas": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "exclusiones_criticas_para_matching": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "descripcion_para_ficha": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "confianza": {
+          "$ref": "#/$defs/confianza"
+        },
+        "evidencias": {
+          "$ref": "#/$defs/evidencias"
+        }
+      },
+      "required": [
+        "estado_extraccion",
+        "art13_lgs_verificado",
+        "exclusiones_especificas",
+        "exclusiones_criticas_para_matching",
+        "descripcion_para_ficha",
+        "confianza",
+        "evidencias"
+      ]
+    },
+    "requisitos_adicionales": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "estado_extraccion": {
+          "$ref": "#/$defs/estado_extraccion"
+        },
+        "requisitos": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "tipo_requisito": {
+                "type": "string",
+                "enum": [
+                  "beneficiario",
+                  "proyecto",
+                  "consorcio",
+                  "economico",
+                  "temporal",
+                  "documental",
+                  "sectorial",
+                  "otro",
+                  "no_determinado"
+                ]
+              },
+              "descripcion": {
+                "type": "string"
+              },
+              "es_filtro_duro": {
+                "type": [
+                  "boolean",
+                  "null"
+                ]
+              }
+            },
+            "required": [
+              "tipo_requisito",
+              "descripcion",
+              "es_filtro_duro"
+            ]
+          }
+        },
+        "descripcion_para_ficha": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "confianza": {
+          "$ref": "#/$defs/confianza"
+        },
+        "evidencias": {
+          "$ref": "#/$defs/evidencias"
+        }
+      },
+      "required": [
+        "estado_extraccion",
+        "requisitos",
+        "descripcion_para_ficha",
+        "confianza",
+        "evidencias"
+      ]
+    },
+    "criterios_seleccion": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "estado_extraccion": {
+          "$ref": "#/$defs/estado_extraccion"
+        },
+        "modalidad_lgs_refuerzo": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "enum": [
+            "concurrencia_competitiva",
+            "concesion_directa_nominativa",
+            "concesion_directa_norma",
+            "concesion_directa_excepcional",
+            "mixta_por_lineas",
+            "no_determinado",
+            null
+          ],
+          "description": "Categoría jurídica de refuerzo. No sustituye a tipoConvocatoria BDNS; sirve para contraste y ficha."
+        },
+        "mecanismo_seleccion": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "enum": [
+            "valoracion_baremo",
+            "prelacion_por_puntuacion",
+            "orden_llegada",
+            "agotamiento_credito",
+            "todos_los_requisitos_hasta_credito",
+            "prorrateo",
+            "sorteo",
+            "sorteo_condicional",
+            "decision_organo_motivada",
+            "nominativa_presupuestaria",
+            "impuesto_por_norma",
+            "concesion_directa_identificada",
+            "varios_por_linea",
+            "no_determinado",
+            null
+          ],
+          "description": "Filtro anidado real de adjudicación. Priorizar el mecanismo operativo sobre la etiqueta general BDNS."
+        },
+        "modalidad_lgs_texto": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "coherencia_tipo_bdns": {
+          "type": "string",
+          "enum": [
+            "coherente",
+            "posible_discrepancia",
+            "no_comprobable",
+            "no_informado"
+          ]
+        },
+        "orden_entrada_relevante": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "baremo": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/baremo_item"
+          }
+        },
+        "puntuacion_minima_acceso": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "descripcion_para_ficha": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "confianza": {
+          "$ref": "#/$defs/confianza"
+        },
+        "evidencias": {
+          "$ref": "#/$defs/evidencias"
+        }
+      },
+      "required": [
+        "estado_extraccion",
+        "modalidad_lgs_refuerzo",
+        "mecanismo_seleccion",
+        "modalidad_lgs_texto",
+        "coherencia_tipo_bdns",
+        "orden_entrada_relevante",
+        "baremo",
+        "puntuacion_minima_acceso",
+        "descripcion_para_ficha",
+        "confianza",
+        "evidencias"
+      ]
+    },
+    "requisitos_geograficos": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Solo contiene requisitos geográficos positivos. No existe G5: si no hay restricción, usar estado_restriccion = sin_restriccion_explicita y condiciones_suficientes = [].",
+      "properties": {
+        "estado_extraccion": {
+          "$ref": "#/$defs/estado_extraccion"
+        },
+        "estado_restriccion": {
+          "type": "string",
+          "enum": [
+            "sin_restriccion_explicita",
+            "restriccion_detectada",
+            "no_determinado"
+          ]
+        },
+        "G1": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/geo_g1"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "G2": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/geo_g2"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "G3": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/geo_g3"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "G4": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/geo_g4"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "condiciones_suficientes": {
+          "type": "array",
+          "description": "Forma normal DNF. Cada array interno es un AND de requisitos; el array externo es OR. Ej: [[G1,G3],[G2]] equivale a (G1 AND G3) OR G2.",
+          "items": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": [
+                "G1",
+                "G2",
+                "G3",
+                "G4"
+              ]
+            }
+          }
+        },
+        "descripcion_logica": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "confianza": {
+          "$ref": "#/$defs/confianza"
+        },
+        "evidencias": {
+          "$ref": "#/$defs/evidencias"
+        }
+      },
+      "required": [
+        "estado_extraccion",
+        "estado_restriccion",
+        "G1",
+        "G2",
+        "G3",
+        "G4",
+        "condiciones_suficientes",
+        "descripcion_logica",
+        "confianza",
+        "evidencias"
+      ]
+    },
+    "economia_ayuda": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "estado_extraccion": {
+          "$ref": "#/$defs/estado_extraccion"
+        },
+        "presupuesto_minimo_proyecto": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "presupuesto_maximo_proyecto": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "importe_maximo_por_beneficiario": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "importe_minimo_por_beneficiario": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "importe_minimo_solicitud": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "intensidad_maxima_pct": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "ayuda_minima_pct": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "regla_calculo_ayuda": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "enum": [
+            "importe_fijo",
+            "importe_maximo",
+            "intensidad_sobre_presupuesto_subvencionable",
+            "modulo",
+            "tramo",
+            "coste_unitario",
+            "prorrata",
+            "mixta",
+            "no_determinado",
+            null
+          ],
+          "description": "Regla canónica de determinación de la cuantía. Campo útil para matching y consultoría: importe fijo, máximo, intensidad sobre presupuesto/gasto elegible, módulos, tramos, coste unitario, prorrata o mixta."
+        },
+        "modalidad_pago": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "enum": [
+            "previa_justificacion",
+            "anticipado",
+            "a_cuenta",
+            "fraccionado",
+            "por_hitos",
+            "anticipado_y_a_cuenta",
+            "mixto",
+            "no_determinado",
+            null
+          ],
+          "description": "Modalidad canónica de pago si el texto la permite inferir. No confundir anticipo reembolsable como instrumento con pago anticipado de una subvención."
+        },
+        "garantia_pago": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "enum": [
+            "requiere_garantia",
+            "no_requiere_garantia",
+            "depende",
+            "no_determinado",
+            null
+          ],
+          "description": "Exigencia de garantías asociadas al pago anticipado u otras modalidades de pago. Usar depende si varía por beneficiario, importe, línea o condición."
+        },
+        "intensidades_detalle": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/intensidad_detalle"
+          }
+        },
+        "categorias_gasto_elegible": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "gastos_excluidos": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "costes_indirectos_texto": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "anticipos_texto": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "descripcion_para_ficha": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "confianza": {
+          "$ref": "#/$defs/confianza"
+        },
+        "evidencias": {
+          "$ref": "#/$defs/evidencias"
+        }
+      },
+      "required": [
+        "estado_extraccion",
+        "presupuesto_minimo_proyecto",
+        "presupuesto_maximo_proyecto",
+        "importe_maximo_por_beneficiario",
+        "importe_minimo_por_beneficiario",
+        "importe_minimo_solicitud",
+        "intensidad_maxima_pct",
+        "ayuda_minima_pct",
+        "regla_calculo_ayuda",
+        "modalidad_pago",
+        "garantia_pago",
+        "intensidades_detalle",
+        "categorias_gasto_elegible",
+        "gastos_excluidos",
+        "costes_indirectos_texto",
+        "anticipos_texto",
+        "descripcion_para_ficha",
+        "confianza",
+        "evidencias"
+      ]
+    },
+    "compatibilidad_acumulacion": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "estado_extraccion": {
+          "$ref": "#/$defs/estado_extraccion"
+        },
+        "acumulable_con_otras_ayudas": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "compatibilidad_canonica": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "enum": [
+            "compatible_con_limites",
+            "incompatible_misma_finalidad",
+            "incompatible_total",
+            "compatible_sin_restriccion_explicita",
+            "no_declarado",
+            "no_determinado",
+            null
+          ]
+        },
+        "restricciones_acumulacion": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "regimen_acumulacion_detectado": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "enum": [
+            "de_minimis_exclusivo",
+            "rgec_con_tope_intensidad",
+            "mixto",
+            "sin_restriccion_explicita",
+            "no_determinado",
+            null
+          ]
+        },
+        "descripcion_para_ficha": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "confianza": {
+          "$ref": "#/$defs/confianza"
+        },
+        "evidencias": {
+          "$ref": "#/$defs/evidencias"
+        }
+      },
+      "required": [
+        "estado_extraccion",
+        "acumulable_con_otras_ayudas",
+        "compatibilidad_canonica",
+        "restricciones_acumulacion",
+        "regimen_acumulacion_detectado",
+        "descripcion_para_ficha",
+        "confianza",
+        "evidencias"
+      ]
+    },
+    "regimen_ue": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "estado_extraccion": {
+          "$ref": "#/$defs/estado_extraccion"
+        },
+        "tipo_canonico": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "enum": [
+            "fuera_art_107_tfue",
+            "minimis_general",
+            "minimis_agricola",
+            "minimis_pesca",
+            "minimis_sieg",
+            "rgec",
+            "notificada_autorizada",
+            "sieg_decision",
+            "marco_temporal",
+            "mixto",
+            "otro",
+            "no_declarado",
+            "no_determinado",
+            null
+          ]
+        },
+        "reglamento_canonico": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "enum": [
+            "reg_ue_2023_2831",
+            "reg_ue_1408_2013",
+            "reg_ue_717_2014",
+            "reg_ue_360_2012",
+            "reg_ue_651_2014",
+            "reg_ue_702_2014",
+            "reg_ue_2022_2472",
+            "decision_2012_21_ue",
+            "marco_temporal_covid",
+            "marco_temporal_crisis_ucrania",
+            "otro",
+            "no_declarado",
+            "no_determinado",
+            null
+          ]
+        },
+        "articulos_rgec": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/articulo_rgec"
+          }
+        },
+        "texto_declarado": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Texto declarado o síntesis fiel del régimen UE encontrado. Si aparece un código SA o referencia de ayuda de Estado, puede reflejarse aquí como texto, no como valor normalizado."
+        },
+        "fuente_preferente": {
+          "type": "string",
+          "enum": [
+            "bases_reguladoras",
+            "texto_convocatoria",
+            "convocatoria_detalle_bdns",
+            "mixta",
+            "no_identificado"
+          ]
+        },
+        "coherencia_bdns": {
+          "type": "string",
+          "enum": [
+            "coincide",
+            "bdns_no_informa",
+            "posible_discrepancia",
+            "no_comprobado"
+          ]
+        },
+        "descripcion_para_ficha": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "confianza": {
+          "$ref": "#/$defs/confianza"
+        },
+        "evidencias": {
+          "$ref": "#/$defs/evidencias"
+        }
+      },
+      "required": [
+        "estado_extraccion",
+        "tipo_canonico",
+        "reglamento_canonico",
+        "articulos_rgec",
+        "texto_declarado",
+        "fuente_preferente",
+        "coherencia_bdns",
+        "descripcion_para_ficha",
+        "confianza",
+        "evidencias"
+      ],
+      "description": "Régimen UE extraído de bases/convocatoria y contrastable con BDNS cuando exista. No extraer ni inferir códigos SA como campo propio; si aparecen, pueden quedar solo en texto_declarado/evidencias o venir de ConvocatoriaDetalle."
+    },
+    "objeto_actividades_elegibles": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "estado_extraccion": {
+          "$ref": "#/$defs/estado_extraccion"
+        },
+        "ambitos_actividad": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "i_d_i",
+              "digitalizacion",
+              "energia",
+              "medio_ambiente",
+              "industria",
+              "movilidad",
+              "salud",
+              "defensa",
+              "agroalimentario",
+              "turismo",
+              "cultura",
+              "formacion",
+              "empleo",
+              "internacionalizacion",
+              "vivienda",
+              "emprendimiento",
+              "inversion_productiva",
+              "innovacion_social",
+              "otro",
+              "no_determinado"
+            ]
+          }
+        },
+        "actividades_concretas": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "actividades_excluidas": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "descripcion_para_ficha": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Texto interpretativo para consultor: qué financia, qué proyectos encajan y alcance. No copiar literalmente."
+        },
+        "confianza": {
+          "$ref": "#/$defs/confianza"
+        },
+        "evidencias": {
+          "$ref": "#/$defs/evidencias"
+        }
+      },
+      "required": [
+        "estado_extraccion",
+        "ambitos_actividad",
+        "actividades_concretas",
+        "actividades_excluidas",
+        "descripcion_para_ficha",
+        "confianza",
+        "evidencias"
+      ]
+    },
+    "presentacion_solicitudes": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "estado_extraccion": {
+          "$ref": "#/$defs/estado_extraccion"
+        },
+        "canal_presentacion": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "firma_electronica_requerida": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "requisitos_presentacion": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "efecto_incentivador": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "efecto_incentivador_texto": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "descripcion_para_ficha": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "confianza": {
+          "$ref": "#/$defs/confianza"
+        },
+        "evidencias": {
+          "$ref": "#/$defs/evidencias"
+        }
+      },
+      "required": [
+        "estado_extraccion",
+        "canal_presentacion",
+        "firma_electronica_requerida",
+        "requisitos_presentacion",
+        "efecto_incentivador",
+        "efecto_incentivador_texto",
+        "descripcion_para_ficha",
+        "confianza",
+        "evidencias"
+      ]
+    },
+    "documentacion_exigida": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "estado_extraccion": {
+          "$ref": "#/$defs/estado_extraccion"
+        },
+        "documentos_obligatorios": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "documentos_condicionales": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "documentos_criticos_para_admisibilidad": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "descripcion_para_ficha": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "confianza": {
+          "$ref": "#/$defs/confianza"
+        },
+        "evidencias": {
+          "$ref": "#/$defs/evidencias"
+        }
+      },
+      "required": [
+        "estado_extraccion",
+        "documentos_obligatorios",
+        "documentos_condicionales",
+        "documentos_criticos_para_admisibilidad",
+        "descripcion_para_ficha",
+        "confianza",
+        "evidencias"
+      ]
+    },
+    "obligaciones_beneficiario": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "estado_extraccion": {
+          "$ref": "#/$defs/estado_extraccion"
+        },
+        "obligaciones_principales": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "plazo_ejecucion": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Plazo general definido en bases o convocatoria si afecta a la ficha."
+        },
+        "fecha_inicio_obligatoria": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "obligaciones_publicidad": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "obligaciones_control": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "descripcion_para_ficha": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "confianza": {
+          "$ref": "#/$defs/confianza"
+        },
+        "evidencias": {
+          "$ref": "#/$defs/evidencias"
+        }
+      },
+      "required": [
+        "estado_extraccion",
+        "obligaciones_principales",
+        "plazo_ejecucion",
+        "fecha_inicio_obligatoria",
+        "obligaciones_publicidad",
+        "obligaciones_control",
+        "descripcion_para_ficha",
+        "confianza",
+        "evidencias"
+      ]
+    },
+    "justificacion": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "estado_extraccion": {
+          "$ref": "#/$defs/estado_extraccion"
+        },
+        "plazo_justificacion": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "modalidad_justificacion": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "documentos_justificacion": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "pago_texto": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "reintegro_texto": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "descripcion_para_ficha": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "confianza": {
+          "$ref": "#/$defs/confianza"
+        },
+        "evidencias": {
+          "$ref": "#/$defs/evidencias"
+        }
+      },
+      "required": [
+        "estado_extraccion",
+        "plazo_justificacion",
+        "modalidad_justificacion",
+        "documentos_justificacion",
+        "pago_texto",
+        "reintegro_texto",
+        "descripcion_para_ficha",
+        "confianza",
+        "evidencias"
+      ]
+    },
+    "lineas_ayuda": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Bloque ligero para detectar líneas de ayuda con reglas diferenciales sin replicar todo el schema por línea. Si hay líneas materiales, activar alerta lineas_con_reglas_diferenciales en control_calidad.",
+      "properties": {
+        "hay_lineas_diferenciadas": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "lineas": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/linea_ayuda"
+          }
+        },
+        "descripcion_para_ficha": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "confianza": {
+          "$ref": "#/$defs/confianza"
+        },
+        "evidencias": {
+          "$ref": "#/$defs/evidencias"
+        }
+      },
+      "required": [
+        "hay_lineas_diferenciadas",
+        "lineas",
+        "descripcion_para_ficha",
+        "confianza",
+        "evidencias"
+      ]
+    },
+    "control_calidad": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Auditoría terminal. El modelo no decide requiere_revision final ni calcula un threshold global; solo emite alertas accionables y texto de revisión. La decisión final debe computarla la máquina de estados del sistema.",
+      "properties": {
+        "alertas": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "contradiccion_bases_convocatoria",
+              "remision_a_otro_documento",
+              "lineas_con_reglas_diferenciales",
+              "geografia_no_determinista",
+              "municipios_en_anexo_variable",
+              "regimen_ue_no_declarado",
+              "regimen_ue_discrepa_bdns",
+              "modalidad_seleccion_ambigua",
+              "mecanismo_seleccion_no_determinado",
+              "compatibilidad_acumulacion_compleja",
+              "baremo_incompleto",
+              "beneficiario_ambiguo",
+              "economia_ayuda_ambigua",
+              "empresa_unica_requiere_control",
+              "documentacion_critica_no_determinada"
+            ]
+          },
+          "description": "No incluir alertas por prudencia general. Solo si afectan a matching, elegibilidad, importes/intensidad, régimen UE o necesidad real de revisión humana."
+        },
+        "texto_revision": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Texto accionable para operador o email. Null si no hay alertas materiales."
+        },
+        "resumen_extraccion": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Resumen ejecutivo breve de la extracción para operador del sistema."
+        },
+        "completitud_campos_criticos": {
+          "type": "string",
+          "enum": [
+            "alta",
+            "media",
+            "baja"
+          ]
+        }
+      },
+      "required": [
+        "alertas",
+        "texto_revision",
+        "resumen_extraccion",
+        "completitud_campos_criticos"
+      ]
+    }
+  },
+  "required": [
+    "beneficiario_fino",
+    "criterios_exclusion",
+    "requisitos_adicionales",
+    "criterios_seleccion",
+    "requisitos_geograficos",
+    "economia_ayuda",
+    "compatibilidad_acumulacion",
+    "regimen_ue",
+    "objeto_actividades_elegibles",
+    "presentacion_solicitudes",
+    "documentacion_exigida",
+    "obligaciones_beneficiario",
+    "justificacion",
+    "lineas_ayuda",
+    "control_calidad"
+  ],
+  "description": "Análisis NLP jurídico-operativo de bases reguladoras/convocatorias. Versión 5.0.2: beneficiario fino atómico, DNF geográfica, evidencias normalizadas, y campos económicos de regla de cálculo/pago/garantía."
+}
