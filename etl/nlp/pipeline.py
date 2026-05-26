@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import logging
 import os
+import signal
 import time
 from dataclasses import dataclass, field
 from datetime import date, datetime, timezone
@@ -24,6 +25,46 @@ _SELECT_PENDING_BASE = (
     "SELECT s.id, s.url_bases_reguladoras, s.documentos "
     "FROM l0.nacional_subvenciones s"
 )
+
+
+# -----------------------------------------------------------------------------
+# Hito 3.2.a — Cancelación cooperativa SIGTERM
+# -----------------------------------------------------------------------------
+# El endpoint POST /nlp/runs/{id}/cancel envía SIGTERM al subprocess. El handler
+# instalado en run_batch setea un flag global y el bucle principal lo chequea
+# entre items para romper limpiamente y finalizar la fila con status='cancelled'.
+
+_cancel_requested = False
+
+
+def request_cancel() -> None:
+    """Marca el flag global de cancelación. Idempotente."""
+    global _cancel_requested
+    _cancel_requested = True
+
+
+def is_cancel_requested() -> bool:
+    return _cancel_requested
+
+
+def _reset_cancel_flag() -> None:
+    global _cancel_requested
+    _cancel_requested = False
+
+
+def _install_sigterm_handler() -> None:
+    """Registra handler de SIGTERM que setea el flag de cancelación.
+
+    No reemplaza el handler en Windows (señal no soportada con la misma semántica).
+    """
+    if os.name == "nt":
+        return
+
+    def _handler(signum, frame):  # noqa: ARG001 — firma estándar de signal handlers.
+        request_cancel()
+        logger.warning("[nlp] SIGTERM received — cancel after current item")
+
+    signal.signal(signal.SIGTERM, _handler)
 
 
 def _validate_selector_args(
@@ -338,6 +379,25 @@ def select_pending(
         return cur.fetchall()
 
 
+def count_pending(
+    conn,
+    *,
+    anos: Optional[tuple[int, int]] = None,
+    meses: Optional[tuple[int, int]] = None,
+    codigo_bdns: Optional[int] = None,
+    todo: bool = False,
+) -> int:
+    """Cuenta filas pendientes con la misma semántica que :func:`select_pending` (sin LIMIT)."""
+    sql, params = _build_select_pending_sql(
+        anos=anos, meses=meses, codigo_bdns=codigo_bdns, todo=todo, limit=None
+    )
+    count_sql = f"SELECT COUNT(*) FROM ({sql}) AS _pending"
+    with conn.cursor() as cur:
+        cur.execute(count_sql, params)
+        row = cur.fetchone()
+    return int(row[0]) if row else 0
+
+
 def _check_cache_hit(conn, document_key: str) -> bool:
     """Lookup ligero: True si subvenciones_nlp.document_key existe con valid/partial."""
     with conn.cursor() as cur:
@@ -369,6 +429,8 @@ def run_batch(
     Lanza :class:`ValueError` ante combinaciones inválidas (defense in depth).
     """
     _validate_selector_args(anos, meses, codigo_bdns, todo)
+    _reset_cancel_flag()
+    _install_sigterm_handler()
     started = time.time()
     stats = BatchStats()
     schema = None if dry_run else load_schema()
@@ -429,7 +491,16 @@ def run_batch(
             len(rows),
         )
 
+        cancelled = False
         for row in rows:
+            if is_cancel_requested():
+                cancelled = True
+                logger.warning(
+                    "[nlp] cancel requested — breaking loop run_id=%d processed=%d",
+                    run_id,
+                    stats.processed,
+                )
+                break
             subv_id, url, documentos = row
             resolved = resolve_document(
                 url_bases_reguladoras=url,
@@ -670,10 +741,12 @@ def run_batch(
             logger.info("[nlp] id=%d step=persist status=%s", subv_id, validation.status)
 
         stats.duration_seconds = time.time() - started
+        final_status = "cancelled" if cancelled else "ok"
         logger.info(
-            "[nlp] done run_id=%d processed=%d valid=%d partial=%d invalid=%d "
+            "[nlp] done run_id=%d status=%s processed=%d valid=%d partial=%d invalid=%d "
             "skipped_no_doc=%d dedup_hits=%d duration=%.1fs",
             run_id,
+            final_status,
             stats.processed,
             stats.valid,
             stats.partial,
@@ -682,7 +755,12 @@ def run_batch(
             stats.dedup_hits,
             stats.duration_seconds,
         )
-        _finalize_nlp_run(conn, run_id, status="ok")
+        _finalize_nlp_run(
+            conn,
+            run_id,
+            status=final_status,
+            error="cancelled by user (SIGTERM)" if cancelled else None,
+        )
         return stats
     except Exception as exc:
         try:

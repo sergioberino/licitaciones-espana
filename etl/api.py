@@ -1,6 +1,7 @@
 import argparse
 import json
 import os
+import signal
 import subprocess
 import sys
 from datetime import datetime
@@ -1765,6 +1766,104 @@ def nlp_run_detail(run_id: int):
                 )
                 items = [_serialize_nlp_row(dict(r)) for r in cur.fetchall()]
         return {"run": _serialize_nlp_row(dict(run)), "items": items}
+    except psycopg2.Error as e:
+        return JSONResponse(status_code=503, content={"detail": str(e)})
+
+
+@app.post(
+    "/nlp/runs/{run_id}/cancel",
+    summary="Cancel a running NLP batch (SIGTERM)",
+    description="Envía SIGTERM al subprocess del run y marca cancel_requested_at. "
+    "El pipeline cierra cooperativamente con status='cancelled'.",
+)
+def nlp_run_cancel(run_id: int):
+    db_url = get_database_url()
+    if not db_url:
+        return JSONResponse(status_code=503, content={"detail": "database unavailable"})
+    try:
+        with psycopg2.connect(db_url) as conn:
+            with conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor) as cur:
+                cur.execute(
+                    "SELECT run_id, status, pid FROM ops.nlp_runs WHERE run_id = %s",
+                    (run_id,),
+                )
+                row = cur.fetchone()
+            if row is None:
+                raise HTTPException(status_code=404, detail=f"run {run_id} no encontrado")
+            if row["status"] != "running":
+                return JSONResponse(
+                    status_code=409,
+                    content={
+                        "detail": f"run {run_id} no está en ejecución (status={row['status']})"
+                    },
+                )
+            pid = row["pid"]
+            if pid is None:
+                return JSONResponse(
+                    status_code=422,
+                    content={"detail": "no PID recorded for this run"},
+                )
+            try:
+                os.kill(pid, signal.SIGTERM)
+            except ProcessLookupError:
+                return JSONResponse(
+                    status_code=422,
+                    content={"detail": f"process {pid} not found"},
+                )
+            except PermissionError:
+                return JSONResponse(
+                    status_code=500,
+                    content={"detail": f"permission denied sending SIGTERM to pid {pid}"},
+                )
+            with conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor) as cur:
+                cur.execute(
+                    """
+                    UPDATE ops.nlp_runs
+                       SET cancel_requested_at = NOW()
+                     WHERE run_id = %s
+                     RETURNING cancel_requested_at
+                    """,
+                    (run_id,),
+                )
+                updated = cur.fetchone()
+            conn.commit()
+        cancel_at = updated["cancel_requested_at"] if updated else None
+        payload = {
+            "run_id": run_id,
+            "signal": "SIGTERM",
+            "pid": pid,
+            "cancel_requested_at": (
+                cancel_at.isoformat() if isinstance(cancel_at, datetime) else cancel_at
+            ),
+        }
+        return JSONResponse(status_code=202, content=payload)
+    except HTTPException:
+        raise
+    except psycopg2.Error as e:
+        return JSONResponse(status_code=503, content={"detail": str(e)})
+
+
+@app.get(
+    "/nlp/estimate",
+    summary="Estimate items count and cost for NLP run",
+    description="v1: solo modo todo=true. Estima count, coste y duración a partir "
+    "de pendientes y promedios de los últimos 50 logs valid/partial.",
+)
+def nlp_estimate(todo: bool = False):
+    if not todo:
+        return JSONResponse(
+            status_code=422,
+            content={"detail": "v1 supports todo=true only"},
+        )
+    db_url = get_database_url()
+    if not db_url:
+        return JSONResponse(status_code=503, content={"detail": "database unavailable"})
+    try:
+        from etl.nlp.estimate import estimate_nlp_run
+
+        with psycopg2.connect(db_url) as conn:
+            result = estimate_nlp_run(conn, todo=True)
+        return result
     except psycopg2.Error as e:
         return JSONResponse(status_code=503, content={"detail": str(e)})
 

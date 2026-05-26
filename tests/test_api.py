@@ -608,3 +608,117 @@ def test_nlp_pending_filters_by_anos(client, db_required, pg_conn):
         with pg_conn.cursor() as cur:
             cur.execute("DELETE FROM l0.nacional_subvenciones WHERE id IN %s", (test_ids,))
         pg_conn.commit()
+
+
+# -----------------------------------------------------------------------------
+# Hito 3.2.b — GET /nlp/estimate
+# -----------------------------------------------------------------------------
+
+
+def test_nlp_estimate_requires_todo_true(client):
+    r = client.get("/nlp/estimate")
+    assert r.status_code == 422
+    assert "todo=true" in r.json().get("detail", "")
+
+
+def test_nlp_estimate_todo_returns_structure(client, db_required):
+    r = client.get("/nlp/estimate?todo=true")
+    assert r.status_code == 200, r.text
+    body = r.json()
+    assert "items_count" in body
+    assert isinstance(body["items_count"], int)
+    assert "based_on" in body
+    assert "duration_estimate_seconds" in body
+
+
+# -----------------------------------------------------------------------------
+# Hito 3.2.a — POST /nlp/runs/{run_id}/cancel
+# -----------------------------------------------------------------------------
+
+
+def test_nlp_run_cancel_not_found(client, db_required):
+    r = client.post("/nlp/runs/999999999/cancel")
+    assert r.status_code == 404
+
+
+def test_nlp_run_cancel_not_running(client, db_required, pg_conn):
+    with pg_conn.cursor() as cur:
+        cur.execute(
+            """
+            INSERT INTO ops.nlp_runs (selector_kind, selector_value, status, pid)
+            VALUES ('todo', '{}'::jsonb, 'ok', %s)
+            RETURNING run_id
+            """,
+            (os.getpid(),),
+        )
+        run_id = cur.fetchone()[0]
+    pg_conn.commit()
+    try:
+        r = client.post(f"/nlp/runs/{run_id}/cancel")
+        assert r.status_code == 409
+    finally:
+        with pg_conn.cursor() as cur:
+            cur.execute("DELETE FROM ops.nlp_runs WHERE run_id = %s", (run_id,))
+        pg_conn.commit()
+
+
+def test_nlp_run_cancel_no_pid(client, db_required, pg_conn):
+    with pg_conn.cursor() as cur:
+        cur.execute(
+            """
+            INSERT INTO ops.nlp_runs (selector_kind, selector_value, status, pid)
+            VALUES ('todo', '{}'::jsonb, 'running', NULL)
+            RETURNING run_id
+            """
+        )
+        run_id = cur.fetchone()[0]
+    pg_conn.commit()
+    try:
+        r = client.post(f"/nlp/runs/{run_id}/cancel")
+        assert r.status_code == 422
+        assert "pid" in r.json().get("detail", "").lower()
+    finally:
+        with pg_conn.cursor() as cur:
+            cur.execute("DELETE FROM ops.nlp_runs WHERE run_id = %s", (run_id,))
+        pg_conn.commit()
+
+
+def test_nlp_run_cancel_sends_sigterm(client, db_required, pg_conn, monkeypatch):
+    kill_calls: list[tuple] = []
+
+    def _record_kill(pid, sig):
+        kill_calls.append((pid, sig))
+
+    with pg_conn.cursor() as cur:
+        cur.execute(
+            """
+            INSERT INTO ops.nlp_runs (selector_kind, selector_value, status, pid)
+            VALUES ('todo', '{}'::jsonb, 'running', %s)
+            RETURNING run_id
+            """,
+            (os.getpid(),),
+        )
+        run_id = cur.fetchone()[0]
+    pg_conn.commit()
+    monkeypatch.setattr("etl.api.os.kill", _record_kill)
+    try:
+        r = client.post(f"/nlp/runs/{run_id}/cancel")
+        assert r.status_code == 202
+        body = r.json()
+        assert body["run_id"] == run_id
+        assert body["signal"] == "SIGTERM"
+        assert "cancel_requested_at" in body
+        assert kill_calls == [(os.getpid(), __import__("signal").SIGTERM)]
+
+        with pg_conn.cursor() as cur:
+            cur.execute(
+                "SELECT cancel_requested_at FROM ops.nlp_runs WHERE run_id = %s",
+                (run_id,),
+            )
+            row = cur.fetchone()
+        assert row is not None
+        assert row[0] is not None
+    finally:
+        with pg_conn.cursor() as cur:
+            cur.execute("DELETE FROM ops.nlp_runs WHERE run_id = %s", (run_id,))
+        pg_conn.commit()

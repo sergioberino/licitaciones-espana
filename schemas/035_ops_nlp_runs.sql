@@ -27,6 +27,7 @@ CREATE TABLE IF NOT EXISTS ops.nlp_runs (
   output_tokens_total BIGINT       NOT NULL DEFAULT 0,
   pid                 INTEGER,
   error_message       TEXT,
+  cancel_requested_at TIMESTAMPTZ,
   CONSTRAINT chk_nlp_runs_selector_kind CHECK (selector_kind IN ('anos','codigo_bdns','todo')),
   CONSTRAINT chk_nlp_runs_status        CHECK (status IN ('running','ok','failed','cancelled'))
 );
