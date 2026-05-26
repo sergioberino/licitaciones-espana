@@ -499,11 +499,12 @@ def parsear_entry(entry):
         es_pyme = None
 
         if result is not None:
-            adjudicatario = safe_text(result, ".//cac:WinningParty/cac:PartyName/cbc:Name")
+            if not tiene_lotes:
+                adjudicatario = safe_text(result, ".//cac:WinningParty/cac:PartyName/cbc:Name")
 
-            winner_id = result.find(".//cac:WinningParty/cac:PartyIdentification/cbc:ID", NS)
-            if winner_id is not None and winner_id.text:
-                nif_adjudicatario = winner_id.text.strip()
+                winner_id = result.find(".//cac:WinningParty/cac:PartyIdentification/cbc:ID", NS)
+                if winner_id is not None and winner_id.text:
+                    nif_adjudicatario = winner_id.text.strip()
 
             if not tiene_lotes:
                 val = safe_text(
