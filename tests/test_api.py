@@ -15,7 +15,38 @@ def client():
     return TestClient(app)
 
 
-def test_nlp_analizar_dry_run_endpoint(client, tmp_path, monkeypatch):
+@pytest.fixture
+def nlp_analizar_cleanup():
+    """Borra filas residuales en ops.nlp_runs creadas por tests con Popen mockeado.
+
+    Los tests POST /nlp/analizar invocan ``_create_nlp_run()`` antes del Popen
+    real (Hito 3.1.d), así que aunque el Popen sea mock, la fila ya existe en
+    BBDD. El test añade su pid sentinela al list y este fixture lo borra al
+    finalizar. No-op si la BBDD no está disponible (entornos sin .env).
+    """
+    fake_pids: list[int] = []
+    yield fake_pids
+    if not fake_pids:
+        return
+    import psycopg2 as _psy
+    from etl.config import get_database_url as _get_db_url
+
+    db_url = _get_db_url()
+    if not db_url:
+        return
+    try:
+        with _psy.connect(db_url) as conn:
+            with conn.cursor() as cur:
+                cur.execute(
+                    "DELETE FROM ops.nlp_runs WHERE pid = ANY(%s)",
+                    (fake_pids,),
+                )
+            conn.commit()
+    except Exception:
+        pass
+
+
+def test_nlp_analizar_dry_run_endpoint(client, tmp_path, monkeypatch, nlp_analizar_cleanup):
     """Endpoint dispara subproceso dry_run, devuelve 202 con pid + log_path."""
     from etl.nlp.api import nlp_log_path, nlp_pid_path
 
@@ -28,6 +59,7 @@ def test_nlp_analizar_dry_run_endpoint(client, tmp_path, monkeypatch):
 
     mock_proc = MagicMock()
     mock_proc.pid = 4242
+    nlp_analizar_cleanup.append(4242)
 
     with patch("etl.api.subprocess.Popen", return_value=mock_proc) as popen:
         r = client.post("/nlp/analizar", json={"limit": 1, "dry_run": True, "todo": True})
@@ -117,11 +149,12 @@ def test_nlp_analizar_requires_selector(client, tmp_path, monkeypatch):
     assert r.status_code == 422
 
 
-def test_nlp_analizar_anos_propagates_to_cmd(client, tmp_path, monkeypatch):
+def test_nlp_analizar_anos_propagates_to_cmd(client, tmp_path, monkeypatch, nlp_analizar_cleanup):
     """--anos se propaga al subprocess cmd."""
     _patch_paths(monkeypatch, tmp_path)
     mock_proc = MagicMock()
     mock_proc.pid = 4243
+    nlp_analizar_cleanup.append(4243)
     with patch("etl.api.subprocess.Popen", return_value=mock_proc) as popen:
         r = client.post("/nlp/analizar", json={"anos": "2024-2026", "dry_run": True})
     assert r.status_code == 202
@@ -130,11 +163,12 @@ def test_nlp_analizar_anos_propagates_to_cmd(client, tmp_path, monkeypatch):
     assert "--dry-run" in cmd
 
 
-def test_nlp_analizar_anos_meses_propagates_to_cmd(client, tmp_path, monkeypatch):
+def test_nlp_analizar_anos_meses_propagates_to_cmd(client, tmp_path, monkeypatch, nlp_analizar_cleanup):
     """--anos + --meses se propagan al subprocess cmd."""
     _patch_paths(monkeypatch, tmp_path)
     mock_proc = MagicMock()
     mock_proc.pid = 4244
+    nlp_analizar_cleanup.append(4244)
     with patch("etl.api.subprocess.Popen", return_value=mock_proc) as popen:
         r = client.post("/nlp/analizar", json={"anos": "2024-2025", "meses": "3-6"})
     assert r.status_code == 202
@@ -143,11 +177,12 @@ def test_nlp_analizar_anos_meses_propagates_to_cmd(client, tmp_path, monkeypatch
     assert "--meses" in cmd and "3-6" in cmd
 
 
-def test_nlp_analizar_codigo_bdns_propagates(client, tmp_path, monkeypatch):
+def test_nlp_analizar_codigo_bdns_propagates(client, tmp_path, monkeypatch, nlp_analizar_cleanup):
     """--codigo-bdns se propaga al subprocess cmd."""
     _patch_paths(monkeypatch, tmp_path)
     mock_proc = MagicMock()
     mock_proc.pid = 4245
+    nlp_analizar_cleanup.append(4245)
     with patch("etl.api.subprocess.Popen", return_value=mock_proc) as popen:
         r = client.post("/nlp/analizar", json={"codigo_bdns": 12345})
     assert r.status_code == 202
@@ -155,11 +190,12 @@ def test_nlp_analizar_codigo_bdns_propagates(client, tmp_path, monkeypatch):
     assert "--codigo-bdns" in cmd and "12345" in cmd
 
 
-def test_nlp_analizar_todo_propagates(client, tmp_path, monkeypatch):
+def test_nlp_analizar_todo_propagates(client, tmp_path, monkeypatch, nlp_analizar_cleanup):
     """--todo se propaga al subprocess cmd."""
     _patch_paths(monkeypatch, tmp_path)
     mock_proc = MagicMock()
     mock_proc.pid = 4246
+    nlp_analizar_cleanup.append(4246)
     with patch("etl.api.subprocess.Popen", return_value=mock_proc) as popen:
         r = client.post("/nlp/analizar", json={"todo": True, "dry_run": True})
     assert r.status_code == 202
@@ -193,6 +229,61 @@ def test_nlp_analizar_meses_out_of_bounds_rejected(client, tmp_path, monkeypatch
     _patch_paths(monkeypatch, tmp_path)
     r = client.post("/nlp/analizar", json={"anos": "2024-2024", "meses": "0-13"})
     assert r.status_code == 422
+
+
+# -----------------------------------------------------------------------------
+# Cierre Hito 3.1 — POST /nlp/runs/recover (auto-heal manual)
+# -----------------------------------------------------------------------------
+
+
+def test_nlp_runs_recover_returns_503_when_no_db(client):
+    """Sin DATABASE_URL → 503 (no se puede recuperar nada sin BBDD)."""
+    with patch("etl.api.get_database_url", return_value=None):
+        r = client.post("/nlp/runs/recover")
+    assert r.status_code == 503
+
+
+def test_nlp_runs_recover_marks_dead_pid_failed(client, db_required, pg_conn):
+    """Inserta fila zombi (pid muerto) y verifica que el endpoint la cierra.
+
+    Reusa fixtures `db_required` + `pg_conn` ya definidos arriba para skip
+    consistente cuando no hay BBDD.
+    """
+    import json as _json
+
+    sentinel_pid = 99999990
+    with pg_conn.cursor() as cur:
+        cur.execute(
+            """
+            INSERT INTO ops.nlp_runs
+              (selector_kind, selector_value, status, pid)
+            VALUES ('todo', %s::jsonb, 'running', %s)
+            RETURNING run_id
+            """,
+            (_json.dumps({"todo": True, "sentinel": sentinel_pid}), sentinel_pid),
+        )
+        inserted_id = cur.fetchone()[0]
+    pg_conn.commit()
+    try:
+        r = client.post("/nlp/runs/recover")
+        assert r.status_code == 200, r.text
+        body = r.json()
+        assert "recovered" in body
+        assert body["recovered"] >= 1
+
+        with pg_conn.cursor() as cur:
+            cur.execute(
+                "SELECT status, error_message FROM ops.nlp_runs WHERE run_id = %s",
+                (inserted_id,),
+            )
+            row = cur.fetchone()
+        assert row is not None
+        assert row[0] == "failed"
+        assert row[1] is not None and "not found" in row[1]
+    finally:
+        with pg_conn.cursor() as cur:
+            cur.execute("DELETE FROM ops.nlp_runs WHERE run_id = %s", (inserted_id,))
+        pg_conn.commit()
 
 
 def test_subvenciones_ficha_returns_404_for_missing(client):

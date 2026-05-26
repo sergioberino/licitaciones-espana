@@ -127,6 +127,28 @@ def _startup_recover_stale_runs():
 
 
 @app.on_event("startup")
+def _startup_recover_stale_nlp_runs():
+    """Auto-heal stale 'running' nlp_runs records left by dead containers."""
+    db_url = get_database_url()
+    if not db_url:
+        app.state.stale_nlp_runs_recovered = 0
+        return
+    try:
+        from etl.nlp.recovery import recover_stale_nlp_runs
+
+        with psycopg2.connect(db_url) as conn:
+            conn.autocommit = False
+            count = recover_stale_nlp_runs(conn)
+            conn.commit()
+            app.state.stale_nlp_runs_recovered = count
+            if count:
+                print(f"[startup] Recovered {count} stale NLP run(s).")
+    except Exception as e:
+        app.state.stale_nlp_runs_recovered = 0
+        print(f"[startup] Could not recover stale NLP runs: {e}")
+
+
+@app.on_event("startup")
 def _startup_schema_check():
     """Log-only schema migration check on boot (no auto-apply, no state dependency)."""
     from etl import schema_check
@@ -1349,6 +1371,20 @@ def nlp_analizar(body: NlpAnalizarBody):
         except (OSError, ValueError):
             pid_file.unlink(missing_ok=True)
 
+    # Auto-heal: limpia runs zombi (procesos muertos / timeout) antes de spawnear
+    # uno nuevo. Evita filas 'running' colgadas si crashea el subprocess.
+    db_url = get_database_url()
+    if db_url:
+        try:
+            from etl.nlp.recovery import recover_stale_nlp_runs
+
+            with psycopg2.connect(db_url) as conn:
+                conn.autocommit = False
+                recover_stale_nlp_runs(conn)
+                conn.commit()
+        except Exception:
+            pass
+
     cmd = [sys.executable, "-m", "etl.cli", "nlp", "analizar", "--limit", str(body.limit)]
     if body.anos is not None:
         cmd.extend(["--anos", body.anos])
@@ -1367,7 +1403,6 @@ def nlp_analizar(body: NlpAnalizarBody):
     # al subprocess vía NLP_RUN_ID. Así la UI puede pollear /nlp/runs/{id} sin
     # carrera con el arranque del subprocess.
     run_id: int | None = None
-    db_url = get_database_url()
     if db_url:
         try:
             from etl.nlp.pipeline import _create_nlp_run, _selector_metadata
@@ -1732,6 +1767,29 @@ def nlp_run_detail(run_id: int):
         return {"run": _serialize_nlp_row(dict(run)), "items": items}
     except psycopg2.Error as e:
         return JSONResponse(status_code=503, content={"detail": str(e)})
+
+
+@app.post(
+    "/nlp/runs/recover",
+    summary="Manually trigger recovery of stale 'running' NLP runs",
+    description="Recovers orphaned NLP runs whose subprocess died or exceeded "
+    "MAX_NLP_RUN_DURATION_HOURS. Auto-runs on startup and pre-spawn, but exposed "
+    "for manual UI button.",
+)
+def nlp_runs_recover():
+    db_url = get_database_url()
+    if not db_url:
+        return JSONResponse(status_code=503, content={"detail": "database unavailable"})
+    try:
+        from etl.nlp.recovery import recover_stale_nlp_runs
+
+        with psycopg2.connect(db_url) as conn:
+            conn.autocommit = False
+            count = recover_stale_nlp_runs(conn)
+            conn.commit()
+        return {"recovered": count}
+    except Exception as e:
+        return JSONResponse(status_code=500, content={"detail": f"recovery failed: {e}"})
 
 
 @app.get(

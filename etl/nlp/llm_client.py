@@ -9,9 +9,7 @@ import json
 import os
 import time
 from dataclasses import dataclass
-from decimal import Decimal
 from pathlib import Path
-from typing import Optional
 
 import httpx
 
@@ -23,10 +21,6 @@ class LLMResult:
     output_tokens: int
     duration_ms: int
     model: str
-    # Campo informativo (Hito 3.1): el cálculo real lo hace pipeline.compute_cost_usd
-    # que tiene acceso a la conexión a Postgres y a ops.llm_pricing. Aquí queda como
-    # None para mantener llm_client agnóstico a la BBDD.
-    cost_usd: Optional[Decimal] = None
 
 
 SYSTEM_PROMPT = """Eres un analista legal especializado en bases reguladoras
