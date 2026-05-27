@@ -23,10 +23,12 @@ class LLMResult:
     model: str
 
 
-SYSTEM_PROMPT = """Eres un analista legal especializado en bases reguladoras
-de subvenciones españolas. Extrae la información estructurada según el esquema
-JSON v5.0.2 proporcionado. Sigue exactamente el schema; no inventes campos.
-Cuando un dato no aparezca, usa estado_extraccion='no_encontrado'."""
+def _load_prompt() -> str:
+    p = Path(__file__).parent / "prompts" / "v5_0_2.md"
+    return p.read_text(encoding="utf-8")
+
+
+SYSTEM_PROMPT: str = _load_prompt()
 
 
 def load_schema() -> dict:
