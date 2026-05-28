@@ -158,6 +158,30 @@ def add_subparser(subparsers: argparse._SubParsersAction):
         dest="dry_run",
         help="No llama al LLM ni persiste; muestra plan por item.",
     )
+    analizar.add_argument(
+        "--debug",
+        action="store_true",
+        default=False,
+        help=(
+            "Modo debug: loguea resolución (heurística), descarga HTTP "
+            "(status, content-type, bytes) y extracción (preview head/tail + "
+            "signals de portal). Util para diagnosticar input_char_count bajos "
+            "o falsos positivos del step=1. Solo stdout, no persiste."
+        ),
+    )
+    analizar.add_argument(
+        "--tipo-beneficiario",
+        type=int,
+        default=None,
+        dest="tipo_beneficiario",
+        metavar="ID",
+        choices=[1, 2, 3, 4, 5],
+        help=(
+            "Filtra la muestra a convocatorias cuyo array tipos_beneficiarios "
+            "incluye este id (dim.beneficiarios_subvenciones). Solo modos bulk "
+            "(--anos / --todo); se ignora con --codigo-bdns."
+        ),
+    )
     analizar.set_defaults(func=cmd_analizar)
 
 
@@ -221,6 +245,19 @@ def cmd_analizar(args: argparse.Namespace) -> int:
     limit: int = int(getattr(args, "limit", 100))
     force: bool = bool(getattr(args, "force", False))
     dry_run: bool = bool(getattr(args, "dry_run", False))
+    debug: bool = bool(getattr(args, "debug", False))
+    tipo_beneficiario: Optional[int] = getattr(args, "tipo_beneficiario", None)
+
+    if codigo_bdns is not None and tipo_beneficiario is not None:
+        logging.warning(
+            "[nlp][warn] --tipo-beneficiario ignored when --codigo-bdns is set"
+        )
+
+    if debug and limit and limit > 20:
+        logging.warning(
+            "[nlp][debug] limit=%d con --debug; el log puede volverse extenso (1 bloque por item).",
+            limit,
+        )
 
     # Guardraíles ANTES de abrir conexión a BBDD para fail-fast con exit_code=2.
     try:
@@ -249,9 +286,19 @@ def cmd_analizar(args: argparse.Namespace) -> int:
             meses=meses,
             codigo_bdns=codigo_bdns,
             todo=todo,
+            debug=debug,
+            tipo_beneficiario=tipo_beneficiario,
         )
     finally:
         conn.close()
+        # El endpoint API escribe nlp_analizar.pid; si el proceso termina sin que
+        # nadie llame a /nlp/current-run, el PID puede reutilizarse y bloquear la UI.
+        try:
+            from etl.nlp.api import nlp_pid_path
+
+            nlp_pid_path().unlink(missing_ok=True)
+        except OSError:
+            pass
 
     if dry_run:
         for item in stats.planned:

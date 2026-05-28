@@ -1327,6 +1327,14 @@ class NlpAnalizarBody(BaseModel):
     limit: int = 100
     force: bool = False
     dry_run: bool = False
+    debug: bool = False
+    tipo_beneficiario: int | None = None
+
+    @model_validator(mode="after")
+    def _validate_tipo_beneficiario(self):
+        if self.tipo_beneficiario is not None and self.tipo_beneficiario not in (1, 2, 3, 4, 5):
+            raise ValueError("tipo_beneficiario debe ser un id entre 1 y 5 (dim.beneficiarios_subvenciones).")
+        return self
 
     @model_validator(mode="after")
     def _validate_selector(self):
@@ -1399,6 +1407,10 @@ def nlp_analizar(body: NlpAnalizarBody):
         cmd.append("--force")
     if body.dry_run:
         cmd.append("--dry-run")
+    if body.debug:
+        cmd.append("--debug")
+    if body.tipo_beneficiario is not None:
+        cmd.extend(["--tipo-beneficiario", str(body.tipo_beneficiario)])
 
     # Hito 3.1.d — Crear la fila en ops.nlp_runs ANTES del Popen y pasar el id
     # al subprocess vía NLP_RUN_ID. Así la UI puede pollear /nlp/runs/{id} sin
@@ -1501,6 +1513,18 @@ def nlp_log(lines: int = 200):
 
 @app.get("/nlp/current-run", summary="Status of the current/last NLP run")
 def nlp_current_run():
+    # Auto-heal filas ops.nlp_runs zombi antes de evaluar el pid file.
+    db_url = get_database_url()
+    if db_url:
+        try:
+            from etl.nlp.recovery import recover_stale_nlp_runs
+
+            with psycopg2.connect(db_url) as conn:
+                recover_stale_nlp_runs(conn)
+                conn.commit()
+        except Exception:
+            pass
+
     pid_file = nlp_pid_path()
     if not pid_file.exists():
         return {"running": False, "pid": None, "started_at": None}
@@ -1895,13 +1919,14 @@ def nlp_runs_recover():
     "/nlp/recent",
     summary="Histórico de convocatorias analizadas (tab UI)",
     description="JOIN subvenciones_nlp + nacional_subvenciones por nlp_document_key, "
-    "ordenado por extracted_at DESC. Filtros: ?status, ?source.",
+    "ordenado por extracted_at DESC. Filtros: ?status, ?source, ?run_id.",
 )
 def nlp_recent(
     limit: int = 20,
     offset: int = 0,
     status: str | None = None,
     source: str | None = None,
+    run_id: int | None = None,
 ):
     if limit < 1 or limit > 200:
         return JSONResponse(status_code=422, content={"detail": "limit must be 1..200"})
@@ -1916,6 +1941,15 @@ def nlp_recent(
     if source is not None:
         where_clauses.append("n.document_source = %s")
         params.append(source)
+    # Restringe a fichas cuyo document_key aparezca en los logs LLM del run dado.
+    # EXISTS evita duplicar filas si el mismo document_key tiene varios logs en
+    # el mismo run (p.ej. --force que recalcula). Reusa idx_llm_br_logs_run.
+    if run_id is not None:
+        where_clauses.append(
+            "EXISTS (SELECT 1 FROM ops.llm_bases_reguladoras_logs l "
+            "WHERE l.run_id = %s AND l.document_key = n.document_key)"
+        )
+        params.append(run_id)
     where_sql = " AND ".join(where_clauses)
     params.extend([limit, offset])
     try:

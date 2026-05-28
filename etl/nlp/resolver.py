@@ -1,11 +1,16 @@
 """Heurística de resolución de documento normativo para Batch B.
 
-Orden:
-  1. url_bases_reguladoras                                  → step=1, source='url_bases_reguladoras'
-  2. documentos[] con descripcion/nombreFic 'bases reguladoras'  → step=2, source='documentos_array'
+Orden (reorder 2026-05-28, bases primero):
+  1. documentos[] con descripcion/nombreFic 'bases reguladoras'  → step=1, source='documentos_array'
+  2. url_bases_reguladoras                                  → step=2, source='url_bases_reguladoras'
   3. documentos[] con descripcion/nombreFic 'texto/documento de la convocatoria'
                                                             → step=3, source='texto_convocatoria'
   Fallback: None → pendiente, no error.
+
+Razón del reorder: el use case prioriza bases reguladoras como documento más
+relevante para reglas de elegibilidad, economía, obligaciones y régimen jurídico.
+Si no hay bases explícitas en documentos[], se intenta url_bases_reguladoras
+antes de caer al texto de convocatoria, aunque esto pueda activar browser headless.
 
 Estructura real de documentos[] (BDNS SNPSAP):
   {
@@ -147,16 +152,6 @@ def resolve_document(
     url_bases_reguladoras: Optional[str],
     documentos: Any,
 ) -> Optional[ResolvedDocument]:
-    if _is_descargable(url_bases_reguladoras):
-        normalized = _normalize_url(url_bases_reguladoras)
-        return ResolvedDocument(
-            document_key=_hash_key("url", normalized),
-            document_source="url_bases_reguladoras",
-            heuristic_step=1,
-            document_ref=url_bases_reguladoras,
-            document_name=None,
-        )
-
     bases_match = _scan_documentos(documentos, _BASES_REGULADORAS_HINT)
     if bases_match:
         doc_id, doc_name = bases_match
@@ -164,12 +159,22 @@ def resolve_document(
         return ResolvedDocument(
             document_key=_hash_key("url", _normalize_url(url)),
             document_source="documentos_array",
-            heuristic_step=2,
+            heuristic_step=1,
             document_ref=url,
             document_name=doc_name,
         )
 
     texto_match = _scan_documentos(documentos, _TEXTO_CONVOCATORIA_HINT)
+    if _is_descargable(url_bases_reguladoras):
+        normalized = _normalize_url(url_bases_reguladoras)
+        return ResolvedDocument(
+            document_key=_hash_key("url", normalized),
+            document_source="url_bases_reguladoras",
+            heuristic_step=2,
+            document_ref=url_bases_reguladoras,
+            document_name=None,
+        )
+
     if texto_match:
         doc_id, doc_name = texto_match
         url = BDNS_DOCUMENTO_URL_PATTERN.format(id=doc_id)

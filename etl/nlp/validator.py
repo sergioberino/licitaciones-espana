@@ -56,6 +56,19 @@ def _check_partial_rules(model: NlpBasesReguladoras) -> list[ValidationError]:
                 path="requisitos_geograficos.condiciones_suficientes",
                 message="estado_extraccion=explicito pero condiciones_suficientes=null",
             ))
+    # Cuando el LLM marca completitud_campos_criticos='baja' (típico en portales,
+    # índices o documentos que no son bases reguladoras), degradamos a partial
+    # para no contaminar la cache de matching con análisis vacíos persistidos como
+    # 'valid'. Ver regla v1 matcher: 'null en item → skip', así que partial es la
+    # señalización correcta (no se propagan los nulls como verdad).
+    if model.control_calidad.completitud_campos_criticos == "baja":
+        errors.append(ValidationError(
+            path="control_calidad.completitud_campos_criticos",
+            message=(
+                "completitud='baja' — análisis incompleto según LLM "
+                "(posible portal/listado o documento no normativo)"
+            ),
+        ))
     return errors
 
 

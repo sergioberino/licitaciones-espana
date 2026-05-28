@@ -10,6 +10,7 @@ import os
 import time
 from dataclasses import dataclass
 from pathlib import Path
+from typing import Any, Mapping
 
 import httpx
 
@@ -34,6 +35,38 @@ SYSTEM_PROMPT: str = _load_prompt()
 def load_schema() -> dict:
     p = Path(__file__).parent / "schema_v5_0_2.json"
     return json.loads(p.read_text())
+
+
+def _build_user_prompt(
+    text: str,
+    *,
+    tipo_documento: str | None = None,
+    convocatoria_detalle: Mapping[str, Any] | None = None,
+) -> str:
+    """Construye el prompt de usuario con contexto documental semántico.
+
+    No incluye trazas técnicas de resolución (heuristic_step, document_source,
+    document_key); esas pertenecen a logs/observabilidad, no al LLM.
+    """
+    if not tipo_documento and not convocatoria_detalle:
+        return text
+
+    parts = ["CONTEXTO_DOCUMENTAL"]
+    if tipo_documento:
+        parts.append(f"tipo_documento: {tipo_documento}")
+
+    if convocatoria_detalle:
+        bdns = json.dumps(
+            dict(convocatoria_detalle),
+            ensure_ascii=False,
+            indent=2,
+            sort_keys=True,
+            default=str,
+        )
+        parts.extend(["", "CONVOCATORIA_DETALLE_BDNS", bdns])
+
+    parts.extend(["", "TEXTO_DOCUMENTAL", text])
+    return "\n".join(parts)
 
 
 def _openai_call(prompt: str, schema: dict, model: str, api_key: str, timeout_s: float) -> LLMResult:
@@ -68,12 +101,23 @@ def _openai_call(prompt: str, schema: dict, model: str, api_key: str, timeout_s:
     )
 
 
-def analyze_document(text: str, schema: dict) -> LLMResult:
+def analyze_document(
+    text: str,
+    schema: dict,
+    *,
+    tipo_documento: str | None = None,
+    convocatoria_detalle: Mapping[str, Any] | None = None,
+) -> LLMResult:
     """Envia text al LLM con structured output v5.0.2."""
     provider = os.environ.get("NLP_LLM_PROVIDER", "openai")
     model = os.environ.get("NLP_LLM_MODEL", "gpt-5.4-nano")
     timeout_s = float(os.environ.get("NLP_LLM_TIMEOUT_S", "180"))
+    prompt = _build_user_prompt(
+        text,
+        tipo_documento=tipo_documento,
+        convocatoria_detalle=convocatoria_detalle,
+    )
     if provider == "openai":
         api_key = os.environ["OPENAI_API_KEY"]
-        return _openai_call(text, schema, model, api_key, timeout_s)
+        return _openai_call(prompt, schema, model, api_key, timeout_s)
     raise NotImplementedError(f"LLM provider {provider} not implemented")

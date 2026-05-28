@@ -23,12 +23,163 @@ Estructura real de cada item en `documentos[]` (BDNS SNPSAP):
 
 | Step | Fuente | Match (haystack = `descripcion` + `nombreFic`, normalizado) | Output |
 |---|---|---|---|
-| 1 | `url_bases_reguladoras` | URL descargable directa | `source='url_bases_reguladoras'` |
-| 2 | `documentos[]` | regex `bases\s+regulad` + no-anexo | `source='documentos_array'` |
+| 1 | `documentos[]` | regex `bases\s+regulad` + no-anexo | `source='documentos_array'` |
+| 2 | `url_bases_reguladoras` | URL libre indicada por BDNS para bases reguladoras | `source='url_bases_reguladoras'` |
 | 3 | `documentos[]` | regex `(?:texto\|documento)\s+\S+(?:\s+\S+){0,5}\s+convocatoria` + no-anexo | `source='texto_convocatoria'` |
 | fallback | — | nada match | `skipped_no_doc=true` |
 
-**Construcción de URL en step 2/3:**
+**Reorder 2026-05-28.** El nuevo orden prioriza bases reguladoras:
+primero si vienen como documento BDNS explícito y después vía `url_bases_reguladoras`.
+Solo si esas vías no están disponibles se cae a `texto_convocatoria`, porque:
+
+- URLs de boletines y sedes electrónicas (BORM, CAIB…) son frecuentemente
+  SPAs con hash routing o portales que devuelven ~100 chars de menú a httpx
+  → contenido inservible para el LLM.
+- Resolver step 2 puede requerir `browser-service` (Chromium headless) o un
+  fallback escalonado por calidad del payload (ver Task 7 del plan headless
+  resolver). Coste: +3-15 s por item + memoria del contenedor.
+- Aun con ese coste, el use case gana si alcanzamos bases reguladoras antes de
+  conformarnos con texto de convocatoria.
+
+## Step 2 — política escalonada vía browser-service
+
+El step 2 usa `url_bases_reguladoras`. Antes de decidir si
+invoca al browser-service, `extract_for_url_bases_reguladoras` aplica tres ramas
+de gating:
+
+### (a) Directo descargable → httpx
+
+`is_direct_downloadable(url)`: la URL acaba en `.pdf`, `.doc` o `.docx` (en
+path o en query, ej. `?f=doc.pdf`). Se descarga con `httpx` directamente, sin
+renderizar. Coste: ~300-800 ms.
+
+### (b) Fragment-only routing → browser-service directo
+
+`is_fragment_only_routing(url)`: la URL tiene hash routing SPA con path
+significativo (ej. `https://www.borm.es/#/anuncio/6349`) y sin path HTTP real.
+`httpx` recibiría solo el shell vacío del SPA, así que se envía directamente al
+browser-service sin pasar por httpx. Coste: ~3-15 s.
+
+### (c) URL "limpia" → httpx + anchor estático + quality check + escalado condicional
+
+Para el resto de URLs:
+
+1. `httpx` descarga la página.
+2. Si la respuesta es HTML con texto suficiente, el ETL comprueba si parece una
+   landing page documental antes de aceptar el body como fuente final. Para ello
+   inspecciona una sola vez el HTML ya descargado y prueba anchors fuertes como
+   `Bases reguladoras` o `Convocatoria`.
+3. Si esa extracción enlazada es útil, el documento enlazado pasa a ser la
+   fuente NLP con `extraction_mode='html_anchor_*'` (por ejemplo
+   `html_anchor_pdf` o `html_anchor_html`). Si falla o produce texto de baja
+   calidad, se vuelve al body HTML original y continúa la política existente.
+   Esta rama es barata: no usa `browser-service`, no renderiza y no hace deep
+   crawling. Documentos de ciclo de vida como admisiones, denegaciones,
+   listados o sorteos se degradan o excluyen como candidatos.
+4. `should_escalate_to_browser` evalúa la calidad del texto extraído:
+   - **Escala** si: `<500 chars` de texto útil, O `0 normative_keywords`
+     (`regulad`, `convocatoria`, `bases`…), O señales de portal/WAF
+     (meta refresh, JS redirect, body vacío con scripts).
+   - **Acepta** si pasa los umbrales → se usa el texto de httpx directamente.
+5. Si escala al browser-service, el outcome que devuelve `/resolve` determina
+   qué hace el ETL:
+   - `outcome='pdf_url'` → el ETL descarga el PDF candidato con httpx
+     (`extraction_mode='url_bases_reguladoras'`).
+   - `outcome='text'` → el cuerpo renderizado se usa como documento
+     (`extraction_mode='headless_body'`).
+   - `outcome='unresolvable'` → el item se marca `skipped_no_doc` sin llamar
+     al LLM.
+
+### Modo degradado
+
+Si `BROWSER_SERVICE_URL` no responde (servicio caído, red inaccesible), el
+adaptador `browser_client.py` loguea un warning y el extractor hace fallback
+last-resort a httpx puro: se usa el texto descargado incluso si es de baja
+calidad. Esto evita que un fallo del browser-service bloquee el batch completo.
+
+### Variables de entorno
+
+- `BROWSER_SERVICE_URL` — URL base del microservicio (default:
+  `http://browser-service:8000` en Docker). Propagada vía
+  `scripts/distribute-env.sh` (`ETL_KEYS`).
+- `BROWSER_SERVICE_PORT` — puerto del host expuesto en `docker-compose.yml`
+  (default: `8005`). Solo para acceso desde fuera de la red Docker.
+
+### Costes por step
+
+| Step   | Latencia típica | Recurso externo     |
+|--------|-----------------|---------------------|
+| 1      | ~ms             | httpx (BDNS SNPSAP) |
+| 2 (a)  | ~300-800 ms     | httpx directo       |
+| 2 (b)  | ~3-15 s         | browser-service     |
+| 2 (c)  | ~300 ms + 3-15 s si escala | httpx + anchor estático barato + browser-service condicional |
+| 3      | ~ms             | httpx (BDNS SNPSAP) |
+
+## Arquitectura de scraping (diagrama)
+
+```
+run_batch (pipeline.py)
+  -> resolve_document(url_br, documentos[])
+       ├─ step=1 documentos[] (bases regulad) -> httpx(BDNS docs)
+       ├─ step=2 url_bases_reguladoras -> extract_for_url_br
+       │    ├─ (a) direct .pdf/.doc -> httpx direct
+       │    ├─ (b) frag SPA #/anuncio/... -> browser-service
+       │    └─ (c) limpia -> httpx GET
+       │         ├─ strong static anchor useful -> linked doc
+       │         │    extraction_mode='html_anchor_*'
+       │         └─ no anchor / linked extraction poor -> quality check
+       │              ├─ OK -> httpx HTML body
+       │              └─ BAJA -> browser-service POST /resolve
+       │                   ├─ pdf_url -> httpx PDF candidato
+       │                   ├─ text -> headless_body
+       │                   └─ unresolvable -> skipped_no_doc
+       └─ step=3 documentos[] (texto conv.) -> httpx(BDNS docs)
+
+Todos los documentos aceptados convergen en:
+
+  ┌─────────────────────────────────────────────────────────────┐
+  │  ExtractedText → LLM (OpenAI structured output v5.0.2)     │
+  │   → validate → persist (subvenciones_nlp + nacional dual-w)│
+  └─────────────────────────────────────────────────────────────┘
+```
+
+### Flujo interno del browser-service (`POST /resolve`)
+
+```
+  request { url }
+      │
+      ▼
+  PlaywrightCrawler (keep_alive=True)
+      │  browser_launch_options: --no-sandbox --disable-setuid-sandbox
+      │
+      ▼  navigate(url, timeout=30s)
+         wait DOMContentLoaded (20s) + networkidle best-effort (8s)
+      │
+      ▼  Extract <a href> con agregación a11y:
+         text = [innerText, aria-label, title, img@alt, svg>title]
+               .filter(Boolean).join(' | ')
+      │
+      ▼  link_picker.pick_best_candidate(candidates, body_text)
+         │
+         │  Patrones primarios (sobre anchor text):
+         │    1. \bregulad           (regulad-ora/-or/-oras)
+         │    2. \bconvocatoria      (incluye plural)
+         │    3. resoluci[oó]n\b.*\bbases?\b  (DOTALL)
+         │
+         │  Fallback body-keyword:
+         │    body contiene regulad|convocatoria
+         │    AND anchor con href descargable (.pdf/.doc[x]/…)
+         │    → devuelve ese anchor
+      │
+      ▼  renderer.decide_outcome(body_text, picked)
+           picked encontrado     → outcome='pdf_url', pdf_url=href
+           picked=None, body≥5k  → outcome='text', text=body
+           nada útil             → outcome='unresolvable' + reason
+```
+
+---
+
+**Construcción de URL en step 1/3:**
 
 ```
 https://www.infosubvenciones.es/bdnstrans/api/convocatorias/documentos?idDocumento={doc.id}
@@ -42,18 +193,25 @@ Endpoint público SNPSAP (`Content-Type: application/octet-stream`).
   `formulario`, `extracto`/`extracte` como token autónomo en el haystack. No representan
   ni las bases ni la convocatoria.
 - **Modificaciones, ampliaciones, revocaciones, rectificaciones:** NO matchean los
-  regex de step 2/3 (sus descripciones no contienen `bases reguladoras` ni el patrón
+  regex de step 1/3 (sus descripciones no contienen `bases reguladoras` ni el patrón
   `(texto|documento) … convocatoria`). Se descartan implícitamente.
 - **Múltiples candidatos válidos:** se selecciona `max(datPublicacion)` — la versión
   vigente más reciente. Justificación: las bases reguladoras no suelen modificarse,
   pero los textos de convocatoria se readaptan por línea/edición, y queremos siempre
   la versión vigente.
+- **Prioridad documental:** si no hay `documentos[]` de bases reguladoras, se intenta
+  `url_bases_reguladoras` antes que `texto_convocatoria`; el use case prioriza alcanzar
+  bases reguladoras aunque el step 2 pueda requerir browser-service.
 
-Todos los steps producen un `document_key` con prefijo `url:` porque siempre
-apuntan a una URL descargable. La columna `descripcion_bases_reguladoras`
-(TEXT en `l0.nacional_subvenciones`) NO se usa como fuente NLP — su contenido
-suele ser solo referencia BOE (p.ej. *"Orden ICT/1156/2024, BOE núm. 261"*),
-no el documento mismo.
+El resolver produce un `document_key` base con prefijo `url:` porque todos los
+steps apuntan a una URL descargable. Antes de consultar o persistir cache, el
+pipeline genera una `analysis_key` contextual (`<document_key>:ctx:<hash>`) con
+`tipo_documento` y `ConvocatoriaDetalle_BDNS`; esto evita reutilizar un análisis
+creado con metadata BDNS de otra convocatoria que comparta el mismo documento.
+
+La columna `descripcion_bases_reguladoras` (TEXT en `l0.nacional_subvenciones`)
+NO se usa como fuente NLP — su contenido suele ser solo referencia BOE (p.ej.
+*"Orden ICT/1156/2024, BOE núm. 261"*), no el documento mismo.
 
 ## Configuración
 

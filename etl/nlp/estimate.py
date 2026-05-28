@@ -125,6 +125,25 @@ def estimate_nlp_run(
             "avg_duration_ms": int(round(avg_ms)) if runs_sampled else 0,
             "pricing_source": pricing_source,
         },
+        "methodology": {
+            "tokenizer": (
+                f"Tokens medidos por el propio provider ({provider}) en el campo "
+                "usage.prompt_tokens / usage.completion_tokens devuelto por la API. "
+                "No se tokeniza localmente, por lo que el conteo coincide con la "
+                "facturación del proveedor (no hay desviación por tokenizers Open "
+                "Source o BPE genéricos)."
+            ),
+            "estimation": (
+                f"items_pendientes × media(input_tokens, output_tokens) "
+                f"sobre las últimas {_HISTORY_SAMPLE_LIMIT} ejecuciones valid/partial "
+                "en ops.llm_bases_reguladoras_logs. "
+                "El coste se calcula con la tarifa vigente en ops.llm_pricing para "
+                "(provider, model). La estimación es indicativa: puede desviarse si "
+                "el mix de documentos futuros difiere del histórico o si la tarifa "
+                "está desactualizada."
+            ),
+            "applies_to_model": f"{provider}/{model}",
+        },
     }
     if warning:
         result["warning"] = warning

@@ -67,7 +67,7 @@ CREATE TABLE IF NOT EXISTS l0.nacional_subvenciones (
   regimen_ue_tipo            VARCHAR(30),
   rgec_articulo              VARCHAR(20),
   tipo_beneficiario_fino     VARCHAR(30),
-  texto_beneficiario_fino    VARCHAR(200),
+  texto_beneficiario_fino    TEXT,
   admite_consorcio           BOOLEAN,
   art13_lgs_verificado       BOOLEAN,
   intensidad_maxima_pct      NUMERIC(5,2),
@@ -80,7 +80,7 @@ CREATE TABLE IF NOT EXISTS l0.nacional_subvenciones (
   -- 8 geo (NUTS varchar(5)[], INE varchar(6)[])
   domicilio_fiscal_nuts      VARCHAR(5)[],
   domicilio_fiscal_ine       VARCHAR(6)[],
-  domicilio_fiscal_tipo      VARCHAR(20),
+  domicilio_fiscal_tipo      VARCHAR(40),
   centros_trabajo_nuts       VARCHAR(5)[],
   centros_trabajo_ine        VARCHAR(6)[],
   ejecucion_nuts             VARCHAR(5)[],

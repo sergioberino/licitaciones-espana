@@ -20,22 +20,9 @@ dependencies = [
     "httpx>=0.27",
 ]
 
-[project.optional-dependencies]
-test = [
-    "pytest>=7.0",
-    "pytest-httpx>=0.30",
-]
-
 [project.scripts]
 licitia-etl = "etl.cli:main"
 
 [tool.setuptools.packages.find]
 where = ["."]
 include = ["etl*"]
-
-[tool.pytest.ini_options]
-pythonpath = ["."]
-markers = [
-    "integration: tests that require DB (run with licitia-etl ingest test --integration)",
-]
-testpaths = ["tests"]

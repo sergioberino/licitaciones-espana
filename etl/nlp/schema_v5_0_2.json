@@ -14,13 +14,6 @@
       ],
       "description": "Estado operativo de extracción. Usar explicito si el dato aparece en la fuente; inferido solo para síntesis razonable; no_encontrado si debería existir pero no aparece; no_aplica si la categoría no procede; contradictorio si hay conflicto entre fuentes; remite_a_otro_documento si la fuente deriva a otra norma/anexo/convocatoria."
     },
-    "confianza": {
-      "type": [
-        "number",
-        "null"
-      ],
-      "description": "Metadato heurístico 0..1 de seguridad del bloque, no probabilidad calibrada ni threshold operativo. Si no se usa en analítica, puede eliminarse en una versión posterior."
-    },
     "evidencia": {
       "type": "object",
       "additionalProperties": false,
@@ -641,9 +634,6 @@
           ],
           "description": "Narrativa para ficha ejecutiva. Interpretar y sintetizar, no copiar literalmente."
         },
-        "confianza": {
-          "$ref": "#/$defs/confianza"
-        },
         "evidencias": {
           "$ref": "#/$defs/evidencias"
         }
@@ -662,7 +652,6 @@
         "requiere_pyme_en_consorcio",
         "porcentaje_maximo_por_entidad_o_grupo",
         "descripcion_para_ficha",
-        "confianza",
         "evidencias"
       ],
       "description": "Bloque de granularización del beneficiario respecto de BDNS. El filtro tipo_beneficiario_fino es atómico y clasifica al beneficiario formal; los requisitos internos de agrupaciones/consorcios se explican en campos textuales y condiciones_consorcio."
@@ -696,9 +685,6 @@
             "null"
           ]
         },
-        "confianza": {
-          "$ref": "#/$defs/confianza"
-        },
         "evidencias": {
           "$ref": "#/$defs/evidencias"
         }
@@ -709,7 +695,6 @@
         "exclusiones_especificas",
         "exclusiones_criticas_para_matching",
         "descripcion_para_ficha",
-        "confianza",
         "evidencias"
       ]
     },
@@ -763,9 +748,6 @@
             "null"
           ]
         },
-        "confianza": {
-          "$ref": "#/$defs/confianza"
-        },
         "evidencias": {
           "$ref": "#/$defs/evidencias"
         }
@@ -774,7 +756,6 @@
         "estado_extraccion",
         "requisitos",
         "descripcion_para_ficha",
-        "confianza",
         "evidencias"
       ]
     },
@@ -864,9 +845,6 @@
             "null"
           ]
         },
-        "confianza": {
-          "$ref": "#/$defs/confianza"
-        },
         "evidencias": {
           "$ref": "#/$defs/evidencias"
         }
@@ -881,7 +859,6 @@
         "baremo",
         "puntuacion_minima_acceso",
         "descripcion_para_ficha",
-        "confianza",
         "evidencias"
       ]
     },
@@ -963,9 +940,6 @@
             "null"
           ]
         },
-        "confianza": {
-          "$ref": "#/$defs/confianza"
-        },
         "evidencias": {
           "$ref": "#/$defs/evidencias"
         }
@@ -979,7 +953,6 @@
         "G4",
         "condiciones_suficientes",
         "descripcion_logica",
-        "confianza",
         "evidencias"
       ]
     },
@@ -1119,9 +1092,6 @@
             "null"
           ]
         },
-        "confianza": {
-          "$ref": "#/$defs/confianza"
-        },
         "evidencias": {
           "$ref": "#/$defs/evidencias"
         }
@@ -1144,7 +1114,6 @@
         "costes_indirectos_texto",
         "anticipos_texto",
         "descripcion_para_ficha",
-        "confianza",
         "evidencias"
       ]
     },
@@ -1202,9 +1171,6 @@
             "null"
           ]
         },
-        "confianza": {
-          "$ref": "#/$defs/confianza"
-        },
         "evidencias": {
           "$ref": "#/$defs/evidencias"
         }
@@ -1216,7 +1182,6 @@
         "restricciones_acumulacion",
         "regimen_acumulacion_detectado",
         "descripcion_para_ficha",
-        "confianza",
         "evidencias"
       ]
     },
@@ -1309,9 +1274,6 @@
             "null"
           ]
         },
-        "confianza": {
-          "$ref": "#/$defs/confianza"
-        },
         "evidencias": {
           "$ref": "#/$defs/evidencias"
         }
@@ -1325,7 +1287,6 @@
         "fuente_preferente",
         "coherencia_bdns",
         "descripcion_para_ficha",
-        "confianza",
         "evidencias"
       ],
       "description": "Régimen UE extraído de bases/convocatoria y contrastable con BDNS cuando exista. No extraer ni inferir códigos SA como campo propio; si aparecen, pueden quedar solo en texto_declarado/evidencias o venir de ConvocatoriaDetalle."
@@ -1384,9 +1345,6 @@
           ],
           "description": "Texto interpretativo para consultor: qué financia, qué proyectos encajan y alcance. No copiar literalmente."
         },
-        "confianza": {
-          "$ref": "#/$defs/confianza"
-        },
         "evidencias": {
           "$ref": "#/$defs/evidencias"
         }
@@ -1397,7 +1355,6 @@
         "actividades_concretas",
         "actividades_excluidas",
         "descripcion_para_ficha",
-        "confianza",
         "evidencias"
       ]
     },
@@ -1444,9 +1401,6 @@
             "null"
           ]
         },
-        "confianza": {
-          "$ref": "#/$defs/confianza"
-        },
         "evidencias": {
           "$ref": "#/$defs/evidencias"
         }
@@ -1459,7 +1413,6 @@
         "efecto_incentivador",
         "efecto_incentivador_texto",
         "descripcion_para_ficha",
-        "confianza",
         "evidencias"
       ]
     },
@@ -1494,9 +1447,6 @@
             "null"
           ]
         },
-        "confianza": {
-          "$ref": "#/$defs/confianza"
-        },
         "evidencias": {
           "$ref": "#/$defs/evidencias"
         }
@@ -1507,7 +1457,6 @@
         "documentos_condicionales",
         "documentos_criticos_para_admisibilidad",
         "descripcion_para_ficha",
-        "confianza",
         "evidencias"
       ]
     },
@@ -1555,9 +1504,6 @@
             "null"
           ]
         },
-        "confianza": {
-          "$ref": "#/$defs/confianza"
-        },
         "evidencias": {
           "$ref": "#/$defs/evidencias"
         }
@@ -1570,7 +1516,6 @@
         "obligaciones_publicidad",
         "obligaciones_control",
         "descripcion_para_ficha",
-        "confianza",
         "evidencias"
       ]
     },
@@ -1617,9 +1562,6 @@
             "null"
           ]
         },
-        "confianza": {
-          "$ref": "#/$defs/confianza"
-        },
         "evidencias": {
           "$ref": "#/$defs/evidencias"
         }
@@ -1632,7 +1574,6 @@
         "pago_texto",
         "reintegro_texto",
         "descripcion_para_ficha",
-        "confianza",
         "evidencias"
       ]
     },
@@ -1659,9 +1600,6 @@
             "null"
           ]
         },
-        "confianza": {
-          "$ref": "#/$defs/confianza"
-        },
         "evidencias": {
           "$ref": "#/$defs/evidencias"
         }
@@ -1670,7 +1608,6 @@
         "hay_lineas_diferenciadas",
         "lineas",
         "descripcion_para_ficha",
-        "confianza",
         "evidencias"
       ]
     },

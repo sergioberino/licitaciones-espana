@@ -156,7 +156,6 @@ class BeneficiarioFino(BaseModel):
     requiere_pyme_en_consorcio: Optional[bool] = None
     porcentaje_maximo_por_entidad_o_grupo: Optional[float] = None
     descripcion_para_ficha: Optional[str] = None
-    confianza: Optional[float] = None
     evidencias: list[Evidencia] = Field(default_factory=list)
 
 
@@ -168,7 +167,6 @@ class CriteriosExclusion(BaseModel):
     exclusiones_especificas: list[str] = Field(default_factory=list)
     exclusiones_criticas_para_matching: list[str] = Field(default_factory=list)
     descripcion_para_ficha: Optional[str] = None
-    confianza: Optional[float] = None
     evidencias: list[Evidencia] = Field(default_factory=list)
 
 
@@ -178,7 +176,6 @@ class RequisitosAdicionales(BaseModel):
     estado_extraccion: EstadoExtraccion
     requisitos: list[RequisitoAdicional] = Field(default_factory=list)
     descripcion_para_ficha: Optional[str] = None
-    confianza: Optional[float] = None
     evidencias: list[Evidencia] = Field(default_factory=list)
 
 
@@ -194,7 +191,6 @@ class CriteriosSeleccion(BaseModel):
     baremo: list[BaremoItem] = Field(default_factory=list)
     puntuacion_minima_acceso: Optional[float] = None
     descripcion_para_ficha: Optional[str] = None
-    confianza: Optional[float] = None
     evidencias: list[Evidencia] = Field(default_factory=list)
 
 
@@ -211,7 +207,6 @@ class RequisitosGeograficos(BaseModel):
     G4: Optional[GeoG4] = None
     condiciones_suficientes: list[list[str]] = Field(default_factory=list)
     descripcion_logica: Optional[str] = None
-    confianza: Optional[float] = None
     evidencias: list[Evidencia] = Field(default_factory=list)
 
 
@@ -235,7 +230,6 @@ class EconomiaAyuda(BaseModel):
     costes_indirectos_texto: Optional[str] = None
     anticipos_texto: Optional[str] = None
     descripcion_para_ficha: Optional[str] = None
-    confianza: Optional[float] = None
     evidencias: list[Evidencia] = Field(default_factory=list)
 
 
@@ -248,7 +242,6 @@ class CompatibilidadAcumulacion(BaseModel):
     restricciones_acumulacion: list[str] = Field(default_factory=list)
     regimen_acumulacion_detectado: Optional[str] = None
     descripcion_para_ficha: Optional[str] = None
-    confianza: Optional[float] = None
     evidencias: list[Evidencia] = Field(default_factory=list)
 
 
@@ -263,7 +256,6 @@ class RegimenUe(BaseModel):
     fuente_preferente: str
     coherencia_bdns: str
     descripcion_para_ficha: Optional[str] = None
-    confianza: Optional[float] = None
     evidencias: list[Evidencia] = Field(default_factory=list)
 
 
@@ -275,7 +267,6 @@ class ObjetoActividadesElegibles(BaseModel):
     actividades_concretas: list[str] = Field(default_factory=list)
     actividades_excluidas: list[str] = Field(default_factory=list)
     descripcion_para_ficha: Optional[str] = None
-    confianza: Optional[float] = None
     evidencias: list[Evidencia] = Field(default_factory=list)
 
 
@@ -289,7 +280,6 @@ class PresentacionSolicitudes(BaseModel):
     efecto_incentivador: Optional[bool] = None
     efecto_incentivador_texto: Optional[str] = None
     descripcion_para_ficha: Optional[str] = None
-    confianza: Optional[float] = None
     evidencias: list[Evidencia] = Field(default_factory=list)
 
 
@@ -301,7 +291,6 @@ class DocumentacionExigida(BaseModel):
     documentos_condicionales: list[str] = Field(default_factory=list)
     documentos_criticos_para_admisibilidad: list[str] = Field(default_factory=list)
     descripcion_para_ficha: Optional[str] = None
-    confianza: Optional[float] = None
     evidencias: list[Evidencia] = Field(default_factory=list)
 
 
@@ -315,7 +304,6 @@ class ObligacionesBeneficiario(BaseModel):
     obligaciones_publicidad: list[str] = Field(default_factory=list)
     obligaciones_control: list[str] = Field(default_factory=list)
     descripcion_para_ficha: Optional[str] = None
-    confianza: Optional[float] = None
     evidencias: list[Evidencia] = Field(default_factory=list)
 
 
@@ -329,7 +317,6 @@ class Justificacion(BaseModel):
     pago_texto: Optional[str] = None
     reintegro_texto: Optional[str] = None
     descripcion_para_ficha: Optional[str] = None
-    confianza: Optional[float] = None
     evidencias: list[Evidencia] = Field(default_factory=list)
 
 
@@ -339,7 +326,6 @@ class LineasAyuda(BaseModel):
     hay_lineas_diferenciadas: Optional[bool] = None
     lineas: list[LineaAyuda] = Field(default_factory=list)
     descripcion_para_ficha: Optional[str] = None
-    confianza: Optional[float] = None
     evidencias: list[Evidencia] = Field(default_factory=list)
 
 

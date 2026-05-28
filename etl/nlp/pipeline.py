@@ -1,16 +1,40 @@
 """Pipeline Batch B: SELECT pendientes → resolve → extract → LLM → validate → persist."""
 from __future__ import annotations
 
+import hashlib
+import json
 import logging
 import os
+import re
 import signal
 import time
-from dataclasses import dataclass, field
+from dataclasses import dataclass, field, replace
 from datetime import date, datetime, timezone
 from decimal import Decimal
 from typing import Optional
 
-from etl.nlp.extractor import ExtractionError, extract_from_url
+
+_MODEL_SNAPSHOT_SUFFIX_RE = re.compile(r"-\d{4}-\d{2}-\d{2}$")
+
+
+def _canonicalize_model(model: Optional[str]) -> Optional[str]:
+    """Strip OpenAI snapshot date suffix (`-YYYY-MM-DD`) para lookup en pricing.
+
+    OpenAI responde con el snapshot exacto (`gpt-5.4-nano-2026-03-17`) en
+    ``usage.model``. ``ops.llm_pricing`` se seedea con el modelo base
+    (`gpt-5.4-nano`) porque las tarifas no cambian entre snapshots. Esta
+    normalización evita matches fallidos que provocan ``cost_usd=NULL`` y
+    cost_usd_total agregado a 0.
+    """
+    if model is None or not model:
+        return model
+    return _MODEL_SNAPSHOT_SUFFIX_RE.sub("", model)
+
+from etl.nlp.extractor import (
+    ExtractionError,
+    extract_for_url_bases_reguladoras,
+    extract_from_url,
+)
 from etl.nlp.llm_client import analyze_document, load_schema
 from etl.nlp.persistence import persist_analysis, propagate_from_cache
 from etl.nlp.project import extract_matching_fields
@@ -21,10 +45,67 @@ from etl.nlp.validator import validate
 logger = logging.getLogger(__name__)
 
 
-_SELECT_PENDING_BASE = (
-    "SELECT s.id, s.url_bases_reguladoras, s.documentos "
-    "FROM l0.nacional_subvenciones s"
-)
+_SELECT_PENDING_BASE = """
+SELECT
+  s.id,
+  s.url_bases_reguladoras,
+  s.documentos,
+  jsonb_strip_nulls(jsonb_build_object(
+    'codigo_bdns', s.id,
+    'titulo', s.descripcion,
+    'organo_nivel1', s.nivel1,
+    'organo_nivel2', s.nivel2,
+    'organo_gestor', s.nivel3,
+    'fecha_recepcion', s.fecha_recepcion,
+    'instrumento_id', s.instrumento_id,
+    'tipo_convocatoria', s.tipo_convocatoria,
+    'presupuesto_total', s.presupuesto_total,
+    'mrr', s.mrr,
+    'tipos_beneficiarios_ids', s.tipos_beneficiarios,
+    'sectores_cnae', s.sectores,
+    'regiones_nuts', s.regiones,
+    'politica_gastos_id', s.politica_gastos,
+    'descripcion_bases_reguladoras', s.descripcion_bases_reguladoras,
+    'url_bases_reguladoras', s.url_bases_reguladoras,
+    'se_publica_diario_oficial', s.se_publica_diario_oficial,
+    'abierto', s.abierto,
+    'fecha_inicio_solicitud', s.fecha_inicio_solicitud,
+    'fecha_fin_solicitud', s.fecha_fin_solicitud,
+    'fecha_inicio_solicitud_texto', s.fecha_inicio_solicitud_texto,
+    'fecha_fin_solicitud_texto', s.fecha_fin_solicitud_texto,
+    'ayuda_estado', s.ayuda_estado,
+    'fondos', s.fondos,
+    'reglamento', s.reglamento,
+    'objetivos', s.objetivos,
+    'sectores_productos', s.sectores_productos
+  )) AS convocatoria_detalle_bdns
+FROM l0.nacional_subvenciones s
+"""
+
+
+def _tipo_documento_para_llm(resolved) -> str:
+    """Tipo documental conceptual para el prompt, no metadata técnica."""
+    if resolved.document_source == "texto_convocatoria":
+        return "texto_convocatoria"
+    return "bases_reguladoras"
+
+
+def _document_key_para_contexto_llm(
+    base_document_key: str,
+    tipo_documento: str | None,
+    convocatoria_detalle_bdns,
+) -> str:
+    """Cache key del análisis LLM, incluyendo contexto que altera el prompt."""
+    if not tipo_documento and not convocatoria_detalle_bdns:
+        return base_document_key
+
+    payload = {
+        "tipo_documento": tipo_documento,
+        "convocatoria_detalle_bdns": convocatoria_detalle_bdns or {},
+    }
+    raw = json.dumps(payload, ensure_ascii=False, sort_keys=True, default=str)
+    context_hash = hashlib.sha256(raw.encode("utf-8")).hexdigest()[:16]
+    return f"{base_document_key}:ctx:{context_hash}"
 
 
 # -----------------------------------------------------------------------------
@@ -109,6 +190,7 @@ def _build_select_pending_sql(
     codigo_bdns: Optional[int],
     todo: bool,
     limit: Optional[int],
+    tipo_beneficiario: Optional[int] = None,
 ) -> tuple[str, dict]:
     """Construye el SELECT dinámico según el selector activo.
 
@@ -117,6 +199,7 @@ def _build_select_pending_sql(
     - anos+meses  : AND adicional EXTRACT(MONTH FROM fecha_recepcion) BETWEEN m1 AND m2.
     - codigo_bdns : id = N; quita el filtro nlp_document_key IS NULL para permitir reanálisis.
     - todo        : sin filtro de fecha; conserva nlp_document_key IS NULL y la condición de doc.
+    - tipo_beneficiario: id dim.beneficiarios_subvenciones (1..5); solo en modos bulk (no con codigo_bdns).
     - limit==0 o None: omite la cláusula LIMIT.
     """
     where: list[str] = []
@@ -129,6 +212,15 @@ def _build_select_pending_sql(
         # anos / todo: pendientes y con documento resoluble.
         where.append("s.nlp_document_key IS NULL")
         where.append("(s.url_bases_reguladoras IS NOT NULL OR s.documentos IS NOT NULL)")
+        # Excluir convocatorias instrumentales (subvenciones nominativas a entes
+        # del propio sector público). No tienen valor para el análisis NLP de
+        # bases reguladoras: no hay competencia ni criterios extraíbles.
+        # El lookup por codigo_bdns se exime del filtro para permitir reanálisis
+        # forzado de cualquier id durante diagnóstico.
+        where.append(
+            "(s.tipo_convocatoria IS NULL "
+            "OR s.tipo_convocatoria NOT ILIKE '%%- instrumental')"
+        )
         if anos is not None:
             a, b = anos
             where.append("s.fecha_recepcion >= %(fecha_desde)s")
@@ -142,6 +234,9 @@ def _build_select_pending_sql(
                 )
                 params["mes_desde"] = m1
                 params["mes_hasta"] = m2
+        if tipo_beneficiario is not None:
+            where.append("%(tipo_beneficiario)s = ANY(s.tipos_beneficiarios)")
+            params["tipo_beneficiario"] = tipo_beneficiario
 
     sql = _SELECT_PENDING_BASE
     if where:
@@ -182,6 +277,7 @@ def compute_cost_usd(
       en agregados monetarios.
     """
     at = at_date or date.today()
+    canonical = _canonicalize_model(model) or model
     with conn.cursor() as cur:
         cur.execute(
             """
@@ -193,7 +289,7 @@ def compute_cost_usd(
             ORDER BY valid_from DESC
             LIMIT 1
             """,
-            (provider, model, at, at),
+            (provider, canonical, at, at),
         )
         row = cur.fetchone()
     if row is None:
@@ -364,6 +460,7 @@ def select_pending(
     meses: Optional[tuple[int, int]] = None,
     codigo_bdns: Optional[int] = None,
     todo: bool = False,
+    tipo_beneficiario: Optional[int] = None,
 ) -> list[tuple]:
     """Helper testeable: devuelve filas pendientes ordenadas por id DESC.
 
@@ -372,7 +469,12 @@ def select_pending(
     los filtros aisladamente.
     """
     sql, params = _build_select_pending_sql(
-        anos=anos, meses=meses, codigo_bdns=codigo_bdns, todo=todo, limit=limit
+        anos=anos,
+        meses=meses,
+        codigo_bdns=codigo_bdns,
+        todo=todo,
+        limit=limit,
+        tipo_beneficiario=tipo_beneficiario,
     )
     with conn.cursor() as cur:
         cur.execute(sql, params)
@@ -386,10 +488,16 @@ def count_pending(
     meses: Optional[tuple[int, int]] = None,
     codigo_bdns: Optional[int] = None,
     todo: bool = False,
+    tipo_beneficiario: Optional[int] = None,
 ) -> int:
     """Cuenta filas pendientes con la misma semántica que :func:`select_pending` (sin LIMIT)."""
     sql, params = _build_select_pending_sql(
-        anos=anos, meses=meses, codigo_bdns=codigo_bdns, todo=todo, limit=None
+        anos=anos,
+        meses=meses,
+        codigo_bdns=codigo_bdns,
+        todo=todo,
+        limit=None,
+        tipo_beneficiario=tipo_beneficiario,
     )
     count_sql = f"SELECT COUNT(*) FROM ({sql}) AS _pending"
     with conn.cursor() as cur:
@@ -419,12 +527,20 @@ def run_batch(
     meses: Optional[tuple[int, int]] = None,
     codigo_bdns: Optional[int] = None,
     todo: bool = False,
+    debug: bool = False,
+    tipo_beneficiario: Optional[int] = None,
 ) -> BatchStats:
     """Procesa pendientes ordenados por id DESC.
 
     Selector obligatorio (uno y solo uno): ``anos``, ``codigo_bdns`` o ``todo``.
     ``meses`` solo es válido junto a ``anos``. ``limit==0`` desactiva el cap.
     Con ``codigo_bdns`` el ``limit`` se ignora a nivel de SQL (solo 1 fila como mucho).
+
+    Cuando ``debug=True`` se emiten bloques extra por stdout para cada item:
+    resolución de documento (heurística, candidatos BDNS), descarga HTTP
+    (status, content-type, bytes) y extracción (preview head/tail, signals
+    portal/listado). No persiste nada nuevo; útil para diagnosticar items con
+    ``input_char_count`` sospechosamente bajo.
 
     Lanza :class:`ValueError` ante combinaciones inválidas (defense in depth).
     """
@@ -471,6 +587,7 @@ def run_batch(
             meses=meses,
             codigo_bdns=codigo_bdns,
             todo=todo,
+            tipo_beneficiario=tipo_beneficiario,
         )
         _bump_nlp_run(conn, run_id, items_planned=len(rows))
         if anos is not None:
@@ -481,6 +598,8 @@ def run_batch(
             selector_repr = f"codigo_bdns={codigo_bdns}"
         else:
             selector_repr = "todo=true"
+        if tipo_beneficiario is not None:
+            selector_repr += f" tipo_beneficiario={tipo_beneficiario}"
         logger.info(
             "[nlp] start run_id=%d limit=%s selector=%s force=%s dry_run=%s pending_in_chunk=%d",
             run_id,
@@ -501,11 +620,22 @@ def run_batch(
                     stats.processed,
                 )
                 break
-            subv_id, url, documentos = row
+            subv_id, url, documentos = row[:3]
+            convocatoria_detalle_bdns = row[3] if len(row) > 3 else None
             resolved = resolve_document(
                 url_bases_reguladoras=url,
                 documentos=documentos,
             )
+            if debug:
+                from etl.nlp.debug import log_resolve
+
+                log_resolve(
+                    logger,
+                    subv_id=subv_id,
+                    url_bases_reguladoras=url,
+                    documentos=documentos,
+                    resolved=resolved,
+                )
             if resolved is None:
                 stats.skipped_no_doc += 1
                 logger.info("[nlp] id=%d skipped_no_doc=true", subv_id)
@@ -526,16 +656,26 @@ def run_batch(
                     )
                 continue
 
-            cache_hit = (not force) and _check_cache_hit(conn, resolved.document_key)
+            tipo_documento_llm = _tipo_documento_para_llm(resolved)
+            analysis_document_key = _document_key_para_contexto_llm(
+                resolved.document_key,
+                tipo_documento_llm,
+                convocatoria_detalle_bdns,
+            )
+            resolved_for_analysis = replace(resolved, document_key=analysis_document_key)
+            cache_hit = (not force) and _check_cache_hit(
+                conn, resolved_for_analysis.document_key
+            )
             log_name_part = f" name='{resolved.document_name}'" if resolved.document_name else ""
             logger.info(
-                "[nlp] id=%d step=%d source=%s%s ref=%s key=%s%s",
+                "[nlp] id=%d step=%d source=%s%s ref=%s key=%s analysis_key=%s%s",
                 subv_id,
                 resolved.heuristic_step,
                 resolved.document_source,
                 log_name_part,
                 resolved.document_ref or "-",
                 resolved.document_key,
+                resolved_for_analysis.document_key,
                 " cache_hit=true (--force=false → skip LLM)" if cache_hit else "",
             )
 
@@ -544,7 +684,7 @@ def run_batch(
                     PlanItem(
                         subvencion_id=subv_id,
                         document_source=resolved.document_source,
-                        document_key=resolved.document_key,
+                        document_key=resolved_for_analysis.document_key,
                         document_name=resolved.document_name,
                         heuristic_step=resolved.heuristic_step,
                         document_ref=resolved.document_ref,
@@ -556,7 +696,7 @@ def run_batch(
 
             if cache_hit:
                 propagate_from_cache(
-                    conn, subvencion_id=subv_id, document_key=resolved.document_key
+                    conn, subvencion_id=subv_id, document_key=resolved_for_analysis.document_key
                 )
                 stats.dedup_hits += 1
                 _bump_nlp_run(conn, run_id, items_cache_hits=1)
@@ -564,17 +704,59 @@ def run_batch(
                 continue
 
             try:
-                extracted = extract_from_url(resolved.document_ref)
-                logger.info(
-                    "[nlp] id=%d step=extract chars=%d content_type=%s mode=%s",
-                    subv_id,
-                    extracted.char_count,
-                    extracted.content_type or "-",
-                    extracted.extraction_mode,
-                )
+                if resolved.document_source == "url_bases_reguladoras":
+                    extracted = extract_for_url_bases_reguladoras(
+                        resolved.document_ref,
+                        logger=logger,
+                        subv_id=subv_id,
+                    )
+                    if extracted is None:
+                        stats.skipped_no_doc += 1
+                        _bump_nlp_run(conn, run_id, items_skipped=1)
+                        continue
+                else:
+                    extracted = extract_from_url(resolved.document_ref)
+                    logger.info(
+                        "[nlp] id=%d step=extract chars=%d content_type=%s mode=%s",
+                        subv_id,
+                        extracted.char_count,
+                        extracted.content_type or "-",
+                        extracted.extraction_mode,
+                    )
+                if debug:
+                    from etl.nlp.debug import log_extract, log_fetch
+
+                    log_fetch(
+                        logger,
+                        subv_id=subv_id,
+                        url=resolved.document_ref,
+                        status_code=extracted.http_status,
+                        content_type=extracted.content_type,
+                        content_length=extracted.content_length,
+                        redirects=extracted.redirects,
+                    )
+                    log_extract(
+                        logger,
+                        subv_id=subv_id,
+                        extraction_mode=extracted.extraction_mode,
+                        content_type=extracted.content_type,
+                        text=extracted.text,
+                    )
             except ExtractionError as e:
                 stats.invalid += 1
                 logger.error("[nlp] id=%d step=extract error=%s", subv_id, e)
+                if debug:
+                    from etl.nlp.debug import log_fetch
+
+                    log_fetch(
+                        logger,
+                        subv_id=subv_id,
+                        url=resolved.document_ref,
+                        status_code=None,
+                        content_type=None,
+                        content_length=None,
+                        error=str(e),
+                    )
                 with conn:
                     with conn.cursor() as cur:
                         cur.execute(
@@ -592,7 +774,12 @@ def run_batch(
                 continue
 
             try:
-                llm_result = analyze_document(extracted.text, schema)
+                llm_result = analyze_document(
+                    extracted.text,
+                    schema,
+                    tipo_documento=tipo_documento_llm,
+                    convocatoria_detalle=convocatoria_detalle_bdns,
+                )
                 logger.info(
                     "[nlp] id=%d step=llm model=%s tokens_in=%d tokens_out=%d duration_ms=%d",
                     subv_id,
@@ -667,7 +854,7 @@ def run_batch(
                         cur.execute(
                             LOG_LLM_SQL,
                             {
-                                "document_key": resolved.document_key,
+                                "document_key": resolved_for_analysis.document_key,
                                 "llm_model": llm_result.model,
                                 "input_tokens": llm_result.input_tokens,
                                 "output_tokens": llm_result.output_tokens,
@@ -690,7 +877,7 @@ def run_batch(
             persist_analysis(
                 conn,
                 subvencion_id=subv_id,
-                resolved=resolved,
+                resolved=resolved_for_analysis,
                 validation=validation,
                 fields=fields,
                 nlp_json=nlp_json,
@@ -704,7 +891,7 @@ def run_batch(
                     cur.execute(
                         LOG_LLM_SQL,
                         {
-                            "document_key": resolved.document_key,
+                            "document_key": resolved_for_analysis.document_key,
                             "llm_model": llm_result.model,
                             "input_tokens": llm_result.input_tokens,
                             "output_tokens": llm_result.output_tokens,
